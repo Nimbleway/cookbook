@@ -1,0 +1,302 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Nimble Google Maps API",
+    "description": "API for Google Maps searches, place details, and reviews via Nimble",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.webit.live",
+      "description": "Nimble API server"
+    }
+  ],
+  "security": [
+    {
+      "basicAuth": []
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "basicAuth": {
+        "type": "http",
+        "scheme": "basic",
+        "description": "Basic Authentication"
+      }
+    },
+    "parameters": {
+      "AuthorizationHeader": {
+        "name": "Authorization",
+        "in": "header",
+        "description": "Basic Authentication header with Base64-encoded credentials.\nDefault value: \"Basic xxxx\"",
+        "required": true,
+        "schema": {
+          "type": "string",
+          "default": "Basic xxxx"
+        }
+      }
+    },
+    "schemas": {
+      "SearchResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "query_time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status_code": {
+            "type": "integer"
+          },
+          "headers": {
+            "type": "object"
+          },
+          "parsing": {
+            "type": "object"
+          },
+          "input_url": {
+            "type": "string"
+          },
+          "nimble_links": {
+            "type": "object",
+            "properties": {
+              "next_page": {
+                "type": "string"
+              }
+            }
+          },
+          "driver": {
+            "type": "string"
+          }
+        }
+      },
+      "PlaceResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "query_time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status_code": {
+            "type": "integer"
+          },
+          "headers": {
+            "type": "object"
+          },
+          "parsing": {
+            "type": "object"
+          },
+          "redirects": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "status_code": {
+                  "type": "integer"
+                },
+                "url": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "final_url": {
+            "type": "string"
+          },
+          "driver": {
+            "type": "string"
+          }
+        }
+      },
+      "ReviewsResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "query_time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status_code": {
+            "type": "integer"
+          },
+          "headers": {
+            "type": "object"
+          },
+          "parsing": {
+            "type": "object"
+          },
+          "input_url": {
+            "type": "string"
+          },
+          "nimble_links": {
+            "type": "object",
+            "properties": {
+              "next_page": {
+                "type": "string"
+              }
+            }
+          },
+          "driver": {
+            "type": "string"
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/api/v1/realtime/serp": {
+      "post": {
+        "summary": "Google Maps Search / Details / Reviews",
+        "description": "Single endpoint for multiple Google Maps operations",
+        "operationId": "googleMapsOperations",
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/AuthorizationHeader"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "search_engine"
+                ],
+                "properties": {
+                  "search_engine": {
+                    "type": "string",
+                    "enum": [
+                      "google_maps_search",
+                      "google_maps_place",
+                      "google_maps_reviews"
+                    ]
+                  },
+                  "query": {
+                    "type": "string"
+                  },
+                  "place_id": {
+                    "type": "string"
+                  },
+                  "sort_by": {
+                    "type": "string",
+                    "enum": [
+                      "relevance",
+                      "newest",
+                      "highest_rating"
+                    ],
+                    "default": "relevance"
+                  },
+                  "no_html": {
+                    "type": "boolean",
+                    "default": true
+                  },
+                  "parse": {
+                    "type": "boolean",
+                    "default": true
+                  },
+                  "render": {
+                    "type": "boolean",
+                    "default": true
+                  },
+                  "offset": {
+                    "type": "integer",
+                    "default": 0
+                  },
+                  "coordinates": {
+                    "type": "string",
+                    "example": "@40.7433817,-73.98804225,12z"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/SearchResponse"
+                    },
+                    {
+                      "$ref": "#/components/schemas/PlaceResponse"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ReviewsResponse"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                },
+                "example": {
+                  "error": "Authentication failed: Invalid credentials"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
