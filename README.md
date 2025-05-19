@@ -11,9 +11,9 @@ Nimble provides infrastructure for businesses to fully leverage web data in thei
 Nimble offers a comprehensive ecosystem:
 
 - **Web API** - JavaScript rendering, page interactions, network capturing, and data parsing
-- **Residential Proxy** - Geotargeting, IP rotation, and geo-sessions
 - **Platform Solutions** - Online Pipelines and Knowledge Cloud for turnkey data collection
 - **AI-Powered Features** - Browserless drivers, optimization models, and parsing skills
+- **Proxy Layer** - Geotargeting, IP rotation, and geo-sessions
 
 ## Getting Started
 
