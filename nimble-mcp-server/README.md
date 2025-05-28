@@ -17,8 +17,8 @@ The fastest way to use this MCP server is to connect to our official remote inst
 
 1. **Get a Nimble API Key**:
    - Register for an account at [Nimble's signup page](https://app.nimbleway.com/signup)
-   - Navigate to the "Pipelines" page and access the "Nimble API" pipeline
-   - Obtain your API credentials (provided as a base64 token)
+   - Navigate to your "Account settings" page and open the "API KEYS" tab
+   - Click on "+ Add Key" to generate a new token and copy it.
 
 2. **Prerequisites**:
    - Ensure you have [Node.js and npm](https://nodejs.org/) installed on your system
@@ -35,16 +35,16 @@ The fastest way to use this MCP server is to connect to our official remote inst
        "nimble-mcp-server": {
          "command": "npx",
          "args": [
-           "-y", "mcp-remote", "https://mcp.nimbleway.com/sse", 
+           "-y", "mcp-remote@latest", "https://mcp.nimbleway.com/sse", 
            "--header", "Authorization:${NIMBLE_API_KEY}"],
          "env": {
-           "NIMBLE_API_KEY": "Basic XXX"
+           "NIMBLE_API_KEY": "Bearer XXX"
          }
        }
      }
    }
    ```
-   > **Note:** Replace `Basic XXX` with your actual Nimble API key.
+   > **Note:** Replace `Bearer XXX` with your actual Nimble API key.
 
 4. **Start using the MCP tools with your AI agent!**
 
