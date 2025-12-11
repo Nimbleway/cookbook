@@ -1,4 +1,5 @@
 import asyncio
+import os
 from datetime import datetime
 from typing import Any
 
@@ -23,11 +24,15 @@ load_dotenv()
 
 async def create_web_agent() -> Any:
     """Create a LangChain agent with Nimble tools."""
-    import os
-
+    missing_keys = []
     if not os.environ.get("NIMBLE_API_KEY"):
-        console.print("[red]Error: NIMBLE_API_KEY environment variable is required[/red]")
-        raise ValueError("NIMBLE_API_KEY is required")
+        missing_keys.append("NIMBLE_API_KEY")
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        missing_keys.append("ANTHROPIC_API_KEY")
+
+    if missing_keys:
+        console.print(f"[red]Error: Missing required environment variables: {', '.join(missing_keys)}[/red]")
+        raise ValueError(f"Missing required API keys: {', '.join(missing_keys)}")
 
     # Initialize Nimble tools
     search_tool = NimbleSearchTool()
