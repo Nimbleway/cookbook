@@ -2,15 +2,17 @@
 
 > **Cookbook Example**: This is a ready-to-use example demonstrating how to build a web research agent using [LangChain](https://github.com/langchain-ai/langchain) and [langchain-nimble](https://github.com/nimbleway/langchain-nimble).
 
-A single-task CLI agent that performs intelligent web research and data extraction. Enter one query, get comprehensive results powered by Nimble's web intelligence tools and Claude Sonnet 4.5.
+An intelligent CLI agent with two specialized modes for web research and data extraction. Choose between general questions or deep company research, powered by Nimble's web intelligence tools and Claude Sonnet 4.5.
 
 ## What This Example Demonstrates
 
+- **Multi-Mode Agent Architecture**: Switch between general questions and specialized company research
 - **LangChain Agent Framework**: Building autonomous agents with tool integration
 - **Nimble Tools Integration**: Using `NimbleSearchTool` and `NimbleExtractTool` for web intelligence
 - **Real-time Web Search**: Search for current information using Nimble's search API
 - **Content Extraction**: Extract and analyze content from specific URLs
-- **Rich Terminal UI**: Progress indicators, spinners, and formatted output
+- **Structured Research Output**: Specialized prompts for comprehensive company intelligence
+- **Rich Terminal UI**: Mode selection, progress indicators, spinners, and formatted output
 
 ## Installation
 
@@ -49,20 +51,44 @@ cp .env.example .env
 
 ## Usage
 
-Run the agent with a single task:
+Run the agent:
 ```bash
 uv run main.py
 ```
 
-Enter your research query when prompted:
+You'll be prompted to select an agent mode:
 ```
-→ What are the latest AI trends?
+1. General Question (default) - Ask any question
+2. Company Research Agent - Deep dive into company information
+```
+
+### Mode 1: General Question
+
+Enter any research query:
+```
+→ What are the latest AI trends in 2025?
 ```
 
 The agent will autonomously:
 1. Search the web for relevant information
 2. Extract detailed content from top sources
 3. Synthesize findings into a comprehensive answer
+
+### Mode 2: Company Research Agent
+
+Provide company details:
+```
+Company Name → Anthropic
+Website/Domain → anthropic.com
+```
+
+The agent will research and structure information about:
+- **Company Overview & Mission**: What they do, founding details
+- **Key People & Leadership**: C-suite executives, founders, board members
+- **Competitors & Market Position**: Main competitors, competitive advantages
+- **Recent News & Developments**: Funding, product launches, partnerships
+
+All facts are cited with sources for easy verification.
 
 ## Example
 
