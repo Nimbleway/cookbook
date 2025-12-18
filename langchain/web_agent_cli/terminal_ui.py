@@ -4,6 +4,8 @@ import os
 import time
 from typing import Optional
 
+from prompt_toolkit import PromptSession
+from prompt_toolkit.patch_stdout import patch_stdout
 from prompt_toolkit.styles import Style
 from rich.console import Console
 from rich.status import Status
@@ -34,6 +36,39 @@ def print_welcome():
 
     console.print()
     console.print("Powered by LangChain • Nimble Web Intelligence • Claude Sonnet 4.5", style="dim italic", justify="center")
+    console.print()
+
+
+def clear_and_reset_screen():
+    """Clear the console screen and reprint the welcome banner."""
+    console.clear()
+    print_welcome()
+
+
+def print_mode_selector():
+    """Print mode selection menu."""
+    console.print()
+    console.rule("[bold bright_cyan]Select Agent Mode[/bold bright_cyan]")
+    console.print()
+
+    console.print("  [bold bright_white]1.[/bold bright_white] [cyan]General Question[/cyan] [dim](default)[/dim]")
+    console.print("     [dim]Ask any question and get comprehensive answers from web research[/dim]")
+    console.print()
+
+    console.print("  [bold bright_white]2.[/bold bright_white] [magenta]Company Research Agent[/magenta]")
+    console.print("     [dim]Deep dive into company information: overview, leadership, competitors, news[/dim]")
+    console.print()
+
+    console.rule(style="bright_black")
+    console.print()
+
+
+def print_company_form_header():
+    """Print header for company research form."""
+    console.print()
+    console.rule("[bold magenta]Company Research Form[/bold magenta]")
+    console.print()
+    console.print("[dim]Please provide the company details below:[/dim]")
     console.print()
 
 
@@ -144,6 +179,103 @@ def _parse_content_blocks(content) -> tuple[list[str], list[dict]]:
     return text_parts, tool_calls
 
 
+async def get_mode_selection(session: PromptSession) -> str:
+    """Prompt user to select agent mode (returns 'general' or 'company')."""
+    print_mode_selector()
+
+    try:
+        with patch_stdout():
+            mode_input = await session.prompt_async(
+                "  → ",
+                placeholder="Select mode (1 or 2, default: 1)...",
+                bottom_toolbar=get_bottom_toolbar,
+            )
+    except (EOFError, KeyboardInterrupt):
+        console.print("\n[yellow]Cancelled[/yellow]")
+        raise
+
+    mode_input = mode_input.strip()
+    if mode_input == "2":
+        return "company"
+    return "general"
+
+
+async def get_company_research_input(session: PromptSession) -> Optional[str]:
+    """Prompt for company details and return formatted research query."""
+    print_company_form_header()
+
+    try:
+        with patch_stdout():
+            company_name = await session.prompt_async(
+                "  Company Name → ",
+                placeholder="e.g., Anthropic",
+                bottom_toolbar=get_bottom_toolbar,
+            )
+    except (EOFError, KeyboardInterrupt):
+        console.print("\n[yellow]Cancelled[/yellow]")
+        raise
+
+    if not company_name.strip():
+        console.print("[yellow]Company name is required[/yellow]")
+        return None
+
+    try:
+        with patch_stdout():
+            company_domain = await session.prompt_async(
+                "  Website/Domain → ",
+                placeholder="e.g., anthropic.com",
+                bottom_toolbar=get_bottom_toolbar,
+            )
+    except (EOFError, KeyboardInterrupt):
+        console.print("\n[yellow]Cancelled[/yellow]")
+        raise
+
+    if not company_domain.strip():
+        console.print("[yellow]Website/domain is required[/yellow]")
+        return None
+
+    query = f"Research the company '{company_name}' (website: {company_domain})"
+
+    console.print()
+    console.print(f"[dim]Researching:[/dim] [bold]{company_name}[/bold] [dim]({company_domain})[/dim]")
+    console.print()
+
+    return query
+
+
+async def get_general_question_input(session: PromptSession) -> Optional[str]:
+    """Prompt for general question and return query string."""
+    try:
+        with patch_stdout():
+            query = await session.prompt_async(
+                "  → ",
+                placeholder="Enter your task...",
+                bottom_toolbar=get_bottom_toolbar,
+            )
+    except (EOFError, KeyboardInterrupt):
+        console.print("\n[yellow]Cancelled[/yellow]")
+        raise
+
+    if not query.strip():
+        console.print("[yellow]No task provided[/yellow]")
+        return None
+
+    return query
+
+
+def display_agent_status(status: str, mode_name: Optional[str] = None) -> None:
+    """Display agent initialization status ('initializing', 'ready', or 'error')."""
+    if mode_name:
+        console.print(f"\n[dim]Selected mode:[/dim] {mode_name}")
+        console.print()
+
+    if status == "initializing":
+        console.print("[dim]Initializing agent...[/dim]")
+    elif status == "ready":
+        console.print("[green]✓ Agent ready![/green]")
+        console.print()
+
+
 class AgentResponseDisplay:
     """Manages the display of agent responses with spinners and formatting."""
 
@@ -168,16 +300,13 @@ class AgentResponseDisplay:
         if not hasattr(message, "type"):
             return
 
-        # Skip user messages
         if message.type == "human":
             return
 
-        # Handle AI messages
         if message.type == "ai":
             self._handle_ai_message(message)
             return
 
-        # Handle tool results
         if message.type == "tool":
             self._handle_tool_message(message)
             return
@@ -187,13 +316,11 @@ class AgentResponseDisplay:
         self.stop_spinner()
         content = message.content
 
-        # Simple text response
         if isinstance(content, str):
             print_agent_text(content)
             console.print()
             return
 
-        # Complex content with text blocks and tool calls
         text_parts, tool_calls = _parse_content_blocks(content)
 
         if text_parts:
@@ -226,10 +353,6 @@ class AgentResponseDisplay:
             del self.tool_start_times[tool_call_id]
 
         print_tool_result(tool_name, content, elapsed_time)
-
-        # Resume processing spinner
-        self.status = create_spinner("Agent is processing...")
-        self.status.start()
 
     def finish(self):
         """Finish display and show total time."""
