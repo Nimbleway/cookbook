@@ -7,13 +7,17 @@ from dotenv import load_dotenv
 from langchain.agents import create_agent
 from langchain_nimble import NimbleExtractTool, NimbleSearchTool
 from prompt_toolkit import PromptSession
-from prompt_toolkit.patch_stdout import patch_stdout
 from prompt_toolkit.shortcuts import set_title
 
+from prompts import get_system_prompt
 from terminal_ui import (
     AgentResponseDisplay,
+    clear_and_reset_screen,
     console,
-    get_bottom_toolbar,
+    display_agent_status,
+    get_company_research_input,
+    get_general_question_input,
+    get_mode_selection,
     print_response_header,
     print_welcome,
     style,
@@ -22,7 +26,7 @@ from terminal_ui import (
 load_dotenv()
 
 
-async def create_web_agent() -> Any:
+async def create_web_agent(mode: str = "general") -> Any:
     """Create a LangChain agent with Nimble tools."""
     missing_keys = []
     if not os.environ.get("NIMBLE_API_KEY"):
@@ -34,26 +38,15 @@ async def create_web_agent() -> Any:
         console.print(f"[red]Error: Missing required environment variables: {', '.join(missing_keys)}[/red]")
         raise ValueError(f"Missing required API keys: {', '.join(missing_keys)}")
 
-    # Initialize Nimble tools
     search_tool = NimbleSearchTool()
     extract_tool = NimbleExtractTool()
-
-    # Get current date for time-aware responses
     today = datetime.now().strftime("%B %d, %Y")
+    system_prompt = get_system_prompt(mode, today)
 
-    # Create agent with tools and system prompt
     agent = create_agent(
         model="claude-sonnet-4-5",
         tools=[search_tool, extract_tool],
-        system_prompt=(
-            f"You are a helpful assistant with access to real-time web "
-            f"information. Today's date is {today}. "
-            f"You can search the web and extract content from "
-            f"specific URLs. Use the search tool to find relevant information, "
-            f"then use the extract tool to get detailed content from specific "
-            f"pages when needed. Always cite your sources and provide "
-            f"comprehensive, accurate answers."
-        ),
+        system_prompt=system_prompt,
     )
 
     return agent
@@ -85,35 +78,38 @@ async def stream_agent_response(agent: Any, query: str) -> None:
 async def main():
     """Main entry point."""
     set_title("Nimble Web Agent")
-
     print_welcome()
 
-    console.print("[dim]Initializing agent...[/dim]")
+    session = PromptSession(style=style)
+
     try:
-        agent = await create_web_agent()
-        console.print("[green]✓ Agent ready![/green]")
-        console.print()
+        mode = await get_mode_selection(session)
+    except (EOFError, KeyboardInterrupt):
+        return
+
+    clear_and_reset_screen()
+
+    mode_name = "[magenta]Company Research Agent[/magenta]" if mode == "company" else "[cyan]General Question[/cyan]"
+    display_agent_status("initializing", mode_name)
+
+    try:
+        agent = await create_web_agent(mode)
+        display_agent_status("ready")
     except Exception as e:
         console.print(f"[red]Failed to initialize agent: {e}[/red]")
         return
 
-    session = PromptSession(style=style)
-
     console.rule(style="bright_black")
 
     try:
-        with patch_stdout():
-            query = await session.prompt_async(
-                "  → ",
-                placeholder="Enter your task...",
-                bottom_toolbar=get_bottom_toolbar,
-            )
+        if mode == "company":
+            query = await get_company_research_input(session)
+        else:
+            query = await get_general_question_input(session)
     except (EOFError, KeyboardInterrupt):
-        console.print("\n[yellow]Cancelled[/yellow]")
         return
 
-    if not query.strip():
-        console.print("[yellow]No task provided[/yellow]")
+    if not query:
         return
 
     try:
