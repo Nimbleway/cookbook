@@ -18,6 +18,7 @@ from terminal_ui import (
     get_company_research_input,
     get_general_question_input,
     get_mode_selection,
+    get_pricing_analysis_input,
     print_response_header,
     print_welcome,
     style,
@@ -83,13 +84,19 @@ async def main():
     session = PromptSession(style=style)
 
     try:
-        mode = await get_mode_selection(session)
+        mode = await get_mode_selection()
     except (EOFError, KeyboardInterrupt):
         return
 
     clear_and_reset_screen()
 
-    mode_name = "[magenta]Company Research Agent[/magenta]" if mode == "company" else "[cyan]General Question[/cyan]"
+    if mode == "company":
+        mode_name = "[magenta]Company Research Agent[/magenta]"
+    elif mode == "pricing":
+        mode_name = "[green]Pricing Analysis Agent[/green]"
+    else:
+        mode_name = "[cyan]General Question[/cyan]"
+
     display_agent_status("initializing", mode_name)
 
     try:
@@ -104,6 +111,8 @@ async def main():
     try:
         if mode == "company":
             query = await get_company_research_input(session)
+        elif mode == "pricing":
+            query = await get_pricing_analysis_input(session)
         else:
             query = await get_general_question_input(session)
     except (EOFError, KeyboardInterrupt):

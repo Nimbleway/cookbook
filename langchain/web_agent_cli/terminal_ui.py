@@ -4,6 +4,7 @@ import os
 import time
 from typing import Optional
 
+import questionary
 from prompt_toolkit import PromptSession
 from prompt_toolkit.patch_stdout import patch_stdout
 from prompt_toolkit.styles import Style
@@ -45,30 +46,21 @@ def clear_and_reset_screen():
     print_welcome()
 
 
-def print_mode_selector():
-    """Print mode selection menu."""
-    console.print()
-    console.rule("[bold bright_cyan]Select Agent Mode[/bold bright_cyan]")
-    console.print()
-
-    console.print("  [bold bright_white]1.[/bold bright_white] [cyan]General Question[/cyan] [dim](default)[/dim]")
-    console.print("     [dim]Ask any question and get comprehensive answers from web research[/dim]")
-    console.print()
-
-    console.print("  [bold bright_white]2.[/bold bright_white] [magenta]Company Research Agent[/magenta]")
-    console.print("     [dim]Deep dive into company information: overview, leadership, competitors, news[/dim]")
-    console.print()
-
-    console.rule(style="bright_black")
-    console.print()
-
-
 def print_company_form_header():
     """Print header for company research form."""
     console.print()
     console.rule("[bold magenta]Company Research Form[/bold magenta]")
     console.print()
     console.print("[dim]Please provide the company details below:[/dim]")
+    console.print()
+
+
+def print_pricing_form_header():
+    """Print header for pricing analysis form."""
+    console.print()
+    console.rule("[bold green]Pricing Analysis Form[/bold green]")
+    console.print()
+    console.print("[dim]Please provide the product details below:[/dim]")
     console.print()
 
 
@@ -179,25 +171,47 @@ def _parse_content_blocks(content) -> tuple[list[str], list[dict]]:
     return text_parts, tool_calls
 
 
-async def get_mode_selection(session: PromptSession) -> str:
-    """Prompt user to select agent mode (returns 'general' or 'company')."""
-    print_mode_selector()
+async def get_mode_selection() -> str:
+    """Prompt user to select agent mode (returns 'general', 'company', or 'pricing')."""
+    console.print()
+    console.rule("[bold bright_cyan]Select Agent Mode[/bold bright_cyan]")
+    console.print()
+
+    choices = [
+        questionary.Choice(
+            title="General Question - Ask any question and get comprehensive answers",
+            value="general"
+        ),
+        questionary.Choice(
+            title="Company Research - Deep dive into company information",
+            value="company"
+        ),
+        questionary.Choice(
+            title="Pricing Analysis - Compare product prices across marketplaces",
+            value="pricing"
+        ),
+    ]
 
     try:
-        with patch_stdout():
-            mode_input = await session.prompt_async(
-                "  → ",
-                placeholder="Select mode (1 or 2, default: 1)...",
-                bottom_toolbar=get_bottom_toolbar,
-            )
+        mode = await questionary.select(
+            "",
+            choices=choices,
+            style=questionary.Style([
+                ('question', 'fg:#00aaff bold'),
+                ('pointer', 'fg:#00aaff bold'),
+                ('highlighted', 'fg:#00aaff bold'),
+                ('selected', 'fg:#00ff00'),
+            ])
+        ).ask_async()
+
+        if mode is None:
+            raise KeyboardInterrupt
+
+        return mode
+
     except (EOFError, KeyboardInterrupt):
         console.print("\n[yellow]Cancelled[/yellow]")
         raise
-
-    mode_input = mode_input.strip()
-    if mode_input == "2":
-        return "company"
-    return "general"
 
 
 async def get_company_research_input(session: PromptSession) -> Optional[str]:
@@ -259,6 +273,34 @@ async def get_general_question_input(session: PromptSession) -> Optional[str]:
     if not query.strip():
         console.print("[yellow]No task provided[/yellow]")
         return None
+
+    return query
+
+
+async def get_pricing_analysis_input(session: PromptSession) -> Optional[str]:
+    """Prompt for product details and return formatted pricing analysis query."""
+    print_pricing_form_header()
+
+    try:
+        with patch_stdout():
+            product_name = await session.prompt_async(
+                "  Product Name → ",
+                placeholder="e.g., iPhone 15 Pro Max 256GB",
+                bottom_toolbar=get_bottom_toolbar,
+            )
+    except (EOFError, KeyboardInterrupt):
+        console.print("\n[yellow]Cancelled[/yellow]")
+        raise
+
+    if not product_name.strip():
+        console.print("[yellow]Product name is required[/yellow]")
+        return None
+
+    query = f"Analyze pricing for: '{product_name}'"
+
+    console.print()
+    console.print(f"[dim]Analyzing pricing for:[/dim] [bold]{product_name}[/bold]")
+    console.print()
 
     return query
 
@@ -353,6 +395,10 @@ class AgentResponseDisplay:
             del self.tool_start_times[tool_call_id]
 
         print_tool_result(tool_name, content, elapsed_time)
+
+        # Restart processing spinner for agent's next turn
+        self.status = create_spinner("Agent is processing...")
+        self.status.start()
 
     def finish(self):
         """Finish display and show total time."""
