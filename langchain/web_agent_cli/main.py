@@ -4,8 +4,11 @@ from datetime import datetime
 from typing import Any
 
 from dotenv import load_dotenv
+
 from langchain.agents import create_agent
+from langchain.agents.middleware import SummarizationMiddleware
 from langchain_nimble import NimbleExtractTool, NimbleSearchTool
+
 from prompt_toolkit import PromptSession
 from prompt_toolkit.shortcuts import set_title
 
@@ -48,6 +51,13 @@ async def create_web_agent(mode: str = "general") -> Any:
         model="claude-sonnet-4-5",
         tools=[search_tool, extract_tool],
         system_prompt=system_prompt,
+        middleware=[
+            SummarizationMiddleware(
+                model="claude-haiku-4-5",
+                trigger=("tokens", 20000),
+                keep=("messages", 5),
+            ),
+        ]
     )
 
     return agent
