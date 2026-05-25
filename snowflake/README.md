@@ -72,6 +72,10 @@ Once the four setup files are deployed, open [`recipes/cpg_price_monitoring/cpg_
 - Procs return `STRING` (containing `json.dumps(...)` output), not `VARIANT`. Callers wrap with `PARSE_JSON(...)` when they need typed access. This matches how Cortex Agents consume tool output.
 - The Nimble API key lives in a Snowflake `SECRET`; no plain-text keys appear in proc bodies.
 
+## Note on target-site terms of service
+
+These recipes show how to pipe data fetched by Nimble into Snowflake — they do not change the legal rules that govern *what* you fetch. You are responsible for ensuring that any URLs you pass to `NIMBLE_EXTRACT`, any queries you run through `NIMBLE_SEARCH`, and any production scheduling on top complies with the target sites' terms of service, robots policies, and applicable law in your jurisdiction. The retailer references in the CPG tutorial and its sample outputs are illustrative placeholders; the brand names, UPCs, URLs, prices, ratings, and review counts shown are fictional and do not represent real products or any real commercial relationship.
+
 ## What's deferred
 
 This recipe directory covers **Pattern A** (Cortex Agents calling Nimble tools). Two siblings are tracked separately:
