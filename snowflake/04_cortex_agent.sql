@@ -22,6 +22,7 @@ USE SCHEMA NIMBLE_INTEGRATION.AGENTS;
 CREATE OR REPLACE AGENT NIMBLE_INTEGRATION.AGENTS.NIMBLE_WEB_RESEARCH_AGENT
 WITH PROFILE = '{ "display_name": "Nimble Web Research Agent" }'
 COMMENT = 'Live-web research agent powered by Nimble Search + Extract.'
+-- NOTE: tool_resources is a TOP-LEVEL field per the CREATE AGENT spec, not nested under each tools[] entry.
 FROM SPECIFICATION $$
 {
   "models": {
@@ -47,16 +48,6 @@ FROM SPECIFICATION $$
           },
           "required": ["query"]
         }
-      },
-      "tool_resources": {
-        "nimble_search": {
-          "type": "procedure",
-          "identifier": "NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH",
-          "execution_environment": {
-            "type": "warehouse",
-            "warehouse": "NIMBLE_AGENT_WH"
-          }
-        }
       }
     },
     {
@@ -72,19 +63,27 @@ FROM SPECIFICATION $$
           },
           "required": ["url"]
         }
-      },
-      "tool_resources": {
-        "nimble_extract": {
-          "type": "procedure",
-          "identifier": "NIMBLE_INTEGRATION.TOOLS.NIMBLE_EXTRACT",
-          "execution_environment": {
-            "type": "warehouse",
-            "warehouse": "NIMBLE_AGENT_WH"
-          }
-        }
       }
     }
-  ]
+  ],
+  "tool_resources": {
+    "nimble_search": {
+      "type": "procedure",
+      "identifier": "NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH",
+      "execution_environment": {
+        "type": "warehouse",
+        "warehouse": "NIMBLE_AGENT_WH"
+      }
+    },
+    "nimble_extract": {
+      "type": "procedure",
+      "identifier": "NIMBLE_INTEGRATION.TOOLS.NIMBLE_EXTRACT",
+      "execution_environment": {
+        "type": "warehouse",
+        "warehouse": "NIMBLE_AGENT_WH"
+      }
+    }
+  }
 }
 $$;
 
