@@ -79,7 +79,9 @@ SELECT * FROM nimble_integration.tools.amazon_serp_table('cookies') LIMIT 5;
 
 ## Adding more Nimble functions
 
-The folder layout is designed to grow one file per capability. To add e.g. `nimble_web_search`:
+See [`ADDING_A_TOOL.md`](ADDING_A_TOOL.md) for the full walkthrough — pick a Nimble endpoint, extract the schema, write the scalar + TABLE wrapper, add examples, smoke-test, and the known limitations you'll hit along the way.
+
+Quick summary:
 
 1. Create `tools/nimble_web_search.sql` following the header conventions in `tools/amazon_serp.sql`:
    - Function lives under `nimble_integration.tools.<name>`.
