@@ -9,7 +9,10 @@ databricks/
   README.md                          ← you are here
   00_prereqs.md                      one-time CLI setup: secret scope + ACL
   01_setup.sql                       catalog, schemas, UC HTTP CONNECTION
-  02_amazon_serp.sql                 nimble_integration.tools.amazon_serp
+  tools/                             one SQL file per UC function — installable as-is
+    README.md                        conventions for adding a new tool
+    amazon_serp.sql                  scalar amazon_serp(keyword) RETURNS ARRAY<STRUCT<...>>
+    amazon_serp_table.sql            TABLE wrapper required for Databricks Genie
   examples/
     README.md                        what's in this folder
     amazon_serp_basic.sql            single call, EXPLODE, filter
@@ -17,10 +20,11 @@ databricks/
     amazon_serp_aggregates.sql       average price, prime ratio, top-N
 ```
 
-Two artifact types, two audiences:
+Three artifact types, three audiences:
 
-- **Deployment SQL** (`01_*`, `02_*`) — a workspace admin (or an LLM agent with workspace access) runs these once and forgets about them.
-- **Example queries** (`examples/*.sql`) — a data analyst or agent runs these to learn the pattern and adapt it to their own data.
+- **`01_setup.sql`** — a workspace admin runs once to provision catalog, schemas, and the UC HTTP CONNECTION.
+- **`tools/*.sql`** — install one per Nimble capability you want callable from SQL / Genie / agents. Re-runnable, independent of each other (except where one tool wraps another, e.g. `amazon_serp_table` calls `amazon_serp`).
+- **`examples/*.sql`** — a data analyst or agent runs these to learn the pattern and adapt it.
 
 ## Prerequisites
 
@@ -46,7 +50,8 @@ Each is independently idempotent (`CREATE OR REPLACE` / `IF NOT EXISTS` througho
 ```bash
 WH=<your-serverless-warehouse-id>   # databricks warehouses list
 
-for f in databricks/01_setup.sql databricks/02_amazon_serp.sql; do
+# Scaffolding first, then every tool in tools/.
+for f in databricks/01_setup.sql databricks/tools/*.sql; do
   databricks api post /api/2.0/sql/statements \
     --json "$(jq -n --rawfile s "$f" --arg wh "$WH" \
               '{warehouse_id:$wh, statement:$s, wait_timeout:"50s"}')"
@@ -54,29 +59,32 @@ done
 ```
 
 1. **`01_setup.sql`** — creates catalog `nimble_integration`, schemas `tools` + `examples`, and the UC HTTP `CONNECTION nimble_api` bound to the secret.
-2. **`02_amazon_serp.sql`** — creates `nimble_integration.tools.amazon_serp(keyword)`. Wraps the [`amazon_serp` agent](https://docs.nimbleway.com/api-reference/agents/run-agent).
+2. **`tools/amazon_serp.sql`** — creates the scalar `nimble_integration.tools.amazon_serp(keyword)`. Wraps the [`amazon_serp` agent](https://docs.nimbleway.com/api-reference/agents/run-agent).
+3. **`tools/amazon_serp_table.sql`** — creates the Genie-friendly TABLE form `nimble_integration.tools.amazon_serp_table(keyword)`. Wraps the scalar with `LATERAL VIEW EXPLODE` so Genie can register it as a tool.
 
-Smoke test:
+Smoke tests:
 
 ```sql
-SELECT size(nimble_integration.tools.amazon_serp('cookies')) AS n;  -- expect ~60
+SELECT size(nimble_integration.tools.amazon_serp('cookies')) AS n;          -- expect ~60
+SELECT * FROM nimble_integration.tools.amazon_serp_table('cookies') LIMIT 5;
 ```
 
 ## Adding more Nimble functions
 
 The folder layout is designed to grow one file per capability. To add e.g. `nimble_web_search`:
 
-1. Create `03_nimble_web_search.sql` with the same header conventions as `02_amazon_serp.sql`:
+1. Create `tools/nimble_web_search.sql` following the header conventions in `tools/amazon_serp.sql`:
    - Function lives under `nimble_integration.tools.<name>`.
-   - `RETURNS ARRAY<STRUCT<...>>` matched to the agent's output schema.
-   - `COMMENT '<verbatim agent description from Nimble docs>'` — this is what an LLM-driven Genie / agent reads to decide whether to call your function.
+   - Scalar form `RETURNS ARRAY<STRUCT<...>>` matched to the agent's output schema.
+   - `COMMENT '<verbatim agent description from Nimble docs>'`.
    - Body uses `http_request(conn => 'nimble_api', ...)` + `from_json(..., '<all-STRING schema>')` + `transform(...)` with `try_cast` into the declared numeric / boolean return types.
-2. Add a sibling file under `examples/` with 2–3 queries demonstrating the new function.
-3. That's it — no folder reshuffles, no shared boilerplate to update.
+2. If the tool is meant to be Genie-callable, add `tools/nimble_web_search_table.sql` — a TABLE wrapper around the scalar, with rich per-column `COMMENT`s.
+3. Add a sibling file under `examples/` with 2–3 queries demonstrating the new function.
+4. That's it — no folder reshuffles, no shared boilerplate to update.
 
 Planned next additions:
-- `03_nimble_web_search.sql` — wraps `POST /v1/search` for general / news / shopping / academic search.
-- `04_nimble_agent_list.sql` — wraps `GET /v1/agents` so callers can introspect available agents.
+- `tools/nimble_web_search.sql` + `tools/nimble_web_search_table.sql` — wraps `POST /v1/search` for general / news / shopping / academic search.
+- `tools/nimble_agent_list.sql` — wraps `GET /v1/agents` so callers can introspect available agents.
 
 ## Conventions
 
@@ -89,7 +97,7 @@ Planned next additions:
 
 ## Try it from a Genie / AI agent
 
-Once `amazon_serp` exists, register it as a tool in any [Databricks Genie space](https://docs.databricks.com/en/genie/index.html) or [Mosaic AI agent](https://docs.databricks.com/en/generative-ai/agent-framework/index.html) by pointing at `nimble_integration.tools.amazon_serp`. The function's COMMENT is what the LLM reads to decide when to call it; ask:
+Once `amazon_serp_table` exists, register it as a tool in any [Databricks Genie space](https://docs.databricks.com/en/genie/index.html) or [Mosaic AI agent](https://docs.databricks.com/en/generative-ai/agent-framework/index.html) by pointing at `nimble_integration.tools.amazon_serp_table`. Genie only registers TABLE functions, which is why the table wrapper exists alongside the scalar. The function's COMMENT (and the per-column COMMENTs in the return schema) is what the LLM reads to decide when to call it; ask:
 
 > *"What are the top-rated wireless headphones on Amazon under $100? Show me 10."*
 

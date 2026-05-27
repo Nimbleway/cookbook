@@ -65,7 +65,7 @@ deploy() {
 }
 
 deploy databricks/01_setup.sql
-deploy databricks/02_amazon_serp.sql
+for f in databricks/tools/*.sql; do deploy "$f"; done
 ```
 
 Smoke test:

@@ -1,5 +1,5 @@
 /*
- * 02_amazon_serp.sql — wraps Nimble's amazon_serp agent as a UC SQL function.
+ * tools/amazon_serp.sql — wraps Nimble's amazon_serp agent as a UC SQL function.
  *
  * Privileges: USE on nimble_integration + nimble_integration.tools, plus
  *             CREATE FUNCTION on the schema.
