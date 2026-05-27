@@ -17,6 +17,26 @@
  * `nimble_integration` with your catalog throughout.
  */
 
+/*
+ * Catalog creation. The plain form below works when your metastore has a
+ * managed storage root configured at the metastore level.
+ *
+ * If your workspace uses Unity Catalog "Default Storage" (account-level)
+ * but no metastore-level managed root, this SQL form returns:
+ *
+ *   "Metastore storage root URL does not exist. Default Storage is
+ *    enabled in your account. You can use the UI to create a new catalog
+ *    using Default Storage, or please provide a storage location for
+ *    the catalog (MANAGED LOCATION '<location-path>')."
+ *
+ * In that case you have two equivalent options:
+ *   1. Catalog Explorer UI -> Create Catalog -> "Default Storage" -> name
+ *      it `nimble_integration`.
+ *   2. Use the explicit form: CREATE CATALOG nimble_integration
+ *        MANAGED LOCATION 's3://<bucket>/<prefix>/nimble_integration'
+ *      (or the equivalent abfss:// / gs:// URI). The location must be
+ *      one of your UC external locations (`SHOW EXTERNAL LOCATIONS`).
+ */
 CREATE CATALOG IF NOT EXISTS nimble_integration
     COMMENT 'Nimble web-data integration: UC SQL functions wrapping Nimble agents.';
 

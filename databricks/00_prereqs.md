@@ -52,21 +52,52 @@ databricks secrets list-acls nimble
 
 ## 5. (Optional) Run the SQL deploys from the CLI
 
-`databricks api post /api/2.0/sql/statements` lets you fire a statement at a SQL warehouse without leaving the shell:
+`databricks api post /api/2.0/sql/statements` lets you fire a statement at a SQL warehouse without leaving the shell.
+
+**Caveat**: that endpoint accepts **one statement per call**, and a SQL-aware splitter is needed because `01_setup.sql` and the comment strings inside the function definitions contain semicolons. The snippet below uses Python to split statements while respecting `'...'` string literals; `sqlparse` would also work if you have it installed.
 
 ```bash
 WH=<your-serverless-warehouse-id>     # databricks warehouses list
 
 deploy() {
   local file="$1"
-  databricks api post /api/2.0/sql/statements \
-    --json "$(jq -n --rawfile s "$file" --arg wh "$WH" \
-              '{warehouse_id: $wh, statement: $s, wait_timeout: "50s"}')"
+  python3 - "$file" "$WH" <<'PY'
+import json, os, re, subprocess, sys
+path, wh = sys.argv[1], sys.argv[2]
+text = open(path).read()
+# strip /* ... */ blocks
+text = re.sub(r'/\*.*?\*/', '', text, flags=re.DOTALL)
+# split on `;` while honoring '...' string literals (incl. '' escapes)
+stmts, cur, in_str, i = [], [], False, 0
+while i < len(text):
+    c = text[i]
+    if c == "'":
+        if in_str and i+1 < len(text) and text[i+1] == "'":
+            cur.append("''"); i += 2; continue
+        in_str = not in_str; cur.append(c)
+    elif not in_str and c == '-' and i+1 < len(text) and text[i+1] == '-':
+        while i < len(text) and text[i] != '\n': i += 1
+        continue
+    elif c == ';' and not in_str:
+        s = ''.join(cur).strip()
+        if s: stmts.append(s)
+        cur = []
+    else:
+        cur.append(c)
+    i += 1
+last = ''.join(cur).strip()
+if last: stmts.append(last)
+for s in stmts:
+    body = json.dumps({'warehouse_id': wh, 'statement': s, 'wait_timeout': '50s'})
+    subprocess.check_call(['databricks', 'api', 'post', '/api/2.0/sql/statements', '--json', body])
+PY
 }
 
 deploy databricks/01_setup.sql
 for f in databricks/tools/*.sql; do deploy "$f"; done
 ```
+
+If your workspace uses UC **Default Storage** and the catalog creation in `01_setup.sql` fails with *"Metastore storage root URL does not exist"*, see the comment block in `01_setup.sql` — either create the catalog from the Databricks UI (Catalog Explorer → Create Catalog → Default Storage) or use the explicit `MANAGED LOCATION` form pointed at one of your existing UC external locations (`SHOW EXTERNAL LOCATIONS`).
 
 Smoke test:
 

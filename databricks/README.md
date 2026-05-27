@@ -50,12 +50,12 @@ Each is independently idempotent (`CREATE OR REPLACE` / `IF NOT EXISTS` througho
 ```bash
 WH=<your-serverless-warehouse-id>   # databricks warehouses list
 
-# Scaffolding first, then every tool in tools/.
-for f in databricks/01_setup.sql databricks/tools/*.sql; do
-  databricks api post /api/2.0/sql/statements \
-    --json "$(jq -n --rawfile s "$f" --arg wh "$WH" \
-              '{warehouse_id:$wh, statement:$s, wait_timeout:"50s"}')"
-done
+# The statement-execution API accepts one statement per call. 00_prereqs.md
+# has a ready-to-paste `deploy()` shell function that splits on `;` while
+# respecting string literals. Once defined, deployment is:
+
+deploy databricks/01_setup.sql
+for f in databricks/tools/*.sql; do deploy "$f"; done
 ```
 
 1. **`01_setup.sql`** — creates catalog `nimble_integration`, schemas `tools` + `examples`, and the UC HTTP `CONNECTION nimble_api` bound to the secret.

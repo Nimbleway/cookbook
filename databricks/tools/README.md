@@ -29,11 +29,10 @@ After `../00_prereqs.md` + `../01_setup.sql`, run every file in this folder. Ord
 ```bash
 WH=<your-serverless-warehouse-id>
 
-for f in databricks/tools/*.sql; do
-  databricks api post /api/2.0/sql/statements \
-    --json "$(jq -n --rawfile s "$f" --arg wh "$WH" \
-              '{warehouse_id: $wh, statement: $s, wait_timeout: "50s"}')"
-done
+# Use the `deploy` shell function defined in ../00_prereqs.md, which
+# splits multi-statement files on `;` while respecting string literals
+# (function COMMENTs contain semicolons inside `'...'`).
+for f in databricks/tools/*.sql; do deploy "$f"; done
 ```
 
 ## Registering with Databricks Genie
