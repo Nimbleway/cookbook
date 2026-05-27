@@ -64,7 +64,7 @@ for f in databricks/tools/*.sql; do
 done
 ```
 
-Pass `--profile <name>` if your authenticated Databricks CLI profile isn't `DEFAULT`. See [`helpers/README.md`](helpers/README.md) for details.
+Pass `--profile <name>` only if you have multiple Databricks CLI profiles and want a non-default one. See [`helpers/README.md`](helpers/README.md) for details.
 
 If your workspace uses UC **Default Storage** and the catalog creation in `01_setup.sql` fails with *"Metastore storage root URL does not exist"*, see the comment block in `01_setup.sql` — either create the catalog from the Databricks UI (Catalog Explorer → Create Catalog → Default Storage) or use the explicit `MANAGED LOCATION` form pointed at one of your existing UC external locations (`SHOW EXTERNAL LOCATIONS`).
 
