@@ -13,11 +13,17 @@ databricks/
     README.md                        conventions for adding a new tool
     amazon_serp.sql                  scalar amazon_serp(keyword) RETURNS ARRAY<STRUCT<...>>
     amazon_serp_table.sql            TABLE wrapper required for Databricks Genie
+    nimble_search.sql                scalar nimble_search(query, ...) RETURNS ARRAY<STRUCT<...>>
+    nimble_search_table.sql          TABLE wrapper for the Search API
   examples/
     README.md                        what's in this folder
     amazon_serp_basic.sql            single call, EXPLODE, filter
     amazon_serp_keyword_table.sql    keyword-table-driven loader
     amazon_serp_aggregates.sql       average price, prime ratio, top-N
+    nimble_search_basic.sql          search + focus + deep-mode examples
+  helpers/
+    README.md                        what's in this folder
+    deploy_sql.py                    split multi-statement .sql and POST via the CLI
 ```
 
 Three artifact types, three audiences:
@@ -50,12 +56,14 @@ Each is independently idempotent (`CREATE OR REPLACE` / `IF NOT EXISTS` througho
 ```bash
 WH=<your-serverless-warehouse-id>   # databricks warehouses list
 
-# The statement-execution API accepts one statement per call. 00_prereqs.md
-# has a ready-to-paste `deploy()` shell function that splits on `;` while
-# respecting string literals. Once defined, deployment is:
+# Statement Execution API accepts one statement per call, and our function
+# COMMENTs contain semicolons inside string literals. databricks/helpers/
+# deploy_sql.py splits + posts correctly. See helpers/README.md for detail.
 
-deploy databricks/01_setup.sql
-for f in databricks/tools/*.sql; do deploy "$f"; done
+python3 databricks/helpers/deploy_sql.py --file databricks/01_setup.sql --warehouse "$WH"
+for f in databricks/tools/*.sql; do
+    python3 databricks/helpers/deploy_sql.py --file "$f" --warehouse "$WH"
+done
 ```
 
 1. **`01_setup.sql`** — creates catalog `nimble_integration`, schemas `tools` + `examples`, and the UC HTTP `CONNECTION nimble_api` bound to the secret.

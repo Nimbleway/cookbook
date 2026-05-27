@@ -29,10 +29,11 @@ After `../00_prereqs.md` + `../01_setup.sql`, run every file in this folder. Ord
 ```bash
 WH=<your-serverless-warehouse-id>
 
-# Use the `deploy` shell function defined in ../00_prereqs.md, which
-# splits multi-statement files on `;` while respecting string literals
-# (function COMMENTs contain semicolons inside `'...'`).
-for f in databricks/tools/*.sql; do deploy "$f"; done
+# ../helpers/deploy_sql.py splits + posts a multi-statement SQL file
+# correctly (function COMMENTs contain semicolons inside string literals).
+for f in databricks/tools/*.sql; do
+    python3 databricks/helpers/deploy_sql.py --file "$f" --warehouse "$WH"
+done
 ```
 
 ## Registering with Databricks Genie
