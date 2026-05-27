@@ -4,7 +4,7 @@
  * INSERT statement so that any one query plans for a single literal
  * keyword (one http_request per statement).
  *
- * Prereqs: ../01_setup.sql, ../02_amazon_serp.sql.
+ * Prereqs: ../01_setup.sql, ../tools/amazon_serp.sql.
  */
 
 -- 1. Keywords table (idempotent: keyword set survives re-runs).

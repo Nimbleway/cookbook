@@ -1,4 +1,4 @@
--- Basic amazon_serp patterns. Prereqs: ../01_setup.sql, ../02_amazon_serp.sql.
+-- Basic amazon_serp patterns. Prereqs: ../01_setup.sql, ../tools/amazon_serp.sql.
 
 -- 1. Inspect the raw array result for a single keyword.
 SELECT nimble_integration.tools.amazon_serp('cookies') AS results;

@@ -4,7 +4,7 @@
  *
  * Prereqs:
  *   ../01_setup.sql
- *   ../02_amazon_serp.sql
+ *   ../tools/amazon_serp.sql
  *   amazon_serp_keyword_table.sql (run first, to populate the results)
  */
 
