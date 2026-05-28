@@ -8,9 +8,9 @@ A runnable recipe directory that turns a fresh Snowflake account into a live-web
 snowflake/
   README.md                          ← you are here
   01_setup.sql                       ACCOUNTADMIN: role, db, warehouse, secret, EAI
-  02_nimble_search.sql               NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH proc
-  03_nimble_extract.sql              NIMBLE_INTEGRATION.TOOLS.NIMBLE_EXTRACT proc
-  04_cortex_agent.sql                CREATE AGENT bound to the two procs
+  02_nimble_search.sql               NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH scalar UDF
+  03_nimble_extract.sql              NIMBLE_INTEGRATION.TOOLS.NIMBLE_EXTRACT scalar UDF
+  04_cortex_agent.sql                CREATE AGENT bound to the two UDFs
   recipes/
     cpg_price_monitoring/
       README.md                      how to open the notebook
@@ -44,14 +44,14 @@ Verify with smoke tests:
 USE ROLE NIMBLE_ROLE;
 USE WAREHOUSE NIMBLE_AGENT_WH;
 
--- Should return a populated JSON string of search results
-CALL NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH('AI agents news', 5);
+-- Should return the URL of the top search result for "AI agents news"
+SELECT NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH('AI agents news', 5):results[0]:url::STRING;
 
--- Should return JSON with rendered markdown of the home page
-CALL NIMBLE_INTEGRATION.TOOLS.NIMBLE_EXTRACT('https://nimbleway.com');
+-- Should return the rendered markdown of the home page
+SELECT NIMBLE_INTEGRATION.TOOLS.NIMBLE_EXTRACT('https://nimbleway.com'):markdown::STRING;
 ```
 
-Both should return non-error JSON within ~30 seconds.
+Both should return a non-null result within ~30 seconds.
 
 ## Try the agent
 
@@ -68,9 +68,9 @@ Once the four setup files are deployed, open [`recipes/cpg_price_monitoring/cpg_
 ## Conventions
 
 - All DDL uses `CREATE OR REPLACE` — every script is safely re-runnable.
-- Every Python stored proc sends `X-Client-Source: snowflake-cortex-agent` for Nimble-side telemetry.
-- Procs return `STRING` (containing `json.dumps(...)` output), not `VARIANT`. Callers wrap with `PARSE_JSON(...)` when they need typed access. This matches how Cortex Agents consume tool output.
-- The Nimble API key lives in a Snowflake `SECRET`; no plain-text keys appear in proc bodies.
+- Every Python UDF sends `X-Client-Source: snowflake-cortex-agent` for Nimble-side telemetry.
+- UDFs return `VARIANT` so callers can navigate the JSON response inline with `:field` syntax — composable in SELECT, views, dbt models, and lateral joins. The Cortex Agent in `04_cortex_agent.sql` consumes the same VARIANT via `tool_resources.<name>.type = "function"`.
+- The Nimble API key lives in a Snowflake `SECRET`; no plain-text keys appear in function bodies.
 
 ## Note on target-site terms of service
 
