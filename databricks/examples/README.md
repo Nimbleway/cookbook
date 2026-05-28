@@ -12,6 +12,8 @@ examples/
   amazon_serp_basic.sql           single call, EXPLODE, filter
   amazon_serp_keyword_table.sql   keyword-table-driven loader
   amazon_serp_aggregates.sql      avg price, prime ratio, top-N
+  nimble_search_basic.sql         simple search, focus modes, deep-mode
+  nimble_agent_list_basic.sql     list catalog, filter, include community
 ```
 
 ## Adding examples for new functions

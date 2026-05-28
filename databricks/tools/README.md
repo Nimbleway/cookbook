@@ -6,9 +6,13 @@ UC SQL functions wrapping individual Nimble agents / APIs. Each `.sql` file in h
 
 ```
 tools/
-  amazon_serp.sql         scalar  amazon_serp(keyword) RETURNS ARRAY<STRUCT<...>>
-  amazon_serp_table.sql   TABLE   amazon_serp_table(keyword) RETURNS TABLE(...)
-                                  — required for Databricks Genie tool registration
+  amazon_serp.sql              scalar  amazon_serp(keyword) RETURNS ARRAY<STRUCT<...>>
+  amazon_serp_table.sql        TABLE   amazon_serp_table(keyword) RETURNS TABLE(...)
+                                       — required for Databricks Genie tool registration
+  nimble_search.sql            scalar  nimble_search(query, ...) — Nimble Web Search API
+  nimble_search_table.sql      TABLE   nimble_search_table(query, ...)
+  nimble_agent_list.sql        scalar  nimble_agent_list(...) — catalog of Nimble agents
+  nimble_agent_list_table.sql  TABLE   nimble_agent_list_table(...)
 ```
 
 ## Pattern for adding a new tool

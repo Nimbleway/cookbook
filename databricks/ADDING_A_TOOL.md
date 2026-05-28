@@ -4,7 +4,11 @@ End-to-end recipe for exposing another Nimble agent / API endpoint as a UC SQL f
 
 ## 1. Pick the Nimble endpoint
 
-Start at <https://docs.nimbleway.com/api-reference/introduction>. Each agent / API has its own page with input / output schemas. Useful endpoint families:
+Start at <https://docs.nimbleway.com/api-reference/introduction>. Each agent / API has its own page with input / output schemas.
+
+**Tip — fetch docs as Markdown:** append `.md` to any Nimble docs URL to get the plain-text version (e.g. `https://docs.nimbleway.com/api-reference/agents/list-agents.md`). The HTML pages are JS-rendered and don't work well with `WebFetch`; the `.md` variant returns the raw OpenAPI-derived spec.
+
+Useful endpoint families:
 
 - **Agents** — `POST /v1/agents/run`, with `agent` = `amazon_serp` / `amazon_pdp` / `homedepot_serp` / `linkedin_company_details` / ... See the full list at `GET /v1/agents?managed_by=nimble`.
 - **Search** — `POST /v1/search`.
@@ -163,6 +167,25 @@ SELECT item.* FROM r LATERAL VIEW EXPLODE(items) t AS item;
 ### Catalog creation on UC Default Storage workspaces
 
 Plain `CREATE CATALOG IF NOT EXISTS nimble_integration` fails when the workspace uses UC account-level Default Storage without a metastore-level managed root. The cookbook keeps the simple SQL form as the default because most workspaces work fine with it; see the comment block in `01_setup.sql` for the UI / `MANAGED LOCATION` / REST-API fallbacks.
+
+### GET query params must use the `params` map, not the path
+
+`http_request(method => 'GET', path => '/v1/agents?managed_by=nimble', ...)` returns HTTP 404 — the UC HTTP connection does not parse a query string embedded in `path`. Use the dedicated `params` argument instead:
+
+```sql
+http_request(
+    conn    => 'nimble_api',
+    method  => 'GET',
+    path    => '/v1/agents',
+    params  => map_filter(
+        map('managed_by', managed_by, 'limit', cast(max_results AS STRING)),
+        (k, v) -> v IS NOT NULL
+    ),
+    headers => map('Content-Type', 'application/json')
+)
+```
+
+`map_filter` drops NULL values so optional filters can be omitted by passing NULL. Note that `params` is `MAP<STRING, STRING>` — cast `INT` params explicitly.
 
 ### Statement Execution API: 50s wait cap
 

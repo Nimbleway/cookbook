@@ -29,7 +29,7 @@ Each entry corresponds to a unique sub-agent — see `GET /v1/agents/{name}` for
 | `POST /v1/search`         | General web search                   | shipped | `tools/nimble_search.sql` + `_table`     |
 | `POST /v1/extract`        | Extract structured content from URLs | planned | `tools/nimble_extract.sql` + `_table`    |
 | `POST /v1/crawl`          | Crawl a site / section               | planned | `tools/nimble_crawl.sql` (TBD signature) |
-| `GET  /v1/agents`         | List available Nimble agents         | planned | `tools/nimble_agent_list.sql`            |
+| `GET  /v1/agents`         | List available Nimble agents         | shipped | `tools/nimble_agent_list.sql` + `_table` |
 | `GET  /v1/agents/{name}`  | Describe one agent (input/output)    | planned | `tools/nimble_agent_describe.sql`        |
 
 ## Picking the next addition
