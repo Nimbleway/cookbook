@@ -1,5 +1,5 @@
 /*
- * 01_setup.sql — Nimble × Snowflake Cortex Agents integration
+ * setup/setup.sql — Nimble × Snowflake integration (shared infrastructure)
  *
  * Role:        ACCOUNTADMIN (the rest of the deployment runs as NIMBLE_ROLE)
  * Creates:     NIMBLE_ROLE, NIMBLE_INTEGRATION database + TOOLS/AGENTS schemas,

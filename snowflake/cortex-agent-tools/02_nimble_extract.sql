@@ -1,15 +1,15 @@
 /*
- * 03_nimble_extract.sql — wraps POST https://sdk.nimbleway.com/v1/extract
+ * cortex-agent-tools/02_nimble_extract.sql — wraps POST https://sdk.nimbleway.com/v1/extract
  *
  * Role:        NIMBLE_ROLE
  * Creates:     NIMBLE_INTEGRATION.TOOLS.NIMBLE_EXTRACT(...) RETURNS VARIANT
- * Prereq:      01_setup.sql has run successfully
+ * Prereq:      setup/setup.sql has run successfully
  * Runtime:     ~5 seconds to create; ~3-30s per call depending on driver + render.
  *
  * API reference:  https://docs.nimbleway.com/api-reference/extract/extract
  *
  * Scalar UDF returning VARIANT — composable in SELECT and consumable by the
- * Cortex Agent in 04_cortex_agent.sql via tool_resources.<name>.type = "function".
+ * Cortex Agent in 03_cortex_agent.sql via tool_resources.<name>.type = "function".
  *
  * Signature kept to STRING / BOOLEAN params only. Cortex Agent custom tools
  * cannot accept OBJECT or VARIANT parameters, so the previous proc's `parser`

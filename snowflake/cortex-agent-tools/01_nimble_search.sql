@@ -1,9 +1,9 @@
 /*
- * 02_nimble_search.sql — wraps POST https://sdk.nimbleway.com/v1/search
+ * cortex-agent-tools/01_nimble_search.sql — wraps POST https://sdk.nimbleway.com/v1/search
  *
  * Role:        NIMBLE_ROLE
  * Creates:     NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH(...) RETURNS VARIANT
- * Prereq:      01_setup.sql has run successfully
+ * Prereq:      setup/setup.sql has run successfully
  * Runtime:     ~5 seconds to create; ~1-15s per call depending on focus + search_depth.
  *
  * API reference:  https://docs.nimbleway.com/api-reference/search/search
@@ -11,7 +11,7 @@
  * Scalar UDF returning VARIANT so callers can navigate the JSON response inline
  * with `:field` syntax — no PARSE_JSON or RESULT_SCAN required. Composable in
  * SELECT, views, dbt models, and lateral joins with warehouse data. The Cortex
- * Agent registered in 04_cortex_agent.sql consumes the same VARIANT output via
+ * Agent registered in 03_cortex_agent.sql consumes the same VARIANT output via
  * tool_resources.<name>.type = "function".
  */
 
