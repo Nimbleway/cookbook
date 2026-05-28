@@ -16,7 +16,7 @@ Given a `PRODUCTS` master table, the notebook:
 
 ## Prereqs
 
-- The four scripts in `snowflake/` (`01_setup.sql` → `04_cortex_agent.sql`) have been deployed to your Snowflake account.
+- `../../setup/setup.sql` and the three `cortex-agent-tools/` scripts (`01_nimble_search.sql` → `03_cortex_agent.sql`) have been deployed to your Snowflake account.
 - You have an active Snowpark session as `NIMBLE_ROLE` using `NIMBLE_AGENT_WH` (the notebook sets this in cell 2).
 
 ## Open the notebook

@@ -1,9 +1,10 @@
 /*
- * 04_cortex_agent.sql — registers a Cortex Agent backed by NIMBLE_SEARCH + NIMBLE_EXTRACT
+ * cortex-agent-tools/03_cortex_agent.sql — registers a Cortex Agent backed by NIMBLE_SEARCH + NIMBLE_EXTRACT
  *
  * Role:        NIMBLE_ROLE
  * Creates:     NIMBLE_INTEGRATION.AGENTS.NIMBLE_WEB_RESEARCH_AGENT
- * Prereq:      01–03 deployed; SNOWFLAKE.CORTEX_USER granted to NIMBLE_ROLE.
+ * Prereq:      setup/setup.sql plus 01_nimble_search.sql and 02_nimble_extract.sql in this directory.
+ *              SNOWFLAKE.CORTEX_USER granted to NIMBLE_ROLE.
  * Runtime:     ~3 seconds.
  *
  * Reference:   https://docs.snowflake.com/en/sql-reference/sql/create-agent
