@@ -68,7 +68,7 @@ FROM SPECIFICATION $$
   ],
   "tool_resources": {
     "nimble_search": {
-      "type": "procedure",
+      "type": "function",
       "identifier": "NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH",
       "execution_environment": {
         "type": "warehouse",
@@ -76,7 +76,7 @@ FROM SPECIFICATION $$
       }
     },
     "nimble_extract": {
-      "type": "procedure",
+      "type": "function",
       "identifier": "NIMBLE_INTEGRATION.TOOLS.NIMBLE_EXTRACT",
       "execution_environment": {
         "type": "warehouse",

@@ -2,37 +2,38 @@
  * 02_nimble_search.sql — wraps POST https://sdk.nimbleway.com/v1/search
  *
  * Role:        NIMBLE_ROLE
- * Creates:     NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH(...) RETURNS STRING
+ * Creates:     NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH(...) RETURNS VARIANT
  * Prereq:      01_setup.sql has run successfully
  * Runtime:     ~5 seconds to create; ~1-15s per call depending on focus + search_depth.
  *
  * API reference:  https://docs.nimbleway.com/api-reference/search/search
  *
- * Returns a STRING containing the JSON response body. Callers parse with
- * PARSE_JSON(...) on the Snowflake side. This mirrors how the Cortex Agent
- * registered in 04_cortex_agent.sql consumes tool output.
+ * Scalar UDF returning VARIANT so callers can navigate the JSON response inline
+ * with `:field` syntax — no PARSE_JSON or RESULT_SCAN required. Composable in
+ * SELECT, views, dbt models, and lateral joins with warehouse data. The Cortex
+ * Agent registered in 04_cortex_agent.sql consumes the same VARIANT output via
+ * tool_resources.<name>.type = "function".
  */
 
 USE ROLE NIMBLE_ROLE;
 USE WAREHOUSE NIMBLE_AGENT_WH;
 USE SCHEMA NIMBLE_INTEGRATION.TOOLS;
 
-CREATE OR REPLACE PROCEDURE NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH(
+CREATE OR REPLACE FUNCTION NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH(
     query           STRING,
     max_results     INTEGER DEFAULT 10,
     focus           STRING  DEFAULT NULL,    -- general | news | location | coding | geo | shopping | social | academic
     search_depth    STRING  DEFAULT 'fast',  -- lite | fast | deep
-    include_answer  BOOLEAN DEFAULT FALSE,
     country         STRING  DEFAULT 'US',
     locale          STRING  DEFAULT 'en',
-    include_domains ARRAY   DEFAULT NULL,
-    exclude_domains ARRAY   DEFAULT NULL,
-    time_range      STRING  DEFAULT NULL     -- hour | day | week | month | year
+    time_range      STRING  DEFAULT NULL,    -- hour | day | week | month | year
+    include_domains STRING  DEFAULT NULL,    -- comma-separated, e.g. 'amazon.com,walmart.com'
+    exclude_domains STRING  DEFAULT NULL     -- comma-separated, e.g. 'pinterest.com,quora.com'
 )
-RETURNS STRING
+RETURNS VARIANT
 LANGUAGE PYTHON
 RUNTIME_VERSION = '3.10'
-PACKAGES = ('requests', 'snowflake-snowpark-python')   -- required because handler takes `session` as first arg
+PACKAGES = ('requests')
 EXTERNAL_ACCESS_INTEGRATIONS = (NIMBLE_API_ACCESS)
 SECRETS = ('cred' = NIMBLE_INTEGRATION.TOOLS.NIMBLE_API_KEY)
 HANDLER = 'main'
@@ -40,23 +41,17 @@ AS
 $$
 import _snowflake
 import requests
-import json
 
 NIMBLE_SEARCH_URL = "https://sdk.nimbleway.com/v1/search"
 
-def main(
-    session,
-    query,
-    max_results,
-    focus,
-    search_depth,
-    include_answer,
-    country,
-    locale,
-    include_domains,
-    exclude_domains,
-    time_range,
-):
+def _csv(value):
+    if not value:
+        return None
+    parts = [p.strip() for p in value.split(",") if p.strip()]
+    return parts or None
+
+def main(query, max_results, focus, search_depth, country, locale, time_range,
+         include_domains, exclude_domains):
     token = _snowflake.get_generic_secret_string("cred")
     headers = {
         "Authorization": f"Bearer {token}",
@@ -67,36 +62,28 @@ def main(
         "query": query,
         "max_results": max_results,
         "search_depth": search_depth,
-        "include_answer": include_answer,
         "country": country,
         "locale": locale,
     }
     if focus:
         body["focus"] = focus
-    if include_domains:
-        body["include_domains"] = list(include_domains)
-    if exclude_domains:
-        body["exclude_domains"] = list(exclude_domains)
     if time_range:
         body["time_range"] = time_range
+    include = _csv(include_domains)
+    if include:
+        body["include_domains"] = include
+    exclude = _csv(exclude_domains)
+    if exclude:
+        body["exclude_domains"] = exclude
 
-    try:
-        resp = requests.post(NIMBLE_SEARCH_URL, json=body, headers=headers, timeout=60)
-        resp.raise_for_status()
-        return json.dumps(resp.json())
-    except requests.HTTPError as e:
-        return json.dumps({
-            "error": "http_error",
-            "status_code": e.response.status_code,
-            "body": e.response.text,
-        })
-    except requests.RequestException as e:
-        return json.dumps({"error": "request_failed", "message": str(e)})
+    resp = requests.post(NIMBLE_SEARCH_URL, json=body, headers=headers, timeout=60)
+    resp.raise_for_status()
+    return resp.json()
 $$;
 
-GRANT USAGE ON PROCEDURE NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH(
-    STRING, INTEGER, STRING, STRING, BOOLEAN, STRING, STRING, ARRAY, ARRAY, STRING
+GRANT USAGE ON FUNCTION NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH(
+    STRING, INTEGER, STRING, STRING, STRING, STRING, STRING, STRING, STRING
 ) TO ROLE NIMBLE_ROLE;
 
 -- Smoke test (uncomment to verify after deploy):
--- CALL NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH('AI agents news', 5);
+-- SELECT NIMBLE_INTEGRATION.TOOLS.NIMBLE_SEARCH('AI agents news', 5):results[0]:url::STRING;
