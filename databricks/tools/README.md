@@ -13,6 +13,8 @@ tools/
   nimble_search_table.sql      TABLE   nimble_search_table(query, ...)
   nimble_agent_list.sql        scalar  nimble_agent_list(...) — catalog of Nimble agents
   nimble_agent_list_table.sql  TABLE   nimble_agent_list_table(...)
+  nimble_agent_run.sql         scalar  nimble_agent_run(agent, params_json, ...) — generic agent runner
+  nimble_agent_run_table.sql   TABLE   nimble_agent_run_table(agent, params_json, ...)
 ```
 
 ## Pattern for adding a new tool

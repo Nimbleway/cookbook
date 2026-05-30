@@ -8,6 +8,8 @@ Tool status: **shipped** (`.sql` file present + smoke-tested) · **planned** (in
 
 Live web extraction agents executed via `POST /v1/agents/run`. Full catalog at `GET /v1/agents?managed_by=nimble`. Each agent has its own input/output schema visible at `GET /v1/agents/{name}`.
 
+The generic runner `tools/nimble_agent_run.sql` (+ `_table`) wraps `POST /v1/agents/run` for any agent by name, returning the parsed payload as a raw JSON STRING. Typed wrappers (below) project specific agents into proper SQL types and should be preferred when available.
+
 | Agent              | Domain                | Status   | UC tool                                |
 |--------------------|-----------------------|----------|----------------------------------------|
 | `amazon_serp`      | Amazon search SERP    | shipped  | `tools/amazon_serp.sql` + `_table`     |
@@ -29,6 +31,7 @@ Each entry corresponds to a unique sub-agent — see `GET /v1/agents/{name}` for
 | `POST /v1/search`         | General web search                   | shipped | `tools/nimble_search.sql` + `_table`     |
 | `POST /v1/extract`        | Extract structured content from URLs | planned | `tools/nimble_extract.sql` + `_table`    |
 | `POST /v1/crawl`          | Crawl a site / section               | planned | `tools/nimble_crawl.sql` (TBD signature) |
+| `POST /v1/agents/run`     | Run any Nimble agent (generic)       | shipped | `tools/nimble_agent_run.sql` + `_table`  |
 | `GET  /v1/agents`         | List available Nimble agents         | shipped | `tools/nimble_agent_list.sql` + `_table` |
 | `GET  /v1/agents/{name}`  | Describe one agent (input/output)    | planned | `tools/nimble_agent_describe.sql`        |
 
