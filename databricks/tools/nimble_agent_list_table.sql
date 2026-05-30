@@ -27,12 +27,12 @@
  */
 
 CREATE OR REPLACE FUNCTION nimble_integration.tools.nimble_agent_list_table(
-    privacy     STRING DEFAULT 'all'
-        COMMENT 'Privacy filter: public | private | all. Default `all`.',
+    privacy     STRING DEFAULT 'public'
+        COMMENT 'Privacy filter: public | private | all. Default `public`.',
     managed_by  STRING DEFAULT 'nimble'
         COMMENT 'Filter by who manages the agent: nimble | community | self_managed. Default `nimble` (Nimble-managed catalog). Pass NULL to list every catalog.',
-    max_results INT    DEFAULT 100
-        COMMENT 'Results per page (1-250). Default 100.',
+    max_results INT    DEFAULT 250
+        COMMENT 'Results per page (1-250). Default 250 (API max).',
     page_offset INT    DEFAULT 0
         COMMENT 'Pagination offset (>=0). Default 0. Maps to the API `offset` query param.'
 )
