@@ -33,7 +33,7 @@ Each entry corresponds to a unique sub-agent — see `GET /v1/agents/{name}` for
 | `POST /v1/crawl`          | Crawl a site / section               | planned | `tools/nimble_crawl.sql` (TBD signature) |
 | `POST /v1/agents/run`     | Run any Nimble agent (generic)       | shipped | `tools/nimble_agent_run.sql` + `_table`  |
 | `GET  /v1/agents`         | List available Nimble agents         | shipped | `tools/nimble_agent_list.sql` + `_table` |
-| `GET  /v1/agents/{name}`  | Describe one agent (input/output)    | planned | `tools/nimble_agent_describe.sql`        |
+| `GET  /v1/agents/{name}`  | Describe one agent (input/output)    | shipped | `tools/nimble_agent_describe.sql` + `_table` |
 
 ## Picking the next addition
 

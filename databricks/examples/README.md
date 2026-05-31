@@ -15,6 +15,7 @@ examples/
   nimble_search_basic.sql         simple search, focus modes, deep-mode
   nimble_agent_list_basic.sql     list catalog, filter, include community
   nimble_agent_run_basic.sql      generic agent runner, parse JSON output
+  nimble_agent_describe_basic.sql describe one agent: inputs, outputs, flags
 ```
 
 ## Adding examples for new functions

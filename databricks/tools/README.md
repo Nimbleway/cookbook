@@ -15,6 +15,8 @@ tools/
   nimble_agent_list_table.sql  TABLE   nimble_agent_list_table(...)
   nimble_agent_run.sql         scalar  nimble_agent_run(agent, params_json, ...) — generic agent runner
   nimble_agent_run_table.sql   TABLE   nimble_agent_run_table(agent, params_json, ...)
+  nimble_agent_describe.sql       scalar  nimble_agent_describe(agent) — input + output schema
+  nimble_agent_describe_table.sql TABLE   nimble_agent_describe_table(agent)
 ```
 
 ## Pattern for adding a new tool
