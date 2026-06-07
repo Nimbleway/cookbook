@@ -58,12 +58,22 @@ RETURN (
             method  => 'POST',
             path    => '/v1/search',
             headers => map('Content-Type', 'application/json'),
-            json    => to_json(named_struct(
-                'query',        query,
-                'max_results',  max_results,
-                'focus',        focus,
-                'search_depth', search_depth
-            ))
+            /*
+             * `ignoreNullFields=true` drops keys whose values are NULL so
+             * the request body omits the key entirely (e.g. {"query":..,
+             * "max_results":..}) instead of sending {"focus": null}.
+             * Lets the API's enum validation see a missing key rather
+             * than an explicit null, which is the safer wire shape.
+             */
+            json    => to_json(
+                named_struct(
+                    'query',        query,
+                    'max_results',  max_results,
+                    'focus',        focus,
+                    'search_depth', search_depth
+                ),
+                map('ignoreNullFields', 'true')
+            )
         ) AS response
     )
 );
