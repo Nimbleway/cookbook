@@ -167,7 +167,7 @@ RETURN (
 );
 ```
 
-Batch callers who want to keep the loud failure local to a single bad row can wrap the call in `try(...)` at the call site (`SELECT try(my_tool(k)) FROM kw`), which catches the raised error per row and returns NULL.
+Batch tolerance: Spark SQL has no generic `try(expr)` wrapper that catches `raise_error` (the `try_*` family is per-op: `try_cast`, `try_divide`, etc.). If you need a failed call on one input not to kill the whole job, drive the loop **outside** SQL with one statement per input (see the multi-row Delta limitation below) — each statement's failure is then isolated by `helpers/deploy_sql.py` or your driver, and the rest of the rows still load.
 
 Empirically verified on 2026-05-31: `nimble_agent_describe('nonexistent_agent_xyz')` produced `[USER_RAISED_EXCEPTION] Nimble GET /v1/agents/nonexistent_agent_xyz failed with status 404: ...` instead of returning NULL fields. Same gate applies to the four other scalars.
 
