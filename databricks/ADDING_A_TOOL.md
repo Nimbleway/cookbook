@@ -65,8 +65,14 @@ RETURN (
             conn    => 'nimble_api',
             method  => 'POST',
             path    => '/v1/<endpoint>',
-            headers => map('Content-Type', 'application/json'),
-            json    => to_json(named_struct('arg1', arg1, 'arg2', arg2))
+            headers => map(
+                'Content-Type',    'application/json',
+                'X-Client-Source', 'nimble-dbx-udf'
+            ),
+            json    => to_json(
+                named_struct('arg1', arg1, 'arg2', arg2),
+                map('ignoreNullFields', 'true')
+            )
         ) AS response
     )
 );
@@ -75,7 +81,8 @@ RETURN (
 Notes:
 
 - The `from_json` schema uses **all-STRING** fields; the outer `transform()` does the `try_cast` to your declared return types. This is because Nimble returns numeric / boolean as strings.
-- `to_json(named_struct(...))` happily serializes `NULL` values as JSON `null`. Most Nimble endpoints treat that as "use server default", so optional params can be `DEFAULT NULL` without a conditional struct builder.
+- `to_json(named_struct(...), map('ignoreNullFields', 'true'))` drops NULL keys from the request body so optional params with `DEFAULT NULL` become missing keys instead of explicit `null` values. Safer if the endpoint validates an enum strictly.
+- Every tool sends `X-Client-Source: nimble-dbx-udf` (mirrors the Snowflake recipe's `X-Client-Source: snowflake-cortex-agent`) for Nimble-side telemetry / client attribution.
 - Stay aligned with the `nimble_api` HTTP CONNECTION already declared in `01_setup.sql` — every tool should use it; never embed bearer tokens in the function body.
 
 ## 4. Create the Genie-callable TABLE wrapper

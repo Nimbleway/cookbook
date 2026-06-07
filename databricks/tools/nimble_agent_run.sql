@@ -81,7 +81,10 @@ RETURN (
             conn    => 'nimble_api',
             method  => 'POST',
             path    => '/v1/agents/run',
-            headers => map('Content-Type', 'application/json'),
+            headers => map(
+                'Content-Type',    'application/json',
+                'X-Client-Source', 'nimble-dbx-udf'
+            ),
             /*
              * Build the body via named_struct + parse_json so VARIANT
              * carries `params` as actual JSON (different agents have

@@ -57,7 +57,10 @@ RETURN (
             conn    => 'nimble_api',
             method  => 'POST',
             path    => '/v1/search',
-            headers => map('Content-Type', 'application/json'),
+            headers => map(
+                'Content-Type',    'application/json',
+                'X-Client-Source', 'nimble-dbx-udf'
+            ),
             /*
              * `ignoreNullFields=true` drops keys whose values are NULL so
              * the request body omits the key entirely (e.g. {"query":..,

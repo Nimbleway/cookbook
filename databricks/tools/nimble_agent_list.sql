@@ -100,7 +100,10 @@ RETURN (
                 ),
                 (k, v) -> v IS NOT NULL
             ),
-            headers => map('Content-Type', 'application/json')
+            headers => map(
+                'Content-Type',    'application/json',
+                'X-Client-Source', 'nimble-dbx-udf'
+            )
         ) AS response
     )
 );

@@ -125,7 +125,10 @@ RETURN (
                 conn    => 'nimble_api',
                 method  => 'GET',
                 path    => concat('/v1/agents/', agent),
-                headers => map('Content-Type', 'application/json')
+                headers => map(
+                    'Content-Type',    'application/json',
+                    'X-Client-Source', 'nimble-dbx-udf'
+                )
             ) AS response
         )
     )

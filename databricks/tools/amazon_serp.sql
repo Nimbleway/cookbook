@@ -84,7 +84,10 @@ RETURN (
             conn    => 'nimble_api',
             method  => 'POST',
             path    => '/v1/agents/run',
-            headers => map('Content-Type', 'application/json'),
+            headers => map(
+                'Content-Type',    'application/json',
+                'X-Client-Source', 'nimble-dbx-udf'
+            ),
             json    => to_json(named_struct(
                 'agent',  'amazon_serp',
                 'params', named_struct('keyword', keyword, 'page', 1)
