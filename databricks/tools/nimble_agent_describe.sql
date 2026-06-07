@@ -60,39 +60,51 @@ RETURN (
      * endpoint, but we parse via the all-STRING + try_cast pattern in
      * input_properties — Nimble agents historically ship those fields
      * as strings.
+     *
+     * http_request() does NOT raise on non-2xx — gate on a 2xx
+     * status_code and raise_error otherwise so a missing agent (404) or
+     * other API error surfaces as a real query error.
      */
-    SELECT named_struct(
-        'name',                      env.name,
-        'display_name',              env.display_name,
-        'description',               env.description,
-        'vertical',                  env.vertical,
-        'entity_type',               env.entity_type,
-        'domain',                    env.domain,
-        'managed_by',                env.managed_by,
-        'is_public',                 try_cast(env.is_public AS BOOLEAN),
-        'is_localization_supported', try_cast(env.feature_flags.is_localization_supported AS BOOLEAN),
-        'is_pagination_supported',   try_cast(env.feature_flags.is_pagination_supported   AS BOOLEAN),
-        'input_properties', coalesce(
-            transform(
-                env.input_properties,
-                p -> named_struct(
-                    'name',                  p.name,
-                    'required',              try_cast(p.required AS BOOLEAN),
-                    'type',                  p.type,
-                    'description',           p.description,
-                    'is_localization_param', try_cast(p.is_localization_param AS BOOLEAN),
-                    'is_pagination_param',   try_cast(p.is_pagination_param   AS BOOLEAN),
-                    'default',               p.`default`,
-                    'examples',              p.examples
-                )
-            ),
-            ARRAY()
-        ),
-        'output_schema_json', get_json_object(raw_text, '$.output_schema')
-    )
+    SELECT CASE
+        WHEN status_code BETWEEN 200 AND 299 THEN
+            named_struct(
+                'name',                      env.name,
+                'display_name',              env.display_name,
+                'description',               env.description,
+                'vertical',                  env.vertical,
+                'entity_type',               env.entity_type,
+                'domain',                    env.domain,
+                'managed_by',                env.managed_by,
+                'is_public',                 try_cast(env.is_public AS BOOLEAN),
+                'is_localization_supported', try_cast(env.feature_flags.is_localization_supported AS BOOLEAN),
+                'is_pagination_supported',   try_cast(env.feature_flags.is_pagination_supported   AS BOOLEAN),
+                'input_properties', coalesce(
+                    transform(
+                        env.input_properties,
+                        p -> named_struct(
+                            'name',                  p.name,
+                            'required',              try_cast(p.required AS BOOLEAN),
+                            'type',                  p.type,
+                            'description',           p.description,
+                            'is_localization_param', try_cast(p.is_localization_param AS BOOLEAN),
+                            'is_pagination_param',   try_cast(p.is_pagination_param   AS BOOLEAN),
+                            'default',               p.`default`,
+                            'examples',              p.examples
+                        )
+                    ),
+                    ARRAY()
+                ),
+                'output_schema_json', get_json_object(raw_text, '$.output_schema')
+            )
+        ELSE raise_error(concat(
+            'Nimble GET /v1/agents/', agent, ' failed with status ',
+            cast(status_code AS STRING), ': ', raw_text
+        ))
+    END
     FROM (
         SELECT
-            response.text AS raw_text,
+            response.status_code AS status_code,
+            response.text        AS raw_text,
             from_json(
                 response.text,
                 'STRUCT<

@@ -64,18 +64,31 @@ RETURN (
      * with the right per-agent schema. `try_cast` guards the numeric
      * envelope fields (they come through as JSON strings under spark's
      * get_json_object).
+     *
+     * Note: `status_code` here is the HTTP status the TARGET site
+     * returned (per the Nimble response envelope), not the Nimble API
+     * status — that's `response.status_code` from http_request itself,
+     * which we gate on below to surface Nimble-side 4xx/5xx as real
+     * query errors.
      */
-    SELECT named_struct(
-        'status',            get_json_object(response.text, '$.status'),
-        'status_code',       try_cast(get_json_object(response.text, '$.status_code')           AS INT),
-        'task_id',           get_json_object(response.text, '$.task_id'),
-        'url',               get_json_object(response.text, '$.url'),
-        'parsing_json',      get_json_object(response.text, '$.data.parsing'),
-        'query_time',        get_json_object(response.text, '$.metadata.query_time'),
-        'driver',            get_json_object(response.text, '$.metadata.driver'),
-        'query_duration_ms', try_cast(get_json_object(response.text, '$.metadata.query_duration') AS INT),
-        'warnings',          from_json(coalesce(get_json_object(response.text, '$.warnings'), '[]'), 'ARRAY<STRING>')
-    )
+    SELECT CASE
+        WHEN response.status_code BETWEEN 200 AND 299 THEN
+            named_struct(
+                'status',            get_json_object(response.text, '$.status'),
+                'status_code',       try_cast(get_json_object(response.text, '$.status_code')           AS INT),
+                'task_id',           get_json_object(response.text, '$.task_id'),
+                'url',               get_json_object(response.text, '$.url'),
+                'parsing_json',      get_json_object(response.text, '$.data.parsing'),
+                'query_time',        get_json_object(response.text, '$.metadata.query_time'),
+                'driver',            get_json_object(response.text, '$.metadata.driver'),
+                'query_duration_ms', try_cast(get_json_object(response.text, '$.metadata.query_duration') AS INT),
+                'warnings',          from_json(coalesce(get_json_object(response.text, '$.warnings'), '[]'), 'ARRAY<STRING>')
+            )
+        ELSE raise_error(concat(
+            'Nimble /v1/agents/run failed with status ',
+            cast(response.status_code AS STRING), ': ', response.text
+        ))
+    END
     FROM (
         SELECT http_request(
             conn    => 'nimble_api',

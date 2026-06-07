@@ -44,14 +44,22 @@ COMMENT 'Live web search via the Nimble Search API. Returns a list of relevant p
 RETURN (
     -- The Search API responds with a JSON object. We extract the `results`
     -- array; each item has title, description, url, and (when search_depth
-    -- is fast/deep) content.
-    SELECT COALESCE(
-        from_json(
-            response.text,
-            'STRUCT<results: ARRAY<STRUCT<title STRING, description STRING, url STRING, content STRING>>>'
-        ).results,
-        ARRAY()
-    )
+    -- is fast/deep) content. http_request() does NOT raise on non-2xx —
+    -- gate on a 2xx status and raise_error otherwise.
+    SELECT CASE
+        WHEN response.status_code BETWEEN 200 AND 299 THEN
+            COALESCE(
+                from_json(
+                    response.text,
+                    'STRUCT<results: ARRAY<STRUCT<title STRING, description STRING, url STRING, content STRING>>>'
+                ).results,
+                ARRAY()
+            )
+        ELSE raise_error(concat(
+            'Nimble /v1/search failed with status ',
+            cast(response.status_code AS STRING), ': ', response.text
+        ))
+    END
     FROM (
         SELECT http_request(
             conn    => 'nimble_api',

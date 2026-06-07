@@ -144,11 +144,11 @@ If the test errors with HTTP 422 / validation, check the message — Nimble vali
 
 These show up while wiring new tools; remember them rather than rediscovering each time. The cookbook chose option (a) for every tool so far; (b) is a real alternative when (a) is the wrong fit.
 
-### `http_request()` returns non-2xx silently — the function body must guard
+### `http_request()` returns non-2xx silently — gate every tool on `status_code`
 
-`http_request()` does NOT raise on non-2xx HTTP responses. It returns the status code in `response.status_code` and packs the Databricks-formatted error string into `response.text`. When the cookbook's tools then call `from_json(response.text, '<our schema>')` on that error string, parsing fails, returns NULL, and the outer `COALESCE(..., ARRAY())` turns it into an empty array — so a failed Nimble call surfaces as a "no results" outcome instead of a query error.
+`http_request()` does NOT raise on non-2xx HTTP responses. It returns the status code in `response.status_code` and the (Databricks-wrapped) error body in `response.text`. Without a gate, `from_json(response.text, '<our schema>')` parses the error string, returns NULL, and the outer `COALESCE(..., ARRAY())` turns it into an empty array — so a failed Nimble call surfaces as a "no results" outcome instead of a query error.
 
-Every scalar tool in `tools/*.sql` currently has this gap (accepted as a TODO). The recommended pattern when fixing — or when writing a new tool that needs strict failure surfacing — is to gate `from_json` on a 2xx `status_code` and `raise_error` otherwise:
+Every scalar in `tools/*.sql` now gates on a 2xx `status_code` and `raise_error`s otherwise. Mirror this in new tools:
 
 ```sql
 RETURN (
@@ -159,15 +159,17 @@ RETURN (
                 ARRAY()
             )
         ELSE raise_error(concat(
-            'Nimble /v1/<endpoint> failed (',
-            response.status_code, '): ', response.text
+            'Nimble /v1/<endpoint> failed with status ',
+            cast(response.status_code AS STRING), ': ', response.text
         ))
     END
     FROM (SELECT http_request(...) AS response)
 );
 ```
 
-Empirically verified on 2026-05-28: `/v1/agents/run` returning 422 came back with `status_code=422` and the formatted error in `.text` — no exception, no Spark-level failure.
+Batch callers who want to keep the loud failure local to a single bad row can wrap the call in `try(...)` at the call site (`SELECT try(my_tool(k)) FROM kw`), which catches the raised error per row and returns NULL.
+
+Empirically verified on 2026-05-31: `nimble_agent_describe('nonexistent_agent_xyz')` produced `[USER_RAISED_EXCEPTION] Nimble GET /v1/agents/nonexistent_agent_xyz failed with status 404: ...` instead of returning NULL fields. Same gate applies to the four other scalars.
 
 ### `http_request()` "Can not start an object" error on multi-row Delta sources
 

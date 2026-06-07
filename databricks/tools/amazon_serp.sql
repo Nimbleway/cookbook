@@ -40,45 +40,57 @@ RETURN (
      * "sponsored":"true"). We parse with an all-STRING from_json schema
      * and try_cast into the declared numeric / boolean return types so
      * callers see proper SQL types.
+     *
+     * http_request() does NOT raise on non-2xx — it returns the status
+     * code in response.status_code and the error body in response.text.
+     * Gate on a 2xx status, raise_error otherwise, so a failed Nimble
+     * call surfaces as a real query error instead of an empty array.
      */
-    SELECT COALESCE(
-        transform(
-            from_json(
-                response.text,
-                'STRUCT<data: STRUCT<parsing: ARRAY<STRUCT<
-                    product_name STRING,
-                    asin STRING,
-                    price STRING,
-                    currency STRING,
-                    rating STRING,
-                    product_url STRING,
-                    image_url STRING,
-                    prime_eligible STRING,
-                    amazons_choice STRING,
-                    sponsored STRING,
-                    store_location STRING,
-                    position STRING,
-                    agent_zip_code STRING
-                >>>>'
-            ).data.parsing,
-            x -> named_struct(
-                'product_name',   x.product_name,
-                'asin',           x.asin,
-                'price',          try_cast(x.price          AS DOUBLE),
-                'currency',       x.currency,
-                'rating',         try_cast(x.rating         AS DOUBLE),
-                'product_url',    x.product_url,
-                'image_url',      x.image_url,
-                'prime_eligible', try_cast(x.prime_eligible AS BOOLEAN),
-                'amazons_choice', try_cast(x.amazons_choice AS BOOLEAN),
-                'sponsored',      try_cast(x.sponsored      AS BOOLEAN),
-                'store_location', x.store_location,
-                'position',       try_cast(x.position       AS INT),
-                'agent_zip_code', x.agent_zip_code
+    SELECT CASE
+        WHEN response.status_code BETWEEN 200 AND 299 THEN
+            COALESCE(
+                transform(
+                    from_json(
+                        response.text,
+                        'STRUCT<data: STRUCT<parsing: ARRAY<STRUCT<
+                            product_name STRING,
+                            asin STRING,
+                            price STRING,
+                            currency STRING,
+                            rating STRING,
+                            product_url STRING,
+                            image_url STRING,
+                            prime_eligible STRING,
+                            amazons_choice STRING,
+                            sponsored STRING,
+                            store_location STRING,
+                            position STRING,
+                            agent_zip_code STRING
+                        >>>>'
+                    ).data.parsing,
+                    x -> named_struct(
+                        'product_name',   x.product_name,
+                        'asin',           x.asin,
+                        'price',          try_cast(x.price          AS DOUBLE),
+                        'currency',       x.currency,
+                        'rating',         try_cast(x.rating         AS DOUBLE),
+                        'product_url',    x.product_url,
+                        'image_url',      x.image_url,
+                        'prime_eligible', try_cast(x.prime_eligible AS BOOLEAN),
+                        'amazons_choice', try_cast(x.amazons_choice AS BOOLEAN),
+                        'sponsored',      try_cast(x.sponsored      AS BOOLEAN),
+                        'store_location', x.store_location,
+                        'position',       try_cast(x.position       AS INT),
+                        'agent_zip_code', x.agent_zip_code
+                    )
+                ),
+                ARRAY()
             )
-        ),
-        ARRAY()
-    )
+        ELSE raise_error(concat(
+            'Nimble /v1/agents/run (amazon_serp) failed with status ',
+            cast(response.status_code AS STRING), ': ', response.text
+        ))
+    END
     FROM (
         SELECT http_request(
             conn    => 'nimble_api',

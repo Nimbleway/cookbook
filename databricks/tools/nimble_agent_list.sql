@@ -51,34 +51,43 @@ RETURNS ARRAY<STRUCT<
 >>
 COMMENT 'Lists the Nimble agents available to the caller. Each entry describes one agent (name, display name, description, vertical, target entity / domain, managed_by, is_public). Useful to discover what `agent` names can be passed to /v1/agents/run, or to enumerate the catalog for a Genie space.'
 RETURN (
-    SELECT COALESCE(
-        transform(
-            from_json(
-                response.text,
-                'ARRAY<STRUCT<
-                    name STRING,
-                    is_public STRING,
-                    display_name STRING,
-                    description STRING,
-                    vertical STRING,
-                    entity_type STRING,
-                    domain STRING,
-                    managed_by STRING
-                >>'
-            ),
-            x -> named_struct(
-                'name',         x.name,
-                'display_name', x.display_name,
-                'description',  x.description,
-                'vertical',     x.vertical,
-                'entity_type',  x.entity_type,
-                'domain',       x.domain,
-                'managed_by',   x.managed_by,
-                'is_public',    try_cast(x.is_public AS BOOLEAN)
+    -- http_request() does NOT raise on non-2xx — gate on a 2xx status
+    -- and raise_error otherwise so callers see a real error.
+    SELECT CASE
+        WHEN response.status_code BETWEEN 200 AND 299 THEN
+            COALESCE(
+                transform(
+                    from_json(
+                        response.text,
+                        'ARRAY<STRUCT<
+                            name STRING,
+                            is_public STRING,
+                            display_name STRING,
+                            description STRING,
+                            vertical STRING,
+                            entity_type STRING,
+                            domain STRING,
+                            managed_by STRING
+                        >>'
+                    ),
+                    x -> named_struct(
+                        'name',         x.name,
+                        'display_name', x.display_name,
+                        'description',  x.description,
+                        'vertical',     x.vertical,
+                        'entity_type',  x.entity_type,
+                        'domain',       x.domain,
+                        'managed_by',   x.managed_by,
+                        'is_public',    try_cast(x.is_public AS BOOLEAN)
+                    )
+                ),
+                ARRAY()
             )
-        ),
-        ARRAY()
-    )
+        ELSE raise_error(concat(
+            'Nimble GET /v1/agents failed with status ',
+            cast(response.status_code AS STRING), ': ', response.text
+        ))
+    END
     FROM (
         SELECT http_request(
             conn    => 'nimble_api',
