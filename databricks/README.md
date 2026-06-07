@@ -9,21 +9,35 @@ databricks/
   README.md                          ← you are here
   00_prereqs.md                      one-time CLI setup: secret scope + ACL
   01_setup.sql                       catalog, schemas, UC HTTP CONNECTION
+  NIMBLE_ENDPOINTS.md                map of Nimble API endpoints -> UC tools
+  ADDING_A_TOOL.md                   walkthrough for wrapping a new endpoint
   tools/                             one SQL file per UC function — installable as-is
     README.md                        conventions for adding a new tool
     amazon_serp.sql                  scalar amazon_serp(keyword) RETURNS ARRAY<STRUCT<...>>
     amazon_serp_table.sql            TABLE wrapper required for Databricks Genie
-    nimble_search.sql                scalar nimble_search(query, ...) RETURNS ARRAY<STRUCT<...>>
+    nimble_search.sql                scalar nimble_search(query, ...) — Web Search API
     nimble_search_table.sql          TABLE wrapper for the Search API
+    nimble_agent_list.sql            scalar nimble_agent_list(...) — agent catalog
+    nimble_agent_list_table.sql      TABLE wrapper for the agent catalog
+    nimble_agent_describe.sql        scalar nimble_agent_describe(agent) — input/output schema
+    nimble_agent_describe_table.sql  TABLE wrapper for agent introspection
+    nimble_agent_run.sql             scalar nimble_agent_run(agent, params_json, ...) — generic runner
+    nimble_agent_run_table.sql       TABLE wrapper for the generic runner
   examples/
     README.md                        what's in this folder
     amazon_serp_basic.sql            single call, EXPLODE, filter
     amazon_serp_keyword_table.sql    keyword-table-driven loader
     amazon_serp_aggregates.sql       average price, prime ratio, top-N
     nimble_search_basic.sql          search + focus + deep-mode examples
+    nimble_agent_list_basic.sql      list catalog, filter, include community
+    nimble_agent_describe_basic.sql  describe an agent's inputs / outputs / flags
+    nimble_agent_run_basic.sql       generic agent runner, parse JSON output
   helpers/
     README.md                        what's in this folder
     deploy_sql.py                    split multi-statement .sql and POST via the CLI
+    create_genie_space.py            build a v2 serialized_space and create a Genie
+                                     space via /api/2.0/genie/spaces
+    nimble_genie_instructions.md     canonical system-prompt for the Nimble Genie space
 ```
 
 Three artifact types, three audiences:
@@ -92,9 +106,7 @@ Quick summary:
 3. Add a sibling file under `examples/` with 2–3 queries demonstrating the new function.
 4. That's it — no folder reshuffles, no shared boilerplate to update.
 
-Planned next additions:
-- `tools/nimble_web_search.sql` + `tools/nimble_web_search_table.sql` — wraps `POST /v1/search` for general / news / shopping / academic search.
-- `tools/nimble_agent_list.sql` — wraps `GET /v1/agents` so callers can introspect available agents.
+See [`NIMBLE_ENDPOINTS.md`](NIMBLE_ENDPOINTS.md) for the live map of which Nimble endpoints have shipped UC wrappers and which are still planned.
 
 ## Conventions
 
@@ -112,6 +124,26 @@ Once `amazon_serp_table` exists, register it as a tool in any [Databricks Genie 
 > *"What are the top-rated wireless headphones on Amazon under $100? Show me 10."*
 
 The agent will call `amazon_serp('wireless headphones')`, flatten the array, filter, and answer.
+
+### Create the Genie space programmatically
+
+The public `POST /api/2.0/genie/spaces` endpoint requires a stringified `serialized_space` whose schema isn't documented externally. `helpers/create_genie_space.py` builds a minimal valid v2 payload from a list of `_table` functions and a markdown instructions file:
+
+```bash
+WH=<your-serverless-warehouse-id>
+python3 databricks/helpers/create_genie_space.py \
+    --title "Nimble Web Data" \
+    --warehouse "$WH" \
+    --parent-path "/Users/you@example.com" \
+    --instructions-file databricks/helpers/nimble_genie_instructions.md \
+    --function nimble_integration.tools.nimble_agent_list_table \
+    --function nimble_integration.tools.nimble_agent_describe_table \
+    --function nimble_integration.tools.nimble_agent_run_table \
+    --function nimble_integration.tools.nimble_search_table \
+    --function nimble_integration.tools.amazon_serp_table
+```
+
+See [`helpers/README.md`](helpers/README.md) for the inspect / export trick (`databricks api patch /api/2.0/genie/spaces/<id> --json '{}'` returns the full `serialized_space` + an `etag`).
 
 ## Note on target-site terms of service
 

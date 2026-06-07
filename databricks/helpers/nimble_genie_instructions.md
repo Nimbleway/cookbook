@@ -4,7 +4,7 @@ This workspace provides Nimble's web scraping capabilities through SQL functions
 
 #### Discovering Functions
 
-**Always check function details first\:**
+**Always check function details first:**
 
     DESCRIBE FUNCTION EXTENDED function_name
 
@@ -19,7 +19,7 @@ This shows:
 
     SELECT * FROM nimble_integration.tools.nimble_agent_list_table()
 
-Returns 78+ agents covering e-commerce (Amazon, Walmart, Target, Best Buy), Google Maps, LinkedIn, etc.
+Returns the full Nimble catalog (dozens of agents) covering e-commerce (Amazon, Walmart, Target, Best Buy), Google Maps, LinkedIn, etc.
 
 **2. Get Agent Details**
 
@@ -29,7 +29,7 @@ Returns input parameters and output schema for a specific agent.
 
 **3. Run Any Agent**
 
-    SELECT * FROM nimble_integration.tools.nimble_agent_run_table('agent_name', '{"param"\:"value"}', FALSE)
+    SELECT * FROM nimble_integration.tools.nimble_agent_run_table('agent_name', '{"param":"value"}', FALSE)
 
 Parameters: agent name, params as JSON string, optional localization boolean.
 Returns: `status`, `url`, `parsing_json` (contains results as JSON), `query_time`, etc.
@@ -60,9 +60,9 @@ Results from `nimble_agent_run_table()` are in `parsing_json` as `{"entities": {
 
     WITH parsed AS (
       SELECT get_json_object(`parsing_json`, '$.entities.SearchResult') as results
-      FROM nimble_integration.tools.nimble_agent_run_table('agent_name', '{"param"\:"value"}')
+      FROM nimble_integration.tools.nimble_agent_run_table('agent_name', '{"param":"value"}')
     )
-    SELECT from_json(results, 'array<struct<field1\:string, field2\:string>>') as data
+    SELECT from_json(results, 'array<struct<field1:string, field2:string>>') as data
     FROM parsed
 
 Use `LATERAL VIEW explode()` to flatten arrays.

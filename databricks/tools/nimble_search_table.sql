@@ -53,7 +53,7 @@ questions this answers:
 "What are the top news stories about AI agent frameworks this week?",
 "Find recent academic papers about retrieval-augmented generation.",
 "Show me product pages selling stand-up desks under $400.",
-"What are people saying on social media about Nike''s latest launch?",
+"What are people saying on social media about a new running-shoe launch?",
 "Give me the 5 most relevant articles on Snowflake Cortex Agents."'
 RETURN (
     WITH raw AS (

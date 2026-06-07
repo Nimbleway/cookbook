@@ -41,10 +41,9 @@ from typing import List
 
 
 def strip_comments(text: str) -> str:
-    """Remove /* ... */ block comments and -- line comments, but leave
-    string literals untouched (the SQL function COMMENT strings can
-    legitimately contain `--`)."""
-    text = re.sub(r"/\*.*?\*/", "", text, flags=re.DOTALL)
+    """Remove `/* ... */` block comments and `-- ...` line comments, but
+    leave string literals untouched (function COMMENT strings can
+    legitimately contain `--` or `/* */`)."""
     out: List[str] = []
     in_str = False
     i = 0
@@ -58,13 +57,23 @@ def strip_comments(text: str) -> str:
                 continue
             in_str = not in_str
             out.append(c)
-        elif not in_str and c == "-" and i + 1 < len(text) and text[i + 1] == "-":
-            # Skip to end of line.
+            i += 1
+            continue
+        if not in_str and c == "-" and i + 1 < len(text) and text[i + 1] == "-":
+            # Line comment — skip to end of line (newline itself is kept
+            # implicitly by falling through to the next loop iteration).
             while i < len(text) and text[i] != "\n":
                 i += 1
             continue
-        else:
-            out.append(c)
+        if not in_str and c == "/" and i + 1 < len(text) and text[i + 1] == "*":
+            # Block comment — skip until matching `*/`. Unterminated comments
+            # eat the rest of the file, same as Spark's parser.
+            i += 2
+            while i + 1 < len(text) and not (text[i] == "*" and text[i + 1] == "/"):
+                i += 1
+            i += 2  # past the closing `*/`
+            continue
+        out.append(c)
         i += 1
     return "".join(out)
 

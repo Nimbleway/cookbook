@@ -48,7 +48,7 @@ COMMENT 'Generic Nimble agent runner: executes any Nimble agent by name and retu
 Use this function when the user wants to call an agent for which there is NO typed wrapper (e.g. anything outside amazon_serp / nimble_search). For agents with a typed wrapper, prefer the typed wrapper since it returns proper SQL types instead of JSON strings.
 The `parsing_json` column holds whatever the agent extracted — shape depends on the agent and must be parsed by the caller with from_json(). Discover agent names + their input schemas via nimble_agent_list_table().
 Example questions this answers:
-"Run the linkedin_company_details agent for nimbleway and return the raw JSON.",
+"Run the linkedin_company_details agent for acme-corp and return the raw JSON.",
 "Call the homedepot_pdp agent for this product URL.",
 "Execute agent X with these params and show me the parsed output."'
 RETURN (
