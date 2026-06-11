@@ -1,226 +1,141 @@
 # Adding a new Nimble tool
 
-End-to-end recipe for exposing another Nimble agent / API endpoint as a UC SQL function in this directory. Follow the same structure for every new tool so users and LLM agents see a consistent surface.
+End-to-end recipe for exposing another Nimble API endpoint / agent as a UC **table function** in this directory. Every tool follows the same UDTF shape so users and LLM agents see a consistent surface.
 
 ## 1. Pick the Nimble endpoint
 
-Start at <https://docs.nimbleway.com/api-reference/introduction>. Each agent / API has its own page with input / output schemas.
+Start at <https://docs.nimbleway.com/api-reference/introduction>. Each API / agent has its own page with input / output schemas.
 
-**Tip — fetch docs as Markdown:** append `.md` to any Nimble docs URL to get the plain-text version (e.g. `https://docs.nimbleway.com/api-reference/agents/list-agents.md`). The HTML pages are JS-rendered and don't work well with `WebFetch`; the `.md` variant returns the raw OpenAPI-derived spec.
+**Tip — fetch docs as Markdown:** append `.md` to any Nimble docs URL (e.g. `.../api-reference/agents/list-agents.md`) for the plain-text spec; the HTML pages are JS-rendered and don't read well via `WebFetch`.
 
 Useful endpoint families:
 
-- **Agents** — `POST /v1/agents/run`, with `agent` = `amazon_serp` / `amazon_pdp` / `homedepot_serp` / `linkedin_company_details` / ... See the full list at `GET /v1/agents?managed_by=nimble`.
 - **Search** — `POST /v1/search`.
 - **Extract** — `POST /v1/extract`.
 - **Crawl** — `POST /v1/crawl`.
-- **Batches** — `POST /v1/agents/batch` + `GET /v1/batches/{id}` + `GET /v1/batches/{id}/progress`.
+- **Agents** — `POST /v1/agents/run` (run by name), `GET /v1/agents` (catalog).
 
-Pick something with a clear input/output and a real Genie / dashboard use case.
+## 2. Decide the table shape
 
-## 2. Extract input and output schema
+A tool is a table function: pick the columns each call should `yield`.
 
-For an agent: `GET /v1/agents/<agent_name>` returns the full schema. `input_properties[]` lists params with type / required / examples; `output_schema` maps each result field.
+- Write down required + optional inputs, allowed values, and cross-param constraints (e.g. Nimble's `search_depth=fast` only works with `focus=general`).
+- Pick the output columns and SQL types. One result → one row (e.g. extract a page); a list → one row per item (e.g. search results, agent catalog).
+- Nimble agents often ship numeric / boolean fields as JSON **strings**; coerce them in Python (`int(...)`, a small `as_bool` helper) before yielding into typed columns.
 
-For the Search / Extract / Crawl APIs: docs site has the request and response shapes inline.
+## 3. Write the Python UDTF (`_<name>`)
 
-Write down for the new tool:
+Model it after `tools/nimble_search.sql`. The internal function does the HTTP call and yields rows. Key UDTF rules (all enforced by the platform):
 
-- Function name (lowercase snake_case, matches the endpoint where possible: `nimble_search`, `nimble_extract`, `amazon_pdp`).
-- Required inputs + per-input description + allowed values + cross-param constraints (e.g. Nimble's `search_depth=fast` only works with `focus=general`).
-- Output fields + SQL types you want callers to see. Note that Nimble agents ship numeric / boolean fields as JSON **strings** ("price":"23.76", "sponsored":"true") — they need `try_cast` to the declared types.
+- **`HANDLER '<ClassName>'` is required** for a Python table function.
+- **`import` statements must live INSIDE `eval()`** — module-level imports in the `$$` body are not visible to the handler class (`NameError` at call time).
+- The function **can't declare `DEFAULT`s** — all params (including `api_key`) are required; the SQL wrapper supplies defaults.
+- On any error, **yield nothing** (don't raise) so a batch over many rows isn't aborted by one bad input.
 
-## 3. Create the scalar SQL UDF
+```sql
+CREATE OR REPLACE FUNCTION nimble_integration.tools._<name>(
+    arg1 TYPE, arg2 TYPE, ..., api_key STRING
+)
+RETURNS TABLE(col1 STRING, col2 INT, ...)
+LANGUAGE PYTHON
+HANDLER 'Handler'
+COMMENT 'Internal Python UDTF behind <name>(). Call the public <name>() wrapper instead.'
+AS $$
+class Handler:
+    def eval(self, arg1, arg2, ..., api_key):
+        import requests   # imports MUST be inside eval()
+        headers = {"Authorization": "Bearer " + (api_key or ""),
+                   "Content-Type": "application/json",
+                   "X-Client-Source": "nimble-dbx-udtf"}
+        try:
+            resp = requests.post("https://sdk.nimbleway.com/v1/<endpoint>",
+                                 json={...}, headers=headers, timeout=60)
+            data = resp.json() if 200 <= resp.status_code < 300 else {}
+        except Exception:
+            data = {}
+        for r in (data.get("results") or []):
+            yield (r.get("col1"), r.get("col2"))
+$$;
+```
 
-Drop a new file under `tools/<function_name>.sql`. Model it after `tools/amazon_serp.sql` or `tools/nimble_search.sql`:
+## 4. Write the public SQL wrapper (`<name>`)
+
+A thin `RETURNS TABLE` wrapper that supplies DEFAULTs, injects the key via `secret()` (which passes straight through as a table-function argument), and carries the LLM-facing `COMMENT`s.
 
 ```sql
 CREATE OR REPLACE FUNCTION nimble_integration.tools.<name>(
-    arg1 TYPE COMMENT '<example values, allowed enums>',
+    arg1 TYPE COMMENT '<examples, allowed enums>',
     arg2 TYPE DEFAULT <value> COMMENT '<description, defaults, constraints>'
 )
-RETURNS ARRAY<STRUCT<
-    field1: STRING,
-    field2: DOUBLE,
-    ...
->>
-COMMENT '<verbatim agent description from Nimble docs, escape '' as ''''>'
-RETURN (
-    SELECT COALESCE(
-        transform(
-            from_json(
-                response.text,
-                'STRUCT<<path to results array>: ARRAY<STRUCT< ...all-STRING schema... >>>'
-            )<path>,
-            x -> named_struct(
-                'field1', x.field1,
-                'field2', try_cast(x.field2 AS DOUBLE),
-                ...
-            )
-        ),
-        ARRAY()
-    )
-    FROM (
-        SELECT http_request(
-            conn    => 'nimble_api',
-            method  => 'POST',
-            path    => '/v1/<endpoint>',
-            headers => map(
-                'Content-Type',    'application/json',
-                'X-Client-Source', 'nimble-dbx-udf'
-            ),
-            json    => to_json(
-                named_struct('arg1', arg1, 'arg2', arg2),
-                map('ignoreNullFields', 'true')
-            )
-        ) AS response
-    )
-);
-```
-
-Notes:
-
-- The `from_json` schema uses **all-STRING** fields; the outer `transform()` does the `try_cast` to your declared return types. This is because Nimble returns numeric / boolean as strings.
-- `to_json(named_struct(...), map('ignoreNullFields', 'true'))` drops NULL keys from the request body so optional params with `DEFAULT NULL` become missing keys instead of explicit `null` values. Safer if the endpoint validates an enum strictly.
-- Every tool sends `X-Client-Source: nimble-dbx-udf` (mirrors the Snowflake recipe's `X-Client-Source: snowflake-cortex-agent`) for Nimble-side telemetry / client attribution.
-- Stay aligned with the `nimble_api` HTTP CONNECTION already declared in `01_setup.sql` — every tool should use it; never embed bearer tokens in the function body.
-
-## 4. Create the Genie-callable TABLE wrapper
-
-Drop `tools/<function_name>_table.sql`. Genie only registers `RETURNS TABLE(...)` functions; the wrapper exposes the scalar's array row-by-row. Model after `tools/amazon_serp_table.sql`:
-
-```sql
-CREATE OR REPLACE FUNCTION nimble_integration.tools.<name>_table(
-    arg1 TYPE COMMENT '<example, examples, examples>',
-    ...
-)
 RETURNS TABLE(
-    field1 STRING COMMENT '<plain English, mention NULL semantics>',
-    field2 DOUBLE COMMENT '...',
-    ...
+    col1 STRING COMMENT '<plain English, NULL semantics>',
+    col2 INT    COMMENT '...'
 )
 COMMENT '<long, example-question-rich description tuned for LLM tool selection>'
-RETURN (
-    WITH raw AS (SELECT nimble_integration.tools.<name>(arg1, ...) AS arr)
-    SELECT item.* FROM raw LATERAL VIEW EXPLODE(arr) items AS item
-);
+RETURN SELECT * FROM nimble_integration.tools._<name>(arg1, arg2, secret('nimble', 'api_key'));
 ```
 
-Per-column COMMENTs matter as much as the function-level COMMENT — Genie summarizes results using them.
+The function `COMMENT` and per-column `COMMENT`s are what Genie reads to pick and summarize the tool — write them like a prompt.
 
 ## 5. Add example queries
 
-Under `examples/<function_name>_basic.sql`, show 3–5 patterns. Look at `examples/amazon_serp_basic.sql` or `examples/nimble_search_basic.sql` for the conventional structure:
-
-1. Simplest table-form call.
-2. Variant with a focus / filter / paging parameter.
-3. Variant exercising the more expensive option (deep mode, larger N, etc.).
-4. Scalar form with `WITH … LATERAL VIEW EXPLODE` — for callers who want to compose in SQL.
-
-Each query must be standalone runnable after the prereqs comment at the top.
+Drop `recipes/<name>.sql` with 3–4 standalone-runnable patterns: simplest call, a filtered/paged variant, the expensive variant (deep mode / larger N), and a composition (`JOIN` / `CREATE TABLE … AS`).
 
 ## 6. Smoke test
 
-After `01_setup.sql` is deployed and the new `tools/<name>.sql` + `tools/<name>_table.sql` are deployed, run a quick sanity check via `helpers/deploy_sql.py` and a follow-up `SELECT`:
-
 ```bash
 WH=<warehouse-id>
+python3 databricks/helpers/deploy_sql.py --file databricks/tools/<name>.sql --warehouse "$WH"
 
-# Deploy the two new files.
-python3 databricks/helpers/deploy_sql.py --file databricks/tools/<name>.sql        --warehouse "$WH"
-python3 databricks/helpers/deploy_sql.py --file databricks/tools/<name>_table.sql  --warehouse "$WH"
-
-# Sanity test — should return a non-zero row count.
-cat > /tmp/probe.sql <<SQL
-SELECT count(*) AS n
-FROM nimble_integration.tools.<name>_table(<example-args>);
-SQL
+# Should return a non-zero row count.
+echo "SELECT count(*) AS n FROM nimble_integration.tools.<name>(<example-args>);" > /tmp/probe.sql
 python3 databricks/helpers/deploy_sql.py --file /tmp/probe.sql --warehouse "$WH"
 ```
 
-If the test errors with HTTP 422 / validation, check the message — Nimble validation errors are explicit (e.g. "search_depth='fast' is only supported with focus='general'") and almost always indicate a param combination your DEFAULTs ship by accident.
+If a Nimble validation error (HTTP 422) surfaces, the message is explicit (e.g. "search_depth='fast' is only supported with focus='general'") and usually means a DEFAULT param combination is invalid.
 
-## 7. Known limitations & escape hatches
+## 7. Gotchas & escape hatches
 
-These show up while wiring new tools; remember them rather than rediscovering each time. The cookbook chose option (a) for every tool so far; (b) is a real alternative when (a) is the wrong fit.
+### Outbound networking must be enabled for the warehouse
 
-### `http_request()` returns non-2xx silently — gate every tool on `status_code`
+UDTF egress on a serverless SQL warehouse is **off by default**. Enable the Preview **"Enable networking for isolated workloads in Serverless SQL Warehouses"** in the workspace Previews page and **cold-restart** the warehouse (Stop → Start; a plain restart isn't enough). Symptom of skipping it: DNS resolves but the request fails with `Connection refused` (Errno 111), so the tool returns zero rows. The account-level serverless egress **network policy** is a separate control and is usually already "allow all".
 
-`http_request()` does NOT raise on non-2xx HTTP responses. It returns the status code in `response.status_code` and the (Databricks-wrapped) error body in `response.text`. Without a gate, `from_json(response.text, '<our schema>')` parses the error string, returns NULL, and the outer `COALESCE(..., ARRAY())` turns it into an empty array — so a failed Nimble call surfaces as a "no results" outcome instead of a query error.
+### `import` must be inside `eval()`
 
-Every scalar in `tools/*.sql` now gates on a 2xx `status_code` and `raise_error`s otherwise. Mirror this in new tools:
+Module-level imports in the `$$` body are not in scope inside the handler class — you'll get `NameError: name 'requests' is not defined` at call time. Import inside `eval()`.
 
-```sql
-RETURN (
-    SELECT CASE
-        WHEN response.status_code BETWEEN 200 AND 299 THEN
-            COALESCE(
-                transform(from_json(response.text, '<all-STRING schema>'), x -> named_struct(...)),
-                ARRAY()
-            )
-        ELSE raise_error(concat(
-            'Nimble /v1/<endpoint> failed with status ',
-            cast(response.status_code AS STRING), ': ', response.text
-        ))
-    END
-    FROM (SELECT http_request(...) AS response)
-);
-```
+### UDTFs can't have DEFAULT parameter values
 
-Batch tolerance: Spark SQL has no generic `try(expr)` wrapper that catches `raise_error` (the `try_*` family is per-op: `try_cast`, `try_divide`, etc.). If you need a failed call on one input not to kill the whole job, drive the loop **outside** SQL with one statement per input (see the multi-row Delta limitation below) — each statement's failure is then isolated by `helpers/deploy_sql.py` or your driver, and the rest of the rows still load.
+Put all DEFAULTs on the SQL wrapper; the Python UDTF takes every param (including `api_key`) as required.
 
-Empirically verified on 2026-05-31: `nimble_agent_describe('nonexistent_agent_xyz')` produced `[USER_RAISED_EXCEPTION] Nimble GET /v1/agents/nonexistent_agent_xyz failed with status 404: ...` instead of returning NULL fields. Same gate applies to the four other scalars.
+### Yield-nothing vs raise
 
-### `http_request()` "Can not start an object" error on multi-row Delta sources
+Raising inside `eval()` fails the whole query — bad for a batch CTAS over many inputs. These tools swallow errors and yield zero rows instead. If you'd rather a misconfiguration surface loudly, yield a sentinel error row or check counts in your pipeline.
 
-When a query reads keywords / inputs from a managed table and passes them per-row to `http_request()`, the planner parallelizes and the response struct stream is corrupted with a Jackson parse error. `/*+ COALESCE(1) */` / `REPARTITION(1)` / `ORDER BY` / `collect_list+EXPLODE` / `transform()` lambda — none reliably fix it. Workarounds:
+### deploy_sql.py and `$$` bodies
 
-- (a) **Per-row INSERT loop** (one statement per keyword, via `helpers/deploy_sql.py` or a SQL stored procedure with `FOR rec IN (...) DO INSERT ...`). Each statement plans for a single literal — no parallelism, no bug. This cookbook uses this pattern.
-- (b) Use the **Python-UDF flavour** of the tool. UC Python UDFs avoid the http_request planner path entirely. They have their own restrictions (next item) but they work over Delta multi-row scans.
+`helpers/deploy_sql.py` treats `$$ … $$` dollar-quoted bodies as opaque, so the `;` / `'` / `--` inside a Python UDTF body don't corrupt statement splitting. If you hand-split SQL elsewhere, do the same.
 
-### UC Python UDFs blocked from outbound HTTP on Serverless SQL
+### `secret()` is passed as an argument
 
-`requests.post(...)` from a UC Python UDF on a serverless SQL warehouse returns `ConnectionError [Errno 111] Connection refused`. The serverless sandbox has no outbound network. Workarounds:
-
-- (a) **Pure SQL via `http_request()` and the UC HTTP CONNECTION** — works on serverless. This cookbook uses this pattern.
-- (b) **Switch the SQL warehouse to classic (DBR-backed) compute.** DBR Python UDFs can reach the network. Trade-off: slower warm-up, higher per-query cost than serverless. Useful if you specifically need the Python-UDF flavour to sidestep the http_request multi-row bug above.
-
-### UC Python UDFs reject DEFAULT parameter values
-
-`UDF_UNSUPPORTED_PARAMETER_DEFAULT_VALUE`. SQL UDFs (`LANGUAGE SQL`) accept DEFAULTs. If a tool absolutely needs Python (e.g. complex parsing), wrap the Python UDF in a thin SQL UDF that injects the defaults / secrets and forwards.
-
-### Function in Generate (EXPLODE) is forbidden
-
-`SELECT EXPLODE(some_udf(...))` errors with "Using SQL function in Generate is not supported." Always materialize via a CTE first:
-
-```sql
-WITH r AS (SELECT some_udf(...) AS items)
-SELECT item.* FROM r LATERAL VIEW EXPLODE(items) t AS item;
-```
+The wrapper passes `secret('nimble','api_key')` straight into the UDTF as a normal argument — no in-UDF secret API is needed, and the value is redacted in plans/logs.
 
 ### Catalog creation on UC Default Storage workspaces
 
-Plain `CREATE CATALOG IF NOT EXISTS nimble_integration` fails when the workspace uses UC account-level Default Storage without a metastore-level managed root. The cookbook keeps the simple SQL form as the default because most workspaces work fine with it; see the comment block in `01_setup.sql` for the UI / `MANAGED LOCATION` / REST-API fallbacks.
+Plain `CREATE CATALOG IF NOT EXISTS nimble_integration` fails when the workspace uses UC account-level Default Storage without a metastore-level managed root. See the comment block in `01_setup.sql` for the UI / `MANAGED LOCATION` fallbacks.
 
-### GET query params must use the `params` map, not the path
+### Optional fallback: `http_request()` instead of a UDTF
 
-`http_request(method => 'GET', path => '/v1/agents?managed_by=nimble', ...)` returns HTTP 404 — the UC HTTP connection does not parse a query string embedded in `path`. Use the dedicated `params` argument instead:
+If a workspace can't enable UDTF egress (the Previews toggle above), the `http_request()` SQL builtin reaches the Nimble API through a different, always-on egress path — at the cost of `from_json` parsing in SQL and no per-row isolation. It needs a one-time UC HTTP `CONNECTION` (this is **not** created by `01_setup.sql`; requires the `CREATE CONNECTION` privilege):
 
 ```sql
-http_request(
-    conn    => 'nimble_api',
-    method  => 'GET',
-    path    => '/v1/agents',
-    params  => map_filter(
-        map('managed_by', managed_by, 'limit', cast(max_results AS STRING)),
-        (k, v) -> v IS NOT NULL
-    ),
-    headers => map('Content-Type', 'application/json')
-)
+CREATE CONNECTION IF NOT EXISTS nimble_api TYPE HTTP
+OPTIONS (
+    host         'https://sdk.nimbleway.com',
+    port         '443',
+    base_path    '/',
+    bearer_token secret('nimble', 'api_key')
+);
 ```
 
-`map_filter` drops NULL values so optional filters can be omitted by passing NULL. Note that `params` is `MAP<STRING, STRING>` — cast `INT` params explicitly.
-
-### Statement Execution API: 50s wait cap
-
-For statements that may exceed 50 seconds (e.g. CTAS over a slow function), submit with `wait_timeout=0s` and poll `GET /api/2.0/sql/statements/{id}` until terminal. The `helpers/deploy_sql.py` uses 50s synchronously, which suits the per-row INSERT pattern; rework if you need long-running deploys.
+A fallback tool body then calls `http_request(conn => 'nimble_api', method => 'POST', path => '/v1/<endpoint>', headers => map('Content-Type','application/json'), json => to_json(named_struct(...)))`, gates on `response.status_code`, and parses `response.text` with `from_json`.

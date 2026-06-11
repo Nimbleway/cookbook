@@ -23,11 +23,10 @@ Usage
         --warehouse <warehouse-id> \\
         --parent-path "/Users/<you>@<domain>" \\
         --instructions-file path/to/instructions.md \\
-        --function nimble_integration.tools.nimble_agent_list_table \\
-        --function nimble_integration.tools.nimble_agent_describe_table \\
-        --function nimble_integration.tools.nimble_agent_run_table \\
-        --function nimble_integration.tools.nimble_search_table \\
-        --function nimble_integration.tools.amazon_serp_table
+        --function nimble_integration.tools.nimble_search \\
+        --function nimble_integration.tools.nimble_extract \\
+        --function nimble_integration.tools.nimble_agent_list \\
+        --function nimble_integration.tools.nimble_agent_run
 
 Requirements: Python 3.9+, the `databricks` CLI on $PATH and
 authenticated.
@@ -117,7 +116,7 @@ def main() -> int:
     ap.add_argument("--instructions-file", required=True, type=Path,
                     help="Markdown file with the Genie system prompt")
     ap.add_argument("--function", action="append", default=[],
-                    metavar="catalog.schema.func_table",
+                    metavar="catalog.schema.func",
                     help="UC SQL function identifier (TABLE-returning). "
                          "Repeat per function.")
     ap.add_argument("--table", action="append", default=[],
