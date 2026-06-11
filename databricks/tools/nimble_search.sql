@@ -100,8 +100,8 @@ CREATE OR REPLACE FUNCTION nimble_integration.tools.nimble_search(
         COMMENT 'Maximum number of results to return (1-100). Server may return fewer.',
     focus        STRING  DEFAULT NULL
         COMMENT 'Focus mode: general | news | location | coding | geo | shopping | social | academic. NULL = server default (general).',
-    search_depth STRING  DEFAULT 'fast'
-        COMMENT 'Result detail: lite | fast (~2K chars per result) | deep (full page scrape). fast/deep require focus=general (or focus omitted).',
+    search_depth STRING  DEFAULT 'lite'
+        COMMENT 'Result detail: lite (links + snippets, default, available on all plans) | fast (~2K chars per result) | deep (full page scrape). fast/deep require focus=general (or focus omitted) AND a plan with premium search depth — they are not enabled on all accounts.',
     country      STRING  DEFAULT 'US'
         COMMENT 'ISO Alpha-2 country to search from, e.g. US, GB, DE.',
     locale       STRING  DEFAULT 'en'
@@ -119,7 +119,7 @@ RETURNS TABLE(
     url         STRING COMMENT 'Full URL of the result page.',
     content     STRING COMMENT 'Extracted page content; populated when search_depth = fast or deep.'
 )
-COMMENT 'Live web search via the Nimble Search API, returned as rows (title, description, url, content). Use whenever the user asks about CURRENT, LIVE, or RECENT web content — news, articles, papers, product pages, blog posts, social discussions, code, locations. Each call hits the live web through Nimble, so results reflect the moment of the query. Pick a `focus` mode to bias the sub-agent pool (news / shopping / social / academic / coding / geo / location); use search_depth = deep for full article bodies, fast for snippets, lite for cheap link inventories. Returns zero rows on failure rather than raising, so a batch over many queries is not aborted by one bad row. Example questions: "top news on AI agent frameworks this week", "product pages selling stand-up desks under $400", "recent papers on retrieval-augmented generation".'
+COMMENT 'Live web search via the Nimble Search API, returned as rows (title, description, url, content). Use whenever the user asks about CURRENT, LIVE, or RECENT web content — news, articles, papers, product pages, blog posts, social discussions, code, locations. Each call hits the live web through Nimble, so results reflect the moment of the query. Pick a `focus` mode to bias the sub-agent pool (news / shopping / social / academic / coding / geo / location). search_depth controls detail: lite (default, links + snippets, available on all plans), fast (~2K-char snippets), deep (full article bodies) — fast/deep are premium and may not be enabled on every account. Returns zero rows on failure rather than raising, so a batch over many queries is not aborted by one bad row. Example questions: "top news on AI agent frameworks this week", "product pages selling stand-up desks under $400", "recent papers on retrieval-augmented generation".'
 RETURN SELECT * FROM nimble_integration.tools._nimble_search(
     query, max_results, focus, search_depth, country, locale,
     time_range, include_domains, exclude_domains, secret('nimble', 'api_key')

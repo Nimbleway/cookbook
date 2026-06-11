@@ -14,7 +14,7 @@ This shows input parameters (with allowed values, examples, defaults) and return
 
 **1. General Web Search**
 
-    SELECT * FROM nimble_integration.tools.nimble_search('query', 10, 'general', 'fast')
+    SELECT * FROM nimble_integration.tools.nimble_search('query', 10, 'general', 'lite')
 
 Parameters: query, max_results (1-100), focus (general|news|shopping|academic|social|coding|geo|location), search_depth (lite|fast|deep). Returns: `title`, `description`, `url`, `content`.
 
