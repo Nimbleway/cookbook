@@ -1,20 +1,20 @@
 /*
  * 01_setup.sql — Nimble × Databricks integration scaffolding
  *
- * Privileges: metastore admin (or a principal with CREATE CATALOG +
- *             CREATE CONNECTION privileges).
- * Creates:    nimble_integration catalog, tools + examples schemas,
- *             nimble_api UC HTTP CONNECTION bound to the secret.
- * Prereq:     The `nimble` secret scope and `api_key` secret exist —
- *             see 00_prereqs.md.
+ * Privileges: a principal with CREATE CATALOG (or an existing catalog) +
+ *             CREATE SCHEMA. Deploying the tools additionally needs
+ *             CREATE FUNCTION on nimble_integration.tools.
+ * Creates:    nimble_integration catalog, tools + recipes schemas.
+ * Prereq:     The `nimble` secret scope + `api_key` secret exist, and the
+ *             serverless networking Preview is enabled — see 00_prereqs.md.
  * Runtime:    ~5 seconds.
  *
- * Re-runnable. Every statement is `CREATE ... IF NOT EXISTS` so a
- * second run is a no-op.
+ * Re-runnable. Every statement is `CREATE ... IF NOT EXISTS` so a second run
+ * is a no-op.
  *
- * Run order: 01 → 02 → (optional) examples/*. Customize the catalog
- * name if you already have a preferred home — just replace
- * `nimble_integration` with your catalog throughout.
+ * Run order: 01 → tools/* → (optional) recipes/*. Customize the catalog name
+ * if you already have a preferred home — just replace `nimble_integration`
+ * with your catalog throughout.
  */
 
 /*
@@ -38,31 +38,18 @@
  *      one of your UC external locations (`SHOW EXTERNAL LOCATIONS`).
  */
 CREATE CATALOG IF NOT EXISTS nimble_integration
-    COMMENT 'Nimble web-data integration: UC SQL functions wrapping Nimble agents.';
+    COMMENT 'Nimble web-data integration: UC table functions wrapping Nimble APIs and agents.';
 
 CREATE SCHEMA IF NOT EXISTS nimble_integration.tools
-    COMMENT 'SQL functions wrapping Nimble agents. Callable from Genie, agents, dashboards.';
+    COMMENT 'Table functions wrapping Nimble APIs / agents. Callable from Genie, agents, dashboards.';
 
-CREATE SCHEMA IF NOT EXISTS nimble_integration.examples
-    COMMENT 'Sample inputs / outputs and example queries against the tools schema.';
+CREATE SCHEMA IF NOT EXISTS nimble_integration.recipes
+    COMMENT 'Sample inputs and end-to-end recipe outputs (Delta tables) built on the tools schema.';
 
 /*
- * UC HTTP connection. One per integration; every function picks the right
- * `path` argument when calling http_request(). Bearer token is resolved
- * at request time from the secret — values never appear in plan output
- * or function source.
- *
- * Egress for HTTP connections is governed by the workspace's serverless
- * network policy (account-level); on a default workspace, no extra
- * allow-listing is needed for connections.
+ * Note: the tools are Python UDTFs that call the Nimble API directly (the key
+ * is injected from secret('nimble','api_key')), so no UC HTTP CONNECTION is
+ * needed here. The optional http_request() fallback — for workspaces that
+ * can't enable the serverless networking Preview — sets up its own CONNECTION;
+ * see the "Optional fallback" section in ADDING_A_TOOL.md.
  */
-CREATE CONNECTION IF NOT EXISTS nimble_api TYPE HTTP
-OPTIONS (
-    host         'https://sdk.nimbleway.com',
-    port         '443',
-    base_path    '/',
-    bearer_token secret('nimble', 'api_key')
-);
-
--- Verify (optional):
--- DESCRIBE CONNECTION nimble_api;

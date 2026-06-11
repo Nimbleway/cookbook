@@ -15,7 +15,7 @@ Usage
         --warehouse <warehouse-id>             # default profile
 
     python databricks/helpers/deploy_sql.py \\
-        --file databricks/tools/amazon_serp.sql \\
+        --file databricks/tools/nimble_search.sql \\
         --warehouse <warehouse-id> \\
         --profile my-profile
 
@@ -43,12 +43,26 @@ from typing import List
 def strip_comments(text: str) -> str:
     """Remove `/* ... */` block comments and `-- ...` line comments, but
     leave string literals untouched (function COMMENT strings can
-    legitimately contain `--` or `/* */`)."""
+    legitimately contain `--` or `/* */`).
+
+    `$$ ... $$` dollar-quoted bodies (Python / SQL UDF bodies) are copied
+    verbatim — they routinely contain `--`, `/*`, `;`, and `'` that must
+    not be interpreted as SQL syntax."""
     out: List[str] = []
     in_str = False
     i = 0
     while i < len(text):
         c = text[i]
+        if not in_str and c == "$" and i + 1 < len(text) and text[i + 1] == "$":
+            # Dollar-quoted body — copy through the matching `$$` untouched.
+            out.append("$$")
+            i += 2
+            while i + 1 < len(text) and not (text[i] == "$" and text[i + 1] == "$"):
+                out.append(text[i])
+                i += 1
+            out.append("$$")
+            i += 2
+            continue
         if c == "'":
             # SQL `''` is an escaped apostrophe inside a string literal.
             if in_str and i + 1 < len(text) and text[i + 1] == "'":
@@ -87,6 +101,17 @@ def split_statements(text: str) -> List[str]:
     i = 0
     while i < len(text):
         c = text[i]
+        if not in_str and c == "$" and i + 1 < len(text) and text[i + 1] == "$":
+            # Dollar-quoted body — copy through the matching `$$` without
+            # splitting on the `;` / `'` it contains.
+            cur.append("$$")
+            i += 2
+            while i + 1 < len(text) and not (text[i] == "$" and text[i + 1] == "$"):
+                cur.append(text[i])
+                i += 1
+            cur.append("$$")
+            i += 2
+            continue
         if c == "'":
             if in_str and i + 1 < len(text) and text[i + 1] == "'":
                 cur.append("''")
