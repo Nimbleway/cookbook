@@ -125,6 +125,16 @@ python3 databricks/helpers/create_genie_space.py \
 - **Zero rows on failure**: tools swallow errors and yield nothing, so batch CTAS jobs are resilient.
 - **Function COMMENTs carry the LLM-facing spec** — they're the surface an agent picks tools from.
 
+### Why two functions per tool (`_name` UDTF + `name` wrapper)
+
+The internal UDTF does the work (HTTP call, yields rows); the wrapper does three things the UDTF can't:
+
+1. **Defaults.** UC Python UDTFs reject `DEFAULT` parameters, so `_nimble_search` takes all params as required. The SQL wrapper supplies the defaults, so callers write `nimble_search('coffee')` instead of passing all nine arguments.
+2. **The API key.** A UDTF can't read `secret()` itself (it's a SQL function), so the key must arrive as a parameter. The wrapper injects `secret('nimble','api_key')` once — the key never appears in the public signature or at any call site.
+3. **STRING → VARIANT** (`nimble_agent_run` only). A Python UDF/UDTF can't *return* `VARIANT`, so the UDTF yields `parsing_json` as a STRING and the wrapper does `parse_json(...) AS parsing` to expose the navigable VARIANT column.
+
+Collapsing to one function would mean no defaults and `secret(...)` at every call site — a strictly worse API. The thin wrapper (`SELECT * FROM _name(...)`) is what makes the public function clean for Genie and humans.
+
 ## Adding more Nimble functions
 
 See [`ADDING_A_TOOL.md`](ADDING_A_TOOL.md) — pick an endpoint, write the UDTF + wrapper, add examples, smoke-test, and the gotchas to expect.
