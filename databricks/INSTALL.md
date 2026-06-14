@@ -1,6 +1,6 @@
-# 00_prereqs — one-time Databricks CLI setup
+# INSTALL — one-time Databricks setup & deploy
 
-Everything below is `bash` against the [Databricks CLI v0.205+](https://docs.databricks.com/en/dev-tools/cli/install.html). Run once per workspace. After this, the SQL files in `01_setup.sql` and beyond can be deployed by anyone with `CREATE SCHEMA` and `CREATE FUNCTION` privileges on the target catalog.
+The complete install path for this cookbook: CLI auth, the networking Preview, the secret scope, then deploying the SQL files. Run once per workspace. Most steps are `bash` against the [Databricks CLI v0.205+](https://docs.databricks.com/en/dev-tools/cli/install.html). After this, the SQL files in `01_setup.sql` and beyond can be deployed by anyone with `CREATE SCHEMA` and `CREATE FUNCTION` privileges on the target catalog.
 
 ## 1. Authenticate the CLI
 
@@ -59,16 +59,15 @@ databricks secrets list-acls nimble
 # users    READ
 ```
 
-## 5. (Optional) Run the SQL deploys from the CLI
+## 5. Deploy the SQL files
 
-`databricks api post /api/2.0/sql/statements` lets you fire a statement at a SQL warehouse without leaving the shell. That endpoint accepts **one statement per call**, and the SQL files in this directory contain multiple statements plus function COMMENTs that legitimately include `;` inside string literals. The repo ships a tiny helper that splits + posts correctly:
+This is the canonical deploy path (you can also paste each file into a Databricks SQL editor by hand). `databricks api post /api/2.0/sql/statements` fires a statement at a SQL warehouse without leaving the shell. That endpoint accepts **one statement per call**, and the SQL files in this directory contain multiple statements plus function COMMENTs that legitimately include `;` inside string literals. The repo ships a tiny helper that splits + posts correctly:
 
 ```bash
-WH=<your-serverless-warehouse-id>     # databricks warehouses list
+# Grab a warehouse id automatically (first one); or set WH explicitly. Needs jq.
+WH=$(databricks warehouses list -o json | jq -r '.[0].id')
 
-python3 databricks/helpers/deploy_sql.py --file databricks/01_setup.sql --warehouse "$WH"
-
-for f in databricks/tools/*.sql; do
+for f in databricks/01_setup.sql databricks/tools/*.sql; do
     python3 databricks/helpers/deploy_sql.py --file "$f" --warehouse "$WH"
 done
 ```

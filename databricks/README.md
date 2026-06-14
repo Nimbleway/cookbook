@@ -18,14 +18,15 @@ FROM my_catalog.web.urls u,
 ```
 databricks/
   README.md                ← you are here
-  00_prereqs.md            one-time setup: CLI auth, secret scope, the Previews toggle
+  INSTALL.md               one-time setup + deploy: CLI auth, secret scope, Previews toggle, SQL deploy
   01_setup.sql             catalog + schemas (tools + recipes)
   ADDING_A_TOOL.md         how to wrap a new Nimble endpoint as a UDTF
   tools/                   one table function per Nimble capability — installable as-is
     nimble_search.sql        nimble_search(query, ...)               — Web Search API
     nimble_extract.sql       nimble_extract(url, ...)                — Extract API
-    nimble_agent_list.sql    nimble_agent_list(...)                  — agent catalog
-    nimble_agent_run.sql     nimble_agent_run(agent, params_json, ...) — generic agent runner
+    nimble_agent_list.sql      nimble_agent_list(...)                  — agent catalog
+    nimble_agent_describe.sql  nimble_agent_describe(agent_name)       — one row per agent input param
+    nimble_agent_run.sql       nimble_agent_run(agent, params_json, ...) — generic agent runner
   recipes/                 runnable SQL — per-tool snippets + end-to-end recipes
     local_business_universe.sql   stitch many agent calls → governed Delta table
   helpers/                 deploy_sql.py (multi-statement deploy) + create_genie_space.py
@@ -36,47 +37,16 @@ Every tool is a **table function** — call it in the FROM clause. Each `tools/*
 ## Prerequisites
 
 - A Databricks workspace with a **serverless SQL warehouse**.
-- **Outbound networking enabled for the warehouse** — enable the Preview **"Enable networking for isolated workloads in Serverless SQL Warehouses"** and **cold-restart** the warehouse (Stop → Start). Without this, the tools return zero rows and the underlying request fails with `Connection refused`. See [`00_prereqs.md`](00_prereqs.md) §1.5.
+- **Outbound networking enabled for the warehouse** (a Preview toggle + cold restart) — without it the tools silently return zero rows. Setup and the symptom to watch for: [`INSTALL.md`](INSTALL.md) §1.5.
 - Privilege to create a catalog/schema (or an existing schema you own) and `CREATE FUNCTION` on it.
 - A **Nimble API key** — get one at <https://online.nimbleway.com/account-settings/api-keys>.
 - The **Databricks CLI v0.205+** installed and authenticated (`databricks auth login`).
 
-## Deployment
+## Install
 
-### 1. One-time prereqs ([`00_prereqs.md`](00_prereqs.md))
+Full setup and deploy — CLI auth, the networking Preview + cold restart, the secret scope, deploying the SQL files, and the smoke test — live in [`INSTALL.md`](INSTALL.md). Run it once per workspace.
 
-CLI auth, the Previews toggle + cold restart, and the secret scope:
-
-```bash
-databricks secrets create-scope nimble
-databricks secrets put-secret  nimble api_key   # paste token, Ctrl-D
-databricks secrets put-acl     nimble users READ
-```
-
-### 2. Run the SQL files
-
-`helpers/deploy_sql.py` splits multi-statement files and posts each statement (it treats `$$ … $$` UDTF bodies as opaque).
-
-```bash
-WH=<your-serverless-warehouse-id>   # databricks warehouses list
-
-python3 databricks/helpers/deploy_sql.py --file databricks/01_setup.sql --warehouse "$WH"
-for f in databricks/tools/*.sql; do
-    python3 databricks/helpers/deploy_sql.py --file "$f" --warehouse "$WH"
-done
-```
-
-1. **`01_setup.sql`** — creates catalog `nimble_integration`, schemas `tools` + `recipes`.
-2. **`tools/*.sql`** — installs the table functions.
-
-Smoke test:
-
-```sql
-SELECT count(*) AS n FROM nimble_integration.tools.nimble_search('AI agents news', 5);  -- expect > 0
-SELECT length(content) FROM nimble_integration.tools.nimble_extract('https://www.nimbleway.com');
-```
-
-If a tool returns zero rows, re-check the Previews toggle + cold restart (Prerequisites).
+In short: `01_setup.sql` creates the `nimble_integration` catalog (schemas `tools` + `recipes`), then `tools/*.sql` installs the table functions via `helpers/deploy_sql.py`.
 
 ## The tools
 
@@ -85,6 +55,7 @@ If a tool returns zero rows, re-check the Previews toggle + cold restart (Prereq
 | `nimble_search(query, max_results, focus, search_depth, ...)` | Live web search → rows of `title, description, url, content`. |
 | `nimble_extract(url, render, format, ...)` | Fetch + parse one URL → a row of `url, format, content` (markdown/html/links). |
 | `nimble_agent_list(privacy, managed_by, ...)` | The Nimble agent catalog → one row per agent. |
+| `nimble_agent_describe(agent_name)` | A single agent's input params → one row per param (`param_name, required, type`, localization/pagination flags). Use it to build a valid `nimble_agent_run` `params_json` without guessing. |
 | `nimble_agent_run(agent, params_json, localization)` | Run any agent → one row: envelope + `parsing_json`. |
 
 See [`recipes/`](recipes/) for runnable patterns — including `local_business_universe.sql`, which stitches many `nimble_agent_run('google_maps_search', …)` calls into a governed Delta table.
@@ -115,6 +86,7 @@ python3 databricks/helpers/create_genie_space.py \
     --function nimble_integration.tools.nimble_search \
     --function nimble_integration.tools.nimble_extract \
     --function nimble_integration.tools.nimble_agent_list \
+    --function nimble_integration.tools.nimble_agent_describe \
     --function nimble_integration.tools.nimble_agent_run
 ```
 

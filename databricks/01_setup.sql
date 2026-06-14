@@ -6,7 +6,7 @@
  *             CREATE FUNCTION on nimble_integration.tools.
  * Creates:    nimble_integration catalog, tools + recipes schemas.
  * Prereq:     The `nimble` secret scope + `api_key` secret exist, and the
- *             serverless networking Preview is enabled — see 00_prereqs.md.
+ *             serverless networking Preview is enabled — see INSTALL.md.
  * Runtime:    ~5 seconds.
  *
  * Re-runnable. Every statement is `CREATE ... IF NOT EXISTS` so a second run

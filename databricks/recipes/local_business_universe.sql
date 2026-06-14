@@ -11,7 +11,7 @@
 -- Prereqs:
 --   ../01_setup.sql
 --   ../tools/nimble_agent_run.sql
---   Outbound networking enabled for the warehouse (see ../00_prereqs.md §1.5).
+--   Outbound networking enabled for the warehouse (see ../INSTALL.md §1.5).
 --
 -- Run this in the Databricks SQL editor (Run All). The CTAS fans out one
 -- google_maps_search call per query (~20 here), so it runs for a few minutes —
