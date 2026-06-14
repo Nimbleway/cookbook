@@ -26,6 +26,7 @@ Usage
         --function nimble_integration.tools.nimble_search \\
         --function nimble_integration.tools.nimble_extract \\
         --function nimble_integration.tools.nimble_agent_list \\
+        --function nimble_integration.tools.nimble_agent_describe \\
         --function nimble_integration.tools.nimble_agent_run
 
 Requirements: Python 3.9+, the `databricks` CLI on $PATH and
