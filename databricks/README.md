@@ -30,6 +30,7 @@ databricks/
   recipes/                 runnable SQL — per-tool snippets + end-to-end recipes
     local_business_universe.sql   stitch many agent calls → governed Delta table
   helpers/                 deploy_sql.py (multi-statement deploy) + create_genie_space.py
+  genie-code-skills/       custom Agent Skill for Databricks Genie Code (NL → Delta → dashboard/app)
 ```
 
 Every tool is a **table function** — call it in the FROM clause. Each `tools/*.sql` ships a Python **UDTF** (`_name`, does the HTTP call and yields rows) plus a thin SQL `RETURNS TABLE` wrapper (`name`, supplies DEFAULTs and injects the API key). The public wrapper is what you call and what Genie registers; there is no scalar twin.
@@ -89,6 +90,13 @@ python3 databricks/helpers/create_genie_space.py \
     --function nimble_integration.tools.nimble_agent_describe \
     --function nimble_integration.tools.nimble_agent_run
 ```
+
+## Use it from Genie Code
+
+For **Genie Code** (Agent mode), [`genie-code-skills/`](genie-code-skills/) ships a custom Agent Skill that turns a
+plain-English brief into a Databricks data product end to end (discover agents → ingest into Delta →
+build a dashboard/app), built on the table functions above. See [`genie-code-skills/README.md`](genie-code-skills/README.md)
+for install (User or Workspace skill) and the Git-folder sync path.
 
 ## Conventions
 
