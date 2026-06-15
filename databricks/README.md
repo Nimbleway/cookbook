@@ -1,6 +1,6 @@
-# Databricks × Nimble: Live Web Data as SQL Table Functions
+# Databricks × Nimble: Live Web Search as SQL Table Functions
 
-Turn a Databricks workspace into a live-web data platform: Unity Catalog **table functions** backed by Nimble's APIs and agents, callable from any SQL query, notebook, dashboard, or Databricks Genie agent — and landing results in governed Delta tables.
+Turn a Databricks workspace into a live web search platform: Unity Catalog **table functions** backed by Nimble's APIs and agents, callable from any SQL query, notebook, dashboard, or Databricks Genie agent — and landing results in governed Delta tables.
 
 ```sql
 -- Live web search, straight from SQL:
@@ -61,9 +61,9 @@ In short: `01_setup.sql` creates the `nimble_integration` catalog (schemas `tool
 
 See [`recipes/`](recipes/) for runnable patterns — including `local_business_universe.sql`, which stitches many `nimble_agent_run('google_maps_search', …)` calls into a governed Delta table.
 
-## Land web data as a governed Delta table
+## Land web search data as a governed Delta table
 
-The point of SQL-native web data: results compose with `CREATE TABLE … AS` and inherit Unity Catalog governance.
+The point of SQL-native web search data: results compose with `CREATE TABLE … AS` and inherit Unity Catalog governance.
 
 ```sql
 -- A table of companies → enrich each homepage → governed Delta table.
@@ -81,7 +81,7 @@ Genie registers **table functions** as tools, so each public function is directl
 
 ```bash
 python3 databricks/helpers/create_genie_space.py \
-    --title "Nimble Web Data" --warehouse "$WH" \
+    --title "Nimble Web Search" --warehouse "$WH" \
     --parent-path "/Users/you@example.com" \
     --instructions-file databricks/helpers/nimble_genie_instructions.md \
     --function nimble_integration.tools.nimble_search \

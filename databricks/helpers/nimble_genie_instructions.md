@@ -1,4 +1,4 @@
-### Nimble Web Data Integration
+### Nimble Web Search Integration
 
 This workspace provides Nimble's live-web capabilities through Unity Catalog **table functions**. Call them in the FROM clause.
 

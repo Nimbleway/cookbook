@@ -37,7 +37,7 @@ Example:
 > `users.<me>.dog_products`. Add: KPI counters for product count and average price; a bar of average
 > price by source; a price-vs-rating scatter colored by source; a comparison bar of average price per
 > keyword across sources; and a product table (name, source, price, rating) with the URL as a
-> clickable Open link. Add a markdown text widget at the top reading "_Live web data · **Powered by
+> clickable Open link. Add a markdown text widget at the top reading "_Live web search · **Powered by
 > Nimble**_". Use Nimble yellow (#F2F23B) as the primary series accent on a light theme. Then publish.
 
 The agent reads the table schema itself — don't pre-declare datasets. Confirm it published; grab the link.
