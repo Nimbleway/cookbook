@@ -19,7 +19,7 @@ Discovery of the schema:
 Usage
 -----
     python databricks/helpers/create_genie_space.py \\
-        --title "Nimble Web Data" \\
+        --title "Nimble Web Search" \\
         --warehouse <warehouse-id> \\
         --parent-path "/Users/<you>@<domain>" \\
         --instructions-file path/to/instructions.md \\

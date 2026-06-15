@@ -11,11 +11,11 @@ description: |
   functions — no CLI, no shell. Do NOT use for generic Databricks work with no live-web-data angle.
 ---
 
-# Nimble on Databricks — live web data → Delta → dashboard (Genie Code)
+# Nimble on Databricks — live web search → Delta → dashboard (Genie Code)
 
 Turn a natural-language brief like `pricing comparison on dog products from Amazon and Walmart` into a
 working Databricks data product, all inside Genie Code:
-**discover agents (SQL) → ingest live web data into a Delta table (SQL) → build an AI/BI dashboard
+**discover agents (SQL) → ingest live web search data into a Delta table (SQL) → build an AI/BI dashboard
 and/or a deployed app (Genie's native dashboard agent + AppsAgent) → deliver the link + headline.**
 
 You run everything natively — SQL against the warehouse and Genie's built-in dashboard agent. There is
@@ -93,7 +93,7 @@ view set and the exact hand-off wording from `references/deliverables.md`.
 
 - **Dashboard** → hand off to Genie's built-in **dashboard agent**: point it at the unified results
   table, request the per-vertical widgets (KPIs, comparison bars, price-vs-rating scatter, product
-  table with Open links), apply branding (title wordmark + a top text widget "Live web data · Powered
+  table with Open links), apply branding (title wordmark + a top text widget "Live web search · Powered
   by Nimble", yellow accent), and publish.
 - **App** (only if chosen) → create a Databricks App; Genie's **AppsAgent** scaffolds and deploys it.
   Default to a **Python** framework (Streamlit / Dash / Gradio) — the native path for Genie Code apps

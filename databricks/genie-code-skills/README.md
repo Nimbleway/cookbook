@@ -1,7 +1,7 @@
 # Genie Code skills — Nimble on Databricks
 
 Custom [Agent Skills](https://agentskills.io/specification) for **Databricks Genie Code** (Agent
-mode). They package the "live web data → Delta → dashboard/app" workflow so a user can ask Genie Code
+mode). They package the "live web search data → Delta → dashboard/app" workflow so a user can ask Genie Code
 in plain English and it drives the whole flow natively — using the Nimble Unity Catalog functions
 ([`../`](../) cookbook) plus Genie's native dashboard agent and AppsAgent. No `nimble` CLI, no shell
 scripts.
