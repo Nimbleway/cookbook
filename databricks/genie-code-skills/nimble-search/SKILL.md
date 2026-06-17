@@ -1,14 +1,15 @@
 ---
-name: nimble-data-products
+name: nimble-search
 description: |
-  Builds a Databricks data product from live web data, natively in Genie Code, end to end:
-  discovers the right Nimble web-data agents, scrapes into a Delta table, and assembles an AI/BI
-  dashboard — table → dashboard, for a quick demo or a real data product. Use whenever a request
-  pairs live or scraped web data WITH a Databricks destination — e.g. "pricing comparison on dog
-  products from Amazon and Walmart", "scrape Zillow/Instagram/Maps/search results into a Delta table
-  and build a dashboard", "show competitor prices from the web in a dashboard", "live web data in
-  Databricks". Runs entirely on SQL + Genie's native dashboard agent via the Nimble Unity Catalog
-  functions — no CLI, no shell. Do NOT use for generic Databricks work with no live-web-data angle.
+  Runs live web search in Databricks via Nimble, natively in Genie Code, end to end: discovers the
+  right Nimble web-data agents, searches/extract into a Delta table, and assembles an AI/BI
+  dashboard — search → table → dashboard, for a quick demo or a real data product. Use whenever a
+  request pairs live web search or extracted web data WITH a Databricks destination — e.g. "pricing
+  comparison on dog products from Amazon and Walmart", "extract Zillow/Instagram/Maps/search results
+  into a Delta table and build a dashboard", "show competitor prices from the web in a dashboard",
+  "live web data in Databricks". Runs entirely on SQL + Genie's native dashboard agent via the Nimble
+  Unity Catalog functions — no CLI, no shell. Do NOT use for generic Databricks work with no
+  live-web-search angle.
 ---
 
 # Nimble on Databricks — live web search → Delta → dashboard (Genie Code)

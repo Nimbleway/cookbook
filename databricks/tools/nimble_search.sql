@@ -29,7 +29,7 @@
  * Notes on parameters:
  *   - focus:        general | news | location | coding | geo | shopping |
  *                   social | academic. NULL leaves the server-side default.
- *   - search_depth: lite (metadata) | fast (~2K chars) | deep (full scrape).
+ *   - search_depth: lite (metadata) | fast (~2K chars) | deep (full extraction).
  *                   fast/deep require focus = general (or focus omitted).
  *   - include/exclude_domains: comma-separated; split to a list on the wire.
  */
@@ -101,7 +101,7 @@ CREATE OR REPLACE FUNCTION nimble_integration.tools.nimble_search(
     focus        STRING  DEFAULT NULL
         COMMENT 'Focus mode: general | news | location | coding | geo | shopping | social | academic. NULL = server default (general).',
     search_depth STRING  DEFAULT 'lite'
-        COMMENT 'Result detail: lite (links + snippets, default, available on all plans) | fast (~2K chars per result) | deep (full page scrape). fast/deep require focus=general (or focus omitted) AND a plan with premium search depth — they are not enabled on all accounts.',
+        COMMENT 'Result detail: lite (links + snippets, default, available on all plans) | fast (~2K chars per result) | deep (full page extraction). fast/deep require focus=general (or focus omitted) AND a plan with premium search depth — they are not enabled on all accounts.',
     country      STRING  DEFAULT 'US'
         COMMENT 'ISO Alpha-2 country to search from, e.g. US, GB, DE.',
     locale       STRING  DEFAULT 'en'
