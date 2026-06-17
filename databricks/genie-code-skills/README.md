@@ -10,7 +10,7 @@ scripts.
 
 ```
 genie-code-skills/
-└── nimble-data-products/   ← the skill (folder name = skill `name`)
+└── nimble-search/   ← the skill (folder name = skill `name`)
     ├── SKILL.md                        discover → ingest → dashboard/app workflow
     └── references/
         ├── nimble-agents.md            SQL discovery + the control-table + LATERAL ingest
@@ -28,7 +28,7 @@ with install guidance if missing.
 
 Genie Code loads skills from a `.assistant/skills/` directory (see the Databricks
 [agent skills guide](https://docs.databricks.com/aws/en/genie-code/skills)). Copy the skill folder
-there — the folder name must stay `nimble-data-products`.
+there — the folder name must stay `nimble-search`.
 
 - **User skill** (just you; the prototype path): `/Users/{username}/.assistant/skills/`
 - **Workspace skill** (org-wide; admins): `Workspace/.assistant/skills/`
@@ -42,8 +42,8 @@ Back the skills folder with a [Databricks Git folder](https://docs.databricks.co
 updates here flow to the workspace:
 
 1. In the workspace, create a Git folder from this repo.
-2. Point `.assistant/skills/nimble-data-products` at
-   `databricks/genie-code-skills/nimble-data-products` (symlink/copy on pull, or clone the repo
+2. Point `.assistant/skills/nimble-search` at
+   `databricks/genie-code-skills/nimble-search` (symlink/copy on pull, or clone the repo
    under `.assistant/skills/` and keep only this subtree).
 3. `git pull` to update; start a new Agent-mode chat to pick up changes.
 
@@ -56,7 +56,7 @@ describe the goal in plain English — the skill auto-loads by its description (
 Agent mode). Examples:
 
 - `pricing comparison on dog products from Amazon and Walmart`
-- `scrape Zillow listings for Austin into a Delta table and build a dashboard`
+- `extract Zillow listings for Austin into a Delta table and build a dashboard`
 - `show competitor prices from the web in a dashboard`
 
 You can also `@`-mention the skill to force it.
