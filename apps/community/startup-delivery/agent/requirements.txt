@@ -1,0 +1,12 @@
+# Startup.Delivery — Python agent deps
+pydantic>=2.0
+openai>=1.40                    # OpenRouter uses OpenAI-compatible chat/completions API
+requests>=2.31
+python-dotenv>=1.0
+fastapi>=0.110                  # local bridge: Next.js API -> agent (also streams the 4 steps via SSE)
+uvicorn>=0.27                   # ASGI server for the bridge
+
+# Install separately per docs:
+#   pip install -U tower      # serverless compute + lakehouse — https://tower.dev
+# Optional:
+#   polars                    # read Tower / Iceberg tables back into the agent

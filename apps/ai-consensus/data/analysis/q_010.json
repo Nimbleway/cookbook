@@ -1,0 +1,31 @@
+{
+  "id": "q_010",
+  "category": "Tech & AI",
+  "question": "GraphQL or REST \u2014 which is the better approach for new APIs in 2026?",
+  "models": {
+    "chatgpt": {
+      "verdict": "Both viable, use case dependent",
+      "reason": "REST suits simplicity and caching while GraphQL excels at flexible complex data needs.",
+      "raw": "VERDICT: Neither\u2014depends on use case\nREASON: In 2026 both coexist, with REST better for simplicity and caching while GraphQL excels for flexible, complex data needs Fordel Studios+1",
+      "format": "structured"
+    },
+    "perplexity": {
+      "verdict": "REST for most new APIs",
+      "reason": "REST remains simpler, cache-friendly, and widely supported for 2026 use cases.",
+      "raw": "VERDICT: REST for most new APIs todayREASON: REST remains simpler, cache-friendly, and widely supported for 2026 use cases.",
+      "format": "structured"
+    },
+    "gemini": {
+      "verdict": "Hybrid approach beats either alone",
+      "reason": "Best practice in 2026 combines REST microservices backend with GraphQL gateway frontend layer.",
+      "raw": "In 2026, the debate between GraphQL and REST has evolved from \"which one is better\" to \"which one fits your specific data shape.\" While GraphQL adoption has surged (growing over 340% in enterprise usage since 2023), REST remains the backbone of the web, powering over 80% of public APIs.\n\nThe \"better\" approach for a new API today depends entirely on who is consuming your data and how complex that data is.\n\n---\n\n## **Quick Decision Matrix**\n\n| If your project is... | Use **REST** | Use **GraphQL** |\n| :--- | :---: | :---: |\n| A public API for third-party developers | **\u2714** | |\n| A mobile app with limited bandwidth | | **\u2714** |\n| Simple CRUD (Create, Read, Update, Delete) | **\u2714** | |\n| Highly relational/nested data (e.g., Social Media) | | **\u2714** |\n| Microservices internal communication | **\u2714** | |\n| Real-time dashboards (Subscriptions) | | **\u2714** |\n\n---\n\n## **The 2026 Reality: The Hybrid Pattern**\nThe most common architectural choice for new high-scale projects in 2026 is actually a **Hybrid Approach**. \n\nInstead of choosing one, teams often build **RESTful microservices** for their internal backend logic and place a **GraphQL Gateway** (or Backend-for-Frontend) on top of them. This gives you the best of both worlds:\n*   **The Backend:** Benefits from REST\u2019s simplicity, easy caching, and standard error handling.\n*   **The Frontend:** Enjoys GraphQL\u2019s flexibility, fetching exactly what it needs for a specific screen in a single request.\n\n---\n\n## **Why REST Still Wins (The \"Old Reliable\")**\nREST is the default for a reason. In 2026, its maturity is its greatest strength:\n*   **Native Caching:** REST uses standard HTTP caching (via headers like `Cache-Control`). Browsers and CDNs understand this out of the box. \n*   **Predictability:** Each URL represents a resource. It is much easier to monitor, log, and rate-limit specific endpoints (e.g., `GET /users`) than a single `/graphql` endpoint.\n*   **Tooling:** Every language and framework has perfect support for REST. If you\u2019re building a Public API, REST is still the \"polite\" choice for external developers.\n\n## **Why GraphQL Shines (The \"Client First\" Choice)**\nGraphQL was built to solve specific pain points that REST struggles with:\n*   **No Over-fetching:** In REST, `GET /user` might return 50 fields when you only need the `username`. GraphQL lets the client ask for *just* the `username`, saving bandwidth\u2014critical for mobile users.\n*   **Single Request for Deep Data:** In REST, getting a \"User,\" their \"Posts,\" and the \"Comments\" on those posts might require three separate network calls. In GraphQL, this is one query.\n*   **Strong Typing:** With a GraphQL schema, the frontend knows exactly what data types to expect, reducing bugs and the need for manual documentation.\n\n---\n\n## **Final Verdict**\n*   **Choose REST** if you are building a **Public API**, a simple service, or if your team is small and needs to move fast without learning complex schema management.\n*   **Choose GraphQL** if you are building a **complex Frontend** (Web or Mobile) with deeply nested data relationships where performance and client flexibility are the top priorities.\n\n> **Pro Tip for 2026:** If you go the GraphQL route, ensure you use **Persisted Queries** and **DataLoader** from day one. Without them, GraphQL can suffer from performance bottlenecks (the N+1 problem) and security risks that REST naturally avoids.",
+      "format": "freeform"
+    }
+  },
+  "consensus": {
+    "label": "moderate",
+    "score": 0.55,
+    "summary": "All three agree that context determines the choice, but differ on whether REST should be the default (Perplexity) versus pursuing a hybrid architecture (Gemini) or pure case-by-case evaluation (ChatGPT)."
+  },
+  "analyzed_at": "2026-05-06T09:53:34.646979+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "q_080",
+  "category": "Science & Health",
+  "question": "Is taking a daily multivitamin actually beneficial for most people?",
+  "models": {
+    "chatgpt": {
+      "verdict": "Not necessary for most people",
+      "reason": "A balanced diet usually provides sufficient nutrients without supplementation.",
+      "raw": "VERDICT: Not necessary for most people\nREASON: A balanced diet usually suffices.",
+      "format": "structured"
+    },
+    "perplexity": {
+      "verdict": "Usually not necessary",
+      "reason": "Most people with adequate diets gain minimal benefits except those with specific deficiencies or inadequate intake.",
+      "raw": "VERDICT: Usually not necessary  \nREASON: For most people with adequate diets, multivitamins add little beyond filling nutrient gaps, and benefits are mainly for those with specific deficiencies or higher risk of inadequate intake.[Multivitamin/mineral Supplements - Health Professional Fact Sheet](https://ods.od.nih.gov/factsheets/MVMS-HealthProfessional/) [Do Multivitamins Actually Do Anything? - Houston Methodist](https://www.houstonmethodist.org/blog/articles/2022/sep/do-multivitamins-actually-do-anything/)",
+      "format": "structured"
+    },
+    "gemini": {
+      "verdict": "Usually unnecessary",
+      "reason": "Balanced diets typically eliminate the need for daily multivitamins.",
+      "raw": "VERDICT: Usually unnecessary with balanced diets.",
+      "format": "freeform"
+    }
+  },
+  "consensus": {
+    "label": "strong",
+    "score": 0.9,
+    "summary": "All three models agree that daily multivitamins are generally unnecessary for most people who maintain a balanced diet, with benefits primarily limited to those with identified nutrient gaps."
+  },
+  "analyzed_at": "2026-05-06T09:54:11.005544+00:00"
+}

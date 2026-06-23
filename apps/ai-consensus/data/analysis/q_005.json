@@ -1,0 +1,31 @@
+{
+  "id": "q_005",
+  "category": "Tech & AI",
+  "question": "ChatGPT or Claude \u2014 which is better for coding assistance?",
+  "models": {
+    "chatgpt": {
+      "verdict": "ChatGPT is better",
+      "reason": "Superior at explaining code clearly.",
+      "raw": "VERDICT: ChatGPT\nREASON: Superior at explaining code clearly.",
+      "format": "structured"
+    },
+    "perplexity": {
+      "verdict": "Claude is better",
+      "reason": "Claude excels at deep reasoning and explanations in coding tasks.",
+      "raw": "VERDICT: Claude is better for reasoningREASON: Claude often outperforms for deep reasoning and explanations in coding tasks.",
+      "format": "structured"
+    },
+    "gemini": {
+      "verdict": "Context-dependent; both elite",
+      "reason": "Claude for complex reasoning and refactoring; ChatGPT for rapid prototyping and multimodal tasks.",
+      "raw": "In the current landscape of 2026, the \"best\" assistant depends on whether you need a **speedy prototyper** or a **meticulous architect**. Both ChatGPT (GPT-5.5 / o-series) and Claude (4.7 Opus / Sonnet) are elite, but they have distinct personalities.\n\n### Quick Verdict: Which one should you use?\n*   **Choose Claude if:** You are working on a large, complex codebase, need to refactor messy code, or are hunting for a logical bug that spans multiple files.\n*   **Choose ChatGPT if:** You need to spin up a quick script, want to execute Python code in a sandbox (Data Analysis), or need a \"Swiss Army Knife\" that can also generate UI assets and browse the web for the latest API docs.\n\n---\n\n### Key Comparisons (2026 Models)\n\n| Feature | Claude (4.7 Opus/Sonnet) | ChatGPT (GPT-5.5 / o-series) |\n| :--- | :--- | :--- |\n| **Logic & Reasoning** | **Winner.** Excels at multi-step reasoning and \"SWE-bench\" (fixing real GitHub issues). | **Strong.** o-series models are better at pure competitive math/algorithms. |\n| **Code Quality** | Writes clean, idiomatic, and highly maintainable code. | Writes functional, \"quick-and-dirty\" code; occasionally needs cleanup. |\n| **Context Window** | **1M tokens** (via API) / **200K** (Web). Best for massive repos. | **1M tokens** (GPT-5.5). Great for large datasets and long sessions. |\n| **Execution** | No native code sandbox (requires local setup or Claude Code). | **Code Interpreter.** Can run Python, visualize data, and edit files natively. |\n| **Developer Tools** | **Claude Code:** A terminal-based agent that edits files and runs tests. | **Canvas:** A collaborative UI for side-by-side code editing and refinement. |\n\n---\n\n### Where Claude Wins: The \"Deep Thinker\"\nClaude has gained a reputation for being more \"honest\" and thorough. If you ask it to build a feature, it\u2019s more likely to include error handling, edge-case validation, and helpful comments without being asked.\n*   **Artifacts:** Claude\u2019s UI renders frontend code (React, HTML/CSS) instantly in a side window, making it the favorite for UI/UX developers.\n*   **Contextual Recall:** It is famously good at \"finding the needle in the haystack\" when you upload 20 different files and ask why a specific variable is leaking memory.\n\n### Where ChatGPT Wins: The \"Powerhouse\"\nChatGPT remains more versatile. If your coding task involves more than just text\u2014like analyzing a screenshot of a broken UI or processing a CSV\u2014it is the smoother choice.\n*   **Multimodality:** You can record a voice memo of a bug, upload a photo of a whiteboard diagram, and have ChatGPT generate the boilerplate in seconds.\n*   **Real-time Info:** ChatGPT\u2019s integration with Search (SearchGPT) is generally faster at pulling the very latest documentation for libraries that updated last week.\n\n---\n\n### Pro Tip: The Hybrid Workflow\nMany senior developers now use a **\"Two-Pass\"** system:\n1.  **ChatGPT** for rapid exploration, brainstorming architectural patterns, and generating initial boilerplate.\n2.  **Claude** to review that code, identify security vulnerabilities, and refactor it into production-ready modules.\n\nAre you working on a specific language or framework right now, or just looking to pick a primary subscription?",
+      "format": "freeform"
+    }
+  },
+  "consensus": {
+    "label": "moderate",
+    "score": 0.55,
+    "summary": "ChatGPT and Perplexity directly disagree on which tool is superior, while Gemini takes a nuanced position that Claude wins on reasoning (aligning with Perplexity) but ChatGPT wins on speed and versatility (aligning with ChatGPT's own claim)."
+  },
+  "analyzed_at": "2026-05-06T09:53:30.400882+00:00"
+}

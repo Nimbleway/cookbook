@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tunnel.solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #050806;
+    --dark: #08110c;
+    --panel: rgba(12, 24, 17, 0.88);
+    --panel-2: rgba(18, 39, 27, 0.92);
+    --border: rgba(0, 255, 135, 0.22);
+    --line: rgba(255, 255, 255, 0.12);
+    --green: #00ff87;
+    --grass: #0db15c;
+    --grass-dark: #063f24;
+    --gold: #ffd166;
+    --white: #f5fff8;
+    --grey: #6e7f74;
+    --grey-light: #a9b9ae;
+    --red: #ff3b3b;
+    --blue: #5de0ff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 20% 0%, rgba(93, 224, 255, 0.14), transparent 30%),
+      radial-gradient(circle at 80% 0%, rgba(255, 209, 102, 0.12), transparent 28%),
+      linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px),
+      linear-gradient(0deg, rgba(255,255,255,0.035) 1px, transparent 1px),
+      repeating-linear-gradient(90deg, #073d23 0 95px, #0a4c2c 95px 190px);
+    background-size: auto, auto, 72px 72px, 72px 72px, auto;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse at top left, rgba(255,255,255,0.22), transparent 30%),
+      radial-gradient(ellipse at top right, rgba(255,255,255,0.20), transparent 30%),
+      linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.72));
+    z-index: 0;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 88px 40px 88px 280px;
+    pointer-events: none;
+    border: 2px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+    z-index: 0;
+  }
+
+  header, main { position: relative; z-index: 1; }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 28px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(4, 10, 7, 0.82);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .crest {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,255,135,0.20), rgba(0,0,0,0.5));
+    box-shadow: 0 0 26px rgba(0, 255, 135, 0.16);
+    font-size: 19px;
+  }
+
+  .logo-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2.5px;
+    line-height: 1;
+  }
+
+  .logo-dot { color: var(--green); }
+
+  .logo-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--grey-light);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .scoreboard {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: rgba(0,0,0,0.35);
+    box-shadow: inset 0 0 28px rgba(0,255,135,0.06);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+  }
+
+  .scoreboard span { color: var(--grey-light); }
+  .scoreboard strong { color: var(--green); font-weight: 500; }
+
+  .live-indicator {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--red);
+  }
+
+  .live-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--red);
+    box-shadow: 0 0 18px var(--red);
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.35; transform: scale(0.75); }
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .sidebar {
+    width: 270px;
+    border-right: 1px solid var(--border);
+    background: rgba(5, 14, 9, 0.82);
+    backdrop-filter: blur(18px);
+    padding: 20px 14px;
+    overflow-y: auto;
+  }
+
+  .sidebar-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: var(--green);
+    text-transform: uppercase;
+    padding: 0 8px 10px;
+  }
+
+  .quick-prompt {
+    margin-bottom: 10px;
+    padding: 14px 14px;
+    font-size: 12.5px;
+    color: var(--grey-light);
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-left: 3px solid transparent;
+    border-radius: 12px;
+    transition: all 0.18s ease;
+    line-height: 1.45;
+    background:
+      linear-gradient(135deg, rgba(255,255,255,0.055), rgba(255,255,255,0.015)),
+      rgba(0,0,0,0.18);
+  }
+
+  .quick-prompt:hover {
+    color: var(--white);
+    border-left-color: var(--green);
+    border-color: rgba(0,255,135,0.38);
+    background: linear-gradient(135deg, rgba(0,255,135,0.16), rgba(0,0,0,0.12));
+    transform: translateX(4px);
+  }
+
+  .prompt-icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 9px;
+    color: var(--gold);
+    margin-bottom: 5px;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 1.8px;
+  }
+
+  .prompt-icon::before { content: "⚽"; font-size: 11px; }
+
+  .sidebar-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 18px 0;
+  }
+
+  .chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .welcome-icon {
+    width: 88px;
+    height: 88px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: radial-gradient(circle, rgba(0,255,135,0.24), rgba(0,0,0,0.28));
+    box-shadow: 0 0 60px rgba(0,255,135,0.16);
+    font-size: 42px;
+  }
+
+  .welcome-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 54px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 28px rgba(0,255,135,0.18);
+  }
+
+  .welcome-sub {
+    font-size: 14px;
+    color: var(--grey-light);
+    max-width: 520px;
+    line-height: 1.7;
+  }
+
+  .pitch-line {
+    width: 240px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.45), transparent);
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    animation: fadeUp 0.3s ease;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .message.user { align-items: flex-end; }
+  .message.assistant { align-items: flex-start; }
+
+  .message-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--grey-light);
+  }
+
+  .message.assistant .message-label { color: var(--green); }
+
+  .message-bubble {
+    max-width: 74%;
+    padding: 16px 18px;
+    font-size: 13.5px;
+    line-height: 1.7;
+    border-radius: 16px;
+    box-shadow: 0 14px 36px rgba(0,0,0,0.22);
+  }
+
+  .message.user .message-bubble {
+    background: linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.035));
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .message.assistant .message-bubble {
+    background:
+      linear-gradient(135deg, rgba(0,255,135,0.10), rgba(0,0,0,0.16)),
+      var(--panel);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--green);
+    white-space: pre-wrap;
+  }
+
+  .message-sources {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    color: var(--grey-light);
+  }
+
+  .typing {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--green);
+    border-radius: 16px;
+    width: fit-content;
+  }
+
+  .typing-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--green);
+    letter-spacing: 2px;
+  }
+
+  .typing-dots { display: flex; gap: 4px; }
+
+  .typing-dots span {
+    width: 5px;
+    height: 5px;
+    background: var(--green);
+    border-radius: 50%;
+    animation: blink 1.2s infinite;
+  }
+
+  .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+  .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+  @keyframes blink {
+    0%, 80%, 100% { opacity: 0.2; }
+    40% { opacity: 1; }
+  }
+
+  .input-area {
+    border-top: 1px solid var(--border);
+    padding: 16px 28px;
+    background: rgba(4, 10, 7, 0.88);
+    backdrop-filter: blur(18px);
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  .mode-selector { display: flex; gap: 8px; flex-wrap: wrap; }
+
+  .mode-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 7px 12px;
+    background: rgba(0,0,0,0.20);
+    border: 1px solid rgba(255,255,255,0.10);
+    color: var(--grey-light);
+    cursor: pointer;
+    border-radius: 999px;
+    transition: all 0.15s;
+  }
+
+  .mode-btn:hover, .mode-btn.active {
+    border-color: var(--green);
+    color: var(--black);
+    background: var(--green);
+    box-shadow: 0 0 24px rgba(0,255,135,0.18);
+  }
+
+  .input-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+  }
+
+  .input-box {
+    flex: 1;
+    background: rgba(0,0,0,0.30);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 14px 16px;
+    border-radius: 16px;
+    resize: none;
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    min-height: 48px;
+    max-height: 120px;
+  }
+
+  .input-box:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 4px rgba(0,255,135,0.08);
+  }
+
+  .input-box::placeholder { color: var(--grey-light); }
+
+  .send-btn {
+    width: 48px;
+    height: 48px;
+    background: var(--green);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+    flex-shrink: 0;
+    box-shadow: 0 0 24px rgba(0,255,135,0.22);
+  }
+
+  .send-btn:hover { transform: translateY(-2px) scale(1.03); background: #20ff99; }
+  .send-btn:disabled { background: var(--grey); cursor: not-allowed; box-shadow: none; }
+
+  .send-btn svg { width: 18px; height: 18px; fill: var(--black); }
+
+  .input-hint {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    color: var(--grey-light);
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 800px) {
+    .sidebar { display: none; }
+    body::after { inset: 84px 18px 92px 18px; }
+    .scoreboard { display: none; }
+    .message-bubble { max-width: 90%; }
+    .welcome-title { font-size: 42px; }
+  }
+
+
+  /* Anime World Cup player tunnel intro - crowd only appears AFTER exit */
+  .intro-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: #050000;
+    animation: introFade 1s ease 11.2s forwards;
+    isolation: isolate;
+  }
+
+  .intro-loader.skip { animation: introFade 0.45s ease forwards; }
+
+  /* DARK RED TUNNEL PHASE */
+  .anime-sky {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 50% 38%, rgba(255,235,210,0.16), transparent 9%),
+      radial-gradient(circle at 50% 45%, rgba(255,40,40,0.20), transparent 28%),
+      linear-gradient(180deg, #080000 0%, #210000 48%, #050000 100%);
+  }
+
+  .anime-sky::before {
+    content: "";
+    position: absolute;
+    inset: -15%;
+    background:
+      repeating-radial-gradient(circle at 50% 36%, rgba(255,255,255,0.045) 0 2px, transparent 2px 22px),
+      linear-gradient(90deg, transparent 0 46%, rgba(255,0,0,0.16) 49%, transparent 54%);
+    opacity: 0.8;
+    animation: animePulse 1.4s ease-in-out infinite alternate;
+  }
+
+  .tunnel-depth {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background:
+      linear-gradient(112deg, #020000 0 24%, rgba(100,0,0,0.96) 25% 29%, transparent 30%),
+      linear-gradient(248deg, #020000 0 24%, rgba(100,0,0,0.96) 25% 29%, transparent 30%),
+      radial-gradient(ellipse at 50% 42%, rgba(255,236,210,0.24) 0 4%, rgba(255,0,0,0.22) 9%, rgba(0,0,0,0.45) 24%, rgba(0,0,0,0.96) 72%);
+    animation: tunnelOpen 11s ease forwards;
+  }
+
+  .tunnel-depth::before,
+  .tunnel-depth::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 46%;
+    height: 100%;
+    background:
+      repeating-linear-gradient(180deg, rgba(255,30,30,0.35) 0 7px, transparent 7px 72px),
+      linear-gradient(90deg, rgba(0,0,0,0.92), rgba(90,0,0,0.72), rgba(0,0,0,0.88));
+    box-shadow: inset 0 0 60px rgba(255,0,0,0.20);
+    opacity: 0.78;
+  }
+  .tunnel-depth::before { left: 0; transform: skewY(10deg); }
+  .tunnel-depth::after { right: 0; transform: skewY(-10deg); }
+
+  .red-tunnel-light {
+    position: absolute;
+    z-index: 3;
+    top: 13%;
+    width: 11px;
+    height: 58vh;
+    border-radius: 999px;
+    background: #ff1717;
+    box-shadow: 0 0 24px #ff1717, 0 0 80px rgba(255,0,0,0.75);
+    opacity: 0.85;
+    animation: redFlicker 0.18s infinite alternate;
+  }
+  .red-tunnel-light.left { left: 23%; }
+  .red-tunnel-light.right { right: 23%; animation-delay: -0.1s; }
+
+  .pitch-exit {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 27%;
+    width: min(430px, 60vw);
+    height: min(280px, 39vh);
+    transform: translateX(-50%);
+    border-radius: 50% 50% 14px 14px / 62% 62% 14px 14px;
+    background:
+      radial-gradient(circle at 50% 42%, rgba(255,255,255,1), rgba(255,255,255,0.45) 16%, rgba(255,0,0,0.20) 34%, transparent 70%);
+    box-shadow: 0 0 100px rgba(255,255,255,0.48), 0 0 160px rgba(255,0,0,0.38);
+    animation: exitGlow 8s ease forwards, exitFlashAway 11s ease forwards;
+  }
+
+  /* STADIUM/CROWD REVEAL: hidden first, visible only after walkout */
+  .stadium-reveal {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(1.18);
+    background:
+      radial-gradient(circle at 50% 22%, rgba(255,255,255,0.92), rgba(255,255,255,0.12) 15%, transparent 27%),
+      linear-gradient(180deg, #07111f 0%, #0b1730 42%, #14361f 74%, #06431f 100%);
+    animation: stadiumReveal 11s ease forwards;
+  }
+
+  .stadium-bowl {
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    width: min(1120px, 112vw);
+    height: min(500px, 56vh);
+    transform: translateX(-50%);
+    border-radius: 50% 50% 18% 18% / 44% 44% 20% 20%;
+    background:
+      repeating-linear-gradient(0deg, rgba(255,255,255,0.12) 0 4px, transparent 4px 18px),
+      linear-gradient(180deg, rgba(30,60,100,0.92), rgba(5,10,20,0.96));
+    box-shadow: inset 0 0 80px rgba(255,255,255,0.12), 0 0 120px rgba(0,0,0,0.8);
+    overflow: hidden;
+  }
+
+  .stadium-bowl::before,
+  .stadium-bowl::after {
+    content: "🙌 🙌 🇦🇷 🙌 🇧🇷 🙌 🙌 🇫🇷 🙌 🇵🇹 🙌 🇩🇪 🙌 🇪🇸 🙌 🙌 🇺🇸 🙌 🇲🇽 🙌 🙌 🇯🇵 🙌 🇰🇷 🙌";
+    position: absolute;
+    left: -8%;
+    width: 116%;
+    font-size: clamp(24px, 4vw, 54px);
+    white-space: nowrap;
+    letter-spacing: 14px;
+    opacity: 0.94;
+    text-shadow: 0 5px 14px rgba(0,0,0,0.65);
+    animation: crowdBounce 0.42s ease-in-out infinite alternate;
+  }
+  .stadium-bowl::before { top: 34%; }
+  .stadium-bowl::after { top: 52%; animation-delay: -0.22s; }
+
+  .crowd-row {
+    position: absolute;
+    left: -10%;
+    width: 120%;
+    color: white;
+    font-size: clamp(22px, 3vw, 42px);
+    white-space: nowrap;
+    opacity: 0.82;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.7);
+    animation: crowdWave 0.7s ease-in-out infinite alternate;
+  }
+  .crowd-row.r1 { top: 20%; }
+  .crowd-row.r2 { top: 66%; animation-delay: -0.35s; }
+
+  .pitch-after-exit {
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    width: min(980px, 108vw);
+    height: 42vh;
+    transform: translateX(-50%) perspective(520px) rotateX(58deg);
+    background:
+      linear-gradient(90deg, rgba(255,255,255,0.22) 1px, transparent 1px),
+      repeating-linear-gradient(90deg, #0b8f47 0 80px, #08743b 80px 160px);
+    background-size: 80px 80px, auto;
+    border: 3px solid rgba(255,255,255,0.38);
+    box-shadow: 0 -20px 80px rgba(0,255,135,0.20);
+  }
+
+  .stadium-title {
+    position: absolute;
+    z-index: 8;
+    left: 50%;
+    top: 38%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    animation: titleAfterExit 11s ease forwards;
+  }
+  .stadium-title h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(56px, 9vw, 126px);
+    letter-spacing: 8px;
+    line-height: 0.88;
+    text-shadow: 0 0 24px rgba(255,255,255,0.45), 0 12px 30px rgba(0,0,0,0.8);
+  }
+  .stadium-title p {
+    margin-top: 12px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: var(--green);
+    text-shadow: 0 0 18px rgba(0,255,135,0.6);
+  }
+
+  .camera-flashes {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  .camera-flashes span {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 18px white, 0 0 38px rgba(255,255,255,0.8);
+    opacity: 0;
+    animation: cameraFlash 1.15s infinite;
+  }
+  .camera-flashes span:nth-child(1){ left: 18%; top: 28%; animation-delay: 8.05s; }
+  .camera-flashes span:nth-child(2){ left: 32%; top: 20%; animation-delay: 8.4s; }
+  .camera-flashes span:nth-child(3){ left: 55%; top: 24%; animation-delay: 8.2s; }
+  .camera-flashes span:nth-child(4){ left: 74%; top: 33%; animation-delay: 8.65s; }
+  .camera-flashes span:nth-child(5){ left: 85%; top: 49%; animation-delay: 8.1s; }
+  .camera-flashes span:nth-child(6){ left: 42%; top: 58%; animation-delay: 8.9s; }
+
+  .anime-beam {
+    position: absolute;
+    z-index: 7;
+    top: -15vh;
+    width: 24vw;
+    height: 130vh;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.36), transparent 68%);
+    filter: blur(22px);
+    mix-blend-mode: screen;
+    opacity: 0.12;
+    animation: beamSweep 3.2s ease-in-out infinite alternate, beamBoost 11s ease forwards;
+  }
+  .anime-beam.left { left: 6vw; transform: rotate(18deg); }
+  .anime-beam.right { right: 6vw; transform: rotate(-18deg); animation-delay: -1.2s, 0s; }
+
+  .speed-lines {
+    position: absolute;
+    z-index: 6;
+    inset: 0;
+    background:
+      linear-gradient(90deg, transparent 0 10%, rgba(255,255,255,0.09) 10.3%, transparent 11%),
+      linear-gradient(90deg, transparent 0 28%, rgba(255,0,0,0.14) 28.4%, transparent 29.3%),
+      linear-gradient(90deg, transparent 0 72%, rgba(255,255,255,0.08) 72.3%, transparent 73%),
+      linear-gradient(90deg, transparent 0 88%, rgba(255,0,0,0.14) 88.4%, transparent 89%);
+    opacity: 0;
+    animation: speedReveal 8.3s ease forwards;
+  }
+
+  .anime-player {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    bottom: 5.5vh;
+    width: 150px;
+    height: 330px;
+    transform: translateX(-50%) scale(1.24);
+    transform-origin: bottom center;
+    animation: animeWalkAway 8.25s cubic-bezier(.18,.75,.22,1) forwards, playerStadiumStand 11s ease forwards;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.80)) drop-shadow(0 0 22px rgba(255,0,0,0.36));
+  }
+
+  .anime-player .hair {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    width: 70px;
+    height: 48px;
+    transform: translateX(-50%);
+    background: #121212;
+    border-radius: 52% 48% 44% 42%;
+    box-shadow: -13px 3px 0 #0b0b0b, 10px 6px 0 #0c0c0c;
+    z-index: 4;
+  }
+
+  .anime-player .head {
+    position: absolute;
+    left: 50%;
+    top: 24px;
+    width: 56px;
+    height: 62px;
+    transform: translateX(-50%);
+    background: linear-gradient(145deg, #ffd7a1, #b96d42 70%);
+    border: 3px solid #121212;
+    border-radius: 42% 42% 48% 48%;
+    z-index: 3;
+  }
+
+  .anime-player .neck {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    width: 30px;
+    height: 26px;
+    transform: translateX(-50%);
+    background: #b96d42;
+    border: 3px solid #121212;
+    z-index: 1;
+  }
+
+  .anime-player .jersey {
+    position: absolute;
+    left: 50%;
+    top: 96px;
+    width: 96px;
+    height: 114px;
+    transform: translateX(-50%);
+    background:
+      linear-gradient(90deg, rgba(255,255,255,0.9) 0 18%, transparent 18% 33%, rgba(255,255,255,0.9) 33% 51%, transparent 51% 66%, rgba(255,255,255,0.9) 66% 84%, transparent 84%),
+      linear-gradient(180deg, #60d8ff, #1675c9);
+    border: 4px solid #111;
+    border-radius: 24px 24px 18px 18px;
+    z-index: 2;
+    box-shadow: inset 0 -16px 0 rgba(0,0,0,0.15);
+  }
+
+  .anime-player .jersey::after {
+    content: "10";
+    position: absolute;
+    inset: 24px 0 auto 0;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 46px;
+    letter-spacing: 2px;
+    color: rgba(0,0,0,0.62);
+    text-shadow: 0 2px 0 rgba(255,255,255,0.25);
+  }
+
+  .anime-player .shorts {
+    position: absolute;
+    left: 50%;
+    top: 202px;
+    width: 90px;
+    height: 54px;
+    transform: translateX(-50%);
+    background: #111;
+    border: 4px solid #111;
+    border-radius: 10px 10px 18px 18px;
+    z-index: 2;
+  }
+
+  .anime-player .arm,
+  .anime-player .leg {
+    position: absolute;
+    background: linear-gradient(145deg, #ffd7a1, #8f4e31);
+    border: 4px solid #111;
+    transform-origin: top center;
+    z-index: 1;
+  }
+
+  .anime-player .arm {
+    top: 112px;
+    width: 28px;
+    height: 112px;
+    border-radius: 18px;
+    animation: animeArm 0.62s ease-in-out infinite alternate;
+  }
+  .anime-player .arm.left { left: 13px; }
+  .anime-player .arm.right { right: 13px; animation-delay: -0.62s; }
+
+  .anime-player .leg {
+    top: 246px;
+    width: 32px;
+    height: 106px;
+    border-radius: 18px 18px 12px 12px;
+    animation: animeLeg 0.62s ease-in-out infinite alternate;
+  }
+  .anime-player .leg.left { left: 42px; }
+  .anime-player .leg.right { right: 42px; animation-delay: -0.62s; }
+
+  .anime-player .boot {
+    position: absolute;
+    bottom: -12px;
+    width: 44px;
+    height: 20px;
+    background: #00ff87;
+    border: 4px solid #111;
+    border-radius: 18px 8px 8px 18px;
+  }
+  .anime-player .leg.left .boot { left: -12px; }
+  .anime-player .leg.right .boot { right: -12px; transform: scaleX(-1); }
+
+  .intro-hud {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 32px;
+    width: min(760px, calc(100vw - 36px));
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 18px;
+    align-items: end;
+    pointer-events: none;
+    animation: hudOut 11s ease forwards;
+  }
+
+  .broadcast-card {
+    padding: 18px 22px;
+    border: 1px solid rgba(255,50,50,0.55);
+    background: linear-gradient(135deg, rgba(0,0,0,0.78), rgba(58,0,0,0.88));
+    box-shadow: 0 0 42px rgba(255,0,0,0.18), inset 0 0 28px rgba(255,255,255,0.04);
+    clip-path: polygon(0 0, 94% 0, 100% 22%, 100% 100%, 6% 100%, 0 78%);
+  }
+
+  .broadcast-kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #ff4b4b;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .broadcast-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(38px, 6vw, 74px);
+    letter-spacing: 5px;
+    line-height: 0.9;
+  }
+
+  .broadcast-sub {
+    margin-top: 9px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #ffb7b7;
+  }
+
+  .countdown-ring {
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(255,255,255,0.2);
+    background:
+      conic-gradient(#ff2020 360deg, rgba(255,255,255,0.08) 0deg),
+      radial-gradient(circle, rgba(0,0,0,0.88) 0 58%, transparent 59%);
+    box-shadow: 0 0 40px rgba(255,0,0,0.34);
+    animation: countdownSweep 8s linear forwards;
+  }
+
+  .countdown-ring span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+    letter-spacing: 2px;
+    color: var(--white);
+    text-shadow: 0 0 18px rgba(255,0,0,0.7);
+  }
+
+  .intro-skip {
+    position: absolute;
+    z-index: 20;
+    right: 24px;
+    top: 22px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(0,0,0,0.46);
+    color: var(--grey-light);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+  .intro-flash {
+    position: absolute;
+    z-index: 15;
+    inset: 0;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+    animation: finalFlash 11s ease forwards;
+  }
+
+  @keyframes animeWalkAway {
+    0% { transform: translateX(-50%) translateY(18px) scale(1.32); opacity: 0; filter: blur(1.2px); }
+    8% { opacity: 1; }
+    58% { transform: translateX(-50%) translateY(-48px) scale(0.74); opacity: 1; filter: blur(0); }
+    82% { transform: translateX(-50%) translateY(-118px) scale(0.37); opacity: 1; filter: blur(0); }
+    99% { transform: translateX(-50%) translateY(-150px) scale(0.24); opacity: 1; filter: blur(1px); }
+    100% { transform: translateX(-50%) translateY(-150px) scale(0.24); opacity: 0; filter: blur(5px); }
+  }
+
+  @keyframes playerStadiumStand {
+    0%, 73% { opacity: 1; }
+    74%, 100% { opacity: 0; }
+  }
+
+  @keyframes animeArm { from { transform: rotate(26deg); } to { transform: rotate(-28deg); } }
+  @keyframes animeLeg { from { transform: rotate(-18deg); } to { transform: rotate(20deg); } }
+
+  @keyframes exitGlow {
+    0%, 45% { opacity: 0.40; transform: translateX(-50%) scale(0.86); }
+    72% { opacity: 0.98; transform: translateX(-50%) scale(1.18); }
+    100% { opacity: 1; transform: translateX(-50%) scale(1.62); }
+  }
+
+  @keyframes exitFlashAway {
+    0%, 72% { opacity: 1; }
+    76%, 100% { opacity: 0; }
+  }
+
+  @keyframes stadiumReveal {
+    0%, 72% { opacity: 0; transform: scale(1.22); }
+    76% { opacity: 1; transform: scale(1.08); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes tunnelOpen {
+    0%, 70% { opacity: 1; transform: scale(1); }
+    76%, 100% { opacity: 0; transform: scale(1.16); }
+  }
+
+  @keyframes titleAfterExit {
+    0%, 78% { opacity: 0; transform: translate(-50%, -40%) scale(0.92); }
+    83%, 96% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 0; transform: translate(-50%, -62%) scale(1.05); }
+  }
+
+  @keyframes crowdBounce { from { transform: translateY(0); } to { transform: translateY(-6px); } }
+  @keyframes crowdWave { from { transform: translateX(0) translateY(0); } to { transform: translateX(18px) translateY(-5px); } }
+
+  @keyframes cameraFlash {
+    0%, 78% { opacity: 0; transform: scale(0.5); }
+    82% { opacity: 1; transform: scale(2.8); }
+    100% { opacity: 0; transform: scale(0.3); }
+  }
+
+  @keyframes redFlicker { from { opacity: 0.52; } to { opacity: 1; } }
+  @keyframes beamSweep { from { opacity: 0.10; filter: blur(32px); } to { opacity: 0.35; filter: blur(16px); } }
+  @keyframes beamBoost { 0%, 72% { opacity: 0.14; } 78%, 100% { opacity: 0.62; } }
+
+  @keyframes speedReveal {
+    0%, 48% { opacity: 0; transform: scaleX(1); }
+    72% { opacity: 0.62; transform: scaleX(1.12); }
+    100% { opacity: 0; transform: scaleX(1.25); }
+  }
+
+  @keyframes hudOut {
+    0%, 70% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    76%, 100% { opacity: 0; transform: translateX(-50%) translateY(30px); }
+  }
+
+  @keyframes animePulse { from { transform: scale(1); opacity: 0.52; } to { transform: scale(1.04); opacity: 0.9; } }
+
+  @keyframes countdownSweep {
+    0% { background: conic-gradient(#ff2020 360deg, rgba(255,255,255,0.08) 0deg), radial-gradient(circle, rgba(0,0,0,0.88) 0 58%, transparent 59%); }
+    100% { background: conic-gradient(#ff2020 0deg, rgba(255,255,255,0.08) 0deg), radial-gradient(circle, rgba(0,0,0,0.88) 0 58%, transparent 59%); }
+  }
+
+  @keyframes finalFlash {
+    0%, 71% { opacity: 0; }
+    74% { opacity: 1; }
+    78% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+
+  @keyframes introFade { to { opacity: 0; visibility: hidden; pointer-events: none; } }
+
+  @media (max-width: 700px) {
+    .anime-player { width: 112px; height: 250px; }
+    .intro-hud { grid-template-columns: 1fr; }
+    .countdown-ring { width: 82px; height: 82px; justify-self: end; }
+    .countdown-ring span { font-size: 38px; }
+    .stadium-bowl::before, .stadium-bowl::after { letter-spacing: 8px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .intro-loader { animation-duration: 0.01s; }
+    .anime-player, .anime-player .arm, .anime-player .leg, .anime-beam, .broadcast-card, .intro-flash, .speed-lines, .pitch-exit, .stadium-reveal, .tunnel-depth { animation: none; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="intro-loader" id="introLoader" aria-label="Anime player entering the football tunnel">
+  <!-- Hidden until the player exits. This is the crowd/stadium reveal. -->
+  <div class="stadium-reveal" aria-hidden="true">
+    <div class="stadium-bowl">
+      <div class="crowd-row r1">🙌 🇦🇷 🙌 🇧🇷 🙌 🇫🇷 🙌 🇵🇹 🙌 🇩🇪 🙌 🇪🇸 🙌 🇺🇸 🙌 🇲🇽 🙌</div>
+      <div class="crowd-row r2">🇧🇷 🙌 🙌 🇦🇷 🙌 🇫🇷 🙌 🇯🇵 🙌 🇰🇷 🙌 🇵🇹 🙌 🇩🇪 🙌 🇪🇸</div>
+    </div>
+    <div class="pitch-after-exit"></div>
+    <div class="camera-flashes">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="stadium-title">
+      <h1>TUNNEL.SOLUTIONS</h1>
+      <p>AI MATCH INTELLIGENCE</p>
+    </div>
+  </div>
+
+  <!-- Tunnel phase: crowd is NOT visible here. -->
+  <div class="anime-sky"></div>
+  <div class="tunnel-depth"></div>
+  <div class="pitch-exit"></div>
+  <div class="red-tunnel-light left"></div>
+  <div class="red-tunnel-light right"></div>
+  <div class="anime-beam left"></div>
+  <div class="anime-beam right"></div>
+  <div class="speed-lines"></div>
+
+  <div class="anime-player" aria-hidden="true">
+    <div class="hair"></div>
+    <div class="head"></div>
+    <div class="neck"></div>
+    <div class="jersey"></div>
+    <div class="shorts"></div>
+    <div class="arm left"></div>
+    <div class="arm right"></div>
+    <div class="leg left"><div class="boot"></div></div>
+    <div class="leg right"><div class="boot"></div></div>
+  </div>
+
+  <div class="intro-hud">
+    <div class="broadcast-card">
+      <div class="broadcast-kicker">FIFA WORLD CUP 2026 · PLAYER WALKOUT</div>
+      <div class="broadcast-title">ENTERING THE RED TUNNEL</div>
+      <div class="broadcast-sub">BOOTS ON CONCRETE · CROWD RISING · STADIUM REVEAL AT EXIT</div>
+    </div>
+    <div class="countdown-ring"><span id="introTimer">8</span></div>
+  </div>
+
+  <div class="intro-flash"></div>
+  <button class="intro-skip" onclick="skipIntro()">SKIP INTRO</button>
+</div>
+
+<header>
+  <div class="brand">
+    <div class="crest">🏆</div>
+    <div>
+      <div class="logo-text">tunnel<span class="logo-dot">.</span>solutions</div>
+      <div class="logo-sub">World Cup Match Intelligence</div>
+    </div>
+  </div>
+
+  <div class="scoreboard">
+    <span>Kickoff Mode</span>
+    <strong>AI Scout</strong>
+    <span>90:00</span>
+    <div class="live-indicator">
+      <div class="live-dot"></div>
+      LIVE
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="sidebar">
+    <div class="sidebar-label">Match Briefings</div>
+    <div class="quick-prompt" onclick="sendQuick(this)">
+      <span class="prompt-icon">PRE-MATCH</span>
+      Tunnel report for England vs France
+    </div>
+    <div class="quick-prompt" onclick="sendQuick(this)">
+      <span class="prompt-icon">FANTASY XI</span>
+      Should I captain Mbappe in fantasy?
+    </div>
+    <div class="quick-prompt" onclick="sendQuick(this)">
+      <span class="prompt-icon">LIVE TACTICS</span>
+      What's happening in the match right now?
+    </div>
+    <div class="quick-prompt" onclick="sendQuick(this)">
+      <span class="prompt-icon">FULL TIME</span>
+      Break down what just happened
+    </div>
+    <div class="sidebar-divider"></div>
+    <div class="sidebar-label">Tournament Desk</div>
+    <div class="quick-prompt" onclick="sendQuick(this)">
+      <span class="prompt-icon">POWER RANKING</span>
+      Who are the favorites to win?
+    </div>
+    <div class="quick-prompt" onclick="sendQuick(this)">
+      <span class="prompt-icon">GOLDEN BOOT</span>
+      Top scorers this tournament
+    </div>
+  </div>
+
+  <div class="chat-area">
+    <div class="messages" id="messages">
+      <div class="welcome" id="welcome">
+        <div class="welcome-icon">⚽</div>
+        <div class="welcome-title">Enter the Tunnel</div>
+        <div class="pitch-line"></div>
+        <div class="welcome-sub">Step into the stadium tunnel before kickoff. Ask for pre-match scouting, live tactical reads, fantasy calls, or post-match analysis for the 2026 World Cup.</div>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <div class="mode-selector">
+        <button class="mode-btn active" onclick="setMode('auto', this)">Auto</button>
+        <button class="mode-btn" onclick="setMode('pre_match', this)">Pre-Match</button>
+        <button class="mode-btn" onclick="setMode('live', this)">Live</button>
+        <button class="mode-btn" onclick="setMode('post_match', this)">Post-Match</button>
+      </div>
+      <div class="input-row">
+        <textarea
+          class="input-box"
+          id="inputBox"
+          placeholder="Ask the match desk... e.g. 'Tunnel report for Brazil vs Argentina'"
+          rows="1"
+          onkeydown="handleKey(event)"
+          oninput="autoResize(this)"
+        ></textarea>
+        <button class="send-btn" id="sendBtn" onclick="sendMessage()" aria-label="Send message">
+          <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
+        </button>
+      </div>
+      <div class="input-hint">ENTER to send · SHIFT+ENTER for new line · LIVE FROM THE TUNNEL</div>
+    </div>
+  </div>
+</main>
+
+<script>
+
+  let introInterval;
+
+  function skipIntro() {
+    const intro = document.getElementById('introLoader');
+    if (intro) intro.classList.add('skip');
+    if (introInterval) clearInterval(introInterval);
+  }
+
+  window.addEventListener('load', () => {
+    let remaining = 8;
+    const timer = document.getElementById('introTimer');
+    introInterval = setInterval(() => {
+      remaining -= 1;
+      if (timer) timer.textContent = Math.max(remaining, 0);
+      if (remaining <= 0) clearInterval(introInterval);
+    }, 1000);
+    setTimeout(skipIntro, 11200);
+  });
+
+  const API_BASE = "https://tunnelsolutions-production.up.railway.app/api";
+  let currentMode = "auto";
+
+  function setMode(mode, btn) {
+    currentMode = mode;
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+
+  function handleKey(e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
+  }
+
+  function autoResize(el) {
+    el.style.height = 'auto';
+    el.style.height = Math.min(el.scrollHeight, 120) + 'px';
+  }
+
+  function sendQuick(el) {
+    const text = el.childNodes[el.childNodes.length - 1].textContent.trim();
+    document.getElementById('inputBox').value = text;
+    sendMessage();
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/[&<>"']/g, (m) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
+    }[m]));
+  }
+
+  function addMessage(role, text, sources = []) {
+    const welcome = document.getElementById('welcome');
+    if (welcome) welcome.remove();
+
+    const messages = document.getElementById('messages');
+    const div = document.createElement('div');
+    div.className = `message ${role}`;
+
+    const label = role === 'user' ? 'FAN QUESTION' : '⚽ MATCH DESK';
+    const safeText = escapeHtml(text);
+    const sourcesHtml = sources && sources.length > 0
+      ? `<div class="message-sources">sources: ${sources.map(escapeHtml).join(' · ')}</div>` : '';
+
+    div.innerHTML = `
+      <div class="message-label">${label}</div>
+      <div class="message-bubble">${safeText}</div>
+      ${sourcesHtml}
+    `;
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function addTyping() {
+    const welcome = document.getElementById('welcome');
+    if (welcome) welcome.remove();
+
+    const messages = document.getElementById('messages');
+    const div = document.createElement('div');
+    div.className = 'message assistant';
+    div.id = 'typing';
+    div.innerHTML = `
+      <div class="message-label">⚽ MATCH DESK</div>
+      <div class="typing">
+        <span class="typing-text">SCANNING THE PITCH</span>
+        <div class="typing-dots"><span></span><span></span><span></span></div>
+      </div>
+    `;
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function removeTyping() {
+    const t = document.getElementById('typing');
+    if (t) t.remove();
+  }
+
+  async function sendMessage() {
+    const input = document.getElementById('inputBox');
+    const sendBtn = document.getElementById('sendBtn');
+    const message = input.value.trim();
+
+    if (!message) return;
+
+    input.value = '';
+    input.style.height = 'auto';
+    sendBtn.disabled = true;
+
+    addMessage('user', message);
+    addTyping();
+
+    try {
+      const response = await fetch(`${API_BASE}/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message, mode: currentMode })
+      });
+
+      const data = await response.json();
+      removeTyping();
+      addMessage('assistant', data.response || 'No response from match desk.', data.sources || []);
+    } catch (err) {
+      removeTyping();
+      addMessage('assistant', '⚠️ Could not reach the match desk. Check that your backend API is live.');
+    }
+
+    sendBtn.disabled = false;
+    input.focus();
+  }
+</script>
+</body>
+</html>

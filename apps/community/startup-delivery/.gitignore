@@ -1,0 +1,32 @@
+# env / secrets
+.env
+.env.local
+
+# python
+agent/.venv/
+__pycache__/
+*.pyc
+.cache/
+cache/
+
+# local deliveries log (Loading Dock mirror; regenerated as you run)
+agent/.data/
+
+# node / next
+node_modules/
+web/.next/
+web/out/
+.vercel/
+
+# os
+.DS_Store
+
+# nimble response cache (keep it local, it can get big)
+*.nimble-cache.json
+.gstack/
+
+# internal / not for the public repo
+docs/HACKATHON_JUDGING.md
+docs/DEMO_VIDEO.md
+.pi/
+demo-video/

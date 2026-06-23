@@ -1,0 +1,243 @@
+@import "@fontsource/outfit/400.css";
+@import "@fontsource/outfit/500.css";
+@import "@fontsource/outfit/600.css";
+@import "@fontsource/outfit/700.css";
+
+/* Metric-adjusted fallback to cut layout shift while Outfit swaps in. Tuned to
+   Outfit's real metrics (unitsPerEm 1000, ascent 1000, descent -260, lineGap 0,
+   xHeight 475) layered over a local Arial. size-adjust 105% splits the difference
+   between Outfit's narrower x-height (~92% of Arial) and wider advances (~129%);
+   the *-override values reproduce Outfit's line box after that scale
+   (ascent 1.0/1.05, descent 0.26/1.05, no line gap), so swapping in the web font
+   barely moves the hero title or brand headings. */
+@font-face {
+  font-family: "Outfit Fallback";
+  src: local("Arial");
+  font-display: swap;
+  size-adjust: 105%;
+  ascent-override: 95.24%;
+  descent-override: 24.76%;
+  line-gap-override: 0%;
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Surfaces — warm espresso, tonal layering (no glass, no pure black) */
+  --surface-base: oklch(0.17 0.02 55);
+  --surface-raised: oklch(0.22 0.025 55);
+  --surface-overlay: oklch(0.27 0.03 55);
+  /* warm near-white for embedded light content (landing preview); never #fff */
+  --surface-paper: oklch(0.96 0.01 85);
+
+  /* Text — tinted warm, never pure white. muted clears AA (4.5:1) on overlay. */
+  --text-primary: oklch(0.95 0.02 85);
+  --text-secondary: oklch(0.78 0.03 70);
+  --text-muted: oklch(0.66 0.025 65);
+
+  /* Accents + status */
+  --accent-primary: oklch(0.68 0.14 45);
+  --accent-primary-deep: oklch(0.58 0.14 42);
+  /* dark ink that sits on top of the coral accent (text/glyphs on accent fills) */
+  --on-accent: oklch(0.18 0.02 55);
+  /* brighter coral for accent-colored TEXT on tinted backgrounds (clears AA on accent-glow) */
+  --accent-text: oklch(0.78 0.13 45);
+  --accent-secondary: oklch(0.74 0.085 175);
+  --status-success: oklch(0.74 0.13 150);
+  --status-error: oklch(0.64 0.15 25);
+  --status-pending: oklch(0.8 0.12 85);
+
+  --border-subtle: oklch(0.32 0.025 55);
+  --border-strong: oklch(0.42 0.03 55);
+
+  /* tinted alpha helpers, reused across components */
+  --accent-glow: oklch(0.68 0.14 45 / 0.16);
+  --accent-ring: oklch(0.68 0.14 45 / 0.5);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-xxl: 64px;
+
+  --font-sans: "Outfit", "Outfit Fallback", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+
+  /* Motion — ease-out only, no bounce */
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-1: 160ms;
+  --dur-2: 240ms;
+  --dur-3: 360ms;
+  --dur-4: 520ms;
+
+  /* Elevation — soft, warm, never harsh black */
+  --shadow-card: 0 1px 2px oklch(0.05 0.02 55 / 0.4);
+  --shadow-raised: 0 8px 24px oklch(0.05 0.02 55 / 0.35);
+  --shadow-unbox: 0 28px 64px oklch(0.04 0.02 55 / 0.55);
+  --shadow-drawer: -16px 0 48px oklch(0.04 0.02 55 / 0.5);
+  /* coral-tinted glow for the primary action (accent hue, not neutral) */
+  --shadow-accent: 0 6px 18px oklch(0.55 0.14 45 / 0.28);
+  --shadow-accent-hover: 0 10px 24px oklch(0.55 0.14 45 / 0.34);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--text-primary);
+  background:
+    radial-gradient(ellipse 90% 60% at 12% -8%, oklch(0.3 0.07 45 / 0.32), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 92% 0%, oklch(0.3 0.05 175 / 0.12), transparent 55%),
+    var(--surface-base);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Workshop grain — decorative warmth, fights flatness. Fixed to the viewport,
+   but with NO mix-blend-mode: a blended fixed layer forces a full repaint on
+   every scroll frame (jank on the long result page). Dropping the blend keeps
+   the grain look while letting the layer stay cheaply composited. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: var(--accent-secondary);
+  text-underline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent-ring);
+  outline-offset: 2px;
+}
+
+/* Shared button primitives ------------------------------------------------ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: 11px 18px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background var(--dur-1) var(--ease-out-quart),
+    border-color var(--dur-1) var(--ease-out-quart),
+    color var(--dur-1) var(--ease-out-quart),
+    transform var(--dur-1) var(--ease-out-quart),
+    box-shadow var(--dur-1) var(--ease-out-quart);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn--primary {
+  background: var(--accent-primary);
+  color: var(--on-accent);
+  box-shadow: var(--shadow-accent);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: var(--accent-primary-deep);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-accent-hover);
+}
+
+.btn--ghost {
+  background: var(--surface-raised);
+  border-color: var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.btn--ghost:hover:not(:disabled) {
+  border-color: var(--border-strong);
+  background: var(--surface-overlay);
+}
+
+.btn--quiet {
+  background: transparent;
+  color: var(--text-secondary);
+  padding-inline: 12px;
+}
+
+.btn--quiet:hover:not(:disabled) {
+  color: var(--text-primary);
+  background: oklch(0.95 0.02 85 / 0.06);
+}
+
+.btn--sm {
+  padding: 7px 12px;
+  font-size: 0.8125rem;
+  border-radius: var(--radius-sm);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

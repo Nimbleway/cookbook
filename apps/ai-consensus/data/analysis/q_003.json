@@ -1,0 +1,31 @@
+{
+  "id": "q_003",
+  "category": "Tech & AI",
+  "question": "React or Vue \u2014 which is better for building web apps in 2026?",
+  "models": {
+    "chatgpt": {
+      "verdict": "React",
+      "reason": "Its ecosystem and enterprise support remain unmatched.",
+      "raw": "VERDICT: React\nREASON: Its ecosystem and enterprise support remain unmatched.",
+      "format": "structured"
+    },
+    "perplexity": {
+      "verdict": "React for larger, scalable apps",
+      "reason": "It offers stronger ecosystem, tooling, and scalability for complex front-ends.",
+      "raw": "VERDICT: React for larger, scalable appsREASON: It offers stronger ecosystem, tooling, and scalability for complex front-ends in 2026.",
+      "format": "structured"
+    },
+    "gemini": {
+      "verdict": "Depends on project goals",
+      "reason": "React wins for scale and jobs; Vue wins for productivity and performance.",
+      "raw": "In 2026, the \"better\" framework depends entirely on your project's specific goals. Both have matured into powerful ecosystems, but they serve different philosophies. **React** remains the industry titan for scale and career opportunities, while **Vue** is often the winner for developer productivity and performance-first SPAs.\n\nHere is the breakdown of how they compare in 2026:\n\n### At a Glance: Key Differences\n| Feature | React (v19.x+) | Vue (v3.5+) |\n| :--- | :--- | :--- |\n| **Core Philosophy** | Flexibility & Ecosystem (Library-first) | Integrated & Elegant (Framework-first) |\n| **Learning Curve** | Moderate (JSX, Hooks, RSCs) | Low/Gentle (HTML templates, intuitive API) |\n| **Performance** | High (Server Components, Compiler) | Ultra-High (Fine-grained reactivity, Vapor Mode) |\n| **State Management** | Fragmented (Zustand, Jotai, Redux) | Unified (Pinia is the official standard) |\n| **Mobile** | Native (React Native) | Hybrid (Capacitor, Quasar, NativeScript) |\n\n---\n\n### 1. Performance: Virtual DOM vs. Vapor Mode\nReact 19 has leaned heavily into **React Server Components (RSCs)** and its new **compiler**, which automates much of the manual optimization (like `useMemo`) that used to frustrate developers. It excels at content-heavy apps by moving the heavy lifting to the server.\n\nVue, however, has introduced **Vapor Mode**, a compiler-driven strategy that allows components to skip the Virtual DOM entirely. This results in apps that are faster and have smaller bundle sizes, making Vue the preferred choice for highly interactive, client-side heavy applications where every millisecond of \"snappiness\" counts.\n\n### 2. The Ecosystem & Job Market\nIf your goal is **employability**, **React** is the clear winner. In 2026, React\u2019s market share remains roughly 5x that of Vue. \n*   **React:** You\u2019ll find more third-party libraries, specialized UI kits (like Shadcn/ui or Radix), and a massive pool of senior talent.\n*   **Vue:** The ecosystem is more \"official.\" While smaller, it is highly cohesive. You don't have to wonder which router or state management tool to use; the \"Vue way\" is well-documented and maintained by the core team.\n\n### 3. Developer Experience (DX)\nVue is widely praised for its **Single File Components (SFCs)**, where your HTML, CSS, and Logic live in one file but remain clearly separated. This feels very \"natural\" to developers coming from a traditional web background.\n\nReact uses **JSX** (JavaScript XML), which treats everything as JavaScript. While powerful, it can feel more complex for beginners. However, React\u2019s integration with **Next.js** has made it the gold standard for full-stack web development (SSR, ISR, and Middleware).\n\n---\n\n## The Verdict: Which should you choose?\n\n### Choose **React** if:\n*   You are building a **large-scale enterprise app** with a rotating team.\n*   You want to leverage **React Native** for a mobile app later.\n*   You are looking for a job or hiring from the **largest possible talent pool**.\n*   You prefer a \"pick-and-choose\" approach to your tech stack.\n\n### Choose **Vue** if:\n*   You want the **fastest possible onboarding** for a new team.\n*   You are building a **highly interactive SPA** and want the performance of Vapor Mode.\n*   You prefer a **cleaner, more structured** coding style with less \"boilerplate\" than React.\n*   You want a **\"batteries-included\"** experience where the framework provides the essential tools out of the box.\n\nAre you looking to build a specific type of app, like an e-commerce site or a real-time dashboard, or is this for a personal learning project?",
+      "format": "freeform"
+    }
+  },
+  "consensus": {
+    "label": "moderate",
+    "score": 0.55,
+    "summary": "ChatGPT and Perplexity clearly favor React for enterprise scale, while Gemini acknowledges React's dominance but argues Vue excels in specific contexts like performance-critical SPAs."
+  },
+  "analyzed_at": "2026-05-06T09:53:30.135246+00:00"
+}

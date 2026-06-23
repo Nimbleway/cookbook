@@ -1,0 +1,40 @@
+# fly.toml app configuration file generated for startup-delivery-bridge on 2026-06-03T17:40:48-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'startup-delivery-bridge'
+primary_region = 'iad'
+
+[build]
+
+[[mounts]]
+  source = 'sd_data'
+  destination = '/data'
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  # Keep one machine warm so the FIRST delivery (e.g. live during judging) never
+  # pays a cold-start boot that can blow past Vercel's 60s function cap. Set back
+  # to 0 after the hackathon to scale-to-zero and save money.
+  min_machines_running = 1
+
+  [http_service.http_options]
+    [http_service.http_options.response]
+
+  [[http_service.checks]]
+    # Gate on /ready (not /health): a deploy missing a secret or with a read-only
+    # /data volume fails this check, so flyctl holds the previous release instead of
+    # cutting traffic over to a broken machine. /ready is cheap (no provider calls).
+    interval = '30s'
+    timeout = '5s'
+    grace_period = '10s'
+    method = 'get'
+    path = '/ready'
+
+[[vm]]
+  size = 'shared-cpu-1x'
+  memory = '512mb'

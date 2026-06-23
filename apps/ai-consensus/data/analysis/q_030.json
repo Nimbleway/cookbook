@@ -1,0 +1,31 @@
+{
+  "id": "q_030",
+  "category": "Tech & AI",
+  "question": "Vim or a modern code editor \u2014 is Vim still worth learning in 2026?",
+  "models": {
+    "chatgpt": {
+      "verdict": "Yes, still worth learning",
+      "reason": "Vim's efficiency and extensibility remain unmatched for experienced developers.",
+      "raw": "VERDICT: Yes, still worth learning\nREASON: Vim's efficiency and extensibility remain unmatched for experienced developers.",
+      "format": "structured"
+    },
+    "perplexity": {
+      "verdict": "Yes, worth learning and relevant",
+      "reason": "Vim's speed, modal editing, and terminal ubiquity sustain its value in 2026.",
+      "raw": "VERDICT: Worth learning, still relevantREASON: Vim\u2019s speed, modal editing, and broad terminal reach sustain value even in 2026.",
+      "format": "structured"
+    },
+    "gemini": {
+      "verdict": "Yes, but focus on motions",
+      "reason": "Learning Vim motions as a universal text manipulation skill matters more than using Vim as a primary editor in the AI era.",
+      "raw": "In 2026, the question isn't whether you should use Vim as your primary editor, but whether you should adopt **Vim motions** as your primary way of interacting with code.\n\nThe landscape has shifted. With AI-driven editors like **Cursor** and **Windsurf** dominating the market, the \"productivity\" argument for Vim has changed. It's no longer about how fast you can type\u2014AI does the typing now\u2014it\u2019s about how fast you can **navigate** and **direct** the AI.\n\nHere is the breakdown of why Vim is still relevant\u2014and where it isn't.\n\n---\n\n### 1. The \"Vim Anywhere\" Reality\nVim\u2019s greatest strength in 2026 remains its ubiquity. \n*   **The Terminal Standard:** If you\u2019re SSH-ing into a remote server, a cloud instance, or a container, `vi` or `vim` is almost certainly there. In a world of distributed systems, being \"homeless\" without a GUI is a common occurrence.\n*   **Vim Plugins:** Every modern editor (VS Code, JetBrains, Cursor) has a top-tier Vim emulation plugin. You can have the ergonomics of Vim with the AI power of a modern IDE.\n\n### 2. The Case for Learning It\n| Benefit | Why it matters in 2026 |\n| :--- | :--- |\n| **Cognitive Flow** | Moving with keys like `f`, `t`, `w`, and `b` keeps your hands on the home row. You stop \"hunting\" for the cursor with a mouse, which keeps your brain in the logic of the code. |\n| **Directing AI** | When an AI generates 50 lines of code, you often need to jump to line 42, change a variable inside a bracket, and delete a block. `ci(` (change inside parentheses) is significantly faster than click-and-drag. |\n| **Ergonomics** | If you\u2019re coding 8+ hours a day, the \"mouse reach\" adds up to physical strain. Vim motions are the \"orthopedic shoes\" of software engineering. |\n\n### 3. The Case Against It (The \"Vim Hole\")\n*   **The Configuration Trap:** It is very easy to spend 40 hours \"rice-ing\" (customizing) your Neovim config and 0 hours actually shipping code. Modern IDEs are \"batteries-included.\"\n*   **The Learning Cliff:** You will be 50% slower for the first two weeks. If you have a tight deadline tomorrow, today is not the day to start learning Vim.\n\n---\n\n### The 2026 Strategy: The \"Hybrid\" Approach\nYou don't need to choose between the 1970s and the 2020s. Most high-performance devs today use a hybrid setup:\n\n1.  **Editor:** Use a modern, AI-first editor (like **Cursor** or **VS Code**).\n2.  **Plugin:** Install the **Vim emulation** extension.\n3.  **The \"20-Minute\" Rule:** Learn the basics (`h/j/k/l`, `i`, `esc`, `:w`, `:q`). Once that's muscle memory, add one \"pro\" motion a week (like `ctrl+d` for half-page jumps or `%` to jump between brackets).\n\n### The Verdict\n**Is it worth it? Yes.** \nNot because you need to be a \"terminal purist,\" but because **Vim motions** are a universal language for text manipulation. It's an investment that won't go obsolete, regardless of which \"Editor of the Year\" becomes popular in 2030.\n\nHow much experience do you currently have with terminal-based workflows, or are you coming strictly from a GUI background?",
+      "format": "freeform"
+    }
+  },
+  "consensus": {
+    "label": "strong",
+    "score": 0.9,
+    "summary": "All three models agree Vim is worth learning in 2026, but differ on emphasis: ChatGPT and Perplexity stress efficiency and ubiquity, while Gemini reframes the value proposition around Vim motions in the context of AI-assisted development."
+  },
+  "analyzed_at": "2026-05-06T09:53:44.866823+00:00"
+}

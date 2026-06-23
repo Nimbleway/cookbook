@@ -1,0 +1,31 @@
+{
+  "id": "q_029",
+  "category": "Tech & AI",
+  "question": "Is open-source AI catching up to proprietary models like GPT-4?",
+  "models": {
+    "chatgpt": {
+      "verdict": "Nearly caught up, not equal",
+      "reason": "Top open-source models match many benchmarks but still lag on complex reasoning and cutting-edge tasks.",
+      "raw": "VERDICT: Nearly, but not fully equal\nREASON: Top open-source models now match many benchmarks but still lag slightly on complex reasoning and cutting-edge tasks.",
+      "format": "structured"
+    },
+    "perplexity": {
+      "verdict": "Gap closing rapidly, near parity",
+      "reason": "Open-source shows GPT-4\u2013level performance on benchmarks with superior cost, control, and customization advantages.",
+      "raw": "VERDICT: Open-source is closing gap rapidlyREASON: Open-source models show GPT-4\u2013level performance on benchmarks and improving cost, control, and customization advantages.",
+      "format": "structured"
+    },
+    "gemini": {
+      "verdict": "Already caught up for most uses",
+      "reason": "Open-source models have effectively matched or beaten GPT-4 across most domains; proprietary models only lead in extreme reasoning.",
+      "raw": "The short answer is: **Yes, they\u2019ve already caught up.** \n\nAs of early 2026, the gap between open-source (or \"open-weight\") models and proprietary giants like GPT-4 has effectively vanished for most use cases. While proprietary models (like the newer GPT-5.4 or Claude 4.7) still hold a razor-thin lead in extreme reasoning and \"agentic\" autonomy, open-source models are now matching or even beating GPT-4-class performance across coding, math, and general knowledge.\n\n### The Current Landscape (May 2026)\n\n| Feature | Proprietary (e.g., GPT-5.4, Claude 4.7) | Open-Source/Weight (e.g., Llama 4, Qwen 3.6) |\n| :--- | :--- | :--- |\n| **Intelligence** | Top-tier; state-of-the-art reasoning. | Near-parity; often beats GPT-4 on benchmarks. |\n| **Cost** | Usage-based (per token), can be high. | Much lower; up to **10x\u201320x cheaper** via APIs. |\n| **Speed** | Fast, but restricted by provider capacity. | Extremely fast (e.g., Groq/NVIDIA Blackwell). |\n| **Privacy** | Data processed by the vendor. | **Total sovereignty**; can be run locally. |\n| **Context** | Large (128K\u20131M tokens). | Massive (Llama 4 Scout supports **10M+ tokens**). |\n\n---\n\n### Why Open-Source is Winning the \"Middle Class\"\nThe \"intelligence gap\" that used to define the AI race has been replaced by an **\"efficiency gap.\"**\n\n1.  **Llama 4 & Qwen 3.6:** These models are the current heavyweights. **Llama 4 Scout**, for instance, has demonstrated superior performance in whole-repository code reviews compared to GPT-4o, largely due to its massive 10-million-token context window.\n2.  **Specialization:** While GPT-4 is a \"jack of all trades,\" developers are now fine-tuning open models for specific tasks (like legal analysis or medical diagnosis) where they consistently outperform general-purpose proprietary models.\n3.  **The \"8-Month Lag\":** Independent evaluations (like those from CAISI) suggest that the absolute \"frontier\" of open-source (like **DeepSeek V4 Pro**) lags behind the absolute bleeding-edge proprietary models by only about 8 months. For 99% of businesses, an 8-month-old \"SOTA\" (State of the Art) is more than enough.\n\n### The Trade-offs\nIt\u2019s not all sunshine and local hosting. Running these models yourself requires **serious hardware** (like NVIDIA's Blackwell chips). While the models are \"free\" to download, the electricity and specialized GPUs needed to run a Llama 4 at full speed are a significant investment. \n\n### The Verdict\nIf you are looking for the absolute smartest \"thinking\" machine for a one-off complex research task, you still use the latest **Claude or GPT**. But for building apps, processing massive datasets, or coding at scale, **open-source is no longer the \"budget\" choice\u2014it's often the better choice.**\n\nIs there a specific project you're considering switching to open-source for, or are you just tracking the \"arms race\"?",
+      "format": "freeform"
+    }
+  },
+  "consensus": {
+    "label": "moderate",
+    "score": 0.55,
+    "summary": "All three agree open-source is very close to proprietary models, but ChatGPT emphasizes remaining gaps while Gemini and Perplexity emphasize near-parity or superiority in practical applications."
+  },
+  "analyzed_at": "2026-05-06T09:53:44.357908+00:00"
+}
