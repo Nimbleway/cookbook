@@ -29,6 +29,7 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).parent
 STATE_PATH = BASE_DIR / ".state.json"
+RAW_RUNS_DIR = BASE_DIR / "data" / "raw_runs"
 
 
 class MonitorState(TypedDict, total=False):
@@ -65,6 +66,21 @@ def save_seen_urls(urls: set[str]) -> None:
         "seen_urls": sorted(urls),
     }
     STATE_PATH.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
+
+def save_raw_search_response(query: str, request_payload: dict[str, Any], response: Any) -> Path:
+    """Save raw Nimble output before normalization so live runs are auditable."""
+    RAW_RUNS_DIR.mkdir(parents=True, exist_ok=True)
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    path = RAW_RUNS_DIR / f"{stamp}.json"
+    payload = {
+        "query": query,
+        "request": request_payload,
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "response": response,
+    }
+    path.write_text(json.dumps(payload, indent=2, default=str), encoding="utf-8")
+    return path
 
 
 def normalize_result(item: Any) -> dict[str, Any]:
@@ -134,16 +150,17 @@ def fetch_news(state: MonitorState) -> MonitorState:
 
     tool = build_nimble_search_tool()
     _log(f"Searching Nimble for: {query}")
-    output = tool.invoke(
-        {
-            "query": query,
-            "num_results": int(_env("NIMBLE_NUM_RESULTS", "10") or "10"),
-            "search_depth": _env("NIMBLE_SEARCH_DEPTH", "lite"),
-            "include_answer": (_env("NIMBLE_INCLUDE_ANSWER", "false") or "false").lower() == "true",
-            "focus": _env("NIMBLE_SEARCH_FOCUS", "news"),
-            "time_range": _env("NIMBLE_SEARCH_TIME_RANGE", "week"),
-        }
-    )
+    search_payload = {
+        "query": query,
+        "num_results": int(_env("NIMBLE_NUM_RESULTS", "10") or "10"),
+        "search_depth": _env("NIMBLE_SEARCH_DEPTH", "lite"),
+        "include_answer": (_env("NIMBLE_INCLUDE_ANSWER", "false") or "false").lower() == "true",
+        "focus": _env("NIMBLE_SEARCH_FOCUS", "news"),
+        "time_range": _env("NIMBLE_SEARCH_TIME_RANGE", "week"),
+    }
+    output = tool.invoke(search_payload)
+    raw_path = save_raw_search_response(query, search_payload, output)
+    _log(f"Saved raw Nimble response to {raw_path.relative_to(BASE_DIR)}")
     results = extract_results(output)
     _log(f"Fetched {len(results)} result(s)")
     return {**state, "results": results}

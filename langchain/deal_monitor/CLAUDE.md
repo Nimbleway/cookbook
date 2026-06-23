@@ -27,8 +27,6 @@ Nimble's role:
 
 ```bash
 cd langchain/deal_monitor
-python3 -m venv .venv
-source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
 ```
@@ -76,6 +74,6 @@ Common changes:
 ## Guardrails
 
 - Keep `--dry-run` working without credentials.
-- Do not commit `.env`, `.state.json`, `monitor.log`, `.venv/`, `__pycache__/`, or `.pyc` files.
+- Do not commit `.env`, `.state.json`, `monitor.log`, `data/raw_runs/`, `.venv/`, `__pycache__/`, or `.pyc` files.
 - Keep Nimble's role explicit: live web search is the data layer; LangGraph, Slack, and the model are swappable.
 - Prefer concrete use cases such as funding alerts, competitor launches, acquisition news, pricing/page changes, regulatory updates, hiring signals, and product mentions.

@@ -9,11 +9,12 @@ Built with [Nimble Web Search Agents](https://nimbleway.com) via `langchain-nimb
 ## What it does
 
 1. Runs a configurable live web search with Nimble's LangChain integration: `NimbleSearchTool`
-2. Normalizes the returned search results
-3. Compares result URLs against a local `.state.json` seen-list
-4. Summarizes only the new results with an OpenRouter-compatible chat model
-5. Sends the digest to Slack with an Incoming Webhook
-6. Persists the seen-list so the next run only alerts on genuinely new matches
+2. Saves the raw Nimble response before transformation
+3. Normalizes the returned search results
+4. Compares result URLs against a local `.state.json` seen-list
+5. Summarizes only the new results with an OpenRouter-compatible chat model
+6. Sends the digest to Slack with an Incoming Webhook
+7. Persists the seen-list so the next run only alerts on genuinely new matches
 
 Designed to run on a cron every few hours. No database or hosted infrastructure required.
 
@@ -23,8 +24,6 @@ Designed to run on a cron every few hours. No database or hosted infrastructure 
 
 ```bash
 cd langchain/deal_monitor
-python3 -m venv .venv
-source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
 # Add your Nimble, OpenRouter, and Slack webhook credentials
@@ -97,7 +96,6 @@ Each node is a plain Python function. LangGraph wires the nodes together and pas
 ```text
 langchain/deal_monitor/
 ├── agent.py          # LangGraph monitor agent
-├── COOKBOOK.md       # Forking/customisation guide
 ├── CLAUDE.md         # Claude Code setup/context prompt
 ├── WEBFLOW.md        # Cookbook page fields for Webflow
 ├── requirements.txt
