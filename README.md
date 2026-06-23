@@ -39,6 +39,11 @@ These recipes support diverse industries and technical goals:
 - **Marketing:** Analyze brand visibility, monitor SEO/SEM performance, and capture audience sentiment
 - **AI & Data Science:** Collect high-quality training data, improve LLM outputs, and reduce hallucinations
 
+## Featured Examples
+
+- [`langchain/deal_monitor`](langchain/deal_monitor/) — monitor a live web query with Nimble Search and send Slack alerts when new results appear.
+- [`streamlit/consumer_sentiment_monitor`](streamlit/consumer_sentiment_monitor/) — track product-launch sentiment from live web sources and review it in a Streamlit dashboard.
+
 ## Contributing
 
 We’d love your help expanding the cookbook! If you have a recipe or example that might benefit others:

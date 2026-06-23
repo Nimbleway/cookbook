@@ -1,0 +1,40 @@
+{
+  "product_name": "Nimble",
+  "launch_context": "Nimble is a web data platform providing Search API, scraping infrastructure, and AI-ready data pipelines for developers and enterprises. Tracking public sentiment, developer community reactions, and competitor comparisons.",
+  "country": "US",
+  "locale": "en-US",
+  "search_depth": "lite",
+  "include_answer": true,
+  "max_results": 8,
+  "queries": [
+    {
+      "id": "reddit_reactions",
+      "label": "Reddit developer reactions",
+      "focus": "social",
+      "source_type": "reddit/social",
+      "query": "Nimble web scraping API developer Reddit review experience pricing"
+    },
+    {
+      "id": "social_chatter",
+      "label": "Social chatter",
+      "focus": "social",
+      "source_type": "social",
+      "query": "Nimble search API web data platform reactions X Twitter LinkedIn developers"
+    },
+    {
+      "id": "vs_alternatives",
+      "label": "Competitor comparisons",
+      "focus": "general",
+      "search_depth": "fast",
+      "source_type": "reviews/comparison",
+      "query": "Nimble vs Bright Data vs Oxylabs vs ScrapingBee web scraping API comparison alternatives"
+    },
+    {
+      "id": "news_blog_coverage",
+      "label": "News and blog coverage",
+      "focus": "news",
+      "source_type": "news/blogs",
+      "query": "Nimble web data platform search API coverage blog review launch"
+    }
+  ]
+}

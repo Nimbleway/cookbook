@@ -1,0 +1,611 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-06-17T14:06:39.269065+00:00",
+  "product_name": "Acme AI Notes",
+  "launch_context": "A new AI meeting-notes product launched this week for product and marketing teams.",
+  "config": {
+    "product_name": "Acme AI Notes",
+    "launch_context": "A new AI meeting-notes product launched this week for product and marketing teams.",
+    "country": "US",
+    "locale": "en-US",
+    "search_depth": "fast",
+    "include_answer": true,
+    "max_results": 8,
+    "queries": [
+      {
+        "id": "reddit_reactions",
+        "label": "Reddit launch reactions",
+        "focus": "social",
+        "source_type": "reddit/social",
+        "query": "Acme AI Notes launch Reddit user reactions objections pricing"
+      },
+      {
+        "id": "social_launch_chatter",
+        "label": "Social launch chatter",
+        "focus": "social",
+        "source_type": "social",
+        "query": "Acme AI Notes launch reactions on X LinkedIn product hunt"
+      },
+      {
+        "id": "review_and_comparison",
+        "label": "Reviews and comparison pages",
+        "focus": "general",
+        "source_type": "reviews/comparison",
+        "query": "Acme AI Notes review alternatives complaints best AI meeting notes"
+      },
+      {
+        "id": "news_blog_coverage",
+        "label": "News and blog coverage",
+        "focus": "news",
+        "source_type": "news/blogs",
+        "query": "Acme AI Notes launch news blog coverage funding users"
+      }
+    ]
+  },
+  "executive_summary": {
+    "overall_sentiment": "negative",
+    "summary": "Found 12 normalized launch-sentiment signals. Positive: 4, negative: 8, neutral: 0. Main positive themes: useful, clean, fast, promising, helpful. Main risks: expensive, pricing, blocker, compliance, privacy.",
+    "positive_themes": [
+      "useful",
+      "clean",
+      "fast",
+      "promising",
+      "helpful"
+    ],
+    "negative_themes": [
+      "expensive",
+      "concern",
+      "pricing",
+      "blocker",
+      "retention",
+      "privacy"
+    ],
+    "emerging_risks": [
+      "expensive",
+      "pricing",
+      "blocker",
+      "compliance",
+      "privacy"
+    ]
+  },
+  "metrics": {
+    "total_results": 12,
+    "sentiment_counts": {
+      "negative": 8,
+      "positive": 4
+    },
+    "source_counts": {
+      "reddit/social": 3,
+      "social": 3,
+      "reviews/comparison": 3,
+      "news/blogs": 3
+    },
+    "query_counts": {
+      "Reddit launch reactions": 3,
+      "Social launch chatter": 3,
+      "Reviews and comparison pages": 3,
+      "News and blog coverage": 3
+    }
+  },
+  "sentiment_buckets": {
+    "negative": [
+      {
+        "query_id": "reddit_reactions",
+        "query_label": "Reddit launch reactions",
+        "source_type": "reddit/social",
+        "focus": "social",
+        "title": "Builders praise the launch but ask about pricing — Reddit launch reactions",
+        "url": "https://example.com/reddit_reactions/positive-pricing",
+        "snippet": "Users say the workflow looks useful and fast, but several comments ask whether the paid plan is too expensive for small teams.",
+        "content": "Positive launch reaction. Useful automation, clean setup, fast results. Pricing concern appears repeatedly.",
+        "sentiment": "negative",
+        "matched_terms": [
+          "clean",
+          "fast",
+          "useful",
+          "concern",
+          "expensive",
+          "pricing"
+        ],
+        "fetched_at": "2026-06-17T14:06:39.267261+00:00"
+      },
+      {
+        "query_id": "reddit_reactions",
+        "query_label": "Reddit launch reactions",
+        "source_type": "reddit/social",
+        "focus": "social",
+        "title": "Privacy questions show up in reddit/social discussion",
+        "url": "https://example.com/reddit_reactions/privacy-risk",
+        "snippet": "Teams like the product idea, but privacy and data retention questions are a blocker for some buyers.",
+        "content": "The product is promising, but privacy, compliance, and admin controls need clearer messaging.",
+        "sentiment": "negative",
+        "matched_terms": [
+          "promising",
+          "blocker",
+          "compliance",
+          "privacy",
+          "retention"
+        ],
+        "fetched_at": "2026-06-17T14:06:39.267261+00:00"
+      },
+      {
+        "query_id": "social_launch_chatter",
+        "query_label": "Social launch chatter",
+        "source_type": "social",
+        "focus": "social",
+        "title": "Builders praise the launch but ask about pricing — Social launch chatter",
+        "url": "https://example.com/social_launch_chatter/positive-pricing",
+        "snippet": "Users say the workflow looks useful and fast, but several comments ask whether the paid plan is too expensive for small teams.",
+        "content": "Positive launch reaction. Useful automation, clean setup, fast results. Pricing concern appears repeatedly.",
+        "sentiment": "negative",
+        "matched_terms": [
+          "clean",
+          "fast",
+          "useful",
+          "concern",
+          "expensive",
+          "pricing"
+        ],
+        "fetched_at": "2026-06-17T14:06:39.267515+00:00"
+      },
+      {
+        "query_id": "social_launch_chatter",
+        "query_label": "Social launch chatter",
+        "source_type": "social",
+        "focus": "social",
+        "title": "Privacy questions show up in social discussion",
+        "url": "https://example.com/social_launch_chatter/privacy-risk",
+        "snippet": "Teams like the product idea, but privacy and data retention questions are a blocker for some buyers.",
+        "content": "The product is promising, but privacy, compliance, and admin controls need clearer messaging.",
+        "sentiment": "negative",
+        "matched_terms": [
+          "promising",
+          "blocker",
+          "compliance",
+          "privacy",
+          "retention"
+        ],
+        "fetched_at": "2026-06-17T14:06:39.267515+00:00"
+      },
+      {
+        "query_id": "review_and_comparison",
+        "query_label": "Reviews and comparison pages",
+        "source_type": "reviews/comparison",
+        "focus": "general",
+        "title": "Builders praise the launch but ask about pricing — Reviews and comparison pages",
+        "url": "https://example.com/review_and_comparison/positive-pricing",
+        "snippet": "Users say the workflow looks useful and fast, but several comments ask whether the paid plan is too expensive for small teams.",
+        "content": "Positive launch reaction. Useful automation, clean setup, fast results. Pricing concern appears repeatedly.",
+        "sentiment": "negative",
+        "matched_terms": [
+          "clean",
+          "fast",
+          "useful",
+          "concern",
+          "expensive",
+          "pricing"
+        ],
+        "fetched_at": "2026-06-17T14:06:39.267657+00:00"
+      },
+      {
+        "query_id": "review_and_comparison",
+        "query_label": "Reviews and comparison pages",
+        "source_type": "reviews/comparison",
+        "focus": "general",
+        "title": "Privacy questions show up in reviews/comparison discussion",
+        "url": "https://example.com/review_and_comparison/privacy-risk",
+        "snippet": "Teams like the product idea, but privacy and data retention questions are a blocker for some buyers.",
+        "content": "The product is promising, but privacy, compliance, and admin controls need clearer messaging.",
+        "sentiment": "negative",
+        "matched_terms": [
+          "promising",
+          "blocker",
+          "compliance",
+          "privacy",
+          "retention"
+        ],
+        "fetched_at": "2026-06-17T14:06:39.267657+00:00"
+      },
+      {
+        "query_id": "news_blog_coverage",
+        "query_label": "News and blog coverage",
+        "source_type": "news/blogs",
+        "focus": "news",
+        "title": "Builders praise the launch but ask about pricing — News and blog coverage",
+        "url": "https://example.com/news_blog_coverage/positive-pricing",
+        "snippet": "Users say the workflow looks useful and fast, but several comments ask whether the paid plan is too expensive for small teams.",
+        "content": "Positive launch reaction. Useful automation, clean setup, fast results. Pricing concern appears repeatedly.",
+        "sentiment": "negative",
+        "matched_terms": [
+          "clean",
+          "fast",
+          "useful",
+          "concern",
+          "expensive",
+          "pricing"
+        ],
+        "fetched_at": "2026-06-17T14:06:39.267790+00:00"
+      },
+      {
+        "query_id": "news_blog_coverage",
+        "query_label": "News and blog coverage",
+        "source_type": "news/blogs",
+        "focus": "news",
+        "title": "Privacy questions show up in news/blogs discussion",
+        "url": "https://example.com/news_blog_coverage/privacy-risk",
+        "snippet": "Teams like the product idea, but privacy and data retention questions are a blocker for some buyers.",
+        "content": "The product is promising, but privacy, compliance, and admin controls need clearer messaging.",
+        "sentiment": "negative",
+        "matched_terms": [
+          "promising",
+          "blocker",
+          "compliance",
+          "privacy",
+          "retention"
+        ],
+        "fetched_at": "2026-06-17T14:06:39.267790+00:00"
+      }
+    ],
+    "positive": [
+      {
+        "query_id": "reddit_reactions",
+        "query_label": "Reddit launch reactions",
+        "source_type": "reddit/social",
+        "focus": "social",
+        "title": "Unexpected use case: product teams share launch notes",
+        "url": "https://example.com/reddit_reactions/unexpected-use-case",
+        "snippet": "Several users mention using the product to summarize customer calls and turn them into launch follow-up tasks.",
+        "content": "Useful and helpful for product marketing. Unexpected use case around launch retrospectives and customer calls.",
+        "sentiment": "positive",
+        "matched_terms": [
+          "helpful",
+          "useful"
+        ],
+        "fetched_at": "2026-06-17T14:06:39.267261+00:00"
+      },
+      {
+        "query_id": "social_launch_chatter",
+        "query_label": "Social launch chatter",
+        "source_type": "social",
+        "focus": "social",
+        "title": "Unexpected use case: product teams share launch notes",
+        "url": "https://example.com/social_launch_chatter/unexpected-use-case",
+        "snippet": "Several users mention using the product to summarize customer calls and turn them into launch follow-up tasks.",
+        "content": "Useful and helpful for product marketing. Unexpected use case around launch retrospectives and customer calls.",
+        "sentiment": "positive",
+        "matched_terms": [
+          "helpful",
+          "useful"
+        ],
+        "fetched_at": "2026-06-17T14:06:39.267515+00:00"
+      },
+      {
+        "query_id": "review_and_comparison",
+        "query_label": "Reviews and comparison pages",
+        "source_type": "reviews/comparison",
+        "focus": "general",
+        "title": "Unexpected use case: product teams share launch notes",
+        "url": "https://example.com/review_and_comparison/unexpected-use-case",
+        "snippet": "Several users mention using the product to summarize customer calls and turn them into launch follow-up tasks.",
+        "content": "Useful and helpful for product marketing. Unexpected use case around launch retrospectives and customer calls.",
+        "sentiment": "positive",
+        "matched_terms": [
+          "helpful",
+          "useful"
+        ],
+        "fetched_at": "2026-06-17T14:06:39.267657+00:00"
+      },
+      {
+        "query_id": "news_blog_coverage",
+        "query_label": "News and blog coverage",
+        "source_type": "news/blogs",
+        "focus": "news",
+        "title": "Unexpected use case: product teams share launch notes",
+        "url": "https://example.com/news_blog_coverage/unexpected-use-case",
+        "snippet": "Several users mention using the product to summarize customer calls and turn them into launch follow-up tasks.",
+        "content": "Useful and helpful for product marketing. Unexpected use case around launch retrospectives and customer calls.",
+        "sentiment": "positive",
+        "matched_terms": [
+          "helpful",
+          "useful"
+        ],
+        "fetched_at": "2026-06-17T14:06:39.267790+00:00"
+      }
+    ]
+  },
+  "source_breakdown": [
+    {
+      "source_type": "reddit/social",
+      "result_count": 3
+    },
+    {
+      "source_type": "social",
+      "result_count": 3
+    },
+    {
+      "source_type": "reviews/comparison",
+      "result_count": 3
+    },
+    {
+      "source_type": "news/blogs",
+      "result_count": 3
+    }
+  ],
+  "representative_examples": [
+    {
+      "query_id": "reddit_reactions",
+      "query_label": "Reddit launch reactions",
+      "source_type": "reddit/social",
+      "focus": "social",
+      "title": "Builders praise the launch but ask about pricing — Reddit launch reactions",
+      "url": "https://example.com/reddit_reactions/positive-pricing",
+      "snippet": "Users say the workflow looks useful and fast, but several comments ask whether the paid plan is too expensive for small teams.",
+      "content": "Positive launch reaction. Useful automation, clean setup, fast results. Pricing concern appears repeatedly.",
+      "sentiment": "negative",
+      "matched_terms": [
+        "clean",
+        "fast",
+        "useful",
+        "concern",
+        "expensive",
+        "pricing"
+      ],
+      "fetched_at": "2026-06-17T14:06:39.267261+00:00"
+    },
+    {
+      "query_id": "reddit_reactions",
+      "query_label": "Reddit launch reactions",
+      "source_type": "reddit/social",
+      "focus": "social",
+      "title": "Privacy questions show up in reddit/social discussion",
+      "url": "https://example.com/reddit_reactions/privacy-risk",
+      "snippet": "Teams like the product idea, but privacy and data retention questions are a blocker for some buyers.",
+      "content": "The product is promising, but privacy, compliance, and admin controls need clearer messaging.",
+      "sentiment": "negative",
+      "matched_terms": [
+        "promising",
+        "blocker",
+        "compliance",
+        "privacy",
+        "retention"
+      ],
+      "fetched_at": "2026-06-17T14:06:39.267261+00:00"
+    },
+    {
+      "query_id": "reddit_reactions",
+      "query_label": "Reddit launch reactions",
+      "source_type": "reddit/social",
+      "focus": "social",
+      "title": "Unexpected use case: product teams share launch notes",
+      "url": "https://example.com/reddit_reactions/unexpected-use-case",
+      "snippet": "Several users mention using the product to summarize customer calls and turn them into launch follow-up tasks.",
+      "content": "Useful and helpful for product marketing. Unexpected use case around launch retrospectives and customer calls.",
+      "sentiment": "positive",
+      "matched_terms": [
+        "helpful",
+        "useful"
+      ],
+      "fetched_at": "2026-06-17T14:06:39.267261+00:00"
+    },
+    {
+      "query_id": "social_launch_chatter",
+      "query_label": "Social launch chatter",
+      "source_type": "social",
+      "focus": "social",
+      "title": "Builders praise the launch but ask about pricing — Social launch chatter",
+      "url": "https://example.com/social_launch_chatter/positive-pricing",
+      "snippet": "Users say the workflow looks useful and fast, but several comments ask whether the paid plan is too expensive for small teams.",
+      "content": "Positive launch reaction. Useful automation, clean setup, fast results. Pricing concern appears repeatedly.",
+      "sentiment": "negative",
+      "matched_terms": [
+        "clean",
+        "fast",
+        "useful",
+        "concern",
+        "expensive",
+        "pricing"
+      ],
+      "fetched_at": "2026-06-17T14:06:39.267515+00:00"
+    },
+    {
+      "query_id": "social_launch_chatter",
+      "query_label": "Social launch chatter",
+      "source_type": "social",
+      "focus": "social",
+      "title": "Privacy questions show up in social discussion",
+      "url": "https://example.com/social_launch_chatter/privacy-risk",
+      "snippet": "Teams like the product idea, but privacy and data retention questions are a blocker for some buyers.",
+      "content": "The product is promising, but privacy, compliance, and admin controls need clearer messaging.",
+      "sentiment": "negative",
+      "matched_terms": [
+        "promising",
+        "blocker",
+        "compliance",
+        "privacy",
+        "retention"
+      ],
+      "fetched_at": "2026-06-17T14:06:39.267515+00:00"
+    },
+    {
+      "query_id": "social_launch_chatter",
+      "query_label": "Social launch chatter",
+      "source_type": "social",
+      "focus": "social",
+      "title": "Unexpected use case: product teams share launch notes",
+      "url": "https://example.com/social_launch_chatter/unexpected-use-case",
+      "snippet": "Several users mention using the product to summarize customer calls and turn them into launch follow-up tasks.",
+      "content": "Useful and helpful for product marketing. Unexpected use case around launch retrospectives and customer calls.",
+      "sentiment": "positive",
+      "matched_terms": [
+        "helpful",
+        "useful"
+      ],
+      "fetched_at": "2026-06-17T14:06:39.267515+00:00"
+    },
+    {
+      "query_id": "review_and_comparison",
+      "query_label": "Reviews and comparison pages",
+      "source_type": "reviews/comparison",
+      "focus": "general",
+      "title": "Builders praise the launch but ask about pricing — Reviews and comparison pages",
+      "url": "https://example.com/review_and_comparison/positive-pricing",
+      "snippet": "Users say the workflow looks useful and fast, but several comments ask whether the paid plan is too expensive for small teams.",
+      "content": "Positive launch reaction. Useful automation, clean setup, fast results. Pricing concern appears repeatedly.",
+      "sentiment": "negative",
+      "matched_terms": [
+        "clean",
+        "fast",
+        "useful",
+        "concern",
+        "expensive",
+        "pricing"
+      ],
+      "fetched_at": "2026-06-17T14:06:39.267657+00:00"
+    },
+    {
+      "query_id": "review_and_comparison",
+      "query_label": "Reviews and comparison pages",
+      "source_type": "reviews/comparison",
+      "focus": "general",
+      "title": "Privacy questions show up in reviews/comparison discussion",
+      "url": "https://example.com/review_and_comparison/privacy-risk",
+      "snippet": "Teams like the product idea, but privacy and data retention questions are a blocker for some buyers.",
+      "content": "The product is promising, but privacy, compliance, and admin controls need clearer messaging.",
+      "sentiment": "negative",
+      "matched_terms": [
+        "promising",
+        "blocker",
+        "compliance",
+        "privacy",
+        "retention"
+      ],
+      "fetched_at": "2026-06-17T14:06:39.267657+00:00"
+    },
+    {
+      "query_id": "review_and_comparison",
+      "query_label": "Reviews and comparison pages",
+      "source_type": "reviews/comparison",
+      "focus": "general",
+      "title": "Unexpected use case: product teams share launch notes",
+      "url": "https://example.com/review_and_comparison/unexpected-use-case",
+      "snippet": "Several users mention using the product to summarize customer calls and turn them into launch follow-up tasks.",
+      "content": "Useful and helpful for product marketing. Unexpected use case around launch retrospectives and customer calls.",
+      "sentiment": "positive",
+      "matched_terms": [
+        "helpful",
+        "useful"
+      ],
+      "fetched_at": "2026-06-17T14:06:39.267657+00:00"
+    },
+    {
+      "query_id": "news_blog_coverage",
+      "query_label": "News and blog coverage",
+      "source_type": "news/blogs",
+      "focus": "news",
+      "title": "Builders praise the launch but ask about pricing — News and blog coverage",
+      "url": "https://example.com/news_blog_coverage/positive-pricing",
+      "snippet": "Users say the workflow looks useful and fast, but several comments ask whether the paid plan is too expensive for small teams.",
+      "content": "Positive launch reaction. Useful automation, clean setup, fast results. Pricing concern appears repeatedly.",
+      "sentiment": "negative",
+      "matched_terms": [
+        "clean",
+        "fast",
+        "useful",
+        "concern",
+        "expensive",
+        "pricing"
+      ],
+      "fetched_at": "2026-06-17T14:06:39.267790+00:00"
+    },
+    {
+      "query_id": "news_blog_coverage",
+      "query_label": "News and blog coverage",
+      "source_type": "news/blogs",
+      "focus": "news",
+      "title": "Privacy questions show up in news/blogs discussion",
+      "url": "https://example.com/news_blog_coverage/privacy-risk",
+      "snippet": "Teams like the product idea, but privacy and data retention questions are a blocker for some buyers.",
+      "content": "The product is promising, but privacy, compliance, and admin controls need clearer messaging.",
+      "sentiment": "negative",
+      "matched_terms": [
+        "promising",
+        "blocker",
+        "compliance",
+        "privacy",
+        "retention"
+      ],
+      "fetched_at": "2026-06-17T14:06:39.267790+00:00"
+    },
+    {
+      "query_id": "news_blog_coverage",
+      "query_label": "News and blog coverage",
+      "source_type": "news/blogs",
+      "focus": "news",
+      "title": "Unexpected use case: product teams share launch notes",
+      "url": "https://example.com/news_blog_coverage/unexpected-use-case",
+      "snippet": "Several users mention using the product to summarize customer calls and turn them into launch follow-up tasks.",
+      "content": "Useful and helpful for product marketing. Unexpected use case around launch retrospectives and customer calls.",
+      "sentiment": "positive",
+      "matched_terms": [
+        "helpful",
+        "useful"
+      ],
+      "fetched_at": "2026-06-17T14:06:39.267790+00:00"
+    }
+  ],
+  "query_summaries": [
+    {
+      "query_id": "reddit_reactions",
+      "label": "Reddit launch reactions",
+      "source_type": "reddit/social",
+      "focus": "social",
+      "query": "Acme AI Notes launch Reddit user reactions objections pricing",
+      "answer": "Early reddit launch reactions shows mostly positive interest with a few repeated concerns around pricing, privacy, and onboarding clarity.",
+      "result_count": 3
+    },
+    {
+      "query_id": "social_launch_chatter",
+      "label": "Social launch chatter",
+      "source_type": "social",
+      "focus": "social",
+      "query": "Acme AI Notes launch reactions on X LinkedIn product hunt",
+      "answer": "Early social launch chatter shows mostly positive interest with a few repeated concerns around pricing, privacy, and onboarding clarity.",
+      "result_count": 3
+    },
+    {
+      "query_id": "review_and_comparison",
+      "label": "Reviews and comparison pages",
+      "source_type": "reviews/comparison",
+      "focus": "general",
+      "query": "Acme AI Notes review alternatives complaints best AI meeting notes",
+      "answer": "Early reviews and comparison pages shows mostly positive interest with a few repeated concerns around pricing, privacy, and onboarding clarity.",
+      "result_count": 3
+    },
+    {
+      "query_id": "news_blog_coverage",
+      "label": "News and blog coverage",
+      "source_type": "news/blogs",
+      "focus": "news",
+      "query": "Acme AI Notes launch news blog coverage funding users",
+      "answer": "Early news and blog coverage shows mostly positive interest with a few repeated concerns around pricing, privacy, and onboarding clarity.",
+      "result_count": 3
+    }
+  ],
+  "recommended_follow_up_searches": [
+    "Acme AI Notes pricing objections Reddit",
+    "Acme AI Notes privacy security concerns",
+    "Acme AI Notes alternatives comparison",
+    "Acme AI Notes launch user feedback product hunt"
+  ],
+  "product_marketing_actions": [
+    "Turn repeated objections into FAQ or launch-page copy.",
+    "Use representative positive examples as proof points if the source permits it.",
+    "Run the same config weekly to separate launch spike from persistent sentiment.",
+    "Create follow-up searches for any risk term that appears across multiple source types."
+  ],
+  "files": {
+    "report": "consumer-sentiment-monitor/data/sample_run/report.json",
+    "normalized_results": "consumer-sentiment-monitor/data/sample_run/normalized_results.json",
+    "raw_dir": "consumer-sentiment-monitor/data/sample_run/raw"
+  }
+}

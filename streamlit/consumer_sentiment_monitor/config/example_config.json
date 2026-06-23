@@ -1,0 +1,40 @@
+{
+  "product_name": "Acme AI Notes",
+  "launch_context": "A new AI meeting-notes product launched this week for product and marketing teams.",
+  "country": "US",
+  "locale": "en-US",
+  "search_depth": "lite",
+  "include_answer": true,
+  "max_results": 8,
+  "queries": [
+    {
+      "id": "reddit_reactions",
+      "label": "Reddit launch reactions",
+      "focus": "social",
+      "source_type": "reddit/social",
+      "query": "Acme AI Notes launch Reddit user reactions objections pricing"
+    },
+    {
+      "id": "social_launch_chatter",
+      "label": "Social launch chatter",
+      "focus": "social",
+      "source_type": "social",
+      "query": "Acme AI Notes launch reactions on X LinkedIn product hunt"
+    },
+    {
+      "id": "review_and_comparison",
+      "label": "Reviews and comparison pages",
+      "focus": "general",
+      "search_depth": "fast",
+      "source_type": "reviews/comparison",
+      "query": "Acme AI Notes review alternatives complaints best AI meeting notes"
+    },
+    {
+      "id": "news_blog_coverage",
+      "label": "News and blog coverage",
+      "focus": "news",
+      "source_type": "news/blogs",
+      "query": "Acme AI Notes launch news blog coverage funding users"
+    }
+  ]
+}
