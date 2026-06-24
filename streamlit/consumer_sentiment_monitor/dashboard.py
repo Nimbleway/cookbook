@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+import html
 import json
 from pathlib import Path
 from typing import Any, Dict, List
+from urllib.parse import urlparse
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -233,23 +235,36 @@ def source_bar(source_breakdown: list) -> go.Figure:
     return fig
 
 
+def _safe_url(url: str) -> str:
+    """Return url only if scheme is http or https, otherwise empty string."""
+    try:
+        parsed = urlparse(url)
+        if parsed.scheme in ("http", "https"):
+            return html.escape(url, quote=True)
+    except Exception:
+        pass
+    return ""
+
+
 def render_result_card(item: dict) -> None:
     sentiment = item.get("sentiment", "neutral")
     border = SENTIMENT_COLORS.get(sentiment, "#94a3b8")
-    url = item.get("url", "")
-    title = item.get("title", "Untitled")
-    snippet = item.get("snippet") or item.get("content", "")
-    source_type = item.get("source_type", "")
-    query_label = item.get("query_label", "")
+    url = _safe_url(item.get("url", ""))
+    title = html.escape(item.get("title", "Untitled"), quote=True)
+    raw_snippet = item.get("snippet") or item.get("content", "")
+    snippet_truncated = raw_snippet[:280]
+    snippet = html.escape(snippet_truncated, quote=True) + ("…" if len(raw_snippet) > 280 else "")
+    source_type = html.escape(item.get("source_type", ""), quote=True)
+    query_label = html.escape(item.get("query_label", ""), quote=True)
     link_html = f' &nbsp;<a href="{url}" target="_blank" style="color:#3b82f6;font-size:0.78rem;">↗</a>' if url else ""
     matched = item.get("matched_terms", [])
-    tags_html = "".join(f'<span class="tag">{t}</span>' for t in matched[:6])
+    tags_html = "".join(f'<span class="tag">{html.escape(t, quote=True)}</span>' for t in matched[:6])
     st.markdown(
         f"""
         <div class="result-card" style="border-left: 3px solid {border};">
             <div class="result-title">{title}{link_html}</div>
             <div class="result-meta">{source_type} &nbsp;·&nbsp; {query_label}</div>
-            <div class="result-snippet">{snippet[:280]}{"…" if len(snippet) > 280 else ""}</div>
+            <div class="result-snippet">{snippet}</div>
             {"<div style='margin-top:0.5rem;'>" + tags_html + "</div>" if tags_html else ""}
         </div>
         """,
