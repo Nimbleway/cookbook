@@ -1,0 +1,28 @@
+[app]
+name = "startup-delivery-orchestrator"
+script = "scripts/tower_run.py"
+
+[[parameters]]
+name = "mode"
+description = "deliver | persist | refresh_saturated_niches"
+default = "deliver"
+
+[[parameters]]
+name = "idea"
+description = "One-sentence startup idea (deliver mode)"
+default = "an app that books last-minute dog groomers"
+
+[[parameters]]
+name = "build_landing"
+description = "1 to also generate + publish the landing page"
+default = "0"
+
+[[parameters]]
+name = "package_json"
+description = "A serialized DeliveryPackage to upsert (persist mode)"
+default = ""
+
+[[parameters]]
+name = "verify_readback"
+description = "1 to read the row back after writing (debug)"
+default = "0"

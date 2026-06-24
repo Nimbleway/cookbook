@@ -1,0 +1,888 @@
+{
+  "site_seo_score": {
+    "total": 58,
+    "technical_seo": 14,
+    "content_depth": 11,
+    "search_intent_alignment": 11,
+    "competitive_coverage": 9,
+    "internal_linking": 7,
+    "conversion_readiness": 6,
+    "summary": "Stripe has strong brand authority and wins cleanly on a handful of high-intent product and pricing terms, but consistently loses the educational and consideration layer to third-party publishers, review sites, and niche competitors. The most critical structural weakness is that 13 of 30 tracked terms either surface a resource article instead of the canonical product or use-case page, or Stripe is entirely absent from the SERP, indicating a systemic disconnect between content production and commercial page optimisation. Competitor threats from Chargebee, Paddle, Recurly, and NMI are concentrated precisely in the mid-funnel comparison and problem-aware queries where Stripe has no dedicated page or a mismatched ranking URL."
+  },
+  "term_diagnoses": [
+    {
+      "search_term": "online payment processing for businesses",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/payments",
+      "page_issues": [
+        "missing_keyword",
+        "weak_title",
+        "thin_content",
+        "no_comparison_table",
+        "no_faq"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "competitors_own_educational_layer",
+        "format_mismatch"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "dominated_by_review_sites"
+      ],
+      "top_competitor_for_term": "squareup.com",
+      "competitor_winning_angle": "Square leads with a direct product page matching the exact transactional intent, covering online, in-store, and on-the-go acceptance in a single destination",
+      "diagnosis_summary": "A small-business-focused resource article ranks at #4 instead of the canonical /payments product page, ceding the commercial slot to Square and Elavon while Zapier and NerdWallet own the listicle layer.",
+      "page_priority_score": {
+        "total": 74,
+        "business_value": 28,
+        "ranking_opportunity": 16,
+        "fixability": 15,
+        "competitor_gap": 10,
+        "internal_link_leverage": 5
+      }
+    },
+    {
+      "search_term": "payment infrastructure API",
+      "status": "winning",
+      "mapped_page": "https://stripe.com/",
+      "page_issues": [
+        "weak_title",
+        "missing_keyword"
+      ],
+      "strategy_issues": [
+        "query_too_broad"
+      ],
+      "serp_issues": [
+        "dominated_by_docs"
+      ],
+      "top_competitor_for_term": "truelayer.com",
+      "competitor_winning_angle": "TrueLayer owns #1 with a focused definitional article explaining what a payment API is, capturing top-of-funnel awareness before product consideration",
+      "diagnosis_summary": "Stripe ranks #2 with a resource article rather than a dedicated API infrastructure page, but the position is defensible; the main risk is TrueLayer holding the awareness anchor at #1.",
+      "page_priority_score": {
+        "total": 44,
+        "business_value": 20,
+        "ranking_opportunity": 10,
+        "fixability": 8,
+        "competitor_gap": 4,
+        "internal_link_leverage": 2
+      }
+    },
+    {
+      "search_term": "subscription billing software",
+      "status": "winning",
+      "mapped_page": "https://stripe.com/billing",
+      "page_issues": [
+        "no_comparison_table",
+        "no_faq"
+      ],
+      "strategy_issues": [
+        "competitors_own_comparison_content"
+      ],
+      "serp_issues": [
+        "dominated_by_review_sites"
+      ],
+      "top_competitor_for_term": "recurly.com",
+      "competitor_winning_angle": "Recurly holds #1 with a brand-forward product page that leads on high-volume recurring billing and dunning, directly addressing enterprise SaaS pain points Stripe only mentions generically",
+      "diagnosis_summary": "Stripe Billing ranks #2 with its canonical product page, a strong position, but Recurly owns #1 and Chargebee and Zuora are visible, meaning the page needs sharper differentiation and a comparison signal to defend and advance.",
+      "page_priority_score": {
+        "total": 65,
+        "business_value": 27,
+        "ranking_opportunity": 14,
+        "fixability": 14,
+        "competitor_gap": 7,
+        "internal_link_leverage": 3
+      }
+    },
+    {
+      "search_term": "fraud detection for online payments",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/radar",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "no_faq",
+        "thin_content"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "competitors_own_educational_layer",
+        "format_mismatch"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "dominated_by_review_sites"
+      ],
+      "top_competitor_for_term": "seon.io",
+      "competitor_winning_angle": "SEON ranks #1 with a detailed definitional guide covering detection methods, device intelligence, and fraud types, capturing the educational intent before any product consideration",
+      "diagnosis_summary": "A generic fraud types article ranks #2 instead of Stripe Radar, wasting the commercial slot; SEON and Adyen own the educational and consideration layers that should funnel into the Radar product page.",
+      "page_priority_score": {
+        "total": 70,
+        "business_value": 26,
+        "ranking_opportunity": 17,
+        "fixability": 16,
+        "competitor_gap": 8,
+        "internal_link_leverage": 3
+      }
+    },
+    {
+      "search_term": "embedded payments for platforms",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/connect",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "no_faq",
+        "weak_internal_linking"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "competitors_own_educational_layer",
+        "format_mismatch"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles"
+      ],
+      "top_competitor_for_term": "nmi.com",
+      "competitor_winning_angle": "NMI owns #1 with a comprehensive overview article framing embedded payments as a growth lever for software platforms, directly speaking to the ISV and SaaS builder audience Stripe targets with Connect",
+      "diagnosis_summary": "A 2023 resource article ranks #2 instead of Stripe Connect, and NMI has stolen the educational anchor at #1 targeting precisely the platform audience that Connect is built for.",
+      "page_priority_score": {
+        "total": 75,
+        "business_value": 28,
+        "ranking_opportunity": 18,
+        "fixability": 15,
+        "competitor_gap": 9,
+        "internal_link_leverage": 5
+      }
+    },
+    {
+      "search_term": "automated sales tax compliance software",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/tax",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "no_comparison_table",
+        "no_faq",
+        "thin_content"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "competitors_own_educational_layer",
+        "page_lacks_specificity"
+      ],
+      "serp_issues": [
+        "dominated_by_review_sites",
+        "dominated_by_listicles",
+        "low_ranking_opportunity"
+      ],
+      "top_competitor_for_term": "taxjar.com",
+      "competitor_winning_angle": "TaxJar leads with a purpose-built tax compliance platform page that speaks the exact language of the query across 11,000 jurisdictions, while Avalara owns the automated software category narrative",
+      "diagnosis_summary": "Stripe Tax ranks #17 with a small-business guide instead of its product page, and the SERP is dominated by dedicated tax compliance specialists like TaxJar and Avalara who own this category definitively.",
+      "page_priority_score": {
+        "total": 62,
+        "business_value": 24,
+        "ranking_opportunity": 10,
+        "fixability": 14,
+        "competitor_gap": 10,
+        "internal_link_leverage": 4
+      }
+    },
+    {
+      "search_term": "usage-based billing for SaaS",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/billing/usage-based-billing",
+      "page_issues": [
+        "missing_keyword",
+        "no_faq",
+        "no_comparison_table",
+        "weak_internal_linking"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "competitors_own_educational_layer",
+        "format_mismatch"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "dominated_by_review_sites"
+      ],
+      "top_competitor_for_term": "chargebee.com",
+      "competitor_winning_angle": "Chargebee ranks #1 with a definitional guide on usage-based billing that captures the awareness query before any product comparison, seeding brand preference for its own billing platform",
+      "diagnosis_summary": "A resource article about usage-based billing ranks #8 instead of Stripe's dedicated usage-based billing product page, while Chargebee and Orb own the educational #1 and #3 spots that feed consideration.",
+      "page_priority_score": {
+        "total": 72,
+        "business_value": 27,
+        "ranking_opportunity": 16,
+        "fixability": 16,
+        "competitor_gap": 10,
+        "internal_link_leverage": 3
+      }
+    },
+    {
+      "search_term": "one-click checkout for ecommerce",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/payments/link",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "thin_content",
+        "no_faq"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "competitors_own_educational_layer",
+        "format_mismatch"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "high_brand_bias"
+      ],
+      "top_competitor_for_term": "salesforce.com",
+      "competitor_winning_angle": "Salesforce claims #1 with an educational overview of one-click checkout tied to Commerce Cloud, positioning itself as the authoritative enterprise ecommerce voice on the topic",
+      "diagnosis_summary": "A definitional resource article ranks #2 instead of Stripe Link, the actual product that solves this intent, leaving the product page invisible for a high-conversion ecommerce query.",
+      "page_priority_score": {
+        "total": 68,
+        "business_value": 26,
+        "ranking_opportunity": 15,
+        "fixability": 16,
+        "competitor_gap": 8,
+        "internal_link_leverage": 3
+      }
+    },
+    {
+      "search_term": "virtual card issuing API for businesses",
+      "status": "winning",
+      "mapped_page": "https://stripe.com/issuing",
+      "page_issues": [
+        "vague_h1"
+      ],
+      "strategy_issues": [],
+      "serp_issues": [],
+      "top_competitor_for_term": "adyen.com",
+      "competitor_winning_angle": "Adyen ranks #3 with a card issuing page emphasising instant virtual card issuance and branded physical cards at scale, closely mirroring Stripe Issuing's positioning",
+      "diagnosis_summary": "Stripe Issuing ranks #1 with its canonical product page and owns this term cleanly; the main risk is Adyen's strong #3 presence on a nearly identical value proposition.",
+      "page_priority_score": {
+        "total": 38,
+        "business_value": 18,
+        "ranking_opportunity": 6,
+        "fixability": 8,
+        "competitor_gap": 4,
+        "internal_link_leverage": 2
+      }
+    },
+    {
+      "search_term": "prebuilt payment page integration",
+      "status": "winning",
+      "mapped_page": "https://stripe.com/payments/checkout",
+      "page_issues": [
+        "vague_h1"
+      ],
+      "strategy_issues": [],
+      "serp_issues": [],
+      "top_competitor_for_term": "checkout.com",
+      "competitor_winning_angle": "Checkout.com appears at #5 with a pre-built integrations page targeting ecommerce platforms, a limited but visible presence in this SERP",
+      "diagnosis_summary": "Stripe Checkout dominates at #1 with its canonical product page and faces minimal competitive threat on this term; position is stable.",
+      "page_priority_score": {
+        "total": 28,
+        "business_value": 14,
+        "ranking_opportunity": 4,
+        "fixability": 6,
+        "competitor_gap": 2,
+        "internal_link_leverage": 2
+      }
+    },
+    {
+      "search_term": "payment authorization rate optimization",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/authorization-boost",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "thin_content",
+        "no_faq"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "format_mismatch",
+        "page_lacks_specificity"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles"
+      ],
+      "top_competitor_for_term": "nuvei.com",
+      "competitor_winning_angle": "Nuvei ranks #3 with a detailed guide promising up to 5-point approval rate improvement across every channel, directly quantifying the business outcome the searcher wants",
+      "diagnosis_summary": "A guide to optimizing authorization rates ranks #1 instead of the Authorization Boost product page, meaning Stripe captures the educational click but fails to convert it through the product page.",
+      "page_priority_score": {
+        "total": 60,
+        "business_value": 22,
+        "ranking_opportunity": 14,
+        "fixability": 14,
+        "competitor_gap": 7,
+        "internal_link_leverage": 3
+      }
+    },
+    {
+      "search_term": "sync payment data to data warehouse",
+      "status": "winning",
+      "mapped_page": "https://stripe.com/data-pipeline",
+      "page_issues": [
+        "vague_h1",
+        "no_faq"
+      ],
+      "strategy_issues": [],
+      "serp_issues": [
+        "dominated_by_docs"
+      ],
+      "top_competitor_for_term": "moov.io",
+      "competitor_winning_angle": "Moov holds #1 with a near-real-time data sync positioning that emphasises speed and flexibility, slightly outpacing Stripe's more neutral product description",
+      "diagnosis_summary": "Stripe Data Pipeline ranks #3 with its canonical product page; the position is acceptable but the vague title and H1 leave the page vulnerable to Moov's more specific near-real-time positioning.",
+      "page_priority_score": {
+        "total": 42,
+        "business_value": 16,
+        "ranking_opportunity": 10,
+        "fixability": 10,
+        "competitor_gap": 4,
+        "internal_link_leverage": 2
+      }
+    },
+    {
+      "search_term": "how to accept payments in a mobile app",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/use-cases/in-app-payments",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "thin_content",
+        "no_faq"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "format_mismatch",
+        "query_too_broad"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "high_brand_bias"
+      ],
+      "top_competitor_for_term": "squareup.com",
+      "competitor_winning_angle": "Square ranks #2 with a Tap to Pay on Android product page that directly answers the mobile acceptance intent, while Apple's Tap to Pay page owns #1 for iOS",
+      "diagnosis_summary": "A resource article about accepting phone payments ranks #3 instead of the in-app payments use-case page, and the SERP intent has shifted toward Tap to Pay hardware solutions which misaligns with Stripe's in-app SDK positioning.",
+      "page_priority_score": {
+        "total": 55,
+        "business_value": 20,
+        "ranking_opportunity": 12,
+        "fixability": 12,
+        "competitor_gap": 8,
+        "internal_link_leverage": 3
+      }
+    },
+    {
+      "search_term": "global payouts for marketplace sellers",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/use-cases/marketplaces",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "no_faq",
+        "weak_internal_linking"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "competitors_own_educational_layer",
+        "format_mismatch"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles"
+      ],
+      "top_competitor_for_term": "tipalti.com",
+      "competitor_winning_angle": "Tipalti ranks #4 with a marketplace payout API guide covering automation, compliance, and global scaling, precisely targeting marketplace operators who need a trusted infrastructure narrative",
+      "diagnosis_summary": "Stripe's own docs page for Global Payouts ranks #1 rather than the commercial marketplace use-case page, routing users into technical documentation before they have been sold on the product.",
+      "page_priority_score": {
+        "total": 66,
+        "business_value": 25,
+        "ranking_opportunity": 15,
+        "fixability": 14,
+        "competitor_gap": 9,
+        "internal_link_leverage": 3
+      }
+    },
+    {
+      "search_term": "automate finance and accounting workflows",
+      "status": "absent",
+      "mapped_page": "https://stripe.com/use-cases/finance-automation",
+      "page_issues": [
+        "missing_keyword",
+        "thin_content",
+        "no_faq",
+        "vague_h1",
+        "weak_internal_linking"
+      ],
+      "strategy_issues": [
+        "no_page_fits",
+        "competitors_own_educational_layer",
+        "page_lacks_specificity"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "low_ranking_opportunity"
+      ],
+      "top_competitor_for_term": "uipath.com",
+      "competitor_winning_angle": "UiPath owns #1 with an agentic finance automation page that positions AI-driven end-to-end accounting automation, a broader and more aspirational framing than Stripe's payment-centric scope",
+      "diagnosis_summary": "Stripe is completely absent from this SERP despite having a finance automation use-case page, suggesting the page either lacks indexation signals, has no inbound links, or does not match the broader accounting-workflow intent the query targets.",
+      "page_priority_score": {
+        "total": 58,
+        "business_value": 20,
+        "ranking_opportunity": 12,
+        "fixability": 14,
+        "competitor_gap": 8,
+        "internal_link_leverage": 4
+      }
+    },
+    {
+      "search_term": "payments for AI companies billing per API call",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/use-cases/ai",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "thin_content",
+        "no_faq"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "format_mismatch",
+        "page_lacks_specificity"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles"
+      ],
+      "top_competitor_for_term": "zoneandco.com",
+      "competitor_winning_angle": "Zone and Co ranks #4 with a dedicated AI billing page covering metering and per-API-call charging models, speaking directly to the monetisation engineering challenge",
+      "diagnosis_summary": "A resource article on API call pricing ranks #1 instead of the Stripe for AI use-case page, demonstrating that Stripe's editorial content is outperforming its own commercial pages even for its highest-growth vertical.",
+      "page_priority_score": {
+        "total": 76,
+        "business_value": 29,
+        "ranking_opportunity": 17,
+        "fixability": 16,
+        "competitor_gap": 10,
+        "internal_link_leverage": 4
+      }
+    },
+    {
+      "search_term": "how to incorporate a startup online",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/atlas",
+      "page_issues": [
+        "missing_keyword",
+        "thin_content",
+        "no_faq"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "format_mismatch",
+        "competitors_own_educational_layer"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "high_brand_bias"
+      ],
+      "top_competitor_for_term": "svb.com",
+      "competitor_winning_angle": "SVB holds #1 with a startup incorporation guide covering corporate structures, leveraging its brand trust with early-stage founders before any product is introduced",
+      "diagnosis_summary": "A step-by-step incorporation guide article ranks #2 instead of Stripe Atlas, meaning the commercial product page is invisible while Stripe resources educate users who may not convert through Atlas.",
+      "page_priority_score": {
+        "total": 62,
+        "business_value": 22,
+        "ranking_opportunity": 14,
+        "fixability": 15,
+        "competitor_gap": 7,
+        "internal_link_leverage": 4
+      }
+    },
+    {
+      "search_term": "accept international payments with multiple currencies",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/use-cases/global-businesses",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "no_faq",
+        "no_comparison_table"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "competitors_own_educational_layer",
+        "format_mismatch"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles"
+      ],
+      "top_competitor_for_term": "tipalti.com",
+      "competitor_winning_angle": "Tipalti ranks #2 with a multi-currency payment processing guide that covers business setup, compliance, and FX management, capturing the educational need before product selection",
+      "diagnosis_summary": "A resource article on international payments ranks #1 instead of the global businesses use-case page, and competitors Tipalti, PayPal, and Wise hold the remaining educational positions in this high-value query.",
+      "page_priority_score": {
+        "total": 70,
+        "business_value": 26,
+        "ranking_opportunity": 15,
+        "fixability": 15,
+        "competitor_gap": 10,
+        "internal_link_leverage": 4
+      }
+    },
+    {
+      "search_term": "why are my online payments being declined",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/authorization-boost",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "thin_content",
+        "no_faq",
+        "cta_mismatch"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "format_mismatch",
+        "competitors_own_educational_layer"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "high_brand_bias",
+        "low_ranking_opportunity"
+      ],
+      "top_competitor_for_term": "chase.com",
+      "competitor_winning_angle": "Chase and American Express dominate with consumer-facing credit card decline explanations; the SERP intent is consumer-side not merchant-side, making this a structural intent mismatch for Stripe",
+      "diagnosis_summary": "Stripe ranks #9 with a decline codes resource and the Authorization Boost product page is unmapped to this query; however, the SERP intent is consumer-focused credit card declines rather than merchant acceptance rates, making this a fundamentally misaligned keyword for any Stripe commercial page.",
+      "page_priority_score": {
+        "total": 28,
+        "business_value": 8,
+        "ranking_opportunity": 5,
+        "fixability": 8,
+        "competitor_gap": 5,
+        "internal_link_leverage": 2
+      }
+    },
+    {
+      "search_term": "losing revenue from failed subscription renewals",
+      "status": "absent",
+      "mapped_page": "https://stripe.com/billing/subscriptions",
+      "page_issues": [
+        "missing_keyword",
+        "no_faq",
+        "thin_content",
+        "weak_internal_linking"
+      ],
+      "strategy_issues": [
+        "no_page_fits",
+        "competitors_own_educational_layer",
+        "page_lacks_specificity"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "low_ranking_opportunity"
+      ],
+      "top_competitor_for_term": "recurly.com",
+      "competitor_winning_angle": "Recurly's brand equity in failed payment recovery and dunning, visible across multiple SERPs, makes it the default solution association for this exact revenue-loss problem",
+      "diagnosis_summary": "Stripe is entirely absent despite the Billing subscriptions page explicitly featuring AI-powered recovery tools; no page is optimised to intercept this high-intent problem-aware query that Recurly and niche players currently own.",
+      "page_priority_score": {
+        "total": 74,
+        "business_value": 28,
+        "ranking_opportunity": 16,
+        "fixability": 17,
+        "competitor_gap": 10,
+        "internal_link_leverage": 3
+      }
+    },
+    {
+      "search_term": "how to get business funding without a bank loan",
+      "status": "absent",
+      "mapped_page": "https://stripe.com/capital",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "thin_content",
+        "no_faq",
+        "cta_mismatch"
+      ],
+      "strategy_issues": [
+        "no_page_fits",
+        "competitors_own_educational_layer",
+        "query_too_broad"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "high_brand_bias",
+        "low_ranking_opportunity"
+      ],
+      "top_competitor_for_term": "sba.gov",
+      "competitor_winning_angle": "SBA and government sources dominate with authoritative funding guides; the query intent skews broad small-business education rather than Stripe Capital's narrow Stripe-user cash advance product",
+      "diagnosis_summary": "Stripe Capital is completely absent and the query intent is dominated by SBA, banks, and generic funding guides, indicating the Capital product page is too narrow and offer-specific to rank for this awareness-stage query without a separate educational content layer.",
+      "page_priority_score": {
+        "total": 35,
+        "business_value": 14,
+        "ranking_opportunity": 6,
+        "fixability": 8,
+        "competitor_gap": 5,
+        "internal_link_leverage": 2
+      }
+    },
+    {
+      "search_term": "too many chargebacks on my online store",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/radar",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "thin_content",
+        "no_faq"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "format_mismatch",
+        "competitors_own_educational_layer"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles"
+      ],
+      "top_competitor_for_term": "chargebacks911.com",
+      "competitor_winning_angle": "Chargebacks911 owns the chargeback threshold conversation with precise card-network limit data and merchant account risk framing, speaking directly to the merchant fear this query expresses",
+      "diagnosis_summary": "A Chargebacks 101 resource ranks #2 instead of Stripe Radar, and the Radar product page is invisible for this urgent problem-aware merchant query that should be a direct funnel entry for fraud and dispute prevention tools.",
+      "page_priority_score": {
+        "total": 66,
+        "business_value": 24,
+        "ranking_opportunity": 15,
+        "fixability": 15,
+        "competitor_gap": 9,
+        "internal_link_leverage": 3
+      }
+    },
+    {
+      "search_term": "Braintree vs payment processing API for developers",
+      "status": "absent",
+      "mapped_page": "https://stripe.com/payments",
+      "page_issues": [
+        "no_comparison_table",
+        "missing_keyword",
+        "thin_content"
+      ],
+      "strategy_issues": [
+        "no_page_fits",
+        "competitors_own_comparison_content",
+        "format_mismatch"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "dominated_by_docs"
+      ],
+      "top_competitor_for_term": "spreedly.com",
+      "competitor_winning_angle": "Spreedly ranks #3 with a direct Stripe vs Braintree comparison covering fees, payment methods, and accepted currencies, capturing developer consideration traffic without owning either product",
+      "diagnosis_summary": "Stripe has no comparison page for Stripe vs Braintree and is completely absent, allowing third-party sites like Spreedly to intercept developer consideration traffic using Stripe's own brand name.",
+      "page_priority_score": {
+        "total": 70,
+        "business_value": 25,
+        "ranking_opportunity": 18,
+        "fixability": 16,
+        "competitor_gap": 9,
+        "internal_link_leverage": 2
+      }
+    },
+    {
+      "search_term": "best payment processing for SaaS companies",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/use-cases/saas",
+      "page_issues": [
+        "missing_keyword",
+        "no_comparison_table",
+        "no_faq",
+        "thin_content"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "competitors_own_comparison_content",
+        "format_mismatch"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "dominated_by_review_sites"
+      ],
+      "top_competitor_for_term": "chargebee.com",
+      "competitor_winning_angle": "Chargebee holds #2 with a SaaS payment gateways guide that positions itself as the authoritative resource for SaaS payment selection, including Stripe as one option in its own controlled narrative",
+      "diagnosis_summary": "A SaaS payment processing challenges resource ranks #3 instead of the Stripe for SaaS use-case page, and Chargebee exploits the SERP to insert itself into the SaaS payment selection conversation using Stripe's category.",
+      "page_priority_score": {
+        "total": 72,
+        "business_value": 27,
+        "ranking_opportunity": 16,
+        "fixability": 15,
+        "competitor_gap": 11,
+        "internal_link_leverage": 3
+      }
+    },
+    {
+      "search_term": "Chargebee alternative for subscription billing",
+      "status": "absent",
+      "mapped_page": "https://stripe.com/billing",
+      "page_issues": [
+        "no_comparison_table",
+        "missing_keyword",
+        "thin_content",
+        "no_faq"
+      ],
+      "strategy_issues": [
+        "no_page_fits",
+        "competitors_own_comparison_content"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "dominated_by_review_sites"
+      ],
+      "top_competitor_for_term": "paddle.com",
+      "competitor_winning_angle": "Paddle owns #2 with a dedicated Chargebee alternative page that highlights its Merchant of Record bundling of payments, tax, and subscriptions, directly converting Chargebee dissatisfaction into Paddle trials",
+      "diagnosis_summary": "Stripe is entirely absent from this high-intent comparison SERP despite being the most-cited Chargebee alternative in multiple listicles; the absence of a dedicated comparison or alternative page leaves massive mid-funnel traffic on the table.",
+      "page_priority_score": {
+        "total": 80,
+        "business_value": 29,
+        "ranking_opportunity": 20,
+        "fixability": 18,
+        "competitor_gap": 9,
+        "internal_link_leverage": 4
+      }
+    },
+    {
+      "search_term": "Avalara alternative for automated tax compliance",
+      "status": "absent",
+      "mapped_page": "https://stripe.com/tax",
+      "page_issues": [
+        "no_comparison_table",
+        "missing_keyword",
+        "thin_content",
+        "no_faq"
+      ],
+      "strategy_issues": [
+        "no_page_fits",
+        "competitors_own_comparison_content"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "dominated_by_review_sites"
+      ],
+      "top_competitor_for_term": "paddle.com",
+      "competitor_winning_angle": "Paddle appears at #5 with an Avalara alternatives page tying tax compliance into its Merchant of Record pitch, capturing Avalara-fatigued buyers at the decision stage",
+      "diagnosis_summary": "Stripe Tax is completely absent from the Avalara alternatives SERP and has no comparison landing page, missing a high-intent decision-stage audience that is actively evaluating tax automation solutions and would be natural Stripe Tax prospects.",
+      "page_priority_score": {
+        "total": 73,
+        "business_value": 26,
+        "ranking_opportunity": 18,
+        "fixability": 17,
+        "competitor_gap": 9,
+        "internal_link_leverage": 3
+      }
+    },
+    {
+      "search_term": "payment processing pricing per transaction no monthly fee",
+      "status": "winning",
+      "mapped_page": "https://stripe.com/pricing",
+      "page_issues": [
+        "vague_h1"
+      ],
+      "strategy_issues": [],
+      "serp_issues": [
+        "dominated_by_listicles"
+      ],
+      "top_competitor_for_term": "helcim.com",
+      "competitor_winning_angle": "Helcim ranks #3 with a fee-saver page that passes processing fees to customers, offering a differentiated zero-cost-to-merchant angle that Stripe's pay-as-you-go pricing cannot directly counter",
+      "diagnosis_summary": "Stripe Pricing ranks #1 with its canonical page and captures the transactional intent cleanly; the main risk is Helcim's fee-pass-through model drawing price-sensitive merchants away at the margin.",
+      "page_priority_score": {
+        "total": 35,
+        "business_value": 18,
+        "ranking_opportunity": 5,
+        "fixability": 6,
+        "competitor_gap": 4,
+        "internal_link_leverage": 2
+      }
+    },
+    {
+      "search_term": "enterprise payment platform with custom volume pricing",
+      "status": "winning",
+      "mapped_page": "https://stripe.com/enterprise",
+      "page_issues": [
+        "poor_heading_structure",
+        "no_proof_points"
+      ],
+      "strategy_issues": [],
+      "serp_issues": [],
+      "top_competitor_for_term": "adyen.com",
+      "competitor_winning_angle": "Adyen is mentioned at #4 via a third-party listicle framing enterprise payment solutions, without owning a direct SERP position for this specific query",
+      "diagnosis_summary": "Stripe Enterprise ranks #1 and owns this decision-stage query; heading structure and social proof density on the page itself should be improved to strengthen conversion, but the ranking position is secure.",
+      "page_priority_score": {
+        "total": 36,
+        "business_value": 20,
+        "ranking_opportunity": 4,
+        "fixability": 7,
+        "competitor_gap": 3,
+        "internal_link_leverage": 2
+      }
+    },
+    {
+      "search_term": "how to verify customer identity online for fintech",
+      "status": "absent",
+      "mapped_page": "https://stripe.com/identity",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "thin_content",
+        "no_faq"
+      ],
+      "strategy_issues": [
+        "no_page_fits",
+        "competitors_own_educational_layer",
+        "page_lacks_specificity"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles",
+        "dominated_by_review_sites"
+      ],
+      "top_competitor_for_term": "veriff.com",
+      "competitor_winning_angle": "Veriff holds #2 with a fintech-specific identity verification guide covering biometric authentication, document checks, and compliance, deeply aligned with the fintech KYC audience intent",
+      "diagnosis_summary": "Stripe Identity is completely absent despite being a direct solution for fintech identity verification; specialist IDV vendors like Veriff, Ondato, and GBG dominate the SERP with fintech-specific educational content that Stripe has not produced.",
+      "page_priority_score": {
+        "total": 68,
+        "business_value": 24,
+        "ranking_opportunity": 16,
+        "fixability": 15,
+        "competitor_gap": 10,
+        "internal_link_leverage": 3
+      }
+    },
+    {
+      "search_term": "embed banking features into SaaS platform",
+      "status": "wrong_page",
+      "mapped_page": "https://stripe.com/treasury",
+      "page_issues": [
+        "missing_keyword",
+        "vague_h1",
+        "thin_content",
+        "no_faq",
+        "weak_internal_linking"
+      ],
+      "strategy_issues": [
+        "wrong_page_ranking",
+        "competitors_own_educational_layer",
+        "format_mismatch"
+      ],
+      "serp_issues": [
+        "dominated_by_listicles"
+      ],
+      "top_competitor_for_term": "unit.co",
+      "competitor_winning_angle": "Unit ranks #2 with a vertical SaaS embedded finance page showing how platforms add payments, banking, and lending, speaking directly to the platform builder intent with specific product capabilities",
+      "diagnosis_summary": "An introductory embedded finance guide ranks #4 instead of Stripe Treasury, and Unit and NMI own the most relevant positions for this decision-stage SaaS platform builder query that Treasury is purpose-built to address.",
+      "page_priority_score": {
+        "total": 71,
+        "business_value": 26,
+        "ranking_opportunity": 16,
+        "fixability": 15,
+        "competitor_gap": 10,
+        "internal_link_leverage": 4
+      }
+    }
+  ]
+}

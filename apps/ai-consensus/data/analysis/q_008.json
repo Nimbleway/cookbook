@@ -1,0 +1,31 @@
+{
+  "id": "q_008",
+  "category": "Tech & AI",
+  "question": "VS Code or JetBrains \u2014 which is the better IDE for professional developers?",
+  "models": {
+    "chatgpt": {
+      "verdict": "VS Code for most developers",
+      "reason": "VS Code is more flexible, lightweight, and widely adopted, while JetBrains excels in deep language-specific tooling.",
+      "raw": "VERDICT: VS Code for most developers\nREASON: It\u2019s more flexible, lightweight, and widely adopted, while JetBrains excels mainly in deep language-specific tooling and out-of-the-box features.",
+      "format": "structured"
+    },
+    "perplexity": {
+      "verdict": "VS Code suits many professionals",
+      "reason": "VS Code offers lightweight flexibility, broad language support, and extensive extensions for diverse workflows.",
+      "raw": "VERDICT: VS Code suits many professionalsREASON: It offers lightweight flexibility, broad language support, and extensive extensions for diverse workflows.",
+      "format": "structured"
+    },
+    "gemini": {
+      "verdict": "Neither is objectively better",
+      "reason": "Both tools represent different philosophies; professionals should choose based on their specific language, workflow, and whether they value speed or built-in features.",
+      "raw": "The \"VS Code vs. JetBrains\" debate is the developer equivalent of \"Mac vs. PC.\" The truth is that neither is objectively \"better\" across the board; they represent two different philosophies of software development.\n\nHere is a breakdown to help you decide which side of the fence you belong on.\n\n---\n\n### 1. The Core Philosophy\n*   **VS Code (The Swiss Army Knife):** It is technically a **text editor** that you turn into an IDE using extensions. It\u2019s lightweight, fast to open, and highly customizable.\n*   **JetBrains (The Powerhouse):** Tools like IntelliJ IDEA, PyCharm, and WebStorm are **dedicated IDEs**. They come \"batteries included\" with deep, language-specific features built-in from day one.\n\n### 2. Side-by-Side Comparison\n\n| Feature | VS Code | JetBrains (IntelliJ, etc.) |\n| :--- | :--- | :--- |\n| **Performance** | Extremely fast; low RAM usage. | Resource-heavy; can be slow on older hardware. |\n| **Out-of-the-Box** | Minimal. You must install plugins. | Massive. Refactoring, Database, and Git tools are native. |\n| **Refactoring** | Basic. Good, but can be brittle. | Advanced. Renaming or moving files is nearly bulletproof. |\n| **Search/Nav** | Good, but relies on indexing plugins. | Industry-leading \"Search Everywhere\" and deep indexing. |\n| **Cost** | **Free** (Open Source). | **Paid** (Subscription-based for Pro versions). |\n\n---\n\n### 3. When to Choose VS Code\nVS Code is the king of the modern web and frontend development. It\u2019s the right choice if:\n*   **You are a polyglot:** You jump between five different languages in a single day (e.g., Markdown, Python, JS, and Terraform).\n*   **You value speed:** You want your editor to open in under a second.\n*   **Remote Development:** Its \"Remote - SSH\" and \"Dev Containers\" extensions are currently superior to JetBrains' remote offerings.\n\n### 4. When to Choose JetBrains\nJetBrains is the gold standard for enterprise-level backend development (Java, C#, Python, Ruby). It\u2019s the right choice if:\n*   **Complex Refactoring:** You are working on a massive legacy codebase where changing a variable name might break things in ten different folders.\n*   **Deep Integration:** You want your database client, terminal, debugger, and version control to feel like a single, cohesive unit.\n*   **Smart Completion:** The \"out-of-the-box\" code intelligence is generally deeper and requires zero configuration.\n\n---\n\n### The \"Pro\" Verdict\nMost professional developers use **both**. \n\nThey use a **JetBrains IDE** for their primary \"heavy lifting\" (the main backend or enterprise app) and keep **VS Code** open for quick script editing, reviewing logs, or working on frontend components. \n\nIf your company is paying for the license, JetBrains is usually worth the productivity boost. If you are a freelancer or a hobbyist who loves a clean, custom-built environment, VS Code is hard to beat.\n\nWhich language do you spend the majority of your time writing?",
+      "format": "freeform"
+    }
+  },
+  "consensus": {
+    "label": "moderate",
+    "score": 0.55,
+    "summary": "ChatGPT and Perplexity favor VS Code for general professional use, while Gemini takes a more nuanced stance that both are equally valid depending on context and use case."
+  },
+  "analyzed_at": "2026-05-06T09:53:32.391363+00:00"
+}

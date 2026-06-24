@@ -1,0 +1,17 @@
+# Only the agent/ package is needed in the bridge image.
+web/
+node_modules/
+.git/
+.gstack/
+.vercel/
+agent/.venv/
+agent/.cache/
+agent/.data/
+agent/.generated/
+**/__pycache__/
+*.pyc
+.env
+.env.*
+scripts/
+tower/
+*.md

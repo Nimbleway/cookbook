@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+  <title>Groom Now — evidence-grounded launch page</title>
+  <style>
+    :root { color-scheme: light; --ink:#111827; --muted:#5b6472; --line:#dfe4ec; --brand:#275efe; --paper:#fffdf8; --soft:#f2f6ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:linear-gradient(135deg,#fffdf8 0%,#eef4ff 100%); }
+    main { width:min(1120px, calc(100% - 32px)); margin:0 auto; }
+    header { padding:28px 0; display:flex; justify-content:space-between; gap:20px; align-items:center; }
+    .brand { font-weight:800; letter-spacing:-.04em; font-size:1.25rem; }
+    .domain { color:var(--muted); border:1px solid var(--line); padding:8px 12px; border-radius:999px; background:rgba(255,255,255,.7); }
+    .hero { padding:72px 0 48px; display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; }
+    h1 { font-size:clamp(2.6rem, 7vw, 5.7rem); line-height:.9; letter-spacing:-.075em; margin:0 0 24px; }
+    h2 { font-size:clamp(2rem,4vw,3.2rem); letter-spacing:-.055em; margin:0 0 18px; }
+    h3 { font-size:1.35rem; letter-spacing:-.035em; margin:0 0 12px; }
+    p { color:var(--muted); line-height:1.65; font-size:1.03rem; }
+    .cta { display:inline-flex; margin-top:18px; background:var(--brand); color:white; padding:14px 18px; border-radius:14px; font-weight:800; text-decoration:none; box-shadow:0 18px 40px rgba(39,94,254,.22); }
+    .panel { border:1px solid var(--line); background:rgba(255,255,255,.82); border-radius:28px; padding:26px; box-shadow:0 24px 80px rgba(31,41,55,.10); }
+    .proof { display:grid; gap:14px; padding:0; margin:0; list-style:none; }
+    .proof li { padding:16px; border-radius:18px; background:var(--soft); border:1px solid #dce7ff; }
+    .proof strong { display:block; margin-bottom:5px; }
+    .proof span { color:var(--muted); line-height:1.5; }
+    .eyebrow { margin:0 0 10px; color:var(--brand); text-transform:uppercase; letter-spacing:.12em; font-weight:900; font-size:.74rem; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:28px 0 58px; }
+    .gap-card { min-height:260px; padding:22px; background:white; border:1px solid var(--line); border-radius:24px; display:flex; flex-direction:column; }
+    .gap-card a { margin-top:auto; color:var(--brand); font-weight:800; text-decoration:none; }
+    .brief { display:grid; grid-template-columns:.85fr 1.15fr; gap:28px; margin:42px 0 70px; }
+    .sources { padding-left:20px; color:var(--muted); }
+    .sources a { color:var(--ink); }
+    details { border-top:1px solid var(--line); padding:18px 0; }
+    summary { cursor:pointer; font-weight:800; }
+    footer { padding:42px 0 64px; color:var(--muted); font-size:.92rem; }
+    @media (max-width: 860px) { .hero,.brief,.grid { grid-template-columns:1fr; } h1 { font-size:3.3rem; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header aria-label="Site header">
+      <div class="brand">Groom Now</div>
+      <div class="domain">groomnow.com</div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Delivered by Startup.Delivery</p>
+        <h1>Your dog&#x27;s groomer is 15 minutes away</h1>
+        <p>Real-time availability. Same-day booking. No waiting weeks.</p>
+        <a class="cta" href="mailto:founder@example.com?subject=Groom Now%20launch%20plan">Book Now</a>
+      </div>
+      <aside class="panel" aria-label="Launch proof points">
+        <ul class="proof"><li><strong>Domain-ready</strong><span>groomnow.com checked as buyable in the delivery pipeline.</span></li><li><strong>Evidence-grounded</strong><span>Positioning is based on cited live-web competitor recon.</span></li><li><strong>Built to launch</strong><span>Brand, wedge, citations, and page copy arrive in one package.</span></li></ul>
+      </aside>
+    </section>
+
+    <section aria-labelledby="gap-title">
+      <h2 id="gap-title">The live-web gap</h2>
+      <div class="grid">
+        <article class="gap-card">
+          <p class="eyebrow">Live competitor gap</p>
+          <h3>Unlike MoeGo, built for the underserved job</h3>
+          <p>MoeGo appears focused on All-in-one grooming business software for scheduling and client management.. Groom Now turns the gap into a sharper, customer-facing workflow.</p>
+          <a href="https://www.moego.pet/" target="_blank" rel="noopener noreferrer">
+            Source: MoeGo
+          </a>
+        </article>
+        
+        <article class="gap-card">
+          <p class="eyebrow">Live competitor gap</p>
+          <h3>Unlike Tuft, built for the underserved job</h3>
+          <p>Tuft appears focused on Free booking app for groomers with deposits, pet profiles, and reminders.. Groom Now turns the gap into a sharper, customer-facing workflow.</p>
+          <a href="https://tuftapp.com/" target="_blank" rel="noopener noreferrer">
+            Source: Tuft
+          </a>
+        </article>
+        
+        <article class="gap-card">
+          <p class="eyebrow">Live competitor gap</p>
+          <h3>Unlike Petco Grooming, built for the underserved job</h3>
+          <p>Petco Grooming appears focused on In-store grooming appointments booked in advance at retail locations.. Groom Now turns the gap into a sharper, customer-facing workflow.</p>
+          <a href="https://www.petco.com/grooming" target="_blank" rel="noopener noreferrer">
+            Source: Petco Grooming
+          </a>
+        </article>
+        </div>
+    </section>
+
+    <section class="brief">
+      <div>
+        <p class="eyebrow">Positioning brief</p>
+        <h2>Why this wedge is worth testing now</h2>
+      </div>
+      <div class="panel">
+        <p>No listed competitor owns the consumer-first, same-day grooming use case: finding available groomers now across real-time open capacity.</p>
+        <h3>Sources found live</h3>
+        <ul class="sources"><li><a href="https://www.moego.pet/" target="_blank" rel="noopener noreferrer">MoeGo</a></li><li><a href="https://tuftapp.com/" target="_blank" rel="noopener noreferrer">Tuft</a></li><li><a href="https://www.petco.com/grooming" target="_blank" rel="noopener noreferrer">Petco Grooming</a></li></ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-title" class="panel">
+      <h2 id="faq-title">FAQ</h2>
+      
+        <details>
+          <summary>How fast can I actually get my dog groomed?</summary>
+          <p>Depending on your location and groomer availability, many bookings happen within 2–4 hours. Open the app, see available slots, and book instantly.</p>
+        </details>
+        
+        <details>
+          <summary>Do I have to use a chain or big groomer?</summary>
+          <p>No. Groom Now connects you to independent and small-business groomers in your area with real-time open capacity—giving you choice and faster availability.</p>
+        </details>
+        
+        <details>
+          <summary>Is this more expensive than booking in advance?</summary>
+          <p>Same-day grooming may carry a small premium over advance bookings, but you&#x27;re paying for speed and convenience, not a subscription or retail markup.</p>
+        </details>
+        
+        <details>
+          <summary>What if no one is available right now?</summary>
+          <p>You&#x27;ll see the next available slots across nearby groomers. You can also set an alert and we&#x27;ll notify you when a same-day slot opens.</p>
+        </details>
+        
+    </section>
+
+    <footer>
+      Generated from live cited recon. Validate claims before spending money on ads, legal, or registration.
+    </footer>
+  </main>
+</body>
+</html>

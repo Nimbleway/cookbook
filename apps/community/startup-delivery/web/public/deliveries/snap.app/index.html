@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+  <title>Snap — evidence-grounded launch page</title>
+  <style>
+    :root { color-scheme: light; --ink:#111827; --muted:#5b6472; --line:#dfe4ec; --brand:#275efe; --paper:#fffdf8; --soft:#f2f6ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:linear-gradient(135deg,#fffdf8 0%,#eef4ff 100%); }
+    main { width:min(1120px, calc(100% - 32px)); margin:0 auto; }
+    header { padding:28px 0; display:flex; justify-content:space-between; gap:20px; align-items:center; }
+    .brand { font-weight:800; letter-spacing:-.04em; font-size:1.25rem; }
+    .domain { color:var(--muted); border:1px solid var(--line); padding:8px 12px; border-radius:999px; background:rgba(255,255,255,.7); }
+    .hero { padding:72px 0 48px; display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; }
+    h1 { font-size:clamp(2.6rem, 7vw, 5.7rem); line-height:.9; letter-spacing:-.075em; margin:0 0 24px; }
+    h2 { font-size:clamp(2rem,4vw,3.2rem); letter-spacing:-.055em; margin:0 0 18px; }
+    h3 { font-size:1.35rem; letter-spacing:-.035em; margin:0 0 12px; }
+    p { color:var(--muted); line-height:1.65; font-size:1.03rem; }
+    .cta { display:inline-flex; margin-top:18px; background:var(--brand); color:white; padding:14px 18px; border-radius:14px; font-weight:800; text-decoration:none; box-shadow:0 18px 40px rgba(39,94,254,.22); }
+    .panel { border:1px solid var(--line); background:rgba(255,255,255,.82); border-radius:28px; padding:26px; box-shadow:0 24px 80px rgba(31,41,55,.10); }
+    .proof { display:grid; gap:14px; padding:0; margin:0; list-style:none; }
+    .proof li { padding:16px; border-radius:18px; background:var(--soft); border:1px solid #dce7ff; }
+    .proof strong { display:block; margin-bottom:5px; }
+    .proof span { color:var(--muted); line-height:1.5; }
+    .eyebrow { margin:0 0 10px; color:var(--brand); text-transform:uppercase; letter-spacing:.12em; font-weight:900; font-size:.74rem; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:28px 0 58px; }
+    .gap-card { min-height:260px; padding:22px; background:white; border:1px solid var(--line); border-radius:24px; display:flex; flex-direction:column; }
+    .gap-card a { margin-top:auto; color:var(--brand); font-weight:800; text-decoration:none; }
+    .brief { display:grid; grid-template-columns:.85fr 1.15fr; gap:28px; margin:42px 0 70px; }
+    .sources { padding-left:20px; color:var(--muted); }
+    .sources a { color:var(--ink); }
+    details { border-top:1px solid var(--line); padding:18px 0; }
+    summary { cursor:pointer; font-weight:800; }
+    footer { padding:42px 0 64px; color:var(--muted); font-size:.92rem; }
+    @media (max-width: 860px) { .hero,.brief,.grid { grid-template-columns:1fr; } h1 { font-size:3.3rem; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header aria-label="Site header">
+      <div class="brand">Snap</div>
+      <div class="domain">snap.app</div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Delivered by Startup.Delivery</p>
+        <h1>Book a dog groomer in minutes, not weeks</h1>
+        <p>Real-time availability from groomers near you. Same-day slots. No waiting.</p>
+        <a class="cta" href="mailto:founder@example.com?subject=Snap%20launch%20plan">Find groomers now</a>
+      </div>
+      <aside class="panel" aria-label="Launch proof points">
+        <ul class="proof"><li><strong>Domain-ready</strong><span>snap.app checked as buyable in the delivery pipeline.</span></li><li><strong>Evidence-grounded</strong><span>Positioning is based on cited live-web competitor recon.</span></li><li><strong>Built to launch</strong><span>Brand, wedge, citations, and page copy arrive in one package.</span></li></ul>
+      </aside>
+    </section>
+
+    <section aria-labelledby="gap-title">
+      <h2 id="gap-title">The live-web gap</h2>
+      <div class="grid">
+        <article class="gap-card">
+          <p class="eyebrow">Live competitor gap</p>
+          <h3>Unlike Tuft: Dog Grooming Software | Free Booking App for Groomers, built for the underserved job</h3>
+          <p>Tuft: Dog Grooming Software | Free Booking App for Groomers appears focused on Dog grooming software where clients book on your terms. Free plan, deposits, pet profiles, automated reminders, and a marketplace that brings you new .... Snap turns the gap into a sharper, customer-facing workflow.</p>
+          <a href="https://tuftapp.com/" target="_blank" rel="noopener noreferrer">
+            Source: Tuft: Dog Grooming Software | Free Booking App for Groomers
+          </a>
+        </article>
+        
+        <article class="gap-card">
+          <p class="eyebrow">Live competitor gap</p>
+          <h3>Unlike Groomsoft Pet Grooming Software :: User friendly Pet ..., built for the underserved job</h3>
+          <p>Groomsoft Pet Grooming Software :: User friendly Pet ... appears focused on Groomsoft makes it easier than ever to manage your pet grooming business today and keep growing tomorrow. Using input from thousands of groomers.Read more. Snap turns the gap into a sharper, customer-facing workflow.</p>
+          <a href="https://www.groomsoft.com/" target="_blank" rel="noopener noreferrer">
+            Source: Groomsoft Pet Grooming Software :: User friendly Pet ...
+          </a>
+        </article>
+        
+        <article class="gap-card">
+          <p class="eyebrow">Live competitor gap</p>
+          <h3>Unlike MoeGo: All-in-One Pet Business Software, built for the underserved job</h3>
+          <p>MoeGo: All-in-One Pet Business Software appears focused on Streamline your pet business with MoeGo&#x27;s all-in-one pet care software. Manage bookings, automate tasks, and enhance customer experiences today!. Snap turns the gap into a sharper, customer-facing workflow.</p>
+          <a href="https://www.moego.pet/" target="_blank" rel="noopener noreferrer">
+            Source: MoeGo: All-in-One Pet Business Software
+          </a>
+        </article>
+        </div>
+    </section>
+
+    <section class="brief">
+      <div>
+        <p class="eyebrow">Positioning brief</p>
+        <h2>Why this wedge is worth testing now</h2>
+      </div>
+      <div class="panel">
+        <p>Tuft, Groomsoft, MoeGo, and ShakeYourTail are all B2B grooming management platforms where pet owners book *through* groomer websites—none prioritizes a consumer-first, real-time last-minute availability marketplace where pet owners can search and book same-day slots like Uber or DoorDash. The gap is a direct-to-consumer app that surfaces groomer availability *instantly* and emphasizes speed and urgency, not groomer admin tools.</p>
+        <h3>Sources found live</h3>
+        <ul class="sources"><li><a href="https://tuftapp.com/" target="_blank" rel="noopener noreferrer">Tuft: Dog Grooming Software | Free Booking App for Groomers</a></li><li><a href="https://www.groomsoft.com/" target="_blank" rel="noopener noreferrer">Groomsoft Pet Grooming Software :: User friendly Pet ...</a></li><li><a href="https://www.moego.pet/" target="_blank" rel="noopener noreferrer">MoeGo: All-in-One Pet Business Software</a></li><li><a href="https://www.packyard.app/grooming-scheduling-apps" target="_blank" rel="noopener noreferrer">Grooming Apps That Stop No-Shows &amp; Fill Your Chair</a></li><li><a href="https://www.shakeyourtail.com/" target="_blank" rel="noopener noreferrer">ShakeYourTail: Dog Grooming Software</a></li></ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-title" class="panel">
+      <h2 id="faq-title">FAQ</h2>
+      
+        <details>
+          <summary>How is Snap different from booking through a groomer&#x27;s website?</summary>
+          <p>Groomer software like Tuft and Groomsoft are built for shops to manage their own bookings. Snap is a consumer app—you search across multiple groomers at once, see live availability, and book in seconds. No hunting, no calling around.</p>
+        </details>
+        
+        <details>
+          <summary>Can I book for a specific time, or only same-day?</summary>
+          <p>Both. Search for same-day urgent slots or browse availability weeks ahead. The difference: Snap shows you what&#x27;s actually open *right now*, not a calendar of maybe-available times.</p>
+        </details>
+        
+        <details>
+          <summary>Are these real groomers or a service like DoorDash?</summary>
+          <p>Real, licensed groomers in your area. Snap is a marketplace that connects you directly—they groom your dog at their shop or yours, depending on what they offer.</p>
+        </details>
+        
+        <details>
+          <summary>What if I need a specific groomer or breed specialist?</summary>
+          <p>Filter by groomer rating, breed experience, services (mobile, at-home, shop), and price. Read reviews from other pet owners before booking.</p>
+        </details>
+        
+    </section>
+
+    <footer>
+      Generated from live cited recon. Validate claims before spending money on ads, legal, or registration.
+    </footer>
+  </main>
+</body>
+</html>

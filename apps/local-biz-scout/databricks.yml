@@ -1,0 +1,21 @@
+bundle:
+  name: local-biz-scout
+
+resources:
+  apps:
+    app:
+      name: "local-biz-scout"
+      description: "Local Business Scout · Powered by Nimble"
+      source_code_path: ./
+      resources:
+        - name: "sql-warehouse"
+          description: "SQL Warehouse for analytics queries"
+          sql_warehouse:
+            id: "06c0db3ec96e12f0"
+            permission: "CAN_USE"
+
+targets:
+  default:
+    default: true
+    workspace:
+      host: https://dbc-c70f0730-a472.cloud.databricks.com

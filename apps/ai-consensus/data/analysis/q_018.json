@@ -1,0 +1,31 @@
+{
+  "id": "q_018",
+  "category": "Tech & AI",
+  "question": "GitHub Copilot or Cursor \u2014 which is the better AI coding assistant?",
+  "models": {
+    "chatgpt": {
+      "verdict": "GitHub Copilot",
+      "reason": "Broader IDE support and smarter code suggestions.",
+      "raw": "VERDICT: GitHub Copilot\nREASON: Broader IDE support and smarter code suggestions.",
+      "format": "structured"
+    },
+    "perplexity": {
+      "verdict": "Cursor is generally better",
+      "reason": "Cursor offers deeper project-wide context and inline editing for end-to-end tasks.",
+      "raw": "VERDICT: Cursor is generally betterREASON: Cursor offers deeper project-wide context and inline editing for end-to-end tasks.",
+      "format": "structured"
+    },
+    "gemini": {
+      "verdict": "Cursor for VS Code users",
+      "reason": "Cursor provides AI-native features like Composer and deep indexing, while Copilot is the safer enterprise choice.",
+      "raw": "The debate between **GitHub Copilot** and **Cursor** is less about \"which is better\" and more about how you like to work. Copilot is a powerful **plugin** for your existing workflow, while Cursor is a **reimagined environment** built specifically for AI-native coding.\n\nHere is the breakdown of how they stack up in 2026.\n\n---\n\n### **At a Glance: The Comparison**\n\n| Feature | GitHub Copilot | Cursor |\n| :--- | :--- | :--- |\n| **Form Factor** | Extension (VS Code, JetBrains, etc.) | Standalone IDE (Fork of VS Code) |\n| **Model Choice** | GPT-4o, Claude 3.5 Sonnet | GPT-4o, Claude 3.5, Gemini 1.5 Pro |\n| **Context Awareness** | Strong (via \"Copilot Chat\") | Elite (Whole-project indexing) |\n| **UI Innovation** | Standard Sidebar/Ghost text | Tab (AI-native autocomplete), Composer |\n| **Price** | $10/mo (Individual) | $20/mo (Pro) |\n\n---\n\n### **1. Cursor: The \"AI-First\" Powerhouse**\nCursor is currently the \"darling\" of the developer community because it isn't restricted by the limitations of being a plugin. Since they built the editor, they can \"hook\" the AI deeper into the interface.\n\n*   **Composer (Ctrl+I):** This is the killer feature. You can ask it to \"Refactor the entire auth flow and update the types across four different files,\" and it will execute those changes simultaneously.\n*   **The \"Tab\" Experience:** Cursor\u2019s autocomplete is predictive. It doesn\u2019t just finish your line; it predicts your next edit based on previous changes.\n*   **Deep Indexing:** It indexes your entire codebase locally. When you ask a question, it \"knows\" about that obscure utility function you wrote six months ago better than Copilot usually does.\n\n### **2. GitHub Copilot: The \"Reliable Workhorse\"**\nCopilot is the safe, enterprise-grade choice. If you have a workflow you love (like specialized Vim setups or JetBrains IDEs), Copilot is the way to go.\n\n*   **Ecosystem Integration:** It lives where you already are. You don't have to migrate your extensions or themes to a new app.\n*   **GitHub Integration:** Copilot is increasingly integrated with the GitHub web interface, PR summaries, and CLI. It\u2019s part of a larger lifecycle, not just an editor.\n*   **Price and Access:** At $10/month, it's cheaper. Many developers also get it for free through open-source contributions or student programs.\n\n---\n\n### **Which one should you choose?**\n\n> **Choose Cursor if...** \n> You want the most \"magical\" experience. If you find yourself frequently copy-pasting code into ChatGPT to explain your whole project, Cursor removes that friction entirely. It feels like the AI is pair-programming *with* you.\n\n> **Choose GitHub Copilot if...**\n> You are loyal to your current IDE (like IntelliJ or PyCharm) or you work in a high-security corporate environment that has already vetted GitHub/Microsoft tools. It is the \"standard\" for a reason.\n\n**The Verdict:** If you are using VS Code, **try Cursor.** It\u2019s a one-click import of all your VS Code extensions, so the migration takes about 30 seconds. Most devs who try the \"Composer\" and \"Tab\" features find it very hard to go back to a standard plugin.\n\nAre you looking to use this for a specific language or a massive existing codebase?",
+      "format": "freeform"
+    }
+  },
+  "consensus": {
+    "label": "split",
+    "score": 0.1,
+    "summary": "ChatGPT favors Copilot for broad compatibility, while Perplexity and Gemini both prefer Cursor for superior context awareness and AI-native features, though Gemini acknowledges Copilot's enterprise value."
+  },
+  "analyzed_at": "2026-05-06T09:53:37.699478+00:00"
+}

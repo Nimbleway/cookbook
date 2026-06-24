@@ -1,0 +1,700 @@
+{
+  "executive_summary": "Stripe's core SEO weakness is a systemic disconnect between its commercial product pages and the mid-funnel educational and comparison queries that drive category consideration: 13 of 30 tracked terms either surface the wrong URL or return no Stripe page at all, ceding high-intent traffic to Chargebee, Paddle, Recurly, and Adyen. The most urgent fix is consolidating on-page signals for /payments, /billing, /tax, and /connect so that canonical product pages—not resource articles—rank for their primary commercial terms. In parallel, Stripe must build a dedicated comparison and alternative page layer (Chargebee alternative, Avalara alternative, Braintree vs Stripe) to intercept switching traffic that Paddle and Spreedly are currently converting. Usage-based billing and AI-company monetisation represent the fastest-growing query clusters where Stripe has live product pages but weak on-page optimisation, making them the highest-ROI content investments available. Closing these gaps across eight priority pages and six new destination pages could move Stripe's SEO score from 58 to approximately 74-78 within two quarters.",
+  "quick_wins": [
+    {
+      "rank": 1,
+      "title": "Rewrite title tag and H1 on /payments to match 'online payment processing for businesses'",
+      "type": "page_fix",
+      "impact": "High",
+      "effort": "Low",
+      "url": "https://stripe.com/payments",
+      "description": "Change the current title 'Payments – Stripe' to 'Online Payment Processing for Businesses – Stripe' and update the vague H1 (currently pulling the root domain URL) to 'Accept online payments built for your business.' This directly signals topical relevance to the primary commercial query and removes the canonical ambiguity causing a resource article to outrank this page.",
+      "terms_addressed": [
+        "online payment processing for businesses"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Fix vague H1 tags across /connect, /tax, and /use-cases/saas (all currently resolve to root URL)",
+      "type": "page_fix",
+      "impact": "High",
+      "effort": "Low",
+      "url": "https://stripe.com/connect",
+      "description": "All three pages have H1 values resolving to 'https://stripe.com/' indicating a rendering or CMS bug stripping the H1 text. Restore H1s to keyword-bearing copy—e.g. /connect: 'Embedded Payments Infrastructure for Platforms and Marketplaces'; /tax: 'Automated Sales Tax and VAT Compliance for Any Business'; /use-cases/saas: 'Payment and Billing Solutions Built for SaaS Companies'. This single technical fix immediately restores on-page relevance signals.",
+      "terms_addressed": [
+        "embedded payments for platforms",
+        "automated sales tax compliance software",
+        "best payment processing for SaaS companies"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Add 'subscription billing software' and 'failed subscription renewals' keyword clusters to /billing with FAQ schema",
+      "type": "page_fix",
+      "impact": "High",
+      "effort": "Low",
+      "url": "https://stripe.com/billing",
+      "description": "Insert an FAQ section at the bottom of stripe.com/billing with five to seven questions targeting 'subscription billing software', 'failed subscription renewals', and 'recurring billing platform', marked up with FAQ schema. This closes the no_faq issue on two terms simultaneously and can push the page from #2 to #1 for 'subscription billing software' by adding a differentiation signal against Recurly.",
+      "terms_addressed": [
+        "subscription billing software",
+        "losing revenue from failed subscription renewals"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Add internal link from /billing/subscriptions to the new /billing/dunning-failed-payments page with anchor text 'recover failed subscription payments'",
+      "type": "internal_linking",
+      "impact": "High",
+      "effort": "Low",
+      "url": "https://stripe.com/billing/subscriptions",
+      "description": "The /billing/subscriptions page currently has weak internal linking and no page targeting 'losing revenue from failed subscription renewals'. Add a contextual CTA block mid-page linking to the new dunning page (to be created) and also add cross-links from /billing and /billing/usage-based-billing. This passes PageRank to the new page and signals content depth to Google immediately on launch.",
+      "terms_addressed": [
+        "losing revenue from failed subscription renewals"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Inject 'usage-based billing for SaaS' and 'API call billing' keyword phrases into /billing/usage-based-billing H2s and body copy",
+      "type": "page_fix",
+      "impact": "High",
+      "effort": "Low",
+      "url": "https://stripe.com/billing/usage-based-billing",
+      "description": "Add the exact phrase 'usage-based billing for SaaS' into the first H2 and 'per-API-call billing' into the third H2 section currently titled 'Protect margins and build customer trust.' Also add an FAQ block with questions like 'How does usage-based billing work for SaaS companies?' and 'Can Stripe meter and bill per API call?'. This directly competes with Chargebee's definitional guide at #1 by co-opting the SaaS framing.",
+      "terms_addressed": [
+        "usage-based billing for SaaS",
+        "payments for AI companies billing per API call"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Create 301-supported canonical signal by adding self-referencing canonical tags to all resource articles that are outranking product pages",
+      "type": "technical",
+      "impact": "Medium",
+      "effort": "Low",
+      "url": "https://stripe.com/resources",
+      "description": "Audit all resource and blog articles currently outranking their corresponding product pages (confirmed for /payments, /billing/usage-based-billing, /connect, /tax, /use-cases/saas, /use-cases/ai) and add a prominent 'See the full product' CTA with a dofollow internal link plus verify canonical tags point to the product page, not the article. This consolidates crawl equity and reduces cannibalisation across at least six priority terms.",
+      "terms_addressed": [
+        "online payment processing for businesses",
+        "usage-based billing for SaaS",
+        "embedded payments for platforms",
+        "automated sales tax compliance software",
+        "best payment processing for SaaS companies",
+        "payments for AI companies billing per API call"
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Add 'Stripe vs Braintree' comparison table to /payments and internally link to a new /compare/stripe-vs-braintree page",
+      "type": "page_fix",
+      "impact": "Medium",
+      "effort": "Low",
+      "url": "https://stripe.com/payments",
+      "description": "Add a concise comparison table on /payments contrasting Stripe and Braintree on API flexibility, pricing model, supported payment methods, and onboarding speed. Include anchor text 'Stripe vs Braintree: full developer comparison' linking to the new comparison page. This immediately intercepts developer consideration searches currently sending traffic to Spreedly's third-party comparison.",
+      "terms_addressed": [
+        "Braintree vs payment processing API for developers"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Update /use-cases/ai H1 and add 'per-API-call billing' and 'AI company payments' to meta title and first H2",
+      "type": "page_fix",
+      "impact": "Medium",
+      "effort": "Low",
+      "url": "https://stripe.com/use-cases/ai",
+      "description": "The H1 currently resolves to the root URL—restore it to 'Payments and Per-API-Call Billing for AI Companies' and update the title tag to 'Stripe for AI Companies – Metered Billing & API Call Payments'. Add a specific H2 'Charge per API call with metered billing' under the Flexible Monetization section. This targets the wrong_page and missing_keyword issues simultaneously with minimal development work.",
+      "terms_addressed": [
+        "payments for AI companies billing per API call"
+      ]
+    }
+  ],
+  "page_recommendations": [
+    {
+      "url": "https://stripe.com/billing",
+      "priority_score": 80,
+      "terms_addressed": [
+        "subscription billing software",
+        "Chargebee alternative for subscription billing"
+      ],
+      "current_title": "Stripe Billing – Monetize Faster with Subscriptions & Usage-Based Billing",
+      "suggested_title": "Stripe Billing – Subscription Billing Software for SaaS & Recurring Revenue",
+      "current_h1": "Monetize faster with Stripe Billing.Manage pricing, reduce churn, and grow revenue—on one platform.",
+      "suggested_h1": "The subscription billing software that scales with your revenue model.",
+      "suggested_h2s": [
+        "One platform to price, meter, bill, invoice, and grow.",
+        "Why SaaS companies switch to Stripe Billing from Chargebee, Recurly, and Zuora.",
+        "Recover more revenue with AI-powered dunning and smart retries.",
+        "Stripe Billing vs the alternatives: feature comparison.",
+        "Stripe Billing scales with you.",
+        "Trusted by industry leaders.",
+        "Recognized by top analysts as a leader in billing.",
+        "Key features included in Stripe Billing.",
+        "Optimize every step of your revenue cycle with Stripe.",
+        "Frequently asked questions about Stripe Billing."
+      ],
+      "keywords_to_add": [
+        "subscription billing software",
+        "recurring billing platform",
+        "SaaS billing automation",
+        "Chargebee alternative",
+        "Recurly alternative",
+        "dunning management",
+        "subscription management platform"
+      ],
+      "content_additions": [
+        "Add a head-to-head comparison table with columns for Stripe Billing, Chargebee, Recurly, and Zuora covering pricing model, dunning capabilities, global payment methods, developer API quality, and built-in tax compliance.",
+        "Add a 'Why teams switch to Stripe Billing' section with three to four specific migration stories referencing Chargebee and Recurly by name to capture comparison and alternative queries.",
+        "Add an FAQ section with schema markup targeting subscription billing software, failed payment recovery, and Chargebee alternative queries.",
+        "Add a 'Revenue recovery' module that quantifies AI-powered smart retry performance (e.g. average X% recovery rate) to directly address the 'losing revenue from failed renewals' intent."
+      ],
+      "faq_questions": [
+        "What is subscription billing software and how does Stripe Billing work?",
+        "How does Stripe Billing compare to Chargebee for subscription management?",
+        "Can Stripe Billing handle usage-based and hybrid pricing models?",
+        "How does Stripe recover revenue from failed subscription renewals?",
+        "Is Stripe Billing suitable for enterprise SaaS companies?",
+        "How long does it take to migrate from Chargebee or Recurly to Stripe Billing?"
+      ],
+      "internal_links_to_add": [
+        "https://stripe.com/billing/subscriptions",
+        "https://stripe.com/billing/usage-based-billing",
+        "https://stripe.com/tax",
+        "https://stripe.com/compare/stripe-billing-vs-chargebee",
+        "https://stripe.com/billing/dunning-failed-payments"
+      ],
+      "estimated_impact": "Adding the comparison table, FAQ schema, and Chargebee/Recurly alternative language should move /billing from #2 to #1 for 'subscription billing software' and create first-page visibility for 'Chargebee alternative for subscription billing' within 60-90 days."
+    },
+    {
+      "url": "https://stripe.com/use-cases/ai",
+      "priority_score": 76,
+      "terms_addressed": [
+        "payments for AI companies billing per API call"
+      ],
+      "current_title": "Stripe for AI Companies",
+      "suggested_title": "Stripe for AI Companies – Metered Billing, Per-API-Call Payments & Agentic Commerce",
+      "current_h1": "https://stripe.com/",
+      "suggested_h1": "Payments and per-API-call billing built for AI companies.",
+      "suggested_h2s": [
+        "Why AI companies choose Stripe for monetisation.",
+        "Charge per API call with metered usage-based billing.",
+        "Support agentic commerce and autonomous AI purchasing.",
+        "Go global from day one with 135+ currencies.",
+        "Customer spotlight: how leading AI companies use Stripe.",
+        "Frequently asked questions about billing for AI companies."
+      ],
+      "keywords_to_add": [
+        "payments for AI companies",
+        "per API call billing",
+        "metered billing for AI",
+        "AI company payment infrastructure",
+        "billing per API call",
+        "agentic payments",
+        "usage metering for AI products"
+      ],
+      "content_additions": [
+        "Add a dedicated 'Per-API-call billing' section under Flexible Monetization that explains metered event ingestion, real-time usage aggregation, and customer-facing usage dashboards specific to AI API products.",
+        "Add a code snippet or architecture diagram showing how an AI company instruments Stripe Meter for per-token or per-call billing events.",
+        "Add an FAQ block with schema targeting 'how to bill per API call', 'payments for AI companies', and 'metered billing for LLM products'.",
+        "Add a comparison callout showing Stripe's usage ingestion throughput and uptime SLA vs point solutions like Orb or Amberflo."
+      ],
+      "faq_questions": [
+        "How does Stripe support per-API-call billing for AI companies?",
+        "Can Stripe meter usage in real time for LLM or AI API products?",
+        "What billing models does Stripe support for AI companies?",
+        "How do AI agents make autonomous payments using Stripe?",
+        "How does Stripe handle billing for high-volume AI workloads?"
+      ],
+      "internal_links_to_add": [
+        "https://stripe.com/billing/usage-based-billing",
+        "https://stripe.com/billing",
+        "https://stripe.com/docs/billing/meters",
+        "https://stripe.com/use-cases/saas"
+      ],
+      "estimated_impact": "Fixing the H1 rendering bug and adding per-API-call billing specificity should consolidate the resource article and product page signals, pushing the use-case page to the top three for 'payments for AI companies billing per API call' within 45-60 days."
+    },
+    {
+      "url": "https://stripe.com/connect",
+      "priority_score": 75,
+      "terms_addressed": [
+        "embedded payments for platforms"
+      ],
+      "current_title": "Stripe Connect – Payments for Platforms",
+      "suggested_title": "Stripe Connect – Embedded Payments for Platforms, Marketplaces & SaaS",
+      "current_h1": "https://stripe.com/",
+      "suggested_h1": "Embedded payments infrastructure for platforms and marketplaces.",
+      "suggested_h2s": [
+        "Embed payments with confidence into your platform or marketplace.",
+        "How embedded payments work with Stripe Connect.",
+        "Why ISVs and SaaS platforms choose Stripe Connect over alternatives.",
+        "Onboard sellers and service providers in minutes.",
+        "Security, compliance, and KYC built in.",
+        "Unified payments stack for every platform use case.",
+        "Frequently asked questions about embedded payments for platforms."
+      ],
+      "keywords_to_add": [
+        "embedded payments for platforms",
+        "embedded payments for SaaS",
+        "marketplace payments infrastructure",
+        "ISV payment integration",
+        "payments for software platforms",
+        "embedded finance for platforms",
+        "split payments marketplace"
+      ],
+      "content_additions": [
+        "Add an 'How it works for platforms' step-by-step section explicitly using the phrase 'embedded payments' in H2 and body copy to close the missing_keyword gap.",
+        "Add a use-case tab or card grid showing three platform archetypes: marketplace, SaaS platform, and on-demand service, each with a specific embedded payments architecture diagram.",
+        "Add an FAQ section with schema markup targeting 'embedded payments for platforms', 'how to embed payments in SaaS', and 'marketplace payment splitting'.",
+        "Add a 'Stripe Connect vs alternatives' callout block comparing NMI, Adyen for Platforms, and PayFac-as-a-Service providers on onboarding speed, compliance coverage, and revenue share options."
+      ],
+      "faq_questions": [
+        "What are embedded payments and how does Stripe Connect enable them?",
+        "How does Stripe Connect handle compliance and KYC for platforms?",
+        "Can I split payments between my platform and sellers with Stripe Connect?",
+        "How does Stripe Connect compare to NMI for embedded payments?",
+        "How long does it take to embed Stripe payments into a SaaS platform?"
+      ],
+      "internal_links_to_add": [
+        "https://stripe.com/payments",
+        "https://stripe.com/issuing",
+        "https://stripe.com/use-cases/saas",
+        "https://stripe.com/docs/connect",
+        "https://stripe.com/use-cases/platforms"
+      ],
+      "estimated_impact": "Restoring the H1 and adding 'embedded payments for platforms' to the title, H2s, and FAQ schema should displace the 2023 resource article currently ranking #2 and challenge NMI's #1 position within 60-90 days."
+    },
+    {
+      "url": "https://stripe.com/payments",
+      "priority_score": 74,
+      "terms_addressed": [
+        "online payment processing for businesses",
+        "Braintree vs payment processing API for developers"
+      ],
+      "current_title": "Payments – Stripe",
+      "suggested_title": "Online Payment Processing for Businesses – Stripe Payments",
+      "current_h1": "https://stripe.com/",
+      "suggested_h1": "Accept online payments built for your business.",
+      "suggested_h2s": [
+        "Online payment processing for every business model.",
+        "Global payments: accept 135+ currencies and 100+ payment methods.",
+        "In-person payments with Stripe Terminal.",
+        "Payments Intelligence Suite: optimise authorisation rates automatically.",
+        "Stripe vs Braintree: which payment API is right for developers?",
+        "Unified platform powering payments, billing, and financial services.",
+        "Best-in-class developer documentation and API.",
+        "Frequently asked questions about online payment processing."
+      ],
+      "keywords_to_add": [
+        "online payment processing",
+        "online payment processing for businesses",
+        "payment processing API",
+        "Stripe vs Braintree",
+        "developer payment API",
+        "accept online payments",
+        "payment gateway for businesses"
+      ],
+      "content_additions": [
+        "Add a 'Stripe vs Braintree' comparison table covering API flexibility, supported payment methods, transaction fees, international coverage, and developer onboarding time to capture developer consideration traffic and provide an anchor for the new /compare/stripe-vs-braintree page.",
+        "Add an FAQ block with schema targeting 'online payment processing for businesses', 'how to choose a payment API', and 'Stripe vs Braintree for developers'.",
+        "Add a 'Why businesses choose Stripe' section with three business-size segments (startup, SMB, enterprise) to broaden intent coverage and counter Square's product page at #1.",
+        "Strengthen the internal link to /billing and /connect from a 'Build your full payments stack' CTA section to consolidate crawl equity."
+      ],
+      "faq_questions": [
+        "What is online payment processing and how does Stripe work?",
+        "How does Stripe compare to Braintree for developer payment APIs?",
+        "What payment methods does Stripe support for online businesses?",
+        "How much does Stripe charge for online payment processing?",
+        "Can Stripe handle both online and in-person payment processing?"
+      ],
+      "internal_links_to_add": [
+        "https://stripe.com/billing",
+        "https://stripe.com/connect",
+        "https://stripe.com/terminal",
+        "https://stripe.com/compare/stripe-vs-braintree",
+        "https://stripe.com/pricing"
+      ],
+      "estimated_impact": "Updating the title, fixing the H1, and adding the Braintree comparison table should enable /payments to outrank the small-business resource article currently at #4 and challenge Square for the top position on 'online payment processing for businesses' within 90 days."
+    },
+    {
+      "url": "https://stripe.com/billing/subscriptions",
+      "priority_score": 74,
+      "terms_addressed": [
+        "losing revenue from failed subscription renewals"
+      ],
+      "current_title": "Subscriptions – Grow and Recover More Subscription Revenue | Stripe Billing",
+      "suggested_title": "Subscription Management & Failed Payment Recovery – Stripe Billing",
+      "current_h1": "Grow and recover more subscription revenue",
+      "suggested_h1": "Stop losing revenue from failed subscription renewals.",
+      "suggested_h2s": [
+        "Recover failed subscription payments with AI-powered smart retries.",
+        "Reduce involuntary churn with automated dunning workflows.",
+        "Get to market faster with flexible subscription pricing.",
+        "Expand globally with localised payment methods and currencies.",
+        "Make monetisation decisions with centralised analytics.",
+        "Scale confidently on a platform that grows with you.",
+        "Trusted by industry leaders.",
+        "Frequently asked questions about subscription payment recovery."
+      ],
+      "keywords_to_add": [
+        "failed subscription renewals",
+        "failed payment recovery",
+        "involuntary churn",
+        "subscription payment recovery",
+        "dunning management",
+        "smart retries subscription",
+        "recover recurring billing revenue"
+      ],
+      "content_additions": [
+        "Add a dedicated 'Failed payment recovery' section at the top of the page quantifying the revenue at risk from involuntary churn and Stripe's AI-powered recovery rate benchmarks.",
+        "Add a dunning workflow diagram showing the retry sequence, customer notification touchpoints, and grace period logic.",
+        "Add an FAQ section with schema targeting 'how to recover failed subscription payments', 'involuntary churn reduction', and 'dunning management software'.",
+        "Add a 'Stripe vs Recurly for revenue recovery' callout that addresses the Recurly brand association with dunning and positions Stripe's AI retry engine as superior."
+      ],
+      "faq_questions": [
+        "Why do subscription renewals fail and how can I recover that revenue?",
+        "How does Stripe's smart retry logic work for failed payments?",
+        "What is involuntary churn and how does Stripe Billing reduce it?",
+        "How does Stripe dunning compare to Recurly's payment recovery?",
+        "Can Stripe automatically notify customers before a payment fails?"
+      ],
+      "internal_links_to_add": [
+        "https://stripe.com/billing",
+        "https://stripe.com/billing/usage-based-billing",
+        "https://stripe.com/billing/dunning-failed-payments",
+        "https://stripe.com/docs/billing/revenue-recovery"
+      ],
+      "estimated_impact": "Reorienting the H1 and adding a failed payment recovery section with FAQ schema should create first-page visibility for 'losing revenue from failed subscription renewals' and strengthen /billing's overall topical authority against Recurly within 60-90 days."
+    },
+    {
+      "url": "https://stripe.com/tax",
+      "priority_score": 73,
+      "terms_addressed": [
+        "automated sales tax compliance software",
+        "Avalara alternative for automated tax compliance"
+      ],
+      "current_title": "Stripe Tax – Sales Tax & VAT Automation",
+      "suggested_title": "Stripe Tax – Automated Sales Tax & VAT Compliance Software",
+      "current_h1": "https://stripe.com/",
+      "suggested_h1": "Automated sales tax and VAT compliance software for any business.",
+      "suggested_h2s": [
+        "Tax compliance made simple across 50 US states and 40+ countries.",
+        "How Stripe Tax automates your compliance workflow in three steps.",
+        "Why businesses switch from Avalara and TaxJar to Stripe Tax.",
+        "Stripe Tax vs Avalara vs TaxJar: feature and pricing comparison.",
+        "Use cases: SaaS, ecommerce, marketplaces, and global sellers.",
+        "Built into your existing Stripe payments with no code required.",
+        "Frequently asked questions about automated tax compliance."
+      ],
+      "keywords_to_add": [
+        "automated sales tax compliance software",
+        "sales tax automation",
+        "VAT compliance software",
+        "Avalara alternative",
+        "TaxJar alternative",
+        "economic nexus compliance",
+        "automated tax calculation",
+        "multi-jurisdiction tax compliance"
+      ],
+      "content_additions": [
+        "Add a three-column comparison table: Stripe Tax vs Avalara vs TaxJar covering jurisdictions covered, pricing model, payment integration depth, setup time, and customer support.",
+        "Add a 'Why switch from Avalara to Stripe Tax' section targeting Avalara-fatigued buyers with specific pain points around pricing complexity, implementation effort, and integration overhead.",
+        "Add an FAQ block with schema targeting 'automated sales tax compliance software', 'Avalara alternative', and 'how does sales tax automation work'.",
+        "Add a 'Supported jurisdictions' expandable section listing US states with economic nexus thresholds and major international VAT regimes to compete with TaxJar's 11,000 jurisdictions messaging."
+      ],
+      "faq_questions": [
+        "What is automated sales tax compliance software and how does Stripe Tax work?",
+        "How does Stripe Tax compare to Avalara for automated tax compliance?",
+        "Can Stripe Tax handle VAT compliance for international businesses?",
+        "How many tax jurisdictions does Stripe Tax cover?",
+        "Is Stripe Tax a good Avalara alternative for SaaS companies?",
+        "How long does it take to set up Stripe Tax?"
+      ],
+      "internal_links_to_add": [
+        "https://stripe.com/billing",
+        "https://stripe.com/payments",
+        "https://stripe.com/compare/stripe-tax-vs-avalara",
+        "https://stripe.com/use-cases/saas",
+        "https://stripe.com/docs/tax"
+      ],
+      "estimated_impact": "Fixing the H1, updating the title to include 'compliance software', and adding Avalara/TaxJar comparison content should move /tax from #17 (resource article ranking) to page one for 'automated sales tax compliance software' and create visibility for 'Avalara alternative' within 90-120 days."
+    },
+    {
+      "url": "https://stripe.com/billing/usage-based-billing",
+      "priority_score": 72,
+      "terms_addressed": [
+        "usage-based billing for SaaS",
+        "payments for AI companies billing per API call"
+      ],
+      "current_title": "Usage-Based Billing | Stripe Billing",
+      "suggested_title": "Usage-Based Billing for SaaS Companies – Stripe Billing",
+      "current_h1": "Turn usage into revenue with Stripe's usage-based billing. Launch fast, scale confidently, and keep pricing flexible.",
+      "suggested_h1": "Usage-based billing for SaaS: launch, meter, and monetise any pricing model.",
+      "suggested_h2s": [
+        "What is usage-based billing and why SaaS companies are adopting it.",
+        "Quickly launch usage-based pricing for any SaaS or AI product.",
+        "Meter per API call, per seat, per GB, or any custom usage unit.",
+        "Optimise SaaS pricing with real-time usage data and revenue analytics.",
+        "Protect margins and build customer trust with transparent billing.",
+        "Scale usage ingestion to billions of events on Stripe's global infrastructure.",
+        "Trusted by SaaS and AI companies worldwide.",
+        "Frequently asked questions about usage-based billing for SaaS."
+      ],
+      "keywords_to_add": [
+        "usage-based billing for SaaS",
+        "usage-based pricing",
+        "metered billing SaaS",
+        "per API call billing",
+        "consumption-based billing",
+        "pay-as-you-go billing",
+        "SaaS pricing model",
+        "usage metering platform"
+      ],
+      "content_additions": [
+        "Add a 'What is usage-based billing?' introductory section at the top of the page to capture the awareness and definitional query intent that Chargebee's #1-ranking guide currently owns.",
+        "Add a SaaS pricing model selector showing how different models (per seat, per API call, per GB, hybrid) map to Stripe Meter configurations with code examples.",
+        "Add an FAQ block with schema targeting 'usage-based billing for SaaS', 'how does metered billing work', and 'per API call billing'.",
+        "Add a 'Stripe vs Chargebee for usage-based billing' callout with a comparison table on metering granularity, pricing model flexibility, and built-in tax handling."
+      ],
+      "faq_questions": [
+        "What is usage-based billing and how does it work for SaaS companies?",
+        "How does Stripe Billing support per-API-call metered billing?",
+        "Can Stripe handle hybrid pricing models combining subscriptions and usage?",
+        "How does Stripe usage-based billing compare to Chargebee or Orb?",
+        "How quickly can I launch a usage-based billing model with Stripe?"
+      ],
+      "internal_links_to_add": [
+        "https://stripe.com/billing",
+        "https://stripe.com/use-cases/ai",
+        "https://stripe.com/use-cases/saas",
+        "https://stripe.com/docs/billing/meters",
+        "https://stripe.com/billing/subscriptions"
+      ],
+      "estimated_impact": "Adding a definitional intro section, SaaS-specific H1, and FAQ schema should displace the resource article currently ranking #8 in favour of this product page and challenge Chargebee's #1 definitional guide position for 'usage-based billing for SaaS' within 60-90 days."
+    },
+    {
+      "url": "https://stripe.com/use-cases/saas",
+      "priority_score": 72,
+      "terms_addressed": [
+        "best payment processing for SaaS companies"
+      ],
+      "current_title": "Stripe for SaaS",
+      "suggested_title": "Best Payment Processing for SaaS Companies – Stripe",
+      "current_h1": "https://stripe.com/",
+      "suggested_h1": "Payment processing and billing built for SaaS companies.",
+      "suggested_h2s": [
+        "Why SaaS companies choose Stripe for payments and billing.",
+        "Capture more subscription revenue with smart retries and dunning.",
+        "Reduce engineering effort with pre-built billing and payment infrastructure.",
+        "How Stripe stacks up: payment processing comparison for SaaS.",
+        "SaaS case studies: how Figma, Notion, and others scale on Stripe.",
+        "Professional services and SaaS-specific support from Stripe.",
+        "Frequently asked questions about payment processing for SaaS."
+      ],
+      "keywords_to_add": [
+        "best payment processing for SaaS",
+        "SaaS payment processing",
+        "payment gateway for SaaS",
+        "SaaS billing platform",
+        "subscription payments for SaaS",
+        "SaaS payment infrastructure",
+        "recurring payments SaaS"
+      ],
+      "content_additions": [
+        "Add a comparison table of payment processors for SaaS (Stripe, Chargebee-as-billing-layer, Paddle, Braintree) covering subscription management depth, usage billing, tax automation, and developer API quality to counter Chargebee's SaaS payment gateways guide.",
+        "Add a 'Why SaaS teams switch to Stripe' section with three specific migration narratives addressing complexity, pricing opacity, and missing features in incumbent tools.",
+        "Add an FAQ block with schema targeting 'best payment processing for SaaS', 'Stripe vs Chargebee for SaaS', and 'how to choose a SaaS payment processor'.",
+        "Fix the H1 rendering bug (currently resolving to root URL) as highest priority action for this page."
+      ],
+      "faq_questions": [
+        "What is the best payment processing solution for SaaS companies?",
+        "How does Stripe compare to Chargebee for SaaS payment processing?",
+        "Does Stripe support all major SaaS billing models including usage-based?",
+        "How does Stripe handle global payments and tax for SaaS businesses?",
+        "What SaaS-specific features does Stripe offer beyond basic payment processing?"
+      ],
+      "internal_links_to_add": [
+        "https://stripe.com/billing",
+        "https://stripe.com/billing/usage-based-billing",
+        "https://stripe.com/tax",
+        "https://stripe.com/connect",
+        "https://stripe.com/compare/stripe-billing-vs-chargebee"
+      ],
+      "estimated_impact": "Fixing the H1, updating the title with 'best payment processing for SaaS', and adding a comparison table should move this page from the resource article slot at #3 to the top two for 'best payment processing for SaaS companies' within 90 days and directly counter Chargebee's category-capture strategy."
+    }
+  ],
+  "new_pages_needed": [
+    {
+      "suggested_url": "/compare/stripe-billing-vs-chargebee",
+      "page_title": "Stripe Billing vs Chargebee – Subscription Billing Comparison 2025",
+      "page_type": "comparison",
+      "target_terms": [
+        "Chargebee alternative for subscription billing",
+        "Stripe vs Chargebee",
+        "Chargebee alternative",
+        "best subscription billing software"
+      ],
+      "content_brief": "A structured comparison page covering Stripe Billing and Chargebee head-to-head across pricing model, subscription flexibility, usage-based billing, dunning and revenue recovery, global payment methods, tax integration, and developer API quality. Should include a summary verdict table, migration guide section, and five to seven customer quotes from teams that moved from Chargebee to Stripe. Close with a CTA to start free and link to Stripe Billing migration resources.",
+      "format_rationale": "Dedicated comparison pages with schema-marked comparison tables match the exact SERP intent of '[competitor] alternative' queries; Paddle's Chargebee alternative page at #2 proves this format converts and ranks, and Stripe's total absence from this SERP despite being the most-cited alternative represents the single largest missed opportunity in the dataset.",
+      "priority": "High",
+      "competitor_to_outrank": "paddle.com"
+    },
+    {
+      "suggested_url": "/compare/stripe-tax-vs-avalara",
+      "page_title": "Stripe Tax vs Avalara – Automated Tax Compliance Comparison",
+      "page_type": "comparison",
+      "target_terms": [
+        "Avalara alternative for automated tax compliance",
+        "Stripe Tax vs Avalara",
+        "Avalara alternative",
+        "automated tax compliance software comparison"
+      ],
+      "content_brief": "A direct comparison of Stripe Tax and Avalara covering jurisdiction coverage, pricing transparency, integration depth (especially for Stripe-native merchants), implementation complexity, and ongoing compliance maintenance. Should include a three-column table adding TaxJar as a third option, a 'Who should switch to Stripe Tax' section targeting Avalara price-fatigued buyers, and a migration checklist. Include FAQ schema and a start-free CTA.",
+      "format_rationale": "Decision-stage 'alternative' queries have strong commercial intent and respond to structured comparison pages with clear verdict framing; Paddle's Avalara alternatives page at #5 demonstrates the format ranks even for a tangential competitor, and Stripe Tax is a direct solution with zero representation in this SERP.",
+      "priority": "High",
+      "competitor_to_outrank": "paddle.com"
+    },
+    {
+      "suggested_url": "/compare/stripe-vs-braintree",
+      "page_title": "Stripe vs Braintree – Payment API Comparison for Developers",
+      "page_type": "comparison",
+      "target_terms": [
+        "Braintree vs payment processing API for developers",
+        "Stripe vs Braintree",
+        "Braintree alternative for developers",
+        "payment API comparison"
+      ],
+      "content_brief": "A developer-oriented comparison covering Stripe and Braintree on API design and documentation quality, supported payment methods, transaction fee structure, international coverage, fraud tools, onboarding time, and PayPal ownership implications for Braintree. Should include a code snippet comparison for basic payment intent creation in both APIs, a migration guide section, and a FAQ block. Target the developer consideration funnel explicitly with technical language.",
+      "format_rationale": "Third-party sites like Spreedly are currently capturing Stripe brand traffic by ranking for 'Stripe vs Braintree' comparisons that Stripe has no answer to; owning this comparison on stripe.com stops brand-name traffic leakage and positions Stripe as the confident incumbent rather than a passive subject of others' narratives.",
+      "priority": "High",
+      "competitor_to_outrank": "spreedly.com"
+    },
+    {
+      "suggested_url": "/billing/dunning-failed-payments",
+      "page_title": "Recover Revenue from Failed Payments – Stripe Dunning & Smart Retries",
+      "page_type": "landing_page",
+      "target_terms": [
+        "losing revenue from failed subscription renewals",
+        "failed payment recovery",
+        "dunning management software",
+        "smart retry subscription billing",
+        "involuntary churn reduction"
+      ],
+      "content_brief": "A dedicated product-feature landing page focused entirely on Stripe's AI-powered failed payment recovery stack: smart retries, adaptive retry scheduling, customer notification sequences, grace period logic, and revenue recovery analytics. Should quantify the average revenue recovery rate, show a before/after churn metric, include a dunning workflow diagram, and compare Stripe's AI retry engine to Recurly's dunning product. Close with an FAQ section and a CTA to activate revenue recovery in the dashboard.",
+      "format_rationale": "Problem-aware queries like 'losing revenue from failed subscription renewals' require a dedicated page that leads with the pain, not a product overview; Recurly's category dominance on this topic is a function of having dedicated content for this exact problem, and Stripe's existing /billing/subscriptions page buries the recovery capability rather than leading with it.",
+      "priority": "High",
+      "competitor_to_outrank": "recurly.com"
+    },
+    {
+      "suggested_url": "/identity/fintech-kyc-verification",
+      "page_title": "Online Identity Verification for Fintech – Stripe Identity",
+      "page_type": "use_case",
+      "target_terms": [
+        "how to verify customer identity online for fintech",
+        "fintech identity verification",
+        "KYC verification software for fintech",
+        "biometric identity verification"
+      ],
+      "content_brief": "A fintech-specific use-case page for Stripe Identity covering document verification, biometric selfie checks, KYC compliance workflows, fraud prevention, and integration with Stripe's payment and onboarding infrastructure. Should address AML and KYC regulatory context, show a step-by-step identity check flow for fintech onboarding, include integration code, and compare Stripe Identity to Veriff and Onfido on coverage, accuracy, and pricing. Include FAQ schema.",
+      "format_rationale": "Specialist IDV vendors like Veriff hold top positions with fintech-specific KYC content that Stripe Identity has not produced; a dedicated fintech KYC page using the exact query language of the SERP ('identity verification', 'fintech', 'biometric') would directly compete with Veriff's #2-ranking guide and convert fintech builders already in Stripe's ecosystem.",
+      "priority": "Medium",
+      "competitor_to_outrank": "veriff.com"
+    },
+    {
+      "suggested_url": "/capital/business-funding-guide",
+      "page_title": "Business Funding Without a Bank Loan – How Stripe Capital Works",
+      "page_type": "guide",
+      "target_terms": [
+        "how to get business funding without a bank loan",
+        "alternative business funding options",
+        "revenue-based business financing",
+        "fast business funding for online businesses"
+      ],
+      "content_brief": "An educational guide targeting small business owners exploring non-bank funding options, covering revenue-based financing, merchant cash advances, and how Stripe Capital's data-driven approach offers faster access with no personal guarantee. Should contextualise Stripe Capital within the broader alternative funding landscape (alongside SBA microloans, invoice financing, and venture debt) before pivoting to the Stripe Capital offer. Include eligibility criteria, repayment mechanics, and a FAQ section.",
+      "format_rationale": "The awareness-stage query 'how to get business funding without a bank loan' is dominated by SBA and banks because Stripe Capital's product page is too narrow and offer-specific; a broader educational guide that starts with the problem and introduces Stripe Capital as one strong solution matches the informational intent while building topical authority and funneling readers to the Capital product page.",
+      "priority": "Medium",
+      "competitor_to_outrank": "sba.gov"
+    },
+    {
+      "suggested_url": "/finance-automation",
+      "page_title": "Finance and Accounting Workflow Automation – Stripe",
+      "page_type": "use_case",
+      "target_terms": [
+        "automate finance and accounting workflows",
+        "financial workflow automation",
+        "automated accounting for online businesses",
+        "finance automation platform"
+      ],
+      "content_brief": "A dedicated use-case page consolidating Stripe's finance automation capabilities across Data Pipeline, Revenue Recognition, Sigma, and Invoicing, framed around the end-to-end accounting workflow: revenue recognition, reconciliation, reporting, and audit readiness. Should explicitly address the pain points of manual month-end close, accounting system sync delays, and multi-entity consolidation. Include a workflow diagram, integration partner logos (QuickBooks, Xero, NetSuite), and FAQ schema.",
+      "format_rationale": "Stripe is completely absent from 'automate finance and accounting workflows' despite having multiple relevant products; the absence stems from scattering these capabilities across product-specific pages with no unifying use-case page that speaks the CFO and finance ops language of the query, which UiPath and Tipalti currently own with broader agentic framing.",
+      "priority": "Medium",
+      "competitor_to_outrank": "uipath.com"
+    }
+  ],
+  "strategic_themes": [
+    {
+      "theme": "Fix the H1 rendering crisis across use-case and product pages",
+      "description": "At least four priority pages (/connect, /tax, /use-cases/ai, /use-cases/saas) have H1 tags resolving to 'https://stripe.com/' due to a CMS or JavaScript rendering failure, eliminating the single most weighted on-page relevance signal for each page's primary query. Until these H1s are restored with keyword-bearing copy, no amount of content optimisation or link acquisition will fully close the gap with competitors whose pages render correctly. This is the highest-leverage technical fix in the entire plan—resolving it unblocks ranking improvements across at least five of the eight priority terms simultaneously.",
+      "terms_impacted": 5,
+      "priority": "High",
+      "recommended_actions": [
+        "Audit all stripe.com product and use-case pages for H1 rendering failures using a JavaScript-rendering crawler (Screaming Frog with Puppeteer or similar) and produce a full list within one sprint.",
+        "Restore H1 copy for /connect to 'Embedded payments infrastructure for platforms and marketplaces', /tax to 'Automated sales tax and VAT compliance software for any business', /use-cases/ai to 'Payments and per-API-call billing built for AI companies', and /use-cases/saas to 'Payment processing and billing built for SaaS companies'.",
+        "Implement a post-deploy H1 presence check in CI/CD pipeline to prevent recurrence."
+      ]
+    },
+    {
+      "theme": "Build a comparison and alternative page layer to recapture mid-funnel switching traffic",
+      "description": "Paddle, Spreedly, and third-party publishers are systematically intercepting mid-funnel traffic from buyers who are actively evaluating Stripe against Chargebee, Avalara, and Braintree by publishing dedicated comparison and alternative pages that Stripe does not have. These queries represent the highest commercial intent in Stripe's category—users searching 'Chargebee alternative' or 'Avalara alternative' have already identified their pain and are choosing a vendor—yet Stripe is completely absent. Building a minimum of four comparison landing pages (/compare/stripe-billing-vs-chargebee, /compare/stripe-tax-vs-avalara, /compare/stripe-vs-braintree, and a Recurly comparison) would directly convert this traffic rather than losing it to competitors who reference Stripe without sending users to stripe.com.",
+      "terms_impacted": 4,
+      "priority": "High",
+      "recommended_actions": [
+        "Launch /compare/stripe-billing-vs-chargebee as the first page given Stripe's total SERP absence despite being the most-cited Chargebee alternative in third-party listicles.",
+        "Launch /compare/stripe-tax-vs-avalara targeting the Avalara-fatigued decision-stage buyer with a clear migration path to Stripe Tax.",
+        "Launch /compare/stripe-vs-braintree to stop brand-name consideration traffic leaking to Spreedly and G2.",
+        "Create a /compare index page that lists all Stripe comparison pages and internally links to each, building topical authority for the entire comparison cluster."
+      ]
+    },
+    {
+      "theme": "Consolidate resource article and product page cannibalisation to unify ranking signals",
+      "description": "In at least six tracked terms, Stripe's own resource articles are outranking the canonical product or use-case pages they are meant to support, splitting PageRank, confusing Google about the intended ranking URL, and ultimately surfacing lower-converting informational pages to commercial-intent users. This cannibalisation pattern affects /payments, /billing/usage-based-billing, /connect, /tax, /use-cases/saas, and /use-cases/ai and is a direct consequence of Stripe's resource content having stronger on-page optimisation than its commercial pages rather than the other way around. The fix requires both enriching product pages to outperform their own articles and explicitly signalling product page primacy via internal link architecture.",
+      "terms_impacted": 6,
+      "priority": "High",
+      "recommended_actions": [
+        "Add a prominent 'See the full product' dofollow CTA with a keyword-rich anchor to the top of every resource article that is currently outranking a product page, directing both users and crawl equity to the intended commercial destination.",
+        "Audit internal link anchor text from resource articles to product pages and update generic 'learn more' anchors to keyword-bearing anchors matching the product page's primary term.",
+        "Enrich each affected product page with at least one section that mirrors the informational depth of the competing article (e.g. 'What is usage-based billing' on /billing/usage-based-billing) so Google has no reason to prefer the article over the product page for hybrid informational-commercial queries."
+      ]
+    },
+    {
+      "theme": "Own the educational layer for subscription revenue recovery and dunning",
+      "description": "Recurly has built durable brand association with failed payment recovery and dunning across multiple SERPs, making it the default mental model for subscription businesses evaluating tools to reduce involuntary churn. Stripe's AI-powered smart retry engine is a genuine competitive differentiator that is buried as a feature mention on /billing/subscriptions rather than positioned as a standalone product capability. Creating a dedicated /billing/dunning-failed-payments page, updating /billing/subscriptions to lead with the revenue recovery angle, and adding FAQ schema to both pages would directly challenge Recurly's category ownership and convert the highest-intent segment of the subscription billing audience.",
+      "terms_impacted": 3,
+      "priority": "High",
+      "recommended_actions": [
+        "Create /billing/dunning-failed-payments as a standalone product feature page leading with the revenue-at-risk framing and quantifying Stripe's AI recovery rates.",
+        "Update the H1 of /billing/subscriptions from the current generic 'Grow and recover more subscription revenue' to 'Stop losing revenue from failed subscription renewals' to immediately match problem-aware query intent.",
+        "Add a 'Stripe vs Recurly for revenue recovery' comparison callout on both /billing and /billing/subscriptions to directly address the Recurly brand equity problem by name."
+      ]
+    },
+    {
+      "theme": "Capture the AI and usage-based billing category before Orb and Chargebee define it",
+      "description": "Usage-based and per-API-call billing is the fastest-growing pricing model in SaaS and AI, and Stripe has live product infrastructure (Stripe Meter, usage-based billing) that directly serves this market—but Chargebee's definitional guide ranks #1 for 'usage-based billing for SaaS' and specialist tools like Orb and Amberflo are establishing category authority that will be increasingly expensive to displace as the market matures. Stripe has a narrow window to assert topical authority by enriching /billing/usage-based-billing with definitional content, cross-linking it to /use-cases/ai and /use-cases/saas, and producing at least one authoritative guide on AI company monetisation that consolidates the resource article currently outranking the use-case page.",
+      "terms_impacted": 3,
+      "priority": "High",
+      "recommended_actions": [
+        "Add a 'What is usage-based billing?' section to /billing/usage-based-billing to co-opt Chargebee's awareness-layer traffic without creating a separate article that could cannibalise further.",
+        "Update /use-cases/ai with per-API-call billing specificity in the H1, title tag, and a new dedicated H2 section to consolidate the resource article and product page under one commercial URL.",
+        "Build an internal content cluster with /billing/usage-based-billing as the hub, linking to /use-cases/ai, /use-cases/saas, and the Stripe Meter documentation, with all spokes linking back to the hub using 'usage-based billing' anchor text."
+      ]
+    }
+  ],
+  "site_seo_score": {
+    "total": 58,
+    "technical_seo": 14,
+    "content_depth": 11,
+    "search_intent_alignment": 11,
+    "competitive_coverage": 9,
+    "internal_linking": 7,
+    "conversion_readiness": 6,
+    "summary": "Stripe has strong brand authority and wins cleanly on a handful of high-intent product and pricing terms, but consistently loses the educational and consideration layer to third-party publishers, review sites, and niche competitors. The most critical structural weakness is that 13 of 30 tracked terms either surface a resource article instead of the canonical product or use-case page, or Stripe is entirely absent from the SERP, indicating a systemic disconnect between content production and commercial page optimisation. Competitor threats from Chargebee, Paddle, Recurly, and NMI are concentrated precisely in the mid-funnel comparison and problem-aware queries where Stripe has no dedicated page or a mismatched ranking URL."
+  },
+  "generated_at": "2026-05-21T14:07:46.881384+00:00"
+}

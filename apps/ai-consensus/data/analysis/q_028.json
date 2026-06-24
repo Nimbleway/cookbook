@@ -1,0 +1,31 @@
+{
+  "id": "q_028",
+  "category": "Tech & AI",
+  "question": "Monolith or microservices \u2014 which architecture is better for a new startup?",
+  "models": {
+    "chatgpt": {
+      "verdict": "Monolith",
+      "reason": "Faster to build and iterate.",
+      "raw": "VERDICT: Monolith\nREASON: Faster to build and iterate.",
+      "format": "structured"
+    },
+    "perplexity": {
+      "verdict": "Start with monolith, evolve later",
+      "reason": "Monoliths enable faster MVP delivery and simpler operations, then progressively refactor into microservices as needs grow.",
+      "raw": "VERDICT: Start with monolith, evolve laterREASON: For a startup, a monolith enables faster MVP delivery and simpler operations, then you can progressively refactor into microservices as needs grow.",
+      "format": "structured"
+    },
+    "gemini": {
+      "verdict": "Start with monolith",
+      "reason": "Monoliths prioritize speed-to-market and simplicity for startups, with the option to refactor into microservices later as organizational complexity grows.",
+      "raw": "The \"Monolith vs. Microservices\" debate is a classic for a reason, but for a new startup, the answer usually leans heavily in one direction.\n\nThe short answer: **Start with a Monolith.** \n\nWhile microservices are trendy and powerful, they come with a \"complexity tax\" that can bankrupt a young company\u2019s most valuable resource: **time.**\n\n---\n\n### 1. The Monolith: The \"Speed-to-Market\" Choice\nA monolithic architecture means your entire application\u2014the database, the UI, and the business logic\u2014is managed as a single unit.\n\n*   **Why it\u2019s better for startups:**\n    *   **Simplicity:** It\u2019s easier to develop, test, and deploy. You only have one codebase and one pipeline to worry about.\n    *   **Rapid Pivoting:** In the early days, your business model might change weekly. In a monolith, refactoring code across different features is fast. In microservices, changing a fundamental data structure might require updating five different services and their APIs.\n    *   **Lower Overhead:** You don't need a massive DevOps team to manage container orchestration (like Kubernetes) or complex service-to-service communication.\n\n---\n\n### 2. Microservices: The \"Scaling\" Choice\nMicroservices break an application into small, independent services that communicate over a network (usually via APIs).\n\n*   **When they make sense:**\n    *   **Extreme Scale:** When you have hundreds of developers and need them to work on different parts of the app without stepping on each other's toes.\n    *   **Heterogeneous Tech:** If one part of your app needs Python for AI and another needs Go for high-speed transactions.\n*   **The Startup Trap:** Microservices solve **organizational problems**, not technical ones. If you only have five engineers, you don't have an organizational scaling problem yet\u2014you have a survival problem.\n\n---\n\n### 3. Comparison at a Glance\n\n| Feature | Monolith | Microservices |\n| :--- | :--- | :--- |\n| **Development Speed** | Very High (Initial) | Low (High setup cost) |\n| **Deployment** | Simple | Complex (CI/CD intensive) |\n| **Debugging** | Easy (Trace one process) | Hard (Tracing across services) |\n| **Scalability** | Scale the whole thing | Scale specific components |\n| **Cost** | Low (Minimal infrastructure) | High (Multiple servers/DBs) |\n\n---\n\n### The \"Modular Monolith\" Strategy\nThe smartest move for most startups is the **Modular Monolith**. \n\nBuild a single application, but keep your code highly organized. Separate your \"Payment\" logic from your \"User\" logic within the folders of your project. If you hit the \"lottery\" and suddenly have 10 million users, you can \"rip out\" the modules that need to scale and turn them into independent microservices later.\n\n> **The Golden Rule:** Don't build for the scale you *hope* to have in three years; build for the speed you need to survive the next six months.\n\nWhat kind of product are you building, and how many engineers are on your founding team?",
+      "format": "freeform"
+    }
+  },
+  "consensus": {
+    "label": "strong",
+    "score": 0.9,
+    "summary": "All three models unanimously recommend starting with a monolith for new startups, citing faster development and simpler operations, with the flexibility to migrate to microservices later."
+  },
+  "analyzed_at": "2026-05-06T09:53:42.965788+00:00"
+}
