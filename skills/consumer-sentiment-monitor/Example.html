@@ -1,0 +1,197 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.csm{font-family:system-ui,-apple-system,sans-serif;font-size:14px;color:var(--color-text-primary,#1a1a1a);background:transparent;padding:0 0 2rem}
+.csm .hdr{border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);padding:1.25rem 0 1rem;margin-bottom:1.25rem}
+.csm .hdr-ey{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-secondary,#888);margin-bottom:6px}
+.csm .hdr h1{font-size:17px;font-weight:500;margin-bottom:2px}
+.csm .hdr p{font-size:12px;color:var(--color-text-secondary,#888)}
+.csm .sec{font-size:11px;font-weight:500;letter-spacing:.06em;color:var(--color-text-secondary,#888);text-transform:uppercase;margin:1.25rem 0 10px}
+.csm .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:1.25rem}
+.csm .stat{background:var(--color-background-secondary,#f5f5f5);border-radius:8px;padding:12px 14px}
+.csm .stat-lbl{font-size:11px;color:var(--color-text-secondary,#888);margin-bottom:4px}
+.csm .stat-val{font-size:22px;font-weight:500}
+.csm .sotd{border-left:3px solid #A32D2D;border-radius:0;padding:10px 14px;background:var(--color-background-danger,#fff5f5);margin-bottom:1.25rem;font-size:12px;line-height:1.6}
+.csm .sotd-head{font-weight:500;margin-bottom:3px}
+.csm .sotd-impl{color:#A32D2D;margin-bottom:3px}
+.csm .sotd-meta{font-size:10px;color:var(--color-text-secondary,#888)}
+.csm .platform-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:1.25rem}
+.csm .pcard{border:0.5px solid var(--color-border-tertiary,#e5e5e5);border-radius:10px;padding:12px;cursor:pointer;transition:border-color .15s;background:var(--color-background-primary,#fff)}
+.csm .pcard:hover{border-color:var(--color-border-secondary,#ccc)}
+.csm .pcard.active{border:2px solid #185FA5;background:var(--color-background-info,#E6F1FB)}
+.csm .pcard-name{font-size:11px;color:var(--color-text-secondary,#888);margin-bottom:6px;font-weight:500}
+.csm .pcard-scores{display:flex;flex-direction:column;gap:3px}
+.csm .pcard-row{display:flex;justify-content:space-between;font-size:11px}
+.csm .pcard-brand{color:var(--color-text-secondary,#888)}
+.csm .pcard-val{font-weight:500}
+.csm .pcard-val.g{color:#3B6D11}.csm .pcard-val.a{color:#854F0B}.csm .pcard-val.n{color:var(--color-text-secondary,#888)}
+.csm .hint{font-size:11px;color:var(--color-text-secondary,#888);margin-bottom:10px}
+.csm .comp-hdr-row{display:grid;grid-template-columns:74px repeat(5,1fr);gap:6px;font-size:10px;color:var(--color-text-secondary,#888);padding-bottom:6px;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em}
+.csm .comp-row{display:flex;align-items:center;padding:9px 0;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.csm .comp-row:last-child{border-bottom:none}
+.csm .comp-brand{width:74px;font-size:12px;font-weight:500;flex-shrink:0}
+.csm .comp-details{flex:1;display:grid;grid-template-columns:repeat(5,1fr);gap:6px;font-size:11px}
+.csm .comp-cell{text-align:center;font-weight:500}
+.csm .filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+.csm .filter-lbl{font-size:11px;color:var(--color-text-secondary,#888)}
+.csm .fbtn{font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid var(--color-border-secondary,#ccc);background:var(--color-background-primary,#fff);cursor:pointer;color:var(--color-text-secondary,#888);transition:all .15s}
+.csm .fbtn:hover{background:var(--color-background-secondary,#f5f5f5)}
+.csm .fbtn.on{background:var(--color-text-primary,#1a1a1a);color:var(--color-background-primary,#fff);border-color:var(--color-text-primary,#1a1a1a)}
+.csm .quotes-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1.5rem}
+.csm .qcard{border-radius:8px;padding:12px;font-size:12px;border-left:3px solid}
+.csm .qcard.pos{border-left-color:#3B6D11;background:var(--color-background-success,#f0fff4)}
+.csm .qcard.neg{border-left-color:#A32D2D;background:var(--color-background-danger,#fff5f5)}
+.csm .qcard.watch{border-left-color:#854F0B;background:var(--color-background-warning,#fffbeb)}
+.csm .q-brand{font-size:10px;font-weight:500;margin-bottom:4px}
+.csm .q-text{font-style:italic;margin-bottom:6px;line-height:1.5}
+.csm .q-meta{font-size:10px;color:var(--color-text-secondary,#888)}
+.csm .no-results{font-size:12px;color:var(--color-text-secondary,#888);padding:16px;text-align:center;border:0.5px dashed var(--color-border-tertiary,#e5e5e5);border-radius:8px;display:none}
+.csm .themes-table{width:100%;border-collapse:collapse;margin-bottom:.5rem;font-size:12px}
+.csm .themes-table th{text-align:left;padding:7px 10px;font-size:11px;font-weight:500;color:var(--color-text-secondary,#888);border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.csm .tr-head{cursor:pointer}
+.csm .tr-head:hover td{background:var(--color-background-secondary,#f5f5f5)}
+.csm .tr-head td{padding:9px 10px;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);vertical-align:middle}
+.csm .tr-detail td{padding:10px 14px;font-size:11px;color:var(--color-text-secondary,#888);border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);line-height:1.6}
+.csm .tr-detail.collapsed{display:none}
+.csm .badge{font-size:10px;padding:2px 7px;border-radius:4px;font-weight:500}
+.csm .badge.w{background:#fef3cd;color:#856404}.csm .badge.i{background:#f8d7da;color:#721c24}
+.csm .chevron{font-size:14px;color:var(--color-text-secondary,#888);transition:transform .2s;display:inline-block}
+.csm .chevron.open{transform:rotate(180deg)}
+</style>
+<h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">30-day consumer sentiment comparison of OpenAI, Anthropic, Google Gemini, and Meta Llama with a spike alert, platform scorecards, competitive table, filterable quote wall, and expandable emerging themes.</h2>
+<div class="csm">
+<div class="hdr">
+  <div class="hdr-ey">Consumer sentiment monitor · 30-day window</div>
+  <h1>OpenAI vs. Anthropic vs. Google Gemini vs. Meta Llama</h1>
+  <p>May 19 – Jun 18, 2026 &nbsp;·&nbsp; Reddit, Hacker News, G2, App Store, news &amp; analyst</p>
+</div>
+
+<div class="sotd">
+  <div class="sotd-head">⚡ Spike alert — OpenAI hit with Florida lawsuit + multistate probe over user-harm and child-safety claims, days before its IPO filing</div>
+  <div class="sotd-impl">↳ Escalation language ("lawsuit", "user harm", "child safety") spiking across news + Reddit during the IPO window; reputational risk is concentrated almost entirely on OpenAI, not its rivals.</div>
+  <div class="sotd-meta">News + social · NYT, PBS NewsHour, r/ChatGPTcomplaints · Jun 1 &amp; Jun 13, 2026 · Organic</div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-lbl">Signals reviewed</div><div class="stat-val">31</div></div>
+  <div class="stat"><div class="stat-lbl">Spike alerts</div><div class="stat-val" style="color:#A32D2D">1</div></div>
+  <div class="stat"><div class="stat-lbl">Emerging themes</div><div class="stat-val" style="color:#854F0B">5</div></div>
+  <div class="stat"><div class="stat-lbl">Churn signals</div><div class="stat-val" style="color:#854F0B">4</div></div>
+</div>
+
+<div class="sec">Platform scorecards — click to filter quote wall</div>
+<div class="hint">Volumes are directional, drawn from search-snippet level (G2/Capterra block direct scraping). Click a platform card to show only its quotes. Click again to clear.</div>
+<div class="platform-grid" id="csm-pcards"></div>
+
+<div class="sec">Competitive comparison</div>
+<div id="csm-comp">
+  <div class="comp-hdr-row"><div></div><div>Score</div><div>Top praise</div><div>Top gripe</div><div>Churn</div><div>Trend</div></div>
+</div>
+
+<div class="sec">Quote wall</div>
+<div class="filter-row">
+  <span class="filter-lbl">Brand:</span>
+  <button class="fbtn on" data-f="brand" data-v="all">All</button>
+  <button class="fbtn" data-f="brand" data-v="openai">OpenAI</button>
+  <button class="fbtn" data-f="brand" data-v="anthropic">Anthropic</button>
+  <button class="fbtn" data-f="brand" data-v="gemini">Gemini</button>
+  <button class="fbtn" data-f="brand" data-v="meta">Meta Llama</button>
+</div>
+<div class="filter-row">
+  <span class="filter-lbl">Sentiment:</span>
+  <button class="fbtn on" data-f="sent" data-v="all">All</button>
+  <button class="fbtn" data-f="sent" data-v="pos">Positive</button>
+  <button class="fbtn" data-f="sent" data-v="neg">Negative</button>
+  <button class="fbtn" data-f="sent" data-v="watch">Watch</button>
+</div>
+<div class="quotes-grid" id="csm-qgrid"></div>
+<div class="no-results" id="csm-noq">No quotes match the selected filters.</div>
+
+<div class="sec">Emerging themes — click to expand</div>
+<table class="themes-table">
+  <tr><th>Theme</th><th>Mentions</th><th>Sources</th><th>First seen</th><th>Status</th><th style="width:24px"></th></tr>
+  <tbody id="csm-themes"></tbody>
+</table>
+</div>
+
+<script>
+(function(){
+const platforms=[
+  {name:'G2 (enterprise)',key:'g2',scores:[{brand:'OpenAI',val:'~4.7★ strong',cls:'g'},{brand:'Anthropic',val:'~4.6★ strong',cls:'g'},{brand:'Gemini',val:'~4.4★ mixed',cls:'a'}]},
+  {name:'Reddit',key:'reddit',scores:[{brand:'OpenAI',val:'high · neg-lean',cls:'a'},{brand:'Anthropic',val:'high · mixed',cls:'a'},{brand:'Gemini',val:'mod · neg-lean',cls:'a'}]},
+  {name:'Hacker News',key:'hn',scores:[{brand:'OpenAI',val:'high · mixed',cls:'a'},{brand:'Anthropic',val:'high · positive',cls:'g'},{brand:'Meta',val:'mod · neg-lean',cls:'a'}]},
+  {name:'News / App Store',key:'news',scores:[{brand:'OpenAI',val:'high · negative',cls:'a'},{brand:'Anthropic',val:'mod · positive',cls:'g'},{brand:'Gemini',val:'low · mixed',cls:'n'}]},
+];
+let activePlatform=null;
+const pcards=document.getElementById('csm-pcards');
+platforms.forEach(p=>{
+  const card=document.createElement('div');card.className='pcard';
+  card.innerHTML='<div class="pcard-name">'+p.name+'</div><div class="pcard-scores">'+p.scores.map(s=>'<div class="pcard-row"><span class="pcard-brand">'+s.brand+'</span><span class="pcard-val '+s.cls+'">'+s.val+'</span></div>').join('')+'</div>';
+  card.addEventListener('click',()=>{const isA=card.classList.contains('active');pcards.querySelectorAll('.pcard').forEach(c=>c.classList.remove('active'));activePlatform=isA?null:p.key;if(!isA)card.classList.add('active');filterQuotes();});
+  pcards.appendChild(card);
+});
+
+const compData=[
+  {brand:'OpenAI',score:'🔴 Alert',praise:'Best coding (Codex/GPT-5.2)',complaint:'Safety suits, value erosion',churn:'High',trend:'↓'},
+  {brand:'Anthropic',score:'🟢 Pos',praise:'Claude Code, ethics stance',complaint:'"Got worse", policy backlash',churn:'Med',trend:'↑'},
+  {brand:'Gemini',score:'🟡 Watch',praise:'Top benchmarks (3.0 Pro)',complaint:'"Paid worse than free"',churn:'Med',trend:'→'},
+  {brand:'Meta Llama',score:'🟡 Watch',praise:'Open-source leadership',complaint:'Reputational / morale',churn:'Low',trend:'→'},
+];
+const comp=document.getElementById('csm-comp');
+compData.forEach(r=>{const row=document.createElement('div');row.className='comp-row';row.innerHTML='<div class="comp-brand">'+r.brand+'</div><div class="comp-details"><div class="comp-cell">'+r.score+'</div><div class="comp-cell" style="font-size:10px">'+r.praise+'</div><div class="comp-cell" style="font-size:10px">'+r.complaint+'</div><div class="comp-cell">'+r.churn+'</div><div class="comp-cell">'+r.trend+'</div></div>';comp.appendChild(row);});
+
+const quotes=[
+  {brand:'openai',sent:'neg',src:'news',text:'"ChatGPT reached a billion monthly app users despite growing unease over its ethical and environmental impacts."',meta:'CNBC · Jun 12, 2026'},
+  {brand:'openai',sent:'neg',src:'news',text:'"Florida became the first state to sue OpenAI over claims that ChatGPT posed a risk to children."',meta:'NYT · Jun 1, 2026'},
+  {brand:'openai',sent:'neg',src:'news',text:'"OpenAI hit with multistate probe into possible user harm as its IPO looms."',meta:'PBS NewsHour · ~Jun 13, 2026'},
+  {brand:'openai',sent:'watch',src:'reddit',text:'"Lack of value... every other tool does what GPT does. What lane does ChatGPT even own?"',meta:'r/OpenAI · 2026'},
+  {brand:'openai',sent:'neg',src:'news',text:'"Slower response times, occasional crashes, features that used to work smoothly now functioning improperly."',meta:'App Store reviews · 2026'},
+  {brand:'openai',sent:'pos',src:'reddit',text:'"GPT-5 is a 3→4 level jump (or greater) in coding."',meta:'r/singularity · 2026'},
+  {brand:'openai',sent:'pos',src:'reddit',text:'"GPT 5.2 in Codex CLI is slow as hell but the best coding assistant I\'ve used personally."',meta:'r/ClaudeAI · 2026'},
+  {brand:'anthropic',sent:'pos',src:'g2',text:'"Users consistently praise Claude for its clear, structured responses and complex coding tasks."',meta:'G2 review summary · 2026'},
+  {brand:'anthropic',sent:'pos',src:'news',text:'"Claude soared to the App Store\'s top spot... after it refused involvement in Pentagon operations."',meta:'CNBC · Jun 12, 2026'},
+  {brand:'anthropic',sent:'neg',src:'reddit',text:'"Claude was better than ChatGPT… Now? It\'s worse. It refuses, hallucinating even when files are accessible."',meta:'r/Anthropic · 2026'},
+  {brand:'anthropic',sent:'watch',src:'reddit',text:'"Complaints connected to changes Anthropic quietly made... reducing the model\'s default \'effort\'."',meta:'r/Anthropic · 2026'},
+  {brand:'anthropic',sent:'neg',src:'reddit',text:'"Anthropic changed their privacy policy and there\'s a backlash... I deleted Claude and switched to Codex."',meta:'r/ClaudeAI · 2026'},
+  {brand:'gemini',sent:'pos',src:'hn',text:'"Gemini is the best of the best model out there."',meta:'Hacker News · 2026'},
+  {brand:'gemini',sent:'neg',src:'reddit',text:'"Paying for Gemini Advanced but getting a worse experience than free users (the irony of 2026)."',meta:'r/GoogleGeminiAI · 2026'},
+  {brand:'gemini',sent:'neg',src:'reddit',text:'"This new Gemini update is ass... I\'m completely fed up with the platform."',meta:'r/GeminiAI · 2026'},
+  {brand:'gemini',sent:'watch',src:'hn',text:'"Best model out there, but with complex problems it just goes down the drain."',meta:'Hacker News · 2026'},
+  {brand:'meta',sent:'pos',src:'news',text:'"Meta plans to release open-source versions of its next-generation AI models."',meta:'Axios / SiliconANGLE · Apr 6, 2026'},
+  {brand:'meta',sent:'neg',src:'hn',text:'"Meta\'s embrace of AI is making its employees miserable."',meta:'Hacker News · May 10, 2026'},
+];
+let brandFilter='all',sentFilter='all';
+const names={openai:'OpenAI',anthropic:'Anthropic',gemini:'Gemini',meta:'Meta Llama'};
+function filterQuotes(){
+  const grid=document.getElementById('csm-qgrid');grid.innerHTML='';let shown=0;
+  quotes.forEach(q=>{
+    if((brandFilter==='all'||q.brand===brandFilter)&&(sentFilter==='all'||q.sent===sentFilter)&&(!activePlatform||q.src===activePlatform)){
+      const c=document.createElement('div');c.className='qcard '+q.sent;
+      c.innerHTML='<div class="q-brand">'+names[q.brand]+'</div><div class="q-text">'+q.text+'</div><div class="q-meta">'+q.meta+'</div>';
+      grid.appendChild(c);shown++;
+    }
+  });
+  document.getElementById('csm-noq').style.display=shown===0?'block':'none';
+}
+document.querySelectorAll('.csm .fbtn').forEach(btn=>{
+  btn.addEventListener('click',()=>{const f=btn.dataset.f,v=btn.dataset.v;document.querySelectorAll('.csm .fbtn[data-f="'+f+'"]').forEach(b=>b.classList.remove('on'));btn.classList.add('on');if(f==='brand')brandFilter=v;else sentFilter=v;filterQuotes();});
+});
+filterQuotes();
+
+const themesData=[
+  {theme:'"Souring public AI sentiment"',count:6,sources:'CNBC, BCG survey, commencement coverage',first:'May 14, 2026',status:'i',badge:'Investigate',details:'Broad cultural backlash — graduates booing AI at commencements, a CNBC survey of workers avoiding AI on moral/environmental grounds, warnings from the Pope and Anthropic. Yet usage keeps climbing (ChatGPT 1B MAU). Action: separate brand-specific sentiment from category-wide unease in future runs.'},
+  {theme:'OpenAI safety / child-safety lawsuits',count:5,sources:'NYT, PBS NewsHour, r/ChatGPTcomplaints',first:'Jun 1, 2026',status:'i',badge:'Investigate',details:'Florida\'s suit (Jun 1) plus a multistate user-harm probe (~Jun 13) landed in OpenAI\'s IPO filing window. Escalation language is concentrated on OpenAI alone. Action: dominant negative driver for OpenAI — monitor daily for additional state filings.'},
+  {theme:'"It got worse" — model nerfing complaints',count:5,sources:'r/Anthropic, r/GeminiAI, r/GoogleGeminiAI',first:'May 2026',status:'w',badge:'Watch',details:'A recurring perception across Claude and Gemini that models silently degraded — Anthropic users blame reduced default "effort"; Gemini users say paid tiers feel worse than free. Action: a cross-brand trust theme — watch whether OpenAI gets pulled in.'},
+  {theme:'Codex vs. Claude Code coding wars',count:4,sources:'r/ClaudeAI, r/singularity, r/accelerate',first:'May 2026',status:'w',badge:'Watch',details:'Developers actively comparing OpenAI Codex (GPT-5.2) and Claude Code, allegiances shifting both ways. Both brands win praise here — the strongest positive theme for OpenAI and Anthropic alike. Action: useful for dev-segment positioning.'},
+  {theme:'ChatGPT subscription value fatigue',count:3,sources:'r/OpenAI, r/claude',first:'May 2026',status:'w',badge:'Watch',details:'Users questioning what ChatGPT uniquely offers as rivals close the gap ("what lane does ChatGPT even own?"). Pairs with the churn signals. Action: early-stage but worth watching as Gemini/Claude usage grows triple digits YoY.'},
+];
+const tbody=document.getElementById('csm-themes');
+themesData.forEach((t,i)=>{
+  const tr=document.createElement('tr');tr.className='tr-head';
+  tr.innerHTML='<td style="font-weight:500">'+t.theme+'</td><td>'+t.count+'</td><td style="color:var(--color-text-secondary,#888)">'+t.sources+'</td><td style="color:var(--color-text-secondary,#888)">'+t.first+'</td><td><span class="badge '+t.status+'">'+t.badge+'</span></td><td><span class="chevron" id="csm-ch'+i+'">&#8964;</span></td>';
+  const td=document.createElement('tr');td.className='tr-detail collapsed';
+  td.innerHTML='<td colspan="6">'+t.details+'</td>';
+  tr.addEventListener('click',()=>{const isOpen=!td.classList.contains('collapsed');tbody.querySelectorAll('.tr-detail').forEach(d=>d.classList.add('collapsed'));tbody.querySelectorAll('.chevron').forEach(c=>c.classList.remove('open'));if(!isOpen){td.classList.remove('collapsed');document.getElementById('csm-ch'+i).classList.add('open');}});
+  tbody.appendChild(tr);tbody.appendChild(td);
+});
+})();
+</script>

@@ -1,0 +1,224 @@
+<style>
+*{box-sizing:border-box}
+.pb *{margin:0;padding:0}
+.pb{font-family:system-ui,-apple-system,sans-serif;font-size:14px;color:var(--color-text-primary,#1a1a1a);background:transparent;padding:0 0 1rem}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.pb .hdr{border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);padding:.25rem 0 1rem;margin-bottom:1.25rem}
+.pb .hdr-ey{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-secondary,#888);margin-bottom:6px}
+.pb .hdr h1{font-size:17px;font-weight:500;margin-bottom:2px}
+.pb .hdr p{font-size:12px;color:var(--color-text-secondary,#888)}
+.pb .sec{font-size:11px;font-weight:500;letter-spacing:.06em;color:var(--color-text-secondary,#888);text-transform:uppercase;margin:1.25rem 0 10px}
+.pb .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:1.25rem}
+.pb .stat{background:var(--color-background-secondary,#f5f5f5);border-radius:8px;padding:12px 14px}
+.pb .stat-lbl{font-size:11px;color:var(--color-text-secondary,#888);margin-bottom:4px}
+.pb .stat-val{font-size:22px;font-weight:500}
+.pb .heatmap{width:100%;border-collapse:collapse;margin-bottom:1.5rem;font-size:12px;table-layout:fixed}
+.pb .heatmap th{text-align:left;padding:6px 8px;font-size:11px;font-weight:500;color:var(--color-text-secondary,#888);border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.pb .heatmap td{padding:7px 8px;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);vertical-align:middle}
+.pb .heatmap tr:last-child td{border-bottom:none}
+.pb .cg{background:#d4edda;color:#155724;border-radius:4px;padding:2px 6px;font-size:11px;font-weight:500;display:inline-block}
+.pb .cr{background:#f8d7da;color:#721c24;border-radius:4px;padding:2px 6px;font-size:11px;font-weight:500;display:inline-block}
+.pb .ca{background:#fef3cd;color:#856404;border-radius:4px;padding:2px 6px;font-size:11px;font-weight:500;display:inline-block}
+.pb .cm{color:var(--color-text-secondary,#888);font-size:11px}
+.pb .m-legend{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px;font-size:11px;color:var(--color-text-secondary,#888)}
+.pb .ld{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:3px;vertical-align:middle}
+.pb .m-row{display:flex;align-items:center;gap:8px;margin-bottom:9px}
+.pb .m-lbl{width:80px;font-size:12px;font-weight:500;flex-shrink:0}
+.pb .m-bars{flex:1;display:flex;flex-direction:column;gap:3px}
+.pb .m-br{display:flex;align-items:center;gap:6px}
+.pb .m-ch{width:54px;font-size:10px;color:var(--color-text-secondary,#888);flex-shrink:0}
+.pb .m-trk{flex:1;background:var(--color-background-secondary,#f5f5f5);border-radius:2px;height:11px;overflow:hidden}
+.pb .m-fil{height:11px;border-radius:2px}
+.pb .m-n{font-size:10px;color:var(--color-text-secondary,#888);width:18px;text-align:right;flex-shrink:0}
+.pb .m-tot{font-size:12px;font-weight:500;width:28px;text-align:right;flex-shrink:0}
+.pb .sov{font-size:11px;color:var(--color-text-secondary,#888);padding:8px 12px;background:var(--color-background-secondary,#f5f5f5);border-radius:6px;margin-bottom:1.5rem;line-height:1.5}
+.pb .tl-hint{font-size:11px;color:var(--color-text-secondary,#888);margin-bottom:10px}
+.pb .tl-axis{display:flex;margin-left:82px;margin-bottom:4px}
+.pb .tl-tick{flex:1;font-size:10px;color:var(--color-text-secondary,#888);text-align:center}
+.pb .tl-rows{display:flex;flex-direction:column}
+.pb .tl-row{display:flex;align-items:flex-start;min-height:56px;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5);padding:8px 0}
+.pb .tl-row:last-child{border-bottom:none}
+.pb .tl-co{width:82px;font-size:12px;font-weight:500;flex-shrink:0;padding-top:4px}
+.pb .tl-trk{flex:1;position:relative;padding-top:4px}
+.pb .tl-line{position:absolute;top:10px;left:0;right:0;height:1px;background:var(--color-border-tertiary,#e5e5e5)}
+.pb .tl-ev{position:absolute;top:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;cursor:pointer;z-index:2}
+.pb .tl-dot{width:13px;height:13px;border-radius:50%;flex-shrink:0;transition:transform .12s}
+.pb .tl-dot.g{background:#3B6D11}.pb .tl-dot.r{background:#A32D2D}.pb .tl-dot.a{background:#854F0B}
+.pb .tl-ev:hover .tl-dot,.pb .tl-ev.on .tl-dot{transform:scale(1.35)}
+.pb .tl-ev.on .tl-dot{outline:2px solid var(--color-border-secondary,#ccc);outline-offset:2px}
+.pb .tl-lbl{font-size:9px;color:var(--color-text-secondary,#888);white-space:nowrap;margin-top:3px;max-width:60px;overflow:hidden;text-overflow:ellipsis;text-align:center;line-height:1.3}
+.pb .dp{margin-top:10px;border:0.5px solid var(--color-border-tertiary,#e5e5e5);border-radius:12px;overflow:hidden;background:var(--color-background-primary,#fff);margin-bottom:1.5rem}
+.pb .dp-hdr{display:flex;align-items:center;gap:10px;padding:11px 14px;border-bottom:0.5px solid var(--color-border-tertiary,#e5e5e5)}
+.pb .dp-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.pb .dp-dot.g{background:#3B6D11}.pb .dp-dot.r{background:#A32D2D}.pb .dp-dot.a{background:#854F0B}
+.pb .dp-meta{font-size:11px;color:var(--color-text-secondary,#888)}
+.pb .dp-title{font-weight:500;font-size:13px}
+.pb .dp-body{padding:11px 14px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pb .dp-lbl{font-size:10px;color:var(--color-text-secondary,#888);text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
+.pb .dp-val{font-size:12px;line-height:1.5}
+.pb .dp-impl{grid-column:1/-1;font-size:12px;color:var(--color-text-secondary,#888);border-top:0.5px solid var(--color-border-tertiary,#e5e5e5);padding-top:9px;margin-top:2px;line-height:1.55}
+.pb .dp-empty{padding:14px;text-align:center;font-size:12px;color:var(--color-text-secondary,#888)}
+.pb .b-wrap{margin-bottom:1.5rem}
+.pb .b-row{display:flex;align-items:center;gap:10px;margin-bottom:7px}
+.pb .b-co{width:80px;font-size:12px;flex-shrink:0}
+.pb .b-trk{flex:1;background:var(--color-background-secondary,#f5f5f5);border-radius:3px;height:17px;overflow:hidden}
+.pb .b-fil{height:17px;border-radius:3px;display:flex;align-items:center;padding-left:8px;font-size:10px;font-weight:500;color:#fff}
+.pb .b-amt{font-size:11px;color:var(--color-text-secondary,#888);width:170px;flex-shrink:0}
+.pb .cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.5rem}
+.pb .card{border:0.5px solid var(--color-border-tertiary,#e5e5e5);border-radius:10px;padding:13px;background:var(--color-background-primary,#fff)}
+.pb .card-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.pb .card-name{font-weight:500;font-size:13px}
+.pb .bdg{font-size:11px;padding:2px 7px;border-radius:4px;font-weight:500}
+.pb .bdg.g{background:#d4edda;color:#155724}.pb .bdg.r{background:#f8d7da;color:#721c24}.pb .bdg.a{background:#fef3cd;color:#856404}
+.pb .si{margin-bottom:8px;padding-left:9px;border-left:2px solid var(--color-border-tertiary,#e5e5e5);border-radius:0}
+.pb .si.g{border-left-color:#3B6D11}.pb .si.r{border-left-color:#A32D2D}.pb .si.a{border-left-color:#854F0B}
+.pb .si-head{font-size:12px;font-weight:500;margin-bottom:2px}
+.pb .si-impl{font-size:11px;color:var(--color-text-secondary,#888);margin-bottom:2px}
+.pb .si-meta{font-size:10px;color:var(--color-text-secondary,#888)}
+.pb .footer{font-size:11px;color:var(--color-text-secondary,#888);border-top:0.5px solid var(--color-border-tertiary,#e5e5e5);padding-top:10px;margin-top:4px}
+</style>
+<div class="pb">
+<h2 class="sr-only">Portfolio briefing for Anthropic, OpenAI and Google over June 11 to 18, 2026, showing signal heatmap, brand mentions, an interactive activity timeline, valuation status and per-company signal cards.</h2>
+
+<div class="hdr">
+  <div class="hdr-ey">Portfolio briefing</div>
+  <h1>Jun 11–18, 2026</h1>
+  <p>Anthropic · OpenAI · Google &nbsp;·&nbsp; 7-day window &nbsp;·&nbsp; Deep research &nbsp;·&nbsp; Competitor flagging on</p>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-lbl">Companies</div><div class="stat-val">3</div></div>
+  <div class="stat"><div class="stat-lbl">Active</div><div class="stat-val" style="color:#3B6D11">3</div></div>
+  <div class="stat"><div class="stat-lbl">Alerts</div><div class="stat-val" style="color:#A32D2D">1</div></div>
+  <div class="stat"><div class="stat-lbl">Total mentions</div><div class="stat-val">106</div></div>
+</div>
+
+<div class="sec">Signal heatmap</div>
+<table class="heatmap">
+  <tr>
+    <th style="width:16%">Company</th><th style="width:11%">Funding</th><th style="width:11%">Legal</th>
+    <th style="width:13%">Leadership</th><th style="width:11%">Product</th><th style="width:12%">Sentiment</th>
+    <th style="width:13%">Competitors</th><th style="width:13%">Overall</th>
+  </tr>
+  <tr><td><strong>Anthropic</strong></td><td><span class="cg">🟢</span></td><td><span class="cr">🔴</span></td><td><span class="cm">—</span></td><td><span class="ca">🟡</span></td><td><span class="cr">🔴</span></td><td><span class="ca">🟡</span></td><td><span class="cr">🔴 Alert</span></td></tr>
+  <tr><td><strong>OpenAI</strong></td><td><span class="cg">🟢</span></td><td><span class="ca">🟡</span></td><td><span class="cg">🟢</span></td><td><span class="cg">🟢</span></td><td><span class="ca">🟡</span></td><td><span class="cg">🟢</span></td><td><span class="cg">🟢 Positive</span></td></tr>
+  <tr><td><strong>Google</strong></td><td><span class="cm">—</span></td><td><span class="cr">🔴</span></td><td><span class="cr">🔴</span></td><td><span class="cg">🟢</span></td><td><span class="ca">🟡</span></td><td><span class="cr">🔴</span></td><td><span class="ca">🟡 Watch</span></td></tr>
+</table>
+
+<div class="sec">Brand mentions this week — by channel</div>
+<div class="m-legend">
+  <span><span class="ld" style="background:#e07b39"></span>Reddit</span>
+  <span><span class="ld" style="background:#718096"></span>HN</span>
+  <span><span class="ld" style="background:#2b6cb0"></span>Press</span>
+  <span><span class="ld" style="background:#1da1f2"></span>Twitter/X</span>
+  <span><span class="ld" style="background:#0077b5"></span>LinkedIn</span>
+</div>
+<div id="pb-mentions"></div>
+<div class="sov" id="pb-sov"></div>
+
+<div class="sec">Activity timeline</div>
+<div class="tl-hint">Click any event dot to see full details below</div>
+<div class="tl-axis">
+  <div class="tl-tick">Jun 11</div><div class="tl-tick">Jun 13</div><div class="tl-tick">Jun 15</div>
+  <div class="tl-tick">Jun 16</div><div class="tl-tick">Jun 18</div>
+</div>
+<div class="tl-rows" id="pb-tl"></div>
+<div id="pb-dp"><div class="dp"><div class="dp-empty">Click an event dot above to see full details</div></div></div>
+
+<div class="sec">Valuation &amp; capital-markets status</div>
+<div class="b-wrap">
+  <div class="b-row"><div class="b-co">Google</div><div class="b-trk"><div class="b-fil" style="width:100%;background:#2b6cb0">Public — Alphabet</div></div><div class="b-amt">~$2.3T mkt cap (NASDAQ: GOOGL)</div></div>
+  <div class="b-row"><div class="b-co">OpenAI</div><div class="b-trk"><div class="b-fil" style="width:43%;background:#2b6cb0">IPO filed</div></div><div class="b-amt">~$1T target valuation</div></div>
+  <div class="b-row"><div class="b-co">Anthropic</div><div class="b-trk"><div class="b-fil" style="width:42%;background:#854F0B">IPO-bound</div></div><div class="b-amt">~$965B reported (unverified)</div></div>
+</div>
+
+<div class="sec">Company signal cards</div>
+<div class="cards">
+  <div class="card">
+    <div class="card-hdr"><span class="card-name">Anthropic</span><span class="bdg r">🔴 Alert</span></div>
+    <div class="si r"><div class="si-head">U.S. orders Fable 5 &amp; Mythos 5 disabled for foreign nationals</div><div class="si-impl">↳ Export-control action pulled two newly launched models days after release — major regulatory overhang ahead of IPO.</div><div class="si-meta">Legal/Regulatory · NYT, Forbes · Jun 12–16</div></div>
+    <div class="si r"><div class="si-head">10th copyright suit filed by 100 authors</div><div class="si-impl">↳ Plaintiffs seek up to $71.4M; adds to mounting copyright litigation exposure.</div><div class="si-meta">Legal · ChatGPTisEatingTheWorld · Jun 17</div></div>
+    <div class="si a"><div class="si-head">Class action over Claude usage limits</div><div class="si-impl">↳ Filed Jun 14 over "hidden" premium usage caps — reputational risk with core dev users.</div><div class="si-meta">Legal · Reddit r/ClaudeAI · Jun 14</div></div>
+    <div class="si g"><div class="si-head">Claude Corps fellowship + TCS Global Premier Partnership</div><div class="si-impl">↳ Talent pipeline and 50k-associate enterprise channel — long-term distribution wins.</div><div class="si-meta">Product/Partnership · Anthropic, TCS · ~Jun 11</div></div>
+  </div>
+  <div class="card">
+    <div class="card-hdr"><span class="card-name">OpenAI</span><span class="bdg g">🟢 Positive</span></div>
+    <div class="si g"><div class="si-head">Poaches Gemini co-lead Noam Shazeer from Google</div><div class="si-impl">↳ High-profile talent win for architecture research; reverses Google's $2.7B 2024 re-hire.</div><div class="si-meta">Leadership · Reuters, CNBC · Jun 18</div></div>
+    <div class="si g"><div class="si-head">Launches OpenAI Partner Network with $150M investment</div><div class="si-impl">↳ Enterprise go-to-market push to accelerate deployment via global partners.</div><div class="si-meta">Product/Partnership · openai.com · ~Jun 15</div></div>
+    <div class="si g"><div class="si-head">IPO momentum; SoftBank tie-up deepens</div><div class="si-impl">↳ Confidential S-1 (~$1T target). SoftBank topped Toyota by market value on AI exposure.</div><div class="si-meta">Funding/Financial · Reuters, Yahoo · Jun 11–17</div></div>
+    <div class="si a"><div class="si-head">2025 losses reportedly up ~8x</div><div class="si-impl">↳ HN-surfaced financials reignite burn-rate scrutiny heading into the public listing.</div><div class="si-meta">Financial · Hacker News · ~Jun 16</div></div>
+  </div>
+  <div class="card">
+    <div class="card-hdr"><span class="card-name">Google</span><span class="bdg a">🟡 Watch</span></div>
+    <div class="si r"><div class="si-head">Loses Gemini co-lead Noam Shazeer to OpenAI</div><div class="si-impl">↳ Departure of a Transformer co-inventor and $2.7B talent bet — a competitive blow.</div><div class="si-meta">Leadership/Competitor · Reuters, Calcalist · Jun 18</div></div>
+    <div class="si r"><div class="si-head">German court: Google liable for false AI Overviews claims</div><div class="si-impl">↳ Google to appeal; precedent could expand liability for generative search outputs in the EU.</div><div class="si-meta">Legal · Reuters · ~Jun 17</div></div>
+    <div class="si g"><div class="si-head">Android 17 + Wear OS 7 ship with expanded Gemini</div><div class="si-impl">↳ Deepens Gemini distribution across the mobile/wearable base.</div><div class="si-meta">Product · TechCrunch, blog.google · Jun 16</div></div>
+    <div class="si g"><div class="si-head">Gemini-powered Google Home Speaker ($99) on sale Jun 25</div><div class="si-impl">↳ First smart speaker in ~6 years — re-entry into ambient AI hardware.</div><div class="si-meta">Product · Mashable, Bloomberg · Jun 17</div></div>
+  </div>
+</div>
+
+<div class="footer">Generated Jun 18, 2026 · Powered by Nimble + Claude · briefing.html · briefing.md</div>
+</div>
+<script>
+(function(){
+const chColors=['#e07b39','#718096','#2b6cb0','#1da1f2','#0077b5'];
+const chNames=['Reddit','HN','Press','Twitter/X','LinkedIn'];
+const mentionData={'Anthropic':[14,5,12,6,4],'OpenAI':[10,4,11,7,5],'Google':[4,2,13,5,4]};
+const cos=Object.keys(mentionData);
+const totals={};cos.forEach(c=>{totals[c]=mentionData[c].reduce((a,b)=>a+b,0)});
+const maxV=Math.max.apply(null,cos.reduce((a,c)=>a.concat(mentionData[c]),[]).concat([1]));
+const mWrap=document.getElementById('pb-mentions');
+cos.forEach(co=>{
+  const row=document.createElement('div');row.className='m-row';
+  const lbl=document.createElement('div');lbl.className='m-lbl';lbl.textContent=co;
+  const bars=document.createElement('div');bars.className='m-bars';
+  mentionData[co].forEach((v,i)=>{
+    const br=document.createElement('div');br.className='m-br';
+    const ch=document.createElement('div');ch.className='m-ch';ch.textContent=chNames[i];
+    const tr=document.createElement('div');tr.className='m-trk';
+    const fi=document.createElement('div');fi.className='m-fil';
+    fi.style.cssText='background:'+chColors[i]+';width:'+(v===0?2:Math.max(4,Math.round(v/maxV*100)))+'%;opacity:'+(v===0?0.2:1);
+    tr.appendChild(fi);
+    const n=document.createElement('div');n.className='m-n';n.textContent=v;
+    br.appendChild(ch);br.appendChild(tr);br.appendChild(n);bars.appendChild(br);
+  });
+  const tot=document.createElement('div');tot.className='m-tot';tot.textContent=totals[co];
+  row.appendChild(lbl);row.appendChild(bars);row.appendChild(tot);mWrap.appendChild(row);
+});
+const leader=cos.reduce((a,b)=>totals[a]>totals[b]?a:b);
+document.getElementById('pb-sov').textContent='Share of voice — '+leader+' led with '+totals[leader]+' total mentions, driven by the export-control shutdown and IPO coverage. Google was press-heavy but light on organic social chatter. Counts are estimates from search-result volume.';
+
+const tlEvents=[
+  {co:'Anthropic',pct:14,c:'r',short:'Models pulled',title:'U.S. export-control order disables Fable 5 & Mythos 5 for foreign nationals',date:'Jun 12, 2026',type:'Legal/Regulatory',src:'NYT, Forbes',impl:'Two newly launched models suspended days after release — major IPO-eve regulatory overhang.'},
+  {co:'Anthropic',pct:43,c:'a',short:'Usage suit',title:'Class action filed over Claude premium usage limits',date:'Jun 14, 2026',type:'Legal',src:'Reddit r/ClaudeAI',impl:'Alleges hidden caps on premium tiers — reputational risk with core developer base.'},
+  {co:'Anthropic',pct:86,c:'r',short:'Copyright',title:'10th copyright suit — 100 authors seek up to $71.4M',date:'Jun 17, 2026',type:'Legal',src:'ChatGPTisEatingTheWorld',impl:'Adds to mounting copyright litigation exposure as IPO approaches.'},
+  {co:'OpenAI',pct:57,c:'g',short:'Partner Net',title:'Launches OpenAI Partner Network with $150M investment',date:'Jun 15, 2026',type:'Product/Partnership',src:'openai.com',impl:'Enterprise GTM push to accelerate partner-led deployment.'},
+  {co:'OpenAI',pct:71,c:'a',short:'Losses 8x',title:'2025 losses reportedly increased ~8x',date:'Jun 16, 2026',type:'Financial',src:'Hacker News',impl:'Burn-rate scrutiny resurfaces heading into the public listing.'},
+  {co:'OpenAI',pct:100,c:'g',short:'Shazeer hire',title:'Hires Gemini co-lead Noam Shazeer from Google',date:'Jun 18, 2026',type:'Leadership',src:'Reuters, CNBC',impl:'Marquee talent win for architecture research; reverses Google’s $2.7B re-hire.'},
+  {co:'Google',pct:71,c:'g',short:'Android 17',title:'Android 17 + Wear OS 7 ship with expanded Gemini',date:'Jun 16, 2026',type:'Product',src:'TechCrunch, blog.google',impl:'Deepens Gemini distribution across mobile and wearable base.'},
+  {co:'Google',pct:86,c:'a',short:'AI Overviews',title:'German court holds Google liable for false AI Overviews claims',date:'Jun 17, 2026',type:'Legal',src:'Reuters',impl:'Google to appeal; precedent could expand EU liability for generative search outputs.'},
+  {co:'Google',pct:100,c:'r',short:'Shazeer exit',title:'Loses Gemini co-lead Noam Shazeer to OpenAI',date:'Jun 18, 2026',type:'Leadership/Competitor',src:'Reuters, Calcalist',impl:'Departure of a Transformer co-inventor and $2.7B talent bet — competitive blow.'},
+];
+let activeEl=null;
+const tlWrap=document.getElementById('pb-tl');
+cos.forEach(co=>{
+  const row=document.createElement('div');row.className='tl-row';
+  const lbl=document.createElement('div');lbl.className='tl-co';lbl.textContent=co;
+  const track=document.createElement('div');track.className='tl-trk';
+  const line=document.createElement('div');line.className='tl-line';track.appendChild(line);
+  tlEvents.filter(e=>e.co===co).forEach(ev=>{
+    const wrap=document.createElement('div');wrap.className='tl-ev';wrap.style.left=ev.pct+'%';
+    const dot=document.createElement('div');dot.className='tl-dot '+ev.c;
+    const lb=document.createElement('div');lb.className='tl-lbl';lb.textContent=ev.short;
+    wrap.appendChild(dot);wrap.appendChild(lb);
+    wrap.addEventListener('click',function(){
+      if(activeEl)activeEl.classList.remove('on');
+      activeEl=wrap;wrap.classList.add('on');
+      document.getElementById('pb-dp').innerHTML='<div class="dp"><div class="dp-hdr"><div class="dp-dot '+ev.c+'"></div><div><div class="dp-meta">'+ev.co+' &nbsp;·&nbsp; '+ev.date+'</div><div class="dp-title">'+ev.title+'</div></div></div><div class="dp-body"><div><div class="dp-lbl">Signal type</div><div class="dp-val">'+ev.type+'</div></div><div><div class="dp-lbl">Source</div><div class="dp-val">'+ev.src+'</div></div><div class="dp-impl">&#8627; '+ev.impl+'</div></div></div>';
+    });
+    track.appendChild(wrap);
+  });
+  row.appendChild(lbl);row.appendChild(track);tlWrap.appendChild(row);
+});
+})();
+</script>
