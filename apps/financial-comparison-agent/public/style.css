@@ -1,0 +1,8 @@
+/* Enlarge the app wordmark logo (Chainlit renders it as <img class="logo">).
+   The wordmark is a wide, short image, so Chainlit's default height makes it
+   tiny — bump the height and let width scale automatically. */
+img.logo {
+  height: 46px !important;
+  max-height: 46px !important;
+  width: auto !important;
+}
