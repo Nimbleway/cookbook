@@ -223,6 +223,10 @@ def step_slack():
     print(dim("\n  Find this at: Slack App → Basic Information → App Credentials"))
     signing_secret = prompt("  SLACK_SIGNING_SECRET")
 
+    print(f"\n  {yellow('Important:')} In Slack, go to your channel and type:")
+    print(f"  {green('/invite @YourBotName')}")
+    print(dim("  (replace YourBotName with whatever you named your Slack app)"))
+
     return {
         "SLACK_BOT_TOKEN": slack_token,
         "SLACK_CHANNEL_ID": channel_id,
@@ -249,57 +253,41 @@ def step_github():
     return {"GH_API_KEY": gh_key}
 
 
-# ─── Write files ──────────────────────────────────────────────────────────────
+# ─── Write config ─────────────────────────────────────────────────────────────
 
-def write_config(company, competitors, base_dir):
+def write_config(company, competitors, api_keys, base_dir):
     config = {
         "your_company": company,
         "competitors": competitors,
+        "api_keys": api_keys,
     }
     path = base_dir / "config.json"
     path.write_text(json.dumps(config, indent=2))
     return path
 
 
-def write_env(env_vars, base_dir):
-    path = base_dir / ".env"
-    lines = []
-    for key, value in env_vars.items():
-        # Quote values that contain spaces or special chars
-        if " " in value or "=" in value or not value:
-            lines.append(f'{key}="{value}"')
-        else:
-            lines.append(f"{key}={value}")
-    path.write_text("\n".join(lines) + "\n")
-    return path
-
-
 # ─── Summary ─────────────────────────────────────────────────────────────────
 
-def print_summary(company, competitors, env_vars, config_path, env_path):
+def print_summary(company, competitors, api_keys, config_path):
     print(f"\n{GREEN}{BOLD}╔══════════════════════════════════════════════════════════╗")
     print(f"║                  SETUP COMPLETE!                         ║")
     print(f"╚══════════════════════════════════════════════════════════╝{RESET}\n")
 
     print(f"  {green('✓')} Company configured: {bold(company['name'])}")
     print(f"  {green('✓')} Competitors: {', '.join(c['name'] for c in competitors)}")
-    print(f"  {green('✓')} Files written:")
-    print(f"      {bold(str(config_path))}")
-    print(f"      {bold(str(env_path))}\n")
 
-    # What's configured vs skipped
     configured = []
     skipped = []
 
-    if env_vars.get("NIMBLE_API_KEY"):
+    if api_keys.get("NIMBLE_API_KEY"):
         configured.append("Nimble API (web search)")
-    if env_vars.get("ANTHROPIC_API_KEY"):
+    if api_keys.get("ANTHROPIC_API_KEY"):
         configured.append("Anthropic API (AI synthesis)")
-    if env_vars.get("SLACK_BOT_TOKEN"):
+    if api_keys.get("SLACK_BOT_TOKEN"):
         configured.append("Slack (daily digest + DMs)")
     else:
         skipped.append("Slack")
-    if env_vars.get("GH_API_KEY"):
+    if api_keys.get("GH_API_KEY"):
         configured.append("GitHub (release tracking)")
     else:
         skipped.append("GitHub")
@@ -316,7 +304,7 @@ def print_summary(company, competitors, env_vars, config_path, env_path):
     print(f"     {dim('See AGENT_SETUP.md — create a standalone repo, add secrets,')}")
     print(f"     {dim('and schedule via cron-job.org.')}\n")
     if skipped:
-        print(f"  3. {bold('Add skipped integrations')} by editing {green('.env')} and re-running.\n")
+        print(f"  3. {bold('Add skipped integrations')} by re-running {green('python3 onboard.py')}.\n")
 
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
@@ -326,43 +314,21 @@ def main():
 
     print_banner()
 
-    # Check for existing .env
-    env_path = base_dir / ".env"
-    if env_path.exists():
-        print(f"  {yellow('Warning:')} A {bold('.env')} file already exists at:\n"
-              f"  {env_path}\n")
-        overwrite = prompt_yes_no("  Overwrite it?", default_yes=False)
-        if not overwrite:
-            print(f"\n  {dim('Keeping existing .env — only config.json will be written.')}")
-            skip_env = True
-        else:
-            skip_env = False
-    else:
-        skip_env = False
-
     try:
         company = step_your_company()
         competitors = step_competitors()
-        api_keys = step_api_keys()
+        raw_keys = step_api_keys()
         slack = step_slack()
         github = step_github()
     except KeyboardInterrupt:
         print(f"\n\n  {red('Setup cancelled.')} Run {green('python3 onboard.py')} to start again.\n")
         sys.exit(0)
 
-    env_vars = {**api_keys, **slack, **github}
+    api_keys = {**raw_keys, **slack, **github}
+    config_path = write_config(company, competitors, api_keys, base_dir)
+    print(f"\n  {green('✓')} Configuration saved.")
 
-    # Write config.json always
-    config_path = write_config(company, competitors, base_dir)
-    print(f"\n  {green('✓')} Written: {config_path}")
-
-    # Write .env unless user chose to keep existing
-    if not skip_env:
-        written_env = write_env(env_vars, base_dir)
-        print(f"  {green('✓')} Written: {written_env}")
-    else:
-        written_env = env_path
-        print(f"  {dim('Skipped .env — existing file kept.')}")
+    print_summary(company, competitors, api_keys, config_path)
 
     print_summary(company, competitors, env_vars, config_path, written_env)
 
