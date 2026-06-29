@@ -1,4 +1,3 @@
-import os
 import re
 import json
 import requests
@@ -8,7 +7,6 @@ from pathlib import Path
 from typing import Annotated
 import operator
 
-from dotenv import load_dotenv
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 import anthropic
@@ -16,17 +14,17 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.types import Send
 from typing_extensions import TypedDict
 
-load_dotenv(Path(__file__).parent / ".env", override=True)
-
 # ─── Load config ──────────────────────────────────────────────────────────────
 
 CONFIG_FILE = Path(__file__).parent / "config.json"
+if not CONFIG_FILE.exists():
+    raise SystemExit("config.json not found. Run: python3 onboard.py")
 with open(CONFIG_FILE) as _f:
     _CONFIG = json.load(_f)
 
-YOUR_COMPANY      = _CONFIG["your_company"]["name"]
-YOUR_COMPANY_ALIASES  = _CONFIG["your_company"]["aliases"]
-YOUR_COMPANY_DESC = _CONFIG["your_company"].get("description", "")
+YOUR_COMPANY         = _CONFIG["your_company"]["name"]
+YOUR_COMPANY_ALIASES = _CONFIG["your_company"]["aliases"]
+YOUR_COMPANY_DESC    = _CONFIG["your_company"].get("description", "")
 
 COMPETITOR_ALIASES = {}
 GITHUB_REPOS       = {}
@@ -40,13 +38,18 @@ for _c in _CONFIG["competitors"]:
 
 COMPETITOR_ALIASES[YOUR_COMPANY] = YOUR_COMPANY_ALIASES
 
-NIMBLE_API_KEY = os.getenv("NIMBLE_API_KEY")
-GITHUB_TOKEN = os.getenv("GH_API_KEY")
-SLACK_TOKEN = os.getenv("SLACK_BOT_TOKEN")
-SLACK_CHANNEL = os.getenv("SLACK_CHANNEL_ID")
+_KEYS = _CONFIG.get("api_keys", {})
+NIMBLE_API_KEY = _KEYS.get("NIMBLE_API_KEY", "")
+GITHUB_TOKEN   = _KEYS.get("GH_API_KEY", "")
+SLACK_TOKEN    = _KEYS.get("SLACK_BOT_TOKEN", "")
+SLACK_CHANNEL  = _KEYS.get("SLACK_CHANNEL_ID", "")
+
+_missing = [k for k, v in {"NIMBLE_API_KEY": NIMBLE_API_KEY, "ANTHROPIC_API_KEY": _KEYS.get("ANTHROPIC_API_KEY", "")}.items() if not v]
+if _missing:
+    raise SystemExit(f"Missing required keys in config.json: {', '.join(_missing)}\nRun: python3 onboard.py")
 
 slack_client = WebClient(token=SLACK_TOKEN)
-anthropic_client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+anthropic_client = anthropic.Anthropic(api_key=_KEYS.get("ANTHROPIC_API_KEY"))
 
 NOW = datetime.now(timezone.utc)
 WEEK_AGO = (NOW - timedelta(days=7)).strftime("%Y-%m-%d")

@@ -11,14 +11,11 @@ import os
 import json
 from pathlib import Path
 
-from dotenv import load_dotenv
 from flask import Flask, request
 from slack_bolt import App
 from slack_bolt.adapter.flask import SlackRequestHandler
 
 from user_prefs import load_all_prefs, save_prefs
-
-load_dotenv(Path(__file__).parent / ".env", override=True)
 
 # ─── Load config ─────────────────────────────────────────────────────────────
 
@@ -26,10 +23,11 @@ _CONFIG_PATH = Path(__file__).parent / "config.json"
 with open(_CONFIG_PATH) as _f:
     _CONFIG = json.load(_f)
 YOUR_COMPANY = _CONFIG["your_company"]["name"]
+_KEYS = _CONFIG.get("api_keys", {})
 
 bolt_app = App(
-    token=os.getenv("SLACK_BOT_TOKEN"),
-    signing_secret=os.getenv("SLACK_SIGNING_SECRET"),
+    token=_KEYS.get("SLACK_BOT_TOKEN", ""),
+    signing_secret=_KEYS.get("SLACK_SIGNING_SECRET", ""),
 )
 
 
