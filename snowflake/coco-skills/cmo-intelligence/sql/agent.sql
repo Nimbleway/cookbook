@@ -24,9 +24,12 @@
 USE ROLE NIMBLE_ROLE;
 USE SCHEMA __DB__.__SCHEMA__;
 
+-- PROFILE/COMMENT are dollar-quoted so a brand with an apostrophe (e.g. a brand
+-- like "Brand's") doesn't break the literal during placeholder substitution. (For a
+-- brand containing a double-quote, also strip/escape it in the JSON display_name.)
 CREATE OR REPLACE AGENT __DB__.__SCHEMA__.__AGENT_NAME__
-    WITH PROFILE = '{"display_name": "__BRAND__ Shelf Analyst"}'
-    COMMENT = '__BRAND__ CMO digital-shelf agent'
+    WITH PROFILE = $${"display_name": "__BRAND__ Shelf Analyst"}$$
+    COMMENT = $$__BRAND__ CMO digital-shelf agent$$
     FROM SPECIFICATION
 $$
 models:

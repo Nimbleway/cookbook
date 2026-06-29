@@ -46,6 +46,9 @@ hundreds of calls) — and the cockpit is Streamlit-in-Snowflake.
 - **Substitute every placeholder.** `__DB__`, `__SCHEMA__`, `__WAREHOUSE__`, `__BRAND__`,
   `__CATEGORY__`, `__AGENT_NAME__`, `__REFRESH_CRON__`, `__CORTEX_MODEL__` must all be replaced before running a file.
   For a category-overview app (no focal brand), see the no-brand note in `references/intake.md`.
+  **Escape quotes in substituted values** for the context: in a single-quoted SQL literal double the
+  apostrophe (`'` → `''`); in JSON (the agent's `display_name`) drop or `\`-escape a `"`. `agent.sql`
+  dollar-quotes its literals so apostrophe brands (e.g. `Brand's`) are already safe.
 - **Probe one agent call before trusting projections.** Field names inside `parsing` differ per WSA.
   `amazon_serp` is verified; confirm `walmart_serp` / `target_serp` / `*_pdp` once with
   `SELECT raw FROM TABLE(NIMBLE_AGENT_RUN(...))` and adjust `ingest.sql` if they differ.
