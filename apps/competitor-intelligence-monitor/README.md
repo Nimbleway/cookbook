@@ -40,14 +40,14 @@ config.json          .env
 ```bash
 # 1. Clone and install dependencies
 git clone https://github.com/Nimbleway/cookbook
-cd cookbook/competitor-intelligence-monitor/agent
-pip install -r requirements.txt
+cd cookbook/apps/competitor-intelligence-monitor/agent
+pip3 install -r requirements.txt
 
 # 2. Run the interactive setup wizard
-python onboard.py
+python3 onboard.py
 
 # 3. Run the agent
-python agent.py
+python3 agent.py
 ```
 
 `onboard.py` walks you through configuring your company, competitors, and all API keys in about 2 minutes. It writes `config.json` and `.env` for you.
