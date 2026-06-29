@@ -62,9 +62,24 @@ def main(url, render, format, country, locale, driver):
     if locale:
         body["locale"] = locale
 
-    resp = requests.post(NIMBLE_EXTRACT_URL, json=body, headers=headers, timeout=90)
-    resp.raise_for_status()
-    return resp.json()
+    # Return a structured VARIANT on failure (mirrors the NIMBLE_AGENT_RUN UDTF) so a
+    # transient API error degrades to a usable "tool failed" payload instead of raising
+    # and aborting the calling query or Cortex Agent turn. Success path is unchanged.
+    try:
+        resp = requests.post(NIMBLE_EXTRACT_URL, json=body, headers=headers, timeout=90)
+    except requests.RequestException as e:
+        return {"status": "request_error", "error": str(e)}
+    if resp.status_code >= 400:
+        try:
+            raw = resp.json()
+        except ValueError:
+            raw = {"text": resp.text}
+        return {"status": f"http_{resp.status_code}", "status_code": resp.status_code,
+                "error": "request failed", "raw": raw}
+    try:
+        return resp.json()
+    except ValueError:
+        return {"status": "invalid_json", "error": "response was not JSON", "raw": resp.text}
 $$;
 
 GRANT USAGE ON FUNCTION NIMBLE_INTEGRATION.TOOLS.NIMBLE_EXTRACT(

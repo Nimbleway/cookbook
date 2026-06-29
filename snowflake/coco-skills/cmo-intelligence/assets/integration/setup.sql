@@ -69,7 +69,7 @@ GRANT USAGE  ON NETWORK RULE NIMBLE_INTEGRATION.TOOLS.NIMBLE_API_RULE TO ROLE NI
 -- functions, so consumers can detect a stale install and prompt an upgrade. An account
 -- that predates this view is simply treated as "older than 1.0.0".
 CREATE OR REPLACE VIEW NIMBLE_INTEGRATION.TOOLS.INTEGRATION_VERSION AS
-    SELECT '1.0.0' AS version;
+    SELECT '1.1.0' AS version;  -- 1.1.0: NIMBLE_SEARCH UDF is now part of the expected tool surface
 GRANT SELECT ON VIEW NIMBLE_INTEGRATION.TOOLS.INTEGRATION_VERSION TO ROLE NIMBLE_ROLE;
 
 -- Sanity check (optional)
