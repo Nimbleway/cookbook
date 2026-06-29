@@ -3,7 +3,7 @@ A single-page app (sticky pill-nav, AI Insights, share-of-shelf, content health,
 AI-answer share, trends) over one per-app schema's view set. Marketing focus.
 
 This is a TEMPLATE: __DB__ / __SCHEMA__ / __BRAND__ / __CATEGORY__ are substituted at provision time."""
-import json
+import json, re
 import streamlit as st
 import streamlit.components.v1 as components
 from snowflake.snowpark.context import get_active_session
@@ -681,6 +681,24 @@ def _ground(q):
                   "say what you'd pull next. No jargon, no emoji.\n\nLIVE CONTEXT: " + CTX + "\n\nQUESTION: " + q)
 
 
+_FORBIDDEN = re.compile(r"\b(INSERT|UPDATE|DELETE|MERGE|CALL|CREATE|ALTER|DROP|GRANT|REVOKE|TRUNCATE|COPY)\b", re.I)
+
+
+def _safe_select(sql):
+    """Only run Analyst-generated SQL if it's a single read-only SELECT scoped to the
+    semantic view — never execute generated SQL blindly. Returns the SQL or None."""
+    s = (sql or "").strip().rstrip(";").strip()
+    if not s or ";" in s:                                    # empty or multi-statement
+        return None
+    if not re.match(r"^(SELECT|WITH)\b", s, re.I):           # read-only entry points only
+        return None
+    if _FORBIDDEN.search(s):                                 # no DDL/DML
+        return None
+    if "SHELF_SV" not in s.upper():                          # scoped to the app's semantic view
+        return None
+    return s
+
+
 def ask_live(q):
     """Cortex Analyst (text-to-SQL over the semantic view); falls back to Cortex Complete."""
     try:
@@ -700,11 +718,14 @@ def ask_live(q):
                 text += p.get("text", "")
             elif p.get("type") == "sql":
                 sql = p.get("statement")
-        if sql:
-            df = session.sql(sql).to_pandas()
+        safe = _safe_select(sql)
+        if safe:
+            df = session.sql(safe).to_pandas()
             if len(df) > 50:
                 df = df.head(50)
             return {"text": (text or "Here's what the live shelf shows:"), "df": df}
+        if sql:                          # Analyst returned SQL we won't run → grounded answer instead
+            return {"text": _ground(q)}
         if text:
             return {"text": text}
     except Exception:
