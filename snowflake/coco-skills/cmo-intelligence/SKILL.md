@@ -44,7 +44,7 @@ hundreds of calls) — and the cockpit is Streamlit-in-Snowflake.
   Before building, check whether the schema already exists (Phase 0) and let the user choose new /
   update / rebuild — re-provisioning over a live app is only allowed as an explicit, `DROP`-first rebuild.
 - **Substitute every placeholder.** `__DB__`, `__SCHEMA__`, `__WAREHOUSE__`, `__BRAND__`,
-  `__CATEGORY__`, `__AGENT_NAME__`, `__REFRESH_CRON__`, `__CORTEX_MODEL__` must all be replaced before running a file.
+  `__CATEGORY__`, `__AGENT_NAME__`, `__REFRESH_CRON__`, `__CORTEX_MODEL__`, `__CORTEX_MODEL_CHEAP__` must all be replaced before running a file.
   For a category-overview app (no focal brand), see the no-brand note in `references/intake.md`.
   **Escape quotes in substituted values** for the context: in a single-quoted SQL literal double the
   apostrophe (`'` → `''`); in JSON (the agent's `display_name`) drop or `\`-escape a `"`. `agent.sql`
@@ -90,16 +90,26 @@ Track these as todos so nothing is skipped.
      `setup.sql` + `nimble_agent_run.sql` (`ACCOUNTADMIN`) on **explicit consent** — and warn that the
      bundle may itself be behind the cookbook, so the cookbook is the source of truth. Never auto-upgrade.
    - **Equal or newer →** continue.
-2b. **Resolve the Cortex model → `__CORTEX_MODEL__`.** The skill uses one Cortex `COMPLETE` model
-   (brand resolver, intake architect, cockpit chat) — pick the **latest Sonnet the account actually
-   answers to**, since Cortex model availability is region-dependent. Probe in preference order and
-   bind the first that returns; substitute it everywhere `__CORTEX_MODEL__` appears:
+2b. **Resolve the Cortex models → `__CORTEX_MODEL__` + `__CORTEX_MODEL_CHEAP__`.** The skill calls
+   Cortex via `AI_COMPLETE` (the GA AISQL function; `SNOWFLAKE.CORTEX.COMPLETE` is its legacy
+   namespace). It uses **two** models, since availability is region-dependent — probe in preference
+   order and bind the first that returns:
+   - **`__CORTEX_MODEL__`** — the **reasoning** model for the intake architect and cockpit chat; pick
+     the latest Sonnet the account answers to:
    ```sql
-   SELECT SNOWFLAKE.CORTEX.COMPLETE('claude-sonnet-4-6', 'ping');  -- newest Sonnet; else ↓
+   SELECT AI_COMPLETE('claude-sonnet-4-6', 'ping');  -- newest Sonnet; else ↓
    -- on "model … not available in region" / unknown-model, try the next:
    --   claude-sonnet-4-5   (broader regional availability)
    --   mistral-large       (last-resort fallback — always available)
    ```
+   - **`__CORTEX_MODEL_CHEAP__`** — a **cheap, fast** model for the high-volume brand-normalization
+     resolver (runs over ~60 brands every refresh). Prefer Haiku; fall back to the reasoning model so
+     the resolver never breaks:
+   ```sql
+   SELECT AI_COMPLETE('claude-haiku-4-5', 'ping');  -- cheapest capable; else fall back to __CORTEX_MODEL__
+   ```
+   Substitute each value everywhere its placeholder appears (`__CORTEX_MODEL__`: `references/intake.md`
+   + the cockpit; `__CORTEX_MODEL_CHEAP__`: the `REBUILD_BRAND_MAP` resolver in `sql/views.sql`).
    If the user wants the newest but it's not native to the region, mention enabling cross-region
    inference: `ALTER ACCOUNT SET CORTEX_ENABLED_CROSS_REGION = 'ANY_REGION';` (needs `ACCOUNTADMIN`).
    Authoritative model list: <https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-regional-availability>.
@@ -139,7 +149,8 @@ See `references/intake.md` for the tiers and the Cortex proposal prompt.
 Fill the placeholders from the confirmed intake, then run each file. Derive
 `__AGENT_NAME__` = `UPPER(brand, spaces→underscores) || '_SHELF_ANALYST'`; render `__REFRESH_CRON__`
 from the chosen cadence (default `USING CRON 0 6 * * * America/Chicago`); use the `__CORTEX_MODEL__`
-resolved in Phase 0 (2b) everywhere it appears (`sql/views.sql`, `references/intake.md`, the cockpit).
+and `__CORTEX_MODEL_CHEAP__` resolved in Phase 0 (2b) everywhere they appear (`__CORTEX_MODEL__`:
+`references/intake.md` + the cockpit; `__CORTEX_MODEL_CHEAP__`: the resolver in `sql/views.sql`).
 
 1. **`sql/config.sql`** — run the `CREATE TABLE` statements (CFG_APP/CFG_QUERIES). **Do NOT run the
    example seed**; instead write `CFG_APP` (one row, incl. `geo_zip` + `retailer_map`) and

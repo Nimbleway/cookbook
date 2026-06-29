@@ -251,7 +251,7 @@ data["trend_oos"] = [int(r[2]) if r[2] is not None else 0 for r in sp]
 # Exec briefing + pre-answered assistant prompts (Cortex, cached)
 def cortex(prompt):
     try:
-        return session.sql("SELECT SNOWFLAKE.CORTEX.COMPLETE('__CORTEX_MODEL__', ?)", params=[prompt]).collect()[0][0].strip()
+        return session.sql("SELECT AI_COMPLETE('__CORTEX_MODEL__', ?)", params=[prompt]).collect()[0][0].strip()
     except Exception:
         return "(Cortex unavailable)"
 

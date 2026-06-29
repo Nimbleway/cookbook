@@ -56,7 +56,7 @@ BEGIN
     ),
     classified AS (
         SELECT raw_brand,
-            TRIM(SNOWFLAKE.CORTEX.COMPLETE('__CORTEX_MODEL__',
+            TRIM(AI_COMPLETE('__CORTEX_MODEL_CHEAP__',
                 'Task: normalize a retail brand label for the ' || (SELECT category FROM cat)
                 || ' category by fixing only capitalization and obvious duplicate spellings. '
                 || 'Rules: reply with ONLY the brand name, at most 3 words, no punctuation, no sentences, '

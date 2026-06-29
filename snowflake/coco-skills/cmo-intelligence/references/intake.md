@@ -25,7 +25,7 @@ anything is built.
 Ask Cortex for a single JSON object, then parse and present it for confirmation:
 
 ```sql
-SELECT SNOWFLAKE.CORTEX.COMPLETE('__CORTEX_MODEL__',  -- resolved at Phase 0 to the latest available Sonnet
+SELECT AI_COMPLETE('__CORTEX_MODEL__',  -- resolved at Phase 0 to the latest available Sonnet
   'You are a retail category strategist. For the category below, return ONLY a JSON object with keys: '
   || 'focal_brand (the market-leading brand, or the one provided), '
   || 'keywords (array of ~6 shopper search terms covering the category shelf), '

@@ -42,9 +42,11 @@ cmo-intelligence/
 ```
 
 The `sql/` + `assets/` files are **templates** with `__DB__` / `__SCHEMA__` / `__WAREHOUSE__` /
-`__BRAND__` / `__CATEGORY__` / `__AGENT_NAME__` / `__REFRESH_CRON__` / `__CORTEX_MODEL__` placeholders
-the skill substitutes per app (`__CORTEX_MODEL__` = the latest available Sonnet, resolved by a Phase 0
-probe). Target database, warehouse, and geography (`CFG_APP.geo_zip`) are all configurable — nothing
+`__BRAND__` / `__CATEGORY__` / `__AGENT_NAME__` / `__REFRESH_CRON__` / `__CORTEX_MODEL__` /
+`__CORTEX_MODEL_CHEAP__` placeholders the skill substitutes per app. Cortex is called via the GA
+`AI_COMPLETE` AISQL function; `__CORTEX_MODEL__` (latest available Sonnet, for intake + cockpit) and
+`__CORTEX_MODEL_CHEAP__` (Haiku, for the high-volume brand resolver) are both resolved by a Phase 0
+probe. Target database, warehouse, and geography (`CFG_APP.geo_zip`) are all configurable — nothing
 is pinned to a fixed account.
 
 > **Confirm parsing field names on first run.** Each Nimble Web Search Agent's `parsing` shape differs
