@@ -18,7 +18,7 @@ from slack_bolt.adapter.flask import SlackRequestHandler
 
 from user_prefs import load_all_prefs, save_prefs
 
-load_dotenv(override=True)
+load_dotenv(Path(__file__).parent / ".env", override=True)
 
 # ─── Load config ─────────────────────────────────────────────────────────────
 

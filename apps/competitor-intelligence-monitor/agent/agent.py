@@ -16,7 +16,7 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.types import Send
 from typing_extensions import TypedDict
 
-load_dotenv(override=True)
+load_dotenv(Path(__file__).parent / ".env", override=True)
 
 # ─── Load config ──────────────────────────────────────────────────────────────
 
@@ -641,11 +641,26 @@ def _finding_block(item: dict, show_competitor: bool = False) -> dict:
         summary_text = f"_{parts[0]}._\n↳ _{parts[1]}_"
     else:
         summary_text = f"_{summary}_"
+    linked_title = f"<{url}|{title}>" if url else title
     return {"type": "section", "text": {"type": "mrkdwn",
-            "text": f"{sent}  {prefix}*<{url}|{title}>*\n{summary_text}\n`{meta}`"}}
+            "text": f"{sent}  {prefix}*{linked_title}*\n{summary_text}\n`{meta}`"}}
 
 
 def post_slack(state: AgentState) -> dict:
+    if not SLACK_TOKEN or not SLACK_CHANNEL:
+        s = state.get("synthesis", {})
+        print("\n── Synthesis Results ──────────────────────────────────────")
+        print(s.get("overview", "No overview generated."))
+        for f in s.get("findings", []):
+            print(f"\n[{f.get('competitor')}] {f.get('title')}\n  {f.get('summary')}\n  {f.get('url')}")
+        if s.get("nimble_findings"):
+            print(f"\n── {YOUR_COMPANY} mentions ──")
+            for f in s.get("nimble_findings", []):
+                print(f"  {f.get('title')}\n  {f.get('url')}")
+        print("────────────────────────────────────────────────────────────\n")
+        print("Tip: add Slack credentials to .env to receive these as a formatted digest.")
+        return {}
+
     s = state.get("synthesis", {})
     overview = s.get("overview", "")
     findings = s.get("findings", [])
@@ -696,8 +711,9 @@ def post_slack(state: AgentState) -> dict:
             comp = alert.get("competitor", "")
             alert_type = alert.get("type", "")
             tag = f"{YOUR_COMPANY} Comparison" if alert_type == "nimble_comparison" else "Pitch Change"
+            linked = f"<{url}|{title}>" if url else title
             blocks.append({"type": "section", "text": {"type": "mrkdwn",
-                "text": f"{sent}  *{comp}*  —  *<{url}|{title}>*\n_{summary}_\n`{tag} · Positioning`"}})
+                "text": f"{sent}  *{comp}*  —  *{linked}*\n_{summary}_\n`{tag} · Positioning`"}})
         blocks.append({"type": "divider"})
 
     # ── Findings by competitor (max 3 each) ───────────────────────────────────
@@ -812,7 +828,8 @@ def _build_dm_blocks(name: str, team: str, overview: str, signal,
                 url = alert.get("url", "")
                 comp = alert.get("competitor", "")
                 tag = f"{YOUR_COMPANY} Comparison" if alert.get("type") == "nimble_comparison" else "Pitch Change"
-                lines.append(f"\n{sent}  *{comp}*  —  *<{url}|{title}>*\n_{summary}_\n`{tag} · Positioning`")
+                linked = f"<{url}|{title}>" if url else title
+                lines.append(f"\n{sent}  *{comp}*  —  *{linked}*\n_{summary}_\n`{tag} · Positioning`")
             blocks.append({"type": "section", "text": {"type": "mrkdwn", "text": "\n".join(lines)}})
             blocks.append({"type": "divider"})
 
@@ -866,6 +883,8 @@ def _prev_delivery_date(selected_days: list, reference_date: datetime) -> str:
 
 
 def send_personalized_dms(state: AgentState) -> dict:
+    if not SLACK_TOKEN:
+        return {}
     try:
         from user_prefs import load_all_prefs, save_prefs
     except ImportError:
@@ -996,6 +1015,8 @@ def save_state(state: AgentState) -> dict:
 # ─── Weekly summary (Mondays only) ───────────────────────────────────────────
 
 def post_weekly_summary(state: AgentState) -> dict:
+    if not SLACK_TOKEN or not SLACK_CHANNEL:
+        return {}
     if NOW.weekday() != 0:  # 0 = Monday
         return {}
 

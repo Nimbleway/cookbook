@@ -2,7 +2,7 @@
 """
 Competitor Monitor — Interactive Onboarding Wizard
 
-Run with:  python onboard.py
+Run with:  python3 onboard.py
 """
 
 import json
@@ -157,24 +157,14 @@ def step_competitors():
         )
         aliases = [a.strip() for a in aliases_raw.split(",") if a.strip()]
 
-        github_repo = prompt_optional(
-            "  GitHub repo",
-            hint="owner/repo, e.g. openai/openai-python — leave blank if unknown",
-        )
-
-        pypi_package = prompt_optional(
-            "  PyPI package name",
-            hint="e.g. openai — leave blank if not on PyPI",
-        )
-
         color = pick_color(index)
         print(f"  {green('✓')} Assigned color: {bold(color)}")
 
         competitors.append({
             "name": name_raw,
             "aliases": aliases,
-            "github_repo": github_repo if github_repo else None,
-            "pypi_package": pypi_package if pypi_package else None,
+            "github_repo": None,
+            "pypi_package": None,
             "color": color,
         })
         index += 1
@@ -321,10 +311,10 @@ def print_summary(company, competitors, env_vars, config_path, env_path):
 
     print(f"\n{CYAN}{BOLD}  Next steps:{RESET}\n")
     print(f"  1. {bold('Run the agent')} (daily data collection + AI synthesis):")
-    print(f"     {green('python agent.py')}\n")
+    print(f"     {green('python3 agent.py')}\n")
     print(f"  2. {bold('Set up automated daily runs')} via GitHub Actions:")
-    print(f"     {dim('Add your .env values as repository secrets,')}")
-    print(f"     {dim('then push to main — the workflow runs at 8 AM UTC by default.')}\n")
+    print(f"     {dim('See AGENT_SETUP.md — create a standalone repo, add secrets,')}")
+    print(f"     {dim('and schedule via cron-job.org.')}\n")
     if skipped:
         print(f"  3. {bold('Add skipped integrations')} by editing {green('.env')} and re-running.\n")
 
@@ -357,7 +347,7 @@ def main():
         slack = step_slack()
         github = step_github()
     except KeyboardInterrupt:
-        print(f"\n\n  {red('Setup cancelled.')} Run {green('python onboard.py')} to start again.\n")
+        print(f"\n\n  {red('Setup cancelled.')} Run {green('python3 onboard.py')} to start again.\n")
         sys.exit(0)
 
     env_vars = {**api_keys, **slack, **github}
