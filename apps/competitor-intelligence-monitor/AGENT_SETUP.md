@@ -1,72 +1,84 @@
 # Agent Setup Guide
 
-## 1. Quick setup
-
 ```bash
 git clone https://github.com/Nimbleway/cookbook
-cd cookbook/competitor-intelligence-monitor/agent
-pip install -r requirements.txt
-python onboard.py   # interactive wizard — fills in config.json and .env
-python agent.py     # run it
+cd cookbook/apps/competitor-intelligence-monitor/agent
+pip3 install -r requirements.txt
+python3 onboard.py   # fills in config.json and .env
+python3 agent.py     # run it
 ```
 
-The wizard covers everything. This doc fills in details for each step.
+`onboard.py` walks you through everything interactively. The sections below are reference if you get stuck.
 
 ---
 
-## 2. API keys
+## API keys
 
-### Nimble (required — powers all web search)
+You need two keys to run the agent. `onboard.py` will ask for these.
+
+**Nimble** (web search — required)
 1. Sign up at [nimbleway.com](https://nimbleway.com)
 2. Dashboard → API Keys → Create new key
-3. Paste into `.env` as `NIMBLE_API_KEY`
+3. Paste it as `NIMBLE_API_KEY` in your `.env`
 
-### Anthropic (required — runs the AI synthesis)
+**Anthropic** (AI synthesis — required)
 1. Sign up at [console.anthropic.com](https://console.anthropic.com)
 2. API Keys → Create Key
-3. Paste into `.env` as `ANTHROPIC_API_KEY`
+3. Paste it as `ANTHROPIC_API_KEY` in your `.env`
 
-### GitHub (optional — improves search rate limits)
+**GitHub** (optional — enables GitHub source tracking)
 1. Go to [github.com/settings/tokens](https://github.com/settings/tokens) → Generate new token (classic)
 2. No extra scopes needed
-3. Paste into `.env` as `GH_API_KEY`
+3. Paste it as `GH_API_KEY` in your `.env`
 
 ---
 
-## 3. Slack
+## Slack
 
-Skip this section if you don't want Slack notifications.
+Skip this if you don't want Slack notifications. The agent will still print results to the terminal.
 
-### Create a Slack app
+**Create a Slack app**
 1. Go to [api.slack.com/apps](https://api.slack.com/apps) → **Create New App** → **From scratch**
-2. Name it (e.g. "Competitor Monitor") and select your workspace
+2. Name it (e.g. "Competitor Monitor") and pick your workspace
 
-### Set permissions
-In **OAuth & Permissions** → **Bot Token Scopes**, add: `chat:write`, `commands`
+**Set permissions**
+3. **OAuth & Permissions** → **Bot Token Scopes** → add `chat:write`, `im:write`, `commands`
 
-### Install and get tokens
-1. **OAuth & Permissions** → **Install to Workspace** → Authorize
-2. Copy the **Bot User OAuth Token** (starts with `xoxb-`) → paste into `.env` as `SLACK_BOT_TOKEN`
-3. **Basic Information** → **App Credentials** → copy **Signing Secret** → paste as `SLACK_SIGNING_SECRET`
+**Install and copy tokens**
+4. **OAuth & Permissions** → **Install to Workspace** → Authorize
+5. Copy the **Bot User OAuth Token** (`xoxb-...`) → paste as `SLACK_BOT_TOKEN`
+6. **Basic Information** → **App Credentials** → copy **Signing Secret** → paste as `SLACK_SIGNING_SECRET`
 
-### Get the channel ID
-1. Open the channel in Slack → right-click the channel name → **Copy channel ID**
-2. Paste into `.env` as `SLACK_CHANNEL_ID`
+**Get your channel ID**
+7. In Slack, right-click the channel you want digests posted to → **Copy Channel ID**
+8. Paste it as `SLACK_CHANNEL_ID`
 
-### Invite the bot
-In the channel, type: `/invite @YourBotName`
+**Invite the bot**
+9. In the channel, type `/invite @YourBotName`
 
 ---
 
-## 4. Automated daily runs
+## Daily runs (GitHub Actions)
 
-This runs the agent on a schedule via GitHub Actions.
+This runs the agent automatically every day without you having to do anything.
 
-### Set up the repo
-1. Fork or clone this repo to your own GitHub account
-2. Commit your `agent/config.json` (it has no secrets — just competitor names)
-3. Go to your repo → **Settings** → **Secrets and variables** → **Actions**
-4. Add these secrets:
+**Set up a standalone repo**
+
+GitHub Actions only runs workflows from a repo's root, so create a dedicated repo for this — don't run it from the cookbook directly.
+
+1. Create a new GitHub repo (e.g. `my-competitor-monitor`)
+2. Copy the `agent/` folder into the root of your new repo
+3. Move the workflow file into place:
+   ```bash
+   mkdir -p .github/workflows
+   mv agent/.github/workflows/daily_monitor.yml .github/workflows/
+   ```
+4. Commit and push everything
+
+**Add secrets**
+
+5. Go to your repo on GitHub → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**
+6. Add each of these:
 
 | Secret | Required |
 |---|---|
@@ -76,24 +88,47 @@ This runs the agent on a schedule via GitHub Actions.
 | `SLACK_CHANNEL_ID` | If using Slack |
 | `GH_API_KEY` | Optional |
 
-### Schedule with cron-job.org (free, reliable)
-GitHub's built-in schedule runs hours late. Use [cron-job.org](https://cron-job.org) instead:
+**Schedule it with cron-job.org**
 
-1. Sign up → New cron job
-2. URL: `https://api.github.com/repos/{owner}/{repo}/actions/workflows/daily_monitor.yml/dispatches`
-3. Method: `POST`
-4. Headers:
-   - `Authorization: Bearer {your_github_token}`
-   - `Accept: application/vnd.github.v3+json`
-5. Body: `{"ref": "main"}`
-6. Schedule: e.g. `0 9 * * 1-5` (9am UTC weekdays)
+GitHub's built-in schedule trigger runs 4–10 hours late in practice. Use [cron-job.org](https://cron-job.org) instead — it's free and reliable.
 
-The GitHub token needs `workflow` scope. Create one at [github.com/settings/tokens](https://github.com/settings/tokens).
+7. Sign up at [cron-job.org](https://cron-job.org) → **CREATE CRONJOB**
+8. Set these fields:
+
+| Field | Value |
+|---|---|
+| URL | `https://api.github.com/repos/{owner}/{repo}/actions/workflows/daily_monitor.yml/dispatches` |
+| Method | `POST` |
+| Body | `{"ref": "main"}` |
+| Header 1 | `Authorization: Bearer {your_github_token}` |
+| Header 2 | `Accept: application/vnd.github.v3+json` |
+| Schedule | `0 9 * * 1-5` (9am UTC, Mon–Fri) |
+
+The GitHub token needs `workflow` scope — create one at [github.com/settings/tokens](https://github.com/settings/tokens).
+
+---
+
+## Slash command — `/competitor-digest` (optional)
+
+This lets anyone on your team DM the bot to subscribe to a personalized digest. It requires `slack_bot.py` to run as a persistent web service.
+
+**Deploy the bot**
+
+1. Create a new project on [Railway](https://railway.app) → **Deploy from GitHub repo** → select your repo
+2. Add the same env vars from your `.env` file in Railway's settings
+3. Railway auto-detects the `Procfile` and runs the bot — copy the public URL it assigns
+
+**Wire up the slash command**
+
+4. In your Slack app → **Slash Commands** → **Create New Command**
+5. Set **Command** to `/competitor-digest` and **Request URL** to `https://your-railway-url/slack/events`
+6. Save → go back to **OAuth & Permissions** → **Reinstall to Workspace**
 
 ---
 
 ## Troubleshooting
 
-- **Agent posts nothing to Slack** — confirm the bot is invited to the channel (`/invite @BotName`) and `SLACK_CHANNEL_ID` is the ID (e.g. `C0123456789`), not the channel name
-- **"No findings" on first run** — normal; the agent only shows results from the past 24 hours. Wait a day or check that competitors are spelled correctly in `config.json`
-- **GitHub Actions not triggering** — confirm `agent/config.json` is committed and all secrets are added under Settings → Secrets
+- **Nothing posted to Slack** — make sure the bot is invited to the channel (`/invite @BotName`) and that `SLACK_CHANNEL_ID` is the channel ID (starts with `C`), not the channel name
+- **No findings on first run** — this is normal. The agent only looks back 24 hours. Give it a day, or double-check competitor spellings in `config.json`
+- **GitHub Actions `git push` step fails** — your repo has branch protection on `main`. Go to **Settings → Branches** → edit the rule → enable "Allow GitHub Actions to bypass"
+- **`/competitor-digest` doesn't respond** — confirm the bot server is running and the slash command Request URL points to your live deployment
