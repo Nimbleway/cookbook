@@ -63,32 +63,36 @@ Track these as todos so nothing is skipped.
 
 ### Phase 0 — Preflight (SQL only)
 1. `SELECT CURRENT_ROLE(), CURRENT_ACCOUNT();`
-2. **Integration gate** — confirm the UDTF exists:
+2. **Integration gate** — confirm the integration's functions exist: the `NIMBLE_AGENT_RUN` UDTF
+   (ingestion) **and** the `NIMBLE_SEARCH` UDF (the agent's live-web tool, Phase 2):
    ```sql
-   SHOW FUNCTIONS LIKE 'NIMBLE_AGENT_RUN' IN SCHEMA NIMBLE_INTEGRATION.TOOLS;
+   SHOW FUNCTIONS LIKE 'NIMBLE_%' IN SCHEMA NIMBLE_INTEGRATION.TOOLS;  -- need NIMBLE_AGENT_RUN + NIMBLE_SEARCH
    ```
-   **If present →** version-check (step 2a). **If missing →** offer to install it (don't dead-end at a link):
+   **If both present →** version-check (step 2a). **If either is missing →** offer to install (don't dead-end at a link):
    - Check rights: `SELECT CURRENT_AVAILABLE_ROLES();` — is `ACCOUNTADMIN` available?
    - **Admin + consent → guided install (the skill carries the SQL).** Confirm with the user, then ask
      for their **Nimble API key** (get one at <https://online.nimbleway.com/account-settings/api-keys>).
      Run `assets/integration/setup.sql` with `<<YOUR_NIMBLE_API_KEY>>` replaced by that key
-     (`USE ROLE ACCOUNTADMIN` first), then `assets/integration/nimble_agent_run.sql`, then re-run the
-     `SHOW FUNCTIONS` check. The key goes only into the Snowflake `SECRET` — never echo or log it.
+     (`USE ROLE ACCOUNTADMIN` first), then `assets/integration/nimble_agent_run.sql`, then
+     `assets/integration/nimble_search.sql`, then re-run the `SHOW FUNCTIONS` check (confirm both
+     `NIMBLE_AGENT_RUN` and `NIMBLE_SEARCH`). The key goes only into the Snowflake `SECRET` — never echo or log it.
    - **No `ACCOUNTADMIN` → STOP.** It's an account-level install; tell the user an admin must run the
-     two files, pointing at the bundled `assets/integration/` (or the cookbook,
+     three bundled files, pointing at `assets/integration/` (or the cookbook,
      <https://github.com/Nimbleway/cookbook/tree/main/snowflake>).
    - **Never install silently** — always require explicit consent + the user-supplied key.
 2a. **Version gate (detect, recommend — never force).** The integration is a *shared, account-level*
    primitive; the skill must not silently overwrite it. Read the installed version and compare to the
-   version this skill bundles (see `assets/integration/README.md` — currently **`1.0.0`**):
+   version this skill bundles (see `assets/integration/README.md` — currently **`1.1.0`**):
    ```sql
    SELECT version FROM NIMBLE_INTEGRATION.TOOLS.INTEGRATION_VERSION;  -- errors if the account predates versioning
    ```
    - **Missing view or older than the bundled version →** tell the user the install is stale (show both
      versions) and **recommend** upgrading from the canonical cookbook
      (<https://github.com/Nimbleway/cookbook/tree/main/snowflake>). Only re-run the bundled
-     `setup.sql` + `nimble_agent_run.sql` (`ACCOUNTADMIN`) on **explicit consent** — and warn that the
-     bundle may itself be behind the cookbook, so the cookbook is the source of truth. Never auto-upgrade.
+     `setup.sql` + `nimble_agent_run.sql` + `nimble_search.sql` (`ACCOUNTADMIN`) on **explicit consent** —
+     and warn that the bundle may itself be behind the cookbook, so the cookbook is the source of truth.
+     Never auto-upgrade. (`1.1.0` adds the `NIMBLE_SEARCH` UDF, so a `1.0.0` install needs this upgrade
+     before the agent's live-web tool will work.)
    - **Equal or newer →** continue.
 2b. **Resolve the Cortex models → `__CORTEX_MODEL__` + `__CORTEX_MODEL_CHEAP__`.** The skill calls
    Cortex via `AI_COMPLETE` (the GA AISQL function; `SNOWFLAKE.CORTEX.COMPLETE` is its legacy
@@ -191,9 +195,13 @@ and `__CORTEX_MODEL_CHEAP__` resolved in Phase 0 (2b) everywhere they appear (`_
    ```sql
    CREATE STAGE IF NOT EXISTS __DB__.__SCHEMA__.APP_STAGE;
    -- PUT file://app.py @__DB__.__SCHEMA__.APP_STAGE OVERWRITE=TRUE AUTO_COMPRESS=FALSE;
-   CREATE OR REPLACE STREAMLIT __DB__.__SCHEMA__.COCKPIT
+   -- Name the object per-app (__SCHEMA___COCKPIT, e.g. IBUPROFEN_CMO_COCKPIT) and set a
+   -- brand-friendly TITLE so the Snowsight "My apps" list shows a distinct name per app,
+   -- not "COCKPIT" for every one. TITLE is dollar-quoted so a brand with an apostrophe is safe.
+   CREATE OR REPLACE STREAMLIT __DB__.__SCHEMA__.__SCHEMA___COCKPIT
      ROOT_LOCATION = '@__DB__.__SCHEMA__.APP_STAGE' MAIN_FILE = 'app.py'
-     QUERY_WAREHOUSE = '__WAREHOUSE__';
+     QUERY_WAREHOUSE = '__WAREHOUSE__'
+     TITLE = $$__BRAND__ — CMO Cockpit$$;
    ```
 4. **Restore the daily cap.** Once the cockpit is verified, set the cap the unattended daily run
    should use — default `50`; raise (e.g. `100`–`200`) for fuller coverage on a larger warehouse:
