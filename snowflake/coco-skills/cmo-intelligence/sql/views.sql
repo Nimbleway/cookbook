@@ -310,7 +310,7 @@ FROM __DB__.__SCHEMA__.GEO_SOURCES GROUP BY domain ORDER BY citations DESC;
 -- read from CFG_APP (not baked), so the prose follows whatever app this is.
 -- ---------------------------------------------------------------------------
 CREATE OR REPLACE VIEW __DB__.__SCHEMA__.V_NEXT_BEST_ACTIONS AS
-WITH b AS (SELECT brand FROM __DB__.__SCHEMA__.CFG_APP WHERE app_key = '__SCHEMA__')
+WITH b AS (SELECT COALESCE(brand, 'the category') AS brand FROM __DB__.__SCHEMA__.CFG_APP WHERE app_key = '__SCHEMA__')  -- null-safe for category-overview mode (brand NULL)
 SELECT 1 priority, 'CRITICAL' severity, 'Availability' area,
     b.brand || ' is out of stock in top search slots' headline,
     (SELECT COUNT(*) FROM __DB__.__SCHEMA__.V_ALERT_OOS WHERE position <= 10)::VARCHAR || ' SKUs out of stock at position 10 or better' metric,
