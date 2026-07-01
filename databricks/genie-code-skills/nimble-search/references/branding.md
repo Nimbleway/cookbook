@@ -35,16 +35,21 @@ uses for its "beautiful dashboards" sample, with Nimble hues:
   "selectionColor":        { "light": "#6665EC", "dark": "#FBEE23" },
   "visualizationColors": ["#6665EC", "#E0A100", "#3F9D6B", "#2495A8", "#C25E86"],
   "widgetHeaderAlignment": "LEFT",
-  "fontFamily": "DM Sans",
+  "fontFamily": "Arial",
   "widgetCornerRadius": 12,
   "fontSettings": {
     "base": {
-      "fontFamily": "DM Sans",
+      "fontFamily": "Arial",
       "fontColor": { "light": "#0B0B0B", "dark": "#F9F9F4" }
     }
   }
 }
 ```
+
+**Font:** the block uses web-safe **`Arial`** so it applies cleanly in any workspace with no setup. For
+the exact Nimble match, replace **both** `fontFamily` values (`fontFamily` and `fontSettings.base.fontFamily`)
+with `"DM Sans"` — but only after DM Sans is uploaded as a workspace **local font**, otherwise it silently
+falls back. (Roobert, the proprietary display font, is an option only if licensed.)
 
 What each piece is doing (these are the details that make it read as "clean", not just "colored"):
 - **`widgetCornerRadius: 12`** — rounded floating cards. The single biggest modern-look tell; don't omit it.
@@ -54,9 +59,9 @@ What each piece is doing (these are the details that make it read as "clean", no
   deliberately not in it** — `#FBEE23` has too little contrast on white and reads as a "yellow wall" when
   used as a full data series. Reserve yellow as the **accent** (a hero KPI value, the wordmark).
 - **`selectionColor`** — the interactive accent (selected filter/point): indigo on light, the yellow spark on dark.
-- **`fontFamily` / `fontSettings.base`** — a clean sans. `DM Sans` is Nimble's body font (free; must be
-  uploaded as a workspace **local font**). If it is not uploaded, set `"Arial"` (web-safe) instead so the
-  theme doesn't silently fall back. Roobert (proprietary display font) is an option only if licensed.
+- **`fontFamily` / `fontSettings.base`** — a clean sans. The block ships web-safe `Arial`; swap to
+  `DM Sans` (Nimble's body font) for the exact brand match once it's uploaded as a local font — see the
+  **Font** note under the block.
 - **`widgetHeaderAlignment: "LEFT"`** — left-aligned, bold widget titles.
 - **Colorblind check:** verify the palette in a simulator (e.g. Adobe Color); avoid pure black on pure white.
 
