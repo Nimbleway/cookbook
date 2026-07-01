@@ -1,7 +1,10 @@
 # Deliverables — what to tell Genie's native dashboard agent and AppsAgent
 
 Genie Code builds both deliverables **natively** from plain-English intent — you describe **what**,
-the specialized agents assemble it. **Do not hand-write Lakeview JSON or scaffold app files yourself.**
+the specialized agents assemble it. **Don't hand-author whole dashboards or scaffold app files
+yourself** — let the agents create the widgets, datasets, and layout. The one thing you *do* set
+explicitly is the branding **theme**: applying/patching the dashboard's `uiSettings.theme` block
+(`references/branding.md`) is expected — see the dashboard hand-off below.
 
 - **Dashboard** → Genie's built-in **dashboard agent**: creates the dashboard, builds datasets from a
   UC table, adds widgets, renders them, and publishes.
