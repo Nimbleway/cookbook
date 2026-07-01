@@ -30,17 +30,25 @@ add a "same-product price gap" view — otherwise keep the aggregate and note ma
 
 ## Dashboard — how to hand it off
 
-Instruct the dashboard agent with the **source table**, the **widgets** (above), and **branding**.
-Example:
+Instruct the dashboard agent with the **source table**, the **widgets** (above), and **branding** —
+applied as a **dashboard theme**, not a one-series recolor (see `references/branding.md`). Example:
 
 > Build an AI/BI dashboard named "🐶 Dog Products: Amazon vs Walmart · Powered by Nimble" on
 > `users.<me>.dog_products`. Add: KPI counters for product count and average price; a bar of average
 > price by source; a price-vs-rating scatter colored by source; a comparison bar of average price per
 > keyword across sources; and a product table (name, source, price, rating) with the URL as a
 > clickable Open link. Add a markdown text widget at the top reading "_Live web search · **Powered by
-> Nimble**_". Use Nimble yellow (#F2F23B) as the primary series accent on a light theme. Then publish.
+> Nimble**_".
+>
+> Apply the **Nimble dashboard theme** (the full `uiSettings.theme` block in `references/branding.md`):
+> light canvas `#F4F2ED` / cards `#FFFFFF` / text `#0B0B0B`, `widgetCornerRadius` 12, left-aligned
+> headers, the muted visualization palette `#6665EC, #E0A100, #3F9D6B, #2495A8, #C25E86`, and Nimble
+> yellow `#FBEE23` reserved as the accent (hero KPI / interactive) — never as a full data series. Then
+> publish.
 
-The agent reads the table schema itself — don't pre-declare datasets. Confirm it published; grab the link.
+The agent reads the table schema itself — don't pre-declare datasets. **Do not leave hardcoded
+per-widget series colors** — they override the theme palette (see the gotchas in `references/branding.md`).
+Confirm it published; grab the link.
 
 ## App — how to hand it off
 
@@ -50,8 +58,9 @@ deploy. Example:
 > Create a Databricks App named "nimble-dog-products". Scaffold a minimal Streamlit (or Dash) app that
 > queries `users.<me>.dog_products` and shows: KPI metrics (product count, avg price), an average-price-
 > by-source bar, a price-vs-rating scatter, and a searchable product table with clickable URLs. Brand
-> it "Powered by Nimble" — light theme, a header with the wordmark, Nimble yellow (#F2F23B) accent.
-> Deploy it and give me the URL.
+> it "Powered by Nimble" — light theme (canvas #F4F2ED, cards #FFFFFF, text #0B0B0B, rounded cards), a
+> header with the wordmark, the visualization palette #6665EC, #E0A100, #3F9D6B, #2495A8, #C25E86, and
+> Nimble yellow #FBEE23 as the accent. Deploy it and give me the URL.
 
 The AppsAgent owns the scaffold (`app.py`, `app.yaml`), the SQL-warehouse wiring, and the deploy — you
 supply the table, the views (per-vertical, above), and the branding (`references/branding.md`).
