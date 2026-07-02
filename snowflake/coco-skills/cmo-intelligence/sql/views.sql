@@ -5,7 +5,7 @@
  * Creates:  __DB__.__SCHEMA__.BRAND_MAP           (Cortex brand-normalization table)
  *           __DB__.__SCHEMA__.V_PRODUCT_BRAND     (focal/competitor classification)
  *           __DB__.__SCHEMA__.V_BRAND_CLASSIFIED  (the enriched shelf fact view)
- *           __DB__.__SCHEMA__.V_SHARE_OF_SHELF, V_CONTENT_HEALTH, V_ALERT_OOS,
+ *           __DB__.__SCHEMA__.V_SHARE_OF_SHELF, V_CONTENT_HEALTH, V_ALERT_OOS, V_ALERTS,
  *           V_TREND_SOS_DAILY, V_TREND_KPI, V_SENTIMENT_SUMMARY,
  *           V_AI_SHARE_OF_ANSWER, V_AI_TOP_SOURCES, V_NEXT_BEST_ACTIONS
  * Prereq:   config.sql + ingest.sql (CFG_APP/CFG_QUERIES, RAW_SERP/RAW_PDP/RAW_VOC, GEO_*)
@@ -230,6 +230,30 @@ SELECT snapshot_date, retailer, product_id, product_name, brand_tier, position, 
          ELSE 'Schedule replenishment in next standard cycle' END recommended_action,
     ROUND(best_price / NULLIF(position, 0), 4) revenue_risk_index
 FROM __DB__.__SCHEMA__.V_BRAND_CLASSIFIED WHERE is_focal AND product_out_of_stock;
+
+-- ---------------------------------------------------------------------------
+-- V_ALERTS — focal SKUs needing action across signals, one row per SKU by priority
+-- (out of stock > weak content D/F > lost page-1 rank). Backs the cockpit "Active
+-- Alerts" KPI + list so alerts stay meaningful at any catalog size — OOS alone is
+-- rare for a modest focal brand. (V_ALERT_OOS above remains the OOS-only view.)
+-- ---------------------------------------------------------------------------
+CREATE OR REPLACE VIEW __DB__.__SCHEMA__.V_ALERTS AS
+SELECT b.snapshot_date, b.retailer, b.product_id, b.product_name, b.brand_tier, b.position,
+    b.sponsored, b.best_price, b.product_image, b.product_url,
+    CASE WHEN b.product_out_of_stock              THEN 'Out of stock'
+         WHEN ch.content_grade IN ('D', 'F')      THEN 'Weak content'
+         ELSE 'Off page 1' END AS alert_type,
+    CASE WHEN b.product_out_of_stock AND b.position <= 5  THEN 'CRITICAL'
+         WHEN b.product_out_of_stock AND b.position <= 24 THEN 'HIGH'
+         WHEN b.product_out_of_stock                      THEN 'MODERATE'
+         WHEN ch.content_grade = 'F'                      THEN 'HIGH'
+         ELSE 'MODERATE' END AS severity,
+    ROUND(b.best_price / NULLIF(b.position, 0), 4) AS revenue_risk_index
+FROM __DB__.__SCHEMA__.V_BRAND_CLASSIFIED b
+LEFT JOIN __DB__.__SCHEMA__.V_CONTENT_HEALTH ch
+    ON ch.retailer = b.retailer AND ch.product_id = b.product_id AND ch.snapshot_date = b.snapshot_date
+WHERE b.is_focal
+  AND (b.product_out_of_stock OR ch.content_grade IN ('D', 'F') OR b.position > 48);
 
 -- ---------------------------------------------------------------------------
 -- V_TREND_SOS_DAILY / V_TREND_KPI — share-of-shelf over time + day-over-day deltas.

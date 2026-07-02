@@ -22,7 +22,12 @@ st.markdown("<style>#MainMenu,header,footer{visibility:hidden;height:0;}.block-c
             "[data-testid='stAppViewBlockContainer']{padding:0 !important;}"
             "[data-testid='stSidebar'],[data-testid='stSidebarCollapsedControl']{display:none !important;}</style>", unsafe_allow_html=True)
 session = get_active_session()
-SNAP = "(SELECT MAX(snapshot_date) FROM " + S + ".RAW_PDP)"
+# Latest COMPLETE snapshot: the day with the most retailers present in RAW_PDP (ties -> newest).
+# The daily cron fetches retailers sequentially (Target last), so a global MAX(snapshot_date)
+# can point at a half-finished run where Target has 0 rows -> the Retailer view looks empty.
+# Picking the most-complete day keeps the whole cockpit on one consistent, fully-populated date.
+SNAP = ("(SELECT snapshot_date FROM " + S + ".RAW_PDP GROUP BY snapshot_date "
+        "QUALIFY ROW_NUMBER() OVER (ORDER BY COUNT(DISTINCT retailer) DESC, snapshot_date DESC) = 1)")
 
 # Shell-first: paint a branded loading note immediately so the first (cold) load
 # isn't a blank screen with a cryptic "Running rows(...)". Cleared right before
@@ -108,19 +113,24 @@ _kpi_share = rows("SELECT retailer,"
 _kpi_unit = rows("SELECT retailer, ROUND(AVG(unit_price_amount),2) FROM " + A + ".V_BRAND_CLASSIFIED WHERE " + ff() + " AND unit_price_amount IS NOT NULL AND snapshot_date=" + SNAP + " GROUP BY ROLLUP(retailer)")
 _kpi_content = rows("SELECT retailer, ROUND(AVG(content_score),0) FROM " + A + ".V_CONTENT_HEALTH WHERE " + ff() + " AND snapshot_date=" + SNAP + " GROUP BY ROLLUP(retailer)")
 if not OVERVIEW:
-    # brand mode: V_ALERT_OOS is the single source of truth (incl. severity)
-    _kpi_oos = rows("SELECT retailer, COUNT(*) FROM " + L + ".V_ALERT_OOS WHERE snapshot_date=" + SNAP + " GROUP BY ROLLUP(retailer)")
-    _oos_rows = rows("SELECT product_name, product_image, product_url, retailer, position, best_price, severity"
-                     " FROM " + L + ".V_ALERT_OOS WHERE snapshot_date=" + SNAP + " ORDER BY position LIMIT 120")
+    # brand mode: V_ALERTS is the single source — OOS + weak content (D/F) + lost page-1 rank, with type + severity
+    _kpi_alerts = rows("SELECT retailer, COUNT(*) FROM " + L + ".V_ALERTS WHERE snapshot_date=" + SNAP + " GROUP BY ROLLUP(retailer)")
+    _alert_rows = rows("SELECT product_name, product_image, product_url, retailer, position, best_price, severity, alert_type"
+                       " FROM " + L + ".V_ALERTS WHERE snapshot_date=" + SNAP +
+                       " ORDER BY CASE severity WHEN 'CRITICAL' THEN 0 WHEN 'HIGH' THEN 1 WHEN 'MODERATE' THEN 2 ELSE 3 END, position LIMIT 120")
 else:
-    # overview mode: same severity buckets over the leading tier
+    # overview mode (no focal brand): V_ALERTS is is_focal-gated, so alert on OOS over the leading tier
     _ow = " AND " + ff() + " AND product_out_of_stock AND snapshot_date=" + SNAP
-    _kpi_oos = rows("SELECT retailer, COUNT(*) FROM " + A + ".V_BRAND_CLASSIFIED WHERE 1=1" + _ow + " GROUP BY ROLLUP(retailer)")
-    _oos_rows = rows("SELECT product_name, product_image, product_url, retailer, position, best_price,"
-                     " CASE WHEN position<=5 THEN 'CRITICAL' WHEN position<=24 THEN 'HIGH' WHEN position<=48 THEN 'MODERATE' ELSE 'LOW' END"
-                     " FROM " + A + ".V_BRAND_CLASSIFIED WHERE 1=1" + _ow + " ORDER BY position LIMIT 120")
+    _kpi_alerts = rows("SELECT retailer, COUNT(*) FROM " + A + ".V_BRAND_CLASSIFIED WHERE 1=1" + _ow + " GROUP BY ROLLUP(retailer)")
+    _alert_rows = rows("SELECT product_name, product_image, product_url, retailer, position, best_price,"
+                       " CASE WHEN position<=5 THEN 'CRITICAL' WHEN position<=24 THEN 'HIGH' WHEN position<=48 THEN 'MODERATE' ELSE 'LOW' END,"
+                       " 'Out of stock'"
+                       " FROM " + A + ".V_BRAND_CLASSIFIED WHERE 1=1" + _ow + " ORDER BY position LIMIT 120")
 _sos = rows("SELECT retailer, brand_tier, SUM(products_in_serp) FROM " + A + ".V_SHARE_OF_SHELF WHERE snapshot_date=" + SNAP + " GROUP BY 1,2")
-_price = rows("SELECT retailer, ROUND(AVG(IFF(" + ff() + ",unit_price_amount,NULL)),2), ROUND(AVG(IFF(NOT (" + ff() + "),unit_price_amount,NULL)),2) FROM " + A + ".V_BRAND_CLASSIFIED WHERE unit_price_amount IS NOT NULL AND snapshot_date=" + SNAP + " GROUP BY retailer")
+# Average shelf price by brand tier, per retailer. Uses best_price (the listed price),
+# always present, so every retailer renders (unit_price_amount is frequently NULL off
+# Amazon, which is why the old unit-price card showed nothing for Walmart/Target).
+_pbb = rows("SELECT retailer, brand_tier, ROUND(AVG(best_price),2) FROM " + A + ".V_BRAND_CLASSIFIED WHERE brand_tier IN " + BRANDS_IN + " AND best_price IS NOT NULL AND snapshot_date=" + SNAP + " GROUP BY 1,2")
 _grades = rows("SELECT retailer, content_grade, COUNT(*) FROM " + A + ".V_CONTENT_HEALTH WHERE " + ff() + " AND snapshot_date=" + SNAP + " GROUP BY 1,2")
 _weak = rows("SELECT product_name, product_image, product_url, retailer, content_grade, content_score, number_of_reviews FROM " + A + ".V_CONTENT_HEALTH WHERE " + ff() + " AND snapshot_date=" + SNAP + " ORDER BY content_score ASC LIMIT 120")
 
@@ -129,7 +139,7 @@ def _byret(rws):  # index ROLLUP results; the retailer-NULL row is the "All" agg
     return {(r[0] if r[0] is not None else "All"): r for r in rws}
 
 
-_si, _ui, _ci2, _oi = _byret(_kpi_share), _byret(_kpi_unit), _byret(_kpi_content), _byret(_kpi_oos)
+_si, _ui, _ci2, _oi = _byret(_kpi_share), _byret(_kpi_unit), _byret(_kpi_content), _byret(_kpi_alerts)
 
 
 def _sos_list(ret):  # share-of-shelf % by brand tier within the slice
@@ -154,8 +164,8 @@ def _prods(rws, ret, kind):
     for r in rws:
         if ret is not None and r[3] != ret:
             continue
-        if kind == "oos":
-            out.append({"name": r[0], "img": r[1], "url": r[2], "retailer": r[3], "position": int(r[4]) if r[4] is not None else None, "price": num(r[5]), "sev": r[6]})
+        if kind == "alert":
+            out.append({"name": r[0], "img": r[1], "url": r[2], "retailer": r[3], "position": int(r[4]) if r[4] is not None else None, "price": num(r[5]), "sev": r[6], "atype": r[7] if len(r) > 7 else None})
         else:
             out.append({"name": r[0], "img": r[1], "url": r[2], "retailer": r[3], "grade": r[4], "score": int(r[5]) if r[5] is not None else 0, "reviews": int(r[6]) if r[6] is not None else 0})
         if len(out) >= 9:
@@ -169,12 +179,11 @@ def slice_for(ret):
     ks = _si.get(key, [None, None, None, None]); us = _ui.get(key, [None, None])
     cs = _ci2.get(key, [None, None]); oo = _oi.get(key, [None, 0])
     b = {"kpi": {"share": num(ks[1]), "skus": int(ks[2] or 0), "sponsored": num(ks[3]), "unit_price": num(us[1]),
-                 "oos": int(oo[1] or 0), "ai": num(ai_focal) if ai_focal is not None else 0, "content": num(cs[1]),
+                 "alerts": int(oo[1] or 0), "ai": num(ai_focal) if ai_focal is not None else 0, "content": num(cs[1]),
                  "d_share": (d_share if ret is None else None), "d_sponsored": (d_sponsored if ret is None else None), "d_oos": (d_oos if ret is None else None)}}
     b["share"] = _sos_list(ret)
-    b["pricing"] = [[r[0], num(r[1]), num(r[2])] for r in _price if (ret is None or r[0] == ret)]
     b["content_grades"] = _grades_map(ret)
-    b["oos_products"] = _prods(_oos_rows, ret, "oos")
+    b["alert_products"] = _prods(_alert_rows, ret, "alert")
     b["weak_products"] = _prods(_weak, ret, "weak")
     return b
 
@@ -186,16 +195,32 @@ data["slices"] = {"All": slice_for(None)}
 for _r in _rets:
     data["slices"][_r] = slice_for(_r)
 _b0 = data["slices"]["All"]
-data["kpi"] = _b0["kpi"]; data["share"] = _b0["share"]; data["pricing"] = _b0["pricing"]
-data["content_grades"] = _b0["content_grades"]; data["oos_products"] = _b0["oos_products"]; data["weak_products"] = _b0["weak_products"]
+data["kpi"] = _b0["kpi"]; data["share"] = _b0["share"]
+data["content_grades"] = _b0["content_grades"]; data["alert_products"] = _b0["alert_products"]; data["weak_products"] = _b0["weak_products"]
 
 data["by_retailer"] = {}
 for ret, brand, pct in rows("SELECT retailer, brand_tier, share_of_shelf_pct FROM " + A + ".V_SHARE_OF_SHELF WHERE snapshot_date=" + SNAP + " AND brand_tier IN " + BRANDS_IN + " ORDER BY retailer, share_of_shelf_pct DESC"):
     data["by_retailer"].setdefault(ret, []).append([brand, num(pct)])
+data["price_matrix"] = {}
+for _pr, _pbt, _pp in _pbb:
+    data["price_matrix"].setdefault(_pr, {})[_pbt] = num(_pp)
 data["ai_share"] = [[r[0], num(r[1])] for r in rows("SELECT brand, ROUND(AVG(share_of_answer_pct),1) FROM " + A + ".V_AI_SHARE_OF_ANSWER GROUP BY 1 ORDER BY 2 DESC")]
 data["voc_pos"] = [[r[0], num(r[1])] for r in rows("SELECT theme, pct_within_sentiment FROM " + A + ".V_SENTIMENT_SUMMARY WHERE sentiment='positive' ORDER BY mentions DESC LIMIT 6")]
 data["voc_fix"] = [[r[0], num(r[1])] for r in rows("SELECT theme, pct_within_sentiment FROM " + A + ".V_SENTIMENT_SUMMARY WHERE sentiment='negative' ORDER BY mentions DESC LIMIT 6")]
 data["top_sources"] = [[r[0], num(r[1])] for r in rows("SELECT domain, share_pct FROM " + A + ".V_AI_TOP_SOURCES ORDER BY citations DESC LIMIT 8")]
+# Answer-engine surfaces (Share of AI Answer KPI, "AI visibility & sources", top sources) render
+# only when the GEO_* answer-engine data exists. The skill doesn't populate GEO_* yet (deferred
+# Phase 1b), so these hide cleanly on a fresh app and light up automatically once that backfill runs.
+data["has_ai"] = bool([r for r in data["ai_share"] if (r[1] or 0) > 0]) or bool(data["top_sources"])
+# Pending: GEO generation is scheduled (a GEO refresh task exists) but hasn't produced rows yet —
+# e.g. right after first setup while the async seed batch runs. Drives the "being generated"
+# placeholder; with no scheduled task we simply hide (not-enabled). Safe-false on any error.
+data["ai_pending"] = False
+if not data["has_ai"]:
+    try:
+        data["ai_pending"] = len(rows("SHOW TASKS LIKE '%GEO%' IN SCHEMA " + S)) > 0
+    except Exception:
+        data["ai_pending"] = False
 data["nba"] = [{"sev": r[0], "area": r[1], "head": r[2], "metric": r[3], "act": r[4]} for r in rows("SELECT severity, area, headline, metric, recommended_action FROM " + A + ".V_NEXT_BEST_ACTIONS ORDER BY priority")]
 
 # ── Per-brand review analysis (what people say about each brand) ──
@@ -248,25 +273,6 @@ data["trend_sponsored"] = [num(r[1]) for r in sp]
 data["trend_oos"] = [int(r[2]) if r[2] is not None else 0 for r in sp]
 
 
-# Exec briefing + pre-answered assistant prompts (Cortex, cached)
-def cortex(prompt):
-    try:
-        return session.sql("SELECT AI_COMPLETE('__CORTEX_MODEL__', ?)", params=[prompt]).collect()[0][0].strip()
-    except Exception:
-        return "(Cortex unavailable)"
-
-
-CTX = (BRAND + ": share of shelf " + str(data['kpi']['share']) + "% (chg " + str(d_share) + " vs prev day), share of AI answer " + str(data['kpi']['ai']) + "%, "
-       "sponsored " + str(data['kpi']['sponsored']) + "%, " + str(data['kpi']['oos']) + " out-of-stock, content " + str(data['kpi']['content']) + "/100. "
-       "Share by brand: " + "; ".join(str(b) + " " + str(p) + "%" for b, p in data["share"][:8]) + ". "
-       "Top complaints: " + ", ".join(str(t) for t, _ in data["voc_fix"][:3]) + ". "
-       "Next best actions: " + " | ".join(str(a['head']) + ": " + str(a['metric']) for a in data["nba"]))
-
-
-# NOTE: the cold-load exec briefing (4 sequential Cortex COMPLETE calls) was REMOVED for
-# performance — its output (briefing/qa) was never rendered by the HTML, so it only blocked
-# first paint by 30-80s. CTX above is still built (cheap string) for the live-chat fallback.
-
 # ── Snapshot label + raw shelf rows + totals (for D&T / Raw Data tabs) ──
 data["snap_date"] = one("SELECT TO_CHAR(MAX(snapshot_date),'Mon DD, YYYY') FROM " + S + ".RAW_PDP")[0] or ""
 data["total_skus"] = int(one("SELECT COUNT(*) FROM " + A + ".V_BRAND_CLASSIFIED WHERE snapshot_date=" + SNAP)[0] or 0)
@@ -276,10 +282,10 @@ data["raw_rows"] = [{"name": r[0], "brand": r[1], "retailer": r[2], "pos": int(r
 
 # ── AI Insights (4 cards) + week-in-three scorecard, derived from live data ──
 _ins = []
-if data["kpi"]["oos"]:
+if data["kpi"]["alerts"]:
     _ins.append({"tag": "alert", "tab": "Retailer",
-                 "headline": str(data["kpi"]["oos"]) + " " + BRAND + " SKUs out of stock on the shelf",
-                 "detail": "Out-of-stock listings in top search slots send a ready-to-buy shopper straight to a competitor. Fix availability first."})
+                 "headline": str(data["kpi"]["alerts"]) + " active " + BRAND + " alerts need action",
+                 "detail": "Focal SKUs that are out of stock, showing weak listing content, or off page 1 — the fastest shelf wins are here. Open the Retailer tab."})
 _kk = [x for x in (data["trend_focal"] or []) if x is not None]
 if len(_kk) >= 2:
     _chg = round(_kk[-1] - _kk[0], 1)
@@ -292,9 +298,10 @@ if data["voc_fix"]:
                  "headline": '"' + str(_t) + '" is the #1 complaint — ' + str(_p) + "% of negative mentions",
                  "detail": "A fixable issue quietly eroding ratings and repeat purchase — worth addressing this quarter."})
 _src = data["top_sources"][0][0] if data["top_sources"] else "retailer & review sites"
-_ins.append({"tag": "opportunity", "tab": "Brand",
-             "headline": BRAND + " in only " + str(data["kpi"]["ai"]) + "% of AI answers — upside in answer engines",
-             "detail": "ChatGPT and Perplexity lean on " + str(_src) + " and social to recommend " + CATEGORY + " — earn presence there to shape what the AI says."})
+if data["has_ai"]:
+    _ins.append({"tag": "opportunity", "tab": "Brand",
+                 "headline": BRAND + " in only " + str(data["kpi"]["ai"]) + "% of AI answers — upside in answer engines",
+                 "detail": "ChatGPT and Perplexity lean on " + str(_src) + " and social to recommend " + CATEGORY + " — earn presence there to shape what the AI says."})
 data["insights"] = _ins[:4]
 
 # Week in three cards: win / risk / invest
@@ -312,9 +319,14 @@ if data["nba"]:
     _n = data["nba"][0]
     _sc.append({"kind": "risk", "label": "Act now", "metric": _n["metric"],
                 "headline": _n["head"], "detail": _n["act"]})
-_sc.append({"kind": "invest", "label": "Invest", "metric": str(data["kpi"]["ai"]) + "%",
-            "headline": "Win the AI shelf and weak listings",
-            "detail": "Lift content on the lowest-scoring SKUs and earn citations on " + str(_src) + " to grow share of AI answer."})
+if data["has_ai"]:
+    _sc.append({"kind": "invest", "label": "Invest", "metric": str(data["kpi"]["ai"]) + "%",
+                "headline": "Win the AI shelf and weak listings",
+                "detail": "Lift content on the lowest-scoring SKUs and earn citations on " + str(_src) + " to grow share of AI answer."})
+else:
+    _sc.append({"kind": "invest", "label": "Invest", "metric": str(data["kpi"]["content"]) + "/100",
+                "headline": "Lift weak listings to win the click",
+                "detail": "Improve the lowest-scoring SKU content — titles, images and reviews — to convert the traffic you already have."})
 data["scorecard"] = _sc[:3]
 
 # Expose dynamic brand metadata for the front-end
@@ -519,13 +531,16 @@ function sec(t,s,body){return '<div class="sec"><div class="sh"><div class="stt"
 function gradeBadge(s){var g,bg,fg;if(s>=85){g="A";bg="#D1FAE5";fg="#065F46";}else if(s>=70){g="B";bg="#D1FAE5";fg="#047857";}else if(s>=55){g="C";bg="#FEF9C3";fg="#854D0E";}else if(s>=40){g="D";bg="#FFEDD5";fg="#9A3412";}else{g="F";bg="#FFE4E6";fg="#9F1239";}return '<span class="grade" style="background:'+bg+';color:'+fg+'">'+g+'</span>';}
 function kdelta(v,unit,inv){if(v==null)return '<div class="kd flat">&nbsp;</div>';if(Math.abs(v)<0.05)return '<div class="kd flat">no change vs prev</div>';var up=inv?v<0:v>0;return '<div class="kd '+(up?"up":"down")+'">'+(v>0?"▲ +":"▼ ")+v+(unit||"")+' vs prev day</div>';}
 function renderKPIs(){
+  var aiCard=DATA.has_ai
+    ?{l:"Share of AI Answer",v:K.ai+"%",s:"Across category prompts",d:'<div class="kd flat">'+ENGLBL+'</div>'}
+    :(DATA.ai_pending?{l:"Share of AI Answer",v:"⏳",s:"being generated…",d:'<div class="kd flat">check back shortly</div>'}:null);
   var cards=[
     {l:"Share of Shelf",v:K.share+"%",s:"Listing share · primary brand tier",d:kdelta(K.d_share,"pp",false)},
-    {l:"Share of AI Answer",v:K.ai+"%",s:"Across category prompts",d:'<div class="kd flat">'+ENGLBL+'</div>'},
+    aiCard,
     {l:SUBJ+" SKUs visible",v:fmtN(K.skus),s:"Across "+RETLBL,d:'<div class="kd flat">&nbsp;</div>'},
-    {l:"Active Alerts",v:fmtN(K.oos),s:"Out-of-stock listings on shelf",d:kdelta(K.d_oos,"",true),al:true},
+    {l:"Active Alerts",v:fmtN(K.alerts),s:"Focal SKUs needing action",d:'<div class="kd flat">out of stock · weak content · lost rank</div>',al:true},
     {l:"Content Score",v:K.content,s:"0–100 · listing completeness",badge:gradeBadge(K.content),d:'<div class="kd flat">open Content tab</div>'}
-  ];
+  ].filter(Boolean);
   document.getElementById("kpis").innerHTML=cards.map(function(c){return '<div class="kc'+(c.al?" al":"")+'"><div class="kt"><span class="kl">'+c.l+'</span>'+(c.badge||"")+'</div><div class="kv">'+c.v+'</div><div class="ks">'+c.s+'</div>'+c.d+'</div>';}).join("");
 }
 /* ---------- filter bar (As of + live Retailer) ---------- */
@@ -541,7 +556,7 @@ function renderFilters(){
 /* ---------- shared chart helpers ---------- */
 function hbar(rows,u){u=(u===undefined?"%":u);var max=Math.max.apply(null,rows.map(function(r){return r[1];}))||1;return '<div class="bars">'+rows.map(function(r){var kk=isKK(r[0]);return '<div class="br'+(kk?" kk":"")+'"><div class="l">'+r[0]+'</div><div class="t"><div class="f'+(kk?" kk":"")+'" style="width:'+(r[1]/max*100).toFixed(1)+'%"></div></div><div class="v">'+r[1]+u+'</div></div>';}).join("")+'</div>';}
 function donut(rows){var tot=rows.reduce(function(s,r){return s+r[1];},0)||1,R=78,C=2*Math.PI*R,off=0,s="";rows.forEach(function(r){var len=r[1]/tot*C,col=BC[r[0]]||"#ccc";s+='<circle cx="94" cy="94" r="'+R+'" fill="none" stroke="'+col+'" stroke-width="22" stroke-dasharray="'+len+' '+(C-len)+'" stroke-dashoffset="'+(-off)+'" transform="rotate(-90 94 94)"/>';off+=len;});return '<svg viewBox="0 0 188 188" width="188" height="188">'+s+'</svg>';}
-function pcards(items){var gc={CRITICAL:"crit",HIGH:"high",F:"crit",D:"high"};return '<div class="pgrid">'+items.map(function(p){var img=p.img?'<div class="iw"><img src="'+p.img+'" onerror="this.parentNode.innerHTML=\'<div class=ph>KK</div>\'"></div>':'<div class="ph">KK</div>';var ch=p.sev?'<span class="pchip '+(gc[p.sev]||"")+'">'+p.sev+'</span><span class="pchip ret">'+p.retailer+'</span><span class="pchip">pos #'+p.position+'</span><span class="pchip">$'+p.price+'</span>':'<span class="pchip '+(gc[p.grade]||"")+'">grade '+p.grade+'</span><span class="pchip ret">'+p.retailer+'</span><span class="pchip">score '+p.score+'</span><span class="pchip">'+p.reviews+' reviews</span>';var open=p.url?'<div class="popen">View on '+p.retailer+' &#8599;</div>':'';var tag=p.url?'a':'div';var href=p.url?' href="'+p.url+'" target="_blank" rel="noopener"':'';return '<'+tag+' class="pc'+(p.url?" lk":"")+'"'+href+'>'+img+'<div class="pb"><div class="pn">'+p.name+'</div><div class="pm">'+ch+'</div>'+open+'</div></'+tag+'>';}).join("")+'</div>';}
+function pcards(items){var gc={CRITICAL:"crit",HIGH:"high",F:"crit",D:"high"};return '<div class="pgrid">'+items.map(function(p){var img=p.img?'<div class="iw"><img src="'+p.img+'" onerror="this.parentNode.innerHTML=\'<div class=ph>KK</div>\'"></div>':'<div class="ph">KK</div>';var ch=p.sev?'<span class="pchip '+(gc[p.sev]||"")+'">'+p.sev+'</span>'+(p.atype?'<span class="pchip">'+p.atype+'</span>':'')+'<span class="pchip ret">'+p.retailer+'</span><span class="pchip">pos #'+p.position+'</span><span class="pchip">$'+p.price+'</span>':'<span class="pchip '+(gc[p.grade]||"")+'">grade '+p.grade+'</span><span class="pchip ret">'+p.retailer+'</span><span class="pchip">score '+p.score+'</span><span class="pchip">'+p.reviews+' reviews</span>';var open=p.url?'<div class="popen">View on '+p.retailer+' &#8599;</div>':'';var tag=p.url?'a':'div';var href=p.url?' href="'+p.url+'" target="_blank" rel="noopener"':'';return '<'+tag+' class="pc'+(p.url?" lk":"")+'"'+href+'>'+img+'<div class="pb"><div class="pn">'+p.name+'</div><div class="pm">'+ch+'</div>'+open+'</div></'+tag+'>';}).join("")+'</div>';}
 function sparkline(){
   var d=DATA.trend_dates,kk=(DATA.trend_focal||[]),comp=(DATA.trend_comp||[]);
   var W=1080,H=190,pl=10,pr=10,pt=16,pb=10,n=d.length;
@@ -580,9 +595,9 @@ var VIEWS={
    return '<div class="stack">'+tom+traj+trio+mx+'</div>';
  },
  Retailer:function(){
-   var max=Math.max.apply(null,S().pricing.map(function(p){return Math.max(p[1]||0,p[2]||0);}))||1;
-   var price='<div class="card p"><h3>Unit price — __BRAND__ vs the competitive set</h3><p class="why">A persistent premium invites switching and private-label trade-down. Price per unit normalizes across pack sizes.</p><div class="grp">'+S().pricing.map(function(p){return '<div class="c"><div class="pr"><div class="b kk" style="height:'+((p[1]||0)/max*100).toFixed(0)+'%"><span>'+(p[1]!=null?"$"+p[1]:"-")+'</span></div><div class="b cp" style="height:'+((p[2]||0)/max*100).toFixed(0)+'%"><span>'+(p[2]!=null?"$"+p[2]:"-")+'</span></div></div><div class="rl">'+p[0]+'</div></div>';}).join("")+'</div><div class="legend"><span><i style="background:#234291"></i>__BRAND__</span><span><i style="background:#CBD5E1"></i>Competitor avg</span></div></div>';
-   var oos='<div class="card p"><h3>'+K.oos+' __BRAND__ SKUs out of stock</h3><p class="why">An out-of-stock SKU in a top search slot is pure lost sell-through — the shopper is there, ready to buy, and converts to a competitor. Click a tile to open the live retailer page.</p>'+pcards(S().oos_products)+'</div>';
+   var pm=DATA.price_matrix||{},pbr=DATA.matrix_brands||[];
+   var price='<div class="card p"><h3>Average price by brand — per retailer</h3><p class="why">Average shelf price for each brand at every tracked retailer. A persistent premium invites switching and private-label trade-down.</p><div style="overflow-x:auto"><table class="mtx"><thead><tr><th class="bl">Brand</th>'+RETS.map(function(r){return '<th>'+cap(r)+'</th>';}).join("")+'</tr></thead><tbody>'+pbr.map(function(b){var kk=isKK(b);return '<tr><td class="bn'+(kk?" kk":"")+'">'+b+'</td>'+RETS.map(function(r){var v=(pm[r]||{})[b];return '<td><span class="mcell">'+(v==null?"—":"$"+v)+'</span></td>';}).join("")+'</tr>';}).join("")+'</tbody></table></div></div>';
+   var oos='<div class="card p"><h3>'+K.alerts+' active __BRAND__ alerts</h3><p class="why">Focal SKUs that need action — out of stock, weak listing content (grade D/F), or dropped off page 1. Click a tile to open the live retailer page.</p>'+pcards(S().alert_products)+'</div>';
    return sec("Retailer execution","Pricing competitiveness and on-shelf availability across "+RETLBL+".","<div class='stack'>"+price+oos+"</div>");
  },
  Brand:function(){
@@ -596,7 +611,9 @@ var VIEWS={
    var top=sec("Brand & category","__BRAND__\'s position in the __CATEGORY__ set across the selected retailer scope.","<div class='grid2'>"+dc+bars+"</div>");
    var aigrid=sec("AI visibility & sources","Answer-engine presence across the category and the domains shaping it.","<div class='stack'>"+aiC+src+"</div>");
    var revsec=sec("Voice of the customer","Per-brand review analysis — understand what people are actually saying about each brand.",rev);
-   return '<div class="stack">'+top+aigrid+revsec+'</div>';
+   var aipend='<div class="card p"><h3>Share of AI answer &nbsp;<span style="font-weight:600;color:#B45309">⏳ being generated…</span></h3><p class="why">Analyzing how AI engines (ChatGPT · Perplexity · Gemini) recommend '+CATEGORY+'. Results appear once the first analysis completes — check back shortly.</p></div>';
+   var aisec=DATA.has_ai?aigrid:(DATA.ai_pending?sec("AI visibility & sources","Answer-engine presence across the category — being generated.",aipend):"");
+   return '<div class="stack">'+top+aisec+revsec+'</div>';
  },
  Content:function(){
    var grades=["A","B","C","D","F"],gc={A:"#22c55e",B:"#86efac",C:"#E2E8F0",D:"#fbbf24",F:"#ef4444"};
@@ -662,125 +679,7 @@ var _sh=document.getElementById("subhead");if(_sh)_sh.textContent=SUBJ+" · "+RE
 renderKPIs();renderFilters();
 paint("Leadership");
 </script>"""
-# Internal-scroll iframe so the header pins and the floating Nimble Web Search
-# button stays in view (a tall non-scrolling iframe pushes fixed elements off-screen).
+# Internal-scroll iframe so the pinned header stays put (a tall non-scrolling
+# iframe would otherwise push fixed elements off-screen).
 _loading.empty()  # data assembled — drop the loading note and paint the cockpit
 components.html(HTML.replace("__DATA__", json.dumps(data)).replace("__AGENT_NAME__", AGENT_NAME), height=820, scrolling=True)
-
-# ===== Nimble Web Search — LIVE Cortex assistant =====
-# Runs as a native Streamlit element so it has a live Snowflake session for Cortex
-# (the embedded SPA iframe above is sandboxed). Primary engine: Cortex Analyst
-# text-to-SQL over the __BRAND__ semantic view, with Cortex Complete grounded in
-# today's metrics as an alternative.
-SV_FQN = DB + "." + SCHEMA + ".SHELF_SV"
-
-
-def _ground(q):
-    return cortex("You are __BRAND__'s digital-shelf analyst for the CMO. Answer in 3-5 sentences, concrete and "
-                  "specific with numbers, using ONLY the live context below. If the answer isn't in the context, "
-                  "say what you'd pull next. No jargon, no emoji.\n\nLIVE CONTEXT: " + CTX + "\n\nQUESTION: " + q)
-
-
-_FORBIDDEN = re.compile(r"\b(INSERT|UPDATE|DELETE|MERGE|CALL|CREATE|ALTER|DROP|GRANT|REVOKE|TRUNCATE|COPY)\b", re.I)
-
-
-def _safe_select(sql):
-    """Only run Analyst-generated SQL if it's a single read-only SELECT scoped to the
-    semantic view — never execute generated SQL blindly. Returns the SQL or None."""
-    s = (sql or "").strip().rstrip(";").strip()
-    if not s or ";" in s:                                    # empty or multi-statement
-        return None
-    if not re.match(r"^(SELECT|WITH)\b", s, re.I):           # read-only entry points only
-        return None
-    if _FORBIDDEN.search(s):                                 # no DDL/DML
-        return None
-    if "SHELF_SV" not in s.upper():                          # scoped to the app's semantic view
-        return None
-    return s
-
-
-def ask_live(q):
-    """Cortex Analyst (text-to-SQL over the semantic view); falls back to Cortex Complete."""
-    try:
-        import _snowflake
-        body = {"messages": [{"role": "user", "content": [{"type": "text", "text": q}]}], "semantic_view": SV_FQN}
-        resp = _snowflake.send_snow_api_request("POST", "/api/v2/cortex/analyst/message", {}, {}, body, None, 60000)
-        content = resp.get("content") if isinstance(resp, dict) else None
-        if isinstance(content, str):
-            content = json.loads(content)
-        msg = content.get("message", content) if isinstance(content, dict) else {}
-        parts = msg.get("content", []) if isinstance(msg, dict) else []
-        text, sql = "", None
-        for p in parts:
-            if not isinstance(p, dict):
-                continue
-            if p.get("type") == "text":
-                text += p.get("text", "")
-            elif p.get("type") == "sql":
-                sql = p.get("statement")
-        safe = _safe_select(sql)
-        if safe:
-            df = session.sql(safe).to_pandas()
-            if len(df) > 50:
-                df = df.head(50)
-            return {"text": (text or "Here's what the live shelf shows:"), "df": df}
-        if sql:                          # Analyst returned SQL we won't run → grounded answer instead
-            return {"text": _ground(q)}
-        if text:
-            return {"text": text}
-    except Exception:
-        pass
-    return {"text": _ground(q)}
-
-
-def _chat_panel():
-    if "live_chat" not in st.session_state:
-        st.session_state.live_chat = []
-    st.caption("Live answers from Snowflake Cortex over your __BRAND__ semantic model — ask about share, pricing, AI presence or reviews.")
-    box = st.container()
-    q = None
-    try:
-        q = st.chat_input("Ask anything about __BRAND__'s shelf…")
-    except Exception:
-        with st.form("nwsform", clear_on_submit=True):
-            _qt = st.text_input("Ask the shelf")
-            if st.form_submit_button("Ask") and _qt:
-                q = _qt
-    if q:
-        st.session_state.live_chat.append(("user", q, None))
-        with st.spinner("Cortex is analysing the live shelf…"):
-            _r = ask_live(q)
-        st.session_state.live_chat.append(("assistant", _r["text"], _r.get("df")))
-    with box:
-        if not st.session_state.live_chat:
-            st.markdown("Try: *Where am I losing share of shelf and why?* · *Compare __BRAND__ vs a competitor on price.* · *Which sources do AI engines cite most?*")
-        for _role, _txt, _df in st.session_state.live_chat:
-            try:
-                with st.chat_message(_role):
-                    st.markdown(_txt)
-                    if _df is not None and len(_df):
-                        st.dataframe(_df)
-            except Exception:
-                st.markdown(("**You:** " if _role == "user" else "**Analyst:** ") + _txt)
-
-
-# Floating launcher → opens a modal with the live chat (native button, fixed bottom-right).
-if hasattr(st, "dialog"):
-    st.markdown('<div id="nws-anchor"></div>', unsafe_allow_html=True)
-    st.markdown("""<style>
-    div:has(#nws-anchor)+div button{position:fixed;bottom:22px;right:22px;z-index:1000;border:none;border-radius:999px;
-      background:linear-gradient(135deg,#FFE066,#FFC542 55%,#FF9E1C);color:#7C3A03;font-weight:700;font-size:14px;
-      padding:11px 22px;box-shadow:0 8px 22px rgba(217,119,6,.30),0 0 0 1px rgba(180,83,9,.16);}
-    div:has(#nws-anchor)+div button:hover{box-shadow:0 12px 30px rgba(217,119,6,.36);transform:translateY(-1px);}
-    </style>""", unsafe_allow_html=True)
-
-    @st.dialog("Nimble Web Search")
-    def _nws_dialog():
-        _chat_panel()
-
-    if st.button("✦  Nimble Web Search", key="nws_open"):
-        _nws_dialog()
-else:
-    st.divider()
-    st.markdown("#### ✦  Nimble Web Search")
-    _chat_panel()
