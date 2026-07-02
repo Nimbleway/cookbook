@@ -95,7 +95,7 @@ BCMAP.setdefault("Private label", "#CBD5E1")
 
 # Global signals reused across retailer slices (defensive: views may be empty on a fresh perimeter)
 ai_focal = one("SELECT ROUND(AVG(share_of_answer_pct),0) FROM " + A + ".V_AI_SHARE_OF_ANSWER WHERE brand='" + q(FOCAL) + "'")[0]
-_dl = one("SELECT d_share, d_sponsored, d_oos FROM " + A + ".V_TREND_KPI ORDER BY snapshot_date DESC LIMIT 1", 3)
+_dl = one("SELECT d_share, d_sponsored, d_oos FROM " + A + ".V_TREND_KPI WHERE snapshot_date = " + SNAP + " LIMIT 1", 3)
 d_share, d_sponsored, d_oos = num(_dl[0]), num(_dl[1]), num(_dl[2])
 data = {}
 
@@ -274,7 +274,7 @@ data["trend_oos"] = [int(r[2]) if r[2] is not None else 0 for r in sp]
 
 
 # ── Snapshot label + raw shelf rows + totals (for D&T / Raw Data tabs) ──
-data["snap_date"] = one("SELECT TO_CHAR(MAX(snapshot_date),'Mon DD, YYYY') FROM " + S + ".RAW_PDP")[0] or ""
+data["snap_date"] = one("SELECT TO_CHAR(" + SNAP + ",'Mon DD, YYYY')")[0] or ""   # same day as SNAP (latest complete), not raw MAX
 data["total_skus"] = int(one("SELECT COUNT(*) FROM " + A + ".V_BRAND_CLASSIFIED WHERE snapshot_date=" + SNAP)[0] or 0)
 data["raw_rows"] = [{"name": r[0], "brand": r[1], "retailer": r[2], "pos": int(r[3]) if r[3] is not None else None,
                      "price": num(r[4]), "oos": bool(r[5]), "kk": bool(r[6])}

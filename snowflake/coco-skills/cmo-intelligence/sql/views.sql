@@ -303,7 +303,9 @@ FROM k;
 -- ---------------------------------------------------------------------------
 CREATE OR REPLACE VIEW __DB__.__SCHEMA__.V_AI_SHARE_OF_ANSWER AS
 WITH base AS (
-    SELECT engine, LOWER(answer) a FROM __DB__.__SCHEMA__.GEO_ANSWERS WHERE answer IS NOT NULL
+    SELECT engine, LOWER(answer) a FROM __DB__.__SCHEMA__.GEO_ANSWERS
+    WHERE answer IS NOT NULL
+      AND snapshot_date = (SELECT MAX(snapshot_date) FROM __DB__.__SCHEMA__.GEO_ANSWERS)   -- latest GEO run only, not history
 ),
 brands AS (   -- focal brand + the top ~6 competitor tiers by shelf presence (bounded)
     SELECT brand AS b FROM __DB__.__SCHEMA__.CFG_APP WHERE app_key = '__SCHEMA__' AND brand IS NOT NULL
@@ -327,7 +329,9 @@ GROUP BY base.engine, brands.b;
 CREATE OR REPLACE VIEW __DB__.__SCHEMA__.V_AI_TOP_SOURCES AS
 SELECT domain, SUM(citations) citations,
     ROUND(SUM(citations) * 100.0 / NULLIF(SUM(SUM(citations)) OVER (), 0), 1) share_pct
-FROM __DB__.__SCHEMA__.GEO_SOURCES GROUP BY domain ORDER BY citations DESC;
+FROM __DB__.__SCHEMA__.GEO_SOURCES
+WHERE snapshot_date = (SELECT MAX(snapshot_date) FROM __DB__.__SCHEMA__.GEO_SOURCES)   -- latest GEO run only, not history
+GROUP BY domain ORDER BY citations DESC;
 
 -- ---------------------------------------------------------------------------
 -- V_NEXT_BEST_ACTIONS — 6 prioritized, data-driven NBAs. The focal brand name is

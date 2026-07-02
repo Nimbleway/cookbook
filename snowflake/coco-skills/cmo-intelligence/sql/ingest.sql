@@ -393,7 +393,12 @@ def run(session, prompt_limit):
                 sources = []
             ans_rows.append((eng, text, ptype, str(answer)[:16000], len(sources)))
             for s in sources:
-                u = s.get("url") or s.get("link") if isinstance(s, dict) else (s if isinstance(s, str) else None)
+                if isinstance(s, dict):
+                    u = s.get("url") or s.get("link")
+                elif isinstance(s, str):
+                    u = s
+                else:
+                    u = None
                 dom = domain_of(u) if u else None
                 if dom:
                     src[(eng, dom)] = src.get((eng, dom), 0) + 1
