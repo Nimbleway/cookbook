@@ -1,5 +1,6 @@
 ---
 name: cmo-intelligence
+version: 1.0.0
 description: |
   Provisions a complete in-tenant digital-shelf / CMO intelligence app in Snowflake from live Nimble
   web data, natively in Cortex Code, end to end: a conversational intake (name a category, optionally a
@@ -210,6 +211,15 @@ and `__CORTEX_MODEL_CHEAP__` resolved in Phase 0 (2b) everywhere they appear (`_
    ```
    (Safe any time — `REFRESH_PDP` reads the cap once at the start of each run, so it only affects the
    *next* daily refresh.)
+5. **Seed Share of AI Answer — server-side, async.** Kick the one-shot GEO seed so the answer-engine
+   surfaces populate shortly, without blocking the cockpit handoff:
+   ```sql
+   EXECUTE TASK __DB__.__SCHEMA__.GEO_SEED_TASK;   -- REFRESH_GEO(-1): a small config-sized seed (CFG_APP.geo_seed_prompts)
+   ```
+   Until rows land (~3 min) the cockpit shows a "⏳ being generated…" placeholder for Share of AI
+   Answer; then the real surfaces appear. `WEEKLY_GEO_TASK` (already resumed) keeps it fresh weekly with
+   the full prompt set — answer-engine calls are slow (~12 min full run), so it's never on the daily
+   shelf cadence.
 
 ### Phase 4 — Verify & deliver
 **Object completeness gate (do this first).** The cockpit reads its views defensively — a *missing*
@@ -221,10 +231,11 @@ SELECT object_name, object_type FROM __DB__.INFORMATION_SCHEMA.OBJECTS
 WHERE object_schema = '__SCHEMA__'
   AND object_name IN ('CFG_APP','CFG_QUERIES','RAW_SERP','RAW_PDP','RAW_VOC','GEO_ANSWERS','GEO_SOURCES',
                       'BRAND_MAP','V_PRODUCT_BRAND','V_BRAND_CLASSIFIED','V_SHARE_OF_SHELF','V_CONTENT_HEALTH',
-                      'V_ALERT_OOS','V_TREND_SOS_DAILY','V_TREND_KPI','V_SENTIMENT_SUMMARY',
+                      'V_ALERT_OOS','V_ALERTS','V_TREND_SOS_DAILY','V_TREND_KPI','V_SENTIMENT_SUMMARY',
                       'V_AI_SHARE_OF_ANSWER','V_AI_TOP_SOURCES','V_NEXT_BEST_ACTIONS','SHELF_SV')
 ORDER BY object_type, object_name;
--- plus the procs (REFRESH_SHELF/REFRESH_PDP/REBUILD_BRAND_MAP), the task, the agent, the streamlit.
+-- plus the procs (REFRESH_SHELF/REFRESH_PDP/REFRESH_GEO/REBUILD_BRAND_MAP), the tasks
+-- (DAILY_SHELF_TASK, GEO_SEED_TASK, WEEKLY_GEO_TASK), the agent, the streamlit.
 ```
 > When **updating** an existing app, re-run the **entire** `views.sql` (it creates all views in one
 > pass) — never a subset, or you leave stale/missing views behind.
@@ -234,7 +245,8 @@ Then run the data checks from the README (`is_focal` not all-FALSE; `V_SHARE_OF_
 - the **cockpit** (`SHOW STREAMLITS IN SCHEMA __DB__.__SCHEMA__;` → the app URL),
 - the **agent** (`__AGENT_NAME__`, in Snowflake Intelligence → Agents),
 - the **headline** (focal share of shelf, top complaint, etc.).
-> Share of AI Answer shows 0% until the GEO backfill runs — pre-seed it for any live demo.
+> Share of AI Answer populates a few minutes after the `GEO_SEED_TASK` seed (Phase 3, step 5); until
+> then the cockpit shows a "being generated" placeholder (never a bare 0%). `WEEKLY_GEO_TASK` keeps it current.
 
 ## Lifecycle — manage the app after creation
 The skill manages a config-driven pipeline. See `references/lifecycle.md` for the SQL of each command:

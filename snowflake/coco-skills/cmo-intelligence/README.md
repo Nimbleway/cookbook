@@ -1,5 +1,7 @@
 # CMO Intelligence — Cortex Code (CoCo) Agent Skill
 
+**Version 1.0.0** · see [`CHANGELOG.md`](CHANGELOG.md). The version lives in `SKILL.md` frontmatter and follows SemVer.
+
 A **Cortex Code Agent Skill** that conversationally provisions a complete, in-tenant
 **digital-shelf intelligence app** — a branded Streamlit cockpit + a Cortex agent + live Nimble
 web data — for any brand or category, in minutes. Nothing leaves your Snowflake account.

@@ -3,8 +3,11 @@
  *
  * Role:        NIMBLE_ROLE (must own/run the Task; see privileges note)
  * Creates:     __DB__.__SCHEMA__.RAW_SERP, RAW_PDP        — typed raw tables
+ *              __DB__.__SCHEMA__.GEO_ANSWERS, GEO_SOURCES — answer-engine (Share of AI Answer) tables
  *              __DB__.__SCHEMA__.REFRESH_SHELF()          — one-call SERP+PDP refresh
- *              __DB__.__SCHEMA__.DAILY_SHELF_TASK         — scheduled daily refresh
+ *              __DB__.__SCHEMA__.REFRESH_GEO(prompt_limit)— answer-engine batch (Perplexity/ChatGPT/Gemini)
+ *              __DB__.__SCHEMA__.DAILY_SHELF_TASK         — scheduled daily shelf refresh
+ *              __DB__.__SCHEMA__.GEO_SEED_TASK / WEEKLY_GEO_TASK — first-setup seed + weekly GEO refresh
  * Prereq:      config.sql (CFG_APP + CFG_QUERIES) and the NIMBLE_AGENT_RUN UDTF from the
  *              Nimble × Snowflake integration (https://github.com/Nimbleway/cookbook/tree/main/snowflake).
  *
@@ -46,7 +49,7 @@ USE SCHEMA __DB__.__SCHEMA__;
 -- ---------------------------------------------------------------------------
 -- Raw tables. Typed core + a `raw` VARIANT catch-all per row (so the views can
 -- reach a field we didn't project without re-ingesting). RAW_VOC is parsed from
--- the PDP `raw` records during refresh; GEO_* are filled by a later batch step.
+-- the PDP `raw` records during refresh; GEO_* are filled by REFRESH_GEO (below).
 -- ---------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS __DB__.__SCHEMA__.RAW_SERP (
     retailer              STRING,
@@ -105,12 +108,14 @@ CREATE TABLE IF NOT EXISTS __DB__.__SCHEMA__.RAW_VOC (
     snapshot_date DATE
 );
 
--- Answer-engine citations (Share of AI Answer). Created empty; a later
--- async-batch step backfills them, after which V_AI_* light up. The cockpit's
--- AI-answer section degrades gracefully (0%) until then.
+-- Answer-engine citations (Share of AI Answer). Created empty; REFRESH_GEO
+-- (below) backfills them via the answer-engine agents, after which V_AI_* light
+-- up. Until then the cockpit shows a "being generated" placeholder (see has_ai /
+-- ai_pending in cockpit_template.py), not a bare 0%.
 CREATE TABLE IF NOT EXISTS __DB__.__SCHEMA__.GEO_ANSWERS (
     engine        STRING,
     prompt        STRING,
+    prompt_type   STRING,        -- template family: recommendation | comparison | sentiment | value | …
     answer        STRING,
     num_sources   INTEGER,
     snapshot_date DATE
@@ -262,6 +267,161 @@ def run(session):
 $$;
 
 -- ---------------------------------------------------------------------------
+-- REFRESH_GEO() — Share of AI Answer. Asks the answer engines (Perplexity,
+-- ChatGPT, Gemini) a deterministic set of category prompts via Nimble's LLM
+-- agents (same /v1/agents/run endpoint the SERP/PDP calls use), then writes:
+--   GEO_ANSWERS — one row per (engine, prompt): the synthesized answer text
+--                 (V_AI_SHARE_OF_ANSWER matches brand names against it)
+--   GEO_SOURCES — citations per (engine, domain), parsed from each answer's sources
+-- Concurrent (ThreadPoolExecutor) like REFRESH_PDP — it's ~prompts×3 slow LLM
+-- calls, so it runs on its OWN (weekly) cadence, not the daily shelf refresh.
+--
+-- Answer/source field names vary per engine (perplexity: answer+sources;
+-- chatgpt/gemini: text/response + links) — the getters below are tolerant.
+-- Confirm shapes on first run per engine.
+-- ---------------------------------------------------------------------------
+CREATE OR REPLACE PROCEDURE __DB__.__SCHEMA__.REFRESH_GEO(prompt_limit INTEGER DEFAULT 0)
+RETURNS VARIANT
+LANGUAGE PYTHON
+RUNTIME_VERSION = '3.11'
+PACKAGES = ('requests', 'snowflake-snowpark-python')
+HANDLER = 'run'
+EXTERNAL_ACCESS_INTEGRATIONS = (NIMBLE_API_ACCESS)
+SECRETS = ('cred' = NIMBLE_INTEGRATION.TOOLS.NIMBLE_API_KEY)
+EXECUTE AS CALLER
+AS
+$$
+import _snowflake, requests, json
+from urllib.parse import urlparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from snowflake.snowpark.types import StructType, StructField, StringType, IntegerType
+from snowflake.snowpark.functions import current_date
+
+URL = "https://sdk.nimbleway.com/v1/agents/run"
+S = "__DB__.__SCHEMA__"
+ENGINES = ["perplexity", "chatgpt", "gemini"]
+GENERIC = {"other / marketplace", "private label", "other named brand", "unknown", "generic", "n/a", "other"}
+
+def g(d, *ks):
+    for k in ks:
+        x = d.get(k)
+        if x not in (None, "", [], {}): return x
+    return None
+
+def domain_of(url):
+    try:
+        net = (urlparse(url).netloc or "").lower()
+        return net[4:] if net.startswith("www.") else (net or None)
+    except Exception:
+        return None
+
+def call_engine(token, engine, prompt):
+    try:
+        r = requests.post(URL, json={"agent": engine, "params": {"prompt": prompt}},
+                          headers={"Authorization": "Bearer " + token, "Content-Type": "application/json",
+                                   "X-Client-Source": "snowflake-cortex-agent"}, timeout=180)
+        if r.status_code >= 400:
+            return None
+        ad = (r.json() or {}).get("data") or {}
+        p = ad.get("parsing")
+        if isinstance(p, list):
+            p = p[0] if p else None
+        return p if isinstance(p, dict) else None
+    except Exception:
+        return None
+
+def build_prompts(session, limit=0):
+    """Deterministic templated prompts (no LLM) so the set is stable week-over-week."""
+    app = session.sql("SELECT COALESCE(brand, ''), category FROM " + S + ".CFG_APP WHERE app_key = '__SCHEMA__'").collect()
+    focal = (app[0][0] if app else "") or ""
+    category = ((app[0][1] if app else "") or "products")
+    tiers = session.sql(
+        "SELECT brand_tier FROM " + S + ".V_SHARE_OF_SHELF "
+        "WHERE snapshot_date = (SELECT MAX(snapshot_date) FROM " + S + ".RAW_PDP) "
+        "GROUP BY 1 ORDER BY SUM(products_in_serp) DESC").collect()
+    order = [r[0] for r in tiers if r[0] and r[0].lower() not in GENERIC]
+    if not focal:
+        focal = order[0] if order else category
+    comps = [b for b in order if b != focal][:6]
+    brands = [focal] + comps
+    retailers = [r[0] for r in session.sql("SELECT DISTINCT retailer FROM " + S + ".CFG_QUERIES").collect() if r[0]]
+    occasions = ["a gift", "the holidays", "everyday use"]
+    # High-signal families first (recommendation, comparison, focal opinion/sentiment) so a small
+    # seed (prompt_limit) still captures the prompts that most drive share of AI answer; the full
+    # set (limit=0) adds the long tail across every brand.
+    high = [("What is the best " + category + "?", "recommendation")]
+    high += [("What are the best " + category + " to buy on " + r.capitalize() + "?", "recommendation") for r in retailers]
+    high += [("Compare " + focal + " and " + c + " — which is better?", "comparison") for c in comps]
+    high += [("Is " + focal + " a good " + category + "?", "brand_opinion"),
+             ("What are people saying about " + focal + "?", "sentiment")]
+    rest = []
+    for b in brands:
+        rest += [("What's a good alternative to " + b + "?", "alternative"),
+                 ("Is " + b + " worth the price?", "value"),
+                 ("Should I buy " + b + "?", "purchase"),
+                 ("Where can I buy " + b + "?", "availability")]
+        if b != focal:
+            rest += [("Is " + b + " a good " + category + "?", "brand_opinion"),
+                     ("What are people saying about " + b + "?", "sentiment")]
+    for o in occasions:
+        rest += [("What " + category + " should I buy for " + o + "?", "occasion"),
+                 ("Is " + focal + " a good choice for " + o + "?", "occasion_brand")]
+    P = high + rest
+    return P[:limit] if limit and limit > 0 else P
+
+def run(session, prompt_limit):
+    token = _snowflake.get_generic_secret_string("cred")
+    # prompt_limit: 0 = full set (weekly) · <0 = seed mode (use CFG_APP.geo_seed_prompts) · >0 = top-N
+    lim = int(prompt_limit or 0)
+    if lim < 0:
+        cap = session.sql("SELECT geo_seed_prompts FROM " + S + ".CFG_APP WHERE app_key = '__SCHEMA__'").collect()
+        lim = int(cap[0][0]) if (cap and cap[0][0]) else 15
+    prompts = build_prompts(session, lim)
+    tasks = [(eng, text, ptype) for (text, ptype) in prompts for eng in ENGINES]
+
+    ans_rows, src = [], {}   # src[(engine, domain)] = citation count
+    with ThreadPoolExecutor(max_workers=20) as ex:
+        futs = {ex.submit(call_engine, token, eng, text): (eng, text, ptype) for (eng, text, ptype) in tasks}
+        for fut in as_completed(futs):
+            eng, text, ptype = futs[fut]
+            d = fut.result()
+            if not d:
+                continue
+            answer = g(d, "answer", "text", "response", "markdown") or ""
+            sources = g(d, "sources", "links", "citations") or []
+            if not isinstance(sources, list):
+                sources = []
+            ans_rows.append((eng, text, ptype, str(answer)[:16000], len(sources)))
+            for s in sources:
+                if isinstance(s, dict):
+                    u = s.get("url") or s.get("link")
+                elif isinstance(s, str):
+                    u = s
+                else:
+                    u = None
+                dom = domain_of(u) if u else None
+                if dom:
+                    src[(eng, dom)] = src.get((eng, dom), 0) + 1
+
+    session.sql("DELETE FROM " + S + ".GEO_ANSWERS  WHERE snapshot_date = CURRENT_DATE()").collect()
+    session.sql("DELETE FROM " + S + ".GEO_SOURCES WHERE snapshot_date = CURRENT_DATE()").collect()
+    if ans_rows:
+        acols = [("ENGINE", StringType()), ("PROMPT", StringType()), ("PROMPT_TYPE", StringType()),
+                 ("ANSWER", StringType()), ("NUM_SOURCES", IntegerType())]
+        (session.create_dataframe(ans_rows, schema=StructType([StructField(c, t) for c, t in acols]))
+                .with_column("SNAPSHOT_DATE", current_date())
+                .write.mode("append").save_as_table(S + ".GEO_ANSWERS", column_order="name"))
+    src_rows = [(eng, dom, cnt) for (eng, dom), cnt in src.items()]
+    if src_rows:
+        scols = [("ENGINE", StringType()), ("DOMAIN", StringType()), ("CITATIONS", IntegerType())]
+        (session.create_dataframe(src_rows, schema=StructType([StructField(c, t) for c, t in scols]))
+                .with_column("SNAPSHOT_DATE", current_date())
+                .write.mode("append").save_as_table(S + ".GEO_SOURCES", column_order="name"))
+    return {"prompts": len(prompts), "engines": len(ENGINES), "attempted": len(tasks),
+            "answers": len(ans_rows), "source_rows": len(src_rows)}
+$$;
+
+-- ---------------------------------------------------------------------------
 -- REFRESH_SHELF() — one call: ingest SERP (config-driven UDTF lateral join),
 -- run the concurrent PDP pass (REFRESH_PDP), then parse VOC. Idempotent within a
 -- day: each pass DELETEs today's rows first, so a same-day re-run REPLACEs rather
@@ -408,6 +568,31 @@ AS
     CALL __DB__.__SCHEMA__.REFRESH_SHELF();
 
 ALTER TASK __DB__.__SCHEMA__.DAILY_SHELF_TASK RESUME;
+
+-- ---------------------------------------------------------------------------
+-- Share of AI Answer (GEO) tasks — two-tier, like the PDP two-cap:
+--   GEO_SEED_TASK   — one-shot, manual (no schedule); EXECUTE'd once at first setup.
+--                     Runs REFRESH_GEO(-1) = a small config-sized seed
+--                     (CFG_APP.geo_seed_prompts) so the cockpit populates fast (~3 min).
+--   WEEKLY_GEO_TASK — full set (REFRESH_GEO()), weekly. Answer-engine data moves slowly
+--                     and the full run is ~12 min / ~180 LLM calls, so it's NOT on the
+--                     daily shelf cadence.
+-- Either task existing is the cockpit's "being generated" pending signal.
+-- ---------------------------------------------------------------------------
+CREATE OR REPLACE TASK __DB__.__SCHEMA__.GEO_SEED_TASK
+    WAREHOUSE = __WAREHOUSE__
+    COMMENT   = 'One-shot Share-of-AI-Answer seed for __SCHEMA__ (run via EXECUTE TASK; no schedule)'
+AS
+    CALL __DB__.__SCHEMA__.REFRESH_GEO(-1);
+
+CREATE OR REPLACE TASK __DB__.__SCHEMA__.WEEKLY_GEO_TASK
+    WAREHOUSE = __WAREHOUSE__
+    SCHEDULE  = 'USING CRON 0 8 * * 1 America/Chicago'   -- weekly (Mon 08:00); GEO data moves slowly
+    COMMENT   = 'Weekly full Share-of-AI-Answer refresh for __SCHEMA__'
+AS
+    CALL __DB__.__SCHEMA__.REFRESH_GEO();
+
+ALTER TASK __DB__.__SCHEMA__.WEEKLY_GEO_TASK RESUME;   -- GEO_SEED_TASK has no schedule; it only runs when EXECUTE'd
 
 -- Seed the first snapshot immediately — server-side + non-blocking (don't CALL it
 -- from the session; the SERP + concurrent PDP run blocks the client):

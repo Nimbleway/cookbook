@@ -48,6 +48,7 @@ CREATE TABLE IF NOT EXISTS __DB__.__SCHEMA__.CFG_APP (
     focal_patterns    ARRAY,                              -- brand-SKU substrings incl. spacing variants ['ACME BAR','ACMEBAR']
     geo_zip           STRING        DEFAULT '75243',      -- geography; US single-market for the first phase
     pdp_cap           NUMBER        DEFAULT 50,            -- max PDP fetches per retailer per refresh (runtime/cost guard). Seed low (~30) for a snappy first cockpit, then raise for the unattended daily run.
+    geo_seed_prompts  NUMBER        DEFAULT 15,            -- top-N answer-engine prompts for the FIRST-setup GEO seed (fast, async). The weekly REFRESH_GEO() uses the full set (~60). Mirrors the pdp_cap two-tier convention.
     refresh_cron      STRING        DEFAULT 'USING CRON 0 6 * * * America/Chicago',  -- source of truth for DAILY_SHELF_TASK
     retailer_map      OBJECT,                             -- retailer -> {pdp_agent, id_key, zip_key}; resolves SERP geo + the PDP pass (see ingest.sql)
     updated_at        TIMESTAMP_LTZ DEFAULT CURRENT_TIMESTAMP(),
