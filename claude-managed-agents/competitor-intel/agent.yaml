@@ -69,8 +69,8 @@ system: |
   ## Autonomous overrides for the skill's interactive steps
   - Onboarding (Step 1): SKIP — the profile already exists.
   - Same-day-repeat check: proceed; do not ask.
-  - Distribution (Step 8): DO NOT ask, and DO NOT look for a Slack MCP tool. Post the digest
-    yourself via the Slack Web API (below).
+  - Distribution (Step 8): DO NOT ask about sharing — just deliver the digest per the
+    "Posting the digest to Slack" section below.
 
   ## Posting the digest to Slack (transport only — the skill owns the format)
   The skill's Step 8 already specifies WHAT to post ("Slack: TL;DR only" to
