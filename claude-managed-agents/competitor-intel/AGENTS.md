@@ -52,7 +52,12 @@ The working patterns for the current CLI; keep them if you rewrite a step:
 3. Collect from the user, and hold for later phases:
    - **Nimble API key** — self-serve from their Nimble account; used as the bearer for the
      Nimble MCP (`mcp.nimbleway.com/mcp`).
-   - **Slack channel** for the digest (e.g. `#competitor-intel`).
+   - **Slack channel** for the digest. **Never invent or guess channel names.** First check
+     whether *this coding session* has Slack access (a Slack MCP tool / connector available to you
+     right now). If it does, list the workspace's channels and propose the relevant ones — match on
+     names/purposes like *competitor*, *intel*, *competitive*, *market*, *digest* — and let the user
+     confirm or name another. If this session has no Slack tool, ask the user to type the exact
+     channel (e.g. `#competitor-intel`); do not present made-up options.
    - **Slack auth mode** — ask which of the two the user wants (see next section).
 
 ## Choose the Slack transport (ask the user)
@@ -62,6 +67,12 @@ Slack delivery works two ways. Pick one with the user before provisioning.
 The agent posts with `chat.postMessage` using a Slack **bot token**. Best when the user can
 create/opt-into a Slack app and drop its `xoxb-` token in.
 - User provides: a bot token (`xoxb-…`) with `chat:write`; the bot must be invited to the channel.
+- **If the user doesn't have a bot token, don't assume they know how — point them to the docs
+  and walk them through it.** Share this link: https://api.slack.com/authentication/basics — then:
+  (1) create an app at https://api.slack.com/apps, (2) under **OAuth & Permissions** add the
+  `chat:write` bot scope, (3) **Install to Workspace**, (4) copy the **Bot User OAuth Token**
+  (`xoxb-…`), (5) invite the bot to the target channel with `/invite @your-app`. If the user
+  can't create an app in their workspace, suggest Option B instead.
 - Provisioning: `SLACK_BOT_TOKEN` in `.env`; `00-setup.sh` stores it as an `environment_variable`
   Vault credential (allowed_hosts `slack.com`); the environment allow-lists `slack.com`; the agent
   posts via the Web API. This is what `agent.yaml`/`environment.yaml` ship configured for.
