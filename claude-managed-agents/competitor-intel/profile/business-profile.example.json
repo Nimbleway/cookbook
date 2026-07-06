@@ -1,0 +1,22 @@
+{
+  "company": "Acme Corp",
+  "domain": "acme.com",
+  "description": "One sentence describing what your company does. The skill uses this to disambiguate search results.",
+  "competitors": [
+    { "name": "WidgetCo", "domain": "widgetco.com", "category": "short category label" },
+    { "name": "GizmoTech", "domain": "gizmotech.io", "category": "short category label" }
+  ],
+  "industry_keywords": [
+    "keyword the skill uses for industry-trend searches",
+    "another keyword",
+    "a third keyword"
+  ],
+  "integrations": {
+    "slack": { "channel": "#your-digest-channel" }
+  },
+  "preferences": {
+    "skip_competitors": [],
+    "output_format": "bullets"
+  },
+  "last_runs": {}
+}
