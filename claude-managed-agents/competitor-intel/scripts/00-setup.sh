@@ -5,7 +5,7 @@
 #   - ant authed via `ant auth login` to a workspace with the Managed Agents beta
 #     (do NOT set ANTHROPIC_API_KEY in .env — a blank/stale value overrides the profile)
 #   - gh CLI, python3, curl
-#   - .env has NIMBLE_MCP_TOKEN + SLACK_MCP_ACCESS_TOKEN
+#   - .env has NIMBLE_API_KEY + SLACK_BOT_TOKEN
 #   - profile/business-profile.json exists (README Step 0)
 #
 # ant CLI invocation notes (see AGENTS.md "ant CLI — the invocation shapes the scripts use"):
