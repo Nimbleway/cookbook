@@ -67,10 +67,23 @@ SKILL_ID=$(curl -sS https://api.anthropic.com/v1/skills \
 setid COMPETITOR_INTEL_SKILL_ID "$SKILL_ID"; echo "$SKILL_ID"
 
 echo "== 8. Create the agent (--model as object + --name as flags; rest via stdin YAML) =="
-AGENT_ID=$(envsubst '${COMPETITOR_INTEL_SKILL_ID}' < agent.yaml \
-  | ant beta:agents create --model '{id: claude-opus-4-8}' --name nimble-competitor-intel --transform id -r)
+# Substitute the one placeholder with python3 (a prereq) rather than envsubst, which is not
+# installed by default — if the body is empty, ant would create a bare agent (no system/skill/
+# mcp/tools) that still "runs" but does nothing.
+AGENT_BODY=$(SKILL_ID="$SKILL_ID" python3 -c 'import os,sys;sys.stdout.write(open("agent.yaml").read().replace("${COMPETITOR_INTEL_SKILL_ID}", os.environ["SKILL_ID"]))')
+[ -n "$AGENT_BODY" ] || { echo "ERROR: agent.yaml body is empty (wrong working dir?)"; exit 1; }
+AGENT_ID=$(printf '%s' "$AGENT_BODY" | ant beta:agents create --model '{id: claude-opus-4-8}' --name nimble-competitor-intel --transform id -r)
 [ -n "$AGENT_ID" ] || { echo "ERROR: agent create failed"; exit 1; }
-setid AGENT_ID "$AGENT_ID"; echo "$AGENT_ID"
+
+# Verify the config actually attached (guards against an empty-body create silently succeeding).
+OK=$(ant beta:agents retrieve --agent-id "$AGENT_ID" --format json 2>/dev/null | python3 -c 'import sys,json;d=json.load(sys.stdin);print("ok" if d.get("system") and d.get("skills") and d.get("tools") and d.get("mcp_servers") else "bad")')
+if [ "$OK" != "ok" ]; then
+  echo "ERROR: agent $AGENT_ID was created WITHOUT its full config (system/skills/tools/mcp_servers)." >&2
+  echo "The prompt/skill/MCP/tools did not attach. Archive it and re-run this script:" >&2
+  echo "  ant beta:agents archive --agent-id $AGENT_ID" >&2
+  exit 1
+fi
+setid AGENT_ID "$AGENT_ID"; echo "$AGENT_ID (verified: system + skill + tools + MCP attached)"
 
 echo; echo "== DONE. IDs saved to .env =="; grep -E '_ID=' .env
 echo "Next: bash scripts/10-deploy.sh"
