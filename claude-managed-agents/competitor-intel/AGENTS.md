@@ -118,9 +118,9 @@ Trigger one run immediately instead of waiting for the schedule:
 ```
 ant beta:deployments run --deployment-id <depl_id>
 ```
-Open the Console session URL it reports and confirm the run: it symlinks `~/.nimble` to the
-memory store, researches via the Nimble MCP, dedups, and posts the TL;DR to the Slack
-channel. Report the outcome to the user, and tell them the digest now arrives on the
+Open the Console session URL it reports and confirm the run: it reads/writes the memory store
+via the `memory_*` tools (mapping the skill's `~/.nimble/...` paths onto memory-store paths),
+researches via the Nimble MCP, dedups, and posts the TL;DR to the Slack channel. Report the outcome to the user, and tell them the digest now arrives on the
 schedule. To pause later: `ant beta:deployments pause --deployment-id <depl_id>`.
 
 ## Changing settings after deploy
