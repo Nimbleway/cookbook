@@ -53,7 +53,7 @@ discovers competitors and writes `~/.nimble/business-profile.json`) then `cp` it
 **Steps 1-3 — provision and deploy.**
 
 ```bash
-cp .env.example .env      # NIMBLE_MCP_TOKEN + SLACK_MCP_ACCESS_TOKEN
+cp .env.example .env      # NIMBLE_API_KEY + SLACK_BOT_TOKEN
 bash scripts/00-setup.sh  # fetches the skill from GitHub, then creates env, vault,
                           # memory store, seeds YOUR profile, uploads skill, creates agent
 #   -> paste the printed *_ID values into .env
@@ -64,7 +64,7 @@ ant beta:deployments run --deployment-id <depl_id>
 ```
 
 Prereqs: `ant` authed to a workspace with the Managed Agents beta, `gh` (to fetch the
-skill), a Nimble MCP token, and a Slack MCP access token. Both MCP endpoints are hardcoded.
+skill), a Nimble API key (`NIMBLE_API_KEY`), and a Slack bot token (`SLACK_BOT_TOKEN`).
 Some `ant` flag shapes vary by CLI version; each script cites the raw HTTP path and where to
 run `--help`.
 

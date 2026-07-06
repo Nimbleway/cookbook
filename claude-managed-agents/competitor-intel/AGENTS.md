@@ -92,9 +92,8 @@ onboarding is interactive). Build it now. Copy `profile/business-profile.example
 Show the finished profile and get explicit confirmation. It is git-ignored.
 
 ## Phase 2 — Credentials
-Copy `.env.example` to `.env` and fill `NIMBLE_MCP_TOKEN` and `SLACK_MCP_ACCESS_TOKEN` with
-the tokens from Phase 0. Leave the `*_ID` fields blank — Phase 4 fills them. `.env` is
-git-ignored.
+Copy `.env.example` to `.env` and fill `NIMBLE_API_KEY` and `SLACK_BOT_TOKEN` with the tokens
+from Phase 0. Leave the `*_ID` fields blank — Phase 4 fills them. `.env` is git-ignored.
 
 ## Phase 3 — Review the config (usually no change)
 - `agent.yaml` — the agent: system prompt, the competitor-intel skill, Nimble + Slack MCP
