@@ -76,7 +76,7 @@ async function forwardToHubSpot(d: {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         fields,
-        context: { pageName: "Nimble Retail Intelligence — Shoptalk" },
+        context: { pageName: "Nimble Retail Intelligence" },
       }),
     });
     if (!res.ok) {
@@ -107,7 +107,7 @@ async function forwardToSlack(d: {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        text: `🔔 New Shoptalk lead: ${d.name || "(no name)"}${d.company ? ` @ ${d.company}` : ""} <${d.email}>${ctx ? ` — ${ctx}` : ""}`,
+        text: `🔔 New lead: ${d.name || "(no name)"}${d.company ? ` @ ${d.company}` : ""} <${d.email}>${ctx ? ` — ${ctx}` : ""}`,
         name: d.name,
         email: d.email,
         company: d.company || null,

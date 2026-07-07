@@ -49,7 +49,7 @@ function LeadModal({ ctx, onClose }: { ctx: LeadContext; onClose: () => void }) 
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "done">("idle");
   const toast = useToast();
-  const event = conferenceConfig.eventName || "Shoptalk";
+  const event = conferenceConfig.eventName || "";
 
   // Close on Escape — standard modal affordance.
   useEffect(() => {
@@ -98,7 +98,7 @@ function LeadModal({ ctx, onClose }: { ctx: LeadContext; onClose: () => void }) 
       <div
         role="dialog"
         aria-modal="true"
-        aria-label={`Meet Nimble at ${event}`}
+        aria-label="Get in touch with Nimble"
         className="animate-fade-up relative w-full max-w-md rounded-3xl border border-brand/25 bg-card p-6 shadow-2xl sm:p-7"
       >
         <button
@@ -118,7 +118,7 @@ function LeadModal({ ctx, onClose }: { ctx: LeadContext; onClose: () => void }) 
               Thanks{first ? `, ${first}` : ""}!
             </h2>
             <p className="mx-auto mt-1.5 max-w-xs text-pretty text-sm text-muted-foreground">
-              We&apos;ll be in touch to set up time. See you at {event}!
+              We&apos;ll be in touch to walk you through the full dataset.
             </p>
             <button
               onClick={onClose}
@@ -130,14 +130,14 @@ function LeadModal({ ctx, onClose }: { ctx: LeadContext; onClose: () => void }) 
         ) : (
           <>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand">
-              Let&apos;s meet at {event}
+              Get the full picture
             </p>
             <h2 className="mt-1.5 text-xl font-bold tracking-tight sm:text-2xl">
               See what Nimble can do for your brand
             </h2>
             <p className="mt-2 text-pretty text-sm text-muted-foreground">
-              Leave your details and we&apos;ll set up time at {event} to walk through the
-              full live picture for your brand — across every retailer.
+              Leave your details and we&apos;ll walk you through the full live dataset for
+              your brand — across every retailer.
             </p>
 
             <form onSubmit={submit} className="mt-4 space-y-2.5">
