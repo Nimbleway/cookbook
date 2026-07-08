@@ -68,17 +68,18 @@ export default function PriceChart({ priceData, ticker }: PriceChartProps) {
   );
 
   const minClose = useMemo(
-    () => Math.min(...filteredPrices.map(p => p.close)) * 0.95,
+    () => filteredPrices.length > 0 ? Math.min(...filteredPrices.map(p => p.close)) * 0.95 : 0,
     [filteredPrices]
   );
   const maxClose = useMemo(
-    () => Math.max(...filteredPrices.map(p => p.close)) * 1.05,
+    () => filteredPrices.length > 0 ? Math.max(...filteredPrices.map(p => p.close)) * 1.05 : 1,
     [filteredPrices]
   );
 
   // Snap each earnings date to the nearest available trading day in filteredPrices
   const snappedEarningsDates = useMemo(() => {
     const dates = filteredPrices.map(p => p.date);
+    if (dates.length === 0) return [];
     return earningsDatesInRange.map(ed => {
       // Find the closest date in the price data
       let closest = dates[0];
@@ -104,6 +105,16 @@ export default function PriceChart({ priceData, ticker }: PriceChartProps) {
   const currentPrice = priceData.prices[priceData.prices.length - 1]?.close;
   const startPrice = filteredPrices[0]?.close;
   const priceChange = currentPrice && startPrice ? ((currentPrice - startPrice) / startPrice) * 100 : null;
+
+  if (filteredPrices.length === 0) {
+    return (
+      <Card className="bg-slate-800 border-slate-700">
+        <CardContent className="flex items-center justify-center h-72 text-slate-500 text-sm">
+          No price data available for the selected period.
+        </CardContent>
+      </Card>
+    );
+  }
 
   return (
     <Card className="bg-slate-800 border-slate-700">
