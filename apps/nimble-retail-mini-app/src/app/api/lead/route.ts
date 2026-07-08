@@ -70,6 +70,8 @@ async function forwardToHubSpot(d: {
   if (d.lastName) fields.push({ name: "lastname", value: d.lastName });
   if (d.company) fields.push({ name: "company", value: d.company });
 
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 5000);
   try {
     const res = await fetch(url, {
       method: "POST",
@@ -78,6 +80,7 @@ async function forwardToHubSpot(d: {
         fields,
         context: { pageName: "Nimble Retail Intelligence" },
       }),
+      signal: controller.signal,
     });
     if (!res.ok) {
       const detail = await res.text().catch(() => "");
@@ -85,6 +88,8 @@ async function forwardToHubSpot(d: {
     }
   } catch (err) {
     console.error("[lead] HubSpot submit error:", err);
+  } finally {
+    clearTimeout(timeout);
   }
 }
 
@@ -102,6 +107,8 @@ async function forwardToSlack(d: {
   const ctx = [d.keyword && `“${d.keyword}”`, d.brand && `brand: ${d.brand}`]
     .filter(Boolean)
     .join(" · ");
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 5000);
   try {
     await fetch(webhook, {
       method: "POST",
@@ -115,9 +122,12 @@ async function forwardToSlack(d: {
         brand: d.brand || null,
         at: new Date().toISOString(),
       }),
+      signal: controller.signal,
     });
   } catch {
     /* non-blocking */
+  } finally {
+    clearTimeout(timeout);
   }
 }
 

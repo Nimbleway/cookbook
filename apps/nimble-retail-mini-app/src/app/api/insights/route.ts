@@ -22,7 +22,10 @@ const MODEL = "claude-haiku-4-5";
 // blocks first paint.
 export async function POST(req: NextRequest) {
   if (!process.env.ANTHROPIC_API_KEY) {
-    return new Response("ANTHROPIC_API_KEY not configured", { status: 503 });
+    return new Response('ANTHROPIC_API_KEY not configured', { status: 503 });
+  }
+  if (process.env.FORCE_DEMO === 'true') {
+    return new Response('Demo mode active', { status: 503 });
   }
   const body = (await req.json().catch(() => ({}))) as { payload?: InsightPayload };
   if (!body.payload) {

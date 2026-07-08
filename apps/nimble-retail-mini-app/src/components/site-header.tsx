@@ -3,9 +3,8 @@
 import { useLeadModal } from "./lead-modal";
 
 // Floating white pill header: Nimble wordmark on the left (clicking it returns
-// home), and a gold "Meet us at [Shoptalk]" CTA on the right using the real
-// Shoptalk Europe wordmark — the Nimble × Shoptalk tie-in. Opens the in-app
-// lead form. Shown on every page.
+// home), and a gold CTA on the right that opens the in-app lead form.
+// Shown on every page.
 export function SiteHeader({ onHome }: { onHome?: () => void }) {
   const { open } = useLeadModal();
   const Logo = (

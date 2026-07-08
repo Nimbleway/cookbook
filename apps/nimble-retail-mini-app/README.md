@@ -93,10 +93,6 @@ vercel --prod     # production
 
 Set the env vars in the Vercel dashboard (or `vercel env add`). Demo Mode works on a fresh deploy with only `ANTHROPIC_API_KEY`.
 
-## Spec
-
-The product spec lives alongside the code: `PRD.md`, `UI_UX_GUIDELINES.md`, `TECHNICAL_ARCHITECTURE.md`, `NIMBLE_AGENT_INTEGRATION.md`, `AHA_MOMENT.md`.
-
 ---
 
 Built by Solutions Consulting @ Nimble.

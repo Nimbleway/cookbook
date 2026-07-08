@@ -41,7 +41,6 @@ export function ExperienceApp({ liveAvailable }: { liveAvailable: boolean }) {
     <ToastProvider>
       <LeadModalProvider>
       <TopProgress state={state} />
-      {/* Logo returns home; the Shoptalk CTA shows on every page. */}
       <SiteHeader onHome={hasSearched ? handleReset : undefined} />
       <main className="flex-1">
         {autoRunPending ? (

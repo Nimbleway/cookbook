@@ -20,7 +20,10 @@ const MODEL = "claude-sonnet-4-6";
 // already on screen before this runs.
 export async function POST(req: NextRequest) {
   if (!process.env.ANTHROPIC_API_KEY) {
-    return new Response("ANTHROPIC_API_KEY not configured", { status: 503 });
+    return new Response('ANTHROPIC_API_KEY not configured', { status: 503 });
+  }
+  if (process.env.FORCE_DEMO === 'true') {
+    return new Response('Demo mode active', { status: 503 });
   }
 
   const body = (await req.json().catch(() => ({}))) as {

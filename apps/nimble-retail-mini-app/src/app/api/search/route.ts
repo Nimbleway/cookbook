@@ -61,8 +61,10 @@ export async function POST(req: NextRequest) {
     mode?: "demo" | "live";
     refresh?: boolean; // bypass the cache to prove a genuinely fresh pull
   };
-  const keyword = (body.keyword ?? "").trim();
-  const mode = body.mode === "live" ? "live" : "demo";
+  const keyword = (body.keyword ?? '').trim();
+  // Server-side enforcement: if FORCE_DEMO is set, always serve mock data
+  const forceDemoEnv = process.env.FORCE_DEMO === 'true';
+  const mode = forceDemoEnv ? 'demo' : (body.mode === 'live' ? 'live' : 'demo');
   const refresh = body.refresh === true;
 
   if (!keyword) {

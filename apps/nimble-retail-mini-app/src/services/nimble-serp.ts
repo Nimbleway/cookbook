@@ -129,6 +129,17 @@ function deriveBrand(row: Record<string, unknown>, title: string): string {
   return first.replace(/[^\w'&-]/g, "");
 }
 
+function sanitizeUrl(raw: string | undefined | null): string {
+  if (!raw) return '';
+  try {
+    const u = new URL(raw);
+    if (u.protocol === 'https:' || u.protocol === 'http:') return raw;
+  } catch {
+    // invalid URL
+  }
+  return '';
+}
+
 function normalizeRow(
   row: Record<string, unknown>,
   retailer: RetailerId,
@@ -169,7 +180,7 @@ function normalizeRow(
     rating: num(pick(row, ["rating", "product_rating", "stars", "average_rating"])),
     reviewCount: num(pick(row, ["reviews", "review_count", "product_reviews_count", "ratings_total"])),
     sponsored: bool(pick(row, ["sponsored", "is_sponsored", "ad", "is_ad"])),
-    productUrl: str(pick(row, ["url", "link", "product_url", "product_link"])),
+    productUrl: sanitizeUrl(str(pick(row, ["url", "link", "product_url", "product_link"]))),
     imageUrl: str(pick(row, ["image", "image_url", "product_image", "thumbnail", "img"])),
     availability: availabilityStr ?? (inStock === false ? "Out of stock" : undefined),
     collectedAt,
