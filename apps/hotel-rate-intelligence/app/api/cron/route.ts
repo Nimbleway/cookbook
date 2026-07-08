@@ -12,11 +12,12 @@ import { nextSaturday } from "@/lib/dates";
 export const maxDuration = 300;
 
 // Vercel Cron authenticates requests with the CRON_SECRET environment variable.
-// Set CRON_SECRET in Vercel project settings and add it to vercel.json cron headers if needed.
+// Fail-closed: if CRON_SECRET is not set, all requests are rejected.
+// Set CRON_SECRET in Vercel project settings before deploying.
 function isAuthorized(req: NextRequest): boolean {
-  const authHeader = req.headers.get("authorization");
   const secret = process.env.CRON_SECRET;
-  if (!secret) return true; // dev: no secret set, allow
+  if (!secret) return false; // fail-closed: no secret = no access
+  const authHeader = req.headers.get("authorization");
   return authHeader === `Bearer ${secret}`;
 }
 

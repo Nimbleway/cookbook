@@ -48,7 +48,8 @@ NIMBLE_API_KEY=       # your Nimble API key
 KV_REST_API_URL=      # Vercel KV REST URL (from Vercel dashboard)
 KV_REST_API_TOKEN=    # Vercel KV REST token
 SLACK_WEBHOOK_URL=    # Slack incoming webhook URL for alerts
-CRON_SECRET=          # optional: a secret to authorize the cron endpoint
+CRON_SECRET=          # required to use the cron endpoint: /api/cron is fail-closed
+                      # and rejects all requests when this is unset
 ```
 
 If you only want the on-demand check (no saved monitors, no cron), you do not need the KV or Slack variables.

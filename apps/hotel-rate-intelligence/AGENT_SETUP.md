@@ -116,7 +116,7 @@ Set environment variables in the Vercel dashboard (Settings > Environment Variab
 | `KV_REST_API_URL` | Cron only | From Vercel KV / Upstash Redis integration |
 | `KV_REST_API_TOKEN` | Cron only | From Vercel KV / Upstash Redis integration |
 | `SLACK_WEBHOOK_URL` | Cron only | Slack incoming webhook for alerts |
-| `CRON_SECRET` | Optional | Bearer token to authorize the `/api/cron` endpoint |
+| `CRON_SECRET` | Required for cron | Bearer token for `/api/cron` -- endpoint is fail-closed (rejects all requests when unset) |
 
 After setting env vars, redeploy: `vercel deploy --prod`
 
