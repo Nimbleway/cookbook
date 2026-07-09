@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0E1118;
+  --foreground: #F0EFFB;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Nimble brand palette */
+  --color-nimble-bg:         #0E1118;
+  --color-nimble-surface:    #161B26;
+  --color-nimble-surface-2:  #1E2535;
+  --color-nimble-border:     #2A3348;
+  --color-nimble-purple:     #6665EC;
+  --color-nimble-purple-dim: #4E4DB8;
+  --color-nimble-orange:     #D97757;
+  --color-nimble-muted:      #6B7694;
+  --color-nimble-muted-2:    #A09DB2;
+  --color-nimble-text:       #F0EFFB;
+  --color-nimble-text-2:     #B8BDD6;
+  --color-nimble-green:      #34C48B;
+  --color-nimble-red:        #E05C5C;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2A3348; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3A4558; }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.5);
+}
