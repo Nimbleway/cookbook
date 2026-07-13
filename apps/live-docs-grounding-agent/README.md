@@ -2,6 +2,8 @@
 
 Answers software library and API usage questions by grounding them in current official documentation, changelogs, and release notes — powered by [Nimble](https://nimbleway.com)'s Task Agents API. Ships as a local web app with animated onboarding, a live-updating answer feed, and mid-run cancellation.
 
+> **Runs entirely on your own machine.** `python app.py` starts a web server bound to `127.0.0.1` (localhost/loopback) — it is reachable only from your own computer, is not exposed to your network or the internet, and needs no login. Each person who clones this repo runs their own private instance with their own Nimble API key; it is not a shared or hosted service. Your key is stored only in a local, gitignored `.env` and never leaves your machine.
+
 ## What it does
 
 1. **Ask** — type a natural-language question about a library, framework, or API
@@ -20,24 +22,61 @@ Answers software library and API usage questions by grounding them in current of
 
 ## Setup
 
-**1. Clone and install dependencies**
+### Prerequisites
+
+- **Python 3.9 or newer** — check with `python3 --version`. If you don't have it, get it at [python.org/downloads](https://python.org/downloads).
+- **A Nimble API key** — free to create. In the browser: go to [online.nimbleway.com](https://online.nimbleway.com), log in or sign up, then **profile icon → Account Settings → API Keys → Create New API Key**. Copy it (it's shown only once). You'll paste it into the app on first run — you do **not** put it in any file by hand.
+- An open port **8420** on your machine (that's the fixed local port the app uses).
+
+### Step by step
+
+**1. Clone the repo and enter the app folder**
 
 ```bash
 git clone https://github.com/Nimbleway/cookbook
 cd cookbook/apps/live-docs-grounding-agent
+```
+
+**2. Create an isolated Python environment**
+
+```bash
 python3 -m venv .venv
+```
+
+**3. Install the dependencies into it**
+
+```bash
 .venv/bin/pip install -r requirements.txt
 ```
 
-**2. Run it**
+(On Windows the path is `.venv\Scripts\pip` instead of `.venv/bin/pip`, and `.venv\Scripts\python` below.)
+
+**4. Start the app**
 
 ```bash
 .venv/bin/python app.py
 ```
 
-This prints the local URL (`http://127.0.0.1:8420`) and starts the server. Open it in your browser — first run walks you through pasting your Nimble API key and creating the agent, with the setup steps shown live on screen. Get a key at [online.nimbleway.com](https://online.nimbleway.com).
+You'll see it print:
 
-On return visits with an existing key and agent, it reconnects automatically and drops you straight into the question screen.
+```
+📚 Live Docs Grounding Agent
+   http://127.0.0.1:8420
+```
+
+**5. Open that URL in your browser** — `http://127.0.0.1:8420`.
+
+**6. Complete the on-screen setup (first run only).** The app plays a short animated setup sequence: it asks you to paste your Nimble API key, validates it live, and creates the agent in your Nimble workspace — each step completes on screen before the next begins. Your key is saved to a local, gitignored `.env` so you're not asked again.
+
+**7. Ask a question.** Type into the box (or click one of the suggested-question chips) and press Enter. You're done.
+
+On every later run, just repeat steps 4–5 — it detects your saved key and agent, shows a brief "Reconnecting…" beat, and drops you straight into the question screen. Stop the server any time with `Ctrl+C` in the terminal.
+
+### Troubleshooting
+
+- **`address already in use` / port 8420 busy** — something else is already using that port (often a previous copy of this app still running). Stop the other process, or change `PORT` near the top of `app.py`.
+- **Key rejected (401)** — the key was mistyped or revoked. Re-run setup from the ⚙ menu and paste it again.
+- **Nothing at the URL** — make sure the `python app.py` terminal is still running; the server only serves while that command is active.
 
 ## Usage
 

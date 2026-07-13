@@ -2,6 +2,8 @@
 
 You are helping the user set up and run the Live Docs Grounding Agent. Follow these steps in order. Check each prerequisite before proceeding. Tell the user what you're doing at each step.
 
+This is a **local-only** app: `python app.py` starts a web server bound to `127.0.0.1` (localhost) on the user's own machine. It is not exposed to the network or internet, needs no login, and is not a shared/hosted service — every user runs their own private instance with their own Nimble API key, stored only in a local gitignored `.env`. Set expectations accordingly and never suggest deploying or exposing it publicly.
+
 ---
 
 ## Step 1: Check prerequisites
@@ -80,6 +82,15 @@ In the browser, type any question about a software library, framework, or API in
 What's the current way to stream responses in the OpenAI Python SDK v1.x?
 ```
 
-Click **Ask** (or press Enter). The agent searches official docs and changelogs and the answer animates in below the question, with a citation URL and a working code snippet. A 📜 icon in the top bar opens past questions; a **Cancel** button appears while a question is running.
+Click **Ask** (or press Enter). The agent searches official docs and changelogs and the answer animates in below the question, with a citation URL and a working code snippet. A 📜 icon in the top bar opens past questions and saved answers; a **★ Save** button on each answer bookmarks it; a **Cancel** button appears while a question is running.
 
 A terminal-only CLI is also still available (`.venv/bin/python agent.py`) if the user prefers scripting it instead of the browser.
+
+---
+
+## Troubleshooting
+
+- **Port 8420 already in use** (`address already in use` when starting): a previous instance is likely still running. Stop it, or change `PORT` near the top of `app.py`.
+- **API key rejected (401)**: the key was mistyped or revoked. Have the user re-run setup from the ⚙ menu in the app and paste it again.
+- **Browser shows nothing at the URL**: confirm the `python app.py` terminal is still running — the app only serves while that command is active.
+- On **Windows**, use `.venv\Scripts\python` and `.venv\Scripts\pip` instead of the `.venv/bin/...` paths.
