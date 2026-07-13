@@ -285,23 +285,36 @@ const askBtn = document.getElementById("askBtn");
 const threadEl = document.getElementById("thread");
 const cardTemplate = document.getElementById("cardTemplate");
 
+const chipsLabelEl = document.getElementById("chipsLabel");
+
 function showMainApp(status) {
   mainAppEl.classList.remove("hidden");
   if (status.description) heroDescriptionEl.textContent = status.description;
   heroSubtitleEl.textContent = `Powered by the Nimble Task Agents API — effort: ${status.effort || "unknown"}`;
 
   chipsEl.innerHTML = "";
-  for (const q of status.suggested_questions || []) {
+  const suggestions = status.suggested_questions || [];
+  for (const q of suggestions) {
     const chip = document.createElement("button");
     chip.className = "chip";
     chip.textContent = q;
     chip.onclick = () => {
       questionInputEl.value = q;
+      autoResize();
       questionInputEl.focus();
     };
     chipsEl.appendChild(chip);
   }
+  if (suggestions.length) {
+    chipsLabelEl.textContent = status.suggestions_date
+      ? `Today's picks · ${status.suggestions_date}`
+      : "Today's picks";
+    chipsLabelEl.classList.remove("hidden");
+  } else {
+    chipsLabelEl.classList.add("hidden");
+  }
 
+  refreshSavedIds();
   requestAnimationFrame(() => mainAppEl.classList.add("in"));
 }
 
@@ -346,7 +359,7 @@ async function submitQuestion() {
     const final = await getJSON(`/api/run/${run_id}`);
     if (final.status === "completed") {
       const { result } = await getJSON(`/api/run/${run_id}/result`);
-      renderResult(resultEl, result);
+      renderResult(resultEl, result, run_id);
       loadingEl.remove();
       resultEl.classList.remove("hidden");
       requestAnimationFrame(() => resultEl.classList.add("in"));
@@ -365,7 +378,7 @@ async function submitQuestion() {
     errorEl.classList.remove("hidden");
   } finally {
     askBtn.disabled = false;
-    loadHistory();
+    if (sidePanel.classList.contains("open")) loadActiveTab();
   }
 }
 
@@ -386,11 +399,20 @@ function formatElapsed(seconds) {
   return m > 0 ? `${m}m${String(rem).padStart(2, "0")}s` : `${s}s`;
 }
 
-function renderResult(resultEl, result) {
+function renderResult(resultEl, result, runId) {
   const library = result.library || "unknown";
   const version = result.version ? ` · ${result.version}` : "";
   resultEl.querySelector(".result-library").textContent = `📦 ${library}${version}`;
   resultEl.querySelector(".result-answer").innerHTML = renderAnswerHtml(result.answer);
+
+  const saveBtn = resultEl.querySelector(".save-btn");
+  if (saveBtn) {
+    if (runId) {
+      wireSaveButton(saveBtn, runId);
+    } else {
+      saveBtn.remove();
+    }
+  }
 
   const codeWrap = resultEl.querySelector(".result-code-wrap");
   const codeEl = resultEl.querySelector(".result-code");
@@ -427,29 +449,127 @@ questionInputEl.addEventListener("keydown", (e) => {
 });
 
 // ============================================================================
-// History panel
+// Saved answers — client-side cache of which run_ids are bookmarked, so save
+// buttons on screen reflect state, plus save/unsave toggling.
+// ============================================================================
+
+let savedIds = new Set();
+
+async function refreshSavedIds() {
+  try {
+    const { run_ids } = await getJSON("/api/saved/ids");
+    savedIds = new Set(run_ids);
+  } catch (_) {
+    savedIds = new Set();
+  }
+  document.querySelectorAll(".save-btn[data-run-id]").forEach((btn) => {
+    paintSaveButton(btn, savedIds.has(btn.dataset.runId));
+  });
+}
+
+function paintSaveButton(btn, isSaved) {
+  btn.classList.toggle("saved", isSaved);
+  btn.textContent = isSaved ? "★ Saved" : "☆ Save";
+}
+
+function wireSaveButton(btn, runId) {
+  btn.dataset.runId = runId;
+  paintSaveButton(btn, savedIds.has(runId));
+  btn.onclick = async () => {
+    const currentlySaved = savedIds.has(runId);
+    btn.disabled = true;
+    try {
+      if (currentlySaved) {
+        await deleteJSON(`/api/saved/${runId}`);
+        savedIds.delete(runId);
+      } else {
+        await postJSON("/api/saved", { run_id: runId });
+        savedIds.add(runId);
+      }
+      // Update every button referencing this run (thread + any reopened copy).
+      document.querySelectorAll(`.save-btn[data-run-id="${runId}"]`).forEach((b) => paintSaveButton(b, savedIds.has(runId)));
+      if (sidePanel.classList.contains("open") && activeTab === "saved") loadSaved();
+    } catch (exc) {
+      alert(`Could not ${currentlySaved ? "unsave" : "save"}: ${exc.message}`);
+    } finally {
+      btn.disabled = false;
+    }
+  };
+}
+
+// ============================================================================
+// Side panel — History + Saved tabs
 // ============================================================================
 
 const historyToggleBtn = document.getElementById("historyToggleBtn");
-const closeHistoryBtn = document.getElementById("closeHistoryBtn");
-const historyPanel = document.getElementById("historyPanel");
-const historyOverlay = document.getElementById("historyOverlay");
+const closePanelBtn = document.getElementById("closePanelBtn");
+const sidePanel = document.getElementById("sidePanel");
+const panelOverlay = document.getElementById("panelOverlay");
 const historyList = document.getElementById("historyList");
+const savedList = document.getElementById("savedList");
+const panelTabs = document.querySelectorAll(".panel-tab");
 
-function openHistory() {
-  historyPanel.classList.add("open");
-  historyOverlay.classList.add("open");
-  loadHistory();
+let activeTab = "history";
+
+function openPanel(tab) {
+  if (tab) setActiveTab(tab);
+  sidePanel.classList.add("open");
+  panelOverlay.classList.add("open");
+  loadActiveTab();
 }
 
-function closeHistory() {
-  historyPanel.classList.remove("open");
-  historyOverlay.classList.remove("open");
+function closePanel() {
+  sidePanel.classList.remove("open");
+  panelOverlay.classList.remove("open");
 }
 
-historyToggleBtn.addEventListener("click", openHistory);
-closeHistoryBtn.addEventListener("click", closeHistory);
-historyOverlay.addEventListener("click", closeHistory);
+function setActiveTab(tab) {
+  activeTab = tab;
+  panelTabs.forEach((t) => t.classList.toggle("active", t.dataset.tab === tab));
+  historyList.classList.toggle("hidden", tab !== "history");
+  savedList.classList.toggle("hidden", tab !== "saved");
+}
+
+function loadActiveTab() {
+  if (activeTab === "saved") loadSaved();
+  else loadHistory();
+}
+
+panelTabs.forEach((t) =>
+  t.addEventListener("click", () => {
+    setActiveTab(t.dataset.tab);
+    loadActiveTab();
+  })
+);
+
+historyToggleBtn.addEventListener("click", () => openPanel("history"));
+closePanelBtn.addEventListener("click", closePanel);
+panelOverlay.addEventListener("click", closePanel);
+
+function renderPanelItem(entry, { source }) {
+  const item = document.createElement("div");
+  item.className = "panel-item";
+  item.innerHTML = `
+    <div class="panel-item-body">
+      <div class="panel-item-question">${escapeHtml(entry.question || "")}</div>
+      <div class="panel-item-meta">${escapeHtml(entry.library || "?")} · ${escapeHtml(entry.timestamp || "")}</div>
+    </div>
+    <button class="panel-item-delete" title="${source === "saved" ? "Remove from saved" : "Delete"}">${source === "saved" ? "★" : "🗑"}</button>
+  `;
+  item.querySelector(".panel-item-body").onclick = () => viewEntry(entry.run_id, source);
+  item.querySelector(".panel-item-delete").onclick = async (e) => {
+    e.stopPropagation();
+    try {
+      await deleteJSON(`/api/${source}/${entry.run_id}`);
+      if (source === "saved") savedIds.delete(entry.run_id);
+      document.querySelectorAll(`.save-btn[data-run-id="${entry.run_id}"]`).forEach((b) => paintSaveButton(b, savedIds.has(entry.run_id)));
+      loadActiveTab();
+    } catch (exc) {
+      alert(`Could not remove: ${exc.message}`);
+    }
+  };
+  return item;
+}
 
 async function loadHistory() {
   let entries = [];
@@ -460,48 +580,42 @@ async function loadHistory() {
   }
   historyList.innerHTML = "";
   if (!entries.length) {
-    historyList.innerHTML = '<div class="history-empty">No questions asked yet.</div>';
+    historyList.innerHTML = '<div class="panel-empty">No questions asked yet.</div>';
     return;
   }
-  for (const entry of entries) {
-    const item = document.createElement("div");
-    item.className = "history-item";
-    item.innerHTML = `
-      <div class="history-item-body">
-        <div class="history-item-question">${escapeHtml(entry.question || "")}</div>
-        <div class="history-item-meta">${escapeHtml(entry.library || "?")} · ${escapeHtml(entry.timestamp || "")}</div>
-      </div>
-      <button class="history-item-delete" title="Delete">🗑</button>
-    `;
-    item.querySelector(".history-item-body").onclick = () => viewHistoryEntry(entry.run_id);
-    item.querySelector(".history-item-delete").onclick = async (e) => {
-      e.stopPropagation();
-      try {
-        await deleteJSON(`/api/history/${entry.run_id}`);
-        loadHistory();
-      } catch (exc) {
-        alert(`Could not delete: ${exc.message}`);
-      }
-    };
-    historyList.appendChild(item);
-  }
+  for (const entry of entries) historyList.appendChild(renderPanelItem(entry, { source: "history" }));
 }
 
-async function viewHistoryEntry(runId) {
+async function loadSaved() {
+  let entries = [];
+  try {
+    entries = await getJSON("/api/saved");
+  } catch (_) {
+    return;
+  }
+  savedList.innerHTML = "";
+  if (!entries.length) {
+    savedList.innerHTML = '<div class="panel-empty">No saved answers yet. Click ☆ Save on any answer to keep it here.</div>';
+    return;
+  }
+  for (const entry of entries) savedList.appendChild(renderPanelItem(entry, { source: "saved" }));
+}
+
+async function viewEntry(runId, source) {
   let entry;
   try {
-    entry = await getJSON(`/api/history/${runId}`);
+    entry = await getJSON(`/api/${source}/${runId}`);
   } catch (exc) {
     alert(`Could not load entry: ${exc.message}`);
     return;
   }
-  closeHistory();
+  closePanel();
 
   const card = cardTemplate.content.firstElementChild.cloneNode(true);
   card.querySelector(".card-question").textContent = entry.question;
   card.querySelector(".card-loading").remove();
   const resultEl = card.querySelector(".card-result");
-  renderResult(resultEl, entry.result);
+  renderResult(resultEl, entry.result, entry.run_id);
   resultEl.classList.remove("hidden");
   threadEl.appendChild(card);
   requestAnimationFrame(() => resultEl.classList.add("in"));

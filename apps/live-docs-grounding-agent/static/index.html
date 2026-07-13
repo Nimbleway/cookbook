@@ -45,20 +45,25 @@
         <textarea id="questionInput" placeholder="e.g. What's the current way to stream responses in the OpenAI Python SDK v1.x?" rows="2"></textarea>
         <button id="askBtn">Ask</button>
       </div>
+      <div id="chipsLabel" class="chips-label hidden">Today's picks</div>
       <div id="chips" class="chips"></div>
     </section>
 
     <section id="thread" class="thread"></section>
   </main>
 
-  <!-- History panel -->
-  <div id="historyOverlay" class="overlay hidden"></div>
-  <aside id="historyPanel" class="history-panel">
-    <div class="history-header">
-      <h2>History</h2>
-      <button id="closeHistoryBtn" class="icon-btn" aria-label="Close">✕</button>
+  <!-- Side panel: History + Saved tabs -->
+  <div id="panelOverlay" class="overlay hidden"></div>
+  <aside id="sidePanel" class="side-panel">
+    <div class="panel-header">
+      <div class="panel-tabs">
+        <button class="panel-tab active" data-tab="history">📜 History</button>
+        <button class="panel-tab" data-tab="saved">★ Saved</button>
+      </div>
+      <button id="closePanelBtn" class="icon-btn" aria-label="Close">✕</button>
     </div>
-    <div id="historyList" class="history-list"></div>
+    <div id="historyList" class="panel-list"></div>
+    <div id="savedList" class="panel-list hidden"></div>
   </aside>
 
 </div>
@@ -72,7 +77,10 @@
       <button class="cancel-btn">Cancel</button>
     </div>
     <div class="card-result hidden">
-      <div class="result-library"></div>
+      <div class="result-header">
+        <div class="result-library"></div>
+        <button class="save-btn" title="Save this answer">☆ Save</button>
+      </div>
       <div class="result-answer"></div>
       <div class="result-code-wrap hidden">
         <div class="result-code-label">Code</div>

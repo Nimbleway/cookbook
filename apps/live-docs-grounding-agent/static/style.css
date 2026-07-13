@@ -39,6 +39,10 @@ code, pre, .mono {
   display: none !important;
 }
 
+.dim {
+  color: var(--text-faint);
+}
+
 /* ---------------------------------------------------------------- topbar */
 
 .topbar {
@@ -380,12 +384,20 @@ code, pre, .mono {
   cursor: default;
 }
 
+.chips-label {
+  margin-top: 22px;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+}
+
 .chips {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .chip {
@@ -500,6 +512,14 @@ code, pre, .mono {
   transform: translateY(0);
 }
 
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
 .result-library {
   display: inline-block;
   font-size: 12.5px;
@@ -508,7 +528,29 @@ code, pre, .mono {
   background: rgba(237, 198, 2, 0.1);
   padding: 4px 10px;
   border-radius: 999px;
-  margin-bottom: 14px;
+}
+
+.save-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 5px 11px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  cursor: pointer;
+  flex: none;
+  transition: border-color var(--ease), color var(--ease), background var(--ease);
+}
+
+.save-btn:hover {
+  border-color: var(--accent-dim);
+  color: var(--text);
+}
+
+.save-btn.saved {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(237, 198, 2, 0.1);
 }
 
 .result-answer {
@@ -592,7 +634,7 @@ code, pre, .mono {
   padding: 12px 14px;
 }
 
-/* ---------------------------------------------------------------- history panel */
+/* ---------------------------------------------------------------- side panel */
 
 .overlay {
   position: fixed;
@@ -609,7 +651,7 @@ code, pre, .mono {
   pointer-events: auto;
 }
 
-.history-panel {
+.side-panel {
   position: fixed;
   top: 0;
   right: 0;
@@ -625,30 +667,50 @@ code, pre, .mono {
   flex-direction: column;
 }
 
-.history-panel.open {
+.side-panel.open {
   transform: translateX(0);
 }
 
-.history-header {
+.panel-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 20px;
+  padding: 12px 14px 12px 8px;
   border-bottom: 1px solid var(--border);
 }
 
-.history-header h2 {
-  font-size: 16px;
-  margin: 0;
+.panel-tabs {
+  display: flex;
+  gap: 4px;
 }
 
-.history-list {
+.panel-tab {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background var(--ease), color var(--ease);
+}
+
+.panel-tab:hover {
+  color: var(--text);
+}
+
+.panel-tab.active {
+  background: var(--bg-card-hover);
+  color: var(--accent);
+}
+
+.panel-list {
   overflow-y: auto;
   padding: 8px;
   flex: 1;
 }
 
-.history-item {
+.panel-item {
   padding: 12px 12px;
   border-radius: 10px;
   cursor: pointer;
@@ -658,16 +720,16 @@ code, pre, .mono {
   gap: 8px;
 }
 
-.history-item:hover {
+.panel-item:hover {
   background: var(--bg-card-hover);
 }
 
-.history-item-body {
+.panel-item-body {
   flex: 1;
   min-width: 0;
 }
 
-.history-item-question {
+.panel-item-question {
   font-size: 13.5px;
   color: var(--text);
   margin-bottom: 3px;
@@ -677,12 +739,12 @@ code, pre, .mono {
   overflow: hidden;
 }
 
-.history-item-meta {
+.panel-item-meta {
   font-size: 11.5px;
   color: var(--text-faint);
 }
 
-.history-item-delete {
+.panel-item-delete {
   background: transparent;
   border: none;
   color: var(--text-faint);
@@ -694,12 +756,12 @@ code, pre, .mono {
   transition: color var(--ease), background var(--ease);
 }
 
-.history-item-delete:hover {
+.panel-item-delete:hover {
   color: var(--error);
   background: rgba(248, 113, 113, 0.08);
 }
 
-.history-empty {
+.panel-empty {
   color: var(--text-faint);
   font-size: 13.5px;
   padding: 20px 12px;

@@ -11,8 +11,10 @@ endpoints never block on a multi-minute Nimble run.
 from __future__ import annotations
 
 import json
+import random
 import threading
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
+from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -20,6 +22,10 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 import agent as core
+
+QUESTION_POOL_PATH = Path(__file__).parent / "question_pool.json"
+SAVED_PATH = Path(__file__).parent / "saved.jsonl"
+DAILY_QUESTION_COUNT = 3
 
 app = FastAPI(title="Live Docs Grounding Agent")
 app.add_middleware(
@@ -64,6 +70,56 @@ def _require_client() -> "core.TaskAgentsClient":
 
 
 # ============================================================================
+# Daily suggested questions — a date-seeded rotating subset of a curated pool
+# of currently-relevant library/API questions. Deterministic per calendar
+# day (everyone sees the same set today, a different set tomorrow) with no
+# scheduler, no extra API calls, and no external dependency. Edit
+# question_pool.json to keep the pool current.
+# ============================================================================
+
+def _load_question_pool() -> list:
+    try:
+        data = json.loads(QUESTION_POOL_PATH.read_text())
+        pool = data.get("questions") if isinstance(data, dict) else data
+        if isinstance(pool, list) and pool:
+            return [q for q in pool if isinstance(q, str) and q.strip()]
+    except (OSError, ValueError):
+        pass
+    # Fall back to whatever the agent config carries.
+    return (STATE["config"] or _reload_config()).get("suggested_questions", [])
+
+
+def daily_questions(n: int = DAILY_QUESTION_COUNT, on_date: "date | None" = None) -> list:
+    pool = _load_question_pool()
+    if len(pool) <= n:
+        return pool
+    day = on_date or date.today()
+    rng = random.Random(day.toordinal())  # deterministic per calendar day
+    return rng.sample(pool, n)
+
+
+# ============================================================================
+# Saved answers — a curated bookmark list separate from the full history,
+# so a useful answer can be pinned and reopened any day. One JSON object per
+# line, same shape as a history entry.
+# ============================================================================
+
+def load_saved() -> list:
+    if not SAVED_PATH.exists():
+        return []
+    return [json.loads(line) for line in SAVED_PATH.read_text().splitlines() if line.strip()]
+
+
+def _write_saved(entries: list) -> None:
+    if entries:
+        with SAVED_PATH.open("w") as f:
+            for entry in entries:
+                f.write(json.dumps(entry) + "\n")
+    elif SAVED_PATH.exists():
+        SAVED_PATH.unlink()
+
+
+# ============================================================================
 # Setup / onboarding
 # ============================================================================
 
@@ -83,7 +139,8 @@ def setup_status():
         "agent_id": STATE["agent_id"],
         "agent_name": config.get("agent_name"),
         "description": config.get("description"),
-        "suggested_questions": config.get("suggested_questions", []),
+        "suggested_questions": daily_questions(),
+        "suggestions_date": date.today().isoformat(),
         "effort": config.get("effort"),
     }
 
@@ -283,6 +340,86 @@ def delete_history_entry(run_id: str):
             core.delete_entry(i)
             return {"ok": True}
     raise HTTPException(404, "No history entry with that run_id.")
+
+
+# ============================================================================
+# Saved answers (bookmarks)
+# ============================================================================
+
+class SaveRequest(BaseModel):
+    run_id: str
+
+
+def _find_entry(run_id: str) -> "dict | None":
+    """Find a full Q&A entry by run_id — from history first, then from any
+    completed in-memory run that hasn't been flushed to history yet."""
+    for entry in core.load_entries():
+        if entry.get("run_id") == run_id:
+            return entry
+    with RUNS_LOCK:
+        state = RUNS.get(run_id)
+        if state and state.get("status") == "completed" and state.get("result"):
+            return {
+                "run_id": run_id,
+                "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "question": state["question"],
+                "result": state["result"],
+            }
+    return None
+
+
+@app.get("/api/saved")
+def get_saved():
+    return [
+        {
+            "run_id": e.get("run_id"),
+            "timestamp": e.get("timestamp"),
+            "saved_at": e.get("saved_at"),
+            "question": e.get("question"),
+            "library": (e.get("result") or {}).get("library"),
+        }
+        for e in reversed(load_saved())
+    ]
+
+
+@app.get("/api/saved/ids")
+def get_saved_ids():
+    """Just the set of saved run_ids, so the UI can show which answers on
+    screen are already bookmarked."""
+    return {"run_ids": [e.get("run_id") for e in load_saved()]}
+
+
+@app.get("/api/saved/{run_id}")
+def get_saved_entry(run_id: str):
+    for entry in load_saved():
+        if entry.get("run_id") == run_id:
+            return entry
+    raise HTTPException(404, "No saved entry with that run_id.")
+
+
+@app.post("/api/saved")
+def save_entry(body: SaveRequest):
+    saved = load_saved()
+    if any(e.get("run_id") == body.run_id for e in saved):
+        return {"ok": True, "already_saved": True}
+    entry = _find_entry(body.run_id)
+    if not entry:
+        raise HTTPException(404, "No completed answer with that run_id to save.")
+    entry = dict(entry)
+    entry["saved_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    saved.append(entry)
+    _write_saved(saved)
+    return {"ok": True, "already_saved": False}
+
+
+@app.delete("/api/saved/{run_id}")
+def delete_saved_entry(run_id: str):
+    saved = load_saved()
+    remaining = [e for e in saved if e.get("run_id") != run_id]
+    if len(remaining) == len(saved):
+        raise HTTPException(404, "No saved entry with that run_id.")
+    _write_saved(remaining)
+    return {"ok": True}
 
 
 # Serve the frontend last so /api/* routes above take precedence.

@@ -43,7 +43,9 @@ On return visits with an existing key and agent, it reconnects automatically and
 
 Type a question in the box (or click one of the suggested-question chips) and press Enter or **Ask**. The answer streams in as a card below the question, with a live progress indicator while the run is in progress and a **Cancel** button to stop it early. Answers render as formatted text with a code block and clickable citation links — never raw JSON.
 
-Click the 📜 icon to browse past questions, view one in full, or delete it. Click ⚙ → **Re-run setup** to replay the onboarding sequence (e.g. for a demo) — it re-checks the agent for real rather than faking the animation.
+The suggested-question chips under the ask box are **today's picks** — a date-seeded rotating subset of a curated pool in `question_pool.json`. They change every day (and are the same for everyone on a given day); edit `question_pool.json` to keep the pool current.
+
+Click **★ Save** on any answer to bookmark it. The 📜 icon opens a side panel with two tabs: **History** (every question, auto-logged) and **Saved** (your bookmarks). A saved answer is a full independent snapshot — it stays reopenable any day, even after you clear it from history. Click ⚙ → **Re-run setup** to replay the onboarding sequence (e.g. for a demo) — it re-checks the agent for real rather than faking the animation.
 
 ### CLI (still available)
 
@@ -72,6 +74,7 @@ live-docs-grounding-agent/
 │   └── app.js           # Onboarding sequence, ask/poll/render flow, history panel
 ├── agent.py              # Task Agents API client, config loading, history, and the original CLI
 ├── agent_config.json     # Editable agent definition (domain, sources, effort, output schema)
+├── question_pool.json    # Curated pool the app rotates a daily subset from for suggested questions
 ├── requirements.txt
 └── .env.example
 ```
