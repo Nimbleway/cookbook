@@ -1,6 +1,6 @@
 # live-docs-grounding-agent — Live Docs Grounding Agent
 
-Answers software library and API usage questions by grounding them in current official documentation, changelogs, and release notes — powered by [Nimble](https://nimbleway.com)'s Task Agents API.
+Answers software library and API usage questions by grounding them in current official documentation, changelogs, and release notes — powered by [Nimble](https://nimbleway.com)'s Task Agents API. Ships as a local web app with animated onboarding, a live-updating answer feed, and mid-run cancellation.
 
 ## What it does
 
@@ -13,7 +13,8 @@ Answers software library and API usage questions by grounding them in current of
 ## Stack
 
 - [Nimble Task Agents API](https://nimbleway.com) — a Web Search Agent scoped to official docs, GitHub release notes, and changelogs
-- Python — the CLI, HTTP client, terminal rendering, and history storage
+- [FastAPI](https://fastapi.tiangolo.com/) + [Uvicorn](https://www.uvicorn.org/) — local web server exposing the agent as JSON endpoints
+- Vanilla HTML/CSS/JS — the frontend, no build step
 - [httpx](https://www.python-httpx.org/) — REST calls to the Task Agents API
 - [python-dotenv](https://pypi.org/project/python-dotenv/) — loads the Nimble API key from `.env`
 
@@ -31,29 +32,46 @@ python3 -m venv .venv
 **2. Run it**
 
 ```bash
-.venv/bin/python agent.py
+.venv/bin/python app.py
 ```
 
-First run asks for your Nimble API key, creates the agent in your workspace, and drops you into an interactive question loop. Get a key at [online.nimbleway.com](https://online.nimbleway.com).
+This prints the local URL (`http://127.0.0.1:8420`) and starts the server. Open it in your browser — first run walks you through pasting your Nimble API key and creating the agent, with the setup steps shown live on screen. Get a key at [online.nimbleway.com](https://online.nimbleway.com).
+
+On return visits with an existing key and agent, it reconnects automatically and drops you straight into the question screen.
 
 ## Usage
 
-```bash
-.venv/bin/python agent.py "What's the current way to stream responses in the OpenAI Python SDK v1.x?"
-```
+Type a question in the box (or click one of the suggested-question chips) and press Enter or **Ask**. The answer streams in as a card below the question, with a live progress indicator while the run is in progress and a **Cancel** button to stop it early. Answers render as formatted text with a code block and clickable citation links — never raw JSON.
 
-Type `quit` (or press Ctrl+C) at any point while a question is running to cancel it. In the interactive loop, type `history` to browse past questions, or `history delete <n>` to remove one — the same commands also work directly: `python agent.py history` / `python agent.py history <n>` / `python agent.py history delete <n>`.
+Click the 📜 icon to browse past questions, view one in full, or delete it. Click ⚙ → **Re-run setup** to replay the onboarding sequence (e.g. for a demo) — it re-checks the agent for real rather than faking the animation.
+
+### CLI (still available)
+
+The original terminal interface still works, unchanged, if you'd rather script it or use it headless:
+
+```bash
+.venv/bin/python agent.py                    # interactive terminal loop
+.venv/bin/python agent.py "your question"    # ask one question directly
+.venv/bin/python agent.py history            # browse history
+.venv/bin/python agent.py --reset            # force re-setup
+```
 
 ## Editing the agent's domain
 
-`agent_config.json` holds everything the agent knows: domain expertise, goals, the allowed doc/changelog sources, effort tier, and the output schema. Edit it and re-run with `--reset` to push the change to the live agent — that's all it takes to point this same code at a different domain entirely (e.g. answering questions about a different kind of documentation).
+`agent_config.json` holds everything the agent knows: domain expertise, goals, the allowed doc/changelog sources, effort tier, and the output schema. Edit it, then either click **Re-run setup** in the web app or run `python agent.py --reset` to push the change to the live agent — that's all it takes to point this same code at a different domain entirely (e.g. answering questions about a different kind of documentation).
 
 ## Project structure
 
 ```
 live-docs-grounding-agent/
-├── agent.py            # Everything: Task Agents API client, CLI, history, terminal rendering
-├── agent_config.json    # Editable agent definition (domain, sources, effort, output schema)
+├── app.py               # Entry point: python app.py (starts the web server)
+├── server.py            # FastAPI endpoints — orchestrates agent.py's client, no new Task Agents API calls
+├── static/
+│   ├── index.html
+│   ├── style.css
+│   └── app.js           # Onboarding sequence, ask/poll/render flow, history panel
+├── agent.py              # Task Agents API client, config loading, history, and the original CLI
+├── agent_config.json     # Editable agent definition (domain, sources, effort, output schema)
 ├── requirements.txt
 └── .env.example
 ```
