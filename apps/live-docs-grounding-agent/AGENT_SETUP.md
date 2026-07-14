@@ -24,16 +24,19 @@ Check whether the repo is already cloned locally:
 ls cookbook
 ```
 
+Everything runnable lives in the `agent/` subfolder of the app directory — the commands below `cd` into it.
+
 **If the directory exists** — navigate into it and pull the latest:
 ```bash
 cd cookbook
 git pull
+cd apps/live-docs-grounding-agent/agent
 ```
 
 **If it does not exist** — clone it:
 ```bash
 git clone https://github.com/Nimbleway/cookbook
-cd cookbook/apps/live-docs-grounding-agent
+cd cookbook/apps/live-docs-grounding-agent/agent
 ```
 
 ---

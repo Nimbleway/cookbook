@@ -422,5 +422,8 @@ def delete_saved_entry(run_id: str):
     return {"ok": True}
 
 
-# Serve the frontend last so /api/* routes above take precedence.
-app.mount("/", StaticFiles(directory="static", html=True), name="static")
+# Serve the frontend last so /api/* routes above take precedence. Resolve the
+# static dir relative to this file (not the cwd) so `python app.py` works no
+# matter which directory it's launched from.
+_STATIC_DIR = Path(__file__).parent / "static"
+app.mount("/", StaticFiles(directory=str(_STATIC_DIR), html=True), name="static")

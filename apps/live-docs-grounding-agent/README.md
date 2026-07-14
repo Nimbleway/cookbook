@@ -32,9 +32,11 @@ Answers software library and API usage questions by grounding them in current of
 
 **1. Clone the repo and enter the app folder**
 
+Everything runnable lives in the `agent/` subfolder — `cd` into it.
+
 ```bash
 git clone https://github.com/Nimbleway/cookbook
-cd cookbook/apps/live-docs-grounding-agent
+cd cookbook/apps/live-docs-grounding-agent/agent
 ```
 
 **2. Create an isolated Python environment**
@@ -105,15 +107,18 @@ The original terminal interface still works, unchanged, if you'd rather script i
 
 ```
 live-docs-grounding-agent/
-├── app.py               # Entry point: python app.py (starts the web server)
-├── server.py            # FastAPI endpoints — orchestrates agent.py's client, no new Task Agents API calls
-├── static/
-│   ├── index.html
-│   ├── style.css
-│   └── app.js           # Onboarding sequence, ask/poll/render flow, history panel
-├── agent.py              # Task Agents API client, config loading, history, and the original CLI
-├── agent_config.json     # Editable agent definition (domain, sources, effort, output schema)
-├── question_pool.json    # Curated pool the app rotates a daily subset from for suggested questions
-├── requirements.txt
-└── .env.example
+├── README.md
+├── AGENT_SETUP.md
+└── agent/                  # everything runnable lives here — cd here to run
+    ├── app.py              # Entry point: python app.py (starts the web server)
+    ├── server.py           # FastAPI endpoints — orchestrates agent.py's client, no new Task Agents API calls
+    ├── agent.py            # Task Agents API client, config loading, history, and the original CLI
+    ├── agent_config.json   # Editable agent definition (domain, sources, effort, output schema)
+    ├── question_pool.json  # Curated pool the app rotates a daily subset from for suggested questions
+    ├── requirements.txt
+    ├── .env.example
+    └── static/
+        ├── index.html
+        ├── style.css
+        └── app.js          # Onboarding sequence, ask/poll/render flow, history + saved panel
 ```
