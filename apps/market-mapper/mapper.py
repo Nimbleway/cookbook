@@ -11,6 +11,7 @@ import pathlib
 import re
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
 
 import requests
 from dotenv import load_dotenv
@@ -20,13 +21,17 @@ from supabase import create_client
 
 load_dotenv()
 
-_missing = [v for v in ("NIMBLE_API_KEY", "ANTHROPIC_API_KEY", "SUPABASE_URL", "SUPABASE_KEY") if not os.getenv(v)]
+USE_LIVE = os.getenv("USE_LIVE", "true").lower() == "true"
+
+# Supabase is always required (persistence). NIMBLE_API_KEY only for live runs —
+# sample replay must work without it. ANTHROPIC_API_KEY is checked in chat().
+_required = ["SUPABASE_URL", "SUPABASE_KEY"] + (["NIMBLE_API_KEY"] if USE_LIVE else [])
+_missing = [v for v in _required if not os.getenv(v)]
 if _missing:
     raise SystemExit(f"Missing environment variables: {', '.join(_missing)} — copy .env.example to .env and fill it in.")
 
 BASE = "https://sdk.nimbleway.com/v1"
-HEADERS = {"Authorization": f"Bearer {os.environ['NIMBLE_API_KEY']}", "Content-Type": "application/json"}
-USE_LIVE = os.getenv("USE_LIVE", "true").lower() == "true"
+HEADERS = {"Authorization": f"Bearer {os.getenv('NIMBLE_API_KEY', '')}", "Content-Type": "application/json"}
 ENRICH_CAP = int(os.getenv("ENRICH_CAP", "10"))
 SAMPLE_DIR = pathlib.Path(__file__).parent / "data" / "sample_run"
 _agents_file = pathlib.Path(__file__).parent / "agents.json"
@@ -244,11 +249,18 @@ def enrich_pending(run_uuid, cap=None, workers=5, on_event=None):
 
     done = 0
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = [pool.submit(fetch, c) for c in pending]
+        futures = {pool.submit(fetch, c): c for c in pending}
         for f in as_completed(futures):
+            c = futures[f]
             try:
-                c, run, result = f.result()
+                _, run, result = f.result()
             except Exception as e:  # network/API failure is a data state, not a crash
+                print(f"enrichment failed for {c['domain']}: {e}", flush=True)
+                sb.table("mm_companies").update({"enrich_status": "failed",
+                                                 "raw_enrichment": {"error": str(e)}}
+                                                ).eq("id", c["id"]).execute()
+                if on_event:
+                    on_event(c["domain"], "failed")
                 continue
             if result is None or (run and run.get("status") != "completed"):
                 sb.table("mm_companies").update({"enrich_status": "failed", "raw_enrichment": run}
@@ -266,7 +278,7 @@ def enrich_pending(run_uuid, cap=None, workers=5, on_event=None):
                 "summary": content.get("summary"),
                 "enrichment_confidence": trust.get("confidence"),
                 "claims": _field_claims(result), "raw_enrichment": result,
-                "enrich_status": "enriched", "enriched_at": "now()",
+                "enrich_status": "enriched", "enriched_at": datetime.now(timezone.utc).isoformat(),
             }).eq("id", c["id"]).execute()
             done += 1
             if on_event:
@@ -296,6 +308,8 @@ _chat_chain = None
 def chat(question, companies):
     """Answer a question over the mapped dataset. LangChain prompt | Claude."""
     global _chat_chain
+    if not os.getenv("ANTHROPIC_API_KEY"):
+        raise RuntimeError("ANTHROPIC_API_KEY missing — chat needs it; add it to .env.")
     if _chat_chain is None:
         prompt = ChatPromptTemplate.from_messages([
             ("system",

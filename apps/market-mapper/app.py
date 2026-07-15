@@ -1,4 +1,6 @@
 """Market Mapper — Streamlit UI."""
+import os
+
 import pandas as pd
 import streamlit as st
 
@@ -136,12 +138,15 @@ with tab_map:
                     st.caption(f"    ↳ {url}")
 
 with tab_chat:
-    if "chat_log" not in st.session_state:
-        st.session_state.chat_log = []
-    for role, msg in st.session_state.chat_log:
-        st.chat_message(role).write(msg)
-    if q := st.chat_input("Ask about this market — e.g. 'who raised most recently?'"):
-        st.chat_message("user").write(q)
-        answer = mapper.chat(q, companies)
-        st.chat_message("assistant").write(answer)
-        st.session_state.chat_log += [("user", q), ("assistant", answer)]
+    if not os.getenv("ANTHROPIC_API_KEY"):
+        st.info("Chat is disabled — add ANTHROPIC_API_KEY to .env to enable it.")
+    else:
+        if "chat_log" not in st.session_state:
+            st.session_state.chat_log = []
+        for role, msg in st.session_state.chat_log:
+            st.chat_message(role).write(msg)
+        if q := st.chat_input("Ask about this market — e.g. 'who raised most recently?'"):
+            st.chat_message("user").write(q)
+            answer = mapper.chat(q, companies)
+            st.chat_message("assistant").write(answer)
+            st.session_state.chat_log += [("user", q), ("assistant", answer)]
