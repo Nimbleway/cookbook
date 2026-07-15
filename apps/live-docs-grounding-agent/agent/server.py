@@ -145,6 +145,36 @@ def setup_status():
     }
 
 
+@app.get("/api/agent")
+def agent_details():
+    """The agent's full configuration, for the 'About this agent' view — the
+    same fields that were sent to the Task Agents API to define it: its
+    domain expertise, goals, allowed sources, effort/use-case, and the
+    structured output schema every answer conforms to."""
+    config = STATE["config"] or _reload_config()
+    schema = config.get("output_schema", {}) or {}
+    props = schema.get("properties", {}) or {}
+    required = set(schema.get("required", []) or [])
+    return {
+        "agent_id": STATE["agent_id"],
+        "agent_name": config.get("agent_name"),
+        "display_name": config.get("display_name"),
+        "description": config.get("description"),
+        "use_case": config.get("use_case"),
+        "effort": config.get("effort"),
+        "domain_expertise": config.get("domain_expertise"),
+        "goals": config.get("goals", []),
+        "sources": [
+            {"title": s.get("title"), "domains": s.get("domains", [])}
+            for s in (config.get("sources", {}) or {}).get("allow", [])
+        ],
+        "output_schema_fields": [
+            {"name": name, "type": spec.get("type", "any"), "required": name in required}
+            for name, spec in props.items()
+        ],
+    }
+
+
 @app.post("/api/setup/key")
 def setup_key(body: KeyRequest):
     api_key = body.api_key.strip()

@@ -645,6 +645,86 @@ rerunSetupBtn.addEventListener("click", async () => {
 });
 
 // ============================================================================
+// About this agent modal
+// ============================================================================
+
+const aboutBtn = document.getElementById("aboutBtn");
+const closeAboutBtn = document.getElementById("closeAboutBtn");
+const aboutOverlay = document.getElementById("aboutOverlay");
+const aboutBody = document.getElementById("aboutBody");
+
+function aboutSection(label, innerHtml) {
+  return `<div class="about-section"><div class="about-label">${escapeHtml(label)}</div>${innerHtml}</div>`;
+}
+
+async function openAbout() {
+  aboutBody.innerHTML = '<p class="about-text">Loading…</p>';
+  aboutOverlay.classList.remove("hidden");
+  requestAnimationFrame(() => aboutOverlay.classList.add("open"));
+
+  let d;
+  try {
+    d = await getJSON("/api/agent");
+  } catch (exc) {
+    aboutBody.innerHTML = `<p class="about-text">Could not load agent details: ${escapeHtml(exc.message)}</p>`;
+    return;
+  }
+
+  let html = "";
+
+  if (d.description) {
+    html += aboutSection("What it does", `<div class="about-text">${escapeHtml(d.description)}</div>`);
+  }
+
+  const meta = [];
+  if (d.use_case) meta.push(`<span class="about-pill">use case: ${escapeHtml(d.use_case)}</span>`);
+  if (d.effort) meta.push(`<span class="about-pill">effort: ${escapeHtml(d.effort)}</span>`);
+  if (meta.length) html += aboutSection("Configuration", `<div class="about-meta">${meta.join("")}</div>`);
+
+  if (d.sources && d.sources.length) {
+    const pills = d.sources
+      .map((s) => {
+        const domains = (s.domains || []).length ? `<span class="pill-domains">${escapeHtml(s.domains.join(", "))}</span>` : "";
+        return `<span class="about-pill">${escapeHtml(s.title || "")}${domains}</span>`;
+      })
+      .join("");
+    html += aboutSection("Sources it searches", `<div class="about-pills">${pills}</div>`);
+  }
+
+  if (d.goals && d.goals.length) {
+    const items = d.goals.map((g) => `<li>${escapeHtml(g)}</li>`).join("");
+    html += aboutSection("Goals", `<ul class="about-list">${items}</ul>`);
+  }
+
+  if (d.domain_expertise) {
+    html += aboutSection("Domain knowledge", `<div class="about-text">${escapeHtml(d.domain_expertise)}</div>`);
+  }
+
+  if (d.output_schema_fields && d.output_schema_fields.length) {
+    const fields = d.output_schema_fields
+      .map(
+        (f) =>
+          `<div class="about-field"><code>${escapeHtml(f.name)}</code><span class="field-type">${escapeHtml(f.type)}</span>${f.required ? '<span class="field-required">required</span>' : ""}</div>`
+      )
+      .join("");
+    html += aboutSection("Structured output (every answer)", `<div class="about-schema">${fields}</div>`);
+  }
+
+  aboutBody.innerHTML = html || '<p class="about-text">No details available.</p>';
+}
+
+function closeAbout() {
+  aboutOverlay.classList.remove("open");
+  setTimeout(() => aboutOverlay.classList.add("hidden"), 220);
+}
+
+aboutBtn.addEventListener("click", openAbout);
+closeAboutBtn.addEventListener("click", closeAbout);
+aboutOverlay.addEventListener("click", (e) => {
+  if (e.target === aboutOverlay) closeAbout();
+});
+
+// ============================================================================
 // Boot
 // ============================================================================
 

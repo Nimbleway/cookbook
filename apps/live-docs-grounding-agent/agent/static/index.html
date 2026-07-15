@@ -12,6 +12,7 @@
   <header class="topbar">
     <div class="brand">📚 <span>Live Docs Grounding Agent</span></div>
     <div class="topbar-actions">
+      <button id="aboutBtn" class="icon-btn" title="About this agent" aria-label="About this agent">ℹ️</button>
       <button id="historyToggleBtn" class="icon-btn" title="History" aria-label="History">📜</button>
       <button id="settingsBtn" class="icon-btn" title="Settings" aria-label="Settings">⚙</button>
       <div id="settingsMenu" class="settings-menu">
@@ -65,6 +66,18 @@
     <div id="historyList" class="panel-list"></div>
     <div id="savedList" class="panel-list hidden"></div>
   </aside>
+
+  <!-- About this agent modal -->
+  <div id="aboutOverlay" class="modal-overlay hidden">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>About this agent</h2>
+        <button id="closeAboutBtn" class="icon-btn" aria-label="Close">✕</button>
+      </div>
+      <div id="aboutBody" class="modal-body"></div>
+      <div class="modal-footer">Configured and run via the <a href="https://nimbleway.com" target="_blank" rel="noopener">Nimble Task Agents API</a></div>
+    </div>
+  </div>
 
 </div>
 

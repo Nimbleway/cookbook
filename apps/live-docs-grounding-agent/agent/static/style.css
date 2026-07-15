@@ -768,6 +768,175 @@ code, pre, .mono {
   text-align: center;
 }
 
+/* ---------------------------------------------------------------- about modal */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--ease);
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  width: 100%;
+  max-width: 640px;
+  max-height: 85vh;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(10px) scale(0.985);
+  transition: transform var(--ease);
+  overflow: hidden;
+}
+
+.modal-overlay.open .modal {
+  transform: translateY(0) scale(1);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-header h2 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.modal-body {
+  padding: 22px;
+  overflow-y: auto;
+}
+
+.modal-footer {
+  padding: 12px 22px;
+  border-top: 1px solid var(--border);
+  font-size: 12.5px;
+  color: var(--text-faint);
+  text-align: center;
+}
+
+.modal-footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.about-section {
+  margin-bottom: 20px;
+}
+
+.about-section:last-child {
+  margin-bottom: 0;
+}
+
+.about-label {
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+  margin-bottom: 8px;
+}
+
+.about-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.about-pill {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.about-pill .pill-domains {
+  color: var(--text-faint);
+  font-size: 11.5px;
+  margin-left: 6px;
+}
+
+.about-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.about-meta .about-pill {
+  background: rgba(237, 198, 2, 0.1);
+  border-color: transparent;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.about-text {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-dim);
+  white-space: pre-wrap;
+}
+
+.about-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.about-schema {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.about-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.about-field code {
+  color: var(--accent);
+  background: var(--bg);
+  padding: 2px 7px;
+  border-radius: 6px;
+}
+
+.about-field .field-type {
+  color: var(--text-faint);
+  font-size: 12px;
+}
+
+.about-field .field-required {
+  color: var(--success);
+  font-size: 11px;
+  margin-left: auto;
+}
+
 @media (max-width: 640px) {
   .main-app {
     padding: 32px 14px 60px;
