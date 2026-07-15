@@ -696,20 +696,6 @@ async function openAbout() {
     html += aboutSection("Goals", `<ul class="about-list">${items}</ul>`);
   }
 
-  if (d.domain_expertise) {
-    html += aboutSection("Domain knowledge", `<div class="about-text">${escapeHtml(d.domain_expertise)}</div>`);
-  }
-
-  if (d.output_schema_fields && d.output_schema_fields.length) {
-    const fields = d.output_schema_fields
-      .map(
-        (f) =>
-          `<div class="about-field"><code>${escapeHtml(f.name)}</code><span class="field-type">${escapeHtml(f.type)}</span>${f.required ? '<span class="field-required">required</span>' : ""}</div>`
-      )
-      .join("");
-    html += aboutSection("Structured output (every answer)", `<div class="about-schema">${fields}</div>`);
-  }
-
   aboutBody.innerHTML = html || '<p class="about-text">No details available.</p>';
 }
 
