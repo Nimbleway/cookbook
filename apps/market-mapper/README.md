@@ -44,6 +44,8 @@ cp .env.example .env
 
 Fill in: `NIMBLE_API_KEY` ([get one](https://nimbleway.com)), `ANTHROPIC_API_KEY` ([console](https://console.anthropic.com)), `SUPABASE_URL` + `SUPABASE_KEY` (project Settings → API, service_role key).
 
+> The `service_role` key bypasses Row Level Security — keep it server-side only and never expose it in client code or a public deployment. For public-facing deployments, use the anon key with RLS policies instead.
+
 **4. Create your agents**
 
 ```bash
@@ -62,7 +64,7 @@ streamlit run app.py
 
 Describe an ICP — e.g. `"AI-powered vertical SaaS companies in healthcare, 11-200 employees, US or Israel, Series A or later"` — and click **Map the market**. Discovery takes several minutes (the agent is doing real research); enrichment fans out from there, 10 companies at a time.
 
-`USE_LIVE=false` in `.env` replays the bundled sample dataset through the same code paths — useful for exploring the UI without API calls. Only the Supabase keys are required in this mode (`NIMBLE_API_KEY` is needed for live runs, `ANTHROPIC_API_KEY` only for chat). A banner shows when sample data is active.
+`USE_LIVE=false` in `.env` replays the bundled sample dataset through the same code paths — useful for exploring the UI without API calls. Only the Supabase keys are required in this mode — no `agents.json` and no other keys (`NIMBLE_API_KEY` is needed for live runs, `ANTHROPIC_API_KEY` only for chat). A banner shows when sample data is active.
 
 **Headless (no UI):** the full collection pipeline also runs from the command line — map, enrich, and land in Supabase without Streamlit:
 

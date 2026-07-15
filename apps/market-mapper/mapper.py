@@ -177,7 +177,8 @@ def map_market(icp, exclude_domains=None, max_employees=None, on_status=None):
     """Run discovery, land companies in Supabase. Returns the mm_runs row id."""
     exclude_domains = [d.lower().strip() for d in (exclude_domains or [])]
     run_row = sb.table("mm_runs").insert({
-        "icp_prompt": icp, "exclude_domains": exclude_domains, "agent_id": AGENTS["mapper"],
+        "icp_prompt": icp, "exclude_domains": exclude_domains,
+        "agent_id": AGENTS["mapper"] if USE_LIVE else None,  # replay must not require agents.json
     }).execute().data[0]
 
     run, result = _discovery_result(icp, exclude_domains, on_status)
