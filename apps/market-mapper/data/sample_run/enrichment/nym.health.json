@@ -1,0 +1,1494 @@
+{
+  "run": {
+    "status": "completed",
+    "is_active": false
+  },
+  "result": {
+    "run": {
+      "id": "task_run_587291e1512149f1acab704ce5123ce1",
+      "error": null,
+      "effort": "high",
+      "prompt": "Enrich lead: Nym Health (nym.health) \u2014 company details, funding stage and investors, headcount, key decision-makers with titles and LinkedIn URLs, tech stack, buying signals",
+      "status": "completed",
+      "is_active": false,
+      "created_at": "2026-07-11T21:07:19.021518Z",
+      "started_at": "2026-07-11T21:07:19.566103Z",
+      "completed_at": "2026-07-11T21:12:53.413278Z",
+      "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+      "interaction_id": "task_run_587291e1512149f1acab704ce5123ce1",
+      "web_search_agent_id": "wsa_b064449062834b5ead2609b8d372b689"
+    },
+    "output": {
+      "type": "json",
+      "trust": {
+        "claims": [
+          {
+            "path": "$.company_name",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.website",
+            "citations": [
+              {
+                "url": "https://nym.health/",
+                "title": "Nym | AI Medical Coding Solutions - Medical Coding Automation",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.industry",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/nym",
+                "title": "Nym",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.headquarters",
+            "citations": [
+              {
+                "url": "https://nym.health/contact-us",
+                "title": "Contact Nym | Trusted Medical Coding & Billing Software",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/nym",
+                "title": "Nym",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headcount_estimate",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/nym",
+                "title": "Nym",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.funding_stage",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+                "title": "Medical Coding Engine Nym Announces $47 Million ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.total_funding",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+                "title": "Medical Coding Engine Nym Announces $47 Million ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://techcrunch.com/2020/10/13/nym-health-raises-14-million-for-its-auditable-machine-learning-tools-for-automating-hospital-billing",
+                "title": "Nym Health raises $16.5 million for its auditable machine ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[0]",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+                "title": "Medical Coding Engine Nym Announces $47 Million ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[1]",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+                "title": "Medical Coding Engine Nym Announces $47 Million ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://techcrunch.com/2020/10/13/nym-health-raises-14-million-for-its-auditable-machine-learning-tools-for-automating-hospital-billing",
+                "title": "Nym Health raises $16.5 million for its auditable machine ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[2]",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+                "title": "Medical Coding Engine Nym Announces $47 Million ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[3]",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://techcrunch.com/2020/10/13/nym-health-raises-14-million-for-its-auditable-machine-learning-tools-for-automating-hospital-billing",
+                "title": "Nym Health raises $16.5 million for its auditable machine ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[4]",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://techcrunch.com/2020/10/13/nym-health-raises-14-million-for-its-auditable-machine-learning-tools-for-automating-hospital-billing",
+                "title": "Nym Health raises $16.5 million for its auditable machine ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[5]",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://techcrunch.com/2020/10/13/nym-health-raises-14-million-for-its-auditable-machine-learning-tools-for-automating-hospital-billing",
+                "title": "Nym Health raises $16.5 million for its auditable machine ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[6]",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+                "title": "Medical Coding Engine Nym Announces $47 Million ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[7]",
+            "citations": [
+              {
+                "url": "https://techcrunch.com/2020/10/13/nym-health-raises-14-million-for-its-auditable-machine-learning-tools-for-automating-hospital-billing",
+                "title": "Nym Health raises $16.5 million for its auditable machine ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[8]",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://techcrunch.com/2020/10/13/nym-health-raises-14-million-for-its-auditable-machine-learning-tools-for-automating-hospital-billing",
+                "title": "Nym Health raises $16.5 million for its auditable machine ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[9]",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://techcrunch.com/2020/10/13/nym-health-raises-14-million-for-its-auditable-machine-learning-tools-for-automating-hospital-billing",
+                "title": "Nym Health raises $16.5 million for its auditable machine ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].name",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].title",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].seniority",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/nym",
+                "title": "Nym",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/posts/nym_nym-welcomes-lori-jones-as-chief-executive-activity-7452355513398398977-gE2e",
+                "title": "Nym Welcomes Lori Jones as Chief Executive Officer",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[1].name",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].title",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].seniority",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/julien-dubuis-07b81855",
+                "title": "Julien Dubuis - Chief Commercial Officer at Nym",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[2].name",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].title",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].seniority",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].name",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].title",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].seniority",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].name",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].title",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].seniority",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].name",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].title",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].seniority",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].name",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].title",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].seniority",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].name",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].title",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].seniority",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].name",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].title",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].seniority",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].name",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].title",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].seniority",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[0]",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+                "title": "Medical Coding Engine Nym Announces $47 Million ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://nym.health/press-release/healthcare-technology-and-revenue-cycle-management-thought-leader-michael-finke-joins-nym-healths-board-of-directors",
+                "title": "Healthcare Technology and Revenue Cycle Management ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[1]",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+                "title": "Medical Coding Engine Nym Announces $47 Million ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[2]",
+            "citations": [
+              {
+                "url": "https://nym.health/autonomous-medical-coding/implementation",
+                "title": "Simplified AI Medical Coding Implementation Process",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[3]",
+            "citations": [
+              {
+                "url": "https://nym.health/autonomous-medical-coding/implementation",
+                "title": "Simplified AI Medical Coding Implementation Process",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[4]",
+            "citations": [
+              {
+                "url": "https://nym.health/autonomous-medical-coding/implementation",
+                "title": "Simplified AI Medical Coding Implementation Process",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[5]",
+            "citations": [
+              {
+                "url": "https://nym.health/autonomous-medical-coding/implementation",
+                "title": "Simplified AI Medical Coding Implementation Process",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[6]",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/healthcare-technology-and-revenue-cycle-management-thought-leader-michael-finke-joins-nym-healths-board-of-directors",
+                "title": "Healthcare Technology and Revenue Cycle Management ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[7]",
+            "citations": [
+              {
+                "url": "https://nym.health/",
+                "title": "Nym | AI Medical Coding Solutions - Medical Coding Automation",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[8]",
+            "citations": [
+              {
+                "url": "https://nym.health/",
+                "title": "Nym | AI Medical Coding Solutions - Medical Coding Automation",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[9]",
+            "citations": [
+              {
+                "url": "https://nym.health/insights",
+                "title": "Healthcare Insights & Innovations in Medical Coding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[10]",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+                "title": "Medical Coding Engine Nym Announces $47 Million ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[0]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/posts/nym_nym-welcomes-lori-jones-as-chief-executive-activity-7452355513398398977-gE2e",
+                "title": "Nym Welcomes Lori Jones as Chief Executive Officer",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[1]",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+                "title": "Medical Coding Engine Nym Announces $47 Million ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[2]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/julien-dubuis-07b81855",
+                "title": "Julien Dubuis - Chief Commercial Officer at Nym",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[3]",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+                "title": "Medical Coding Engine Nym Announces $47 Million ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[4]",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/nym-named-to-times-inaugural-worlds-top-healthtech-companies-of-2025",
+                "title": "Nym Named to TIME's Inaugural World's Top HealthTech ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[5]",
+            "citations": [
+              {
+                "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+                "title": "Medical Coding Engine Nym Announces $47 Million ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[6]",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[7]",
+            "citations": [
+              {
+                "url": "https://nym.health/insights",
+                "title": "Healthcare Insights & Innovations in Medical Coding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.summary",
+            "citations": [
+              {
+                "url": "https://nym.health/about",
+                "title": "About Nym | The Best AI Medical Coding Automation ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+                "title": "Medical Coding Engine Nym Announces $47 Million ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/nym",
+                "title": "Nym",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://techcrunch.com/2020/10/13/nym-health-raises-14-million-for-its-auditable-machine-learning-tools-for-automating-hospital-billing",
+                "title": "Nym Health raises $16.5 million for its auditable machine ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://nym.health/press-release/nym-named-to-times-inaugural-worlds-top-healthtech-companies-of-2025",
+                "title": "Nym Named to TIME's Inaugural World's Top HealthTech ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://nym.health/about",
+            "type": "primary",
+            "title": "About Nym | The Best AI Medical Coding Automation ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://nym.health/",
+            "type": "primary",
+            "title": "Nym | AI Medical Coding Solutions - Medical Coding Automation",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/nym",
+            "type": "secondary",
+            "title": "Nym",
+            "source_intent": null,
+            "source_category": "social",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://nym.health/contact-us",
+            "type": "primary",
+            "title": "Contact Nym | Trusted Medical Coding & Billing Software",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://nym.health/press-release/autonomous-medical-coding-engine-nym-announces-47-million-growth-investment-led-by-psg",
+            "type": "primary",
+            "title": "Medical Coding Engine Nym Announces $47 Million ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://techcrunch.com/2020/10/13/nym-health-raises-14-million-for-its-auditable-machine-learning-tools-for-automating-hospital-billing",
+            "type": "secondary",
+            "title": "Nym Health raises $16.5 million for its auditable machine ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/posts/nym_nym-welcomes-lori-jones-as-chief-executive-activity-7452355513398398977-gE2e",
+            "type": "secondary",
+            "title": "Nym Welcomes Lori Jones as Chief Executive Officer",
+            "source_intent": null,
+            "source_category": "social",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/julien-dubuis-07b81855",
+            "type": "secondary",
+            "title": "Julien Dubuis - Chief Commercial Officer at Nym",
+            "source_intent": null,
+            "source_category": "social",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://nym.health/press-release/healthcare-technology-and-revenue-cycle-management-thought-leader-michael-finke-joins-nym-healths-board-of-directors",
+            "type": "primary",
+            "title": "Healthcare Technology and Revenue Cycle Management ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://nym.health/autonomous-medical-coding/implementation",
+            "type": "secondary",
+            "title": "Simplified AI Medical Coding Implementation Process",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://nym.health/insights",
+            "type": "secondary",
+            "title": "Healthcare Insights & Innovations in Medical Coding",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://nym.health/press-release/nym-named-to-times-inaugural-worlds-top-healthtech-companies-of-2025",
+            "type": "secondary",
+            "title": "Nym Named to TIME's Inaugural World's Top HealthTech ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          }
+        ],
+        "reasoning": "Medium confidence - cells fill rate is 79%",
+        "confidence": "medium"
+      },
+      "content": {
+        "summary": "Nym Health (nym.health) is a New York City-based health IT company founded in 2018 by Amihai Neiderman and Adam Rimon (alumni of Israel's Unit 8200). It is the market leader in autonomous medical coding, using a proprietary Clinical Language Understanding (CLU) engine and explainable AI to automatically transform physician chart notes into ICD-10-CM and CPT billing codes \u2014 with zero human intervention, >95% accuracy, and a 12-hour TAT. The platform integrates via FHIR with major EHRs (Epic, Cerner Oracle Health, Meditech) and serves 400+ U.S. healthcare facilities, processing 6M+ charts annually. Nym has raised ~$63.5M+ across known rounds, most recently a $47M growth investment led by PSG (October 2024), with co-investors GV, Addition, Samsung Next, Bessemer, Dynamic Loop, and Tiger Global. As of July 2026, Nym has approximately 287 LinkedIn-listed employees with offices in New York (HQ) and Tel Aviv (R&D). CEO Lori M. Jones (joined ~May 2025) leads a recently rebuilt C-suite including CCO Julien Dubuis, CFO Yuval Yezersky, and SVP R&D Yaniv Shachar. Key buying signals include the 2025 CEO transition, active senior hiring (including a Chief Customer Officer search), continued multi-specialty product expansion, and recognition as an 'Outstanding' HealthTech company by TIME in 2025.",
+        "website": "https://nym.health",
+        "industry": "Health Information Technology / AI-Driven Revenue Cycle Management (Autonomous Medical Coding)",
+        "tech_stack": [
+          "Proprietary Clinical Language Understanding (CLU) / NLP engine (core AI/ML for autonomous medical coding)",
+          "Explainable AI (audit-trail code generation)",
+          "FHIR-based EHR integration (standards-based HL7 FHIR API)",
+          "Epic integration",
+          "Cerner Oracle Health integration",
+          "Meditech integration",
+          "ICD-10-CM and CPT coding standards",
+          "WordPress (website CMS)",
+          "Elementor (website page builder)",
+          "HubSpot / go.nym.health (gated content and marketing automation)",
+          "Cloud infrastructure (AI-first; R&D in Tel Aviv)"
+        ],
+        "company_name": "Nym Health",
+        "headquarters": "45 Bond St, New York, NY 10012, USA (with R&D office in Tel Aviv, Israel)",
+        "key_contacts": [
+          {
+            "name": "Lori M. Jones",
+            "email": null,
+            "title": "Chief Executive Officer (CEO)",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/lorimjones"
+          },
+          {
+            "name": "Julien Dubuis",
+            "email": null,
+            "title": "Chief Commercial Officer (CCO)",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/julien-dubuis-07b81855"
+          },
+          {
+            "name": "Yuval Yezersky",
+            "email": null,
+            "title": "Chief Financial Officer (CFO)",
+            "seniority": "C-Suite",
+            "linkedin_url": null
+          },
+          {
+            "name": "Yaniv Shachar",
+            "email": null,
+            "title": "SVP of Research & Development",
+            "seniority": "SVP",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ariela Levi Krumgals",
+            "email": null,
+            "title": "SVP of Human Resources",
+            "seniority": "SVP",
+            "linkedin_url": null
+          },
+          {
+            "name": "Aya Weinstein",
+            "email": null,
+            "title": "VP of Product",
+            "seniority": "VP",
+            "linkedin_url": null
+          },
+          {
+            "name": "Andrew Jones",
+            "email": null,
+            "title": "VP of Implementation",
+            "seniority": "VP",
+            "linkedin_url": null
+          },
+          {
+            "name": "Vanessa Youmans",
+            "email": null,
+            "title": "VP of Compliance Operations",
+            "seniority": "VP",
+            "linkedin_url": null
+          },
+          {
+            "name": "Scott Casale",
+            "email": null,
+            "title": "VP of Growth",
+            "seniority": "VP",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ed Hughes",
+            "email": null,
+            "title": "VP of Growth",
+            "seniority": "VP",
+            "linkedin_url": null
+          }
+        ],
+        "funding_stage": "Growth-stage (post-Series A; $47M growth round led by PSG, October 2024)",
+        "key_investors": [
+          "PSG (lead, 2024 growth round)",
+          "GV (Google Ventures)",
+          "Addition",
+          "Bessemer Venture Partners",
+          "Dynamic Loop Capital",
+          "Tiger Global",
+          "Samsung Next (2024 round)",
+          "Lightspeed (2020 round)",
+          "Zach Weinberg (angel, Flatiron Health)",
+          "Nat Turner (angel, Flatiron Health)"
+        ],
+        "total_funding": "~$63.5M+ publicly disclosed (undisclosed seed + $16.5M Series A in 2020 + $47M growth round in 2024)",
+        "buying_signals": [
+          "New CEO hire (Lori M. Jones, ~May 2025): leadership change creating new strategic and budget priorities",
+          "$47M PSG-led growth investment (October 2024): actively deploying capital for product expansion and sales/marketing scale-up",
+          "Actively hiring: open roles for Chief Customer Officer, Customer Success Executive (Health Systems), and multiple senior positions posted in 2025\u20132026",
+          "Multi-specialty expansion: broadening from emergency medicine to urgent care, radiology, and additional specialties \u2014 new buyer segments being targeted",
+          "Named to TIME's World's Top HealthTech Companies of 2025 ('Outstanding' rank, September 2025): elevated brand profile driving inbound and partnership interest",
+          "Rapid customer base growth: 400+ healthcare facilities and 6M+ charts processed annually (as of 2024), up from 40 providers in 2020",
+          "Multiple senior leadership additions in 2025\u20132026 (CFO, SVP R&D, VP Product, VP Implementation, VP Compliance): building enterprise-grade execution team",
+          "Active thought leadership and HFMA partnership roundtables in 2025\u20132026: top-of-funnel engagement signaling commercial expansion push"
+        ],
+        "headcount_estimate": "~287 employees (LinkedIn, July 2026); LinkedIn company size band: 51\u2013200"
+      }
+    }
+  }
+}

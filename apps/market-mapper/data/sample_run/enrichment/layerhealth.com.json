@@ -1,0 +1,1561 @@
+{
+  "run": {
+    "status": "completed",
+    "is_active": false
+  },
+  "result": {
+    "run": {
+      "id": "task_run_6b2b3bc579bb46518450ffdbe372ad46",
+      "error": null,
+      "effort": "high",
+      "prompt": "Enrich lead: Layer Health (layerhealth.com) \u2014 company details, funding stage and investors, headcount, key decision-makers with titles and LinkedIn URLs, tech stack, buying signals",
+      "status": "completed",
+      "is_active": false,
+      "created_at": "2026-07-11T21:13:05.297908Z",
+      "started_at": "2026-07-11T21:13:05.513728Z",
+      "completed_at": "2026-07-11T21:18:11.170139Z",
+      "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+      "interaction_id": "task_run_6b2b3bc579bb46518450ffdbe372ad46",
+      "web_search_agent_id": "wsa_b064449062834b5ead2609b8d372b689"
+    },
+    "output": {
+      "type": "json",
+      "trust": {
+        "claims": [
+          {
+            "path": "$.company_name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.website",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/",
+                "title": "https://www.layerhealth.com",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.industry",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://layerhealth.com/",
+                "title": "https://www.layerhealth.com",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headquarters",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/david-sontag",
+                "title": "David Sontag - CEO Layer Health, Professor at MIT",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://definevc.com/insights/transforming-clinical-data-understanding-with-layer-health",
+                "title": "Transforming Clinical Data Understanding with Layer Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.funding_stage",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+                "title": "Layer Health garners $21M for AI chart review platform",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.total_funding",
+            "citations": [
+              {
+                "url": "https://hlth.com/insights/news/layer-health-secures-21m-to-revolutionize-clinical-chart-review-with-ai-2025-03-28",
+                "title": "Layer Health Secures $21M to Revolutionize Clinical Chart ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+                "title": "Layer Health garners $21M for AI chart review platform",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://forbes.com/sites/sethjoseph/2025/03/27/why-layer-health-and-investors-believe-it-can-solve-healthcare-ais-scalability-challenge-with-a-fresh-21-million",
+                "title": "Why Layer Health And Investors Believe It Can Solve ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 3 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[0]",
+            "citations": [
+              {
+                "url": "https://definevc.com/insights/transforming-clinical-data-understanding-with-layer-health",
+                "title": "Transforming Clinical Data Understanding with Layer Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://forbes.com/sites/sethjoseph/2025/03/27/why-layer-health-and-investors-believe-it-can-solve-healthcare-ais-scalability-challenge-with-a-fresh-21-million",
+                "title": "Why Layer Health And Investors Believe It Can Solve ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[1]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hlth.com/insights/news/layer-health-secures-21m-to-revolutionize-clinical-chart-review-with-ai-2025-03-28",
+                "title": "Layer Health Secures $21M to Revolutionize Clinical Chart ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[2]",
+            "citations": [
+              {
+                "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+                "title": "Layer Health garners $21M for AI chart review platform",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://forbes.com/sites/sethjoseph/2025/03/27/why-layer-health-and-investors-believe-it-can-solve-healthcare-ais-scalability-challenge-with-a-fresh-21-million",
+                "title": "Why Layer Health And Investors Believe It Can Solve ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[3]",
+            "citations": [
+              {
+                "url": "https://hlth.com/insights/news/layer-health-secures-21m-to-revolutionize-clinical-chart-review-with-ai-2025-03-28",
+                "title": "Layer Health Secures $21M to Revolutionize Clinical Chart ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+                "title": "Layer Health garners $21M for AI chart review platform",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[4]",
+            "citations": [
+              {
+                "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+                "title": "Layer Health garners $21M for AI chart review platform",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://forbes.com/sites/sethjoseph/2025/03/27/why-layer-health-and-investors-believe-it-can-solve-healthcare-ais-scalability-challenge-with-a-fresh-21-million",
+                "title": "Why Layer Health And Investors Believe It Can Solve ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[5]",
+            "citations": [
+              {
+                "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+                "title": "Layer Health garners $21M for AI chart review platform",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hlth.com/insights/news/layer-health-secures-21m-to-revolutionize-clinical-chart-review-with-ai-2025-03-28",
+                "title": "Layer Health Secures $21M to Revolutionize Clinical Chart ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headcount_estimate",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[0]",
+            "citations": [
+              {
+                "url": "https://definevc.com/insights/transforming-clinical-data-understanding-with-layer-health",
+                "title": "Transforming Clinical Data Understanding with Layer Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+                "title": "Layer Health garners $21M for AI chart review platform",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[1]",
+            "citations": [
+              {
+                "url": "https://forbes.com/sites/sethjoseph/2025/03/27/why-layer-health-and-investors-believe-it-can-solve-healthcare-ais-scalability-challenge-with-a-fresh-21-million",
+                "title": "Why Layer Health And Investors Believe It Can Solve ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://definevc.com/insights/transforming-clinical-data-understanding-with-layer-health",
+                "title": "Transforming Clinical Data Understanding with Layer Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[2]",
+            "citations": [
+              {
+                "url": "https://forbes.com/sites/sethjoseph/2025/03/27/why-layer-health-and-investors-believe-it-can-solve-healthcare-ais-scalability-challenge-with-a-fresh-21-million",
+                "title": "Why Layer Health And Investors Believe It Can Solve ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[3]",
+            "citations": [
+              {
+                "url": "https://forbes.com/sites/sethjoseph/2025/03/27/why-layer-health-and-investors-believe-it-can-solve-healthcare-ais-scalability-challenge-with-a-fresh-21-million",
+                "title": "Why Layer Health And Investors Believe It Can Solve ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[4]",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://layerhealth.com/",
+                "title": "https://www.layerhealth.com",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[5]",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[6]",
+            "citations": [
+              {
+                "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+                "title": "Layer Health garners $21M for AI chart review platform",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://definevc.com/insights/transforming-clinical-data-understanding-with-layer-health",
+                "title": "Transforming Clinical Data Understanding with Layer Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].name",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].title",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].linkedin_url",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/in/david-sontag",
+                "title": "David Sontag - CEO Layer Health, Professor at MIT",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].name",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].title",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].linkedin_url",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].name",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].title",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].linkedin_url",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].name",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].title",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].linkedin_url",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].name",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].title",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].linkedin_url",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].name",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].title",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].linkedin_url",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].name",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/in/brianbhuta",
+                "title": "Brian Bhuta - Chief Product Officer at Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].title",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].linkedin_url",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/in/brianbhuta",
+                "title": "Brian Bhuta - Chief Product Officer at Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].name",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].title",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].linkedin_url",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].name",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].title",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].linkedin_url",
+            "citations": [
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/derekbedwards",
+                "title": "Derek Edwards - Founding Head of Data & Infrastructure ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].title",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/derekbedwards",
+                "title": "Derek Edwards - Founding Head of Data & Infrastructure ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/derekbedwards",
+                "title": "Derek Edwards - Founding Head of Data & Infrastructure ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/in/timcregan",
+                "title": "Tim Cregan - Growth | Healthcare | Leadership",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].title",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/timcregan",
+                "title": "Tim Cregan - Growth | Healthcare | Leadership",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/timcregan",
+                "title": "Tim Cregan - Growth | Healthcare | Leadership",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[0]",
+            "citations": [
+              {
+                "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+                "title": "Layer Health garners $21M for AI chart review platform",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hlth.com/insights/news/layer-health-secures-21m-to-revolutionize-clinical-chart-review-with-ai-2025-03-28",
+                "title": "Layer Health Secures $21M to Revolutionize Clinical Chart ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[1]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[2]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://definevc.com/insights/transforming-clinical-data-understanding-with-layer-health",
+                "title": "Transforming Clinical Data Understanding with Layer Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+                "title": "Layer Health garners $21M for AI chart review platform",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[3]",
+            "citations": [
+              {
+                "url": "https://forbes.com/sites/sethjoseph/2025/03/27/why-layer-health-and-investors-believe-it-can-solve-healthcare-ais-scalability-challenge-with-a-fresh-21-million",
+                "title": "Why Layer Health And Investors Believe It Can Solve ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+                "title": "Layer Health garners $21M for AI chart review platform",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[4]",
+            "citations": [
+              {
+                "url": "https://forbes.com/sites/sethjoseph/2025/03/27/why-layer-health-and-investors-believe-it-can-solve-healthcare-ais-scalability-challenge-with-a-fresh-21-million",
+                "title": "Why Layer Health And Investors Believe It Can Solve ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[5]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[6]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://forbes.com/sites/sethjoseph/2025/03/27/why-layer-health-and-investors-believe-it-can-solve-healthcare-ais-scalability-challenge-with-a-fresh-21-million",
+                "title": "Why Layer Health And Investors Believe It Can Solve ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[7]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[8]",
+            "citations": [
+              {
+                "url": "https://forbes.com/sites/sethjoseph/2025/03/27/why-layer-health-and-investors-believe-it-can-solve-healthcare-ais-scalability-challenge-with-a-fresh-21-million",
+                "title": "Why Layer Health And Investors Believe It Can Solve ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+                "title": "Layer Health garners $21M for AI chart review platform",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.summary",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layerhealth",
+                "title": "Layer Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://layerhealth.com/company",
+                "title": "Company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+                "title": "Layer Health garners $21M for AI chart review platform",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://definevc.com/insights/transforming-clinical-data-understanding-with-layer-health",
+                "title": "Transforming Clinical Data Understanding with Layer Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://forbes.com/sites/sethjoseph/2025/03/27/why-layer-health-and-investors-believe-it-can-solve-healthcare-ais-scalability-challenge-with-a-fresh-21-million",
+                "title": "Why Layer Health And Investors Believe It Can Solve ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hlth.com/insights/news/layer-health-secures-21m-to-revolutionize-clinical-chart-review-with-ai-2025-03-28",
+                "title": "Layer Health Secures $21M to Revolutionize Clinical Chart ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://linkedin.com/company/layerhealth",
+            "type": "primary",
+            "title": "Layer Health",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://layerhealth.com/company",
+            "type": "primary",
+            "title": "Company",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://layerhealth.com/",
+            "type": "primary",
+            "title": "https://www.layerhealth.com",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/david-sontag",
+            "type": "primary",
+            "title": "David Sontag - CEO Layer Health, Professor at MIT",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://definevc.com/insights/transforming-clinical-data-understanding-with-layer-health",
+            "type": "secondary",
+            "title": "Transforming Clinical Data Understanding with Layer Health",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://mobihealthnews.com/news/layer-health-garners-21m-ai-chart-review-platform",
+            "type": "secondary",
+            "title": "Layer Health garners $21M for AI chart review platform",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://hlth.com/insights/news/layer-health-secures-21m-to-revolutionize-clinical-chart-review-with-ai-2025-03-28",
+            "type": "secondary",
+            "title": "Layer Health Secures $21M to Revolutionize Clinical Chart ...",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://forbes.com/sites/sethjoseph/2025/03/27/why-layer-health-and-investors-believe-it-can-solve-healthcare-ais-scalability-challenge-with-a-fresh-21-million",
+            "type": "secondary",
+            "title": "Why Layer Health And Investors Believe It Can Solve ...",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/brianbhuta",
+            "type": "primary",
+            "title": "Brian Bhuta - Chief Product Officer at Layer Health",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/derekbedwards",
+            "type": "primary",
+            "title": "Derek Edwards - Founding Head of Data & Infrastructure ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/timcregan",
+            "type": "primary",
+            "title": "Tim Cregan - Growth | Healthcare | Leadership",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          }
+        ],
+        "reasoning": "High confidence - cells fill rate is 87% and trust per claim ratio is 95%",
+        "confidence": "high"
+      },
+      "content": {
+        "summary": "Layer Health is a Cambridge, MA-based healthcare AI company (founded 2023) spun out of MIT, building an AI-powered Clinical Intelligence Platform that uses large language models (LLMs) to automate clinical data abstraction from medical records. The company is Series A-funded ($21M, March 2025; $25M total), backed by Define Ventures (lead), GV/Google Ventures, Flare Capital Partners, General Catalyst, MultiCare Capital Partners, and Inception Health. With ~55 employees, Layer Health targets health systems and life sciences organizations with a no-code/low-code SaaS platform that integrates directly with EHRs to support clinical registry reporting, revenue cycle management, quality measurement, and real-world evidence curation \u2014 without requiring labeled training data. Early deployments show 50\u201365%+ reductions in manual abstraction time. Key decision-makers include CEO David Sontag (MIT professor), CBO Alastair Blake (MD), CPO Brian Bhuta (ex-Press Ganey, Signify Health), and co-founders Divya Gopinath and Luke Murray (Co-Heads of Engineering). Strong buying signals include fresh capital deployment, active hiring, a growing reference customer roster, and imminent product expansion into clinical decision support and CDI. Data freshness: July 2026 (LinkedIn headcount, company page); March 2025 (funding round); July 2026 (company website team page).",
+        "website": "https://www.layerhealth.com",
+        "industry": "Healthcare AI / Software Development \u2014 AI-powered clinical data abstraction and chart review platform for health systems and life sciences",
+        "tech_stack": [
+          "Large Language Models (LLMs) trained on longitudinal patient data \u2014 core AI engine",
+          "Clinical NLP / natural language processing for unstructured medical record extraction",
+          "No-code / low-code SaaS platform for self-service and enterprise deployment",
+          "Direct EHR integration (Epic and others) via HL7/FHIR",
+          "Framer (website CMS/frontend framework \u2014 framerusercontent CDN)",
+          "Enterprise-grade security and compliance (HIPAA-compliant; SOC-certified implied)",
+          "Machine learning for structured + unstructured clinical data (chart abstraction without labeled data)"
+        ],
+        "company_name": "Layer Health",
+        "headquarters": "Cambridge, Massachusetts, USA (MIT spinout; team based in Greater Boston area)",
+        "key_contacts": [
+          {
+            "name": "David Sontag",
+            "email": null,
+            "title": "Co-founder & CEO",
+            "seniority": "C-Suite / Founder",
+            "linkedin_url": "https://www.linkedin.com/in/david-sontag/"
+          },
+          {
+            "name": "Divya Gopinath",
+            "email": null,
+            "title": "Co-founder & Co-Head of Engineering",
+            "seniority": "C-Suite / Founder",
+            "linkedin_url": "https://www.linkedin.com/in/divyagopinath/"
+          },
+          {
+            "name": "Luke Murray",
+            "email": null,
+            "title": "Co-founder & Co-Head of Engineering",
+            "seniority": "C-Suite / Founder",
+            "linkedin_url": "https://www.linkedin.com/in/luke-s-murray/"
+          },
+          {
+            "name": "Monica Agrawal",
+            "email": null,
+            "title": "Co-founder & Head of Research",
+            "seniority": "C-Suite / Founder",
+            "linkedin_url": "https://www.linkedin.com/in/monica-agrawal-bb73a874/"
+          },
+          {
+            "name": "Steven Horng, MD, MMSc, FACEP",
+            "email": null,
+            "title": "Co-founder & VP Clinical Informatics",
+            "seniority": "VP / Founder",
+            "linkedin_url": "https://www.linkedin.com/in/stevenhorngmd/"
+          },
+          {
+            "name": "Alastair Blake, MD",
+            "email": null,
+            "title": "Chief Business Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/alastair-blake-md-9080413b/"
+          },
+          {
+            "name": "Brian Bhuta",
+            "email": null,
+            "title": "Chief Product Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/brianbhuta/"
+          },
+          {
+            "name": "Kathleen Tibbetts",
+            "email": null,
+            "title": "Head of Operations",
+            "seniority": "Director / Head",
+            "linkedin_url": "https://www.linkedin.com/in/kmtibbetts/"
+          },
+          {
+            "name": "David Bernick",
+            "email": null,
+            "title": "vCISO (Virtual Chief Information Security Officer)",
+            "seniority": "C-Suite (fractional)",
+            "linkedin_url": "https://www.linkedin.com/in/davidbernick/"
+          },
+          {
+            "name": "Derek Edwards",
+            "email": null,
+            "title": "Founding Head of Data & Infrastructure",
+            "seniority": "Director / Head",
+            "linkedin_url": "https://www.linkedin.com/in/derekbedwards"
+          },
+          {
+            "name": "Tim Cregan",
+            "email": null,
+            "title": "Growth & Healthcare Leader",
+            "seniority": "Senior",
+            "linkedin_url": "https://www.linkedin.com/in/timcregan"
+          }
+        ],
+        "funding_stage": "Series A",
+        "key_investors": [
+          "Define Ventures (led Series A; Lynne Chou O'Keefe, Managing Partner)",
+          "GV / Google Ventures (seed lead + Series A participation; Anthony Philippakis, Partner)",
+          "Flare Capital Partners (Series A; Parth Desai, Partner)",
+          "MultiCare Capital Partners (Series A strategic investor)",
+          "General Catalyst (seed)",
+          "Inception Health / Froedtert Health (seed)"
+        ],
+        "total_funding": "~$25 million ($4M seed in 2023 + $21M Series A in March 2025)",
+        "buying_signals": [
+          "Recently closed $21M Series A (March 2025) \u2014 actively deploying capital for platform scaling and workforce expansion; company stated plans to 'scale its AI platform and expand its workforce'",
+          "Actively hiring \u2014 headcount grown to ~55 as of July 2026; LinkedIn shows job postings across ML engineer, clinical data analyst, customer success, and VP-level roles",
+          "New enterprise customer wins: White Plains Hospital case study published (50%+ abstractor time reduction); Froedtert & Medical College of Wisconsin deployment (65%+ time reduction); multi-year American Cancer Society deal signed early 2025",
+          "Market expansion into life sciences: self-service SaaS platform already live with life sciences customers; ACS partnership signals pharma/research vertical push beyond health systems",
+          "Product roadmap expansion: moving from clinical registry module to real-time clinical decision support, CDI (clinical documentation improvement), and medical coding modules \u2014 multiple new use cases opening up",
+          "Strategic institutional investor backing: GV (Google Ventures) involvement signals potential Google Cloud / healthcare AI ecosystem alignment",
+          "High conference and ecosystem visibility in 2025\u20132026: BOSTechWeek panelist, Flare Capital 'Healthcare AI Edition' featured speaker, Massachusetts AI Coalition events, CSAIL Entrepreneurship Day \u2014 indicating active BD and pipeline building",
+          "Engaged with major health system networks (Moffitt Cancer Center, White Plains, Froedtert) \u2014 suggesting an expanding reference customer base for outreach",
+          "Technology migration signal: the platform integrates with EHRs and replaces manual chart abstraction workflows \u2014 a strong displacement opportunity for health system vendors and workflow automation tools"
+        ],
+        "headcount_estimate": "~55 employees (LinkedIn, July 2026; LinkedIn size bracket: 11\u201350, but live count shows 55)"
+      }
+    }
+  }
+}

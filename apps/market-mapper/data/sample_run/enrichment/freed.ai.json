@@ -1,0 +1,1310 @@
+{
+  "run": {
+    "status": "completed",
+    "is_active": false
+  },
+  "result": {
+    "run": {
+      "id": "task_run_7956f16f63354c659a697e14973d6977",
+      "error": null,
+      "effort": "high",
+      "prompt": "Enrich lead: Freed (freed.ai) \u2014 company details, funding stage and investors, headcount, key decision-makers with titles and LinkedIn URLs, tech stack, buying signals",
+      "status": "completed",
+      "is_active": false,
+      "created_at": "2026-07-11T21:07:19.011012Z",
+      "started_at": "2026-07-11T21:07:19.498969Z",
+      "completed_at": "2026-07-11T21:12:42.623494Z",
+      "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+      "interaction_id": "task_run_7956f16f63354c659a697e14973d6977",
+      "web_search_agent_id": "wsa_b064449062834b5ead2609b8d372b689"
+    },
+    "output": {
+      "type": "json",
+      "trust": {
+        "claims": [
+          {
+            "path": "$.company_name",
+            "citations": [
+              {
+                "url": "https://freed.ai/",
+                "title": "Best AI Medical Scribe for Clinical Notes | Freed",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.website",
+            "citations": [
+              {
+                "url": "https://freed.ai/",
+                "title": "Best AI Medical Scribe for Clinical Notes | Freed",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "Freed",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.industry",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "Freed",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://sacra.com/c/freed",
+                "title": "Freed revenue, funding & growth rate | Sacra",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headquarters",
+            "citations": [
+              {
+                "url": "https://freed.ai/",
+                "title": "Best AI Medical Scribe for Clinical Notes | Freed",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "Freed",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headcount_estimate",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "Freed",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/posts/michabreakstone_i-remember-when-erez-druk-first-called-me-activity-7303087398681219073-6o8g",
+                "title": "Micha Y. Breakstone's Post",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.funding_stage",
+            "citations": [
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-freed-picks-30m-ai-clinician-assistant",
+                "title": "Fundraising Tracker\u2014Freed picks up $30M for AI scribe",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.total_funding",
+            "citations": [
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-freed-picks-30m-ai-clinician-assistant",
+                "title": "Fundraising Tracker\u2014Freed picks up $30M for AI scribe",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://sacra.com/c/freed",
+                "title": "Freed revenue, funding & growth rate | Sacra",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 3 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[0]",
+            "citations": [
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-freed-picks-30m-ai-clinician-assistant",
+                "title": "Fundraising Tracker\u2014Freed picks up $30M for AI scribe",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[1]",
+            "citations": [
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-freed-picks-30m-ai-clinician-assistant",
+                "title": "Fundraising Tracker\u2014Freed picks up $30M for AI scribe",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[2]",
+            "citations": [
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[3]",
+            "citations": [
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/posts/michabreakstone_i-remember-when-erez-druk-first-called-me-activity-7303087398681219073-6o8g",
+                "title": "Micha Y. Breakstone's Post",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[4]",
+            "citations": [
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/posts/michabreakstone_i-remember-when-erez-druk-first-called-me-activity-7303087398681219073-6o8g",
+                "title": "Micha Y. Breakstone's Post",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[5]",
+            "citations": [
+              {
+                "url": "https://sacra.com/c/freed",
+                "title": "Freed revenue, funding & growth rate | Sacra",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[6]",
+            "citations": [
+              {
+                "url": "https://sacra.com/c/freed",
+                "title": "Freed revenue, funding & growth rate | Sacra",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[7]",
+            "citations": [
+              {
+                "url": "https://sacra.com/c/freed",
+                "title": "Freed revenue, funding & growth rate | Sacra",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[8]",
+            "citations": [
+              {
+                "url": "https://sacra.com/c/freed",
+                "title": "Freed revenue, funding & growth rate | Sacra",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[9]",
+            "citations": [
+              {
+                "url": "https://sacra.com/c/freed",
+                "title": "Freed revenue, funding & growth rate | Sacra",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[0].name",
+            "citations": [
+              {
+                "url": "https://getfreed.ai/author/erez-druk",
+                "title": "Erez Druk",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].title",
+            "citations": [
+              {
+                "url": "https://getfreed.ai/author/erez-druk",
+                "title": "Erez Druk",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "Freed",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/drukerez",
+                "title": "Erez Druk - Freeing clinicians @ Freed.ai",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[0].email",
+            "citations": [
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[1].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/bannikovandrey",
+                "title": "Andrey Bannikov - Co-Founder & CTO at Freed",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[1].title",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/bannikovandrey",
+                "title": "Andrey Bannikov - Co-Founder & CTO at Freed",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[1].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/bannikovandrey",
+                "title": "Andrey Bannikov - Co-Founder & CTO at Freed",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[2].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/posts/michabreakstone_i-remember-when-erez-druk-first-called-me-activity-7303087398681219073-6o8g",
+                "title": "Micha Y. Breakstone's Post",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[2].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/posts/edozie-ezeanolue-b71798180_freed-seriesa-clinicianburnout-activity-7303245622227177474-zDP_",
+                "title": "Freed raises $30M Series A from Sequoia to ease clinician ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[3].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/michelleburchenal",
+                "title": "Michelle Burchenal - Chief of Staff at Freed.ai",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[3].title",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/michelleburchenal",
+                "title": "Michelle Burchenal - Chief of Staff at Freed.ai",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[3].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/michelleburchenal",
+                "title": "Michelle Burchenal - Chief of Staff at Freed.ai",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[4].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/ted-obenchain-01110b21",
+                "title": "Ted Obenchain - Founding Sales Leader at Freed AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].title",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/ted-obenchain-01110b21",
+                "title": "Ted Obenchain - Founding Sales Leader at Freed AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/ted-obenchain-01110b21",
+                "title": "Ted Obenchain - Founding Sales Leader at Freed AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[0]",
+            "citations": [
+              {
+                "url": "https://freed.ai/",
+                "title": "Best AI Medical Scribe for Clinical Notes | Freed",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[1]",
+            "citations": [
+              {
+                "url": "https://help.getfreed.ai/en/articles/11870714-frequently-asked-questions",
+                "title": "Frequently Asked Questions | Freed Scribe Help Center",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[2]",
+            "citations": [
+              {
+                "url": "https://help.getfreed.ai/en/articles/11870714-frequently-asked-questions",
+                "title": "Frequently Asked Questions | Freed Scribe Help Center",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[3]",
+            "citations": [
+              {
+                "url": "https://help.getfreed.ai/en/articles/11870714-frequently-asked-questions",
+                "title": "Frequently Asked Questions | Freed Scribe Help Center",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[4]",
+            "citations": [
+              {
+                "url": "https://help.getfreed.ai/en/articles/11870714-frequently-asked-questions",
+                "title": "Frequently Asked Questions | Freed Scribe Help Center",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[5]",
+            "citations": [
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[6]",
+            "citations": [
+              {
+                "url": "https://help.getfreed.ai/en/articles/11870714-frequently-asked-questions",
+                "title": "Frequently Asked Questions | Freed Scribe Help Center",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[7]",
+            "citations": [
+              {
+                "url": "https://freed.ai/",
+                "title": "Best AI Medical Scribe for Clinical Notes | Freed",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[8]",
+            "citations": [
+              {
+                "url": "https://freed.ai/",
+                "title": "Best AI Medical Scribe for Clinical Notes | Freed",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[9]",
+            "citations": [
+              {
+                "url": "https://sacra.com/c/freed",
+                "title": "Freed revenue, funding & growth rate | Sacra",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[0]",
+            "citations": [
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-freed-picks-30m-ai-clinician-assistant",
+                "title": "Fundraising Tracker\u2014Freed picks up $30M for AI scribe",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[1]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "Freed",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/posts/michabreakstone_i-remember-when-erez-druk-first-called-me-activity-7303087398681219073-6o8g",
+                "title": "Micha Y. Breakstone's Post",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[2]",
+            "citations": [
+              {
+                "url": "https://freed.ai/",
+                "title": "Best AI Medical Scribe for Clinical Notes | Freed",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[3]",
+            "citations": [
+              {
+                "url": "https://sacra.com/c/freed",
+                "title": "Freed revenue, funding & growth rate | Sacra",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[4]",
+            "citations": [
+              {
+                "url": "https://freed.ai/",
+                "title": "Best AI Medical Scribe for Clinical Notes | Freed",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "Freed",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[5]",
+            "citations": [
+              {
+                "url": "https://getfreed.ai/blog/freed-founding-story",
+                "title": "Freeding Clinicians: Our Founding Story",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[6]",
+            "citations": [
+              {
+                "url": "https://freed.ai/",
+                "title": "Best AI Medical Scribe for Clinical Notes | Freed",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[7]",
+            "citations": [
+              {
+                "url": "https://sacra.com/c/freed",
+                "title": "Freed revenue, funding & growth rate | Sacra",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[8]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "Freed",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://getfreed.ai/careers/company",
+                "title": "https://www.getfreed.ai/careers/company",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.summary",
+            "citations": [
+              {
+                "url": "https://freed.ai/",
+                "title": "Best AI Medical Scribe for Clinical Notes | Freed",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://getfreed.ai/blog/freed-raises-series-a",
+                "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "Freed",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://sacra.com/c/freed",
+                "title": "Freed revenue, funding & growth rate | Sacra",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://getfreed.ai/author/erez-druk",
+                "title": "Erez Druk",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/in/bannikovandrey",
+                "title": "Andrey Bannikov - Co-Founder & CTO at Freed",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/in/michelleburchenal",
+                "title": "Michelle Burchenal - Chief of Staff at Freed.ai",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://help.getfreed.ai/en/articles/11870714-frequently-asked-questions",
+                "title": "Frequently Asked Questions | Freed Scribe Help Center",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://freed.ai/",
+            "type": "primary",
+            "title": "Best AI Medical Scribe for Clinical Notes | Freed",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://getfreed.ai/blog/freed-raises-series-a",
+            "type": "secondary",
+            "title": "Freed Raises $30 Million Series A Led by Sequoia Capital",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/freed-ai",
+            "type": "secondary",
+            "title": "Freed",
+            "source_intent": null,
+            "source_category": "social",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://sacra.com/c/freed",
+            "type": "secondary",
+            "title": "Freed revenue, funding & growth rate | Sacra",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/posts/michabreakstone_i-remember-when-erez-druk-first-called-me-activity-7303087398681219073-6o8g",
+            "type": "secondary",
+            "title": "Micha Y. Breakstone's Post",
+            "source_intent": null,
+            "source_category": "social",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-freed-picks-30m-ai-clinician-assistant",
+            "type": "secondary",
+            "title": "Fundraising Tracker\u2014Freed picks up $30M for AI scribe",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://getfreed.ai/author/erez-druk",
+            "type": "primary",
+            "title": "Erez Druk",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/drukerez",
+            "type": "secondary",
+            "title": "Erez Druk - Freeing clinicians @ Freed.ai",
+            "source_intent": null,
+            "source_category": "social",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/bannikovandrey",
+            "type": "secondary",
+            "title": "Andrey Bannikov - Co-Founder & CTO at Freed",
+            "source_intent": null,
+            "source_category": "social",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/posts/edozie-ezeanolue-b71798180_freed-seriesa-clinicianburnout-activity-7303245622227177474-zDP_",
+            "type": "secondary",
+            "title": "Freed raises $30M Series A from Sequoia to ease clinician ...",
+            "source_intent": null,
+            "source_category": "social",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/michelleburchenal",
+            "type": "secondary",
+            "title": "Michelle Burchenal - Chief of Staff at Freed.ai",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/ted-obenchain-01110b21",
+            "type": "primary",
+            "title": "Ted Obenchain - Founding Sales Leader at Freed AI",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://help.getfreed.ai/en/articles/11870714-frequently-asked-questions",
+            "type": "secondary",
+            "title": "Frequently Asked Questions | Freed Scribe Help Center",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://getfreed.ai/blog/freed-founding-story",
+            "type": "primary",
+            "title": "Freeding Clinicians: Our Founding Story",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://getfreed.ai/careers/company",
+            "type": "primary",
+            "title": "https://www.getfreed.ai/careers/company",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          }
+        ],
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "confidence": "medium"
+      },
+      "content": {
+        "summary": "Freed Inc. (freed.ai / getfreed.ai) is a San Francisco-based AI health technology company founded in 2023 by Erez Druk and Andrey Bannikov. The company builds AI-powered clinical documentation and practice management tools for independent and small/midsized medical practices, with its flagship AI Scribe product turning patient visit conversations into structured clinical notes in under 60 seconds. The platform has expanded to include a Coding Assistant (ICD-10/CPT), clinical decision support, a Front Desk AI receptionist, and direct EHR integration via a Chrome extension. As of July 2026, Freed serves 26,000+ clinicians across 1,300+ clinics, transcribed 32.5 million patient visits in 2025, and reports ~$19M ARR (March 2025, growing 134% y/y per Sacra). The company raised a $30M Series A in March 2025 led by Sequoia Capital (total ~$40M raised), and has grown from ~50 to ~146 employees since funding. Key decision-makers are CEO/Co-Founder Erez Druk (erez@getfreed.ai, LinkedIn: drukerez), CTO/Co-Founder Andrey Bannikov, and Chief of Staff Michelle Burchenal. The tech stack centers on a Webflow-hosted website, a Chrome extension for EHR integration, iOS/Android apps, Stripe for billing, Drata for compliance, and an LLM-based ambient AI inference pipeline. Major buying signals include the active post-Series A growth phase, rapid product expansion into new clinical workflow categories, aggressive hiring, and an explicit platform strategy targeting independent clinics across all specialties.",
+        "website": "https://www.getfreed.ai",
+        "industry": "Health Technology / AI Medical Scribe / Hospitals and Health Care",
+        "tech_stack": [
+          "Webflow (website CMS/hosting via Webflow CDN)",
+          "Google Chrome Extension (EHR integration)",
+          "iOS native app (Apple App Store)",
+          "Android native app (Google Play Store)",
+          "Stripe (subscription billing and payments)",
+          "Drata (compliance trust center / SOC 2 monitoring)",
+          "Intercom (help center / customer support)",
+          "HIPAA-compliant cloud infrastructure",
+          "SOC 2 Type II certified platform",
+          "LLM-based ambient audio transcription and note generation (AI core)"
+        ],
+        "company_name": "Freed Inc.",
+        "headquarters": "548 Market Street, PMB 95301, San Francisco, CA 94104",
+        "key_contacts": [
+          {
+            "name": "Erez Druk",
+            "email": "erez@getfreed.ai",
+            "title": "Co-Founder & CEO",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/drukerez"
+          },
+          {
+            "name": "Andrey Bannikov",
+            "email": null,
+            "title": "Co-Founder & CTO",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/bannikovandrey"
+          },
+          {
+            "name": "Yonatan Loewidt",
+            "email": null,
+            "title": "Co-Founder / Early Engineer",
+            "seniority": "Founder",
+            "linkedin_url": "https://il.linkedin.com/in/yonatan-loewidt"
+          },
+          {
+            "name": "Michelle Burchenal",
+            "email": null,
+            "title": "Chief of Staff",
+            "seniority": "Senior",
+            "linkedin_url": "https://www.linkedin.com/in/michelleburchenal"
+          },
+          {
+            "name": "Ted Obenchain",
+            "email": null,
+            "title": "Founding Sales Leader",
+            "seniority": "Senior",
+            "linkedin_url": "https://www.linkedin.com/in/ted-obenchain-01110b21"
+          }
+        ],
+        "funding_stage": "Series A",
+        "key_investors": [
+          "Sequoia Capital (Series A lead)",
+          "Scale Venture Partners",
+          "Daniel Gross",
+          "Gokul Rajaram",
+          "Ted Zagat",
+          "Sorin Investments (Seed lead)",
+          "Multiply Ventures",
+          "Piper Serica Fund",
+          "Chennai Angels",
+          "Lead Angels"
+        ],
+        "total_funding": "$40.3M total (~$10.3M across Seed rounds + $30M Series A, March 2025)",
+        "buying_signals": [
+          "Recent Series A funding: $30M closed March 2025 led by Sequoia Capital \u2014 actively deploying capital for product and team growth",
+          "Rapid headcount growth: ~50 employees at Series A (March 2025) \u2192 146 on LinkedIn (July 2026); opened new SF office with 65+ seats",
+          "Product expansion: Launched Coding Assistant (ICD-10/CPT/E/M), Front Desk (AI receptionist), and EHR Chrome extension within months of funding",
+          "Strong ARR growth: ~$19M ARR in March 2025, up 134% year-over-year (Sacra estimate)",
+          "User base growth: 26,000+ clinicians and 1,300+ clinics on platform; 32.5 million patient visits transcribed in 2025",
+          "Named to CB Insights Digital Health 50 (2025) \u2014 increased enterprise visibility and inbound deal flow",
+          "Platform strategy shift: Expanding from single-product scribe to full clinical AI platform (scribe + coding + front desk + decision support)",
+          "SMB-first GTM: Targets independent and small/mid-sized practices (47% of US clinicians), creating partnership and channel opportunities",
+          "Actively hiring across engineering, sales, and operations roles"
+        ],
+        "headcount_estimate": "~146 employees (LinkedIn, July 2026); LinkedIn bracket: 51\u2013200 employees; ~50 staff at time of Series A close (March 2025)"
+      }
+    }
+  }
+}

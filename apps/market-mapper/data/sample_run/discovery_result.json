@@ -1,0 +1,1531 @@
+{
+  "run": {
+    "id": "task_run_3e9965fbf0fb4bb1820948975e970daf",
+    "status": "completed",
+    "interaction_id": null,
+    "completed_at": "2026-07-11T21:07:11.123917+00:00",
+    "is_active": false
+  },
+  "result": {
+    "run": {
+      "id": "task_run_3e9965fbf0fb4bb1820948975e970daf",
+      "error": null,
+      "effort": "max",
+      "prompt": "AI-powered vertical SaaS companies in healthcare, 11-200 employees, US or Israel, Series A or later. Only companies with a live product (not stealth).\n\nExclusion list \u2014 never return companies with these domains: abridge.com",
+      "status": "completed",
+      "is_active": false,
+      "created_at": "2026-07-11T20:59:29.422918Z",
+      "started_at": "2026-07-11T20:59:30.109277Z",
+      "completed_at": "2026-07-11T21:07:11.123917Z",
+      "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+      "interaction_id": "task_run_3e9965fbf0fb4bb1820948975e970daf",
+      "web_search_agent_id": "wsa_deb21bb91eef401d8315a38d368c55e7"
+    },
+    "output": {
+      "type": "json",
+      "trust": {
+        "claims": [
+          {
+            "path": "$['`'][0]['company_name`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/radai",
+                "title": "https://www.linkedin.com/company/radai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][0]['domain`']",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][0]['headquarters`']",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/radai",
+                "title": "https://www.linkedin.com/company/radai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][0]['employee_count`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/radai",
+                "title": "https://www.linkedin.com/company/radai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][0]['recent_funding`']",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/posts/jechang_rad-ai-closes-60m-series-c-to-further-solidify-activity-7290851079649406976-dkBV",
+                "title": "Jeff Chang's Post",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][0]['icp_fit_reason`']",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-named-to-the-2025-cb-insights-list-of-the-50-most-promising-digital-health-startups",
+                "title": "Rad AI Named to the 2025 CB Insights' List of the 50 Most ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/radai",
+                "title": "https://www.linkedin.com/company/radai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][0]['source_url`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/radai",
+                "title": "https://www.linkedin.com/company/radai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][1]['company_name`']",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][1]['domain`']",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][1]['headquarters`']",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][1]['employee_count`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/hyro",
+                "title": "https://www.linkedin.com/company/hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][1]['recent_funding`']",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][1]['icp_fit_reason`']",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hyro.ai/blog/series-b-announcement-responsible-ai",
+                "title": "Raising $20M to Advance Responsible AI-Powered ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://cbinsights.com/research/report/top-digital-health-startups-2025",
+                "title": "Digital Health 50: The most promising ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][1]['source_url`']",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][2]['company_name`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][2]['domain`']",
+            "citations": [
+              {
+                "url": "https://newmarketpitch.com/blogs/news/healthcare-ai-top-startups-fundraising",
+                "title": "Top Healthcare AI Startups by Fundraising (2026)",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$['`'][2]['headquarters`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][2]['employee_count`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][2]['recent_funding`']",
+            "citations": [
+              {
+                "url": "https://newmarketpitch.com/blogs/news/healthcare-ai-top-startups-fundraising",
+                "title": "Top Healthcare AI Startups by Fundraising (2026)",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$['`'][2]['icp_fit_reason`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://newmarketpitch.com/blogs/news/healthcare-ai-top-startups-fundraising",
+                "title": "Top Healthcare AI Startups by Fundraising (2026)",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][2]['source_url`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][3]['company_name`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/nym",
+                "title": "Nym",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][3]['domain`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/nym",
+                "title": "Nym",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][3]['headquarters`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/nym",
+                "title": "Nym",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][3]['employee_count`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/nym",
+                "title": "Nym",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][3]['recent_funding`']",
+            "citations": [
+              {
+                "url": "https://newmarketpitch.com/blogs/news/healthcare-ai-top-startups-fundraising",
+                "title": "Top Healthcare AI Startups by Fundraising (2026)",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$['`'][3]['icp_fit_reason`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/nym",
+                "title": "Nym",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://newmarketpitch.com/blogs/news/healthcare-ai-top-startups-fundraising",
+                "title": "Top Healthcare AI Startups by Fundraising (2026)",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][3]['source_url`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/nym",
+                "title": "Nym",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][4]['company_name`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "https://www.linkedin.com/company/freed-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][4]['domain`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "https://www.linkedin.com/company/freed-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][4]['headquarters`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "https://www.linkedin.com/company/freed-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][4]['employee_count`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "https://www.linkedin.com/company/freed-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][4]['recent_funding`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "https://www.linkedin.com/company/freed-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][4]['icp_fit_reason`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "https://www.linkedin.com/company/freed-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://cbinsights.com/research/report/top-digital-health-startups-2025",
+                "title": "Digital Health 50: The most promising ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][4]['source_url`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/freed-ai",
+                "title": "https://www.linkedin.com/company/freed-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][5]['company_name`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/navina-ai",
+                "title": "https://www.linkedin.com/company/navina-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][5]['domain`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/navina-ai",
+                "title": "https://www.linkedin.com/company/navina-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][5]['headquarters`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/navina-ai",
+                "title": "https://www.linkedin.com/company/navina-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][5]['employee_count`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/navina-ai",
+                "title": "https://www.linkedin.com/company/navina-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][5]['recent_funding`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/navina-ai",
+                "title": "https://www.linkedin.com/company/navina-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][5]['icp_fit_reason`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/navina-ai",
+                "title": "https://www.linkedin.com/company/navina-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][5]['source_url`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/navina-ai",
+                "title": "https://www.linkedin.com/company/navina-ai",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][6]['company_name`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "https://www.linkedin.com/company/codametrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][6]['domain`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "https://www.linkedin.com/company/codametrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][6]['headquarters`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "https://www.linkedin.com/company/codametrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][6]['employee_count`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "https://www.linkedin.com/company/codametrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][6]['recent_funding`']",
+            "citations": [
+              {
+                "url": "https://newmarketpitch.com/blogs/news/healthcare-ai-top-startups-fundraising",
+                "title": "Top Healthcare AI Startups by Fundraising (2026)",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$['`'][6]['icp_fit_reason`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "https://www.linkedin.com/company/codametrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://newmarketpitch.com/blogs/news/healthcare-ai-top-startups-fundraising",
+                "title": "Top Healthcare AI Startups by Fundraising (2026)",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][6]['source_url`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "https://www.linkedin.com/company/codametrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][7]['company_name`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][7]['domain`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][7]['headquarters`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][7]['employee_count`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][7]['recent_funding`']",
+            "citations": [
+              {
+                "url": "https://newmarketpitch.com/blogs/news/healthcare-ai-top-startups-fundraising",
+                "title": "Top Healthcare AI Startups by Fundraising (2026)",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$['`'][7]['icp_fit_reason`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://newmarketpitch.com/blogs/news/healthcare-ai-top-startups-fundraising",
+                "title": "Top Healthcare AI Startups by Fundraising (2026)",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][7]['source_url`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][8]['company_name`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "https://www.linkedin.com/company/plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][8]['domain`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "https://www.linkedin.com/company/plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][8]['headquarters`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "https://www.linkedin.com/company/plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][8]['employee_count`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "https://www.linkedin.com/company/plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][8]['recent_funding`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "https://www.linkedin.com/company/plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][8]['icp_fit_reason`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "https://www.linkedin.com/company/plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://cbinsights.com/research/report/top-digital-health-startups-2025",
+                "title": "Digital Health 50: The most promising ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][8]['source_url`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "https://www.linkedin.com/company/plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][9]['company_name`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layer-health",
+                "title": "https://www.linkedin.com/company/layer-health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][9]['domain`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layer-health",
+                "title": "https://www.linkedin.com/company/layer-health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][9]['headquarters`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layer-health",
+                "title": "https://www.linkedin.com/company/layer-health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][9]['employee_count`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layer-health",
+                "title": "https://www.linkedin.com/company/layer-health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][9]['recent_funding`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layer-health",
+                "title": "https://www.linkedin.com/company/layer-health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][9]['icp_fit_reason`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layer-health",
+                "title": "https://www.linkedin.com/company/layer-health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://cbinsights.com/research/report/top-digital-health-startups-2025",
+                "title": "Digital Health 50: The most promising ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$['`'][9]['source_url`']",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/layer-health",
+                "title": "https://www.linkedin.com/company/layer-health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://linkedin.com/company/radai",
+            "type": "primary",
+            "title": "https://www.linkedin.com/company/radai",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://radai.com/about",
+            "type": "primary",
+            "title": "About Rad AI",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/posts/jechang_rad-ai-closes-60m-series-c-to-further-solidify-activity-7290851079649406976-dkBV",
+            "type": "primary",
+            "title": "Jeff Chang's Post",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://radai.com/news/rad-ai-named-to-the-2025-cb-insights-list-of-the-50-most-promising-digital-health-startups",
+            "type": "primary",
+            "title": "Rad AI Named to the 2025 CB Insights' List of the 50 Most ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+            "type": "primary",
+            "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/hyro",
+            "type": "primary",
+            "title": "https://www.linkedin.com/company/hyro",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://hyro.ai/blog/series-b-announcement-responsible-ai",
+            "type": "primary",
+            "title": "Raising $20M to Advance Responsible AI-Powered ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://cbinsights.com/research/report/top-digital-health-startups-2025",
+            "type": "secondary",
+            "title": "Digital Health 50: The most promising ...",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/ibexmedicalanalytics",
+            "type": "primary",
+            "title": "Ibex Medical Analytics",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://newmarketpitch.com/blogs/news/healthcare-ai-top-startups-fundraising",
+            "type": "secondary",
+            "title": "Top Healthcare AI Startups by Fundraising (2026)",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/nym",
+            "type": "primary",
+            "title": "Nym",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/freed-ai",
+            "type": "primary",
+            "title": "https://www.linkedin.com/company/freed-ai",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/navina-ai",
+            "type": "primary",
+            "title": "https://www.linkedin.com/company/navina-ai",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/codametrix",
+            "type": "primary",
+            "title": "https://www.linkedin.com/company/codametrix",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/iterative-health",
+            "type": "primary",
+            "title": "Iterative Health",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/plenful",
+            "type": "primary",
+            "title": "https://www.linkedin.com/company/plenful",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/layer-health",
+            "type": "primary",
+            "title": "https://www.linkedin.com/company/layer-health",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          }
+        ],
+        "reasoning": "High confidence - cells fill rate is 100% and trust per claim ratio is 93%",
+        "confidence": "high"
+      },
+      "content": [
+        {
+          "domain": "radai.com",
+          "website": "https://www.radai.com",
+          "industry": "AI Radiology / Clinical Documentation",
+          "source_url": "https://www.linkedin.com/company/radai",
+          "company_name": "Rad AI",
+          "headquarters": "San Francisco, CA, USA",
+          "linkedin_url": "https://www.linkedin.com/company/radai",
+          "employee_count": "51-200",
+          "icp_fit_reason": "AI-native generative radiology workflow platform (Series C, $140M+ total raised); 51-200 employees in San Francisco; live product deployed across health systems providing ~half of US medical imaging, with a product described as 'the first GenAI product in healthcare'.",
+          "recent_funding": "Series C $60M, January 2025"
+        },
+        {
+          "domain": "hyro.ai",
+          "website": "https://www.hyro.ai",
+          "industry": "AI Healthcare Voice Agents / Patient Communication",
+          "source_url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+          "company_name": "Hyro",
+          "headquarters": "New York, NY, USA",
+          "linkedin_url": "https://www.linkedin.com/company/hyro",
+          "employee_count": "51-200",
+          "icp_fit_reason": "AI-powered responsible conversational agent platform purpose-built for healthcare, deployed at 45+ major US health systems; 51-200 employees; growth funding (October 2025) following Series B, co-founded by Israeli entrepreneurs Israel Krush and Rom Cohen.",
+          "recent_funding": "Growth round $45M, October 2025 (total $95M raised)"
+        },
+        {
+          "domain": "ibex.ai",
+          "website": "https://www.ibex.ai",
+          "industry": "AI Digital Pathology / Cancer Diagnostics",
+          "source_url": "https://www.linkedin.com/company/ibexmedicalanalytics",
+          "company_name": "Ibex Medical Analytics",
+          "headquarters": "Brookline, MA, USA",
+          "linkedin_url": "https://www.linkedin.com/company/ibexmedicalanalytics",
+          "employee_count": "51-200",
+          "icp_fit_reason": "AI cancer pathology diagnostics platform for clinical labs and biopharma; dual US (Brookline, MA) and Israel (Tel Aviv) presence qualifying both geographies; 51-200 employees; Series C backed by 83North, Sienna VC, and Octopus Ventures.",
+          "recent_funding": "Series C $55M, October 2023"
+        },
+        {
+          "domain": "nym.health",
+          "website": "https://www.nym.health",
+          "industry": "AI Autonomous Medical Coding / Revenue Cycle",
+          "source_url": "https://www.linkedin.com/company/nym",
+          "company_name": "Nym Health",
+          "headquarters": "New York, NY, USA",
+          "linkedin_url": "https://www.linkedin.com/company/nym",
+          "employee_count": "51-200",
+          "icp_fit_reason": "Explainable autonomous medical coding AI with offices in New York and Tel Aviv; 51-200 employees; growth equity round led by PSG and GV with $95M total raised; live product processing real clinical claims at scale.",
+          "recent_funding": "Growth Equity $47M, October 2024 (led by PSG, GV, Addition; total $95M)"
+        },
+        {
+          "domain": "freed.ai",
+          "website": "https://www.freed.ai",
+          "industry": "AI Ambient Medical Scribe / Clinical Documentation",
+          "source_url": "https://www.linkedin.com/company/freed-ai",
+          "company_name": "Freed",
+          "headquarters": "San Francisco, CA, USA",
+          "linkedin_url": "https://www.linkedin.com/company/freed-ai",
+          "employee_count": "51-200",
+          "icp_fit_reason": "AI ambient scribe specifically targeting small and mid-sized practices (25,000+ clinicians as of 2025); 51-200 employees in San Francisco; Series A (April 2025); named to CBInsights Digital Health 50 2025 as differentiated from Abridge by its focus on independent clinics.",
+          "recent_funding": "Series A, April 2025"
+        },
+        {
+          "domain": "navina.ai",
+          "website": "https://www.navina.ai",
+          "industry": "AI Primary Care Clinical Intelligence / Value-Based Care",
+          "source_url": "https://www.linkedin.com/company/navina-ai",
+          "company_name": "Navina",
+          "headquarters": "New York, NY, USA",
+          "linkedin_url": "https://www.linkedin.com/company/navina-ai",
+          "employee_count": "51-200",
+          "icp_fit_reason": "AI copilot for primary care and value-based care that synthesizes patient data for confident clinical decisions; HQ in New York with Israeli founding team (86% usage rate at organizations like Privia Health and agilon health); Series C in April 2025; 2025 Best in KLAS for Clinician Digital Workflow.",
+          "recent_funding": "Series C $55M, April 2025 (led by Goldman Sachs Alternatives)"
+        },
+        {
+          "domain": "codametrix.com",
+          "website": "https://www.codametrix.com",
+          "industry": "AI Autonomous Medical Coding / Revenue Cycle",
+          "source_url": "https://www.linkedin.com/company/codametrix",
+          "company_name": "CodaMetrix",
+          "headquarters": "Boston, MA, USA",
+          "linkedin_url": "https://www.linkedin.com/company/codametrix",
+          "employee_count": "51-200",
+          "icp_fit_reason": "Autonomous medical coding AI platform for health systems and large physician groups, powered by ML trained on clinical documentation; 51-200 employees in Boston; $111M total raised across Series A and B; live product with documented 96%+ coding accuracy.",
+          "recent_funding": "Series B-II $12M, May 2025 (total $111M raised)"
+        },
+        {
+          "domain": "iterative.health",
+          "website": "https://www.iterative.health",
+          "industry": "AI Gastroenterology / Clinical Research Platform",
+          "source_url": "https://www.linkedin.com/company/iterative-health",
+          "company_name": "Iterative Health",
+          "headquarters": "Cambridge, MA, USA",
+          "linkedin_url": "https://www.linkedin.com/company/iterative-health",
+          "employee_count": "51-200",
+          "icp_fit_reason": "AI-powered clinical research platform for gastroenterology and adjacent specialties (GI, hepatology, cardiology, obesity); 51-200 employees, Cambridge MA; Series C $77M in April 2026; combines AI pre-screening with a research site network for faster clinical trial enrollment.",
+          "recent_funding": "Series C $77M, April 2026 (led by Intrepid Growth Partners, GV)"
+        },
+        {
+          "domain": "plenful.com",
+          "website": "https://www.plenful.com",
+          "industry": "AI Pharmacy Workflow Automation / Healthcare Operations",
+          "source_url": "https://www.linkedin.com/company/plenful",
+          "company_name": "Plenful",
+          "headquarters": "San Francisco, CA, USA",
+          "linkedin_url": "https://www.linkedin.com/company/plenful",
+          "employee_count": "51-200",
+          "icp_fit_reason": "Leading AI workflow automation platform purpose-built for pharmacy teams (340B, intake authorization, complex pharmacy operations); 51-200 employees in San Francisco; Series B $50M in May 2025 backed by Bessemer Venture Partners; deployed across 95+ health systems and pharmacies.",
+          "recent_funding": "Series B $50M, May 2025"
+        },
+        {
+          "domain": "layerhealth.com",
+          "website": "https://www.layerhealth.com",
+          "industry": "AI Clinical Chart Review / Data Abstraction",
+          "source_url": "https://www.linkedin.com/company/layer-health",
+          "company_name": "Layer Health",
+          "headquarters": "Boston, MA, USA",
+          "linkedin_url": "https://www.linkedin.com/company/layerhealth",
+          "employee_count": "11-50",
+          "icp_fit_reason": "AI-powered chart review and clinical data abstraction platform for health systems; 11-50 employees (lean, under-the-radar); Series A in April 2025 backed by Define Ventures and GV; named to CBInsights Digital Health 50 2025 with Mosaic score of 830.",
+          "recent_funding": "Series A $21M, April 2025 (Define Ventures, GV)"
+        }
+      ]
+    }
+  }
+}

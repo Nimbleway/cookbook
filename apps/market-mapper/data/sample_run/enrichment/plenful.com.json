@@ -1,0 +1,1619 @@
+{
+  "run": {
+    "status": "completed",
+    "is_active": false
+  },
+  "result": {
+    "run": {
+      "id": "task_run_8043e5c7e533451db6900755974d7639",
+      "error": null,
+      "effort": "high",
+      "prompt": "Enrich lead: Plenful (plenful.com) \u2014 company details, funding stage and investors, headcount, key decision-makers with titles and LinkedIn URLs, tech stack, buying signals",
+      "status": "completed",
+      "is_active": false,
+      "created_at": "2026-07-11T21:12:45.053289Z",
+      "started_at": "2026-07-11T21:12:45.142923Z",
+      "completed_at": "2026-07-11T21:16:40.970015Z",
+      "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+      "interaction_id": "task_run_8043e5c7e533451db6900755974d7639",
+      "web_search_agent_id": "wsa_b064449062834b5ead2609b8d372b689"
+    },
+    "output": {
+      "type": "json",
+      "trust": {
+        "claims": [
+          {
+            "path": "$.company_name",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.website",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.industry",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "Plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headquarters",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/news-releases/plenful-raises-50m-series-b-to-expand-ai-powered-healthcare-automation-platform-302442027.html",
+                "title": "Plenful Raises $50M Series B to Expand AI-Powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.funding_stage",
+            "citations": [
+              {
+                "url": "https://mobihealthnews.com/news/plenful-scores-50m-and-more-funding-news",
+                "title": "Plenful scores $50M and more funding news",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-2",
+                "title": "AI supply chain startup nabs $27M\u2014Fierce Fundraising ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.total_funding",
+            "citations": [
+              {
+                "url": "https://mobihealthnews.com/news/plenful-scores-50m-and-more-funding-news",
+                "title": "Plenful scores $50M and more funding news",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-2",
+                "title": "AI supply chain startup nabs $27M\u2014Fierce Fundraising ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/news-releases/plenful-raises-50m-series-b-to-expand-ai-powered-healthcare-automation-platform-302442027.html",
+                "title": "Plenful Raises $50M Series B to Expand AI-Powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 3 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[0]",
+            "citations": [
+              {
+                "url": "https://prnewswire.com/news-releases/plenful-raises-50m-series-b-to-expand-ai-powered-healthcare-automation-platform-302442027.html",
+                "title": "Plenful Raises $50M Series B to Expand AI-Powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://plenful.com/blog/mitchell-rales-joins-plenfuls-board-of-directors",
+                "title": "Mitchell Rales Joins Plenful's Board of Directors",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[1]",
+            "citations": [
+              {
+                "url": "https://prnewswire.com/news-releases/plenful-raises-50m-series-b-to-expand-ai-powered-healthcare-automation-platform-302442027.html",
+                "title": "Plenful Raises $50M Series B to Expand AI-Powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[2]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "Plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-1",
+                "title": "Fierce Fundraising Tracker\u2014Canary Speech, Grayce nab ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[3]",
+            "citations": [
+              {
+                "url": "https://prnewswire.com/news-releases/plenful-raises-50m-series-b-to-expand-ai-powered-healthcare-automation-platform-302442027.html",
+                "title": "Plenful Raises $50M Series B to Expand AI-Powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://forbes.com/sites/shimiteobialo/2025/04/30/plenful-raises-50m-to-transform-healthcare-providers-back-office-with-ai-saving-millions",
+                "title": "Plenful Raises $50 Million To Transform Healthcare's Back ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[4]",
+            "citations": [
+              {
+                "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-1",
+                "title": "Fierce Fundraising Tracker\u2014Canary Speech, Grayce nab ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "Plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[5]",
+            "citations": [
+              {
+                "url": "https://mobihealthnews.com/news/plenful-scores-50m-and-more-funding-news",
+                "title": "Plenful scores $50M and more funding news",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[6]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "Plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headcount_estimate",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "Plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[0]",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://plenful.com/blog/ai-in-pharmacy-the-marathon-mindset-for-meaningful-change",
+                "title": "AI in Pharmacy: The Marathon Mindset for Meaningful ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[1]",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[2]",
+            "citations": [
+              {
+                "url": "https://plenful.com/blog/meet-michael-longo-plenful-cro",
+                "title": "Welcoming Michael Longo as Plenful's New Chief ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/news-releases/plenful-raises-50m-series-b-to-expand-ai-powered-healthcare-automation-platform-302442027.html",
+                "title": "Plenful Raises $50M Series B to Expand AI-Powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[3]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/migus-wong",
+                "title": "Migus Wong - Healthcare Automation @ Plenful, PMP",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[4]",
+            "citations": [
+              {
+                "url": "https://plenful.com/blog/ai-in-pharmacy-the-marathon-mindset-for-meaningful-change",
+                "title": "AI in Pharmacy: The Marathon Mindset for Meaningful ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[5]",
+            "citations": [
+              {
+                "url": "https://prnewswire.com/news-releases/plenful-raises-50m-series-b-to-expand-ai-powered-healthcare-automation-platform-302442027.html",
+                "title": "Plenful Raises $50M Series B to Expand AI-Powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[6]",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].name",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].title",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://plenful.com/blog/ai-in-pharmacy-the-marathon-mindset-for-meaningful-change",
+                "title": "AI in Pharmacy: The Marathon Mindset for Meaningful ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].linkedin_url",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/in/joyliu1",
+                "title": "Joy Liu - Founder & CEO at Plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].name",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://plenful.com/blog/meet-michael-longo-plenful-cro",
+                "title": "Welcoming Michael Longo as Plenful's New Chief ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].title",
+            "citations": [
+              {
+                "url": "https://plenful.com/blog/meet-michael-longo-plenful-cro",
+                "title": "Welcoming Michael Longo as Plenful's New Chief ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].linkedin_url",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].name",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].title",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].linkedin_url",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].name",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/in/melissayeh",
+                "title": "Melissa Y. - People Team at Plenful | HR Tech Advisor",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].title",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/in/melissayeh",
+                "title": "Melissa Y. - People Team at Plenful | HR Tech Advisor",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].linkedin_url",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].name",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://plenful.com/blog/welcome-melissa-yeh-chief-people-officer",
+                "title": "Welcoming Melissa Yeh, Our New Chief People Officer",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].title",
+            "citations": [
+              {
+                "url": "https://plenful.com/blog/welcome-melissa-yeh-chief-people-officer",
+                "title": "Welcoming Melissa Yeh, Our New Chief People Officer",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].linkedin_url",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://plenful.com/blog/welcome-melissa-yeh-chief-people-officer",
+                "title": "Welcoming Melissa Yeh, Our New Chief People Officer",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].name",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].title",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].linkedin_url",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].name",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].title",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].linkedin_url",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].name",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].title",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].linkedin_url",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].name",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].title",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].linkedin_url",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].name",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].title",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].linkedin_url",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].name",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].title",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].linkedin_url",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[11].name",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[11].title",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[11].linkedin_url",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[0]",
+            "citations": [
+              {
+                "url": "https://prnewswire.com/news-releases/plenful-raises-50m-series-b-to-expand-ai-powered-healthcare-automation-platform-302442027.html",
+                "title": "Plenful Raises $50M Series B to Expand AI-Powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://mobihealthnews.com/news/plenful-scores-50m-and-more-funding-news",
+                "title": "Plenful scores $50M and more funding news",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[1]",
+            "citations": [
+              {
+                "url": "https://forbes.com/sites/shimiteobialo/2025/04/30/plenful-raises-50m-to-transform-healthcare-providers-back-office-with-ai-saving-millions",
+                "title": "Plenful Raises $50 Million To Transform Healthcare's Back ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-2",
+                "title": "AI supply chain startup nabs $27M\u2014Fierce Fundraising ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[2]",
+            "citations": [
+              {
+                "url": "https://plenful.com/blog/meet-michael-longo-plenful-cro",
+                "title": "Welcoming Michael Longo as Plenful's New Chief ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://plenful.com/blog/welcome-melissa-yeh-chief-people-officer",
+                "title": "Welcoming Melissa Yeh, Our New Chief People Officer",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[3]",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[4]",
+            "citations": [
+              {
+                "url": "https://plenful.com/blog/meet-michael-longo-plenful-cro",
+                "title": "Welcoming Michael Longo as Plenful's New Chief ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[5]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "Plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://plenful.com/blog/ai-in-pharmacy-the-marathon-mindset-for-meaningful-change",
+                "title": "AI in Pharmacy: The Marathon Mindset for Meaningful ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[6]",
+            "citations": [
+              {
+                "url": "https://prnewswire.com/news-releases/plenful-raises-50m-series-b-to-expand-ai-powered-healthcare-automation-platform-302442027.html",
+                "title": "Plenful Raises $50M Series B to Expand AI-Powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[7]",
+            "citations": [
+              {
+                "url": "https://plenful.com/blog/mitchell-rales-joins-plenfuls-board-of-directors",
+                "title": "Mitchell Rales Joins Plenful's Board of Directors",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[8]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/cadyzhou",
+                "title": "Cady Zhou - Senior Software Engineer @ Plenful | Ex-Google",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[9]",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.summary",
+            "citations": [
+              {
+                "url": "https://plenful.com/company",
+                "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/plenful",
+                "title": "Plenful",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/news-releases/plenful-raises-50m-series-b-to-expand-ai-powered-healthcare-automation-platform-302442027.html",
+                "title": "Plenful Raises $50M Series B to Expand AI-Powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://mobihealthnews.com/news/plenful-scores-50m-and-more-funding-news",
+                "title": "Plenful scores $50M and more funding news",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-2",
+                "title": "AI supply chain startup nabs $27M\u2014Fierce Fundraising ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://forbes.com/sites/shimiteobialo/2025/04/30/plenful-raises-50m-to-transform-healthcare-providers-back-office-with-ai-saving-millions",
+                "title": "Plenful Raises $50 Million To Transform Healthcare's Back ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://plenful.com/blog/meet-michael-longo-plenful-cro",
+                "title": "Welcoming Michael Longo as Plenful's New Chief ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://plenful.com/blog/welcome-melissa-yeh-chief-people-officer",
+                "title": "Welcoming Melissa Yeh, Our New Chief People Officer",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://plenful.com/company",
+            "type": "primary",
+            "title": "Streamline Pharmacy & Healthcare Operations | AI ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/plenful",
+            "type": "primary",
+            "title": "Plenful",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://prnewswire.com/news-releases/plenful-raises-50m-series-b-to-expand-ai-powered-healthcare-automation-platform-302442027.html",
+            "type": "secondary",
+            "title": "Plenful Raises $50M Series B to Expand AI-Powered ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://mobihealthnews.com/news/plenful-scores-50m-and-more-funding-news",
+            "type": "secondary",
+            "title": "Plenful scores $50M and more funding news",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-2",
+            "type": "secondary",
+            "title": "AI supply chain startup nabs $27M\u2014Fierce Fundraising ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://plenful.com/blog/mitchell-rales-joins-plenfuls-board-of-directors",
+            "type": "primary",
+            "title": "Mitchell Rales Joins Plenful's Board of Directors",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://fiercehealthcare.com/health-tech/fierce-healthcare-fundraising-tracker-1",
+            "type": "secondary",
+            "title": "Fierce Fundraising Tracker\u2014Canary Speech, Grayce nab ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://forbes.com/sites/shimiteobialo/2025/04/30/plenful-raises-50m-to-transform-healthcare-providers-back-office-with-ai-saving-millions",
+            "type": "secondary",
+            "title": "Plenful Raises $50 Million To Transform Healthcare's Back ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://plenful.com/blog/ai-in-pharmacy-the-marathon-mindset-for-meaningful-change",
+            "type": "primary",
+            "title": "AI in Pharmacy: The Marathon Mindset for Meaningful ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://plenful.com/blog/meet-michael-longo-plenful-cro",
+            "type": "primary",
+            "title": "Welcoming Michael Longo as Plenful's New Chief ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/migus-wong",
+            "type": "primary",
+            "title": "Migus Wong - Healthcare Automation @ Plenful, PMP",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/joyliu1",
+            "type": "primary",
+            "title": "Joy Liu - Founder & CEO at Plenful",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/melissayeh",
+            "type": "secondary",
+            "title": "Melissa Y. - People Team at Plenful | HR Tech Advisor",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://plenful.com/blog/welcome-melissa-yeh-chief-people-officer",
+            "type": "primary",
+            "title": "Welcoming Melissa Yeh, Our New Chief People Officer",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/cadyzhou",
+            "type": "primary",
+            "title": "Cady Zhou - Senior Software Engineer @ Plenful | Ex-Google",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          }
+        ],
+        "reasoning": "High confidence - cells fill rate is 87% and trust per claim ratio is 94%",
+        "confidence": "high"
+      },
+      "content": {
+        "summary": "Plenful (plenful.com) is a San Francisco-based AI workflow automation platform founded in 2021 by Joy Liu, purpose-built for pharmacy teams and healthcare operations. The company automates high-value, complex workflows including 340B audit & optimization, prior authorization, order/referral intake, rebate management, and MFP (Manufacturer Fee-for-Service Program) intelligence. As of July 2026, Plenful partners with 95+ leading health systems, infusion practices, specialty pharmacies, and healthcare organizations nationwide, including MUSC, Cencora, Renown Health, Shields Healthcare Group, and Tampa General. The company raised a $50M Series B in April 2025 (co-led by Mitchell Rales/Danaher co-founder and Arena Holdings, with Bessemer Venture Partners, Notable Capital, TQ Ventures, Susa/Kivu Ventures, and Waterline Ventures), bringing total funding to $76M. LinkedIn shows approximately 120 employees (51\u2013200 band) as of July 2026, with the company actively hiring across engineering, sales, and operations. The executive team includes Founder & CEO Joy Liu, CTO Gurkanwal 'GK' Brar, CPO Aman Shahi, CRO Michael Longo (ex-Veeva Systems, joined August 2025), CPeO Melissa Yeh (joined January 2026), SVP Pharmacy Tim L'Hommedieu, SVP Strategic Partnerships Dustin Eubanks, VP Sales Matt Savard, and VP Customer Success Liz Master. The website runs on Webflow; the ATS is Rippling; the core platform leverages agentic AI with Epic EHR integration. Key buying signals include fresh Series B capital deployed for product/GTM, 4x YoY revenue growth, rapid C-suite expansion, aggressive product launches (Referral Agent, GFI Agent in 2026), and market expansion into infusion and payor segments.",
+        "website": "https://www.plenful.com/",
+        "industry": "Healthcare IT / AI Workflow Automation \u2014 Pharmacy & Healthcare Operations",
+        "tech_stack": [
+          "Webflow (website CMS/hosting \u2014 cdn.prod.website-files.com CDN)",
+          "Rippling (ATS / HR \u2014 careers at ats.rippling.com/plenful/jobs)",
+          "Agentic AI / LLM-based workflow automation (proprietary platform)",
+          "Epic EHR integration (EpicCare Ambulatory \u2014 staff certifications documented)",
+          "Enterprise-grade real-time reporting & dashboard infrastructure",
+          "AI-powered OCR / document processing (for messy, multi-format data ingestion)",
+          "340B compliance automation tooling (proprietary)"
+        ],
+        "company_name": "Plenful",
+        "headquarters": "San Francisco, CA (with secondary office hub in New York City)",
+        "key_contacts": [
+          {
+            "name": "Joy Liu",
+            "email": null,
+            "title": "Founder & CEO",
+            "seniority": "C-Suite / Founder",
+            "linkedin_url": "https://www.linkedin.com/in/joyliu1/"
+          },
+          {
+            "name": "Michael Longo",
+            "email": null,
+            "title": "Chief Revenue Officer (CRO)",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/longomichael/"
+          },
+          {
+            "name": "Gurkanwal \"GK\" Brar",
+            "email": null,
+            "title": "Chief Technology Officer (CTO)",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/gurkanwal-b-3500a324/"
+          },
+          {
+            "name": "Aman Shahi",
+            "email": null,
+            "title": "Chief Product Officer (CPO)",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/amanshahi/"
+          },
+          {
+            "name": "Melissa Yeh",
+            "email": null,
+            "title": "Chief People Officer (CPO)",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/melissayeh/"
+          },
+          {
+            "name": "Tim L'Hommedieu",
+            "email": null,
+            "title": "SVP of Pharmacy (PharmD)",
+            "seniority": "VP / SVP",
+            "linkedin_url": "https://www.linkedin.com/in/timlhommedieu/"
+          },
+          {
+            "name": "Dustin Eubanks",
+            "email": null,
+            "title": "SVP of Strategic Partnerships",
+            "seniority": "VP / SVP",
+            "linkedin_url": "https://www.linkedin.com/in/dustin-eubanks-29897415/"
+          },
+          {
+            "name": "Matt Savard",
+            "email": null,
+            "title": "VP of Sales",
+            "seniority": "VP / SVP",
+            "linkedin_url": "https://www.linkedin.com/in/matt-savard/"
+          },
+          {
+            "name": "Liz Master",
+            "email": null,
+            "title": "VP of Customer Success",
+            "seniority": "VP / SVP",
+            "linkedin_url": "https://www.linkedin.com/in/elizabethmaster/"
+          },
+          {
+            "name": "Morgan Chaney-Arnold",
+            "email": null,
+            "title": "Head of Marketing",
+            "seniority": "Director / Head",
+            "linkedin_url": "https://www.linkedin.com/in/morganchaney/"
+          },
+          {
+            "name": "Grant Steinhauer",
+            "email": null,
+            "title": "Chief of Staff",
+            "seniority": "Director / Head",
+            "linkedin_url": "https://www.linkedin.com/in/grant-steinhauer-601a02a5/"
+          },
+          {
+            "name": "Daisy Pham",
+            "email": null,
+            "title": "Head of Finance",
+            "seniority": "Director / Head",
+            "linkedin_url": "https://www.linkedin.com/in/daisypham/"
+          }
+        ],
+        "funding_stage": "Series B",
+        "key_investors": [
+          "Mitchell Rales (Co-Founder & Chairman, Danaher Corporation) \u2014 Board Member",
+          "Arena Holdings",
+          "Bessemer Venture Partners",
+          "Notable Capital",
+          "TQ Ventures",
+          "Susa/Kivu Ventures",
+          "Waterline Ventures"
+        ],
+        "total_funding": "$76 million",
+        "buying_signals": [
+          "Recent funding \u2014 $50M Series B closed April 30, 2025 (total $76M raised); capital earmarked for product development and go-to-market acceleration, signaling active vendor evaluation and spend.",
+          "Hyper-growth trajectory \u2014 4x year-over-year revenue growth at time of Series B; customer base scaled from 60 (April 2025) to 95+ health systems by mid-2026.",
+          "Rapid C-suite build-out \u2014 CPO hired May 2025, CRO (formerly Veeva Systems) hired August 2025, Chief People Officer hired January 2026; leadership expansion typically precedes major tech procurement cycles.",
+          "Actively hiring across all functions \u2014 company careers page (ats.rippling.com/plenful/jobs) confirms active recruiting as of July 2026, suggesting demand for enabling tools (HR tech, productivity, collaboration).",
+          "New product launches \u2014 GFI Agent (July 2026), 340B Referral Agent (June 2026), ESP Submission automation (June 2026); rapid product roadmap execution indicates investment in engineering infrastructure.",
+          "Market expansion \u2014 moving beyond pharmacy/340B into infusion, specialty pharmacy, provider groups, and payor markets; attending NICA 2026 conference, signals new GTM motion and potential new buyer personas.",
+          "Technology migration opportunity \u2014 platform ingests messy, disparate data across formats and EHR systems (Epic and others); actively seeking integrations and workflow connectors.",
+          "Board-level engagement \u2014 Mitchell Rales (Danaher co-founder) joined board in January 2025; high-profile board signals accountability and professionalization drive.",
+          "Industry recognition \u2014 named to CB Insights Digital Health 50 (2024); covered by Forbes, TechCrunch, MobiHealthNews, Fierce Healthcare \u2014 elevated brand awareness driving inbound demand.",
+          "HQ office + NYC hub \u2014 dual-city presence as of 2026 suggests investment in physical workspace/IT infrastructure."
+        ],
+        "headcount_estimate": "~120 employees (LinkedIn, July 2026); LinkedIn company size band: 51\u2013200 employees"
+      }
+    }
+  }
+}

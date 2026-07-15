@@ -1,0 +1,1465 @@
+{
+  "run": {
+    "status": "completed",
+    "is_active": false
+  },
+  "result": {
+    "run": {
+      "id": "task_run_a07aa33615874d63801ae9c385c246d3",
+      "error": null,
+      "effort": "high",
+      "prompt": "Enrich lead: Navina (navina.ai) \u2014 company details, funding stage and investors, headcount, key decision-makers with titles and LinkedIn URLs, tech stack, buying signals",
+      "status": "completed",
+      "is_active": false,
+      "created_at": "2026-07-11T21:11:03.445677Z",
+      "started_at": "2026-07-11T21:11:03.698193Z",
+      "completed_at": "2026-07-11T21:14:46.861622Z",
+      "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+      "interaction_id": "task_run_a07aa33615874d63801ae9c385c246d3",
+      "web_search_agent_id": "wsa_b064449062834b5ead2609b8d372b689"
+    },
+    "output": {
+      "type": "json",
+      "trust": {
+        "claims": [
+          {
+            "path": "$.company_name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/",
+                "title": "Navina: The Clinician-First AI Copilot for Value-Based Success",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.website",
+            "citations": [
+              {
+                "url": "https://navina.ai/",
+                "title": "Navina: The Clinician-First AI Copilot for Value-Based Success",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.industry",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/navina-ai",
+                "title": "Navina",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/",
+                "title": "Navina: The Clinician-First AI Copilot for Value-Based Success",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headquarters",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/navina-ai",
+                "title": "Navina",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.headcount_estimate",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/navina-ai",
+                "title": "Navina",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.funding_stage",
+            "citations": [
+              {
+                "url": "https://navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives",
+                "title": "Navina Secures $55M Series C Funding Led by Goldman Sachs",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/news",
+                "title": "News | Company Updates & Announcements | Navina AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.total_funding",
+            "citations": [
+              {
+                "url": "https://navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives",
+                "title": "Navina Secures $55M Series C Funding Led by Goldman Sachs",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[0]",
+            "citations": [
+              {
+                "url": "https://navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives",
+                "title": "Navina Secures $55M Series C Funding Led by Goldman Sachs",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/posts/thedanbender_clinical-ai-leader-navina-secures-55m-series-activity-7310606086124785664-6AAI",
+                "title": "Clinical AI Leader Navina Secures $55M Series C Funding Led ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[1]",
+            "citations": [
+              {
+                "url": "https://navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives",
+                "title": "Navina Secures $55M Series C Funding Led by Goldman Sachs",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/news",
+                "title": "News | Company Updates & Announcements | Navina AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://crunchbase.com/funding_round/navina-series-b--53b235ad",
+                "title": "Funding Round - Series B - Navina",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[2]",
+            "citations": [
+              {
+                "url": "https://navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives",
+                "title": "Navina Secures $55M Series C Funding Led by Goldman Sachs",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/news/announcing-series-b-funding-22-million-milestone",
+                "title": "Navina Secures $22M Series B | News | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[3]",
+            "citations": [
+              {
+                "url": "https://navina.ai/news/announcing-series-b-funding-22-million-milestone",
+                "title": "Navina Secures $22M Series B | News | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives",
+                "title": "Navina Secures $55M Series C Funding Led by Goldman Sachs",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[4]",
+            "citations": [
+              {
+                "url": "https://navina.ai/news/announcing-series-b-funding-22-million-milestone",
+                "title": "Navina Secures $22M Series B | News | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://techcrunch.com/2022/10/27/navina-secures-22m-to-process-and-summarize-medical-data-for-clinicians",
+                "title": "Navina secures $22M to process and summarize medical ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack",
+            "citations": [
+              {
+                "url": "https://navina.ai/news/navina-ai-now-integrated-with-epic",
+                "title": "Navina's AI-powered diagnosis insights - now within Epic",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/products/clinician-copilot",
+                "title": "Clinician Copilot | AI-Powered Clinical Workflows - Navina",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/",
+                "title": "Navina: The Clinician-First AI Copilot for Value-Based Success",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://techcrunch.com/2022/10/27/navina-secures-22m-to-process-and-summarize-medical-data-for-clinicians",
+                "title": "Navina secures $22M to process and summarize medical ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[11].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[11].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[11].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[12].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[12].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[12].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[13].name",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[13].title",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[13].linkedin_url",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[0]",
+            "citations": [
+              {
+                "url": "https://navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives",
+                "title": "Navina Secures $55M Series C Funding Led by Goldman Sachs",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[1]",
+            "citations": [
+              {
+                "url": "https://navina.ai/careers",
+                "title": "Careers | AI Healthcare Jobs - Navina",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[2]",
+            "citations": [
+              {
+                "url": "https://navina.ai/news",
+                "title": "News | Company Updates & Announcements | Navina AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives",
+                "title": "Navina Secures $55M Series C Funding Led by Goldman Sachs",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[3]",
+            "citations": [
+              {
+                "url": "https://navina.ai/news/navina-ai-now-integrated-with-epic",
+                "title": "Navina's AI-powered diagnosis insights - now within Epic",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives",
+                "title": "Navina Secures $55M Series C Funding Led by Goldman Sachs",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[4]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/navina-ai",
+                "title": "Navina",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/news",
+                "title": "News | Company Updates & Announcements | Navina AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[5]",
+            "citations": [
+              {
+                "url": "https://navina.ai/news/navina-ai-now-integrated-with-epic",
+                "title": "Navina's AI-powered diagnosis insights - now within Epic",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives",
+                "title": "Navina Secures $55M Series C Funding Led by Goldman Sachs",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[6]",
+            "citations": [
+              {
+                "url": "https://navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives",
+                "title": "Navina Secures $55M Series C Funding Led by Goldman Sachs",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/navina-ai",
+                "title": "Navina",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.summary",
+            "citations": [
+              {
+                "url": "https://navina.ai/about-us",
+                "title": "About Us | Our Technology and Mission | Navina AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives",
+                "title": "Navina Secures $55M Series C Funding Led by Goldman Sachs",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/navina-ai",
+                "title": "Navina",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://navina.ai/",
+                "title": "Navina: The Clinician-First AI Copilot for Value-Based Success",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://techcrunch.com/2022/10/27/navina-secures-22m-to-process-and-summarize-medical-data-for-clinicians",
+                "title": "Navina secures $22M to process and summarize medical ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://navina.ai/about-us",
+            "type": "primary",
+            "title": "About Us | Our Technology and Mission | Navina AI",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://navina.ai/",
+            "type": "primary",
+            "title": "Navina: The Clinician-First AI Copilot for Value-Based Success",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/navina-ai",
+            "type": "secondary",
+            "title": "Navina",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives",
+            "type": "secondary",
+            "title": "Navina Secures $55M Series C Funding Led by Goldman Sachs",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://navina.ai/news",
+            "type": "secondary",
+            "title": "News | Company Updates & Announcements | Navina AI",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/posts/thedanbender_clinical-ai-leader-navina-secures-55m-series-activity-7310606086124785664-6AAI",
+            "type": "primary",
+            "title": "Clinical AI Leader Navina Secures $55M Series C Funding Led ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://crunchbase.com/funding_round/navina-series-b--53b235ad",
+            "type": "secondary",
+            "title": "Funding Round - Series B - Navina",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://navina.ai/news/announcing-series-b-funding-22-million-milestone",
+            "type": "primary",
+            "title": "Navina Secures $22M Series B | News | Navina AI",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://techcrunch.com/2022/10/27/navina-secures-22m-to-process-and-summarize-medical-data-for-clinicians",
+            "type": "secondary",
+            "title": "Navina secures $22M to process and summarize medical ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://navina.ai/news/navina-ai-now-integrated-with-epic",
+            "type": "secondary",
+            "title": "Navina's AI-powered diagnosis insights - now within Epic",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://navina.ai/products/clinician-copilot",
+            "type": "primary",
+            "title": "Clinician Copilot | AI-Powered Clinical Workflows - Navina",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://navina.ai/careers",
+            "type": "primary",
+            "title": "Careers | AI Healthcare Jobs - Navina",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          }
+        ],
+        "reasoning": "High confidence - cells fill rate is 86% and trust per claim ratio is 87%",
+        "confidence": "high"
+      },
+      "content": {
+        "summary": "Navina (navina.ai), legally Navina Technologies, is a New York-based healthcare AI company (HQ: 413 W 14th St #200, New York, NY 10014; R&D in Israel) that delivers an AI-powered clinical intelligence platform for value-based care. Founded by IDF Unit 8200 veterans Ronen Lavi (CEO) and Shay Perera (CTO), the company's Clinician Copilot aggregates EHR, HIE, claims, and ambient data into AI-driven patient summaries, risk adjustment insights, care gap closure tools, and automated documentation \u2014 natively embedded in Epic and other EHRs. As of July 2026, Navina has raised $100M in total funding (Series C of $55M closed March 2025, led by Goldman Sachs Alternatives Growth Equity; prior investors include Vertex Ventures Israel, Grove Ventures, ALIVE Israel HealthTech Fund, and Schusterman Family Investments). LinkedIn lists ~281 employees (51\u2013200 band). Key buying signals include aggressive hiring in sales and R&D, expansion into the payer market (backed by former Humana CEO Bruce Broussard joining the advisory board in April 2026), a new enterprise partnership with Summit Health (March 2026), and #1 Best in KLAS 2025 recognition. The platform serves 10,000+ clinicians across 1,300+ clinics supporting 3M+ patients, with an industry-leading 86% weekly active usage rate.",
+        "website": "https://navina.ai",
+        "industry": "Healthcare AI / Digital Health \u2014 AI-powered clinical intelligence and value-based care platform",
+        "tech_stack": [
+          "Proprietary clinical NLP/ML AI engine (trained on EHR, imaging notes, consult notes, labs, procedures)",
+          "Generative AI \u2013 ambient scribe and automated visit note generation (E/M and MEAT documentation)",
+          "Epic EHR integration (Best Practice Advisory / BPA, Feb 2024)",
+          "Multi-EHR integrations (Epic plus additional EHR systems)",
+          "HIE (Health Information Exchange) data ingestion",
+          "Claims data processing",
+          "SOC 2 certified",
+          "HIPAA compliant",
+          "ISO 27001:2022 certified (ISMS)",
+          "SaaS / cloud-hosted platform",
+          "Webflow (website CMS)"
+        ],
+        "company_name": "Navina (Navina Technologies)",
+        "headquarters": "New York, NY 10014, USA (413 W 14th St #200); R&D office in Israel",
+        "key_contacts": [
+          {
+            "name": "Ronen Lavi",
+            "email": null,
+            "title": "CEO & Co-Founder",
+            "seniority": "C-Suite / Founder",
+            "linkedin_url": "https://www.linkedin.com/in/ronen-lavi-702115172/"
+          },
+          {
+            "name": "Shay Perera",
+            "email": null,
+            "title": "CTO & Co-Founder",
+            "seniority": "C-Suite / Founder",
+            "linkedin_url": "https://www.linkedin.com/in/shay-perera-8360a627/"
+          },
+          {
+            "name": "Ohad Shamian",
+            "email": null,
+            "title": "Chief Financial Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/ohad-shamian-35622537/"
+          },
+          {
+            "name": "Anne Amario",
+            "email": null,
+            "title": "Chief Marketing Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/anne-belkin-amario-26a7b2a9/"
+          },
+          {
+            "name": "Shany Kessel",
+            "email": null,
+            "title": "Chief People Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/shany-tenzer-kessel-247bb41a/"
+          },
+          {
+            "name": "Yoni Krol",
+            "email": null,
+            "title": "CISO",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/yonikrol/"
+          },
+          {
+            "name": "Roni Moshitzky",
+            "email": null,
+            "title": "VP R&D",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/ronimoshitzky/"
+          },
+          {
+            "name": "Neta Avivi",
+            "email": null,
+            "title": "VP Product",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/neta-avivi"
+          },
+          {
+            "name": "Shlomit Labin",
+            "email": null,
+            "title": "VP of AI",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/shlomit-labin/"
+          },
+          {
+            "name": "Dave Madlom",
+            "email": null,
+            "title": "VP of Healthcare Solutions",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/dmadlom/"
+          },
+          {
+            "name": "Dana McCalley",
+            "email": null,
+            "title": "VP of Value-Based Care",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/dana-mccalley-mba/"
+          },
+          {
+            "name": "Andrew Behan",
+            "email": null,
+            "title": "VP of Customer Success",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/andrewbehan"
+          },
+          {
+            "name": "Ronen Gordon",
+            "email": null,
+            "title": "VP of Medical Product",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/ronen-gordon/"
+          },
+          {
+            "name": "Hila Dalal Shemesh",
+            "email": null,
+            "title": "VP Finance",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/hila-dalal-shemesh-0369a1a9/"
+          }
+        ],
+        "funding_stage": "Series C",
+        "key_investors": [
+          "Growth Equity at Goldman Sachs Alternatives (Series C lead, March 2025)",
+          "Vertex Ventures Israel",
+          "Grove Ventures",
+          "ALIVE Israel HealthTech Fund",
+          "Schusterman Family Investments (SFI)"
+        ],
+        "total_funding": "$100 million total raised",
+        "buying_signals": [
+          "Recent major funding: $55M Series C closed March 2025 (Goldman Sachs lead), total $100M raised \u2014 actively deploying capital for platform expansion and hiring",
+          "Actively hiring across US and Israel: Director of Sales \u2013 AI Digital Health, Regional Enterprise Sales Leader, Director of Customer Success, Senior Data Engineer, Senior Full Stack Engineer, Senior Software Architect, FinOps Engineer (as of July 2026)",
+          "Market expansion into payer segment: new Summit Health partnership (March 2026); Bruce Broussard (former Humana CEO) joined advisory board (April 2026) to accelerate payer/provider growth",
+          "Technology migration / platform scaling: Epic EHR integration launched Feb 2024; expanding ambient scribe and generative AI capabilities; serving 10,000+ clinicians across 1,300+ clinics and 3M+ patients",
+          "Industry validation and leadership change: Best in KLAS #1 2025 for Clinician Digital Workflow; back-to-back Gold Stevie Awards (2025, 2026); MedTech Breakthrough Award 2025; CB Insights AI 100 and GenAI 50",
+          "Strong platform adoption signal: 86% weekly active usage rate and 81% AI recommendation acceptance rate \u2014 high stickiness indicating growing enterprise footprint",
+          "Strategic partnerships expanding: agilon health, Privia Health, InnovaCare Health, Millennium Physician Group, Summit Health \u2014 indicative of aggressive enterprise sales motion"
+        ],
+        "headcount_estimate": "~281 employees (LinkedIn, July 2026); LinkedIn company size band: 51\u2013200"
+      }
+    }
+  }
+}

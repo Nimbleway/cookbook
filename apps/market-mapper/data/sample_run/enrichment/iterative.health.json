@@ -1,0 +1,1951 @@
+{
+  "run": {
+    "status": "completed",
+    "is_active": false
+  },
+  "result": {
+    "run": {
+      "id": "task_run_7c7d48145d4047539eda0914d48f1507",
+      "error": null,
+      "effort": "high",
+      "prompt": "Enrich lead: Iterative Health (iterative.health) \u2014 company details, funding stage and investors, headcount, key decision-makers with titles and LinkedIn URLs, tech stack, buying signals",
+      "status": "completed",
+      "is_active": false,
+      "created_at": "2026-07-11T21:11:44.104785Z",
+      "started_at": "2026-07-11T21:11:44.316904Z",
+      "completed_at": "2026-07-11T21:15:25.458317Z",
+      "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+      "interaction_id": "task_run_7c7d48145d4047539eda0914d48f1507",
+      "web_search_agent_id": "wsa_b064449062834b5ead2609b8d372b689"
+    },
+    "output": {
+      "type": "json",
+      "trust": {
+        "claims": [
+          {
+            "path": "$.company_name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.website",
+            "citations": [
+              {
+                "url": "https://iterative.health/",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.industry",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headquarters",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://iterative.health/",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headcount_estimate",
+            "citations": [
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-and-gi-alliance-announce-historic-research-alliance-on-the-scope-forward-show",
+                "title": "Podcast: Iterative Health and GI Alliance Announce Historic ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/jobs/view/director-analytics-at-iterative-health-4416810997",
+                "title": "Iterative Health hiring Director, Analytics in Cambridge, MA",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.funding_stage",
+            "citations": [
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+                "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.total_funding",
+            "citations": [
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+                "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/iterative-health-gastro-health-partner-over-ai-enabled-pathology-and",
+                "title": "Iterative, Gastro Health using AI to improve GI care, research",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[0]",
+            "citations": [
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+                "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[1]",
+            "citations": [
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+                "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[2]",
+            "citations": [
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+                "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://crunchbase.com/funding_round/iterative-health-series-b--e3bcd2f2",
+                "title": "Funding Round - Series B - Iterative Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[3]",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/funding_round/iterative-health-series-b--e3bcd2f2",
+                "title": "Funding Round - Series B - Iterative Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[4]",
+            "citations": [
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+                "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://crunchbase.com/funding_round/iterative-health-series-b--e3bcd2f2",
+                "title": "Funding Round - Series B - Iterative Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[5]",
+            "citations": [
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+                "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[6]",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/funding_round/iterative-health-series-b--e3bcd2f2",
+                "title": "Funding Round - Series B - Iterative Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[7]",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/funding_round/iterative-health-series-b--e3bcd2f2",
+                "title": "Funding Round - Series B - Iterative Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[8]",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/funding_round/iterative-health-series-b--e3bcd2f2",
+                "title": "Funding Round - Series B - Iterative Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[9]",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/funding_round/iterative-health-series-b--e3bcd2f2",
+                "title": "Funding Round - Series B - Iterative Health",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[0].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[11].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[11].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[11].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[12].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[12].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[12].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[13].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[13].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[13].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[14].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[14].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[14].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[15].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[15].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[15].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[16].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[16].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[16].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[17].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[17].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[17].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[18].name",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[18].title",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[18].linkedin_url",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[0]",
+            "citations": [
+              {
+                "url": "https://iterative.health/products/skout",
+                "title": "https://iterative.health/products/skout/",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/iterative-health-gastro-health-partner-over-ai-enabled-pathology-and",
+                "title": "Iterative, Gastro Health using AI to improve GI care, research",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[1]",
+            "citations": [
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+                "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[2]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/jobs/view/director-analytics-at-iterative-health-4416810997",
+                "title": "Iterative Health hiring Director, Analytics in Cambridge, MA",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[3]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/jobs/view/director-analytics-at-iterative-health-4416810997",
+                "title": "Iterative Health hiring Director, Analytics in Cambridge, MA",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[4]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/jobs/view/director-analytics-at-iterative-health-4416810997",
+                "title": "Iterative Health hiring Director, Analytics in Cambridge, MA",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[5]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/jobs/view/director-analytics-at-iterative-health-4416810997",
+                "title": "Iterative Health hiring Director, Analytics in Cambridge, MA",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[6]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/jobs/view/director-analytics-at-iterative-health-4416810997",
+                "title": "Iterative Health hiring Director, Analytics in Cambridge, MA",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[7]",
+            "citations": [
+              {
+                "url": "https://iterative.health/",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[0]",
+            "citations": [
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+                "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[1]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/jobs/view/director-analytics-at-iterative-health-4416810997",
+                "title": "Iterative Health hiring Director, Analytics in Cambridge, MA",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[2]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/jobs/view/senior-people-operations-specialist-at-iterative-health-4429878601",
+                "title": "Senior People Operations Specialist - Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/jobs/view/research-site-manager-at-iterative-health-4435695202",
+                "title": "Iterative Health hiring Research Site Manager in Orlando, FL",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[3]",
+            "citations": [
+              {
+                "url": "https://iterative.health/",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+                "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[4]",
+            "citations": [
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-and-gi-alliance-announce-historic-research-alliance-on-the-scope-forward-show",
+                "title": "Podcast: Iterative Health and GI Alliance Announce Historic ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-and-one-gi-announce-strategic-partnership",
+                "title": "Iterative Health and One GI Announce Strategic ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://iterative.health/",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[5]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+                "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[6]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[7]",
+            "citations": [
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+                "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.summary",
+            "citations": [
+              {
+                "url": "https://iterative.health/about-us",
+                "title": "About Us",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+                "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://iterative.health/products/skout",
+                "title": "https://iterative.health/products/skout/",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/iterative-health",
+                "title": "Iterative Health",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://iterative.health/about-us",
+            "type": "primary",
+            "title": "About Us",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://iterative.health/",
+            "type": "primary",
+            "title": "Iterative Health",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/iterative-health",
+            "type": "primary",
+            "title": "Iterative Health",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://iterative.health/latest-news/blog/iterative-health-and-gi-alliance-announce-historic-research-alliance-on-the-scope-forward-show",
+            "type": "primary",
+            "title": "Podcast: Iterative Health and GI Alliance Announce Historic ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/jobs/view/director-analytics-at-iterative-health-4416810997",
+            "type": "primary",
+            "title": "Iterative Health hiring Director, Analytics in Cambridge, MA",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://iterative.health/latest-news/blog/iterative-health-closes-77-million-series-c-to-accelerate-the-future-of-clinical-research",
+            "type": "primary",
+            "title": "Iterative Health Closes $77 Million Series C to Accelerate ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://fiercehealthcare.com/ai-and-machine-learning/iterative-health-gastro-health-partner-over-ai-enabled-pathology-and",
+            "type": "secondary",
+            "title": "Iterative, Gastro Health using AI to improve GI care, research",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://crunchbase.com/funding_round/iterative-health-series-b--e3bcd2f2",
+            "type": "secondary",
+            "title": "Funding Round - Series B - Iterative Health",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://iterative.health/products/skout",
+            "type": "primary",
+            "title": "https://iterative.health/products/skout/",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/jobs/view/senior-people-operations-specialist-at-iterative-health-4429878601",
+            "type": "primary",
+            "title": "Senior People Operations Specialist - Iterative Health",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/jobs/view/research-site-manager-at-iterative-health-4435695202",
+            "type": "primary",
+            "title": "Iterative Health hiring Research Site Manager in Orlando, FL",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://iterative.health/latest-news/blog/iterative-health-and-one-gi-announce-strategic-partnership",
+            "type": "primary",
+            "title": "Iterative Health and One GI Announce Strategic ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          }
+        ],
+        "reasoning": "High confidence - cells fill rate is 85% and trust per claim ratio is 95%",
+        "confidence": "high"
+      },
+      "content": {
+        "summary": "Iterative Health (iterative.health) is a Cambridge, MA-based healthcare technology and services company founded in 2017 by Dr. Jonathan Ng, focused on accelerating clinical research through a combination of AI, expert staffing, and centralized operations. The company operates a 100+ site global clinical research network spanning GI, hepatology, cardiology, and obesity therapeutic areas across North America, Europe, India, and Australia. Its proprietary SKOUT\u00ae AI platform received FDA clearance for real-time AI-assisted polyp detection during colonoscopy and demonstrated a 27% improvement in adenoma detection in a randomized clinical trial. In April 2026, Iterative Health closed a $77 million Series C round led by Intrepid Growth Partners and GV (Google Ventures), joined by EDBI and existing investors Insight Partners and Obvious Ventures \u2014 bringing known cumulative funding to approximately $272M+. The company reports 250+ employees worldwide (187 on LinkedIn) and is actively hiring engineers, data scientists, and site operations staff. Key buying signals include: fresh Series C capital actively being deployed, a technology/data infrastructure build-out (Salesforce, SQL/data warehouse, Power BI/Looker, Python/R), aggressive site network expansion into cardiology via acquisitions (NextStage Clinical Research, Waco Cardiology), and new strategic partnerships with GI Alliance, One GI, US Heart & Vascular, and Gastroenterology Associates of NJ. The company is led by Founder/CEO Jonathan Ng (MBBS), President/CFO Bill Kayser, COO Dana Feuchtbaum, and a full VP-level management team of 11 with deep clinical trial and AI expertise.",
+        "website": "https://iterative.health",
+        "industry": "Healthcare Technology & Services \u2014 Clinical Research / AI-Powered GI & Multispecialty Clinical Trial Network",
+        "tech_stack": [
+          "SKOUT\u00ae \u2014 proprietary FDA-cleared real-time AI polyp detection platform (endoscopic video AI/ML, computer vision)",
+          "AI/ML (deep learning for endoscopic image analysis, patient pre-screening algorithms)",
+          "Enterprise Data Warehouse (Snowflake / BigQuery / Redshift \u2014 in use per job postings)",
+          "Salesforce CRM (confirmed in use per Director Analytics job posting)",
+          "SQL (core analytics infrastructure)",
+          "Power BI / Looker / Tableau (BI dashboards)",
+          "Python / R (data science and modeling)",
+          "WordPress + Bricks Builder (company website CMS)"
+        ],
+        "company_name": "Iterative Health",
+        "headquarters": "675 Massachusetts Ave, 8th Floor, Cambridge, MA 02139 (also New York, NY)",
+        "key_contacts": [
+          {
+            "name": "Jonathan Ng, MBBS",
+            "email": null,
+            "title": "Founder & CEO",
+            "seniority": "C-Suite / Founder",
+            "linkedin_url": "https://www.linkedin.com/in/jonathan-ng-55784b61/"
+          },
+          {
+            "name": "Bill Kayser",
+            "email": null,
+            "title": "President & Chief Financial Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/wcjkayser/"
+          },
+          {
+            "name": "Dana Feuchtbaum",
+            "email": null,
+            "title": "Chief Operating Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/dana-feuchtbaum-59609520/"
+          },
+          {
+            "name": "Nadege Gunn, MD, CPI, DABOM, FAASLD",
+            "email": null,
+            "title": "Chief Medical Officer, Hepatology & Obesity",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/nadege-gunn-md-cpi-dabom-faasld-226b5513/"
+          },
+          {
+            "name": "Evan Estola",
+            "email": null,
+            "title": "VP, Engineering",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/estola/"
+          },
+          {
+            "name": "Michael Fives",
+            "email": null,
+            "title": "VP, Product",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/michaelfives/"
+          },
+          {
+            "name": "Julie Chang",
+            "email": null,
+            "title": "VP, Growth",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/juliehchang/"
+          },
+          {
+            "name": "Daniel Wang",
+            "email": null,
+            "title": "SVP, Finance & Operations",
+            "seniority": "SVP",
+            "linkedin_url": "https://www.linkedin.com/in/danwang11/"
+          },
+          {
+            "name": "Haig Soghigian",
+            "email": null,
+            "title": "SVP, Professional Services",
+            "seniority": "SVP",
+            "linkedin_url": "https://www.linkedin.com/in/haigsoghigian/"
+          },
+          {
+            "name": "Matt Morris",
+            "email": null,
+            "title": "VP, Corporate Development",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/morris2/"
+          },
+          {
+            "name": "Charles C. Owen, Jr., MD, MBA, FACP, AGAF",
+            "email": null,
+            "title": "VP, GI Medical",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/charles-owen-jr-md-mba-facp-agaf-16b758a/"
+          },
+          {
+            "name": "Mark R. Molenda, RPh",
+            "email": null,
+            "title": "VP, Trials Partnerships",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/mark-r-molenda-rph-163b24a/"
+          },
+          {
+            "name": "Constantin Claussen",
+            "email": null,
+            "title": "VP, Head of Ex-US Markets",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/constantin-claussen-83996790/"
+          },
+          {
+            "name": "Jedd Lucas",
+            "email": null,
+            "title": "VP, People",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/jedd-lucas-924a5310/"
+          },
+          {
+            "name": "Brianna Kemm",
+            "email": null,
+            "title": "Chief of Staff to CEO",
+            "seniority": "Director",
+            "linkedin_url": "https://www.linkedin.com/in/brianna-kemm/"
+          },
+          {
+            "name": "Christina Wyrwik",
+            "email": null,
+            "title": "Chief of Staff to Chief Operating Officer",
+            "seniority": "Director",
+            "linkedin_url": "https://www.linkedin.com/in/christina-sarah-wyrwik-4a706255/"
+          },
+          {
+            "name": "Karishma Ramakrishnan",
+            "email": null,
+            "title": "Senior Director, Program Management",
+            "seniority": "Senior Director",
+            "linkedin_url": "https://www.linkedin.com/in/karishma-ramakrishnan/"
+          },
+          {
+            "name": "Kim Baker",
+            "email": null,
+            "title": "Director, Marketing",
+            "seniority": "Director",
+            "linkedin_url": "https://www.linkedin.com/in/kimberlyannebaker/"
+          },
+          {
+            "name": "Dhara Sheth",
+            "email": null,
+            "title": "Counsel, Director, Legal & Risk",
+            "seniority": "Director",
+            "linkedin_url": "https://www.linkedin.com/in/dhara-waghela/"
+          }
+        ],
+        "funding_stage": "Series C",
+        "key_investors": [
+          "Intrepid Growth Partners (Series C lead)",
+          "GV (Google Ventures) (Series C co-lead)",
+          "Insight Partners (Series B lead, Series C participant)",
+          "Clearlake Capital Group (Series B co-lead)",
+          "Obvious Ventures (Series B & Series C participant)",
+          "EDBI / SG Growth Capital (Series C new investor)",
+          "Johnson & Johnson Innovation (Series B)",
+          "Eli Lilly (Series B)",
+          "Breyer Capital (Series B)",
+          "Alumni Ventures (Series B)"
+        ],
+        "total_funding": "$77 million Series C closed April 30, 2026 (prior rounds bring total to approximately $272M+ including the $195M raised through early 2023)",
+        "buying_signals": [
+          "ACTIVE FUNDING DEPLOYMENT: Closed $77M Series C on April 30, 2026 (led by GV/Google Ventures and Intrepid Growth Partners) \u2014 capital actively being deployed for technology, headcount, and geographic expansion",
+          "TECHNOLOGY MIGRATION: Building out data/analytics infrastructure from scratch \u2014 hiring Staff Data Engineer, Staff Data Scientist, Staff Software Engineer, and Director Analytics; replacing manual spreadsheets with self-serve data warehouse reporting",
+          "ACTIVE HIRING: Multiple open roles in Cambridge MA and New York NY \u2014 engineering, analytics, people operations, research site management \u2014 signaling aggressive team expansion",
+          "MARKET EXPANSION: Entered cardiology in 2025\u20132026, acquiring cardiology sites from NextStage Clinical Research (May 2026) and Waco Cardiology (June 2026); expanding from GI/hepatology to obesity and cardiology",
+          "NETWORK SCALING: Site network grew to 100+ globally across North America, Europe, India, Australia; new strategic partnerships with GI Alliance (80 sites), One GI (34 clinics), US Heart & Vascular, and Gastroenterology Associates of NJ (July 8, 2026)",
+          "LEADERSHIP CHANGE: New VP Engineering Evan Estola recently hired; new Chief of Staff to CEO Brianna Kemm; new Board member (Ajay Agrawal, Intrepid) and Board observer (Anthony Philippakis, GV) added post-Series C",
+          "PRODUCT DEVELOPMENT: Building 'next generation of AI' for clinical research including AI-powered pre-screening tools and data-driven operational infrastructure \u2014 actively seeking senior technical talent",
+          "PHARMA/BIOTECH PARTNERSHIPS: 40+ pharma, biotech, medical device, and CRO sponsor partners \u2014 ecosystem of buyers actively engaged"
+        ],
+        "headcount_estimate": "250+ employees worldwide (LinkedIn shows 187 indexed profiles; company-stated figure is 250+ as of 2025\u20132026)"
+      }
+    }
+  }
+}

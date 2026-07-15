@@ -1,0 +1,1572 @@
+{
+  "run": {
+    "status": "completed",
+    "is_active": false
+  },
+  "result": {
+    "run": {
+      "id": "task_run_2e1960b8b422497eb3c578357a910341",
+      "error": null,
+      "effort": "high",
+      "prompt": "Enrich lead: Ibex Medical Analytics (ibex.ai) \u2014 company details, funding stage and investors, headcount, key decision-makers with titles and LinkedIn URLs, tech stack, buying signals",
+      "status": "completed",
+      "is_active": false,
+      "created_at": "2026-07-11T21:07:19.033161Z",
+      "started_at": "2026-07-11T21:07:19.645904Z",
+      "completed_at": "2026-07-11T21:11:26.353066Z",
+      "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+      "interaction_id": "task_run_2e1960b8b422497eb3c578357a910341",
+      "web_search_agent_id": "wsa_b064449062834b5ead2609b8d372b689"
+    },
+    "output": {
+      "type": "json",
+      "trust": {
+        "claims": [
+          {
+            "path": "$.company_name",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.website",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.industry",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.headquarters",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.funding_stage",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/il/news-releases/ibex-raises-55-million-in-series-c-funding-to-drive-global-adoption-of-ai-for-cancer-diagnosis-301918990.html",
+                "title": "Ibex Raises $55 Million in Series C Funding to Drive ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.total_funding",
+            "citations": [
+              {
+                "url": "https://prnewswire.com/il/news-releases/ibex-raises-55-million-in-series-c-funding-to-drive-global-adoption-of-ai-for-cancer-diagnosis-301918990.html",
+                "title": "Ibex Raises $55 Million in Series C Funding to Drive ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[0]",
+            "citations": [
+              {
+                "url": "https://prnewswire.com/il/news-releases/ibex-raises-55-million-in-series-c-funding-to-drive-global-adoption-of-ai-for-cancer-diagnosis-301918990.html",
+                "title": "Ibex Raises $55 Million in Series C Funding to Drive ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[1]",
+            "citations": [
+              {
+                "url": "https://techcrunch.com/2021/03/09/ibex-medical-analytics-raises-38m-for-its-ai-powered-cancer-diagnostic-platform",
+                "title": "Ibex Medical Analytics raises $38M for its AI-powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[2]",
+            "citations": [
+              {
+                "url": "https://techcrunch.com/2021/03/09/ibex-medical-analytics-raises-38m-for-its-ai-powered-cancer-diagnostic-platform",
+                "title": "Ibex Medical Analytics raises $38M for its AI-powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[3]",
+            "citations": [
+              {
+                "url": "https://techcrunch.com/2021/03/09/ibex-medical-analytics-raises-38m-for-its-ai-powered-cancer-diagnostic-platform",
+                "title": "Ibex Medical Analytics raises $38M for its AI-powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[4]",
+            "citations": [
+              {
+                "url": "https://prnewswire.com/il/news-releases/ibex-raises-55-million-in-series-c-funding-to-drive-global-adoption-of-ai-for-cancer-diagnosis-301918990.html",
+                "title": "Ibex Raises $55 Million in Series C Funding to Drive ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[5]",
+            "citations": [
+              {
+                "url": "https://techcrunch.com/2021/03/09/ibex-medical-analytics-raises-38m-for-its-ai-powered-cancer-diagnostic-platform",
+                "title": "Ibex Medical Analytics raises $38M for its AI-powered ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headcount_estimate",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[0]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/ibex-4_press_release",
+                "title": "Ibex Medical Analytics Unveils Ibex 4, the Next-Generation ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/solutions",
+                "title": "Solutions - IBEX",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[1]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/roche-aws",
+                "title": "Roche collaborates with Ibex and Amazon Web Services to ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[2]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/solutions",
+                "title": "Solutions - IBEX",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/ibex-4_press_release",
+                "title": "Ibex Medical Analytics Unveils Ibex 4, the Next-Generation ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[3]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[4]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/roche-aws",
+                "title": "Roche collaborates with Ibex and Amazon Web Services to ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[5]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[6]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/ibex-4_press_release",
+                "title": "Ibex Medical Analytics Unveils Ibex 4, the Next-Generation ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[7]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/category/press-releases",
+                "title": "Press releases",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[8]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/fda-510k-clearance",
+                "title": "Ibex Medical Analytics Receives First FDA 510(k) Clearance",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[0].name",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/pr-global-momentum-2026",
+                "title": "Ibex Medical Analytics Accelerates Global Momentum in AI ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].title",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/pr-global-momentum-2026",
+                "title": "Ibex Medical Analytics Accelerates Global Momentum in AI ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].linkedin_url",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].name",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/pr-global-momentum-2026",
+                "title": "Ibex Medical Analytics Accelerates Global Momentum in AI ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].title",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/pr-global-momentum-2026",
+                "title": "Ibex Medical Analytics Accelerates Global Momentum in AI ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].linkedin_url",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].name",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/ibex-4_press_release",
+                "title": "Ibex Medical Analytics Unveils Ibex 4, the Next-Generation ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].title",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/ibex-4_press_release",
+                "title": "Ibex Medical Analytics Unveils Ibex 4, the Next-Generation ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].linkedin_url",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].name",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].title",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].linkedin_url",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].name",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].title",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].linkedin_url",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].name",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].title",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].linkedin_url",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].name",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].title",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].linkedin_url",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].name",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].title",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].linkedin_url",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].name",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].title",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].linkedin_url",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].name",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].title",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].linkedin_url",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].name",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].title",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].linkedin_url",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[11].name",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[11].title",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[11].linkedin_url",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[12].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[12].title",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[0]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/pr-global-momentum-2026",
+                "title": "Ibex Medical Analytics Accelerates Global Momentum in AI ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/posts/yair-heller-9aa7333_following-todays-announcement-i-am-honored-activity-7429890445947662336-5m0O",
+                "title": "Ibex Medical Analytics CEO: Scaling Global AI Adoption",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[1]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/ibex-4_press_release",
+                "title": "Ibex Medical Analytics Unveils Ibex 4, the Next-Generation ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[2]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/pr-global-momentum-2026",
+                "title": "Ibex Medical Analytics Accelerates Global Momentum in AI ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[3]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/category/press-releases",
+                "title": "Press releases",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[4]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/category/press-releases",
+                "title": "Press releases",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[5]",
+            "citations": [
+              {
+                "url": "https://il.linkedin.com/jobs/view/senior-product-manager-il-at-ibex-medical-analytics-4245370001",
+                "title": "Ibex Medical Analytics\u200f \u05d2\u05d9\u05d5\u05e1 \u200fSenior Product Manager",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[6]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/fda-510k-clearance",
+                "title": "Ibex Medical Analytics Receives First FDA 510(k) Clearance",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[7]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/ibex-4_press_release",
+                "title": "Ibex Medical Analytics Unveils Ibex 4, the Next-Generation ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[8]",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/roche-aws",
+                "title": "Roche collaborates with Ibex and Amazon Web Services to ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[9]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.summary",
+            "citations": [
+              {
+                "url": "https://ibex-ai.com/about",
+                "title": "About",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/pr-global-momentum-2026",
+                "title": "Ibex Medical Analytics Accelerates Global Momentum in AI ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/il/news-releases/ibex-raises-55-million-in-series-c-funding-to-drive-global-adoption-of-ai-for-cancer-diagnosis-301918990.html",
+                "title": "Ibex Raises $55 Million in Series C Funding to Drive ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/fda-510k-clearance",
+                "title": "Ibex Medical Analytics Receives First FDA 510(k) Clearance",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/ibexmedicalanalytics",
+                "title": "Ibex Medical Analytics",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://ibex-ai.com/ibex-4_press_release",
+                "title": "Ibex Medical Analytics Unveils Ibex 4, the Next-Generation ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://ibex-ai.com/about",
+            "type": "primary",
+            "title": "About",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/ibexmedicalanalytics",
+            "type": "secondary",
+            "title": "Ibex Medical Analytics",
+            "source_intent": null,
+            "source_category": "social",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://prnewswire.com/il/news-releases/ibex-raises-55-million-in-series-c-funding-to-drive-global-adoption-of-ai-for-cancer-diagnosis-301918990.html",
+            "type": "secondary",
+            "title": "Ibex Raises $55 Million in Series C Funding to Drive ...",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://techcrunch.com/2021/03/09/ibex-medical-analytics-raises-38m-for-its-ai-powered-cancer-diagnostic-platform",
+            "type": "secondary",
+            "title": "Ibex Medical Analytics raises $38M for its AI-powered ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://ibex-ai.com/ibex-4_press_release",
+            "type": "secondary",
+            "title": "Ibex Medical Analytics Unveils Ibex 4, the Next-Generation ...",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://ibex-ai.com/solutions",
+            "type": "primary",
+            "title": "Solutions - IBEX",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://ibex-ai.com/roche-aws",
+            "type": "primary",
+            "title": "Roche collaborates with Ibex and Amazon Web Services to ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://ibex-ai.com/category/press-releases",
+            "type": "secondary",
+            "title": "Press releases",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://ibex-ai.com/fda-510k-clearance",
+            "type": "secondary",
+            "title": "Ibex Medical Analytics Receives First FDA 510(k) Clearance",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://ibex-ai.com/pr-global-momentum-2026",
+            "type": "secondary",
+            "title": "Ibex Medical Analytics Accelerates Global Momentum in AI ...",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/posts/yair-heller-9aa7333_following-todays-announcement-i-am-honored-activity-7429890445947662336-5m0O",
+            "type": "primary",
+            "title": "Ibex Medical Analytics CEO: Scaling Global AI Adoption",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://il.linkedin.com/jobs/view/senior-product-manager-il-at-ibex-medical-analytics-4245370001",
+            "type": "secondary",
+            "title": "Ibex Medical Analytics\u200f \u05d2\u05d9\u05d5\u05e1 \u200fSenior Product Manager",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          }
+        ],
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "confidence": "medium"
+      },
+      "content": {
+        "summary": "Ibex Medical Analytics (ibex-ai.com) is an Israel-founded, Boston-headquartered AI healthtech company specializing in clinical-grade AI for cancer diagnostics in pathology. Founded in 2016 (incubated at Kamet Ventures), the company is the most widely deployed AI platform in pathology globally, processing whole-slide images to detect and grade breast, prostate, and gastric cancers. As of July 2026, Ibex has raised over $100M across 7 rounds, with the most recent being a $55M Series C (September 2023) led by 83North, joined by Sienna Venture Capital, Octopus Ventures, aMoon, Planven Entrepreneur Ventures, and Dell Technologies Capital. The company has ~97 employees (51\u2013200 range). In February 2026, Ibex completed a leadership transition appointing Yair Heller (formerly COO) as CEO, while co-founder Joseph Mossel assumed the President & GM U.S. role focusing on biopharma growth. Key technical leadership includes CTO and co-founder Chaim Linhart, PhD. The platform (now branded Ibex 4) runs on AWS cloud infrastructure with deep learning algorithms trained on 10M+ slides, integrating with partners including Philips, Roche navify, Proscia, and FUJIFILM via open API into LIS and IMS systems. Security certifications include HITRUST, ISO 27001, ISO 13485, and Cyber Essentials Plus. In February 2025, Ibex received its first FDA 510(k) clearance (for Ibex Prostate Detect). Strong buying signals include the new CEO driving global scale execution, the Ibex 4 platform launch (March 2026), 70%+ customer base growth, active biopharma division expansion, new U.S. lab partnerships, and ongoing hiring across Israel and the U.S.",
+        "website": "https://ibex-ai.com",
+        "industry": "Hospitals and Health Care \u2014 AI-powered cancer diagnostics / computational pathology",
+        "tech_stack": [
+          "Proprietary deep learning / computer vision AI platform (Ibex 4 / Galen platform) trained on 10M+ pathology slides",
+          "Amazon Web Services (AWS) \u2014 cloud infrastructure for scalable slide image processing",
+          "Open API for LIS (Laboratory Information System) and IMS (Image Management System) integrations",
+          "Philips IntelliSite Pathology Solution \u2014 clinical integration partner",
+          "Roche navify Digital Pathology \u2014 integration partner",
+          "Proscia Concentriq DP \u2014 integration partner",
+          "FUJIFILM Healthcare Europe \u2014 integration partner",
+          "mTuitive \u2014 structured reporting integration (CAP/RCPath/ICCR-compliant)",
+          "ISO 13485-compliant QMS; HITRUST, ISO 27001, Cyber Essentials Plus certifications",
+          "Google Analytics (website analytics)",
+          "WordPress (company blog/news site)"
+        ],
+        "company_name": "Ibex Medical Analytics",
+        "headquarters": "17 Station Street, Suite 203, Brookline, Massachusetts 02445, USA (also Tel Aviv, Israel and London, UK)",
+        "key_contacts": [
+          {
+            "name": "Yair Heller",
+            "email": null,
+            "title": "Chief Executive Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/yair-heller-9aa7333/"
+          },
+          {
+            "name": "Joseph (Yossi) Mossel",
+            "email": null,
+            "title": "Co-Founder, President & General Manager, U.S.",
+            "seniority": "C-Suite / Co-Founder",
+            "linkedin_url": "https://www.linkedin.com/in/yossimossel/"
+          },
+          {
+            "name": "Chaim Linhart, PhD",
+            "email": null,
+            "title": "Co-Founder & Chief Technology Officer",
+            "seniority": "C-Suite / Co-Founder",
+            "linkedin_url": "https://www.linkedin.com/in/chaim-linhart-13b76048/"
+          },
+          {
+            "name": "Judith Sandbank, MD",
+            "email": null,
+            "title": "Chief Medical Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/judith-sandbank-8042a0139/"
+          },
+          {
+            "name": "Dalit Kahana Garbi",
+            "email": null,
+            "title": "Chief Operating Officer & General Counsel",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/dalit-kahana-garbi-b337a/"
+          },
+          {
+            "name": "Stuart Shand",
+            "email": null,
+            "title": "Chief Commercial Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/stuart-shand-8715651/"
+          },
+          {
+            "name": "Rachel Yesharim",
+            "email": null,
+            "title": "SVP Product",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/rachel-shiloh-yesharim-16b73930/"
+          },
+          {
+            "name": "Aner Armon",
+            "email": null,
+            "title": "SVP Engineering",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/armon/"
+          },
+          {
+            "name": "Assaf Pereg",
+            "email": null,
+            "title": "SVP Finance",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/assaf-pereg/"
+          },
+          {
+            "name": "Michal Shoval",
+            "email": null,
+            "title": "SVP Human Resources",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/michal-shoval-ab05b93/"
+          },
+          {
+            "name": "Manuela Vecsler, PhD",
+            "email": null,
+            "title": "VP Clinical & Scientific",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/manuela-vecsler-72095223/"
+          },
+          {
+            "name": "Yael Liebes-Peer, PhD",
+            "email": null,
+            "title": "VP RA/QA",
+            "seniority": "VP",
+            "linkedin_url": "https://www.linkedin.com/in/yael-liebes-peer-aa98a717/"
+          },
+          {
+            "name": "Richard Nicholson",
+            "email": null,
+            "title": "Head of Business Development & Partnerships, Europe",
+            "seniority": "Director",
+            "linkedin_url": null
+          }
+        ],
+        "funding_stage": "Series C",
+        "key_investors": [
+          "83North (Series C lead)",
+          "Octopus Ventures",
+          "aMoon",
+          "Planven Entrepreneur Ventures",
+          "Sienna Venture Capital",
+          "Dell Technologies Capital"
+        ],
+        "total_funding": ">$100 million (7 rounds since 2016; most recent: $55M Series C, September 2023)",
+        "buying_signals": [
+          "Leadership change (February 2026): New CEO Yair Heller installed; co-founder Joseph Mossel pivoting to biopharma and U.S. clinical growth \u2014 new strategic priorities signal fresh budget cycles and vendor re-evaluation.",
+          "Major platform launch (March 2026): Ibex 4 next-generation AI platform released with expanded breast, prostate, and gastric workflows \u2014 active platform roll-out creates LIS/IMS integration, implementation, and services needs.",
+          "Rapid commercial expansion: Doubled case volume for the second consecutive year in 2025; customer base grew 70%+; 3x new applications deployed vs. 2024.",
+          "New U.S. clinical partnerships (2026): HNL Lab Medicine (March 2026) and PathGroup \u2014 active U.S. market expansion signals sales infrastructure and vendor partner investment.",
+          "Biopharma division launch: New biopharma advisory board (May 2026) and early biomarker development service expansion (January 2026) \u2014 new business line requiring distinct clinical, regulatory, and data infrastructure.",
+          "Active hiring: Open roles across Israel and U.S. (Senior Product Manager, Application Engineers, BD roles) \u2014 headcount growth signals budget availability.",
+          "FDA 510(k) clearance (February 2025) for Ibex Prostate Detect \u2014 first FDA clearance unlocks U.S. clinical sales; active U.S. commercialization underway.",
+          "Technology migration: Ibex 4 platform supersedes prior 'Galen' platform \u2014 existing lab customers migrating to new platform, creating workflow integration and onboarding opportunities.",
+          "Strategic tech partnership with AWS for cloud-native digital pathology scaling \u2014 signals cloud infrastructure investment and partner ecosystem expansion.",
+          "Active conference presence and European expansion roadshow (ECDP 2026, USCAP 2026, France roadshow 2026) \u2014 strong go-to-market activity indicates sales cycle acceleration."
+        ],
+        "headcount_estimate": "51\u2013200 employees (LinkedIn: ~97 employees listed, as of July 2026)"
+      }
+    }
+  }
+}
