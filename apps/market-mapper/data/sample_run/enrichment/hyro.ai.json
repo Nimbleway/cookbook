@@ -1,0 +1,1469 @@
+{
+  "run": {
+    "status": "completed",
+    "is_active": false
+  },
+  "result": {
+    "run": {
+      "id": "task_run_33d842d9bbcd4788acbda065fca0234b",
+      "error": null,
+      "effort": "high",
+      "prompt": "Enrich lead: Hyro (hyro.ai) \u2014 company details, funding stage and investors, headcount, key decision-makers with titles and LinkedIn URLs, tech stack, buying signals",
+      "status": "completed",
+      "is_active": false,
+      "created_at": "2026-07-11T21:07:19.051431Z",
+      "started_at": "2026-07-11T21:07:19.729880Z",
+      "completed_at": "2026-07-11T21:10:51.970183Z",
+      "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+      "interaction_id": "task_run_33d842d9bbcd4788acbda065fca0234b",
+      "web_search_agent_id": "wsa_b064449062834b5ead2609b8d372b689"
+    },
+    "output": {
+      "type": "json",
+      "trust": {
+        "claims": [
+          {
+            "path": "$.company_name",
+            "citations": [
+              {
+                "url": "https://hyro.ai/about-us",
+                "title": "About Hyro | Responsible AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.website",
+            "citations": [
+              {
+                "url": "https://hyro.ai/",
+                "title": "Hyro | AI Agents for Healthcare | Call Center, Scheduling ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.industry",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-a-fierce-15-company-of-2026",
+                "title": "Fierce Healthcare Names Hyro a \u201cFierce 15\u201d Company of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headquarters",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hyro.ai/blog/hyro-a-fierce-15-company-of-2026",
+                "title": "Fierce Healthcare Names Hyro a \u201cFierce 15\u201d Company of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headcount_estimate",
+            "citations": [
+              {
+                "url": "https://hyro.ai/about-us",
+                "title": "About Hyro | Responsible AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.funding_stage",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/news-releases/hyro-raises-45m-strategic-growth-round-to-accelerate-ai-agent-adoption-in-healthcare-302589268.html",
+                "title": "Hyro Raises $45M Strategic Growth Round to Accelerate ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.total_funding",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hyro.ai/about-us",
+                "title": "About Hyro | Responsible AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[0]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[1]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/news-releases/hyro-raises-45m-strategic-growth-round-to-accelerate-ai-agent-adoption-in-healthcare-302589268.html",
+                "title": "Hyro Raises $45M Strategic Growth Round to Accelerate ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[2]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/news-releases/hyro-raises-45m-strategic-growth-round-to-accelerate-ai-agent-adoption-in-healthcare-302589268.html",
+                "title": "Hyro Raises $45M Strategic Growth Round to Accelerate ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[3]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/news-releases/hyro-raises-45m-strategic-growth-round-to-accelerate-ai-agent-adoption-in-healthcare-302589268.html",
+                "title": "Hyro Raises $45M Strategic Growth Round to Accelerate ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[4]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[5]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-a-fierce-15-company-of-2026",
+                "title": "Fierce Healthcare Names Hyro a \u201cFierce 15\u201d Company of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[6]",
+            "citations": [
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[7]",
+            "citations": [
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hyro.ai/about-us",
+                "title": "About Hyro | Responsible AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[8]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/about-us",
+                "title": "About Hyro | Responsible AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[9]",
+            "citations": [
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[10]",
+            "citations": [
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[11]",
+            "citations": [
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[12]",
+            "citations": [
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[13]",
+            "citations": [
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[0].name",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-a-fierce-15-company-of-2026",
+                "title": "Fierce Healthcare Names Hyro a \u201cFierce 15\u201d Company of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].title",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-a-fierce-15-company-of-2026",
+                "title": "Fierce Healthcare Names Hyro a \u201cFierce 15\u201d Company of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/news-releases/with-launch-of-care-intelligence-hyro-becomes-the-first-to-turn-millions-of-ai-agent-conversations-into-patient-access-signals-302813929.html",
+                "title": "With Launch of Care Intelligence, Hyro Becomes the First ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/posts/krushi_years-before-we-raised-95m-and-deployed-activity-7416866459261468674-1Rgf",
+                "title": "Hyro's Early Days at Cornell Led to Healthcare Breakthrough",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/posts/rom-cohen_when-israel-krush-and-i-founded-hyro-back-activity-7386419318051323904-7PsK",
+                "title": "Hyro raises $45M to expand AI Agents in healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].title",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/posts/rom-cohen_when-israel-krush-and-i-founded-hyro-back-activity-7386419318051323904-7PsK",
+                "title": "Hyro raises $45M to expand AI Agents in healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].name",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-a-fierce-15-company-of-2026",
+                "title": "Fierce Healthcare Names Hyro a \u201cFierce 15\u201d Company of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].title",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-a-fierce-15-company-of-2026",
+                "title": "Fierce Healthcare Names Hyro a \u201cFierce 15\u201d Company of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].name",
+            "citations": [
+              {
+                "url": "https://prnewswire.com/news-releases/with-launch-of-care-intelligence-hyro-becomes-the-first-to-turn-millions-of-ai-agent-conversations-into-patient-access-signals-302813929.html",
+                "title": "With Launch of Care Intelligence, Hyro Becomes the First ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[6].title",
+            "citations": [
+              {
+                "url": "https://prnewswire.com/news-releases/with-launch-of-care-intelligence-hyro-becomes-the-first-to-turn-millions-of-ai-agent-conversations-into-patient-access-signals-302813929.html",
+                "title": "With Launch of Care Intelligence, Hyro Becomes the First ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[0]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-a-fierce-15-company-of-2026",
+                "title": "Fierce Healthcare Names Hyro a \u201cFierce 15\u201d Company of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/news-releases/with-launch-of-care-intelligence-hyro-becomes-the-first-to-turn-millions-of-ai-agent-conversations-into-patient-access-signals-302813929.html",
+                "title": "With Launch of Care Intelligence, Hyro Becomes the First ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[1]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/about-us",
+                "title": "About Hyro | Responsible AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hyro.ai/blog/hyro-a-fierce-15-company-of-2026",
+                "title": "Fierce Healthcare Names Hyro a \u201cFierce 15\u201d Company of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[2]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/about-us",
+                "title": "About Hyro | Responsible AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hyro.ai/blog/hyro-2024-year-in-review",
+                "title": "2024: Hyro's Year of Transformation and Growth",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[3]",
+            "citations": [
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hyro.ai/press",
+                "title": "Hyro in the News! Check Our Latest Mentions",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[4]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/press",
+                "title": "Hyro in the News! Check Our Latest Mentions",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[5]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-2024-year-in-review",
+                "title": "2024: Hyro's Year of Transformation and Growth",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[6]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[7]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/about-us",
+                "title": "About Hyro | Responsible AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[8]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/",
+                "title": "Hyro | AI Agents for Healthcare | Call Center, Scheduling ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[9]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[10]",
+            "citations": [
+              {
+                "url": "https://prnewswire.com/news-releases/with-launch-of-care-intelligence-hyro-becomes-the-first-to-turn-millions-of-ai-agent-conversations-into-patient-access-signals-302813929.html",
+                "title": "With Launch of Care Intelligence, Hyro Becomes the First ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hyro.ai/press",
+                "title": "Hyro in the News! Check Our Latest Mentions",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[11]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[0]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/news-releases/hyro-raises-45m-strategic-growth-round-to-accelerate-ai-agent-adoption-in-healthcare-302589268.html",
+                "title": "Hyro Raises $45M Strategic Growth Round to Accelerate ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[1]",
+            "citations": [
+              {
+                "url": "https://prnewswire.com/news-releases/with-launch-of-care-intelligence-hyro-becomes-the-first-to-turn-millions-of-ai-agent-conversations-into-patient-access-signals-302813929.html",
+                "title": "With Launch of Care Intelligence, Hyro Becomes the First ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hyro.ai/press",
+                "title": "Hyro in the News! Check Our Latest Mentions",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[2]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/posts/rom-cohen_when-israel-krush-and-i-founded-hyro-back-activity-7386419318051323904-7PsK",
+                "title": "Hyro raises $45M to expand AI Agents in healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[3]",
+            "citations": [
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (other)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[4]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-2024-year-in-review",
+                "title": "2024: Hyro's Year of Transformation and Growth",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[5]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-a-fierce-15-company-of-2026",
+                "title": "Fierce Healthcare Names Hyro a \u201cFierce 15\u201d Company of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[6]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[7]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[8]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/press",
+                "title": "Hyro in the News! Check Our Latest Mentions",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hyro.ai/blog/hyro-a-fierce-15-company-of-2026",
+                "title": "Fierce Healthcare Names Hyro a \u201cFierce 15\u201d Company of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[9]",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-2024-year-in-review",
+                "title": "2024: Hyro's Year of Transformation and Growth",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+                "title": "Hyro AI raises $35M series B with Healthier Capital",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "other",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Corroborated by 2 independent secondary sources",
+            "confidence": "high"
+          },
+          {
+            "path": "$.summary",
+            "citations": [
+              {
+                "url": "https://hyro.ai/blog/hyro-a-fierce-15-company-of-2026",
+                "title": "Fierce Healthcare Names Hyro a \u201cFierce 15\u201d Company of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+                "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://prnewswire.com/news-releases/with-launch-of-care-intelligence-hyro-becomes-the-first-to-turn-millions-of-ai-agent-conversations-into-patient-access-signals-302813929.html",
+                "title": "With Launch of Care Intelligence, Hyro Becomes the First ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/hyroai",
+                "title": "Hyro",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://hyro.ai/about-us",
+                "title": "About Hyro | Responsible AI Agents for Healthcare",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://hyro.ai/about-us",
+            "type": "primary",
+            "title": "About Hyro | Responsible AI Agents for Healthcare",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://hyro.ai/",
+            "type": "secondary",
+            "title": "Hyro | AI Agents for Healthcare | Call Center, Scheduling ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://hyro.ai/blog/hyro-a-fierce-15-company-of-2026",
+            "type": "primary",
+            "title": "Fierce Healthcare Names Hyro a \u201cFierce 15\u201d Company of ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/hyroai",
+            "type": "primary",
+            "title": "Hyro",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://hyro.ai/blog/hyro-ai-agents-for-healthcare-raise-45-million",
+            "type": "primary",
+            "title": "Hyro Raises $45M to Accelerate AI Agents for Healthcare",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://prnewswire.com/news-releases/hyro-raises-45m-strategic-growth-round-to-accelerate-ai-agent-adoption-in-healthcare-302589268.html",
+            "type": "secondary",
+            "title": "Hyro Raises $45M Strategic Growth Round to Accelerate ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://fiercehealthcare.com/ai-and-machine-learning/hyro-ai-raises-series-b",
+            "type": "secondary",
+            "title": "Hyro AI raises $35M series B with Healthier Capital",
+            "source_intent": null,
+            "source_category": "other",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://prnewswire.com/news-releases/with-launch-of-care-intelligence-hyro-becomes-the-first-to-turn-millions-of-ai-agent-conversations-into-patient-access-signals-302813929.html",
+            "type": "secondary",
+            "title": "With Launch of Care Intelligence, Hyro Becomes the First ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/posts/krushi_years-before-we-raised-95m-and-deployed-activity-7416866459261468674-1Rgf",
+            "type": "primary",
+            "title": "Hyro's Early Days at Cornell Led to Healthcare Breakthrough",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/posts/rom-cohen_when-israel-krush-and-i-founded-hyro-back-activity-7386419318051323904-7PsK",
+            "type": "primary",
+            "title": "Hyro raises $45M to expand AI Agents in healthcare",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://hyro.ai/blog/hyro-2024-year-in-review",
+            "type": "secondary",
+            "title": "2024: Hyro's Year of Transformation and Growth",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://hyro.ai/press",
+            "type": "secondary",
+            "title": "Hyro in the News! Check Our Latest Mentions",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          }
+        ],
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "confidence": "medium"
+      },
+      "content": {
+        "summary": "Hyro (hyro.ai) is a leading Responsible AI Agent Platform for healthcare, founded in 2018 by Israel Krush (CEO) and Rom Cohen (COO) at Cornell Tech. Headquartered in New York City (240 W 37th St), with an R&D office in Tel Aviv, Hyro employs approximately 150 people. The company has raised $95 million in total funding; its most recent round was a $45M strategic growth round (October 2025) led by Healthier Capital, with Norwest, Define Ventures, ServiceNow Ventures, and Bon Secours Mercy Health also participating. Hyro's platform \u2014 built on its proprietary Agentic Conversational Engine (ACE) \u2014 automates patient communications across call centers, web, SMS, and mobile using HIPAA-compliant AI agents deeply integrated with Epic EMR, Salesforce, Cisco, and other healthcare systems. It is deployed across 50+ leading U.S. health systems (including Intermountain Health, Baptist Health, and Hackensack Meridian Health), serving 30+ million patients. In June 2026, Hyro launched Care Intelligence, an analytics layer surfacing operational insights from patient interactions. Key buying signals include active post-funding expansion, a new product launch, aggressive hiring, market expansion into pharma/payers, and doubling of ARR and team size in 2024.",
+        "website": "https://www.hyro.ai",
+        "industry": "Healthcare AI / Conversational AI / Digital Health SaaS",
+        "tech_stack": [
+          "Proprietary ACE (Agentic Conversational Engine) \u2014 LLMs + healthcare-specific small language models",
+          "Epic EMR integration",
+          "Salesforce CRM integration",
+          "Cisco Webex Contact Center integration",
+          "NICE (contact center)",
+          "Kyruus (scheduling/provider data integration)",
+          "ServiceNow (strategic integration partner)",
+          "HIPAA-compliant architecture",
+          "Voice AI (inbound + outbound via Proactive Px\u2122)",
+          "Chat, SMS, mobile app channels",
+          "Care Intelligence analytics platform (launched June 2026)",
+          "Proactive Px\u2122 outbound patient engagement"
+        ],
+        "company_name": "Hyro",
+        "headquarters": "240 W 37th St, 7th Floor, New York, NY 10018, USA (secondary: Tel Aviv, Israel)",
+        "key_contacts": [
+          {
+            "name": "Israel Krush",
+            "email": null,
+            "title": "CEO & Co-Founder",
+            "seniority": "C-Suite / Founder",
+            "linkedin_url": "https://www.linkedin.com/in/krushi"
+          },
+          {
+            "name": "Rom Cohen",
+            "email": null,
+            "title": "COO & Co-Founder",
+            "seniority": "C-Suite / Founder",
+            "linkedin_url": "https://www.linkedin.com/in/rom-cohen"
+          },
+          {
+            "name": "Aaron Bours",
+            "email": null,
+            "title": "Chief Marketing Officer (CMO)",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/aaronbours"
+          },
+          {
+            "name": "Rami Kandel",
+            "email": null,
+            "title": "Employee (title not confirmed in corpus)",
+            "seniority": null,
+            "linkedin_url": "https://www.linkedin.com/in/rami-kandel"
+          },
+          {
+            "name": "Nick Wesoky",
+            "email": null,
+            "title": "Employee (title not confirmed in corpus)",
+            "seniority": null,
+            "linkedin_url": "https://www.linkedin.com/in/nickwesoky"
+          },
+          {
+            "name": "Louis Echevarria",
+            "email": null,
+            "title": "Employee (title not confirmed in corpus)",
+            "seniority": null,
+            "linkedin_url": "https://www.linkedin.com/in/louisechevarria"
+          },
+          {
+            "name": "Ashley Dauwer",
+            "email": null,
+            "title": "Media Contact (PR/Communications)",
+            "seniority": "Individual Contributor",
+            "linkedin_url": null
+          }
+        ],
+        "funding_stage": "Growth Round (post-Series B) \u2014 $45M strategic growth round closed October 2025",
+        "key_investors": [
+          "Healthier Capital (lead \u2014 both Series B extension Dec 2024 and $45M growth round Oct 2025)",
+          "Norwest Venture Partners",
+          "Define Ventures",
+          "ServiceNow Ventures (strategic)",
+          "Bon Secours Mercy Health (strategic)",
+          "Macquarie Capital",
+          "Liberty Mutual",
+          "Black Opal Ventures",
+          "Mindset Ventures",
+          "Spero Ventures",
+          "Twilio",
+          "Hanaco Ventures",
+          "Spider Capital",
+          "Entrepreneurs Roundtable Accelerator (ERA)"
+        ],
+        "total_funding": "$95 million",
+        "buying_signals": [
+          "Actively deploying $45M growth round capital (closed Oct 2025) to expand AI agent development and market reach",
+          "New product launch: Care Intelligence analytics platform launched June 30, 2026 \u2014 new analytics/intelligence category entry",
+          "Actively hiring: posted open roles in Sales Engineering, Solution Architecture, and Support Engineering Manager (Oct 2025+)",
+          "Market expansion beyond health systems into pharmaceutical and payer segments",
+          "Doubled ARR and team size in 2024; strong growth trajectory",
+          "50+ U.S. health systems deployed (Intermountain Health, Baptist Health, Hackensack Meridian, Sutter Health, Tampa General, Prisma Health, Piedmont, Inova Health)",
+          "Strategic investment by ServiceNow Ventures signals deeper platform/workflow integration roadmap",
+          "Doubled company valuation within 10 months between the Dec 2024 Series B extension ($35M) and Oct 2025 growth round ($45M)",
+          "Named to CB Insights Digital Health 50 (2025) and Fierce Healthcare Fierce 15 (2026) \u2014 strong enterprise credibility signals",
+          "Partnership expansions with Salesforce, Cisco, and Kyruus creating integrated solution ecosystem"
+        ],
+        "headcount_estimate": "~150 employees (About Us page states 150; LinkedIn shows 51\u2013200 range with 188 profiles)"
+      }
+    }
+  }
+}

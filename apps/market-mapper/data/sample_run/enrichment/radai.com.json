@@ -1,0 +1,1640 @@
+{
+  "run": {
+    "status": "completed",
+    "is_active": false
+  },
+  "result": {
+    "run": {
+      "id": "task_run_27af20103ae2413fa208570ceeceaf75",
+      "error": null,
+      "effort": "high",
+      "prompt": "Enrich lead: Rad AI (radai.com) \u2014 company details, funding stage and investors, headcount, key decision-makers with titles and LinkedIn URLs, tech stack, buying signals",
+      "status": "completed",
+      "is_active": false,
+      "created_at": "2026-07-11T21:07:19.000133Z",
+      "started_at": "2026-07-11T21:07:19.423953Z",
+      "completed_at": "2026-07-11T21:11:28.931777Z",
+      "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+      "interaction_id": "task_run_27af20103ae2413fa208570ceeceaf75",
+      "web_search_agent_id": "wsa_b064449062834b5ead2609b8d372b689"
+    },
+    "output": {
+      "type": "json",
+      "trust": {
+        "claims": [
+          {
+            "path": "$.company_name",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.website",
+            "citations": [
+              {
+                "url": "https://radai.com/",
+                "title": "Rad AI | Save Time and Decrease Burnout with Radiology AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.industry",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/radai",
+                "title": "Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/",
+                "title": "Rad AI | Save Time and Decrease Burnout with Radiology AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headquarters",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/",
+                "title": "Rad AI | Save Time and Decrease Burnout with Radiology AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headcount_estimate",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/radai",
+                "title": "Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.funding_stage",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-announces-strategic-investments-from-four-leading-health-systems-to-advance-enterprise-ai-in-healthcare",
+                "title": "Rad AI Announces Strategic Investments from Four ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.total_funding",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-expands-executive-team-to-accelerate-growth-and-solidify-position-as-the-leader-in-ai-driven-radiology-solutions",
+                "title": "Rad AI Expands Executive Team to Accelerate Growth and ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/posts/rebecca-torrence_healthcare-startup-rad-ai-has-raised-a-new-activity-7288692240049135618-ZAa7",
+                "title": "Rebecca Torrence's Post",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[0]",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/posts/radai_big-news-we-are-thrilled-to-announce-activity-7290700889902698499-vZXI",
+                "title": "\ud83d\udea8BIG NEWS \ud83d\udea8 We are thrilled to announce that Rad AI has ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[1]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-closes-50-million-to-empower-physicians-with-ai",
+                "title": "Rad AI Closes $50 Million to Empower Physicians with AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[2]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-closes-50-million-to-empower-physicians-with-ai",
+                "title": "Rad AI Closes $50 Million to Empower Physicians with AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[3]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-closes-50-million-to-empower-physicians-with-ai",
+                "title": "Rad AI Closes $50 Million to Empower Physicians with AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[4]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-closes-50-million-to-empower-physicians-with-ai",
+                "title": "Rad AI Closes $50 Million to Empower Physicians with AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[5]",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-closes-50-million-to-empower-physicians-with-ai",
+                "title": "Rad AI Closes $50 Million to Empower Physicians with AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[6]",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-closes-50-million-to-empower-physicians-with-ai",
+                "title": "Rad AI Closes $50 Million to Empower Physicians with AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[7]",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[8]",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[9]",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[10]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-announces-strategic-investments-from-four-leading-health-systems-to-advance-enterprise-ai-in-healthcare",
+                "title": "Rad AI Announces Strategic Investments from Four ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[11]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-announces-strategic-investments-from-four-leading-health-systems-to-advance-enterprise-ai-in-healthcare",
+                "title": "Rad AI Announces Strategic Investments from Four ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[12]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-announces-strategic-investments-from-four-leading-health-systems-to-advance-enterprise-ai-in-healthcare",
+                "title": "Rad AI Announces Strategic Investments from Four ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[13]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-announces-strategic-investments-from-four-leading-health-systems-to-advance-enterprise-ai-in-healthcare",
+                "title": "Rad AI Announces Strategic Investments from Four ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[14]",
+            "citations": [
+              {
+                "url": "https://radai.com/blogs/its-2026-welcome-to-healthcare-ais-next-act-prove-it-or-move-aside",
+                "title": "It's 2026. Welcome to Healthcare AI's Next Act: Prove It or ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[0].name",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].title",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].linkedin_url",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].name",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].title",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].linkedin_url",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].name",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-expands-executive-team-to-accelerate-growth-and-solidify-position-as-the-leader-in-ai-driven-radiology-solutions",
+                "title": "Rad AI Expands Executive Team to Accelerate Growth and ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].title",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-expands-executive-team-to-accelerate-growth-and-solidify-position-as-the-leader-in-ai-driven-radiology-solutions",
+                "title": "Rad AI Expands Executive Team to Accelerate Growth and ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].linkedin_url",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].name",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-expands-executive-team-to-accelerate-growth-and-solidify-position-as-the-leader-in-ai-driven-radiology-solutions",
+                "title": "Rad AI Expands Executive Team to Accelerate Growth and ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].title",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-expands-executive-team-to-accelerate-growth-and-solidify-position-as-the-leader-in-ai-driven-radiology-solutions",
+                "title": "Rad AI Expands Executive Team to Accelerate Growth and ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].linkedin_url",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].name",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].title",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].linkedin_url",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].name",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].title",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].linkedin_url",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].name",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].title",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].linkedin_url",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].name",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].title",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].linkedin_url",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].name",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].title",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].linkedin_url",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[0]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-drives-revenue-by-10-times-using-amazon-ec2-p4d-instances-powered-by-nvidia",
+                "title": "https://www.radai.com/news/rad-ai-drives-revenue-by-10-times-using-amazon-ec2-p4d-instances-powered-by-nvidia",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[1]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-drives-revenue-by-10-times-using-amazon-ec2-p4d-instances-powered-by-nvidia",
+                "title": "https://www.radai.com/news/rad-ai-drives-revenue-by-10-times-using-amazon-ec2-p4d-instances-powered-by-nvidia",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[2]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-drives-revenue-by-10-times-using-amazon-ec2-p4d-instances-powered-by-nvidia",
+                "title": "https://www.radai.com/news/rad-ai-drives-revenue-by-10-times-using-amazon-ec2-p4d-instances-powered-by-nvidia",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[3]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-closes-50-million-to-empower-physicians-with-ai",
+                "title": "Rad AI Closes $50 Million to Empower Physicians with AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[4]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-closes-50-million-to-empower-physicians-with-ai",
+                "title": "Rad AI Closes $50 Million to Empower Physicians with AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-to-unveil-next-generation-intelligent-radiology-reporting-solution-at-launch-event",
+                "title": "Rad AI to Unveil Next-Generation Intelligent Radiology ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[5]",
+            "citations": [
+              {
+                "url": "https://radai.com/",
+                "title": "Rad AI | Save Time and Decrease Burnout with Radiology AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[6]",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[7]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-closes-50-million-to-empower-physicians-with-ai",
+                "title": "Rad AI Closes $50 Million to Empower Physicians with AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[8]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-to-unveil-next-generation-intelligent-radiology-reporting-solution-at-launch-event",
+                "title": "Rad AI to Unveil Next-Generation Intelligent Radiology ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[9]",
+            "citations": [
+              {
+                "url": "https://radai.com/",
+                "title": "Rad AI | Save Time and Decrease Burnout with Radiology AI ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[0]",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-announces-strategic-investments-from-four-leading-health-systems-to-advance-enterprise-ai-in-healthcare",
+                "title": "Rad AI Announces Strategic Investments from Four ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/posts/rebecca-torrence_healthcare-startup-rad-ai-has-raised-a-new-activity-7288692240049135618-ZAa7",
+                "title": "Rebecca Torrence's Post",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[1]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-expands-executive-team-to-accelerate-growth-and-solidify-position-as-the-leader-in-ai-driven-radiology-solutions",
+                "title": "Rad AI Expands Executive Team to Accelerate Growth and ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[2]",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[3]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-ranks-no-107-on-the-2025-inc-5000-list-of-americas-fastest-growing-private-companies",
+                "title": "Rad AI Ranks No. 107 on the 2025 Inc. 5000 List of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[4]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-closes-50-million-to-empower-physicians-with-ai",
+                "title": "Rad AI Closes $50 Million to Empower Physicians with AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-ranks-no-107-on-the-2025-inc-5000-list-of-americas-fastest-growing-private-companies",
+                "title": "Rad AI Ranks No. 107 on the 2025 Inc. 5000 List of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[5]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/radai",
+                "title": "Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[6]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-named-to-cnbc-disruptor-50-list-for-pioneering-generative-ai-in-healthcare",
+                "title": "Rad AI Named to CNBC Disruptor 50 List For Pioneering ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[7]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-announces-strategic-investments-from-four-leading-health-systems-to-advance-enterprise-ai-in-healthcare",
+                "title": "Rad AI Announces Strategic Investments from Four ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[8]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-named-to-cnbc-disruptor-50-list-for-pioneering-generative-ai-in-healthcare",
+                "title": "Rad AI Named to CNBC Disruptor 50 List For Pioneering ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[9]",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[10]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/radai",
+                "title": "Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[11]",
+            "citations": [
+              {
+                "url": "https://radai.com/news/rad-ai-closes-50-million-to-empower-physicians-with-ai",
+                "title": "Rad AI Closes $50 Million to Empower Physicians with AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[12]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/radai",
+                "title": "Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.summary",
+            "citations": [
+              {
+                "url": "https://radai.com/about",
+                "title": "About Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-closes-50-million-to-empower-physicians-with-ai",
+                "title": "Rad AI Closes $50 Million to Empower Physicians with AI",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-announces-strategic-investments-from-four-leading-health-systems-to-advance-enterprise-ai-in-healthcare",
+                "title": "Rad AI Announces Strategic Investments from Four ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-expands-executive-team-to-accelerate-growth-and-solidify-position-as-the-leader-in-ai-driven-radiology-solutions",
+                "title": "Rad AI Expands Executive Team to Accelerate Growth and ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-ranks-no-107-on-the-2025-inc-5000-list-of-americas-fastest-growing-private-companies",
+                "title": "Rad AI Ranks No. 107 on the 2025 Inc. 5000 List of ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://radai.com/news/rad-ai-named-to-cnbc-disruptor-50-list-for-pioneering-generative-ai-in-healthcare",
+                "title": "Rad AI Named to CNBC Disruptor 50 List For Pioneering ...",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/radai",
+                "title": "Rad AI",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/posts/rebecca-torrence_healthcare-startup-rad-ai-has-raised-a-new-activity-7288692240049135618-ZAa7",
+                "title": "Rebecca Torrence's Post",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://radai.com/about",
+            "type": "primary",
+            "title": "About Rad AI",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://radai.com/",
+            "type": "primary",
+            "title": "Rad AI | Save Time and Decrease Burnout with Radiology AI ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/radai",
+            "type": "primary",
+            "title": "Rad AI",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://radai.com/news/rad-ai-announces-strategic-investments-from-four-leading-health-systems-to-advance-enterprise-ai-in-healthcare",
+            "type": "secondary",
+            "title": "Rad AI Announces Strategic Investments from Four ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://radai.com/news/rad-ai-expands-executive-team-to-accelerate-growth-and-solidify-position-as-the-leader-in-ai-driven-radiology-solutions",
+            "type": "secondary",
+            "title": "Rad AI Expands Executive Team to Accelerate Growth and ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/posts/rebecca-torrence_healthcare-startup-rad-ai-has-raised-a-new-activity-7288692240049135618-ZAa7",
+            "type": "primary",
+            "title": "Rebecca Torrence's Post",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/posts/radai_big-news-we-are-thrilled-to-announce-activity-7290700889902698499-vZXI",
+            "type": "primary",
+            "title": "\ud83d\udea8BIG NEWS \ud83d\udea8 We are thrilled to announce that Rad AI has ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://radai.com/news/rad-ai-closes-50-million-to-empower-physicians-with-ai",
+            "type": "secondary",
+            "title": "Rad AI Closes $50 Million to Empower Physicians with AI",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://radai.com/blogs/its-2026-welcome-to-healthcare-ais-next-act-prove-it-or-move-aside",
+            "type": "secondary",
+            "title": "It's 2026. Welcome to Healthcare AI's Next Act: Prove It or ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://radai.com/news/rad-ai-drives-revenue-by-10-times-using-amazon-ec2-p4d-instances-powered-by-nvidia",
+            "type": "primary",
+            "title": "https://www.radai.com/news/rad-ai-drives-revenue-by-10-times-using-amazon-ec2-p4d-instances-powered-by-nvidia",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://radai.com/news/rad-ai-to-unveil-next-generation-intelligent-radiology-reporting-solution-at-launch-event",
+            "type": "secondary",
+            "title": "Rad AI to Unveil Next-Generation Intelligent Radiology ...",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://radai.com/news/rad-ai-ranks-no-107-on-the-2025-inc-5000-list-of-americas-fastest-growing-private-companies",
+            "type": "primary",
+            "title": "Rad AI Ranks No. 107 on the 2025 Inc. 5000 List of ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://radai.com/news/rad-ai-named-to-cnbc-disruptor-50-list-for-pioneering-generative-ai-in-healthcare",
+            "type": "primary",
+            "title": "Rad AI Named to CNBC Disruptor 50 List For Pioneering ...",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          }
+        ],
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "confidence": "medium"
+      },
+      "content": {
+        "summary": "Rad AI (radai.com), founded February 2018 and headquartered in San Francisco, CA, is the leading generative AI company for radiology workflow automation and healthcare AI. The company builds and deploys proprietary Large Language Models (LLMs) trained on one of the world's largest radiology report datasets, powering three core products: Rad AI Reporting (AI-driven radiology reporting platform), Rad AI Impressions (automated impression generation, saving 60+ minutes per radiologist per shift), and Rad AI Continuity (AI-driven patient follow-up management). As of mid-2026, Rad AI's solutions are trusted by over 50% of all US health systems and 9 of the 10 largest US radiology practices, serving approximately 50 million patients annually. The company has raised $140M+ in total funding, most recently a $68M Series C (January\u2013May 2025) led by Transformation Capital at a $525M valuation. Key investors include Khosla Ventures, ARTIS Ventures, WiL, Gradient Ventures (Google), and strategic health system partners Advocate Health, Memorial Hermann, Corewell Health, and Atlantic Health System. Rad AI's 9-person leadership team includes Co-founder/CEO Doktor Gurson and Co-founder/CPO Dr. Jeff Chang, joined in August 2025 by newly appointed CFO Barrett Dwyer and CRO Kevin Field to accelerate commercial growth. The company uses AWS (EC2 P4d/NVIDIA GPU instances) as its primary cloud infrastructure. With 3,229% three-year revenue growth, #107 on the 2025 Inc. 5000, #19 on the 2024 Deloitte Fast 500, and membership in the CNBC Disruptor 50, Rad AI is actively scaling and represents a strong enterprise healthcare AI buying signal \u2014 particularly for vendors selling into health system IT, clinical workflow, cloud infrastructure, or radiology/imaging spaces.",
+        "website": "https://radai.com",
+        "industry": "Generative AI for Healthcare / Radiology AI / Health Technology",
+        "tech_stack": [
+          "Amazon Web Services (AWS) \u2014 primary cloud provider",
+          "Amazon EC2 P4d instances (NVIDIA A100 GPU-powered) for model training and inference",
+          "NVIDIA GPU infrastructure",
+          "Proprietary Large Language Models (LLMs) trained on radiology report datasets",
+          "Generative AI / NLP for medical report generation",
+          "Webflow (website CMS/hosting)",
+          "HIPAA-compliant infrastructure (Trust Center at trust.radai.com)",
+          "EHR/RIS integration layer (AGFA HealthCare collaboration; HL7/DICOM-standard workflows)",
+          "Voice dictation / speech-to-text NLP integration",
+          "SaaS cloud-delivered platform"
+        ],
+        "company_name": "Rad AI",
+        "headquarters": "548 Market St, PMB 49792, San Francisco, CA 94104",
+        "key_contacts": [
+          {
+            "name": "Doktor Gurson",
+            "email": null,
+            "title": "Co-founder and CEO",
+            "seniority": "C-Suite / Founder",
+            "linkedin_url": "https://www.linkedin.com/in/doktorgurson/"
+          },
+          {
+            "name": "Dr. Jeff Chang",
+            "email": null,
+            "title": "Co-founder and CPO (Chief Product Officer)",
+            "seniority": "C-Suite / Founder",
+            "linkedin_url": "https://www.linkedin.com/in/jechang/"
+          },
+          {
+            "name": "Barrett Dwyer",
+            "email": null,
+            "title": "Chief Financial Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/barrett-dwyer-003a9814/"
+          },
+          {
+            "name": "Kevin Field",
+            "email": null,
+            "title": "Chief Revenue Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/kevin-field-97207522/"
+          },
+          {
+            "name": "Demetrios Giannikopoulos",
+            "email": null,
+            "title": "Chief Innovation Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/dgianniko/"
+          },
+          {
+            "name": "David Leonard",
+            "email": null,
+            "title": "Chief of Staff",
+            "seniority": "Senior Leadership",
+            "linkedin_url": "https://www.linkedin.com/in/davidaleonard/"
+          },
+          {
+            "name": "Dr. Elizabeth Bergey",
+            "email": null,
+            "title": "Chief Medical Information Officer (CMIO)",
+            "seniority": "C-Suite / Clinical",
+            "linkedin_url": "https://www.linkedin.com/in/elizabeth-bergey-6b3590a8/"
+          },
+          {
+            "name": "Dr. Andrew Del Gaizo",
+            "email": null,
+            "title": "Chief Medical Information Officer (CMIO)",
+            "seniority": "C-Suite / Clinical",
+            "linkedin_url": "https://www.linkedin.com/in/andrew-del-gaizo-70896168/"
+          },
+          {
+            "name": "Dr. Rishi Seth",
+            "email": null,
+            "title": "Chief Medical Information Officer (CMIO)",
+            "seniority": "C-Suite / Clinical",
+            "linkedin_url": "https://www.linkedin.com/in/rishisethmd/"
+          }
+        ],
+        "funding_stage": "Series C",
+        "key_investors": [
+          "Transformation Capital (Series C lead)",
+          "Khosla Ventures (Series B lead)",
+          "ARTIS Ventures",
+          "WiL (World Innovation Lab)",
+          "OCV Partners",
+          "Kickstart Fund",
+          "Gradient Ventures (Google's AI Fund)",
+          "Y Combinator",
+          "SoftBank Ventures (SBVP)",
+          "Precursor Ventures",
+          "Advocate Health (strategic, May 2025)",
+          "Memorial Hermann Health System (strategic, May 2025)",
+          "Corewell Health (strategic, May 2025)",
+          "Atlantic Health System (strategic, May 2025)",
+          "RSNA Ventures (strategic)"
+        ],
+        "total_funding": "$140M+ total raised; Series C totals $68M (initial $60M, January 2025, plus $8M strategic extension, May 2025); company valuation $525M",
+        "buying_signals": [
+          "Recent major funding: $68M Series C closed Jan\u2013May 2025; total $140M+ raised; valued at $525M \u2014 actively investing in platform scaling and expansion",
+          "Leadership build-out: CFO (Barrett Dwyer) and CRO (Kevin Field) hired August 2025, signaling commercial acceleration and pre-IPO/exit preparation",
+          "Three CMIOs appointed February 2025, deepening clinical credibility and enterprise sales capacity",
+          "Hyper-revenue growth: 3,229% three-year revenue growth; ranked #107 on 2025 Inc. 5000 and #7 on AI & Data sublist (August 2025)",
+          "Deloitte Technology Fast 500: #19 in 2024, #36 in 2025 \u2014 consistent top-tier growth trajectory",
+          "Record Q2 2025/2026: 45+ health systems and radiology practices signed or expanded partnerships in a single quarter",
+          "Market share expansion: from ~33% to 50%+ of US health systems adopting Rad AI solutions within ~12 months",
+          "Strategic investor-partnerships with Advocate Health, Memorial Hermann, Corewell Health, Atlantic Health System \u2014 driving enterprise expansion across their 100+ combined hospitals",
+          "CNBC Disruptor 50 recognition (June 2025) \u2014 category leadership signal",
+          "International market expansion: First international partnership (MIC Medical Imaging, Canada, July 2024); global scaling underway post-Series C",
+          "Active tradeshow presence: Exhibiting at AHRA 2026 (July 12\u201315, Orlando, FL) \u2014 actively pursuing new health system clients",
+          "Technology migration opportunity: AGFA HealthCare collaboration signals openness to technology ecosystem partnerships and third-party integrations",
+          "Actively hiring: 248 LinkedIn employees and growing team ('Radineers') \u2014 org expanding sales, engineering, and clinical teams"
+        ],
+        "headcount_estimate": "~248 employees (LinkedIn, July 2026); self-described as '200+ Radineers'; LinkedIn company size band: 51\u2013200"
+      }
+    }
+  }
+}

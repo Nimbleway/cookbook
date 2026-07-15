@@ -1,0 +1,1593 @@
+{
+  "run": {
+    "status": "completed",
+    "is_active": false
+  },
+  "result": {
+    "run": {
+      "id": "task_run_60de569930734bbd8782caf9b64998f5",
+      "error": null,
+      "effort": "high",
+      "prompt": "Enrich lead: CodaMetrix (codametrix.com) \u2014 company details, funding stage and investors, headcount, key decision-makers with titles and LinkedIn URLs, tech stack, buying signals",
+      "status": "completed",
+      "is_active": false,
+      "created_at": "2026-07-11T21:11:43.789974Z",
+      "started_at": "2026-07-11T21:11:44.169991Z",
+      "completed_at": "2026-07-11T21:15:27.182794Z",
+      "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+      "interaction_id": "task_run_60de569930734bbd8782caf9b64998f5",
+      "web_search_agent_id": "wsa_b064449062834b5ead2609b8d372b689"
+    },
+    "output": {
+      "type": "json",
+      "trust": {
+        "claims": [
+          {
+            "path": "$.company_name",
+            "citations": [
+              {
+                "url": "https://codametrix.com/",
+                "title": "CodaMetrix \u2014 Code For Better, Contextual Coding Automation",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.website",
+            "citations": [
+              {
+                "url": "https://codametrix.com/",
+                "title": "CodaMetrix \u2014 Code For Better, Contextual Coding Automation",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headquarters",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.industry",
+            "citations": [
+              {
+                "url": "https://codametrix.com/",
+                "title": "CodaMetrix \u2014 Code For Better, Contextual Coding Automation",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.summary",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://codametrix.com/resources/codametrix-announces-40m-series-b-financing",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://codametrix.com/resources/codametrix-chosen-by-health-systems-representing-180b-in-net-patient-revenue",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "CodaMetrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.headcount_estimate",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "CodaMetrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.funding_stage",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-announces-40m-series-b-financing",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.total_funding",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-announces-40m-series-b-financing",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "CodaMetrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[0]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-announces-40m-series-b-financing",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[1]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-announces-40m-series-b-financing",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://crunchbase.com/funding_round/codametrix-series-a--3e8f9434",
+                "title": "Funding Round - Series A - CodaMetrix",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[2]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-announces-40m-series-b-financing",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://crunchbase.com/funding_round/codametrix-series-a--3e8f9434",
+                "title": "Funding Round - Series A - CodaMetrix",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_investors[3]",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/funding_round/codametrix-series-a--3e8f9434",
+                "title": "Funding Round - Series A - CodaMetrix",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[4]",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/funding_round/codametrix-series-a--3e8f9434",
+                "title": "Funding Round - Series A - CodaMetrix",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[5]",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/funding_round/codametrix-series-a--3e8f9434",
+                "title": "Funding Round - Series A - CodaMetrix",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_investors[6]",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/funding_round/codametrix-series-a--3e8f9434",
+                "title": "Funding Round - Series A - CodaMetrix",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[0].name",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://codametrix.com/resources/codametrix-announces-40m-series-b-financing",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[0].title",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].name",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].title",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[1].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "CodaMetrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].name",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].title",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[2].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "CodaMetrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].name",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-chosen-by-health-systems-representing-180b-in-net-patient-revenue",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[3].title",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-chosen-by-health-systems-representing-180b-in-net-patient-revenue",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].name",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-expands-leadership-team",
+                "title": "CodaMetrix Expands Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].title",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-expands-leadership-team",
+                "title": "CodaMetrix Expands Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[4].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/mark-pottle-3ab67311",
+                "title": "Mark Pottle - Chief Financial Officer, CodaMetrix, Inc.",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].name",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[5].title",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].name",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[6].title",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].name",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-chosen-by-health-systems-representing-180b-in-net-patient-revenue",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[7].title",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-chosen-by-health-systems-representing-180b-in-net-patient-revenue",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[8].name",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[8].title",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[9].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/bradmjustus",
+                "title": "Brad Justus - 1 in KLAS Autonomous Medical Coding",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[9].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/bradmjustus",
+                "title": "Brad Justus - 1 in KLAS Autonomous Medical Coding",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/dmalkenson",
+                "title": "Dave Malkenson - Product Leader",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[10].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/dmalkenson",
+                "title": "Dave Malkenson - Product Leader",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[11].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/cheng-li-1a444191",
+                "title": "Cheng Li - Director of Fundamental Research, Machine ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[11].title",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/cheng-li-1a444191",
+                "title": "Cheng Li - Director of Fundamental Research, Machine ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[11].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/cheng-li-1a444191",
+                "title": "Cheng Li - Director of Fundamental Research, Machine ...",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[12].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/chelsea-reilly-4bb65435",
+                "title": "Chelsea Reilly - Senior Account Director at Codametrix",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[12].title",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/chelsea-reilly-4bb65435",
+                "title": "Chelsea Reilly - Senior Account Director at Codametrix",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[12].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/chelsea-reilly-4bb65435",
+                "title": "Chelsea Reilly - Senior Account Director at Codametrix",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "social",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (social)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[13].name",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "CodaMetrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[13].title",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.key_contacts[13].linkedin_url",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "CodaMetrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[14].name",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://codametrix.com/resources/codametrix-announces-40m-series-b-financing",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.key_contacts[14].title",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-announces-40m-series-b-financing",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[0]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-expands-leadership-team",
+                "title": "CodaMetrix Expands Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[1]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-expands-leadership-team",
+                "title": "CodaMetrix Expands Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[2]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-expands-leadership-team",
+                "title": "CodaMetrix Expands Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[3]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[4]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/in/mark-pottle-3ab67311",
+                "title": "Mark Pottle - Chief Financial Officer, CodaMetrix, Inc.",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              },
+              {
+                "url": "https://codametrix.com/resources/codametrix-expands-leadership-team",
+                "title": "CodaMetrix Expands Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[5]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/about",
+                "title": "Meet the Leadership Team",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[6]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/",
+                "title": "CodaMetrix \u2014 Code For Better, Contextual Coding Automation",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.tech_stack[7]",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[8]",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[9]",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.tech_stack[10]",
+            "citations": [
+              {
+                "url": "https://crunchbase.com/organization/codametrix",
+                "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+                "excerpts": null,
+                "source_type": "secondary",
+                "source_intent": "other",
+                "source_category": "news",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a secondary source (news)",
+            "confidence": "medium"
+          },
+          {
+            "path": "$.buying_signals[0]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/",
+                "title": "CodaMetrix \u2014 Code For Better, Contextual Coding Automation",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[1]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-chosen-by-health-systems-representing-180b-in-net-patient-revenue",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[2]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-chosen-by-health-systems-representing-180b-in-net-patient-revenue",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[3]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-chosen-by-health-systems-representing-180b-in-net-patient-revenue",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[4]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-announces-40m-series-b-financing",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[5]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "CodaMetrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[6]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "CodaMetrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[7]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "CodaMetrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[8]",
+            "citations": [
+              {
+                "url": "https://linkedin.com/company/codametrix",
+                "title": "CodaMetrix",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          },
+          {
+            "path": "$.buying_signals[9]",
+            "citations": [
+              {
+                "url": "https://codametrix.com/resources/codametrix-chosen-by-health-systems-representing-180b-in-net-patient-revenue",
+                "title": "Press Release",
+                "excerpts": null,
+                "source_type": "primary",
+                "source_intent": "other",
+                "source_category": "official",
+                "extract_template_name": null
+              }
+            ],
+            "reasoning": "Backed by a primary source (official)",
+            "confidence": "high"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://codametrix.com/",
+            "type": "primary",
+            "title": "CodaMetrix \u2014 Code For Better, Contextual Coding Automation",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://codametrix.com/about",
+            "type": "primary",
+            "title": "Meet the Leadership Team",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://codametrix.com/resources/codametrix-announces-40m-series-b-financing",
+            "type": "primary",
+            "title": "Press Release",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://codametrix.com/resources/codametrix-chosen-by-health-systems-representing-180b-in-net-patient-revenue",
+            "type": "primary",
+            "title": "Press Release",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/company/codametrix",
+            "type": "primary",
+            "title": "CodaMetrix",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://crunchbase.com/organization/codametrix",
+            "type": "secondary",
+            "title": "CodaMetrix - Crunchbase Company Profile & Funding",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://crunchbase.com/funding_round/codametrix-series-a--3e8f9434",
+            "type": "secondary",
+            "title": "Funding Round - Series A - CodaMetrix",
+            "source_intent": null,
+            "source_category": "news",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://codametrix.com/resources/codametrix-expands-leadership-team",
+            "type": "primary",
+            "title": "CodaMetrix Expands Leadership Team",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/mark-pottle-3ab67311",
+            "type": "primary",
+            "title": "Mark Pottle - Chief Financial Officer, CodaMetrix, Inc.",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/bradmjustus",
+            "type": "primary",
+            "title": "Brad Justus - 1 in KLAS Autonomous Medical Coding",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/dmalkenson",
+            "type": "primary",
+            "title": "Dave Malkenson - Product Leader",
+            "source_intent": null,
+            "source_category": "official",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/cheng-li-1a444191",
+            "type": "secondary",
+            "title": "Cheng Li - Director of Fundamental Research, Machine ...",
+            "source_intent": null,
+            "source_category": "social",
+            "extract_template_name": null
+          },
+          {
+            "url": "https://linkedin.com/in/chelsea-reilly-4bb65435",
+            "type": "secondary",
+            "title": "Chelsea Reilly - Senior Account Director at Codametrix",
+            "source_intent": null,
+            "source_category": "social",
+            "extract_template_name": null
+          }
+        ],
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "confidence": "medium"
+      },
+      "content": {
+        "summary": "CodaMetrix is a Boston-based, privately held SaaS company founded in 2019 that provides AI-powered autonomous medical coding automation to large U.S. health systems. Its flagship CMX CARE\u2122 platform (launched June 2025) uses machine learning, deep learning, and NLP to translate clinical documentation into billing and diagnostic codes across multi-specialty service lines, integrating directly with EHRs (Epic and others). Originally developed at the Massachusetts General Physician Organization (part of Mass General Brigham), the company has grown to serve 220+ hospitals in 27 states, representing ~$180B in net patient revenue \u2014 roughly 12% of the U.S. total. CodaMetrix claims average outcomes of >60% reduction in coding costs, 70% reduction in manual coding, and a 5-week acceleration in cash collections. It was rated #1 Best in KLAS for Autonomous Coding in 2026. The company is Series B-funded ($40M raised in March 2024, led by Transformation Capital, with SignalFire and Frist Cressey Ventures participating). A Series A was led by SignalFire with strategic co-investors including Mass General Brigham, Yale Medicine, and Frist Cressey Ventures. Headcount is estimated at 101\u2013200 employees. Key buyers are health system CFOs, Chief Revenue Officers, and VP-level revenue cycle and HIM leaders. Strong buying signals include the 2025 platform relaunch, active leadership hiring, an AI Quality Council with marquee health systems, and strong KLAS recognition.",
+        "website": "https://www.codametrix.com",
+        "industry": "AI-powered Healthcare Revenue Cycle Management / Medical Coding Automation",
+        "tech_stack": [
+          "Machine Learning (ML) \u2014 core AI platform engine",
+          "Deep Learning \u2014 clinical note interpretation",
+          "Natural Language Processing (NLP) \u2014 clinical documentation parsing",
+          "Amazon Web Services (AWS) \u2014 cloud infrastructure (SOC 2 certified on AWS)",
+          "EHR Integration (Epic, HL7/FHIR standards environment)",
+          "SOC 2 Type II Compliance (A-Lign audited)",
+          "Webflow \u2014 website / CMS (cdn.prod.website-files.com CDN)",
+          "Google Tag Manager \u2014 marketing analytics",
+          "Google Font API \u2014 web fonts",
+          "ConvertKit \u2014 email marketing",
+          "GreenSock Animation Platform (GSAP) \u2014 web UI"
+        ],
+        "company_name": "CodaMetrix",
+        "headquarters": "399 Boylston St, Suite 700, Boston, MA 02116",
+        "key_contacts": [
+          {
+            "name": "Hamid Tabatabaie",
+            "email": null,
+            "title": "President and CEO (Co-Founder)",
+            "seniority": "C-Suite / Founder",
+            "linkedin_url": null
+          },
+          {
+            "name": "Chris Gervais",
+            "email": null,
+            "title": "Chief Technology Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/cgervais"
+          },
+          {
+            "name": "Malissa Bennett",
+            "email": null,
+            "title": "Chief Revenue & Operations Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/malissabennett"
+          },
+          {
+            "name": "Gail Airasian",
+            "email": null,
+            "title": "Chief Growth Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mark Pottle",
+            "email": null,
+            "title": "Chief Financial Officer",
+            "seniority": "C-Suite",
+            "linkedin_url": "https://www.linkedin.com/in/mark-pottle-3ab67311"
+          },
+          {
+            "name": "Kevin Schmitt",
+            "email": null,
+            "title": "Chief Solution Architect",
+            "seniority": "C-Suite / VP",
+            "linkedin_url": null
+          },
+          {
+            "name": "Alex Gnassi",
+            "email": null,
+            "title": "Chief of Staff",
+            "seniority": "Senior Management",
+            "linkedin_url": null
+          },
+          {
+            "name": "Michael Mercurio",
+            "email": null,
+            "title": "Senior Vice President of Customer Operations (Co-Founder)",
+            "seniority": "VP / Founder",
+            "linkedin_url": null
+          },
+          {
+            "name": "Lisa Morella",
+            "email": null,
+            "title": "Vice President of Data and Analytics",
+            "seniority": "VP",
+            "linkedin_url": null
+          },
+          {
+            "name": "Brad Justus",
+            "email": null,
+            "title": "Sales / Business Development (role at CodaMetrix; title not confirmed in corpus)",
+            "seniority": "Senior Individual Contributor / Management",
+            "linkedin_url": "https://www.linkedin.com/in/bradmjustus"
+          },
+          {
+            "name": "Dave Malkenson",
+            "email": null,
+            "title": "Product Leader",
+            "seniority": "Senior Management",
+            "linkedin_url": "https://www.linkedin.com/in/dmalkenson"
+          },
+          {
+            "name": "Cheng Li",
+            "email": null,
+            "title": "Director of Fundamental Research, Machine Learning",
+            "seniority": "Director",
+            "linkedin_url": "https://www.linkedin.com/in/cheng-li-1a444191"
+          },
+          {
+            "name": "Chelsea Reilly",
+            "email": null,
+            "title": "Senior Account Director",
+            "seniority": "Senior Individual Contributor",
+            "linkedin_url": "https://www.linkedin.com/in/chelsea-reilly-4bb65435"
+          },
+          {
+            "name": "Chris Scoggins",
+            "email": null,
+            "title": "Board Member",
+            "seniority": "Board",
+            "linkedin_url": "https://www.linkedin.com/in/cwscoggins"
+          },
+          {
+            "name": "Todd Cozzens",
+            "email": null,
+            "title": "Board Member (Co-Founder & Managing Partner, Transformation Capital)",
+            "seniority": "Board",
+            "linkedin_url": null
+          }
+        ],
+        "funding_stage": "Series B",
+        "key_investors": [
+          "Transformation Capital (Series B lead; Todd Cozzens joined Board)",
+          "SignalFire (Series A lead; continued participation in Series B)",
+          "Frist Cressey Ventures (both Series A and Series B)",
+          "Mass General Brigham (Series A strategic investor)",
+          "Yale Medicine (Series A)",
+          "The CU Healthcare Innovation Fund (Series A)",
+          "Martin Ventures (Series A)"
+        ],
+        "total_funding": "$40M+ (Series B alone was $40M, closed March/April 2024; Series A amount not publicly disclosed; total across both rounds not confirmed)",
+        "buying_signals": [
+          "Rated #1 Best in KLAS for Autonomous Medical Coding (2026) \u2014 top industry recognition driving inbound pipeline",
+          "New product platform launch: CMX CARE\u2122 (Contextual Coding Automation) and Emergency Department module introduced June 2025 \u2014 active technology expansion and new use-case penetration",
+          "Rapid market footprint growth: customers now represent $180B in Net Patient Revenue (~12% of U.S. total), 220 hospitals across 27 states \u2014 significant scale milestone reached in 2025",
+          "Leadership expansion (2025): hired Chief Growth Officer (Gail Airasian), restructured executive team \u2014 signals transition into high-growth commercial phase",
+          "Closed $40M Series B in March/April 2024 \u2014 fresh growth capital deployed for sales, engineering, and market expansion",
+          "Actively hiring pathology coding analysts and remote/hybrid roles (mid-2026) \u2014 workforce scaling in progress",
+          "Launched first external AI hackathon 'CodaMetrix Calling' (June 2026) \u2014 signals investment in AI talent and ecosystem development",
+          "Published coding-quality whitepaper and buyer's guide (June 2026) \u2014 active demand-generation targeting revenue cycle leadership buyers",
+          "Launched AI Coding Quality Council with Mayo Clinic, Henry Ford Health, OHSU, Allegheny Health Network, UC Medicine (2026) \u2014 ecosystem orchestration and thought leadership expansion indicating enterprise deal activity",
+          "Customer co-investment: health system clients representing $40B NPR became investors \u2014 unusually strong signal of customer confidence and lock-in"
+        ],
+        "headcount_estimate": "101\u2013200 employees (LinkedIn shows 112 listed employees; Crunchbase range: 101\u2013250; as of July 2026)"
+      }
+    }
+  }
+}
