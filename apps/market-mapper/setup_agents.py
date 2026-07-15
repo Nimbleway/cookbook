@@ -155,5 +155,6 @@ def ensure_enricher():
 
 if __name__ == "__main__":
     ids = {"mapper": ensure_mapper(), "enricher": ensure_enricher()}
-    pathlib.Path("agents.json").write_text(json.dumps(ids, indent=2))
-    print("wrote agents.json:", ids)
+    out = pathlib.Path(__file__).parent / "agents.json"  # next to the scripts, wherever setup runs from
+    out.write_text(json.dumps(ids, indent=2))
+    print(f"wrote {out}: {ids}")
