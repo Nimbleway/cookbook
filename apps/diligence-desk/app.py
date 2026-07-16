@@ -207,7 +207,7 @@ def render_memo(memo):
                 st.success(f"Sent to {', '.join(to)} (Resend id {outcome.get('id')})")
             else:
                 st.info(f"Email preview ({outcome['reason']}):")
-                st.markdown(outcome["html"], unsafe_allow_html=True)
+                st.code(outcome["html"], language="html")
 
     # ---- Follow-up Q&A ----
     st.markdown("---")
@@ -319,8 +319,8 @@ def page_teach():
     if updates:
         st.markdown("#### What the analyst has learned")
         for up in updates:
-            st.markdown(f"- **{up['instruction']}**  \n"
-                        f"  <small>{up['created_at']}</small>", unsafe_allow_html=True)
+            st.markdown(f"- **{up['instruction']}**")
+            st.caption(up["created_at"])
         with st.expander("Current standing-instructions section (after last update)"):
             after = updates[0]["expertise_after"]
             section = after.split(C.STANDING_INSTRUCTIONS_HEADER)[-1]
