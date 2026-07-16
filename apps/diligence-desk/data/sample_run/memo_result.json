@@ -1,0 +1,2763 @@
+{
+  "run": {
+    "id": "task_run_be1be34d46b74f11996c0c6278a7153e",
+    "interaction_id": "task_run_be1be34d46b74f11996c0c6278a7153e",
+    "status": "completed",
+    "is_active": false,
+    "effort": "max",
+    "prompt": "Due diligence on Perplexity AI (perplexity.ai) for a strategic investment - financial health, leadership, legal exposure, competitive position, and key risks",
+    "created_at": "2026-07-15T14:18:14.957082Z",
+    "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+    "web_search_agent_id": "wsa_fa3c2ecde740404882055d87f2f3651d",
+    "started_at": "2026-07-15T14:18:15.510741Z",
+    "completed_at": "2026-07-15T14:28:37.400469Z",
+    "error": null
+  },
+  "output": {
+    "type": "json",
+    "content": {
+      "risks": [
+        {
+          "risk": "Broad, escalating copyright/trademark litigation that could force changes to the core product or impose damages/injunctions. Plaintiffs include NYT (seeking damages + permanent injunction), Dow Jones/NY Post, BBC, Forbes, Reddit, Yomiuri/Asahi/Nikkei, Britannica/Merriam-Webster, Chicago Tribune, CNN, and Amazon (Comet agentic shopping). The Amazon matter has already produced a preliminary injunction (paused on appeal), and the NYT asks for a permanent injunction \u2014 outcomes that could constrain the answer-engine and browser/agent product lines that drive growth.",
+          "evidence": "12+ distinct plaintiffs across US, UK, and Japan; at least one preliminary injunction already issued (Amazon) and one permanent injunction sought (NYT); multiple suits filed 2024-2026 and ongoing.",
+          "severity": "high"
+        },
+        {
+          "risk": "Valuation multiple (~100x+ revenue at $20B / $148-200M ARR) assumes years of continued hypergrowth; any slowdown in query growth, subscription conversion, or enterprise sales puts severe downward pressure on the valuation and could impair a strategic investor's entry price and exit path. VCs reportedly voted Perplexity the 'company they'd most rather bet against' at a 2024 AI conference before the 4.7x ARR growth made skeptics look wrong.",
+          "evidence": "Valuation climbed from ~$520M (Jan 2024) to ~$21.2B (early 2026), a ~40x rise in ~2 years, against estimated revenue rising from ~$63M to ~$500M annualized over the same period \u2014 implying the multiple is rich and growth-dependent.",
+          "severity": "high"
+        },
+        {
+          "risk": "Compute/GPU cost dependency and single-cloud concentration: a three-year, $750M Microsoft Azure commitment (Jan 2026) for GPU capacity, combined with enormous per-query inference costs at 780M monthly queries, means margins are compute-bound and the company is operationally dependent on one cloud vendor and the GPU supply chain. Profitability requires subscription revenue to outscale compute costs \u2014 harder as query volume grows.",
+          "evidence": "$750M Azure commitment is a debt-like fixed obligation for compute; CEO publicly cites GPU procurement as a top capital use; query volume (780M/mo) and the shift to more compute-intensive agentic products (Computer orchestrating up to 19 models) increase per-unit cost.",
+          "severity": "high"
+        },
+        {
+          "risk": "Reputational/integrity risk from stealth-scraping and fabrication findings: Wired's investigation documented Perplexity ignoring robots.txt with spoofed user-agents and fabricating content (falsely attributing a crime report to WIRED); Cloudflare (Aug 2025) published research on undeclared 'stealth' crawlers bypassing no-crawl directives, with its CEO likening Perplexity to 'North Korean hackers.' This reputationally ties the brand to adversarial scraping and undermines the 'trusted answer engine' positioning, feeding both litigation and potential regulatory attention.",
+          "evidence": "Two independent investigations (Wired + Robb Knight, June 2024; Cloudflare, Aug 2025) corroborate stealth-scraping; a concrete fabrication example is documented; the Cloudflare CEO quote is on the record. Perplexity denied the Cloudflare claims ('charlatan publicity stunt') but did not commit to cease third-party scraping of Wired.",
+          "severity": "medium"
+        },
+        {
+          "risk": "Trademark risk: Perplexity Solved Solutions (PSS), a software firm founded in 2017 with a federally registered 'Perplexity' trademark, sued Perplexity AI (Jan 31 2025) after declining a 2023 purchase offer. An adverse outcome could force a rebrand or licensing cost for a company whose entire brand equity is built on the 'Perplexity' name.",
+          "evidence": "PSS holds a federally registered trademark predating Perplexity AI's founding (2017 vs 2022), declined to sell in 2023, and the suit seeks to bar Perplexity AI from using the name in branding/marketing.",
+          "severity": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "url": "/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md",
+          "title": "Perplexity AI \u2014 Wikipedia",
+          "relevance": "Company overview, funding timeline, leadership/founders, products, controversies/litigation, recent 2026 status (Series E-6 valuation, Azure commitment, ad-drop)."
+        },
+        {
+          "url": "/pages/sacra.com/c-perplexity-05d96c46.md",
+          "title": "Perplexity revenue, valuation & funding \u2014 Sacra",
+          "relevance": "Revenue (~$500M annualized Apr 2026), valuation ($20B Sept 2025), total funding (~$1.5B), growth rate (800% 2024), business model/pricing, competition, Amazon lawsuit, product expansion (Computer, Health), partnerships (Snap, GSA, Getty)."
+        },
+        {
+          "url": "/pages/aifundingtracker.com/perplexity-ai-valuation-growth-strategy-d0321d4a.md",
+          "title": "How Perplexity AI Went From $500M to $9B in 18 Months (And Kept Climbing to $20B) \u2014 AI Funding Tracker",
+          "relevance": "Funding-round-by-round timeline, revenue path ($63M->...$200M ARR), ~$1.5B total, ~100x revenue multiple, GPU/burn commentary, Google counterattack, distribution deals (Airtel, Samsung)."
+        },
+        {
+          "url": "/pages/bloomberg.com/news-articles-2025-07-17-ai-startup-perplexity-valued-at-18--f8e40dc9.md",
+          "title": "AI Startup Perplexity Valued at $18 Billion With New Funding \u2014 Bloomberg",
+          "relevance": "July 2025 funding round: $100M extension at $18B valuation (extension of the $14B May 2025 tranche)."
+        },
+        {
+          "url": "/pages/bloomberg.com/news-articles-2024-12-18-ai-startup-perplexity-closes-fundin-86f2cca2.md",
+          "title": "AI Startup Perplexity Closes Funding Round at $9 Billion Value \u2014 Bloomberg",
+          "relevance": "Dec 2024 $500M Series D at $9B (IVP/SoftBank lead); valuation path ($1B Apr, $3B Jun, $9B Dec 2024); 15M active users Mar 2024; OpenAI search rollout as competitive threat; investors (Bezos, Nvidia, SoftBank)."
+        },
+        {
+          "url": "/pages/theverge.com/news-839006-new-york-times-perplexity-lawsuit-copyright-ed5fecd6.md",
+          "title": "The New York Times sues Perplexity for producing 'verbatim' copies of its work \u2014 The Verge",
+          "relevance": "NYT lawsuit (Dec 5 2025) alleging verbatim copies, seeking damages + permanent injunction; Chicago Tribune and CNN parallel suits; robots.txt evasion allegations; Perplexity spokesperson response."
+        },
+        {
+          "url": "/pages/wired.com/story-perplexity-is-a-bullshit-machine-8b272a29.md",
+          "title": "Perplexity Is a Bullshit Machine \u2014 Wired",
+          "relevance": "Wired investigation (June 2024): stealth scraping ignoring robots.txt, spoofed user-agents, fabricated content (false crime attribution to WIRED)."
+        },
+        {
+          "url": "/pages/glassdoor.com/reviews-perplexity-ai-people-reviews-ei-ie8515634-0-13-kh14--084570e8.md",
+          "title": "Perplexity AI Reviews \u2014 Glassdoor",
+          "relevance": "Employee sentiment: 90% recommend, 92% positive outlook, comp 4.9, culture 4.6, work/life 3.9; recurring cons (long hours, first-time-founder thrash, reactive strategy)."
+        },
+        {
+          "url": "/pages/ftc.gov/news-events-news-press-releases-2024-09-ftc-announces-crackd-c6e0c653.md",
+          "title": "FTC Announces Crackdown on Deceptive AI Claims and Schemes \u2014 FTC.gov",
+          "relevance": "Confirms absence of direct FTC enforcement against Perplexity (Operation AI Comply names DoNotPay, Ascend Ecom, EEB, Rytr, FBA Machine \u2014 not Perplexity)."
+        },
+        {
+          "url": "/pages/linkedin.com/in-aravind-srinivas-16051987-e862d450.md",
+          "title": "Aravind Srinivas \u2014 Cofounder & CEO, Perplexity (LinkedIn)",
+          "relevance": "CEO background: UC Berkeley PhD, IIT Madras, OpenAI/Google/DeepMind research roles; title; LinkedIn URL; angel-investor portfolio."
+        },
+        {
+          "url": "/pages/linkedin.com/in-hjohnny-0d73ee6c.md",
+          "title": "Johnny Ho \u2014 Cofounder & Chief Strategy Officer, Perplexity (LinkedIn)",
+          "relevance": "Johnny Ho: Harvard, ACM ICPC/IOI medals, Chief Strategy Officer title, LinkedIn URL."
+        },
+        {
+          "url": "/pages/bloomberg.com/features-2025-new-ai-billionaires-list-1a087a40.md",
+          "title": "Bloomberg's New AI Billionaires List (Perplexity entry) \u2014 Bloomberg",
+          "relevance": "Founder backgrounds (Srinivas, Ho 'quant trader', Konwinski 'Databricks co-founder', Yarats 'Facebook AI researcher'); 100M+ weekly queries Oct 2025; CEO positioning vs Google."
+        },
+        {
+          "url": "/pages/courthousenews.com/encyclopaedia-britannica-and-merriam-webster-claim-copyright-b5f05d36.md",
+          "title": "Encyclopaedia Britannica and Merriam-Webster claim copyright [against Perplexity] \u2014 Courthouse News",
+          "relevance": "Additional copyright plaintiff (Britannica/Merriam-Webster) in the litigation catalog."
+        },
+        {
+          "url": "/pages/bloomberg.com/news-articles-2025-05-12-ai-search-startup-perplexity-nears--0b76edf0.md",
+          "title": "AI Startup Perplexity Nears Funding at $14 Billion Value \u2014 Bloomberg",
+          "relevance": "May 2025 funding: $500M led by Accel at $14B valuation (initially targeting $1B/$18B)."
+        },
+        {
+          "url": "/pages/techcrunch.com/2025-08-05-some-people-are-defending-perplexity-after-cloudf-f4283b08.md",
+          "title": "Some people are defending Perplexity after Cloudflare \u2014 TechCrunch",
+          "relevance": "Counter-current to the Cloudflare scraping controversy; supports 'mixed/polarized' press-sentiment characterization."
+        }
+      ],
+      "leadership": [
+        {
+          "name": "Aravind Srinivas",
+          "flags": "First-time CEO/founder (employees note '1st time founders so lots of thrash'). Public controversies: told Wired (June 2024) he would not commit to stop scraping Wired content via third parties; on March 2026 All-In podcast described AI-driven layoffs as a 'glorious future to look forward to'; publicly sparred with Elon Musk over USAID. Forbes/Wired accused the company under his leadership of plagiarism and fabrication. No prior executive failures found; no departures.",
+          "title": "Cofounder, President & CEO",
+          "background": "PhD Computer Science, UC Berkeley (research in Contrastive Learning, Reinforcement Learning, Transformers/BoTNet/VideoGPT/Decision Transformer; taught Deep Unsupervised Learning). Dual Degree (B.Tech + M.Tech) Electrical Engineering, IIT Madras (deep RL research). Prior: Research Scientist at OpenAI (Sep 2021-Aug 2022, language & diffusion generative models); Research Intern at Google (May 2020-Apr 2021, multimodal transformers/bottleneck transformers); Research Intern at DeepMind (May-Sep 2019, large-scale contrastive learning); Research Intern at OpenAI (May-Aug 2018, policy gradient algorithms). Also an angel investor in Cursor, ElevenLabs, Suno, Mistral, Cognition, Lovable, Fal, LiveKit.",
+          "linkedin_url": "https://www.linkedin.com/in/aravind-srinivas-16051987"
+        },
+        {
+          "name": "Johnny Ho",
+          "flags": null,
+          "title": "Cofounder & Chief Strategy Officer",
+          "background": "Harvard University alumnus; based in New York. Competitive-programming background: ACM ICPC Gold medal (3rd place) 2016; International Olympiad in Informatics (IOI) 1st place, perfect score 2012; IOI Gold medal 2011 and 2012. Bloomberg describes him as a 'quant trader.' Detailed employment history not visible on the public LinkedIn snippet (requires sign-in).",
+          "linkedin_url": "https://www.linkedin.com/in/hjohnny"
+        },
+        {
+          "name": "Denis Yarats",
+          "flags": null,
+          "title": "Cofounder (engineering/AI lead); commonly identified as CTO. Wikipedia lists him among the product 'Developers.' Specific C-level title not confirmed in retrieved sources.",
+          "background": "Came from Meta AI (Facebook AI Research), per Bloomberg and AI Funding Tracker. Co-founded Perplexity Aug 2022. Further education/employment details not available in retrieved corpus (LinkedIn profile not extracted; Wikipedia has a dedicated Denis Yarats article but it was not retrieved into the corpus).",
+          "linkedin_url": null
+        },
+        {
+          "name": "Andy Konwinski",
+          "flags": null,
+          "title": "Cofounder; previously a Databricks co-founder. Specific current Perplexity C-level title not confirmed in retrieved sources.",
+          "background": "Databricks co-founder (per Bloomberg). Co-founded Perplexity Aug 2022. Further education/employment details not available in retrieved corpus (LinkedIn profile not extracted into the corpus).",
+          "linkedin_url": null
+        }
+      ],
+      "reputation": {
+        "press_sentiment": "Mixed, polarized along product-vs-conduct lines. Positive coverage centers on funding milestones, product launches (Comet, Computer, Health), user/query growth, and high-profile partnerships (Ronaldo, Snap, Airtel, Samsung) \u2014 Bloomberg, TechCrunch, Reuters. Negative/ investigative coverage is extensive and recurring on intellectual-property and integrity issues: Wired's 'Perplexity Is a Bullshit Machine' (fabrication + stealth scraping), Forbes' 'cynical theft' editorial, Cloudflare's CEO likening Perplexity to 'North Korean hackers,' and a long run of lawsuit coverage (NYT, BBC, Reddit, Japanese press). A notable counter-current (TechCrunch, Aug 2025) reported 'some people defending Perplexity after Cloudflare,' indicating the narrative is contested rather than uniformly negative.",
+        "notable_coverage": [
+          "Wired investigation 'Perplexity Is a Bullshit Machine' (June 19, 2024) \u2014 found Perplexity ignores robots.txt, uses spoofed user-agents, and fabricated content (falsely claimed WIRED reported a CA police officer committed a crime).",
+          "Cloudflare research (Aug 4, 2025) alleging Perplexity uses undeclared 'stealth' web crawlers to bypass website no-crawl directives and robots.txt; CEO Matthew Prince tweeted Perplexity acts 'more like North Korean hackers.' Perplexity called it a 'charlatan publicity stunt.'",
+          "The New York Times lawsuit (Dec 5, 2025) alleging Perplexity produces 'verbatim or substantially similar copies' of NYT work, seeking damages and a permanent injunction; Chicago Tribune filed a parallel copyright suit the prior day; CNN filed a 'verbatim copycat' suit in May 2026.",
+          "Positive product/growth coverage: Bloomberg funding milestones ($1B Apr 2024, $9B Dec 2024, $14B May 2025, $18B Jul 2025), Comet browser launch (Jul 2025, free Oct 2025), Cristiano Ronaldo investment + brand partnership (Dec 5 2025), and Snap $400M partnership (Nov 2025)."
+        ],
+        "employee_sentiment": "Broadly positive but with consistent burnout/intensity signals. Glassdoor: 90% of employees would recommend to a friend; 92% positive business outlook; compensation 4.9/5, culture & values 4.6/5, career opportunities 4.9/5, work/life balance 3.9/5. Recurring pros: brilliant/mission-driven coworkers, high learning curve, good compensation, 'building the future of search.' Recurring cons across many reviews: long hours, 'not your 9 to 5,' pinged after hours and over weekends, scope creep, products 'shelved randomly without warning,' '1st time founders so lots of thrash,' leadership 'can be a bit too direct,' 'strategy feels reactive.' One MTS review: 'Very stressful, probably need therapy after.' No layoffs reported in searched records (Glassdoor, layoffs.fyi)."
+      },
+      "company_name": "Perplexity AI, Inc.",
+      "opportunities": [
+        "Hypergrowth revenue trajectory with a clear path to scale: estimated revenue rising from ~$63M annualized (end-2024) to ~$500M annualized (April 2026), an ~8x increase, with management targeting $656M by end-2026. Strong product-market fit in AI-native search with 100M+ MAU and 780M monthly queries.",
+        "Distribution moats via OEM and platform partnerships that competitors cannot easily replicate: Airtel (India, 640% YoY user growth Q2 2025), Samsung TVs (free 12-month Pro for new TV owners), Motorola (preinstall + 3 months Pro), Snap ($400M partnership integrating into Snapchat), PayPal/Venmo (in-app commerce), Getty (image licensing), and a GSA federal contract (Enterprise Pro for Government) \u2014 creating subsidized acquisition channels and enterprise/public-sector revenue surfaces.",
+        "Product expansion into higher-value verticals and agentic computing: Comet AI browser (free Oct 2025), Perplexity Computer agentic product (Feb 2026, orchestrates up to 19 models, usage-based pricing layer), Perplexity Health (Mar 2026, Apple Health/Fitbit/EHR integrations across 1.7M care providers), and a Search API for developers \u2014 each extends touchpoints and pricing surfaces beyond core search, with healthcare opening a regulated, premium vertical.",
+        "Capital efficiency relative to peers: ~$200M ARR achieved with approximately 250 employees (per AI Funding Tracker), and a tiered subscription model (Pro $20/mo, Max $200/mo, Enterprise Pro $40/seat) plus a new usage-based agentic pricing layer \u2014 suggesting structurally lower headcount cost than larger AI incumbents and multiple monetization levers."
+      ],
+      "company_domain": "perplexity.ai",
+      "data_as_of_date": "2026-07-15",
+      "financial_health": {
+        "growth": "Hypergrowth. Sacra reports 800% YoY growth in 2024; ~335% YoY growth into April 2026. Query volume: 780M queries in May 2025 with 20%+ month-over-month growth (~30M/day); users grew from 15M active (Mar 2024) to 45M (mid-2025) to 100M+ MAU (2026). Revenue path: $63M (end-2024) -> $200M ARR (Oct 2025) -> ~$500M annualized (Apr 2026).",
+        "revenue": "~$500M annualized revenue (April 2026, estimated by Sacra); ~$200M ARR (October 2025, estimated); ~$63M annualized (end of 2024, estimated). Basis: Sacra private-markets research estimate; corroborated by AI Funding Tracker press-report aggregation. No company-filed revenue figures exist (private company).",
+        "summary": "Perplexity is a capital-rich, pre-profitability hypergrowth private company. It has raised ~$1.5B across 7+ rounds (seed through Series E-6), with valuation climbing from ~$520M (Jan 2024) to ~$21.2B (early 2026) \u2014 a ~40x jump in ~2 years. Revenue is estimated to have grown from ~$63M annualized (end-2024) to ~$500M annualized (April 2026), an ~8x increase. The $20B valuation implies a ~100x+ revenue multiple (Sacra/AI Funding Tracker), which assumes sustained hypergrowth. The only material debt-like obligation found is the 3-year, $750M Microsoft Azure GPU-capacity commitment (Jan 2026); no traditional debt instruments were found in searched records. Lenses unavailable: SEC EDGAR (private), PitchBook deal-level data, audited financials.",
+        "last_round": "Series E-6 (early 2026), reaching ~$21.21B valuation. The most recent confirmed round before that was Sept 2025: $200M at $20B valuation (lead investor not disclosed in retrieved sources; prior June 2025 tranche of $500M led by Accel at $14B; July 2025 $100M extension at $18B).",
+        "funding_total": "~$1.5 billion total funding raised (estimated, press/aggregator reports). Sacra snapshot shows $1.22B as of a 2025 data point.",
+        "burn_or_profitability": "Not profitable (estimated); significant burn driven by GPU/compute costs. CEO has publicly stated GPU procurement is a top use of capital; inference costs at 780M monthly queries are described as 'enormous.' In Jan 2026 Perplexity entered a three-year, $750M commitment with Microsoft Azure to secure GPU capacity. Profitability requires subscription revenue to scale faster than compute costs. No explicit profitability figure or burn-rate number found in searched records."
+      },
+      "legal_regulatory": {
+        "summary": "Legal exposure is the single most material risk area. Perplexity faces an unusually broad coalition of copyright/trademark plaintiffs \u2014 major US publishers (NYT, Dow Jones/WSJ/NY Post, Forbes, Chicago Tribune, CNN, Britannica/Merriam-Webster), a major UK broadcaster (BBC), three leading Japanese newspapers (Yomiuri, Asahi, Nikkei), a large US platform (Reddit), and a major e-commerce incumbent (Amazon, over agentic-shopping in the Comet browser) \u2014 plus a trademark challenge from a 2017-founded software firm (PSS). The NYT suit seeks damages and a permanent injunction; the Amazon suit has already produced a preliminary injunction (paused on appeal). A separate Cloudflare investigation (Aug 2025) alleging 'stealth' crawlers that bypass robots.txt adds reputational and potential regulatory pressure. No regulatory enforcement (FTC/SEC/EU AI Act) was found against Perplexity in searched records. The company's public stance frames the suits as historically inevitable technology disputes.",
+        "litigation": "Extensive and growing litigation, all ongoing (none found to be resolved). Copyright/trademark plaintiffs include: Dow Jones (WSJ) + NY Post (filed June 2024, 'massive freeriding,' hallucinated quotes alleged); The New York Times (cease-and-desist Oct 2024; escalated to full lawsuit Dec 5 2025 alleging 'verbatim or substantially similar copies,' seeking damages and a permanent injunction); Perplexity Solved Solutions/PSS (trademark suit filed Jan 31 2025 over the 'Perplexity' name; PSS holds a 2017 federally registered trademark and declined a 2023 purchase offer); BBC (legal threat June 2025 demanding stop-scraping, deletion of BBC training data, and financial compensation); Yomiuri Shimbun (filed Aug 8 2025, 'free-riding' use of 120,000 articles Feb-Jun 2025); Asahi Shimbun + Nikkei (filed Aug 2025); Reddit (filed Oct 2025, federal court NY, unlawful scraping); Encyclopaedia Britannica + Merriam-Webster (copyright claim); Chicago Tribune (filed Dec 2025); CNN (copyright lawsuit, 'verbatim' copycat articles, May 2026 per The Verge 'More in' links); Amazon (filed Nov 2025 over Comet browser's agentic shopping \u2014 undisclosed automated access to Amazon customer accounts; a federal judge issued a preliminary injunction blocking Comet's agent from accessing Amazon, with a Ninth Circuit temporary pause while Perplexity's appeal is considered). Perplexity's public posture (spokesperson Jesse Dwyer): 'Publishers have been suing new tech companies for a hundred years... Fortunately it's never worked, or we'd all be talking about this by telegraph.' No settlements or judgments found in searched records.",
+        "regulatory": "No direct regulatory enforcement action against Perplexity found in searched records. The FTC's Sept 2024 'Operation AI Comply' crackdown on deceptive AI claims (DoNotPay, Ascend Ecom, Rytr, FBA Machine, EEB) does NOT name Perplexity. Perplexity is a private company with no SEC EDGAR filings; Sacra lists only Delaware Certificates of Incorporation (Aug 2022 through Jan 2026). Reuters reported on Perplexity's 'no-volition' copyright litigation strategy. No sanctions, FTC/SEC orders, or EU AI Act enforcement actions against Perplexity were found in the searched records. Confirmed absent in searched records: SEC filings, FTC enforcement, EU AI Act action; not found (but not confirmed absent): any state-AG or non-US regulator action."
+      },
+      "executive_summary": "Perplexity AI, Inc. (perplexity.ai) is a San Francisco-based, privately held AI search/answer-engine company founded August 2022 by Aravind Srinivas (CEO), Denis Yarats, Johnny Ho, and Andy Konwinski. It has raised approximately $1.5 billion and was valued at ~$20B (Sept 2025) to ~$21.2B (early 2026, Series E-6). Revenue is estimated at ~$500M annualized (April 2026, Sacra estimate), up from ~$200M ARR (Oct 2025) and ~$63M (end 2024) \u2014 implying ~800% YoY growth in 2024 and continued hypergrowth into 2026. The company serves 100M+ monthly active users (780M queries May 2025) with a freemium model (Pro $20/mo, Max $200/mo, Enterprise Pro $40/seat) and dropped advertising in Feb 2026 to become subscription-first. It competes with Google, OpenAI/ChatGPT, Microsoft Copilot, and Anthropic, differentiating on real-time cited answers and a proprietary data flywheel. The dominant risks are (1) a large and growing slate of copyright/trademark lawsuits from NYT, Dow Jones, BBC, Forbes, Reddit, three Japanese newspapers, Britannica/Merriam-Webster, the Chicago Tribune, CNN, and Amazon (agentic-shopping), plus a trademark challenge from Perplexity Solved Solutions; (2) compute/GPU cost dependency crystallized in a 3-year, $750M Microsoft Azure commitment (Jan 2026); and (3) a ~100x+ revenue valuation multiple that assumes sustained hypergrowth. Lenses unavailable: no SEC EDGAR filings (private company); no PitchBook deal-level breakdown accessible; board composition not confirmed in searched records. Verdict: proceed_with_conditions.",
+      "operational_risks": [
+        "Compute/GPU dependency: In January 2026 Perplexity entered a three-year, $750M commitment with Microsoft Azure to secure GPU capacity. At 780M monthly queries, inference costs are described as enormous; CEO states GPU procurement is a top use of capital. Profitability depends on subscription revenue scaling faster than per-query compute costs \u2014 a bet that gets harder as query volume grows. Concentration on Microsoft Azure for compute is a single-vendor dependency.",
+        "Model-provider dependency: Perplexity relies on multiple third-party frontier models (OpenAI, Anthropic, xAI) plus Chinese open-source providers (DeepSeek R1, Moonshot Kimi) accessed via Microsoft Azure/Foundry, and its own Sonar model built on Meta's Llama 3.3. This creates exposure to upstream model pricing, licensing terms, deprecations, and geopolitical risk around Chinese open-source models.",
+        "Key-person / first-time-founder risk: CEO Aravind Srinivas is the public face and primary strategic voice; all four co-founders are first-time founders. Employee reviews cite '1st time founders so lots of thrash,' shifting priorities, and products 'shelved randomly without warning.' No documented succession plan or deep bench of seasoned operators found in searched records."
+      ],
+      "overall_assessment": {
+        "verdict": "proceed_with_conditions",
+        "rationale": "The evidence supports a strategic investment, but only with conditions. Three specific findings drive this verdict. (1) Financial trajectory is genuinely strong: estimated revenue grew ~8x from ~$63M annualized (end-2024) to ~$500M annualized (April 2026) on 800% YoY growth in 2024, with ~$1.5B raised and a valuation climbing to ~$21.2B (Series E-6, early 2026); 100M+ MAU and 780M monthly queries confirm product-market fit. (2) Legal exposure is the dominant offsetting risk: 12+ copyright/trademark plaintiffs (NYT seeking damages and a permanent injunction; Dow Jones, BBC, Forbes, Reddit, three Japanese newspapers, Britannica/Merriam-Webster, Chicago Tribune, CNN) plus Amazon (Comet agentic-shopping) where a preliminary injunction has already issued (paused on appeal) \u2014 outcomes could force product changes or material damages. (3) The ~$20B valuation implies a ~100x+ revenue multiple that assumes sustained hypergrowth, and compute economics are compute-bound via a 3-year, $750M Microsoft Azure GPU commitment with inference costs scaling per query \u2014 so entry price and path-to-profitability are the key financial conditions. Supporting context: no direct regulatory enforcement found (FTC's Operation AI Comply does not name Perplexity; no SEC filings as a private company); employee sentiment is positive (90% recommend, 4.9 comp) but flags first-time-founder thrash and burnout; competitive position is a credible niche challenger to Google/OpenAI/Microsoft/Anthropic with real distribution moats (Airtel, Samsung, Snap $400M, GSA). Lenses unavailable: SEC EDGAR, PitchBook deal-level data, audited financials, confirmed board composition.",
+        "conditions": [
+          "Condition \u2014 IP litigation containment: Obtain a current litigation schedule and reserve estimates for all copyright/trademark matters (NYT, Dow Jones, BBC, Reddit, Japanese publishers, Britannica/Merriam-Webster, Chicago Tribune, CNN, Amazon, PSS); require disclosure of any settlement frameworks or licensing pipelines; model a base/adverse case where the NYT permanent-injunction ask and the Amazon preliminary-injunction precedent constrain the answer-engine/Comet agent. Tie a portion of the investment to satisfactory IP-risk disclosure.",
+          "Condition \u2014 valuation and downside protection: Given the ~100x+ revenue multiple at $20B, structure the investment with downside protection (e.g., ratchet, liquidation preference, milestone-based tranches) tied to revenue/query-growth milestones, and require management's $656M end-2026 revenue plan with supporting conversion/enterprise-sales assumptions. Avoid uncapped exposure at peak-cycle multiples.",
+          "Condition \u2014 compute/vendor dependency diligence: Require disclosure of the $750M Microsoft Azure GPU-capacity commitment terms (minimum spend, term, exit/renegotiation rights), the hybrid local-cloud inference cost model, and exposure to upstream model providers (OpenAI, Anthropic, xAI, DeepSeek, Moonshot Kimi) including pricing-change and geopolitical (Chinese open-source) risk. Confirm a path to gross-margin expansion as agentic usage-based pricing scales."
+        ]
+      },
+      "competitive_position": {
+        "differentiation": "Real-time cited answers from day one (every answer grounded in current web sources with inline citations), versus ChatGPT's historically stale training data. Proprietary models: Sonar (based on Meta Llama 3.3) and R1 1776 (based on DeepSeek R1). A data flywheel: free-tier query data improves search relevance, which drives retention and conversion. Hybrid local-cloud inference orchestration that splits workloads between on-device hardware and cloud servers, designed to unlock regulated enterprise workloads. Product breadth beyond search: Comet AI browser (Chromium, free Oct 2025), Perplexity Computer agentic product (Feb 2026, orchestrates up to 19 models), Perplexity Health (Mar 2026, Apple Health/Fitbit/EHR integrations), Shopping Hub, Search API, finance tools. Dropped advertising (Feb 2026) to preserve user trust \u2014 a deliberate contrast to Google/OpenAI ad strategies.",
+        "market_position": "Niche but fast-growing challenger in AI-powered search. ~100M+ monthly active users (2026) and 780M monthly queries (May 2025), versus Google's 1.5B MAUs / 8.5B daily searches. CEO claims 'No one's ever had an explicit search product with that level of surface area that can truly make Google treat you as a genuine competitor' (Bloomberg, Mar 2025). Positioned for complex/research queries rather than quick navigational searches. ChatGPT churn reportedly spiked to ~20% in summer 2025 while Perplexity's weekly-usage model showed stronger retention. Distribution moats via partnerships: Airtel (India \u2014 640% YoY user growth Q2 2025, India now largest traffic source), Samsung TVs, Motorola, Snap ($400M deal Nov 2025), PayPal/Venmo, and a GSA federal contract. 300+ publisher revenue-sharing partners; tens of thousands of enterprise clients.",
+        "main_competitors": [
+          "Google (Google Search + Gemini + AI Overviews) \u2014 incumbent with ~90%+ search market share, 8.5B searches/day, 1.5B MAUs, and a direct AI-Overviews counterattack that addresses Perplexity's core value proposition.",
+          "OpenAI (ChatGPT + ChatGPT Search) \u2014 rolled out search features to all users Dec 2024; developing its own search index and web crawler, positioning it to build a comprehensive AI-native search engine.",
+          "Microsoft (Bing + Microsoft Copilot, leveraging the OpenAI partnership to integrate GPT into search).",
+          "Anthropic (Claude) \u2014 reportedly building its own search product powered by proprietary models and a search index, a potential threat especially for privacy-conscious users."
+        ]
+      }
+    },
+    "trust": {
+      "claims": [
+        {
+          "path": "$.company_name",
+          "citations": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "**Perplexity AI, Inc.**, or simply **Perplexity**, is an American [privately held] software company offering a web [search engine]"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.company_domain",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Website [perplexity.ai]"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.data_as_of_date",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "retrieved: 2026-07-15"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.executive_summary",
+          "citations": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "Perplexity AI, Inc., was founded in August 2022 by Aravind Srinivas, Denis Yarats, Johnny Ho, and Andy Konwinski. As of September 2025, the company was valued at US$20 billion."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Sacra estimates that Perplexity hit $500M in annualized revenue in April 2026, up 335% year-over-year and up from $232M in 2025"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "Total funding raised: Over $1.5 billion. Latest valuation: $20 billion (September 2025)."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The New York Times sues Perplexity for producing 'verbatim' copies of its work"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 4 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.financial_health.revenue",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Sacra estimates that Perplexity hit $500M in annualized revenue in April 2026, up 335% year-over-year and up from $232M in 2025"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "End of 2024: $63M annualized; March 2025: $100M annualized; June 2025: $148M annualized; October 2025: $200M ARR \u2014 4.7x year-over-year growth"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.financial_health.growth",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Growth Rate (y/y) 800% 2024 ... up 335% year-over-year"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "the company processed 780 million queries in May 2025, as it recorded more than 20% month-over-month growth, with around 30 million queries processed daily"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "Perplexity reached 45 million active users by mid-2025"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 3 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.financial_health.funding_total",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Founded in 2022, Perplexity has raised approximately $1.5B in total funding. ... Funding $1.22B 2025"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "Total funding raised: Over $1.5 billion."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.financial_health.last_round",
+          "citations": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "As of early 2026, Perplexity AI reached a valuation of $21.21 billion following its Series E-6 funding round."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Perplexity was valued at $20B after raising $200M in a round announced in September 2025"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://bloomberg.com/news/articles/2025-07-17/ai-startup-perplexity-valued-at-18-billion-with-new-funding",
+              "title": "AI Startup Perplexity Valued at $18 Billion With New Funding",
+              "excerpts": [
+                "raised fresh capital in a deal that values the startup at $18 billion... brought in $100 million with the financing... an extension of a previous round from a few months ago that valued the company at $14 billion"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 3 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.financial_health.burn_or_profitability",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "CEO Srinivas has said publicly that GPU procurement is a top use of capital. At 780 million monthly queries, inference costs are enormous. Hitting profitability requires subscription revenue to scale faster than compute costs"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "In January 2026, the company entered into a three-year, $750 million commitment with Microsoft Azure to secure GPU capacity."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.financial_health.summary",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "At $20B valuation and ~$148\u2013200M in ARR, Sacra estimates Perplexity trades at roughly 100x+ revenue."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Perplexity hit $500M in annualized revenue in April 2026, up 335% year-over-year"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.leadership[0].name",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/aravind-srinivas-16051987",
+              "title": "Aravind Srinivas - Cofounder & CEO, Perplexity",
+              "excerpts": [
+                "# Aravind Srinivas ## Cofounder & CEO, Perplexity"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "Founders | Aravind Srinivas, Denis Yarats, Johnny Ho, Andy Konwinski"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.leadership[0].title",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/aravind-srinivas-16051987",
+              "title": "Aravind Srinivas - Cofounder & CEO, Perplexity",
+              "excerpts": [
+                "Cofounder, President and CEO of Perplexity."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.leadership[0].background",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/aravind-srinivas-16051987",
+              "title": "Aravind Srinivas - Cofounder & CEO, Perplexity",
+              "excerpts": [
+                "Doctor of Philosophy - PhD Computer Science, UC Berkeley... Research Scientist OpenAI Sep 2021 - Aug 2022... Research Intern Google May 2020 - Apr 2021... Research Intern DeepMind May 2019 - Sep 2019... Research Intern OpenAI May 2018 - Aug 2018... Dual Degree (B.Tech and M.Tech) Electrical Engineering, IIT Madras"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.leadership[0].linkedin_url",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/aravind-srinivas-16051987",
+              "title": "Aravind Srinivas - Cofounder & CEO, Perplexity",
+              "excerpts": [
+                "linkedin.com/in/aravind-srinivas-16051987"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.leadership[0].flags",
+          "citations": [
+            {
+              "url": "https://glassdoor.com/Reviews/Perplexity-AI-people-Reviews-EI_IE8515634.0,13_KH14,20.htm",
+              "title": "Perplexity AI \"people\" Reviews",
+              "excerpts": [
+                "1st time founders so lots of thrash."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "social",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (social)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.leadership[1].name",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/hjohnny",
+              "title": "Johnny Ho - Cofounder & Chief Strategy Officer, Perplexity",
+              "excerpts": [
+                "# Johnny Ho ## Cofounder & Chief Strategy Officer, Perplexity"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "Founders | Aravind Srinivas, Denis Yarats, Johnny Ho, Andy Konwinski"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.leadership[1].title",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/hjohnny",
+              "title": "Johnny Ho - Cofounder & Chief Strategy Officer, Perplexity",
+              "excerpts": [
+                "# Johnny Ho ## Cofounder & Chief Strategy Officer, Perplexity"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.leadership[1].background",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/hjohnny",
+              "title": "Johnny Ho - Cofounder & Chief Strategy Officer, Perplexity",
+              "excerpts": [
+                "Harvard University... ACM ICPC Gold medal (3rd place) 2016; International Olympiad in Informatics 1st place 2012 (perfect score), Gold medal 2011, 2012"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://bloomberg.com/features/2025-new-ai-billionaires-list",
+              "title": "The New Billionaires of the AI Boom",
+              "excerpts": [
+                "CEO Aravind Srinivas... joined quant trader Johnny Ho, Databricks co-founder Andy Konwinski and Facebook AI researcher Denis Yarats to start Perplexity in 2022"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.leadership[1].linkedin_url",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/hjohnny",
+              "title": "Johnny Ho - Cofounder & Chief Strategy Officer, Perplexity",
+              "excerpts": [
+                "linkedin.com/in/hjohnny"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.leadership[1].flags",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/hjohnny",
+              "title": "Johnny Ho - Cofounder & Chief Strategy Officer, Perplexity",
+              "excerpts": [
+                "Cofounder & Chief Strategy Officer, Perplexity"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Information absence is supported by cited evidence",
+          "confidence": "high"
+        },
+        {
+          "path": "$.leadership[2].name",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/features/2025-new-ai-billionaires-list",
+              "title": "The New Billionaires of the AI Boom",
+              "excerpts": [
+                "Aravind Srinivas, Johnny Ho, Andy Konwinski, Denis Yarats"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.leadership[2].title",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/features/2025-new-ai-billionaires-list",
+              "title": "The New Billionaires of the AI Boom",
+              "excerpts": [
+                "Facebook AI researcher Denis Yarats to start Perplexity in 2022"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.leadership[2].background",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/features/2025-new-ai-billionaires-list",
+              "title": "The New Billionaires of the AI Boom",
+              "excerpts": [
+                "Facebook AI researcher Denis Yarats to start Perplexity in 2022"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "Co-founder Denis Yarats came from Meta AI."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.leadership[2].linkedin_url",
+          "citations": [],
+          "reasoning": "No usable citation resolved for this value",
+          "confidence": "low"
+        },
+        {
+          "path": "$.leadership[2].flags",
+          "citations": [],
+          "reasoning": "No usable citation resolved for this value",
+          "confidence": "low"
+        },
+        {
+          "path": "$.leadership[3].name",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/features/2025-new-ai-billionaires-list",
+              "title": "The New Billionaires of the AI Boom",
+              "excerpts": [
+                "Aravind Srinivas, Johnny Ho, Andy Konwinski, Denis Yarats"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.leadership[3].title",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/features/2025-new-ai-billionaires-list",
+              "title": "The New Billionaires of the AI Boom",
+              "excerpts": [
+                "Databricks co-founder Andy Konwinski"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.leadership[3].background",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/features/2025-new-ai-billionaires-list",
+              "title": "The New Billionaires of the AI Boom",
+              "excerpts": [
+                "joined quant trader Johnny Ho, Databricks co-founder Andy Konwinski and Facebook AI researcher Denis Yarats to start Perplexity in 2022"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.leadership[3].linkedin_url",
+          "citations": [],
+          "reasoning": "No usable citation resolved for this value",
+          "confidence": "low"
+        },
+        {
+          "path": "$.leadership[3].flags",
+          "citations": [],
+          "reasoning": "No usable citation resolved for this value",
+          "confidence": "low"
+        },
+        {
+          "path": "$.legal_regulatory.litigation",
+          "citations": [
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The New York Times sues Perplexity for producing 'verbatim' copies of its work... The Chicago Tribune also filed a copyright lawsuit against Perplexity on Thursday... CNN sues Perplexity over 'verbatim' copycat articles"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://courthousenews.com/encyclopaedia-britannica-and-merriam-webster-claim-copyright-infringement-by-ai-startup-perplexity",
+              "title": "Encyclopaedia Britannica and Merriam-Webster claim ...",
+              "excerpts": [
+                "Encyclopaedia Britannica and Merriam-Webster claim copyright"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Amazon filed suit against Perplexity (November 2025) over the startup's agentic shopping features in the Comet browser, alleging undisclosed automated access to Amazon customer accounts. A federal judge subsequently issued a preliminary injunction blocking Comet's agent from accessing Amazon, though the Ninth Circuit issued a temporary pause"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 3 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.legal_regulatory.regulatory",
+          "citations": [
+            {
+              "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+              "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+              "excerpts": [
+                "Operation AI Comply... The cases being announced today include actions against a company promoting an AI tool that enabled its customers to create fake reviews [DoNotPay, Ascend Ecom, EEB, Rytr, FBA Machine]"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Filings | perplexity_coi_2026-01-09 Certificate of Incorporation... perplexity_coi_2022-08-03 Certificate of Incorporation"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://reuters.com/legal/legalindustry/is-perplexitys-no-volition-copyright-strategy-clever-legal-shield-or-long-shot--pracin-2026-03-11",
+              "title": "Is Perplexity's 'no volition' copyright strategy a clever legal ...",
+              "excerpts": [
+                "is Perplexity's no volition copyright strategy"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 3 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.legal_regulatory.summary",
+          "citations": [
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The NYT is seeking damages and is also asking the court to permanently block the AI startup from engaging in its allegedly unlawful behavior."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Amazon filed suit against Perplexity (November 2025)... A federal judge subsequently issued a preliminary injunction blocking Comet's agent from accessing Amazon"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.competitive_position.main_competitors[0]",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Google already has a chatbot, Gemini, the search data flywheel from their 8.5B searches a day and 1.5B MAUs and ownership of platforms Search, Chrome, and Android"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "Google AI Overviews, launched in 2024, directly addresses Perplexity's core value proposition... Google has 90%+ search market share"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.competitive_position.main_competitors[1]",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/news/articles/2024-12-18/ai-startup-perplexity-closes-funding-round-at-9-billion-value",
+              "title": "AI Startup Perplexity Closes Funding Round at $9 Billion ...",
+              "excerpts": [
+                "ChatGPT-maker OpenAI this week began rolling out search features to all users of the chatbot."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "OpenAI is now developing its own search index and web crawler, positioning it to build its own comprehensive AI-native search engine"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.competitive_position.main_competitors[2]",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/news/articles/2024-12-18/ai-startup-perplexity-closes-funding-round-at-9-billion-value",
+              "title": "AI Startup Perplexity Closes Funding Round at $9 Billion ...",
+              "excerpts": [
+                "Microsoft Corp. and Google have also overhauled their search products to include more conversational AI features."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Microsoft, meanwhile, has integrated OpenAI's GPT technology into its Bing search engine and is leveraging its close partnership with OpenAI to improve the product."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.competitive_position.main_competitors[3]",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Anthropic, the startup behind the Claude AI assistant, is also reportedly building its own search product powered by proprietary models and search index. With over $1B in funding and a reputation for AI safety, Anthropic could prove a strong competitor, particularly for privacy-conscious users."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.competitive_position.differentiation",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "Perplexity built its product from day one around live web search. Every answer is grounded in current sources, cited inline."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Perplexity's hybrid local-cloud inference system splits AI workloads between on-device hardware and cloud servers via an orchestration layer... Computer, Perplexity's agentic product (launched February 2026), which orchestrates up to 19 models in parallel"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.competitive_position.market_position",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/features/2025-new-ai-billionaires-list",
+              "title": "The New Billionaires of the AI Boom",
+              "excerpts": [
+                "Perplexity was receiving over 100 million weekly search queries as of October. 'No one's ever had an explicit search product with that level of surface area that can truly make Google treat you as a genuine competitor,' Srinivas told Bloomberg this month."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "ChatGPT had a head start, but churn spiked into the 20% range last summer, while Perplexity's niche approach predicated on weekly usage has resulted in stronger retention dynamics... serves more than 100M monthly active users... tens of thousands of enterprise clients"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "India's Perplexity user base grew 640% year-over-year in Q2 2025... Snap signed a $400M partnership with Perplexity (November 2025)"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 3 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.reputation.press_sentiment",
+          "citations": [
+            {
+              "url": "https://wired.com/story/perplexity-is-a-bullshit-machine",
+              "title": "Perplexity Is a Bullshit Machine",
+              "excerpts": [
+                "# Perplexity Is a Bullshit Machine \u2014 A WIRED investigation shows that the AI-powered search startup Forbes has accused of stealing its content is surreptitiously scraping\u2014and making things up out of thin air."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://techcrunch.com/2025/08/05/some-people-are-defending-perplexity-after-cloudflare-named-and-shamed-it",
+              "title": "Some people are defending Perplexity after Cloudflare ' ...",
+              "excerpts": [
+                "some people are defending Perplexity after Cloudflare"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.reputation.employee_sentiment",
+          "citations": [
+            {
+              "url": "https://glassdoor.com/Reviews/Perplexity-AI-people-Reviews-EI_IE8515634.0,13_KH14,20.htm",
+              "title": "Perplexity AI \"people\" Reviews",
+              "excerpts": [
+                "90% of Perplexity AI employees would recommend working there to a friend... rated Perplexity AI 3.9 out of 5 for work life balance, 4.6 for culture and values and 4.9 for career opportunities... 'Very stressful, probably need therapy after'... '1st time founders so lots of thrash'"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "social",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (social)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.reputation.notable_coverage[0]",
+          "citations": [
+            {
+              "url": "https://wired.com/story/perplexity-is-a-bullshit-machine",
+              "title": "Perplexity Is a Bullshit Machine",
+              "excerpts": [
+                "A WIRED investigation shows that the AI-powered search startup Forbes has accused of stealing its content is surreptitiously scraping\u2014and making things up out of thin air... In one case, the text it generated falsely claimed that WIRED had reported that a specific police officer in California had committed a crime."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.reputation.notable_coverage[1]",
+          "citations": [],
+          "reasoning": "No usable citation resolved for this value",
+          "confidence": "low"
+        },
+        {
+          "path": "$.reputation.notable_coverage[2]",
+          "citations": [
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The New York Times sues Perplexity for producing 'verbatim' copies of its work... The Chicago Tribune also filed a copyright lawsuit against Perplexity on Thursday... CNN sues Perplexity over 'verbatim' copycat articles"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.reputation.notable_coverage[3]",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/news/articles/2025-07-17/ai-startup-perplexity-valued-at-18-billion-with-new-funding",
+              "title": "AI Startup Perplexity Valued at $18 Billion With New Funding",
+              "excerpts": [
+                "AI Startup Perplexity Valued at $18 Billion With New Funding"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Snap signed a $400M partnership with Perplexity (November 2025) to integrate Perplexity's answer engine into Snapchat Chat beginning in 2026"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.operational_risks[0]",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "CEO Srinivas has said publicly that GPU procurement is a top use of capital. At 780 million monthly queries, inference costs are enormous. Hitting profitability requires subscription revenue to scale faster than compute costs \u2014 a bet that gets harder as query volume grows"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.operational_risks[1]",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Through its three-year, $750M partnership with Microsoft (signed January 2026), Perplexity now accesses multiple frontier models including OpenAI, Anthropic, and xAI systems\u2014as well as Chinese open-source providers including DeepSeek's R1 and Moonshot's Kimi\u2014via Microsoft's Azure and Foundry platform."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.operational_risks[2]",
+          "citations": [
+            {
+              "url": "https://glassdoor.com/Reviews/Perplexity-AI-people-Reviews-EI_IE8515634.0,13_KH14,20.htm",
+              "title": "Perplexity AI \"people\" Reviews",
+              "excerpts": [
+                "1st time founders so lots of thrash. Also as company gets larger, there's more and more confusion around what the priorities are and how often they change. Would want the leadership to be better people managers."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "social",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (social)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.risks[0].risk",
+          "citations": [
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The NYT is seeking damages and is also asking the court to permanently block the AI startup from engaging in its allegedly unlawful behavior."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Amazon filed suit against Perplexity (November 2025)... A federal judge subsequently issued a preliminary injunction blocking Comet's agent from accessing Amazon"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.risks[0].evidence",
+          "citations": [
+            {
+              "url": "https://courthousenews.com/encyclopaedia-britannica-and-merriam-webster-claim-copyright-infringement-by-ai-startup-perplexity",
+              "title": "Encyclopaedia Britannica and Merriam-Webster claim ...",
+              "excerpts": [
+                "Encyclopaedia Britannica and Merriam-Webster claim copyright"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.risks[0].severity",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "A federal judge subsequently issued a preliminary injunction blocking Comet's agent from accessing Amazon, though the Ninth Circuit issued a temporary pause of that order while considering Perplexity's appeal."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.risks[1].risk",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "At $20B valuation and ~$148\u2013200M in ARR, Sacra estimates Perplexity trades at roughly 100x+ revenue. That multiple assumes years of continued growth at near-current rates... Silicon Valley VCs reportedly voted Perplexity the 'company they'd most rather bet against' at an AI conference in 2024"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.risks[1].evidence",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "That's a 40x valuation jump in under two years"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Sacra estimates that Perplexity hit $500M in annualized revenue in April 2026"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.risks[1].severity",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "Any slowdown in query growth, subscription conversions, or enterprise sales puts serious downward pressure on that number."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.risks[2].risk",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "At 780 million monthly queries, inference costs are enormous. Hitting profitability requires subscription revenue to scale faster than compute costs \u2014 a bet that gets harder as query volume grows"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.risks[2].evidence",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Computer, Perplexity's agentic product (launched February 2026), which orchestrates up to 19 models in parallel to carry out tasks on users' behalf"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "CEO Srinivas has said publicly that GPU procurement is a top use of capital."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.risks[2].severity",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "Hitting profitability requires subscription revenue to scale faster than compute costs \u2014 a bet that gets harder as query volume grows"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.risks[3].risk",
+          "citations": [
+            {
+              "url": "https://wired.com/story/perplexity-is-a-bullshit-machine",
+              "title": "Perplexity Is a Bullshit Machine",
+              "excerpts": [
+                "Perplexity is able to achieve this partly through apparently ignoring a widely accepted web standard known as the Robots Exclusion Protocol to surreptitiously scrape areas of websites... In one case, the text it generated falsely claimed that WIRED had reported that a specific police officer in California had committed a crime."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.risks[3].evidence",
+          "citations": [],
+          "reasoning": "No usable citation resolved for this value",
+          "confidence": "low"
+        },
+        {
+          "path": "$.risks[3].severity",
+          "citations": [],
+          "reasoning": "No usable citation resolved for this value",
+          "confidence": "low"
+        },
+        {
+          "path": "$.risks[4].risk",
+          "citations": [],
+          "reasoning": "No usable citation resolved for this value",
+          "confidence": "low"
+        },
+        {
+          "path": "$.risks[4].evidence",
+          "citations": [],
+          "reasoning": "No usable citation resolved for this value",
+          "confidence": "low"
+        },
+        {
+          "path": "$.risks[4].severity",
+          "citations": [],
+          "reasoning": "No usable citation resolved for this value",
+          "confidence": "low"
+        },
+        {
+          "path": "$.opportunities[0]",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Sacra estimates that Perplexity hit $500M in annualized revenue in April 2026, up 335% year-over-year... Management's December 2024 roadmap still targets $656M in revenue by end-2026"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.opportunities[1]",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "Airtel in India... India's Perplexity user base grew 640% year-over-year in Q2 2025... Samsung TVs... Every new Samsung TV owner gets a free 12-month Pro subscription"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Snap signed a $400M partnership with Perplexity (November 2025)... The U.S. General Services Administration partnership (November 2025) allows federal agencies to procure Enterprise Pro for Government"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.opportunities[2]",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Computer, Perplexity's agentic product (launched February 2026), which orchestrates up to 19 models in parallel... Perplexity Health, available to Pro and Max users in the U.S. (launched March 2026), connects to personal health data via integrations with Apple Health, Fitbit, Ultrahuman, Withings, and electronic health records from over 1.7 million care providers."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.opportunities[3]",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "Perplexity hit $200M ARR with approximately 250 employees. That's extraordinary capital efficiency by any measure."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Perplexity Pro at $20/month... Perplexity Max at $200/month... Enterprise Pro is available at $40/month per seat... added a usage-based pricing layer"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.overall_assessment.verdict",
+          "citations": [
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The NYT is seeking damages and is also asking the court to permanently block the AI startup from engaging in its allegedly unlawful behavior."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "At $20B valuation and ~$148\u2013200M in ARR, Sacra estimates Perplexity trades at roughly 100x+ revenue."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Sacra estimates that Perplexity hit $500M in annualized revenue in April 2026"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 3 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.overall_assessment.rationale",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Sacra estimates that Perplexity hit $500M in annualized revenue in April 2026, up 335% year-over-year... Growth Rate (y/y) 800% 2024"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The NYT is seeking damages and is also asking the court to permanently block the AI startup from engaging in its allegedly unlawful behavior."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "At $20B valuation and ~$148\u2013200M in ARR, Sacra estimates Perplexity trades at roughly 100x+ revenue. That multiple assumes years of continued growth at near-current rates."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 3 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.overall_assessment.conditions[0]",
+          "citations": [
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The NYT is seeking damages and is also asking the court to permanently block the AI startup from engaging in its allegedly unlawful behavior."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "A federal judge subsequently issued a preliminary injunction blocking Comet's agent from accessing Amazon"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.overall_assessment.conditions[1]",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "At $20B valuation and ~$148\u2013200M in ARR, Sacra estimates Perplexity trades at roughly 100x+ revenue. That multiple assumes years of continued growth at near-current rates. Any slowdown in query growth, subscription conversions, or enterprise sales puts serious downward pressure on that number."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Management's December 2024 roadmap still targets $656M in revenue by end-2026"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.overall_assessment.conditions[2]",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Perplexity now accesses multiple frontier models including OpenAI, Anthropic, and xAI systems\u2014as well as Chinese open-source providers including DeepSeek's R1 and Moonshot's Kimi\u2014via Microsoft's Azure and Foundry platform"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[0].url",
+          "citations": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "Perplexity AI, Inc."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[0].title",
+          "citations": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "Perplexity AI"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[0].relevance",
+          "citations": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "founded in August 2022 by Aravind Srinivas, Denis Yarats, Johnny Ho, and Andy Konwinski"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[1].url",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Perplexity revenue, valuation & funding - Sacra"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[1].title",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Perplexity revenue, valuation & funding - Sacra"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[1].relevance",
+          "citations": [
+            {
+              "url": "https://sacra.com/c/perplexity",
+              "title": "Perplexity revenue, valuation & funding - Sacra",
+              "excerpts": [
+                "Sacra estimates that Perplexity hit $500M in annualized revenue in April 2026"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[2].url",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "How Perplexity AI Went From $500M to $9B in 18 Months"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[2].title",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "How Perplexity AI Went From $500M to $9B in 18 Months"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[2].relevance",
+          "citations": [
+            {
+              "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+              "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+              "excerpts": [
+                "Total funding raised: Over $1.5 billion."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[3].url",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/news/articles/2025-07-17/ai-startup-perplexity-valued-at-18-billion-with-new-funding",
+              "title": "AI Startup Perplexity Valued at $18 Billion With New Funding",
+              "excerpts": [
+                "AI Startup Perplexity Valued at $18 Billion With New Funding"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[3].title",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/news/articles/2025-07-17/ai-startup-perplexity-valued-at-18-billion-with-new-funding",
+              "title": "AI Startup Perplexity Valued at $18 Billion With New Funding",
+              "excerpts": [
+                "AI Startup Perplexity Valued at $18 Billion With New Funding"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[3].relevance",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/news/articles/2025-07-17/ai-startup-perplexity-valued-at-18-billion-with-new-funding",
+              "title": "AI Startup Perplexity Valued at $18 Billion With New Funding",
+              "excerpts": [
+                "raised fresh capital in a deal that values the startup at $18 billion... brought in $100 million"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[4].url",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/news/articles/2024-12-18/ai-startup-perplexity-closes-funding-round-at-9-billion-value",
+              "title": "AI Startup Perplexity Closes Funding Round at $9 Billion ...",
+              "excerpts": [
+                "AI Startup Perplexity Closes Funding Round at $9 Billion Value"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[4].title",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/news/articles/2024-12-18/ai-startup-perplexity-closes-funding-round-at-9-billion-value",
+              "title": "AI Startup Perplexity Closes Funding Round at $9 Billion ...",
+              "excerpts": [
+                "AI Startup Perplexity Closes Funding Round at $9 Billion Value"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[4].relevance",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/news/articles/2024-12-18/ai-startup-perplexity-closes-funding-round-at-9-billion-value",
+              "title": "AI Startup Perplexity Closes Funding Round at $9 Billion ...",
+              "excerpts": [
+                "closed a $500 million round of funding that triples the company's valuation to $9 billion"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[5].url",
+          "citations": [
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The New York Times sues Perplexity for producing 'verbatim' copies of its work"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[5].title",
+          "citations": [
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The New York Times sues Perplexity for producing 'verbatim' copies of its work"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[5].relevance",
+          "citations": [
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The NYT is seeking damages and is also asking the court to permanently block the AI startup"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[6].url",
+          "citations": [
+            {
+              "url": "https://wired.com/story/perplexity-is-a-bullshit-machine",
+              "title": "Perplexity Is a Bullshit Machine",
+              "excerpts": [
+                "Perplexity Is a Bullshit Machine"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[6].title",
+          "citations": [
+            {
+              "url": "https://wired.com/story/perplexity-is-a-bullshit-machine",
+              "title": "Perplexity Is a Bullshit Machine",
+              "excerpts": [
+                "Perplexity Is a Bullshit Machine"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[6].relevance",
+          "citations": [
+            {
+              "url": "https://wired.com/story/perplexity-is-a-bullshit-machine",
+              "title": "Perplexity Is a Bullshit Machine",
+              "excerpts": [
+                "surreptitiously scraping\u2014and making things up out of thin air"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[7].url",
+          "citations": [
+            {
+              "url": "https://glassdoor.com/Reviews/Perplexity-AI-people-Reviews-EI_IE8515634.0,13_KH14,20.htm",
+              "title": "Perplexity AI \"people\" Reviews",
+              "excerpts": [
+                "Perplexity AI 'people' Reviews"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "social",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (social)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[7].title",
+          "citations": [
+            {
+              "url": "https://glassdoor.com/Reviews/Perplexity-AI-people-Reviews-EI_IE8515634.0,13_KH14,20.htm",
+              "title": "Perplexity AI \"people\" Reviews",
+              "excerpts": [
+                "Perplexity AI 'people' Reviews"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "social",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (social)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[7].relevance",
+          "citations": [
+            {
+              "url": "https://glassdoor.com/Reviews/Perplexity-AI-people-Reviews-EI_IE8515634.0,13_KH14,20.htm",
+              "title": "Perplexity AI \"people\" Reviews",
+              "excerpts": [
+                "90% of Perplexity AI employees would recommend working there to a friend"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "social",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (social)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[8].url",
+          "citations": [
+            {
+              "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+              "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+              "excerpts": [
+                "FTC Announces Crackdown on Deceptive AI Claims and Schemes"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[8].title",
+          "citations": [
+            {
+              "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+              "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+              "excerpts": [
+                "FTC Announces Crackdown on Deceptive AI Claims and Schemes"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[8].relevance",
+          "citations": [
+            {
+              "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+              "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+              "excerpts": [
+                "Operation AI Comply... The cases being announced today include actions against a company promoting an AI tool that enabled its customers to create fake reviews"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[9].url",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/aravind-srinivas-16051987",
+              "title": "Aravind Srinivas - Cofounder & CEO, Perplexity",
+              "excerpts": [
+                "Aravind Srinivas - Cofounder & CEO, Perplexity"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[9].title",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/aravind-srinivas-16051987",
+              "title": "Aravind Srinivas - Cofounder & CEO, Perplexity",
+              "excerpts": [
+                "Aravind Srinivas - Cofounder & CEO, Perplexity"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[9].relevance",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/aravind-srinivas-16051987",
+              "title": "Aravind Srinivas - Cofounder & CEO, Perplexity",
+              "excerpts": [
+                "Cofounder, President and CEO of Perplexity"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[10].url",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/hjohnny",
+              "title": "Johnny Ho - Cofounder & Chief Strategy Officer, Perplexity",
+              "excerpts": [
+                "Johnny Ho - Cofounder & Chief Strategy Officer, Perplexity"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[10].title",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/hjohnny",
+              "title": "Johnny Ho - Cofounder & Chief Strategy Officer, Perplexity",
+              "excerpts": [
+                "Johnny Ho - Cofounder & Chief Strategy Officer, Perplexity"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[10].relevance",
+          "citations": [
+            {
+              "url": "https://linkedin.com/in/hjohnny",
+              "title": "Johnny Ho - Cofounder & Chief Strategy Officer, Perplexity",
+              "excerpts": [
+                "Cofounder & Chief Strategy Officer, Perplexity"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[11].url",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/features/2025-new-ai-billionaires-list",
+              "title": "The New Billionaires of the AI Boom",
+              "excerpts": [
+                "new AI billionaires list"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[11].title",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/features/2025-new-ai-billionaires-list",
+              "title": "The New Billionaires of the AI Boom",
+              "excerpts": [
+                "new AI billionaires list"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[11].relevance",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/features/2025-new-ai-billionaires-list",
+              "title": "The New Billionaires of the AI Boom",
+              "excerpts": [
+                "joined quant trader Johnny Ho, Databricks co-founder Andy Konwinski and Facebook AI researcher Denis Yarats"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[12].url",
+          "citations": [
+            {
+              "url": "https://courthousenews.com/encyclopaedia-britannica-and-merriam-webster-claim-copyright-infringement-by-ai-startup-perplexity",
+              "title": "Encyclopaedia Britannica and Merriam-Webster claim ...",
+              "excerpts": [
+                "Encyclopaedia Britannica and Merriam-Webster claim copyright"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[12].title",
+          "citations": [
+            {
+              "url": "https://courthousenews.com/encyclopaedia-britannica-and-merriam-webster-claim-copyright-infringement-by-ai-startup-perplexity",
+              "title": "Encyclopaedia Britannica and Merriam-Webster claim ...",
+              "excerpts": [
+                "Encyclopaedia Britannica and Merriam-Webster claim copyright"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[12].relevance",
+          "citations": [
+            {
+              "url": "https://courthousenews.com/encyclopaedia-britannica-and-merriam-webster-claim-copyright-infringement-by-ai-startup-perplexity",
+              "title": "Encyclopaedia Britannica and Merriam-Webster claim ...",
+              "excerpts": [
+                "Encyclopaedia Britannica and Merriam-Webster claim copyright"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[13].url",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/news/articles/2025-05-12/ai-search-startup-perplexity-nears-funding-at-14-billion-value",
+              "title": "AI Startup Perplexity Nears Funding at $14 Billion Value",
+              "excerpts": [
+                "AI Startup Perplexity Nears Funding at $14 Billion Value"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[13].title",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/news/articles/2025-05-12/ai-search-startup-perplexity-nears-funding-at-14-billion-value",
+              "title": "AI Startup Perplexity Nears Funding at $14 Billion Value",
+              "excerpts": [
+                "AI Startup Perplexity Nears Funding at $14 Billion Value"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[13].relevance",
+          "citations": [
+            {
+              "url": "https://bloomberg.com/news/articles/2025-05-12/ai-search-startup-perplexity-nears-funding-at-14-billion-value",
+              "title": "AI Startup Perplexity Nears Funding at $14 Billion Value",
+              "excerpts": [
+                "Accel is in talks to lead a $500 million investment in the startup... $14 billion valuation"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[14].url",
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2025/08/05/some-people-are-defending-perplexity-after-cloudflare-named-and-shamed-it",
+              "title": "Some people are defending Perplexity after Cloudflare ' ...",
+              "excerpts": [
+                "some people are defending Perplexity after Cloudflare"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[14].title",
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2025/08/05/some-people-are-defending-perplexity-after-cloudflare-named-and-shamed-it",
+              "title": "Some people are defending Perplexity after Cloudflare ' ...",
+              "excerpts": [
+                "some people are defending Perplexity after Cloudflare"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[14].relevance",
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2025/08/05/some-people-are-defending-perplexity-after-cloudflare-named-and-shamed-it",
+              "title": "Some people are defending Perplexity after Cloudflare ' ...",
+              "excerpts": [
+                "some people are defending Perplexity after Cloudflare"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+          "type": "secondary",
+          "title": "Perplexity AI",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://sacra.com/c/perplexity",
+          "type": "secondary",
+          "title": "Perplexity revenue, valuation & funding - Sacra",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://aifundingtracker.com/perplexity-ai-valuation-growth-strategy",
+          "type": "secondary",
+          "title": "How Perplexity AI Reached $9B Valuation in 18 Months?",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+          "type": "secondary",
+          "title": "The New York Times sues Perplexity for producing ...",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://bloomberg.com/news/articles/2025-07-17/ai-startup-perplexity-valued-at-18-billion-with-new-funding",
+          "type": "secondary",
+          "title": "AI Startup Perplexity Valued at $18 Billion With New Funding",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://linkedin.com/in/aravind-srinivas-16051987",
+          "type": "secondary",
+          "title": "Aravind Srinivas - Cofounder & CEO, Perplexity",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://glassdoor.com/Reviews/Perplexity-AI-people-Reviews-EI_IE8515634.0,13_KH14,20.htm",
+          "type": "secondary",
+          "title": "Perplexity AI \"people\" Reviews",
+          "source_intent": null,
+          "source_category": "social",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://linkedin.com/in/hjohnny",
+          "type": "secondary",
+          "title": "Johnny Ho - Cofounder & Chief Strategy Officer, Perplexity",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://bloomberg.com/features/2025-new-ai-billionaires-list",
+          "type": "secondary",
+          "title": "The New Billionaires of the AI Boom",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://courthousenews.com/encyclopaedia-britannica-and-merriam-webster-claim-copyright-infringement-by-ai-startup-perplexity",
+          "type": "secondary",
+          "title": "Encyclopaedia Britannica and Merriam-Webster claim ...",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+          "type": "secondary",
+          "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://reuters.com/legal/legalindustry/is-perplexitys-no-volition-copyright-strategy-clever-legal-shield-or-long-shot--pracin-2026-03-11",
+          "type": "secondary",
+          "title": "Is Perplexity's 'no volition' copyright strategy a clever legal ...",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://bloomberg.com/news/articles/2024-12-18/ai-startup-perplexity-closes-funding-round-at-9-billion-value",
+          "type": "secondary",
+          "title": "AI Startup Perplexity Closes Funding Round at $9 Billion ...",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://wired.com/story/perplexity-is-a-bullshit-machine",
+          "type": "secondary",
+          "title": "Perplexity Is a Bullshit Machine",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://techcrunch.com/2025/08/05/some-people-are-defending-perplexity-after-cloudflare-named-and-shamed-it",
+          "type": "secondary",
+          "title": "Some people are defending Perplexity after Cloudflare ' ...",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://bloomberg.com/news/articles/2025-05-12/ai-search-startup-perplexity-nears-funding-at-14-billion-value",
+          "type": "secondary",
+          "title": "AI Startup Perplexity Nears Funding at $14 Billion Value",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        }
+      ],
+      "reasoning": "Medium confidence - trust per claim ratio is 91%",
+      "confidence": "medium"
+    }
+  }
+}

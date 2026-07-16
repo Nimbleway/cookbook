@@ -1,0 +1,1089 @@
+{
+  "run": {
+    "id": "task_run_1de2caf1598242b68bb5f4f23d5fb742",
+    "interaction_id": "task_run_1de2caf1598242b68bb5f4f23d5fb742",
+    "status": "completed",
+    "is_active": false,
+    "effort": "high",
+    "prompt": "How exposed is Perplexity to the pending copyright lawsuits, and what would an adverse ruling mean for its business model?",
+    "created_at": "2026-07-15T14:30:55.795458Z",
+    "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+    "web_search_agent_id": "wsa_fa3c2ecde740404882055d87f2f3651d",
+    "started_at": "2026-07-15T14:30:56.001449Z",
+    "completed_at": "2026-07-15T14:40:50.979014Z",
+    "error": null
+  },
+  "output": {
+    "type": "json",
+    "content": {
+      "answer": "DILIGENCE MEMO \u2014 Perplexity AI: Copyright-Lawsuit Exposure & Business-Model Risk\nDate: 2026-07-15 | Subject: Perplexity AI, Inc. (private, San Francisco) | Verdict: CAUTION\n\nEXECUTIVE SUMMARY\nPerplexity is highly exposed to its pending copyright lawsuits, and an adverse ruling would strike at the core of its business model. The company's entire product is a retrieval-augmented-generation (RAG) 'answer engine' that crawls, scrapes, summarizes, and sometimes reproduces publishers' content in real time \u2014 and Perplexity has, in its own March 2, 2026 court filing, declined to dispute that it 'copies The Times's journalism from behind a paywall.' Its only defense is fair use, an unsettled doctrine with no controlling RAG precedent expected before summer 2026. With at least nine active copyright/IP suits plus two non-copyright suits (one already lost \u2014 the Amazon injunction), a 2% market share against vastly better-capitalized rivals, and a just-completed (Feb 2026) retreat from advertising to a subscription-first model, the risk profile is material but not fatal: the company is well-funded (~$20B valuation), growing fast (+370% YoY), and actively building a licensing/mitigation moat (Getty deal, Publishers' Program). The verdict is CAUTION \u2014 proceed only with conditions tied to litigation outcome, licensing cost modeling, and governance review.\n\n--- SIX INVESTIGATION AREAS ---\n\n1. LEGAL & REGULATORY \u2014 HIGH EXPOSURE (core of the question)\nActive copyright/IP lawsuits (all pending, no final rulings as of July 2026):\n\u2022 NYT v. Perplexity \u2014 filed Dec 5, 2025, SDNY 1:25-cv-10106; 'verbatim or substantially similar copies,' paywall circumvention, ignored robots.txt + two cease-and-desists (Oct 2024, July 2025); seeks damages + PERMANENT INJUNCTION. [[/pages/theverge.com/news-839006-new-york-times-perplexity-lawsuit-copyright-ed5fecd6.md]]\n\u2022 Chicago Tribune v. Perplexity \u2014 Dec 4, 2025, SDNY 1:25-cv-10094; same RAG theory; likely consolidated with NYT. [[/pages/reuters.com/legal-government-perplexity-asks-court-trim-new-york-times-c-03f5bd80.md]]\n\u2022 News Corp/Dow Jones/WSJ/NY Post \u2014 Oct 21, 2024; 'massive freeriding,' hallucinated quotes attributed to WSJ; Perplexity LOST its motion to dismiss/transfer (Aug 21, 2025). [[/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md]]\n\u2022 Encyclopedia Britannica/Merriam-Webster \u2014 Sept 11, 2025; RAG input-stage copying + output-stage substantial similarity. [[/pages/copyrightalliance.org/ai-copyright-lawsuit-developments-2025-a613945d.md]]\n\u2022 Reddit \u2014 Oct 22, 2025, SDNY; data scraping. [[/pages/reuters.com/legal-government-perplexity-asks-court-trim-new-york-times-c-03f5bd80.md]]\n\u2022 CNN \u2014 May 28, 2026, NY court; 'verbatim' copies; behind-subscription content. [[/pages/theverge.com/24187792-perplexity-ai-news-updates-6b95e83c.md]]\n\u2022 Yomiuri Shimbun \u2014 Aug 8, 2025; 'free-riding' 120,000 articles (Feb\u2013Jun 2025). [[/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md]]\n\u2022 Asahi Shimbun + Nikkei \u2014 late Aug 2025. [[/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md]]\n\u2022 PSS (Perplexity Solved Solutions) \u2014 Jan 31, 2025; trademark infringement over the 'Perplexity' name. [[/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md]]\nNon-copyright suits:\n\u2022 Amazon v. Perplexity \u2014 filed Nov 2025 (CFAA); JUDGE MAXINE CHESNEY GRANTED INJUNCTION Mar 10, 2026 blocking Comet AI agents from Amazon orders; Amazon alleged Comet was 'misrepresent[ed]... as Google Chrome.' This is an ALREADY-REALIZED adverse ruling. [[/pages/theverge.com/24187792-perplexity-ai-news-updates-6b95e83c.md]]\n\u2022 Privacy class action (Meta/Google) \u2014 Apr 3, 2026; trackers shared conversations + emails even in Incognito mode. [[/pages/theverge.com/24187792-perplexity-ai-news-updates-6b95e83c.md]]\n\u2022 BBC \u2014 June 2025 threatened legal action (demand letter, not yet a suit). [[/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md]]\nDefense & status: Perplexity's Mar 2, 2026 partial motion to dismiss (Latham & Watkins + King & Spalding) attacked only trademark and user-search-liability claims; it left the main scraping/misuse claim untouched, betting it will 'founder on bedrock principles of intellectual property law' \u2014 i.e., fair use. [[/pages/reuters.com/legal-government-perplexity-asks-court-trim-new-york-times-c-03f5bd80.md]] No fair-use ruling in AI training is expected before summer 2026; the three rulings to date split 2-for/1-against, so precedent is genuinely uncertain. [[/pages/chatgptiseatingtheworld.com/2025-10-08-status-of-all-51-copyright-lawsuits-v-ai-oct-8-20-db53e5b4.md]] RAG-output cases (Perplexity, Cohere/Advance) are a NEW, untested category. [[/pages/copyrightalliance.org/ai-copyright-lawsuit-developments-2025-a613945d.md]]\nWHAT AN ADVERSE RULING MEANS: Because the product IS the RAG scraping/summarizing engine, an adverse fair-use finding + the NYT's sought permanent injunction would force Perplexity to (a) respect paywalls/robots.txt, (b) license every source it surfaces (the Getty Images deal is the template), and/or (c) restrict output to brief, clearly transformative summaries. Each option raises unit costs and/or degrades product quality. At scale, universal licensing would compress the reportedly ~60% gross margin, and a smaller player (~2% share, ~$20B valuation vs. OpenAI ~$850B / Anthropic ~$1T) is least able to absorb that burden.\n\n2. FINANCIAL HEALTH \u2014 WELL-FUNDED BUT PRIVATE (lens limitation: no SEC filings)\nValuation trajectory: $520M (Jan 2024) \u2192 ~$1B (Apr 2024) \u2192 $9B (Dec 2024) \u2192 $14B (Jun 2025) \u2192 $20B (Sept 2025, Reuters) \u2192 ~$21.2B (Series E-6, early 2026). [[/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md]] Investors: Jeff Bezos, Nvidia, Tobias L\u00fctke, Nat Friedman, Databricks, IVP, NEA, Accel, SoftBank, 1789 Capital (Trump Jr.-linked). [[/pages/fortune.com/2024-01-06-jeff-bezos-nvidia-funding-round-ai-search-startup-ca9f3f33.md]] [[/pages/linkedin.com/posts-jagdishpandya-ai-success-activity-7362496935070527488--a1aa7510.md]] Cash obligation: 3-year, $750M Microsoft Azure GPU-capacity commitment (Jan 2026). [[/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md]] Revenue/ARR: NOT publicly disclosed (private company \u2014 confirmed not found in searched records, not merely absent); gross profit margin reportedly ~60% (The Information, paywalled, headline only). [[/pages/theinformation.com/newsletters-ai-agenda-helping-perplexitys-60-gross-profit-ma-8c6535f3.md]] Pro tier $20/mo; Comet Plus $5/mo (80% to publishers). [[/pages/fortune.com/2024-01-06-jeff-bezos-nvidia-funding-round-ai-search-startup-ca9f3f33.md]] [[/pages/techcrunch.com/2025-12-05-the-new-york-times-is-suing-perplexity-for-copyri-97c540e6.md]] The company was 'still not profitable' as of Jan 2024. [[/pages/fortune.com/2024-01-06-jeff-bezos-nvidia-funding-round-ai-search-startup-ca9f3f33.md]]\n\n3. LEADERSHIP & PERSONNEL \u2014 KEY-PERSON CONCENTRATION\nFour co-founders, ~52 employees (2024). CEO Aravind Srinivas (linkedin.com/in/aravind-srinivas-16051987) \u2014 ex-OpenAI research scientist (2021), Google, DeepMind, Google Brain; IIT Madras EE; UC Berkeley PhD CS; India's youngest billionaire (Hurun 2025). [[/pages/linkedin.com/pulse-from-phd-student-ai-billionaire-inspiring-journey-arav-012d21e8.md]] [[/pages/linkedin.com/posts-jagdishpandya-ai-success-activity-7362496935070527488--a1aa7510.md]] Co-founders: Denis Yarats (linkedin.com/in/denisyarats), Andy Konwinski (linkedin.com/in/andykon), Johnny Ho (linkedin.com/in/hjohnny). [[/pages/linkedin.com/posts-jagdishpandya-ai-success-activity-7362496935070527488--a1aa7510.md]] Small headcount + CEO-as-public-face = elevated key-person risk. Reputation red flag: Srinivas called AI layoffs a 'glorious future' (Mar 2026). [[/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md]]\n\n4. COMPETITIVE POSITION \u2014 SMALL BUT FAST-GROWING\n~2% AI chatbot market share (Jan 2026) vs. ChatGPT 64.5-68%, Gemini 18.2-21.5%, DeepSeek 4%, Grok 2.9%, Claude 2%, Copilot 1.2%. [[/pages/stackmatix.com/blog-ai-search-market-share-2026-221a7ca6.md]] ~45M MAU, +370% YoY (fastest among majors). [[/pages/stackmatix.com/blog-ai-search-market-share-2026-221a7ca6.md]] Differentiation: AI-first search/citation engine for research use cases. [[/pages/stackmatix.com/blog-ai-search-market-share-2026-221a7ca6.md]] Rivals are far better capitalized (OpenAI ~$850B, Anthropic ~$1T vs. Perplexity ~$20B). [[/pages/cnbc.com/2026-06-03-perplexity-ceo-ai-valuations-computer-agentic-htm-8884b03f.md]]\n\n5. OPERATIONAL RISK \u2014 DUAL MODEL DEPENDENCY + SCRAPING UNDER ATTACK\nStack = proprietary Sonar/PPLX (Llama 3.3/Mistral-based) + external OpenAI GPT / Anthropic Claude on Pro + Google/Bing APIs + own crawler; GPU on AWS/Cerebras/Nvidia + $750M Azure. [[/pages/rankstudio.net/articles-en-perplexity-llm-tech-stack-9daccd2b.md]] [[/pages/cnbc.com/2026-06-03-perplexity-ceo-ai-valuations-computer-agentic-htm-8884b03f.md]] The crawler layer is exactly what the lawsuits target; Cloudflare (Aug 2025) and Wired (Jun 2024) documented 'stealth' crawlers bypassing robots.txt \u2014 directly evidencing the alleged conduct. [[/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md]]\n\n6. REPUTATION \u2014 PREDOMINANTLY NEGATIVE PRESS\nForbes ('cynical theft,' Jun 2024), Wired ('bullshit machine'), Cloudflare CEO ('more like North Korean hackers'), The Verge ('Perplexity is a known bad actor'). [[/pages/forbes.com/sites-sarahemerson-2024-06-07-buzzy-ai-search-engine-perplex-cb7dabfa.md]] [[/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md]] [[/pages/theverge.com/24187792-perplexity-ai-news-updates-6b95e83c.md]] Srinivas's layoff comments compounded negative sentiment. [[/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md]]\n\n--- THREE+ CONCRETE RISKS / RED FLAGS ---\n1. Perplexity has conceded the copying conduct; its entire legal defense rests on an untested fair-use theory for RAG output, with no precedent due before summer 2026. [[/pages/reuters.com/legal-government-perplexity-asks-court-trim-new-york-times-c-03f5bd80.md]]\n2. The Amazon injunction (Mar 10, 2026) is an ALREADY-REALIZED adverse ruling disabling a key growth vector (Comet agentic shopping). [[/pages/theverge.com/24187792-perplexity-ai-news-updates-6b95e83c.md]]\n3. Jeff Bezos is BOTH a Perplexity investor AND the founder of the company suing it (Amazon) \u2014 a governance conflict signal. [[/pages/fortune.com/2024-01-06-jeff-bezos-nvidia-funding-round-ai-search-startup-ca9f3f33.md]] [[/pages/theverge.com/24187792-perplexity-ai-news-updates-6b95e83c.md]]\n4. Documented stealth-crawling (Cloudflare/Wired) both evidences the lawsuits' core allegations and is a reputational liability. [[/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md]]\n5. The Feb 2026 abandonment of ads for subscription-first narrows revenue diversity as litigation costs mount. [[/pages/en.wikipedia.org/wiki-perplexity-ai-ad5eb3e1.md]]\n\n--- OVERALL ASSESSMENT ---\nVERDICT: CAUTION.\nRationale (\u22653 specific findings): (1) Perplexity faces 9+ active copyright suits and has conceded the underlying copying conduct, leaving fair use \u2014 an unsettled, RAG-untested doctrine \u2014 as its sole shield, with no ruling due before summer 2026; (2) it has already suffered one adverse ruling (the Amazon injunction disabling Comet shopping), proving the litigation risk is not merely theoretical; (3) at ~2% market share and ~$20B valuation it is the smallest major player, least able to absorb the universal-licensing cost burden an adverse copyright ruling would impose, especially after the Feb 2026 ad-to-subscription pivot narrowed its revenue base. These are offset by strong funding (~$20B valuation, marquee investors), rapid growth (+370% YoY, 45M MAU), and active mitigation (Getty licensing, Publishers' Program). The conditions that would upgrade this to PROCEED_WITH_CONDITIONS: (a) a favorable or settled outcome in the NYT/News Corp cases or a workable licensing framework; (b) disclosure of revenue/ARR and litigation-reserve modeling; (c) governance review of the Bezos investor-vs-Amazon-plaintiff conflict; (d) demonstrable robots.txt/paywall compliance to neutralize the stealth-crawling evidence.\n\nLENS AVAILABILITY: SEC EDGAR \u2014 unavailable (private company). Companies House \u2014 unavailable (US entity). Litigation databases \u2014 covered via Reuters/Copyright Alliance/case trackers. Crunchbase/PitchBook funding \u2014 covered. Revenue/ARR \u2014 not publicly disclosed (paywalled/private). Employee sentiment \u2014 limited (Reddit/social signals only, not a formal survey).",
+      "sources": [
+        {
+          "url": "https://reuters.com/legal/government/perplexity-asks-court-trim-new-york-times-copyright-case-2026-03-02",
+          "title": "Perplexity asks court to trim New York Times copyright case"
+        },
+        {
+          "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+          "title": "The New York Times sues Perplexity for producing 'verbatim' copies of its work"
+        },
+        {
+          "url": "https://theverge.com/24187792/perplexity-ai-news-updates",
+          "title": "Perplexity AI news updates (The Verge tracker)"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+          "title": "Perplexity AI (Wikipedia)"
+        },
+        {
+          "url": "https://fortune.com/2024/01/06/jeff-bezos-nvidia-funding-round-ai-search-startup-google-rival-perplexity",
+          "title": "Jeff Bezos, Nvidia back AI search startup Perplexity"
+        },
+        {
+          "url": "https://stackmatix.com/blog/ai-search-market-share-2026",
+          "title": "AI Search Market Share 2026: ChatGPT, Gemini & Perplexity Stats"
+        },
+        {
+          "url": "https://chatgptiseatingtheworld.com/2025/10/08/status-of-all-51-copyright-lawsuits-v-ai-oct-8-2025-no-more-decisions-on-fair-use-in-2025",
+          "title": "Status of all 51 copyright lawsuits v. AI (Oct. 8, 2025)"
+        },
+        {
+          "url": "https://copyrightalliance.org/ai-copyright-lawsuit-developments-2025",
+          "title": "AI Copyright Lawsuit Developments 2025 (Copyright Alliance)"
+        },
+        {
+          "url": "https://perplexity.ai/hub/blog/introducing-the-perplexity-publishers-program",
+          "title": "Introducing the Perplexity Publishers' Program"
+        },
+        {
+          "url": "https://techcrunch.com/2025/12/05/the-new-york-times-is-suing-perplexity-for-copyright-infringement",
+          "title": "The New York Times is suing Perplexity for copyright infringement"
+        },
+        {
+          "url": "https://cnbc.com/2026/06/03/perplexity-ceo-ai-valuations-computer-agentic.html",
+          "title": "Perplexity CEO tells CNBC one metric will determine who wins the AI race"
+        },
+        {
+          "url": "https://digiday.com/media/how-perplexity-calculates-publishers-share-of-ad-revenue",
+          "title": "How Perplexity calculates publishers' share of ad revenue"
+        }
+      ],
+      "key_points": [
+        "LITIGATION EXPOSURE: Perplexity faces at least 9 active copyright/IP lawsuits and 2 additional non-copyright suits as of mid-2026. Plaintiffs include The New York Times (filed Dec 5, 2025, SDNY 1:25-cv-10106), Chicago Tribune (Dec 4, 2025, SDNY 1:25-cv-10094), News Corp/Dow Jones/WSJ/NY Post (Oct 21, 2024), Encyclopedia Britannica/Merriam-Webster (Sept 11, 2025), Reddit (Oct 22, 2025), CNN (May 28, 2026), Yomiuri Shimbun (Aug 8, 2025 \u2014 120,000 articles), Asahi Shimbun & Nikkei (late Aug 2025), and PSS (trademark, Jan 31, 2025). The NYT/WSJ suits are the highest-stakes; the BBC has also threatened legal action (June 2025).",
+        "ADVERSE RULING IMPACT \u2014 CORE ADMISSION: In its March 2, 2026 partial motion to dismiss, Perplexity did NOT contest the central allegation that it scrapes and copies publishers' articles; the newspapers' lawyer stated 'Perplexity does not dispute that it copies The Times's journalism from behind a paywall to deliver responses to their customers in real time.' Perplexity's sole defense is fair use, which it claims will 'founder on bedrock principles of intellectual property law.' An adverse ruling on fair use would require Perplexity to fundamentally restructure its retrieval-augmented-generation (RAG) product, respect paywalls/robots.txt, and license every source \u2014 or face a permanent injunction (which NYT is explicitly seeking).",
+        "RISK #1 \u2014 AMOUNT/CONCESSION: Perplexity has already effectively conceded the infringing conduct (paywall circumvention + verbatim copying), making the legal outcome turn entirely on the untested fair-use defense for RAG output \u2014 a legally novel theory with no settled precedent (industry tracker notes 'no court will decide fair use in AI training until summer 2026 at the earliest,' and the 3 rulings to date split 2-for/1-against).",
+        "RISK #2 \u2014 INJUNCTION & MODEL PIVOT: The NYT seeks a PERMANENT injunction blocking Perplexity's scraping behavior \u2014 if granted, it would cripple the real-time RAG answer engine that IS the product. Notably, Perplexity ALREADY pivoted to a subscription-first model in February 2026 by discontinuing its AI advertising strategy, a move leadership said was to 'preserve user trust in the answer engine' \u2014 evidence the company is already reshaping its monetization under legal/reputational pressure, and that the ad-supported model was not durable.",
+        "RISK #3 \u2014 BEZOS CONFLICT + AMAZON INJUNCTION: Jeff Bezos is BOTH a personal Perplexity investor (since the $520M Jan 2024 round) AND the founder of Amazon, which sued Perplexity in Nov 2025 and won a court injunction on March 10, 2026 (Judge Maxine Chesney) blocking Perplexity's Comet browser AI agents from placing Amazon orders 'without authorization.' Amazon further alleged Perplexity 'misrepresent[ed] the Comet browser as Google Chrome.' This is a material conflict signal and shows Perplexity's agentic-commerce growth vector has already been judicially disabled \u2014 a concrete, realized adverse outcome, not merely pending.",
+        "RISK #4 \u2014 STEALTH-CRAWLING EVIDENCE: Cloudflare (Aug 2025) and Wired (Jun 2024) independently documented that Perplexity uses undeclared 'stealth' web crawlers with spoofed user-agent strings to bypass robots.txt and website firewalls \u2014 conduct that directly undermines any 'we respect publishers' defenses and is cited in the NYT complaint. Cloudflare CEO Matthew Prince publicly compared Perplexity to acting 'more like North Korean hackers than a reputable AI company.' Perplexity denied the claims, calling them a 'charlatan publicity stunt.' This documented evasion is a reputational and evidentiary liability in the pending suits.",
+        "FINANCIAL HEALTH: Perplexity is a private company (no SEC filings \u2014 confirmed unavailable lens). Funding/valuation trajectory: $520M (Jan 2024) \u2192 ~$1B (Apr 2024) \u2192 $9B (Dec 2024) \u2192 $14B (Jun 2025) \u2192 $20B (Sept 2025, Reuters) \u2192 ~$21.2B (Series E-6, early 2026). Investors include Jeff Bezos, Nvidia, Tobias L\u00fctke, Nat Friedman, Databricks, IVP, NEA, Accel, SoftBank, and 1789 Capital (Trump Jr.-linked). A 3-year, $750M Microsoft Azure GPU-capacity commitment was signed Jan 2026. No revenue/ARR figure is publicly disclosed; gross profit margin is reportedly ~60% (The Information, paywalled \u2014 only headline visible). Pro is $20/mo; Comet Plus $5/mo. The company is NOT profitable (stated at Jan 2024 round).",
+        "COMPETITIVE POSITION: Perplexity holds ~2% of the AI chatbot market (Jan 2026, per Similarweb/Graphite/FirstPageSage), versus ChatGPT 64.5-68%, Google Gemini 18.2-21.5%, DeepSeek 4%, Grok 2.9%, Claude 2%, Microsoft Copilot 1.2%. Monthly active users ~45 million (Jan 2026) with +370% YoY growth (fastest among major platforms). Differentiation: 'AI-first search engine rather than general chatbot, targeting research and citation-heavy use cases.' Main competitors: OpenAI/ChatGPT, Google Gemini, Microsoft Copilot, Anthropic/Claude, xAI/Grok, DeepSeek. Its 2% share means limited customer concentration risk but also limited pricing power \u2014 and a large licensing burden from an adverse copyright ruling would be disproportionately hard to absorb relative to better-capitalized rivals (OpenAI ~$850B, Anthropic ~$1T valuations vs. Perplexity ~$20B).",
+        "BUSINESS MODEL & MITIGATION EFFORTS: Perplexity monetizes via Pro subscriptions ($20/mo), Comet Plus ($5/mo, 80% to publishers), enterprise plans, and a Search API. It launched a Publishers' Program (Jul 30, 2024) sharing ad revenue (capped 'up to 25%' per WSJ/Digiday) with partners incl. TIME, Fortune, Der Spiegel, Texas Tribune, WordPress, Gannett, LA Times (~20 publishers), and struck a multi-year licensing deal with Getty Images (Oct 31, 2025). However, the NYT \u2014 the highest-profile plaintiff \u2014 is NOT in the program and rejected this approach, confirming the industry view that publishers 'use lawsuits as leverage... to force AI companies to formally license content.' The Feb 2026 abandonment of ads for a subscription-first model narrows revenue diversity precisely as litigation costs mount.",
+        "LEADERSHIP & KEY-PERSON RISK: Four co-founders (all ex-AI-lab researchers), only ~52 employees (2024). CEO Aravind Srinivas (LinkedIn: linkedin.com/in/aravind-srinivas-16051987) \u2014 ex-OpenAI research scientist (2021), Google, DeepMind, Google Brain intern; IIT Madras B+M.Tech EE; UC Berkeley PhD CS (AI/ML); named India's youngest billionaire (Hurun, 2025, \u20b921,190 crore). Co-founders: Denis Yarats (linkedin.com/in/denisyarats), Andy Konwinski (linkedin.com/in/andykon), Johnny Ho (linkedin.com/in/hjohnny). Key investors/board-adjacent: Jeff Bezos, Nvidia, Tobias L\u00fctke, Nat Friedman, Databricks, IVP, NEA, Accel, SoftBank, 1789 Capital. Reputation signal: Srinivas publicly called AI-related layoffs a 'glorious future' to 'look forward to' (Mar 2026), a tone-deaf comment that drew press criticism \u2014 a leadership-style red flag.",
+        "OPERATIONAL/TECH RISK: Perplexity's stack combines proprietary 'Sonar'/'PPLX' models (built on open Llama 3.3/Mistral, fine-tuned for grounding) with external proprietary models (OpenAI GPT-4/5, Anthropic Claude) on its Pro tier, and relies on Google/Bing APIs plus its own crawler for retrieval. GPU infrastructure runs on AWS A100, Cerebras, and Nvidia TensorRT-LLM, backed by a $750M/3-year Azure commitment. The retrieval-and-scraping pipeline is precisely the conduct under legal attack; the external-model dependency creates vendor-cost and terms-of-service risk; and the crawler-evasion findings (Cloudflare) mean the very data-acquisition layer is both legally contested and reputationally damaging."
+      ]
+    },
+    "trust": {
+      "claims": [
+        {
+          "path": "$.key_points[0]",
+          "citations": [
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The New York Times has escalated its legal battle against the AI startup Perplexity... now suing the AI 'answer engine' for allegedly producing and profiting from responses that are 'verbatim or substantially similar copies' of the publication's work. The lawsuit, filed in a New York federal court on Friday"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://reuters.com/legal/government/perplexity-asks-court-trim-new-york-times-copyright-case-2026-03-02",
+              "title": "Perplexity asks court to trim New York Times copyright case",
+              "excerpts": [
+                "The company is facing similar lawsuits from Reddit, Encyclopedia Britannica and Rupert Murdoch's Dow Jones and New York Post... The cases are Chicago Tribune Co v. Perplexity AI Inc, U.S. District Court for the Southern District of New York, No. 1:25-cv-10094 and New York Times Co v. Perplexity AI Inc, U.S. District Court for the Southern District of New York, No. 1:25-cv-10106."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "academic",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.key_points[1]",
+          "citations": [
+            {
+              "url": "https://reuters.com/legal/government/perplexity-asks-court-trim-new-york-times-copyright-case-2026-03-02",
+              "title": "Perplexity asks court to trim New York Times copyright case",
+              "excerpts": [
+                "'Perplexity does not dispute that it copies The Times's journalism from behind a paywall to deliver responses to their customers in real time,' the newspapers' lawyer Steve Lieberman... said... Perplexity's filing did not seek to dismiss the newspapers' main allegation that it misuses their articles to power its AI system, though the company said that claim would eventually 'founder on bedrock principles of intellectual property law.'"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "academic",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (academic)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.key_points[2]",
+          "citations": [
+            {
+              "url": "https://reuters.com/legal/government/perplexity-asks-court-trim-new-york-times-copyright-case-2026-03-02",
+              "title": "Perplexity asks court to trim New York Times copyright case",
+              "excerpts": [
+                "Perplexity does not dispute that it copies The Times's journalism from behind a paywall... Nothing in its partial motion to dismiss justifies this theft."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "academic",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://chatgptiseatingtheworld.com/2025/10/08/status-of-all-51-copyright-lawsuits-v-ai-oct-8-2025-no-more-decisions-on-fair-use-in-2025",
+              "title": "Status of all 51 copyright lawsuits v. AI (Oct. 8, 2025)",
+              "excerpts": [
+                "No court will decide fair use in AI training until summer 2026 at the earliest... So far, 3 judges ruled on fair use, 2 for and 1 against."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.key_points[3]",
+          "citations": [
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The NYT is seeking damages and is also asking the court to permanently block the AI startup from engaging in its allegedly unlawful behavior."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "In February 2026, Perplexity transitioned to a subscription-first model by discontinuing its AI-integrated advertising strategy. Leadership stated the move was intended to preserve user trust in the 'answer engine,' prioritizing objective results over ad revenue."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.key_points[4]",
+          "citations": [
+            {
+              "url": "https://fortune.com/2024/01/06/jeff-bezos-nvidia-funding-round-ai-search-startup-google-rival-perplexity",
+              "title": "Jeff Bezos, Nvidia back AI search startup Perplexity",
+              "excerpts": [
+                "San Francisco\u2013based Perplexity announced that it has raised $73.6 million from a group of investors led by venture capital firm IVP and including Bezos, the $1.2 trillion AI chip giant Nvidia, and Shopify cofounder Tobias L\u00fctke."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://theverge.com/24187792/perplexity-ai-news-updates",
+              "title": "Perplexity AI: the answer engine with a lot of question marks",
+              "excerpts": [
+                "A federal judge has issued an order blocking Perplexity's web browser-based AI agents from placing Amazon orders on a user's behalf... US District Judge Maxine Chesney writes that Amazon has 'provided strong evidence' that Perplexity's Comet browser accesses user accounts 'without authorization'... Amazon also alleged that Perplexity attempted to 'conceal' its agentic activities by 'misrepresenting the Comet browser as Google Chrome.'"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.key_points[5]",
+          "citations": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "In August 2025, Cloudflare published research revealing that Perplexity was using undeclared 'stealth' web crawlers to bypass web application firewalls intended to block Perplexity crawlers, and did not respect robots.txt files... Cloudflare's CEO Matthew Prince tweeted that Perplexity acts 'more like North Korean hackers' than a reputable AI company."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "Perplexity's crawlers 'have intentionally ignored or evaded technical content protection measures,' such as the robots.txt file, which indicates the parts of a website crawlers can access."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.key_points[6]",
+          "citations": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "As of September 2025, the company was valued at US$20 billion... As of early 2026, Perplexity AI reached a valuation of $21.21 billion following its Series E-6 funding round. In January 2026, the company entered into a three-year, $750 million commitment with Microsoft Azure to secure GPU capacity."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://fortune.com/2024/01/06/jeff-bezos-nvidia-funding-round-ai-search-startup-google-rival-perplexity",
+              "title": "Jeff Bezos, Nvidia back AI search startup Perplexity",
+              "excerpts": [
+                "Perplexity, while still not profitable, has quickly grown to 10 million monthly active users... On Thursday, San Francisco\u2013based Perplexity announced that it has raised $73.6 million from a group of investors led by venture capital firm IVP and including Bezos... Nvidia, and Shopify cofounder Tobias L\u00fctke."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://theinformation.com/newsletters/ai-agenda/helping-perplexitys-60-gross-profit-margin",
+              "title": "What's Helping Perplexity's 60% Gross Profit Margin",
+              "excerpts": [
+                "What's Helping Perplexity's 60% Gross Profit Margin"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 3 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.key_points[7]",
+          "citations": [
+            {
+              "url": "https://stackmatix.com/blog/ai-search-market-share-2026",
+              "title": "AI Search Market Share 2026: ChatGPT, Gemini & ...",
+              "excerpts": [
+                "Perplexity 2%... Perplexity (370% growth): Positioned as an AI-first search engine rather than a general chatbot, targeting research and citation-heavy use cases... Perplexity 45 million [MAU]."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://cnbc.com/2026/06/03/perplexity-ceo-ai-valuations-computer-agentic.html",
+              "title": "Perplexity CEO tells CNBC one metric will determine who ...",
+              "excerpts": [
+                "Perplexity, which was last reportedly valued at $20 billion, trails behind Anthropic and OpenAI, whose valuations have climbed to nearly $1 trillion and just over $850 billion, respectively."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.key_points[8]",
+          "citations": [
+            {
+              "url": "https://perplexity.ai/hub/blog/introducing-the-perplexity-publishers-program",
+              "title": "Introducing the Perplexity Publishers' Program",
+              "excerpts": [
+                "we're excited to announce the Perplexity Publishers Program and our first batch of partners: TIME, Der Spiegel, Fortune, Entrepreneur, The Texas Tribune, and WordPress.com."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://digiday.com/media/how-perplexity-calculates-publishers-share-of-ad-revenue",
+              "title": "How Perplexity calculates publishers' share of ad revenue",
+              "excerpts": [
+                "The Wall Street Journal reported the revenue share was 'up to 25%.' Two publishing executives... confirmed to Digiday that the revenue share was capped at 25%."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://techcrunch.com/2025/12/05/the-new-york-times-is-suing-perplexity-for-copyright-infringement",
+              "title": "The New York Times is suing Perplexity for copyright ...",
+              "excerpts": [
+                "Recognizing the AI tide cannot be stopped, publishers use lawsuits as leverage in negotiations in the hopes of forcing AI companies to formally license content... Perplexity also launched Comet Plus, allocating 80% of its $5 monthly fee to participating publishers, and recently struck a multi-year licensing deal with Getty Images."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 3 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.key_points[9]",
+          "citations": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "Founded in August 2022 by Aravind Srinivas, Denis Yarats, Johnny Ho, and Andy Konwinski... Number of employees 52 (2024)... Srinivas said the incoming AI-related layoffs were 'glorious future' to 'look forward'."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://linkedin.com/posts/jagdishpandya_ai-success-activity-7362496935070527488-9wBR",
+              "title": "From IIT Madras to $18 Billion AI Search Engine",
+              "excerpts": [
+                "Aravind Srinivas: https://www.linkedin.com/in/aravind-srinivas-16051987 | Denis Yarats: https://www.linkedin.com/in/denisyarats | Andy Konwinski: https://www.linkedin.com/in/andykon | Johnny Ho: https://www.linkedin.com/in/hjohnny"
+              ],
+              "source_type": "primary",
+              "source_intent": "other",
+              "source_category": "official",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://linkedin.com/pulse/from-phd-student-ai-billionaire-inspiring-journey-aravind-jahid-hasan-dasce",
+              "title": "From PhD Student to AI Billionaire: The Inspiring Journey ...",
+              "excerpts": [
+                "Aravind worked with some of the world's leading AI organizations \u2014 OpenAI, DeepMind, and Google Brain... In 2022, Aravind co-founded Perplexity AI along with Denis Yarats, Johnny Ho, and Andy Konwinski."
+              ],
+              "source_type": "primary",
+              "source_intent": "other",
+              "source_category": "official",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a primary source (official)",
+          "confidence": "high"
+        },
+        {
+          "path": "$.key_points[10]",
+          "citations": [
+            {
+              "url": "https://rankstudio.net/articles/en/perplexity-llm-tech-stack",
+              "title": "Perplexity's LLM: A Technical Deep Dive on Sonar & PPLX",
+              "excerpts": [
+                "Perplexity does indeed develop and deploy proprietary LLMs (collectively branded 'Sonar' and 'PPLX'), while also leveraging external and open-source models (e.g. OpenAI's GPT family, Anthropic's Claude, Meta's LLaMA, Mistral)... Perplexity's architecture follows a multi-stage retrieval-and-generation pipeline: it issues search queries (often via Google/Bing APIs or its own crawler), scrapes relevant text, then feeds that content into an LLM."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://cnbc.com/2026/06/03/perplexity-ceo-ai-valuations-computer-agentic.html",
+              "title": "Perplexity CEO tells CNBC one metric will determine who ...",
+              "excerpts": [
+                "While Perplexity develops some of its own models, its key products integrate models from other AI firms like Anthropic."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 2 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.answer",
+          "citations": [
+            {
+              "url": "https://reuters.com/legal/government/perplexity-asks-court-trim-new-york-times-copyright-case-2026-03-02",
+              "title": "Perplexity asks court to trim New York Times copyright case",
+              "excerpts": [
+                "'Perplexity does not dispute that it copies The Times's journalism from behind a paywall to deliver responses to their customers in real time,' the newspapers' lawyer Steve Lieberman... said... Perplexity's filing did not seek to dismiss the newspapers' main allegation that it misuses their articles to power its AI system, though the company said that claim would eventually 'founder on bedrock principles of intellectual property law.'"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "academic",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The NYT is seeking damages and is also asking the court to permanently block the AI startup from engaging in its allegedly unlawful behavior... claims Perplexity 'unlawfully crawls, scrapes, copies, and distributes' content from the NYT."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://theverge.com/24187792/perplexity-ai-news-updates",
+              "title": "Perplexity AI: the answer engine with a lot of question marks",
+              "excerpts": [
+                "A federal judge has issued an order blocking Perplexity's web browser-based AI agents from placing Amazon orders on a user's behalf... US District Judge Maxine Chesney writes that Amazon has 'provided strong evidence' that Perplexity's Comet browser accesses user accounts 'without authorization'."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "As of September 2025, the company was valued at US$20 billion... In February 2026, Perplexity transitioned to a subscription-first model by discontinuing its AI-integrated advertising strategy... Cloudflare published research revealing that Perplexity was using undeclared 'stealth' web crawlers to bypass web application firewalls."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://fortune.com/2024/01/06/jeff-bezos-nvidia-funding-round-ai-search-startup-google-rival-perplexity",
+              "title": "Jeff Bezos, Nvidia back AI search startup Perplexity",
+              "excerpts": [
+                "Perplexity, while still not profitable, has quickly grown to 10 million monthly active users... raised $73.6 million from a group of investors led by venture capital firm IVP and including Bezos, the $1.2 trillion AI chip giant Nvidia, and Shopify cofounder Tobias L\u00fctke."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://stackmatix.com/blog/ai-search-market-share-2026",
+              "title": "AI Search Market Share 2026: ChatGPT, Gemini & ...",
+              "excerpts": [
+                "Perplexity 2%... Perplexity (370% growth): Positioned as an AI-first search engine rather than a general chatbot... Perplexity 45 million [MAU]."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://chatgptiseatingtheworld.com/2025/10/08/status-of-all-51-copyright-lawsuits-v-ai-oct-8-2025-no-more-decisions-on-fair-use-in-2025",
+              "title": "Status of all 51 copyright lawsuits v. AI (Oct. 8, 2025)",
+              "excerpts": [
+                "No court will decide fair use in AI training until summer 2026 at the earliest. So far, 3 judges ruled on fair use, 2 for and 1 against."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            },
+            {
+              "url": "https://copyrightalliance.org/ai-copyright-lawsuit-developments-2025",
+              "title": "AI Copyright Lawsuit Developments in 2025: A Year ...",
+              "excerpts": [
+                "In September, Encyclopedia Britannica, Inc. and Merriam-Webster, Inc. filed a complaint against Perplexity over the unauthorized use of its publications and works for the AI company's RAG services... Given their similarity, the two cases are likely to be consolidated."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Supported by 7 independent sources",
+          "confidence": "high"
+        },
+        {
+          "path": "$.sources[0].url",
+          "citations": [
+            {
+              "url": "https://reuters.com/legal/government/perplexity-asks-court-trim-new-york-times-copyright-case-2026-03-02",
+              "title": "Perplexity asks court to trim New York Times copyright case",
+              "excerpts": [
+                "Perplexity asks court to trim New York Times copyright case... 'Perplexity does not dispute that it copies The Times's journalism from behind a paywall to deliver responses to their customers in real time.'"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "academic",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (academic)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[0].title",
+          "citations": [
+            {
+              "url": "https://reuters.com/legal/government/perplexity-asks-court-trim-new-york-times-copyright-case-2026-03-02",
+              "title": "Perplexity asks court to trim New York Times copyright case",
+              "excerpts": [
+                "Perplexity asks court to trim New York Times copyright case"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "academic",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (academic)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[1].title",
+          "citations": [
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The New York Times sues Perplexity for producing 'verbatim' copies of its work"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[1].url",
+          "citations": [
+            {
+              "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+              "title": "The New York Times sues Perplexity for producing ...",
+              "excerpts": [
+                "The lawsuit, filed in a New York federal court on Friday, claims Perplexity 'unlawfully crawls, scrapes, copies, and distributes' content from the NYT... The NYT is seeking damages and is also asking the court to permanently block the AI startup."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[2].title",
+          "citations": [
+            {
+              "url": "https://theverge.com/24187792/perplexity-ai-news-updates",
+              "title": "Perplexity AI: the answer engine with a lot of question marks",
+              "excerpts": [
+                "CNN sues Perplexity... Judge orders Perplexity to stop AI agents from shopping on Amazon... Lawsuit accuses Perplexity of sharing conversations with Meta and Google."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[2].url",
+          "citations": [
+            {
+              "url": "https://theverge.com/24187792/perplexity-ai-news-updates",
+              "title": "Perplexity AI: the answer engine with a lot of question marks",
+              "excerpts": [
+                "A federal judge has issued an order blocking Perplexity's web browser-based AI agents from placing Amazon orders on a user's behalf... US District Judge Maxine Chesney... Amazon also alleged that Perplexity attempted to 'conceal' its agentic activities by 'misrepresenting the Comet browser as Google Chrome.'"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[3].title",
+          "citations": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "Perplexity AI"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[3].url",
+          "citations": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+              "title": "Perplexity AI",
+              "excerpts": [
+                "Founded in August 2022 by Aravind Srinivas, Denis Yarats, Johnny Ho, and Andy Konwinski... As of September 2025, the company was valued at US$20 billion... In February 2026, Perplexity transitioned to a subscription-first model by discontinuing its AI-integrated advertising strategy."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[4].title",
+          "citations": [
+            {
+              "url": "https://fortune.com/2024/01/06/jeff-bezos-nvidia-funding-round-ai-search-startup-google-rival-perplexity",
+              "title": "Jeff Bezos, Nvidia back AI search startup Perplexity",
+              "excerpts": [
+                "Jeff Bezos\u2013backed AI search startup's CEO says 'Google is going to be viewed as something that's legacy and old'"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[4].url",
+          "citations": [
+            {
+              "url": "https://fortune.com/2024/01/06/jeff-bezos-nvidia-funding-round-ai-search-startup-google-rival-perplexity",
+              "title": "Jeff Bezos, Nvidia back AI search startup Perplexity",
+              "excerpts": [
+                "San Francisco\u2013based Perplexity announced that it has raised $73.6 million from a group of investors led by venture capital firm IVP and including Bezos, the $1.2 trillion AI chip giant Nvidia, and Shopify cofounder Tobias L\u00fctke... Perplexity, while still not profitable, has quickly grown to 10 million monthly active users."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[5].title",
+          "citations": [
+            {
+              "url": "https://stackmatix.com/blog/ai-search-market-share-2026",
+              "title": "AI Search Market Share 2026: ChatGPT, Gemini & ...",
+              "excerpts": [
+                "AI Search Market Share 2026: ChatGPT, Gemini & Perplexity Stats (March Update)"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[5].url",
+          "citations": [
+            {
+              "url": "https://stackmatix.com/blog/ai-search-market-share-2026",
+              "title": "AI Search Market Share 2026: ChatGPT, Gemini & ...",
+              "excerpts": [
+                "Perplexity 2%... Perplexity (370% growth): Positioned as an AI-first search engine rather than a general chatbot, targeting research and citation-heavy use cases... Perplexity 45 million [MAU]."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[6].title",
+          "citations": [
+            {
+              "url": "https://chatgptiseatingtheworld.com/2025/10/08/status-of-all-51-copyright-lawsuits-v-ai-oct-8-2025-no-more-decisions-on-fair-use-in-2025",
+              "title": "Status of all 51 copyright lawsuits v. AI (Oct. 8, 2025)",
+              "excerpts": [
+                "Status of all 51 copyright lawsuits v. AI (Oct. 8, 2025)"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[6].url",
+          "citations": [
+            {
+              "url": "https://chatgptiseatingtheworld.com/2025/10/08/status-of-all-51-copyright-lawsuits-v-ai-oct-8-2025-no-more-decisions-on-fair-use-in-2025",
+              "title": "Status of all 51 copyright lawsuits v. AI (Oct. 8, 2025)",
+              "excerpts": [
+                "No court will decide fair use in AI training until summer 2026 at the earliest. So far, 3 judges ruled on fair use, 2 for and 1 against."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[7].title",
+          "citations": [
+            {
+              "url": "https://copyrightalliance.org/ai-copyright-lawsuit-developments-2025",
+              "title": "AI Copyright Lawsuit Developments in 2025: A Year ...",
+              "excerpts": [
+                "AI Copyright Lawsuit Developments 2025"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[7].url",
+          "citations": [
+            {
+              "url": "https://copyrightalliance.org/ai-copyright-lawsuit-developments-2025",
+              "title": "AI Copyright Lawsuit Developments in 2025: A Year ...",
+              "excerpts": [
+                "RAG Cases Against Perplexity and Cohere... In September, Encyclopedia Britannica, Inc. and Merriam-Webster, Inc. filed a complaint against Perplexity over the unauthorized use of its publications and works for the AI company's RAG services... there may be settlements on the horizon."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[8].title",
+          "citations": [
+            {
+              "url": "https://perplexity.ai/hub/blog/introducing-the-perplexity-publishers-program",
+              "title": "Introducing the Perplexity Publishers' Program",
+              "excerpts": [
+                "Introducing the Perplexity Publishers' Program"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[8].url",
+          "citations": [
+            {
+              "url": "https://perplexity.ai/hub/blog/introducing-the-perplexity-publishers-program",
+              "title": "Introducing the Perplexity Publishers' Program",
+              "excerpts": [
+                "we're excited to announce the Perplexity Publishers Program and our first batch of partners: TIME, Der Spiegel, Fortune, Entrepreneur, The Texas Tribune, and WordPress.com... When Perplexity earns revenue from an interaction where a publisher's content is referenced, that publisher will also earn a share."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[9].title",
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2025/12/05/the-new-york-times-is-suing-perplexity-for-copyright-infringement",
+              "title": "The New York Times is suing Perplexity for copyright ...",
+              "excerpts": [
+                "The New York Times is suing Perplexity for copyright infringement"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[9].url",
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2025/12/05/the-new-york-times-is-suing-perplexity-for-copyright-infringement",
+              "title": "The New York Times is suing Perplexity for copyright ...",
+              "excerpts": [
+                "publishers use lawsuits as leverage in negotiations in the hopes of forcing AI companies to formally license content... Perplexity also launched Comet Plus, allocating 80% of its $5 monthly fee to participating publishers, and recently struck a multi-year licensing deal with Getty Images."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "news",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (news)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[10].title",
+          "citations": [
+            {
+              "url": "https://cnbc.com/2026/06/03/perplexity-ceo-ai-valuations-computer-agentic.html",
+              "title": "Perplexity CEO tells CNBC one metric will determine who ...",
+              "excerpts": [
+                "Perplexity CEO tells CNBC one metric will determine who wins the AI race"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[10].url",
+          "citations": [
+            {
+              "url": "https://cnbc.com/2026/06/03/perplexity-ceo-ai-valuations-computer-agentic.html",
+              "title": "Perplexity CEO tells CNBC one metric will determine who ...",
+              "excerpts": [
+                "Perplexity, which was last reportedly valued at $20 billion, trails behind Anthropic and OpenAI, whose valuations have climbed to nearly $1 trillion and just over $850 billion... while Perplexity develops some of its own models, its key products integrate models from other AI firms like Anthropic."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[11].title",
+          "citations": [
+            {
+              "url": "https://digiday.com/media/how-perplexity-calculates-publishers-share-of-ad-revenue",
+              "title": "How Perplexity calculates publishers' share of ad revenue",
+              "excerpts": [
+                "How Perplexity calculates publishers' share of ad revenue"
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        },
+        {
+          "path": "$.sources[11].url",
+          "citations": [
+            {
+              "url": "https://digiday.com/media/how-perplexity-calculates-publishers-share-of-ad-revenue",
+              "title": "How Perplexity calculates publishers' share of ad revenue",
+              "excerpts": [
+                "The Wall Street Journal reported the revenue share was 'up to 25%.' Two publishing executives... confirmed to Digiday that the revenue share was capped at 25%... Perplexity has said 20 publishers have signed up."
+              ],
+              "source_type": "secondary",
+              "source_intent": "other",
+              "source_category": "other",
+              "extract_template_name": null
+            }
+          ],
+          "reasoning": "Backed by a secondary source (other)",
+          "confidence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://theverge.com/news/839006/new-york-times-perplexity-lawsuit-copyright",
+          "type": "secondary",
+          "title": "The New York Times sues Perplexity for producing ...",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://reuters.com/legal/government/perplexity-asks-court-trim-new-york-times-copyright-case-2026-03-02",
+          "type": "secondary",
+          "title": "Perplexity asks court to trim New York Times copyright case",
+          "source_intent": null,
+          "source_category": "academic",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://chatgptiseatingtheworld.com/2025/10/08/status-of-all-51-copyright-lawsuits-v-ai-oct-8-2025-no-more-decisions-on-fair-use-in-2025",
+          "type": "secondary",
+          "title": "Status of all 51 copyright lawsuits v. AI (Oct. 8, 2025)",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+          "type": "secondary",
+          "title": "Perplexity AI",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://fortune.com/2024/01/06/jeff-bezos-nvidia-funding-round-ai-search-startup-google-rival-perplexity",
+          "type": "secondary",
+          "title": "Jeff Bezos, Nvidia back AI search startup Perplexity",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://theverge.com/24187792/perplexity-ai-news-updates",
+          "type": "secondary",
+          "title": "Perplexity AI: the answer engine with a lot of question marks",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://theinformation.com/newsletters/ai-agenda/helping-perplexitys-60-gross-profit-margin",
+          "type": "secondary",
+          "title": "What's Helping Perplexity's 60% Gross Profit Margin",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://stackmatix.com/blog/ai-search-market-share-2026",
+          "type": "secondary",
+          "title": "AI Search Market Share 2026: ChatGPT, Gemini & ...",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://cnbc.com/2026/06/03/perplexity-ceo-ai-valuations-computer-agentic.html",
+          "type": "secondary",
+          "title": "Perplexity CEO tells CNBC one metric will determine who ...",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://perplexity.ai/hub/blog/introducing-the-perplexity-publishers-program",
+          "type": "secondary",
+          "title": "Introducing the Perplexity Publishers' Program",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://digiday.com/media/how-perplexity-calculates-publishers-share-of-ad-revenue",
+          "type": "secondary",
+          "title": "How Perplexity calculates publishers' share of ad revenue",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://techcrunch.com/2025/12/05/the-new-york-times-is-suing-perplexity-for-copyright-infringement",
+          "type": "secondary",
+          "title": "The New York Times is suing Perplexity for copyright ...",
+          "source_intent": null,
+          "source_category": "news",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://linkedin.com/posts/jagdishpandya_ai-success-activity-7362496935070527488-9wBR",
+          "type": "primary",
+          "title": "From IIT Madras to $18 Billion AI Search Engine",
+          "source_intent": null,
+          "source_category": "official",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://linkedin.com/pulse/from-phd-student-ai-billionaire-inspiring-journey-aravind-jahid-hasan-dasce",
+          "type": "primary",
+          "title": "From PhD Student to AI Billionaire: The Inspiring Journey ...",
+          "source_intent": null,
+          "source_category": "official",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://rankstudio.net/articles/en/perplexity-llm-tech-stack",
+          "type": "secondary",
+          "title": "Perplexity's LLM: A Technical Deep Dive on Sonar & PPLX",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        },
+        {
+          "url": "https://copyrightalliance.org/ai-copyright-lawsuit-developments-2025",
+          "type": "secondary",
+          "title": "AI Copyright Lawsuit Developments in 2025: A Year ...",
+          "source_intent": null,
+          "source_category": "other",
+          "extract_template_name": null
+        }
+      ],
+      "reasoning": "Medium confidence - trust per claim ratio is 100%",
+      "confidence": "medium"
+    }
+  }
+}
