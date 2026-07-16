@@ -85,11 +85,19 @@ def wait_for_result(run_id, on_tick=None, poll_seconds=20, timeout_seconds=2400)
             raise RunFailed(f"run {run_id} timed out after {elapsed}s")
         time.sleep(poll_seconds)
 
+    # the result endpoint can still 408 briefly after the run turns terminal
     result = fetch_result(run_id)
+    for _ in range(5):
+        if result is not None:
+            break
+        time.sleep(5)
+        result = fetch_result(run_id)
     if run["status"] != "completed":
         msg = (result or {}).get("output", {}).get("content") or \
               (run.get("error") or {}).get("message") or run["status"]
         raise RunFailed(f"run {run['status']}: {msg}", payload=result)
+    if result is None:
+        raise RunFailed(f"run {run_id} completed but the result never became available")
     return result
 
 
