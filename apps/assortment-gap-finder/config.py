@@ -44,6 +44,8 @@ DBX_HOST = os.getenv("DATABRICKS_HOST", "").replace("https://", "")
 DBX_HTTP_PATH = os.getenv("DATABRICKS_HTTP_PATH", "")
 DBX_TOKEN = os.getenv("DATABRICKS_TOKEN", "")
 DBX_CATALOG = os.getenv("DATABRICKS_CATALOG", "main")
+if not __import__("re").match(r"^[A-Za-z0-9_]+$", DBX_CATALOG):
+    raise ValueError(f"DATABRICKS_CATALOG must be a plain identifier, got: {DBX_CATALOG!r}")
 DBX_SCHEMA = f"{DBX_CATALOG}.assortment_gap_finder"
 
 

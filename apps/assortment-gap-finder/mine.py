@@ -77,9 +77,7 @@ def main():
                             "quote_source_url": t.get("source_url"), "run_id": run_id,
                             "observed_at": r.get("observed_at")})
         print(f"batch {i // PER_RUN}: {len(rows)} SKUs in {int(time.time() - t0)}s")
-    with delta.connect() as conn, conn.cursor() as cur:
-        cur.execute(f"DELETE FROM {C.DBX_SCHEMA}.review_themes")
-    delta.insert_rows("review_themes", theme_rows)
+    delta.replace_rows("review_themes", theme_rows)
     print(f"loaded {len(theme_rows)} theme rows")
 
 

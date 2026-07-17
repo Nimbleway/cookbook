@@ -56,6 +56,24 @@ def insert_rows(table, rows):
             [[r[c] for c in cols] for r in rows])
 
 
+def replace_rows(table, rows):
+    """Atomic refresh: stage into a temp table, then one INSERT OVERWRITE.
+    A crash mid-load leaves the live table untouched."""
+    with connect() as conn, conn.cursor() as cur:
+        cur.execute(f"CREATE TABLE IF NOT EXISTS {C.DBX_SCHEMA}.{table}_staging LIKE {C.DBX_SCHEMA}.{table}")
+        cur.execute(f"DELETE FROM {C.DBX_SCHEMA}.{table}_staging")
+        if rows:
+            cols = list(rows[0].keys())
+            ph = ", ".join(["?"] * len(cols))
+            cur.executemany(
+                f"INSERT INTO {C.DBX_SCHEMA}.{table}_staging ({', '.join(cols)}) VALUES ({ph})",
+                [[r[c] for c in cols] for r in rows])
+            cur.execute(f"INSERT OVERWRITE {C.DBX_SCHEMA}.{table} "
+                        f"SELECT {', '.join(cols)} FROM {C.DBX_SCHEMA}.{table}_staging")
+        else:
+            cur.execute(f"DELETE FROM {C.DBX_SCHEMA}.{table}")
+
+
 def query(sql_text, params=None):
     with connect() as conn, conn.cursor() as cur:
         cur.execute(sql_text, params or [])

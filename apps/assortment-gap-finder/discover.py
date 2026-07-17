@@ -97,11 +97,8 @@ def load_to_delta():
         "product_url": r.get("product_url"), "source_url": r.get("source_url"),
         "observed_at": r.get("observed_at"), "chunk_id": r["_chunk"], "run_id": r["_run"],
     } for r in best.values()]
-    with delta.connect() as conn, conn.cursor() as cur:
-        cur.execute(f"DELETE FROM {C.DBX_SCHEMA}.catalog")
-        cur.execute(f"DELETE FROM {C.DBX_SCHEMA}.discovery_runs")
-    delta.insert_rows("catalog", catalog)
-    delta.insert_rows("discovery_runs", run_meta)
+    delta.replace_rows("catalog", catalog)
+    delta.replace_rows("discovery_runs", run_meta)
     print(f"catalog: {len(catalog)} distinct SKUs from "
           f"{sum(m['item_count'] for m in run_meta)} raw rows across {len(run_meta)} chunks")
 

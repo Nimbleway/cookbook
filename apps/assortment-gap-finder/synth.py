@@ -69,11 +69,18 @@ def file_linear_ticket(gap_statement: str, verdict: str, evidence_summary: str,
                        demand_evidence: str, verification_json: str) -> str:
     """File a verified gap as a Linear ticket. verification_json is the exact string
     returned by verify_gap. Only call for verdicts 'confirmed' or 'partial'."""
+    if str(verdict).lower() not in ("confirmed", "partial"):
+        return f"refused: verdict '{verdict}' does not justify a ticket - only confirmed or partial gaps are filed"
+    gap_id = hashlib.md5(gap_statement.encode()).hexdigest()[:12]
+    _, existing = delta.query(
+        f"SELECT linear_issue_id, linear_issue_url FROM {C.DBX_SCHEMA}.gaps "
+        f"WHERE gap_id = ? AND linear_issue_id IS NOT NULL", [gap_id])
+    if existing:
+        return f"already filed as {existing[0][0]}: {existing[0][1]} (not filing a duplicate)"
     v = json.loads(verification_json)
     ident, url = linear_client.file_gap_ticket(
         gap_statement, verdict, evidence_summary, demand_evidence,
         v.get("closest_matches"), v.get("_citations"))
-    gap_id = hashlib.md5(gap_statement.encode()).hexdigest()[:12]
     delta.insert_rows("gaps", [{
         "gap_id": gap_id, "gap_statement": gap_statement, "price_band": "",
         "subcategory": "", "demand_evidence": demand_evidence, "verdict": verdict,

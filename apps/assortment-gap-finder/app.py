@@ -119,19 +119,25 @@ def page_teach():
     rule = st.text_area("New merchandising rule",
                         placeholder="Treat sub-$100 espresso as a distinct segment; never propose gaps without a rating threshold.")
     if st.button("Teach", type="primary") and rule:
-        agent_id = C.agent_id("whitespace_verifier")
-        H = {"Authorization": f"Bearer {C.NIMBLE_API_KEY}"}
-        cur_agent = requests.get(f"{C.BASE_URL}/task-agents/{agent_id}", headers=H, timeout=60).json()
-        updated = cur_agent["domain_expertise"].rstrip() + f"\n- {rule.strip()}"
-        r = requests.patch(f"{C.BASE_URL}/task-agents/{agent_id}",
-                           headers={**H, "Content-Type": "application/json-patch+json"},
-                           data=json.dumps([{"op": "replace", "path": "/domain_expertise",
-                                             "value": updated}]), timeout=60)
-        r.raise_for_status()
-        from datetime import datetime, timezone
-        delta.insert_rows("merch_rules", [{"rule": rule.strip(),
-                                           "taught_at": datetime.now(timezone.utc)}])
-        st.success("The analyst learned it — the rule is now part of the verifier agent.")
+        import logging
+        try:
+            agent_id = C.agent_id("whitespace_verifier")
+            H = {"Authorization": f"Bearer {C.NIMBLE_API_KEY}"}
+            resp = requests.get(f"{C.BASE_URL}/task-agents/{agent_id}", headers=H, timeout=60)
+            resp.raise_for_status()
+            updated = resp.json()["domain_expertise"].rstrip() + f"\n- {rule.strip()}"
+            r = requests.patch(f"{C.BASE_URL}/task-agents/{agent_id}",
+                               headers={**H, "Content-Type": "application/json-patch+json"},
+                               data=json.dumps([{"op": "replace", "path": "/domain_expertise",
+                                                 "value": updated}]), timeout=60)
+            r.raise_for_status()
+            from datetime import datetime, timezone
+            delta.insert_rows("merch_rules", [{"rule": rule.strip(),
+                                               "taught_at": datetime.now(timezone.utc)}])
+            st.success("The analyst learned it — the rule is now part of the verifier agent.")
+        except Exception as e:
+            logging.exception("teach failed")
+            st.error(f"Teaching failed ({type(e).__name__}) - the agent was not updated; see app logs.")
     rules = q(f"SELECT rule, taught_at FROM {C.DBX_SCHEMA}.merch_rules ORDER BY taught_at DESC")
     if not rules.empty:
         st.markdown("#### What the analyst has learned")
