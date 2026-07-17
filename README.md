@@ -43,6 +43,7 @@ These recipes support diverse industries and technical goals:
 
 - [`langchain/deal_monitor`](langchain/deal_monitor/) — monitor a live web query with Nimble Search and send Slack alerts when new results appear.
 - [`streamlit/consumer_sentiment_monitor`](streamlit/consumer_sentiment_monitor/) — track product-launch sentiment from live web sources and review it in a Streamlit dashboard.
+- [`apps/competitor-battlecard-generator`](apps/competitor-battlecard-generator/): turn two company URLs into a source-backed competitive battlecard built from 12 targeted Nimble Search queries.
 
 ## Contributing
 
