@@ -47,16 +47,20 @@ def _sqlalchemy_engine(db):
     from cryptography.hazmat.primitives import serialization
     from snowflake.sqlalchemy import URL
     from sqlalchemy import create_engine
-    key_path = Path(__file__).parent / os.environ["SNOWFLAKE_PRIVATE_KEY_PATH"]
-    key = serialization.load_pem_private_key(key_path.read_bytes(), password=None)
-    pkb = key.private_bytes(encoding=serialization.Encoding.DER,
-                            format=serialization.PrivateFormat.PKCS8,
-                            encryption_algorithm=serialization.NoEncryption())
-    return create_engine(URL(
+    url_kwargs = dict(
         account=os.environ["SNOWFLAKE_ACCOUNT"], user=os.environ["SNOWFLAKE_USER"],
         database=db, schema="LEDGER",
         warehouse=os.environ.get("SNOWFLAKE_WAREHOUSE"), role=os.environ.get("SNOWFLAKE_ROLE"),
-    ), connect_args={"private_key": pkb})
+    )
+    key_path_env = os.environ.get("SNOWFLAKE_PRIVATE_KEY_PATH")
+    if key_path_env:  # key-pair auth
+        key_path = Path(__file__).parent / key_path_env
+        key = serialization.load_pem_private_key(key_path.read_bytes(), password=None)
+        pkb = key.private_bytes(encoding=serialization.Encoding.DER,
+                                format=serialization.PrivateFormat.PKCS8,
+                                encryption_algorithm=serialization.NoEncryption())
+        return create_engine(URL(**url_kwargs), connect_args={"private_key": pkb})
+    return create_engine(URL(**url_kwargs, password=os.environ["SNOWFLAKE_PASSWORD"]))
 
 
 TABLE_INFO = {

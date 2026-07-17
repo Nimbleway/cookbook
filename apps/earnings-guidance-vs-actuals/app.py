@@ -137,10 +137,13 @@ def page_company():
         if not webhook:
             st.error("SLACK_WEBHOOK_URL is not set; configure .env to enable Slack posting.")
         else:
-            cur = live_cursor()
-            rows = slack_post.scorecard(cur, DB, ticker)
-            slack_post.post(ticker, rows, webhook)
-            st.success("Posted.")
+            try:
+                cur = live_cursor()
+                rows = slack_post.scorecard(cur, DB, ticker)
+                slack_post.post(ticker, rows, webhook)
+                st.success("Posted.")
+            except Exception as e:
+                st.error(f"Slack post failed: {e}")
 
 
 def page_ask():
