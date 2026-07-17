@@ -1,0 +1,833 @@
+{
+ "run": {
+  "id": "task_run_395462044a1842e394b5a1074e541f1e",
+  "interaction_id": "task_run_395462044a1842e394b5a1074e541f1e",
+  "status": "completed",
+  "is_active": false,
+  "effort": "max",
+  "prompt": "Verify: No drip coffee maker priced $150-400 with a fully removable/dishwasher-safe brew basket and thermal (not glass) carafe rated 4.3+ exists on amazon.com",
+  "created_at": "2026-07-17T12:55:55.075853Z",
+  "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+  "web_search_agent_id": "wsa_9a41bd9dc4454dc5b0ee1e443a719723",
+  "started_at": "2026-07-17T12:55:55.389133Z",
+  "completed_at": "2026-07-17T13:01:33.395110Z",
+  "error": null
+ },
+ "output": {
+  "type": "json",
+  "content": {
+   "verdict": "refuted",
+   "observed_at": "2026-07-17",
+   "gap_statement": "No drip coffee maker priced $150-400 with a fully removable/dishwasher-safe brew basket and thermal (not glass) carafe rated 4.3+ exists on amazon.com",
+   "closest_matches": [
+    {
+     "brand": "Zojirushi",
+     "rating": "4.3 out of 5 stars (2,228)",
+     "price_usd": "$224.95",
+     "product_url": "https://www.amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+     "product_name": "Zojirushi EC-YTC100XB 10-Cup Coffee Maker (Stainless Steel/Black)",
+     "why_close_but_not_matching": "This is a MATCHING counterexample, not a near-miss: it satisfies every criterion in the gap spec. Drip coffee maker; price $224.95 (within $150-400); vacuum-insulated stainless steel thermal carafe (not glass); 4.3 out of 5 stars (>=4.3); and a 'Reusable and washable, permanent stainless mesh coffee filter' (removable/washable brew basket). Currently In Stock, sold and shipped by Amazon.com. This product refutes the gap hypothesis."
+    },
+    {
+     "brand": "Bunn",
+     "rating": "4.4 out of 5 stars (7,719)",
+     "price_usd": "$179.49",
+     "product_url": "https://www.amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+     "product_name": "BUNN 55200 CSB3T Speed Brew Platinum Thermal Coffee Maker Stainless Steel, 10-Cup, Black",
+     "why_close_but_not_matching": "This is a MATCHING counterexample, not a near-miss: it satisfies every criterion. Drip coffee maker; price $179.49 (within $150-400); 'VACUUM-INSULATED, double walled thermal carafe' (thermal, not glass); 4.4 out of 5 stars (>=4.3); and a removable brew funnel/basket plus removable water tank (Special Feature: Removable Tank, Thermal). Currently In Stock, sold and shipped by Amazon.com. This product refutes the gap hypothesis."
+    },
+    {
+     "brand": "Ninja (SharkNinja)",
+     "rating": "4.5 out of 5 stars (8,524)",
+     "price_usd": "$229.99",
+     "product_url": "https://www.amazon.com/Ninja-CP307-Brewed-System-Thermal/dp/B07FX73Y7H",
+     "product_name": "Shark Ninja CP307 Hot and Cold Brewed System W/Thermal Carafe Coffee Maker, Black",
+     "why_close_but_not_matching": "Matches all hard criteria and In Stock (Amazon's Choice): drip-capable coffee maker, $229.99 (within $150-400), 4.5 out of 5 stars (>=4.3), and includes a thermal carafe. Minor caveat vs. a 'pure' drip maker: it is a multi-beverage Hot & Cold Brewed System (tea + coffee) with a removable brew basket, so it is a borderline rather than textbook drip-only unit; nonetheless it brews drip coffee into a thermal carafe and counts as a counterexample."
+    },
+    {
+     "brand": "Wolf Gourmet",
+     "rating": "4.4 out of 5 stars (644)",
+     "price_usd": "$599.95 (list); shown $179.54-$223.00 in variants",
+     "product_url": "https://www.amazon.com/Wolf-Gourmet-Programmable-Coffee-System/dp/B07HCMRJZD",
+     "product_name": "WOLF GOURMET Programmable Coffee Maker System with 10 Cup Thermal Carafe, Built-In Grounds Scale, Removable Reservoir, Red Knob, Stainless Steel (WGCM100S)",
+     "why_close_but_not_matching": "Spec-wise the closest apparent match \u2014 stainless steel thermal carafe, removable front-load brew basket, removable reservoir, 4.4 stars. But it is DISQUALIFIED as a counterexample on two grounds: (1) the listing is 'Currently unavailable. We don't know when or if this item will be back in stock.' (not in stock), and (2) the featured list price is $599.95, above the $400 ceiling (the $179.54-$223 variant figures are out-of-stock/other offers). So it does NOT refute the gap; the gap is refuted by Zojirushi/BUNN instead."
+    },
+    {
+     "brand": "Bonavita",
+     "rating": "3.9 out of 5 stars (10,387)",
+     "price_usd": "$189.95",
+     "product_url": "https://www.amazon.com/Bonavita-Connoisseur-One-Touch-Featuring-BV1901TS/dp/B076PFMRGX",
+     "product_name": "Bonavita 8 Cup Drip Coffee Maker Machine, One-Touch Pour Over, Auto Pause Brewing with Stainless Steel Double Wall Thermal Carafe, SCA Certified, Dishwasher Safe, BV1901TS",
+     "why_close_but_not_matching": "Fails the rating threshold only: price $189.95 (in band), stainless steel double-wall thermal carafe, 'Dishwasher Safe' (removable/dishwasher-safe brew basket per title), and a pure drip maker. But its rating is 3.9 out of 5 stars, below the 4.3 minimum, so it is not a counterexample."
+    }
+   ],
+   "evidence_summary": "REFUTED \u2014 the gap is disproven by in-stock products on Amazon's live shelf. I searched Amazon's catalog via 'drip coffee maker thermal carafe' queries plus targeted candidate product pages (Bonavita, OXO, Technivorm, Ninja, Wolf Gourmet, BUNN, Zojirushi, Fellow Aiden) and verified each candidate's live price, rating, carafe type, brew-basket construction, and stock status from the product pages themselves (not general knowledge).\n\nTwo products satisfy EVERY criterion simultaneously and are currently In Stock, sold and shipped by Amazon.com: (1) Zojirushi EC-YTC100XB \u2014 $224.95, 4.3 out of 5 stars (2,228 reviews), vacuum-insulated stainless steel thermal carafe, 'Reusable and washable, permanent stainless mesh coffee filter' (removable/washable brew basket), In Stock; and (2) BUNN 55200 CSB3T Speed Brew Platinum Thermal \u2014 $179.49, 4.4 out of 5 stars (7,719 reviews), vacuum-insulated double-wall thermal carafe, removable brew funnel/basket plus removable tank, In Stock. A third, the Ninja CP307 Hot and Cold Brewed System ($229.99, 4.5 out of 5 stars (8,524), thermal carafe, In Stock, Amazon's Choice) also qualifies, though it is a multi-beverage (tea+coffee) system rather than a pure drip-only maker.\n\nThis is a definitive counterexample finding, NOT 'not found after thorough search' nor 'confirmed absent' \u2014 the products were found on Amazon's live product pages with explicit 'In Stock' status and ship-by dates in July 2026. The closest apparent match that initially looked like a counterexample, the Wolf Gourmet Programmable Coffee System (WGCM100S, 4.4 stars, stainless steel thermal carafe, removable front-load brew basket), is disqualified because its listing reads 'Currently unavailable. We don't know when or if this item will be back in stock' and its featured price is $599.95 (above the $400 ceiling). Other near-misses fail on the rating threshold: Bonavita Connoisseur BV1901TS ($189.95, thermal, dishwasher-safe, but 3.9 stars), Bonavita Enthusiast 8-Cup ($149.99, 4.1 stars, just below the $150 band), and OXO Brew 8-Cup ($219.95, thermal, but 4.0 stars). Because at least one (here, two) in-stock product meets the full spec, the gap hypothesis is refuted.",
+   "_run_id": "task_run_395462044a1842e394b5a1074e541f1e",
+   "_interaction_id": "task_run_395462044a1842e394b5a1074e541f1e",
+   "_citations": [
+    "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+    "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+    "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+    "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+    "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+    "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV"
+   ]
+  },
+  "trust": {
+   "claims": [
+    {
+     "path": "$.gap_statement",
+     "citations": [
+      {
+       "url": "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "title": "https://www.amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "excerpts": [
+        "Zojirushi EC-YTC100XB 10-Cup Coffee Maker... 4.3 out of 5 stars (2,228)... $224.95... In Stock... vacuum insulated... stainless steel carafe... Reusable and washable, permanent stainless mesh coffee filter"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      },
+      {
+       "url": "https://amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "title": "https://www.amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "excerpts": [
+        "BUNN 55200 CSB3T Speed Brew Platinum Thermal Coffee Maker... 4.4 out of 5 stars (7,719)... $179.49... In Stock... VACUUM-INSULATED, double walled thermal carafe... funnel... Removable Tank"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.verdict",
+     "citations": [
+      {
+       "url": "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "title": "https://www.amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "excerpts": [
+        "Zojirushi EC-YTC100XB 10-Cup Coffee Maker... 4.3 out of 5 stars (2,228)... $224.95... In Stock... vacuum insulated... stainless steel carafe... Reusable and washable, permanent stainless mesh coffee filter"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      },
+      {
+       "url": "https://amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "title": "https://www.amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "excerpts": [
+        "BUNN 55200 CSB3T Speed Brew Platinum Thermal... 4.4 out of 5 stars (7,719)... $179.49... In Stock... VACUUM-INSULATED, double walled thermal carafe... Removable Tank"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.observed_at",
+     "citations": [
+      {
+       "url": "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "title": "https://www.amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "excerpts": [
+        "retrieved: 2026-07-17"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      },
+      {
+       "url": "https://amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "title": "https://www.amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "excerpts": [
+        "In Stock... Get it as soon as Wednesday, Jul 22"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[0].product_name",
+     "citations": [
+      {
+       "url": "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "title": "https://www.amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "excerpts": [
+        "# Zojirushi EC-YTC100XB 10-Cup Coffee Maker (Stainless Steel/Black)"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[0].brand",
+     "citations": [
+      {
+       "url": "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "title": "https://www.amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "excerpts": [
+        "| Brand | Zojirushi |"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[0].price_usd",
+     "citations": [
+      {
+       "url": "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "title": "https://www.amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "excerpts": [
+        "In Stock... $$224.95 () Includes selected options... Ships from: Amazon.com... Sold by: Amazon.com"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[0].rating",
+     "citations": [
+      {
+       "url": "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "title": "https://www.amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "excerpts": [
+        "_4.3 out of 5 stars_ [(2,228)]"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[0].product_url",
+     "citations": [
+      {
+       "url": "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "title": "https://www.amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "excerpts": [
+        "https://www.amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[0].why_close_but_not_matching",
+     "citations": [
+      {
+       "url": "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "title": "https://www.amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "excerpts": [
+        "FEATURES: Brewing fresh, flavorful Coffee is easy with the fresh brew plus thermal carafe... VACUUM INSULATED: The stainless steel carafe is vacuum insulated keeps coffee hot for hours... INCLUDES: Reusable and washable, permanent stainless mesh coffee filter... The removable water tank makes filling easy and is fully washable"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[1].product_name",
+     "citations": [
+      {
+       "url": "https://amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "title": "https://www.amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "excerpts": [
+        "# BUNN 55200 CSB3T Speed Brew Platinum Thermal Coffee Maker Stainless Steel, 10-Cup, Black"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[1].brand",
+     "citations": [
+      {
+       "url": "https://amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "title": "https://www.amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "excerpts": [
+        "| Brand | Bunn |"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[1].price_usd",
+     "citations": [
+      {
+       "url": "https://amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "title": "https://www.amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "excerpts": [
+        "New Condition Price: $179.49... In Stock... Ships from and sold by Amazon.com."
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[1].rating",
+     "citations": [
+      {
+       "url": "https://amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "title": "https://www.amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "excerpts": [
+        "_4.4 out of 5 stars_ [(7,719)]"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[1].product_url",
+     "citations": [
+      {
+       "url": "https://amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "title": "https://www.amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "excerpts": [
+        "https://www.amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[1].why_close_but_not_matching",
+     "citations": [
+      {
+       "url": "https://amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "title": "https://www.amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "excerpts": [
+        "VACUUM-INSULATED, double walled thermal carafe maintains ideal serving temperature for 2+ hours... TALLER FUNNEL - Our funnel is engineered to accommodate BUNN filters... | Special Feature | Removable Tank, Thermal |"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[2].brand",
+     "citations": [
+      {
+       "url": "https://amazon.com/Ninja-CP307-Brewed-System-Thermal/dp/B07FX73Y7H",
+       "title": "Shark Ninja CP307 Hot and Cold Brewed System W/ ...",
+       "excerpts": [
+        "[Visit the Ninja Store]... # Shark Ninja CP307 Hot and Cold Brewed System W/Thermal Carafe Coffee Maker, Black"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[2].price_usd",
+     "citations": [
+      {
+       "url": "https://amazon.com/Ninja-CP307-Brewed-System-Thermal/dp/B07FX73Y7H",
+       "title": "Shark Ninja CP307 Hot and Cold Brewed System W/ ...",
+       "excerpts": [
+        "$229.99... In Stock... New & Used (5) from $162.07"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[2].product_name",
+     "citations": [
+      {
+       "url": "https://amazon.com/Ninja-CP307-Brewed-System-Thermal/dp/B07FX73Y7H",
+       "title": "Shark Ninja CP307 Hot and Cold Brewed System W/ ...",
+       "excerpts": [
+        "# Shark Ninja CP307 Hot and Cold Brewed System W/Thermal Carafe Coffee Maker, Black"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[2].product_url",
+     "citations": [
+      {
+       "url": "https://amazon.com/Ninja-CP307-Brewed-System-Thermal/dp/B07FX73Y7H",
+       "title": "Shark Ninja CP307 Hot and Cold Brewed System W/ ...",
+       "excerpts": [
+        "https://www.amazon.com/Ninja-CP307-Brewed-System-Thermal/dp/B07FX73Y7H"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[2].rating",
+     "citations": [
+      {
+       "url": "https://amazon.com/Ninja-CP307-Brewed-System-Thermal/dp/B07FX73Y7H",
+       "title": "Shark Ninja CP307 Hot and Cold Brewed System W/ ...",
+       "excerpts": [
+        "_4.5 out of 5 stars_ [(8,524)]... Amazon's Choice"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[2].why_close_but_not_matching",
+     "citations": [
+      {
+       "url": "https://amazon.com/Ninja-CP307-Brewed-System-Thermal/dp/B07FX73Y7H",
+       "title": "Shark Ninja CP307 Hot and Cold Brewed System W/ ...",
+       "excerpts": [
+        "Shark Ninja CP307 Hot and Cold Brewed System W/Thermal Carafe Coffee Maker... 4.5 out of 5 stars (8,524)... $229.99... In Stock"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[3].brand",
+     "citations": [
+      {
+       "url": "https://amazon.com/Wolf-Gourmet-Programmable-Coffee-System/dp/B07HCMRJZD",
+       "title": "WOLF GOURMET Programmable Coffee Maker System ...",
+       "excerpts": [
+        "[Visit the WOLF GOURMET Store]... # WOLF GOURMET Programmable Coffee Maker System with 10 Cup Thermal Carafe... (WGCM100S)"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[3].price_usd",
+     "citations": [
+      {
+       "url": "https://amazon.com/Wolf-Gourmet-Programmable-Coffee-System/dp/B07HCMRJZD",
+       "title": "WOLF GOURMET Programmable Coffee Maker System ...",
+       "excerpts": [
+        "$599.95... $179.54... $223.00... Currently unavailable. We don't know when or if this item will be back in stock."
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[3].product_name",
+     "citations": [
+      {
+       "url": "https://amazon.com/Wolf-Gourmet-Programmable-Coffee-System/dp/B07HCMRJZD",
+       "title": "WOLF GOURMET Programmable Coffee Maker System ...",
+       "excerpts": [
+        "# WOLF GOURMET Programmable Coffee Maker System with 10 Cup Thermal Carafe, Built-In Grounds Scale, Removable Reservoir, Red Knob, Stainless Steel (WGCM100S)"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[3].product_url",
+     "citations": [
+      {
+       "url": "https://amazon.com/Wolf-Gourmet-Programmable-Coffee-System/dp/B07HCMRJZD",
+       "title": "WOLF GOURMET Programmable Coffee Maker System ...",
+       "excerpts": [
+        "https://www.amazon.com/Wolf-Gourmet-Programmable-Coffee-System/dp/B07HCMRJZD"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[3].rating",
+     "citations": [
+      {
+       "url": "https://amazon.com/Wolf-Gourmet-Programmable-Coffee-System/dp/B07HCMRJZD",
+       "title": "WOLF GOURMET Programmable Coffee Maker System ...",
+       "excerpts": [
+        "_4.4 out of 5 stars_ [(644)]"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[3].why_close_but_not_matching",
+     "citations": [
+      {
+       "url": "https://amazon.com/Wolf-Gourmet-Programmable-Coffee-System/dp/B07HCMRJZD",
+       "title": "WOLF GOURMET Programmable Coffee Maker System ...",
+       "excerpts": [
+        "Currently unavailable. We don't know when or if this item will be back in stock... STAINLESS STEEL THERMAL CARAFE: 10-cup carafe with double-wall construction... smooth-glide, front-load brew basket. The removable side-access reservoir... $599.95"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[4].brand",
+     "citations": [
+      {
+       "url": "https://amazon.com/Bonavita-Connoisseur-One-Touch-Featuring-BV1901TS/dp/B076PFMRGX",
+       "title": "Bonavita 8 Cup Drip Coffee Maker Machine, One-Touch ...",
+       "excerpts": [
+        "Bonavita 8 Cup Drip Coffee Maker Machine, One-Touch Pour Over, Auto Pause Brewing with Stainless Steel Double Wall Thermal Carafe, SCA Certified, Dishwasher Safe, BV1901TS"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[4].price_usd",
+     "citations": [
+      {
+       "url": "https://amazon.com/Bonavita-Connoisseur-One-Touch-Featuring-BV1901TS/dp/B076PFMRGX",
+       "title": "Bonavita 8 Cup Drip Coffee Maker Machine, One-Touch ...",
+       "excerpts": [
+        "$189.95"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[4].product_name",
+     "citations": [
+      {
+       "url": "https://amazon.com/Bonavita-Connoisseur-One-Touch-Featuring-BV1901TS/dp/B076PFMRGX",
+       "title": "Bonavita 8 Cup Drip Coffee Maker Machine, One-Touch ...",
+       "excerpts": [
+        "Bonavita 8 Cup Drip Coffee Maker Machine, One-Touch Pour Over, Auto Pause Brewing with Stainless Steel Double Wall Thermal Carafe, SCA Certified, Dishwasher Safe, BV1901TS"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[4].product_url",
+     "citations": [
+      {
+       "url": "https://amazon.com/Bonavita-Connoisseur-One-Touch-Featuring-BV1901TS/dp/B076PFMRGX",
+       "title": "Bonavita 8 Cup Drip Coffee Maker Machine, One-Touch ...",
+       "excerpts": [
+        "https://www.amazon.com/Bonavita-Connoisseur-One-Touch-Featuring-BV1901TS/dp/B076PFMRGX"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[4].rating",
+     "citations": [
+      {
+       "url": "https://amazon.com/Bonavita-Connoisseur-One-Touch-Featuring-BV1901TS/dp/B076PFMRGX",
+       "title": "Bonavita 8 Cup Drip Coffee Maker Machine, One-Touch ...",
+       "excerpts": [
+        "[3.910,387]"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.closest_matches[4].why_close_but_not_matching",
+     "citations": [
+      {
+       "url": "https://amazon.com/Bonavita-Connoisseur-One-Touch-Featuring-BV1901TS/dp/B076PFMRGX",
+       "title": "Bonavita 8 Cup Drip Coffee Maker Machine, One-Touch ...",
+       "excerpts": [
+        "Bonavita 8 Cup Drip Coffee Maker Machine... Stainless Steel Double Wall Thermal Carafe, SCA Certified, Dishwasher Safe, BV1901TS... [3.910,387]... $189.95"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    },
+    {
+     "path": "$.evidence_summary",
+     "citations": [
+      {
+       "url": "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "title": "https://www.amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+       "excerpts": [
+        "Zojirushi EC-YTC100XB... 4.3 out of 5 stars (2,228)... In Stock... $$224.95... Ships from: Amazon.com... vacuum insulated... stainless steel carafe... Reusable and washable, permanent stainless mesh coffee filter"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      },
+      {
+       "url": "https://amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "title": "https://www.amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+       "excerpts": [
+        "BUNN 55200 CSB3T Speed Brew Platinum Thermal... 4.4 out of 5 stars (7,719)... $179.49... In Stock... Ships from and sold by Amazon.com... VACUUM-INSULATED, double walled thermal carafe... Removable Tank, Thermal"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      },
+      {
+       "url": "https://amazon.com/Ninja-CP307-Brewed-System-Thermal/dp/B07FX73Y7H",
+       "title": "Shark Ninja CP307 Hot and Cold Brewed System W/ ...",
+       "excerpts": [
+        "Shark Ninja CP307 Hot and Cold Brewed System W/Thermal Carafe... 4.5 out of 5 stars (8,524)... $229.99... In Stock... Amazon's Choice"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      },
+      {
+       "url": "https://amazon.com/Wolf-Gourmet-Programmable-Coffee-System/dp/B07HCMRJZD",
+       "title": "WOLF GOURMET Programmable Coffee Maker System ...",
+       "excerpts": [
+        "WOLF GOURMET Programmable Coffee Maker System with 10 Cup Thermal Carafe... 4.4 out of 5 stars (644)... Currently unavailable. We don't know when or if this item will be back in stock... $599.95... STAINLESS STEEL THERMAL CARAFE... front-load brew basket"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      },
+      {
+       "url": "https://amazon.com/Bonavita-Connoisseur-One-Touch-Featuring-BV1901TS/dp/B076PFMRGX",
+       "title": "Bonavita 8 Cup Drip Coffee Maker Machine, One-Touch ...",
+       "excerpts": [
+        "Bonavita 8 Cup Drip Coffee Maker... Stainless Steel Double Wall Thermal Carafe, SCA Certified, Dishwasher Safe, BV1901TS... [3.910,387]... $189.95"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      },
+      {
+       "url": "https://amazon.com/OXO-Cup-Coffee-Maker-8718800/dp/B07H9G93WK",
+       "title": "OXO Brew 8-Cup Coffee Maker - Single-Serve & Carafe ...",
+       "excerpts": [
+        "OXO Brew 8-Cup Coffee Maker... Thermal Stainless Steel, SCA Certified... [4.04,807]... $219.95"
+       ],
+       "source_type": "secondary",
+       "source_intent": "other",
+       "source_category": "other",
+       "extract_template_name": null
+      }
+     ],
+     "reasoning": "Backed by a secondary source (other)",
+     "confidence": "medium"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+     "type": "secondary",
+     "title": "https://www.amazon.com/Zojirushi-EC-YTC100XB-Coffee-Maker-Stainless/dp/B07B83DGMV",
+     "source_intent": null,
+     "source_category": "other",
+     "extract_template_name": null
+    },
+    {
+     "url": "https://amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+     "type": "secondary",
+     "title": "https://www.amazon.com/BUNN-CSB3T-Platinum-Thermal-Coffee/dp/B07GY6PHYZ",
+     "source_intent": null,
+     "source_category": "other",
+     "extract_template_name": null
+    },
+    {
+     "url": "https://amazon.com/Ninja-CP307-Brewed-System-Thermal/dp/B07FX73Y7H",
+     "type": "secondary",
+     "title": "Shark Ninja CP307 Hot and Cold Brewed System W/ ...",
+     "source_intent": null,
+     "source_category": "other",
+     "extract_template_name": null
+    },
+    {
+     "url": "https://amazon.com/Wolf-Gourmet-Programmable-Coffee-System/dp/B07HCMRJZD",
+     "type": "secondary",
+     "title": "WOLF GOURMET Programmable Coffee Maker System ...",
+     "source_intent": null,
+     "source_category": "other",
+     "extract_template_name": null
+    },
+    {
+     "url": "https://amazon.com/Bonavita-Connoisseur-One-Touch-Featuring-BV1901TS/dp/B076PFMRGX",
+     "type": "secondary",
+     "title": "Bonavita 8 Cup Drip Coffee Maker Machine, One-Touch ...",
+     "source_intent": null,
+     "source_category": "other",
+     "extract_template_name": null
+    },
+    {
+     "url": "https://amazon.com/OXO-Cup-Coffee-Maker-8718800/dp/B07H9G93WK",
+     "type": "secondary",
+     "title": "OXO Brew 8-Cup Coffee Maker - Single-Serve & Carafe ...",
+     "source_intent": null,
+     "source_category": "other",
+     "extract_template_name": null
+    }
+   ],
+   "reasoning": "Medium confidence - trust per claim ratio is 100%",
+   "confidence": "medium"
+  }
+ }
+}

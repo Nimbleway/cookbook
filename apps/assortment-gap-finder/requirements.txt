@@ -1,0 +1,7 @@
+requests
+python-dotenv
+databricks-sql-connector
+openai-agents[litellm]
+litellm[proxy]  # litellm's tool-calling path imports proxy modules (fastapi, orjson, ...) it does not declare
+streamlit
+pandas
