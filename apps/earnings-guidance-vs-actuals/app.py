@@ -137,14 +137,22 @@ def page_company():
         if not webhook:
             st.error("SLACK_WEBHOOK_URL is not set; configure .env to enable Slack posting.")
         else:
+            import logging
             try:
                 cur = live_cursor()
                 rows = slack_post.scorecard(cur, DB, ticker)
-                slack_post.post(ticker, rows, webhook)
-                st.success("Posted.")
             except Exception as e:
-                # never echo the exception verbatim - requests errors embed the webhook URL
-                st.error(f"Slack post failed ({type(e).__name__}) - check the webhook URL and network.")
+                logging.exception("scorecard query failed")
+                st.error(f"Could not load the scorecard from Snowflake ({type(e).__name__}) - see app logs.")
+                rows = None
+            if rows:
+                try:
+                    slack_post.post(ticker, rows, webhook)
+                    st.success("Posted.")
+                except Exception as e:
+                    # sanitized on screen (requests errors embed the webhook URL); full detail in app logs
+                    logging.exception("slack post failed")
+                    st.error(f"Slack post failed ({type(e).__name__}) - see app logs for details.")
 
 
 def page_ask():
