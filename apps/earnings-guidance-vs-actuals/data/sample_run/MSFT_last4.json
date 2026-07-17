@@ -1,0 +1,3792 @@
+{
+ "run_id": "task_run_33581da5615348879695456705ec6741",
+ "interaction_id": "task_run_33581da5615348879695456705ec6741",
+ "ticker": "MSFT",
+ "window": "last4",
+ "wall_clock_s": 538,
+ "result": {
+  "run": {
+   "id": "task_run_33581da5615348879695456705ec6741",
+   "interaction_id": "task_run_33581da5615348879695456705ec6741",
+   "status": "completed",
+   "is_active": false,
+   "effort": "high",
+   "prompt": "Ticker: MSFT (Microsoft). Build the guidance-vs-actuals record for the last 4 REPORTED fiscal quarters as of today (2026-07-16), most recent first. For each quarter: the guidance management issued with the prior quarter's results (revenue, gross margin, opex, EPS if guided; forward outlook metrics if no formal quarterly guidance), the actually reported values for those metrics, and a verdict. Microsoft's fiscal year ends June 30.",
+   "created_at": "2026-07-16T14:20:22.664560Z",
+   "workspace_id": "42b80cc0-b6df-41e5-a21d-f53effb725cb",
+   "web_search_agent_id": "wsa_4957f859ca49453aba7aff70fa0e2201",
+   "started_at": "2026-07-16T14:20:23.015579Z",
+   "completed_at": "2026-07-16T14:29:15.354627Z",
+   "error": null
+  },
+  "output": {
+   "type": "json",
+   "content": [
+    {
+     "notes": "Q4 FY2026 (June 2026 quarter) not yet reported as of 2026-07-16; the Q3 FY26 earnings call on Apr 29 2026 provided a Q4 outlook, confirming Q4 FY26 had not been reported. Microsoft does not guide EPS directly; the EPS actual is reported but not formally guided. Revenue guidance was a total-company range; segment guidance was also given (PBP $34.25-$34.55B, actual $35.0B; IC $34.1-$34.4B, actual $34.7B; MPC $12.3-$12.8B, actual $13.2B \u2014 all segments beat the high end). Microsoft Cloud gross margin guided ~65%.",
+     "verdict": "beat",
+     "report_date": "2026-04-29",
+     "actual_metrics": [
+      {
+       "metric": "revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast",
+       "actual_value": "$82.9 billion ($82,886 million)"
+      },
+      {
+       "metric": "cost of goods sold (COGS)",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/income-statements",
+       "actual_value": "$26,828 million"
+      },
+      {
+       "metric": "operating expense",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/income-statements",
+       "actual_value": "$17,660 million (R&D $8,915M + S&M $6,814M + G&A $1,931M)"
+      },
+      {
+       "metric": "diluted EPS (GAAP)",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/income-statements",
+       "actual_value": "$4.27 (GAAP); $4.27 (non-GAAP)"
+      },
+      {
+       "metric": "operating income",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/income-statements",
+       "actual_value": "$38,398 million"
+      },
+      {
+       "metric": "gross margin",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/income-statements",
+       "actual_value": "$56,058 million (67.6% of revenue)"
+      }
+     ],
+     "fiscal_quarter": "Q3 FY2026",
+     "guidance_metrics": [
+      {
+       "metric": "revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+       "guided_range": "$80.65B-$81.75B",
+       "guided_value": "$81.2 billion (midpoint of $80.65B-$81.75B)"
+      },
+      {
+       "metric": "cost of goods sold (COGS)",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+       "guided_range": "$26.65B-$26.85B",
+       "guided_value": "$26.75 billion (midpoint of $26.65B-$26.85B)"
+      },
+      {
+       "metric": "operating expense",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+       "guided_range": "$17.8B-$17.9B",
+       "guided_value": "$17.85 billion (midpoint of $17.8B-$17.9B)"
+      },
+      {
+       "metric": "other income and expense (ex-OpenAI)",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+       "guided_range": null,
+       "guided_value": "approximately $700 million"
+      },
+      {
+       "metric": "effective tax rate (adjusted)",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+       "guided_range": null,
+       "guided_value": "approximately 19%"
+      }
+     ]
+    },
+    {
+     "notes": "Revenue guidance was a total-company range; segment guidance also given (PBP $33.3-$33.6B, actual $34.1B; IC $32.25-$32.55B, actual $32.9B; MPC $13.95-$14.45B, actual $14.3B \u2014 PBP and IC beat high end; MPC within range). Microsoft does not guide EPS directly; EPS actual reported but not formally guided. GAAP EPS $5.16 includes a large mark-to-market gain on OpenAI equity investment (non-GAAP OpenAI adjustment of $(7,583)M / $(1.02) per share), so non-GAAP EPS $4.14 is the more comparable profitability figure.",
+     "verdict": "beat",
+     "report_date": "2026-01-28",
+     "actual_metrics": [
+      {
+       "metric": "revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q2/income-statements",
+       "actual_value": "$81.3 billion ($81,273 million)"
+      },
+      {
+       "metric": "cost of goods sold (COGS)",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q2/income-statements",
+       "actual_value": "$25,978 million"
+      },
+      {
+       "metric": "operating expense",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q2/income-statements",
+       "actual_value": "$17,020 million (R&D $8,504M + S&M $6,584M + G&A $1,932M)"
+      },
+      {
+       "metric": "diluted EPS (GAAP)",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q2/press-release-webcast",
+       "actual_value": "$5.16 (GAAP); $4.14 (non-GAAP)"
+      },
+      {
+       "metric": "operating income",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q2/income-statements",
+       "actual_value": "$38,275 million"
+      }
+     ],
+     "fiscal_quarter": "Q2 FY2026",
+     "guidance_metrics": [
+      {
+       "metric": "revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+       "guided_range": "$79.5B-$80.6B",
+       "guided_value": "$80.05 billion (midpoint of $79.5B-$80.6B)"
+      },
+      {
+       "metric": "cost of goods sold (COGS)",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+       "guided_range": "$26.35B-$26.55B",
+       "guided_value": "$26.45 billion (midpoint of $26.35B-$26.55B)"
+      },
+      {
+       "metric": "operating expense",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+       "guided_range": "$17.3B-$17.4B",
+       "guided_value": "$17.35 billion (midpoint of $17.3B-$17.4B)"
+      },
+      {
+       "metric": "other income and expense (ex-OpenAI)",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+       "guided_range": null,
+       "guided_value": "approximately $100 million"
+      },
+      {
+       "metric": "effective tax rate",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+       "guided_range": null,
+       "guided_value": "approximately 19%"
+      }
+     ]
+    },
+    {
+     "notes": "Microsoft did NOT provide a total-company revenue range for Q1 FY26; guidance was segment-only. The three segment ranges sum to an implied total of ~$74.7B-$75.8B (PBP $32.2-$32.5B + IC $30.1-$30.4B + MPC $12.4-$12.9B). Actual total revenue $77.7B exceeded this implied range; actual segment results were PBP $33.0B, IC $30.9B, MPC $13.8B \u2014 all three beat the high end of their guided ranges. Microsoft does not guide EPS directly. Full-year FY26 outlook also given: double-digit revenue and operating income growth, operating margins relatively unchanged year-over-year, FY26 effective tax rate 19%-20%.",
+     "verdict": "beat",
+     "report_date": "2025-10-29",
+     "actual_metrics": [
+      {
+       "metric": "revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q1/income-statements",
+       "actual_value": "$77.7 billion ($77,673 million)"
+      },
+      {
+       "metric": "cost of goods sold (COGS)",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q1/income-statements",
+       "actual_value": "$24,043 million"
+      },
+      {
+       "metric": "operating expense",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q1/income-statements",
+       "actual_value": "$15,669 million (R&D $8,146M + S&M $5,717M + G&A $1,806M)"
+      },
+      {
+       "metric": "diluted EPS (GAAP)",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast",
+       "actual_value": "$3.72 (GAAP); $4.13 (non-GAAP)"
+      },
+      {
+       "metric": "operating income",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q1/income-statements",
+       "actual_value": "$37,961 million"
+      }
+     ],
+     "fiscal_quarter": "Q1 FY2026",
+     "guidance_metrics": [
+      {
+       "metric": "Productivity and Business Processes revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+       "guided_range": "$32.2B-$32.5B",
+       "guided_value": "$32.35 billion (midpoint of $32.2B-$32.5B)"
+      },
+      {
+       "metric": "Intelligent Cloud revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+       "guided_range": "$30.1B-$30.4B",
+       "guided_value": "$30.25 billion (midpoint of $30.1B-$30.4B)"
+      },
+      {
+       "metric": "More Personal Computing revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+       "guided_range": "$12.4B-$12.9B",
+       "guided_value": "$12.65 billion (midpoint of $12.4B-$12.9B)"
+      },
+      {
+       "metric": "cost of goods sold (COGS)",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+       "guided_range": "$24.3B-$24.5B",
+       "guided_value": "$24.4 billion (midpoint of $24.3B-$24.5B)"
+      },
+      {
+       "metric": "operating expense",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+       "guided_range": "$15.7B-$15.8B",
+       "guided_value": "$15.75 billion (midpoint of $15.7B-$15.8B)"
+      },
+      {
+       "metric": "other income and expense",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+       "guided_range": null,
+       "guided_value": "approximately negative $1.3 billion"
+      },
+      {
+       "metric": "effective tax rate",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+       "guided_range": null,
+       "guided_value": "19%-20%"
+      }
+     ]
+    },
+    {
+     "notes": "Microsoft did NOT provide a total-company revenue range for Q4 FY25; guidance was segment-only (constant-currency growth for segments, with the FX impact disclosed separately). The three segment ranges sum to an implied total of ~$73.15B-$74.25B (PBP $32.05-$32.35B + IC $28.75-$29.05B + MPC $12.35-$12.85B). Actual total revenue $76.4B exceeded this implied range; actual segment results were PBP $33.1B, IC $29.9B, MPC $13.5B \u2014 all three beat the high end of their guided ranges. Microsoft does not guide EPS directly. Management also guided Microsoft Cloud gross margin ~67% and reaffirmed full-year FY25 operating margins up slightly year-over-year.",
+     "verdict": "beat",
+     "report_date": "2025-07-30",
+     "actual_metrics": [
+      {
+       "metric": "revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+       "actual_value": "$76.4 billion ($76,441 million)"
+      },
+      {
+       "metric": "cost of goods sold (COGS)",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+       "actual_value": "$24,014 million"
+      },
+      {
+       "metric": "operating expense",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+       "actual_value": "$18,104 million (R&D $8,829M + S&M $7,285M + G&A $1,990M)"
+      },
+      {
+       "metric": "diluted EPS (GAAP)",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+       "actual_value": "$3.65 (GAAP)"
+      },
+      {
+       "metric": "operating income",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+       "actual_value": "$34,323 million"
+      },
+      {
+       "metric": "Productivity and Business Processes revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+       "actual_value": "$33,112 million"
+      },
+      {
+       "metric": "Intelligent Cloud revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+       "actual_value": "$29,878 million"
+      },
+      {
+       "metric": "More Personal Computing revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+       "actual_value": "$13,451 million"
+      }
+     ],
+     "fiscal_quarter": "Q4 FY2025",
+     "guidance_metrics": [
+      {
+       "metric": "Productivity and Business Processes revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+       "guided_range": "$32.05B-$32.35B",
+       "guided_value": "$32.2 billion (midpoint of $32.05B-$32.35B)"
+      },
+      {
+       "metric": "Intelligent Cloud revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+       "guided_range": "$28.75B-$29.05B",
+       "guided_value": "$28.9 billion (midpoint of $28.75B-$29.05B)"
+      },
+      {
+       "metric": "More Personal Computing revenue",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+       "guided_range": "$12.35B-$12.85B",
+       "guided_value": "$12.6 billion (midpoint of $12.35B-$12.85B)"
+      },
+      {
+       "metric": "cost of goods sold (COGS)",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+       "guided_range": "$23.6B-$23.8B",
+       "guided_value": "$23.7 billion (midpoint of $23.6B-$23.8B)"
+      },
+      {
+       "metric": "operating expense",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+       "guided_range": "$18.0B-$18.1B",
+       "guided_value": "$18.05 billion (midpoint of $18.0B-$18.1B)"
+      },
+      {
+       "metric": "other income and expense",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+       "guided_range": null,
+       "guided_value": "approximately negative $1.2 billion"
+      },
+      {
+       "metric": "effective tax rate",
+       "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+       "guided_range": null,
+       "guided_value": "approximately 19%"
+      }
+     ]
+    }
+   ],
+   "trust": {
+    "claims": [
+     {
+      "path": "$[0].fiscal_quarter",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast",
+        "title": "FY26 Q3 - Press Releases - Investor Relations",
+        "excerpts": [
+         "REDMOND, Wash. \u2014 April 29, 2026 \u2014 Microsoft Corp. today announced the following results for the quarter ended March 31, 2026"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].report_date",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast",
+        "title": "FY26 Q3 - Press Releases - Investor Relations",
+        "excerpts": [
+         "REDMOND, Wash. \u2014 April 29, 2026 \u2014 Microsoft Corp. today announced the following results for the quarter ended March 31, 2026"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[0].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect revenue of $80.65 to $81.75 billion or growth of 15% to %17"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[0].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect revenue of $80.65 to $81.75 billion or growth of 15% to %17"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[0].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect revenue of $80.65 to $81.75 billion or growth of 15% to %17"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[0].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "Now, moving to our Q3 outlook... We expect revenue of $80.65 to $81.75 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[1].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $26.65 to $26.85 billion, or growth of 22% to 23%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[1].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $26.65 to $26.85 billion, or growth of 22% to 23%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[1].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $26.65 to $26.85 billion, or growth of 22% to 23%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[1].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $26.65 to $26.85 billion, or growth of 22% to 23%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[2].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $17.8 to $17.9 billion or growth of 10% to 11%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[2].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $17.8 to $17.9 billion or growth of 10% to 11%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[2].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $17.8 to $17.9 billion or growth of 10% to 11%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[2].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $17.8 to $17.9 billion or growth of 10% to 11%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[3].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "Excluding any impact from our investments in OpenAI, other income and expense is expected to be roughly $700 million"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[3].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "Excluding any impact from our investments in OpenAI, other income and expense is expected to be roughly $700 million"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[3].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "other income and expense is expected to be roughly $700 million"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Information absence is supported by cited evidence",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[3].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "Excluding any impact from our investments in OpenAI, other income and expense is expected to be roughly $700 million"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[4].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our adjusted Q3 effective tax rate to be approximately 19%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[4].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our adjusted Q3 effective tax rate to be approximately 19%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[4].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our adjusted Q3 effective tax rate to be approximately 19%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Information absence is supported by cited evidence",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].guidance_metrics[4].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our adjusted Q3 effective tax rate to be approximately 19%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[0].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast",
+        "title": "FY26 Q3 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Revenue was $82.9 billion and increased 18%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[0].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Total revenue | 82,886 | 70,066"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[0].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast",
+        "title": "FY26 Q3 - Press Releases - Investor Relations",
+        "excerpts": [
+         "REDMOND, Wash. \u2014 April 29, 2026 \u2014 Microsoft Corp. today announced the following results for the quarter ended March 31, 2026"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[1].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Total cost of revenue | 26,828 | 21,919"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[1].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Total cost of revenue | 26,828 | 21,919"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[1].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Total cost of revenue | 26,828 | 21,919"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[2].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Research and development | 8,915; Sales and marketing | 6,814; General and administrative | 1,931"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[2].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Research and development | 8,915; Sales and marketing | 6,814; General and administrative | 1,931"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[2].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Research and development | 8,915; Sales and marketing | 6,814; General and administrative | 1,931"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[3].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast",
+        "title": "FY26 Q3 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Diluted earnings per share was $4.27 and increased 23% on a GAAP basis"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[3].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Diluted | $ 4.27 | $ 3.46"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[3].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Diluted | $ 4.27 | $ 3.46"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[4].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast",
+        "title": "FY26 Q3 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Operating income was $38.4 billion and increased 20%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[4].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Operating income | 38,398 | 32,000"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[4].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Operating income | 38,398 | 32,000"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[5].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Gross margin | 56,058 | 48,147"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[5].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Gross margin | 56,058 | 48,147"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].actual_metrics[5].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+        "excerpts": [
+         "Gross margin | 56,058 | 48,147"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].verdict",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3",
+        "title": "Microsoft Fiscal Year 2026 Third Quarter Earnings ...",
+        "excerpts": [
+         "We delivered results that exceeded expectations across revenue, operating income, and earnings per share driven by strong demand and execution."
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[0].notes",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "In Productivity and Business Processes we expect revenue of $34.25 to $34.55 billion... For Intelligent Cloud, we expect revenue of $34.1 to $34.4 billion... In More Personal Computing, we expect revenue to be $12.3 to $12.8 billion."
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       },
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast",
+        "title": "FY26 Q3 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Revenue in Productivity and Business Processes was $35.0 billion... Revenue in Intelligent Cloud was $34.7 billion... Revenue in More Personal Computing was $13.2 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[0].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "excerpts": [
+         "Total revenue | 81,273 | 69,632"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[0].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q2/press-release-webcast",
+        "title": "FY26 Q2 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Revenue was $81.3 billion and increased 17%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[0].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "excerpts": [
+         "Total revenue | 81,273 | 69,632"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[1].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "excerpts": [
+         "Total cost of revenue | 25,978 | 21,799"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[1].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "excerpts": [
+         "Total cost of revenue | 25,978 | 21,799"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[1].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "excerpts": [
+         "Total cost of revenue | 25,978 | 21,799"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[2].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "excerpts": [
+         "Research and development | 8,504; Sales and marketing | 6,584; General and administrative | 1,932"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[2].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "excerpts": [
+         "Research and development | 8,504; Sales and marketing | 6,584; General and administrative | 1,932"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[2].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "excerpts": [
+         "Research and development | 8,504; Sales and marketing | 6,584; General and administrative | 1,932"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[3].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "excerpts": [
+         "Diluted | $ 5.16 | $ 3.23"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[3].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q2/press-release-webcast",
+        "title": "FY26 Q2 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Diluted earnings per share on a GAAP basis was $5.16 and increased 60%, and on a non-GAAP basis was $4.14 and increased 24%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[3].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q2/press-release-webcast",
+        "title": "FY26 Q2 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Diluted earnings per share on a GAAP basis was $5.16 and increased 60%, and on a non-GAAP basis was $4.14 and increased 24%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[4].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "excerpts": [
+         "Operating income | 38,275 | 31,653"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[4].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q2/press-release-webcast",
+        "title": "FY26 Q2 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Operating income was $38.3 billion and increased 21%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].actual_metrics[4].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+        "excerpts": [
+         "Operating income | 38,275 | 31,653"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].fiscal_quarter",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q2/press-release-webcast",
+        "title": "FY26 Q2 - Press Releases - Investor Relations",
+        "excerpts": [
+         "REDMOND, Wash. \u2014 January 28, 2026 \u2014 Microsoft Corp. today announced the following results for the quarter ended December 31, 2025"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[0].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect revenue of $79.5 to $80.6 billion or growth of 14% to 16%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[0].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect revenue of $79.5 to $80.6 billion or growth of 14% to 16%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[0].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect revenue of $79.5 to $80.6 billion or growth of 14% to 16%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[0].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "Starting with the total company. We expect revenue of $79.5 to $80.6 billion or growth of 14% to 16%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[1].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $26.35 to $26.55 billion, or growth of 21% to 22%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[1].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $26.35 to $26.55 billion, or growth of 21% to 22%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[1].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $26.35 to $26.55 billion, or growth of 21% to 22%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[1].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $26.35 to $26.55 billion, or growth of 21% to 22%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[2].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $17.3 to $17.4 billion or growth of 7% to 8%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[2].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $17.3 to $17.4 billion or growth of 7% to 8%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[2].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $17.3 to $17.4 billion or growth of 7% to 8%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[2].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $17.3 to $17.4 billion or growth of 7% to 8%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[3].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "in Q2, other income and expense is estimated to be roughly $100 million"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Information absence is supported by cited evidence",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[3].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "in Q2, other income and expense is estimated to be roughly $100 million as interest income will more than offset interest expense"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[3].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "On that basis, in Q2, other income and expense is estimated to be roughly $100 million"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[3].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "On that basis, in Q2, other income and expense is estimated to be roughly $100 million"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[4].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our Q2 effective tax rate to be approximately 19%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Information absence is supported by cited evidence",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[4].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our Q2 effective tax rate to be approximately 19%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[4].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our Q2 effective tax rate to be approximately 19%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].guidance_metrics[4].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our Q2 effective tax rate to be approximately 19%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].notes",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+        "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+        "excerpts": [
+         "In Productivity and Business Processes we expect revenue of $33.3 to $33.6 billion... For Intelligent Cloud, we expect revenue of $32.25 to $32.55 billion... In More Personal Computing, we expect revenue to be in the $13.95 to $14.45 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       },
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q2/press-release-webcast",
+        "title": "FY26 Q2 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Revenue in Productivity and Business Processes was $34.1 billion... Revenue in Intelligent Cloud was $32.9 billion... Revenue in More Personal Computing was $14.3 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].report_date",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q2/press-release-webcast",
+        "title": "FY26 Q2 - Press Releases - Investor Relations",
+        "excerpts": [
+         "REDMOND, Wash. \u2014 January 28, 2026 \u2014 Microsoft Corp. today announced the following results for the quarter ended December 31, 2025"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[1].verdict",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+        "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+        "excerpts": [
+         "we again exceeded expectations across revenue, operating income and earnings per share, while investing to fuel long-term growth."
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[0].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "excerpts": [
+         "Total revenue | 77,673 | 65,585"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[0].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast",
+        "title": "FY26 Q1 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Revenue was $77.7 billion and increased 18%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[0].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "excerpts": [
+         "Total revenue | 77,673 | 65,585"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[1].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "excerpts": [
+         "Total cost of revenue | 24,043 | 20,099"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[1].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "excerpts": [
+         "Total cost of revenue | 24,043 | 20,099"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[1].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "excerpts": [
+         "Total cost of revenue | 24,043 | 20,099"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[2].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "excerpts": [
+         "Research and development | 8,146; Sales and marketing | 5,717; General and administrative | 1,806"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[2].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "excerpts": [
+         "Research and development | 8,146; Sales and marketing | 5,717; General and administrative | 1,806"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[2].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "excerpts": [
+         "Research and development | 8,146; Sales and marketing | 5,717; General and administrative | 1,806"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[3].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "excerpts": [
+         "Diluted | $ 3.72 | $ 3.30"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[3].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast",
+        "title": "FY26 Q1 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Diluted earnings per share, on a GAAP basis, was $3.72 and increased 13%, and on a non-GAAP basis was $4.13 and increased 23%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[3].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast",
+        "title": "FY26 Q1 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Diluted earnings per share, on a GAAP basis, was $3.72 and increased 13%, and on a non-GAAP basis was $4.13 and increased 23%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[4].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "excerpts": [
+         "Operating income | 37,961 | 30,552"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[4].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast",
+        "title": "FY26 Q1 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Operating income was $38.0 billion and increased 24%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].actual_metrics[4].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+        "excerpts": [
+         "Operating income | 37,961 | 30,552"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].fiscal_quarter",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast",
+        "title": "FY26 Q1 - Press Releases - Investor Relations",
+        "excerpts": [
+         "REDMOND, Wash. \u2014 October 29, 2025 \u2014 Microsoft Corp. today announced the following results for the quarter ended September 30, 2025"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[0].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "In Productivity and Business Processes we expect revenue of $32.2 to $32.5 billion, or growth of 14% to 15%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[0].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "In Productivity and Business Processes we expect revenue of $32.2 to $32.5 billion, or growth of 14% to 15%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[0].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "In Productivity and Business Processes we expect revenue of $32.2 to $32.5 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[0].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "In Productivity and Business Processes we expect revenue of $32.2 to $32.5 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[1].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "For Intelligent Cloud we expect revenue of $30.1 to $30.4 billion, or growth of 25% to 26%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[1].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "For Intelligent Cloud we expect revenue of $30.1 to $30.4 billion, or growth of 25% to 26%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[1].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "For Intelligent Cloud we expect revenue of $30.1 to $30.4 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[1].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "For Intelligent Cloud we expect revenue of $30.1 to $30.4 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[2].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "In More Personal Computing, we expect revenue to be $12.4 to $12.9 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[2].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "In More Personal Computing, we expect revenue to be $12.4 to $12.9 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[2].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "In More Personal Computing, we expect revenue to be $12.4 to $12.9 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[2].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "In More Personal Computing, we expect revenue to be $12.4 to $12.9 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[3].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $24.3 to $24.5 billion or growth of 21% to 22%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[3].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $24.3 to $24.5 billion or growth of 21% to 22%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[3].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $24.3 to $24.5 billion or growth of 21% to 22%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[3].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $24.3 to $24.5 billion or growth of 21% to 22%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[4].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $15.7 to $15.8 billion or growth of 5% to 6%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[4].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $15.7 to $15.8 billion or growth of 5% to 6%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[4].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $15.7 to $15.8 billion or growth of 5% to 6%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[4].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $15.7 to $15.8 billion or growth of 5% to 6%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[5].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "Other income and expense is estimated to be negative $1.3 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Information absence is supported by cited evidence",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[5].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "Other income and expense is estimated to be negative $1.3 billion primarily due to investments accounted for under the equity method"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[5].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "Other income and expense is estimated to be negative $1.3 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[5].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "Other income and expense is estimated to be negative $1.3 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[6].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our Q1 effective tax rate to be between 19% and 20%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Information absence is supported by cited evidence",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[6].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our Q1 effective tax rate to be between 19% and 20%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[6].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our Q1 effective tax rate to be between 19% and 20%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].guidance_metrics[6].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our Q1 effective tax rate to be between 19% and 20%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].notes",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "In Productivity and Business Processes we expect revenue of $32.2 to $32.5 billion... For Intelligent Cloud we expect revenue of $30.1 to $30.4 billion... In More Personal Computing, we expect revenue to be $12.4 to $12.9 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       },
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast",
+        "title": "FY26 Q1 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Revenue in Productivity and Business Processes was $33.0 billion... Revenue in Intelligent Cloud was $30.9 billion... Revenue in More Personal Computing was $13.8 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].report_date",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast",
+        "title": "FY26 Q1 - Press Releases - Investor Relations",
+        "excerpts": [
+         "REDMOND, Wash. \u2014 October 29, 2025 \u2014 Microsoft Corp. today announced the following results for the quarter ended September 30, 2025"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[2].verdict",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast",
+        "title": "FY26 Q1 - Press Releases - Investor Relations",
+        "excerpts": [
+         "We delivered a strong start to the fiscal year, exceeding expectations across revenue, operating income, and earnings per share"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[0].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Total revenue | 76,441 | 64,727"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[0].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Revenue was $76.4 billion and increased 18%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[0].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "REDMOND, Wash. \u2014 July 30, 2025 \u2014 Microsoft Corp. today announced the following results for the quarter ended June 30, 2025"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[1].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Total cost of revenue | 24,014 | 19,684"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[1].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Total cost of revenue | 24,014 | 19,684"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[1].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Total cost of revenue | 24,014 | 19,684"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[2].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Research and development | 8,829; Sales and marketing | 7,285; General and administrative | 1,990"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[2].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Research and development | 8,829; Sales and marketing | 7,285; General and administrative | 1,990"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[2].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Research and development | 8,829; Sales and marketing | 7,285; General and administrative | 1,990"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[3].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Diluted | $3.65 | $2.95"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[3].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Diluted earnings per share was $3.65 and increased 24%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[3].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Diluted | $3.65 | $2.95"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[4].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Operating income | 34,323 | 27,925"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[4].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Operating income was $34.3 billion and increased 23%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[4].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Operating income | 34,323 | 27,925"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[5].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Productivity and Business Processes | $33,112"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[5].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Revenue in Productivity and Business Processes was $33.1 billion and increased 16%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[5].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Productivity and Business Processes | $33,112"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[6].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Intelligent Cloud | $29,878"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[6].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Revenue in Intelligent Cloud was $29.9 billion and increased 26%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[6].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Intelligent Cloud | $29,878"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[7].actual_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "More Personal Computing | $13,451"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[7].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Revenue in More Personal Computing was $13.5 billion and increased 9%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].actual_metrics[7].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "More Personal Computing | $13,451"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].fiscal_quarter",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "REDMOND, Wash. \u2014 July 30, 2025 \u2014 Microsoft Corp. today announced the following results for the quarter ended June 30, 2025"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[0].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "In Productivity and Business Processes we expect revenue of $32.05 to $32.35 billion, or growth of 11% to 12% in constant currency"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[0].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "In Productivity and Business Processes we expect revenue of $32.05 to $32.35 billion, or growth of 11% to 12% in constant currency"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[0].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "In Productivity and Business Processes we expect revenue of $32.05 to $32.35 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[0].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "In Productivity and Business Processes we expect revenue of $32.05 to $32.35 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[1].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "For Intelligent Cloud we expect revenue of $28.75 to $29.05 billion or growth of 20% to 22% in constant currency"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[1].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "For Intelligent Cloud we expect revenue of $28.75 to $29.05 billion or growth of 20% to 22% in constant currency"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[1].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "For Intelligent Cloud we expect revenue of $28.75 to $29.05 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[1].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "For Intelligent Cloud we expect revenue of $28.75 to $29.05 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[2].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "In More Personal Computing, we expect revenue to be $12.35 to $12.85 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[2].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "In More Personal Computing, we expect revenue to be $12.35 to $12.85 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[2].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "In More Personal Computing, we expect revenue to be $12.35 to $12.85 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[2].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "In More Personal Computing, we expect revenue to be $12.35 to $12.85 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[3].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $23.6 to $23.8 billion or growth of 19% to 20% in constant currency"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[3].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $23.6 to $23.8 billion or growth of 19% to 20% in constant currency"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[3].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $23.6 to $23.8 billion or growth of 19% to 20% in constant currency"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[3].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "We expect COGS of $23.6 to $23.8 billion or growth of 19% to 20% in constant currency"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[4].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $18 to $18.1 billion or growth of approximately 5% in constant currency"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[4].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $18 to $18.1 billion or growth of approximately 5% in constant currency"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[4].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $18 to $18.1 billion or growth of approximately 5% in constant currency"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[4].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "operating expense of $18 to $18.1 billion or growth of approximately 5% in constant currency"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[5].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "Other income and expense is expected to be roughly negative $1.2 billion primarily driven by investments accounted for under the equity method"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Information absence is supported by cited evidence",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[5].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "Other income and expense is expected to be roughly negative $1.2 billion primarily driven by investments accounted for under the equity method"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[5].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "Other income and expense is expected to be roughly negative $1.2 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[5].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "Other income and expense is expected to be roughly negative $1.2 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[6].guided_range",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our Q4 effective tax rate to be approximately 19%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Information absence is supported by cited evidence",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[6].guided_value",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our Q4 effective tax rate to be approximately 19%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[6].metric",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our Q4 effective tax rate to be approximately 19%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].guidance_metrics[6].source_url",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "we expect our Q4 effective tax rate to be approximately 19%"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].notes",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+        "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+        "excerpts": [
+         "In Productivity and Business Processes we expect revenue of $32.05 to $32.35 billion... For Intelligent Cloud we expect revenue of $28.75 to $29.05 billion... In More Personal Computing, we expect revenue to be $12.35 to $12.85 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       },
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "Revenue in Productivity and Business Processes was $33.1 billion... Revenue in Intelligent Cloud was $29.9 billion... Revenue in More Personal Computing was $13.5 billion"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].report_date",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+        "title": "FY25 Q4 - Press Releases - Investor Relations",
+        "excerpts": [
+         "REDMOND, Wash. \u2014 July 30, 2025 \u2014 Microsoft Corp. today announced the following results for the quarter ended June 30, 2025"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     },
+     {
+      "path": "$[3].verdict",
+      "citations": [
+       {
+        "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+        "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+        "excerpts": [
+         "in our largest quarter of the year, we significantly exceeded expectations with strong execution by our sales and partner teams"
+        ],
+        "source_type": "primary",
+        "source_intent": "other",
+        "source_category": "official",
+        "extract_template_name": null
+       }
+      ],
+      "reasoning": "Backed by a primary source (official)",
+      "confidence": "high"
+     }
+    ],
+    "sources": [
+     {
+      "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast",
+      "type": "primary",
+      "title": "FY26 Q3 - Press Releases - Investor Relations",
+      "source_intent": null,
+      "source_category": "official",
+      "extract_template_name": null
+     },
+     {
+      "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2",
+      "type": "primary",
+      "title": "Microsoft FY26 Second Quarter Earnings Conference Call",
+      "source_intent": null,
+      "source_category": "official",
+      "extract_template_name": null
+     },
+     {
+      "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+      "type": "primary",
+      "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q3/income-statements",
+      "source_intent": null,
+      "source_category": "official",
+      "extract_template_name": null
+     },
+     {
+      "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3",
+      "type": "primary",
+      "title": "Microsoft Fiscal Year 2026 Third Quarter Earnings ...",
+      "source_intent": null,
+      "source_category": "official",
+      "extract_template_name": null
+     },
+     {
+      "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+      "type": "primary",
+      "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q2/income-statements",
+      "source_intent": null,
+      "source_category": "official",
+      "extract_template_name": null
+     },
+     {
+      "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q2/press-release-webcast",
+      "type": "primary",
+      "title": "FY26 Q2 - Press Releases - Investor Relations",
+      "source_intent": null,
+      "source_category": "official",
+      "extract_template_name": null
+     },
+     {
+      "url": "https://microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1",
+      "type": "primary",
+      "title": "Microsoft FY26 First Quarter Earnings Conference Call",
+      "source_intent": null,
+      "source_category": "official",
+      "extract_template_name": null
+     },
+     {
+      "url": "https://microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+      "type": "primary",
+      "title": "https://www.microsoft.com/en-us/Investor/earnings/fy-2026-q1/income-statements",
+      "source_intent": null,
+      "source_category": "official",
+      "extract_template_name": null
+     },
+     {
+      "url": "https://microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast",
+      "type": "primary",
+      "title": "FY26 Q1 - Press Releases - Investor Relations",
+      "source_intent": null,
+      "source_category": "official",
+      "extract_template_name": null
+     },
+     {
+      "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4",
+      "type": "primary",
+      "title": "Microsoft FY25 Fourth Quarter Earnings Conference Call",
+      "source_intent": null,
+      "source_category": "official",
+      "extract_template_name": null
+     },
+     {
+      "url": "https://microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+      "type": "primary",
+      "title": "FY25 Q4 - Press Releases - Investor Relations",
+      "source_intent": null,
+      "source_category": "official",
+      "extract_template_name": null
+     },
+     {
+      "url": "https://microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q3",
+      "type": "primary",
+      "title": "Microsoft FY25 Third Quarter Earnings Conference Call",
+      "source_intent": null,
+      "source_category": "official",
+      "extract_template_name": null
+     }
+    ],
+    "reasoning": "High confidence - cells fill rate is 96% and trust per claim ratio is 100%",
+    "confidence": "high"
+   }
+  }
+ }
+}
