@@ -142,22 +142,23 @@ def rows_from_file(path):
             continue
         actual_list = [n for n in (norm_obj(m) for m in q.get("actual_metrics") or []) if n and n.get("metric")]
         guidance_list = [n for n in (norm_obj(m) for m in q.get("guidance_metrics") or []) if n and n.get("metric")]
-        actuals = {norm_metric(m["metric"]): m for m in actual_list}
+        actuals = {norm_metric(m["metric"]): (m, mi) for mi, m in enumerate(actual_list)}
         seen_keys = set()
         for gi, g in enumerate(guidance_list):
             key = norm_metric(g["metric"])
-            act = actuals.get(key)
+            act, act_i = actuals.get(key, (None, None))
             if key in seen_keys:  # e.g. quarterly capex + full-year capex in one quarter
                 key = str(g["metric"]).strip().lower()
             seen_keys.add(key)
             low, mid, high = parse_range(g.get("guided_value"), g.get("guided_range"))
-            actual_num = parse_money(act["actual_value"]) if act else None
+            actual_num = parse_money(act.get("actual_value")) if act else None
             verdict = metric_verdict(low, high, actual_num)
             if verdict == "not_guided" and low is not None and actual_num is not None:
                 # scale mismatch (e.g. percent guidance on a dollar metric): the raw
                 # strings keep the record, but numeric columns must not enable bogus math
                 low = mid = high = None
             gpath = f"$[{qi}].guidance_metrics[{gi}].guided_value"
+            apath = f"$[{qi}].actual_metrics[{act_i}].actual_value" if act_i is not None else gpath
             ledger_rows.append({
                 "ticker": d["ticker"], "fiscal_quarter": q["fiscal_quarter"],
                 "report_date": q.get("report_date"), "metric": key, "metric_raw": g["metric"],
@@ -168,7 +169,7 @@ def rows_from_file(path):
                 "metric_verdict": verdict,
                 "quarter_verdict": q.get("verdict"), "notes": q.get("notes"),
                 "guidance_source_url": repaired_url(g.get("source_url"), gpath),
-                "actual_source_url": repaired_url(act.get("source_url"), gpath) if act else None,
+                "actual_source_url": repaired_url(act.get("source_url"), apath) if act else None,
                 "run_id": d["run_id"],
             })
         # keep actuals that had no guidance partner (e.g. total revenue reported

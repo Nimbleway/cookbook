@@ -37,7 +37,9 @@ def post(ticker, rows, webhook):
 
 
 def main():
-    webhook = os.environ["SLACK_WEBHOOK_URL"]
+    webhook = os.getenv("SLACK_WEBHOOK_URL")
+    if not webhook:
+        raise SystemExit("SLACK_WEBHOOK_URL is not set; configure .env to enable Slack posting.")
     db = os.environ.get("SNOWFLAKE_DATABASE", "EARNINGS_DESK")
     conn = connect(); cur = conn.cursor()
     tickers = sys.argv[1:]

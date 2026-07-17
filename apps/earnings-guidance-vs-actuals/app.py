@@ -133,10 +133,14 @@ def page_company():
         st.caption("Evidence: " + " · ".join(
             f"{int(r['N'])} {r['CONFIDENCE']}-confidence claims" for _, r in claims.iterrows()))
     if st.button(f"📣 Post {ticker} scorecard to Slack"):
-        cur = live_cursor()
-        rows = slack_post.scorecard(cur, DB, ticker)
-        slack_post.post(ticker, rows, os.environ["SLACK_WEBHOOK_URL"])
-        st.success("Posted.")
+        webhook = os.getenv("SLACK_WEBHOOK_URL")
+        if not webhook:
+            st.error("SLACK_WEBHOOK_URL is not set; configure .env to enable Slack posting.")
+        else:
+            cur = live_cursor()
+            rows = slack_post.scorecard(cur, DB, ticker)
+            slack_post.post(ticker, rows, webhook)
+            st.success("Posted.")
 
 
 def page_ask():

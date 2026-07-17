@@ -130,13 +130,16 @@ DDL = [
 ]
 
 
-def connect():
+def connect(warehouse="__env__"):
+    if warehouse == "__env__":
+        warehouse = os.environ.get("SNOWFLAKE_WAREHOUSE", "EARNINGS_WH")
     kwargs = dict(
         account=os.environ["SNOWFLAKE_ACCOUNT"],
         user=os.environ["SNOWFLAKE_USER"],
-        warehouse=os.environ.get("SNOWFLAKE_WAREHOUSE", "COMPUTE_WH"),
         role=os.environ.get("SNOWFLAKE_ROLE") or None,
     )
+    if warehouse:
+        kwargs["warehouse"] = warehouse
     key_path = os.environ.get("SNOWFLAKE_PRIVATE_KEY_PATH")
     if key_path:  # key-pair auth (no MFA prompts); path relative to the app dir
         from pathlib import Path
@@ -156,7 +159,7 @@ def connect():
 def main():
     db = os.environ.get("SNOWFLAKE_DATABASE", "EARNINGS_DESK")
     wh = os.environ.get("SNOWFLAKE_WAREHOUSE", "EARNINGS_WH")
-    conn = connect()
+    conn = connect(warehouse=None)  # the warehouse may not exist yet on first run
     cur = conn.cursor()
     cur.execute(f"""CREATE WAREHOUSE IF NOT EXISTS {wh}
         WAREHOUSE_SIZE = XSMALL AUTO_SUSPEND = 60 AUTO_RESUME = TRUE INITIALLY_SUSPENDED = TRUE""")

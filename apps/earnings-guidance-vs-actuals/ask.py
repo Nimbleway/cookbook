@@ -89,17 +89,36 @@ def _ask_ledger_llamaindex(question, db):
     Settings.llm = LlamaAnthropic(model=MODEL, max_tokens=1000)
     Settings.embed_model = None
     tables = list(TABLE_INFO)
-    sql_db = SQLDatabase(_sqlalchemy_engine(db), include_tables=tables,
+    sa_engine = _sqlalchemy_engine(db)
+    sql_db = SQLDatabase(sa_engine, include_tables=tables,
                          custom_table_info=TABLE_INFO, view_support=True)
-    engine = NLSQLTableQueryEngine(sql_database=sql_db, tables=tables,
-                                   synthesize_response=True)
+    # sql_only: generate WITHOUT executing, so nothing runs before validation
+    engine = NLSQLTableQueryEngine(sql_database=sql_db, tables=tables, sql_only=True)
     resp = engine.query(question)
-    sql = (resp.metadata or {}).get("sql_query", "")
-    if not re.match(r"^\s*select\b", sql, re.I):
-        raise ValueError("non-SELECT SQL from engine")
-    rows = (resp.metadata or {}).get("result") or []
-    cols = (resp.metadata or {}).get("col_keys") or []
-    return sql, cols, rows, str(resp)
+    sql = ((resp.metadata or {}).get("sql_query") or str(resp)).strip().rstrip(";")
+    if not re.match(r"^\s*(select|with)\b", sql, re.I) or ";" in sql:
+        raise ValueError(f"refusing non-SELECT SQL: {sql[:80]}")
+    from sqlalchemy import text
+    with sa_engine.connect() as conn:
+        result = conn.execute(text(sql))
+        cols = list(result.keys())
+        rows = [tuple(r) for r in result.fetchall()]
+    answer = _summarize(question, sql, cols, rows)
+    return sql, cols, rows, answer
+
+
+def _summarize(question, sql, cols, rows):
+    """One short synthesized answer over the (already safely executed) result."""
+    try:
+        client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+        msg = client.messages.create(
+            model=MODEL, max_tokens=300,
+            system="Answer the question in 1-3 plain sentences using only the query result given.",
+            messages=[{"role": "user", "content":
+                       f"Question: {question}\nSQL: {sql}\nColumns: {cols}\nRows (first 20): {rows[:20]}"}])
+        return next(b.text for b in msg.content if getattr(b, "type", "") == "text")
+    except Exception:
+        return None
 
 
 def _ask_ledger_direct(question, cur, db):
