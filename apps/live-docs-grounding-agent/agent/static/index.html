@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Docs Grounding Agent</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="app">
+
+  <header class="topbar">
+    <div class="brand">📚 <span>Live Docs Grounding Agent</span></div>
+    <div class="topbar-actions">
+      <button id="aboutBtn" class="icon-btn" title="About this agent" aria-label="About this agent">ℹ️</button>
+      <button id="historyToggleBtn" class="icon-btn" title="History" aria-label="History">📜</button>
+      <button id="settingsBtn" class="icon-btn" title="Settings" aria-label="Settings">⚙</button>
+      <div id="settingsMenu" class="settings-menu">
+        <button id="rerunSetupBtn">Re-run setup</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Onboarding overlay -->
+  <div id="onboarding" class="onboarding hidden">
+    <div class="onboarding-card">
+      <h1>Setting up your agent</h1>
+      <ol id="onboardingSteps" class="steps"></ol>
+
+      <div id="keyForm" class="key-form hidden">
+        <p>Paste your Nimble API key to continue.</p>
+        <input id="keyInput" type="password" placeholder="Your Nimble API key" autocomplete="off">
+        <button id="keySubmitBtn">Continue</button>
+        <p class="hint">Get one free at <a href="https://online.nimbleway.com/signup" target="_blank" rel="noopener">online.nimbleway.com</a></p>
+        <p id="keyError" class="error-text hidden"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main app -->
+  <main id="mainApp" class="main-app hidden">
+    <section class="hero">
+      <h1 id="heroDescription">Ask about any library, framework, or API</h1>
+      <p id="heroSubtitle" class="hero-subtitle"></p>
+      <div class="ask-box">
+        <textarea id="questionInput" placeholder="e.g. What's the current way to stream responses in the OpenAI Python SDK v1.x?" rows="2"></textarea>
+        <button id="askBtn">Ask</button>
+      </div>
+      <div id="chipsLabel" class="chips-label hidden">Today's picks</div>
+      <div id="chips" class="chips"></div>
+    </section>
+
+    <section id="thread" class="thread"></section>
+  </main>
+
+  <!-- Side panel: History + Saved tabs -->
+  <div id="panelOverlay" class="overlay hidden"></div>
+  <aside id="sidePanel" class="side-panel">
+    <div class="panel-header">
+      <div class="panel-tabs">
+        <button class="panel-tab active" data-tab="history">📜 History</button>
+        <button class="panel-tab" data-tab="saved">★ Saved</button>
+      </div>
+      <button id="closePanelBtn" class="icon-btn" aria-label="Close">✕</button>
+    </div>
+    <div id="historyList" class="panel-list"></div>
+    <div id="savedList" class="panel-list hidden"></div>
+  </aside>
+
+  <!-- About this agent modal -->
+  <div id="aboutOverlay" class="modal-overlay hidden">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>About this agent</h2>
+        <button id="closeAboutBtn" class="icon-btn" aria-label="Close">✕</button>
+      </div>
+      <div id="aboutBody" class="modal-body"></div>
+      <div class="modal-footer">Configured and run via the <a href="https://nimbleway.com" target="_blank" rel="noopener">Nimble Task Agents API</a></div>
+    </div>
+  </div>
+
+</div>
+
+<template id="cardTemplate">
+  <article class="card">
+    <div class="card-question"></div>
+    <div class="card-loading">
+      <div class="spinner"><span></span><span></span><span></span></div>
+      <div class="loading-status">Starting…</div>
+      <button class="cancel-btn">Cancel</button>
+    </div>
+    <div class="card-result hidden">
+      <div class="result-header">
+        <div class="result-library"></div>
+        <button class="save-btn" title="Save this answer">☆ Save</button>
+      </div>
+      <div class="result-answer"></div>
+      <div class="result-code-wrap hidden">
+        <div class="result-code-label">Code</div>
+        <pre class="result-code"></pre>
+      </div>
+      <div class="result-citations"></div>
+    </div>
+    <div class="card-error hidden"></div>
+  </article>
+</template>
+
+<script src="/app.js"></script>
+</body>
+</html>

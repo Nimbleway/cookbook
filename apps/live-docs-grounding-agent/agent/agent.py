@@ -325,15 +325,22 @@ def print_list(entries: list) -> None:
 TERMINAL_STATUSES = {"completed", "failed", "cancelled"}
 
 
-class NimbleAgentRunFailed(RuntimeError):
+class NimbleAgentRunError(RuntimeError):
+    """Base for all expected run-outcome exceptions (failed/timeout/
+    cancelled) — catch this to handle any of them without having to
+    remember all three at every call site."""
     pass
 
 
-class NimbleAgentRunTimeout(RuntimeError):
+class NimbleAgentRunFailed(NimbleAgentRunError):
     pass
 
 
-class NimbleAgentRunCancelled(RuntimeError):
+class NimbleAgentRunTimeout(NimbleAgentRunError):
+    pass
+
+
+class NimbleAgentRunCancelled(NimbleAgentRunError):
     pass
 
 
@@ -348,9 +355,22 @@ class TaskAgentsClient:
     # --- agent management ----------------------------------------------
 
     def list_agents(self) -> list:
-        resp = self._client.get("/v1/task-agents")
-        resp.raise_for_status()
-        return resp.json()
+        """Paginate through every agent in the workspace. GET /v1/task-agents
+        defaults to a 20-item page with no total-count header, so a
+        workspace with many agents (shared across other projects) would
+        silently hide agents past the first page — which breaks
+        find_agent_by_name for any agent that isn't near the front."""
+        agents = []
+        limit = 100
+        offset = 0
+        while True:
+            resp = self._client.get("/v1/task-agents", params={"limit": limit, "offset": offset})
+            resp.raise_for_status()
+            page = resp.json()
+            agents.extend(page)
+            if len(page) < limit:
+                return agents
+            offset += limit
 
     def get_agent(self, agent_id: str) -> dict:
         resp = self._client.get(f"/v1/task-agents/{agent_id}")
@@ -407,12 +427,20 @@ class TaskAgentsClient:
         agent_id: str,
         run_id: str,
         poll_interval_seconds: float = 5.0,
-        timeout_seconds: float = 300.0,
+        timeout_seconds: float = 900.0,
+        max_queue_seconds: float = 1200.0,
         on_tick=None,
         cancel_event=None,
     ) -> dict:
         """Poll GET .../runs/{run_id} until status is "completed" or "failed"
         (or "cancelled"), then return the final run object.
+
+        timeout_seconds bounds time spent actually running (status
+        "running"); max_queue_seconds separately bounds time spent waiting
+        in Nimble's queue (status "queued") before it starts. These are
+        tracked as separate phases so a busy queue can't trigger a false
+        "run timed out" — queue backlog and a genuinely stuck run are
+        different failure modes with different causes.
 
         If given, on_tick(elapsed_seconds, status) is called after every
         poll so callers can render progress without duplicating the loop.
@@ -421,25 +449,34 @@ class TaskAgentsClient:
         the wait between polls is interruptible, and setting it raises
         NimbleAgentRunCancelled. This does not cancel the run on Nimble's
         side by itself — call cancel_run for that."""
-        start = time.monotonic()
+        overall_start = time.monotonic()
         run = self.get_run(agent_id, run_id)
         if on_tick:
             on_tick(0.0, run["status"])
-        deadline = start + timeout_seconds
+
+        phase_start = time.monotonic()
+        phase_limit = max_queue_seconds if run["status"] == "queued" else timeout_seconds
 
         while run["status"] not in TERMINAL_STATUSES:
             if cancel_event is not None and cancel_event.is_set():
                 raise NimbleAgentRunCancelled(f"Run {run_id} cancelled by user")
-            if time.monotonic() > deadline:
-                raise NimbleAgentRunTimeout(f"Run {run_id} did not finish within {timeout_seconds}s")
+            if time.monotonic() - phase_start > phase_limit:
+                phase = "queued" if run["status"] == "queued" else "running"
+                raise NimbleAgentRunTimeout(f"Run {run_id} stayed '{phase}' for over {phase_limit:.0f}s")
             if cancel_event is not None:
                 if cancel_event.wait(timeout=poll_interval_seconds):
                     raise NimbleAgentRunCancelled(f"Run {run_id} cancelled by user")
             else:
                 time.sleep(poll_interval_seconds)
+
+            previous_status = run["status"]
             run = self.get_run(agent_id, run_id)
+            if run["status"] != previous_status and run["status"] not in TERMINAL_STATUSES:
+                # Left the queued phase — restart the clock under the running budget.
+                phase_start = time.monotonic()
+                phase_limit = timeout_seconds
             if on_tick:
-                on_tick(time.monotonic() - start, run["status"])
+                on_tick(time.monotonic() - overall_start, run["status"])
 
         return run
 
@@ -549,7 +586,7 @@ def ask(client: TaskAgentsClient, agent_id: str, question: str, effort: str) -> 
     try:
         run = client.poll_run(
             agent_id, run["id"],
-            poll_interval_seconds=5.0, timeout_seconds=600.0,
+            poll_interval_seconds=5.0, timeout_seconds=900.0,
             on_tick=on_tick, cancel_event=cancel_event,
         )
     except (NimbleAgentRunCancelled, KeyboardInterrupt):
@@ -688,8 +725,10 @@ def agent_loop(client: TaskAgentsClient, agent_id: str, effort: str) -> None:
             print_result(question, result)
         except NimbleAgentRunCancelled:
             pass
-        except NimbleAgentRunFailed as exc:
+        except NimbleAgentRunError as exc:
             print(str(exc))
+        except Exception as exc:
+            print(f"Unexpected error: {exc}")
         print()
 
 
@@ -837,7 +876,14 @@ def main() -> None:
             result = ask(client, agent_id, question, effort)
         except NimbleAgentRunCancelled:
             sys.exit(130)
-        print_result(question, result)
+        except NimbleAgentRunError as exc:
+            print(str(exc))
+            sys.exit(1)
+        except Exception as exc:
+            print(f"Unexpected error: {exc}")
+            sys.exit(1)
+        else:
+            print_result(question, result)
         return
 
     if have_key and have_agent:
