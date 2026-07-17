@@ -50,8 +50,10 @@ def _sqlalchemy_engine(db):
     url_kwargs = dict(
         account=os.environ["SNOWFLAKE_ACCOUNT"], user=os.environ["SNOWFLAKE_USER"],
         database=db, schema="LEDGER",
-        warehouse=os.environ.get("SNOWFLAKE_WAREHOUSE"), role=os.environ.get("SNOWFLAKE_ROLE"),
+        warehouse=os.environ.get("SNOWFLAKE_WAREHOUSE") or None,
+        role=os.environ.get("SNOWFLAKE_ROLE") or None,
     )
+    url_kwargs = {k: v for k, v in url_kwargs.items() if v is not None}
     key_path_env = os.environ.get("SNOWFLAKE_PRIVATE_KEY_PATH")
     if key_path_env:  # key-pair auth
         key_path = Path(__file__).parent / key_path_env

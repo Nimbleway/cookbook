@@ -143,7 +143,8 @@ def page_company():
                 slack_post.post(ticker, rows, webhook)
                 st.success("Posted.")
             except Exception as e:
-                st.error(f"Slack post failed: {e}")
+                # never echo the exception verbatim - requests errors embed the webhook URL
+                st.error(f"Slack post failed ({type(e).__name__}) - check the webhook URL and network.")
 
 
 def page_ask():
