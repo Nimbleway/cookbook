@@ -161,24 +161,35 @@ def push_google(violations: list[dict]) -> dict:
     header = [TRACKER_COLS]
     body = []
     for v in violations:
-        status = _row_status(v, auto, manual)
-        body.append([str(v.get(k, "")) for k in TRACKER_COLS[:-5]] + [status] +
-                    [str(v.get(k, "")) for k in ("listing_url", "evidence_url", "observed_at")])
+        row = {**{k: v.get(k) for k in TRACKER_COLS if k != "status"}, "status": _row_status(v, auto, manual)}
+        body.append([str(row.get(k, "")) for k in TRACKER_COLS])   # aligned to all 16 columns
     sheets.spreadsheets().values().update(
         spreadsheetId=C.GOOGLE_SHEET_ID, range="A1",
         valueInputOption="RAW", body={"values": header + body}).execute()
-    # 2) one Doc per auto violation, in the Drive folder
-    created = 0
+    # 2) one Doc per auto violation, in the Drive folder. Degrade gracefully: the Sheet
+    #    tracker (above) is the primary artifact; Doc creation can fail on the service
+    #    account's zero My-Drive quota (needs a Shared Drive folder).
+    created, doc_error = 0, None
     for v in auto:
         meta = {"name": f"{notice_title(v)} — ${v['advertised_price_num']:.2f}",
                 "mimeType": "application/vnd.google-apps.document"}
         if C.GOOGLE_DRIVE_FOLDER_ID:
             meta["parents"] = [C.GOOGLE_DRIVE_FOLDER_ID]
-        doc = drive.files().create(body=meta, fields="id", supportsAllDrives=True).execute()
-        docs.documents().batchUpdate(documentId=doc["id"], body={"requests": doc_requests(v)}).execute()
-        created += 1
-    return {"mode": "google", "total_violations": len(violations), "tracker_rows": len(body),
-            "docs_created": created, "notice_cap": C.NOTICE_LIMIT, "flagged_verify": len(manual)}
+        try:
+            doc = drive.files().create(body=meta, fields="id", supportsAllDrives=True).execute()
+            docs.documents().batchUpdate(documentId=doc["id"], body={"requests": doc_requests(v)}).execute()
+            created += 1
+        except Exception as e:  # noqa: BLE001
+            doc_error = str(e)
+            break   # quota/permission errors won't recover mid-loop
+    out = {"mode": "google", "total_violations": len(violations), "tracker_rows": len(body),
+           "docs_created": created, "notice_cap": C.NOTICE_LIMIT, "flagged_verify": len(manual)}
+    if doc_error:
+        hint = ("Doc notices need a SHARED DRIVE folder — a service account has no personal "
+                "Drive storage. The Sheet tracker was written; set GOOGLE_DRIVE_FOLDER_ID to a "
+                "Shared Drive folder for Docs.") if "storageQuota" in doc_error else doc_error
+        out["docs_skipped"] = hint
+    return out
 
 
 def main():

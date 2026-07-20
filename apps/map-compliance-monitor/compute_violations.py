@@ -80,7 +80,11 @@ def build():
                 continue
             domain = (row.get("seller_domain") or "").strip().lower().removeprefix("www.")
             url = row.get("listing_url") or ""
-            key = (domain, url)
+            # Include seller name + price so two distinct marketplace sellers sharing one
+            # product URL aren't collapsed (only drop truly identical rows).
+            sname = (row.get("seller_name") or "").strip().lower()
+            price_raw = str(row.get("advertised_price") or "").strip()
+            key = (domain, url, sname, price_raw)
             if not domain or key in seen:
                 continue
             seen.add(key)

@@ -10,13 +10,26 @@ Design (per dataviz method):
   - Severity uses the reserved, validated STATUS palette, always with a label:
       Mild <10%  (amber #fab219) · Moderate 10-25% (orange #ec835a) · Severe >=25% (red #d03b3b)
 """
+import html
 import json
+import re
 
 import altair as alt
 import pandas as pd
 import streamlit as st
 
 import config as C
+
+
+def esc(s):
+    """Escape untrusted web-discovered text before it enters unsafe_allow_html HTML."""
+    return html.escape(str(s if s is not None else ""))
+
+
+def safe_url(u):
+    """Only allow http(s) URLs as link targets; reject anything else (javascript:, data:, ...)."""
+    u = str(u or "").strip()
+    return u if re.match(r"^https?://", u, re.I) else ""
 
 # --- Nimble palette ---
 YELLOW = "#edc602"
@@ -211,8 +224,8 @@ if not vdf.empty:
 
     # 1) Header — product + severity chip
     st.markdown(
-        f"<div style='font-size:1.15rem;font-weight:700;color:{INK};margin-bottom:2px'>{v['product_name']}"
-        f"<span style='color:{MUTED};font-weight:500'> · {v['size']}</span></div>"
+        f"<div style='font-size:1.15rem;font-weight:700;color:{INK};margin-bottom:2px'>{esc(v['product_name'])}"
+        f"<span style='color:{MUTED};font-weight:500'> · {esc(v['size'])}</span></div>"
         f"<span class='sev-chip' style='background:{SEV[tier]}'>{SEV_EMOJI[tier]} {tier} · "
         f"{v['gap_pct']:.0f}% below MAP</span>", unsafe_allow_html=True)
     st.write("")
@@ -234,19 +247,20 @@ if not vdf.empty:
         st.markdown("**Seller**")
         conf = (v.get("price_confidence") or "n/a").title()
         st.markdown(
-            kv("Seller", v.get("seller_name") or v["seller_domain"])
-            + kv("Domain", v["seller_domain"])
-            + kv("Type", (v.get("seller_type") or "unknown").replace("_", " ").title())
-            + kv("SKU", f"{v['sku_id']} — {v['brand']}")
-            + kv("Observed", v.get("observed_at") or "n/a")
-            + kv("Price-claim confidence", conf), unsafe_allow_html=True)
+            kv("Seller", esc(v.get("seller_name") or v["seller_domain"]))
+            + kv("Domain", esc(v["seller_domain"]))
+            + kv("Type", esc((v.get("seller_type") or "unknown").replace("_", " ").title()))
+            + kv("SKU", esc(f"{v['sku_id']} — {v['brand']}"))
+            + kv("Observed", esc(v.get("observed_at") or "n/a"))
+            + kv("Price-claim confidence", esc(conf)), unsafe_allow_html=True)
     with d2:
         st.markdown("**Cited evidence**")
         st.info(v.get("evidence_excerpt") or "(price observed on listing page)")
-        src = v.get("evidence_url") or v.get("listing_url")
+        src = safe_url(v.get("evidence_url") or v.get("listing_url"))
+        listing = safe_url(v["listing_url"])
         st.markdown(
-            kv("Source", f"<a href='{src}' target='_blank'>{src}</a>" if src else "n/a")
-            + kv("Listing", f"<a href='{v['listing_url']}' target='_blank'>open listing ↗</a>"),
+            kv("Source", f"<a href='{esc(src)}' target='_blank' rel='noopener'>{esc(src)}</a>" if src else "not available")
+            + kv("Listing", f"<a href='{esc(listing)}' target='_blank' rel='noopener'>open listing ↗</a>" if listing else "not available"),
             unsafe_allow_html=True)
 else:
     st.info("No violations found across the scanned catalog.")
