@@ -1,0 +1,2151 @@
+{
+  "sku_id": "OLA-019",
+  "effort": "high",
+  "elapsed_s": 1215,
+  "fetched_at": "2026-07-20T13:01:43+00:00",
+  "run_id": "task_run_e2c07bdf087d4e579bc3aeb319998cbc",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_e2c07bdf087d4e579bc3aeb319998cbc",
+      "interaction_id": "task_run_e2c07bdf087d4e579bc3aeb319998cbc",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of Olaplex No. 5 Bond Maintenance Conditioner, 100ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:41:27.072041Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:41:27.351375Z",
+      "completed_at": "2026-07-20T13:01:38.411580Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        "{\"seller_name\": {\"@value\": \"Olaplex\", \"@citation\": [{\"url\": \"/pages/olaplex.com/products-olaplex-n-5-bond-maintenance-conditioner-us-b1dc06dd.md\", \"excerpt\": \"# N\u00ba.5 BOND MAINTENANCE\u00ae CONDITIONER ... Regular price $34 ... 250ML ... Regular price $16 ... 100ML ... Add to cart\"}], \"@reasoning\": \"Brand DTC store; the page is the official Olaplex.com product page for N\u00ba.5 Bond Maintenance Conditioner, listing both 250ML ($34) and 100ML ($16) variants.\"}, \"seller_domain\": {\"@value\": \"olaplex.com\", \"@citation\": [{\"url\": \"/pages/olaplex.com/products-olaplex-n-5-bond-maintenance-conditioner-us-b1dc06dd.md\", \"excerpt\": \"corpus-meta url: https://olaplex.com/products/olaplex-n-5-bond-maintenance-conditioner-us\"}], \"@reasoning\": \"Bare hostname of the official Olaplex store.\"}, \"advertised_price\": {\"@value\": \"16\", \"@citation\": [{\"url\": \"/pages/olaplex.com/products-olaplex-n-5-bond-maintenance-conditioner-us-b1dc06dd.md\", \"excerpt\": \"Regular price $16 ... 100ML\"}], \"@reasoning\": \"Verbatim price for the 100ML size variant as shown on the official product page ($16).\"}, \"currency\": {\"@value\": \"USD\", \"@citation\": [{\"url\": \"/pages/olaplex.com/products-olaplex-n-5-bond-maintenance-conditioner-us-b1dc06dd.md\", \"excerpt\": \"Regular price $16 ... 100ML\"}], \"@reasoning\": \"US store (United States English), price in dollars.\"}, \"listing_url\": {\"@value\": \"https://olaplex.com/products/olaplex-n-5-bond-maintenance-conditioner-us\", \"@citation\": [{\"url\": \"/pages/olaplex.com/products-olaplex-n-5-bond-maintenance-conditioner-us-b1dc06dd.md\", \"excerpt\": \"corpus-meta url: https://olaplex.com/products/olaplex-n-5-bond-maintenance-conditioner-us\"}], \"@reasoning\": \"Direct product URL on the brand's own site, with 100ML selectable variant.\"}, \"seller_type\": {\"@value\": \"authorized_retailer\", \"@citation\": [{\"url\": \"/pages/olaplex.com/products-olaplex-n-5-bond-maintenance-conditioner-us-b1dc06dd.md\", \"excerpt\": \"# N\u00ba.5 BOND MAINTENANCE\u00ae CONDITIONER ... Add to cart\"}], \"@reasoning\": \"This is the brand's own direct-to-consumer store, the most authoritative seller.\"}, \"in_stock\": {\"@value\": true, \"@citation\": [{\"url\": \"/pages/olaplex.com/products-olaplex-n-5-bond-maintenance-conditioner-us-b1dc06dd.md\", \"excerpt\": \"100ML ... Add to cart ... Quantity 0 in cart\"}], \"@reasoning\": \"Add to cart button present with quantity selector indicating purchasable/in stock.\"}, \"observed_at\": {\"@value\": \"2026-07-20\", \"@citation\": [{\"url\": \"/pages/olaplex.com/products-olaplex-n-5-bond-maintenance-conditioner-us-b1dc06dd.md\", \"excerpt\": \"retrieved: 2026-07-20\"}], \"@reasoning\": \"Date the page was retrieved from the corpus.\"}}}",
+        "{\"seller_name\": {\"@value\": \"Walgreens\", \"@citation\": [{\"url\": \"/pages/walgreens.com/store-c-productlist-olaplex-shampoo-conditioner-n-360481-465-3f0f59b5.md\", \"excerpt\": \"Olaplex No. 5 Bond Maintenance Conditioner - 3.3 fl oz ... $15.99 ... Extra 15% off $35+ with c...\"}], \"@reasoning\": \"Walgreens product list page lists 'Olaplex No. 5 Bond Maintenance Conditioner - 3.3 fl oz' at $15.99; 3.3 fl oz = 100ml.\"}, \"seller_domain\": {\"@value\": \"walgreens.com\", \"@citation\": [{\"url\": \"/pages/walgreens.com/store-c-productlist-olaplex-shampoo-conditioner-n-360481-465-3f0f59b5.md\", \"excerpt\": \"https://www.walgreens.com/store/c/olaplex-no.-5-bond-maintenance-conditioner/ID=300466950-product\"}], \"@reasoning\": \"Bare hostname of Walgreens.\"}, \"advertised_price\": {\"@value\": \"15.99\", \"@citation\": [{\"url\": \"/pages/walgreens.com/store-c-productlist-olaplex-shampoo-conditioner-n-360481-465-3f0f59b5.md\", \"excerpt\": \"Olaplex No. 5 Bond Maintenance Conditioner - 3.3 fl oz ... $15.99\"}], \"@reasoning\": \"Verbatim advertised price for the 3.3 fl oz (100ml) listing.\"}, \"currency\": {\"@value\": \"USD\", \"@citation\": [{\"url\": \"/pages/walgreens.com/store-c-productlist-olaplex-shampoo-conditioner-n-360481-465-3f0f59b5.md\", \"excerpt\": \"$15.99\"}], \"@reasoning\": \"US pharmacy chain, price in USD.\"}, \"listing_url\": {\"@value\": \"https://www.walgreens.com/store/c/olaplex-no.-5-bond-maintenance-conditioner/ID=300466950-product\", \"@citation\": [{\"url\": \"/pages/walgreens.com/store-c-productlist-olaplex-shampoo-conditioner-n-360481-465-3f0f59b5.md\", \"excerpt\": \"https://www.walgreens.com/store/c/olaplex-no.-5-bond-maintenance-conditioner/ID=300466950-product\"}], \"@reasoning\": \"Direct product URL for the 3.3 fl oz (100ml) SKU.\"}, \"seller_type\": {\"@value\": \"authorized_retailer\", \"@citation\": [{\"url\": \"/pages/walgreens.com/store-c-productlist-olaplex-shampoo-conditioner-n-360481-465-3f0f59b5.md\", \"excerpt\": \"Olaplex No. 5 Bond Maintenance Conditioner - 3.3 fl oz\"}], \"@reasoning\": \"Walgreens is a major US pharmacy/retail chain selling the brand directly (first-party).\"}, \"in_stock\": {\"@value\": null, \"@citation\": [{\"url\": \"/pages/walgreens.com/store-c-productlist-olaplex-shampoo-conditioner-n-360481-465-3f0f59b5.md\", \"excerpt\": \"Extra 15% off $35+ with c...\"}], \"@reasoning\": \"Stock status not clearly determinable for this specific 3.3 fl oz listing from the productlist page snippet (the list shows Add to cart overlay; an out-of-stock note appeared only for the 8.5 fl oz listing in other snippets).\"}, \"observed_at\": {\"@value\": \"2026-07-20\", \"@citation\": [{\"url\": \"/pages/walgreens.com/store-c-productlist-olaplex-shampoo-conditioner-n-360481-465-3f0f59b5.md\", \"excerpt\": \"retrieved: 2026-07-20\"}], \"@reasoning\": \"Date the page was retrieved from the corpus.\"}}}",
+        "{\"seller_name\": {\"@value\": \"Niche Beauty\", \"@citation\": [{\"url\": \"/pages/niche-beauty.com/en-us-products-olaplex-no5-bond-maintenance-conditioner-599--6ca82595.md\", \"excerpt\": \"$ 21.00 In Stock ... Size 100 ml | Size 100 ml ... Add to Bag\"}], \"@reasoning\": \"Niche Beauty listing for 'Olaplex No.5 Bond Maintenance Conditioner 100 ml' at $21.00 In Stock.\"}, \"seller_domain\": {\"@value\": \"niche-beauty.com\", \"@citation\": [{\"url\": \"/pages/niche-beauty.com/en-us-products-olaplex-no5-bond-maintenance-conditioner-599--6ca82595.md\", \"excerpt\": \"corpus-meta url: https://niche-beauty.com/en-us/products/olaplex-no5-bond-maintenance-conditioner/599-015\"}], \"@reasoning\": \"Bare hostname of Niche Beauty.\"}, \"advertised_price\": {\"@value\": \"21.00\", \"@citation\": [{\"url\": \"/pages/niche-beauty.com/en-us-products-olaplex-no5-bond-maintenance-conditioner-599--6ca82595.md\", \"excerpt\": \"$ 21.00 In Stock plus shipping costs* $ 210.00 / 1 l\"}], \"@reasoning\": \"Verbatim price '$ 21.00' for the 100 ml size.\"}, \"currency\": {\"@value\": \"USD\", \"@citation\": [{\"url\": \"/pages/niche-beauty.com/en-us-products-olaplex-no5-bond-maintenance-conditioner-599--6ca82595.md\", \"excerpt\": \"$ 21.00 In Stock ... Free shipping to US on all orders above $ 200.00\"}], \"@reasoning\": \"en-us storefront lists prices in USD.\"}, \"listing_url\": {\"@value\": \"https://www.niche-beauty.com/en-us/products/olaplex-no5-bond-maintenance-conditioner/599-015\", \"@citation\": [{\"url\": \"/pages/niche-beauty.com/en-us-products-olaplex-no5-bond-maintenance-conditioner-599--6ca82595.md\", \"excerpt\": \"corpus-meta url: https://niche-beauty.com/en-us/products/olaplex-no5-bond-maintenance-conditioner/599-015\"}], \"@reasoning\": \"Direct product URL for the 100ml SKU.\"}, \"seller_type\": {\"@value\": \"independent_store\", \"@citation\": [{\"url\": \"/pages/niche-beauty.com/en-us-products-olaplex-no5-bond-maintenance-conditioner-599--6ca82595.md\", \"excerpt\": \"Niche Beauty ... Add to Bag ... Size 100 ml\"}], \"@reasoning\": \"Niche Beauty is an independent beauty e-commerce retailer, not a marketplace third-party or major chain.\"}, \"in_stock\": {\"@value\": true, \"@citation\": [{\"url\": \"/pages/niche-beauty.com/en-us-products-olaplex-no5-bond-maintenance-conditioner-599--6ca82595.md\", \"excerpt\": \"$ 21.00 In Stock\"}], \"@reasoning\": \"Listing explicitly states 'In Stock'.\"}, \"observed_at\": {\"@value\": \"2026-07-20\", \"@citation\": [{\"url\": \"/pages/niche-beauty.com/en-us-products-olaplex-no5-bond-maintenance-conditioner-599--6ca82595.md\", \"excerpt\": \"retrieved: 2026-07-20\"}], \"@reasoning\": \"Date the page was retrieved from the corpus.\"}}}",
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "GoSupps",
+          "seller_type": "discounter",
+          "seller_domain": "gosupps.com",
+          "advertised_price": "US$69.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.dermstore.com/p/olaplex-travel-size-no.-5-bond-maintenance-strengthening-and-reparative-hair-conditioner-100ml/12647113/",
+          "observed_at": "2026-07-20",
+          "seller_name": "Dermstore",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "dermstore.com",
+          "advertised_price": "16.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/236571382590",
+          "observed_at": "2026-07-20",
+          "seller_name": "buffycar (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "16.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/158051556050",
+          "observed_at": "2026-07-20",
+          "seller_name": "custome9915 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "15.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/389867980098",
+          "observed_at": "2026-07-20",
+          "seller_name": "savemo-95 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "16.10"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/286998315160",
+          "observed_at": "2026-07-20",
+          "seller_name": "esuperha (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "22.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/127909045371",
+          "observed_at": "2026-07-20",
+          "seller_name": "kmariejames2 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "14.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/306893062035",
+          "observed_at": "2026-07-20",
+          "seller_name": "brekarw-0 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "13.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/336262485033",
+          "observed_at": "2026-07-20",
+          "seller_name": "tabu-nata (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "20.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/125205062644",
+          "observed_at": "2026-07-20",
+          "seller_name": "beautifulscents2012 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "37.98"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/317208917957",
+          "observed_at": "2026-07-20",
+          "seller_name": "peachybeauty (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "19.09"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.nordstrom.com/s/no-5-bond-maintenance-strengthening-conditioner/5056281",
+          "observed_at": "2026-07-20",
+          "seller_name": "Nordstrom",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "nordstrom.com",
+          "advertised_price": "16.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/dp/B082F1WSYY",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon.com",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.com",
+          "advertised_price": "16.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.sephora.com/product/no-5-bond-maintenance-conditioner-mini-P444171",
+          "observed_at": "2026-07-20",
+          "seller_name": "Sephora (US)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "sephora.com",
+          "advertised_price": "16.00"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": null,
+          "listing_url": "https://www.sephora.com/ca/en/product/no-5-bond-maintenance-tm-conditioner-mini-P444171",
+          "observed_at": "2026-07-20",
+          "seller_name": "Sephora (Canada)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "sephora.com",
+          "advertised_price": "23.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.selfridges.com/US/en/product/olaplex-n5-bond-maintenance-conditioner-100ml_R04475031/",
+          "observed_at": "2026-07-20",
+          "seller_name": "Selfridges",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "selfridges.com",
+          "advertised_price": "17.00"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+            "title": "https://www.gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://dermstore.com/p/olaplex-travel-size-no.-5-bond-maintenance-strengthening-and-reparative-hair-conditioner-100ml/12647113?srsltid=AfmBOooG-2Dr4Byg99H6Zx5zlvnN7mW7eMRc5GK-8FBok9A20EBij26K",
+            "title": "Olaplex Travel Size No. 5 Bond Maintenance ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+            "title": "ebay_search_results_template",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/dp/B082F1WSYY",
+            "title": "amazon_pdp",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 75%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "title": "https://www.gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "excerpts": [
+                  "Olaplex No. 5 Bond Maintenance Conditioner -100 ml ... Regular Price: US$79.99 ... Special Price US$69.99 ... Availability: In stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "title": "https://www.gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "excerpts": [
+                  "Special Price US$69.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "title": "https://www.gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "excerpts": [
+                  "Availability: In stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "title": "https://www.gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "excerpts": [
+                  "corpus-meta url: https://gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "title": "https://www.gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "title": "https://www.gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "excerpts": [
+                  "corpus-meta url: https://gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "title": "https://www.gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "excerpts": [
+                  "# Olaplex No. 5 Bond Maintenance Conditioner -100 ml ... Special Price US$69.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "title": "https://www.gosupps.com/olaplex-no-5-bond-maintenance-conditioner-100-ml.html",
+                "excerpts": [
+                  "AMAZING PRICES ... Get ready for the amazing and best Supps prices ever! ... In 5-10 Days ... Supplier: Olaplex"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-5-bond-maintenance-strengthening-and-reparative-hair-conditioner-100ml/12647113?srsltid=AfmBOooG-2Dr4Byg99H6Zx5zlvnN7mW7eMRc5GK-8FBok9A20EBij26K",
+                "title": "Olaplex Travel Size No. 5 Bond Maintenance ...",
+                "excerpts": [
+                  "# Olaplex Travel Size No. 5 Bond Maintenance Strengthening and Reparative Hair Conditioner 100ml ... $16.00 ... ADD TO CART ... In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-5-bond-maintenance-strengthening-and-reparative-hair-conditioner-100ml/12647113?srsltid=AfmBOooG-2Dr4Byg99H6Zx5zlvnN7mW7eMRc5GK-8FBok9A20EBij26K",
+                "title": "Olaplex Travel Size No. 5 Bond Maintenance ...",
+                "excerpts": [
+                  "$16.00 ... Code SHIP, Unlock Free 2-Day Shipping at $100"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-5-bond-maintenance-strengthening-and-reparative-hair-conditioner-100ml/12647113?srsltid=AfmBOooG-2Dr4Byg99H6Zx5zlvnN7mW7eMRc5GK-8FBok9A20EBij26K",
+                "title": "Olaplex Travel Size No. 5 Bond Maintenance ...",
+                "excerpts": [
+                  "ADD TO CART ... In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-5-bond-maintenance-strengthening-and-reparative-hair-conditioner-100ml/12647113?srsltid=AfmBOooG-2Dr4Byg99H6Zx5zlvnN7mW7eMRc5GK-8FBok9A20EBij26K",
+                "title": "Olaplex Travel Size No. 5 Bond Maintenance ...",
+                "excerpts": [
+                  "corpus-meta url: https://dermstore.com/p/olaplex-travel-size-no.-5-bond-maintenance-strengthening-and-reparative-hair-conditioner-100ml/12647113"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-5-bond-maintenance-strengthening-and-reparative-hair-conditioner-100ml/12647113?srsltid=AfmBOooG-2Dr4Byg99H6Zx5zlvnN7mW7eMRc5GK-8FBok9A20EBij26K",
+                "title": "Olaplex Travel Size No. 5 Bond Maintenance ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-5-bond-maintenance-strengthening-and-reparative-hair-conditioner-100ml/12647113?srsltid=AfmBOooG-2Dr4Byg99H6Zx5zlvnN7mW7eMRc5GK-8FBok9A20EBij26K",
+                "title": "Olaplex Travel Size No. 5 Bond Maintenance ...",
+                "excerpts": [
+                  "corpus-meta url: https://dermstore.com/p/olaplex-travel-size-no.-5-bond-maintenance-strengthening-and-reparative-hair-conditioner-100ml/12647113"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-5-bond-maintenance-strengthening-and-reparative-hair-conditioner-100ml/12647113?srsltid=AfmBOooG-2Dr4Byg99H6Zx5zlvnN7mW7eMRc5GK-8FBok9A20EBij26K",
+                "title": "Olaplex Travel Size No. 5 Bond Maintenance ...",
+                "excerpts": [
+                  "[Login](https://www.dermstore.com/account/login ...) # Olaplex Travel Size No. 5 Bond Maintenance Strengthening and Reparative Hair Conditioner 100ml ... $16.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-5-bond-maintenance-strengthening-and-reparative-hair-conditioner-100ml/12647113?srsltid=AfmBOooG-2Dr4Byg99H6Zx5zlvnN7mW7eMRc5GK-8FBok9A20EBij26K",
+                "title": "Olaplex Travel Size No. 5 Bond Maintenance ...",
+                "excerpts": [
+                  "Olaplex Travel Size No. 5 Bond Maintenance Strengthening and Reparative Hair Conditioner 100ml ... ADD TO CART"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[6].title: \"Olaplex No.5 Bond Maintenance Conditioner 3.3 oz / 100 mL Authentic\" ... data[6].price: 16.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[6].price: 16.99 ... data[6].shipping_cost: \"+$5.97 delivery\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[6].title: \"Olaplex No.5 Bond Maintenance Conditioner 3.3 oz / 100 mL Authentic\" ... data[6].location: \"or Best Offer\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[6].listing_url: \"https://www.ebay.com/itm/236571382590?_skw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[6].seller_username: \"buffycar\" ... data[6].seller_name: \"buffycar\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[6].seller_username: \"buffycar\" ... data[6].condition: \"New without box\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[8].title: \"Olaplex No. 5 100 ml/3.3 fl oz Bond Maintenance Conditioner - Brand New/Sealed\" ... data[8].price: 15"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[8].price: 15 ... data[8].shipping_cost: \"+$10.69delivery in 2-4 days\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[8].location: \"Buy It Now\" ... data[8].delivery_info: \"delivery in 2-4 days\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[8].listing_url: \"https://www.ebay.com/itm/158051556050?_skw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[8].seller_name: \"custome9915\" ... data[8].seller_username: \"Benefits charity\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[8].seller_name: \"custome9915\" ... data[8].condition: \"New without box\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[11].title: \"Olaplex No.5 Bond Maintenance Conditioner 3.3 fl oz BRAND NEW\" ... data[11].price: 16.1 ... data[11].price_strikethrough: 23"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[11].price: 16.1 ... data[11].shipping_cost: \"+$5.48 delivery\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[11].title: \"Olaplex No.5 Bond Maintenance Conditioner 3.3 fl oz BRAND NEW\" ... data[11].location: \"$23.00\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[11].listing_url: \"https://www.ebay.com/itm/389867980098?_skw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[11].seller_name: \"savemo-95\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[11].seller_name: \"savemo-95\" ... data[11].condition: \"Brand New\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[12].title: \"Olaplex No. 5 Bond Maintenance Conditioner 100 ml\" ... data[12].price: 22"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[12].price: 22"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[12].title: \"Olaplex No. 5 Bond Maintenance Conditioner 100 ml\" ... data[12].location: \"or Best Offer\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[12].listing_url: \"https://www.ebay.com/itm/286998315160?_skw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[12].seller_name: \"esuperha\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[12].seller_name: \"esuperha\" ... data[12].condition: \"Brand New\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[13].title: \"Olaplex No 5 Bond Maintenance Conditioner 3.3oz NEW\" ... data[13].price: 14"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[13].price: 14"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[13].title: \"Olaplex No 5 Bond Maintenance Conditioner 3.3oz NEW\" ... data[13].location: \"or Best Offer\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[13].listing_url: \"https://www.ebay.com/itm/127909045371?_skw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[13].seller_name: \"kmariejames2\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[13].seller_name: \"kmariejames2\" ... data[13].condition: \"New without box\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[19].title: \"Olaplex No5 Travel Size Conditioner 3.3 fl. oz Bond Maintenance\" ... data[19].price: 13"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[19].price: 13"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[19].title: \"Olaplex No5 Travel Size Conditioner 3.3 fl. oz Bond Maintenance\" ... data[19].condition: \"Brand New\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[19].listing_url: \"https://www.ebay.com/itm/306893062035?_skw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[19].seller_name: \"brekarw-0\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[19].seller_name: \"brekarw-0\" ... data[19].condition: \"Brand New\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[23].title: \"NEW-Olaplex No.5 Bond Maintenance Conditioner 3.3 fl oz. Manufacture Sealed.\" ... data[23].price: 20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[23].price: 20 ... data[23].shipping_cost: \"Free delivery\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[23].title: \"NEW-Olaplex No.5 Bond Maintenance Conditioner 3.3 fl oz. Manufacture Sealed.\" ... data[23].location: \"or Best Offer\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[23].listing_url: \"https://www.ebay.com/itm/336262485033?_skw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[23].seller_name: \"tabu-nata\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[23].seller_name: \"tabu-nata\" ... data[23].condition: \"New without box\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[24].title: \"Olaplex olaplex no 5 bond maintenance conditioner repair 3.3 oz\" ... data[24].price: 37.98 ... data[24].delivery_info: \"$33.80\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[24].price: 37.98 ... data[24].shipping_cost: \"Free delivery\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[24].title: \"Olaplex olaplex no 5 bond maintenance conditioner repair 3.3 oz\" ... data[24].location: \"or Best Offer\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[24].listing_url: \"https://www.ebay.com/itm/125205062644?_skw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[24].seller_name: \"beautifulscents2012\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[24].seller_name: \"beautifulscents2012\" ... data[24].condition: \"New without box\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[26].title: \"Olaplex No.5 Bond Maintenance Conditioner 3.3 fl oz. Manufacture Sealed. New\" ... data[26].price: 19.09"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[26].price: 19.09 ... data[26].shipping_cost: \"+$3.50 delivery\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[26].title: \"Olaplex No.5 Bond Maintenance Conditioner 3.3 fl oz. Manufacture Sealed. New\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[26].listing_url: \"https://www.ebay.com/itm/317208917957?_skw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[26].seller_name: \"peachybeauty\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Olaplex+No+5+Bond+Maintenance+Conditioner+100ml",
+                "title": "ebay_search_results_template",
+                "excerpts": [
+                  "data[26].seller_name: \"peachybeauty\" ... data[26].condition: \"New without box\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F1WSYY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_title: \"Olaplex N\u00b0.5 Bond Maintenance\u2122 Hair Strengthening Conditioner...\" ... data.web_price: 16 ... data.list_price: 16 ... data.selection_for_type_of_item_field_entry: \"100 mL / 3.3 Fl Oz\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F1WSYY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.web_price: 16 ... data.currency not shown but Amazon US listing"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F1WSYY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.availability: true ... data.product_availability_and_delivery_terms: \"In Stock\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F1WSYY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: \"https://www.amazon.com/dp/B082F1WSYY\" ... corpus-meta url: https://amazon.com/dp/B082F1WSYY"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F1WSYY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F1WSYY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "corpus-meta url: https://amazon.com/dp/B082F1WSYY"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F1WSYY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: \"Amazon.com\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F1WSYY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: \"Amazon.com\" ... data.product_title: \"Olaplex N\u00b0.5 Bond Maintenance\u2122 Hair Strengthening Conditioner\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[16].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].currency"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].in_stock"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].listing_url"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].observed_at"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].seller_domain"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].seller_name"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].currency"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].in_stock"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].listing_url"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].observed_at"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].seller_domain"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].seller_name"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1540 @@
+{
+  "sku_id": "OLA-018",
+  "effort": "high",
+  "elapsed_s": 1103,
+  "fetched_at": "2026-07-20T12:59:51+00:00",
+  "run_id": "task_run_8e97383e99ef4c0a9525867446067362",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_8e97383e99ef4c0a9525867446067362",
+      "interaction_id": "task_run_8e97383e99ef4c0a9525867446067362",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of Olaplex No. 4 Bond Maintenance Shampoo, 100ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:41:27.091738Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:41:27.473295Z",
+      "completed_at": "2026-07-20T12:59:46.280214Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/dp/B082F24V89",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon.com",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.com",
+          "advertised_price": "$16.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.dermstore.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112",
+          "observed_at": "2026-07-20",
+          "seller_name": "Dermstore",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "dermstore.com",
+          "advertised_price": "$16.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+          "observed_at": "2026-07-20",
+          "seller_name": "Ulta Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "ulta.com",
+          "advertised_price": "$16.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-3-3-oz/332377442",
+          "observed_at": "2026-07-20",
+          "seller_name": "Authorized Beauty Distribution (via Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$14.44"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.lookfantastic.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112",
+          "observed_at": "2026-07-20",
+          "seller_name": "LOOKFANTASTIC",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "\u00a314.00"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://www.cultbeauty.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112",
+          "observed_at": "2026-07-20",
+          "seller_name": "Cult Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "cultbeauty.com",
+          "advertised_price": "16.00\u20ac"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": false,
+          "listing_url": "https://www.spacenk.com/uk/haircare/shampoo/shampoo/no.-4-bond-maintenance-shampoo-MUK300053879.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Space NK",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "spacenk.com",
+          "advertised_price": "\u00a313.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+          "observed_at": "2026-07-20",
+          "seller_name": "Olaplex (Official)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "olaplex.com",
+          "advertised_price": "$16.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.sephora.com/product/olaplex-no-4-bond-maintenance-shampoo-mini-P443332",
+          "observed_at": "2026-07-20",
+          "seller_name": "Sephora",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "sephora.com",
+          "advertised_price": "$16.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.target.com/p/olaplex-no-4-bond-maintenance-shampoo-3-3-oz/-/A-90523598",
+          "observed_at": "2026-07-20",
+          "seller_name": "Target",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "target.com",
+          "advertised_price": "$16.00"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://amazon.com/dp/B082F24V89",
+            "title": "amazon_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/s?k=Olaplex+No+4+Bond+Maintenance+Shampoo+100ml+3.3+oz",
+            "title": "amazon_serp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://dermstore.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOoqzzt0SsJoPwMwXCWn5RWS6GQLrEde0s8_I9b3CVdLJlkn0_DSm",
+            "title": "Olaplex No. 4 Bond Maintenance Shampoo Travel 3.3 oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+            "title": "https://www.ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-3-3-oz/332377442",
+            "title": "walmart_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOopI4-xDlSBNZ3m704sO-Olr0GiQYP-xI3LO_mhcRzq20j4LrDVk",
+            "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://cultbeauty.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112",
+            "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://spacenk.com/uk/travel-minis?page=2",
+            "title": "Page 2 - Travel & Mini Size Beauty Products",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://spacenk.com/uk/haircare/shampoo/shampoo/no.-4-bond-maintenance-shampoo-MUK300053879.html",
+            "title": "https://www.spacenk.com/uk/haircare/shampoo/shampoo/no.-4-bond-maintenance-shampoo-MUK300053879.html",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+            "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://sephora.com/product/olaplex-no-4-bond-maintenance-shampoo-mini-P443332",
+            "title": "Mini No. 4 Bond Maintenance\u2122 Shampoo - Olaplex",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://target.com/p/olaplex-no-4-bond-maintenance-shampoo-3-3-oz/-/A-1008851269",
+            "title": "https://www.target.com/p/olaplex-no-4-bond-maintenance-shampoo-3-3-oz/-/A-1008851269",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 86%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F24V89",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: \"Amazon.com\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F24V89",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: \"https://www.amazon.com/dp/B082F24V89\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F24V89",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.web_price: 16 ... data.list_price: 16"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/s?k=Olaplex+No+4+Bond+Maintenance+Shampoo+100ml+3.3+oz",
+                "title": "amazon_serp",
+                "excerpts": [
+                  "data[4].currency: \"$\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F24V89",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: \"https://www.amazon.com/dp/B082F24V89\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F24V89",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: \"Amazon.com\" ... Amazon's Choice highlights highly rated, well-priced products available to ship immediately."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F24V89",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.availability: true ... data.product_availability_and_delivery_terms: \"In Stock\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B082F24V89",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOoqzzt0SsJoPwMwXCWn5RWS6GQLrEde0s8_I9b3CVdLJlkn0_DSm",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo Travel 3.3 oz",
+                "excerpts": [
+                  "Size: 100ml $16.00 One Time Purchase $16.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOoqzzt0SsJoPwMwXCWn5RWS6GQLrEde0s8_I9b3CVdLJlkn0_DSm",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo Travel 3.3 oz",
+                "excerpts": [
+                  "Size: 100ml $16.00 One Time Purchase $16.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOoqzzt0SsJoPwMwXCWn5RWS6GQLrEde0s8_I9b3CVdLJlkn0_DSm",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo Travel 3.3 oz",
+                "excerpts": [
+                  "In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOoqzzt0SsJoPwMwXCWn5RWS6GQLrEde0s8_I9b3CVdLJlkn0_DSm",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo Travel 3.3 oz",
+                "excerpts": [
+                  "url: https://dermstore.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOoqzzt0SsJoPwMwXCWn5RWS6GQLrEde0s8_I9b3CVdLJlkn0_DSm",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo Travel 3.3 oz",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOoqzzt0SsJoPwMwXCWn5RWS6GQLrEde0s8_I9b3CVdLJlkn0_DSm",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo Travel 3.3 oz",
+                "excerpts": [
+                  "url: https://dermstore.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOoqzzt0SsJoPwMwXCWn5RWS6GQLrEde0s8_I9b3CVdLJlkn0_DSm",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo Travel 3.3 oz",
+                "excerpts": [
+                  "Olaplex No. 4 Bond Maintenance Shampoo Travel 3.3 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOoqzzt0SsJoPwMwXCWn5RWS6GQLrEde0s8_I9b3CVdLJlkn0_DSm",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo Travel 3.3 oz",
+                "excerpts": [
+                  "Dermstore ... Free 2-Day Shipping when you spend $100+"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "title": "https://www.ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "excerpts": [
+                  "List Price $16.00 ... Size:3.3 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "title": "https://www.ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "excerpts": [
+                  "List Price $16.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "title": "https://www.ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "excerpts": [
+                  "In stock and ready to ship"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "title": "https://www.ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "excerpts": [
+                  "3.3 oz ... https://www.ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "title": "https://www.ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "title": "https://www.ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "excerpts": [
+                  "https://www.ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "title": "https://www.ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "excerpts": [
+                  "3.3 oz No.4 Bond Maintenance Strengthening, Hydrating Hair Repair Shampoo OLAPLEX"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "title": "https://www.ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2596419",
+                "excerpts": [
+                  "Free Shipping at $35. Shop 3.3 oz No.4 Bond Maintenance ... OLAPLEX"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-3-3-oz/332377442",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.price: 14.44 ... data.currency: \"USD\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-3-3-oz/332377442",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.currency: \"USD\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-3-3-oz/332377442",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "fulfillment_is_low_in_stock: false ... fulfillment_type: \"SHIPPING\" ... fulfillment_max_order_quantity: 12"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-3-3-oz/332377442",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.product_url: \"https://www.walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-3-3-oz/332377442\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-3-3-oz/332377442",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-3-3-oz/332377442",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.product_url: \"https://www.walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-3-3-oz/332377442\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-3-3-oz/332377442",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.seller_name: \"Authorized Beauty Distribution\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-3-3-oz/332377442",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.seller_name: \"Authorized Beauty Distribution\" ... data.seller_id: \"C10871421F0445B0B8BE17C6FBB1E6F0\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOopI4-xDlSBNZ3m704sO-Olr0GiQYP-xI3LO_mhcRzq20j4LrDVk",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "\u00a314.00 ... Size: 100ml ... One Time Purchase \u00a314.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOopI4-xDlSBNZ3m704sO-Olr0GiQYP-xI3LO_mhcRzq20j4LrDVk",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "\u00a314.00 ... FREE UK delivery on orders over \u00a325"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOopI4-xDlSBNZ3m704sO-Olr0GiQYP-xI3LO_mhcRzq20j4LrDVk",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "ADD TO BASKET"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOopI4-xDlSBNZ3m704sO-Olr0GiQYP-xI3LO_mhcRzq20j4LrDVk",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "url: https://lookfantastic.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOopI4-xDlSBNZ3m704sO-Olr0GiQYP-xI3LO_mhcRzq20j4LrDVk",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOopI4-xDlSBNZ3m704sO-Olr0GiQYP-xI3LO_mhcRzq20j4LrDVk",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "url: https://lookfantastic.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOopI4-xDlSBNZ3m704sO-Olr0GiQYP-xI3LO_mhcRzq20j4LrDVk",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "Olaplex Travel Size No. 4 Bond Maintenance Strengthening and Reparative Hair Shampoo 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112?srsltid=AfmBOopI4-xDlSBNZ3m704sO-Olr0GiQYP-xI3LO_mhcRzq20j4LrDVk",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "LOOKFANTASTIC - Beauty, Fragrances, Skincare & Haircare"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "16.00\u20ac ... Size: 100ml ... ADD TO BAG"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "16.00\u20ac ... Under \u20ac25"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "url: https://cultbeauty.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "url: https://cultbeauty.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "Olaplex Travel Size No. 4 Bond Maintenance Strengthening and Reparative Hair Shampoo 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-travel-size-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-100ml/12647112",
+                "title": "Olaplex Travel Size No. 4 Bond Maintenance ...",
+                "excerpts": [
+                  "Cult Beauty ... Get 15% off your first order"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://spacenk.com/uk/travel-minis?page=2",
+                "title": "Page 2 - Travel & Mini Size Beauty Products",
+                "excerpts": [
+                  "No. 4 Bond Maintenance Shampoo \u00a313.00 - \u00a352.00 (8989) Reviews"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://spacenk.com/uk/travel-minis?page=2",
+                "title": "Page 2 - Travel & Mini Size Beauty Products",
+                "excerpts": [
+                  "No. 4 Bond Maintenance Shampoo \u00a313.00 - \u00a352.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://spacenk.com/uk/haircare/shampoo/shampoo/no.-4-bond-maintenance-shampoo-MUK300053879.html",
+                "title": "https://www.spacenk.com/uk/haircare/shampoo/shampoo/no.-4-bond-maintenance-shampoo-MUK300053879.html",
+                "excerpts": [
+                  "100ML ... Pre-Order. Dispatched ... Notify Me"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://spacenk.com/uk/travel-minis?page=2",
+                "title": "Page 2 - Travel & Mini Size Beauty Products",
+                "excerpts": [
+                  "https://www.spacenk.com/uk/haircare/shampoo/shampoo/no.-4-bond-maintenance-shampoo-MUK300053879.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://spacenk.com/uk/haircare/shampoo/shampoo/no.-4-bond-maintenance-shampoo-MUK300053879.html",
+                "title": "https://www.spacenk.com/uk/haircare/shampoo/shampoo/no.-4-bond-maintenance-shampoo-MUK300053879.html",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://spacenk.com/uk/travel-minis?page=2",
+                "title": "Page 2 - Travel & Mini Size Beauty Products",
+                "excerpts": [
+                  "https://www.spacenk.com/uk/haircare/shampoo/shampoo/no.-4-bond-maintenance-shampoo-MUK300053879.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://spacenk.com/uk/haircare/shampoo/shampoo/no.-4-bond-maintenance-shampoo-MUK300053879.html",
+                "title": "https://www.spacenk.com/uk/haircare/shampoo/shampoo/no.-4-bond-maintenance-shampoo-MUK300053879.html",
+                "excerpts": [
+                  "Olaplex No. 4 Bond Maintenance Shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://spacenk.com/uk/haircare/shampoo/shampoo/no.-4-bond-maintenance-shampoo-MUK300053879.html",
+                "title": "https://www.spacenk.com/uk/haircare/shampoo/shampoo/no.-4-bond-maintenance-shampoo-MUK300053879.html",
+                "excerpts": [
+                  "Space NK ... Free delivery over \u00a325"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "N\u00ba.4 BOND MAINTENANCE\u00ae SHAMPOO ... Select a Size: 250ML 100ml ... 100mL: Up to 40 applications*"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "Regular price $34 ... Free Shipping on $50+"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "Select a Size: 250ML 100ml ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "url: https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "url: https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "N\u00ba.4 BOND MAINTENANCE\u00ae SHAMPOO"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "OLAPLEX ... PRO SITE ... olaplex.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/olaplex-no-4-bond-maintenance-shampoo-mini-P443332",
+                "title": "Mini No. 4 Bond Maintenance\u2122 Shampoo - Olaplex",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/olaplex-no-4-bond-maintenance-shampoo-mini-P443332",
+                "title": "Mini No. 4 Bond Maintenance\u2122 Shampoo - Olaplex",
+                "excerpts": [
+                  "url: https://sephora.com/product/olaplex-no-4-bond-maintenance-shampoo-mini-P443332"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/olaplex-no-4-bond-maintenance-shampoo-mini-P443332",
+                "title": "Mini No. 4 Bond Maintenance\u2122 Shampoo - Olaplex",
+                "excerpts": [
+                  "Mini No. 4 Bond Maintenance\u2122 Shampoo - Olaplex"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/olaplex-no-4-bond-maintenance-shampoo-mini-P443332",
+                "title": "Mini No. 4 Bond Maintenance\u2122 Shampoo - Olaplex",
+                "excerpts": [
+                  "Sephora Homepage ... Sign in for FREE shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-4-bond-maintenance-shampoo-3-3-oz/-/A-1008851269",
+                "title": "https://www.target.com/p/olaplex-no-4-bond-maintenance-shampoo-3-3-oz/-/A-1008851269",
+                "excerpts": [
+                  "Target Circle ... Find Stores ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

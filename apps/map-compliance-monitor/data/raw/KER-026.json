@@ -1,0 +1,2474 @@
+{
+  "sku_id": "KER-026",
+  "effort": "high",
+  "elapsed_s": 678,
+  "fetched_at": "2026-07-20T13:30:43+00:00",
+  "run_id": "task_run_e59197389c3541bcbb9373bbdb4d7dd4",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_e59197389c3541bcbb9373bbdb4d7dd4",
+      "interaction_id": "task_run_e59197389c3541bcbb9373bbdb4d7dd4",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur, 250ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:19:23.273220Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:19:23.405757Z",
+      "completed_at": "2026-07-20T13:30:27.149753Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://kerastase-usa.com/collections/premiere/bain-decalcifiant-repairing-shampoo.html?dwvar_bain-decalcifiant-repairing-shampoo_size=250ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "K\u00e9rastase US (Official)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase-usa.com",
+          "advertised_price": "46.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/dp/B0CS1T67WS",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Amazon (Sold by K\u00e9rastase)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.com",
+          "advertised_price": "46.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Premiere-Decalcifying-Repairing-Shampoo-250ml-8-5oz/14780205216",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Walmart (Authorized Beauty Distribution)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "35.59"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.currentsalon.co/products/bain-decalcifiant-reparateur-repairing-shampoo",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Current Salon",
+          "seller_type": "independent_store",
+          "seller_domain": "currentsalon.co",
+          "advertised_price": "42.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://bdbstudio.com/products/kerastase-premiere-bain-decalcifiant-reparateur",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "The/Studio (bdbstudio)",
+          "seller_type": "independent_store",
+          "seller_domain": "bdbstudio.com",
+          "advertised_price": "46.00"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://keshop.com/en/kerastase-premiere/bain-decalcifiant-reparateur.html",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Keshop",
+          "seller_type": "discounter",
+          "seller_domain": "keshop.com",
+          "advertised_price": "26.35"
+        },
+        {
+          "currency": "ZAR",
+          "in_stock": true,
+          "listing_url": "https://partnershair.co.za/products/kerastase-bain-decalcifiant-reparateur-250ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Partners Hair Design",
+          "seller_type": "independent_store",
+          "seller_domain": "partnershair.co.za",
+          "advertised_price": "730.00"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": false,
+          "listing_url": "https://shop.donyahairbody.com/products/kerastase-premiere-bain-decalcifiant-reparateur-shampoo-250ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Donya Hair + Body",
+          "seller_type": "independent_store",
+          "seller_domain": "shop.donyahairbody.com",
+          "advertised_price": "55.00"
+        },
+        {
+          "currency": "INR",
+          "in_stock": null,
+          "listing_url": "https://www.kerastase.in/shop/collections/premiere/premiere-decalcifying-repairing-shampoo/KER_00278.html",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "K\u00e9rastase India (Official)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase.in",
+          "advertised_price": "3,000"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://www.dublinandcorkdutyfree.ie/beauty/haircare/shampoo/premi%C3%A8re-bain-decalcifiant-reparateur-shampoo-250ml/394234.html?lang=en_IE",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Dublin & Cork Airport Duty Free (The Loop)",
+          "seller_type": "discounter",
+          "seller_domain": "dublinandcorkdutyfree.ie",
+          "advertised_price": "28.90"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://sleekshop.com/products/kerastase-premiere-bain-decalcifying-repairing-shampoo-for-damaged-hair.html",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Sleekshop",
+          "seller_type": "independent_store",
+          "seller_domain": "sleekshop.com",
+          "advertised_price": "46.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://lyskin.com/shop/kerastase-premiere-decalcifying-repairing-shampoo-for-damaged-hair-250ml-8-45fl-oz",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Lyskin",
+          "seller_type": "independent_store",
+          "seller_domain": "lyskin.com",
+          "advertised_price": "43,11"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/125763345025",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "eBay - Valley-Beauty store",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "46.00"
+        },
+        {
+          "currency": "AED",
+          "in_stock": null,
+          "listing_url": "https://beautytribe.com/en-row/products/kerastase-premiere-bain-decalcifiant-reparateur-250ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Beautytribe",
+          "seller_type": "independent_store",
+          "seller_domain": "beautytribe.com",
+          "advertised_price": "151.43"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": null,
+          "listing_url": "https://www.kerastase.ca/en/collections/premiere/bain-decalcifiant-reparateur.html?dwvar_bain-decalcifiant-reparateur_size=250",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "K\u00e9rastase Canada (Official)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase.ca",
+          "advertised_price": "62.00"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://kerastase-usa.com/collections/premiere/bain-decalcifiant-repairing-shampoo.html?srsltid=AfmBOopz-JKwFDwNBZ_sFLYWs-ZTmRJbJSO5vhBVyoeszpDymLrM3n6s",
+            "title": "Bain D\u00e9calcifiant R\u00e9parateur Repairing Shampoo | K\u00e9rastase",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/dp/B0CS1T67WS",
+            "title": "amazon_pdp",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/KERASTASE-Sulfate-Free-Strengthening-Smoothing-Decalcifies/dp/B0CS1T67WS",
+            "title": "Kerastase Premiere Sulfate-Free Hair Repair Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Premiere-Decalcifying-Repairing-Shampoo-250ml-8-5oz/14780205216",
+            "title": "K\u221a\u00a9rastase, Repairing Shampoo, 8.5 oz, Decalcifying ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://currentsalon.co/products/bain-decalcifiant-reparateur-repairing-shampoo?srsltid=AfmBOopud6lAoTinYX9hG1toEa7TNoToXW6Wt9FE7-M8jFH3jbd9ifHZ",
+            "title": "Revitalize Your Hair with Bain Decalcifiant Repair Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://bdbstudio.com/products/kerastase-premiere-bain-decalcifiant-reparateur?srsltid=AfmBOopIfKreEFeVd9wOT3-iz4RzB-O0lp-bTWS9FEIzMLLNOlBYGK2B",
+            "title": "K\u00e9rastase Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur | The/Studio",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://keshop.com/en/kerastase-premiere/bain-decalcifiant-reparateur.html",
+            "title": "Bain D\u00e9calcifiant R\u00e9parateur - K\u00e9rastase Premi\u00e8re Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://partnershair.co.za/products/kerastase-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoodDYlp9VrxVJttQfOmtU4Df349s762UmUDRDTcUA-Wueotqqey",
+            "title": "K\u00e9rastase Bain D\u00e9calcifiant R\u00e9parateur",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://shop.donyahairbody.com/products/kerastase-premiere-bain-decalcifiant-reparateur-shampoo-250ml?srsltid=AfmBOorddUPtBDHIFLzxJoWiiXMTKkSXZyNxUPwLaCOTbC6IkEHd09LZ",
+            "title": "Kerastase Premiere Bain D\u00e9calcifiant R\u00e9parateur ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://kerastase.in/shop/collections/premiere/premiere-decalcifying-repairing-shampoo/KER_00278.html?srsltid=AfmBOorvB1q7GccdENglaYJ_gvO8CCs_FdpXpduUc39oRd-SDIEsFnfc",
+            "title": "Premi\u00e8re Decalcifying & Repairing Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://dublinandcorkdutyfree.ie/beauty/haircare/shampoo/premi%C3%A8re-bain-decalcifiant-reparateur-shampoo-250ml/394234.html?lang=en_IE",
+            "title": "Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur Shampoo 250ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://sleekshop.com/products/kerastase-premiere-bain-decalcifying-repairing-shampoo-for-damaged-hair.html?srsltid=AfmBOoo6GhlFZIs48idtTqAV8e9y4JkeLAVepW8fjvUSuIH8OAncru7Z",
+            "title": "Kerastase Premiere Bain Decalcifying Repairing Shampoo ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lyskin.com/shop/kerastase-premiere-decalcifying-repairing-shampoo-for-damaged-hair-250ml-8-45fl-oz",
+            "title": "K\u00e9rastase premi\u00e8re decalcifying repairing shampoo for ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/125763345025",
+            "title": "Kerastase Premiere Bain Decalcifiant Reparateur Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://beautytribe.com/en-row/products/kerastase-premiere-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoroi4nsYa5aojVofGrgQVnWw_LHJsn2D4ulIE-K3hFjpbEMuPiv",
+            "title": "Kerastase Premiere Bain Decalcifiant Reparateur 250ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://kerastase.ca/en/collections/premiere/bain-decalcifiant-reparateur.html?srsltid=AfmBOoqNuxCQEY1UMU-ySmiAmhRFTkqLp0XpoaDWM4feWgg2ozItfD52",
+            "title": "Premi\u00e8re Repairing Shampoo for Damaged Hair - K\u00e9rastase CA",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/bain-decalcifiant-repairing-shampoo.html?srsltid=AfmBOopz-JKwFDwNBZ_sFLYWs-ZTmRJbJSO5vhBVyoeszpDymLrM3n6s",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur Repairing Shampoo | K\u00e9rastase",
+                "excerpts": [
+                  "Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur Repairing Shampoo ... Prices and payment are shown in USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/bain-decalcifiant-repairing-shampoo.html?srsltid=AfmBOopz-JKwFDwNBZ_sFLYWs-ZTmRJbJSO5vhBVyoeszpDymLrM3n6s",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur Repairing Shampoo | K\u00e9rastase",
+                "excerpts": [
+                  "https://kerastase-usa.com/collections/premiere/bain-decalcifiant-repairing-shampoo.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/bain-decalcifiant-repairing-shampoo.html?srsltid=AfmBOopz-JKwFDwNBZ_sFLYWs-ZTmRJbJSO5vhBVyoeszpDymLrM3n6s",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur Repairing Shampoo | K\u00e9rastase",
+                "excerpts": [
+                  "Selected 250 ml ... Old price New price $46.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/bain-decalcifiant-repairing-shampoo.html?srsltid=AfmBOopz-JKwFDwNBZ_sFLYWs-ZTmRJbJSO5vhBVyoeszpDymLrM3n6s",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur Repairing Shampoo | K\u00e9rastase",
+                "excerpts": [
+                  "Prices and payment are shown in USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/bain-decalcifiant-repairing-shampoo.html?srsltid=AfmBOopz-JKwFDwNBZ_sFLYWs-ZTmRJbJSO5vhBVyoeszpDymLrM3n6s",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur Repairing Shampoo | K\u00e9rastase",
+                "excerpts": [
+                  "https://www.kerastase-usa.com/collections/premiere/bain-decalcifiant-repairing-shampoo.html?dwvar_bain-decalcifiant-repairing-shampoo_size=250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/bain-decalcifiant-repairing-shampoo.html?srsltid=AfmBOopz-JKwFDwNBZ_sFLYWs-ZTmRJbJSO5vhBVyoeszpDymLrM3n6s",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur Repairing Shampoo | K\u00e9rastase",
+                "excerpts": [
+                  "K\u00e9rastase US official brand site selling the product directly"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/bain-decalcifiant-repairing-shampoo.html?srsltid=AfmBOopz-JKwFDwNBZ_sFLYWs-ZTmRJbJSO5vhBVyoeszpDymLrM3n6s",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur Repairing Shampoo | K\u00e9rastase",
+                "excerpts": [
+                  "Selected 250 ml ... Old price New price $46.00 ... Select a Size for Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur Repairing Shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/bain-decalcifiant-repairing-shampoo.html?srsltid=AfmBOopz-JKwFDwNBZ_sFLYWs-ZTmRJbJSO5vhBVyoeszpDymLrM3n6s",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur Repairing Shampoo | K\u00e9rastase",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0CS1T67WS",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.asin: B0CS1T67WS ... data.ships_from: Amazon ... Kerastase Premiere Sulfate-Free Hair Repair Shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0CS1T67WS",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B0CS1T67WS"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Sulfate-Free-Strengthening-Smoothing-Decalcifies/dp/B0CS1T67WS",
+                "title": "Kerastase Premiere Sulfate-Free Hair Repair Shampoo",
+                "excerpts": [
+                  "One-Time Price: $46.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Sulfate-Free-Strengthening-Smoothing-Decalcifies/dp/B0CS1T67WS",
+                "title": "Kerastase Premiere Sulfate-Free Hair Repair Shampoo",
+                "excerpts": [
+                  "$46.00 ... $5.14 per fluid ounce"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0CS1T67WS",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B0CS1T67WS"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Sulfate-Free-Strengthening-Smoothing-Decalcifies/dp/B0CS1T67WS",
+                "title": "Kerastase Premiere Sulfate-Free Hair Repair Shampoo",
+                "excerpts": [
+                  "Ships from: Amazon ... Sold by: K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Sulfate-Free-Strengthening-Smoothing-Decalcifies/dp/B0CS1T67WS",
+                "title": "Kerastase Premiere Sulfate-Free Hair Repair Shampoo",
+                "excerpts": [
+                  "$43.70 with 5 percent savings $5.14 per fluid ounce ... First delivery on Jul 28"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0CS1T67WS",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Decalcifying-Repairing-Shampoo-250ml-8-5oz/14780205216",
+                "title": "K\u221a\u00a9rastase, Repairing Shampoo, 8.5 oz, Decalcifying ...",
+                "excerpts": [
+                  "Kerastase Premiere Decalifying System Repairing Shampoo 8.5 oz ... Sold by Authorized Beauty Distribution"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Decalcifying-Repairing-Shampoo-250ml-8-5oz/14780205216",
+                "title": "K\u221a\u00a9rastase, Repairing Shampoo, 8.5 oz, Decalcifying ...",
+                "excerpts": [
+                  "https://walmart.com/ip/Kerastase-Premiere-Decalcifying-Repairing-Shampoo-250ml-8-5oz/14780205216"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Decalcifying-Repairing-Shampoo-250ml-8-5oz/14780205216",
+                "title": "K\u221a\u00a9rastase, Repairing Shampoo, 8.5 oz, Decalcifying ...",
+                "excerpts": [
+                  "Current price is Now $35.59 ... was $46.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Decalcifying-Repairing-Shampoo-250ml-8-5oz/14780205216",
+                "title": "K\u221a\u00a9rastase, Repairing Shampoo, 8.5 oz, Decalcifying ...",
+                "excerpts": [
+                  "Current price is Now $35.59 ... Price when purchased online"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Decalcifying-Repairing-Shampoo-250ml-8-5oz/14780205216",
+                "title": "K\u221a\u00a9rastase, Repairing Shampoo, 8.5 oz, Decalcifying ...",
+                "excerpts": [
+                  "https://walmart.com/ip/Kerastase-Premiere-Decalcifying-Repairing-Shampoo-250ml-8-5oz/14780205216"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Decalcifying-Repairing-Shampoo-250ml-8-5oz/14780205216",
+                "title": "K\u221a\u00a9rastase, Repairing Shampoo, 8.5 oz, Decalcifying ...",
+                "excerpts": [
+                  "Sold by Authorized Beauty Distribution ... Fulfilled by Walmart"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Decalcifying-Repairing-Shampoo-250ml-8-5oz/14780205216",
+                "title": "K\u221a\u00a9rastase, Repairing Shampoo, 8.5 oz, Decalcifying ...",
+                "excerpts": [
+                  "Add to cart ... Arrives by Wed, Jul 22 ... Order within 5 hr 54 min"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Decalcifying-Repairing-Shampoo-250ml-8-5oz/14780205216",
+                "title": "K\u221a\u00a9rastase, Repairing Shampoo, 8.5 oz, Decalcifying ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/products/bain-decalcifiant-reparateur-repairing-shampoo?srsltid=AfmBOopud6lAoTinYX9hG1toEa7TNoToXW6Wt9FE7-M8jFH3jbd9ifHZ",
+                "title": "Revitalize Your Hair with Bain Decalcifiant Repair Shampoo",
+                "excerpts": [
+                  "Regular price $42.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/products/bain-decalcifiant-reparateur-repairing-shampoo?srsltid=AfmBOopud6lAoTinYX9hG1toEa7TNoToXW6Wt9FE7-M8jFH3jbd9ifHZ",
+                "title": "Revitalize Your Hair with Bain Decalcifiant Repair Shampoo",
+                "excerpts": [
+                  "Regular price $42.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/products/bain-decalcifiant-reparateur-repairing-shampoo?srsltid=AfmBOopud6lAoTinYX9hG1toEa7TNoToXW6Wt9FE7-M8jFH3jbd9ifHZ",
+                "title": "Revitalize Your Hair with Bain Decalcifiant Repair Shampoo",
+                "excerpts": [
+                  "Only 1 left in stock. Order soon."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/products/bain-decalcifiant-reparateur-repairing-shampoo?srsltid=AfmBOopud6lAoTinYX9hG1toEa7TNoToXW6Wt9FE7-M8jFH3jbd9ifHZ",
+                "title": "Revitalize Your Hair with Bain Decalcifiant Repair Shampoo",
+                "excerpts": [
+                  "https://www.currentsalon.co/products/bain-decalcifiant-reparateur-repairing-shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/products/bain-decalcifiant-reparateur-repairing-shampoo?srsltid=AfmBOopud6lAoTinYX9hG1toEa7TNoToXW6Wt9FE7-M8jFH3jbd9ifHZ",
+                "title": "Revitalize Your Hair with Bain Decalcifiant Repair Shampoo",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/products/bain-decalcifiant-reparateur-repairing-shampoo?srsltid=AfmBOopud6lAoTinYX9hG1toEa7TNoToXW6Wt9FE7-M8jFH3jbd9ifHZ",
+                "title": "Revitalize Your Hair with Bain Decalcifiant Repair Shampoo",
+                "excerpts": [
+                  "https://www.currentsalon.co/products/bain-decalcifiant-reparateur-repairing-shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/products/bain-decalcifiant-reparateur-repairing-shampoo?srsltid=AfmBOopud6lAoTinYX9hG1toEa7TNoToXW6Wt9FE7-M8jFH3jbd9ifHZ",
+                "title": "Revitalize Your Hair with Bain Decalcifiant Repair Shampoo",
+                "excerpts": [
+                  "Bain D\u00e9calcifiant R\u00e9parateur Repairing Shampoo - Current Salon"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/products/bain-decalcifiant-reparateur-repairing-shampoo?srsltid=AfmBOopud6lAoTinYX9hG1toEa7TNoToXW6Wt9FE7-M8jFH3jbd9ifHZ",
+                "title": "Revitalize Your Hair with Bain Decalcifiant Repair Shampoo",
+                "excerpts": [
+                  "Bain D\u00e9calcifiant R\u00e9parateur Repairing Shampoo - Current Salon ... Buy 3+ Products and Get 20% Off Entire Order!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bdbstudio.com/products/kerastase-premiere-bain-decalcifiant-reparateur?srsltid=AfmBOopIfKreEFeVd9wOT3-iz4RzB-O0lp-bTWS9FEIzMLLNOlBYGK2B",
+                "title": "K\u00e9rastase Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur | The/Studio",
+                "excerpts": [
+                  "$46.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bdbstudio.com/products/kerastase-premiere-bain-decalcifiant-reparateur?srsltid=AfmBOopIfKreEFeVd9wOT3-iz4RzB-O0lp-bTWS9FEIzMLLNOlBYGK2B",
+                "title": "K\u00e9rastase Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur | The/Studio",
+                "excerpts": [
+                  "Full Size 250ml Travel Size 80ml Value Size 500ml Refill Pouch 500ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bdbstudio.com/products/kerastase-premiere-bain-decalcifiant-reparateur?srsltid=AfmBOopIfKreEFeVd9wOT3-iz4RzB-O0lp-bTWS9FEIzMLLNOlBYGK2B",
+                "title": "K\u00e9rastase Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur | The/Studio",
+                "excerpts": [
+                  "\u2212 Quantity +"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bdbstudio.com/products/kerastase-premiere-bain-decalcifiant-reparateur?srsltid=AfmBOopIfKreEFeVd9wOT3-iz4RzB-O0lp-bTWS9FEIzMLLNOlBYGK2B",
+                "title": "K\u00e9rastase Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur | The/Studio",
+                "excerpts": [
+                  "https://bdbstudio.com/products/kerastase-premiere-bain-decalcifiant-reparateur"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bdbstudio.com/products/kerastase-premiere-bain-decalcifiant-reparateur?srsltid=AfmBOopIfKreEFeVd9wOT3-iz4RzB-O0lp-bTWS9FEIzMLLNOlBYGK2B",
+                "title": "K\u00e9rastase Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur | The/Studio",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bdbstudio.com/products/kerastase-premiere-bain-decalcifiant-reparateur?srsltid=AfmBOopIfKreEFeVd9wOT3-iz4RzB-O0lp-bTWS9FEIzMLLNOlBYGK2B",
+                "title": "K\u00e9rastase Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur | The/Studio",
+                "excerpts": [
+                  "https://bdbstudio.com/products/kerastase-premiere-bain-decalcifiant-reparateur"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bdbstudio.com/products/kerastase-premiere-bain-decalcifiant-reparateur?srsltid=AfmBOopIfKreEFeVd9wOT3-iz4RzB-O0lp-bTWS9FEIzMLLNOlBYGK2B",
+                "title": "K\u00e9rastase Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur | The/Studio",
+                "excerpts": [
+                  "K\u00e9rastase Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur | The/Studio"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bdbstudio.com/products/kerastase-premiere-bain-decalcifiant-reparateur?srsltid=AfmBOopIfKreEFeVd9wOT3-iz4RzB-O0lp-bTWS9FEIzMLLNOlBYGK2B",
+                "title": "K\u00e9rastase Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur | The/Studio",
+                "excerpts": [
+                  "Brands ... K\u00e9rastase ... Oribe ... K18"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/bain-decalcifiant-reparateur.html",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur - K\u00e9rastase Premi\u00e8re Shampoo",
+                "excerpts": [
+                  "\u20ac26.35 \u20ac37.45 \\-30%"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/bain-decalcifiant-reparateur.html",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur - K\u00e9rastase Premi\u00e8re Shampoo",
+                "excerpts": [
+                  "\u20ac26.35 \u20ac37.45 \\-30%"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/bain-decalcifiant-reparateur.html",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur - K\u00e9rastase Premi\u00e8re Shampoo",
+                "excerpts": [
+                  "Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/bain-decalcifiant-reparateur.html",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur - K\u00e9rastase Premi\u00e8re Shampoo",
+                "excerpts": [
+                  "https://keshop.com/en/kerastase-premiere/bain-decalcifiant-reparateur.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/bain-decalcifiant-reparateur.html",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur - K\u00e9rastase Premi\u00e8re Shampoo",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/bain-decalcifiant-reparateur.html",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur - K\u00e9rastase Premi\u00e8re Shampoo",
+                "excerpts": [
+                  "https://keshop.com/en/kerastase-premiere/bain-decalcifiant-reparateur.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/bain-decalcifiant-reparateur.html",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur - K\u00e9rastase Premi\u00e8re Shampoo",
+                "excerpts": [
+                  "4.9/5 Store rating ... Bain D\u00e9calcifiant R\u00e9parateur - K\u00e9rastase Premi\u00e8re Shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/bain-decalcifiant-reparateur.html",
+                "title": "Bain D\u00e9calcifiant R\u00e9parateur - K\u00e9rastase Premi\u00e8re Shampoo",
+                "excerpts": [
+                  "\u20ac26.35 \u20ac37.45 \\-30%"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://partnershair.co.za/products/kerastase-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoodDYlp9VrxVJttQfOmtU4Df349s762UmUDRDTcUA-Wueotqqey",
+                "title": "K\u00e9rastase Bain D\u00e9calcifiant R\u00e9parateur",
+                "excerpts": [
+                  "R 730.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://partnershair.co.za/products/kerastase-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoodDYlp9VrxVJttQfOmtU4Df349s762UmUDRDTcUA-Wueotqqey",
+                "title": "K\u00e9rastase Bain D\u00e9calcifiant R\u00e9parateur",
+                "excerpts": [
+                  "Free SA delivery when you spend R390"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://partnershair.co.za/products/kerastase-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoodDYlp9VrxVJttQfOmtU4Df349s762UmUDRDTcUA-Wueotqqey",
+                "title": "K\u00e9rastase Bain D\u00e9calcifiant R\u00e9parateur",
+                "excerpts": [
+                  "Hurry, only 2 items left in stock!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://partnershair.co.za/products/kerastase-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoodDYlp9VrxVJttQfOmtU4Df349s762UmUDRDTcUA-Wueotqqey",
+                "title": "K\u00e9rastase Bain D\u00e9calcifiant R\u00e9parateur",
+                "excerpts": [
+                  "https://partnershair.co.za/products/kerastase-bain-decalcifiant-reparateur-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://partnershair.co.za/products/kerastase-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoodDYlp9VrxVJttQfOmtU4Df349s762UmUDRDTcUA-Wueotqqey",
+                "title": "K\u00e9rastase Bain D\u00e9calcifiant R\u00e9parateur",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://partnershair.co.za/products/kerastase-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoodDYlp9VrxVJttQfOmtU4Df349s762UmUDRDTcUA-Wueotqqey",
+                "title": "K\u00e9rastase Bain D\u00e9calcifiant R\u00e9parateur",
+                "excerpts": [
+                  "https://partnershair.co.za/products/kerastase-bain-decalcifiant-reparateur-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://partnershair.co.za/products/kerastase-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoodDYlp9VrxVJttQfOmtU4Df349s762UmUDRDTcUA-Wueotqqey",
+                "title": "K\u00e9rastase Bain D\u00e9calcifiant R\u00e9parateur",
+                "excerpts": [
+                  "Partners Hair Design"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://partnershair.co.za/products/kerastase-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoodDYlp9VrxVJttQfOmtU4Df349s762UmUDRDTcUA-Wueotqqey",
+                "title": "K\u00e9rastase Bain D\u00e9calcifiant R\u00e9parateur",
+                "excerpts": [
+                  "Salons ... The real thing \u2014 authorised, authentic stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-premiere-bain-decalcifiant-reparateur-shampoo-250ml?srsltid=AfmBOorddUPtBDHIFLzxJoWiiXMTKkSXZyNxUPwLaCOTbC6IkEHd09LZ",
+                "title": "Kerastase Premiere Bain D\u00e9calcifiant R\u00e9parateur ...",
+                "excerpts": [
+                  "Regular price Sale price $55.00 CAD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-premiere-bain-decalcifiant-reparateur-shampoo-250ml?srsltid=AfmBOorddUPtBDHIFLzxJoWiiXMTKkSXZyNxUPwLaCOTbC6IkEHd09LZ",
+                "title": "Kerastase Premiere Bain D\u00e9calcifiant R\u00e9parateur ...",
+                "excerpts": [
+                  "Regular price Sale price $55.00 CAD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-premiere-bain-decalcifiant-reparateur-shampoo-250ml?srsltid=AfmBOorddUPtBDHIFLzxJoWiiXMTKkSXZyNxUPwLaCOTbC6IkEHd09LZ",
+                "title": "Kerastase Premiere Bain D\u00e9calcifiant R\u00e9parateur ...",
+                "excerpts": [
+                  "Sale Sold out"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-premiere-bain-decalcifiant-reparateur-shampoo-250ml?srsltid=AfmBOorddUPtBDHIFLzxJoWiiXMTKkSXZyNxUPwLaCOTbC6IkEHd09LZ",
+                "title": "Kerastase Premiere Bain D\u00e9calcifiant R\u00e9parateur ...",
+                "excerpts": [
+                  "https://shop.donyahairbody.com/products/kerastase-premiere-bain-decalcifiant-reparateur-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-premiere-bain-decalcifiant-reparateur-shampoo-250ml?srsltid=AfmBOorddUPtBDHIFLzxJoWiiXMTKkSXZyNxUPwLaCOTbC6IkEHd09LZ",
+                "title": "Kerastase Premiere Bain D\u00e9calcifiant R\u00e9parateur ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-premiere-bain-decalcifiant-reparateur-shampoo-250ml?srsltid=AfmBOorddUPtBDHIFLzxJoWiiXMTKkSXZyNxUPwLaCOTbC6IkEHd09LZ",
+                "title": "Kerastase Premiere Bain D\u00e9calcifiant R\u00e9parateur ...",
+                "excerpts": [
+                  "https://shop.donyahairbody.com/products/kerastase-premiere-bain-decalcifiant-reparateur-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-premiere-bain-decalcifiant-reparateur-shampoo-250ml?srsltid=AfmBOorddUPtBDHIFLzxJoWiiXMTKkSXZyNxUPwLaCOTbC6IkEHd09LZ",
+                "title": "Kerastase Premiere Bain D\u00e9calcifiant R\u00e9parateur ...",
+                "excerpts": [
+                  "Welcome to Donya Hair + Body Online Shop"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-premiere-bain-decalcifiant-reparateur-shampoo-250ml?srsltid=AfmBOorddUPtBDHIFLzxJoWiiXMTKkSXZyNxUPwLaCOTbC6IkEHd09LZ",
+                "title": "Kerastase Premiere Bain D\u00e9calcifiant R\u00e9parateur ...",
+                "excerpts": [
+                  "Hair Salon ... Welcome to Donya Hair + Body Online Shop"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.in/shop/collections/premiere/premiere-decalcifying-repairing-shampoo/KER_00278.html?srsltid=AfmBOorvB1q7GccdENglaYJ_gvO8CCs_FdpXpduUc39oRd-SDIEsFnfc",
+                "title": "Premi\u00e8re Decalcifying & Repairing Shampoo",
+                "excerpts": [
+                  "Old price New price \u20b93,000 (MRP, Inclusive of Taxes)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.in/shop/collections/premiere/premiere-decalcifying-repairing-shampoo/KER_00278.html?srsltid=AfmBOorvB1q7GccdENglaYJ_gvO8CCs_FdpXpduUc39oRd-SDIEsFnfc",
+                "title": "Premi\u00e8re Decalcifying & Repairing Shampoo",
+                "excerpts": [
+                  "Old price New price \u20b93,000 (MRP, Inclusive of Taxes)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.in/shop/collections/premiere/premiere-decalcifying-repairing-shampoo/KER_00278.html?srsltid=AfmBOorvB1q7GccdENglaYJ_gvO8CCs_FdpXpduUc39oRd-SDIEsFnfc",
+                "title": "Premi\u00e8re Decalcifying & Repairing Shampoo",
+                "excerpts": [
+                  "Premi\u00e8re Decalcifying & Repairing Shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.in/shop/collections/premiere/premiere-decalcifying-repairing-shampoo/KER_00278.html?srsltid=AfmBOorvB1q7GccdENglaYJ_gvO8CCs_FdpXpduUc39oRd-SDIEsFnfc",
+                "title": "Premi\u00e8re Decalcifying & Repairing Shampoo",
+                "excerpts": [
+                  "https://kerastase.in/shop/collections/premiere/premiere-decalcifying-repairing-shampoo/KER_00278.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.in/shop/collections/premiere/premiere-decalcifying-repairing-shampoo/KER_00278.html?srsltid=AfmBOorvB1q7GccdENglaYJ_gvO8CCs_FdpXpduUc39oRd-SDIEsFnfc",
+                "title": "Premi\u00e8re Decalcifying & Repairing Shampoo",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.in/shop/collections/premiere/premiere-decalcifying-repairing-shampoo/KER_00278.html?srsltid=AfmBOorvB1q7GccdENglaYJ_gvO8CCs_FdpXpduUc39oRd-SDIEsFnfc",
+                "title": "Premi\u00e8re Decalcifying & Repairing Shampoo",
+                "excerpts": [
+                  "https://kerastase.in/shop/collections/premiere/premiere-decalcifying-repairing-shampoo/KER_00278.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.in/shop/collections/premiere/premiere-decalcifying-repairing-shampoo/KER_00278.html?srsltid=AfmBOorvB1q7GccdENglaYJ_gvO8CCs_FdpXpduUc39oRd-SDIEsFnfc",
+                "title": "Premi\u00e8re Decalcifying & Repairing Shampoo",
+                "excerpts": [
+                  "Kerastase India"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.in/shop/collections/premiere/premiere-decalcifying-repairing-shampoo/KER_00278.html?srsltid=AfmBOorvB1q7GccdENglaYJ_gvO8CCs_FdpXpduUc39oRd-SDIEsFnfc",
+                "title": "Premi\u00e8re Decalcifying & Repairing Shampoo",
+                "excerpts": [
+                  "Premi\u00e8re Decalcifying & Repairing Shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dublinandcorkdutyfree.ie/beauty/haircare/shampoo/premi%C3%A8re-bain-decalcifiant-reparateur-shampoo-250ml/394234.html?lang=en_IE",
+                "title": "Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur Shampoo 250ml",
+                "excerpts": [
+                  "\u20ac28.90"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dublinandcorkdutyfree.ie/beauty/haircare/shampoo/premi%C3%A8re-bain-decalcifiant-reparateur-shampoo-250ml/394234.html?lang=en_IE",
+                "title": "Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur Shampoo 250ml",
+                "excerpts": [
+                  "RRP:  \u20ac34.00 ... \u20ac28.90"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dublinandcorkdutyfree.ie/beauty/haircare/shampoo/premi%C3%A8re-bain-decalcifiant-reparateur-shampoo-250ml/394234.html?lang=en_IE",
+                "title": "Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur Shampoo 250ml",
+                "excerpts": [
+                  "Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dublinandcorkdutyfree.ie/beauty/haircare/shampoo/premi%C3%A8re-bain-decalcifiant-reparateur-shampoo-250ml/394234.html?lang=en_IE",
+                "title": "Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur Shampoo 250ml",
+                "excerpts": [
+                  "https://www.dublinandcorkdutyfree.ie/beauty/haircare/shampoo/premi%C3%A8re-bain-decalcifiant-reparateur-shampoo-250ml/394234.html?lang=en_IE"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dublinandcorkdutyfree.ie/beauty/haircare/shampoo/premi%C3%A8re-bain-decalcifiant-reparateur-shampoo-250ml/394234.html?lang=en_IE",
+                "title": "Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur Shampoo 250ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dublinandcorkdutyfree.ie/beauty/haircare/shampoo/premi%C3%A8re-bain-decalcifiant-reparateur-shampoo-250ml/394234.html?lang=en_IE",
+                "title": "Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur Shampoo 250ml",
+                "excerpts": [
+                  "https://www.dublinandcorkdutyfree.ie/beauty/haircare/shampoo/premi%C3%A8re-bain-decalcifiant-reparateur-shampoo-250ml/394234.html?lang=en_IE"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dublinandcorkdutyfree.ie/beauty/haircare/shampoo/premi%C3%A8re-bain-decalcifiant-reparateur-shampoo-250ml/394234.html?lang=en_IE",
+                "title": "Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur Shampoo 250ml",
+                "excerpts": [
+                  "Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur Shampoo 250ml | Airport Duty Free Shopping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dublinandcorkdutyfree.ie/beauty/haircare/shampoo/premi%C3%A8re-bain-decalcifiant-reparateur-shampoo-250ml/394234.html?lang=en_IE",
+                "title": "Premi\u00e8re Bain D\u00e9calcifiant R\u00e9parateur Shampoo 250ml",
+                "excerpts": [
+                  "SAVE \u20ac5.10 ON HIGH STREET PRICE OF \u20ac34.00 ... RRP:  \u20ac34.00 ... \u20ac28.90"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sleekshop.com/products/kerastase-premiere-bain-decalcifying-repairing-shampoo-for-damaged-hair.html?srsltid=AfmBOoo6GhlFZIs48idtTqAV8e9y4JkeLAVepW8fjvUSuIH8OAncru7Z",
+                "title": "Kerastase Premiere Bain Decalcifying Repairing Shampoo ...",
+                "excerpts": [
+                  "**Price:**$46.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sleekshop.com/products/kerastase-premiere-bain-decalcifying-repairing-shampoo-for-damaged-hair.html?srsltid=AfmBOoo6GhlFZIs48idtTqAV8e9y4JkeLAVepW8fjvUSuIH8OAncru7Z",
+                "title": "Kerastase Premiere Bain Decalcifying Repairing Shampoo ...",
+                "excerpts": [
+                  "Free Shipping over $99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sleekshop.com/products/kerastase-premiere-bain-decalcifying-repairing-shampoo-for-damaged-hair.html?srsltid=AfmBOoo6GhlFZIs48idtTqAV8e9y4JkeLAVepW8fjvUSuIH8OAncru7Z",
+                "title": "Kerastase Premiere Bain Decalcifying Repairing Shampoo ...",
+                "excerpts": [
+                  "Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sleekshop.com/products/kerastase-premiere-bain-decalcifying-repairing-shampoo-for-damaged-hair.html?srsltid=AfmBOoo6GhlFZIs48idtTqAV8e9y4JkeLAVepW8fjvUSuIH8OAncru7Z",
+                "title": "Kerastase Premiere Bain Decalcifying Repairing Shampoo ...",
+                "excerpts": [
+                  "https://sleekshop.com/products/kerastase-premiere-bain-decalcifying-repairing-shampoo-for-damaged-hair.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sleekshop.com/products/kerastase-premiere-bain-decalcifying-repairing-shampoo-for-damaged-hair.html?srsltid=AfmBOoo6GhlFZIs48idtTqAV8e9y4JkeLAVepW8fjvUSuIH8OAncru7Z",
+                "title": "Kerastase Premiere Bain Decalcifying Repairing Shampoo ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sleekshop.com/products/kerastase-premiere-bain-decalcifying-repairing-shampoo-for-damaged-hair.html?srsltid=AfmBOoo6GhlFZIs48idtTqAV8e9y4JkeLAVepW8fjvUSuIH8OAncru7Z",
+                "title": "Kerastase Premiere Bain Decalcifying Repairing Shampoo ...",
+                "excerpts": [
+                  "https://sleekshop.com/products/kerastase-premiere-bain-decalcifying-repairing-shampoo-for-damaged-hair.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sleekshop.com/products/kerastase-premiere-bain-decalcifying-repairing-shampoo-for-damaged-hair.html?srsltid=AfmBOoo6GhlFZIs48idtTqAV8e9y4JkeLAVepW8fjvUSuIH8OAncru7Z",
+                "title": "Kerastase Premiere Bain Decalcifying Repairing Shampoo ...",
+                "excerpts": [
+                  "Kerastase Premiere Bain Decalcifying Repairing Shampoo for Damaged Hair"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sleekshop.com/products/kerastase-premiere-bain-decalcifying-repairing-shampoo-for-damaged-hair.html?srsltid=AfmBOoo6GhlFZIs48idtTqAV8e9y4JkeLAVepW8fjvUSuIH8OAncru7Z",
+                "title": "Kerastase Premiere Bain Decalcifying Repairing Shampoo ...",
+                "excerpts": [
+                  "Ships from California ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-premiere-decalcifying-repairing-shampoo-for-damaged-hair-250ml-8-45fl-oz",
+                "title": "K\u00e9rastase premi\u00e8re decalcifying repairing shampoo for ...",
+                "excerpts": [
+                  "$43,11"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-premiere-decalcifying-repairing-shampoo-for-damaged-hair-250ml-8-45fl-oz",
+                "title": "K\u00e9rastase premi\u00e8re decalcifying repairing shampoo for ...",
+                "excerpts": [
+                  "$43,11 ... Free shipping available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-premiere-decalcifying-repairing-shampoo-for-damaged-hair-250ml-8-45fl-oz",
+                "title": "K\u00e9rastase premi\u00e8re decalcifying repairing shampoo for ...",
+                "excerpts": [
+                  "AVAILABLE ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-premiere-decalcifying-repairing-shampoo-for-damaged-hair-250ml-8-45fl-oz",
+                "title": "K\u00e9rastase premi\u00e8re decalcifying repairing shampoo for ...",
+                "excerpts": [
+                  "https://lyskin.com/shop/kerastase-premiere-decalcifying-repairing-shampoo-for-damaged-hair-250ml-8-45fl-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-premiere-decalcifying-repairing-shampoo-for-damaged-hair-250ml-8-45fl-oz",
+                "title": "K\u00e9rastase premi\u00e8re decalcifying repairing shampoo for ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-premiere-decalcifying-repairing-shampoo-for-damaged-hair-250ml-8-45fl-oz",
+                "title": "K\u00e9rastase premi\u00e8re decalcifying repairing shampoo for ...",
+                "excerpts": [
+                  "https://lyskin.com/shop/kerastase-premiere-decalcifying-repairing-shampoo-for-damaged-hair-250ml-8-45fl-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-premiere-decalcifying-repairing-shampoo-for-damaged-hair-250ml-8-45fl-oz",
+                "title": "K\u00e9rastase premi\u00e8re decalcifying repairing shampoo for ...",
+                "excerpts": [
+                  "About Lyskin"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-premiere-decalcifying-repairing-shampoo-for-damaged-hair-250ml-8-45fl-oz",
+                "title": "K\u00e9rastase premi\u00e8re decalcifying repairing shampoo for ...",
+                "excerpts": [
+                  "K\u00e9rastase premi\u00e8re decalcifying repairing shampoo for damaged hair 250ml 8.45fl.oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/125763345025",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur Shampoo",
+                "excerpts": [
+                  "US $46.00/ea ... Buy 1Buy 1 for $46.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/125763345025",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur Shampoo",
+                "excerpts": [
+                  "US $46.00/ea"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/125763345025",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur Shampoo",
+                "excerpts": [
+                  "More than 10 available217 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/125763345025",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur Shampoo",
+                "excerpts": [
+                  "https://ebay.com/itm/125763345025"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/125763345025",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur Shampoo",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/125763345025",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur Shampoo",
+                "excerpts": [
+                  "https://ebay.com/itm/125763345025"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/125763345025",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur Shampoo",
+                "excerpts": [
+                  "Valley-Beauty store ... KERASTASE Premiere Bain Decalcifiant Reparateur | Decalcifying Repairing Shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/125763345025",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur Shampoo",
+                "excerpts": [
+                  "Valley-Beauty store ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautytribe.com/en-row/products/kerastase-premiere-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoroi4nsYa5aojVofGrgQVnWw_LHJsn2D4ulIE-K3hFjpbEMuPiv",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur 250ml",
+                "excerpts": [
+                  "Regular price ... Dhs. 151.43 ... Sale price ... Dhs. 151.43"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautytribe.com/en-row/products/kerastase-premiere-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoroi4nsYa5aojVofGrgQVnWw_LHJsn2D4ulIE-K3hFjpbEMuPiv",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur 250ml",
+                "excerpts": [
+                  "Kerastase Premiere Bain Decalcifiant Reparateur 250ml ... Dhs. 151.43"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautytribe.com/en-row/products/kerastase-premiere-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoroi4nsYa5aojVofGrgQVnWw_LHJsn2D4ulIE-K3hFjpbEMuPiv",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur 250ml",
+                "excerpts": [
+                  "Regular price ... Dhs. 151.43 ... Sale price ... Dhs. 151.43 ... Shipping calculated at checkout."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautytribe.com/en-row/products/kerastase-premiere-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoroi4nsYa5aojVofGrgQVnWw_LHJsn2D4ulIE-K3hFjpbEMuPiv",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur 250ml",
+                "excerpts": [
+                  "https://beautytribe.com/en-row/products/kerastase-premiere-bain-decalcifiant-reparateur-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautytribe.com/en-row/products/kerastase-premiere-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoroi4nsYa5aojVofGrgQVnWw_LHJsn2D4ulIE-K3hFjpbEMuPiv",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur 250ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautytribe.com/en-row/products/kerastase-premiere-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoroi4nsYa5aojVofGrgQVnWw_LHJsn2D4ulIE-K3hFjpbEMuPiv",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur 250ml",
+                "excerpts": [
+                  "https://beautytribe.com/en-row/products/kerastase-premiere-bain-decalcifiant-reparateur-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautytribe.com/en-row/products/kerastase-premiere-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoroi4nsYa5aojVofGrgQVnWw_LHJsn2D4ulIE-K3hFjpbEMuPiv",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur 250ml",
+                "excerpts": [
+                  "https://www.reviews.io/company-reviews/store/beautytribe.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautytribe.com/en-row/products/kerastase-premiere-bain-decalcifiant-reparateur-250ml?srsltid=AfmBOoroi4nsYa5aojVofGrgQVnWw_LHJsn2D4ulIE-K3hFjpbEMuPiv",
+                "title": "Kerastase Premiere Bain Decalcifiant Reparateur 250ml",
+                "excerpts": [
+                  "Best beauty buys ... Brand Offers ... Kerastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/premiere/bain-decalcifiant-reparateur.html?srsltid=AfmBOoqNuxCQEY1UMU-ySmiAmhRFTkqLp0XpoaDWM4feWgg2ozItfD52",
+                "title": "Premi\u00e8re Repairing Shampoo for Damaged Hair - K\u00e9rastase CA",
+                "excerpts": [
+                  "Selected 250mL ... Old price New price $ 62.00 ($ 0.25/ml.)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/premiere/bain-decalcifiant-reparateur.html?srsltid=AfmBOoqNuxCQEY1UMU-ySmiAmhRFTkqLp0XpoaDWM4feWgg2ozItfD52",
+                "title": "Premi\u00e8re Repairing Shampoo for Damaged Hair - K\u00e9rastase CA",
+                "excerpts": [
+                  "Prices and payment are shown in CAD ... There is only one currency available for your location: C$ - CAD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/premiere/bain-decalcifiant-reparateur.html?srsltid=AfmBOoqNuxCQEY1UMU-ySmiAmhRFTkqLp0XpoaDWM4feWgg2ozItfD52",
+                "title": "Premi\u00e8re Repairing Shampoo for Damaged Hair - K\u00e9rastase CA",
+                "excerpts": [
+                  "Selected 250mL ... Old price New price $ 62.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/premiere/bain-decalcifiant-reparateur.html?srsltid=AfmBOoqNuxCQEY1UMU-ySmiAmhRFTkqLp0XpoaDWM4feWgg2ozItfD52",
+                "title": "Premi\u00e8re Repairing Shampoo for Damaged Hair - K\u00e9rastase CA",
+                "excerpts": [
+                  "https://kerastase.ca/en/collections/premiere/bain-decalcifiant-reparateur.html?dwvar_bain-decalcifiant-reparateur_size=250"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/premiere/bain-decalcifiant-reparateur.html?srsltid=AfmBOoqNuxCQEY1UMU-ySmiAmhRFTkqLp0XpoaDWM4feWgg2ozItfD52",
+                "title": "Premi\u00e8re Repairing Shampoo for Damaged Hair - K\u00e9rastase CA",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/premiere/bain-decalcifiant-reparateur.html?srsltid=AfmBOoqNuxCQEY1UMU-ySmiAmhRFTkqLp0XpoaDWM4feWgg2ozItfD52",
+                "title": "Premi\u00e8re Repairing Shampoo for Damaged Hair - K\u00e9rastase CA",
+                "excerpts": [
+                  "https://kerastase.ca/en/collections/premiere/bain-decalcifiant-reparateur.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/premiere/bain-decalcifiant-reparateur.html?srsltid=AfmBOoqNuxCQEY1UMU-ySmiAmhRFTkqLp0XpoaDWM4feWgg2ozItfD52",
+                "title": "Premi\u00e8re Repairing Shampoo for Damaged Hair - K\u00e9rastase CA",
+                "excerpts": [
+                  "Premi\u00e8re Repairing Shampoo for Damaged Hair - K\u00e9rastase CA"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/premiere/bain-decalcifiant-reparateur.html?srsltid=AfmBOoqNuxCQEY1UMU-ySmiAmhRFTkqLp0XpoaDWM4feWgg2ozItfD52",
+                "title": "Premi\u00e8re Repairing Shampoo for Damaged Hair - K\u00e9rastase CA",
+                "excerpts": [
+                  "K\u00e9rastase CA official brand site"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

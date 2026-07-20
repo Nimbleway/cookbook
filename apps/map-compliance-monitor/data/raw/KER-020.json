@@ -1,0 +1,2661 @@
+{
+  "sku_id": "KER-020",
+  "effort": "high",
+  "elapsed_s": 1216,
+  "fetched_at": "2026-07-20T13:37:00+00:00",
+  "run_id": "task_run_9e6e8a7758dc403ca49d5a7c2ab81626",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_9e6e8a7758dc403ca49d5a7c2ab81626",
+      "interaction_id": "task_run_9e6e8a7758dc403ca49d5a7c2ab81626",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Genesis Fondant Renfor\u00e7ateur Conditioner, 200ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:16:43.893029Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:16:44.001076Z",
+      "completed_at": "2026-07-20T13:36:52.362304Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        "{\"seller_name\": {\"@value\": \"K\u00e9rastase (Amazon)\", \"@citation\": [{\"url\": \"/pages/amazon.com/kerastase-genesis-strengthening-conditioner-damaged-dp-b086t-fabaa69f.md\", \"excerpt\": \"Sold by: K\u00e9rastase ... Ships from: Amazon\"}]}, \"seller_domain\": {\"@value\": \"amazon.com\", \"@citation\": [{\"url\": \"/pages/amazon.com/dp-b086t6krbv-amazon_pdp-4cbcdc96.md\", \"excerpt\": \"data.product_url: \\\"https://www.amazon.com/dp/B086T6KRBV\\\"\"}]}, \"advertised_price\": {\"@value\": \"$50.00\", \"@citation\": [{\"url\": \"/pages/amazon.com/kerastase-genesis-strengthening-conditioner-damaged-dp-b086t-fabaa69f.md\", \"excerpt\": \"{\\\"desktop_buybox_group_1\\\":[{\\\"displayPrice\\\":\\\"$50.00\\\",\\\"priceAmount\\\":50.00\"}]}, {\"url\": \"/pages/amazon.com/dp-b086t6krbv-amazon_pdp-4cbcdc96.md\", \"excerpt\": \"data.web_price: 50 ... data.subscription_price: \\\"$50.00\\\"\"}]}, \"currency\": {\"@value\": \"USD\", \"@citation\": [{\"url\": \"/pages/amazon.com/dp-b086t6krbv-amazon_pdp-4cbcdc96.md\", \"excerpt\": \"data.web_price: 50 (Amazon US listing)\"}]}, \"listing_url\": {\"@value\": \"https://www.amazon.com/dp/B086T6KRBV\", \"@citation\": [{\"url\": \"/pages/amazon.com/dp-b086t6krbv-amazon_pdp-4cbcdc96.md\", \"excerpt\": \"data.product_url: \\\"https://www.amazon.com/dp/B086T6KRBV\\\"\"}]}, \"seller_type\": {\"@value\": \"authorized_retailer\", \"@citation\": [{\"url\": \"/pages/amazon.com/kerastase-genesis-strengthening-conditioner-damaged-dp-b086t-fabaa69f.md\", \"excerpt\": \"Sold by: K\u00e9rastase ... Ships from: Amazon\"}]}, \"in_stock\": {\"@value\": true, \"@citation\": [{\"url\": \"/pages/amazon.com/kerastase-genesis-strengthening-conditioner-damaged-dp-b086t-fabaa69f.md\", \"excerpt\": \"Amazon's Choice highlights highly rated, well-priced products available to ship immediately.\"}]}, \"observed_at\": {\"@value\": \"2026-07-20\", \"@citation\": [{\"url\": \"/pages/amazon.com/dp-b086t6krbv-amazon_pdp-4cbcdc96.md\", \"excerpt\": \"corpus-meta ... \\\"retrieved\\\": \\\"2026-07-20\\\"\"}]}}",
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase-usa.com/collections/genesis/fondant-renforcateur-conditioner.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "K\u00e9rastase USA",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase-usa.com",
+          "advertised_price": "$50.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+          "observed_at": "2026-07-20",
+          "seller_name": "UtieeBeautyStore (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$42.95"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+          "observed_at": "2026-07-20",
+          "seller_name": "Passion Beauty (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$47.38"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-genesis-fondant-reinforcatuer-conditioner-200ml/12432685",
+          "observed_at": "2026-07-20",
+          "seller_name": "Lookfantastic",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "\u00a329.60"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://allbeauty.com/products/p/kerastase-genesis-fondant-renforcateur-nourishing-fortifying-conditioner-200ml-12432685",
+          "observed_at": "2026-07-20",
+          "seller_name": "allbeauty",
+          "seller_type": "discounter",
+          "seller_domain": "allbeauty.com",
+          "advertised_price": "\u00a325.90"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/124168995585",
+          "observed_at": "2026-07-20",
+          "seller_name": "Valley Beauty (eBay: valley_beauty)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $48.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-fondant-renforcateur-conditioner",
+          "observed_at": "2026-07-20",
+          "seller_name": "Currie Hair Skin & Nails",
+          "seller_type": "independent_store",
+          "seller_domain": "curriedayspa.com",
+          "advertised_price": "$52.00"
+        },
+        {
+          "currency": "AED",
+          "in_stock": true,
+          "listing_url": "https://www.stylevana.com/en_AE/kerastase-genesis-fondant-renforcateur-conditioner-200ml.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Stylevana",
+          "seller_type": "independent_store",
+          "seller_domain": "stylevana.com",
+          "advertised_price": "AED149.34"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.celadonspa.com/kerastase/kerastase-genesis-fondant-renforateur-conditioner",
+          "observed_at": "2026-07-20",
+          "seller_name": "Celadon Spa",
+          "seller_type": "independent_store",
+          "seller_domain": "celadonspa.com",
+          "advertised_price": "$46.00"
+        },
+        {
+          "currency": null,
+          "advertised_price": "not displayed (out of stock)"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+          "observed_at": "2026-07-20",
+          "seller_name": "FRESH DROPLETS (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$41.89"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.stylevana.com/en_US/kerastase-genesis-fondant-renforcateur-conditioner-200ml58862.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Stylevana (US)",
+          "seller_type": "independent_store",
+          "seller_domain": "stylevana.com",
+          "advertised_price": "$40.66"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.notino.co.uk/kerastase/genesis-fondant-reforcateur-strenghtening-conditioner-for-thinning-hair/p-16006713/",
+          "observed_at": "2026-07-20",
+          "seller_name": "Notino",
+          "seller_type": "discounter",
+          "seller_domain": "notino.co.uk",
+          "advertised_price": "\u00a333.20"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://paullabrecque.com/products/fondant-renforcateur-fortifying-conditioner-200-ml-6-8-oz",
+          "observed_at": "2026-07-20",
+          "seller_name": "Paul Labrecque",
+          "seller_type": "independent_store",
+          "seller_domain": "paullabrecque.com",
+          "advertised_price": "$38.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://caretobeauty.com/us/kerastase-genesis-fondant-renforcateur-conditioner-200ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Care to Beauty",
+          "seller_type": "independent_store",
+          "seller_domain": "caretobeauty.com",
+          "advertised_price": "$50.31"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase.ca/en/collections/genesis/fondant-renforcateur.html?dwvar_fondant-renforcateur_size=200",
+          "observed_at": "2026-07-20",
+          "seller_name": "K\u00e9rastase Canada",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase.ca",
+          "advertised_price": "$ 67.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+          "observed_at": "2026-07-20",
+          "seller_name": "Beauty Express (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$43.99"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://kerastase-usa.com/collections/genesis/fondant-renforcateur-conditioner.html?srsltid=AfmBOoqc55rZBb5NRTpshrSuJO36LybWYhfQjvB6mNddrlIwa0mV6kHl",
+            "title": "Genesis Fondant Renforcateur Conditioner | K\u00e9rastase",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+            "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+            "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/kerastase-genesis-fondant-reinforcatuer-conditioner-200ml/12432685?srsltid=AfmBOopSTcnMw8xZpZ5FPTlcvpvI9tpgzHSO_3RJqwEnW_fIkLQph-Z8",
+            "title": "K\u00e9rastase Genesis Fondant Renforcateur Conditioner 200ml",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://allbeauty.com/products/p-kerastase-genesis-fondant-renforcateur-nourishing-fortifying-conditioner-200ml-12432685",
+            "title": "K\u00e9rastase Genesis Fondant Renforcateur: Nourishing & ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/124168995585",
+            "title": "KERASTASE Genesis Fondant Renforcateur, 200ml Anti ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-fondant-renforcateur-conditioner?srsltid=AfmBOoqxjhXskL8P9z4PkTp8VT_ugG7LqztZVjSmg2VftQVS600p9zSM",
+            "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://stylevana.com/en_AE/kerastase-genesis-fondant-renforcateur-conditioner-200ml.html",
+            "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://celadonspa.com/kerastase/kerastase-genesis-fondant-renforateur-conditioner",
+            "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://tdawi.com/en-us/k%C3%A9rastase-genesis-fondant-renforcateur-anti-hair-fall-conditioner-for-weakened-hair-200ml?srsltid=AfmBOooEym4EN5YlqVsA5O0FDYnAaFcyvXihxLwqKhCRR6KXtxwIylJa",
+            "title": "K\u00e9rastase Genesis Fondant Renforcateur Anti",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://stylevana.com/en_US/kerastase-genesis-fondant-renforcateur-conditioner-200ml58862.html",
+            "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://notino.co.uk/kerastase/genesis-fondant-reforcateur-strenghtening-conditioner-for-thinning-hair",
+            "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur - Hair Conditioners",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://paullabrecque.com/products/fondant-renforcateur-fortifying-conditioner-200-ml-6-8-oz?srsltid=AfmBOopbmtAm5jAkhYyZ7z9-0_CUMNEGOXm-HUmVN2EjSeRjEjjTGD7V",
+            "title": "Kerastase Fondant Renforcateur | Fortifying Conditioner",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://caretobeauty.com/us/kerastase-genesis-fondant-renforcateur-conditioner-200ml",
+            "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur Conditioner ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://kerastase.ca/en/collections/genesis/fondant-renforcateur.html?srsltid=AfmBOooKB5ARrenJMBOYszkffCsXFgv5ZBxCXYZua-wRV7eRyMO37mPw",
+            "title": "Genesis Fondant Renfor\u00e7ateur - Hair Conditioner - K\u00e9rastase",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/fondant-renforcateur-conditioner.html?srsltid=AfmBOoqc55rZBb5NRTpshrSuJO36LybWYhfQjvB6mNddrlIwa0mV6kHl",
+                "title": "Genesis Fondant Renforcateur Conditioner | K\u00e9rastase",
+                "excerpts": [
+                  "Selected 200 ml ... Old price New price $50.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/fondant-renforcateur-conditioner.html?srsltid=AfmBOoqc55rZBb5NRTpshrSuJO36LybWYhfQjvB6mNddrlIwa0mV6kHl",
+                "title": "Genesis Fondant Renforcateur Conditioner | K\u00e9rastase",
+                "excerpts": [
+                  "Selected 200 ml ... Old price New price $50.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/fondant-renforcateur-conditioner.html?srsltid=AfmBOoqc55rZBb5NRTpshrSuJO36LybWYhfQjvB6mNddrlIwa0mV6kHl",
+                "title": "Genesis Fondant Renforcateur Conditioner | K\u00e9rastase",
+                "excerpts": [
+                  "Old price New price $50.00  Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/fondant-renforcateur-conditioner.html?srsltid=AfmBOoqc55rZBb5NRTpshrSuJO36LybWYhfQjvB6mNddrlIwa0mV6kHl",
+                "title": "Genesis Fondant Renforcateur Conditioner | K\u00e9rastase",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://kerastase-usa.com/collections/genesis/fondant-renforcateur-conditioner.html\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/fondant-renforcateur-conditioner.html?srsltid=AfmBOoqc55rZBb5NRTpshrSuJO36LybWYhfQjvB6mNddrlIwa0mV6kHl",
+                "title": "Genesis Fondant Renforcateur Conditioner | K\u00e9rastase",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/fondant-renforcateur-conditioner.html?srsltid=AfmBOoqc55rZBb5NRTpshrSuJO36LybWYhfQjvB6mNddrlIwa0mV6kHl",
+                "title": "Genesis Fondant Renforcateur Conditioner | K\u00e9rastase",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://kerastase-usa.com/collections/genesis/fondant-renforcateur-conditioner.html\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/fondant-renforcateur-conditioner.html?srsltid=AfmBOoqc55rZBb5NRTpshrSuJO36LybWYhfQjvB6mNddrlIwa0mV6kHl",
+                "title": "Genesis Fondant Renforcateur Conditioner | K\u00e9rastase",
+                "excerpts": [
+                  "Genesis Fondant Renfor\u00e7ateur Conditioner | K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/fondant-renforcateur-conditioner.html?srsltid=AfmBOoqc55rZBb5NRTpshrSuJO36LybWYhfQjvB6mNddrlIwa0mV6kHl",
+                "title": "Genesis Fondant Renforcateur Conditioner | K\u00e9rastase",
+                "excerpts": [
+                  "corpus-meta ... \"source_category\": \"official\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "data.price: 42.95 ... data.was_price: 48"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "data.currency: \"USD\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "data.fulfillment_options[0].fulfillment_is_low_in_stock: false"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "data.product_url: \"https://www.walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://walmart.com/ip/.../412744867\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "data.seller_name: \"UtieeBeautyStore\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "Sold by UtieeBeautyStore Pro Seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "Current price is $47.38"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "Kerastase Genesis Fondant Renforcateur Conditioner 6.8oz/200ml ... Current price is $47.38"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "Current price is $47.38"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://walmart.com/ip/.../5169366490\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "Sold and shipped by Passion Beauty Pro Seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "Sold and shipped by Passion Beauty Pro Seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-fondant-reinforcatuer-conditioner-200ml/12432685?srsltid=AfmBOopSTcnMw8xZpZ5FPTlcvpvI9tpgzHSO_3RJqwEnW_fIkLQph-Z8",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur Conditioner 200ml",
+                "excerpts": [
+                  "Recommended Retail Price: \u00a337.00 Current price: \u00a329.60"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-fondant-reinforcatuer-conditioner-200ml/12432685?srsltid=AfmBOopSTcnMw8xZpZ5FPTlcvpvI9tpgzHSO_3RJqwEnW_fIkLQph-Z8",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur Conditioner 200ml",
+                "excerpts": [
+                  "Recommended Retail Price: \u00a337.00 Current price: \u00a329.60"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-fondant-reinforcatuer-conditioner-200ml/12432685?srsltid=AfmBOopSTcnMw8xZpZ5FPTlcvpvI9tpgzHSO_3RJqwEnW_fIkLQph-Z8",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur Conditioner 200ml",
+                "excerpts": [
+                  "Current price: \u00a329.60 (product page with add to basket)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-fondant-reinforcatuer-conditioner-200ml/12432685?srsltid=AfmBOopSTcnMw8xZpZ5FPTlcvpvI9tpgzHSO_3RJqwEnW_fIkLQph-Z8",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur Conditioner 200ml",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://lookfantastic.com/p/kerastase-genesis-fondant-reinforcatuer-conditioner-200ml/12432685\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-fondant-reinforcatuer-conditioner-200ml/12432685?srsltid=AfmBOopSTcnMw8xZpZ5FPTlcvpvI9tpgzHSO_3RJqwEnW_fIkLQph-Z8",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur Conditioner 200ml",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-fondant-reinforcatuer-conditioner-200ml/12432685?srsltid=AfmBOopSTcnMw8xZpZ5FPTlcvpvI9tpgzHSO_3RJqwEnW_fIkLQph-Z8",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur Conditioner 200ml",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://lookfantastic.com/p/.../12432685\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-fondant-reinforcatuer-conditioner-200ml/12432685?srsltid=AfmBOopSTcnMw8xZpZ5FPTlcvpvI9tpgzHSO_3RJqwEnW_fIkLQph-Z8",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur Conditioner 200ml",
+                "excerpts": [
+                  "K\u00e9rastase Genesis Fondant Renforcateur Conditioner 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-fondant-reinforcatuer-conditioner-200ml/12432685?srsltid=AfmBOopSTcnMw8xZpZ5FPTlcvpvI9tpgzHSO_3RJqwEnW_fIkLQph-Z8",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur Conditioner 200ml",
+                "excerpts": [
+                  "corpus-meta ... \"source_category\": \"official\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-genesis-fondant-renforcateur-nourishing-fortifying-conditioner-200ml-12432685",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur: Nourishing & ...",
+                "excerpts": [
+                  "Regular price ~\u00a337.00~ Sale price \u00a325.90"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-genesis-fondant-renforcateur-nourishing-fortifying-conditioner-200ml-12432685",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur: Nourishing & ...",
+                "excerpts": [
+                  "RRP: \u00a337.00 ... Sale price \u00a325.90"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-genesis-fondant-renforcateur-nourishing-fortifying-conditioner-200ml-12432685",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur: Nourishing & ...",
+                "excerpts": [
+                  "Increase quantity for K\u00e9rastase Genesis Fondant Renforcateur: Nourishing & Fortifying Conditioner 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-genesis-fondant-renforcateur-nourishing-fortifying-conditioner-200ml-12432685",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur: Nourishing & ...",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://allbeauty.com/products/p/kerastase-genesis-fondant-renforcateur-nourishing-fortifying-conditioner-200ml-12432685\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-genesis-fondant-renforcateur-nourishing-fortifying-conditioner-200ml-12432685",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur: Nourishing & ...",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-genesis-fondant-renforcateur-nourishing-fortifying-conditioner-200ml-12432685",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur: Nourishing & ...",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://allbeauty.com/products/p/...-12432685\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-genesis-fondant-renforcateur-nourishing-fortifying-conditioner-200ml-12432685",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur: Nourishing & ...",
+                "excerpts": [
+                  "K\u00e9rastase Genesis Fondant Renforcateur: Nourishing & Fortifying Conditioner 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-genesis-fondant-renforcateur-nourishing-fortifying-conditioner-200ml-12432685",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur: Nourishing & ...",
+                "excerpts": [
+                  "RRP: \u00a337.00 ... Save \u00a311.10 (30%) ... Sale price \u00a325.90"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/124168995585",
+                "title": "KERASTASE Genesis Fondant Renforcateur, 200ml Anti ...",
+                "excerpts": [
+                  "US $48.00 ... or 4 interest-free payments of $12.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/124168995585",
+                "title": "KERASTASE Genesis Fondant Renforcateur, 200ml Anti ...",
+                "excerpts": [
+                  "US $48.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/124168995585",
+                "title": "KERASTASE Genesis Fondant Renforcateur, 200ml Anti ...",
+                "excerpts": [
+                  "5 available 69 sold ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/124168995585",
+                "title": "KERASTASE Genesis Fondant Renforcateur, 200ml Anti ...",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://ebay.com/itm/124168995585\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/124168995585",
+                "title": "KERASTASE Genesis Fondant Renforcateur, 200ml Anti ...",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/124168995585",
+                "title": "KERASTASE Genesis Fondant Renforcateur, 200ml Anti ...",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://ebay.com/itm/124168995585\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/124168995585",
+                "title": "KERASTASE Genesis Fondant Renforcateur, 200ml Anti ...",
+                "excerpts": [
+                  "Valley-Beauty store ... 99.9% positive ... Valley Beauty offers authentic professional and salon-quality hair and body products at online discount prices"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/124168995585",
+                "title": "KERASTASE Genesis Fondant Renforcateur, 200ml Anti ...",
+                "excerpts": [
+                  "KERASTASE Genesis Fondant Renforcateur, 200ml ... Buy It Now ... Valley-Beauty store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-fondant-renforcateur-conditioner?srsltid=AfmBOoqxjhXskL8P9z4PkTp8VT_ugG7LqztZVjSmg2VftQVS600p9zSM",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "# Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner ... $52.00 ... In stock ... **Pack available:** 200 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-fondant-renforcateur-conditioner?srsltid=AfmBOoqxjhXskL8P9z4PkTp8VT_ugG7LqztZVjSmg2VftQVS600p9zSM",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "$52.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-fondant-renforcateur-conditioner?srsltid=AfmBOoqxjhXskL8P9z4PkTp8VT_ugG7LqztZVjSmg2VftQVS600p9zSM",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "In stock ... Add to cart Buy Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-fondant-renforcateur-conditioner?srsltid=AfmBOoqxjhXskL8P9z4PkTp8VT_ugG7LqztZVjSmg2VftQVS600p9zSM",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-fondant-renforcateur-conditioner\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-fondant-renforcateur-conditioner?srsltid=AfmBOoqxjhXskL8P9z4PkTp8VT_ugG7LqztZVjSmg2VftQVS600p9zSM",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-fondant-renforcateur-conditioner?srsltid=AfmBOoqxjhXskL8P9z4PkTp8VT_ugG7LqztZVjSmg2VftQVS600p9zSM",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://curriedayspa.com/...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-fondant-renforcateur-conditioner?srsltid=AfmBOoqxjhXskL8P9z4PkTp8VT_ugG7LqztZVjSmg2VftQVS600p9zSM",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "You can buy the authentic Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner online from reliable sellers such as Currie Hair Skin & Nails."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-fondant-renforcateur-conditioner?srsltid=AfmBOoqxjhXskL8P9z4PkTp8VT_ugG7LqztZVjSmg2VftQVS600p9zSM",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "Currie Hair Skin & Nails. We offer a wide variety of skincare and hair care products, including Kerastase."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-genesis-fondant-renforcateur-conditioner-200ml.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "# K\u00e9rastase - Genesis Fondant Renforcateur Conditioner - 200ml ... Was AED103.79 Price AED149.34 ... Product Unit : 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-genesis-fondant-renforcateur-conditioner-200ml.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "Price AED149.34"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-genesis-fondant-renforcateur-conditioner-200ml.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-genesis-fondant-renforcateur-conditioner-200ml.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://stylevana.com/en_AE/kerastase-genesis-fondant-renforcateur-conditioner-200ml.html\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-genesis-fondant-renforcateur-conditioner-200ml.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-genesis-fondant-renforcateur-conditioner-200ml.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://stylevana.com/en_AE/...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-genesis-fondant-renforcateur-conditioner-200ml.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "K\u00e9rastase - Genesis Fondant Renforcateur Conditioner - 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-genesis-fondant-renforcateur-conditioner-200ml.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "Stylevana K-beauty and skincare e-commerce store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://celadonspa.com/kerastase/kerastase-genesis-fondant-renforateur-conditioner",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "# Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner ... $46.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://celadonspa.com/kerastase/kerastase-genesis-fondant-renforateur-conditioner",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "$46.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://celadonspa.com/kerastase/kerastase-genesis-fondant-renforateur-conditioner",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "Quantity: Only 2 available ... Add To Cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://celadonspa.com/kerastase/kerastase-genesis-fondant-renforateur-conditioner",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://celadonspa.com/kerastase/kerastase-genesis-fondant-renforateur-conditioner\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://celadonspa.com/kerastase/kerastase-genesis-fondant-renforateur-conditioner",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://celadonspa.com/kerastase/kerastase-genesis-fondant-renforateur-conditioner",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://celadonspa.com/...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://celadonspa.com/kerastase/kerastase-genesis-fondant-renforateur-conditioner",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://celadonspa.com/kerastase/kerastase-genesis-fondant-renforateur-conditioner",
+                "title": "Kerastase Genesis Fondant Renfor\u00e7ateur Conditioner",
+                "excerpts": [
+                  "Celadon Spa - salon/spa selling Kerastase products"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tdawi.com/en-us/k%C3%A9rastase-genesis-fondant-renforcateur-anti-hair-fall-conditioner-for-weakened-hair-200ml?srsltid=AfmBOooEym4EN5YlqVsA5O0FDYnAaFcyvXihxLwqKhCRR6KXtxwIylJa",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur Anti",
+                "excerpts": [
+                  "K\u00e9rastase Genesis Fondant Renforcateur Anti Hair-Fall Conditioner for Weakened Hair 200ml ... Out of stock ... Notify me when this product is in stock (no price shown for main product)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tdawi.com/en-us/k%C3%A9rastase-genesis-fondant-renforcateur-anti-hair-fall-conditioner-for-weakened-hair-200ml?srsltid=AfmBOooEym4EN5YlqVsA5O0FDYnAaFcyvXihxLwqKhCRR6KXtxwIylJa",
+                "title": "K\u00e9rastase Genesis Fondant Renforcateur Anti",
+                "excerpts": [
+                  "Out of stock - no price or currency displayed for the main product"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "Other sellers ... Compare all 3 sellers ... $41.89 +Free shipping ... Sold and shipped by FRESH DROPLETS Pro Seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "$41.89 +Free shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "$41.89 +Free shipping ... Shipping, arrives by Sat, Jul 25 ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://walmart.com/ip/.../412744867\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "Sold and shipped by FRESH DROPLETS Pro Seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Fondant-Renforcateur-Fortifying-Conditioner-For-All-Hair-Types-200-ml-6-8-oz/412744867",
+                "title": "K\u221a\u00a9rastase, Hair Conditioner, 6.8 oz, Fortifying Anti Hair Fall",
+                "excerpts": [
+                  "Sold and shipped by FRESH DROPLETS Pro Seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_US/kerastase-genesis-fondant-renforcateur-conditioner-200ml58862.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "# K\u00e9rastase - Genesis Fondant Renforcateur Conditioner - 200ml ... Was $44.54 Price $40.66 ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_US/kerastase-genesis-fondant-renforcateur-conditioner-200ml58862.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "Was $44.54 Price $40.66"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_US/kerastase-genesis-fondant-renforcateur-conditioner-200ml58862.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_US/kerastase-genesis-fondant-renforcateur-conditioner-200ml58862.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://stylevana.com/en_US/kerastase-genesis-fondant-renforcateur-conditioner-200ml58862.html\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_US/kerastase-genesis-fondant-renforcateur-conditioner-200ml58862.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_US/kerastase-genesis-fondant-renforcateur-conditioner-200ml58862.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://stylevana.com/en_US/...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_US/kerastase-genesis-fondant-renforcateur-conditioner-200ml58862.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "K\u00e9rastase - Genesis Fondant Renforcateur Conditioner - 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_US/kerastase-genesis-fondant-renforcateur-conditioner-200ml58862.html",
+                "title": "Genesis Fondant Renforcateur Conditioner - 200ml",
+                "excerpts": [
+                  "Stylevana US K-beauty and skincare e-commerce store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://notino.co.uk/kerastase/genesis-fondant-reforcateur-strenghtening-conditioner-for-thinning-hair",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur - Hair Conditioners",
+                "excerpts": [
+                  "\u00a333.20 ... Current price \u00a333.20 -15% ... In stock | \u00a3166.00 / 1 l, incl. VAT"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://notino.co.uk/kerastase/genesis-fondant-reforcateur-strenghtening-conditioner-for-thinning-hair",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur - Hair Conditioners",
+                "excerpts": [
+                  "Current price \u00a333.20 ... incl. VAT"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://notino.co.uk/kerastase/genesis-fondant-reforcateur-strenghtening-conditioner-for-thinning-hair",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur - Hair Conditioners",
+                "excerpts": [
+                  "In stock | \u00a3166.00 / 1 l, incl. VAT ... Add to basket"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://notino.co.uk/kerastase/genesis-fondant-reforcateur-strenghtening-conditioner-for-thinning-hair",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur - Hair Conditioners",
+                "excerpts": [
+                  "\u00a328.22](https://www.notino.co.uk/kerastase/genesis-fondant-reforcateur-strenghtening-conditioner-for-thinning-hair/p-16006713/)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://notino.co.uk/kerastase/genesis-fondant-reforcateur-strenghtening-conditioner-for-thinning-hair",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur - Hair Conditioners",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://notino.co.uk/kerastase/genesis-fondant-reforcateur-strenghtening-conditioner-for-thinning-hair",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur - Hair Conditioners",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://notino.co.uk/kerastase/genesis-fondant-reforcateur-strenghtening-conditioner-for-thinning-hair\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://notino.co.uk/kerastase/genesis-fondant-reforcateur-strenghtening-conditioner-for-thinning-hair",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur - Hair Conditioners",
+                "excerpts": [
+                  "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur - Hair Conditioners"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://notino.co.uk/kerastase/genesis-fondant-reforcateur-strenghtening-conditioner-for-thinning-hair",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur - Hair Conditioners",
+                "excerpts": [
+                  "Current price \u00a333.20 -15% ... \u00a328.22 with the code hotdeal"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/fondant-renforcateur-fortifying-conditioner-200-ml-6-8-oz?srsltid=AfmBOopbmtAm5jAkhYyZ7z9-0_CUMNEGOXm-HUmVN2EjSeRjEjjTGD7V",
+                "title": "Kerastase Fondant Renforcateur | Fortifying Conditioner",
+                "excerpts": [
+                  "Sale price$ 38.00 Regular price$ 48.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/fondant-renforcateur-fortifying-conditioner-200-ml-6-8-oz?srsltid=AfmBOopbmtAm5jAkhYyZ7z9-0_CUMNEGOXm-HUmVN2EjSeRjEjjTGD7V",
+                "title": "Kerastase Fondant Renforcateur | Fortifying Conditioner",
+                "excerpts": [
+                  "Sale price$ 38.00 Regular price$ 48.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/fondant-renforcateur-fortifying-conditioner-200-ml-6-8-oz?srsltid=AfmBOopbmtAm5jAkhYyZ7z9-0_CUMNEGOXm-HUmVN2EjSeRjEjjTGD7V",
+                "title": "Kerastase Fondant Renforcateur | Fortifying Conditioner",
+                "excerpts": [
+                  "Sale price$ 38.00 Regular price$ 48.00 (product page with sale price)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/fondant-renforcateur-fortifying-conditioner-200-ml-6-8-oz?srsltid=AfmBOopbmtAm5jAkhYyZ7z9-0_CUMNEGOXm-HUmVN2EjSeRjEjjTGD7V",
+                "title": "Kerastase Fondant Renforcateur | Fortifying Conditioner",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://paullabrecque.com/products/fondant-renforcateur-fortifying-conditioner-200-ml-6-8-oz\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/fondant-renforcateur-fortifying-conditioner-200-ml-6-8-oz?srsltid=AfmBOopbmtAm5jAkhYyZ7z9-0_CUMNEGOXm-HUmVN2EjSeRjEjjTGD7V",
+                "title": "Kerastase Fondant Renforcateur | Fortifying Conditioner",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/fondant-renforcateur-fortifying-conditioner-200-ml-6-8-oz?srsltid=AfmBOopbmtAm5jAkhYyZ7z9-0_CUMNEGOXm-HUmVN2EjSeRjEjjTGD7V",
+                "title": "Kerastase Fondant Renforcateur | Fortifying Conditioner",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://paullabrecque.com/products/...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/fondant-renforcateur-fortifying-conditioner-200-ml-6-8-oz?srsltid=AfmBOopbmtAm5jAkhYyZ7z9-0_CUMNEGOXm-HUmVN2EjSeRjEjjTGD7V",
+                "title": "Kerastase Fondant Renforcateur | Fortifying Conditioner",
+                "excerpts": [
+                  "Kerastase Fondant Renforcateur | Fortifying Conditioner"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/fondant-renforcateur-fortifying-conditioner-200-ml-6-8-oz?srsltid=AfmBOopbmtAm5jAkhYyZ7z9-0_CUMNEGOXm-HUmVN2EjSeRjEjjTGD7V",
+                "title": "Kerastase Fondant Renforcateur | Fortifying Conditioner",
+                "excerpts": [
+                  "Paul Labrecque - salon selling Kerastase products"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-genesis-fondant-renforcateur-conditioner-200ml",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur Conditioner ...",
+                "excerpts": [
+                  "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur Conditioner 200ml (6.76floz) USA Delivery ... Price ... $50.31 ... **$50.31** ... **In stock** & Ready to ship"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-genesis-fondant-renforcateur-conditioner-200ml",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur Conditioner ...",
+                "excerpts": [
+                  "$50.31 ... USA Delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-genesis-fondant-renforcateur-conditioner-200ml",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur Conditioner ...",
+                "excerpts": [
+                  "**In stock** & Ready to ship. Order in the next 1h 59m to have your order shipped today!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-genesis-fondant-renforcateur-conditioner-200ml",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur Conditioner ...",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://caretobeauty.com/us/kerastase-genesis-fondant-renforcateur-conditioner-200ml\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-genesis-fondant-renforcateur-conditioner-200ml",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur Conditioner ...",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-genesis-fondant-renforcateur-conditioner-200ml",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur Conditioner ...",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://caretobeauty.com/us/...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-genesis-fondant-renforcateur-conditioner-200ml",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur Conditioner ...",
+                "excerpts": [
+                  "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur Conditioner 200ml (6.76floz) USA Delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-genesis-fondant-renforcateur-conditioner-200ml",
+                "title": "K\u00e9rastase Genesis Fondant Renfor\u00e7ateur Conditioner ...",
+                "excerpts": [
+                  "Care to Beauty - online beauty retailer with USA delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/genesis/fondant-renforcateur.html?srsltid=AfmBOooKB5ARrenJMBOYszkffCsXFgv5ZBxCXYZua-wRV7eRyMO37mPw",
+                "title": "Genesis Fondant Renfor\u00e7ateur - Hair Conditioner - K\u00e9rastase",
+                "excerpts": [
+                  "Selected 200mL ... Old price New price $ 67.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/genesis/fondant-renforcateur.html?srsltid=AfmBOooKB5ARrenJMBOYszkffCsXFgv5ZBxCXYZua-wRV7eRyMO37mPw",
+                "title": "Genesis Fondant Renfor\u00e7ateur - Hair Conditioner - K\u00e9rastase",
+                "excerpts": [
+                  "Prices and payment are shown in **CAD** ... Selected 200mL ... Old price New price $ 67.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/genesis/fondant-renforcateur.html?srsltid=AfmBOooKB5ARrenJMBOYszkffCsXFgv5ZBxCXYZua-wRV7eRyMO37mPw",
+                "title": "Genesis Fondant Renfor\u00e7ateur - Hair Conditioner - K\u00e9rastase",
+                "excerpts": [
+                  "Selected 200mL ... Old price New price $ 67.00 ... \u2212 Quantity +"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/genesis/fondant-renforcateur.html?srsltid=AfmBOooKB5ARrenJMBOYszkffCsXFgv5ZBxCXYZua-wRV7eRyMO37mPw",
+                "title": "Genesis Fondant Renfor\u00e7ateur - Hair Conditioner - K\u00e9rastase",
+                "excerpts": [
+                  "Selected 200mL ... Old price New price $ 67.00 ... GIFT ELIGIBLE, 2 of 2](https://www.kerastase.ca/en/collections/genesis/fondant-renforcateur.html?dwvar_fondant-renforcateur_size=200)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/genesis/fondant-renforcateur.html?srsltid=AfmBOooKB5ARrenJMBOYszkffCsXFgv5ZBxCXYZua-wRV7eRyMO37mPw",
+                "title": "Genesis Fondant Renfor\u00e7ateur - Hair Conditioner - K\u00e9rastase",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/genesis/fondant-renforcateur.html?srsltid=AfmBOooKB5ARrenJMBOYszkffCsXFgv5ZBxCXYZua-wRV7eRyMO37mPw",
+                "title": "Genesis Fondant Renfor\u00e7ateur - Hair Conditioner - K\u00e9rastase",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://kerastase.ca/en/collections/genesis/fondant-renforcateur.html\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/genesis/fondant-renforcateur.html?srsltid=AfmBOooKB5ARrenJMBOYszkffCsXFgv5ZBxCXYZua-wRV7eRyMO37mPw",
+                "title": "Genesis Fondant Renfor\u00e7ateur - Hair Conditioner - K\u00e9rastase",
+                "excerpts": [
+                  "Genesis Fondant Renfor\u00e7ateur - Hair Conditioner - K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/genesis/fondant-renforcateur.html?srsltid=AfmBOooKB5ARrenJMBOYszkffCsXFgv5ZBxCXYZua-wRV7eRyMO37mPw",
+                "title": "Genesis Fondant Renfor\u00e7ateur - Hair Conditioner - K\u00e9rastase",
+                "excerpts": [
+                  "K\u00e9rastase Canada official site"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "Other sellers ... Compare all 2 sellers ... $43.99 +Free shipping ... Sold and shipped by Beauty Express"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "$43.99 +Free shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "$43.99 +Free shipping ... Shipping, arrives by Sat, Jul 25 ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "corpus-meta {\"url\": \"https://walmart.com/ip/.../5169366490\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "Sold and shipped by Beauty Express"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/KERASTASE-by-Kerastase-GENESIS-FONDANT-RENFORCATEUR-FORTIFYING-ANTI-HAIR-FALL-CONDITIONER-6-8-OZ-For-UNISEX/5169366490",
+                "title": "Kerastase Genesis Fondant Renforcateur Conditioner 6.8 ...",
+                "excerpts": [
+                  "Sold and shipped by Beauty Express"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

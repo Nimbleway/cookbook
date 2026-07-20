@@ -1,0 +1,2809 @@
+{
+  "sku_id": "KER-001",
+  "effort": "high",
+  "elapsed_s": 1135,
+  "fetched_at": "2026-07-20T13:15:24+00:00",
+  "run_id": "task_run_a99b8a72113941b5b3087484654cb50a",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_a99b8a72113941b5b3087484654cb50a",
+      "interaction_id": "task_run_a99b8a72113941b5b3087484654cb50a",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Nutritive Bain Satin Nourishing Shampoo, 250ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:56:27.896902Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:56:28.013285Z",
+      "completed_at": "2026-07-20T13:15:21.399904Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase-usa.com/collections/nutritive/bain-satin-shampoo.html",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "K\u00e9rastase USA",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase-usa.com",
+          "advertised_price": "$43.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/K%C3%89RASTASE-Nutritive-Nourishing-Niacinamide-Moisturises/dp/B0BZZJYKZ6",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Amazon.com (sold by K\u00e9rastase)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.com",
+          "advertised_price": "$43.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Nutritive-Bain-Satin-Shampoo-8-5-oz/2560370267",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Walmart",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$32.89"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.ca/dp/B0BZZJYKZ6",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Amazon.ca",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.ca",
+          "advertised_price": "$62.00"
+        },
+        {
+          "currency": "SAR",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.sa/-/en/K%C3%A9rastase-Nutritive-Satin-Shampoo-250ml/dp/B0BZZJYKZ6",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Amazon.sa",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.sa",
+          "advertised_price": "SAR170.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.caretobeauty.com/us/kerastase-nutritive-bain-satin-shampoo-250ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Care to Beauty",
+          "seller_type": "independent_store",
+          "seller_domain": "caretobeauty.com",
+          "advertised_price": "$36.32"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://www.nanamall.com/products/kerastase-nutritive-bain-satin-shampoo-250ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Nana Mall",
+          "seller_type": "discounter",
+          "seller_domain": "nanamall.com",
+          "advertised_price": "$30.50"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/278126775434",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "eBay (seller: vape-times)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $44.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-nutritive-bain-satin-hydrating-shampoo-for-dry-hair-250ml/14510090",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "LookFantastic",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "\u00a322.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Amazon.co.uk (sold by Amazon)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.co.uk",
+          "advertised_price": "\u00a319.55"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase.co.uk/ranges/regimen/nutritive/bain-satin-shampoo/KER_00249.html",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "K\u00e9rastase UK",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase.co.uk",
+          "advertised_price": "\u00a327.50"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://allbeauty.com/products/p-kerastase-nutritive-bain-satin-hydrating-shampoo-250ml-14510090",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Allbeauty",
+          "seller_type": "discounter",
+          "seller_domain": "allbeauty.com",
+          "advertised_price": "\u00a319.25"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.onbuy.com/gb/p/krastase-nutritive-gentle-hydrating-shampoo-for-dry-hair-nourishing-protein-formula-with-niacinamide-moisturises-softens-and-restores-shine-bain~p143283621/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "OnBuy (seller: Paragon Mart)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "onbuy.com",
+          "advertised_price": "\u00a331.28"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://noli.com/products/kerastase-nutritive-bain-satin-shampoo",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Noli",
+          "seller_type": "independent_store",
+          "seller_domain": "noli.com",
+          "advertised_price": "\u00a322.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.cosmeterie.com/kerastase/nutritive-bain-satin",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Cosmeterie",
+          "seller_type": "discounter",
+          "seller_domain": "cosmeterie.com",
+          "advertised_price": "$21.21"
+        },
+        {
+          "currency": "AUD",
+          "in_stock": true,
+          "listing_url": "https://www.hairhouse.com.au/products/kerastase-nutritive-bain-satin-250ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Hairhouse",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "hairhouse.com.au",
+          "advertised_price": "$60.00"
+        },
+        {
+          "currency": "AUD",
+          "in_stock": null,
+          "listing_url": "https://www.adorebeauty.com.au/b/kerastase/shampoo.html",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Adore Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "adorebeauty.com.au",
+          "advertised_price": "$60.01"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://kerastase-usa.com/collections/nutritive/bain-satin-shampoo.html?srsltid=AfmBOoqXOeNp562gHYwUMtQ7g3OqC4T4uTZdQAPxQHkle40-oVLcytAX",
+            "title": "Nutritive Bain Satin Shampoo For Normal Dry Hair | K\u00e9rastase",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/K%C3%89RASTASE-Nutritive-Nourishing-Niacinamide-Moisturises/dp/B0BZZJYKZ6",
+            "title": "Kerastase Nutritive Bain Satin Shampoo | Gently Cleanses ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/dp/B0BZZJYKZ6",
+            "title": "amazon_pdp",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Nutritive-Bain-Satin-Shampoo-8-5-oz/2560370267",
+            "title": "Kerastase Nutritive Bain Satin Shampoo 8.5 oz",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.ca/K%C3%A9rastase-Nutritive-Bain-Satin-Niacinamide/dp/B0BZZJYKZ6",
+            "title": "K\u00e9rastase Nutritive Shampoo Bain Satin, Gentle Hydrating ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.sa/-/en/K%C3%A9rastase-Nutritive-Satin-Shampoo-250ml/dp/B0BZZJYKZ6",
+            "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair 250ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://caretobeauty.com/us/kerastase-nutritive-bain-satin-shampoo-250ml",
+            "title": "K\u00e9rastase Nutritive Bain Satin Shampoo 250ml (8.5floz) USA",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://nanamall.com/products/kerastase-nutritive-bain-satin-shampoo-250ml?srsltid=AfmBOoqnXewbjWmNHIWhZYKrFjgNQZCEsiphOZLjQ1xR5lxGE9UNe_Gt",
+            "title": "KERASTASE Nutritive Bain Satin Shampoo 250ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/278126775434",
+            "title": "https://www.ebay.com/itm/278126775434",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-hydrating-shampoo-for-dry-hair-250ml/14510090?srsltid=AfmBOooOrf7CDkLrSpSUNSBpIMiyLdvhcHY6_eIYZXhSNJpHNEuQjaF-",
+            "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo for Dry ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+            "title": "https://www.amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-shampoo/KER_00249.html",
+            "title": "Nutritive Bain Satin | Hydrating Shampoo For Dry Hair",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://allbeauty.com/products/p-kerastase-nutritive-bain-satin-hydrating-shampoo-250ml-14510090",
+            "title": "K\u00e9rastase Nutritive Bain Satin: Hydrating Shampoo 250ml",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://onbuy.com/gb/p/krastase-nutritive-gentle-hydrating-shampoo-for-dry-hair-nourishing-protein-formula-with-niacinamide-moisturises-softens-and-restores-shine-bain~p143283621",
+            "title": "K?rastase Nutritive, Gentle Hydrating Shampoo for Dry Hair ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://noli.com/products/kerastase-nutritive-bain-satin-shampoo",
+            "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo | Noli",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://cosmeterie.com/kerastase/nutritive-bain-satin",
+            "title": "K\u00e9rastase Nutritive Bain Satin, 250 ml - Cosmeterie Online Shop",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://hairhouse.com.au/products/kerastase-nutritive-bain-satin-250ml?srsltid=AfmBOorCbHWfRRpQHuJMvgz9ak9sZyjRXbgHlUJysnkMdRY00MF_4nhk",
+            "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://adorebeauty.com.au/b/kerastase/shampoo.html",
+            "title": "K\u00e9rastase Shampoos & Bains",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/bain-satin-shampoo.html?srsltid=AfmBOoqXOeNp562gHYwUMtQ7g3OqC4T4uTZdQAPxQHkle40-oVLcytAX",
+                "title": "Nutritive Bain Satin Shampoo For Normal Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Nutritive Bain Satin Shampoo 250ml ... Selected 250 ml ... Old price New price $43.00 ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/bain-satin-shampoo.html?srsltid=AfmBOoqXOeNp562gHYwUMtQ7g3OqC4T4uTZdQAPxQHkle40-oVLcytAX",
+                "title": "Nutritive Bain Satin Shampoo For Normal Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Prices and payment are shown in USD ... Old price New price $43.00 ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/bain-satin-shampoo.html?srsltid=AfmBOoqXOeNp562gHYwUMtQ7g3OqC4T4uTZdQAPxQHkle40-oVLcytAX",
+                "title": "Nutritive Bain Satin Shampoo For Normal Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Selected 250 ml ... Old price New price $43.00 ... Add to Bag  Nutritive Bain Satin Shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/bain-satin-shampoo.html?srsltid=AfmBOoqXOeNp562gHYwUMtQ7g3OqC4T4uTZdQAPxQHkle40-oVLcytAX",
+                "title": "Nutritive Bain Satin Shampoo For Normal Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Prices and payment are shown in USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/bain-satin-shampoo.html?srsltid=AfmBOoqXOeNp562gHYwUMtQ7g3OqC4T4uTZdQAPxQHkle40-oVLcytAX",
+                "title": "Nutritive Bain Satin Shampoo For Normal Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Nutritive Bain Satin Shampoo For Normal Dry Hair | K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/bain-satin-shampoo.html?srsltid=AfmBOoqXOeNp562gHYwUMtQ7g3OqC4T4uTZdQAPxQHkle40-oVLcytAX",
+                "title": "Nutritive Bain Satin Shampoo For Normal Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "K\u00e9rastase luxury hair care products ... Prices and payment are shown in USD ... Old price New price $43.00 ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/bain-satin-shampoo.html?srsltid=AfmBOoqXOeNp562gHYwUMtQ7g3OqC4T4uTZdQAPxQHkle40-oVLcytAX",
+                "title": "Nutritive Bain Satin Shampoo For Normal Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "In Stock ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/bain-satin-shampoo.html?srsltid=AfmBOoqXOeNp562gHYwUMtQ7g3OqC4T4uTZdQAPxQHkle40-oVLcytAX",
+                "title": "Nutritive Bain Satin Shampoo For Normal Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/K%C3%89RASTASE-Nutritive-Nourishing-Niacinamide-Moisturises/dp/B0BZZJYKZ6",
+                "title": "Kerastase Nutritive Bain Satin Shampoo | Gently Cleanses ...",
+                "excerpts": [
+                  "$43.00 $5.06 per fluid ounce ... $$43.00 () Includes selected options"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://amazon.com/dp/B0BZZJYKZ6",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.web_price: 43 ... data.list_price: 43 ... data.subscription_price: \"$43.00\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0BZZJYKZ6",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.web_price: 43"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0BZZJYKZ6",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.amazons_choice: true ... data.ships_from: \"Amazon\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/K%C3%89RASTASE-Nutritive-Nourishing-Niacinamide-Moisturises/dp/B0BZZJYKZ6",
+                "title": "Kerastase Nutritive Bain Satin Shampoo | Gently Cleanses ...",
+                "excerpts": [
+                  "amazon.com/K%C3%89RASTASE-Nutritive-Nourishing-Niacinamide-Moisturises/dp/B0BZZJYKZ6"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/K%C3%89RASTASE-Nutritive-Nourishing-Niacinamide-Moisturises/dp/B0BZZJYKZ6",
+                "title": "Kerastase Nutritive Bain Satin Shampoo | Gently Cleanses ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/K%C3%89RASTASE-Nutritive-Nourishing-Niacinamide-Moisturises/dp/B0BZZJYKZ6",
+                "title": "Kerastase Nutritive Bain Satin Shampoo | Gently Cleanses ...",
+                "excerpts": [
+                  "amazon.com/K%C3%89RASTASE-Nutritive-Nourishing-Niacinamide-Moisturises/dp/B0BZZJYKZ6"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/K%C3%89RASTASE-Nutritive-Nourishing-Niacinamide-Moisturises/dp/B0BZZJYKZ6",
+                "title": "Kerastase Nutritive Bain Satin Shampoo | Gently Cleanses ...",
+                "excerpts": [
+                  "[K\u00e9rastase](https://www.amazon.com/gp/help/seller/at-a-glance.html?...seller=A21JF9QKYA7LGH&asin=B0BZZJYKZ6)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/K%C3%89RASTASE-Nutritive-Nourishing-Niacinamide-Moisturises/dp/B0BZZJYKZ6",
+                "title": "Kerastase Nutritive Bain Satin Shampoo | Gently Cleanses ...",
+                "excerpts": [
+                  "[K\u00e9rastase](https://www.amazon.com/gp/help/seller/at-a-glance.html?...seller=A21JF9QKYA7LGH&asin=B0BZZJYKZ6)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-Bain-Satin-Shampoo-8-5-oz/2560370267",
+                "title": "Kerastase Nutritive Bain Satin Shampoo 8.5 oz",
+                "excerpts": [
+                  "5.550, Now $32.89, was $42.00 ... Current price is Now $32.89 ... You save $9.11 ... was $42.00 ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-Bain-Satin-Shampoo-8-5-oz/2560370267",
+                "title": "Kerastase Nutritive Bain Satin Shampoo 8.5 oz",
+                "excerpts": [
+                  "Now $32.89, was $42.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-Bain-Satin-Shampoo-8-5-oz/2560370267",
+                "title": "Kerastase Nutritive Bain Satin Shampoo 8.5 oz",
+                "excerpts": [
+                  "Add to cart ... Price when purchased online ... Free 90-day returns"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-Bain-Satin-Shampoo-8-5-oz/2560370267",
+                "title": "Kerastase Nutritive Bain Satin Shampoo 8.5 oz",
+                "excerpts": [
+                  "walmart.com/ip/Kerastase-Nutritive-Bain-Satin-Shampoo-8-5-oz/2560370267"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-Bain-Satin-Shampoo-8-5-oz/2560370267",
+                "title": "Kerastase Nutritive Bain Satin Shampoo 8.5 oz",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-Bain-Satin-Shampoo-8-5-oz/2560370267",
+                "title": "Kerastase Nutritive Bain Satin Shampoo 8.5 oz",
+                "excerpts": [
+                  "walmart.com/ip/Kerastase-Nutritive-Bain-Satin-Shampoo-8-5-oz/2560370267"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-Bain-Satin-Shampoo-8-5-oz/2560370267",
+                "title": "Kerastase Nutritive Bain Satin Shampoo 8.5 oz",
+                "excerpts": [
+                  "Walmart Homepage ... Kerastase Nutritive Bain Satin Shampoo 8.5 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-Bain-Satin-Shampoo-8-5-oz/2560370267",
+                "title": "Kerastase Nutritive Bain Satin Shampoo 8.5 oz",
+                "excerpts": [
+                  "Walmart Homepage ... Kerastase Nutritive Bain Satin Shampoo 8.5 oz ... Add to cart ... Price when purchased online"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/K%C3%A9rastase-Nutritive-Bain-Satin-Niacinamide/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Shampoo Bain Satin, Gentle Hydrating ...",
+                "excerpts": [
+                  "$62.00 $24.80 per ml ... displayPrice\":\"$62.00\",\"priceAmount\":62.00 ... One-Time Price: $62.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/K%C3%A9rastase-Nutritive-Bain-Satin-Niacinamide/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Shampoo Bain Satin, Gentle Hydrating ...",
+                "excerpts": [
+                  "\"locale\":\"en-CA\" ... $62.00 ($24.80/100 ml)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/K%C3%A9rastase-Nutritive-Bain-Satin-Niacinamide/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Shampoo Bain Satin, Gentle Hydrating ...",
+                "excerpts": [
+                  "FREE delivery Friday, July 24"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/K%C3%A9rastase-Nutritive-Bain-Satin-Niacinamide/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Shampoo Bain Satin, Gentle Hydrating ...",
+                "excerpts": [
+                  "amazon.ca/k-c3-a9rastase-nutritive-bain-satin-niacinamide-dp-b0bzzjykz ... K\u00e9rastase Nutritive Shampoo Bain Satin ... 250 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/K%C3%A9rastase-Nutritive-Bain-Satin-Niacinamide/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Shampoo Bain Satin, Gentle Hydrating ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/K%C3%A9rastase-Nutritive-Bain-Satin-Niacinamide/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Shampoo Bain Satin, Gentle Hydrating ...",
+                "excerpts": [
+                  "amazon.ca/k-c3-a9rastase-nutritive-bain-satin-niacinamide-dp-b0bzzjykz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/K%C3%A9rastase-Nutritive-Bain-Satin-Niacinamide/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Shampoo Bain Satin, Gentle Hydrating ...",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Shampoo Bain Satin ... 250 ml ... $62.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/K%C3%A9rastase-Nutritive-Bain-Satin-Niacinamide/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Shampoo Bain Satin, Gentle Hydrating ...",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Shampoo Bain Satin ... 250 ml ... $62.00 ... displayPrice\":\"$62.00\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.sa/-/en/K%C3%A9rastase-Nutritive-Satin-Shampoo-250ml/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair 250ml",
+                "excerpts": [
+                  "SAR170.00 ... SAR SAR 170.00 () Includes selected options"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.sa/-/en/K%C3%A9rastase-Nutritive-Satin-Shampoo-250ml/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair 250ml",
+                "excerpts": [
+                  "SAR170.00 ... Price"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.sa/-/en/K%C3%A9rastase-Nutritive-Satin-Shampoo-250ml/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair 250ml",
+                "excerpts": [
+                  "In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.sa/-/en/K%C3%A9rastase-Nutritive-Satin-Shampoo-250ml/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair 250ml",
+                "excerpts": [
+                  "amazon.sa/-/en/K%C3%A9rastase-Nutritive-Satin-Shampoo-250ml/dp/B0BZZJYKZ6"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.sa/-/en/K%C3%A9rastase-Nutritive-Satin-Shampoo-250ml/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair 250ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.sa/-/en/K%C3%A9rastase-Nutritive-Satin-Shampoo-250ml/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair 250ml",
+                "excerpts": [
+                  "amazon.sa/-/en/K%C3%A9rastase-Nutritive-Satin-Shampoo-250ml/dp/B0BZZJYKZ6"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.sa/-/en/K%C3%A9rastase-Nutritive-Satin-Shampoo-250ml/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair 250ml",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.sa/-/en/K%C3%A9rastase-Nutritive-Satin-Shampoo-250ml/dp/B0BZZJYKZ6",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair 250ml",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair 250ml ... SAR170.00 ... In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-nutritive-bain-satin-shampoo-250ml",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo 250ml (8.5floz) USA",
+                "excerpts": [
+                  "Price ... $36.32 ... **$36.32**"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-nutritive-bain-satin-shampoo-250ml",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo 250ml (8.5floz) USA",
+                "excerpts": [
+                  "United States (USD $)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-nutritive-bain-satin-shampoo-250ml",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo 250ml (8.5floz) USA",
+                "excerpts": [
+                  "Genuine Products In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-nutritive-bain-satin-shampoo-250ml",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo 250ml (8.5floz) USA",
+                "excerpts": [
+                  "caretobeauty.com/us/kerastase-nutritive-bain-satin-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-nutritive-bain-satin-shampoo-250ml",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo 250ml (8.5floz) USA",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-nutritive-bain-satin-shampoo-250ml",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo 250ml (8.5floz) USA",
+                "excerpts": [
+                  "caretobeauty.com/us/kerastase-nutritive-bain-satin-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-nutritive-bain-satin-shampoo-250ml",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo 250ml (8.5floz) USA",
+                "excerpts": [
+                  "Care to Beauty \u00b7 All cosmetics at your fingertips. ... K\u00e9rastase Nutritive Bain Satin Shampoo 250ml (8.5floz) USA"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-nutritive-bain-satin-shampoo-250ml",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo 250ml (8.5floz) USA",
+                "excerpts": [
+                  "Care to Beauty \u00b7 All cosmetics at your fingertips. ... K\u00e9rastase Nutritive Bain Satin Shampoo 250ml (8.5floz) USA ... $36.32"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://nanamall.com/products/kerastase-nutritive-bain-satin-shampoo-250ml?srsltid=AfmBOoqnXewbjWmNHIWhZYKrFjgNQZCEsiphOZLjQ1xR5lxGE9UNe_Gt",
+                "title": "KERASTASE Nutritive Bain Satin Shampoo 250ml",
+                "excerpts": [
+                  "~$44.00 USD~ $30.50 USD SAVE 31%"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://nanamall.com/products/kerastase-nutritive-bain-satin-shampoo-250ml?srsltid=AfmBOoqnXewbjWmNHIWhZYKrFjgNQZCEsiphOZLjQ1xR5lxGE9UNe_Gt",
+                "title": "KERASTASE Nutritive Bain Satin Shampoo 250ml",
+                "excerpts": [
+                  "~$44.00 USD~ $30.50 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://nanamall.com/products/kerastase-nutritive-bain-satin-shampoo-250ml?srsltid=AfmBOoqnXewbjWmNHIWhZYKrFjgNQZCEsiphOZLjQ1xR5lxGE9UNe_Gt",
+                "title": "KERASTASE Nutritive Bain Satin Shampoo 250ml",
+                "excerpts": [
+                  "Out of stock ... Notify Me When Available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://nanamall.com/products/kerastase-nutritive-bain-satin-shampoo-250ml?srsltid=AfmBOoqnXewbjWmNHIWhZYKrFjgNQZCEsiphOZLjQ1xR5lxGE9UNe_Gt",
+                "title": "KERASTASE Nutritive Bain Satin Shampoo 250ml",
+                "excerpts": [
+                  "nanamall.com/products/kerastase-nutritive-bain-satin-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://nanamall.com/products/kerastase-nutritive-bain-satin-shampoo-250ml?srsltid=AfmBOoqnXewbjWmNHIWhZYKrFjgNQZCEsiphOZLjQ1xR5lxGE9UNe_Gt",
+                "title": "KERASTASE Nutritive Bain Satin Shampoo 250ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://nanamall.com/products/kerastase-nutritive-bain-satin-shampoo-250ml?srsltid=AfmBOoqnXewbjWmNHIWhZYKrFjgNQZCEsiphOZLjQ1xR5lxGE9UNe_Gt",
+                "title": "KERASTASE Nutritive Bain Satin Shampoo 250ml",
+                "excerpts": [
+                  "nanamall.com/products/kerastase-nutritive-bain-satin-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://nanamall.com/products/kerastase-nutritive-bain-satin-shampoo-250ml?srsltid=AfmBOoqnXewbjWmNHIWhZYKrFjgNQZCEsiphOZLjQ1xR5lxGE9UNe_Gt",
+                "title": "KERASTASE Nutritive Bain Satin Shampoo 250ml",
+                "excerpts": [
+                  "NANA MALL ... Up to 60 % OFF & 100% Authenticity Guaranteed"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://nanamall.com/products/kerastase-nutritive-bain-satin-shampoo-250ml?srsltid=AfmBOoqnXewbjWmNHIWhZYKrFjgNQZCEsiphOZLjQ1xR5lxGE9UNe_Gt",
+                "title": "KERASTASE Nutritive Bain Satin Shampoo 250ml",
+                "excerpts": [
+                  "Up to 60 % OFF & 100% Authenticity Guaranteed ... ~$44.00 USD~ $30.50 USD SAVE 31%"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278126775434",
+                "title": "https://www.ebay.com/itm/278126775434",
+                "excerpts": [
+                  "US $44.00or Best Offer ... or 4 interest-free payments of $11.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278126775434",
+                "title": "https://www.ebay.com/itm/278126775434",
+                "excerpts": [
+                  "US $44.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278126775434",
+                "title": "https://www.ebay.com/itm/278126775434",
+                "excerpts": [
+                  "Buy It Now ... Condition: New with box"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278126775434",
+                "title": "https://www.ebay.com/itm/278126775434",
+                "excerpts": [
+                  "ebay.com/itm/278126775434 ... Kerastase Nutritive Bain Satin Shampoo - 8.5fl. oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278126775434",
+                "title": "https://www.ebay.com/itm/278126775434",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278126775434",
+                "title": "https://www.ebay.com/itm/278126775434",
+                "excerpts": [
+                  "ebay.com/itm/278126775434"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278126775434",
+                "title": "https://www.ebay.com/itm/278126775434",
+                "excerpts": [
+                  "[vape-times] ... (1745) ... 100% positive ... Kerastase Nutritive Bain Satin Shampoo - 8.5fl. oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278126775434",
+                "title": "https://www.ebay.com/itm/278126775434",
+                "excerpts": [
+                  "[vape-times] ... (1745) ... 100% positive ... US $44.00or Best Offer ... Buy It Now ... Condition: New with box"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-hydrating-shampoo-for-dry-hair-250ml/14510090?srsltid=AfmBOooOrf7CDkLrSpSUNSBpIMiyLdvhcHY6_eIYZXhSNJpHNEuQjaF-",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo for Dry ...",
+                "excerpts": [
+                  "Recommended Retail Price: \u00a327.50 Current price: \u00a322.00 ... Save \u00a35.50 ( 20% Off ) ... \u00a322.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-hydrating-shampoo-for-dry-hair-250ml/14510090?srsltid=AfmBOooOrf7CDkLrSpSUNSBpIMiyLdvhcHY6_eIYZXhSNJpHNEuQjaF-",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo for Dry ...",
+                "excerpts": [
+                  "FREE UK delivery on orders over \u00a325 ... Current price: \u00a322.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-hydrating-shampoo-for-dry-hair-250ml/14510090?srsltid=AfmBOooOrf7CDkLrSpSUNSBpIMiyLdvhcHY6_eIYZXhSNJpHNEuQjaF-",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo for Dry ...",
+                "excerpts": [
+                  "One Time Purchase ... \u00a322.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-hydrating-shampoo-for-dry-hair-250ml/14510090?srsltid=AfmBOooOrf7CDkLrSpSUNSBpIMiyLdvhcHY6_eIYZXhSNJpHNEuQjaF-",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo for Dry ...",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-nutritive-bain-satin-hydrating-shampoo-for-dry-hair-250ml/14510090"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-hydrating-shampoo-for-dry-hair-250ml/14510090?srsltid=AfmBOooOrf7CDkLrSpSUNSBpIMiyLdvhcHY6_eIYZXhSNJpHNEuQjaF-",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo for Dry ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-hydrating-shampoo-for-dry-hair-250ml/14510090?srsltid=AfmBOooOrf7CDkLrSpSUNSBpIMiyLdvhcHY6_eIYZXhSNJpHNEuQjaF-",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo for Dry ...",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-nutritive-bain-satin-hydrating-shampoo-for-dry-hair-250ml/14510090"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-hydrating-shampoo-for-dry-hair-250ml/14510090?srsltid=AfmBOooOrf7CDkLrSpSUNSBpIMiyLdvhcHY6_eIYZXhSNJpHNEuQjaF-",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo for Dry ...",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo for Dry Hair 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-hydrating-shampoo-for-dry-hair-250ml/14510090?srsltid=AfmBOooOrf7CDkLrSpSUNSBpIMiyLdvhcHY6_eIYZXhSNJpHNEuQjaF-",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo for Dry ...",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo for Dry Hair 250ml ... Recommended Retail Price: \u00a327.50 Current price: \u00a322.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "title": "https://www.amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "excerpts": [
+                  "\u00a319.55 &pound;78.20 per l ... \u00a3\u00a319.55"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "title": "https://www.amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "excerpts": [
+                  "\u00a319.55 &pound;78.20 per l"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "title": "https://www.amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "excerpts": [
+                  "FREE delivery Thursday, 23 July on your first order to UK or Ireland ... Dispatches from: Amazon ... Sold by: Amazon"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "title": "https://www.amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "excerpts": [
+                  "amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "title": "https://www.amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "title": "https://www.amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "excerpts": [
+                  "amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "title": "https://www.amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "excerpts": [
+                  "Sold by: Amazon ... Dispatches from: Amazon"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "title": "https://www.amazon.co.uk/K%C3%A9rastase-Nutritive-Nutrition-Shampoo-Enriched/dp/B0BZZKXTQW",
+                "excerpts": [
+                  "Sold by: Amazon ... Dispatches from: Amazon ... \u00a319.55"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-shampoo/KER_00249.html",
+                "title": "Nutritive Bain Satin | Hydrating Shampoo For Dry Hair",
+                "excerpts": [
+                  "Old price New price \u00a327.50 (\u00a311.00/100 ml.)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-shampoo/KER_00249.html",
+                "title": "Nutritive Bain Satin | Hydrating Shampoo For Dry Hair",
+                "excerpts": [
+                  "Prices and payment are shown in GBP"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-shampoo/KER_00249.html",
+                "title": "Nutritive Bain Satin | Hydrating Shampoo For Dry Hair",
+                "excerpts": [
+                  "In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-shampoo/KER_00249.html",
+                "title": "Nutritive Bain Satin | Hydrating Shampoo For Dry Hair",
+                "excerpts": [
+                  "kerastase.co.uk/ranges/regimen/nutritive/bain-satin-shampoo/KER_00249.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-shampoo/KER_00249.html",
+                "title": "Nutritive Bain Satin | Hydrating Shampoo For Dry Hair",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-shampoo/KER_00249.html",
+                "title": "Nutritive Bain Satin | Hydrating Shampoo For Dry Hair",
+                "excerpts": [
+                  "kerastase.co.uk/ranges/regimen/nutritive/bain-satin-shampoo/KER_00249.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-shampoo/KER_00249.html",
+                "title": "Nutritive Bain Satin | Hydrating Shampoo For Dry Hair",
+                "excerpts": [
+                  "Bain Satin Shampoo ... In Stock ... Selected 250 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-shampoo/KER_00249.html",
+                "title": "Nutritive Bain Satin | Hydrating Shampoo For Dry Hair",
+                "excerpts": [
+                  "Bain Satin Shampoo ... In Stock ... Selected 250 ml ... Old price New price \u00a327.50"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-nutritive-bain-satin-hydrating-shampoo-250ml-14510090",
+                "title": "K\u00e9rastase Nutritive Bain Satin: Hydrating Shampoo 250ml",
+                "excerpts": [
+                  "Regular price ~\u00a327.50~ Sale price \u00a319.25 ... Regular price \u00a319.25"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-nutritive-bain-satin-hydrating-shampoo-250ml-14510090",
+                "title": "K\u00e9rastase Nutritive Bain Satin: Hydrating Shampoo 250ml",
+                "excerpts": [
+                  "United Kingdom(\u00a3GBP) ... Sale price \u00a319.25"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-nutritive-bain-satin-hydrating-shampoo-250ml-14510090",
+                "title": "K\u00e9rastase Nutritive Bain Satin: Hydrating Shampoo 250ml",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin: Hydrating Shampoo 250ml ... Sale price \u00a319.25"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-nutritive-bain-satin-hydrating-shampoo-250ml-14510090",
+                "title": "K\u00e9rastase Nutritive Bain Satin: Hydrating Shampoo 250ml",
+                "excerpts": [
+                  "allbeauty.com/products/p-kerastase-nutritive-bain-satin-hydrating-shampoo-250ml-14510090"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-nutritive-bain-satin-hydrating-shampoo-250ml-14510090",
+                "title": "K\u00e9rastase Nutritive Bain Satin: Hydrating Shampoo 250ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-nutritive-bain-satin-hydrating-shampoo-250ml-14510090",
+                "title": "K\u00e9rastase Nutritive Bain Satin: Hydrating Shampoo 250ml",
+                "excerpts": [
+                  "allbeauty.com/products/p-kerastase-nutritive-bain-satin-hydrating-shampoo-250ml-14510090"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-nutritive-bain-satin-hydrating-shampoo-250ml-14510090",
+                "title": "K\u00e9rastase Nutritive Bain Satin: Hydrating Shampoo 250ml",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin: Hydrating Shampoo 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-nutritive-bain-satin-hydrating-shampoo-250ml-14510090",
+                "title": "K\u00e9rastase Nutritive Bain Satin: Hydrating Shampoo 250ml",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin: Hydrating Shampoo 250ml ... Regular price ~\u00a327.50~ Sale price \u00a319.25"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/krastase-nutritive-gentle-hydrating-shampoo-for-dry-hair-nourishing-protein-formula-with-niacinamide-moisturises-softens-and-restores-shine-bain~p143283621",
+                "title": "K?rastase Nutritive, Gentle Hydrating Shampoo for Dry Hair ...",
+                "excerpts": [
+                  "\u00a331.28 ... FREE Delivery ... Add to Basket"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/krastase-nutritive-gentle-hydrating-shampoo-for-dry-hair-nourishing-protein-formula-with-niacinamide-moisturises-softens-and-restores-shine-bain~p143283621",
+                "title": "K?rastase Nutritive, Gentle Hydrating Shampoo for Dry Hair ...",
+                "excerpts": [
+                  "\u00a331.28 ... FREE Delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/krastase-nutritive-gentle-hydrating-shampoo-for-dry-hair-nourishing-protein-formula-with-niacinamide-moisturises-softens-and-restores-shine-bain~p143283621",
+                "title": "K?rastase Nutritive, Gentle Hydrating Shampoo for Dry Hair ...",
+                "excerpts": [
+                  "Add to Basket ... Delivery: Standard (Free) | Sat 25th - Tue 28th Jul"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/krastase-nutritive-gentle-hydrating-shampoo-for-dry-hair-nourishing-protein-formula-with-niacinamide-moisturises-softens-and-restores-shine-bain~p143283621",
+                "title": "K?rastase Nutritive, Gentle Hydrating Shampoo for Dry Hair ...",
+                "excerpts": [
+                  "onbuy.com/gb/p/krastase-nutritive-gentle-hydrating-shampoo-for-dry-hair-nourishing-protein-formula-with-niacinamide-moisturises-softens-and-restores-shine-bain~p143283621/"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/krastase-nutritive-gentle-hydrating-shampoo-for-dry-hair-nourishing-protein-formula-with-niacinamide-moisturises-softens-and-restores-shine-bain~p143283621",
+                "title": "K?rastase Nutritive, Gentle Hydrating Shampoo for Dry Hair ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/krastase-nutritive-gentle-hydrating-shampoo-for-dry-hair-nourishing-protein-formula-with-niacinamide-moisturises-softens-and-restores-shine-bain~p143283621",
+                "title": "K?rastase Nutritive, Gentle Hydrating Shampoo for Dry Hair ...",
+                "excerpts": [
+                  "onbuy.com/gb/p/krastase-nutritive-gentle-hydrating-shampoo-for-dry-hair"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/krastase-nutritive-gentle-hydrating-shampoo-for-dry-hair-nourishing-protein-formula-with-niacinamide-moisturises-softens-and-restores-shine-bain~p143283621",
+                "title": "K?rastase Nutritive, Gentle Hydrating Shampoo for Dry Hair ...",
+                "excerpts": [
+                  "Sold by: Paragon Mart ... Add to Basket"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/krastase-nutritive-gentle-hydrating-shampoo-for-dry-hair-nourishing-protein-formula-with-niacinamide-moisturises-softens-and-restores-shine-bain~p143283621",
+                "title": "K?rastase Nutritive, Gentle Hydrating Shampoo for Dry Hair ...",
+                "excerpts": [
+                  "Sold by: Paragon Mart ... \u00a331.28 ... Add to Basket"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://noli.com/products/kerastase-nutritive-bain-satin-shampoo",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo | Noli",
+                "excerpts": [
+                  "\u00a322.00 ... \u00a327.50 ... -20%"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://noli.com/products/kerastase-nutritive-bain-satin-shampoo",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo | Noli",
+                "excerpts": [
+                  "\u00a322.00 ... \u00a327.50"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://noli.com/products/kerastase-nutritive-bain-satin-shampoo",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo | Noli",
+                "excerpts": [
+                  "Free shipping on orders over \u00a320+ ... Buy 3, Get 30% Off ... \u00a322.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://noli.com/products/kerastase-nutritive-bain-satin-shampoo",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo | Noli",
+                "excerpts": [
+                  "noli.com/products/kerastase-nutritive-bain-satin-shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://noli.com/products/kerastase-nutritive-bain-satin-shampoo",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo | Noli",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://noli.com/products/kerastase-nutritive-bain-satin-shampoo",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo | Noli",
+                "excerpts": [
+                  "noli.com/products/kerastase-nutritive-bain-satin-shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://noli.com/products/kerastase-nutritive-bain-satin-shampoo",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo | Noli",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo | Noli"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://noli.com/products/kerastase-nutritive-bain-satin-shampoo",
+                "title": "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo | Noli",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin Hydrating Shampoo | Noli ... \u00a322.00 ... \u00a327.50 ... -20%"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/nutritive-bain-satin",
+                "title": "K\u00e9rastase Nutritive Bain Satin, 250 ml - Cosmeterie Online Shop",
+                "excerpts": [
+                  "$21.21 $30.30 -30% ... K\u00e9rastase Nutritive Bain Satin, 250 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/nutritive-bain-satin",
+                "title": "K\u00e9rastase Nutritive Bain Satin, 250 ml - Cosmeterie Online Shop",
+                "excerpts": [
+                  "Basket **$0.00** ... $21.21 $30.30 -30% ... (All prices excl. VAT.)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/nutritive-bain-satin",
+                "title": "K\u00e9rastase Nutritive Bain Satin, 250 ml - Cosmeterie Online Shop",
+                "excerpts": [
+                  "Only 2 items in stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/nutritive-bain-satin",
+                "title": "K\u00e9rastase Nutritive Bain Satin, 250 ml - Cosmeterie Online Shop",
+                "excerpts": [
+                  "cosmeterie.com/kerastase/nutritive-bain-satin ... K\u00e9rastase Nutritive Bain Satin, 250 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/nutritive-bain-satin",
+                "title": "K\u00e9rastase Nutritive Bain Satin, 250 ml - Cosmeterie Online Shop",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/nutritive-bain-satin",
+                "title": "K\u00e9rastase Nutritive Bain Satin, 250 ml - Cosmeterie Online Shop",
+                "excerpts": [
+                  "cosmeterie.com/kerastase/nutritive-bain-satin"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/nutritive-bain-satin",
+                "title": "K\u00e9rastase Nutritive Bain Satin, 250 ml - Cosmeterie Online Shop",
+                "excerpts": [
+                  "Cosmeterie Online Shop ... K\u00e9rastase Nutritive Bain Satin, 250 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/nutritive-bain-satin",
+                "title": "K\u00e9rastase Nutritive Bain Satin, 250 ml - Cosmeterie Online Shop",
+                "excerpts": [
+                  "Cosmeterie Online Shop ... $21.21 $30.30 -30% ... K\u00e9rastase Nutritive Bain Satin, 250 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-nutritive-bain-satin-250ml?srsltid=AfmBOorCbHWfRRpQHuJMvgz9ak9sZyjRXbgHlUJysnkMdRY00MF_4nhk",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair",
+                "excerpts": [
+                  "$60.00 ... Buy now, pay later ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-nutritive-bain-satin-250ml?srsltid=AfmBOorCbHWfRRpQHuJMvgz9ak9sZyjRXbgHlUJysnkMdRY00MF_4nhk",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair",
+                "excerpts": [
+                  "Gifts Under $30 ... Gifts Under $50 ... $60.00 ... 4 payments of $15.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-nutritive-bain-satin-250ml?srsltid=AfmBOorCbHWfRRpQHuJMvgz9ak9sZyjRXbgHlUJysnkMdRY00MF_4nhk",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair",
+                "excerpts": [
+                  "Add to Bag ... $60.00 ... Earn 120 points"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-nutritive-bain-satin-250ml?srsltid=AfmBOorCbHWfRRpQHuJMvgz9ak9sZyjRXbgHlUJysnkMdRY00MF_4nhk",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair",
+                "excerpts": [
+                  "hairhouse.com.au/products/kerastase-nutritive-bain-satin-250ml ... Nutritive Bain Satin 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-nutritive-bain-satin-250ml?srsltid=AfmBOorCbHWfRRpQHuJMvgz9ak9sZyjRXbgHlUJysnkMdRY00MF_4nhk",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-nutritive-bain-satin-250ml?srsltid=AfmBOorCbHWfRRpQHuJMvgz9ak9sZyjRXbgHlUJysnkMdRY00MF_4nhk",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair",
+                "excerpts": [
+                  "hairhouse.com.au/products/kerastase-nutritive-bain-satin-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-nutritive-bain-satin-250ml?srsltid=AfmBOorCbHWfRRpQHuJMvgz9ak9sZyjRXbgHlUJysnkMdRY00MF_4nhk",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair",
+                "excerpts": [
+                  "Hairhouse ... Nutritive Bain Satin 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-nutritive-bain-satin-250ml?srsltid=AfmBOorCbHWfRRpQHuJMvgz9ak9sZyjRXbgHlUJysnkMdRY00MF_4nhk",
+                "title": "K\u00e9rastase Nutritive Bain Satin Shampoo for Dry Hair",
+                "excerpts": [
+                  "Hairhouse ... Nutritive Bain Satin 250ml ... $60.00 ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/shampoo.html",
+                "title": "K\u00e9rastase Shampoos & Bains",
+                "excerpts": [
+                  "Nutritive Satin Shampoo for Dry Hair 250ml ... $60.01"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/shampoo.html",
+                "title": "K\u00e9rastase Shampoos & Bains",
+                "excerpts": [
+                  "FREE Delivery on orders over $75 in Australia ... $60.01"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/shampoo.html",
+                "title": "K\u00e9rastase Shampoos & Bains",
+                "excerpts": [
+                  "Nutritive Satin Shampoo for Dry Hair 250ml ... $60.01"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/shampoo.html",
+                "title": "K\u00e9rastase Shampoos & Bains",
+                "excerpts": [
+                  "adorebeauty.com.au/b/kerastase/shampoo.html ... K\u00e9rastase Nutritive Satin Shampoo for Dry Hair 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/shampoo.html",
+                "title": "K\u00e9rastase Shampoos & Bains",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/shampoo.html",
+                "title": "K\u00e9rastase Shampoos & Bains",
+                "excerpts": [
+                  "adorebeauty.com.au/b/kerastase/shampoo.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/shampoo.html",
+                "title": "K\u00e9rastase Shampoos & Bains",
+                "excerpts": [
+                  "Adore Beauty ... K\u00e9rastase Nutritive Satin Shampoo for Dry Hair 250ml ... $60.01"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/shampoo.html",
+                "title": "K\u00e9rastase Shampoos & Bains",
+                "excerpts": [
+                  "Adore Beauty ... K\u00e9rastase Nutritive Satin Shampoo for Dry Hair 250ml ... $60.01"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

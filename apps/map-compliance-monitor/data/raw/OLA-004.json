@@ -1,0 +1,3083 @@
+{
+  "sku_id": "OLA-004",
+  "effort": "high",
+  "elapsed_s": 1213,
+  "fetched_at": "2026-07-20T13:01:41+00:00",
+  "run_id": "task_run_eff1d2494326499e9338227c527c2660",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_eff1d2494326499e9338227c527c2660",
+      "interaction_id": "task_run_eff1d2494326499e9338227c527c2660",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of Olaplex No. 4 Bond Maintenance Shampoo, 250ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:41:27.185601Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:41:27.506289Z",
+      "completed_at": "2026-07-20T13:01:31.814733Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/dp/B07D37PQGL",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Amazon.com",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.com",
+          "advertised_price": "$34.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Olaplex-No-4-Bonding-Maintenance-Shampoo-8-5-oz/114910204",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "PRIMOVA LLC",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$23.60"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Olaplex",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "olaplex.com",
+          "advertised_price": "$34.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://uk.olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-uk",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Olaplex UK",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "uk.olaplex.com",
+          "advertised_price": "\u00a330.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.salonsavings.com/products/olaplex-no-4-bond-maintenance-shampoo",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "SalonSavings",
+          "seller_type": "discounter",
+          "seller_domain": "salonsavings.com",
+          "advertised_price": "$24.99"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": false,
+          "listing_url": "https://thebsoonline.com/products/olaplex-4-shampoo-8-5oz",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Beauty Supply Outlet",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "thebsoonline.com",
+          "advertised_price": "$43.99"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.lookfantastic.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "LOOKFANTASTIC",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "\u00a330.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.dermstore.com/p/olaplex-no.4-bond-maintenance-shampoo-250ml/12164501",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Dermstore",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "dermstore.com",
+          "advertised_price": "$34.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.onbuy.com/gb/p/olaplex-no4-bond-maintenance-shampoo-250ml~p19151605/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Unineed Ltd (OnBuy)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "onbuy.com",
+          "advertised_price": "\u00a319.99"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://uk.iherb.com/pr/olaplex-no-4-bond-maintenance-shampoo-8-5-fl-oz-250-ml/144682",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "iHerb",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "uk.iherb.com",
+          "advertised_price": "\u00a336.76"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.beautycarechoices.com/olaplex/no-4-bond-maintenance-shampoo-85oz",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Beauty Care Choices",
+          "seller_type": "independent_store",
+          "seller_domain": "beautycarechoices.com",
+          "advertised_price": "$34.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.cosmetify.com/olaplex-no4-bond-maintenance-shampoo/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Cosmetify (Beyond Beautiful)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "cosmetify.com",
+          "advertised_price": "\u00a320.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2591015",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Ulta Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "ulta.com",
+          "advertised_price": "$34.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://allbeauty.com/products/p/olaplex-no-4-bond-maintenance-250ml-17787574",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "allbeauty",
+          "seller_type": "discounter",
+          "seller_domain": "allbeauty.com",
+          "advertised_price": "\u00a319.90"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://www.cultbeauty.com/p/olaplex-no-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Cult Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "cultbeauty.com",
+          "advertised_price": "\u20ac32.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.selfridges.com/US/en/product/olaplex-n4-bond-maintenance-shampoo-250ml_R03633564/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Selfridges",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "selfridges.com",
+          "advertised_price": "$36.50"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.parfumdreams.co.uk/Olaplex/Hair/Hair-care/Bond-Maintenance-Shampoo-No4/index_75709.aspx",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "parfumdreams",
+          "seller_type": "discounter",
+          "seller_domain": "parfumdreams.co.uk",
+          "advertised_price": "\u00a325.67"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.nordstrom.com/s/olaplex-no-4-bond-maintenance-shampoo/4634614",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Nordstrom",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "nordstrom.com",
+          "advertised_price": "$34.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.secretsales.com/d117343ec1bb50-olaplex-olaplex-no-4-bond-maintenance-shampoo-moisturizing-and-strengthening-formula/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Secret Sales",
+          "seller_type": "discounter",
+          "seller_domain": "secretsales.com",
+          "advertised_price": "\u00a322.28"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.sephora.com/product/no-4-bond-maintenance-shampoo-P433172",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Sephora",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "sephora.com",
+          "advertised_price": "$16.00 - $58.00"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://amazon.com/dp/B07D37PQGL",
+            "title": "amazon_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-8-5-oz/114910204",
+            "title": "walmart_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+            "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://uk.olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-uk",
+            "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://salonsavings.com/products/olaplex-no-4-bond-maintenance-shampoo?srsltid=AfmBOoq69i1NYwSN0-QNbf4k-F85VvLAv3zPscEcXn4CrQgL1lD8dHKh",
+            "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://thebsoonline.com/products/olaplex-4-shampoo-8-5oz?srsltid=AfmBOooJeySzIFwVf6Fp_0S0E-a0ChTtw89dv1Y3jlXFChVoweTVKhq9",
+            "title": "Olaplex No 4 Bond Maintenance Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304?srsltid=AfmBOorRbY0BDfWg94tZYMVu4HZP3EhZrcksgw-d3UBxOhLebdtt32-Y",
+            "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://dermstore.com/p/olaplex-no.4-bond-maintenance-shampoo-250ml/12164501?bvstate=pg%3A2%2Fct%3Ar&srsltid=AfmBOorZjBC9cnEJkMsDO114qxbJaPdy6hwm9F0ft13F2SudiWvPqGzh",
+            "title": "Olaplex No. 4 Bond Maintenance Shampoo (8.5 fl. oz.)",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://onbuy.com/gb/p/olaplex-no4-bond-maintenance-shampoo-250ml~p19151605",
+            "title": "Olaplex No.4 Bond Maintenance Shampoo - 250ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://uk.iherb.com/pr/olaplex-no-4-bond-maintenance-shampoo-8-5-fl-oz-250-ml/144682",
+            "title": "No. 4, Bond Maintenance\u2122 Shampoo, 8.5 fl oz (250 ml)",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://beautycarechoices.com/olaplex/no-4-bond-maintenance-shampoo",
+            "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://cosmetify.com/olaplex-no4-bond-maintenance-shampoo",
+            "title": "Olaplex No.4 Bond Maintenance Shampoo 100ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2591015",
+            "title": "8.5 oz No.4 Bond Maintenance Strengthening, Hydrating ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://allbeauty.com/products/p-olaplex-no-4-bond-maintenance-250ml-17787574",
+            "title": "Olaplex No.4 Bond Maintenance 250ml - Haircare",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://cultbeauty.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304",
+            "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://selfridges.com/US/en/product/olaplex-n4-bond-maintenance-shampoo-250ml_R03633564",
+            "title": "OLAPLEX - N\u00b04 Bond Maintenance shampoo 250ml",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://pricerunner.com/pl/507-3247166645/Hair-Products/Olaplex-No.4-Bond-Maintenance-Shampoo-250ml-Compare-Prices",
+            "title": "Olaplex No.4 Bond Maintenance Shampoo 250ml 241g",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://parfumdreams.co.uk/Olaplex/Hair/Hair-care/Bond-Maintenance-Shampoo-No4/index_75709.aspx",
+            "title": "Bond Maintenance Shampoo No.4 - Hair care Olaplex",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://pricespy.co.uk/product.php?p=4865754",
+            "title": "Olaplex No.4 Bond Maintenance Shampoo 250ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://sephora.com/product/no-4-bond-maintenance-shampoo-P433172",
+            "title": "No. 4 Bond Maintenance\u2122 Shampoo - Olaplex",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 89%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37PQGL",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: \"Amazon.com\" ... data.product_title: \"Olaplex N\u00b0.4 Bond Maintenance\u2122 Hair Strengthening Shampoo\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37PQGL",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: \"https://www.amazon.com/dp/B07D37PQGL\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37PQGL",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.web_price: 34 ... data.list_price: 34 ... data.savings: \"-5%\" ... data.subscription_price: \"$32.30\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37PQGL",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.shipping_amount: \"FREE\" ... related products priced in $"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37PQGL",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: \"https://www.amazon.com/dp/B07D37PQGL\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37PQGL",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: \"Amazon.com\" ... data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37PQGL",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.availability: true ... FREE delivery Saturday, July 25"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37PQGL",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-8-5-oz/114910204",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.seller_name: \" PRIMOVA LLC\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-8-5-oz/114910204",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.product_url: \"https://www.walmart.com/ip/Olaplex-No-4-Bonding-Maintenance-Shampoo-8-5-oz/114910204\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-8-5-oz/114910204",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.price: 23.6 ... data.savings: \"SAVE $6.87\" ... data.was_price: 30.47 ... data.unit_price: \"$2.78/fl oz\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-8-5-oz/114910204",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.currency: \"USD\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-8-5-oz/114910204",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.variants[0].product_url: \"https://www.walmart.com/ip/Olaplex-No-4-Bonding-Maintenance-Shampoo-8-5-oz/114910204\" ... size-8.5floz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-8-5-oz/114910204",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.seller_name: \" PRIMOVA LLC\" ... data.seller_id: \"E2B69B9BE0544573BA1393E3F20D8607\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-8-5-oz/114910204",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.variants[0].product_availability: \"IN_STOCK\" ... data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-4-Bond-Maintenance-Shampoo-8-5-oz/114910204",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "# N\u00ba.4 BOND MAINTENANCE\u00ae SHAMPOO ... Regular price $34 ... Select a Size: 250ML 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "corpus-meta url: https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "Regular price $34 ... 250ML"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "Regular price $34 ... United States (English)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "corpus-meta url: https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "Olaplex official US storefront"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "Add to cart ... Quantity 0 in cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-us",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-uk",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "# N\u00ba.4 BOND MAINTENANCE\u00ae SHAMPOO ... Regular price \u00a330 ... Select a Size: 250ML 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-uk",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "corpus-meta url: https://uk.olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-uk"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-uk",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "Regular price \u00a330 ... 250ML"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-uk",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "Regular price \u00a330 ... Free Shipping on \u00a325+ ... United Kingdom"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-uk",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "corpus-meta url: https://uk.olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-uk"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-uk",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "Olaplex official UK storefront"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-uk",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "Add to cart ... Quantity 0 in cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.olaplex.com/products/olaplex-n-4-bond-maintenance-shampoo-uk",
+                "title": "N\u00ba.4 Bond Maintenance\u00ae Shampoo",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-4-bond-maintenance-shampoo?srsltid=AfmBOoq69i1NYwSN0-QNbf4k-F85VvLAv3zPscEcXn4CrQgL1lD8dHKh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "# Olaplex No. 4 Bond Maintenance Shampoo ... Sale price $24.99 ... Availability: In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-4-bond-maintenance-shampoo?srsltid=AfmBOoq69i1NYwSN0-QNbf4k-F85VvLAv3zPscEcXn4CrQgL1lD8dHKh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "corpus-meta url: https://www.salonsavings.com/products/olaplex-no-4-bond-maintenance-shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-4-bond-maintenance-shampoo?srsltid=AfmBOoq69i1NYwSN0-QNbf4k-F85VvLAv3zPscEcXn4CrQgL1lD8dHKh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "Sale price $24.99 ... Regular price ~$32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-4-bond-maintenance-shampoo?srsltid=AfmBOoq69i1NYwSN0-QNbf4k-F85VvLAv3zPscEcXn4CrQgL1lD8dHKh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "United States - USD $ ... Free shipping on all orders over $70"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-4-bond-maintenance-shampoo?srsltid=AfmBOoq69i1NYwSN0-QNbf4k-F85VvLAv3zPscEcXn4CrQgL1lD8dHKh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "corpus-meta url: https://www.salonsavings.com/products/olaplex-no-4-bond-maintenance-shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-4-bond-maintenance-shampoo?srsltid=AfmBOoq69i1NYwSN0-QNbf4k-F85VvLAv3zPscEcXn4CrQgL1lD8dHKh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "Your one-stop for all things hair care ... All at wholesale prices ... Deals / Clearance / Discontinued"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-4-bond-maintenance-shampoo?srsltid=AfmBOoq69i1NYwSN0-QNbf4k-F85VvLAv3zPscEcXn4CrQgL1lD8dHKh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "Availability: In Stock ... Hurry, only 6096 item(s) left in stock!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-4-bond-maintenance-shampoo?srsltid=AfmBOoq69i1NYwSN0-QNbf4k-F85VvLAv3zPscEcXn4CrQgL1lD8dHKh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-4-shampoo-8-5oz?srsltid=AfmBOooJeySzIFwVf6Fp_0S0E-a0ChTtw89dv1Y3jlXFChVoweTVKhq9",
+                "title": "Olaplex No 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "# Olaplex No 4 Bond Maintenance Shampoo ... 250ml - $43.99 ... we are an official Olaplex retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-4-shampoo-8-5oz?srsltid=AfmBOooJeySzIFwVf6Fp_0S0E-a0ChTtw89dv1Y3jlXFChVoweTVKhq9",
+                "title": "Olaplex No 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "corpus-meta url: https://thebsoonline.com/products/olaplex-4-shampoo-8-5oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-4-shampoo-8-5oz?srsltid=AfmBOooJeySzIFwVf6Fp_0S0E-a0ChTtw89dv1Y3jlXFChVoweTVKhq9",
+                "title": "Olaplex No 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "250ml - $43.99 ... Size: 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-4-shampoo-8-5oz?srsltid=AfmBOooJeySzIFwVf6Fp_0S0E-a0ChTtw89dv1Y3jlXFChVoweTVKhq9",
+                "title": "Olaplex No 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "FREE Shipping with UPS in Canada over $60 ... Free Shipping in Canada Over $60"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-4-shampoo-8-5oz?srsltid=AfmBOooJeySzIFwVf6Fp_0S0E-a0ChTtw89dv1Y3jlXFChVoweTVKhq9",
+                "title": "Olaplex No 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "corpus-meta url: https://thebsoonline.com/products/olaplex-4-shampoo-8-5oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-4-shampoo-8-5oz?srsltid=AfmBOooJeySzIFwVf6Fp_0S0E-a0ChTtw89dv1Y3jlXFChVoweTVKhq9",
+                "title": "Olaplex No 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "Authentic Olaplex Products Guaranteed ... we are an official Olaplex retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-4-shampoo-8-5oz?srsltid=AfmBOooJeySzIFwVf6Fp_0S0E-a0ChTtw89dv1Y3jlXFChVoweTVKhq9",
+                "title": "Olaplex No 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "$43.99~$49.00~ Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-4-shampoo-8-5oz?srsltid=AfmBOooJeySzIFwVf6Fp_0S0E-a0ChTtw89dv1Y3jlXFChVoweTVKhq9",
+                "title": "Olaplex No 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304?srsltid=AfmBOorRbY0BDfWg94tZYMVu4HZP3EhZrcksgw-d3UBxOhLebdtt32-Y",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "# Olaplex No. 4 Bond Maintenance Strengthening and Reparative Hair Shampoo 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304?srsltid=AfmBOorRbY0BDfWg94tZYMVu4HZP3EhZrcksgw-d3UBxOhLebdtt32-Y",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "corpus-meta url: https://lookfantastic.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304?srsltid=AfmBOorRbY0BDfWg94tZYMVu4HZP3EhZrcksgw-d3UBxOhLebdtt32-Y",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "\u00a330.00 ... Or 4 interest free payments of \u00a37.50 ... Size: 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304?srsltid=AfmBOorRbY0BDfWg94tZYMVu4HZP3EhZrcksgw-d3UBxOhLebdtt32-Y",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "\u00a330.00 ... FREE UK delivery on orders over \u00a325"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304?srsltid=AfmBOorRbY0BDfWg94tZYMVu4HZP3EhZrcksgw-d3UBxOhLebdtt32-Y",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "corpus-meta url: https://lookfantastic.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304?srsltid=AfmBOorRbY0BDfWg94tZYMVu4HZP3EhZrcksgw-d3UBxOhLebdtt32-Y",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "Official Olaplex brand page on LOOKFANTASTIC"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304?srsltid=AfmBOorRbY0BDfWg94tZYMVu4HZP3EhZrcksgw-d3UBxOhLebdtt32-Y",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304?srsltid=AfmBOorRbY0BDfWg94tZYMVu4HZP3EhZrcksgw-d3UBxOhLebdtt32-Y",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.4-bond-maintenance-shampoo-250ml/12164501?bvstate=pg%3A2%2Fct%3Ar&srsltid=AfmBOorZjBC9cnEJkMsDO114qxbJaPdy6hwm9F0ft13F2SudiWvPqGzh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo (8.5 fl. oz.)",
+                "excerpts": [
+                  "$34.00 ... Or 4 interest free payments of $8.50 ... One Time Purchase $34.00 ... Olaplex No. 4 Bond Maintenance Shampoo (8.5 fl. oz.) $34.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.4-bond-maintenance-shampoo-250ml/12164501?bvstate=pg%3A2%2Fct%3Ar&srsltid=AfmBOorZjBC9cnEJkMsDO114qxbJaPdy6hwm9F0ft13F2SudiWvPqGzh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo (8.5 fl. oz.)",
+                "excerpts": [
+                  "$34.00 ... FREE US Shipping $50+"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.4-bond-maintenance-shampoo-250ml/12164501?bvstate=pg%3A2%2Fct%3Ar&srsltid=AfmBOorZjBC9cnEJkMsDO114qxbJaPdy6hwm9F0ft13F2SudiWvPqGzh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo (8.5 fl. oz.)",
+                "excerpts": [
+                  "One Time Purchase $34.00 ... Auto-Replenish"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.4-bond-maintenance-shampoo-250ml/12164501?bvstate=pg%3A2%2Fct%3Ar&srsltid=AfmBOorZjBC9cnEJkMsDO114qxbJaPdy6hwm9F0ft13F2SudiWvPqGzh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo (8.5 fl. oz.)",
+                "excerpts": [
+                  "corpus-meta url: https://dermstore.com/p/olaplex-no.4-bond-maintenance-shampoo-250ml/12164501"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.4-bond-maintenance-shampoo-250ml/12164501?bvstate=pg%3A2%2Fct%3Ar&srsltid=AfmBOorZjBC9cnEJkMsDO114qxbJaPdy6hwm9F0ft13F2SudiWvPqGzh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo (8.5 fl. oz.)",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.4-bond-maintenance-shampoo-250ml/12164501?bvstate=pg%3A2%2Fct%3Ar&srsltid=AfmBOorZjBC9cnEJkMsDO114qxbJaPdy6hwm9F0ft13F2SudiWvPqGzh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo (8.5 fl. oz.)",
+                "excerpts": [
+                  "corpus-meta url: https://dermstore.com/p/olaplex-no.4-bond-maintenance-shampoo-250ml/12164501"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.4-bond-maintenance-shampoo-250ml/12164501?bvstate=pg%3A2%2Fct%3Ar&srsltid=AfmBOorZjBC9cnEJkMsDO114qxbJaPdy6hwm9F0ft13F2SudiWvPqGzh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo (8.5 fl. oz.)",
+                "excerpts": [
+                  "dermstore homepage ... Olaplex No. 4 Bond Maintenance Shampoo (8.5 fl. oz.)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.4-bond-maintenance-shampoo-250ml/12164501?bvstate=pg%3A2%2Fct%3Ar&srsltid=AfmBOorZjBC9cnEJkMsDO114qxbJaPdy6hwm9F0ft13F2SudiWvPqGzh",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo (8.5 fl. oz.)",
+                "excerpts": [
+                  "Dermstore Rewards ... FREE US Shipping $50+ ... skin-care/beauty retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no4-bond-maintenance-shampoo-250ml~p19151605",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo - 250ml",
+                "excerpts": [
+                  "\u00a319.99 ... FREE Delivery ... Add to Basket ... Sold by Unineed Ltd"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no4-bond-maintenance-shampoo-250ml~p19151605",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo - 250ml",
+                "excerpts": [
+                  "\u00a319.99 ... FREE Delivery ... 180-day payment protection"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no4-bond-maintenance-shampoo-250ml~p19151605",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo - 250ml",
+                "excerpts": [
+                  "\u00a319.99 ... Add to Basket ... Interest-free payment options available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no4-bond-maintenance-shampoo-250ml~p19151605",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo - 250ml",
+                "excerpts": [
+                  "corpus-meta url: https://onbuy.com/gb/p/olaplex-no4-bond-maintenance-shampoo-250ml~p19151605/"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no4-bond-maintenance-shampoo-250ml~p19151605",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo - 250ml",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no4-bond-maintenance-shampoo-250ml~p19151605",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo - 250ml",
+                "excerpts": [
+                  "corpus-meta url: https://onbuy.com/gb/p/olaplex-no4-bond-maintenance-shampoo-250ml~p19151605/"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no4-bond-maintenance-shampoo-250ml~p19151605",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo - 250ml",
+                "excerpts": [
+                  "Sold by Unineed Ltd ... Visit store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no4-bond-maintenance-shampoo-250ml~p19151605",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo - 250ml",
+                "excerpts": [
+                  "Sold by Unineed Ltd ... 180-day payment protection ... marketplace"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.iherb.com/pr/olaplex-no-4-bond-maintenance-shampoo-8-5-fl-oz-250-ml/144682",
+                "title": "No. 4, Bond Maintenance\u2122 Shampoo, 8.5 fl oz (250 ml)",
+                "excerpts": [
+                  "\u00a336.76 \u00a336.76 (Saved \u00a30.00) ... \u00a30.15/ml ... **\u00a336.76** (0% off)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.iherb.com/pr/olaplex-no-4-bond-maintenance-shampoo-8-5-fl-oz-250-ml/144682",
+                "title": "No. 4, Bond Maintenance\u2122 Shampoo, 8.5 fl oz (250 ml)",
+                "excerpts": [
+                  "Deliver to United Kingdom (UK) ... \u00a336.76 ... Tax included"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.iherb.com/pr/olaplex-no-4-bond-maintenance-shampoo-8-5-fl-oz-250-ml/144682",
+                "title": "No. 4, Bond Maintenance\u2122 Shampoo, 8.5 fl oz (250 ml)",
+                "excerpts": [
+                  "**In Stock - Only 4 left** ... 100+ sold in 30 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.iherb.com/pr/olaplex-no-4-bond-maintenance-shampoo-8-5-fl-oz-250-ml/144682",
+                "title": "No. 4, Bond Maintenance\u2122 Shampoo, 8.5 fl oz (250 ml)",
+                "excerpts": [
+                  "corpus-meta url: https://uk.iherb.com/pr/olaplex-no-4-bond-maintenance-shampoo-8-5-fl-oz-250-ml/144682"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.iherb.com/pr/olaplex-no-4-bond-maintenance-shampoo-8-5-fl-oz-250-ml/144682",
+                "title": "No. 4, Bond Maintenance\u2122 Shampoo, 8.5 fl oz (250 ml)",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.iherb.com/pr/olaplex-no-4-bond-maintenance-shampoo-8-5-fl-oz-250-ml/144682",
+                "title": "No. 4, Bond Maintenance\u2122 Shampoo, 8.5 fl oz (250 ml)",
+                "excerpts": [
+                  "corpus-meta url: https://uk.iherb.com/pr/olaplex-no-4-bond-maintenance-shampoo-8-5-fl-oz-250-ml/144682"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.iherb.com/pr/olaplex-no-4-bond-maintenance-shampoo-8-5-fl-oz-250-ml/144682",
+                "title": "No. 4, Bond Maintenance\u2122 Shampoo, 8.5 fl oz (250 ml)",
+                "excerpts": [
+                  "iHerb | Rewards ... Olaplex, No. 4, Bond Maintenance Shampoo, 8.5 fl oz (250 ml)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://uk.iherb.com/pr/olaplex-no-4-bond-maintenance-shampoo-8-5-fl-oz-250-ml/144682",
+                "title": "No. 4, Bond Maintenance\u2122 Shampoo, 8.5 fl oz (250 ml)",
+                "excerpts": [
+                  "As a retailer, we independently set our prices ... manufacturer restrictions"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-4-bond-maintenance-shampoo",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "Size: 8.5 oz ... $34.00 ... Quantity: - + ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-4-bond-maintenance-shampoo",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "$34.00 ... Free Shipping on all orders over $59 USD!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-4-bond-maintenance-shampoo",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "$34.00 ... Add to Bag ... Checkout Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-4-bond-maintenance-shampoo",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "corpus-meta url: https://beautycarechoices.com/olaplex/no-4-bond-maintenance-shampoo-85oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-4-bond-maintenance-shampoo",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-4-bond-maintenance-shampoo",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "corpus-meta url: https://beautycarechoices.com/olaplex/no-4-bond-maintenance-shampoo-85oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-4-bond-maintenance-shampoo",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "Beauty Care Choices ... Call Us 866-409-7227"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-4-bond-maintenance-shampoo",
+                "title": "Olaplex No. 4 Bond Maintenance Shampoo",
+                "excerpts": [
+                  "Beauty Care Choices ... Olaplex brand page ... salon products"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/olaplex-no4-bond-maintenance-shampoo",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo 100ml",
+                "excerpts": [
+                  "Size: 100ml - \u00a311.49 250ml - \u00a320.99 1000ml - \u00a355.32 ... Sold by Beyond Beautiful"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/olaplex-no4-bond-maintenance-shampoo",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo 100ml",
+                "excerpts": [
+                  "250ml - \u00a320.99 ... \u00a33.40 delivery, free over \u00a340"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/olaplex-no4-bond-maintenance-shampoo",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo 100ml",
+                "excerpts": [
+                  "Add to Bag| \u00a311.49 ... In Stock ... Hurry, only 3 left in stock!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/olaplex-no4-bond-maintenance-shampoo",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo 100ml",
+                "excerpts": [
+                  "corpus-meta url: https://cosmetify.com/olaplex-no4-bond-maintenance-shampoo/"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/olaplex-no4-bond-maintenance-shampoo",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo 100ml",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/olaplex-no4-bond-maintenance-shampoo",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo 100ml",
+                "excerpts": [
+                  "corpus-meta url: https://cosmetify.com/olaplex-no4-bond-maintenance-shampoo/"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/olaplex-no4-bond-maintenance-shampoo",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo 100ml",
+                "excerpts": [
+                  "Sold by Beyond Beautiful ... Get The Best Price ... 2,500+ Brands"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/olaplex-no4-bond-maintenance-shampoo",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo 100ml",
+                "excerpts": [
+                  "Compare prices from 2 more retailers ... Sold by Beyond Beautiful"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2591015",
+                "title": "8.5 oz No.4 Bond Maintenance Strengthening, Hydrating ...",
+                "excerpts": [
+                  "$34.00 ... or Replenish & Save ... Size:8.5 oz ... Sale Price $32.30 List Price $34.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2591015",
+                "title": "8.5 oz No.4 Bond Maintenance Strengthening, Hydrating ...",
+                "excerpts": [
+                  "$34.00 ... Free standard shipping over $35"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2591015",
+                "title": "8.5 oz No.4 Bond Maintenance Strengthening, Hydrating ...",
+                "excerpts": [
+                  "In stock and ready to ship ... Ship Free standard shipping over $35"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2591015",
+                "title": "8.5 oz No.4 Bond Maintenance Strengthening, Hydrating ...",
+                "excerpts": [
+                  "corpus-meta url: https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2591015 ... [8.5 oz]"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2591015",
+                "title": "8.5 oz No.4 Bond Maintenance Strengthening, Hydrating ...",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2591015",
+                "title": "8.5 oz No.4 Bond Maintenance Strengthening, Hydrating ...",
+                "excerpts": [
+                  "corpus-meta url: https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2591015",
+                "title": "8.5 oz No.4 Bond Maintenance Strengthening, Hydrating ...",
+                "excerpts": [
+                  "8.5 oz No.4 Bond Maintenance Strengthening, Hydrating ... Ulta"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no4-bond-maintenance-strengthening-hydrating-hair-repair-shampoo-pimprod2029348?sku=2591015",
+                "title": "8.5 oz No.4 Bond Maintenance Strengthening, Hydrating ...",
+                "excerpts": [
+                  "Ulta Beauty ... In stock and ready to ship"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-4-bond-maintenance-250ml-17787574",
+                "title": "Olaplex No.4 Bond Maintenance 250ml - Haircare",
+                "excerpts": [
+                  "# Olaplex No.4 Bond Maintenance 250ml ... Regular price \u00a319.90 ... Regular price ~\u00a330.00~ Sale price \u00a319.90 ... RRP: \u00a330.00 ... Save \u00a310.10 (33%)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-4-bond-maintenance-250ml-17787574",
+                "title": "Olaplex No.4 Bond Maintenance 250ml - Haircare",
+                "excerpts": [
+                  "United Kingdom ... GBP ... FREE UK Delivery over \u00a325"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-4-bond-maintenance-250ml-17787574",
+                "title": "Olaplex No.4 Bond Maintenance 250ml - Haircare",
+                "excerpts": [
+                  "Add to basket ... In stock - Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-4-bond-maintenance-250ml-17787574",
+                "title": "Olaplex No.4 Bond Maintenance 250ml - Haircare",
+                "excerpts": [
+                  "corpus-meta url: https://allbeauty.com/products/p/olaplex-no-4-bond-maintenance-250ml-17787574"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-4-bond-maintenance-250ml-17787574",
+                "title": "Olaplex No.4 Bond Maintenance 250ml - Haircare",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-4-bond-maintenance-250ml-17787574",
+                "title": "Olaplex No.4 Bond Maintenance 250ml - Haircare",
+                "excerpts": [
+                  "corpus-meta url: https://allbeauty.com/products/p/olaplex-no-4-bond-maintenance-250ml-17787574"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-4-bond-maintenance-250ml-17787574",
+                "title": "Olaplex No.4 Bond Maintenance 250ml - Haircare",
+                "excerpts": [
+                  "allbeauty ... Olaplex No.4 Bond Maintenance 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-4-bond-maintenance-250ml-17787574",
+                "title": "Olaplex No.4 Bond Maintenance 250ml - Haircare",
+                "excerpts": [
+                  "allbeauty ... RRP: \u00a330.00 Save \u00a310.10 (33%) ... discount beauty retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "32.00\u20ac ... Add to bag ... Size: 100ml 250ml 525ml 1000ml ... In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "32.00\u20ac ... Under \u20ac25 ... Under \u20ac50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "ADD TO BAG ... In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "corpus-meta url: https://cultbeauty.com/p/olaplex-no-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "corpus-meta url: https://cultbeauty.com/p/olaplex-no-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "Cult Beauty ... OLAPLEX's No. 4 Bond Maintenance Shampoo (250ml)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-4-bond-maintenance-strengthening-and-reparative-hair-shampoo-250ml/14700304",
+                "title": "Olaplex No. 4 Bond Maintenance Strengthening and ...",
+                "excerpts": [
+                  "Cult Beauty ... beauty e-tailer carrying official Olaplex range"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://selfridges.com/US/en/product/olaplex-n4-bond-maintenance-shampoo-250ml_R03633564",
+                "title": "OLAPLEX - N\u00b04 Bond Maintenance shampoo 250ml",
+                "excerpts": [
+                  "N\u00b04 Bond Maintenance shampoo 250ml ... $36.50 ... *Taxes and duties calculated in the shopping bag ... #### Size:250ml ... Add to bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://selfridges.com/US/en/product/olaplex-n4-bond-maintenance-shampoo-250ml_R03633564",
+                "title": "OLAPLEX - N\u00b04 Bond Maintenance shampoo 250ml",
+                "excerpts": [
+                  "$36.50 ... United States ... /US/en/"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://selfridges.com/US/en/product/olaplex-n4-bond-maintenance-shampoo-250ml_R03633564",
+                "title": "OLAPLEX - N\u00b04 Bond Maintenance shampoo 250ml",
+                "excerpts": [
+                  "Add to bag ... Quantity: 1 ... #### Size:250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://selfridges.com/US/en/product/olaplex-n4-bond-maintenance-shampoo-250ml_R03633564",
+                "title": "OLAPLEX - N\u00b04 Bond Maintenance shampoo 250ml",
+                "excerpts": [
+                  "corpus-meta url: https://selfridges.com/US/en/product/olaplex-n4-bond-maintenance-shampoo-250ml_R03633564"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://selfridges.com/US/en/product/olaplex-n4-bond-maintenance-shampoo-250ml_R03633564",
+                "title": "OLAPLEX - N\u00b04 Bond Maintenance shampoo 250ml",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://selfridges.com/US/en/product/olaplex-n4-bond-maintenance-shampoo-250ml_R03633564",
+                "title": "OLAPLEX - N\u00b04 Bond Maintenance shampoo 250ml",
+                "excerpts": [
+                  "corpus-meta url: https://selfridges.com/US/en/product/olaplex-n4-bond-maintenance-shampoo-250ml_R03633564"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://selfridges.com/US/en/product/olaplex-n4-bond-maintenance-shampoo-250ml_R03633564",
+                "title": "OLAPLEX - N\u00b04 Bond Maintenance shampoo 250ml",
+                "excerpts": [
+                  "Selfridges ... OLAPLEX N\u00b04 Bond Maintenance shampoo 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://selfridges.com/US/en/product/olaplex-n4-bond-maintenance-shampoo-250ml_R03633564",
+                "title": "OLAPLEX - N\u00b04 Bond Maintenance shampoo 250ml",
+                "excerpts": [
+                  "Selfridges ... luxury department store"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3247166645/Hair-Products/Olaplex-No.4-Bond-Maintenance-Shampoo-250ml-Compare-Prices",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo 250ml 241g",
+                "excerpts": [
+                  "parfumdreams ... Olaplex Hair care Bond Maintenance Shampoo No.4 Repair shampoo Female 250 ml ... \u00a33.95 shipping, 5-8 days ... \u00a325.67"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://parfumdreams.co.uk/Olaplex/Hair/Hair-care/Bond-Maintenance-Shampoo-No4/index_75709.aspx",
+                "title": "Bond Maintenance Shampoo No.4 - Hair care Olaplex",
+                "excerpts": [
+                  "# Olaplex Hair care / Bond Maintenance Shampoo No.4 ... -13% ... Add to shopping cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Supported by 2 independent sources",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3247166645/Hair-Products/Olaplex-No.4-Bond-Maintenance-Shampoo-250ml-Compare-Prices",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo 250ml 241g",
+                "excerpts": [
+                  "\u00a325.67 ... \u00a33.95 shipping ... parfumdreams UK storefront"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://parfumdreams.co.uk/Olaplex/Hair/Hair-care/Bond-Maintenance-Shampoo-No4/index_75709.aspx",
+                "title": "Bond Maintenance Shampoo No.4 - Hair care Olaplex",
+                "excerpts": [
+                  "Add to shopping cart Notify me ... Expected Delivery with Evri UK Mon 27/07 to Thu 30/07"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://parfumdreams.co.uk/Olaplex/Hair/Hair-care/Bond-Maintenance-Shampoo-No4/index_75709.aspx",
+                "title": "Bond Maintenance Shampoo No.4 - Hair care Olaplex",
+                "excerpts": [
+                  "corpus-meta url: https://parfumdreams.co.uk/Olaplex/Hair/Hair-care/Bond-Maintenance-Shampoo-No4/index_75709.aspx"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://parfumdreams.co.uk/Olaplex/Hair/Hair-care/Bond-Maintenance-Shampoo-No4/index_75709.aspx",
+                "title": "Bond Maintenance Shampoo No.4 - Hair care Olaplex",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://parfumdreams.co.uk/Olaplex/Hair/Hair-care/Bond-Maintenance-Shampoo-No4/index_75709.aspx",
+                "title": "Bond Maintenance Shampoo No.4 - Hair care Olaplex",
+                "excerpts": [
+                  "corpus-meta url: https://parfumdreams.co.uk/Olaplex/Hair/Hair-care/Bond-Maintenance-Shampoo-No4/index_75709.aspx"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3247166645/Hair-Products/Olaplex-No.4-Bond-Maintenance-Shampoo-250ml-Compare-Prices",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo 250ml 241g",
+                "excerpts": [
+                  "parfumdreams ... Bond Maintenance Shampoo No.4"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://parfumdreams.co.uk/Olaplex/Hair/Hair-care/Bond-Maintenance-Shampoo-No4/index_75709.aspx",
+                "title": "Bond Maintenance Shampoo No.4 - Hair care Olaplex",
+                "excerpts": [
+                  "parfumdreams ... -13% ... RRP discount ... discounter"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].currency"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].in_stock"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].listing_url"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].observed_at"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].seller_domain"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].seller_name"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[17].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricespy.co.uk/product.php?p=4865754",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo 250ml",
+                "excerpts": [
+                  "Olaplex No 4 Bond Maintenance Shampoo ... \u00a322.28 ... In stock (PriceSpy)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].in_stock"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].listing_url"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].observed_at"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricespy.co.uk/product.php?p=4865754",
+                "title": "Olaplex No.4 Bond Maintenance Shampoo 250ml",
+                "excerpts": [
+                  "Secret Sales ... Olaplex No 4 Bond Maintenance Shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_name"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[18].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/no-4-bond-maintenance-shampoo-P433172",
+                "title": "No. 4 Bond Maintenance\u2122 Shampoo - Olaplex",
+                "excerpts": [
+                  "No. 4 Bond Maintenance Shampoo - Olaplex ... sephora.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[19].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/no-4-bond-maintenance-shampoo-P433172",
+                "title": "No. 4 Bond Maintenance\u2122 Shampoo - Olaplex",
+                "excerpts": [
+                  "No. 4 Bond Maintenance Shampoo - Olaplex ... Sephora product page"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[19].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/no-4-bond-maintenance-shampoo-P433172",
+                "title": "No. 4 Bond Maintenance\u2122 Shampoo - Olaplex",
+                "excerpts": [
+                  "corpus-meta url: https://sephora.com/product/no-4-bond-maintenance-shampoo-P433172"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/no-4-bond-maintenance-shampoo-P433172",
+                "title": "No. 4 Bond Maintenance\u2122 Shampoo - Olaplex",
+                "excerpts": [
+                  "retrieved \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/no-4-bond-maintenance-shampoo-P433172",
+                "title": "No. 4 Bond Maintenance\u2122 Shampoo - Olaplex",
+                "excerpts": [
+                  "corpus-meta url: https://sephora.com/product/no-4-bond-maintenance-shampoo-P433172"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_domain"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[19].seller_name"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[19].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

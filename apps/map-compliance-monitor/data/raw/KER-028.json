@@ -1,0 +1,3932 @@
+{
+  "sku_id": "KER-028",
+  "effort": "high",
+  "elapsed_s": 804,
+  "fetched_at": "2026-07-20T13:33:23+00:00",
+  "run_id": "task_run_ff9582b9a423418bbc25650e94e2df97",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_ff9582b9a423418bbc25650e94e2df97",
+      "interaction_id": "task_run_ff9582b9a423418bbc25650e94e2df97",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Premi\u00e8re S\u00e9rum Fondamental, 250ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:19:57.615155Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:19:58.094165Z",
+      "completed_at": "2026-07-20T13:33:22.047145Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase-usa.com/collections/premiere/serum-filler-heat-protecting-repairing-hair-serum.html",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "K\u00e9rastase",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase-usa.com",
+          "advertised_price": "$50.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/KERASTASE-Anti-Frizz-Strengthening-Smoothing-Decalcifies/dp/B0CS1V3WR4",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Amazon (K\u00e9rastase)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.com",
+          "advertised_price": "$50.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.currentsalon.co/products/serum-filler-fondamental-repairing-anti-frizz-serum",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Current Salon",
+          "seller_type": "independent_store",
+          "seller_domain": "currentsalon.co",
+          "advertised_price": "$46.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.eccotique.com/products/kerastase-premiere-serum-filler-serum",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Eccotique",
+          "seller_type": "independent_store",
+          "seller_domain": "eccotique.com",
+          "advertised_price": "$89.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.sweetcare.com/us/kerastase-premiere-serum-filler-fondamental-damaged-hair-p-020487ke",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Sweetcare",
+          "seller_type": "independent_store",
+          "seller_domain": "sweetcare.com",
+          "advertised_price": "$ 52.83"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://keshop.com/en/kerastase-premiere/serum-filler-fondamental.html",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Keshop",
+          "seller_type": "independent_store",
+          "seller_domain": "keshop.com",
+          "advertised_price": "\u20ac43.05"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Premiere-Serum-Filler-Fondamental-Hair-Serum-3-04oz-90ml-Pack-of-2/16640514450",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Walmart Marketplace",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$64.95"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/336338127477",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "chesquita (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $40.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/318069729870",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "utieebeautystore (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $42.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/355623108257",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "savannabeautyessentials (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $43.89"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/157893277734",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "greatprospects84 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $44.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/157743871636",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "BEAUTY'SCHOICE (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $44.89"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/276526187942",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "BEAUTY EXPERTS OF LA (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $44.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/366515954694",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "primefinds79 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $45.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/407080848212",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "cl517536 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $40.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/206406397690",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "loby-3151 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $46.12"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/198487958094",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "skinbenoessentials (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $50.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/198365219877",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "skinbenoessentials (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $55.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/306938998094",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "mozart0007 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $41.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/398176283468",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "pasidup-22 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $36.98"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/358733553723",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "yobrii (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $33.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.salonsociety.shop/products/premiere-serum-filler-fondemental",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Salon Society",
+          "seller_type": "independent_store",
+          "seller_domain": "salonsociety.shop",
+          "advertised_price": "$65.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.thecosmeticmarket.com/collections/kerastase/products/premiere-serum-filler-fondamental-repairing-anti-frizz",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "The Cosmetic Market",
+          "seller_type": "independent_store",
+          "seller_domain": "thecosmeticmarket.com",
+          "advertised_price": "$50"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Savvy Hair Artistry",
+          "seller_type": "independent_store",
+          "seller_domain": "savvyhairartistry.com",
+          "advertised_price": "$85.00"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://kerastase-usa.com/collections/premiere/serum-filler-heat-protecting-repairing-hair-serum.html?srsltid=AfmBOoqct1F5tlovUBgpbb7pXeqKWHAAFrETN6WUBr6-xefBGmWpvqYm",
+            "title": "S\u00e9rum Filler Fondamental Repairing Anti-Frizz Serum",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/KERASTASE-Anti-Frizz-Strengthening-Smoothing-Decalcifies/dp/B0CS1V3WR4",
+            "title": "Kerastase Premiere Anti-Frizz Hair Repair Serum For ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://currentsalon.co/collections/kerastase-premier?srsltid=AfmBOoq1Y4HTT4w-gO1gU0Lo3FDOsdFD9eVEKD6Scza6Xlf_yng7er1L",
+            "title": "Kerastase - Elevate Your Hair with K\u00e9rastase Premier",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://eccotique.com/products/kerastase-premiere-serum-filler-serum",
+            "title": "Kerastase Premiere Serum Filler Serum",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://sweetcare.com/us/kerastase-premiere-serum-filler-fondamental-damaged-hair-p-020487ke?st=01",
+            "title": "Premi\u00e8re S\u00e9rum Filler Fondamental for Damaged Hair",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://keshop.com/en/kerastase-premiere/serum-filler-fondamental.html",
+            "title": "S\u00e9rum Filler Fondamental 90 ml - K\u00e9rastase Premi\u00e8re Serum",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Premiere-Serum-Filler-Fondamental-Hair-Serum-3-04oz-90ml-Pack-of-2/16640514450",
+            "title": "Kerastase Premiere Serum Filler Fondamental 3.04oz ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/336338127477",
+            "title": "https://www.ebay.com/itm/336338127477",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/318069729870",
+            "title": "https://www.ebay.com/itm/318069729870",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/355623108257",
+            "title": "https://www.ebay.com/itm/355623108257",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/157893277734",
+            "title": "https://www.ebay.com/itm/157893277734",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/157743871636",
+            "title": "https://www.ebay.com/itm/157743871636",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/276526187942",
+            "title": "https://www.ebay.com/itm/276526187942",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/366515954694",
+            "title": "https://www.ebay.com/itm/366515954694",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/407080848212",
+            "title": "https://www.ebay.com/itm/407080848212",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/206406397690",
+            "title": "https://www.ebay.com/itm/206406397690",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/198487958094",
+            "title": "https://www.ebay.com/itm/198487958094",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/198365219877",
+            "title": "https://www.ebay.com/itm/198365219877",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/306938998094",
+            "title": "https://www.ebay.com/itm/306938998094",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/398176283468",
+            "title": "https://www.ebay.com/itm/398176283468",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/358733553723",
+            "title": "https://www.ebay.com/itm/358733553723",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/b/Kerastase-Hair-Serums/177660/bn_8377856",
+            "title": "K\u00e9rastase Hair Serums for sale",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://salonsociety.shop/products/premiere-serum-filler-fondemental",
+            "title": "https://www.salonsociety.shop/products/premiere-serum-filler-fondemental",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://thecosmeticmarket.com/collections/kerastase",
+            "title": "https://www.thecosmeticmarket.com/collections/kerastase",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml",
+            "title": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml/",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/serum-filler-heat-protecting-repairing-hair-serum.html?srsltid=AfmBOoqct1F5tlovUBgpbb7pXeqKWHAAFrETN6WUBr6-xefBGmWpvqYm",
+                "title": "S\u00e9rum Filler Fondamental Repairing Anti-Frizz Serum",
+                "excerpts": [
+                  "Premi\u00e8re S\u00e9rum Filler Fondamental Repairing Heat Protecting Cream ... One size only ... 90 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/serum-filler-heat-protecting-repairing-hair-serum.html?srsltid=AfmBOoqct1F5tlovUBgpbb7pXeqKWHAAFrETN6WUBr6-xefBGmWpvqYm",
+                "title": "S\u00e9rum Filler Fondamental Repairing Anti-Frizz Serum",
+                "excerpts": [
+                  "corpus-meta url: https://kerastase-usa.com/collections/premiere/serum-filler-heat-protecting-repairing-hair-serum.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/serum-filler-heat-protecting-repairing-hair-serum.html?srsltid=AfmBOoqct1F5tlovUBgpbb7pXeqKWHAAFrETN6WUBr6-xefBGmWpvqYm",
+                "title": "S\u00e9rum Filler Fondamental Repairing Anti-Frizz Serum",
+                "excerpts": [
+                  "Old price New price $50.00 ... or 4 installments of $12.50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/serum-filler-heat-protecting-repairing-hair-serum.html?srsltid=AfmBOoqct1F5tlovUBgpbb7pXeqKWHAAFrETN6WUBr6-xefBGmWpvqYm",
+                "title": "S\u00e9rum Filler Fondamental Repairing Anti-Frizz Serum",
+                "excerpts": [
+                  "Prices and payment are shown in USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/serum-filler-heat-protecting-repairing-hair-serum.html?srsltid=AfmBOoqct1F5tlovUBgpbb7pXeqKWHAAFrETN6WUBr6-xefBGmWpvqYm",
+                "title": "S\u00e9rum Filler Fondamental Repairing Anti-Frizz Serum",
+                "excerpts": [
+                  "corpus-meta url: https://kerastase-usa.com/collections/premiere/serum-filler-heat-protecting-repairing-hair-serum.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/serum-filler-heat-protecting-repairing-hair-serum.html?srsltid=AfmBOoqct1F5tlovUBgpbb7pXeqKWHAAFrETN6WUBr6-xefBGmWpvqYm",
+                "title": "S\u00e9rum Filler Fondamental Repairing Anti-Frizz Serum",
+                "excerpts": [
+                  "\u00a9 2026 K\u00e9rastase. All rights reserved. \u2014 brand's own official US DTC site"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/serum-filler-heat-protecting-repairing-hair-serum.html?srsltid=AfmBOoqct1F5tlovUBgpbb7pXeqKWHAAFrETN6WUBr6-xefBGmWpvqYm",
+                "title": "S\u00e9rum Filler Fondamental Repairing Anti-Frizz Serum",
+                "excerpts": [
+                  "In Stock ... Order now to receive between Fri, Jul 24 & Sat, Jul 25"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/serum-filler-heat-protecting-repairing-hair-serum.html?srsltid=AfmBOoqct1F5tlovUBgpbb7pXeqKWHAAFrETN6WUBr6-xefBGmWpvqYm",
+                "title": "S\u00e9rum Filler Fondamental Repairing Anti-Frizz Serum",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Anti-Frizz-Strengthening-Smoothing-Decalcifies/dp/B0CS1V3WR4",
+                "title": "Kerastase Premiere Anti-Frizz Hair Repair Serum For ...",
+                "excerpts": [
+                  "Sold by: K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Anti-Frizz-Strengthening-Smoothing-Decalcifies/dp/B0CS1V3WR4",
+                "title": "Kerastase Premiere Anti-Frizz Hair Repair Serum For ...",
+                "excerpts": [
+                  "corpus-meta url: https://amazon.com/KERASTASE-Anti-Frizz-Strengthening-Smoothing-Decalcifies/dp/B0CS1V3WR4"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Anti-Frizz-Strengthening-Smoothing-Decalcifies/dp/B0CS1V3WR4",
+                "title": "Kerastase Premiere Anti-Frizz Hair Repair Serum For ...",
+                "excerpts": [
+                  "$50.00 $16.67 per fluid ounce ... displayPrice\":\"$50.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Anti-Frizz-Strengthening-Smoothing-Decalcifies/dp/B0CS1V3WR4",
+                "title": "Kerastase Premiere Anti-Frizz Hair Repair Serum For ...",
+                "excerpts": [
+                  "locale en-US ... priceAmount 50.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Anti-Frizz-Strengthening-Smoothing-Decalcifies/dp/B0CS1V3WR4",
+                "title": "Kerastase Premiere Anti-Frizz Hair Repair Serum For ...",
+                "excerpts": [
+                  "corpus-meta url: https://amazon.com/KERASTASE-Anti-Frizz-Strengthening-Smoothing-Decalcifies/dp/B0CS1V3WR4"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Anti-Frizz-Strengthening-Smoothing-Decalcifies/dp/B0CS1V3WR4",
+                "title": "Kerastase Premiere Anti-Frizz Hair Repair Serum For ...",
+                "excerpts": [
+                  "Sold by: K\u00e9rastase ... Ships from: Amazon"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Anti-Frizz-Strengthening-Smoothing-Decalcifies/dp/B0CS1V3WR4",
+                "title": "Kerastase Premiere Anti-Frizz Hair Repair Serum For ...",
+                "excerpts": [
+                  "In Stock ... FREE delivery Saturday, July 25"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Anti-Frizz-Strengthening-Smoothing-Decalcifies/dp/B0CS1V3WR4",
+                "title": "Kerastase Premiere Anti-Frizz Hair Repair Serum For ...",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/collections/kerastase-premier?srsltid=AfmBOoq1Y4HTT4w-gO1gU0Lo3FDOsdFD9eVEKD6Scza6Xlf_yng7er1L",
+                "title": "Kerastase - Elevate Your Hair with K\u00e9rastase Premier",
+                "excerpts": [
+                  "S\u00e9rum Filler Fondamental Repairing Anti-Frizz Serum - Current Salon"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/collections/kerastase-premier?srsltid=AfmBOoq1Y4HTT4w-gO1gU0Lo3FDOsdFD9eVEKD6Scza6Xlf_yng7er1L",
+                "title": "Kerastase - Elevate Your Hair with K\u00e9rastase Premier",
+                "excerpts": [
+                  "corpus-meta url: https://currentsalon.co/collections/kerastase-premier"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/collections/kerastase-premier?srsltid=AfmBOoq1Y4HTT4w-gO1gU0Lo3FDOsdFD9eVEKD6Scza6Xlf_yng7er1L",
+                "title": "Kerastase - Elevate Your Hair with K\u00e9rastase Premier",
+                "excerpts": [
+                  "S\u00e9rum Filler Fondamental Repairing Anti-Frizz Serum ... Regular price $46.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/collections/kerastase-premier?srsltid=AfmBOoq1Y4HTT4w-gO1gU0Lo3FDOsdFD9eVEKD6Scza6Xlf_yng7er1L",
+                "title": "Kerastase - Elevate Your Hair with K\u00e9rastase Premier",
+                "excerpts": [
+                  "Regular price $46.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/collections/kerastase-premier?srsltid=AfmBOoq1Y4HTT4w-gO1gU0Lo3FDOsdFD9eVEKD6Scza6Xlf_yng7er1L",
+                "title": "Kerastase - Elevate Your Hair with K\u00e9rastase Premier",
+                "excerpts": [
+                  "[S\u00e9rum Filler Fondamental Repairing Anti-Frizz Serum ...](https://www.currentsalon.co/products/serum-filler-fondamental-repairing-anti-frizz-serum)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/collections/kerastase-premier?srsltid=AfmBOoq1Y4HTT4w-gO1gU0Lo3FDOsdFD9eVEKD6Scza6Xlf_yng7er1L",
+                "title": "Kerastase - Elevate Your Hair with K\u00e9rastase Premier",
+                "excerpts": [
+                  "\u00a9 2026 - All rights reserved. Powered by Shopify Contact: 925-399-4749"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/collections/kerastase-premier?srsltid=AfmBOoq1Y4HTT4w-gO1gU0Lo3FDOsdFD9eVEKD6Scza6Xlf_yng7er1L",
+                "title": "Kerastase - Elevate Your Hair with K\u00e9rastase Premier",
+                "excerpts": [
+                  "Availability In stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://currentsalon.co/collections/kerastase-premier?srsltid=AfmBOoq1Y4HTT4w-gO1gU0Lo3FDOsdFD9eVEKD6Scza6Xlf_yng7er1L",
+                "title": "Kerastase - Elevate Your Hair with K\u00e9rastase Premier",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eccotique.com/products/kerastase-premiere-serum-filler-serum",
+                "title": "Kerastase Premiere Serum Filler Serum",
+                "excerpts": [
+                  "Kerastase Premiere Serum Filler Serum ... K\u00e9rastase Premi\u00e8re S\u00e9rum Filler Fondamental"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eccotique.com/products/kerastase-premiere-serum-filler-serum",
+                "title": "Kerastase Premiere Serum Filler Serum",
+                "excerpts": [
+                  "corpus-meta url: https://eccotique.com/products/kerastase-premiere-serum-filler-serum"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eccotique.com/products/kerastase-premiere-serum-filler-serum",
+                "title": "Kerastase Premiere Serum Filler Serum",
+                "excerpts": [
+                  "Kerastase Premiere Serum Filler Serum ... $89.00 ... Size: 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eccotique.com/products/kerastase-premiere-serum-filler-serum",
+                "title": "Kerastase Premiere Serum Filler Serum",
+                "excerpts": [
+                  "$0.00 cart ... USD salon storefront"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eccotique.com/products/kerastase-premiere-serum-filler-serum",
+                "title": "Kerastase Premiere Serum Filler Serum",
+                "excerpts": [
+                  "corpus-meta url: https://eccotique.com/products/kerastase-premiere-serum-filler-serum"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eccotique.com/products/kerastase-premiere-serum-filler-serum",
+                "title": "Kerastase Premiere Serum Filler Serum",
+                "excerpts": [
+                  "Spa Services ... Salon Services ... Powered by Shopify"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eccotique.com/products/kerastase-premiere-serum-filler-serum",
+                "title": "Kerastase Premiere Serum Filler Serum",
+                "excerpts": [
+                  "Add to Cart present; no explicit stock status shown"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eccotique.com/products/kerastase-premiere-serum-filler-serum",
+                "title": "Kerastase Premiere Serum Filler Serum",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.com/us/kerastase-premiere-serum-filler-fondamental-damaged-hair-p-020487ke?st=01",
+                "title": "Premi\u00e8re S\u00e9rum Filler Fondamental for Damaged Hair",
+                "excerpts": [
+                  "**$ 52.83**$ 56.79 ... 90mL ... in stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.com/us/kerastase-premiere-serum-filler-fondamental-damaged-hair-p-020487ke?st=01",
+                "title": "Premi\u00e8re S\u00e9rum Filler Fondamental for Damaged Hair",
+                "excerpts": [
+                  "worldwide beauty ... USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.com/us/kerastase-premiere-serum-filler-fondamental-damaged-hair-p-020487ke?st=01",
+                "title": "Premi\u00e8re S\u00e9rum Filler Fondamental for Damaged Hair",
+                "excerpts": [
+                  "in stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.com/us/kerastase-premiere-serum-filler-fondamental-damaged-hair-p-020487ke?st=01",
+                "title": "Premi\u00e8re S\u00e9rum Filler Fondamental for Damaged Hair",
+                "excerpts": [
+                  "corpus-meta url: https://sweetcare.com/us/kerastase-premiere-serum-filler-fondamental-damaged-hair-p-020487ke"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.com/us/kerastase-premiere-serum-filler-fondamental-damaged-hair-p-020487ke?st=01",
+                "title": "Premi\u00e8re S\u00e9rum Filler Fondamental for Damaged Hair",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.com/us/kerastase-premiere-serum-filler-fondamental-damaged-hair-p-020487ke?st=01",
+                "title": "Premi\u00e8re S\u00e9rum Filler Fondamental for Damaged Hair",
+                "excerpts": [
+                  "corpus-meta url: https://sweetcare.com/us/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.com/us/kerastase-premiere-serum-filler-fondamental-damaged-hair-p-020487ke?st=01",
+                "title": "Premi\u00e8re S\u00e9rum Filler Fondamental for Damaged Hair",
+                "excerpts": [
+                  "SweetCare \u00a92008-2026 ... Sweet Awards"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.com/us/kerastase-premiere-serum-filler-fondamental-damaged-hair-p-020487ke?st=01",
+                "title": "Premi\u00e8re S\u00e9rum Filler Fondamental for Damaged Hair",
+                "excerpts": [
+                  "ALL YOUR BEAUTY FAVOURITES 30K+ products, 700+ brands"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/serum-filler-fondamental.html",
+                "title": "S\u00e9rum Filler Fondamental 90 ml - K\u00e9rastase Premi\u00e8re Serum",
+                "excerpts": [
+                  "\u20ac43.05 \u20ac61.20 -30% ... In Stock ... S\u00e9rum Filler Fondamental - 90 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/serum-filler-fondamental.html",
+                "title": "S\u00e9rum Filler Fondamental 90 ml - K\u00e9rastase Premi\u00e8re Serum",
+                "excerpts": [
+                  "\u20ac43.05 \u20ac61.20 -30% ... Tax included"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/serum-filler-fondamental.html",
+                "title": "S\u00e9rum Filler Fondamental 90 ml - K\u00e9rastase Premi\u00e8re Serum",
+                "excerpts": [
+                  "In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/serum-filler-fondamental.html",
+                "title": "S\u00e9rum Filler Fondamental 90 ml - K\u00e9rastase Premi\u00e8re Serum",
+                "excerpts": [
+                  "corpus-meta url: https://keshop.com/en/kerastase-premiere/serum-filler-fondamental.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/serum-filler-fondamental.html",
+                "title": "S\u00e9rum Filler Fondamental 90 ml - K\u00e9rastase Premi\u00e8re Serum",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/serum-filler-fondamental.html",
+                "title": "S\u00e9rum Filler Fondamental 90 ml - K\u00e9rastase Premi\u00e8re Serum",
+                "excerpts": [
+                  "corpus-meta url: https://keshop.com/en/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/serum-filler-fondamental.html",
+                "title": "S\u00e9rum Filler Fondamental 90 ml - K\u00e9rastase Premi\u00e8re Serum",
+                "excerpts": [
+                  "keshop.com ... (+34) 935 104 391 Rda. Alfonso X el Sabio 41 08304 Matar\u00f3 (Barcelona) Spain"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-premiere/serum-filler-fondamental.html",
+                "title": "S\u00e9rum Filler Fondamental 90 ml - K\u00e9rastase Premi\u00e8re Serum",
+                "excerpts": [
+                  "4.9/5 Store rating ... Original products Only official brands"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Serum-Filler-Fondamental-Hair-Serum-3-04oz-90ml-Pack-of-2/16640514450",
+                "title": "Kerastase Premiere Serum Filler Fondamental 3.04oz ...",
+                "excerpts": [
+                  "Current price is $64.95 ... Kerastase Premiere Serum Filler Fondamental 3.04oz/90ml Set of 2"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Serum-Filler-Fondamental-Hair-Serum-3-04oz-90ml-Pack-of-2/16640514450",
+                "title": "Kerastase Premiere Serum Filler Fondamental 3.04oz ...",
+                "excerpts": [
+                  "Current price is $64.95"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Serum-Filler-Fondamental-Hair-Serum-3-04oz-90ml-Pack-of-2/16640514450",
+                "title": "Kerastase Premiere Serum Filler Fondamental 3.04oz ...",
+                "excerpts": [
+                  "Add to cart ... Show shipping, delivery and pickup options"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Serum-Filler-Fondamental-Hair-Serum-3-04oz-90ml-Pack-of-2/16640514450",
+                "title": "Kerastase Premiere Serum Filler Fondamental 3.04oz ...",
+                "excerpts": [
+                  "corpus-meta url: https://walmart.com/ip/Kerastase-Premiere-Serum-Filler-Fondamental-Hair-Serum-3-04oz-90ml-Pack-of-2/16640514450"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Serum-Filler-Fondamental-Hair-Serum-3-04oz-90ml-Pack-of-2/16640514450",
+                "title": "Kerastase Premiere Serum Filler Fondamental 3.04oz ...",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Serum-Filler-Fondamental-Hair-Serum-3-04oz-90ml-Pack-of-2/16640514450",
+                "title": "Kerastase Premiere Serum Filler Fondamental 3.04oz ...",
+                "excerpts": [
+                  "corpus-meta url: https://walmart.com/ip/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Serum-Filler-Fondamental-Hair-Serum-3-04oz-90ml-Pack-of-2/16640514450",
+                "title": "Kerastase Premiere Serum Filler Fondamental 3.04oz ...",
+                "excerpts": [
+                  "More seller options (6) ... Starting from $67.99 ... third party Marketplace sellers"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Serum-Filler-Fondamental-Hair-Serum-3-04oz-90ml-Pack-of-2/16640514450",
+                "title": "Kerastase Premiere Serum Filler Fondamental 3.04oz ...",
+                "excerpts": [
+                  "items offered for sale by third party Marketplace sellers"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/336338127477",
+                "title": "https://www.ebay.com/itm/336338127477",
+                "excerpts": [
+                  "US $40.00/eaor Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/336338127477",
+                "title": "https://www.ebay.com/itm/336338127477",
+                "excerpts": [
+                  "US $40.00/ea"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/336338127477",
+                "title": "https://www.ebay.com/itm/336338127477",
+                "excerpts": [
+                  "Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/336338127477",
+                "title": "https://www.ebay.com/itm/336338127477",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/336338127477"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/336338127477",
+                "title": "https://www.ebay.com/itm/336338127477",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/336338127477",
+                "title": "https://www.ebay.com/itm/336338127477",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/336338127477",
+                "title": "https://www.ebay.com/itm/336338127477",
+                "excerpts": [
+                  "### [chesquita] ... 96.7% positive feedback\u20221.7K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/336338127477",
+                "title": "https://www.ebay.com/itm/336338127477",
+                "excerpts": [
+                  "chesquita ... 96.7% positive feedback\u20221.7K items sold ... Joined Jan 2006"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318069729870",
+                "title": "https://www.ebay.com/itm/318069729870",
+                "excerpts": [
+                  "US $42.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318069729870",
+                "title": "https://www.ebay.com/itm/318069729870",
+                "excerpts": [
+                  "US $42.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318069729870",
+                "title": "https://www.ebay.com/itm/318069729870",
+                "excerpts": [
+                  "More than 10 lots available ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318069729870",
+                "title": "https://www.ebay.com/itm/318069729870",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/318069729870"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318069729870",
+                "title": "https://www.ebay.com/itm/318069729870",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318069729870",
+                "title": "https://www.ebay.com/itm/318069729870",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318069729870",
+                "title": "https://www.ebay.com/itm/318069729870",
+                "excerpts": [
+                  "### [utieebeautystore] ... 99.8% positive feedback\u2022760 items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318069729870",
+                "title": "https://www.ebay.com/itm/318069729870",
+                "excerpts": [
+                  "utieebeautystore ... 99.8% positive feedback\u2022760 items sold ... Joined Aug 2025"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/355623108257",
+                "title": "https://www.ebay.com/itm/355623108257",
+                "excerpts": [
+                  "US $43.89"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/355623108257",
+                "title": "https://www.ebay.com/itm/355623108257",
+                "excerpts": [
+                  "US $43.89"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/355623108257",
+                "title": "https://www.ebay.com/itm/355623108257",
+                "excerpts": [
+                  "2 available4 sold ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/355623108257",
+                "title": "https://www.ebay.com/itm/355623108257",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/355623108257"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/355623108257",
+                "title": "https://www.ebay.com/itm/355623108257",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/355623108257",
+                "title": "https://www.ebay.com/itm/355623108257",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/355623108257",
+                "title": "https://www.ebay.com/itm/355623108257",
+                "excerpts": [
+                  "### [savannabeautyessentials] ... 100% positive feedback\u202224K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/355623108257",
+                "title": "https://www.ebay.com/itm/355623108257",
+                "excerpts": [
+                  "savannabeautyessentials ... 100% positive feedback\u202224K items sold ... Joined Mar 2020"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157893277734",
+                "title": "https://www.ebay.com/itm/157893277734",
+                "excerpts": [
+                  "US $44.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157893277734",
+                "title": "https://www.ebay.com/itm/157893277734",
+                "excerpts": [
+                  "US $44.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157893277734",
+                "title": "https://www.ebay.com/itm/157893277734",
+                "excerpts": [
+                  "Buy It Now ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157893277734",
+                "title": "https://www.ebay.com/itm/157893277734",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/157893277734"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157893277734",
+                "title": "https://www.ebay.com/itm/157893277734",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157893277734",
+                "title": "https://www.ebay.com/itm/157893277734",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157893277734",
+                "title": "https://www.ebay.com/itm/157893277734",
+                "excerpts": [
+                  "### [greatprospects84] ... 100% positive feedback\u2022990 items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157893277734",
+                "title": "https://www.ebay.com/itm/157893277734",
+                "excerpts": [
+                  "greatprospects84 ... 100% positive feedback\u2022990 items sold ... Joined Feb 2002"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157743871636",
+                "title": "https://www.ebay.com/itm/157743871636",
+                "excerpts": [
+                  "US $44.89"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157743871636",
+                "title": "https://www.ebay.com/itm/157743871636",
+                "excerpts": [
+                  "US $44.89"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157743871636",
+                "title": "https://www.ebay.com/itm/157743871636",
+                "excerpts": [
+                  "2 available4 sold ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157743871636",
+                "title": "https://www.ebay.com/itm/157743871636",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/157743871636"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157743871636",
+                "title": "https://www.ebay.com/itm/157743871636",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157743871636",
+                "title": "https://www.ebay.com/itm/157743871636",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157743871636",
+                "title": "https://www.ebay.com/itm/157743871636",
+                "excerpts": [
+                  "### [BEAUTY'SCHOICE] ... 99.5% positive feedback\u202223K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157743871636",
+                "title": "https://www.ebay.com/itm/157743871636",
+                "excerpts": [
+                  "BEAUTY'SCHOICE ... 99.5% positive feedback\u202223K items sold ... Joined May 2014"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276526187942",
+                "title": "https://www.ebay.com/itm/276526187942",
+                "excerpts": [
+                  "US $44.99/ea"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276526187942",
+                "title": "https://www.ebay.com/itm/276526187942",
+                "excerpts": [
+                  "US $44.99/ea"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276526187942",
+                "title": "https://www.ebay.com/itm/276526187942",
+                "excerpts": [
+                  "Buy It Now ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276526187942",
+                "title": "https://www.ebay.com/itm/276526187942",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/276526187942"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276526187942",
+                "title": "https://www.ebay.com/itm/276526187942",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276526187942",
+                "title": "https://www.ebay.com/itm/276526187942",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276526187942",
+                "title": "https://www.ebay.com/itm/276526187942",
+                "excerpts": [
+                  "### [BEAUTY EXPERTS OF LA] ... 99.9% positive feedback\u2022535K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276526187942",
+                "title": "https://www.ebay.com/itm/276526187942",
+                "excerpts": [
+                  "BEAUTY EXPERTS OF LA ... 99.9% positive feedback\u2022535K items sold ... Joined Jun 2002"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366515954694",
+                "title": "https://www.ebay.com/itm/366515954694",
+                "excerpts": [
+                  "US $45.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366515954694",
+                "title": "https://www.ebay.com/itm/366515954694",
+                "excerpts": [
+                  "US $45.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366515954694",
+                "title": "https://www.ebay.com/itm/366515954694",
+                "excerpts": [
+                  "New with box ... Buy It Now ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366515954694",
+                "title": "https://www.ebay.com/itm/366515954694",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/366515954694"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366515954694",
+                "title": "https://www.ebay.com/itm/366515954694",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366515954694",
+                "title": "https://www.ebay.com/itm/366515954694",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366515954694",
+                "title": "https://www.ebay.com/itm/366515954694",
+                "excerpts": [
+                  "### [primefinds79] ... 99.8% positive feedback\u20221.6K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366515954694",
+                "title": "https://www.ebay.com/itm/366515954694",
+                "excerpts": [
+                  "primefinds79 ... 99.8% positive feedback\u20221.6K items sold ... Joined Jun 2024"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407080848212",
+                "title": "https://www.ebay.com/itm/407080848212",
+                "excerpts": [
+                  "US $40.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407080848212",
+                "title": "https://www.ebay.com/itm/407080848212",
+                "excerpts": [
+                  "US $40.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407080848212",
+                "title": "https://www.ebay.com/itm/407080848212",
+                "excerpts": [
+                  "Buy It Now ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407080848212",
+                "title": "https://www.ebay.com/itm/407080848212",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/407080848212"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407080848212",
+                "title": "https://www.ebay.com/itm/407080848212",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407080848212",
+                "title": "https://www.ebay.com/itm/407080848212",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407080848212",
+                "title": "https://www.ebay.com/itm/407080848212",
+                "excerpts": [
+                  "### [cl517536] ... 9 items sold ... Joined Jan 2025"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407080848212",
+                "title": "https://www.ebay.com/itm/407080848212",
+                "excerpts": [
+                  "cl517536 ... 9 items sold ... Joined Jan 2025 ... Located in: Bothell, Washington"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206406397690",
+                "title": "https://www.ebay.com/itm/206406397690",
+                "excerpts": [
+                  "US $46.12or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206406397690",
+                "title": "https://www.ebay.com/itm/206406397690",
+                "excerpts": [
+                  "US $46.12or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206406397690",
+                "title": "https://www.ebay.com/itm/206406397690",
+                "excerpts": [
+                  "New with box ... Buy It Now ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206406397690",
+                "title": "https://www.ebay.com/itm/206406397690",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/206406397690"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206406397690",
+                "title": "https://www.ebay.com/itm/206406397690",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206406397690",
+                "title": "https://www.ebay.com/itm/206406397690",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206406397690",
+                "title": "https://www.ebay.com/itm/206406397690",
+                "excerpts": [
+                  "### [loby-3151] ... 98.1% positive feedback\u2022205 items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206406397690",
+                "title": "https://www.ebay.com/itm/206406397690",
+                "excerpts": [
+                  "loby-3151 ... 98.1% positive feedback\u2022205 items sold ... Joined May 2020"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198487958094",
+                "title": "https://www.ebay.com/itm/198487958094",
+                "excerpts": [
+                  "US $50.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198487958094",
+                "title": "https://www.ebay.com/itm/198487958094",
+                "excerpts": [
+                  "US $50.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198487958094",
+                "title": "https://www.ebay.com/itm/198487958094",
+                "excerpts": [
+                  "New with box ... Buy It Now ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198487958094",
+                "title": "https://www.ebay.com/itm/198487958094",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/198487958094"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198487958094",
+                "title": "https://www.ebay.com/itm/198487958094",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198487958094",
+                "title": "https://www.ebay.com/itm/198487958094",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198487958094",
+                "title": "https://www.ebay.com/itm/198487958094",
+                "excerpts": [
+                  "### [skinbenoessentials] ... 99.9% positive feedback\u20223.9K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198487958094",
+                "title": "https://www.ebay.com/itm/198487958094",
+                "excerpts": [
+                  "skinbenoessentials ... 99.9% positive feedback\u20223.9K items sold ... Joined Sep 2022"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198365219877",
+                "title": "https://www.ebay.com/itm/198365219877",
+                "excerpts": [
+                  "US $55.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198365219877",
+                "title": "https://www.ebay.com/itm/198365219877",
+                "excerpts": [
+                  "US $55.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198365219877",
+                "title": "https://www.ebay.com/itm/198365219877",
+                "excerpts": [
+                  "New with box ... Buy It Now ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198365219877",
+                "title": "https://www.ebay.com/itm/198365219877",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/198365219877"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198365219877",
+                "title": "https://www.ebay.com/itm/198365219877",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198365219877",
+                "title": "https://www.ebay.com/itm/198365219877",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198365219877",
+                "title": "https://www.ebay.com/itm/198365219877",
+                "excerpts": [
+                  "### [skinbenoessentials] ... 99.9% positive feedback\u20223.9K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/198365219877",
+                "title": "https://www.ebay.com/itm/198365219877",
+                "excerpts": [
+                  "skinbenoessentials ... 99.9% positive feedback\u20223.9K items sold ... Joined Sep 2022"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/306938998094",
+                "title": "https://www.ebay.com/itm/306938998094",
+                "excerpts": [
+                  "US $41.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/306938998094",
+                "title": "https://www.ebay.com/itm/306938998094",
+                "excerpts": [
+                  "US $41.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/306938998094",
+                "title": "https://www.ebay.com/itm/306938998094",
+                "excerpts": [
+                  "2 available1 sold ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/306938998094",
+                "title": "https://www.ebay.com/itm/306938998094",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/306938998094"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/306938998094",
+                "title": "https://www.ebay.com/itm/306938998094",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/306938998094",
+                "title": "https://www.ebay.com/itm/306938998094",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/306938998094",
+                "title": "https://www.ebay.com/itm/306938998094",
+                "excerpts": [
+                  "### [mozart0007] ... 100% positive feedback\u20221.4K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/306938998094",
+                "title": "https://www.ebay.com/itm/306938998094",
+                "excerpts": [
+                  "mozart0007 ... 100% positive feedback\u20221.4K items sold ... Joined Jan 2003"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/398176283468",
+                "title": "https://www.ebay.com/itm/398176283468",
+                "excerpts": [
+                  "US $36.98"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/398176283468",
+                "title": "https://www.ebay.com/itm/398176283468",
+                "excerpts": [
+                  "US $36.98"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/398176283468",
+                "title": "https://www.ebay.com/itm/398176283468",
+                "excerpts": [
+                  "Buy It Now ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/398176283468",
+                "title": "https://www.ebay.com/itm/398176283468",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/398176283468"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/398176283468",
+                "title": "https://www.ebay.com/itm/398176283468",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/398176283468",
+                "title": "https://www.ebay.com/itm/398176283468",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/398176283468",
+                "title": "https://www.ebay.com/itm/398176283468",
+                "excerpts": [
+                  "### [pasidup-22] ... 100% positive feedback\u20228 items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/398176283468",
+                "title": "https://www.ebay.com/itm/398176283468",
+                "excerpts": [
+                  "Kerastase Premiere \u2013 Repairing Anti-Frizz Serum for Damaged Hair 31070302 ... pasidup-22 ... Located in: Galle, Turkey"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358733553723",
+                "title": "https://www.ebay.com/itm/358733553723",
+                "excerpts": [
+                  "US $33.00 ... Volume 3.04 fl oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358733553723",
+                "title": "https://www.ebay.com/itm/358733553723",
+                "excerpts": [
+                  "US $33.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/b/Kerastase-Hair-Serums/177660/bn_8377856",
+                "title": "K\u00e9rastase Hair Serums for sale",
+                "excerpts": [
+                  "Only 1 left!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358733553723",
+                "title": "https://www.ebay.com/itm/358733553723",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/358733553723"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358733553723",
+                "title": "https://www.ebay.com/itm/358733553723",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358733553723",
+                "title": "https://www.ebay.com/itm/358733553723",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358733553723",
+                "title": "https://www.ebay.com/itm/358733553723",
+                "excerpts": [
+                  "### [yobrii] ... 100% positive feedback\u2022240 items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358733553723",
+                "title": "https://www.ebay.com/itm/358733553723",
+                "excerpts": [
+                  "Kerastase Premiere Serum Filler Fondamental Anti-Frizz Hair Serum 3.04oz/90ml ... yobrii ... Located in: Monee, Illinois"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "title": "https://www.salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "excerpts": [
+                  "# Premiere Serum Filler Fondemental Hair Serum ... $65.00 ... Size 90mL"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "title": "https://www.salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "excerpts": [
+                  "$0.00 Subtotal ... $65.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "title": "https://www.salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "excerpts": [
+                  "Add to Cart ... Size 90mL"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "title": "https://www.salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "excerpts": [
+                  "corpus-meta url: https://salonsociety.shop/products/premiere-serum-filler-fondemental"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "title": "https://www.salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "title": "https://www.salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "excerpts": [
+                  "corpus-meta url: https://salonsociety.shop/products/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "title": "https://www.salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "excerpts": [
+                  "Salon Society ... [Home] / [Products] / Premiere Serum Filler Fondemental Hair Serum"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "title": "https://www.salonsociety.shop/products/premiere-serum-filler-fondemental",
+                "excerpts": [
+                  "Salon Society ... GIFT SETS ... HYDRATION ... ALL PRODUCTS"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thecosmeticmarket.com/collections/kerastase",
+                "title": "https://www.thecosmeticmarket.com/collections/kerastase",
+                "excerpts": [
+                  "Premiere S\u00e9rum Filler Fondamental Repairing Anti-Frizz ... Regular price $50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thecosmeticmarket.com/collections/kerastase",
+                "title": "https://www.thecosmeticmarket.com/collections/kerastase",
+                "excerpts": [
+                  "Regular price $50 ... FREE SHIPPING WITH YOUR PURCHASE OF $100 OR MORE"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thecosmeticmarket.com/collections/kerastase",
+                "title": "https://www.thecosmeticmarket.com/collections/kerastase",
+                "excerpts": [
+                  "View ... Regular price $50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[22].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thecosmeticmarket.com/collections/kerastase",
+                "title": "https://www.thecosmeticmarket.com/collections/kerastase",
+                "excerpts": [
+                  "View](https://www.thecosmeticmarket.com/collections/kerastase/products/premiere-serum-filler-fondamental-repairing-anti-frizz)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thecosmeticmarket.com/collections/kerastase",
+                "title": "https://www.thecosmeticmarket.com/collections/kerastase",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thecosmeticmarket.com/collections/kerastase",
+                "title": "https://www.thecosmeticmarket.com/collections/kerastase",
+                "excerpts": [
+                  "corpus-meta url: https://thecosmeticmarket.com/collections/kerastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thecosmeticmarket.com/collections/kerastase",
+                "title": "https://www.thecosmeticmarket.com/collections/kerastase",
+                "excerpts": [
+                  "The Cosmetic Market ... Kerastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thecosmeticmarket.com/collections/kerastase",
+                "title": "https://www.thecosmeticmarket.com/collections/kerastase",
+                "excerpts": [
+                  "The Cosmetic Market ... collections/kerastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml",
+                "title": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml/",
+                "excerpts": [
+                  "Original price was: $106.00.Current price is: $85.00. ... Size 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml",
+                "title": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml/",
+                "excerpts": [
+                  "Free Shipping On All Orders Over $200 ... $0.00 0 Cart ... Current price is: $85.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml",
+                "title": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml/",
+                "excerpts": [
+                  "5 in stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml",
+                "title": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml/",
+                "excerpts": [
+                  "corpus-meta url: https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml",
+                "title": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml/",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml",
+                "title": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml/",
+                "excerpts": [
+                  "corpus-meta url: https://savvyhairartistry.com/product/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml",
+                "title": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml/",
+                "excerpts": [
+                  "Savvy Hair Artistry ... K\u00e9rastase Premi\u00e8re Filler Fondamental Repairing Anti-Frizz Serum 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml",
+                "title": "https://savvyhairartistry.com/product/kerastase-premiere-filler-fondamental-repairing-anti-frizz-serum-90ml/",
+                "excerpts": [
+                  "Savvy Hair Artistry ... Kerastase Paris / Kerastase Premiere product category"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

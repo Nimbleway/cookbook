@@ -1,0 +1,3888 @@
+{
+  "sku_id": "KER-025",
+  "effort": "high",
+  "elapsed_s": 916,
+  "fetched_at": "2026-07-20T13:34:38+00:00",
+  "run_id": "task_run_1f6f9b9da3ff45f289c8a2988a4b0a52",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_1f6f9b9da3ff45f289c8a2988a4b0a52",
+      "interaction_id": "task_run_1f6f9b9da3ff45f289c8a2988a4b0a52",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Discipline Ol\u00e9o-Relax Serum, 100ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:19:21.173155Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:19:21.396941Z",
+      "completed_at": "2026-07-20T13:34:28.499036Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://shopplatinumandcompany.com/products/kerastase-discipline-oleo-relax-advanced-hair-oil-100ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Shop Platinum and Company",
+          "seller_type": "independent_store",
+          "seller_domain": "shopplatinumandcompany.com",
+          "advertised_price": "$45.00"
+        },
+        {
+          "currency": "PHP",
+          "in_stock": true,
+          "listing_url": "https://hairmnl.com/products/kerastase-discipline-oleo-relax-serum",
+          "observed_at": "2026-07-20",
+          "seller_name": "HairMNL",
+          "seller_type": "independent_store",
+          "seller_domain": "hairmnl.com",
+          "advertised_price": "\u20b1 3,300"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/366317303700",
+          "observed_at": "2026-07-20",
+          "seller_name": "usdealszone (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$29.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/147251732861",
+          "observed_at": "2026-07-20",
+          "seller_name": "zenvorax (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$25.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/366303226278",
+          "observed_at": "2026-07-20",
+          "seller_name": "nova-elegance (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$28.11"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/366388618655",
+          "observed_at": "2026-07-20",
+          "seller_name": "globalprimetrend (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$32.16"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/389892920950",
+          "observed_at": "2026-07-20",
+          "seller_name": "PrimeChoiceOutlet (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $28.89"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/227421282112",
+          "observed_at": "2026-07-20",
+          "seller_name": "zohata0 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $22.75"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.co.uk/itm/406943847526",
+          "observed_at": "2026-07-20",
+          "seller_name": "particularlywisenia (eBay UK)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.co.uk",
+          "advertised_price": "\u00a314.99"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.co.uk/itm/800339053740",
+          "observed_at": "2026-07-20",
+          "seller_name": "haycojhj (eBay UK)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.co.uk",
+          "advertised_price": "\u00a313.96"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.co.uk/itm/158101539572",
+          "observed_at": "2026-07-20",
+          "seller_name": "more-3168 (eBay UK)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.co.uk",
+          "advertised_price": "\u00a313.99"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": false,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-huile-discipline-oleo-relax-100ml/12206931",
+          "observed_at": "2026-07-20",
+          "seller_name": "LookFantastic",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "\u20ac53.11"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://walmart.com/ip/Kerastase-Discipline-Huile-Oleo-Relax-Advanced-CoconutOil-3-4-oz/236965749",
+          "observed_at": "2026-07-20",
+          "seller_name": "Walmart",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$47.50"
+        },
+        {
+          "currency": "AED",
+          "in_stock": null,
+          "listing_url": "https://www.kerastase.ae/en_AE/products/discipline-oleo-relax-advanced-hair-oil-100ml/KER_00032.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "K\u00e9rastase (UAE official site)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase.ae",
+          "advertised_price": "296.00 AED"
+        },
+        {
+          "currency": "AED",
+          "in_stock": true,
+          "listing_url": "https://www.faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Faces",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "faces.ae",
+          "advertised_price": "178 AED"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/206224260848",
+          "observed_at": "2026-07-20",
+          "seller_name": "contacts-76 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $69.99"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.co.uk/itm/285951075649",
+          "observed_at": "2026-07-20",
+          "seller_name": "The Marvellous Group (eBay UK)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.co.uk",
+          "advertised_price": "\u00a3105.99"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.co.uk/itm/317684734373",
+          "observed_at": "2026-07-20",
+          "seller_name": "mallbella (eBay UK)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.co.uk",
+          "advertised_price": "\u00a318.60"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.co.uk/itm/397869233778",
+          "observed_at": "2026-07-20",
+          "seller_name": "luxe_beauty_hub (eBay UK)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.co.uk",
+          "advertised_price": "\u00a321.24"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/298346766456",
+          "observed_at": "2026-07-20",
+          "seller_name": "maaan999 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $25.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/358714121543",
+          "observed_at": "2026-07-20",
+          "seller_name": "quintessglobalsolutions (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $33.90"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.co.uk/itm/297740639881",
+          "observed_at": "2026-07-20",
+          "seller_name": "houghton-19 (eBay UK)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.co.uk",
+          "advertised_price": "\u00a319.59"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.co.uk/itm/147379681136",
+          "observed_at": "2026-07-20",
+          "seller_name": "parrish2355 (eBay UK)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.co.uk",
+          "advertised_price": "\u00a321.25"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.co.uk/itm/157843106280",
+          "observed_at": "2026-07-20",
+          "seller_name": "beautymax_7 (eBay UK)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.co.uk",
+          "advertised_price": "\u00a323.31"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://shopplatinumandcompany.com/products/kerastase-discipline-oleo-relax-advanced-hair-oil-100ml",
+            "title": "Kerastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://hairmnl.com/products/kerastase-discipline-oleo-relax-serum?srsltid=AfmBOop5WAq7OP8wKikOyg1iCc7KIxhIlvNMl2S6miqSJWihfbfsjyq-",
+            "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Hair Oil",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+            "title": "K\u00e9rastase Oleo Relax Serum",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/389892920950",
+            "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/227421282112",
+            "title": "https://www.ebay.com/itm/227421282112",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/itm/406943847526",
+            "title": "https://www.ebay.co.uk/itm/406943847526",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/itm/800339053740",
+            "title": "https://www.ebay.co.uk/itm/800339053740",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/itm/158101539572",
+            "title": "https://www.ebay.co.uk/itm/158101539572",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/kerastase-huile-discipline-oleo-relax-100ml/12206931?affil=thggps&bvstate=pg%3A2%2Fct%3Ar&shippingcountry=GR&srsltid=AfmBOoqECEs8sRwNAh8N8z6IycEcvbLJAJy8-xpx6AX61UxAZ3jPVLw_&switchcurrency=EUR",
+            "title": "K\u00e9rastase Huile Discipline Oleo-Relax 100ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Discipline-Huile-Oleo-Relax-Advanced-CoconutOil-3-4-oz/236965749",
+            "title": "Kerastase Discipline Huile Oleo Relax Advanced ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://kerastase.ae/en_AE/products/discipline-oleo-relax-advanced-hair-oil-100ml/KER_00032.html?srsltid=AfmBOoqgGvCyH49x8zEDTD5EzmIdE9_f6Dij26ZPQziTfF_9r6Hk8N4K",
+            "title": "Ol\u00e9o-Relax Advanced Hair Oil for Frizzy Hair - Kerastase",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+            "title": "https://www.faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/206224260848",
+            "title": "https://www.ebay.com/itm/206224260848",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/itm/285951075649",
+            "title": "https://www.ebay.co.uk/itm/285951075649",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/itm/317684734373",
+            "title": "https://www.ebay.co.uk/itm/317684734373",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/itm/397869233778",
+            "title": "https://www.ebay.co.uk/itm/397869233778",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/298346766456",
+            "title": "https://www.ebay.com/itm/298346766456",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/358714121543",
+            "title": "https://www.ebay.com/itm/358714121543",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/itm/297740639881",
+            "title": "https://www.ebay.co.uk/itm/297740639881",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/itm/147379681136",
+            "title": "https://www.ebay.co.uk/itm/147379681136",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/itm/157843106280",
+            "title": "https://www.ebay.co.uk/itm/157843106280",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 99%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://shopplatinumandcompany.com/products/kerastase-discipline-oleo-relax-advanced-hair-oil-100ml",
+                "title": "Kerastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml",
+                "excerpts": [
+                  "# Kerastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shopplatinumandcompany.com/products/kerastase-discipline-oleo-relax-advanced-hair-oil-100ml",
+                "title": "Kerastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml",
+                "excerpts": [
+                  "corpus-meta url: https://shopplatinumandcompany.com/products/kerastase-discipline-oleo-relax-advanced-hair-oil-100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shopplatinumandcompany.com/products/kerastase-discipline-oleo-relax-advanced-hair-oil-100ml",
+                "title": "Kerastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml",
+                "excerpts": [
+                  "- **Regular price**\n  - $45.00\n- **Sale price**\n  - $45.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shopplatinumandcompany.com/products/kerastase-discipline-oleo-relax-advanced-hair-oil-100ml",
+                "title": "Kerastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml",
+                "excerpts": [
+                  "Regular price $45.00 / Sale price $45.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shopplatinumandcompany.com/products/kerastase-discipline-oleo-relax-advanced-hair-oil-100ml",
+                "title": "Kerastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml",
+                "excerpts": [
+                  "corpus-meta url: https://shopplatinumandcompany.com/products/kerastase-discipline-oleo-relax-advanced-hair-oil-100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shopplatinumandcompany.com/products/kerastase-discipline-oleo-relax-advanced-hair-oil-100ml",
+                "title": "Kerastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml",
+                "excerpts": [
+                  "Independent Shopify beauty/hair e-commerce store selling K\u00e9rastase retail"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shopplatinumandcompany.com/products/kerastase-discipline-oleo-relax-advanced-hair-oil-100ml",
+                "title": "Kerastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml",
+                "excerpts": [
+                  "Regular price $45.00 / Sale price $45.00 (no explicit stock status shown on page)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shopplatinumandcompany.com/products/kerastase-discipline-oleo-relax-advanced-hair-oil-100ml",
+                "title": "Kerastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairmnl.com/products/kerastase-discipline-oleo-relax-serum?srsltid=AfmBOop5WAq7OP8wKikOyg1iCc7KIxhIlvNMl2S6miqSJWihfbfsjyq-",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Hair Oil",
+                "excerpts": [
+                  "K\u00e9rastase Discipline Ol\u00e9o-Relax Hair Oil - HairMNL"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairmnl.com/products/kerastase-discipline-oleo-relax-serum?srsltid=AfmBOop5WAq7OP8wKikOyg1iCc7KIxhIlvNMl2S6miqSJWihfbfsjyq-",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Hair Oil",
+                "excerpts": [
+                  "corpus-meta url: https://hairmnl.com/products/kerastase-discipline-oleo-relax-serum"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairmnl.com/products/kerastase-discipline-oleo-relax-serum?srsltid=AfmBOop5WAq7OP8wKikOyg1iCc7KIxhIlvNMl2S6miqSJWihfbfsjyq-",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Hair Oil",
+                "excerpts": [
+                  "\u20b1 3,300 Sale _\u2022_ Save"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairmnl.com/products/kerastase-discipline-oleo-relax-serum?srsltid=AfmBOop5WAq7OP8wKikOyg1iCc7KIxhIlvNMl2S6miqSJWihfbfsjyq-",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Hair Oil",
+                "excerpts": [
+                  "\u20b1 3,300 Sale; Add to Cart \u2022 \u20b1 3,300"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairmnl.com/products/kerastase-discipline-oleo-relax-serum?srsltid=AfmBOop5WAq7OP8wKikOyg1iCc7KIxhIlvNMl2S6miqSJWihfbfsjyq-",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Hair Oil",
+                "excerpts": [
+                  "corpus-meta url: https://hairmnl.com/products/kerastase-discipline-oleo-relax-serum"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairmnl.com/products/kerastase-discipline-oleo-relax-serum?srsltid=AfmBOop5WAq7OP8wKikOyg1iCc7KIxhIlvNMl2S6miqSJWihfbfsjyq-",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Hair Oil",
+                "excerpts": [
+                  "HairMNL \u2014 independent Philippine hair-care e-commerce store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairmnl.com/products/kerastase-discipline-oleo-relax-serum?srsltid=AfmBOop5WAq7OP8wKikOyg1iCc7KIxhIlvNMl2S6miqSJWihfbfsjyq-",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Hair Oil",
+                "excerpts": [
+                  "Add to Cart \u2022 \u20b1 3,300"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairmnl.com/products/kerastase-discipline-oleo-relax-serum?srsltid=AfmBOop5WAq7OP8wKikOyg1iCc7KIxhIlvNMl2S6miqSJWihfbfsjyq-",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Hair Oil",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "usdealszone 99.3% positive (424)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/shop/kerastase-oleo-relax-serum"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "Kerastase Discipline Oleo Relax Advanced Hair Smoothing Oil 3.4oz /100ml ... $29.99 or Best Offer ... usdealszone 99.3% positive (424)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "$29.99 or Best Offer, Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "ebay.com/itm/366317303700 ... Kerastase Discipline Oleo Relax Advanced Hair Smoothing Oil 3.4oz /100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "usdealszone 99.3% positive (424) \u2014 eBay third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "$29.99 or Best Offer, Free delivery, 3 watchers (Buy It Now listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "Kerastase Discipline Oleo-Relax Advanced Hair Smoothing Oil 3.4oz / 100ml ... $25.00 or Best Offer ... Almost gone, 17 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "$25.00 or Best Offer, +$9.00 delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "Almost gone, 17 sold (active Buy It Now listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "ebay.com/itm/147251732861 ... Kerastase Discipline Oleo-Relax Advanced Hair Smoothing Oil 3.4oz / 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/shop/kerastase-oleo-relax-serum"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "zenvorax 97% positive (129)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "zenvorax 97% positive (129) \u2014 eBay third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "Kerastase Discipline Oleo Relax Advanced Hair Smoothing Oil 3.4oz /100ml ... $28.11 ... $26.70 with coupon or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "$28.11 ($26.70 with coupon), or Best Offer, Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "or Best Offer, Free delivery, 2 watchers (active Buy It Now listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "ebay.com/itm/366303226278 ... Kerastase Discipline Oleo Relax Advanced Hair Smoothing Oil 3.4oz /100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/shop/kerastase-oleo-relax-serum"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "nova-elegance 98.4% positive (364)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "nova-elegance 98.4% positive (364) \u2014 eBay third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "Kerastase Discipline Oleo Relax Advanced Hair Smoothing Oil 3.4oz /100ml ... $32.16"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "$32.16 (USD listing on ebay.com)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "globalprimetrend (1,189) 98.2% (active listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "ebay.com/itm/366388618655 ... Kerastase Discipline Oleo Relax Advanced Hair Smoothing Oil 3.4oz /100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/shop/kerastase-oleo-relax-serum"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "globalprimetrend (1,189) 98.2%"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-oleo-relax-serum?_nkw=kerastase+oleo+relax+serum",
+                "title": "K\u00e9rastase Oleo Relax Serum",
+                "excerpts": [
+                  "globalprimetrend (1,189) 98.2% \u2014 eBay third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/389892920950",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml ...",
+                "excerpts": [
+                  "US $28.89or Best Offer\nWas US $37.49 (23% off)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/389892920950",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml ...",
+                "excerpts": [
+                  "US $28.89 ... Was US $37.49"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/389892920950",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml ...",
+                "excerpts": [
+                  "Quantity:\n5 available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/389892920950",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml ...",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/389892920950 ... # Kerastase Discipline Oleo Relax Hair Oil 100ml 3.4oz Anti Frizz Treatment"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/389892920950",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml ...",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/389892920950",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml ...",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/389892920950"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/389892920950",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml ...",
+                "excerpts": [
+                  "PrimeChoiceOutlet\n(121)\n95.5% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/389892920950",
+                "title": "K\u00e9rastase Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml ...",
+                "excerpts": [
+                  "PrimeChoiceOutlet (121) 95.5% positive; Located in: DXB, null, United Arab Emirates \u2014 eBay third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227421282112",
+                "title": "https://www.ebay.com/itm/227421282112",
+                "excerpts": [
+                  "US $22.75or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227421282112",
+                "title": "https://www.ebay.com/itm/227421282112",
+                "excerpts": [
+                  "US $22.75"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227421282112",
+                "title": "https://www.ebay.com/itm/227421282112",
+                "excerpts": [
+                  "Quantity:\n2 available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227421282112",
+                "title": "https://www.ebay.com/itm/227421282112",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/227421282112 ... # Kerastase Discipline Oleo Relax Advanced Hair Oil 100ml 3.4oz Anti Frizz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227421282112",
+                "title": "https://www.ebay.com/itm/227421282112",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227421282112",
+                "title": "https://www.ebay.com/itm/227421282112",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/227421282112"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227421282112",
+                "title": "https://www.ebay.com/itm/227421282112",
+                "excerpts": [
+                  "zohata0\n(3)\n100% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227421282112",
+                "title": "https://www.ebay.com/itm/227421282112",
+                "excerpts": [
+                  "zohata0 (3) 100% positive, 5 items sold \u2014 eBay third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/406943847526",
+                "title": "https://www.ebay.co.uk/itm/406943847526",
+                "excerpts": [
+                  "\u00a314.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/406943847526",
+                "title": "https://www.ebay.co.uk/itm/406943847526",
+                "excerpts": [
+                  "\u00a314.99, Free international postage"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/406943847526",
+                "title": "https://www.ebay.co.uk/itm/406943847526",
+                "excerpts": [
+                  "Quantity:\nMore than 10 available49 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/406943847526",
+                "title": "https://www.ebay.co.uk/itm/406943847526",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/406943847526 ... # Kerastase Discipline Oleo-Relax Advanced Control in motion Oil 100ml New"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/406943847526",
+                "title": "https://www.ebay.co.uk/itm/406943847526",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/406943847526",
+                "title": "https://www.ebay.co.uk/itm/406943847526",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/406943847526"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/406943847526",
+                "title": "https://www.ebay.co.uk/itm/406943847526",
+                "excerpts": [
+                  "particularlywisenia ... 98.9% positive ... Registered as a business seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/406943847526",
+                "title": "https://www.ebay.co.uk/itm/406943847526",
+                "excerpts": [
+                  "particularlywisenia 98.9% positive, Registered as a business seller, 1.3K items sold \u2014 eBay UK third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/800339053740",
+                "title": "https://www.ebay.co.uk/itm/800339053740",
+                "excerpts": [
+                  "\u00a313.96"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/800339053740",
+                "title": "https://www.ebay.co.uk/itm/800339053740",
+                "excerpts": [
+                  "\u00a313.96, Free international postage"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/800339053740",
+                "title": "https://www.ebay.co.uk/itm/800339053740",
+                "excerpts": [
+                  "Quantity:\nMore than 10 available1 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/800339053740",
+                "title": "https://www.ebay.co.uk/itm/800339053740",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/800339053740 ... # Kerastase Discipline Oleo-Relax Advanced Control-in-Oil 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/800339053740",
+                "title": "https://www.ebay.co.uk/itm/800339053740",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/800339053740",
+                "title": "https://www.ebay.co.uk/itm/800339053740",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/800339053740"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/800339053740",
+                "title": "https://www.ebay.co.uk/itm/800339053740",
+                "excerpts": [
+                  "haycojhj ... 99.4% positive ... Located in: Dewsbury, United Kingdom"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/800339053740",
+                "title": "https://www.ebay.co.uk/itm/800339053740",
+                "excerpts": [
+                  "haycojhj 99.4% positive, 311 items sold, Located in Dewsbury UK \u2014 eBay UK third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/158101539572",
+                "title": "https://www.ebay.co.uk/itm/158101539572",
+                "excerpts": [
+                  "\u00a313.99\n(\u00a313.99 / Unit)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/158101539572",
+                "title": "https://www.ebay.co.uk/itm/158101539572",
+                "excerpts": [
+                  "\u00a313.99, Free international postage"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/158101539572",
+                "title": "https://www.ebay.co.uk/itm/158101539572",
+                "excerpts": [
+                  "Quantity:\n5 available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/158101539572",
+                "title": "https://www.ebay.co.uk/itm/158101539572",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/158101539572 ... # Kerastase Discipline OLEO RELAX ADVANCED HAIR Oil Anti-Frizz 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/158101539572",
+                "title": "https://www.ebay.co.uk/itm/158101539572",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/158101539572",
+                "title": "https://www.ebay.co.uk/itm/158101539572",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/158101539572"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/158101539572",
+                "title": "https://www.ebay.co.uk/itm/158101539572",
+                "excerpts": [
+                  "contact seller ... requested=more-3168 ... Located in: Torquay, United Kingdom"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/158101539572",
+                "title": "https://www.ebay.co.uk/itm/158101539572",
+                "excerpts": [
+                  "more-3168, 7 items sold, Located in Torquay UK \u2014 eBay UK third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-huile-discipline-oleo-relax-100ml/12206931?affil=thggps&bvstate=pg%3A2%2Fct%3Ar&shippingcountry=GR&srsltid=AfmBOoqECEs8sRwNAh8N8z6IycEcvbLJAJy8-xpx6AX61UxAZ3jPVLw_&switchcurrency=EUR",
+                "title": "K\u00e9rastase Huile Discipline Oleo-Relax 100ml",
+                "excerpts": [
+                  "\u20ac53.11"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-huile-discipline-oleo-relax-100ml/12206931?affil=thggps&bvstate=pg%3A2%2Fct%3Ar&shippingcountry=GR&srsltid=AfmBOoqECEs8sRwNAh8N8z6IycEcvbLJAJy8-xpx6AX61UxAZ3jPVLw_&switchcurrency=EUR",
+                "title": "K\u00e9rastase Huile Discipline Oleo-Relax 100ml",
+                "excerpts": [
+                  "\u20ac53.11 (page currency switched to EUR; switchcurrency=EUR)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-huile-discipline-oleo-relax-100ml/12206931?affil=thggps&bvstate=pg%3A2%2Fct%3Ar&shippingcountry=GR&srsltid=AfmBOoqECEs8sRwNAh8N8z6IycEcvbLJAJy8-xpx6AX61UxAZ3jPVLw_&switchcurrency=EUR",
+                "title": "K\u00e9rastase Huile Discipline Oleo-Relax 100ml",
+                "excerpts": [
+                  "Quantity:\n\nCOMING SOON"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-huile-discipline-oleo-relax-100ml/12206931?affil=thggps&bvstate=pg%3A2%2Fct%3Ar&shippingcountry=GR&srsltid=AfmBOoqECEs8sRwNAh8N8z6IycEcvbLJAJy8-xpx6AX61UxAZ3jPVLw_&switchcurrency=EUR",
+                "title": "K\u00e9rastase Huile Discipline Oleo-Relax 100ml",
+                "excerpts": [
+                  "corpus-meta url: https://lookfantastic.com/p/kerastase-huile-discipline-oleo-relax-100ml/12206931 ... # K\u00e9rastase Huile Discipline Oleo-Relax 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-huile-discipline-oleo-relax-100ml/12206931?affil=thggps&bvstate=pg%3A2%2Fct%3Ar&shippingcountry=GR&srsltid=AfmBOoqECEs8sRwNAh8N8z6IycEcvbLJAJy8-xpx6AX61UxAZ3jPVLw_&switchcurrency=EUR",
+                "title": "K\u00e9rastase Huile Discipline Oleo-Relax 100ml",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-huile-discipline-oleo-relax-100ml/12206931?affil=thggps&bvstate=pg%3A2%2Fct%3Ar&shippingcountry=GR&srsltid=AfmBOoqECEs8sRwNAh8N8z6IycEcvbLJAJy8-xpx6AX61UxAZ3jPVLw_&switchcurrency=EUR",
+                "title": "K\u00e9rastase Huile Discipline Oleo-Relax 100ml",
+                "excerpts": [
+                  "corpus-meta url: https://lookfantastic.com/p/kerastase-huile-discipline-oleo-relax-100ml/12206931"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-huile-discipline-oleo-relax-100ml/12206931?affil=thggps&bvstate=pg%3A2%2Fct%3Ar&shippingcountry=GR&srsltid=AfmBOoqECEs8sRwNAh8N8z6IycEcvbLJAJy8-xpx6AX61UxAZ3jPVLw_&switchcurrency=EUR",
+                "title": "K\u00e9rastase Huile Discipline Oleo-Relax 100ml",
+                "excerpts": [
+                  "K\u00e9rastase Huile Discipline Oleo-Relax 100ml | LOOKFANTASTIC"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-huile-discipline-oleo-relax-100ml/12206931?affil=thggps&bvstate=pg%3A2%2Fct%3Ar&shippingcountry=GR&srsltid=AfmBOoqECEs8sRwNAh8N8z6IycEcvbLJAJy8-xpx6AX61UxAZ3jPVLw_&switchcurrency=EUR",
+                "title": "K\u00e9rastase Huile Discipline Oleo-Relax 100ml",
+                "excerpts": [
+                  "LookFantastic \u2014 major UK authorised beauty e-tailer carrying the K\u00e9rastase range"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Discipline-Huile-Oleo-Relax-Advanced-CoconutOil-3-4-oz/236965749",
+                "title": "Kerastase Discipline Huile Oleo Relax Advanced ...",
+                "excerpts": [
+                  "Current price is $47.50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Discipline-Huile-Oleo-Relax-Advanced-CoconutOil-3-4-oz/236965749",
+                "title": "Kerastase Discipline Huile Oleo Relax Advanced ...",
+                "excerpts": [
+                  "Current price is $47.50\nPrice when purchased online"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Discipline-Huile-Oleo-Relax-Advanced-CoconutOil-3-4-oz/236965749",
+                "title": "Kerastase Discipline Huile Oleo Relax Advanced ...",
+                "excerpts": [
+                  "Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Discipline-Huile-Oleo-Relax-Advanced-CoconutOil-3-4-oz/236965749",
+                "title": "Kerastase Discipline Huile Oleo Relax Advanced ...",
+                "excerpts": [
+                  "corpus-meta url: https://walmart.com/ip/Kerastase-Discipline-Huile-Oleo-Relax-Advanced-CoconutOil-3-4-oz/236965749"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Discipline-Huile-Oleo-Relax-Advanced-CoconutOil-3-4-oz/236965749",
+                "title": "Kerastase Discipline Huile Oleo Relax Advanced ...",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Discipline-Huile-Oleo-Relax-Advanced-CoconutOil-3-4-oz/236965749",
+                "title": "Kerastase Discipline Huile Oleo Relax Advanced ...",
+                "excerpts": [
+                  "corpus-meta url: https://walmart.com/ip/Kerastase-Discipline-Huile-Oleo-Relax-Advanced-CoconutOil-3-4-oz/236965749"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Discipline-Huile-Oleo-Relax-Advanced-CoconutOil-3-4-oz/236965749",
+                "title": "Kerastase Discipline Huile Oleo Relax Advanced ...",
+                "excerpts": [
+                  "Walmart \u2014 Kerastase Discipline Huile Oleo Relax Advanced ... 3.4 oz (100ml)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Discipline-Huile-Oleo-Relax-Advanced-CoconutOil-3-4-oz/236965749",
+                "title": "Kerastase Discipline Huile Oleo Relax Advanced ...",
+                "excerpts": [
+                  "Walmart.com \u2014 major US authorised retailer (Premium Beauty category)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ae/en_AE/products/discipline-oleo-relax-advanced-hair-oil-100ml/KER_00032.html?srsltid=AfmBOoqgGvCyH49x8zEDTD5EzmIdE9_f6Dij26ZPQziTfF_9r6Hk8N4K",
+                "title": "Ol\u00e9o-Relax Advanced Hair Oil for Frizzy Hair - Kerastase",
+                "excerpts": [
+                  "Prices and payment are shown in AED."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ae/en_AE/products/discipline-oleo-relax-advanced-hair-oil-100ml/KER_00032.html?srsltid=AfmBOoqgGvCyH49x8zEDTD5EzmIdE9_f6Dij26ZPQziTfF_9r6Hk8N4K",
+                "title": "Ol\u00e9o-Relax Advanced Hair Oil for Frizzy Hair - Kerastase",
+                "excerpts": [
+                  "Official K\u00e9rastase UAE product page for the 100ml oil (stock status not explicitly rendered in extracted page)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ae/en_AE/products/discipline-oleo-relax-advanced-hair-oil-100ml/KER_00032.html?srsltid=AfmBOoqgGvCyH49x8zEDTD5EzmIdE9_f6Dij26ZPQziTfF_9r6Hk8N4K",
+                "title": "Ol\u00e9o-Relax Advanced Hair Oil for Frizzy Hair - Kerastase",
+                "excerpts": [
+                  "corpus-meta url: https://kerastase.ae/en_AE/products/discipline-oleo-relax-advanced-hair-oil-100ml/KER_00032.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ae/en_AE/products/discipline-oleo-relax-advanced-hair-oil-100ml/KER_00032.html?srsltid=AfmBOoqgGvCyH49x8zEDTD5EzmIdE9_f6Dij26ZPQziTfF_9r6Hk8N4K",
+                "title": "Ol\u00e9o-Relax Advanced Hair Oil for Frizzy Hair - Kerastase",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ae/en_AE/products/discipline-oleo-relax-advanced-hair-oil-100ml/KER_00032.html?srsltid=AfmBOoqgGvCyH49x8zEDTD5EzmIdE9_f6Dij26ZPQziTfF_9r6Hk8N4K",
+                "title": "Ol\u00e9o-Relax Advanced Hair Oil for Frizzy Hair - Kerastase",
+                "excerpts": [
+                  "corpus-meta url: https://kerastase.ae/en_AE/products/discipline-oleo-relax-advanced-hair-oil-100ml/KER_00032.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ae/en_AE/products/discipline-oleo-relax-advanced-hair-oil-100ml/KER_00032.html?srsltid=AfmBOoqgGvCyH49x8zEDTD5EzmIdE9_f6Dij26ZPQziTfF_9r6Hk8N4K",
+                "title": "Ol\u00e9o-Relax Advanced Hair Oil for Frizzy Hair - Kerastase",
+                "excerpts": [
+                  "Ol\u00e9o-Relax Advanced Hair Oil for Frizzy Hair - Kerastase (K\u00e9rastase UAE official site)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ae/en_AE/products/discipline-oleo-relax-advanced-hair-oil-100ml/KER_00032.html?srsltid=AfmBOoqgGvCyH49x8zEDTD5EzmIdE9_f6Dij26ZPQziTfF_9r6Hk8N4K",
+                "title": "Ol\u00e9o-Relax Advanced Hair Oil for Frizzy Hair - Kerastase",
+                "excerpts": [
+                  "K\u00e9rastase.ae \u2014 the brand's own official UAE e-commerce site"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "title": "https://www.faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "excerpts": [
+                  "## \u2066178\u2069 AED\n Add To Bag \u2066178\u2069 AED"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "title": "https://www.faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "excerpts": [
+                  "178 AED ... Split into 4 equal payments of 44.50 AED"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "title": "https://www.faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "excerpts": [
+                  "Add To Bag \u2066178\u2069 AED"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "title": "https://www.faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "excerpts": [
+                  "corpus-meta url: https://faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html ... Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml (100ml)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "title": "https://www.faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "title": "https://www.faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "excerpts": [
+                  "corpus-meta url: https://faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "title": "https://www.faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "excerpts": [
+                  "faces ... Discipline Ol\u00e9o-Relax Advanced Hair Oil 100ml Hair Oil (100ml) ... Add To Bag 178 AED"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "title": "https://www.faces.ae/en/p/kerastase-discipline-oleorelax-advanced-hair-oil-018114574474.html",
+                "excerpts": [
+                  "Faces (faces.ae) \u2014 major Middle East beauty retailer, Free Delivery on orders above 299 AED"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206224260848",
+                "title": "https://www.ebay.com/itm/206224260848",
+                "excerpts": [
+                  "US $69.99or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206224260848",
+                "title": "https://www.ebay.com/itm/206224260848",
+                "excerpts": [
+                  "US $69.99 ... or 4 interest-free payments of $17.50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206224260848",
+                "title": "https://www.ebay.com/itm/206224260848",
+                "excerpts": [
+                  "Quantity:\nLast one2 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206224260848",
+                "title": "https://www.ebay.com/itm/206224260848",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/206224260848 ... # KERASTASE Discipline Oleo-Relax Advanced Oil, 100ml NEW!*FAST SHIPPING"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206224260848",
+                "title": "https://www.ebay.com/itm/206224260848",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206224260848",
+                "title": "https://www.ebay.com/itm/206224260848",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/206224260848"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206224260848",
+                "title": "https://www.ebay.com/itm/206224260848",
+                "excerpts": [
+                  "contacts-76 ... 98.6% positive ... Located in: ANCASTER, Canada"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206224260848",
+                "title": "https://www.ebay.com/itm/206224260848",
+                "excerpts": [
+                  "contacts-76 98.6% positive, 124 items sold, Located in Ancaster Canada \u2014 eBay third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/285951075649",
+                "title": "https://www.ebay.co.uk/itm/285951075649",
+                "excerpts": [
+                  "\u00a3105.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/285951075649",
+                "title": "https://www.ebay.co.uk/itm/285951075649",
+                "excerpts": [
+                  "\u00a3105.99, \u00a33.99 P&P / \u00a328.99 Royal Mail International Economy"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/285951075649",
+                "title": "https://www.ebay.co.uk/itm/285951075649",
+                "excerpts": [
+                  "Quantity:\n6 available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/285951075649",
+                "title": "https://www.ebay.co.uk/itm/285951075649",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/285951075649 ... # K\u00e9rastase Huile Discipline Oleo-Relax 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/285951075649",
+                "title": "https://www.ebay.co.uk/itm/285951075649",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/285951075649",
+                "title": "https://www.ebay.co.uk/itm/285951075649",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/285951075649"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/285951075649",
+                "title": "https://www.ebay.co.uk/itm/285951075649",
+                "excerpts": [
+                  "The Marvellous Group\n(84292)\nBusiness\nRegistered as a business seller\n99.2% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/285951075649",
+                "title": "https://www.ebay.co.uk/itm/285951075649",
+                "excerpts": [
+                  "The Marvellous Group, Business seller, Registered as a business seller, 99.2% positive, 335K items sold, Located in Chertsey UK \u2014 eBay UK third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/317684734373",
+                "title": "https://www.ebay.co.uk/itm/317684734373",
+                "excerpts": [
+                  "\u00a318.60"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/317684734373",
+                "title": "https://www.ebay.co.uk/itm/317684734373",
+                "excerpts": [
+                  "\u00a318.60, Free international postage"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/317684734373",
+                "title": "https://www.ebay.co.uk/itm/317684734373",
+                "excerpts": [
+                  "Quantity:\n7 available3 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/317684734373",
+                "title": "https://www.ebay.co.uk/itm/317684734373",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/317684734373 ... # Kerastase Discipline Oleo-Relax Advanced Control in motion Oil 100ml New"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/317684734373",
+                "title": "https://www.ebay.co.uk/itm/317684734373",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/317684734373",
+                "title": "https://www.ebay.co.uk/itm/317684734373",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/317684734373"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/317684734373",
+                "title": "https://www.ebay.co.uk/itm/317684734373",
+                "excerpts": [
+                  "mallbella ... 98.5% positive ... Located in: Prenton, United Kingdom"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/317684734373",
+                "title": "https://www.ebay.co.uk/itm/317684734373",
+                "excerpts": [
+                  "mallbella 98.5% positive, 967 items sold, Located in Prenton UK \u2014 eBay UK third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/397869233778",
+                "title": "https://www.ebay.co.uk/itm/397869233778",
+                "excerpts": [
+                  "\u00a321.24or Best Offer\n(\u00a321.24 / Unit)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/397869233778",
+                "title": "https://www.ebay.co.uk/itm/397869233778",
+                "excerpts": [
+                  "\u00a321.24, Free international postage"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/397869233778",
+                "title": "https://www.ebay.co.uk/itm/397869233778",
+                "excerpts": [
+                  "Quantity:\n6 available2 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/397869233778",
+                "title": "https://www.ebay.co.uk/itm/397869233778",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/397869233778 ... # Kerastase Discipline OLEO RELAX ADVANCED HAIR Oil Anti-Frizz 100ml UK"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/397869233778",
+                "title": "https://www.ebay.co.uk/itm/397869233778",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/397869233778",
+                "title": "https://www.ebay.co.uk/itm/397869233778",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/397869233778"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/397869233778",
+                "title": "https://www.ebay.co.uk/itm/397869233778",
+                "excerpts": [
+                  "luxe_beauty_hub ... 98.1% positive ... Located in: London, United Kingdom"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/397869233778",
+                "title": "https://www.ebay.co.uk/itm/397869233778",
+                "excerpts": [
+                  "luxe_beauty_hub 98.1% positive, 77 items sold, Located in London UK \u2014 eBay UK third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298346766456",
+                "title": "https://www.ebay.com/itm/298346766456",
+                "excerpts": [
+                  "US $25.99or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298346766456",
+                "title": "https://www.ebay.com/itm/298346766456",
+                "excerpts": [
+                  "US $25.99, Free shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298346766456",
+                "title": "https://www.ebay.com/itm/298346766456",
+                "excerpts": [
+                  "Quantity:\n10 available5 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298346766456",
+                "title": "https://www.ebay.com/itm/298346766456",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/298346766456 ... # Kerastase Discipline Oleo Relax Advanced Hair Smoothing Oil 3.4oz /100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298346766456",
+                "title": "https://www.ebay.com/itm/298346766456",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298346766456",
+                "title": "https://www.ebay.com/itm/298346766456",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/298346766456"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298346766456",
+                "title": "https://www.ebay.com/itm/298346766456",
+                "excerpts": [
+                  "maaan999 ... 90.3% positive ... Located in: North Brunswick, New Jersey, United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298346766456",
+                "title": "https://www.ebay.com/itm/298346766456",
+                "excerpts": [
+                  "maaan999 90.3% positive, 69 items sold, Located in North Brunswick NJ \u2014 eBay third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358714121543",
+                "title": "https://www.ebay.com/itm/358714121543",
+                "excerpts": [
+                  "US $33.90or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358714121543",
+                "title": "https://www.ebay.com/itm/358714121543",
+                "excerpts": [
+                  "US $33.90, Free shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358714121543",
+                "title": "https://www.ebay.com/itm/358714121543",
+                "excerpts": [
+                  "Quantity:\n5 available2 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358714121543",
+                "title": "https://www.ebay.com/itm/358714121543",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/358714121543 ... # KERASTASE Discipline Oleo-Relax Advanced Oil, 100ml NEW in Box! Sealed pack"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358714121543",
+                "title": "https://www.ebay.com/itm/358714121543",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358714121543",
+                "title": "https://www.ebay.com/itm/358714121543",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/358714121543"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358714121543",
+                "title": "https://www.ebay.com/itm/358714121543",
+                "excerpts": [
+                  "quintessglobalsolutions ... 98% positive ... Located in: West Babylon, New York, United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358714121543",
+                "title": "https://www.ebay.com/itm/358714121543",
+                "excerpts": [
+                  "quintessglobalsolutions 98% positive, 137 items sold, Located in West Babylon NY \u2014 eBay third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/297740639881",
+                "title": "https://www.ebay.co.uk/itm/297740639881",
+                "excerpts": [
+                  "\u00a319.59"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/297740639881",
+                "title": "https://www.ebay.co.uk/itm/297740639881",
+                "excerpts": [
+                  "\u00a319.59, \u00a33.25 P&P"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/297740639881",
+                "title": "https://www.ebay.co.uk/itm/297740639881",
+                "excerpts": [
+                  "Quantity:\n7 available13 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/297740639881",
+                "title": "https://www.ebay.co.uk/itm/297740639881",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/297740639881 ... # Kerastase Discipline OLEO RELAX ADVANCED HAIR Oil Anti-Frizz 100ml UK"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/297740639881",
+                "title": "https://www.ebay.co.uk/itm/297740639881",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/297740639881",
+                "title": "https://www.ebay.co.uk/itm/297740639881",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/297740639881"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/297740639881",
+                "title": "https://www.ebay.co.uk/itm/297740639881",
+                "excerpts": [
+                  "houghton-19 ... 98.2% positive ... Located in: London, United Kingdom"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/297740639881",
+                "title": "https://www.ebay.co.uk/itm/297740639881",
+                "excerpts": [
+                  "houghton-19 98.2% positive, 1.8K items sold, Located in London UK \u2014 eBay UK third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/147379681136",
+                "title": "https://www.ebay.co.uk/itm/147379681136",
+                "excerpts": [
+                  "\u00a321.25or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/147379681136",
+                "title": "https://www.ebay.co.uk/itm/147379681136",
+                "excerpts": [
+                  "\u00a321.25, Free international postage"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/147379681136",
+                "title": "https://www.ebay.co.uk/itm/147379681136",
+                "excerpts": [
+                  "Quantity:\n2 available1 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/147379681136",
+                "title": "https://www.ebay.co.uk/itm/147379681136",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/147379681136 ... # Kerastase Discipline Oleo-Relax Advanced Hair Oil 100ml Anti-Frizz UK"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/147379681136",
+                "title": "https://www.ebay.co.uk/itm/147379681136",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/147379681136",
+                "title": "https://www.ebay.co.uk/itm/147379681136",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/147379681136"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/147379681136",
+                "title": "https://www.ebay.co.uk/itm/147379681136",
+                "excerpts": [
+                  "parrish2355 ... 98.4% positive ... Located in: Hounslow, United Kingdom"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/147379681136",
+                "title": "https://www.ebay.co.uk/itm/147379681136",
+                "excerpts": [
+                  "parrish2355 98.4% positive, 250 items sold, Located in Hounslow UK \u2014 eBay UK third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/157843106280",
+                "title": "https://www.ebay.co.uk/itm/157843106280",
+                "excerpts": [
+                  "\u00a323.31or Best Offer\n(\u00a323.31 / Unit)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/157843106280",
+                "title": "https://www.ebay.co.uk/itm/157843106280",
+                "excerpts": [
+                  "\u00a323.31, Free international postage"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/157843106280",
+                "title": "https://www.ebay.co.uk/itm/157843106280",
+                "excerpts": [
+                  "Quantity:\n4 available6 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/157843106280",
+                "title": "https://www.ebay.co.uk/itm/157843106280",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/157843106280 ... # Kerastase Discipline OLEO RELAX ADVANCED HAIR Oil Anti-Frizz 100ml UK"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/157843106280",
+                "title": "https://www.ebay.co.uk/itm/157843106280",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/157843106280",
+                "title": "https://www.ebay.co.uk/itm/157843106280",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.co.uk/itm/157843106280"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/157843106280",
+                "title": "https://www.ebay.co.uk/itm/157843106280",
+                "excerpts": [
+                  "beautymax_7 ... 97.7% positive ... Located in: Barnet, United Kingdom"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/157843106280",
+                "title": "https://www.ebay.co.uk/itm/157843106280",
+                "excerpts": [
+                  "beautymax_7 97.7% positive, 124 items sold, Located in Barnet UK \u2014 eBay UK third-party marketplace seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

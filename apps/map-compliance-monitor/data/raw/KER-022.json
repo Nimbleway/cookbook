@@ -1,0 +1,1608 @@
+{
+  "sku_id": "KER-022",
+  "effort": "high",
+  "elapsed_s": 1184,
+  "fetched_at": "2026-07-20T13:37:16+00:00",
+  "run_id": "task_run_a24eaa2fa87e450a8d2a0ecae54ea3f9",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_a24eaa2fa87e450a8d2a0ecae54ea3f9",
+      "interaction_id": "task_run_a24eaa2fa87e450a8d2a0ecae54ea3f9",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Densifique Cure Densit\u00e9 Serum, 30x6ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:17:31.508068Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:17:31.793276Z",
+      "completed_at": "2026-07-20T13:37:12.488619Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Densifique-Femme-30-Count-6-oz/252554340",
+          "observed_at": "2026-07-20",
+          "seller_name": "Walmart (Easy Eagles)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "139.99"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": false,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-densifique-femme-30-x-6ml/11255391",
+          "observed_at": "2026-07-20",
+          "seller_name": "lookfantastic",
+          "seller_type": "independent_store",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "147.05"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": false,
+          "listing_url": "https://www.lookfantastic.fr/p/kerastase-densifique-femme-30-x-6ml/11255391",
+          "observed_at": "2026-07-20",
+          "seller_name": "LOOKFANTASTIC France",
+          "seller_type": "independent_store",
+          "seller_domain": "lookfantastic.fr",
+          "advertised_price": "169,11"
+        },
+        {
+          "currency": "NZD",
+          "in_stock": false,
+          "listing_url": "https://www.evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+          "observed_at": "2026-07-20",
+          "seller_name": "EVRYDAY",
+          "seller_type": "independent_store",
+          "seller_domain": "evryday.co.nz",
+          "advertised_price": "192.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://beautycarebag.com/products/kerastase-densifique-hair-density-treatment-30x6ml-4",
+          "observed_at": "2026-07-20",
+          "seller_name": "Beauty Care Bag",
+          "seller_type": "discounter",
+          "seller_domain": "beautycarebag.com",
+          "advertised_price": "347.36"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://www.perfumesclub.com/es/kerastase/densifique-activateur-de-densite-capillaire-30-x-6-ml/p_78126",
+          "observed_at": "2026-07-20",
+          "seller_name": "Perfume's Club",
+          "seller_type": "independent_store",
+          "seller_domain": "perfumesclub.com",
+          "advertised_price": "154,55"
+        },
+        {
+          "currency": null,
+          "in_stock": false,
+          "listing_url": "https://oman.ounass.com/shop-kerastase-densifique-cure-femme-ampoules-30-x-6ml-for-women-212540515_242.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Ounass (Oman)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "oman.ounass.com",
+          "advertised_price": "not found (out of stock)"
+        },
+        {
+          "currency": null,
+          "in_stock": false,
+          "listing_url": "https://www.amazon.co.uk/KERASTASE-8433726010091-ESP-densify-30x6/dp/B00CKB7G7M",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon UK",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.co.uk",
+          "advertised_price": "not found (currently unavailable)"
+        },
+        {
+          "currency": null,
+          "in_stock": false,
+          "listing_url": "https://www.amazon.eg/-/en/Kerastase-DENSIFIQUE-Sculpt-treatment-massage/dp/B00C3GQN5U",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon Egypt",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.eg",
+          "advertised_price": "not found (currently unavailable)"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/357835604581",
+          "observed_at": "2026-07-20",
+          "seller_name": "nature_and_land (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "280.24"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://walmart.com/ip/Kerastase-Densifique-Femme-30-Count-6-oz/252554340",
+            "title": "Kerastase Densifique Femme (30 Count) 6 oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/kerastase-densifique-femme-30-x-6ml/11255391?srsltid=AfmBOopfgTJ2q7DyH1Bjt4WMGR0_KO-f3oekc4npsFFvjDFSE2PAjFUq",
+            "title": "K\u00e9rastase Densifique Femme 30 x 6ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.fr/p/kerastase-densifique-femme-30-x-6ml/11255391",
+            "title": "K\u00e9rastase Densifique Femme 30 x 6 ml | LOOKFANTASTIC",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+            "title": "https://www.evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://beautycarebag.com/products/kerastase-densifique-hair-density-treatment-30x6ml-4",
+            "title": "Kerastase Densifique Hair Density Treatment - 30 x 0.2 Fl Oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://perfumesclub.com/es/kerastase/densifique-activateur-de-densite-capillaire-30-x-6-ml/p_78126",
+            "title": "DENSIFIQUE activateur de densit\u00e9 capillaire ampollas 30 x ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://oman.ounass.com/shop-kerastase-densifique-cure-femme-ampoules-30-x-6ml-for-women-212540515_242.html?srsltid=AfmBOop6_GStqqnZRMrvhlTqGSS0WMzxE5Jl9o4ZJXIO3bqM8DVboQ1t",
+            "title": "Buy K\u00e9rastase Densifique Cure Femme Ampoules, 30 x ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.co.uk/KERASTASE-8433726010091-ESP-densify-30x6/dp/B00CKB7G7M",
+            "title": "ESP densify 30x6 ML",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.eg/-/en/Kerastase-DENSIFIQUE-Sculpt-treatment-massage/dp/B00C3GQN5U",
+            "title": "Kerastase DENSIFIQUE Sculpt treatment massage 30 x 6 ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/357835604581",
+            "title": "Kerastase Densifique Cure Densite Hair Density Treatment ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 95%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Densifique-Femme-30-Count-6-oz/252554340",
+                "title": "Kerastase Densifique Femme (30 Count) 6 oz",
+                "excerpts": [
+                  "data.seller_name: \"Easy Eagles\" ... data.price: 139.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Densifique-Femme-30-Count-6-oz/252554340",
+                "title": "Kerastase Densifique Femme (30 Count) 6 oz",
+                "excerpts": [
+                  "corpus-meta url: https://walmart.com/ip/Kerastase-Densifique-Femme-30-Count-6-oz/252554340"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Densifique-Femme-30-Count-6-oz/252554340",
+                "title": "Kerastase Densifique Femme (30 Count) 6 oz",
+                "excerpts": [
+                  "data.price: 139.99 ... \"price\": 139.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Densifique-Femme-30-Count-6-oz/252554340",
+                "title": "Kerastase Densifique Femme (30 Count) 6 oz",
+                "excerpts": [
+                  "Kerastase Densifique Femme (30 Count) 6 oz ... Current price is $139.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Densifique-Femme-30-Count-6-oz/252554340",
+                "title": "Kerastase Densifique Femme (30 Count) 6 oz",
+                "excerpts": [
+                  "corpus-meta url: https://walmart.com/ip/Kerastase-Densifique-Femme-30-Count-6-oz/252554340"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Densifique-Femme-30-Count-6-oz/252554340",
+                "title": "Kerastase Densifique Femme (30 Count) 6 oz",
+                "excerpts": [
+                  "data.seller_name: \"Easy Eagles\" ... data.seller_id: \"57D3E11C6FF843C9BEC6B58D23932BF6\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Densifique-Femme-30-Count-6-oz/252554340",
+                "title": "Kerastase Densifique Femme (30 Count) 6 oz",
+                "excerpts": [
+                  "Sorry, this item is out of stock ... Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Densifique-Femme-30-Count-6-oz/252554340",
+                "title": "Kerastase Densifique Femme (30 Count) 6 oz",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-densifique-femme-30-x-6ml/11255391?srsltid=AfmBOopfgTJ2q7DyH1Bjt4WMGR0_KO-f3oekc4npsFFvjDFSE2PAjFUq",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6ml",
+                "excerpts": [
+                  "\u00a3147.05 ... Or 4 interest free payments of \u00a336.76 with"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-densifique-femme-30-x-6ml/11255391?srsltid=AfmBOopfgTJ2q7DyH1Bjt4WMGR0_KO-f3oekc4npsFFvjDFSE2PAjFUq",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6ml",
+                "excerpts": [
+                  "\u00a3147.05"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-densifique-femme-30-x-6ml/11255391?srsltid=AfmBOopfgTJ2q7DyH1Bjt4WMGR0_KO-f3oekc4npsFFvjDFSE2PAjFUq",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6ml",
+                "excerpts": [
+                  "COMING SOON ... Dispatching From : 1 January 1970"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-densifique-femme-30-x-6ml/11255391?srsltid=AfmBOopfgTJ2q7DyH1Bjt4WMGR0_KO-f3oekc4npsFFvjDFSE2PAjFUq",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6ml",
+                "excerpts": [
+                  "corpus-meta url: https://lookfantastic.com/p/kerastase-densifique-femme-30-x-6ml/11255391 ... K\u00e9rastase Densifique Femme 30 x 6ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-densifique-femme-30-x-6ml/11255391?srsltid=AfmBOopfgTJ2q7DyH1Bjt4WMGR0_KO-f3oekc4npsFFvjDFSE2PAjFUq",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6ml",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-densifique-femme-30-x-6ml/11255391?srsltid=AfmBOopfgTJ2q7DyH1Bjt4WMGR0_KO-f3oekc4npsFFvjDFSE2PAjFUq",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6ml",
+                "excerpts": [
+                  "corpus-meta url: https://lookfantastic.com/p/kerastase-densifique-femme-30-x-6ml/11255391"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-densifique-femme-30-x-6ml/11255391?srsltid=AfmBOopfgTJ2q7DyH1Bjt4WMGR0_KO-f3oekc4npsFFvjDFSE2PAjFUq",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6ml",
+                "excerpts": [
+                  "lookfantastic homepage"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-densifique-femme-30-x-6ml/11255391?srsltid=AfmBOopfgTJ2q7DyH1Bjt4WMGR0_KO-f3oekc4npsFFvjDFSE2PAjFUq",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6ml",
+                "excerpts": [
+                  "FREE UK delivery on orders over \u00a325"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.fr/p/kerastase-densifique-femme-30-x-6ml/11255391",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6 ml | LOOKFANTASTIC",
+                "excerpts": [
+                  "169,11 \u20ac ... 939,50 \u20ac par L"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.fr/p/kerastase-densifique-femme-30-x-6ml/11255391",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6 ml | LOOKFANTASTIC",
+                "excerpts": [
+                  "169,11 \u20ac"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.fr/p/kerastase-densifique-femme-30-x-6ml/11255391",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6 ml | LOOKFANTASTIC",
+                "excerpts": [
+                  "En rupture de stock ... Rupture de stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.fr/p/kerastase-densifique-femme-30-x-6ml/11255391",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6 ml | LOOKFANTASTIC",
+                "excerpts": [
+                  "corpus-meta url: https://lookfantastic.fr/p/kerastase-densifique-femme-30-x-6ml/11255391 ... K\u00e9rastase Densifique Femme 30 x 6 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.fr/p/kerastase-densifique-femme-30-x-6ml/11255391",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6 ml | LOOKFANTASTIC",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.fr/p/kerastase-densifique-femme-30-x-6ml/11255391",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6 ml | LOOKFANTASTIC",
+                "excerpts": [
+                  "corpus-meta url: https://lookfantastic.fr/p/kerastase-densifique-femme-30-x-6ml/11255391"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.fr/p/kerastase-densifique-femme-30-x-6ml/11255391",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6 ml | LOOKFANTASTIC",
+                "excerpts": [
+                  "LOOKFANTASTIC est la boutique de beaut\u00e9 incontournable en Europe"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.fr/p/kerastase-densifique-femme-30-x-6ml/11255391",
+                "title": "K\u00e9rastase Densifique Femme 30 x 6 ml | LOOKFANTASTIC",
+                "excerpts": [
+                  "LOOKFANTASTIC est la boutique de beaut\u00e9 incontournable en Europe"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "title": "https://www.evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "excerpts": [
+                  "# K\u00e9rastase Densifique Bodifying Scalp Treatment 6mlx30 ... $192.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "title": "https://www.evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "excerpts": [
+                  "We offer free express shipping on all orders over $75 ... $6.95 express shipping rate applies throughout NZ"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "title": "https://www.evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "excerpts": [
+                  "No more products available for purchase ... Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "title": "https://www.evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "excerpts": [
+                  "corpus-meta url: https://evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "title": "https://www.evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "title": "https://www.evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "excerpts": [
+                  "corpus-meta url: https://evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "title": "https://www.evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "excerpts": [
+                  "![EVRYDAY] ... evryday.co.nz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "title": "https://www.evryday.co.nz/products/kerastase-densifique-bodifying-scalp-treatment-for-women-6mlx30",
+                "excerpts": [
+                  "![EVRYDAY] ... evryday.co.nz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarebag.com/products/kerastase-densifique-hair-density-treatment-30x6ml-4",
+                "title": "Kerastase Densifique Hair Density Treatment - 30 x 0.2 Fl Oz",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarebag.com/products/kerastase-densifique-hair-density-treatment-30x6ml-4",
+                "title": "Kerastase Densifique Hair Density Treatment - 30 x 0.2 Fl Oz",
+                "excerpts": [
+                  "corpus-meta url: https://beautycarebag.com/products/kerastase-densifique-hair-density-treatment-30x6ml-4"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarebag.com/products/kerastase-densifique-hair-density-treatment-30x6ml-4",
+                "title": "Kerastase Densifique Hair Density Treatment - 30 x 0.2 Fl Oz",
+                "excerpts": [
+                  "Beauty Care Bag 5,600+ Beauty Brands, Fast US Shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarebag.com/products/kerastase-densifique-hair-density-treatment-30x6ml-4",
+                "title": "Kerastase Densifique Hair Density Treatment - 30 x 0.2 Fl Oz",
+                "excerpts": [
+                  "Beauty Care Bag 5,600+ Beauty Brands, Fast US Shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.com/es/kerastase/densifique-activateur-de-densite-capillaire-30-x-6-ml/p_78126",
+                "title": "DENSIFIQUE activateur de densit\u00e9 capillaire ampollas 30 x ...",
+                "excerpts": [
+                  "168,12 \u20ac ... 154,55 \u20ac ... Total: 154,55 \u20ac"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.com/es/kerastase/densifique-activateur-de-densite-capillaire-30-x-6-ml/p_78126",
+                "title": "DENSIFIQUE activateur de densit\u00e9 capillaire ampollas 30 x ...",
+                "excerpts": [
+                  "154,55 \u20ac ... Total: 154,55 \u20ac"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.com/es/kerastase/densifique-activateur-de-densite-capillaire-30-x-6-ml/p_78126",
+                "title": "DENSIFIQUE activateur de densit\u00e9 capillaire ampollas 30 x ...",
+                "excerpts": [
+                  "K\u00e9rastase, DENSIFIQUE activateur de densit\u00e9 capillaire ampollas 30 x 6 ml , 154,55 \u20ac A\u00f1adir a cesta"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.com/es/kerastase/densifique-activateur-de-densite-capillaire-30-x-6-ml/p_78126",
+                "title": "DENSIFIQUE activateur de densit\u00e9 capillaire ampollas 30 x ...",
+                "excerpts": [
+                  "corpus-meta url: https://perfumesclub.com/es/kerastase/densifique-activateur-de-densite-capillaire-30-x-6-ml/p_78126"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.com/es/kerastase/densifique-activateur-de-densite-capillaire-30-x-6-ml/p_78126",
+                "title": "DENSIFIQUE activateur de densit\u00e9 capillaire ampollas 30 x ...",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.com/es/kerastase/densifique-activateur-de-densite-capillaire-30-x-6-ml/p_78126",
+                "title": "DENSIFIQUE activateur de densit\u00e9 capillaire ampollas 30 x ...",
+                "excerpts": [
+                  "corpus-meta url: https://perfumesclub.com/es/kerastase/densifique-activateur-de-densite-capillaire-30-x-6-ml/p_78126"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.com/es/kerastase/densifique-activateur-de-densite-capillaire-30-x-6-ml/p_78126",
+                "title": "DENSIFIQUE activateur de densit\u00e9 capillaire ampollas 30 x ...",
+                "excerpts": [
+                  "[Perfume's Club] ... Perfume's Club"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.com/es/kerastase/densifique-activateur-de-densite-capillaire-30-x-6-ml/p_78126",
+                "title": "DENSIFIQUE activateur de densit\u00e9 capillaire ampollas 30 x ...",
+                "excerpts": [
+                  "Responsable del fichero: Beauty Luxe Distributions SLU"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://oman.ounass.com/shop-kerastase-densifique-cure-femme-ampoules-30-x-6ml-for-women-212540515_242.html?srsltid=AfmBOop6_GStqqnZRMrvhlTqGSS0WMzxE5Jl9o4ZJXIO3bqM8DVboQ1t",
+                "title": "Buy K\u00e9rastase Densifique Cure Femme Ampoules, 30 x ...",
+                "excerpts": [
+                  "Out of stock ... Densifique Cure Femme Ampoules, 30 x 6ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://oman.ounass.com/shop-kerastase-densifique-cure-femme-ampoules-30-x-6ml-for-women-212540515_242.html?srsltid=AfmBOop6_GStqqnZRMrvhlTqGSS0WMzxE5Jl9o4ZJXIO3bqM8DVboQ1t",
+                "title": "Buy K\u00e9rastase Densifique Cure Femme Ampoules, 30 x ...",
+                "excerpts": [
+                  "Out of stock ... Densifique Cure Femme Ampoules, 30 x 6ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://oman.ounass.com/shop-kerastase-densifique-cure-femme-ampoules-30-x-6ml-for-women-212540515_242.html?srsltid=AfmBOop6_GStqqnZRMrvhlTqGSS0WMzxE5Jl9o4ZJXIO3bqM8DVboQ1t",
+                "title": "Buy K\u00e9rastase Densifique Cure Femme Ampoules, 30 x ...",
+                "excerpts": [
+                  "Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://oman.ounass.com/shop-kerastase-densifique-cure-femme-ampoules-30-x-6ml-for-women-212540515_242.html?srsltid=AfmBOop6_GStqqnZRMrvhlTqGSS0WMzxE5Jl9o4ZJXIO3bqM8DVboQ1t",
+                "title": "Buy K\u00e9rastase Densifique Cure Femme Ampoules, 30 x ...",
+                "excerpts": [
+                  "corpus-meta url: https://oman.ounass.com/shop-kerastase-densifique-cure-femme-ampoules-30-x-6ml-for-women-212540515_242.html ... Densifique Cure Femme Ampoules, 30 x 6ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://oman.ounass.com/shop-kerastase-densifique-cure-femme-ampoules-30-x-6ml-for-women-212540515_242.html?srsltid=AfmBOop6_GStqqnZRMrvhlTqGSS0WMzxE5Jl9o4ZJXIO3bqM8DVboQ1t",
+                "title": "Buy K\u00e9rastase Densifique Cure Femme Ampoules, 30 x ...",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://oman.ounass.com/shop-kerastase-densifique-cure-femme-ampoules-30-x-6ml-for-women-212540515_242.html?srsltid=AfmBOop6_GStqqnZRMrvhlTqGSS0WMzxE5Jl9o4ZJXIO3bqM8DVboQ1t",
+                "title": "Buy K\u00e9rastase Densifique Cure Femme Ampoules, 30 x ...",
+                "excerpts": [
+                  "corpus-meta url: https://oman.ounass.com/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://oman.ounass.com/shop-kerastase-densifique-cure-femme-ampoules-30-x-6ml-for-women-212540515_242.html?srsltid=AfmBOop6_GStqqnZRMrvhlTqGSS0WMzxE5Jl9o4ZJXIO3bqM8DVboQ1t",
+                "title": "Buy K\u00e9rastase Densifique Cure Femme Ampoules, 30 x ...",
+                "excerpts": [
+                  "[![Ounass Logo] ... The Definitive Home Of Luxury ... Al Tayer Group LLC. 2026"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://oman.ounass.com/shop-kerastase-densifique-cure-femme-ampoules-30-x-6ml-for-women-212540515_242.html?srsltid=AfmBOop6_GStqqnZRMrvhlTqGSS0WMzxE5Jl9o4ZJXIO3bqM8DVboQ1t",
+                "title": "Buy K\u00e9rastase Densifique Cure Femme Ampoules, 30 x ...",
+                "excerpts": [
+                  "The Definitive Home Of Luxury ... Al Tayer Group LLC"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/KERASTASE-8433726010091-ESP-densify-30x6/dp/B00CKB7G7M",
+                "title": "ESP densify 30x6 ML",
+                "excerpts": [
+                  "No featured offers available ... Currently unavailable. We don't know when or if this item will be back in stock."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/KERASTASE-8433726010091-ESP-densify-30x6/dp/B00CKB7G7M",
+                "title": "ESP densify 30x6 ML",
+                "excerpts": [
+                  "No featured offers available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/KERASTASE-8433726010091-ESP-densify-30x6/dp/B00CKB7G7M",
+                "title": "ESP densify 30x6 ML",
+                "excerpts": [
+                  "Currently unavailable. We don't know when or if this item will be back in stock."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/KERASTASE-8433726010091-ESP-densify-30x6/dp/B00CKB7G7M",
+                "title": "ESP densify 30x6 ML",
+                "excerpts": [
+                  "corpus-meta url: https://amazon.co.uk/KERASTASE-8433726010091-ESP-densify-30x6/dp/B00CKB7G7M ... # ESP densify 30x6 ML ... 30X6ML / Capillary density Activator / Kerastase - DENSIFIQUE"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/KERASTASE-8433726010091-ESP-densify-30x6/dp/B00CKB7G7M",
+                "title": "ESP densify 30x6 ML",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/KERASTASE-8433726010091-ESP-densify-30x6/dp/B00CKB7G7M",
+                "title": "ESP densify 30x6 ML",
+                "excerpts": [
+                  "corpus-meta url: https://amazon.co.uk/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/KERASTASE-8433726010091-ESP-densify-30x6/dp/B00CKB7G7M",
+                "title": "ESP densify 30x6 ML",
+                "excerpts": [
+                  "# ESP densify 30x6 ML ... From K\u00c9RASTASE"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/KERASTASE-8433726010091-ESP-densify-30x6/dp/B00CKB7G7M",
+                "title": "ESP densify 30x6 ML",
+                "excerpts": [
+                  "No featured offers available ... Other sellers"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.eg/-/en/Kerastase-DENSIFIQUE-Sculpt-treatment-massage/dp/B00C3GQN5U",
+                "title": "Kerastase DENSIFIQUE Sculpt treatment massage 30 x 6 ml",
+                "excerpts": [
+                  "No featured offers available ... Currently unavailable. We don't know when or if this item will be back in stock."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.eg/-/en/Kerastase-DENSIFIQUE-Sculpt-treatment-massage/dp/B00C3GQN5U",
+                "title": "Kerastase DENSIFIQUE Sculpt treatment massage 30 x 6 ml",
+                "excerpts": [
+                  "No featured offers available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.eg/-/en/Kerastase-DENSIFIQUE-Sculpt-treatment-massage/dp/B00C3GQN5U",
+                "title": "Kerastase DENSIFIQUE Sculpt treatment massage 30 x 6 ml",
+                "excerpts": [
+                  "Currently unavailable. We don't know when or if this item will be back in stock."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.eg/-/en/Kerastase-DENSIFIQUE-Sculpt-treatment-massage/dp/B00C3GQN5U",
+                "title": "Kerastase DENSIFIQUE Sculpt treatment massage 30 x 6 ml",
+                "excerpts": [
+                  "corpus-meta url: https://amazon.eg/-/en/Kerastase-DENSIFIQUE-Sculpt-treatment-massage/dp/B00C3GQN5U ... # Kerastase DENSIFIQUE Sculpt treatment massage 30 x 6 ml ... K\u00e9rastase Densifique Soin Activateur de Densit\u00e9 et D'\u00c9paisseur Capillaire 30 x 6ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.eg/-/en/Kerastase-DENSIFIQUE-Sculpt-treatment-massage/dp/B00C3GQN5U",
+                "title": "Kerastase DENSIFIQUE Sculpt treatment massage 30 x 6 ml",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.eg/-/en/Kerastase-DENSIFIQUE-Sculpt-treatment-massage/dp/B00C3GQN5U",
+                "title": "Kerastase DENSIFIQUE Sculpt treatment massage 30 x 6 ml",
+                "excerpts": [
+                  "corpus-meta url: https://amazon.eg/-/en/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.eg/-/en/Kerastase-DENSIFIQUE-Sculpt-treatment-massage/dp/B00C3GQN5U",
+                "title": "Kerastase DENSIFIQUE Sculpt treatment massage 30 x 6 ml",
+                "excerpts": [
+                  "# Kerastase DENSIFIQUE Sculpt treatment massage 30 x 6 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.eg/-/en/Kerastase-DENSIFIQUE-Sculpt-treatment-massage/dp/B00C3GQN5U",
+                "title": "Kerastase DENSIFIQUE Sculpt treatment massage 30 x 6 ml",
+                "excerpts": [
+                  "No featured offers available ... Other sellers"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/357835604581",
+                "title": "Kerastase Densifique Cure Densite Hair Density Treatment ...",
+                "excerpts": [
+                  "US $280.24/eaor Best Offer ... Was US $294.99 ... Save US $14.75 (5% off) ... Buy 1 for $280.24"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/357835604581",
+                "title": "Kerastase Densifique Cure Densite Hair Density Treatment ...",
+                "excerpts": [
+                  "US $280.24/eaor Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/357835604581",
+                "title": "Kerastase Densifique Cure Densite Hair Density Treatment ...",
+                "excerpts": [
+                  "3 available4 sold ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/357835604581",
+                "title": "Kerastase Densifique Cure Densite Hair Density Treatment ...",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/357835604581 ... # Kerastase Densifique Cure Densite Hair Density Treatment Ampoules 30x6ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/357835604581",
+                "title": "Kerastase Densifique Cure Densite Hair Density Treatment ...",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/357835604581",
+                "title": "Kerastase Densifique Cure Densite Hair Density Treatment ...",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/357835604581"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/357835604581",
+                "title": "Kerastase Densifique Cure Densite Hair Density Treatment ...",
+                "excerpts": [
+                  "[Seller's other items](https://www.ebay.com/str/natureandland) ... username=nature_and_land"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/357835604581",
+                "title": "Kerastase Densifique Cure Densite Hair Density Treatment ...",
+                "excerpts": [
+                  "[Seller's other items](https://www.ebay.com/str/natureandland) ... Hungarian seller paid all taxes and duties"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,2466 @@
+{
+  "sku_id": "OLA-013",
+  "effort": "high",
+  "elapsed_s": 1166,
+  "fetched_at": "2026-07-20T13:00:54+00:00",
+  "run_id": "task_run_428f4be9bcb248d8974481837ae99a81",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_428f4be9bcb248d8974481837ae99a81",
+      "interaction_id": "task_run_428f4be9bcb248d8974481837ae99a81",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of Olaplex No. 9 Bond Protector Nourishing Hair Serum, 90ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:41:27.059937Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:41:27.286808Z",
+      "completed_at": "2026-07-20T13:00:39.539871Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.ie/Olaplex-Protector-Nourishing-Serum-1251589/dp/B0CXN22Z6B",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon.ie",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.ie",
+          "advertised_price": "\u20ac37.95"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-9-bond-protector-nourishing-hair-serum-3-fl-oz-90-ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Salwa'z Beauty Salon",
+          "seller_type": "independent_store",
+          "seller_domain": "salwazbeauty.com",
+          "advertised_price": "$29.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Olaplex-No-9-Bond-Protector-Nourishing-Hair-Serum-3-0-oz/370820508",
+          "observed_at": "2026-07-20",
+          "seller_name": "UtieeBeautyStore (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$22.75"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": true,
+          "listing_url": "https://ca.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-ca",
+          "observed_at": "2026-07-20",
+          "seller_name": "Olaplex (Canada DTC)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "ca.olaplex.com",
+          "advertised_price": "$47"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.johnlewis.com/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml/p6267711",
+          "observed_at": "2026-07-20",
+          "seller_name": "John Lewis",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "johnlewis.com",
+          "advertised_price": "\u00a330.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.onbuy.com/gb/p/olaplex-no-9-bond-protector-nourishing-hair-serum~p64185215",
+          "observed_at": "2026-07-20",
+          "seller_name": "Salon Products Online UK Ltd (OnBuy)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "onbuy.com",
+          "advertised_price": "\u00a322.20"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-us",
+          "observed_at": "2026-07-20",
+          "seller_name": "Olaplex (US DTC)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "olaplex.com",
+          "advertised_price": "$32"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://allbeauty.com/products/p-olaplex-no-9-bond-protector-nourishing-hair-serum-90ml-13660220",
+          "observed_at": "2026-07-20",
+          "seller_name": "allbeauty",
+          "seller_type": "discounter",
+          "seller_domain": "allbeauty.com",
+          "advertised_price": "\u00a319.95"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.chemistdirect.co.uk/olaplex-no-9-90ml-bond-protect-hserum/prd-0153808",
+          "observed_at": "2026-07-20",
+          "seller_name": "Chemist Direct",
+          "seller_type": "discounter",
+          "seller_domain": "chemistdirect.co.uk",
+          "advertised_price": "\u00a319.04"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://www.cultbeauty.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220",
+          "observed_at": "2026-07-20",
+          "seller_name": "Cult Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "cultbeauty.com",
+          "advertised_price": "31.60\u20ac"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ulta.com/p/no9-bond-protector-heat-protection-frizz-reduction-nourishing-hair-serum-pimprod2031995",
+          "observed_at": "2026-07-20",
+          "seller_name": "Ulta Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "ulta.com",
+          "advertised_price": "$32.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.dermstore.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220",
+          "observed_at": "2026-07-20",
+          "seller_name": "Dermstore",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "dermstore.com",
+          "advertised_price": "$32.00"
+        },
+        {
+          "currency": "AUD",
+          "in_stock": true,
+          "listing_url": "https://au.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-au",
+          "observed_at": "2026-07-20",
+          "seller_name": "Olaplex (Australia DTC)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "au.olaplex.com",
+          "advertised_price": "$60"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.onbuy.com/gb/p/no-9-bond-protector-nourishing-hair-serum-by-olaplex-for-unisex-3-oz~p112950524",
+          "observed_at": "2026-07-20",
+          "seller_name": "XPRESSION MCR Hair & Beauty (OnBuy)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "onbuy.com",
+          "advertised_price": "\u00a322.99"
+        },
+        {
+          "currency": "NZD",
+          "in_stock": true,
+          "listing_url": "https://synergyhair.co.nz/shop/all-gifts/gifts-under-60/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Synergy Hair",
+          "seller_type": "independent_store",
+          "seller_domain": "synergyhair.co.nz",
+          "advertised_price": "$49.95"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://amazon.ie/Olaplex-Protector-Nourishing-Serum-1251589/dp/B0CXN22Z6B/ref=_sad",
+            "title": "NO.9 Bond Protector Nourishing Hair Serum 90 ml, 1251589",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-9-bond-protector-nourishing-hair-serum-3-fl-oz-90-ml?srsltid=AfmBOooEudHZ2LUdfCTcn_dYPQ14lrEyjwBLOGn-FtSF2OQSv2xy0NxP",
+            "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Olaplex-No-9-Bond-Protector-Nourishing-Hair-Serum-3-0-oz/370820508",
+            "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum - 3.0 oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ca.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-ca",
+            "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://johnlewis.com/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml/p6267711",
+            "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum, 90ml",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://onbuy.com/gb/p/olaplex-no-9-bond-protector-nourishing-hair-serum~p64185215",
+            "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-us",
+            "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://allbeauty.com/products/p-olaplex-no-9-bond-protector-nourishing-hair-serum-90ml-13660220",
+            "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://chemistdirect.co.uk/olaplex-no-9-90ml-bond-protect-hserum/prd-0153808",
+            "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://cultbeauty.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220",
+            "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://ulta.com/p/no9-bond-protector-heat-protection-frizz-reduction-nourishing-hair-serum-pimprod2031995?sku=2596420",
+            "title": "OLAPLEX - No.9 Bond Protector Heat Protection & Frizz ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://dermstore.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220?bvstate=pg%3A6%2Fct%3Ar&pageNumber=2&pr_rd_page=28&srsltid=AfmBOopJyh5Z46VnrfZi1HKOQvin2EzGsBecBLDeRTTTuT3_MneJxfNK",
+            "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://au.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-au",
+            "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://onbuy.com/gb/p/no-9-bond-protector-nourishing-hair-serum-by-olaplex-for-unisex-3-oz~p112950524",
+            "title": "No 9 Bond Protector Nourishing Hair Serum by Olaplex for ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://synergyhair.co.nz/shop/all-gifts/gifts-under-60/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml?srsltid=AfmBOoosXWMOmUYE7HHIIOL00IwrekgKg24l0NIz3oVdtKM-gOVUo9sa",
+            "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ie/Olaplex-Protector-Nourishing-Serum-1251589/dp/B0CXN22Z6B/ref=_sad",
+                "title": "NO.9 Bond Protector Nourishing Hair Serum 90 ml, 1251589",
+                "excerpts": [
+                  "Shipper / Seller Amazon.ie ... \u20ac37.95 ... In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ie/Olaplex-Protector-Nourishing-Serum-1251589/dp/B0CXN22Z6B/ref=_sad",
+                "title": "NO.9 Bond Protector Nourishing Hair Serum 90 ml, 1251589",
+                "excerpts": [
+                  "https://www.amazon.ie/Olaplex-Protector-Nourishing-Serum-1251589/dp/B0CXN22Z6B"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ie/Olaplex-Protector-Nourishing-Serum-1251589/dp/B0CXN22Z6B/ref=_sad",
+                "title": "NO.9 Bond Protector Nourishing Hair Serum 90 ml, 1251589",
+                "excerpts": [
+                  "\u20ac37.95 &euro;42.17 per ml ... In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ie/Olaplex-Protector-Nourishing-Serum-1251589/dp/B0CXN22Z6B/ref=_sad",
+                "title": "NO.9 Bond Protector Nourishing Hair Serum 90 ml, 1251589",
+                "excerpts": [
+                  "\u20ac37.95 ... All prices include VAT."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ie/Olaplex-Protector-Nourishing-Serum-1251589/dp/B0CXN22Z6B/ref=_sad",
+                "title": "NO.9 Bond Protector Nourishing Hair Serum 90 ml, 1251589",
+                "excerpts": [
+                  "Olaplex - NO.9 Bond Protector Nourishing Hair Serum 90 ml, 1251589 ... ASIN B0CXN22Z6B"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ie/Olaplex-Protector-Nourishing-Serum-1251589/dp/B0CXN22Z6B/ref=_sad",
+                "title": "NO.9 Bond Protector Nourishing Hair Serum 90 ml, 1251589",
+                "excerpts": [
+                  "Shipper / Seller Amazon.ie ... In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ie/Olaplex-Protector-Nourishing-Serum-1251589/dp/B0CXN22Z6B/ref=_sad",
+                "title": "NO.9 Bond Protector Nourishing Hair Serum 90 ml, 1251589",
+                "excerpts": [
+                  "In Stock ... FREE delivery Monday, 27 July"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ie/Olaplex-Protector-Nourishing-Serum-1251589/dp/B0CXN22Z6B/ref=_sad",
+                "title": "NO.9 Bond Protector Nourishing Hair Serum 90 ml, 1251589",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-9-bond-protector-nourishing-hair-serum-3-fl-oz-90-ml?srsltid=AfmBOooEudHZ2LUdfCTcn_dYPQ14lrEyjwBLOGn-FtSF2OQSv2xy0NxP",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Salwa'z Beauty Salon Logo ... Olaplex No. 9 Bond Protector Nourishing Hair Serum \u2013 3 fl oz / 90 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-9-bond-protector-nourishing-hair-serum-3-fl-oz-90-ml?srsltid=AfmBOooEudHZ2LUdfCTcn_dYPQ14lrEyjwBLOGn-FtSF2OQSv2xy0NxP",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "https://salwazbeauty.com/shop/hair-products/olaplex-no-9-bond-protector-nourishing-hair-serum-3-fl-oz-90-ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-9-bond-protector-nourishing-hair-serum-3-fl-oz-90-ml?srsltid=AfmBOooEudHZ2LUdfCTcn_dYPQ14lrEyjwBLOGn-FtSF2OQSv2xy0NxP",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "# Olaplex No. 9 Bond Protector Nourishing Hair Serum \u2013 3 fl oz / 90 ml\n\n$29.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-9-bond-protector-nourishing-hair-serum-3-fl-oz-90-ml?srsltid=AfmBOooEudHZ2LUdfCTcn_dYPQ14lrEyjwBLOGn-FtSF2OQSv2xy0NxP",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "$29.00 ... FREE Shipping for orders over $70!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-9-bond-protector-nourishing-hair-serum-3-fl-oz-90-ml?srsltid=AfmBOooEudHZ2LUdfCTcn_dYPQ14lrEyjwBLOGn-FtSF2OQSv2xy0NxP",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Olaplex No. 9 Bond Protector Nourishing Hair Serum \u2013 3 fl oz / 90 ml ... SKU: 26003"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-9-bond-protector-nourishing-hair-serum-3-fl-oz-90-ml?srsltid=AfmBOooEudHZ2LUdfCTcn_dYPQ14lrEyjwBLOGn-FtSF2OQSv2xy0NxP",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Salwa'z Beauty Salon ... 2114 Drew St Ste H&I, Clearwater FL, 33765"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-9-bond-protector-nourishing-hair-serum-3-fl-oz-90-ml?srsltid=AfmBOooEudHZ2LUdfCTcn_dYPQ14lrEyjwBLOGn-FtSF2OQSv2xy0NxP",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Availability: In stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-9-bond-protector-nourishing-hair-serum-3-fl-oz-90-ml?srsltid=AfmBOooEudHZ2LUdfCTcn_dYPQ14lrEyjwBLOGn-FtSF2OQSv2xy0NxP",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-9-Bond-Protector-Nourishing-Hair-Serum-3-0-oz/370820508",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum - 3.0 oz",
+                "excerpts": [
+                  "Current price is Now $22.75 You save $5.25 was $28.00 $7.58/fl oz Price when purchased online"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-9-Bond-Protector-Nourishing-Hair-Serum-3-0-oz/370820508",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum - 3.0 oz",
+                "excerpts": [
+                  "Current price is Now $22.75 ... was $28.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-9-Bond-Protector-Nourishing-Hair-Serum-3-0-oz/370820508",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum - 3.0 oz",
+                "excerpts": [
+                  "Arrives by Tomorrow ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-9-Bond-Protector-Nourishing-Hair-Serum-3-0-oz/370820508",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum - 3.0 oz",
+                "excerpts": [
+                  "Olaplex No.9 Bond Protector Nourishing Hair Serum - 3.0 oz ... /ip/Olaplex-No-9-Bond-Protector-Nourishing-Hair-Serum-3-0-oz/370820508"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-9-Bond-Protector-Nourishing-Hair-Serum-3-0-oz/370820508",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum - 3.0 oz",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-9-Bond-Protector-Nourishing-Hair-Serum-3-0-oz/370820508",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum - 3.0 oz",
+                "excerpts": [
+                  "https://walmart.com/ip/Olaplex-No-9-Bond-Protector-Nourishing-Hair-Serum-3-0-oz/370820508"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-9-Bond-Protector-Nourishing-Hair-Serum-3-0-oz/370820508",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum - 3.0 oz",
+                "excerpts": [
+                  "Sold by UtieeBeautyStore Pro Seller Fulfilled by Walmart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-9-Bond-Protector-Nourishing-Hair-Serum-3-0-oz/370820508",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum - 3.0 oz",
+                "excerpts": [
+                  "Sold by UtieeBeautyStore Pro Seller Fulfilled by Walmart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ca.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-ca",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "N\u00ba.9 BOND PROTECTOR NOURISHING HAIR SERUM ... Regular price $47"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ca.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-ca",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Regular price $47 ... Free Shipping on $50+ ... Canada (English)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ca.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-ca",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Add to cart ... Quantity 0 in cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ca.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-ca",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "https://ca.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-ca"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ca.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-ca",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ca.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-ca",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "https://ca.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-ca"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ca.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-ca",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Olaplex Homepage ... N\u00ba.9 BOND PROTECTOR NOURISHING HAIR SERUM ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ca.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-ca",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Olaplex Homepage ... Free Shipping on $50+ ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://johnlewis.com/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml/p6267711",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum, 90ml",
+                "excerpts": [
+                  "OlaplexNo.9 Bond Protector Nourishing Hair Serum, 90ml ... \u00a330.00 ... Add to basket"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://johnlewis.com/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml/p6267711",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum, 90ml",
+                "excerpts": [
+                  "\u00a330.00 ... Free standard delivery over \u00a350, otherwise from \u00a34.50"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://johnlewis.com/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml/p6267711",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum, 90ml",
+                "excerpts": [
+                  "\u00a330.00 ... Add to basket"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://johnlewis.com/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml/p6267711",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum, 90ml",
+                "excerpts": [
+                  "https://johnlewis.com/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml/p6267711"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://johnlewis.com/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml/p6267711",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum, 90ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://johnlewis.com/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml/p6267711",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum, 90ml",
+                "excerpts": [
+                  "https://johnlewis.com/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml/p6267711"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://johnlewis.com/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml/p6267711",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum, 90ml",
+                "excerpts": [
+                  "NEVER KNOWINGLY UNDERSOLD ... OlaplexNo.9 Bond Protector Nourishing Hair Serum, 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://johnlewis.com/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml/p6267711",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum, 90ml",
+                "excerpts": [
+                  "NEVER KNOWINGLY UNDERSOLD ... Price promise"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no-9-bond-protector-nourishing-hair-serum~p64185215",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Olaplex No. 9 Bond Protector Nourishing Hair Serum ... 90ml ... Quantity 1 ... \u00a322.20 ... FREE Delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no-9-bond-protector-nourishing-hair-serum~p64185215",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "\u00a322.20 ... FREE Delivery ... Standard (Free) | Wed 22nd - Thu 23rd Jul"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no-9-bond-protector-nourishing-hair-serum~p64185215",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Quantity 1 ... \u00a322.20 ... FREE Delivery ... Standard (Free) | Wed 22nd - Thu 23rd Jul"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no-9-bond-protector-nourishing-hair-serum~p64185215",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "https://onbuy.com/gb/p/olaplex-no-9-bond-protector-nourishing-hair-serum~p64185215"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no-9-bond-protector-nourishing-hair-serum~p64185215",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no-9-bond-protector-nourishing-hair-serum~p64185215",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "https://onbuy.com/gb/p/olaplex-no-9-bond-protector-nourishing-hair-serum~p64185215"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no-9-bond-protector-nourishing-hair-serum~p64185215",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Sold by: Salon Products Online UK Ltd, there are 4 other sellers"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/olaplex-no-9-bond-protector-nourishing-hair-serum~p64185215",
+                "title": "Olaplex No. 9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Sold by: Salon Products Online UK Ltd, there are 4 other sellers"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-us",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "N\u00ba.9 BOND PROTECTOR NOURISHING HAIR SERUM ... Regular price $32"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-us",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Regular price $32 ... Free Shipping on $50+ ... United States (English)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-us",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Regular price $32 ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-us",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "https://olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-us ... Regular price $32"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-us",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-us",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "https://olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-us"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-us",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Olaplex Homepage ... N\u00ba.9 BOND PROTECTOR NOURISHING HAIR SERUM ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-us",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Olaplex Homepage ... Free Shipping on $50+ ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-9-bond-protector-nourishing-hair-serum-90ml-13660220",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "# Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml ... Regular price \u00a319.95 ... Regular price ~\u00a328.00~ Sale price \u00a319.95 ... RRP: \u00a328.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-9-bond-protector-nourishing-hair-serum-90ml-13660220",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "United Kingdom ... GBP ... Regular price \u00a319.95"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-9-bond-protector-nourishing-hair-serum-90ml-13660220",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "Add to basket ... Low stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-9-bond-protector-nourishing-hair-serum-90ml-13660220",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "https://allbeauty.com/products/p-olaplex-no-9-bond-protector-nourishing-hair-serum-90ml-13660220"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-9-bond-protector-nourishing-hair-serum-90ml-13660220",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-9-bond-protector-nourishing-hair-serum-90ml-13660220",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "https://allbeauty.com/products/p-olaplex-no-9-bond-protector-nourishing-hair-serum-90ml-13660220"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-9-bond-protector-nourishing-hair-serum-90ml-13660220",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "FREE UK Delivery over \u00a325 ... Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml ... Add to basket"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-olaplex-no-9-bond-protector-nourishing-hair-serum-90ml-13660220",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "Regular price ~\u00a328.00~ Sale price \u00a319.95 ... RRP: \u00a328.00 ... Save \u00a38.05 (28%)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://chemistdirect.co.uk/olaplex-no-9-90ml-bond-protect-hserum/prd-0153808",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "# Olaplex No.9 Bond Protector Nourishing Hair Serum ... 90ml 0153808 ... Now \u00a319.04 ... Was \u00a328.00 You save \u00a38.96 ... In Stock ... Add to basket"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://chemistdirect.co.uk/olaplex-no-9-90ml-bond-protect-hserum/prd-0153808",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Now \u00a319.04 ... Was \u00a328.00 ... In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://chemistdirect.co.uk/olaplex-no-9-90ml-bond-protect-hserum/prd-0153808",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Now \u00a319.04 ... In Stock ... Add to basket"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://chemistdirect.co.uk/olaplex-no-9-90ml-bond-protect-hserum/prd-0153808",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "https://chemistdirect.co.uk/olaplex-no-9-90ml-bond-protect-hserum/prd-0153808"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://chemistdirect.co.uk/olaplex-no-9-90ml-bond-protect-hserum/prd-0153808",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://chemistdirect.co.uk/olaplex-no-9-90ml-bond-protect-hserum/prd-0153808",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "https://chemistdirect.co.uk/olaplex-no-9-90ml-bond-protect-hserum/prd-0153808"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://chemistdirect.co.uk/olaplex-no-9-90ml-bond-protect-hserum/prd-0153808",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "ChemistDirect ... 4.7 out of 5 on Trustpilot ... Olaplex No.9 Bond Protector Nourishing Hair Serum ... Add to basket"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://chemistdirect.co.uk/olaplex-no-9-90ml-bond-protect-hserum/prd-0153808",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Clearance 32% off ... Now \u00a319.04 ... Was \u00a328.00 ... Price promise"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "# Olaplex No. 9 Bond Protector Heat Protection and Frizz Reduction Nourishing Hair Serum 90ml ... 31.60\u20ac ... ADD TO BAG ... In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "31.60\u20ac ... ADD TO BAG"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "31.60\u20ac ... In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "https://cultbeauty.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "https://cultbeauty.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "Cult Beauty ... Olaplex No. 9 Bond Protector Heat Protection and Frizz Reduction Nourishing Hair Serum 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "Cult Beauty ... Cult Status Points ... In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no9-bond-protector-heat-protection-frizz-reduction-nourishing-hair-serum-pimprod2031995?sku=2596420",
+                "title": "OLAPLEX - No.9 Bond Protector Heat Protection & Frizz ...",
+                "excerpts": [
+                  "OLAPLEX No.9 Bond Protector Heat Protection & Frizz Reduction Nourishing Hair Serum ... $32.00 ... Size:3.0 oz ... In stock and ready to ship ... Usually ships in 1-2 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no9-bond-protector-heat-protection-frizz-reduction-nourishing-hair-serum-pimprod2031995?sku=2596420",
+                "title": "OLAPLEX - No.9 Bond Protector Heat Protection & Frizz ...",
+                "excerpts": [
+                  "$32.00 ... Sale Price $30.40 ... List Price $32.00 ... Free standard shipping over $35"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no9-bond-protector-heat-protection-frizz-reduction-nourishing-hair-serum-pimprod2031995?sku=2596420",
+                "title": "OLAPLEX - No.9 Bond Protector Heat Protection & Frizz ...",
+                "excerpts": [
+                  "In stock and ready to ship ... Usually ships in 1-2 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no9-bond-protector-heat-protection-frizz-reduction-nourishing-hair-serum-pimprod2031995?sku=2596420",
+                "title": "OLAPLEX - No.9 Bond Protector Heat Protection & Frizz ...",
+                "excerpts": [
+                  "https://ulta.com/p/no9-bond-protector-heat-protection-frizz-reduction-nourishing-hair-serum-pimprod2031995?sku=2596420"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no9-bond-protector-heat-protection-frizz-reduction-nourishing-hair-serum-pimprod2031995?sku=2596420",
+                "title": "OLAPLEX - No.9 Bond Protector Heat Protection & Frizz ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no9-bond-protector-heat-protection-frizz-reduction-nourishing-hair-serum-pimprod2031995?sku=2596420",
+                "title": "OLAPLEX - No.9 Bond Protector Heat Protection & Frizz ...",
+                "excerpts": [
+                  "https://ulta.com/p/no9-bond-protector-heat-protection-frizz-reduction-nourishing-hair-serum-pimprod2031995?sku=2596420"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no9-bond-protector-heat-protection-frizz-reduction-nourishing-hair-serum-pimprod2031995?sku=2596420",
+                "title": "OLAPLEX - No.9 Bond Protector Heat Protection & Frizz ...",
+                "excerpts": [
+                  "Ulta Beauty ... OLAPLEX No.9 Bond Protector ... In stock and ready to ship"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no9-bond-protector-heat-protection-frizz-reduction-nourishing-hair-serum-pimprod2031995?sku=2596420",
+                "title": "OLAPLEX - No.9 Bond Protector Heat Protection & Frizz ...",
+                "excerpts": [
+                  "Ulta Beauty Rewards ... OLAPLEX ... In stock and ready to ship"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220?bvstate=pg%3A6%2Fct%3Ar&pageNumber=2&pr_rd_page=28&srsltid=AfmBOopJyh5Z46VnrfZi1HKOQvin2EzGsBecBLDeRTTTuT3_MneJxfNK",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "# Olaplex No. 9 Bond Protector Heat Protection and Frizz Reduction Nourishing Hair Serum 90ml ... $32.00 ... ADD TO CART ... In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220?bvstate=pg%3A6%2Fct%3Ar&pageNumber=2&pr_rd_page=28&srsltid=AfmBOopJyh5Z46VnrfZi1HKOQvin2EzGsBecBLDeRTTTuT3_MneJxfNK",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "$32.00 ... Or 4 interest free payments of $8.00 ... Free delivery is available on all orders over $50"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220?bvstate=pg%3A6%2Fct%3Ar&pageNumber=2&pr_rd_page=28&srsltid=AfmBOopJyh5Z46VnrfZi1HKOQvin2EzGsBecBLDeRTTTuT3_MneJxfNK",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "$32.00 ... ADD TO CART ... In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220?bvstate=pg%3A6%2Fct%3Ar&pageNumber=2&pr_rd_page=28&srsltid=AfmBOopJyh5Z46VnrfZi1HKOQvin2EzGsBecBLDeRTTTuT3_MneJxfNK",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "https://dermstore.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220?bvstate=pg%3A6%2Fct%3Ar&pageNumber=2&pr_rd_page=28&srsltid=AfmBOopJyh5Z46VnrfZi1HKOQvin2EzGsBecBLDeRTTTuT3_MneJxfNK",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220?bvstate=pg%3A6%2Fct%3Ar&pageNumber=2&pr_rd_page=28&srsltid=AfmBOopJyh5Z46VnrfZi1HKOQvin2EzGsBecBLDeRTTTuT3_MneJxfNK",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "https://dermstore.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220?bvstate=pg%3A6%2Fct%3Ar&pageNumber=2&pr_rd_page=28&srsltid=AfmBOopJyh5Z46VnrfZi1HKOQvin2EzGsBecBLDeRTTTuT3_MneJxfNK",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "dermstore homepage ... Olaplex No. 9 Bond Protector Heat Protection and Frizz Reduction Nourishing Hair Serum 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-9-bond-protector-heat-protection-and-frizz-reduction-nourishing-hair-serum-90ml/13660220?bvstate=pg%3A6%2Fct%3Ar&pageNumber=2&pr_rd_page=28&srsltid=AfmBOopJyh5Z46VnrfZi1HKOQvin2EzGsBecBLDeRTTTuT3_MneJxfNK",
+                "title": "Olaplex No. 9 Bond Protector Heat Protection and Frizz ...",
+                "excerpts": [
+                  "Dermstore Rewards ... Olaplex ... In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://au.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-au",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "N\u00ba.9 BOND PROTECTOR NOURISHING HAIR SERUM ... Regular price $60"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://au.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-au",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Regular price $60 ... Free Shipping on $30+ ... Australia"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://au.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-au",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Regular price $60 ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://au.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-au",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "https://au.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-au ... Regular price $60"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://au.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-au",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://au.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-au",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "https://au.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-au"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://au.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-au",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Olaplex Homepage ... N\u00ba.9 BOND PROTECTOR NOURISHING HAIR SERUM ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://au.olaplex.com/products/olaplex-n-9-bond-protector-nourishing-hair-serum-au",
+                "title": "N\u00ba.9 Bond Protector Nourishing Hair Serum",
+                "excerpts": [
+                  "Olaplex Homepage ... Free Shipping on $30+ ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/no-9-bond-protector-nourishing-hair-serum-by-olaplex-for-unisex-3-oz~p112950524",
+                "title": "No 9 Bond Protector Nourishing Hair Serum by Olaplex for ...",
+                "excerpts": [
+                  "Quantity 1 2 3 4 5 6 ... \u00a322.99 ... +\u00a33.99 Delivery ... Sold by XPRESSION MCR Hair & Beauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/no-9-bond-protector-nourishing-hair-serum-by-olaplex-for-unisex-3-oz~p112950524",
+                "title": "No 9 Bond Protector Nourishing Hair Serum by Olaplex for ...",
+                "excerpts": [
+                  "\u00a322.99 ... +\u00a33.99 Delivery ... Klarna ... Clearpay"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/no-9-bond-protector-nourishing-hair-serum-by-olaplex-for-unisex-3-oz~p112950524",
+                "title": "No 9 Bond Protector Nourishing Hair Serum by Olaplex for ...",
+                "excerpts": [
+                  "Quantity 1 2 3 4 5 6 ... \u00a322.99 ... Sold by XPRESSION MCR Hair & Beauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/no-9-bond-protector-nourishing-hair-serum-by-olaplex-for-unisex-3-oz~p112950524",
+                "title": "No 9 Bond Protector Nourishing Hair Serum by Olaplex for ...",
+                "excerpts": [
+                  "https://onbuy.com/gb/p/no-9-bond-protector-nourishing-hair-serum-by-olaplex-for-unisex-3-oz~p112950524"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/no-9-bond-protector-nourishing-hair-serum-by-olaplex-for-unisex-3-oz~p112950524",
+                "title": "No 9 Bond Protector Nourishing Hair Serum by Olaplex for ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/no-9-bond-protector-nourishing-hair-serum-by-olaplex-for-unisex-3-oz~p112950524",
+                "title": "No 9 Bond Protector Nourishing Hair Serum by Olaplex for ...",
+                "excerpts": [
+                  "https://onbuy.com/gb/p/no-9-bond-protector-nourishing-hair-serum-by-olaplex-for-unisex-3-oz~p112950524"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/no-9-bond-protector-nourishing-hair-serum-by-olaplex-for-unisex-3-oz~p112950524",
+                "title": "No 9 Bond Protector Nourishing Hair Serum by Olaplex for ...",
+                "excerpts": [
+                  "Sold by XPRESSION MCR Hair & Beauty ... Visit store"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/no-9-bond-protector-nourishing-hair-serum-by-olaplex-for-unisex-3-oz~p112950524",
+                "title": "No 9 Bond Protector Nourishing Hair Serum by Olaplex for ...",
+                "excerpts": [
+                  "Sold by XPRESSION MCR Hair & Beauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://synergyhair.co.nz/shop/all-gifts/gifts-under-60/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml?srsltid=AfmBOoosXWMOmUYE7HHIIOL00IwrekgKg24l0NIz3oVdtKM-gOVUo9sa",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "# Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml ... Original price was: $68.00. Current price is: $49.95. ... In stock ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://synergyhair.co.nz/shop/all-gifts/gifts-under-60/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml?srsltid=AfmBOoosXWMOmUYE7HHIIOL00IwrekgKg24l0NIz3oVdtKM-gOVUo9sa",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "GTIN: 850018802284 ... Original price was: $68.00. Current price is: $49.95. ... FREE EXPRESS SHIPPING ON ORDERS $80+ ... New Zealand"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://synergyhair.co.nz/shop/all-gifts/gifts-under-60/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml?srsltid=AfmBOoosXWMOmUYE7HHIIOL00IwrekgKg24l0NIz3oVdtKM-gOVUo9sa",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "Original price was: $68.00. Current price is: $49.95. ... In stock ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://synergyhair.co.nz/shop/all-gifts/gifts-under-60/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml?srsltid=AfmBOoosXWMOmUYE7HHIIOL00IwrekgKg24l0NIz3oVdtKM-gOVUo9sa",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "https://synergyhair.co.nz/shop/all-gifts/gifts-under-60/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://synergyhair.co.nz/shop/all-gifts/gifts-under-60/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml?srsltid=AfmBOoosXWMOmUYE7HHIIOL00IwrekgKg24l0NIz3oVdtKM-gOVUo9sa",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://synergyhair.co.nz/shop/all-gifts/gifts-under-60/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml?srsltid=AfmBOoosXWMOmUYE7HHIIOL00IwrekgKg24l0NIz3oVdtKM-gOVUo9sa",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "https://synergyhair.co.nz/shop/all-gifts/gifts-under-60/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://synergyhair.co.nz/shop/all-gifts/gifts-under-60/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml?srsltid=AfmBOoosXWMOmUYE7HHIIOL00IwrekgKg24l0NIz3oVdtKM-gOVUo9sa",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "Synergy Hair ... Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml ... In stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://synergyhair.co.nz/shop/all-gifts/gifts-under-60/olaplex-no-9-bond-protector-nourishing-hair-serum-90ml?srsltid=AfmBOoosXWMOmUYE7HHIIOL00IwrekgKg24l0NIz3oVdtKM-gOVUo9sa",
+                "title": "Olaplex No.9 Bond Protector Nourishing Hair Serum 90ml",
+                "excerpts": [
+                  "Synergy Hair ... Shop Olaplex in New Zealand ... salon results at home ... Book Appointment"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,2552 @@
+{
+  "sku_id": "KER-018",
+  "effort": "high",
+  "elapsed_s": 1108,
+  "fetched_at": "2026-07-20T13:33:54+00:00",
+  "run_id": "task_run_1ea6d53d739e47caa5570a74f32e2a1f",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_1ea6d53d739e47caa5570a74f32e2a1f",
+      "interaction_id": "task_run_1ea6d53d739e47caa5570a74f32e2a1f",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Genesis D\u00e9fense Thermique Blow-Dry Primer, 150ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:15:25.266785Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:15:25.441321Z",
+      "completed_at": "2026-07-20T13:33:39.228068Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase-usa.com/collections/genesis/defense-thermique-blow-dry-primer.html?dwvar_defense-thermique-blow-dry-primer_size=150ML",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "K\u00e9rastase",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase-usa.com",
+          "advertised_price": "50.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/dp/B083JLYQCY",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Amazon",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.com",
+          "advertised_price": "50.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Genesis-Defense-Thermique-Blow-Dry-Primer-150ml-5-1-oz/168228279",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Walmart Marketplace \u2014 Authorized Beauty Distribution",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "35.49"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-D-fense-Thermique-Blow-Dry-Primer-5-1-oz/748268214",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Walmart Marketplace \u2014 Authorized Beauty Distribution",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "35.31"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.sephora.com/product/kerastase-genesis-strengthening-blow-dry-primer-P454998",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Sephora",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "sephora.com",
+          "advertised_price": "47.50"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.glamot.com/p/34736/kerastase-genesis-defense-thermique",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Glamot",
+          "seller_type": "independent_store",
+          "seller_domain": "glamot.com",
+          "advertised_price": "45.22"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://www.salontotal.com/product/kerastase-genesis-defense-thermique-150ml-15444",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "SalonTotal",
+          "seller_type": "independent_store",
+          "seller_domain": "salontotal.com",
+          "advertised_price": "35.45"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-genesis-defense-thermique-treatment-150ml/12432687",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Lookfantastic",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "29.60"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://minneapolis.shopdutyfree.com/en/7/kerastase-genesis-defense-thermique-150ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Minneapolis Duty Free (Avolta)",
+          "seller_type": "discounter",
+          "seller_domain": "minneapolis.shopdutyfree.com",
+          "advertised_price": "50.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.strawberrynet.com/kerastase/genesis-defense-thermique-anti-hair-fall-fortifying-blow-dry-fluid-150ml/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "StrawberryNET",
+          "seller_type": "discounter",
+          "seller_domain": "strawberrynet.com",
+          "advertised_price": "50.50"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://skincolor.net/kerastase-genesis-defense-thermique-heat-protecting-spray-150ml/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "SkinColor",
+          "seller_type": "independent_store",
+          "seller_domain": "skincolor.net",
+          "advertised_price": "42.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://savvyhairartistry.com/product/kerastase-defense-thermique-150ml/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Savvy Hair Artistry",
+          "seller_type": "independent_store",
+          "seller_domain": "savvyhairartistry.com",
+          "advertised_price": "58.35"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-defense-thermique-blow-dry-primer/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Currie Day Spa (Currie Hair Skin & Nails)",
+          "seller_type": "independent_store",
+          "seller_domain": "curriedayspa.com",
+          "advertised_price": "52.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.valley-beauty.com/kerastase-genesis-defense-thermique/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Valley Beauty",
+          "seller_type": "independent_store",
+          "seller_domain": "valley-beauty.com",
+          "advertised_price": "45.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Jema Beauty Hub",
+          "seller_type": "independent_store",
+          "seller_domain": "jemabeautyhub.com",
+          "advertised_price": "39.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.cosmeterie.com/kerastase/genesis-defense-thermique",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Cosmeterie",
+          "seller_type": "independent_store",
+          "seller_domain": "cosmeterie.com",
+          "advertised_price": "29.08"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://kerastase-usa.com/collections/genesis/defense-thermique-blow-dry-primer.html?srsltid=AfmBOoqMPELa6iQyr20do_ZKUrT4w68rs6llB4fKPfZKI8nD4wUQgXTa",
+            "title": "Genesis Defense Thermique Heat Protecting Spray - Kerastase",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/dp/B083JLYQCY",
+            "title": "amazon_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Genesis-Defense-Thermique-Blow-Dry-Primer-150ml-5-1-oz/168228279",
+            "title": "walmart_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-D-fense-Thermique-Blow-Dry-Primer-5-1-oz/748268214",
+            "title": "walmart_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://sephora.com/product/kerastase-genesis-strengthening-blow-dry-primer-P454998",
+            "title": "Genesis Heat Protecting Leave-In Treatment for Weakened ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://glamot.com/p/34736/kerastase-genesis-defense-thermique?srsltid=AfmBOooo8Ry42wj85KtS0ROPxdRvnkH7Icv2BRP-yAvxV5QHMS5iBmxm",
+            "title": "K\u00e9rastase Genesis D\u00e9fense Thermique fluid with thermal ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://salontotal.com/product/kerastase-genesis-defense-thermique-150ml-15444",
+            "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/kerastase-genesis-defense-thermique-treatment-150ml/12432687?srsltid=AfmBOorzNNgvHQ4Tur02BE0hAEhTljwO8KnOHYgqTIRjYDaWa1ZYiBfk",
+            "title": "K\u00e9rastase Genesis Defense Thermique Treatment 150ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://minneapolis.shopdutyfree.com/en/7/kerastase-genesis-defense-thermique-150ml",
+            "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://klarna.com/us/shopping/pl/cl507/5162743/Hair-Products/Kerastase-Genesis-Defense-Thermique-5.1fl-oz",
+            "title": "K\u00e9rastase Genesis D\u00e9fense Thermique 5.1fl oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://strawberrynet.com/kerastase/genesis-defense-thermique-anti-hair-fall-fortifying-blow-dry-fluid-150ml",
+            "title": "https://www.strawberrynet.com/kerastase/genesis-defense-thermique-anti-hair-fall-fortifying-blow-dry-fluid-150ml/",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://skincolor.net/kerastase-genesis-defense-thermique-heat-protecting-spray-150ml?srsltid=AfmBOoo8TXtO1-cU2RPktRXn-GzD83tEOTKLOx52aX7mEcfTtjFDiZti",
+            "title": "K\u00e9rastase Genesis Defense Thermique Heat Protecting ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://savvyhairartistry.com/product/kerastase-defense-thermique-150ml?srsltid=AfmBOorR8eXUz7SBx7hd6zlD6RURqYLVqEXKg8-aziwX938ijJefpIFT",
+            "title": "Kerastase Genesis Defense Thermique 150ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-defense-thermique-blow-dry-primer?srsltid=AfmBOorwb-ImE6xJVFSQpHOGGhfg8LrwLrhTJqJw_AupEuan4p_3i_aa",
+            "title": "Kerastase Genesis D\u00e9fense Thermique Blow Dry Primer",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://valley-beauty.com/kerastase-genesis-defense-thermique",
+            "title": "Kerastase Genesis Defense Thermique",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+            "title": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://cosmeterie.com/kerastase/genesis-defense-thermique",
+            "title": "https://www.cosmeterie.com/kerastase/genesis-defense-thermique",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 95%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/defense-thermique-blow-dry-primer.html?srsltid=AfmBOoqMPELa6iQyr20do_ZKUrT4w68rs6llB4fKPfZKI8nD4wUQgXTa",
+                "title": "Genesis Defense Thermique Heat Protecting Spray - Kerastase",
+                "excerpts": [
+                  "Genesis Defense Thermique Heat Protecting Spray 150 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/defense-thermique-blow-dry-primer.html?srsltid=AfmBOoqMPELa6iQyr20do_ZKUrT4w68rs6llB4fKPfZKI8nD4wUQgXTa",
+                "title": "Genesis Defense Thermique Heat Protecting Spray - Kerastase",
+                "excerpts": [
+                  "corpus-meta url: https://kerastase-usa.com/collections/genesis/defense-thermique-blow-dry-primer.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/defense-thermique-blow-dry-primer.html?srsltid=AfmBOoqMPELa6iQyr20do_ZKUrT4w68rs6llB4fKPfZKI8nD4wUQgXTa",
+                "title": "Genesis Defense Thermique Heat Protecting Spray - Kerastase",
+                "excerpts": [
+                  "Old price New price $50.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/defense-thermique-blow-dry-primer.html?srsltid=AfmBOoqMPELa6iQyr20do_ZKUrT4w68rs6llB4fKPfZKI8nD4wUQgXTa",
+                "title": "Genesis Defense Thermique Heat Protecting Spray - Kerastase",
+                "excerpts": [
+                  "Old price New price $50.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/defense-thermique-blow-dry-primer.html?srsltid=AfmBOoqMPELa6iQyr20do_ZKUrT4w68rs6llB4fKPfZKI8nD4wUQgXTa",
+                "title": "Genesis Defense Thermique Heat Protecting Spray - Kerastase",
+                "excerpts": [
+                  "Selected 150 ml ... New price $50.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/defense-thermique-blow-dry-primer.html?srsltid=AfmBOoqMPELa6iQyr20do_ZKUrT4w68rs6llB4fKPfZKI8nD4wUQgXTa",
+                "title": "Genesis Defense Thermique Heat Protecting Spray - Kerastase",
+                "excerpts": [
+                  "K\u00e9rastase official US site"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/defense-thermique-blow-dry-primer.html?srsltid=AfmBOoqMPELa6iQyr20do_ZKUrT4w68rs6llB4fKPfZKI8nD4wUQgXTa",
+                "title": "Genesis Defense Thermique Heat Protecting Spray - Kerastase",
+                "excerpts": [
+                  "\u2212 Quantity + ... ADD TO BASKET"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/genesis/defense-thermique-blow-dry-primer.html?srsltid=AfmBOoqMPELa6iQyr20do_ZKUrT4w68rs6llB4fKPfZKI8nD4wUQgXTa",
+                "title": "Genesis Defense Thermique Heat Protecting Spray - Kerastase",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B083JLYQCY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B083JLYQCY"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B083JLYQCY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "corpus-meta url: https://amazon.com/dp/B083JLYQCY"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B083JLYQCY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.web_price: 50, data.list_price: 50, data.subscription_price: \"$50.00\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B083JLYQCY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.web_price: 50 (locale en-US, $)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B083JLYQCY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B083JLYQCY"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B083JLYQCY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: \"K\u00e9rastase\", data.ships_from: \"Amazon\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B083JLYQCY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B083JLYQCY",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Defense-Thermique-Blow-Dry-Primer-150ml-5-1-oz/168228279",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.price: 35.49, data.was_price: 50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Defense-Thermique-Blow-Dry-Primer-150ml-5-1-oz/168228279",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.currency: \"USD\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Defense-Thermique-Blow-Dry-Primer-150ml-5-1-oz/168228279",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Defense-Thermique-Blow-Dry-Primer-150ml-5-1-oz/168228279",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.walmart.com/ip/Kerastase-Genesis-Defense-Thermique-Blow-Dry-Primer-150ml-5-1-oz/168228279"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Defense-Thermique-Blow-Dry-Primer-150ml-5-1-oz/168228279",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Defense-Thermique-Blow-Dry-Primer-150ml-5-1-oz/168228279",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "corpus-meta url: https://walmart.com/ip/Kerastase-Genesis-Defense-Thermique-Blow-Dry-Primer-150ml-5-1-oz/168228279"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Defense-Thermique-Blow-Dry-Primer-150ml-5-1-oz/168228279",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.seller_name: \"Authorized Beauty Distribution\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Genesis-Defense-Thermique-Blow-Dry-Primer-150ml-5-1-oz/168228279",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.seller_name: \"Authorized Beauty Distribution\", data.seller_id: \"C10871421F0445B0B8BE17C6FBB1E6F0\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-D-fense-Thermique-Blow-Dry-Primer-5-1-oz/748268214",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.price: 35.31, data.was_price: 39.94"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-D-fense-Thermique-Blow-Dry-Primer-5-1-oz/748268214",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.currency: \"USD\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-D-fense-Thermique-Blow-Dry-Primer-5-1-oz/748268214",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-D-fense-Thermique-Blow-Dry-Primer-5-1-oz/748268214",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.walmart.com/ip/Kerastase-D-fense-Thermique-Blow-Dry-Primer-5-1-oz/748268214"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-D-fense-Thermique-Blow-Dry-Primer-5-1-oz/748268214",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-D-fense-Thermique-Blow-Dry-Primer-5-1-oz/748268214",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "corpus-meta url: https://walmart.com/ip/Kerastase-D-fense-Thermique-Blow-Dry-Primer-5-1-oz/748268214"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-D-fense-Thermique-Blow-Dry-Primer-5-1-oz/748268214",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.seller_name: \"Authorized Beauty Distribution\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-D-fense-Thermique-Blow-Dry-Primer-5-1-oz/748268214",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.seller_name: \"Authorized Beauty Distribution\", data.seller_id: \"C10871421F0445B0B8BE17C6FBB1E6F0\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/kerastase-genesis-strengthening-blow-dry-primer-P454998",
+                "title": "Genesis Heat Protecting Leave-In Treatment for Weakened ...",
+                "excerpts": [
+                  "url: https://www.sephora.com/product/kerastase-genesis-strengthening-blow-dry-primer-P454998"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/kerastase-genesis-strengthening-blow-dry-primer-P454998",
+                "title": "Genesis Heat Protecting Leave-In Treatment for Weakened ...",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/kerastase-genesis-strengthening-blow-dry-primer-P454998",
+                "title": "Genesis Heat Protecting Leave-In Treatment for Weakened ...",
+                "excerpts": [
+                  "corpus-meta url: https://sephora.com/product/kerastase-genesis-strengthening-blow-dry-primer-P454998"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/kerastase-genesis-strengthening-blow-dry-primer-P454998",
+                "title": "Genesis Heat Protecting Leave-In Treatment for Weakened ...",
+                "excerpts": [
+                  "Genesis Heat Protecting Leave-In Treatment for Weakened Hair"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/kerastase-genesis-strengthening-blow-dry-primer-P454998",
+                "title": "Genesis Heat Protecting Leave-In Treatment for Weakened ...",
+                "excerpts": [
+                  "sephora.com \u2014 major beauty retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://glamot.com/p/34736/kerastase-genesis-defense-thermique?srsltid=AfmBOooo8Ry42wj85KtS0ROPxdRvnkH7Icv2BRP-yAvxV5QHMS5iBmxm",
+                "title": "K\u00e9rastase Genesis D\u00e9fense Thermique fluid with thermal ...",
+                "excerpts": [
+                  "45.22 $"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://glamot.com/p/34736/kerastase-genesis-defense-thermique?srsltid=AfmBOooo8Ry42wj85KtS0ROPxdRvnkH7Icv2BRP-yAvxV5QHMS5iBmxm",
+                "title": "K\u00e9rastase Genesis D\u00e9fense Thermique fluid with thermal ...",
+                "excerpts": [
+                  "United States dollar (USD) ... 45.22 $"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://glamot.com/p/34736/kerastase-genesis-defense-thermique?srsltid=AfmBOooo8Ry42wj85KtS0ROPxdRvnkH7Icv2BRP-yAvxV5QHMS5iBmxm",
+                "title": "K\u00e9rastase Genesis D\u00e9fense Thermique fluid with thermal ...",
+                "excerpts": [
+                  "In stock (10+ pcs)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://glamot.com/p/34736/kerastase-genesis-defense-thermique?srsltid=AfmBOooo8Ry42wj85KtS0ROPxdRvnkH7Icv2BRP-yAvxV5QHMS5iBmxm",
+                "title": "K\u00e9rastase Genesis D\u00e9fense Thermique fluid with thermal ...",
+                "excerpts": [
+                  "corpus-meta url: https://glamot.com/p/34736/kerastase-genesis-defense-thermique"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://glamot.com/p/34736/kerastase-genesis-defense-thermique?srsltid=AfmBOooo8Ry42wj85KtS0ROPxdRvnkH7Icv2BRP-yAvxV5QHMS5iBmxm",
+                "title": "K\u00e9rastase Genesis D\u00e9fense Thermique fluid with thermal ...",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://glamot.com/p/34736/kerastase-genesis-defense-thermique?srsltid=AfmBOooo8Ry42wj85KtS0ROPxdRvnkH7Icv2BRP-yAvxV5QHMS5iBmxm",
+                "title": "K\u00e9rastase Genesis D\u00e9fense Thermique fluid with thermal ...",
+                "excerpts": [
+                  "corpus-meta url: https://glamot.com/p/34736/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://glamot.com/p/34736/kerastase-genesis-defense-thermique?srsltid=AfmBOooo8Ry42wj85KtS0ROPxdRvnkH7Icv2BRP-yAvxV5QHMS5iBmxm",
+                "title": "K\u00e9rastase Genesis D\u00e9fense Thermique fluid with thermal ...",
+                "excerpts": [
+                  "\u00a9 2010-2021 NECY s.r.o. ... Glamot"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://glamot.com/p/34736/kerastase-genesis-defense-thermique?srsltid=AfmBOooo8Ry42wj85KtS0ROPxdRvnkH7Icv2BRP-yAvxV5QHMS5iBmxm",
+                "title": "K\u00e9rastase Genesis D\u00e9fense Thermique fluid with thermal ...",
+                "excerpts": [
+                  "Glamot international beauty e-commerce, ships worldwide"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salontotal.com/product/kerastase-genesis-defense-thermique-150ml-15444",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "35.45 ... Add to cart ... Last stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salontotal.com/product/kerastase-genesis-defense-thermique-150ml-15444",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "Free shipping from \u20ac 75*"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salontotal.com/product/kerastase-genesis-defense-thermique-150ml-15444",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "Last stock ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salontotal.com/product/kerastase-genesis-defense-thermique-150ml-15444",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "corpus-meta url: https://salontotal.com/product/kerastase-genesis-defense-thermique-150ml-15444"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salontotal.com/product/kerastase-genesis-defense-thermique-150ml-15444",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salontotal.com/product/kerastase-genesis-defense-thermique-150ml-15444",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "corpus-meta url: https://salontotal.com/product/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salontotal.com/product/kerastase-genesis-defense-thermique-150ml-15444",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "K\u00e9rastase Genesis Defense Thermique 150ml at Salontotal.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salontotal.com/product/kerastase-genesis-defense-thermique-150ml-15444",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "Salontotal.com European beauty e-commerce"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-defense-thermique-treatment-150ml/12432687?srsltid=AfmBOorzNNgvHQ4Tur02BE0hAEhTljwO8KnOHYgqTIRjYDaWa1ZYiBfk",
+                "title": "K\u00e9rastase Genesis Defense Thermique Treatment 150ml",
+                "excerpts": [
+                  "Recommended Retail Price: \u00a337.00 Current price: \u00a329.60"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-defense-thermique-treatment-150ml/12432687?srsltid=AfmBOorzNNgvHQ4Tur02BE0hAEhTljwO8KnOHYgqTIRjYDaWa1ZYiBfk",
+                "title": "K\u00e9rastase Genesis Defense Thermique Treatment 150ml",
+                "excerpts": [
+                  "Recommended Retail Price: \u00a337.00 Current price: \u00a329.60"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-defense-thermique-treatment-150ml/12432687?srsltid=AfmBOorzNNgvHQ4Tur02BE0hAEhTljwO8KnOHYgqTIRjYDaWa1ZYiBfk",
+                "title": "K\u00e9rastase Genesis Defense Thermique Treatment 150ml",
+                "excerpts": [
+                  "In stock | Usually dispatched within 24 hours ... ADD TO BASKET"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-defense-thermique-treatment-150ml/12432687?srsltid=AfmBOorzNNgvHQ4Tur02BE0hAEhTljwO8KnOHYgqTIRjYDaWa1ZYiBfk",
+                "title": "K\u00e9rastase Genesis Defense Thermique Treatment 150ml",
+                "excerpts": [
+                  "corpus-meta url: https://lookfantastic.com/p/kerastase-genesis-defense-thermique-treatment-150ml/12432687"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-defense-thermique-treatment-150ml/12432687?srsltid=AfmBOorzNNgvHQ4Tur02BE0hAEhTljwO8KnOHYgqTIRjYDaWa1ZYiBfk",
+                "title": "K\u00e9rastase Genesis Defense Thermique Treatment 150ml",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-defense-thermique-treatment-150ml/12432687?srsltid=AfmBOorzNNgvHQ4Tur02BE0hAEhTljwO8KnOHYgqTIRjYDaWa1ZYiBfk",
+                "title": "K\u00e9rastase Genesis Defense Thermique Treatment 150ml",
+                "excerpts": [
+                  "corpus-meta url: https://lookfantastic.com/p/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://minneapolis.shopdutyfree.com/en/7/kerastase-genesis-defense-thermique-150ml",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "$50.00 ... Size 150ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://minneapolis.shopdutyfree.com/en/7/kerastase-genesis-defense-thermique-150ml",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "$50.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://minneapolis.shopdutyfree.com/en/7/kerastase-genesis-defense-thermique-150ml",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "Out of stock ... This product is currently unavailable."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://minneapolis.shopdutyfree.com/en/7/kerastase-genesis-defense-thermique-150ml",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "corpus-meta url: https://minneapolis.shopdutyfree.com/en/7/kerastase-genesis-defense-thermique-150ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://minneapolis.shopdutyfree.com/en/7/kerastase-genesis-defense-thermique-150ml",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://minneapolis.shopdutyfree.com/en/7/kerastase-genesis-defense-thermique-150ml",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "corpus-meta url: https://minneapolis.shopdutyfree.com/en/7/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://minneapolis.shopdutyfree.com/en/7/kerastase-genesis-defense-thermique-150ml",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "\u00a9 2019-2026 Avolta ... Shop Online at Minneapolis Duty Free"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://minneapolis.shopdutyfree.com/en/7/kerastase-genesis-defense-thermique-150ml",
+                "title": "K\u00e9rastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "duty free ... tax and duty free products online"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://klarna.com/us/shopping/pl/cl507/5162743/Hair-Products/Kerastase-Genesis-Defense-Thermique-5.1fl-oz",
+                "title": "K\u00e9rastase Genesis D\u00e9fense Thermique 5.1fl oz",
+                "excerpts": [
+                  "$50.50 ... KerastaseGenesis D\u00e9fense Thermique ... 150ml/5.1oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://klarna.com/us/shopping/pl/cl507/5162743/Hair-Products/Kerastase-Genesis-Defense-Thermique-5.1fl-oz",
+                "title": "K\u00e9rastase Genesis D\u00e9fense Thermique 5.1fl oz",
+                "excerpts": [
+                  "$50.50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://klarna.com/us/shopping/pl/cl507/5162743/Hair-Products/Kerastase-Genesis-Defense-Thermique-5.1fl-oz",
+                "title": "K\u00e9rastase Genesis D\u00e9fense Thermique 5.1fl oz",
+                "excerpts": [
+                  "StrawberryNET ... $6.00 shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://strawberrynet.com/kerastase/genesis-defense-thermique-anti-hair-fall-fortifying-blow-dry-fluid-150ml",
+                "title": "https://www.strawberrynet.com/kerastase/genesis-defense-thermique-anti-hair-fall-fortifying-blow-dry-fluid-150ml/",
+                "excerpts": [
+                  "corpus-meta url: https://strawberrynet.com/kerastase/genesis-defense-thermique-anti-hair-fall-fortifying-blow-dry-fluid-150ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://strawberrynet.com/kerastase/genesis-defense-thermique-anti-hair-fall-fortifying-blow-dry-fluid-150ml",
+                "title": "https://www.strawberrynet.com/kerastase/genesis-defense-thermique-anti-hair-fall-fortifying-blow-dry-fluid-150ml/",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://strawberrynet.com/kerastase/genesis-defense-thermique-anti-hair-fall-fortifying-blow-dry-fluid-150ml",
+                "title": "https://www.strawberrynet.com/kerastase/genesis-defense-thermique-anti-hair-fall-fortifying-blow-dry-fluid-150ml/",
+                "excerpts": [
+                  "corpus-meta url: https://strawberrynet.com/kerastase/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://klarna.com/us/shopping/pl/cl507/5162743/Hair-Products/Kerastase-Genesis-Defense-Thermique-5.1fl-oz",
+                "title": "K\u00e9rastase Genesis D\u00e9fense Thermique 5.1fl oz",
+                "excerpts": [
+                  "StrawberryNET ... KerastaseGenesis D\u00e9fense Thermique ... 150ml/5.1oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://klarna.com/us/shopping/pl/cl507/5162743/Hair-Products/Kerastase-Genesis-Defense-Thermique-5.1fl-oz",
+                "title": "K\u00e9rastase Genesis D\u00e9fense Thermique 5.1fl oz",
+                "excerpts": [
+                  "StrawberryNET discount beauty e-commerce"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-genesis-defense-thermique-heat-protecting-spray-150ml?srsltid=AfmBOoo8TXtO1-cU2RPktRXn-GzD83tEOTKLOx52aX7mEcfTtjFDiZti",
+                "title": "K\u00e9rastase Genesis Defense Thermique Heat Protecting ...",
+                "excerpts": [
+                  "$42.00 ... In Stock & Ready to ship"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-genesis-defense-thermique-heat-protecting-spray-150ml?srsltid=AfmBOoo8TXtO1-cU2RPktRXn-GzD83tEOTKLOx52aX7mEcfTtjFDiZti",
+                "title": "K\u00e9rastase Genesis Defense Thermique Heat Protecting ...",
+                "excerpts": [
+                  "$42.00 ... Free FedEx delivery to your country over $200 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-genesis-defense-thermique-heat-protecting-spray-150ml?srsltid=AfmBOoo8TXtO1-cU2RPktRXn-GzD83tEOTKLOx52aX7mEcfTtjFDiZti",
+                "title": "K\u00e9rastase Genesis Defense Thermique Heat Protecting ...",
+                "excerpts": [
+                  "In Stock & Ready to ship"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-genesis-defense-thermique-heat-protecting-spray-150ml?srsltid=AfmBOoo8TXtO1-cU2RPktRXn-GzD83tEOTKLOx52aX7mEcfTtjFDiZti",
+                "title": "K\u00e9rastase Genesis Defense Thermique Heat Protecting ...",
+                "excerpts": [
+                  "corpus-meta url: https://skincolor.net/kerastase-genesis-defense-thermique-heat-protecting-spray-150ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-genesis-defense-thermique-heat-protecting-spray-150ml?srsltid=AfmBOoo8TXtO1-cU2RPktRXn-GzD83tEOTKLOx52aX7mEcfTtjFDiZti",
+                "title": "K\u00e9rastase Genesis Defense Thermique Heat Protecting ...",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-genesis-defense-thermique-heat-protecting-spray-150ml?srsltid=AfmBOoo8TXtO1-cU2RPktRXn-GzD83tEOTKLOx52aX7mEcfTtjFDiZti",
+                "title": "K\u00e9rastase Genesis Defense Thermique Heat Protecting ...",
+                "excerpts": [
+                  "corpus-meta url: https://skincolor.net/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-genesis-defense-thermique-heat-protecting-spray-150ml?srsltid=AfmBOoo8TXtO1-cU2RPktRXn-GzD83tEOTKLOx52aX7mEcfTtjFDiZti",
+                "title": "K\u00e9rastase Genesis Defense Thermique Heat Protecting ...",
+                "excerpts": [
+                  "Authentic skincare, sourced directly from brand labs"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-genesis-defense-thermique-heat-protecting-spray-150ml?srsltid=AfmBOoo8TXtO1-cU2RPktRXn-GzD83tEOTKLOx52aX7mEcfTtjFDiZti",
+                "title": "K\u00e9rastase Genesis Defense Thermique Heat Protecting ...",
+                "excerpts": [
+                  "BigCommerce independent beauty store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-defense-thermique-150ml?srsltid=AfmBOorR8eXUz7SBx7hd6zlD6RURqYLVqEXKg8-aziwX938ijJefpIFT",
+                "title": "Kerastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "Original price was: $71.00.Current price is: $58.35."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-defense-thermique-150ml?srsltid=AfmBOorR8eXUz7SBx7hd6zlD6RURqYLVqEXKg8-aziwX938ijJefpIFT",
+                "title": "Kerastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "Current price is: $58.35"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-defense-thermique-150ml?srsltid=AfmBOorR8eXUz7SBx7hd6zlD6RURqYLVqEXKg8-aziwX938ijJefpIFT",
+                "title": "Kerastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "5 in stock ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-defense-thermique-150ml?srsltid=AfmBOorR8eXUz7SBx7hd6zlD6RURqYLVqEXKg8-aziwX938ijJefpIFT",
+                "title": "Kerastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "corpus-meta url: https://savvyhairartistry.com/product/kerastase-defense-thermique-150ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-defense-thermique-150ml?srsltid=AfmBOorR8eXUz7SBx7hd6zlD6RURqYLVqEXKg8-aziwX938ijJefpIFT",
+                "title": "Kerastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-defense-thermique-150ml?srsltid=AfmBOorR8eXUz7SBx7hd6zlD6RURqYLVqEXKg8-aziwX938ijJefpIFT",
+                "title": "Kerastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "corpus-meta url: https://savvyhairartistry.com/product/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-defense-thermique-150ml?srsltid=AfmBOorR8eXUz7SBx7hd6zlD6RURqYLVqEXKg8-aziwX938ijJefpIFT",
+                "title": "Kerastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "Savvy Hair Artistry ... Kerastase Paris"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-defense-thermique-150ml?srsltid=AfmBOorR8eXUz7SBx7hd6zlD6RURqYLVqEXKg8-aziwX938ijJefpIFT",
+                "title": "Kerastase Genesis Defense Thermique 150ml",
+                "excerpts": [
+                  "Savvy Hair Artistry salon store (WordPress/WooCommerce)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-defense-thermique-blow-dry-primer?srsltid=AfmBOorwb-ImE6xJVFSQpHOGGhfg8LrwLrhTJqJw_AupEuan4p_3i_aa",
+                "title": "Kerastase Genesis D\u00e9fense Thermique Blow Dry Primer",
+                "excerpts": [
+                  "$52.00 ... In stock ... Pack available: 5.1 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-defense-thermique-blow-dry-primer?srsltid=AfmBOorwb-ImE6xJVFSQpHOGGhfg8LrwLrhTJqJw_AupEuan4p_3i_aa",
+                "title": "Kerastase Genesis D\u00e9fense Thermique Blow Dry Primer",
+                "excerpts": [
+                  "$52.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-defense-thermique-blow-dry-primer?srsltid=AfmBOorwb-ImE6xJVFSQpHOGGhfg8LrwLrhTJqJw_AupEuan4p_3i_aa",
+                "title": "Kerastase Genesis D\u00e9fense Thermique Blow Dry Primer",
+                "excerpts": [
+                  "In stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-defense-thermique-blow-dry-primer?srsltid=AfmBOorwb-ImE6xJVFSQpHOGGhfg8LrwLrhTJqJw_AupEuan4p_3i_aa",
+                "title": "Kerastase Genesis D\u00e9fense Thermique Blow Dry Primer",
+                "excerpts": [
+                  "corpus-meta url: https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-defense-thermique-blow-dry-primer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-defense-thermique-blow-dry-primer?srsltid=AfmBOorwb-ImE6xJVFSQpHOGGhfg8LrwLrhTJqJw_AupEuan4p_3i_aa",
+                "title": "Kerastase Genesis D\u00e9fense Thermique Blow Dry Primer",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-defense-thermique-blow-dry-primer?srsltid=AfmBOorwb-ImE6xJVFSQpHOGGhfg8LrwLrhTJqJw_AupEuan4p_3i_aa",
+                "title": "Kerastase Genesis D\u00e9fense Thermique Blow Dry Primer",
+                "excerpts": [
+                  "corpus-meta url: https://curriedayspa.com/shop/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-defense-thermique-blow-dry-primer?srsltid=AfmBOorwb-ImE6xJVFSQpHOGGhfg8LrwLrhTJqJw_AupEuan4p_3i_aa",
+                "title": "Kerastase Genesis D\u00e9fense Thermique Blow Dry Primer",
+                "excerpts": [
+                  "Currie Hair Skin & Nails ... Kerastase collection"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-genesis-defense-thermique-blow-dry-primer?srsltid=AfmBOorwb-ImE6xJVFSQpHOGGhfg8LrwLrhTJqJw_AupEuan4p_3i_aa",
+                "title": "Kerastase Genesis D\u00e9fense Thermique Blow Dry Primer",
+                "excerpts": [
+                  "salon store selling Kerastase online"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://valley-beauty.com/kerastase-genesis-defense-thermique",
+                "title": "Kerastase Genesis Defense Thermique",
+                "excerpts": [
+                  "$50.00 ... $45.00 ... (You save $5.00 ) ... 150ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://valley-beauty.com/kerastase-genesis-defense-thermique",
+                "title": "Kerastase Genesis Defense Thermique",
+                "excerpts": [
+                  "$50.00 ... $45.00 ... (You save $5.00 )"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://valley-beauty.com/kerastase-genesis-defense-thermique",
+                "title": "Kerastase Genesis Defense Thermique",
+                "excerpts": [
+                  "Current Stock: ... 150ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://valley-beauty.com/kerastase-genesis-defense-thermique",
+                "title": "Kerastase Genesis Defense Thermique",
+                "excerpts": [
+                  "corpus-meta url: https://valley-beauty.com/kerastase-genesis-defense-thermique"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://valley-beauty.com/kerastase-genesis-defense-thermique",
+                "title": "Kerastase Genesis Defense Thermique",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://valley-beauty.com/kerastase-genesis-defense-thermique",
+                "title": "Kerastase Genesis Defense Thermique",
+                "excerpts": [
+                  "corpus-meta url: https://valley-beauty.com/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://valley-beauty.com/kerastase-genesis-defense-thermique",
+                "title": "Kerastase Genesis Defense Thermique",
+                "excerpts": [
+                  "Valley Beauty ... 100% Genuine Products"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://valley-beauty.com/kerastase-genesis-defense-thermique",
+                "title": "Kerastase Genesis Defense Thermique",
+                "excerpts": [
+                  "BigCommerce independent beauty store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "title": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "excerpts": [
+                  "$39.00 ... Sale price  $39.00 Regular price ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "title": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "excerpts": [
+                  "$39.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "title": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "excerpts": [
+                  "Add to cart (1) ... Decrease quantity Increase quantity"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "title": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "excerpts": [
+                  "corpus-meta url: https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "title": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "excerpts": [
+                  "corpus-meta url: https://jemabeautyhub.com/products/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "title": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "excerpts": [
+                  "KERASTASE Genesis Defense Thermique Leave-In 5.1 oz ... jemabeautyhub.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "title": "https://jemabeautyhub.com/products/kerastase-genesis-defense-thermique-leave-in-5-1-oz",
+                "excerpts": [
+                  "Shopify independent beauty store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/genesis-defense-thermique",
+                "title": "https://www.cosmeterie.com/kerastase/genesis-defense-thermique",
+                "excerpts": [
+                  "Basket $0.00 ... Content: 150 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/genesis-defense-thermique",
+                "title": "https://www.cosmeterie.com/kerastase/genesis-defense-thermique",
+                "excerpts": [
+                  "There are only 12 items of this product left in our warehouse. More are on the way!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/genesis-defense-thermique",
+                "title": "https://www.cosmeterie.com/kerastase/genesis-defense-thermique",
+                "excerpts": [
+                  "corpus-meta url: https://cosmeterie.com/kerastase/genesis-defense-thermique"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/genesis-defense-thermique",
+                "title": "https://www.cosmeterie.com/kerastase/genesis-defense-thermique",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/genesis-defense-thermique",
+                "title": "https://www.cosmeterie.com/kerastase/genesis-defense-thermique",
+                "excerpts": [
+                  "corpus-meta url: https://cosmeterie.com/kerastase/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/genesis-defense-thermique",
+                "title": "https://www.cosmeterie.com/kerastase/genesis-defense-thermique",
+                "excerpts": [
+                  "Cosmeterie Online Shop ... K\u00e9rastase Genesis Defense Thermique, 150 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeterie.com/kerastase/genesis-defense-thermique",
+                "title": "https://www.cosmeterie.com/kerastase/genesis-defense-thermique",
+                "excerpts": [
+                  "Cosmeterie Online Shop independent beauty e-commerce"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

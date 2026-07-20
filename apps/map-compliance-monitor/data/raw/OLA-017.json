@@ -1,0 +1,3073 @@
+{
+  "sku_id": "OLA-017",
+  "effort": "high",
+  "elapsed_s": 1040,
+  "fetched_at": "2026-07-20T12:58:48+00:00",
+  "run_id": "task_run_eeeca738ae054216829e46735ddadfc3",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_eeeca738ae054216829e46735ddadfc3",
+      "interaction_id": "task_run_eeeca738ae054216829e46735ddadfc3",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of Olaplex Bond Shaper Curl Defining Gel, 100ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:41:27.175964Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:41:27.440006Z",
+      "completed_at": "2026-07-20T12:58:33.993206Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us",
+          "observed_at": "2026-07-20",
+          "seller_name": "Olaplex",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "olaplex.com",
+          "advertised_price": "$32"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://es.olaplex.com/en/products/olaplex-n-10-bond-shaper-curl-defining-gel-eu",
+          "observed_at": "2026-07-20",
+          "seller_name": "Olaplex (EU store)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "es.olaplex.com",
+          "advertised_price": "32,00 \u20ac"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/dp/B0DPDM1BJN",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon.com",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.com",
+          "advertised_price": "$32.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-200ml/20142461939",
+          "observed_at": "2026-07-20",
+          "seller_name": "FRESH DROPLETS (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$22.28"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://business.walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7-oz/12188273474",
+          "observed_at": "2026-07-20",
+          "seller_name": "Walmart Business",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "business.walmart.com",
+          "advertised_price": "$23.49"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.target.com/p/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-oz/-/A-1011966325",
+          "observed_at": "2026-07-20",
+          "seller_name": "Target",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "target.com",
+          "advertised_price": "$32.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ulta.com/p/no10-curl-defining-frizz-reducing-hair-gel-pimprod2047423",
+          "observed_at": "2026-07-20",
+          "seller_name": "Ulta Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "ulta.com",
+          "advertised_price": "$32.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+          "observed_at": "2026-07-20",
+          "seller_name": "Macy's",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "macys.com",
+          "advertised_price": "$32.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.dermstore.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675",
+          "observed_at": "2026-07-20",
+          "seller_name": "Dermstore",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "dermstore.com",
+          "advertised_price": "$32.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.paullabrecque.com/products/olaplex-no-10-bond-shaper-curl-defining-gel",
+          "observed_at": "2026-07-20",
+          "seller_name": "Paul Labrecque",
+          "seller_type": "independent_store",
+          "seller_domain": "paullabrecque.com",
+          "advertised_price": "$32.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-fl-oz-200-ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Salwa'z Beauty Salon",
+          "seller_type": "independent_store",
+          "seller_domain": "salwazbeauty.com",
+          "advertised_price": "$29.00"
+        },
+        {
+          "currency": null,
+          "in_stock": false,
+          "listing_url": "https://www.cvs.com/shop/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-oz-prodid-660335",
+          "observed_at": "2026-07-20",
+          "seller_name": "CVS Pharmacy",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "cvs.com",
+          "advertised_price": "not displayed (out of stock)"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://skinbeautifulrx.com/products/olaplex-no-10-bond-shaper-curl-defining-gel",
+          "observed_at": "2026-07-20",
+          "seller_name": "SkinBeautiful RX",
+          "seller_type": "independent_store",
+          "seller_domain": "skinbeautifulrx.com",
+          "advertised_price": "$30.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.lookfantastic.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675",
+          "observed_at": "2026-07-20",
+          "seller_name": "LookFantastic",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "\u00a330.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.cultbeauty.co.uk/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675",
+          "observed_at": "2026-07-20",
+          "seller_name": "Cult Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "cultbeauty.co.uk",
+          "advertised_price": "\u00a330.00"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://www.keshop.com/en/olaplex/olaplex-no-10-curl-defining-gel-200-ml.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Keshop",
+          "seller_type": "discounter",
+          "seller_domain": "keshop.com",
+          "advertised_price": "\u20ac20.80"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": true,
+          "listing_url": "https://liviabeauty.ca/olaplex/olaplex-no-10-bond-shaper-curl-defining-gel-200ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Liviabeauty",
+          "seller_type": "independent_store",
+          "seller_domain": "liviabeauty.ca",
+          "advertised_price": "CAD $32.00"
+        },
+        {
+          "currency": null,
+          "in_stock": null,
+          "listing_url": "https://us.shein.com/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7oz-200ml-72-Hour-Frizz-Control-Curl-Retention-And-Definition-Repairing-And-Strengthening-Formula-For-Wavy-Curly-And-Coily-Hair-Types-Humidity-Resistance-Professional-Salon-Quality-Styling-p-472692371.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Shein US",
+          "seller_type": "discounter",
+          "seller_domain": "us.shein.com",
+          "advertised_price": "not displayed in extracted page"
+        },
+        {
+          "currency": null,
+          "in_stock": null,
+          "listing_url": "https://www.saloncentric.com/olaplex-no10-bond-shaper-curl-defining-gel.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "SalonCentric",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "saloncentric.com",
+          "advertised_price": "login required to view price"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us",
+            "title": "N\u00ba.10 Bond Shaper\u2122 Curl Defining Gel",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://es.olaplex.com/en/products/olaplex-n-10-bond-shaper-curl-defining-gel-eu",
+            "title": "N\u00ba.10 BOND SHAPER\u00ae CURL DEFINING GEL",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/dp/B0DPDM1BJN",
+            "title": "amazon_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/Olaplex-N%C2%BA-10-BOND-SHAPERTM-DEFINING/dp/B0DPDM1BJN",
+            "title": "Olaplex N\u00ba.10 Bond Shaper\u2122 Curl Defining Gel: Frizz ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-200ml/20142461939",
+            "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://business.walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7-oz/12188273474",
+            "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel 6.7 oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://target.com/p/-/A-A-1011966325",
+            "title": "target_pdp_localization",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ulta.com/p/no10-curl-defining-frizz-reducing-hair-gel-pimprod2047423?sku=2629122",
+            "title": "OLAPLEX - No.10 Curl Defining Frizz Reducing Hair Gel",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+            "title": "https://www.macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://dermstore.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoreJpDUDyfDzV2cjEr3gFB9CW5ff5kGTbGu0R4-Fi8XHzAC-Ao1",
+            "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://paullabrecque.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOoqjmYr_f7sUgDazkDjv4rdnPpsESAt0c9BPWv_m3YCSzxlwS3NF",
+            "title": "Olaplex No 10 Bond Shaper Curl Defining Gel",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-fl-oz-200-ml?srsltid=AfmBOoolIEjd_CUuH1oG9KQB5HBPqbJNPbLCFvJeK86X4j_rPwQki2Fv",
+            "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel - 6.7 fl oz ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://cvs.com/shop/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-oz-prodid-660335",
+            "title": "Olaplex No.10 Bond Shaper Curl Defining Gel, 6.7 OZ",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://skinbeautifulrx.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOorojD7QeDc621YDemoitdwXjcEuFHIgJaxAonWckaFhhgpZBTGW",
+            "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?srsltid=AfmBOooxriH3AWCMSY_yz6W_BVKnK6efdbP6DGW_sVOgEzg4T40UU2Gj",
+            "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://cultbeauty.co.uk/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A5%2Fct%3Ar&rctxt=default&srsltid=AfmBOordn0IsVfv4yXnet97MovHGUxfB-cvcyQA9v1XCKmIlYXkwMSfe",
+            "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml -Univ",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://keshop.com/en/olaplex/olaplex-no-10-curl-defining-gel-200-ml.html",
+            "title": "Olaplex No. 10 Curl Defining Gel 200 ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://liviabeauty.ca/brand/olaplex?srsltid=AfmBOoozTuBNJyaT7QjF0AnsCVp1UG9MWWGmEzC74YVTipJ-bK_Ik_tv",
+            "title": "brand | OLAPLEX",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://us.shein.com/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7oz-200ml-72-Hour-Frizz-Control-Curl-Retention-And-Definition-Repairing-And-Strengthening-Formula-For-Wavy-Curly-And-Coily-Hair-Types-Humidity-Resistance-Professional-Salon-Quality-Styling-p-472692371.html",
+            "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 6.7oz/200ml ... - Shein",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://saloncentric.com/olaplex-no10-bond-shaper-curl-defining-gel.html",
+            "title": "Olaplex No.10 Bond Shaper\u2122 Curl Defining Gel",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 97%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us",
+                "title": "N\u00ba.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "# N\u00ba.10 BOND SHAPER\u2122 CURL DEFINING GEL ... Regular price $32"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us",
+                "title": "N\u00ba.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us",
+                "title": "N\u00ba.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "Regular price $32"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us",
+                "title": "N\u00ba.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "Regular price $32"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us",
+                "title": "N\u00ba.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us",
+                "title": "N\u00ba.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "N\u00ba.10 BOND SHAPER\u2122 CURL DEFINING GEL \u2014 Olaplex brand store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us",
+                "title": "N\u00ba.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "Free Shipping on $50+. Shop Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-10-bond-shaper-curl-defining-gel-us",
+                "title": "N\u00ba.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://es.olaplex.com/en/products/olaplex-n-10-bond-shaper-curl-defining-gel-eu",
+                "title": "N\u00ba.10 BOND SHAPER\u00ae CURL DEFINING GEL",
+                "excerpts": [
+                  "# N\u00ba.10 BOND SHAPER\u00ae CURL DEFINING GEL ... Regular price 32,00 \u20ac"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://es.olaplex.com/en/products/olaplex-n-10-bond-shaper-curl-defining-gel-eu",
+                "title": "N\u00ba.10 BOND SHAPER\u00ae CURL DEFINING GEL",
+                "excerpts": [
+                  "es.olaplex.com/en/products/olaplex-n-10-bond-shaper-curl-defining-gel-eu"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://es.olaplex.com/en/products/olaplex-n-10-bond-shaper-curl-defining-gel-eu",
+                "title": "N\u00ba.10 BOND SHAPER\u00ae CURL DEFINING GEL",
+                "excerpts": [
+                  "Regular price 32,00 \u20ac ... Taxes included."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://es.olaplex.com/en/products/olaplex-n-10-bond-shaper-curl-defining-gel-eu",
+                "title": "N\u00ba.10 BOND SHAPER\u00ae CURL DEFINING GEL",
+                "excerpts": [
+                  "Regular price 32,00 \u20ac"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://es.olaplex.com/en/products/olaplex-n-10-bond-shaper-curl-defining-gel-eu",
+                "title": "N\u00ba.10 BOND SHAPER\u00ae CURL DEFINING GEL",
+                "excerpts": [
+                  "es.olaplex.com/en/products/olaplex-n-10-bond-shaper-curl-defining-gel-eu"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://es.olaplex.com/en/products/olaplex-n-10-bond-shaper-curl-defining-gel-eu",
+                "title": "N\u00ba.10 BOND SHAPER\u00ae CURL DEFINING GEL",
+                "excerpts": [
+                  "Olaplex brand EU store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://es.olaplex.com/en/products/olaplex-n-10-bond-shaper-curl-defining-gel-eu",
+                "title": "N\u00ba.10 BOND SHAPER\u00ae CURL DEFINING GEL",
+                "excerpts": [
+                  "Free Shipping on \u20ac30+."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://es.olaplex.com/en/products/olaplex-n-10-bond-shaper-curl-defining-gel-eu",
+                "title": "N\u00ba.10 BOND SHAPER\u00ae CURL DEFINING GEL",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0DPDM1BJN",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: \"Amazon.com\" ... data.product_title: \"Olaplex N\u00ba.10 Bond Shaper\u2122 Curl Defining Gel ... 200 mL/Fl Oz\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0DPDM1BJN",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: \"https://www.amazon.com/dp/B0DPDM1BJN\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Olaplex-N%C2%BA-10-BOND-SHAPERTM-DEFINING/dp/B0DPDM1BJN",
+                "title": "Olaplex N\u00ba.10 Bond Shaper\u2122 Curl Defining Gel: Frizz ...",
+                "excerpts": [
+                  "$32.00 $4.78 per fluid ounce"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://amazon.com/dp/B0DPDM1BJN",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.web_price: 32"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Olaplex-N%C2%BA-10-BOND-SHAPERTM-DEFINING/dp/B0DPDM1BJN",
+                "title": "Olaplex N\u00ba.10 Bond Shaper\u2122 Curl Defining Gel: Frizz ...",
+                "excerpts": [
+                  "$32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0DPDM1BJN",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: \"https://www.amazon.com/dp/B0DPDM1BJN\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0DPDM1BJN",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: \"Amazon.com\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0DPDM1BJN",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0DPDM1BJN",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-200ml/20142461939",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "data.seller_name: \"FRESH DROPLETS\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-200ml/20142461939",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-200ml/20142461939"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-200ml/20142461939",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "Current price is $22.28"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-200ml/20142461939",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "data.currency: \"USD\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-200ml/20142461939",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-200ml/20142461939"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-200ml/20142461939",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "Sold and shipped by FRESH DROPLETS Pro Seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-200ml/20142461939",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "data.condition: \"New\" ... fulfillment_type: \"DELIVERY\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-200ml/20142461939",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://business.walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7-oz/12188273474",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel 6.7 oz",
+                "excerpts": [
+                  "Current price is $23.49$3.51/fl oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://business.walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7-oz/12188273474",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel 6.7 oz",
+                "excerpts": [
+                  "Current price is $23.49"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://business.walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7-oz/12188273474",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel 6.7 oz",
+                "excerpts": [
+                  "Current price is $23.49 ... Subscribe, Get it on time"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://business.walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7-oz/12188273474",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel 6.7 oz",
+                "excerpts": [
+                  "business.walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7-oz/12188273474"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://business.walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7-oz/12188273474",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel 6.7 oz",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://business.walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7-oz/12188273474",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel 6.7 oz",
+                "excerpts": [
+                  "business.walmart.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://business.walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7-oz/12188273474",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel 6.7 oz",
+                "excerpts": [
+                  "# Olaplex No. 10 Bond Shaper Curl Defining Gel 6.7 Oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://business.walmart.com/ip/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7-oz/12188273474",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel 6.7 oz",
+                "excerpts": [
+                  "business.walmart.com \u2014 Walmart Business storefront"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/-/A-A-1011966325",
+                "title": "target_pdp_localization",
+                "excerpts": [
+                  "data.is_out_of_stock: false"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/-/A-A-1011966325",
+                "title": "target_pdp_localization",
+                "excerpts": [
+                  "data.is_out_of_stock: false / data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/-/A-A-1011966325",
+                "title": "target_pdp_localization",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no10-curl-defining-frizz-reducing-hair-gel-pimprod2047423?sku=2629122",
+                "title": "OLAPLEX - No.10 Curl Defining Frizz Reducing Hair Gel",
+                "excerpts": [
+                  "$32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no10-curl-defining-frizz-reducing-hair-gel-pimprod2047423?sku=2629122",
+                "title": "OLAPLEX - No.10 Curl Defining Frizz Reducing Hair Gel",
+                "excerpts": [
+                  "$32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no10-curl-defining-frizz-reducing-hair-gel-pimprod2047423?sku=2629122",
+                "title": "OLAPLEX - No.10 Curl Defining Frizz Reducing Hair Gel",
+                "excerpts": [
+                  "In stock and ready to ship"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no10-curl-defining-frizz-reducing-hair-gel-pimprod2047423?sku=2629122",
+                "title": "OLAPLEX - No.10 Curl Defining Frizz Reducing Hair Gel",
+                "excerpts": [
+                  "ulta.com/p/no10-curl-defining-frizz-reducing-hair-gel-pimprod2047423?sku=2629122"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no10-curl-defining-frizz-reducing-hair-gel-pimprod2047423?sku=2629122",
+                "title": "OLAPLEX - No.10 Curl Defining Frizz Reducing Hair Gel",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no10-curl-defining-frizz-reducing-hair-gel-pimprod2047423?sku=2629122",
+                "title": "OLAPLEX - No.10 Curl Defining Frizz Reducing Hair Gel",
+                "excerpts": [
+                  "ulta.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no10-curl-defining-frizz-reducing-hair-gel-pimprod2047423?sku=2629122",
+                "title": "OLAPLEX - No.10 Curl Defining Frizz Reducing Hair Gel",
+                "excerpts": [
+                  "Ulta Beauty Rewards\u00ae ... ulta.com/p/no10-curl-defining-frizz-reducing-hair-gel-pimprod2047423"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no10-curl-defining-frizz-reducing-hair-gel-pimprod2047423?sku=2629122",
+                "title": "OLAPLEX - No.10 Curl Defining Frizz Reducing Hair Gel",
+                "excerpts": [
+                  "Ulta Beauty \u2014 major US beauty retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "title": "https://www.macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "excerpts": [
+                  "# [Olaplex]N\u00ba.10 Bond Shaper Curl Defining Gel, 6.7 oz. ... $32.00Details"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "title": "https://www.macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "excerpts": [
+                  "$32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "title": "https://www.macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "excerpts": [
+                  "Add To Bag Buy Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "title": "https://www.macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "excerpts": [
+                  "macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "title": "https://www.macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "title": "https://www.macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "excerpts": [
+                  "macys.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "title": "https://www.macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "excerpts": [
+                  "Olaplex N\u00ba.10 Bond Shaper Curl Defining Gel, 6.7 oz. \u2014 Macy's"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "title": "https://www.macys.com/shop/product/olaplex-n.10-bond-shaper-curl-defining-gel-6.7-oz.?ID=20940545",
+                "excerpts": [
+                  "Macy's \u2014 major US department store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoreJpDUDyfDzV2cjEr3gFB9CW5ff5kGTbGu0R4-Fi8XHzAC-Ao1",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "\u00a330.00 [converted to USD listing context] ... $32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoreJpDUDyfDzV2cjEr3gFB9CW5ff5kGTbGu0R4-Fi8XHzAC-Ao1",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "$32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoreJpDUDyfDzV2cjEr3gFB9CW5ff5kGTbGu0R4-Fi8XHzAC-Ao1",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "QUICK BUY ... $32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoreJpDUDyfDzV2cjEr3gFB9CW5ff5kGTbGu0R4-Fi8XHzAC-Ao1",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "dermstore.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoreJpDUDyfDzV2cjEr3gFB9CW5ff5kGTbGu0R4-Fi8XHzAC-Ao1",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoreJpDUDyfDzV2cjEr3gFB9CW5ff5kGTbGu0R4-Fi8XHzAC-Ao1",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "dermstore.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoreJpDUDyfDzV2cjEr3gFB9CW5ff5kGTbGu0R4-Fi8XHzAC-Ao1",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "Dermstore Rewards ... dermstore.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoreJpDUDyfDzV2cjEr3gFB9CW5ff5kGTbGu0R4-Fi8XHzAC-Ao1",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "Dermstore \u2014 US beauty/skincare e-tailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOoqjmYr_f7sUgDazkDjv4rdnPpsESAt0c9BPWv_m3YCSzxlwS3NF",
+                "title": "Olaplex No 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "Sale price$ 32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOoqjmYr_f7sUgDazkDjv4rdnPpsESAt0c9BPWv_m3YCSzxlwS3NF",
+                "title": "Olaplex No 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "Sale price$ 32.00 ... Country/region United States (USD $)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOoqjmYr_f7sUgDazkDjv4rdnPpsESAt0c9BPWv_m3YCSzxlwS3NF",
+                "title": "Olaplex No 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "Add to cart ... Pickup available at Paul Labrecque Salon & Skincare Spa Palm Beach Usually ready in 4 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOoqjmYr_f7sUgDazkDjv4rdnPpsESAt0c9BPWv_m3YCSzxlwS3NF",
+                "title": "Olaplex No 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "paullabrecque.com/products/olaplex-no-10-bond-shaper-curl-defining-gel"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOoqjmYr_f7sUgDazkDjv4rdnPpsESAt0c9BPWv_m3YCSzxlwS3NF",
+                "title": "Olaplex No 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOoqjmYr_f7sUgDazkDjv4rdnPpsESAt0c9BPWv_m3YCSzxlwS3NF",
+                "title": "Olaplex No 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "paullabrecque.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOoqjmYr_f7sUgDazkDjv4rdnPpsESAt0c9BPWv_m3YCSzxlwS3NF",
+                "title": "Olaplex No 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "Paul Labrecque Salon & Skincare Spa Palm Beach"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://paullabrecque.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOoqjmYr_f7sUgDazkDjv4rdnPpsESAt0c9BPWv_m3YCSzxlwS3NF",
+                "title": "Olaplex No 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "Paul Labrecque Salon & Skincare Spa ... Powered by Shopify"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-fl-oz-200-ml?srsltid=AfmBOoolIEjd_CUuH1oG9KQB5HBPqbJNPbLCFvJeK86X4j_rPwQki2Fv",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel - 6.7 fl oz ...",
+                "excerpts": [
+                  "# Olaplex No. 10 Bond Shaper Curl Defining Gel \u2013 6.7 fl oz / 200 ml $29.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-fl-oz-200-ml?srsltid=AfmBOoolIEjd_CUuH1oG9KQB5HBPqbJNPbLCFvJeK86X4j_rPwQki2Fv",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel - 6.7 fl oz ...",
+                "excerpts": [
+                  "$29.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-fl-oz-200-ml?srsltid=AfmBOoolIEjd_CUuH1oG9KQB5HBPqbJNPbLCFvJeK86X4j_rPwQki2Fv",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel - 6.7 fl oz ...",
+                "excerpts": [
+                  "Availability: Only 1 left in stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-fl-oz-200-ml?srsltid=AfmBOoolIEjd_CUuH1oG9KQB5HBPqbJNPbLCFvJeK86X4j_rPwQki2Fv",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel - 6.7 fl oz ...",
+                "excerpts": [
+                  "salwazbeauty.com/shop/hair-products/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-fl-oz-200-ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-fl-oz-200-ml?srsltid=AfmBOoolIEjd_CUuH1oG9KQB5HBPqbJNPbLCFvJeK86X4j_rPwQki2Fv",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel - 6.7 fl oz ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-fl-oz-200-ml?srsltid=AfmBOoolIEjd_CUuH1oG9KQB5HBPqbJNPbLCFvJeK86X4j_rPwQki2Fv",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel - 6.7 fl oz ...",
+                "excerpts": [
+                  "salwazbeauty.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-fl-oz-200-ml?srsltid=AfmBOoolIEjd_CUuH1oG9KQB5HBPqbJNPbLCFvJeK86X4j_rPwQki2Fv",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel - 6.7 fl oz ...",
+                "excerpts": [
+                  "Salwa'z Beauty Salon ... salwazbeauty.com/shop/hair-products/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-fl-oz-200-ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salwazbeauty.com/shop/hair-products/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-fl-oz-200-ml?srsltid=AfmBOoolIEjd_CUuH1oG9KQB5HBPqbJNPbLCFvJeK86X4j_rPwQki2Fv",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel - 6.7 fl oz ...",
+                "excerpts": [
+                  "Salwa'z Beauty Salon Logo ... independent salon online store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-oz-prodid-660335",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel, 6.7 OZ",
+                "excerpts": [
+                  "Out of stock ... $ (blank price field, no number shown)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-oz-prodid-660335",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel, 6.7 OZ",
+                "excerpts": [
+                  "Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-oz-prodid-660335",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel, 6.7 OZ",
+                "excerpts": [
+                  "Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-oz-prodid-660335",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel, 6.7 OZ",
+                "excerpts": [
+                  "cvs.com/shop/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-oz-prodid-660335"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-oz-prodid-660335",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel, 6.7 OZ",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-oz-prodid-660335",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel, 6.7 OZ",
+                "excerpts": [
+                  "cvs.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-oz-prodid-660335",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel, 6.7 OZ",
+                "excerpts": [
+                  "# Olaplex No.10 Bond Shaper Curl Defining Gel, 6.7 OZ ... Item # 660335"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-10-bond-shaper-curl-defining-gel-6-7-oz-prodid-660335",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel, 6.7 OZ",
+                "excerpts": [
+                  "cvs.com \u2014 US drugstore chain"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOorojD7QeDc621YDemoitdwXjcEuFHIgJaxAonWckaFhhgpZBTGW",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "# Olaplex No. 10 Bond Shaper Curl Defining Gel $30.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOorojD7QeDc621YDemoitdwXjcEuFHIgJaxAonWckaFhhgpZBTGW",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "$30.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOorojD7QeDc621YDemoitdwXjcEuFHIgJaxAonWckaFhhgpZBTGW",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOorojD7QeDc621YDemoitdwXjcEuFHIgJaxAonWckaFhhgpZBTGW",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "skinbeautifulrx.com/products/olaplex-no-10-bond-shaper-curl-defining-gel"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOorojD7QeDc621YDemoitdwXjcEuFHIgJaxAonWckaFhhgpZBTGW",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOorojD7QeDc621YDemoitdwXjcEuFHIgJaxAonWckaFhhgpZBTGW",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "skinbeautifulrx.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOorojD7QeDc621YDemoitdwXjcEuFHIgJaxAonWckaFhhgpZBTGW",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "About SBRX / About Leah ... skinbeautifulrx.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-10-bond-shaper-curl-defining-gel?srsltid=AfmBOorojD7QeDc621YDemoitdwXjcEuFHIgJaxAonWckaFhhgpZBTGW",
+                "title": "Olaplex No. 10 Bond Shaper Curl Defining Gel",
+                "excerpts": [
+                  "About SBRX ... Sales & Promos"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?srsltid=AfmBOooxriH3AWCMSY_yz6W_BVKnK6efdbP6DGW_sVOgEzg4T40UU2Gj",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "\u00a330.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?srsltid=AfmBOooxriH3AWCMSY_yz6W_BVKnK6efdbP6DGW_sVOgEzg4T40UU2Gj",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "\u00a330.00 ... FREE UK delivery on orders over \u00a325"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?srsltid=AfmBOooxriH3AWCMSY_yz6W_BVKnK6efdbP6DGW_sVOgEzg4T40UU2Gj",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "Add both to basket"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?srsltid=AfmBOooxriH3AWCMSY_yz6W_BVKnK6efdbP6DGW_sVOgEzg4T40UU2Gj",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "lookfantastic.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?srsltid=AfmBOooxriH3AWCMSY_yz6W_BVKnK6efdbP6DGW_sVOgEzg4T40UU2Gj",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?srsltid=AfmBOooxriH3AWCMSY_yz6W_BVKnK6efdbP6DGW_sVOgEzg4T40UU2Gj",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "lookfantastic.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?srsltid=AfmBOooxriH3AWCMSY_yz6W_BVKnK6efdbP6DGW_sVOgEzg4T40UU2Gj",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "lookfantastic homepage ... Olaplex No.10 Bond Shaper Curl Defining Gel 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?srsltid=AfmBOooxriH3AWCMSY_yz6W_BVKnK6efdbP6DGW_sVOgEzg4T40UU2Gj",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml",
+                "excerpts": [
+                  "LookFantastic \u2014 major UK beauty e-tailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.co.uk/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A5%2Fct%3Ar&rctxt=default&srsltid=AfmBOordn0IsVfv4yXnet97MovHGUxfB-cvcyQA9v1XCKmIlYXkwMSfe",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml -Univ",
+                "excerpts": [
+                  "\u00a330.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.co.uk/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A5%2Fct%3Ar&rctxt=default&srsltid=AfmBOordn0IsVfv4yXnet97MovHGUxfB-cvcyQA9v1XCKmIlYXkwMSfe",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml -Univ",
+                "excerpts": [
+                  "\u00a330.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.co.uk/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A5%2Fct%3Ar&rctxt=default&srsltid=AfmBOordn0IsVfv4yXnet97MovHGUxfB-cvcyQA9v1XCKmIlYXkwMSfe",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml -Univ",
+                "excerpts": [
+                  "In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.co.uk/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A5%2Fct%3Ar&rctxt=default&srsltid=AfmBOordn0IsVfv4yXnet97MovHGUxfB-cvcyQA9v1XCKmIlYXkwMSfe",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml -Univ",
+                "excerpts": [
+                  "cultbeauty.co.uk/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.co.uk/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A5%2Fct%3Ar&rctxt=default&srsltid=AfmBOordn0IsVfv4yXnet97MovHGUxfB-cvcyQA9v1XCKmIlYXkwMSfe",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml -Univ",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.co.uk/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A5%2Fct%3Ar&rctxt=default&srsltid=AfmBOordn0IsVfv4yXnet97MovHGUxfB-cvcyQA9v1XCKmIlYXkwMSfe",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml -Univ",
+                "excerpts": [
+                  "cultbeauty.co.uk"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.co.uk/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A5%2Fct%3Ar&rctxt=default&srsltid=AfmBOordn0IsVfv4yXnet97MovHGUxfB-cvcyQA9v1XCKmIlYXkwMSfe",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml -Univ",
+                "excerpts": [
+                  "Cult Beauty ... Olaplex No.10 Bond Shaper Curl Defining Gel 200ml -Univ"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.co.uk/p/olaplex-no.10-bond-shaper-curl-defining-gel-200ml-univ/16384675?bvstate=pg%3A5%2Fct%3Ar&rctxt=default&srsltid=AfmBOordn0IsVfv4yXnet97MovHGUxfB-cvcyQA9v1XCKmIlYXkwMSfe",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 200ml -Univ",
+                "excerpts": [
+                  "Cult Beauty \u2014 major UK beauty e-tailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/olaplex/olaplex-no-10-curl-defining-gel-200-ml.html",
+                "title": "Olaplex No. 10 Curl Defining Gel 200 ml",
+                "excerpts": [
+                  "# OLAPLEX No. 10 Curl Defining Gel - 200 ml \u20ac20.80 \u20ac33.90 \\-39%"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/olaplex/olaplex-no-10-curl-defining-gel-200-ml.html",
+                "title": "Olaplex No. 10 Curl Defining Gel 200 ml",
+                "excerpts": [
+                  "\u20ac20.80 \u20ac33.90 ... Tax included"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/olaplex/olaplex-no-10-curl-defining-gel-200-ml.html",
+                "title": "Olaplex No. 10 Curl Defining Gel 200 ml",
+                "excerpts": [
+                  "Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/olaplex/olaplex-no-10-curl-defining-gel-200-ml.html",
+                "title": "Olaplex No. 10 Curl Defining Gel 200 ml",
+                "excerpts": [
+                  "keshop.com/en/olaplex/olaplex-no-10-curl-defining-gel-200-ml.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/olaplex/olaplex-no-10-curl-defining-gel-200-ml.html",
+                "title": "Olaplex No. 10 Curl Defining Gel 200 ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/olaplex/olaplex-no-10-curl-defining-gel-200-ml.html",
+                "title": "Olaplex No. 10 Curl Defining Gel 200 ml",
+                "excerpts": [
+                  "keshop.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/olaplex/olaplex-no-10-curl-defining-gel-200-ml.html",
+                "title": "Olaplex No. 10 Curl Defining Gel 200 ml",
+                "excerpts": [
+                  "keshop.com ... OLAPLEX No. 10 Curl Defining Gel - 200 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/olaplex/olaplex-no-10-curl-defining-gel-200-ml.html",
+                "title": "Olaplex No. 10 Curl Defining Gel 200 ml",
+                "excerpts": [
+                  "\u20ac20.80 \u20ac33.90 \\-39% ... 4.9/5 Store rating"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://liviabeauty.ca/brand/olaplex?srsltid=AfmBOoozTuBNJyaT7QjF0AnsCVp1UG9MWWGmEzC74YVTipJ-bK_Ik_tv",
+                "title": "brand | OLAPLEX",
+                "excerpts": [
+                  "Olaplex - No. 10 Bond Shaper Curl Defining Gel - 200ml ... [CAD $32.00] CAD $47.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://liviabeauty.ca/brand/olaplex?srsltid=AfmBOoozTuBNJyaT7QjF0AnsCVp1UG9MWWGmEzC74YVTipJ-bK_Ik_tv",
+                "title": "brand | OLAPLEX",
+                "excerpts": [
+                  "CAD $32.00 CAD $47.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://liviabeauty.ca/brand/olaplex?srsltid=AfmBOoozTuBNJyaT7QjF0AnsCVp1UG9MWWGmEzC74YVTipJ-bK_Ik_tv",
+                "title": "brand | OLAPLEX",
+                "excerpts": [
+                  "Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://liviabeauty.ca/brand/olaplex?srsltid=AfmBOoozTuBNJyaT7QjF0AnsCVp1UG9MWWGmEzC74YVTipJ-bK_Ik_tv",
+                "title": "brand | OLAPLEX",
+                "excerpts": [
+                  "liviabeauty.ca/olaplex/olaplex-no-10-bond-shaper-curl-defining-gel-200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://liviabeauty.ca/brand/olaplex?srsltid=AfmBOoozTuBNJyaT7QjF0AnsCVp1UG9MWWGmEzC74YVTipJ-bK_Ik_tv",
+                "title": "brand | OLAPLEX",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://liviabeauty.ca/brand/olaplex?srsltid=AfmBOoozTuBNJyaT7QjF0AnsCVp1UG9MWWGmEzC74YVTipJ-bK_Ik_tv",
+                "title": "brand | OLAPLEX",
+                "excerpts": [
+                  "liviabeauty.ca"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://liviabeauty.ca/brand/olaplex?srsltid=AfmBOoozTuBNJyaT7QjF0AnsCVp1UG9MWWGmEzC74YVTipJ-bK_Ik_tv",
+                "title": "brand | OLAPLEX",
+                "excerpts": [
+                  "Liviabeauty.ca | Salon Pro Beauty exclusively for Canadian ... purchased direct from Manufacturers or their Authorized Canadian Distributors"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://liviabeauty.ca/brand/olaplex?srsltid=AfmBOoozTuBNJyaT7QjF0AnsCVp1UG9MWWGmEzC74YVTipJ-bK_Ik_tv",
+                "title": "brand | OLAPLEX",
+                "excerpts": [
+                  "Salon Pro Beauty exclusively for Canadian ... purchased direct from Manufacturers or their Authorized Canadian Distributors"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.shein.com/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7oz-200ml-72-Hour-Frizz-Control-Curl-Retention-And-Definition-Repairing-And-Strengthening-Formula-For-Wavy-Curly-And-Coily-Hair-Types-Humidity-Resistance-Professional-Salon-Quality-Styling-p-472692371.html",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 6.7oz/200ml ... - Shein",
+                "excerpts": [
+                  "Olaplex No.10 Bond Shaper Curl Defining Gel 6.7oz/200ml ... - Shein"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.shein.com/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7oz-200ml-72-Hour-Frizz-Control-Curl-Retention-And-Definition-Repairing-And-Strengthening-Formula-For-Wavy-Curly-And-Coily-Hair-Types-Humidity-Resistance-Professional-Salon-Quality-Styling-p-472692371.html",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 6.7oz/200ml ... - Shein",
+                "excerpts": [
+                  "us.shein.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[17].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.shein.com/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7oz-200ml-72-Hour-Frizz-Control-Curl-Retention-And-Definition-Repairing-And-Strengthening-Formula-For-Wavy-Curly-And-Coily-Hair-Types-Humidity-Resistance-Professional-Salon-Quality-Styling-p-472692371.html",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 6.7oz/200ml ... - Shein",
+                "excerpts": [
+                  "us.shein.com ... Olaplex No.10 Bond Shaper Curl Defining Gel 6.7oz/200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[17].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.shein.com/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7oz-200ml-72-Hour-Frizz-Control-Curl-Retention-And-Definition-Repairing-And-Strengthening-Formula-For-Wavy-Curly-And-Coily-Hair-Types-Humidity-Resistance-Professional-Salon-Quality-Styling-p-472692371.html",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 6.7oz/200ml ... - Shein",
+                "excerpts": [
+                  "us.shein.com/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7oz-200ml-72-Hour-Frizz-Control...-p-472692371.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.shein.com/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7oz-200ml-72-Hour-Frizz-Control-Curl-Retention-And-Definition-Repairing-And-Strengthening-Formula-For-Wavy-Curly-And-Coily-Hair-Types-Humidity-Resistance-Professional-Salon-Quality-Styling-p-472692371.html",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 6.7oz/200ml ... - Shein",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.shein.com/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7oz-200ml-72-Hour-Frizz-Control-Curl-Retention-And-Definition-Repairing-And-Strengthening-Formula-For-Wavy-Curly-And-Coily-Hair-Types-Humidity-Resistance-Professional-Salon-Quality-Styling-p-472692371.html",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 6.7oz/200ml ... - Shein",
+                "excerpts": [
+                  "us.shein.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.shein.com/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7oz-200ml-72-Hour-Frizz-Control-Curl-Retention-And-Definition-Repairing-And-Strengthening-Formula-For-Wavy-Curly-And-Coily-Hair-Types-Humidity-Resistance-Professional-Salon-Quality-Styling-p-472692371.html",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 6.7oz/200ml ... - Shein",
+                "excerpts": [
+                  "Olaplex No.10 Bond Shaper Curl Defining Gel 6.7oz/200ml ... - Shein"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.shein.com/Olaplex-No-10-Bond-Shaper-Curl-Defining-Gel-6-7oz-200ml-72-Hour-Frizz-Control-Curl-Retention-And-Definition-Repairing-And-Strengthening-Formula-For-Wavy-Curly-And-Coily-Hair-Types-Humidity-Resistance-Professional-Salon-Quality-Styling-p-472692371.html",
+                "title": "Olaplex No.10 Bond Shaper Curl Defining Gel 6.7oz/200ml ... - Shein",
+                "excerpts": [
+                  "Shein \u2014 fast-fashion marketplace e-tailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no10-bond-shaper-curl-defining-gel.html",
+                "title": "Olaplex No.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "Login or register to view price"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no10-bond-shaper-curl-defining-gel.html",
+                "title": "Olaplex No.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "Login or register to view price"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[18].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no10-bond-shaper-curl-defining-gel.html",
+                "title": "Olaplex No.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "Find in-store availability"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[18].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no10-bond-shaper-curl-defining-gel.html",
+                "title": "Olaplex No.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "saloncentric.com/olaplex-no10-bond-shaper-curl-defining-gel.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no10-bond-shaper-curl-defining-gel.html",
+                "title": "Olaplex No.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no10-bond-shaper-curl-defining-gel.html",
+                "title": "Olaplex No.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "saloncentric.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no10-bond-shaper-curl-defining-gel.html",
+                "title": "Olaplex No.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "SalonCentric ... #PP082836 ... No.10 Bond Shaper\u2122 Curl Defining Gel helps revive natural curl patterns"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no10-bond-shaper-curl-defining-gel.html",
+                "title": "Olaplex No.10 Bond Shaper\u2122 Curl Defining Gel",
+                "excerpts": [
+                  "SalonCentric \u2014 professional salon supply ... ProRewards ... Login or register to view price"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

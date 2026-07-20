@@ -1,0 +1,2142 @@
+{
+  "sku_id": "KER-013",
+  "effort": "high",
+  "elapsed_s": 899,
+  "fetched_at": "2026-07-20T13:16:58+00:00",
+  "run_id": "task_run_181e5534ad824983b47a07275ef36d23",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_181e5534ad824983b47a07275ef36d23",
+      "interaction_id": "task_run_181e5534ad824983b47a07275ef36d23",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Blond Absolu Masque Ultra-Violet, 200ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:01:58.373636Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:01:58.599596Z",
+      "completed_at": "2026-07-20T13:16:52.053615Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase-usa.com/collections/blond-absolu/masque-ultra-violet-purple-hair-mask.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "K\u00e9rastase (Official)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase-usa.com",
+          "advertised_price": "$68.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/KERASTASE-Ultra-Violet-Highlighted-Neutralizes-Undertones/dp/B0BMT5ZY4V",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon (Sold by K\u00e9rastase)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.com",
+          "advertised_price": "$68.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+          "observed_at": "2026-07-20",
+          "seller_name": "Walmart Marketplace (ProCareChoice)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$48.45"
+        },
+        {
+          "currency": "NZD",
+          "in_stock": false,
+          "listing_url": "https://www.mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739/",
+          "observed_at": "2026-07-20",
+          "seller_name": "Mecca (NZ)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "mecca.com",
+          "advertised_price": "$109.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.mercari.com/us/item/m16398963336/",
+          "observed_at": "2026-07-20",
+          "seller_name": "Mercari (seller Rafael Rivera @user671692951)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "mercari.com",
+          "advertised_price": "$73.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://poshmark.com/listing/NWT-Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-673e5571ce7065e4d57f6e45",
+          "observed_at": "2026-07-20",
+          "seller_name": "Poshmark (seller yzergirlly)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "poshmark.com",
+          "advertised_price": "$52"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.jomashop.com/kerastase-blond-absolu-masque-ultra-violet-anti-brass-blonde-perfecting-purple-masque-lightened-cool-blonde-hair-200ml-6-8oz-3474636692408.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Jomashop",
+          "seller_type": "discounter",
+          "seller_domain": "jomashop.com",
+          "advertised_price": "$47.49"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://savvyhairartistry.com/product/kerastase-masque-ultra-violet/",
+          "observed_at": "2026-07-20",
+          "seller_name": "Savvy Hair Artistry",
+          "seller_type": "independent_store",
+          "seller_domain": "savvyhairartistry.com",
+          "advertised_price": "$80.15"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://www.privesuite.com/products/kerastase-masque-ultra-violet-purple-hair-mask",
+          "observed_at": "2026-07-20",
+          "seller_name": "Prive Suite",
+          "seller_type": "independent_store",
+          "seller_domain": "privesuite.com",
+          "advertised_price": "$68.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://maksalon.com/products/kerastase-blond-absolu-masque-ultra-violet-purple-hair-mask",
+          "observed_at": "2026-07-20",
+          "seller_name": "Mak Salon",
+          "seller_type": "independent_store",
+          "seller_domain": "maksalon.com",
+          "advertised_price": "$68.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": null,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699",
+          "observed_at": "2026-07-20",
+          "seller_name": "Lookfantastic (UK)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "\u00a351.00"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://www.lookfantastic.ie/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699",
+          "observed_at": "2026-07-20",
+          "seller_name": "Lookfantastic (Ireland)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.ie",
+          "advertised_price": "\u20ac58.65"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Blond-Absolu-Ultra-Violet-Masque-6-8-oz/3406601363",
+          "observed_at": "2026-07-20",
+          "seller_name": "Walmart Marketplace (ProCareChoice) \u2014 listing 3406601363",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$56.49"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://kerastase-usa.com/collections/blond-absolu/masque-ultra-violet-purple-hair-mask.html?srsltid=AfmBOophwLsvHNbf8HujW-7M_WwM9iSWQR2ghRrwCJHD-TaUBi0DbLfu",
+            "title": "Blond Absolu Masque Ultra Violet Purple Hair Mask - Kerastase",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/KERASTASE-Ultra-Violet-Highlighted-Neutralizes-Undertones/dp/B0BMT5ZY4V",
+            "title": "Kerastase Blond Absolu Ultra-Violet Purple Hair Mask For ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+            "title": "https://www.walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739",
+            "title": "https://www.mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739/",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://mercari.com/us/item/m16398963336",
+            "title": "KERASTASE BLOND ABSOLU MASK ULTRA VIOLET",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://poshmark.com/listing/NWT-Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-673e5571ce7065e4d57f6e45?srsltid=AfmBOooma9Hog7FT0gZDmEajX5TDTCKAZEexcXj0uiWKYiXbnnWqCMhn",
+            "title": "Nwt Kerastase Blond Absolu Hair Masque Ultra Violet",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://jomashop.com/kerastase-blond-absolu-masque-ultra-violet-anti-brass-blonde-perfecting-purple-masque-lightened-cool-blonde-hair-200ml-6-8oz-3474636692408.html?srsltid=AfmBOopDRNhjzajEjRdjIi2U0oUNc1TmT7RzVzIlE1OIijUIr2WsISug",
+            "title": "Kerastase - Blond Absolu Masque Ultra-Violet Anti-Brass ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://savvyhairartistry.com/product/kerastase-masque-ultra-violet?srsltid=AfmBOopHv9--yCZU0eX12rpzPfsijfL9W7KUKCIJJl5Xi_g3QwO_BOn3",
+            "title": "Kerastase Blond Absolu Masque Ultra-Violet 200ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://privesuite.com/products/kerastase-masque-ultra-violet-purple-hair-mask",
+            "title": "Kerastase Blond Absolu - Masque Ultra-Violet Purple Hair Mask",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://maksalon.com/collections/all",
+            "title": "Kerastase Hair Products - Shop All",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?srsltid=AfmBOooylOBt3UM6h6lkJ6cdTbNlL05bfs26wsOUt8e57j1Yes9gRwBa",
+            "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.ie/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?bvstate=pg%3A9%2Fct%3Ar&orderBy=DESC&pageNumber=5&sortBy=created",
+            "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Ultra-Violet-Masque-6-8-oz/3406601363",
+            "title": "Kerastase Blond Absolu Ultra-Violet Masque, 6.8 oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/blond-absolu/masque-ultra-violet-purple-hair-mask.html?srsltid=AfmBOophwLsvHNbf8HujW-7M_WwM9iSWQR2ghRrwCJHD-TaUBi0DbLfu",
+                "title": "Blond Absolu Masque Ultra Violet Purple Hair Mask - Kerastase",
+                "excerpts": [
+                  "# Blond Absolu Masque Ultra Violet Purple Hair Mask ... Selected 200ml ... Old price New price $68.00 ($0.34/ml.)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/blond-absolu/masque-ultra-violet-purple-hair-mask.html?srsltid=AfmBOophwLsvHNbf8HujW-7M_WwM9iSWQR2ghRrwCJHD-TaUBi0DbLfu",
+                "title": "Blond Absolu Masque Ultra Violet Purple Hair Mask - Kerastase",
+                "excerpts": [
+                  "Blond Absolu Masque Ultra Violet Purple Hair Mask - Kerastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/blond-absolu/masque-ultra-violet-purple-hair-mask.html?srsltid=AfmBOophwLsvHNbf8HujW-7M_WwM9iSWQR2ghRrwCJHD-TaUBi0DbLfu",
+                "title": "Blond Absolu Masque Ultra Violet Purple Hair Mask - Kerastase",
+                "excerpts": [
+                  "Old price New price $68.00 ($0.34/ml.)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/blond-absolu/masque-ultra-violet-purple-hair-mask.html?srsltid=AfmBOophwLsvHNbf8HujW-7M_WwM9iSWQR2ghRrwCJHD-TaUBi0DbLfu",
+                "title": "Blond Absolu Masque Ultra Violet Purple Hair Mask - Kerastase",
+                "excerpts": [
+                  "Prices and payment are shown in USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/blond-absolu/masque-ultra-violet-purple-hair-mask.html?srsltid=AfmBOophwLsvHNbf8HujW-7M_WwM9iSWQR2ghRrwCJHD-TaUBi0DbLfu",
+                "title": "Blond Absolu Masque Ultra Violet Purple Hair Mask - Kerastase",
+                "excerpts": [
+                  "Blond Absolu Masque Ultra Violet Purple Hair Mask"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/blond-absolu/masque-ultra-violet-purple-hair-mask.html?srsltid=AfmBOophwLsvHNbf8HujW-7M_WwM9iSWQR2ghRrwCJHD-TaUBi0DbLfu",
+                "title": "Blond Absolu Masque Ultra Violet Purple Hair Mask - Kerastase",
+                "excerpts": [
+                  "K\u00e9rastase luxury hair care products; manufacturer Kerastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/blond-absolu/masque-ultra-violet-purple-hair-mask.html?srsltid=AfmBOophwLsvHNbf8HujW-7M_WwM9iSWQR2ghRrwCJHD-TaUBi0DbLfu",
+                "title": "Blond Absolu Masque Ultra Violet Purple Hair Mask - Kerastase",
+                "excerpts": [
+                  "In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/blond-absolu/masque-ultra-violet-purple-hair-mask.html?srsltid=AfmBOophwLsvHNbf8HujW-7M_WwM9iSWQR2ghRrwCJHD-TaUBi0DbLfu",
+                "title": "Blond Absolu Masque Ultra Violet Purple Hair Mask - Kerastase",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Ultra-Violet-Highlighted-Neutralizes-Undertones/dp/B0BMT5ZY4V",
+                "title": "Kerastase Blond Absolu Ultra-Violet Purple Hair Mask For ...",
+                "excerpts": [
+                  "Sold by: K\u00e9rastase ... Kerastase Blond Absolu Ultra-Violet Purple Hair Mask ... 6.8 Fl Oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Ultra-Violet-Highlighted-Neutralizes-Undertones/dp/B0BMT5ZY4V",
+                "title": "Kerastase Blond Absolu Ultra-Violet Purple Hair Mask For ...",
+                "excerpts": [
+                  "amazon.com/KERASTASE-Ultra-Violet-Highlighted-Neutralizes-Undertones/dp/B0BMT5ZY4V"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Ultra-Violet-Highlighted-Neutralizes-Undertones/dp/B0BMT5ZY4V",
+                "title": "Kerastase Blond Absolu Ultra-Violet Purple Hair Mask For ...",
+                "excerpts": [
+                  "One-time purchase $68.00 $10.00 per fluid ounce"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Ultra-Violet-Highlighted-Neutralizes-Undertones/dp/B0BMT5ZY4V",
+                "title": "Kerastase Blond Absolu Ultra-Violet Purple Hair Mask For ...",
+                "excerpts": [
+                  "$68.00 (USD listing on Amazon.com US)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Ultra-Violet-Highlighted-Neutralizes-Undertones/dp/B0BMT5ZY4V",
+                "title": "Kerastase Blond Absolu Ultra-Violet Purple Hair Mask For ...",
+                "excerpts": [
+                  "dp/B0BMT5ZY4V"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Ultra-Violet-Highlighted-Neutralizes-Undertones/dp/B0BMT5ZY4V",
+                "title": "Kerastase Blond Absolu Ultra-Violet Purple Hair Mask For ...",
+                "excerpts": [
+                  "Ships from: Amazon Sold by: K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Ultra-Violet-Highlighted-Neutralizes-Undertones/dp/B0BMT5ZY4V",
+                "title": "Kerastase Blond Absolu Ultra-Violet Purple Hair Mask For ...",
+                "excerpts": [
+                  "In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Ultra-Violet-Highlighted-Neutralizes-Undertones/dp/B0BMT5ZY4V",
+                "title": "Kerastase Blond Absolu Ultra-Violet Purple Hair Mask For ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "title": "https://www.walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "excerpts": [
+                  "Kerastase Blond Absolu Hair Masque Ultra-Violet 6.8 Oz ... Sold and shipped by ProCareChoice"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "title": "https://www.walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "excerpts": [
+                  "walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "title": "https://www.walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "excerpts": [
+                  "Current price is Now $48.45 You save $19.55 was $68.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "title": "https://www.walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "excerpts": [
+                  "$48.45 (USD Walmart US listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "title": "https://www.walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "excerpts": [
+                  "Kerastase Blond Absolu Hair Masque Ultra-Violet 6.8 Oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "title": "https://www.walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "excerpts": [
+                  "Sold and shipped by ProCareChoice"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "title": "https://www.walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "excerpts": [
+                  "Price when purchased online; explicit stock status not shown"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "title": "https://www.walmart.com/ip/Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-6-8-Oz/161367276",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739",
+                "title": "https://www.mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739/",
+                "excerpts": [
+                  "K\u00e9rastase Blond Absolu Ultra-Violet Purple Hair Mask 200ml $109.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739",
+                "title": "https://www.mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739/",
+                "excerpts": [
+                  "mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739/"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739",
+                "title": "https://www.mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739/",
+                "excerpts": [
+                  "Blond Absolu Ultra-Violet Purple Hair Mask 200ml $109.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739",
+                "title": "https://www.mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739/",
+                "excerpts": [
+                  "mecca.com/en-nz (New Zealand store, $ NZD)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739",
+                "title": "https://www.mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739/",
+                "excerpts": [
+                  "Blond Absolu Ultra-Violet Purple Hair Mask 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739",
+                "title": "https://www.mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739/",
+                "excerpts": [
+                  "Mecca beauty retailer stocking K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739",
+                "title": "https://www.mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739/",
+                "excerpts": [
+                  "This product is no longer available."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739",
+                "title": "https://www.mecca.com/en-nz/kerastase/blond-absolu-ultra-violet-purple-hair-mask-I-071739/",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m16398963336",
+                "title": "KERASTASE BLOND ABSOLU MASK ULTRA VIOLET",
+                "excerpts": [
+                  "KERASTASE BLOND ABSOLU MASK ULTRA VIOLET MASQUE 200ml / 6.8oz New | K\u00e9rastase $73.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m16398963336",
+                "title": "KERASTASE BLOND ABSOLU MASK ULTRA VIOLET",
+                "excerpts": [
+                  "$73.00 (USD Mercari US listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m16398963336",
+                "title": "KERASTASE BLOND ABSOLU MASK ULTRA VIOLET",
+                "excerpts": [
+                  "Make offer Add to cart Buy now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m16398963336",
+                "title": "KERASTASE BLOND ABSOLU MASK ULTRA VIOLET",
+                "excerpts": [
+                  "mercari.com/us/item/m16398963336"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m16398963336",
+                "title": "KERASTASE BLOND ABSOLU MASK ULTRA VIOLET",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m16398963336",
+                "title": "KERASTASE BLOND ABSOLU MASK ULTRA VIOLET",
+                "excerpts": [
+                  "mercari.com/us/item/m16398963336"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m16398963336",
+                "title": "KERASTASE BLOND ABSOLU MASK ULTRA VIOLET",
+                "excerpts": [
+                  "Rafael Rivera @user671692951 ... KERASTASE BLOND ABSOLU MASK ULTRA VIOLET MASQUE 200ml / 6.8oz $73.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m16398963336",
+                "title": "KERASTASE BLOND ABSOLU MASK ULTRA VIOLET",
+                "excerpts": [
+                  "Mercari peer-to-peer marketplace listing by individual seller Rafael Rivera"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/NWT-Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-673e5571ce7065e4d57f6e45?srsltid=AfmBOooma9Hog7FT0gZDmEajX5TDTCKAZEexcXj0uiWKYiXbnnWqCMhn",
+                "title": "Nwt Kerastase Blond Absolu Hair Masque Ultra Violet",
+                "excerpts": [
+                  "NWT Kerastase Blond Absolu Hair Masque Ultra Violet $52 $75"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/NWT-Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-673e5571ce7065e4d57f6e45?srsltid=AfmBOooma9Hog7FT0gZDmEajX5TDTCKAZEexcXj0uiWKYiXbnnWqCMhn",
+                "title": "Nwt Kerastase Blond Absolu Hair Masque Ultra Violet",
+                "excerpts": [
+                  "$52 (USD Poshmark US listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/NWT-Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-673e5571ce7065e4d57f6e45?srsltid=AfmBOooma9Hog7FT0gZDmEajX5TDTCKAZEexcXj0uiWKYiXbnnWqCMhn",
+                "title": "Nwt Kerastase Blond Absolu Hair Masque Ultra Violet",
+                "excerpts": [
+                  "Yes, this item is still for sale. Make an Offer Buy Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/NWT-Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-673e5571ce7065e4d57f6e45?srsltid=AfmBOooma9Hog7FT0gZDmEajX5TDTCKAZEexcXj0uiWKYiXbnnWqCMhn",
+                "title": "Nwt Kerastase Blond Absolu Hair Masque Ultra Violet",
+                "excerpts": [
+                  "poshmark.com/listing/NWT-Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-673e5571ce7065e4d57f6e45"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/NWT-Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-673e5571ce7065e4d57f6e45?srsltid=AfmBOooma9Hog7FT0gZDmEajX5TDTCKAZEexcXj0uiWKYiXbnnWqCMhn",
+                "title": "Nwt Kerastase Blond Absolu Hair Masque Ultra Violet",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/NWT-Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-673e5571ce7065e4d57f6e45?srsltid=AfmBOooma9Hog7FT0gZDmEajX5TDTCKAZEexcXj0uiWKYiXbnnWqCMhn",
+                "title": "Nwt Kerastase Blond Absolu Hair Masque Ultra Violet",
+                "excerpts": [
+                  "poshmark.com/listing/NWT-Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/NWT-Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-673e5571ce7065e4d57f6e45?srsltid=AfmBOooma9Hog7FT0gZDmEajX5TDTCKAZEexcXj0uiWKYiXbnnWqCMhn",
+                "title": "Nwt Kerastase Blond Absolu Hair Masque Ultra Violet",
+                "excerpts": [
+                  "@yzergirlly ... NWT Kerastase Blond Absolu Hair Masque Ultra Violet $52 $75"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/NWT-Kerastase-Blond-Absolu-Hair-Masque-Ultra-Violet-673e5571ce7065e4d57f6e45?srsltid=AfmBOooma9Hog7FT0gZDmEajX5TDTCKAZEexcXj0uiWKYiXbnnWqCMhn",
+                "title": "Nwt Kerastase Blond Absolu Hair Masque Ultra Violet",
+                "excerpts": [
+                  "Poshmark peer-to-peer resale marketplace listing by individual seller yzergirlly"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-blond-absolu-masque-ultra-violet-anti-brass-blonde-perfecting-purple-masque-lightened-cool-blonde-hair-200ml-6-8oz-3474636692408.html?srsltid=AfmBOopDRNhjzajEjRdjIi2U0oUNc1TmT7RzVzIlE1OIijUIr2WsISug",
+                "title": "Kerastase - Blond Absolu Masque Ultra-Violet Anti-Brass ...",
+                "excerpts": [
+                  "Retail$62.00 Asking$49.99 $47.49"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-blond-absolu-masque-ultra-violet-anti-brass-blonde-perfecting-purple-masque-lightened-cool-blonde-hair-200ml-6-8oz-3474636692408.html?srsltid=AfmBOopDRNhjzajEjRdjIi2U0oUNc1TmT7RzVzIlE1OIijUIr2WsISug",
+                "title": "Kerastase - Blond Absolu Masque Ultra-Violet Anti-Brass ...",
+                "excerpts": [
+                  "$47.49 (USD Jomashop US listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-blond-absolu-masque-ultra-violet-anti-brass-blonde-perfecting-purple-masque-lightened-cool-blonde-hair-200ml-6-8oz-3474636692408.html?srsltid=AfmBOopDRNhjzajEjRdjIi2U0oUNc1TmT7RzVzIlE1OIijUIr2WsISug",
+                "title": "Kerastase - Blond Absolu Masque Ultra-Violet Anti-Brass ...",
+                "excerpts": [
+                  "Condition: New ... Free shipping over $100; explicit stock status not shown"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-blond-absolu-masque-ultra-violet-anti-brass-blonde-perfecting-purple-masque-lightened-cool-blonde-hair-200ml-6-8oz-3474636692408.html?srsltid=AfmBOopDRNhjzajEjRdjIi2U0oUNc1TmT7RzVzIlE1OIijUIr2WsISug",
+                "title": "Kerastase - Blond Absolu Masque Ultra-Violet Anti-Brass ...",
+                "excerpts": [
+                  "Blond Absolu Masque Ultra-Violet Anti-Brass Blonde Perfecting Purple Masque ... 200ml/6.8oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-blond-absolu-masque-ultra-violet-anti-brass-blonde-perfecting-purple-masque-lightened-cool-blonde-hair-200ml-6-8oz-3474636692408.html?srsltid=AfmBOopDRNhjzajEjRdjIi2U0oUNc1TmT7RzVzIlE1OIijUIr2WsISug",
+                "title": "Kerastase - Blond Absolu Masque Ultra-Violet Anti-Brass ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-blond-absolu-masque-ultra-violet-anti-brass-blonde-perfecting-purple-masque-lightened-cool-blonde-hair-200ml-6-8oz-3474636692408.html?srsltid=AfmBOopDRNhjzajEjRdjIi2U0oUNc1TmT7RzVzIlE1OIijUIr2WsISug",
+                "title": "Kerastase - Blond Absolu Masque Ultra-Violet Anti-Brass ...",
+                "excerpts": [
+                  "jomashop.com/kerastase-blond-absolu-masque-ultra-violet-anti-brass-blonde-perfecting-purple-masque"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-blond-absolu-masque-ultra-violet-anti-brass-blonde-perfecting-purple-masque-lightened-cool-blonde-hair-200ml-6-8oz-3474636692408.html?srsltid=AfmBOopDRNhjzajEjRdjIi2U0oUNc1TmT7RzVzIlE1OIijUIr2WsISug",
+                "title": "Kerastase - Blond Absolu Masque Ultra-Violet Anti-Brass ...",
+                "excerpts": [
+                  "Kerastase - Blond Absolu Masque Ultra-Violet Anti-Brass Blonde Perfecting Purple Masque ... 200ml/6.8oz Asking$49.99 $47.49"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-blond-absolu-masque-ultra-violet-anti-brass-blonde-perfecting-purple-masque-lightened-cool-blonde-hair-200ml-6-8oz-3474636692408.html?srsltid=AfmBOopDRNhjzajEjRdjIi2U0oUNc1TmT7RzVzIlE1OIijUIr2WsISug",
+                "title": "Kerastase - Blond Absolu Masque Ultra-Violet Anti-Brass ...",
+                "excerpts": [
+                  "1,350,000+ HAPPY CUSTOMERS | ONLINE SINCE 1999; Retail$62.00 Asking$49.99 $47.49 (discount discounter pricing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-masque-ultra-violet?srsltid=AfmBOopHv9--yCZU0eX12rpzPfsijfL9W7KUKCIJJl5Xi_g3QwO_BOn3",
+                "title": "Kerastase Blond Absolu Masque Ultra-Violet 200ml",
+                "excerpts": [
+                  "Original price was: $99.00. Current price is: $80.15. 200ml 8 in stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-masque-ultra-violet?srsltid=AfmBOopHv9--yCZU0eX12rpzPfsijfL9W7KUKCIJJl5Xi_g3QwO_BOn3",
+                "title": "Kerastase Blond Absolu Masque Ultra-Violet 200ml",
+                "excerpts": [
+                  "Original price was: $99.00. Current price is: $80.15 (USD listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-masque-ultra-violet?srsltid=AfmBOopHv9--yCZU0eX12rpzPfsijfL9W7KUKCIJJl5Xi_g3QwO_BOn3",
+                "title": "Kerastase Blond Absolu Masque Ultra-Violet 200ml",
+                "excerpts": [
+                  "8 in stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-masque-ultra-violet?srsltid=AfmBOopHv9--yCZU0eX12rpzPfsijfL9W7KUKCIJJl5Xi_g3QwO_BOn3",
+                "title": "Kerastase Blond Absolu Masque Ultra-Violet 200ml",
+                "excerpts": [
+                  "Kerastase Blond Absolu Masque Ultra-Violet 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-masque-ultra-violet?srsltid=AfmBOopHv9--yCZU0eX12rpzPfsijfL9W7KUKCIJJl5Xi_g3QwO_BOn3",
+                "title": "Kerastase Blond Absolu Masque Ultra-Violet 200ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-masque-ultra-violet?srsltid=AfmBOopHv9--yCZU0eX12rpzPfsijfL9W7KUKCIJJl5Xi_g3QwO_BOn3",
+                "title": "Kerastase Blond Absolu Masque Ultra-Violet 200ml",
+                "excerpts": [
+                  "savvyhairartistry.com/product/kerastase-masque-ultra-violet"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-masque-ultra-violet?srsltid=AfmBOopHv9--yCZU0eX12rpzPfsijfL9W7KUKCIJJl5Xi_g3QwO_BOn3",
+                "title": "Kerastase Blond Absolu Masque Ultra-Violet 200ml",
+                "excerpts": [
+                  "Savvy Hair Artistry ... Kerastase Blond Absolu Masque Ultra-Violet 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-masque-ultra-violet?srsltid=AfmBOopHv9--yCZU0eX12rpzPfsijfL9W7KUKCIJJl5Xi_g3QwO_BOn3",
+                "title": "Kerastase Blond Absolu Masque Ultra-Violet 200ml",
+                "excerpts": [
+                  "Savvy Hair Artistry independent salon/hair store selling K\u00e9rastase Paris products"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-masque-ultra-violet-purple-hair-mask",
+                "title": "Kerastase Blond Absolu - Masque Ultra-Violet Purple Hair Mask",
+                "excerpts": [
+                  "Regular price $68.00 USD ... Sale Sold out"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-masque-ultra-violet-purple-hair-mask",
+                "title": "Kerastase Blond Absolu - Masque Ultra-Violet Purple Hair Mask",
+                "excerpts": [
+                  "Regular price $68.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-masque-ultra-violet-purple-hair-mask",
+                "title": "Kerastase Blond Absolu - Masque Ultra-Violet Purple Hair Mask",
+                "excerpts": [
+                  "Sale Sold out Quantity (0 in cart)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-masque-ultra-violet-purple-hair-mask",
+                "title": "Kerastase Blond Absolu - Masque Ultra-Violet Purple Hair Mask",
+                "excerpts": [
+                  "Kerastase Blond Absolu - Masque Ultra-Violet Purple Hair Mask"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-masque-ultra-violet-purple-hair-mask",
+                "title": "Kerastase Blond Absolu - Masque Ultra-Violet Purple Hair Mask",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-masque-ultra-violet-purple-hair-mask",
+                "title": "Kerastase Blond Absolu - Masque Ultra-Violet Purple Hair Mask",
+                "excerpts": [
+                  "privesuite.com/products/kerastase-masque-ultra-violet-purple-hair-mask"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-masque-ultra-violet-purple-hair-mask",
+                "title": "Kerastase Blond Absolu - Masque Ultra-Violet Purple Hair Mask",
+                "excerpts": [
+                  "Kerastase Blond Absolu - Masque Ultra-Violet Purple Hair Mask Regular price $68.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-masque-ultra-violet-purple-hair-mask",
+                "title": "Kerastase Blond Absolu - Masque Ultra-Violet Purple Hair Mask",
+                "excerpts": [
+                  "Prive Suite independent salon/hair e-commerce store selling K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://maksalon.com/collections/all",
+                "title": "Kerastase Hair Products - Shop All",
+                "excerpts": [
+                  "Kerastase Blond Absolu Masque Ultra Violet Purple Hair Mask Regular price $68.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://maksalon.com/collections/all",
+                "title": "Kerastase Hair Products - Shop All",
+                "excerpts": [
+                  "Regular price $68.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://maksalon.com/collections/all",
+                "title": "Kerastase Hair Products - Shop All",
+                "excerpts": [
+                  "Regular price $68.00 USD (no sold-out label shown for this item on the collection page)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://maksalon.com/collections/all",
+                "title": "Kerastase Hair Products - Shop All",
+                "excerpts": [
+                  "Kerastase Blond Absolu Masque Ultra Violet Purple Hair Mask"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://maksalon.com/collections/all",
+                "title": "Kerastase Hair Products - Shop All",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://maksalon.com/collections/all",
+                "title": "Kerastase Hair Products - Shop All",
+                "excerpts": [
+                  "maksalon.com/products/kerastase-blond-absolu-masque-ultra-violet-purple-hair-mask"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://maksalon.com/collections/all",
+                "title": "Kerastase Hair Products - Shop All",
+                "excerpts": [
+                  "Mak Salon ... Kerastase Blond Absolu Masque Ultra Violet Purple Hair Mask $68.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://maksalon.com/collections/all",
+                "title": "Kerastase Hair Products - Shop All",
+                "excerpts": [
+                  "Mak Salon independent salon-quality hair care store selling K\u00e9rastase Blond Absolu"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?srsltid=AfmBOooylOBt3UM6h6lkJ6cdTbNlL05bfs26wsOUt8e57j1Yes9gRwBa",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment 200ml \u00a351.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?srsltid=AfmBOooylOBt3UM6h6lkJ6cdTbNlL05bfs26wsOUt8e57j1Yes9gRwBa",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "FREE UK delivery on orders over \u00a325; \u00a351.00 (GBP lookfantastic UK listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?srsltid=AfmBOooylOBt3UM6h6lkJ6cdTbNlL05bfs26wsOUt8e57j1Yes9gRwBa",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment 200ml \u00a351.00 (explicit stock status not shown in extracted content)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?srsltid=AfmBOooylOBt3UM6h6lkJ6cdTbNlL05bfs26wsOUt8e57j1Yes9gRwBa",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?srsltid=AfmBOooylOBt3UM6h6lkJ6cdTbNlL05bfs26wsOUt8e57j1Yes9gRwBa",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?srsltid=AfmBOooylOBt3UM6h6lkJ6cdTbNlL05bfs26wsOUt8e57j1Yes9gRwBa",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?srsltid=AfmBOooylOBt3UM6h6lkJ6cdTbNlL05bfs26wsOUt8e57j1Yes9gRwBa",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment 200ml \u00a351.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?srsltid=AfmBOooylOBt3UM6h6lkJ6cdTbNlL05bfs26wsOUt8e57j1Yes9gRwBa",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "Lookfantastic authorized beauty retailer stocking K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.ie/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?bvstate=pg%3A9%2Fct%3Ar&orderBy=DESC&pageNumber=5&sortBy=created",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "# K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment 200ml \u20ac58.65"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.ie/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?bvstate=pg%3A9%2Fct%3Ar&orderBy=DESC&pageNumber=5&sortBy=created",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "\u20ac58.65 (EUR lookfantastic Ireland listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.ie/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?bvstate=pg%3A9%2Fct%3Ar&orderBy=DESC&pageNumber=5&sortBy=created",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.ie/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?bvstate=pg%3A9%2Fct%3Ar&orderBy=DESC&pageNumber=5&sortBy=created",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.ie/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?bvstate=pg%3A9%2Fct%3Ar&orderBy=DESC&pageNumber=5&sortBy=created",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.ie/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?bvstate=pg%3A9%2Fct%3Ar&orderBy=DESC&pageNumber=5&sortBy=created",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "lookfantastic.ie/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.ie/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?bvstate=pg%3A9%2Fct%3Ar&orderBy=DESC&pageNumber=5&sortBy=created",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment 200ml \u20ac58.65"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.ie/p/kerastase-blond-absolu-masque-ultra-violet-treatment-200ml/11994699?bvstate=pg%3A9%2Fct%3Ar&orderBy=DESC&pageNumber=5&sortBy=created",
+                "title": "K\u00e9rastase Blond Absolu Masque Ultra Violet Treatment ...",
+                "excerpts": [
+                  "Lookfantastic authorized beauty retailer stocking K\u00e9rastase (Ireland site)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Ultra-Violet-Masque-6-8-oz/3406601363",
+                "title": "Kerastase Blond Absolu Ultra-Violet Masque, 6.8 oz",
+                "excerpts": [
+                  "Kerastase Blond Absolu Ultra-Violet Masque, 6.8 oz ... Current price is $56.49 Price when purchased online"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Ultra-Violet-Masque-6-8-oz/3406601363",
+                "title": "Kerastase Blond Absolu Ultra-Violet Masque, 6.8 oz",
+                "excerpts": [
+                  "Current price is $56.49 (USD Walmart US listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Ultra-Violet-Masque-6-8-oz/3406601363",
+                "title": "Kerastase Blond Absolu Ultra-Violet Masque, 6.8 oz",
+                "excerpts": [
+                  "Price when purchased online; explicit stock status not shown"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Ultra-Violet-Masque-6-8-oz/3406601363",
+                "title": "Kerastase Blond Absolu Ultra-Violet Masque, 6.8 oz",
+                "excerpts": [
+                  "Kerastase Blond Absolu Ultra-Violet Masque, 6.8 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Ultra-Violet-Masque-6-8-oz/3406601363",
+                "title": "Kerastase Blond Absolu Ultra-Violet Masque, 6.8 oz",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Ultra-Violet-Masque-6-8-oz/3406601363",
+                "title": "Kerastase Blond Absolu Ultra-Violet Masque, 6.8 oz",
+                "excerpts": [
+                  "walmart.com/ip/Kerastase-Blond-Absolu-Ultra-Violet-Masque-6-8-oz/3406601363"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Ultra-Violet-Masque-6-8-oz/3406601363",
+                "title": "Kerastase Blond Absolu Ultra-Violet Masque, 6.8 oz",
+                "excerpts": [
+                  "Sold and shipped by ProCareChoice ... Kerastase Blond Absolu Ultra-Violet Masque, 6.8 oz $56.49"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Blond-Absolu-Ultra-Violet-Masque-6-8-oz/3406601363",
+                "title": "Kerastase Blond Absolu Ultra-Violet Masque, 6.8 oz",
+                "excerpts": [
+                  "Sold and shipped by ProCareChoice"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

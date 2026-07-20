@@ -1,0 +1,1367 @@
+{
+  "sku_id": "KER-019",
+  "effort": "high",
+  "elapsed_s": 1170,
+  "fetched_at": "2026-07-20T13:36:14+00:00",
+  "run_id": "task_run_9c410e24fe97470bb4c462a9b87509b3",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_9c410e24fe97470bb4c462a9b87509b3",
+      "interaction_id": "task_run_9c410e24fe97470bb4c462a9b87509b3",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Genesis Ampoules Anti-Chute Fortifiantes, 10x6ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:16:43.911549Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:16:44.042611Z",
+      "completed_at": "2026-07-20T13:36:04.219872Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/358168822687",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "nature_and_land",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $137.74"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.co.uk/itm/366230129367",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "bitsnbobs18-1967",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.co.uk",
+          "advertised_price": "\u00a354.45"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.co.uk/itm/188021774496",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "natureandlandeurope",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.co.uk",
+          "advertised_price": "EUR 103.55"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": false,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-genesis-ampoules-cure-fortifiantes-anti-chute-10-x-60ml/12432684",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "LOOKFANTASTIC",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "\u00a352.05"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://lyskin.com/shop/kerastase-genesis-anti-hair-fall-fortifying-ampoules-10x6ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Lyskin",
+          "seller_type": "independent_store",
+          "seller_domain": "lyskin.com",
+          "advertised_price": "$71,71"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": null,
+          "listing_url": "https://www.salonline.com/en/product/kerastase-genesis-ampoules-cure-anti-chute-fortifiantes-10x6ml-15445",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Salonline",
+          "seller_type": "independent_store",
+          "seller_domain": "salonline.com",
+          "advertised_price": "not found (login-gated)"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": false,
+          "listing_url": "https://www.amazon.co.uk/Kerastase-Genesis-Anti-Chute-10x6ml-intensive/dp/B0FJ2FTK5D",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Amazon UK",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.co.uk",
+          "advertised_price": "not found (no featured offers)"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": false,
+          "listing_url": "https://www.primor.eu/es_es/kerastase-genesis-cure-anti-chute-ampollas-anticaida-132462.html",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Perfumer\u00edas Primor",
+          "seller_type": "discounter",
+          "seller_domain": "primor.eu",
+          "advertised_price": "62,28 \u20ac"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://ebay.com/itm/358168822687",
+            "title": "https://www.ebay.com/itm/358168822687",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/sch/i.html?_nkw=Kerastase+Genesis+Anti-Chute+Fortifiantes+ampoules+10x6ml",
+            "title": "ebay_search_results_community_2026_03_23_3ef0921f",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/itm/366230129367",
+            "title": "https://www.ebay.co.uk/itm/366230129367",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/shop/kerastase-anti-hair-fall?_nkw=kerastase+anti+hair+fall",
+            "title": "Kerastase Anti Hair Fall",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/itm/188021774496",
+            "title": "https://www.ebay.co.uk/itm/188021774496",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/b/bn_7114947350",
+            "title": "K\u00e9rastase Health & Beauty for sale",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/kerastase-genesis-ampoules-cure-fortifiantes-anti-chute-10-x-60ml/12432684?srsltid=AfmBOoo-PzTFWel8YbZQRtzGEREmpQmyPgyH9d41lDiMlGSSbS6bGSiC",
+            "title": "K\u00e9rastase Genesis Ampoules Cure Fortifiantes Anti-Chute ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lyskin.com/shop/kerastase-genesis-anti-hair-fall-fortifying-ampoules-10x6ml",
+            "title": "K\u00e9rastase genesis anti hair-fall fortifying ampoules 10x6ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://salonline.com/en/product/kerastase-genesis-ampoules-cure-anti-chute-fortifiantes-10x6ml-15445",
+            "title": "K\u00e9rastase Genesis Ampoules Cure Anti-Chute Fortifiantes",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.co.uk/Kerastase-Genesis-Anti-Chute-10x6ml-intensive/dp/B0FJ2FTK5D",
+            "title": "Kerastase Genesis Anti-Chute 10x6ml - intensive anti-hair ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://primor.eu/es_es/kerastase-genesis-cure-anti-chute-ampollas-anticaida-132462.html",
+            "title": "Kerastase Genesis Cure Anti-Chute Ampollas Antica\u00edda",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358168822687",
+                "title": "https://www.ebay.com/itm/358168822687",
+                "excerpts": [
+                  "[nature_and_land](https://www.ebay.com/str/natureandland?_trksid=p4429486.m3561.l161211) ... 100% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358168822687",
+                "title": "https://www.ebay.com/itm/358168822687",
+                "excerpts": [
+                  "https://www.ebay.com/itm/358168822687 ... nature_and_land"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358168822687",
+                "title": "https://www.ebay.com/itm/358168822687",
+                "excerpts": [
+                  "US $137.74/ea or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358168822687",
+                "title": "https://www.ebay.com/itm/358168822687",
+                "excerpts": [
+                  "US $137.74/ea or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/sch/i.html?_nkw=Kerastase+Genesis+Anti-Chute+Fortifiantes+ampoules+10x6ml",
+                "title": "ebay_search_results_community_2026_03_23_3ef0921f",
+                "excerpts": [
+                  "product_url: https://www.ebay.com/itm/358168822687 ... Kerastase Genesis Anti Hair Fall Ampoules Cure Anti-Chute Fortifiantes 10x6ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358168822687",
+                "title": "https://www.ebay.com/itm/358168822687",
+                "excerpts": [
+                  "Registered as a business seller ... nature_and_land ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358168822687",
+                "title": "https://www.ebay.com/itm/358168822687",
+                "excerpts": [
+                  "4 available ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358168822687",
+                "title": "https://www.ebay.com/itm/358168822687",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/366230129367",
+                "title": "https://www.ebay.co.uk/itm/366230129367",
+                "excerpts": [
+                  "[Seller's other items](https://www.ebay.co.uk/sch/bitsnbobs18-1967/m.html?item=366230129367) ... Registered as a business seller ... 99.8% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/366230129367",
+                "title": "https://www.ebay.co.uk/itm/366230129367",
+                "excerpts": [
+                  "https://www.ebay.co.uk/itm/366230129367"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/366230129367",
+                "title": "https://www.ebay.co.uk/itm/366230129367",
+                "excerpts": [
+                  "\u00a354.45 or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/366230129367",
+                "title": "https://www.ebay.co.uk/itm/366230129367",
+                "excerpts": [
+                  "\u00a354.45 or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/shop/kerastase-anti-hair-fall?_nkw=kerastase+anti+hair+fall",
+                "title": "Kerastase Anti Hair Fall",
+                "excerpts": [
+                  "K\u00e9rastase Genesis Anti Hair-Fall Fortifying Treatment Ampoules 10 x 6ml ... ebay.co.uk/itm/366230129367"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/366230129367",
+                "title": "https://www.ebay.co.uk/itm/366230129367",
+                "excerpts": [
+                  "Registered as a business seller ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/366230129367",
+                "title": "https://www.ebay.co.uk/itm/366230129367",
+                "excerpts": [
+                  "3 available 2 sold ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/366230129367",
+                "title": "https://www.ebay.co.uk/itm/366230129367",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/188021774496",
+                "title": "https://www.ebay.co.uk/itm/188021774496",
+                "excerpts": [
+                  "[Seller's other items](https://www.ebay.co.uk/str/natureandlandeurope) ... Registered as a business seller ... 100% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/188021774496",
+                "title": "https://www.ebay.co.uk/itm/188021774496",
+                "excerpts": [
+                  "https://www.ebay.co.uk/itm/188021774496 ... natureandlandeurope"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/188021774496",
+                "title": "https://www.ebay.co.uk/itm/188021774496",
+                "excerpts": [
+                  "EUR 103.55 or Best Offer ... Was EUR 109.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/188021774496",
+                "title": "https://www.ebay.co.uk/itm/188021774496",
+                "excerpts": [
+                  "EUR 103.55 or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/b/bn_7114947350",
+                "title": "K\u00e9rastase Health & Beauty for sale",
+                "excerpts": [
+                  "Kerastase Genesis Cure Anti-Chute Ampoules Anti-Hair Loss Serum 10 x 6ml ... ebay.co.uk/itm/188021774496"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/188021774496",
+                "title": "https://www.ebay.co.uk/itm/188021774496",
+                "excerpts": [
+                  "Registered as a business seller ... natureandlandeurope"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/188021774496",
+                "title": "https://www.ebay.co.uk/itm/188021774496",
+                "excerpts": [
+                  "Only 1 left"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://ebay.co.uk/b/bn_7114947350",
+                "title": "K\u00e9rastase Health & Beauty for sale",
+                "excerpts": [
+                  "Only 1 left."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/itm/188021774496",
+                "title": "https://www.ebay.co.uk/itm/188021774496",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-ampoules-cure-fortifiantes-anti-chute-10-x-60ml/12432684?srsltid=AfmBOoo-PzTFWel8YbZQRtzGEREmpQmyPgyH9d41lDiMlGSSbS6bGSiC",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Fortifiantes Anti-Chute ...",
+                "excerpts": [
+                  "LOOKFANTASTIC\u00ae is Europe's No. 1 online destination for premium and luxury beauty ... # K\u00e9rastase Genesis Ampoules Cure Fortifiantes Anti-Chute 10 x 60ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-ampoules-cure-fortifiantes-anti-chute-10-x-60ml/12432684?srsltid=AfmBOoo-PzTFWel8YbZQRtzGEREmpQmyPgyH9d41lDiMlGSSbS6bGSiC",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Fortifiantes Anti-Chute ...",
+                "excerpts": [
+                  "url: https://lookfantastic.com/p/kerastase-genesis-ampoules-cure-fortifiantes-anti-chute-10-x-60ml/12432684"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-ampoules-cure-fortifiantes-anti-chute-10-x-60ml/12432684?srsltid=AfmBOoo-PzTFWel8YbZQRtzGEREmpQmyPgyH9d41lDiMlGSSbS6bGSiC",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Fortifiantes Anti-Chute ...",
+                "excerpts": [
+                  "\u00a352.05 ... Or 4 interest free payments of \u00a313.01 with"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-ampoules-cure-fortifiantes-anti-chute-10-x-60ml/12432684?srsltid=AfmBOoo-PzTFWel8YbZQRtzGEREmpQmyPgyH9d41lDiMlGSSbS6bGSiC",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Fortifiantes Anti-Chute ...",
+                "excerpts": [
+                  "\u00a352.05 ... FREE UK delivery on orders over \u00a325"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-ampoules-cure-fortifiantes-anti-chute-10-x-60ml/12432684?srsltid=AfmBOoo-PzTFWel8YbZQRtzGEREmpQmyPgyH9d41lDiMlGSSbS6bGSiC",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Fortifiantes Anti-Chute ...",
+                "excerpts": [
+                  "url: https://lookfantastic.com/p/kerastase-genesis-ampoules-cure-fortifiantes-anti-chute-10-x-60ml/12432684"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-ampoules-cure-fortifiantes-anti-chute-10-x-60ml/12432684?srsltid=AfmBOoo-PzTFWel8YbZQRtzGEREmpQmyPgyH9d41lDiMlGSSbS6bGSiC",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Fortifiantes Anti-Chute ...",
+                "excerpts": [
+                  "LOOKFANTASTIC\u00ae is Europe's No. 1 online destination for premium and luxury beauty offering an extensive selection of skincare, haircare, fragrance and cosmetics from over 660 prestigious brands."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-ampoules-cure-fortifiantes-anti-chute-10-x-60ml/12432684?srsltid=AfmBOoo-PzTFWel8YbZQRtzGEREmpQmyPgyH9d41lDiMlGSSbS6bGSiC",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Fortifiantes Anti-Chute ...",
+                "excerpts": [
+                  "Quantity: COMING SOON ... Dispatching From : 1 January 1970"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-genesis-ampoules-cure-fortifiantes-anti-chute-10-x-60ml/12432684?srsltid=AfmBOoo-PzTFWel8YbZQRtzGEREmpQmyPgyH9d41lDiMlGSSbS6bGSiC",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Fortifiantes Anti-Chute ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-genesis-anti-hair-fall-fortifying-ampoules-10x6ml",
+                "title": "K\u00e9rastase genesis anti hair-fall fortifying ampoules 10x6ml",
+                "excerpts": [
+                  "[![](https://lyskin.com/wp-content/uploads/2022/07/lyskin-logo-branco.svg)](https://lyskin.com/) ... # K\u00e9rastase genesis anti hair-fall fortifying ampoules 10x6ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-genesis-anti-hair-fall-fortifying-ampoules-10x6ml",
+                "title": "K\u00e9rastase genesis anti hair-fall fortifying ampoules 10x6ml",
+                "excerpts": [
+                  "url: https://lyskin.com/shop/kerastase-genesis-anti-hair-fall-fortifying-ampoules-10x6ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-genesis-anti-hair-fall-fortifying-ampoules-10x6ml",
+                "title": "K\u00e9rastase genesis anti hair-fall fortifying ampoules 10x6ml",
+                "excerpts": [
+                  "## K\u00e9rastase genesis ampoules cure anti-chute fortifiantes ... $71,71 ... **10x6ml**"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-genesis-anti-hair-fall-fortifying-ampoules-10x6ml",
+                "title": "K\u00e9rastase genesis anti hair-fall fortifying ampoules 10x6ml",
+                "excerpts": [
+                  "$71,71 ... $0,00 0 Cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-genesis-anti-hair-fall-fortifying-ampoules-10x6ml",
+                "title": "K\u00e9rastase genesis anti hair-fall fortifying ampoules 10x6ml",
+                "excerpts": [
+                  "url: https://lyskin.com/shop/kerastase-genesis-anti-hair-fall-fortifying-ampoules-10x6ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-genesis-anti-hair-fall-fortifying-ampoules-10x6ml",
+                "title": "K\u00e9rastase genesis anti hair-fall fortifying ampoules 10x6ml",
+                "excerpts": [
+                  "Free shipping available ... Add to cart ... Categories: Ampoules"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-genesis-anti-hair-fall-fortifying-ampoules-10x6ml",
+                "title": "K\u00e9rastase genesis anti hair-fall fortifying ampoules 10x6ml",
+                "excerpts": [
+                  "AVAILABLE ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-genesis-anti-hair-fall-fortifying-ampoules-10x6ml",
+                "title": "K\u00e9rastase genesis anti hair-fall fortifying ampoules 10x6ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonline.com/en/product/kerastase-genesis-ampoules-cure-anti-chute-fortifiantes-10x6ml-15445",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Anti-Chute Fortifiantes",
+                "excerpts": [
+                  "Log in for prices"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonline.com/en/product/kerastase-genesis-ampoules-cure-anti-chute-fortifiantes-10x6ml-15445",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Anti-Chute Fortifiantes",
+                "excerpts": [
+                  "EUR ... Log in for prices"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonline.com/en/product/kerastase-genesis-ampoules-cure-anti-chute-fortifiantes-10x6ml-15445",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Anti-Chute Fortifiantes",
+                "excerpts": [
+                  "Real-time stock and prices ... Log in for prices"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonline.com/en/product/kerastase-genesis-ampoules-cure-anti-chute-fortifiantes-10x6ml-15445",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Anti-Chute Fortifiantes",
+                "excerpts": [
+                  "url: https://salonline.com/en/product/kerastase-genesis-ampoules-cure-anti-chute-fortifiantes-10x6ml-15445"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonline.com/en/product/kerastase-genesis-ampoules-cure-anti-chute-fortifiantes-10x6ml-15445",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Anti-Chute Fortifiantes",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonline.com/en/product/kerastase-genesis-ampoules-cure-anti-chute-fortifiantes-10x6ml-15445",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Anti-Chute Fortifiantes",
+                "excerpts": [
+                  "url: https://salonline.com/en/product/kerastase-genesis-ampoules-cure-anti-chute-fortifiantes-10x6ml-15445"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonline.com/en/product/kerastase-genesis-ampoules-cure-anti-chute-fortifiantes-10x6ml-15445",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Anti-Chute Fortifiantes",
+                "excerpts": [
+                  "Buy K\u00e9rastase Genesis Ampoules Cure Anti-Chute Fortifiantes 10x6ml at Salonline.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonline.com/en/product/kerastase-genesis-ampoules-cure-anti-chute-fortifiantes-10x6ml-15445",
+                "title": "K\u00e9rastase Genesis Ampoules Cure Anti-Chute Fortifiantes",
+                "excerpts": [
+                  "Exclusively for professionals ... Real-time stock and prices"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/Kerastase-Genesis-Anti-Chute-10x6ml-intensive/dp/B0FJ2FTK5D",
+                "title": "Kerastase Genesis Anti-Chute 10x6ml - intensive anti-hair ...",
+                "excerpts": [
+                  "No featured offers available ... This item cannot be dispatched to your selected delivery location."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/Kerastase-Genesis-Anti-Chute-10x6ml-intensive/dp/B0FJ2FTK5D",
+                "title": "Kerastase Genesis Anti-Chute 10x6ml - intensive anti-hair ...",
+                "excerpts": [
+                  "amazon.co.uk ... Kerastase Genesis Anti-Chute 10x6ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/Kerastase-Genesis-Anti-Chute-10x6ml-intensive/dp/B0FJ2FTK5D",
+                "title": "Kerastase Genesis Anti-Chute 10x6ml - intensive anti-hair ...",
+                "excerpts": [
+                  "No featured offers available ... This item cannot be dispatched to your selected delivery location."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/Kerastase-Genesis-Anti-Chute-10x6ml-intensive/dp/B0FJ2FTK5D",
+                "title": "Kerastase Genesis Anti-Chute 10x6ml - intensive anti-hair ...",
+                "excerpts": [
+                  "url: https://amazon.co.uk/Kerastase-Genesis-Anti-Chute-10x6ml-intensive/dp/B0FJ2FTK5D"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/Kerastase-Genesis-Anti-Chute-10x6ml-intensive/dp/B0FJ2FTK5D",
+                "title": "Kerastase Genesis Anti-Chute 10x6ml - intensive anti-hair ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/Kerastase-Genesis-Anti-Chute-10x6ml-intensive/dp/B0FJ2FTK5D",
+                "title": "Kerastase Genesis Anti-Chute 10x6ml - intensive anti-hair ...",
+                "excerpts": [
+                  "url: https://amazon.co.uk/Kerastase-Genesis-Anti-Chute-10x6ml-intensive/dp/B0FJ2FTK5D"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/Kerastase-Genesis-Anti-Chute-10x6ml-intensive/dp/B0FJ2FTK5D",
+                "title": "Kerastase Genesis Anti-Chute 10x6ml - intensive anti-hair ...",
+                "excerpts": [
+                  "Kerastase Genesis Anti-Chute 10x6ml - intensive anti-hair loss treatment"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.co.uk/Kerastase-Genesis-Anti-Chute-10x6ml-intensive/dp/B0FJ2FTK5D",
+                "title": "Kerastase Genesis Anti-Chute 10x6ml - intensive anti-hair ...",
+                "excerpts": [
+                  "amazon.co.uk ... No featured offers available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://primor.eu/es_es/kerastase-genesis-cure-anti-chute-ampollas-anticaida-132462.html",
+                "title": "Kerastase Genesis Cure Anti-Chute Ampollas Antica\u00edda",
+                "excerpts": [
+                  "62,28 \u20ac (-20%) ... Tan bajo como: 49,95 \u20ac"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://primor.eu/es_es/kerastase-genesis-cure-anti-chute-ampollas-anticaida-132462.html",
+                "title": "Kerastase Genesis Cure Anti-Chute Ampollas Antica\u00edda",
+                "excerpts": [
+                  "62,28 \u20ac (-20%) ... Tan bajo como: 49,95 \u20ac"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://primor.eu/es_es/kerastase-genesis-cure-anti-chute-ampollas-anticaida-132462.html",
+                "title": "Kerastase Genesis Cure Anti-Chute Ampollas Antica\u00edda",
+                "excerpts": [
+                  "No est\u00e1 disponible"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://primor.eu/es_es/kerastase-genesis-cure-anti-chute-ampollas-anticaida-132462.html",
+                "title": "Kerastase Genesis Cure Anti-Chute Ampollas Antica\u00edda",
+                "excerpts": [
+                  "url: https://primor.eu/es_es/kerastase-genesis-cure-anti-chute-ampollas-anticaida-132462.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://primor.eu/es_es/kerastase-genesis-cure-anti-chute-ampollas-anticaida-132462.html",
+                "title": "Kerastase Genesis Cure Anti-Chute Ampollas Antica\u00edda",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://primor.eu/es_es/kerastase-genesis-cure-anti-chute-ampollas-anticaida-132462.html",
+                "title": "Kerastase Genesis Cure Anti-Chute Ampollas Antica\u00edda",
+                "excerpts": [
+                  "url: https://primor.eu/es_es/kerastase-genesis-cure-anti-chute-ampollas-anticaida-132462.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://primor.eu/es_es/kerastase-genesis-cure-anti-chute-ampollas-anticaida-132462.html",
+                "title": "Kerastase Genesis Cure Anti-Chute Ampollas Antica\u00edda",
+                "excerpts": [
+                  "Perfumer\u00edas Primor ... Genesis Cure Anti-Chute Ampollas Antica\u00edda"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://primor.eu/es_es/kerastase-genesis-cure-anti-chute-ampollas-anticaida-132462.html",
+                "title": "Kerastase Genesis Cure Anti-Chute Ampollas Antica\u00edda",
+                "excerpts": [
+                  "Perfumer\u00edas Primor ... 62,28 \u20ac ... No est\u00e1 disponible"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

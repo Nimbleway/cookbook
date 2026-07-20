@@ -1,0 +1,4322 @@
+{
+  "sku_id": "OLA-012",
+  "effort": "high",
+  "elapsed_s": 757,
+  "fetched_at": "2026-07-20T12:54:05+00:00",
+  "run_id": "task_run_4f7a86904d324e3c9056472cad8ccb31",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_4f7a86904d324e3c9056472cad8ccb31",
+      "interaction_id": "task_run_4f7a86904d324e3c9056472cad8ccb31",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of Olaplex No. 8 Bond Intense Moisture Mask, 100ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:41:27.100471Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:41:27.229077Z",
+      "completed_at": "2026-07-20T12:53:52.708262Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/278058196112",
+          "observed_at": "2026-07-20",
+          "seller_name": "fleos-shop (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$23.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/389945961196",
+          "observed_at": "2026-07-20",
+          "seller_name": "excessbeauty (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$24.95"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/398099475913",
+          "observed_at": "2026-07-20",
+          "seller_name": "lexilulustarr (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$29.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/168418448388",
+          "observed_at": "2026-07-20",
+          "seller_name": "nina7668 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$23.10"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/276840744170",
+          "observed_at": "2026-07-20",
+          "seller_name": "calicloseouts (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$24.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/227435661644",
+          "observed_at": "2026-07-20",
+          "seller_name": "all4homeusa (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$24.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/226985903159",
+          "observed_at": "2026-07-20",
+          "seller_name": "mybeautyproductss (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$25.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://www.walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3-Oz/355072319",
+          "observed_at": "2026-07-20",
+          "seller_name": "Walmart",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "walmart.com",
+          "advertised_price": "Now $24.96, was $30.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.dermstore.com/p/olaplex-no.-8-bond-intense-moisture-damage-repair-hair-mask-treatment-100ml/12882753",
+          "observed_at": "2026-07-20",
+          "seller_name": "Dermstore",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "dermstore.com",
+          "advertised_price": "$30.00"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": true,
+          "listing_url": "https://thebsoonline.com/products/olaplex-no-8-bond-intense-moisture-mask-100ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Beauty Supply Outlet",
+          "seller_type": "independent_store",
+          "seller_domain": "thebsoonline.com",
+          "advertised_price": "$39.60~$44.00~"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.mybeautyaffairs.com/products/olaplex-bond-intense-moisture-mask-no-8",
+          "observed_at": "2026-07-20",
+          "seller_name": "MyBeautyAffairs (Beauty Affairs)",
+          "seller_type": "independent_store",
+          "seller_domain": "mybeautyaffairs.com",
+          "advertised_price": "$48.00 USD"
+        },
+        {
+          "currency": "EGP",
+          "in_stock": true,
+          "listing_url": "https://tdawi.com/en-us/olaplex-no-8-bond-intense-moisture-mask-100ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Tdawi",
+          "seller_type": "independent_store",
+          "seller_domain": "tdawi.com",
+          "advertised_price": "$2900"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.overstock-beauty.com/products/olaplex-no-8-bond-intense-moisture-mask-3-3-oz",
+          "observed_at": "2026-07-20",
+          "seller_name": "Overstock Beauty",
+          "seller_type": "discounter",
+          "seller_domain": "overstock-beauty.com",
+          "advertised_price": "$24.95"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.salonsavings.com/products/olaplex-no-8-intense-moisture-mask",
+          "observed_at": "2026-07-20",
+          "seller_name": "SalonSavings",
+          "seller_type": "discounter",
+          "seller_domain": "salonsavings.com",
+          "advertised_price": "$21.49"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.target.com/p/olaplex-no-8-bond-intense-moisture-mask-3-3-oz/-/A-1005111802",
+          "observed_at": "2026-07-20",
+          "seller_name": "Active Beauty, Inc. (Target Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "target.com",
+          "advertised_price": "$35.00"
+        },
+        {
+          "currency": null,
+          "in_stock": null,
+          "listing_url": "https://www.saloncentric.com/olaplex-no-8-bonder.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "SalonCentric",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "saloncentric.com",
+          "advertised_price": "Login or register to view price"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://www.amazon.com/dp/B092DNPHC9",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.com",
+          "advertised_price": "Currently unavailable"
+        },
+        {
+          "currency": null,
+          "in_stock": null,
+          "listing_url": "https://www.jcpenney.com/p/olaplex-no-8-bond-intense-moisture-hair-mask-33-oz/ppr5008305161",
+          "observed_at": "2026-07-20",
+          "seller_name": "JCPenney",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "jcpenney.com",
+          "advertised_price": "Price not rendered in page extraction"
+        },
+        {
+          "currency": null,
+          "in_stock": false,
+          "listing_url": "https://www.cvs.com/shop/olaplex-no-8-bond-intense-moisture-mask-3-3-oz-prodid-643492",
+          "observed_at": "2026-07-20",
+          "seller_name": "CVS",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "cvs.com",
+          "advertised_price": "Out of stock (price not shown)"
+        },
+        {
+          "currency": null,
+          "in_stock": false,
+          "listing_url": "https://www.walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3oz/196144261",
+          "observed_at": "2026-07-20",
+          "seller_name": "Walmart (listing 196144261)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "Out of stock (price not shown)"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/256589660897",
+          "observed_at": "2026-07-20",
+          "seller_name": "shampoozone (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$24.99"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": null,
+          "listing_url": "https://www.pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+          "observed_at": "2026-07-20",
+          "seller_name": "Bazta",
+          "seller_type": "discounter",
+          "seller_domain": "bazta.com",
+          "advertised_price": "\u00a318.99"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": null,
+          "listing_url": "https://www.pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+          "observed_at": "2026-07-20",
+          "seller_name": "Beautycos",
+          "seller_type": "independent_store",
+          "seller_domain": "beautycos.com",
+          "advertised_price": "\u00a320.75"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": null,
+          "listing_url": "https://www.pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+          "observed_at": "2026-07-20",
+          "seller_name": "Unineed",
+          "seller_type": "independent_store",
+          "seller_domain": "unineed.com",
+          "advertised_price": "\u00a321.99"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": null,
+          "listing_url": "https://www.pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+          "observed_at": "2026-07-20",
+          "seller_name": "OneBioShop",
+          "seller_type": "independent_store",
+          "seller_domain": "onebioshop.com",
+          "advertised_price": "\u00a335.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": null,
+          "listing_url": "https://www.pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+          "observed_at": "2026-07-20",
+          "seller_name": "Plusshop",
+          "seller_type": "discounter",
+          "seller_domain": "plusshop.com",
+          "advertised_price": "\u00a318.99"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": null,
+          "listing_url": "https://www.pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+          "observed_at": "2026-07-20",
+          "seller_name": "50 ml",
+          "seller_type": "independent_store",
+          "seller_domain": "50ml.com",
+          "advertised_price": "\u00a325.37"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+            "title": "Olaplex No 8 Bond Intense Moisture Mask",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3-Oz/355072319",
+            "title": "Olaplex No. 8 Bond Intense Moisture Mask, 3.3 oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://dermstore.com/p/olaplex-no.-8-bond-intense-moisture-damage-repair-hair-mask-treatment-100ml/12882753?bvstate=pg%3A11%2Fct%3Ar&sendTime=1634398200&srsltid=AfmBOopA8e4AoRHLLjOIKoFTaycxMiidqUFxXxj5XyQk-35NvvEc6GIV&widget_id=3149490",
+            "title": "Olaplex No 8 Bond Intense Moisture Mask 3.3 fl. oz.",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://thebsoonline.com/products/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopJC3lO-Xb77GMrsAvAqUe5MJNSOkvHOSM4owZQ6NqE4QivzryL",
+            "title": "Olaplex No 8 Bond Intense Moisture Mask 100ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://mybeautyaffairs.com/products/olaplex-bond-intense-moisture-mask-no-8?srsltid=AfmBOoq0g9pjmrAdCV7S9fNg-Ipf-D9p-vcT2-IHepRehslAi9PWqUCq",
+            "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://tdawi.com/en-us/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopvTDlVXVmWoUCzYzg86SpEno2r59j9wMtQ5JoqLMcgXweWTTMg",
+            "title": "OLAPLEX No.8 Bond Intense Moisture Mask. 100ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://overstock-beauty.com/collections/all-color-products-8-11-2025/products/olaplex-no-8-bond-intense-moisture-mask-3-3-oz?srsltid=AfmBOoq5XDMe9OD15lWEvmNwYDf8Q2ugTqTvdSCazEb7oYTIvyyxxgM4",
+            "title": "Olaplex No.8 Bond Intense Moisture Mask 3.3 oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://salonsavings.com/products/olaplex-no-8-intense-moisture-mask?srsltid=AfmBOooA1DWvWDO93xvPPpGp1jzphkEkMbG_UP_XuHFtSuIrn210ADKf",
+            "title": "Olaplex No. 8 Intense Moisture Mask",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://target.com/p/-/A-A-1005111802",
+            "title": "target_pdp_localization",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://target.com/p/olaplex-no-8-bond-intense-moisture-mask-3-3-oz/-/A-1005111802",
+            "title": "Olaplex No. 8 Bond Intense Moisture Mask - 3.3 oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://saloncentric.com/olaplex-no-8-bonder.html",
+            "title": "Olaplex No.8 Intense Bond Moisture Mask",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/dp/B092DNPHC9",
+            "title": "amazon_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://jcpenney.com/p/olaplex-no-8-bond-intense-moisture-hair-mask-33-oz/ppr5008305161?pTmplType=beauty",
+            "title": "Olaplex No 8 Bond Intense Moisture Hair Mask 3.3 oz.",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://cvs.com/shop/olaplex-no-8-bond-intense-moisture-mask-3-3-oz-prodid-643492",
+            "title": "Olaplex No.8 Bond Intense Moisture Mask, 3.3 OZ",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3oz/196144261",
+            "title": "Olaplex No. 8 Bond Intense Moisture Mask 3.3oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+            "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask 3.3 fl oz / 100ml ... $23.99 ... Buy It Now ... Free delivery ... fleos-shop 99.4% positive (7.6K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask 3.3 fl oz / 100ml ... $23.99 ... fleos-shop 99.4% positive (7.6K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask 3.3 fl oz / 100ml ... $23.99 ... Buy It Now ... Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$23.99 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask 3.3 fl oz / 100ml ... ebay.com/itm/278058196112"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "fleos-shop 99.4% positive (7.6K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$23.99 ... Buy It Now ... Free delivery ... 87 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask 3.3 oz/100 ml NEW! ... $24.95 ... excessbeauty 99.8% positive (60.7K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "ebay.com/itm/389945961196 ... excessbeauty 99.8% positive (60.7K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask 3.3 oz/100 ml NEW! ... $24.95 ... Buy It Now ... Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$24.95 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask 3.3 oz/100 ml NEW! ... ebay.com/itm/389945961196"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "excessbeauty 99.8% positive (60.7K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$24.95 ... Buy It Now ... Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No.8 Bond Intense Moisture Mask 3.3oz 100ml MSRP $28 New SEALED ... $29.00 ... lexilulustarr 98.7% positive (27.9K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "ebay.com/itm/398099475913 ... lexilulustarr 98.7% positive (27.9K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No.8 Bond Intense Moisture Mask 3.3oz 100ml MSRP $28 New SEALED ... $29.00 ... $25.23 with coupon ... or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$29.00 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No.8 Bond Intense Moisture Mask 3.3oz 100ml MSRP $28 New SEALED ... ebay.com/itm/398099475913"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "lexilulustarr 98.7% positive (27.9K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$29.00 ... Last one ... 1 watchers"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask 3.3 fl. pump oz. Authentic US stock ... $23.10 ... nina7668 99.5% positive (812)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "ebay.com/itm/168418448388 ... nina7668 99.5% positive (812)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask 3.3 fl. pump oz. Authentic US stock ... $23.10 ... or Best Offer ... +$5.97 delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$23.10 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask 3.3 fl. pump oz. Authentic US stock ... ebay.com/itm/168418448388"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "nina7668 99.5% positive (812)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$23.10 ... or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex Bond Intense Moisture Mask No. 8 3.3 fl oz 100 ml ... $24.99 ... calicloseouts 99.6% positive (64.6K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "ebay.com/itm/276840744170 ... calicloseouts 99.6% positive (64.6K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex Bond Intense Moisture Mask No. 8 3.3 fl oz 100 ml ... $24.99 ... $22.49 with coupon ... or Best Offer ... Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$24.99 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex Bond Intense Moisture Mask No. 8 3.3 fl oz 100 ml ... ebay.com/itm/276840744170"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "calicloseouts 99.6% positive (64.6K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$24.99 ... 181 sold ... Free returns"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex Women's No.8 Bond Intense Moisture Mask 100 ml / 3.3 fl oz *NEW SEALED* ... $24.99 ... all4homeusa 99.7% positive (28.8K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "ebay.com/itm/227435661644 ... all4homeusa 99.7% positive (28.8K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex Women's No.8 Bond Intense Moisture Mask 100 ml / 3.3 fl oz *NEW SEALED* ... $24.99 ... or Best Offer ... Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$24.99 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex Women's No.8 Bond Intense Moisture Mask 100 ml / 3.3 fl oz *NEW SEALED* ... ebay.com/itm/227435661644"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "all4homeusa 99.7% positive (28.8K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$24.99 ... Free returns"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "OLAPLEX No. 8 Bond Intense Moisture Mask ~ 3.3 fl. oz./100 ml NEW *FAST SHIPPING ... $25.00 ... mybeautyproductss 99.8% positive (8.8K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "ebay.com/itm/226985903159 ... mybeautyproductss 99.8% positive (8.8K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "OLAPLEX No. 8 Bond Intense Moisture Mask ~ 3.3 fl. oz./100 ml NEW *FAST SHIPPING ... $25.00 ... Buy It Now ... Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$25.00 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "OLAPLEX No. 8 Bond Intense Moisture Mask ~ 3.3 fl. oz./100 ml NEW *FAST SHIPPING ... ebay.com/itm/226985903159"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "mybeautyproductss 99.8% positive (8.8K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$25.00 ... Buy It Now ... Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3-Oz/355072319",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask, 3.3 oz",
+                "excerpts": [
+                  "Single, Now $24.96, was $30.00, Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3-Oz/355072319",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask, 3.3 oz",
+                "excerpts": [
+                  "Now $24.96, was $30.00 ... $7.56/fl oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3-Oz/355072319",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask, 3.3 oz",
+                "excerpts": [
+                  "Single, Now $24.96, was $30.00, Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3-Oz/355072319",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask, 3.3 oz",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask, 3.3 oz ... walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3-Oz/355072319"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3-Oz/355072319",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask, 3.3 oz",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3-Oz/355072319",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask, 3.3 oz",
+                "excerpts": [
+                  "walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3-Oz/355072319"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3-Oz/355072319",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask, 3.3 oz",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask, 3.3 oz ... Best seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3-Oz/355072319",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask, 3.3 oz",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask, 3.3 oz ... Best seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-8-bond-intense-moisture-damage-repair-hair-mask-treatment-100ml/12882753?bvstate=pg%3A11%2Fct%3Ar&sendTime=1634398200&srsltid=AfmBOopA8e4AoRHLLjOIKoFTaycxMiidqUFxXxj5XyQk-35NvvEc6GIV&widget_id=3149490",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 3.3 fl. oz.",
+                "excerpts": [
+                  "$30.00 ... Or 4 interest free payments of $7.50 with"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-8-bond-intense-moisture-damage-repair-hair-mask-treatment-100ml/12882753?bvstate=pg%3A11%2Fct%3Ar&sendTime=1634398200&srsltid=AfmBOopA8e4AoRHLLjOIKoFTaycxMiidqUFxXxj5XyQk-35NvvEc6GIV&widget_id=3149490",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 3.3 fl. oz.",
+                "excerpts": [
+                  "$30.00 ... FREE US Shipping $50+"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-8-bond-intense-moisture-damage-repair-hair-mask-treatment-100ml/12882753?bvstate=pg%3A11%2Fct%3Ar&sendTime=1634398200&srsltid=AfmBOopA8e4AoRHLLjOIKoFTaycxMiidqUFxXxj5XyQk-35NvvEc6GIV&widget_id=3149490",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 3.3 fl. oz.",
+                "excerpts": [
+                  "$30.00 ... One Time Purchase"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-8-bond-intense-moisture-damage-repair-hair-mask-treatment-100ml/12882753?bvstate=pg%3A11%2Fct%3Ar&sendTime=1634398200&srsltid=AfmBOopA8e4AoRHLLjOIKoFTaycxMiidqUFxXxj5XyQk-35NvvEc6GIV&widget_id=3149490",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 3.3 fl. oz.",
+                "excerpts": [
+                  "Olaplex No 8 Bond Intense Moisture Mask 3.3 fl. oz. ... dermstore.com/p/olaplex-no.-8-bond-intense-moisture-damage-repair-hair-mask-treatment-100ml/12882753"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-8-bond-intense-moisture-damage-repair-hair-mask-treatment-100ml/12882753?bvstate=pg%3A11%2Fct%3Ar&sendTime=1634398200&srsltid=AfmBOopA8e4AoRHLLjOIKoFTaycxMiidqUFxXxj5XyQk-35NvvEc6GIV&widget_id=3149490",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 3.3 fl. oz.",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-8-bond-intense-moisture-damage-repair-hair-mask-treatment-100ml/12882753?bvstate=pg%3A11%2Fct%3Ar&sendTime=1634398200&srsltid=AfmBOopA8e4AoRHLLjOIKoFTaycxMiidqUFxXxj5XyQk-35NvvEc6GIV&widget_id=3149490",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 3.3 fl. oz.",
+                "excerpts": [
+                  "dermstore.com/p/olaplex-no.-8-bond-intense-moisture-damage-repair-hair-mask-treatment-100ml/12882753"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-8-bond-intense-moisture-damage-repair-hair-mask-treatment-100ml/12882753?bvstate=pg%3A11%2Fct%3Ar&sendTime=1634398200&srsltid=AfmBOopA8e4AoRHLLjOIKoFTaycxMiidqUFxXxj5XyQk-35NvvEc6GIV&widget_id=3149490",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 3.3 fl. oz.",
+                "excerpts": [
+                  "Olaplex No 8 Bond Intense Moisture Mask 3.3 fl. oz. ... dermstore"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-8-bond-intense-moisture-damage-repair-hair-mask-treatment-100ml/12882753?bvstate=pg%3A11%2Fct%3Ar&sendTime=1634398200&srsltid=AfmBOopA8e4AoRHLLjOIKoFTaycxMiidqUFxXxj5XyQk-35NvvEc6GIV&widget_id=3149490",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 3.3 fl. oz.",
+                "excerpts": [
+                  "dermstore homepage ... FREE US Shipping $50+"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopJC3lO-Xb77GMrsAvAqUe5MJNSOkvHOSM4owZQ6NqE4QivzryL",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "$39.60~$44.00~ ... In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopJC3lO-Xb77GMrsAvAqUe5MJNSOkvHOSM4owZQ6NqE4QivzryL",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Free Shipping in Canada Over $60"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopJC3lO-Xb77GMrsAvAqUe5MJNSOkvHOSM4owZQ6NqE4QivzryL",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "$39.60~$44.00~ ... In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopJC3lO-Xb77GMrsAvAqUe5MJNSOkvHOSM4owZQ6NqE4QivzryL",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "thebsoonline.com/products/olaplex-no-8-bond-intense-moisture-mask-100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopJC3lO-Xb77GMrsAvAqUe5MJNSOkvHOSM4owZQ6NqE4QivzryL",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopJC3lO-Xb77GMrsAvAqUe5MJNSOkvHOSM4owZQ6NqE4QivzryL",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "thebsoonline.com/products/olaplex-no-8-bond-intense-moisture-mask-100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopJC3lO-Xb77GMrsAvAqUe5MJNSOkvHOSM4owZQ6NqE4QivzryL",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Beauty Supply Outlet ... OPEN TO THE PUBLIC! One-Stop-Beauty Shop"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopJC3lO-Xb77GMrsAvAqUe5MJNSOkvHOSM4owZQ6NqE4QivzryL",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "OPEN TO THE PUBLIC! One-Stop-Beauty Shop for Beauty Enthusiast and Professionals!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybeautyaffairs.com/products/olaplex-bond-intense-moisture-mask-no-8?srsltid=AfmBOoq0g9pjmrAdCV7S9fNg-Ipf-D9p-vcT2-IHepRehslAi9PWqUCq",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Olaplex No.8 Bond Intense Moisture Mask 100ml ... $48.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybeautyaffairs.com/products/olaplex-bond-intense-moisture-mask-no-8?srsltid=AfmBOoq0g9pjmrAdCV7S9fNg-Ipf-D9p-vcT2-IHepRehslAi9PWqUCq",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "$48.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybeautyaffairs.com/products/olaplex-bond-intense-moisture-mask-no-8?srsltid=AfmBOoq0g9pjmrAdCV7S9fNg-Ipf-D9p-vcT2-IHepRehslAi9PWqUCq",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Buy for ... Add 3 for 3 free gifts"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybeautyaffairs.com/products/olaplex-bond-intense-moisture-mask-no-8?srsltid=AfmBOoq0g9pjmrAdCV7S9fNg-Ipf-D9p-vcT2-IHepRehslAi9PWqUCq",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "mybeautyaffairs.com/products/olaplex-bond-intense-moisture-mask-no-8"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybeautyaffairs.com/products/olaplex-bond-intense-moisture-mask-no-8?srsltid=AfmBOoq0g9pjmrAdCV7S9fNg-Ipf-D9p-vcT2-IHepRehslAi9PWqUCq",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybeautyaffairs.com/products/olaplex-bond-intense-moisture-mask-no-8?srsltid=AfmBOoq0g9pjmrAdCV7S9fNg-Ipf-D9p-vcT2-IHepRehslAi9PWqUCq",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "mybeautyaffairs.com/products/olaplex-bond-intense-moisture-mask-no-8"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybeautyaffairs.com/products/olaplex-bond-intense-moisture-mask-no-8?srsltid=AfmBOoq0g9pjmrAdCV7S9fNg-Ipf-D9p-vcT2-IHepRehslAi9PWqUCq",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Olaplex No.8 Bond Intense Moisture Mask 100ml ... Beauty Affairs"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybeautyaffairs.com/products/olaplex-bond-intense-moisture-mask-no-8?srsltid=AfmBOoq0g9pjmrAdCV7S9fNg-Ipf-D9p-vcT2-IHepRehslAi9PWqUCq",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Australia ... All orders shipped with Australia Post"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tdawi.com/en-us/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopvTDlVXVmWoUCzYzg86SpEno2r59j9wMtQ5JoqLMcgXweWTTMg",
+                "title": "OLAPLEX No.8 Bond Intense Moisture Mask. 100ml",
+                "excerpts": [
+                  "OLAPLEX No.8 Bond Intense Moisture Mask. 100ml ... $2900"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tdawi.com/en-us/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopvTDlVXVmWoUCzYzg86SpEno2r59j9wMtQ5JoqLMcgXweWTTMg",
+                "title": "OLAPLEX No.8 Bond Intense Moisture Mask. 100ml",
+                "excerpts": [
+                  "Need Help? Call us now: 01200090040 ... $2900"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tdawi.com/en-us/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopvTDlVXVmWoUCzYzg86SpEno2r59j9wMtQ5JoqLMcgXweWTTMg",
+                "title": "OLAPLEX No.8 Bond Intense Moisture Mask. 100ml",
+                "excerpts": [
+                  "In stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tdawi.com/en-us/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopvTDlVXVmWoUCzYzg86SpEno2r59j9wMtQ5JoqLMcgXweWTTMg",
+                "title": "OLAPLEX No.8 Bond Intense Moisture Mask. 100ml",
+                "excerpts": [
+                  "tdawi.com/en-us/olaplex-no-8-bond-intense-moisture-mask-100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tdawi.com/en-us/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopvTDlVXVmWoUCzYzg86SpEno2r59j9wMtQ5JoqLMcgXweWTTMg",
+                "title": "OLAPLEX No.8 Bond Intense Moisture Mask. 100ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tdawi.com/en-us/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopvTDlVXVmWoUCzYzg86SpEno2r59j9wMtQ5JoqLMcgXweWTTMg",
+                "title": "OLAPLEX No.8 Bond Intense Moisture Mask. 100ml",
+                "excerpts": [
+                  "tdawi.com/en-us/olaplex-no-8-bond-intense-moisture-mask-100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tdawi.com/en-us/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopvTDlVXVmWoUCzYzg86SpEno2r59j9wMtQ5JoqLMcgXweWTTMg",
+                "title": "OLAPLEX No.8 Bond Intense Moisture Mask. 100ml",
+                "excerpts": [
+                  "Welcome to Tdawi.com! ... OLAPLEX No.8 Bond Intense Moisture Mask. 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tdawi.com/en-us/olaplex-no-8-bond-intense-moisture-mask-100ml?srsltid=AfmBOopvTDlVXVmWoUCzYzg86SpEno2r59j9wMtQ5JoqLMcgXweWTTMg",
+                "title": "OLAPLEX No.8 Bond Intense Moisture Mask. 100ml",
+                "excerpts": [
+                  "Welcome to Tdawi.com! ... Shop in USA ... Health & Beauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/collections/all-color-products-8-11-2025/products/olaplex-no-8-bond-intense-moisture-mask-3-3-oz?srsltid=AfmBOoq5XDMe9OD15lWEvmNwYDf8Q2ugTqTvdSCazEb7oYTIvyyxxgM4",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 3.3 oz",
+                "excerpts": [
+                  "Olaplex No.8 Bond Intense Moisture Mask 3.3 oz ... $24.95 ... $30.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/collections/all-color-products-8-11-2025/products/olaplex-no-8-bond-intense-moisture-mask-3-3-oz?srsltid=AfmBOoq5XDMe9OD15lWEvmNwYDf8Q2ugTqTvdSCazEb7oYTIvyyxxgM4",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 3.3 oz",
+                "excerpts": [
+                  "$24.95 ... $30.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/collections/all-color-products-8-11-2025/products/olaplex-no-8-bond-intense-moisture-mask-3-3-oz?srsltid=AfmBOoq5XDMe9OD15lWEvmNwYDf8Q2ugTqTvdSCazEb7oYTIvyyxxgM4",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 3.3 oz",
+                "excerpts": [
+                  "Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/collections/all-color-products-8-11-2025/products/olaplex-no-8-bond-intense-moisture-mask-3-3-oz?srsltid=AfmBOoq5XDMe9OD15lWEvmNwYDf8Q2ugTqTvdSCazEb7oYTIvyyxxgM4",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 3.3 oz",
+                "excerpts": [
+                  "overstock-beauty.com/products/olaplex-no-8-bond-intense-moisture-mask-3-3-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/collections/all-color-products-8-11-2025/products/olaplex-no-8-bond-intense-moisture-mask-3-3-oz?srsltid=AfmBOoq5XDMe9OD15lWEvmNwYDf8Q2ugTqTvdSCazEb7oYTIvyyxxgM4",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 3.3 oz",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/collections/all-color-products-8-11-2025/products/olaplex-no-8-bond-intense-moisture-mask-3-3-oz?srsltid=AfmBOoq5XDMe9OD15lWEvmNwYDf8Q2ugTqTvdSCazEb7oYTIvyyxxgM4",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 3.3 oz",
+                "excerpts": [
+                  "overstock-beauty.com/products/olaplex-no-8-bond-intense-moisture-mask-3-3-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/collections/all-color-products-8-11-2025/products/olaplex-no-8-bond-intense-moisture-mask-3-3-oz?srsltid=AfmBOoq5XDMe9OD15lWEvmNwYDf8Q2ugTqTvdSCazEb7oYTIvyyxxgM4",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 3.3 oz",
+                "excerpts": [
+                  "overstockbeautysupply ... Olaplex No.8 Bond Intense Moisture Mask 3.3 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/collections/all-color-products-8-11-2025/products/olaplex-no-8-bond-intense-moisture-mask-3-3-oz?srsltid=AfmBOoq5XDMe9OD15lWEvmNwYDf8Q2ugTqTvdSCazEb7oYTIvyyxxgM4",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 3.3 oz",
+                "excerpts": [
+                  "overstockbeautysupply ... Fast Shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-8-intense-moisture-mask?srsltid=AfmBOooA1DWvWDO93xvPPpGp1jzphkEkMbG_UP_XuHFtSuIrn210ADKf",
+                "title": "Olaplex No. 8 Intense Moisture Mask",
+                "excerpts": [
+                  "Availability: In Stock ... Sale price ... $21.49"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-8-intense-moisture-mask?srsltid=AfmBOooA1DWvWDO93xvPPpGp1jzphkEkMbG_UP_XuHFtSuIrn210ADKf",
+                "title": "Olaplex No. 8 Intense Moisture Mask",
+                "excerpts": [
+                  "Sale price ... $21.49 ... Add To Cart $21.49"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-8-intense-moisture-mask?srsltid=AfmBOooA1DWvWDO93xvPPpGp1jzphkEkMbG_UP_XuHFtSuIrn210ADKf",
+                "title": "Olaplex No. 8 Intense Moisture Mask",
+                "excerpts": [
+                  "Availability: In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-8-intense-moisture-mask?srsltid=AfmBOooA1DWvWDO93xvPPpGp1jzphkEkMbG_UP_XuHFtSuIrn210ADKf",
+                "title": "Olaplex No. 8 Intense Moisture Mask",
+                "excerpts": [
+                  "salonsavings.com/products/olaplex-no-8-intense-moisture-mask"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-8-intense-moisture-mask?srsltid=AfmBOooA1DWvWDO93xvPPpGp1jzphkEkMbG_UP_XuHFtSuIrn210ADKf",
+                "title": "Olaplex No. 8 Intense Moisture Mask",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-8-intense-moisture-mask?srsltid=AfmBOooA1DWvWDO93xvPPpGp1jzphkEkMbG_UP_XuHFtSuIrn210ADKf",
+                "title": "Olaplex No. 8 Intense Moisture Mask",
+                "excerpts": [
+                  "salonsavings.com/products/olaplex-no-8-intense-moisture-mask"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-8-intense-moisture-mask?srsltid=AfmBOooA1DWvWDO93xvPPpGp1jzphkEkMbG_UP_XuHFtSuIrn210ADKf",
+                "title": "Olaplex No. 8 Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Intense Moisture Mask ... Add To Cart $21.49"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://salonsavings.com/products/olaplex-no-8-intense-moisture-mask?srsltid=AfmBOooA1DWvWDO93xvPPpGp1jzphkEkMbG_UP_XuHFtSuIrn210ADKf",
+                "title": "Olaplex No. 8 Intense Moisture Mask",
+                "excerpts": [
+                  "Sale price ... $21.49 ... ~$30.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/-/A-A-1005111802",
+                "title": "target_pdp_localization",
+                "excerpts": [
+                  "data.current_price: 35 ... data.regular_price: 35"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/-/A-A-1005111802",
+                "title": "target_pdp_localization",
+                "excerpts": [
+                  "data.current_price: 35"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/-/A-A-1005111802",
+                "title": "target_pdp_localization",
+                "excerpts": [
+                  "data.is_out_of_stock: false ... data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-8-bond-intense-moisture-mask-3-3-oz/-/A-1005111802",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask - 3.3 oz",
+                "excerpts": [
+                  "target.com/p/olaplex-no-8-bond-intense-moisture-mask-3-3-oz/-/A-1005111802"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-8-bond-intense-moisture-mask-3-3-oz/-/A-1005111802",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask - 3.3 oz",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-8-bond-intense-moisture-mask-3-3-oz/-/A-1005111802",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask - 3.3 oz",
+                "excerpts": [
+                  "target.com/p/olaplex-no-8-bond-intense-moisture-mask-3-3-oz/-/A-1005111802"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-8-bond-intense-moisture-mask-3-3-oz/-/A-1005111802",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask - 3.3 oz",
+                "excerpts": [
+                  "Sold & shipped by Active Beauty, Inc."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-8-bond-intense-moisture-mask-3-3-oz/-/A-1005111802",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask - 3.3 oz",
+                "excerpts": [
+                  "Sold & shipped by Active Beauty, Inc. ... Sponsored"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no-8-bonder.html",
+                "title": "Olaplex No.8 Intense Bond Moisture Mask",
+                "excerpts": [
+                  "Login or register to view price"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no-8-bonder.html",
+                "title": "Olaplex No.8 Intense Bond Moisture Mask",
+                "excerpts": [
+                  "Login or register to view price"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no-8-bonder.html",
+                "title": "Olaplex No.8 Intense Bond Moisture Mask",
+                "excerpts": [
+                  "Purchase Options ... Login or register to view price"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no-8-bonder.html",
+                "title": "Olaplex No.8 Intense Bond Moisture Mask",
+                "excerpts": [
+                  "saloncentric.com/olaplex-no-8-bonder.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no-8-bonder.html",
+                "title": "Olaplex No.8 Intense Bond Moisture Mask",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no-8-bonder.html",
+                "title": "Olaplex No.8 Intense Bond Moisture Mask",
+                "excerpts": [
+                  "saloncentric.com/olaplex-no-8-bonder.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no-8-bonder.html",
+                "title": "Olaplex No.8 Intense Bond Moisture Mask",
+                "excerpts": [
+                  "No.8 Intense Bond Moisture Mask ... Salon Centric"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://saloncentric.com/olaplex-no-8-bonder.html",
+                "title": "Olaplex No.8 Intense Bond Moisture Mask",
+                "excerpts": [
+                  "ProRewards Members get FREE Shipping ... Login or register to view price"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B092DNPHC9",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.availability: false ... data.size: Select Size"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B092DNPHC9",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.UPC: 896364002930 ... data.asin: B092DNPHC9"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B092DNPHC9",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.availability: false"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B092DNPHC9",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B092DNPHC9"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B092DNPHC9",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B092DNPHC9",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B092DNPHC9"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B092DNPHC9",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_title: Olaplex Women's No.8 Bond Intense Moisture Mask"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B092DNPHC9",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_title: Olaplex Women's No.8 Bond Intense Moisture Mask ... data.availability: false"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jcpenney.com/p/olaplex-no-8-bond-intense-moisture-hair-mask-33-oz/ppr5008305161?pTmplType=beauty",
+                "title": "Olaplex No 8 Bond Intense Moisture Hair Mask 3.3 oz.",
+                "excerpts": [
+                  "Olaplex No 8 Bond Intense Moisture Hair Mask 3.3 oz. ... Add to Cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jcpenney.com/p/olaplex-no-8-bond-intense-moisture-hair-mask-33-oz/ppr5008305161?pTmplType=beauty",
+                "title": "Olaplex No 8 Bond Intense Moisture Hair Mask 3.3 oz.",
+                "excerpts": [
+                  "Olaplex No 8 Bond Intense Moisture Hair Mask 3.3 oz."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[17].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jcpenney.com/p/olaplex-no-8-bond-intense-moisture-hair-mask-33-oz/ppr5008305161?pTmplType=beauty",
+                "title": "Olaplex No 8 Bond Intense Moisture Hair Mask 3.3 oz.",
+                "excerpts": [
+                  "Add to Cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[17].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jcpenney.com/p/olaplex-no-8-bond-intense-moisture-hair-mask-33-oz/ppr5008305161?pTmplType=beauty",
+                "title": "Olaplex No 8 Bond Intense Moisture Hair Mask 3.3 oz.",
+                "excerpts": [
+                  "jcpenney.com/p/olaplex-no-8-bond-intense-moisture-hair-mask-33-oz/ppr5008305161"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jcpenney.com/p/olaplex-no-8-bond-intense-moisture-hair-mask-33-oz/ppr5008305161?pTmplType=beauty",
+                "title": "Olaplex No 8 Bond Intense Moisture Hair Mask 3.3 oz.",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jcpenney.com/p/olaplex-no-8-bond-intense-moisture-hair-mask-33-oz/ppr5008305161?pTmplType=beauty",
+                "title": "Olaplex No 8 Bond Intense Moisture Hair Mask 3.3 oz.",
+                "excerpts": [
+                  "jcpenney.com/p/olaplex-no-8-bond-intense-moisture-hair-mask-33-oz/ppr5008305161"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jcpenney.com/p/olaplex-no-8-bond-intense-moisture-hair-mask-33-oz/ppr5008305161?pTmplType=beauty",
+                "title": "Olaplex No 8 Bond Intense Moisture Hair Mask 3.3 oz.",
+                "excerpts": [
+                  "Olaplex No 8 Bond Intense Moisture Hair Mask 3.3 oz. ... Shop all Olaplex"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jcpenney.com/p/olaplex-no-8-bond-intense-moisture-hair-mask-33-oz/ppr5008305161?pTmplType=beauty",
+                "title": "Olaplex No 8 Bond Intense Moisture Hair Mask 3.3 oz.",
+                "excerpts": [
+                  "Olaplex No 8 Bond Intense Moisture Hair Mask 3.3 oz. ... Add to Cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-8-bond-intense-moisture-mask-3-3-oz-prodid-643492",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask, 3.3 OZ",
+                "excerpts": [
+                  "Olaplex No.8 Bond Intense Moisture Mask, 3.3 OZ ... Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-8-bond-intense-moisture-mask-3-3-oz-prodid-643492",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask, 3.3 OZ",
+                "excerpts": [
+                  "Olaplex No.8 Bond Intense Moisture Mask, 3.3 OZ"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[18].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-8-bond-intense-moisture-mask-3-3-oz-prodid-643492",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask, 3.3 OZ",
+                "excerpts": [
+                  "Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-8-bond-intense-moisture-mask-3-3-oz-prodid-643492",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask, 3.3 OZ",
+                "excerpts": [
+                  "cvs.com/shop/olaplex-no-8-bond-intense-moisture-mask-3-3-oz-prodid-643492"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-8-bond-intense-moisture-mask-3-3-oz-prodid-643492",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask, 3.3 OZ",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-8-bond-intense-moisture-mask-3-3-oz-prodid-643492",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask, 3.3 OZ",
+                "excerpts": [
+                  "cvs.com/shop/olaplex-no-8-bond-intense-moisture-mask-3-3-oz-prodid-643492"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-8-bond-intense-moisture-mask-3-3-oz-prodid-643492",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask, 3.3 OZ",
+                "excerpts": [
+                  "Olaplex No.8 Bond Intense Moisture Mask, 3.3 OZ ... From Olaplex"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cvs.com/shop/olaplex-no-8-bond-intense-moisture-mask-3-3-oz-prodid-643492",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask, 3.3 OZ",
+                "excerpts": [
+                  "Olaplex No.8 Bond Intense Moisture Mask, 3.3 OZ"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3oz/196144261",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask 3.3oz",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask 3.3oz ... Sorry, this item is out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3oz/196144261",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask 3.3oz",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask 3.3oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[19].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3oz/196144261",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask 3.3oz",
+                "excerpts": [
+                  "Sorry, this item is out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3oz/196144261",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask 3.3oz",
+                "excerpts": [
+                  "walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3oz/196144261"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3oz/196144261",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask 3.3oz",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3oz/196144261",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask 3.3oz",
+                "excerpts": [
+                  "walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3oz/196144261"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3oz/196144261",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask 3.3oz",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask 3.3oz ... Sorry, this item is out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3oz/196144261",
+                "title": "Olaplex No. 8 Bond Intense Moisture Mask 3.3oz",
+                "excerpts": [
+                  "walmart.com/ip/Olaplex-No-8-Bond-Intense-Moisture-Mask-3-3oz/196144261"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask by Olaplex, 3.3 oz Hair Mask ... $24.99 ... Buy It Now ... Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$24.99 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "$24.99 ... Buy It Now ... Free delivery ... 5 watchers"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask by Olaplex, 3.3 oz Hair Mask ... ebay.com/itm/256589660897"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "ebay.com/itm/256589660897 ... shampoozone 99.8% positive (18.2K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "Olaplex No. 8 Bond Intense Moisture Mask by Olaplex, 3.3 oz Hair Mask ... shampoozone 99.8% positive (18.2K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-no-8-bond-intense-moisture-mask?_nkw=olaplex+no+8+bond+intense+moisture+mask",
+                "title": "Olaplex No 8 Bond Intense Moisture Mask",
+                "excerpts": [
+                  "shampoozone 99.8% positive (18.2K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Bazta ... Olaplex No. 8 Bond Intense Moisture Mask - 100ml ... Lowest price ... \u00a318.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Bazta ... \u00a318.99 ... \u00a37.95 shipping, 2-4 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Bazta ... \u00a318.99 ... \u00a37.95 shipping, 2-4 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[21].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Bazta ... Olaplex No. 8 Bond Intense Moisture Mask - 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Bazta ... pricerunner.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Bazta ... Olaplex No. 8 Bond Intense Moisture Mask - 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Bazta ... Lowest price"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Beautycos ... Olaplex No.8 Moisture Mask | Hair Treatment 100 ml ... \u00a320.75"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Beautycos ... \u00a320.75 ... \u00a311.00 shipping, 4-8 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Beautycos ... \u00a320.75 ... \u00a311.00 shipping, 4-8 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[22].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Beautycos ... Olaplex No.8 Moisture Mask | Hair Treatment 100 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Beautycos ... pricerunner.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Beautycos ... Olaplex No.8 Moisture Mask | Hair Treatment 100 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Beautycos ... \u00a320.75"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Unineed ... Olaplex - No.8 Bond Intense Moisture Mask (100ml) ... \u00a321.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Unineed ... \u00a321.99 ... \u00a31.99 shipping, 3-5 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Unineed ... \u00a321.99 ... \u00a31.99 shipping, 3-5 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[23].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Unineed ... Olaplex - No.8 Bond Intense Moisture Mask (100ml)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Unineed ... pricerunner.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Unineed ... Olaplex - No.8 Bond Intense Moisture Mask (100ml)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Unineed ... \u00a321.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "OneBioShop ... Olaplex n.8 Bond intense humidity mask 100 ml ... \u00a335.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "OneBioShop ... \u00a335.00 ... \u00a35.00 shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "OneBioShop ... \u00a335.00 ... \u00a35.00 shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[24].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "OneBioShop ... Olaplex n.8 Bond intense humidity mask 100 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "OneBioShop ... pricerunner.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "OneBioShop ... Olaplex n.8 Bond intense humidity mask 100 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "OneBioShop ... \u00a335.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Plusshop ... Olaplex No. 8 Bond Intense Moisture Mask - 100ml ... Lowest price ... \u00a318.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Plusshop ... \u00a318.99 ... \u00a33.95 shipping, 3-7 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Plusshop ... \u00a318.99 ... \u00a33.95 shipping, 3-7 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[25].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Plusshop ... Olaplex No. 8 Bond Intense Moisture Mask - 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Plusshop ... pricerunner.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Plusshop ... Olaplex No. 8 Bond Intense Moisture Mask - 100ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "Plusshop ... Lowest price"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "50 ml ... Olaplex - N 8 Bond Intense Moisture Mask 100 ml ... \u00a325.37"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "50 ml ... \u00a325.37 ... \u00a33.95 shipping, 2-3 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "50 ml ... \u00a325.37 ... \u00a33.95 shipping, 2-3 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[26].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "50 ml ... Olaplex - N 8 Bond Intense Moisture Mask 100 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "50 ml ... pricerunner.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "50 ml ... Olaplex - N 8 Bond Intense Moisture Mask 100 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3200133759/Hair-Products/Olaplex-No.8-Bond-Intense-Moisture-Mask-100ml-Compare-Prices",
+                "title": "Olaplex No.8 Bond Intense Moisture Mask 100ml",
+                "excerpts": [
+                  "50 ml ... \u00a325.37"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

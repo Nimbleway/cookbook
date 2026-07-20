@@ -1,0 +1,1170 @@
+{
+  "sku_id": "KER-029",
+  "effort": "high",
+  "elapsed_s": 1234,
+  "fetched_at": "2026-07-20T13:41:04+00:00",
+  "run_id": "task_run_d09bf97cdfdd4ea49e8a512cf5abbf29",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_d09bf97cdfdd4ea49e8a512cf5abbf29",
+      "interaction_id": "task_run_d09bf97cdfdd4ea49e8a512cf5abbf29",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Sp\u00e9cifique Bain Pr\u00e9vention Shampoo, 250ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:20:29.348546Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:20:29.590600Z",
+      "completed_at": "2026-07-20T13:41:02.400545Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.jomashop.com/kerastase-specifique-kerastase-bain-prevention-shampoo-8-5-oz-250-ml-ksspecsh2-3474636397433.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Jomashop",
+          "seller_type": "discounter",
+          "seller_domain": "jomashop.com",
+          "advertised_price": "26.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://beautycarebag.com/products/kerastase-specifique-bain-preventation-250ml-3474636397433",
+          "observed_at": "2026-07-20",
+          "seller_name": "Beauty Care Bag",
+          "seller_type": "independent_store",
+          "seller_domain": "beautycarebag.com",
+          "advertised_price": "27.32"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": false,
+          "listing_url": "https://www.boots.com/kerastase-specifique-bain-prevention-shampoo-250ml-10333113",
+          "observed_at": "2026-07-20",
+          "seller_name": "Boots",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "boots.com",
+          "advertised_price": "30.50"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Bain-Prevention-GL-250ML/684810911",
+          "observed_at": "2026-07-20",
+          "seller_name": "Authorized Beauty Distribution (Walmart Marketplace) - Bain Prevention GL 250ML",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "32.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-8-5-oz-250-ml/411612528",
+          "observed_at": "2026-07-20",
+          "seller_name": "Authorized Beauty Distribution (Walmart Marketplace) - Specifique Bain Prevention 8.5oz/250ml",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "39.81"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Frequent-Use-Sham-poo-Normal-Hair-250ml-8-5oz/339228876",
+          "observed_at": "2026-07-20",
+          "seller_name": "Easy Eagles (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "24.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/335396764451",
+          "observed_at": "2026-07-20",
+          "seller_name": "SCENTED MONKEY (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "33.49"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://jomashop.com/kerastase-specifique-kerastase-bain-prevention-shampoo-8-5-oz-250-ml-ksspecsh2-3474636397433.html?srsltid=AfmBOopdeoOYXZMNWx4mC3D4S7DTAXStfJimGmweYEyl1oakF2UX8AxX",
+            "title": "Kerastase Specifique / Bain Prevention Shampoo 8.5 oz ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://beautycarebag.com/products/kerastase-specifique-bain-preventation-250ml-3474636397433",
+            "title": "Kerastase Specifique Bain Preventation 250ml ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://boots.com/kerastase-specifique-bain-pr%C3%89vention-shampoo-250ml-10333113?srsltid=AfmBOoqdJxu0p3MRkPlp6E5kVr44hI9NugykdGDkNJXUrisRsKwCD0CS",
+            "title": "K\u00e9rastase Specifique, Nourishing & Balancing Anti-Fall ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-by-Kerastase-for-Unisex-8-5-oz-Shampoo/684810911",
+            "title": "walmart_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-8-5-oz-250-ml/411612528",
+            "title": "walmart_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Frequent-Use-Sham-poo-Normal-Hair-250ml-8-5oz/339228876",
+            "title": "walmart_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/335396764451",
+            "title": "https://www.ebay.com/itm/335396764451",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-specifique-kerastase-bain-prevention-shampoo-8-5-oz-250-ml-ksspecsh2-3474636397433.html?srsltid=AfmBOopdeoOYXZMNWx4mC3D4S7DTAXStfJimGmweYEyl1oakF2UX8AxX",
+                "title": "Kerastase Specifique / Bain Prevention Shampoo 8.5 oz ...",
+                "excerpts": [
+                  "Kerastase Specifique / Bain Prevention Shampoo 8.5 oz (250 ml) Item No. 3474636397433 ... Asking$26.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-specifique-kerastase-bain-prevention-shampoo-8-5-oz-250-ml-ksspecsh2-3474636397433.html?srsltid=AfmBOopdeoOYXZMNWx4mC3D4S7DTAXStfJimGmweYEyl1oakF2UX8AxX",
+                "title": "Kerastase Specifique / Bain Prevention Shampoo 8.5 oz ...",
+                "excerpts": [
+                  "https://www.jomashop.com/kerastase-specifique-kerastase-bain-prevention-shampoo-8-5-oz-250-ml-ksspecsh2-3474636397433.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-specifique-kerastase-bain-prevention-shampoo-8-5-oz-250-ml-ksspecsh2-3474636397433.html?srsltid=AfmBOopdeoOYXZMNWx4mC3D4S7DTAXStfJimGmweYEyl1oakF2UX8AxX",
+                "title": "Kerastase Specifique / Bain Prevention Shampoo 8.5 oz ...",
+                "excerpts": [
+                  "Retail$35.00 Asking$26.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-specifique-kerastase-bain-prevention-shampoo-8-5-oz-250-ml-ksspecsh2-3474636397433.html?srsltid=AfmBOopdeoOYXZMNWx4mC3D4S7DTAXStfJimGmweYEyl1oakF2UX8AxX",
+                "title": "Kerastase Specifique / Bain Prevention Shampoo 8.5 oz ...",
+                "excerpts": [
+                  "![USD](https://www.jomashop.com/dist/file/usd.0fb3ccd8c33808902bbd.svg)US.$"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-specifique-kerastase-bain-prevention-shampoo-8-5-oz-250-ml-ksspecsh2-3474636397433.html?srsltid=AfmBOopdeoOYXZMNWx4mC3D4S7DTAXStfJimGmweYEyl1oakF2UX8AxX",
+                "title": "Kerastase Specifique / Bain Prevention Shampoo 8.5 oz ...",
+                "excerpts": [
+                  "https://www.jomashop.com/kerastase-specifique-kerastase-bain-prevention-shampoo-8-5-oz-250-ml-ksspecsh2-3474636397433.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-specifique-kerastase-bain-prevention-shampoo-8-5-oz-250-ml-ksspecsh2-3474636397433.html?srsltid=AfmBOopdeoOYXZMNWx4mC3D4S7DTAXStfJimGmweYEyl1oakF2UX8AxX",
+                "title": "Kerastase Specifique / Bain Prevention Shampoo 8.5 oz ...",
+                "excerpts": [
+                  "IN STOCK27% Off ... Retail$35.00 Asking$26.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-specifique-kerastase-bain-prevention-shampoo-8-5-oz-250-ml-ksspecsh2-3474636397433.html?srsltid=AfmBOopdeoOYXZMNWx4mC3D4S7DTAXStfJimGmweYEyl1oakF2UX8AxX",
+                "title": "Kerastase Specifique / Bain Prevention Shampoo 8.5 oz ...",
+                "excerpts": [
+                  "IN STOCK27% Off"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/kerastase-specifique-kerastase-bain-prevention-shampoo-8-5-oz-250-ml-ksspecsh2-3474636397433.html?srsltid=AfmBOopdeoOYXZMNWx4mC3D4S7DTAXStfJimGmweYEyl1oakF2UX8AxX",
+                "title": "Kerastase Specifique / Bain Prevention Shampoo 8.5 oz ...",
+                "excerpts": [
+                  "source_category: other, retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarebag.com/products/kerastase-specifique-bain-preventation-250ml-3474636397433",
+                "title": "Kerastase Specifique Bain Preventation 250ml ...",
+                "excerpts": [
+                  "Kerastase Specifique Bain Preventation 250ml 3474636397433 | Beauty Care Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarebag.com/products/kerastase-specifique-bain-preventation-250ml-3474636397433",
+                "title": "Kerastase Specifique Bain Preventation 250ml ...",
+                "excerpts": [
+                  "https://beautycarebag.com/products/kerastase-specifique-bain-preventation-250ml-3474636397433"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarebag.com/products/kerastase-specifique-bain-preventation-250ml-3474636397433",
+                "title": "Kerastase Specifique Bain Preventation 250ml ...",
+                "excerpts": [
+                  "$27.32 USD $46.00 USD Sale"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarebag.com/products/kerastase-specifique-bain-preventation-250ml-3474636397433",
+                "title": "Kerastase Specifique Bain Preventation 250ml ...",
+                "excerpts": [
+                  "All prices are listed in U.S. Dollars (USD)."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarebag.com/products/kerastase-specifique-bain-preventation-250ml-3474636397433",
+                "title": "Kerastase Specifique Bain Preventation 250ml ...",
+                "excerpts": [
+                  "https://beautycarebag.com/products/kerastase-specifique-bain-preventation-250ml-3474636397433"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarebag.com/products/kerastase-specifique-bain-preventation-250ml-3474636397433",
+                "title": "Kerastase Specifique Bain Preventation 250ml ...",
+                "excerpts": [
+                  "\u2713 30-day returns \u2713 Secure checkout \u2713 100% authentic brands"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarebag.com/products/kerastase-specifique-bain-preventation-250ml-3474636397433",
+                "title": "Kerastase Specifique Bain Preventation 250ml ...",
+                "excerpts": [
+                  "Add to Cart \u2022 $27.32 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarebag.com/products/kerastase-specifique-bain-preventation-250ml-3474636397433",
+                "title": "Kerastase Specifique Bain Preventation 250ml ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-specifique-bain-pr%C3%89vention-shampoo-250ml-10333113?srsltid=AfmBOoqdJxu0p3MRkPlp6E5kVr44hI9NugykdGDkNJXUrisRsKwCD0CS",
+                "title": "K\u00e9rastase Specifique, Nourishing & Balancing Anti-Fall ...",
+                "excerpts": [
+                  "K\u00e9rastase Specifique, Nourishing & Balancing Anti-Fall Shampoo, For Normal Hair and Hair-Thinning, No Silicone, 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-specifique-bain-pr%C3%89vention-shampoo-250ml-10333113?srsltid=AfmBOoqdJxu0p3MRkPlp6E5kVr44hI9NugykdGDkNJXUrisRsKwCD0CS",
+                "title": "K\u00e9rastase Specifique, Nourishing & Balancing Anti-Fall ...",
+                "excerpts": [
+                  "https://www.boots.com/kerastase-specifique-bain-pr%C3%89vention-shampoo-250ml-10333113"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-specifique-bain-pr%C3%89vention-shampoo-250ml-10333113?srsltid=AfmBOoqdJxu0p3MRkPlp6E5kVr44hI9NugykdGDkNJXUrisRsKwCD0CS",
+                "title": "K\u00e9rastase Specifique, Nourishing & Balancing Anti-Fall ...",
+                "excerpts": [
+                  "\u00a330.50 ... 250 ML | \u00a3122.00 per 1L"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-specifique-bain-pr%C3%89vention-shampoo-250ml-10333113?srsltid=AfmBOoqdJxu0p3MRkPlp6E5kVr44hI9NugykdGDkNJXUrisRsKwCD0CS",
+                "title": "K\u00e9rastase Specifique, Nourishing & Balancing Anti-Fall ...",
+                "excerpts": [
+                  "\u00a330.50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-specifique-bain-pr%C3%89vention-shampoo-250ml-10333113?srsltid=AfmBOoqdJxu0p3MRkPlp6E5kVr44hI9NugykdGDkNJXUrisRsKwCD0CS",
+                "title": "K\u00e9rastase Specifique, Nourishing & Balancing Anti-Fall ...",
+                "excerpts": [
+                  "https://www.boots.com/kerastase-specifique-bain-pr%C3%89vention-shampoo-250ml-10333113"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-specifique-bain-pr%C3%89vention-shampoo-250ml-10333113?srsltid=AfmBOoqdJxu0p3MRkPlp6E5kVr44hI9NugykdGDkNJXUrisRsKwCD0CS",
+                "title": "K\u00e9rastase Specifique, Nourishing & Balancing Anti-Fall ...",
+                "excerpts": [
+                  "K\u00e9rastase Specifique, Nourishing & Balancing Anti-Fall Shampoo ... 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-specifique-bain-pr%C3%89vention-shampoo-250ml-10333113?srsltid=AfmBOoqdJxu0p3MRkPlp6E5kVr44hI9NugykdGDkNJXUrisRsKwCD0CS",
+                "title": "K\u00e9rastase Specifique, Nourishing & Balancing Anti-Fall ...",
+                "excerpts": [
+                  "Stock coming soon"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-specifique-bain-pr%C3%89vention-shampoo-250ml-10333113?srsltid=AfmBOoqdJxu0p3MRkPlp6E5kVr44hI9NugykdGDkNJXUrisRsKwCD0CS",
+                "title": "K\u00e9rastase Specifique, Nourishing & Balancing Anti-Fall ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-by-Kerastase-for-Unisex-8-5-oz-Shampoo/684810911",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "seller_name: Authorized Beauty Distribution ... product_title: Kerastase Bain Prevention GL 250ML ... model: 3474636397433"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-by-Kerastase-for-Unisex-8-5-oz-Shampoo/684810911",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "product_url: https://www.walmart.com/ip/Kerastase-Bain-Prevention-GL-250ML/684810911"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-by-Kerastase-for-Unisex-8-5-oz-Shampoo/684810911",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "price: 32.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-by-Kerastase-for-Unisex-8-5-oz-Shampoo/684810911",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "currency: USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-by-Kerastase-for-Unisex-8-5-oz-Shampoo/684810911",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "product_url: https://www.walmart.com/ip/Kerastase-Bain-Prevention-GL-250ML/684810911"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-by-Kerastase-for-Unisex-8-5-oz-Shampoo/684810911",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "seller_name: Authorized Beauty Distribution"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-by-Kerastase-for-Unisex-8-5-oz-Shampoo/684810911",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-by-Kerastase-for-Unisex-8-5-oz-Shampoo/684810911",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-8-5-oz-250-ml/411612528",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "seller_name: Authorized Beauty Distribution ... product_title: Kerastase Specifique Bain Prevention Shampoo 8.5 oz / 250 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-8-5-oz-250-ml/411612528",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "product_url: https://www.walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-8-5-oz-250-ml/411612528"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-8-5-oz-250-ml/411612528",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "price: 39.81"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-8-5-oz-250-ml/411612528",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "currency: USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-8-5-oz-250-ml/411612528",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "product_url: https://www.walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-8-5-oz-250-ml/411612528"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-8-5-oz-250-ml/411612528",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "seller_name: Authorized Beauty Distribution"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-8-5-oz-250-ml/411612528",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "fulfillment_is_low_in_stock: false"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Shampoo-8-5-oz-250-ml/411612528",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Frequent-Use-Sham-poo-Normal-Hair-250ml-8-5oz/339228876",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "seller_name: Easy Eagles ... product_title: Kerastase - Specifique Bain Prevention Frequent Use Sham poo (Normal Hair) -250ml/8.5oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Frequent-Use-Sham-poo-Normal-Hair-250ml-8-5oz/339228876",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "product_url: https://www.walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Frequent-Use-Sham-poo-Normal-Hair-250ml-8-5oz/339228876"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Frequent-Use-Sham-poo-Normal-Hair-250ml-8-5oz/339228876",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "price: 24.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Frequent-Use-Sham-poo-Normal-Hair-250ml-8-5oz/339228876",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "brand: K\u00e9rastase ... price: 24.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Frequent-Use-Sham-poo-Normal-Hair-250ml-8-5oz/339228876",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "product_url: https://www.walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Frequent-Use-Sham-poo-Normal-Hair-250ml-8-5oz/339228876"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Frequent-Use-Sham-poo-Normal-Hair-250ml-8-5oz/339228876",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "seller_name: Easy Eagles"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Frequent-Use-Sham-poo-Normal-Hair-250ml-8-5oz/339228876",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "fulfillment_max_order_quantity: 12"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Prevention-Frequent-Use-Sham-poo-Normal-Hair-250ml-8-5oz/339228876",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/335396764451",
+                "title": "https://www.ebay.com/itm/335396764451",
+                "excerpts": [
+                  "# Kerastase Specifique Bain Prevention Shampoo by Kerastase - 8.5 oz ... [SCENTED MONKEY] ... 99.7% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/335396764451",
+                "title": "https://www.ebay.com/itm/335396764451",
+                "excerpts": [
+                  "https://www.ebay.com/itm/335396764451"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/335396764451",
+                "title": "https://www.ebay.com/itm/335396764451",
+                "excerpts": [
+                  "US $33.49 ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/335396764451",
+                "title": "https://www.ebay.com/itm/335396764451",
+                "excerpts": [
+                  "US $33.49"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/335396764451",
+                "title": "https://www.ebay.com/itm/335396764451",
+                "excerpts": [
+                  "https://www.ebay.com/itm/335396764451"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/335396764451",
+                "title": "https://www.ebay.com/itm/335396764451",
+                "excerpts": [
+                  "[SCENTED MONKEY] ... 99.7% positive ... Seller's other items"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/335396764451",
+                "title": "https://www.ebay.com/itm/335396764451",
+                "excerpts": [
+                  "Quantity: 50 available106 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/335396764451",
+                "title": "https://www.ebay.com/itm/335396764451",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          }
+        ]
+      }
+    }
+  }
+}
