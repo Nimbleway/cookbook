@@ -8,6 +8,7 @@ dataset, upsert into Supabase, and write a local cache.
 Raw -> data/raw/<slug>.json. Dataset -> Supabase `influencers` (if creds) + data/influencers.json.
 """
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -23,7 +24,9 @@ from agent_config import run_input
 
 
 def slugify(s: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")[:60]
+    # hash suffix so truncation can't collide two different queries onto one slug
+    base = re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")[:50]
+    return f"{base}-{hashlib.sha1(s.encode()).hexdigest()[:6]}"
 
 
 def category_from_query(q):
@@ -125,7 +128,7 @@ def build_dataset() -> list:
         for r in content:
             if not isinstance(r, dict):
                 continue
-            platform = (r.get("platform") or "").strip()
+            platform = canon_platform((r.get("platform") or "").strip())  # canonical BEFORE dedup
             handle = (r.get("handle") or "").strip().lstrip("@")
             if not platform or not handle:
                 continue
@@ -134,7 +137,7 @@ def build_dataset() -> list:
                 continue
             seen.add(key)
             rows.append({
-                "platform": canon_platform(platform), "handle": handle,
+                "platform": platform, "handle": handle,
                 "category": category_from_query(d.get("query")),
                 "profile_url": r.get("profile_url"),
                 "follower_count": r.get("follower_count"),

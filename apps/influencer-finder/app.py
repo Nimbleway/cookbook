@@ -41,7 +41,8 @@ plats = f1.multiselect("Platform", sorted(df["platform"].dropna().unique()))
 cats = f2.multiselect("Category", sorted(df["category"].dropna().unique()))
 _mx = df["follower_count_num"].max()
 max_k = max(1, int(_mx / 1000) + 1 if pd.notna(_mx) else 1)   # guard all-null -> NaN
-min_k = f3.slider("Min followers (K)", min_value=0, max_value=max_k, value=0, step=5)
+step_k = 5 if max_k >= 5 else 1                               # step must not exceed the range
+min_k = f3.slider("Min followers (K)", min_value=0, max_value=max_k, value=0, step=step_k)
 
 v = df.copy()
 if plats:
