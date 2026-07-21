@@ -31,15 +31,12 @@ RESEARCH, NOT LEGAL ADVICE. Selling CBD cosmetics in California is governed by a
 
 ## Sources
 - https://fda.gov/news-events/public-health-focus/fda-regulation-cannabis-and-cannabis-derived-products-including-cannabidiol-cbd
-- https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=111927.4.
-- https://oehha.ca.gov/proposition-65/about-proposition-65
 - https://fda.gov/cosmetics/registration-listing-cosmetic-product-facilities-and-products
-- https://fda.gov/cosmetics/cosmetics-news-events/fda-issues-compliance-policy-cosmetic-product-facility-registration-and-cosmetic-product-listing
-- https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=200520060SB484
+- https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=111927.4.
 - https://cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/Pages/Compliance-FAQ.aspx
 - https://leginfo.legislature.ca.gov/faces/billVersionsCompareClient.xhtml?bill_id=201720180AB2775
-- https://oehha.ca.gov/sites/default/files/media/downloads/crnr/fsorcannabisdelta9thc080822.pdf
-- https://oehha.ca.gov/proposition-65/chemicals/cannabis-marijuana-smoke
+- https://oehha.ca.gov/proposition-65/about-proposition-65
 - https://fda.gov/news-events/public-health-focus/warning-letters-cannabis-derived-products
+- https://fda.gov/cosmetics/cosmetics-news-events/fda-issues-compliance-policy-cosmetic-product-facility-registration-and-cosmetic-product-listing
 - https://cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/Pages/CSCP.aspx
 - https://cdph.ca.gov/Programs/CEH/DFDCS/Pages/FDBPrograms/CosmeticSafetyProgram.aspx

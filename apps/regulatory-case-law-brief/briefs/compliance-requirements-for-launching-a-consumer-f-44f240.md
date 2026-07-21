@@ -34,7 +34,7 @@ BOTTOM LINE FOR A FOUNDER: Before launch you need (a) the right Texas OCCC licen
 - **CFPB v. FirstCash, Inc. (Military Lending Act settlement)** (Federal court (stipulated final judgment entered), 2025-07-11 (settlement/judgment); suit originally filed 2021-11-12) — FirstCash (Fort Worth, TX pawn lender) made pawn loans to MLA-covered servicemembers exceeding the 36% MAPR cap and included prohibited arbitration clauses; ordered $5M redress and a $4M fine, and must offer an MLA-compliant product or use the MLA safe-harbor screening.  [source](https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations)
 - **OCCC v. Cottonwood Financial Texas LLC (Credit Access Business enforcement)** (Texas Office of Consumer Credit Commissioner (administrative enforcement), 2025-02-27) — The OCCC issued a final injunction order against a registered Credit Access Business under TFC §14.202 — illustrating that the OCCC affirmatively enforces the CAB registration regime (not just licensed lenders), a direct compliance risk for fintech CABs.  [source](https://occc.texas.gov/publications/legal/enforcement-actions)
 - **Looney v. Cash America International, Inc.**
-- **Davis v. ACE Cash Express, Inc.**  [source](https://courtlistener.com/docket/67646300/davis-v-credit-corp-solutions-inc)
+- **Davis v. ACE Cash Express, Inc.**
 
 ## Recent changes
 - OCCC adopted rules (7 TAC §§83.301-83.404) migrating Chapter 342 regulated-lender licensing from ALECS to the Nationwide Multistate Licensing System (NMLS), authorized under TFC §14.109 and §342.551; a majority of licensed regulated lenders completed the NMLS transition in 2025. Directly affects how a new fintech applies for and renews a Texas regulated lender license. (2025-12-26)  [source](https://sos.state.tx.us/texreg/archive/December262025/Adopted%20Rules/7.BANKING%20AND%20SECURITIES.html)
@@ -48,20 +48,17 @@ BOTTOM LINE FOR A FOUNDER: Before launch you need (a) the right Texas OCCC licen
 ## Sources
 - https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303
 - https://statutes.capitol.texas.gov/docs/FI/htm/FI.393.htm
-- https://occc.texas.gov/publications/legal/rules
-- https://sos.state.tx.us/texreg/archive/December262025/Adopted%20Rules/7.BANKING%20AND%20SECURITIES.html
-- https://consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt
-- https://consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc
-- https://ecfr.gov/current/title-12/chapter-X/part-1002
 - https://law.cornell.edu/cfr/text/12/part-1026
-- https://consumerfinance.gov/rules-policy
-- https://legiscan.com/TX/text/HB768/id/3027782
-- https://federalregister.gov/documents/2024/05/31/2024-11800/truth-in-lending-regulation-z-use-of-digital-user-accounts-to-access-buy-now-pay-later-loans
+- https://ecfr.gov/current/title-12/chapter-X/part-1002
 - https://consumerfinance.gov/enforcement/actions
 - https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations
 - https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-personal-financial-data-rights-rule-to-boost-competition-protect-privacy-and-give-families-more-choice-in-financial-services
 - https://consumerfinance.gov/compliance/guidance
-- https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-rule-on-federal-oversight-of-popular-digital-payment-apps-to-protect-personal-data-reduce-fraud-and-stop-illegal-debanking
+- https://consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt
+- https://consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc
 - https://occc.texas.gov/publications/legal/enforcement-actions
-- https://courtlistener.com/docket/67646300/davis-v-credit-corp-solutions-inc
-- https://courtlistener.com/docket/71078991/davis-v-cooprider
+- https://sos.state.tx.us/texreg/archive/December262025/Adopted%20Rules/7.BANKING%20AND%20SECURITIES.html
+- https://occc.texas.gov/publications/legal/rules
+- https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-rule-on-federal-oversight-of-popular-digital-payment-apps-to-protect-personal-data-reduce-fraud-and-stop-illegal-debanking
+- https://federalregister.gov/documents/2024/05/31/2024-11800/truth-in-lending-regulation-z-use-of-digital-user-accounts-to-access-buy-now-pay-later-loans
+- https://consumerfinance.gov/rules-policy

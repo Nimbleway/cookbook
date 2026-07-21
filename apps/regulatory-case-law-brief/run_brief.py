@@ -92,25 +92,32 @@ def structured_brief(output: dict) -> dict:
     trust = output.get("trust", {}) or {}
     claim_urls = _claim_url_map(trust)
 
-    def real_url(prefix, fallback):
-        for p, u in claim_urls.items():
-            if p.startswith(prefix):
+    def item_url(base, *id_fields):
+        """Return ONLY a citation anchored to the item's identity: the citation/source-url
+        field, then the identity field (name/case_name). Never borrow a citation from a
+        peripheral field (court/date/holding) — those can point to a different item. No
+        trustworthy item-anchored citation -> None (a missing link beats a wrong one)."""
+        for suf in id_fields:
+            u = claim_urls.get(base + suf)
+            if _public(u):
                 return u
-        return _public(fallback)
+        return None
 
     regs = [{"name": r.get("name", ""), "jurisdiction": r.get("jurisdiction"),
              "requirement": r.get("requirement"),
-             "url": real_url(f"$.applicable_regulations[{i}]", r.get("citation_url"))}
+             "url": item_url(f"$.applicable_regulations[{i}]", ".citation_url", ".name")}
             for i, r in enumerate(content.get("applicable_regulations") or [])]
     cases = [{"case_name": c.get("case_name", ""), "court": c.get("court"), "date": c.get("date"),
-              "holding": c.get("holding"), "url": real_url(f"$.key_cases[{i}]", c.get("citation_url"))}
+              "holding": c.get("holding"), "url": item_url(f"$.key_cases[{i}]", ".citation_url", ".case_name")}
              for i, c in enumerate(content.get("key_cases") or [])]
     changes = [{"change": c.get("change", ""), "date": c.get("date"),
-                "url": real_url(f"$.recent_changes[{i}]", c.get("source_url"))}
+                "url": item_url(f"$.recent_changes[{i}]", ".source_url", ".change")}
                for i, c in enumerate(content.get("recent_changes") or [])]
+    # Sources = only the URLs actually anchored to a linked item, deduped. (Dumping raw
+    # trust.sources can surface peripheral/mismatched citations that no item relies on.)
     src_urls = []
-    for s in (trust.get("sources") or []):
-        u = _public(s.get("url"))
+    for item in regs + cases + changes:
+        u = item.get("url")
         if u and u not in src_urls:
             src_urls.append(u)
     return {"subject": content.get("subject", ""), "jurisdiction": content.get("jurisdiction", ""),

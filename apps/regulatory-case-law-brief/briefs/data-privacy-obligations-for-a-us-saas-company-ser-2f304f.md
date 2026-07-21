@@ -29,15 +29,13 @@ This is research, not legal advice; consult qualified counsel before acting. A U
 
 ## Sources
 - https://gdpr-info.eu/art-3-gdpr
-- https://ftc.gov/legal-library/browse/statutes/federal-trade-commission-act
-- https://eur-lex.europa.eu/legal-content/EN/TXT/HTML?uri=CELEX%3A32021D0914
 - https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_23_3721/IP_23_3721_EN.pdf
-- https://dataprivacyframework.gov/
-- https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf
+- https://eur-lex.europa.eu/legal-content/EN/TXT/HTML?uri=CELEX%3A32021D0914
 - https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG%3A2002L0058%3A20091219%3AEN%3AHTML
 - https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32024R1689
-- https://ftc.gov/news-events/topics/protecting-consumer-privacy-security/privacy-security-enforcement
+- https://ftc.gov/legal-library/browse/statutes/federal-trade-commission-act
 - https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&lawCode=CIV&part=4.&title=1.81.5
 - https://federalregister.gov/documents/2022/10/14/2022-22531/enhancing-safeguards-for-united-states-signals-intelligence-activities
+- https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf
 - https://dataprotection.ie/en/news-media/press-releases/Data-Protection-Commission-announces-conclusion-of-inquiry-into-Meta-Ireland
 - https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes
