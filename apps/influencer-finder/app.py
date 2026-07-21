@@ -39,7 +39,8 @@ c3.metric("Categories", df["category"].dropna().nunique())
 f1, f2, f3 = st.columns([1, 1, 1])
 plats = f1.multiselect("Platform", sorted(df["platform"].dropna().unique()))
 cats = f2.multiselect("Category", sorted(df["category"].dropna().unique()))
-max_k = max(1, int((df["follower_count_num"].max() or 0) / 1000) + 1)
+_mx = df["follower_count_num"].max()
+max_k = max(1, int(_mx / 1000) + 1 if pd.notna(_mx) else 1)   # guard all-null -> NaN
 min_k = f3.slider("Min followers (K)", min_value=0, max_value=max_k, value=0, step=5)
 
 v = df.copy()
@@ -58,5 +59,12 @@ show = v[cols].rename(columns={
 st.dataframe(show, use_container_width=True, hide_index=True, height=460,
              column_config={"Profile": st.column_config.LinkColumn("Profile", display_text="open")})
 
-st.download_button("Download CSV", v[cols].to_csv(index=False).encode(),
+def _csv_safe(df):
+    """Prevent CSV/formula injection: prefix cells that start with = + - @ with a quote."""
+    def s(x):
+        return "'" + x if isinstance(x, str) and x[:1] in ("=", "+", "-", "@") else x
+    return df.applymap(s)
+
+
+st.download_button("Download CSV", _csv_safe(v[cols]).to_csv(index=False).encode(),
                    file_name="influencers.csv", mime="text/csv")

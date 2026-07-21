@@ -35,7 +35,8 @@ def fetch_all():
     if not sb:
         return None
     try:
-        return sb.table(_TABLE).select("*").execute().data
+        data = sb.table(_TABLE).select("*").execute().data
+        return data or None   # empty table -> None so the caller falls back to the local cache
     except Exception as e:  # noqa: BLE001
         print(f"  supabase fetch failed ({e})")
         return None

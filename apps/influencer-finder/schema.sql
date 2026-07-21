@@ -6,6 +6,7 @@ create table if not exists influencers (
     profile_url         text,
     follower_count      text,
     follower_count_num  bigint,
+    followers_display   text,
     engagement_rate     text,
     niche               text,
     location            text,
