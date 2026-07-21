@@ -12,8 +12,10 @@ import json
 import re
 import sys
 import time
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
+from urllib.parse import urlsplit
 
 import requests
 
@@ -57,7 +59,9 @@ def run_topic(aid: str, topic: str) -> dict:
     run = started
     while True:
         run = safe("GET", f"{C.BASE_URL}/task-agents/{aid}/runs/{rid}") or run
-        if run and not run.get("is_active"):
+        # terminal ONLY on an explicit is_active==False; a partial response missing the
+        # field must not be read as "done" (that would fetch the result before completion)
+        if run and run.get("is_active") is False:
             break
         if time.time() - t0 > C.RUN_TIMEOUT_S:
             return {"topic": topic, "slug": slug, "status": "timeout", "run_id": rid}
@@ -77,17 +81,31 @@ def run_topic(aid: str, topic: str) -> dict:
 
 
 def _public(url):
-    """Keep only real public http(s) URLs; drop Nimble internal /pages/ cache paths."""
-    return url if isinstance(url, str) and url.startswith("http") else None
+    """Keep only well-formed public http(s) URLs; reject internal cache paths and malformed
+    values (e.g. 'httpjavascript:...') so nothing unsafe is interpolated into Markdown."""
+    if not isinstance(url, str):
+        return None
+    try:
+        u = urlsplit(url.strip())
+    except ValueError:
+        return None
+    return url if u.scheme in ("http", "https") and u.netloc else None
 
 
 def _claim_url_map(trust: dict) -> dict:
-    """JSON-path -> first real citation URL, from trust.claims."""
+    """JSON-path -> first VALID PUBLIC citation URL, from trust.claims. Scans the whole
+    citation list (not just [0]) so an internal cache path ahead of the real public URL
+    doesn't drop the item's source."""
     m = {}
     for c in trust.get("claims", []) or []:
-        p, cites = c.get("path"), (c.get("citations") or [])
-        if p and cites and _public(cites[0].get("url")):
-            m[p] = cites[0]["url"]
+        p = c.get("path")
+        if not p:
+            continue
+        for cite in (c.get("citations") or []):
+            u = _public(cite.get("url"))
+            if u:
+                m[p] = u
+                break
     return m
 
 
@@ -118,6 +136,13 @@ def structured_brief(output: dict) -> dict:
     changes = [{"change": c.get("change", ""), "date": c.get("date"),
                 "url": item_url(f"$.recent_changes[{i}]", ".source_url", ".change")}
                for i, c in enumerate(content.get("recent_changes") or [])]
+    # Drop any URL claimed by more than one distinct item: a single page can't be the
+    # item-specific primary source for several different statutes/cases/changes, so
+    # presenting it as such is a wrong citation. A missing link beats a wrong one.
+    url_counts = Counter(it["url"] for it in regs + cases + changes if it.get("url"))
+    for it in regs + cases + changes:
+        if it.get("url") and url_counts[it["url"]] > 1:
+            it["url"] = None
     # Sources = only the URLs actually anchored to a linked item, deduped. (Dumping raw
     # trust.sources can surface peripheral/mismatched citations that no item relies on.)
     src_urls = []
