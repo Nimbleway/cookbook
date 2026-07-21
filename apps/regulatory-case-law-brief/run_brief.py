@@ -168,7 +168,16 @@ def main():
     aid = agent_id()
     topics = [args.topic] if args.topic else [
         t.strip() for t in C.TOPICS_FILE.read_text().splitlines() if t.strip() and not t.startswith("#")]
-    todo = [t for t in topics if not (C.RAW / f"{slugify(t)}.json").exists()]
+
+    def done(topic):  # only a COMPLETED cache counts as done; failed/timeout re-runs
+        p = C.RAW / f"{slugify(topic)}.json"
+        if not p.exists():
+            return False
+        try:
+            return json.loads(p.read_text()).get("status") == "completed"
+        except Exception:  # noqa: BLE001
+            return False
+    todo = [t for t in topics if not done(t)]
     if todo:
         print(f"[{datetime.now(timezone.utc).isoformat(timespec='seconds')}] running {len(todo)} topics @ concurrency {C.CONCURRENCY}")
         with ThreadPoolExecutor(max_workers=C.CONCURRENCY) as ex:
