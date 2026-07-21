@@ -1,0 +1,4556 @@
+{
+  "sku_id": "KER-016",
+  "effort": "high",
+  "elapsed_s": 806,
+  "fetched_at": "2026-07-20T13:28:20+00:00",
+  "run_id": "task_run_ac28c43f427d499e89dc42030c1ef79a",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_ac28c43f427d499e89dc42030c1ef79a",
+      "interaction_id": "task_run_ac28c43f427d499e89dc42030c1ef79a",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant, 200ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:14:53.150556Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:14:53.397822Z",
+      "completed_at": "2026-07-20T13:28:13.878870Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase-usa.com/collections/chronologiste/masque-intense-regenerant-hair-mask.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "K\u00e9rastase USA",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase-usa.com",
+          "advertised_price": "70.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/dp/B08H1FD9QQ",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon (sold by K\u00e9rastase)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.com",
+          "advertised_price": "70.00"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.ca/Chronologiste-R%C3%A9g%C3%A9n%C3%A9rant-Revitalizes-Conditioner-Hyaluronic/dp/B08H1FD9QQ",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon.ca",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.ca",
+          "advertised_price": "100.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-chronologiste-masque-200ml/12672068",
+          "observed_at": "2026-07-20",
+          "seller_name": "LOOKFANTASTIC",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "41.51"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": false,
+          "listing_url": "https://www.boots.com/kerastase-chronologiste-restage-masque-intense-regenerant-youth-revitalizing-mask-200ml-10379992",
+          "observed_at": "2026-07-20",
+          "seller_name": "Boots",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "boots.com",
+          "advertised_price": "58.50"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://www.privesuite.com/products/kerastase-chronologiste-masque-intense-regenerant-hair-mask",
+          "observed_at": "2026-07-20",
+          "seller_name": "PriveSuite",
+          "seller_type": "independent_store",
+          "seller_domain": "privesuite.com",
+          "advertised_price": "70.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://rossiparkstore.com/collections/kerastase-chronologiste-for-aging-hair/products/chronologiste-masque-intense-regenerant-hair-mask-for-revitalizing-length-and-ends",
+          "observed_at": "2026-07-20",
+          "seller_name": "Rossi Park Store",
+          "seller_type": "independent_store",
+          "seller_domain": "rossiparkstore.com",
+          "advertised_price": "75.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant",
+          "observed_at": "2026-07-20",
+          "seller_name": "Savvy Hair Artistry",
+          "seller_type": "independent_store",
+          "seller_domain": "savvyhairartistry.com",
+          "advertised_price": "90.00"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": false,
+          "listing_url": "https://www.beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734",
+          "observed_at": "2026-07-20",
+          "seller_name": "Beautyplaza",
+          "seller_type": "independent_store",
+          "seller_domain": "beautyplaza.com",
+          "advertised_price": "47.55"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz",
+          "observed_at": "2026-07-20",
+          "seller_name": "LySkin",
+          "seller_type": "independent_store",
+          "seller_domain": "lyskin.com",
+          "advertised_price": "72,95"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://detroit.shopdutyfree.com/en/2/kerastase-chronologiste-masque-intense-regenerant-200ml-7180385p1241254",
+          "observed_at": "2026-07-20",
+          "seller_name": "Avolta (ShopDutyFree Detroit)",
+          "seller_type": "discounter",
+          "seller_domain": "detroit.shopdutyfree.com",
+          "advertised_price": "26.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Chronologiste-Masque-Intense-Regenerant-6-8-oz/782647731",
+          "observed_at": "2026-07-20",
+          "seller_name": "R&B Beauty (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "73.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Chronologiste-Masque-Regenerant-Youth-Revitalizing-Hair-Mask-200ml/2602135827",
+          "observed_at": "2026-07-20",
+          "seller_name": "Beauty's Choice INC (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "77.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Chronologiste-Masque-Intense-R-g-n-rant-Hair-Mask-6-8-oz/898426666",
+          "observed_at": "2026-07-20",
+          "seller_name": "Authorized Beauty Distribution (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "59.38"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Chronologiste-Essential-Revitalizing-Hair-Mask-For-Dry-Damaged-Hair-6-8-oz-200ml/2614164828",
+          "observed_at": "2026-07-20",
+          "seller_name": "Authorized Beauty Distribution (Walmart Marketplace, listing 2)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "69.49"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/800335455744",
+          "observed_at": "2026-07-20",
+          "seller_name": "finetraders1 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "27.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/318405756869",
+          "observed_at": "2026-07-20",
+          "seller_name": "variumtech (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "30.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/366099727240",
+          "observed_at": "2026-07-20",
+          "seller_name": "AK PRODUCTS U.S.A (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "30.40"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/298449095625",
+          "observed_at": "2026-07-20",
+          "seller_name": "shop_2473 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "29.90"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/157572910297",
+          "observed_at": "2026-07-20",
+          "seller_name": "zabi-5258 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "29.49"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/358802655000",
+          "observed_at": "2026-07-20",
+          "seller_name": "bigjim_2 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "29.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/377029165773",
+          "observed_at": "2026-07-20",
+          "seller_name": "in-446908 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "30.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/307070265545",
+          "observed_at": "2026-07-20",
+          "seller_name": "madhushikasubashi-09 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "36.49"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/407077648895",
+          "observed_at": "2026-07-20",
+          "seller_name": "wonderwoods18 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "38.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/205698534238",
+          "observed_at": "2026-07-20",
+          "seller_name": "cescod617_2 (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "40.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/386264064146",
+          "observed_at": "2026-07-20",
+          "seller_name": "Jaremic2c (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "42.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/127398528777",
+          "observed_at": "2026-07-20",
+          "seller_name": "aleskincare plus (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "47.95"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/276578448566",
+          "observed_at": "2026-07-20",
+          "seller_name": "Evanna's Beauty Supply (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "47.99"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://kerastase-usa.com/collections/chronologiste/masque-intense-regenerant-hair-mask.html?srsltid=AfmBOoo8Zz1FkNGn-mCLkzDAWsDQq1D6U8jedSQireADQArjwUPc9ktl",
+            "title": "Chronologiste Masque Intense Anti-Aging Hair Mask | K\u00e9rastase",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/dp/B08H1FD9QQ",
+            "title": "amazon_pdp",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.ca/Chronologiste-R%C3%A9g%C3%A9n%C3%A9rant-Revitalizes-Conditioner-Hyaluronic/dp/B08H1FD9QQ",
+            "title": "K\u00e9rastase Chronologiste, Intense R\u00e9g\u00e9n\u00e9rant Hair Mask ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/kerastase-chronologiste-masque-200ml/12672068?bvstate=pg%3A3%2Fct%3Ar&gclsrc=aw.ds&srsltid=AfmBOoqBGLa8fq7uDUUxTwc1T2KSqZlcGDqvGFQpbnKcCeBh997yMvn2",
+            "title": "K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant 200ml",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://boots.com/kerastase-chronologiste-restage-masque-intense-regenerant-youth-revitalizing-mask-200ml-10379992?srsltid=AfmBOoq3WMz25KkTbbGcGQQX8sw1S_7nvHfMFyaHpk3s4rrY8m_Gb7y9",
+            "title": "Kerastase Chronologiste Restage Masque Intense ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://privesuite.com/products/kerastase-chronologiste-masque-intense-regenerant-hair-mask",
+            "title": "Kerastase Chronologiste - Masque Intense Regenerant Hair ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://rossiparkstore.com/collections/kerastase-chronologiste-for-aging-hair?srsltid=AfmBOoq8QVKaafkM6xlRKHorYnxOPfuB3KoYUXlbekYpjKn6rWBdrQ0g",
+            "title": "Chronologiste - Kerastase - Rossi Park Store",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant",
+            "title": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant/",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734",
+            "title": "https://www.beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734/",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz",
+            "title": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz/",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://detroit.shopdutyfree.com/en/2/kerastase-chronologiste-masque-intense-regenerant-200ml-7180385p1241254",
+            "title": "K\u00e9rastase Chronologiste Masque Intense Regenerant 200ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+            "title": "walmart_serp",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/800335455744",
+            "title": "https://www.ebay.com/itm/800335455744",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/318405756869",
+            "title": "https://www.ebay.com/itm/318405756869",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/366099727240",
+            "title": "https://www.ebay.com/itm/366099727240",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/298449095625",
+            "title": "https://www.ebay.com/itm/298449095625",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/157572910297",
+            "title": "https://www.ebay.com/itm/157572910297",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/358802655000",
+            "title": "https://www.ebay.com/itm/358802655000",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/377029165773",
+            "title": "https://www.ebay.com/itm/377029165773",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/307070265545",
+            "title": "https://www.ebay.com/itm/307070265545",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/407077648895",
+            "title": "https://www.ebay.com/itm/407077648895",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/205698534238",
+            "title": "https://www.ebay.com/itm/205698534238",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/386264064146",
+            "title": "https://www.ebay.com/itm/386264064146",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/127398528777",
+            "title": "https://www.ebay.com/itm/127398528777",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/p/12040961396",
+            "title": "Kerastase Chronologiste Masque Intense Regenerant 200ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/276578448566",
+            "title": "https://www.ebay.com/itm/276578448566",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/chronologiste/masque-intense-regenerant-hair-mask.html?srsltid=AfmBOoo8Zz1FkNGn-mCLkzDAWsDQq1D6U8jedSQireADQArjwUPc9ktl",
+                "title": "Chronologiste Masque Intense Anti-Aging Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant Hair Mask ... Selected 200 ml ... New price $70.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/chronologiste/masque-intense-regenerant-hair-mask.html?srsltid=AfmBOoo8Zz1FkNGn-mCLkzDAWsDQq1D6U8jedSQireADQArjwUPc9ktl",
+                "title": "Chronologiste Masque Intense Anti-Aging Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "https://www.kerastase-usa.com/collections/chronologiste/masque-intense-regenerant-hair-mask.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/chronologiste/masque-intense-regenerant-hair-mask.html?srsltid=AfmBOoo8Zz1FkNGn-mCLkzDAWsDQq1D6U8jedSQireADQArjwUPc9ktl",
+                "title": "Chronologiste Masque Intense Anti-Aging Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "Selected 200 ml ... Old price New price $70.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/chronologiste/masque-intense-regenerant-hair-mask.html?srsltid=AfmBOoo8Zz1FkNGn-mCLkzDAWsDQq1D6U8jedSQireADQArjwUPc9ktl",
+                "title": "Chronologiste Masque Intense Anti-Aging Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "Prices and payment are shown in USD."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/chronologiste/masque-intense-regenerant-hair-mask.html?srsltid=AfmBOoo8Zz1FkNGn-mCLkzDAWsDQq1D6U8jedSQireADQArjwUPc9ktl",
+                "title": "Chronologiste Masque Intense Anti-Aging Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant Hair Mask"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/chronologiste/masque-intense-regenerant-hair-mask.html?srsltid=AfmBOoo8Zz1FkNGn-mCLkzDAWsDQq1D6U8jedSQireADQArjwUPc9ktl",
+                "title": "Chronologiste Masque Intense Anti-Aging Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "K\u00e9rastase luxury hair care products \u2014 brand's own US online store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/chronologiste/masque-intense-regenerant-hair-mask.html?srsltid=AfmBOoo8Zz1FkNGn-mCLkzDAWsDQq1D6U8jedSQireADQArjwUPc9ktl",
+                "title": "Chronologiste Masque Intense Anti-Aging Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "Selected 200 ml ... New price $70.00 (200ml variant selectable/buyable)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/chronologiste/masque-intense-regenerant-hair-mask.html?srsltid=AfmBOoo8Zz1FkNGn-mCLkzDAWsDQq1D6U8jedSQireADQArjwUPc9ktl",
+                "title": "Chronologiste Masque Intense Anti-Aging Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B08H1FD9QQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: K\u00e9rastase ... data.web_price: 70"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B08H1FD9QQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B08H1FD9QQ"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B08H1FD9QQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.web_price: 70 ... data.list_price: 70"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B08H1FD9QQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.subscription_price: $70.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B08H1FD9QQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B08H1FD9QQ"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B08H1FD9QQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B08H1FD9QQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B08H1FD9QQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/Chronologiste-R%C3%A9g%C3%A9n%C3%A9rant-Revitalizes-Conditioner-Hyaluronic/dp/B08H1FD9QQ",
+                "title": "K\u00e9rastase Chronologiste, Intense R\u00e9g\u00e9n\u00e9rant Hair Mask ...",
+                "excerpts": [
+                  "Sold by: Amazon.ca ... K\u00e9rastase Chronologiste, Intense R\u00e9g\u00e9n\u00e9rant Hair Mask ... 200 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/Chronologiste-R%C3%A9g%C3%A9n%C3%A9rant-Revitalizes-Conditioner-Hyaluronic/dp/B08H1FD9QQ",
+                "title": "K\u00e9rastase Chronologiste, Intense R\u00e9g\u00e9n\u00e9rant Hair Mask ...",
+                "excerpts": [
+                  "https://amazon.ca/Chronologiste.../dp/B08H1FD9QQ"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/Chronologiste-R%C3%A9g%C3%A9n%C3%A9rant-Revitalizes-Conditioner-Hyaluronic/dp/B08H1FD9QQ",
+                "title": "K\u00e9rastase Chronologiste, Intense R\u00e9g\u00e9n\u00e9rant Hair Mask ...",
+                "excerpts": [
+                  "$100.00 $50.00 per ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/Chronologiste-R%C3%A9g%C3%A9n%C3%A9rant-Revitalizes-Conditioner-Hyaluronic/dp/B08H1FD9QQ",
+                "title": "K\u00e9rastase Chronologiste, Intense R\u00e9g\u00e9n\u00e9rant Hair Mask ...",
+                "excerpts": [
+                  "Price incl. GST (CA$) ... locale en-CA"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/Chronologiste-R%C3%A9g%C3%A9n%C3%A9rant-Revitalizes-Conditioner-Hyaluronic/dp/B08H1FD9QQ",
+                "title": "K\u00e9rastase Chronologiste, Intense R\u00e9g\u00e9n\u00e9rant Hair Mask ...",
+                "excerpts": [
+                  "url: https://amazon.ca/Chronologiste-R%C3%A9g%C3%A9n%C3%A9rant-Revitalizes-Conditioner-Hyaluronic/dp/B08H1FD9QQ"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/Chronologiste-R%C3%A9g%C3%A9n%C3%A9rant-Revitalizes-Conditioner-Hyaluronic/dp/B08H1FD9QQ",
+                "title": "K\u00e9rastase Chronologiste, Intense R\u00e9g\u00e9n\u00e9rant Hair Mask ...",
+                "excerpts": [
+                  "Ships from: Amazon.ca ... Sold by: Amazon.ca"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/Chronologiste-R%C3%A9g%C3%A9n%C3%A9rant-Revitalizes-Conditioner-Hyaluronic/dp/B08H1FD9QQ",
+                "title": "K\u00e9rastase Chronologiste, Intense R\u00e9g\u00e9n\u00e9rant Hair Mask ...",
+                "excerpts": [
+                  "In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.ca/Chronologiste-R%C3%A9g%C3%A9n%C3%A9rant-Revitalizes-Conditioner-Hyaluronic/dp/B08H1FD9QQ",
+                "title": "K\u00e9rastase Chronologiste, Intense R\u00e9g\u00e9n\u00e9rant Hair Mask ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-chronologiste-masque-200ml/12672068?bvstate=pg%3A3%2Fct%3Ar&gclsrc=aw.ds&srsltid=AfmBOoqBGLa8fq7uDUUxTwc1T2KSqZlcGDqvGFQpbnKcCeBh997yMvn2",
+                "title": "K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant 200ml",
+                "excerpts": [
+                  "K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant 200ml ... Current price: \u00a341.51"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-chronologiste-masque-200ml/12672068?bvstate=pg%3A3%2Fct%3Ar&gclsrc=aw.ds&srsltid=AfmBOoqBGLa8fq7uDUUxTwc1T2KSqZlcGDqvGFQpbnKcCeBh997yMvn2",
+                "title": "K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant 200ml",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-chronologiste-masque-200ml/12672068"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-chronologiste-masque-200ml/12672068?bvstate=pg%3A3%2Fct%3Ar&gclsrc=aw.ds&srsltid=AfmBOoqBGLa8fq7uDUUxTwc1T2KSqZlcGDqvGFQpbnKcCeBh997yMvn2",
+                "title": "K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant 200ml",
+                "excerpts": [
+                  "Recommended Retail Price: \u00a355.35 Current price: \u00a341.51"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-chronologiste-masque-200ml/12672068?bvstate=pg%3A3%2Fct%3Ar&gclsrc=aw.ds&srsltid=AfmBOoqBGLa8fq7uDUUxTwc1T2KSqZlcGDqvGFQpbnKcCeBh997yMvn2",
+                "title": "K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant 200ml",
+                "excerpts": [
+                  "FREE UK delivery on orders over \u00a325 ... Current price: \u00a341.51"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-chronologiste-masque-200ml/12672068?bvstate=pg%3A3%2Fct%3Ar&gclsrc=aw.ds&srsltid=AfmBOoqBGLa8fq7uDUUxTwc1T2KSqZlcGDqvGFQpbnKcCeBh997yMvn2",
+                "title": "K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant 200ml",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-chronologiste-masque-200ml/12672068"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-chronologiste-masque-200ml/12672068?bvstate=pg%3A3%2Fct%3Ar&gclsrc=aw.ds&srsltid=AfmBOoqBGLa8fq7uDUUxTwc1T2KSqZlcGDqvGFQpbnKcCeBh997yMvn2",
+                "title": "K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant 200ml",
+                "excerpts": [
+                  "major UK beauty e-tailer carrying K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-chronologiste-masque-200ml/12672068?bvstate=pg%3A3%2Fct%3Ar&gclsrc=aw.ds&srsltid=AfmBOoqBGLa8fq7uDUUxTwc1T2KSqZlcGDqvGFQpbnKcCeBh997yMvn2",
+                "title": "K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant 200ml",
+                "excerpts": [
+                  "QUICK BUY / Add both to basket \u2014 product is purchasable"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-chronologiste-masque-200ml/12672068?bvstate=pg%3A3%2Fct%3Ar&gclsrc=aw.ds&srsltid=AfmBOoqBGLa8fq7uDUUxTwc1T2KSqZlcGDqvGFQpbnKcCeBh997yMvn2",
+                "title": "K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant 200ml",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-chronologiste-restage-masque-intense-regenerant-youth-revitalizing-mask-200ml-10379992?srsltid=AfmBOoq3WMz25KkTbbGcGQQX8sw1S_7nvHfMFyaHpk3s4rrY8m_Gb7y9",
+                "title": "Kerastase Chronologiste Restage Masque Intense ...",
+                "excerpts": [
+                  "Kerastase Chronologiste Restage Masque Intense Regenerant Youth Revitalizing Mask 200ml ... \u00a358.50"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-chronologiste-restage-masque-intense-regenerant-youth-revitalizing-mask-200ml-10379992?srsltid=AfmBOoq3WMz25KkTbbGcGQQX8sw1S_7nvHfMFyaHpk3s4rrY8m_Gb7y9",
+                "title": "Kerastase Chronologiste Restage Masque Intense ...",
+                "excerpts": [
+                  "boots.com/kerastase-chronologiste-restage-masque-intense-regenerant-youth-revitalizing-mask-200ml-10379992"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-chronologiste-restage-masque-intense-regenerant-youth-revitalizing-mask-200ml-10379992?srsltid=AfmBOoq3WMz25KkTbbGcGQQX8sw1S_7nvHfMFyaHpk3s4rrY8m_Gb7y9",
+                "title": "Kerastase Chronologiste Restage Masque Intense ...",
+                "excerpts": [
+                  "\u00a358.50 ... 200 ML | \u00a3292.50 per 1L"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-chronologiste-restage-masque-intense-regenerant-youth-revitalizing-mask-200ml-10379992?srsltid=AfmBOoq3WMz25KkTbbGcGQQX8sw1S_7nvHfMFyaHpk3s4rrY8m_Gb7y9",
+                "title": "Kerastase Chronologiste Restage Masque Intense ...",
+                "excerpts": [
+                  "\u00a358.50 ... Standard Delivery \u00a33.95"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-chronologiste-restage-masque-intense-regenerant-youth-revitalizing-mask-200ml-10379992?srsltid=AfmBOoq3WMz25KkTbbGcGQQX8sw1S_7nvHfMFyaHpk3s4rrY8m_Gb7y9",
+                "title": "Kerastase Chronologiste Restage Masque Intense ...",
+                "excerpts": [
+                  "boots.com/kerastase-chronologiste-restage-masque-intense-regenerant-youth-revitalizing-mask-200ml-10379992"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-chronologiste-restage-masque-intense-regenerant-youth-revitalizing-mask-200ml-10379992?srsltid=AfmBOoq3WMz25KkTbbGcGQQX8sw1S_7nvHfMFyaHpk3s4rrY8m_Gb7y9",
+                "title": "Kerastase Chronologiste Restage Masque Intense ...",
+                "excerpts": [
+                  "Boots \u2014 major UK pharmacy/beauty retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-chronologiste-restage-masque-intense-regenerant-youth-revitalizing-mask-200ml-10379992?srsltid=AfmBOoq3WMz25KkTbbGcGQQX8sw1S_7nvHfMFyaHpk3s4rrY8m_Gb7y9",
+                "title": "Kerastase Chronologiste Restage Masque Intense ...",
+                "excerpts": [
+                  "### Out of stock ... This product is not in stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-chronologiste-restage-masque-intense-regenerant-youth-revitalizing-mask-200ml-10379992?srsltid=AfmBOoq3WMz25KkTbbGcGQQX8sw1S_7nvHfMFyaHpk3s4rrY8m_Gb7y9",
+                "title": "Kerastase Chronologiste Restage Masque Intense ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-chronologiste-masque-intense-regenerant-hair-mask",
+                "title": "Kerastase Chronologiste - Masque Intense Regenerant Hair ...",
+                "excerpts": [
+                  "Regular price Sale price $70.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-chronologiste-masque-intense-regenerant-hair-mask",
+                "title": "Kerastase Chronologiste - Masque Intense Regenerant Hair ...",
+                "excerpts": [
+                  "Regular price Sale price $70.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-chronologiste-masque-intense-regenerant-hair-mask",
+                "title": "Kerastase Chronologiste - Masque Intense Regenerant Hair ...",
+                "excerpts": [
+                  "Sale Sold out ... Quantity (0 in cart)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-chronologiste-masque-intense-regenerant-hair-mask",
+                "title": "Kerastase Chronologiste - Masque Intense Regenerant Hair ...",
+                "excerpts": [
+                  "privesuite.com/products/kerastase-chronologiste-masque-intense-regenerant-hair-mask"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-chronologiste-masque-intense-regenerant-hair-mask",
+                "title": "Kerastase Chronologiste - Masque Intense Regenerant Hair ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-chronologiste-masque-intense-regenerant-hair-mask",
+                "title": "Kerastase Chronologiste - Masque Intense Regenerant Hair ...",
+                "excerpts": [
+                  "privesuite.com/products/kerastase-chronologiste-masque-intense-regenerant-hair-mask"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-chronologiste-masque-intense-regenerant-hair-mask",
+                "title": "Kerastase Chronologiste - Masque Intense Regenerant Hair ...",
+                "excerpts": [
+                  "PriveSuite ... Kerastase Chronologiste - Masque Intense Regenerant Hair Mask ... 200mL"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://privesuite.com/products/kerastase-chronologiste-masque-intense-regenerant-hair-mask",
+                "title": "Kerastase Chronologiste - Masque Intense Regenerant Hair ...",
+                "excerpts": [
+                  "Hi Beautiful! Save 20% With Code: HAIR20 \u2014 independent beauty e-commerce store (Shopify)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://rossiparkstore.com/collections/kerastase-chronologiste-for-aging-hair?srsltid=AfmBOoq8QVKaafkM6xlRKHorYnxOPfuB3KoYUXlbekYpjKn6rWBdrQ0g",
+                "title": "Chronologiste - Kerastase - Rossi Park Store",
+                "excerpts": [
+                  "Chronologiste Masque Intense Regenerant Hair Mask ... Regular price $75.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://rossiparkstore.com/collections/kerastase-chronologiste-for-aging-hair?srsltid=AfmBOoq8QVKaafkM6xlRKHorYnxOPfuB3KoYUXlbekYpjKn6rWBdrQ0g",
+                "title": "Chronologiste - Kerastase - Rossi Park Store",
+                "excerpts": [
+                  "FREE SHIPPING on all orders over $50 ... Regular price $75.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://rossiparkstore.com/collections/kerastase-chronologiste-for-aging-hair?srsltid=AfmBOoq8QVKaafkM6xlRKHorYnxOPfuB3KoYUXlbekYpjKn6rWBdrQ0g",
+                "title": "Chronologiste - Kerastase - Rossi Park Store",
+                "excerpts": [
+                  "Chronologiste Masque Intense Regenerant Hair Mask ... Regular price $75.00 (no Sold Out tag, unlike L'Huile De Parfum which is marked Sold Out)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://rossiparkstore.com/collections/kerastase-chronologiste-for-aging-hair?srsltid=AfmBOoq8QVKaafkM6xlRKHorYnxOPfuB3KoYUXlbekYpjKn6rWBdrQ0g",
+                "title": "Chronologiste - Kerastase - Rossi Park Store",
+                "excerpts": [
+                  "rossiparkstore.com/collections/kerastase-chronologiste-for-aging-hair/products/chronologiste-masque-intense-regenerant-hair-mask-for-revitalizing-length-and-ends"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://rossiparkstore.com/collections/kerastase-chronologiste-for-aging-hair?srsltid=AfmBOoq8QVKaafkM6xlRKHorYnxOPfuB3KoYUXlbekYpjKn6rWBdrQ0g",
+                "title": "Chronologiste - Kerastase - Rossi Park Store",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://rossiparkstore.com/collections/kerastase-chronologiste-for-aging-hair?srsltid=AfmBOoq8QVKaafkM6xlRKHorYnxOPfuB3KoYUXlbekYpjKn6rWBdrQ0g",
+                "title": "Chronologiste - Kerastase - Rossi Park Store",
+                "excerpts": [
+                  "rossiparkstore.com \u2014 Powered by Shopify"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://rossiparkstore.com/collections/kerastase-chronologiste-for-aging-hair?srsltid=AfmBOoq8QVKaafkM6xlRKHorYnxOPfuB3KoYUXlbekYpjKn6rWBdrQ0g",
+                "title": "Chronologiste - Kerastase - Rossi Park Store",
+                "excerpts": [
+                  "Rossi Park Store ... 136 Glass Street, Dallas, Texas 75207"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://rossiparkstore.com/collections/kerastase-chronologiste-for-aging-hair?srsltid=AfmBOoq8QVKaafkM6xlRKHorYnxOPfuB3KoYUXlbekYpjKn6rWBdrQ0g",
+                "title": "Chronologiste - Kerastase - Rossi Park Store",
+                "excerpts": [
+                  "Rossi Park Store \u2014 Dallas TX salon/hair products store (Shopify), carries Kerastase/Olaplex/Shu Uemura"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant",
+                "title": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant/",
+                "excerpts": [
+                  "Original price was: $118.00.Current price is: $90.00."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant",
+                "title": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant/",
+                "excerpts": [
+                  "Current price is: $90.00. ... Free Shipping On All Orders Over $200"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant",
+                "title": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant/",
+                "excerpts": [
+                  "6 in stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant",
+                "title": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant/",
+                "excerpts": [
+                  "savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant",
+                "title": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant/",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant",
+                "title": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant/",
+                "excerpts": [
+                  "savvyhairartistry.com \u2014 Savvy Hair Artistry"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant",
+                "title": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant/",
+                "excerpts": [
+                  "Savvy Hair Artistry ... Kerastase Chronologiste Masque Intense Regenerant 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant",
+                "title": "https://savvyhairartistry.com/product/kerastase-chronologiste-masque-intense-regenerant/",
+                "excerpts": [
+                  "Savvy Hair Artistry \u2014 independent online beauty/hair store (WordPress/WooCommerce), Kerastase Paris category"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734",
+                "title": "https://www.beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734/",
+                "excerpts": [
+                  "63.40 ... 47.55 ... This product is not in stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734",
+                "title": "https://www.beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734/",
+                "excerpts": [
+                  "Subscribe for the newsletter and receive a \u20ac 5,- discount! ... en-eu ... EAN-code 3474637332457 ... Volume 200 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734",
+                "title": "https://www.beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734/",
+                "excerpts": [
+                  "This product is not in stock Email me when this product is back in stock."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734",
+                "title": "https://www.beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734/",
+                "excerpts": [
+                  "beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734",
+                "title": "https://www.beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734/",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734",
+                "title": "https://www.beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734/",
+                "excerpts": [
+                  "beautyplaza.com/en-eu/brands/kerastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734",
+                "title": "https://www.beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734/",
+                "excerpts": [
+                  "Beautyplaza ... K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734",
+                "title": "https://www.beautyplaza.com/en-eu/p/kerastase-chronologiste-masque-intense-regenerant/160734/",
+                "excerpts": [
+                  "Beautyplaza \u2014 EU beauty e-tailer (Netherlands), Discounts up to 65%, K\u00e9rastase authorized stockist"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz/",
+                "excerpts": [
+                  "$72,95 ... AVAILABLE ... 200ml 6.8fl.oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz/",
+                "excerpts": [
+                  "$72,95 ... K\u00e9rastase chronologiste r\u00e9g\u00e9n\u00e9rant essential revitalizing hair mask 200ml 6.8fl.oz (Portuguese-language EU site, price displayed with $ symbol, comma decimal)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz/",
+                "excerpts": [
+                  "AVAILABLE"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz/",
+                "excerpts": [
+                  "lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz/",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz/",
+                "excerpts": [
+                  "lyskin.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz/",
+                "excerpts": [
+                  "LySkin ... K\u00e9rastase chronologiste r\u00e9g\u00e9n\u00e9rant essential revitalizing hair mask 200ml 6.8fl.oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-chronologiste-regenerant-essential-revitalizing-hair-mask-200ml-6-8fl-oz/",
+                "excerpts": [
+                  "LySkin \u2014 independent Portuguese beauty e-tailer (WordPress/WooCommerce) selling K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://detroit.shopdutyfree.com/en/2/kerastase-chronologiste-masque-intense-regenerant-200ml-7180385p1241254",
+                "title": "K\u00e9rastase Chronologiste Masque Intense Regenerant 200ml",
+                "excerpts": [
+                  "Regular price $26.00 Was $26.00 Club Avolta price $26.00 ... $26.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://detroit.shopdutyfree.com/en/2/kerastase-chronologiste-masque-intense-regenerant-200ml-7180385p1241254",
+                "title": "K\u00e9rastase Chronologiste Masque Intense Regenerant 200ml",
+                "excerpts": [
+                  "Regular price $26.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://detroit.shopdutyfree.com/en/2/kerastase-chronologiste-masque-intense-regenerant-200ml-7180385p1241254",
+                "title": "K\u00e9rastase Chronologiste Masque Intense Regenerant 200ml",
+                "excerpts": [
+                  "Available in store only ... Visit our store to purchase this exclusive product"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://detroit.shopdutyfree.com/en/2/kerastase-chronologiste-masque-intense-regenerant-200ml-7180385p1241254",
+                "title": "K\u00e9rastase Chronologiste Masque Intense Regenerant 200ml",
+                "excerpts": [
+                  "detroit.shopdutyfree.com/en/2/kerastase-chronologiste-masque-intense-regenerant-200ml-7180385p1241254"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://detroit.shopdutyfree.com/en/2/kerastase-chronologiste-masque-intense-regenerant-200ml-7180385p1241254",
+                "title": "K\u00e9rastase Chronologiste Masque Intense Regenerant 200ml",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://detroit.shopdutyfree.com/en/2/kerastase-chronologiste-masque-intense-regenerant-200ml-7180385p1241254",
+                "title": "K\u00e9rastase Chronologiste Masque Intense Regenerant 200ml",
+                "excerpts": [
+                  "detroit.shopdutyfree.com \u2014 Dufry/Avolta travel retail"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://detroit.shopdutyfree.com/en/2/kerastase-chronologiste-masque-intense-regenerant-200ml-7180385p1241254",
+                "title": "K\u00e9rastase Chronologiste Masque Intense Regenerant 200ml",
+                "excerpts": [
+                  "Avolta (detroit.shopdutyfree.com) ... K\u00e9rastase - Chronologiste Masque Intense Regenerant"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://detroit.shopdutyfree.com/en/2/kerastase-chronologiste-masque-intense-regenerant-200ml-7180385p1241254",
+                "title": "K\u00e9rastase Chronologiste Masque Intense Regenerant 200ml",
+                "excerpts": [
+                  "INT Travel Only ... Collection point Detroit (Wayne County) ... Join Club Avolta for free"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[0].product_seller: R&B Beauty ... data[0].product_price: 73.99 ... Kerastase Chronologiste Masque Intense Regenerant 6.8 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[0].product_price_currency: $"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[0].product_availability: In stock ... data[0].product_out_of_stock: false"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[0].product_url: https://www.walmart.com/ip/Kerastase-Chronologiste-Masque-Intense-Regenerant-6-8-oz/782647731"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "product_url on walmart.com marketplace"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[0].product_seller: R&B Beauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[0].product_seller: R&B Beauty \u2014 Walmart Marketplace third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[2].product_seller: Beauty's Choice INC ... data[2].product_price: 77.99 ... Kerastase Chronologiste Intense Regenerant Masque, 6.8 oz ... variants[0].name: 6.8"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[2].product_price_currency: $"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[2].product_availability: In stock ... data[2].product_out_of_stock: false"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[2].product_url: https://www.walmart.com/ip/Kerastase-Chronologiste-Masque-Regenerant-Youth-Revitalizing-Hair-Mask-200ml/2602135827"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "product_url on walmart.com marketplace"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[2].product_seller: Beauty's Choice INC"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[2].product_seller: Beauty's Choice INC \u2014 Walmart Marketplace third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[6].product_seller: Authorized Beauty Distribution ... data[6].product_price: 59.38 ... Kerastase Chronologiste Masque Intense 6.76 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[6].product_price_currency: $"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[6].product_availability: In stock ... data[6].product_out_of_stock: false"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[6].product_url: https://www.walmart.com/ip/Kerastase-Chronologiste-Masque-Intense-R-g-n-rant-Hair-Mask-6-8-oz/898426666"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "product_url on walmart.com marketplace"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[6].product_seller: Authorized Beauty Distribution"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[6].product_seller: Authorized Beauty Distribution \u2014 Walmart Marketplace third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[7].product_seller: Authorized Beauty Distribution ... data[7].product_price: 69.49 ... Kerastase Chronologiste Essential Revitalizing Hair Mask For Dry & Damaged Hair, 6.8 oz / 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[7].product_price_currency: $"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[7].product_availability: In stock ... data[7].product_out_of_stock: false"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[7].product_url: https://www.walmart.com/ip/Kerastase-Chronologiste-Essential-Revitalizing-Hair-Mask-For-Dry-Damaged-Hair-6-8-oz-200ml/2614164828"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "product_url on walmart.com marketplace"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[7].product_seller: Authorized Beauty Distribution"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=Kerastase+Chronologiste+Masque+Intense+Regenerant+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[7].product_seller: Authorized Beauty Distribution \u2014 Walmart Marketplace third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/800335455744",
+                "title": "https://www.ebay.com/itm/800335455744",
+                "excerpts": [
+                  "US $27.99or Best Offer ... New with box"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/800335455744",
+                "title": "https://www.ebay.com/itm/800335455744",
+                "excerpts": [
+                  "US $27.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/800335455744",
+                "title": "https://www.ebay.com/itm/800335455744",
+                "excerpts": [
+                  "Quantity: 4 available5 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/800335455744",
+                "title": "https://www.ebay.com/itm/800335455744",
+                "excerpts": [
+                  "ebay.com/itm/800335455744"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/800335455744",
+                "title": "https://www.ebay.com/itm/800335455744",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/800335455744",
+                "title": "https://www.ebay.com/itm/800335455744",
+                "excerpts": [
+                  "ebay.com/sch/finetraders1/m.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/800335455744",
+                "title": "https://www.ebay.com/itm/800335455744",
+                "excerpts": [
+                  "[finetraders1] ... Kerastase Chronologiste Masque Intense Regenerant 6.8oz/200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/800335455744",
+                "title": "https://www.ebay.com/itm/800335455744",
+                "excerpts": [
+                  "ebay.com marketplace third-party seller, 99.7% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318405756869",
+                "title": "https://www.ebay.com/itm/318405756869",
+                "excerpts": [
+                  "US $30.00 ... New with box ... More than 10 available13 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318405756869",
+                "title": "https://www.ebay.com/itm/318405756869",
+                "excerpts": [
+                  "US $30.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318405756869",
+                "title": "https://www.ebay.com/itm/318405756869",
+                "excerpts": [
+                  "Quantity: More than 10 available13 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318405756869",
+                "title": "https://www.ebay.com/itm/318405756869",
+                "excerpts": [
+                  "ebay.com/itm/318405756869"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318405756869",
+                "title": "https://www.ebay.com/itm/318405756869",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318405756869",
+                "title": "https://www.ebay.com/itm/318405756869",
+                "excerpts": [
+                  "ebay.com/str/variumtech"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318405756869",
+                "title": "https://www.ebay.com/itm/318405756869",
+                "excerpts": [
+                  "[Seller's other items] ebay.com/str/variumtech ... 98% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318405756869",
+                "title": "https://www.ebay.com/itm/318405756869",
+                "excerpts": [
+                  "ebay.com marketplace third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366099727240",
+                "title": "https://www.ebay.com/itm/366099727240",
+                "excerpts": [
+                  "US $30.40or Best Offer ... New with box"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366099727240",
+                "title": "https://www.ebay.com/itm/366099727240",
+                "excerpts": [
+                  "US $30.40"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366099727240",
+                "title": "https://www.ebay.com/itm/366099727240",
+                "excerpts": [
+                  "Quantity: ... New with box ... Kerastase Intense Regenerating Mask 200ML"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366099727240",
+                "title": "https://www.ebay.com/itm/366099727240",
+                "excerpts": [
+                  "ebay.com/itm/366099727240"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366099727240",
+                "title": "https://www.ebay.com/itm/366099727240",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366099727240",
+                "title": "https://www.ebay.com/itm/366099727240",
+                "excerpts": [
+                  "ebay.com/str/towfiqkha0"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366099727240",
+                "title": "https://www.ebay.com/itm/366099727240",
+                "excerpts": [
+                  "[AK PRODUCTS U.S.A] ebay.com/str/towfiqkha0 ... 99% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/366099727240",
+                "title": "https://www.ebay.com/itm/366099727240",
+                "excerpts": [
+                  "ebay.com marketplace third-party seller (store: towfiqkha0)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298449095625",
+                "title": "https://www.ebay.com/itm/298449095625",
+                "excerpts": [
+                  "US $29.90/ea ... New with box ... 2 available14 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298449095625",
+                "title": "https://www.ebay.com/itm/298449095625",
+                "excerpts": [
+                  "US $29.90/ea"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298449095625",
+                "title": "https://www.ebay.com/itm/298449095625",
+                "excerpts": [
+                  "Quantity: 2 available14 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298449095625",
+                "title": "https://www.ebay.com/itm/298449095625",
+                "excerpts": [
+                  "ebay.com/itm/298449095625"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298449095625",
+                "title": "https://www.ebay.com/itm/298449095625",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298449095625",
+                "title": "https://www.ebay.com/itm/298449095625",
+                "excerpts": [
+                  "ebay.com/str/shop2473"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298449095625",
+                "title": "https://www.ebay.com/itm/298449095625",
+                "excerpts": [
+                  "[shop_2473] ebay.com/str/shop2473 ... 98.2% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298449095625",
+                "title": "https://www.ebay.com/itm/298449095625",
+                "excerpts": [
+                  "ebay.com marketplace third-party seller (store: shop2473)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157572910297",
+                "title": "https://www.ebay.com/itm/157572910297",
+                "excerpts": [
+                  "US $29.49or Best Offer ... New with box ... 3 available26 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157572910297",
+                "title": "https://www.ebay.com/itm/157572910297",
+                "excerpts": [
+                  "US $29.49"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157572910297",
+                "title": "https://www.ebay.com/itm/157572910297",
+                "excerpts": [
+                  "Quantity: 3 available26 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157572910297",
+                "title": "https://www.ebay.com/itm/157572910297",
+                "excerpts": [
+                  "ebay.com/itm/157572910297"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157572910297",
+                "title": "https://www.ebay.com/itm/157572910297",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157572910297",
+                "title": "https://www.ebay.com/itm/157572910297",
+                "excerpts": [
+                  "ebay.com/sch/zabi-5258/m.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157572910297",
+                "title": "https://www.ebay.com/itm/157572910297",
+                "excerpts": [
+                  "[zabi-5258] ... 98.9% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/157572910297",
+                "title": "https://www.ebay.com/itm/157572910297",
+                "excerpts": [
+                  "ebay.com marketplace third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358802655000",
+                "title": "https://www.ebay.com/itm/358802655000",
+                "excerpts": [
+                  "US $29.99/eaor Best Offer ... New with box ... 6 available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358802655000",
+                "title": "https://www.ebay.com/itm/358802655000",
+                "excerpts": [
+                  "US $29.99/ea"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358802655000",
+                "title": "https://www.ebay.com/itm/358802655000",
+                "excerpts": [
+                  "Quantity: 6 available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358802655000",
+                "title": "https://www.ebay.com/itm/358802655000",
+                "excerpts": [
+                  "ebay.com/itm/358802655000"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358802655000",
+                "title": "https://www.ebay.com/itm/358802655000",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358802655000",
+                "title": "https://www.ebay.com/itm/358802655000",
+                "excerpts": [
+                  "ebay.com/sch/bigjim_2/m.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358802655000",
+                "title": "https://www.ebay.com/itm/358802655000",
+                "excerpts": [
+                  "[bigjim_2] ... 100% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/358802655000",
+                "title": "https://www.ebay.com/itm/358802655000",
+                "excerpts": [
+                  "ebay.com marketplace third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/377029165773",
+                "title": "https://www.ebay.com/itm/377029165773",
+                "excerpts": [
+                  "US $30.99/ea ... New with box"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/377029165773",
+                "title": "https://www.ebay.com/itm/377029165773",
+                "excerpts": [
+                  "US $30.99/ea"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/377029165773",
+                "title": "https://www.ebay.com/itm/377029165773",
+                "excerpts": [
+                  "New with box ... new Kerastase Chronologiste Masque Intense Regenerant Hair Mask- 6.8oz 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/377029165773",
+                "title": "https://www.ebay.com/itm/377029165773",
+                "excerpts": [
+                  "ebay.com/itm/377029165773"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/377029165773",
+                "title": "https://www.ebay.com/itm/377029165773",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/377029165773",
+                "title": "https://www.ebay.com/itm/377029165773",
+                "excerpts": [
+                  "ebay.com/sch/in-446908/m.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/377029165773",
+                "title": "https://www.ebay.com/itm/377029165773",
+                "excerpts": [
+                  "[in-446908] ... 99.3% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/377029165773",
+                "title": "https://www.ebay.com/itm/377029165773",
+                "excerpts": [
+                  "ebay.com marketplace third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/307070265545",
+                "title": "https://www.ebay.com/itm/307070265545",
+                "excerpts": [
+                  "US $36.49or Best Offer ... New with box"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/307070265545",
+                "title": "https://www.ebay.com/itm/307070265545",
+                "excerpts": [
+                  "US $36.49"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/307070265545",
+                "title": "https://www.ebay.com/itm/307070265545",
+                "excerpts": [
+                  "New with box ... Kerastase Chronologiste Masque Intense Regenerant Hair Mask 200ml New Box"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/307070265545",
+                "title": "https://www.ebay.com/itm/307070265545",
+                "excerpts": [
+                  "ebay.com/itm/307070265545"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/307070265545",
+                "title": "https://www.ebay.com/itm/307070265545",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/307070265545",
+                "title": "https://www.ebay.com/itm/307070265545",
+                "excerpts": [
+                  "ebay.com/sch/madhushikasubashi-09/m.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/307070265545",
+                "title": "https://www.ebay.com/itm/307070265545",
+                "excerpts": [
+                  "[madhushikasubashi-09] ... 100% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/307070265545",
+                "title": "https://www.ebay.com/itm/307070265545",
+                "excerpts": [
+                  "ebay.com marketplace third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407077648895",
+                "title": "https://www.ebay.com/itm/407077648895",
+                "excerpts": [
+                  "US $38.00/eaor Best Offer ... New with box ... 3 available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407077648895",
+                "title": "https://www.ebay.com/itm/407077648895",
+                "excerpts": [
+                  "US $38.00/ea"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407077648895",
+                "title": "https://www.ebay.com/itm/407077648895",
+                "excerpts": [
+                  "Quantity: 3 available"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407077648895",
+                "title": "https://www.ebay.com/itm/407077648895",
+                "excerpts": [
+                  "ebay.com/itm/407077648895"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407077648895",
+                "title": "https://www.ebay.com/itm/407077648895",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407077648895",
+                "title": "https://www.ebay.com/itm/407077648895",
+                "excerpts": [
+                  "ebay.com/sch/wonderwoods18/m.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407077648895",
+                "title": "https://www.ebay.com/itm/407077648895",
+                "excerpts": [
+                  "[wonderwoods18] ebay.com/sch/wonderwoods18/m.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/407077648895",
+                "title": "https://www.ebay.com/itm/407077648895",
+                "excerpts": [
+                  "ebay.com marketplace third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/205698534238",
+                "title": "https://www.ebay.com/itm/205698534238",
+                "excerpts": [
+                  "US $40.00 ... New with box ... 2 available1 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/205698534238",
+                "title": "https://www.ebay.com/itm/205698534238",
+                "excerpts": [
+                  "US $40.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/205698534238",
+                "title": "https://www.ebay.com/itm/205698534238",
+                "excerpts": [
+                  "Quantity: 2 available1 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/205698534238",
+                "title": "https://www.ebay.com/itm/205698534238",
+                "excerpts": [
+                  "ebay.com/itm/205698534238"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/205698534238",
+                "title": "https://www.ebay.com/itm/205698534238",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/205698534238",
+                "title": "https://www.ebay.com/itm/205698534238",
+                "excerpts": [
+                  "ebay.com/sch/cescod617_2/m.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/205698534238",
+                "title": "https://www.ebay.com/itm/205698534238",
+                "excerpts": [
+                  "[cescod617_2] ... 99.5% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/205698534238",
+                "title": "https://www.ebay.com/itm/205698534238",
+                "excerpts": [
+                  "ebay.com marketplace third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/386264064146",
+                "title": "https://www.ebay.com/itm/386264064146",
+                "excerpts": [
+                  "US $42.99 ... K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/386264064146",
+                "title": "https://www.ebay.com/itm/386264064146",
+                "excerpts": [
+                  "US $42.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/386264064146",
+                "title": "https://www.ebay.com/itm/386264064146",
+                "excerpts": [
+                  "[Jaremic2c] ... 99.7% positive ... K\u00e9rastase Chronologiste Masque Intense R\u00e9g\u00e9n\u00e9rant 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/386264064146",
+                "title": "https://www.ebay.com/itm/386264064146",
+                "excerpts": [
+                  "ebay.com/itm/386264064146"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/386264064146",
+                "title": "https://www.ebay.com/itm/386264064146",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/386264064146",
+                "title": "https://www.ebay.com/itm/386264064146",
+                "excerpts": [
+                  "ebay.com/str/jaremic2c"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/386264064146",
+                "title": "https://www.ebay.com/itm/386264064146",
+                "excerpts": [
+                  "[Jaremic2c] ebay.com/str/jaremic2c ... (38116)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/386264064146",
+                "title": "https://www.ebay.com/itm/386264064146",
+                "excerpts": [
+                  "ebay.com marketplace third-party seller (store: jaremic2c)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127398528777",
+                "title": "https://www.ebay.com/itm/127398528777",
+                "excerpts": [
+                  "US $47.95 ... Kerastase Chronologiste Masque Regenerant Intense 100% AUTHENTIC 200ml/6.8oz Box"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127398528777",
+                "title": "https://www.ebay.com/itm/127398528777",
+                "excerpts": [
+                  "US $47.95"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/p/12040961396",
+                "title": "Kerastase Chronologiste Masque Intense Regenerant 200ml",
+                "excerpts": [
+                  "[aleskincare plus] ... 99.6% positive ... Last one"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127398528777",
+                "title": "https://www.ebay.com/itm/127398528777",
+                "excerpts": [
+                  "ebay.com/itm/127398528777"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127398528777",
+                "title": "https://www.ebay.com/itm/127398528777",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127398528777",
+                "title": "https://www.ebay.com/itm/127398528777",
+                "excerpts": [
+                  "ebay.com/str/aleskincareplus"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127398528777",
+                "title": "https://www.ebay.com/itm/127398528777",
+                "excerpts": [
+                  "[aleskincare plus] ebay.com/str/aleskincareplus ... (15671)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127398528777",
+                "title": "https://www.ebay.com/itm/127398528777",
+                "excerpts": [
+                  "ebay.com marketplace third-party seller (store: aleskincareplus)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276578448566",
+                "title": "https://www.ebay.com/itm/276578448566",
+                "excerpts": [
+                  "US $47.99 ... Was US $59.99 (20% off) ... Kerastase CHRONOLOGYSTE Youth Revitalizing Masque 6.8 fl oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[27].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276578448566",
+                "title": "https://www.ebay.com/itm/276578448566",
+                "excerpts": [
+                  "US $47.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[27].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276578448566",
+                "title": "https://www.ebay.com/itm/276578448566",
+                "excerpts": [
+                  "[Evanna's Beauty Supply] ... (28147) ... SAVE UP TO 20%"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[27].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276578448566",
+                "title": "https://www.ebay.com/itm/276578448566",
+                "excerpts": [
+                  "ebay.com/itm/276578448566"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[27].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276578448566",
+                "title": "https://www.ebay.com/itm/276578448566",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[27].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276578448566",
+                "title": "https://www.ebay.com/itm/276578448566",
+                "excerpts": [
+                  "ebay.com/str/evannasbeautysupply"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[27].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276578448566",
+                "title": "https://www.ebay.com/itm/276578448566",
+                "excerpts": [
+                  "[Evanna's Beauty Supply] ebay.com/str/evannasbeautysupply ... (28147)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[27].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/276578448566",
+                "title": "https://www.ebay.com/itm/276578448566",
+                "excerpts": [
+                  "ebay.com marketplace third-party seller (store: evannasbeautysupply)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[27].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

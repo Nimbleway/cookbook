@@ -1,0 +1,1170 @@
+{
+  "sku_id": "KER-005",
+  "effort": "high",
+  "elapsed_s": 1056,
+  "fetched_at": "2026-07-20T13:16:42+00:00",
+  "run_id": "task_run_e09cae2c4c434d2b9ae381cf36f010bd",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_e09cae2c4c434d2b9ae381cf36f010bd",
+      "interaction_id": "task_run_e09cae2c4c434d2b9ae381cf36f010bd",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Nutritive Bain Satin Nourishing Shampoo, 500ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:59:05.411417Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:59:05.550558Z",
+      "completed_at": "2026-07-20T13:16:35.106216Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://keshop.com/en/kerastase-nutritive/bain-satin-riche-500-ml.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Keshop",
+          "seller_type": "independent_store",
+          "seller_domain": "keshop.com",
+          "advertised_price": "\u20ac37.45"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-nutritive-bain-satin-riche-500ml/15409458",
+          "observed_at": "2026-07-20",
+          "seller_name": "LOOKFANTASTIC",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "\u00a346.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": false,
+          "listing_url": "https://www.boots.com/k\u00e9rastase-nutritive-bain-satin-riche-shampoo-refillable-bottle-with-niacinamide-for-very-dry-hair-500ml-10349962",
+          "observed_at": "2026-07-20",
+          "seller_name": "Boots",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "boots.com",
+          "advertised_price": "\u00a346.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.gorgeousshop.com/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-with-niacinamide-for-very-dry-hair",
+          "observed_at": "2026-07-20",
+          "seller_name": "Gorgeous Shop",
+          "seller_type": "independent_store",
+          "seller_domain": "gorgeousshop.com",
+          "advertised_price": "\u00a336.80"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://cosmeticsnow.com/iteminfo/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-for-very-dry-hair-500ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Cosmetics Now",
+          "seller_type": "discounter",
+          "seller_domain": "cosmeticsnow.com",
+          "advertised_price": "$82.95"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": false,
+          "listing_url": "https://www.kerastase.co.uk/ranges/regimen/nutritive/bain-satin-riche-shampoo/KER_00250.html?dwvar_KER__00250_size=500ML",
+          "observed_at": "2026-07-20",
+          "seller_name": "K\u00e9rastase (Official UK Store)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase.co.uk",
+          "advertised_price": "\u00a346.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.co.uk/itm/336653376074",
+          "observed_at": "2026-07-20",
+          "seller_name": "kitty_palmer (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.co.uk",
+          "advertised_price": "\u00a318.28"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://keshop.com/en/kerastase-nutritive/bain-satin-riche-500-ml.html",
+            "title": "Bain Satin Riche 500 ml - K\u00e9rastase Nutritive Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-riche-500ml/15409458?srsltid=AfmBOoo6LqVMP7DmU3apKBVASgMnGicc4Dsbn7p1xeooXnxMjgLBO9Om",
+            "title": "K\u00e9rastase Nutritive Bain Satin Riche Refillable Shampoo ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://boots.com/k%C3%A9rastase-nutritive-bain-satin-riche-shampoo-refillable-bottle-with-niacinamide-for-very-dry-hair-500ml-10349962?srsltid=AfmBOop0L7G6kzbiaCWEDWU7ggWTM6g2yBFiU30ymc15yDkNWDihXTcc",
+            "title": "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://gorgeousshop.com/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-with-niacinamide-for-very-dry-hair",
+            "title": "K\u00e9rastase Nutritive Bain Satin Riche High ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://cosmeticsnow.com/iteminfo/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-for-very-dry-hair-500ml",
+            "title": "Kerastase Nutritive Bain Satin Riche High ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-riche-shampoo/KER_00250.html",
+            "title": "Nutritive Bain Satin Riche | Shampoo for Very Dry Hair",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.co.uk/p/19065641290",
+            "title": "Bain Satin Riche Nutritive K\u00e9rastase 500ML for sale online",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-nutritive/bain-satin-riche-500-ml.html",
+                "title": "Bain Satin Riche 500 ml - K\u00e9rastase Nutritive Shampoo",
+                "excerpts": [
+                  "keshop.com ... Bain Satin Riche - 500 ml ... (+34) 935 104 391 Rda. Alfonso X el Sabio 41 08304 Matar\u00f3 (Barcelona) Spain"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-nutritive/bain-satin-riche-500-ml.html",
+                "title": "Bain Satin Riche 500 ml - K\u00e9rastase Nutritive Shampoo",
+                "excerpts": [
+                  "https://keshop.com/en/kerastase-nutritive/bain-satin-riche-500-ml.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-nutritive/bain-satin-riche-500-ml.html",
+                "title": "Bain Satin Riche 500 ml - K\u00e9rastase Nutritive Shampoo",
+                "excerpts": [
+                  "\u20ac37.45 \u20ac53.30 -30%"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-nutritive/bain-satin-riche-500-ml.html",
+                "title": "Bain Satin Riche 500 ml - K\u00e9rastase Nutritive Shampoo",
+                "excerpts": [
+                  "\u20ac37.45 \u20ac53.30 -30%"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-nutritive/bain-satin-riche-500-ml.html",
+                "title": "Bain Satin Riche 500 ml - K\u00e9rastase Nutritive Shampoo",
+                "excerpts": [
+                  "https://keshop.com/en/kerastase-nutritive/bain-satin-riche-500-ml.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-nutritive/bain-satin-riche-500-ml.html",
+                "title": "Bain Satin Riche 500 ml - K\u00e9rastase Nutritive Shampoo",
+                "excerpts": [
+                  "Rda. Alfonso X el Sabio 41 08304 Matar\u00f3 (Barcelona) Spain ... 4.9/5 Store rating"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-nutritive/bain-satin-riche-500-ml.html",
+                "title": "Bain Satin Riche 500 ml - K\u00e9rastase Nutritive Shampoo",
+                "excerpts": [
+                  "In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://keshop.com/en/kerastase-nutritive/bain-satin-riche-500-ml.html",
+                "title": "Bain Satin Riche 500 ml - K\u00e9rastase Nutritive Shampoo",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-riche-500ml/15409458?srsltid=AfmBOoo6LqVMP7DmU3apKBVASgMnGicc4Dsbn7p1xeooXnxMjgLBO9Om",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Refillable Shampoo ...",
+                "excerpts": [
+                  "\u00a346.00 ... Or 4 interest free payments of \u00a311.50 with"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-riche-500ml/15409458?srsltid=AfmBOoo6LqVMP7DmU3apKBVASgMnGicc4Dsbn7p1xeooXnxMjgLBO9Om",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Refillable Shampoo ...",
+                "excerpts": [
+                  "\u00a346.00 ... In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-riche-500ml/15409458?srsltid=AfmBOoo6LqVMP7DmU3apKBVASgMnGicc4Dsbn7p1xeooXnxMjgLBO9Om",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Refillable Shampoo ...",
+                "excerpts": [
+                  "In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-riche-500ml/15409458?srsltid=AfmBOoo6LqVMP7DmU3apKBVASgMnGicc4Dsbn7p1xeooXnxMjgLBO9Om",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Refillable Shampoo ...",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-nutritive-bain-satin-riche-500ml/15409458"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-riche-500ml/15409458?srsltid=AfmBOoo6LqVMP7DmU3apKBVASgMnGicc4Dsbn7p1xeooXnxMjgLBO9Om",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Refillable Shampoo ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-riche-500ml/15409458?srsltid=AfmBOoo6LqVMP7DmU3apKBVASgMnGicc4Dsbn7p1xeooXnxMjgLBO9Om",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Refillable Shampoo ...",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-nutritive-bain-satin-riche-500ml/15409458"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-riche-500ml/15409458?srsltid=AfmBOoo6LqVMP7DmU3apKBVASgMnGicc4Dsbn7p1xeooXnxMjgLBO9Om",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Refillable Shampoo ...",
+                "excerpts": [
+                  "LOOKFANTASTIC ... K\u00e9rastase Nutritive Bain Satin Riche Refillable Shampoo 500ml For Very Dry Hair"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-bain-satin-riche-500ml/15409458?srsltid=AfmBOoo6LqVMP7DmU3apKBVASgMnGicc4Dsbn7p1xeooXnxMjgLBO9Om",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Refillable Shampoo ...",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin Riche Refillable Shampoo 500ml For Very Dry Hair ... In stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/k%C3%A9rastase-nutritive-bain-satin-riche-shampoo-refillable-bottle-with-niacinamide-for-very-dry-hair-500ml-10349962?srsltid=AfmBOop0L7G6kzbiaCWEDWU7ggWTM6g2yBFiU30ymc15yDkNWDihXTcc",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable ...",
+                "excerpts": [
+                  "\u00a346.00 ... 500 ML | \u00a392.00 per 1L"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/k%C3%A9rastase-nutritive-bain-satin-riche-shampoo-refillable-bottle-with-niacinamide-for-very-dry-hair-500ml-10349962?srsltid=AfmBOop0L7G6kzbiaCWEDWU7ggWTM6g2yBFiU30ymc15yDkNWDihXTcc",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable ...",
+                "excerpts": [
+                  "\u00a346.00 ... 500 ML | \u00a392.00 per 1L"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/k%C3%A9rastase-nutritive-bain-satin-riche-shampoo-refillable-bottle-with-niacinamide-for-very-dry-hair-500ml-10349962?srsltid=AfmBOop0L7G6kzbiaCWEDWU7ggWTM6g2yBFiU30ymc15yDkNWDihXTcc",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable ...",
+                "excerpts": [
+                  "### Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/k%C3%A9rastase-nutritive-bain-satin-riche-shampoo-refillable-bottle-with-niacinamide-for-very-dry-hair-500ml-10349962?srsltid=AfmBOop0L7G6kzbiaCWEDWU7ggWTM6g2yBFiU30ymc15yDkNWDihXTcc",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable ...",
+                "excerpts": [
+                  "boots.com/k\u00e9rastase-nutritive-bain-satin-riche-shampoo-refillable-bottle-with-niacinamide-for-very-dry-hair-500ml-10349962"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/k%C3%A9rastase-nutritive-bain-satin-riche-shampoo-refillable-bottle-with-niacinamide-for-very-dry-hair-500ml-10349962?srsltid=AfmBOop0L7G6kzbiaCWEDWU7ggWTM6g2yBFiU30ymc15yDkNWDihXTcc",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/k%C3%A9rastase-nutritive-bain-satin-riche-shampoo-refillable-bottle-with-niacinamide-for-very-dry-hair-500ml-10349962?srsltid=AfmBOop0L7G6kzbiaCWEDWU7ggWTM6g2yBFiU30ymc15yDkNWDihXTcc",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable ...",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable Bottle with Niacinamide For Very Dry Hair 500ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/k%C3%A9rastase-nutritive-bain-satin-riche-shampoo-refillable-bottle-with-niacinamide-for-very-dry-hair-500ml-10349962?srsltid=AfmBOop0L7G6kzbiaCWEDWU7ggWTM6g2yBFiU30ymc15yDkNWDihXTcc",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable ...",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable Bottle with Niacinamide For Very Dry Hair 500ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/k%C3%A9rastase-nutritive-bain-satin-riche-shampoo-refillable-bottle-with-niacinamide-for-very-dry-hair-500ml-10349962?srsltid=AfmBOop0L7G6kzbiaCWEDWU7ggWTM6g2yBFiU30ymc15yDkNWDihXTcc",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable ...",
+                "excerpts": [
+                  "Boots ... K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable Bottle with Niacinamide For Very Dry Hair 500ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gorgeousshop.com/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-with-niacinamide-for-very-dry-hair",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable Bottle 500ml ... RRP \u00a346.00 ... \u00a336.80 ... You Save 20%"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gorgeousshop.com/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-with-niacinamide-for-very-dry-hair",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable Bottle 500ml ... RRP \u00a346.00 ... \u00a336.80"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gorgeousshop.com/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-with-niacinamide-for-very-dry-hair",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "In stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gorgeousshop.com/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-with-niacinamide-for-very-dry-hair",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable Bottle 500ml ... RRP \u00a346.00 ... \u00a336.80 ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gorgeousshop.com/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-with-niacinamide-for-very-dry-hair",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gorgeousshop.com/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-with-niacinamide-for-very-dry-hair",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "gorgeousshop.com ... Kerastase Nutritive Bain Satin Riche ... In stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gorgeousshop.com/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-with-niacinamide-for-very-dry-hair",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "Gorgeous Shop ... K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable Bottle 500ml ... \u00a336.80"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gorgeousshop.com/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-with-niacinamide-for-very-dry-hair",
+                "title": "K\u00e9rastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "Gorgeous Shop ... Spend Over \u00a325 For Free Delivery ... K\u00e9rastase Nutritive Bain Satin Riche Shampoo Refillable Bottle 500ml \u00a336.80"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeticsnow.com/iteminfo/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-for-very-dry-hair-500ml",
+                "title": "Kerastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "Kerastase Nutritive Bain Satin Riche High Nutrition Rich Shampoo 500ml/16.9oz ... $82.95"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeticsnow.com/iteminfo/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-for-very-dry-hair-500ml",
+                "title": "Kerastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "Kerastase Nutritive Bain Satin Riche High Nutrition Rich Shampoo 500ml/16.9oz ... $82.95"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeticsnow.com/iteminfo/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-for-very-dry-hair-500ml",
+                "title": "Kerastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "Kerastase Nutritive Bain Satin Riche High Nutrition Rich Shampoo 500ml/16.9oz ... $82.95 ... Shipping $8.95 - USPS"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeticsnow.com/iteminfo/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-for-very-dry-hair-500ml",
+                "title": "Kerastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "cosmeticsnow.com/iteminfo/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-for-very-dry-hair-500ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeticsnow.com/iteminfo/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-for-very-dry-hair-500ml",
+                "title": "Kerastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeticsnow.com/iteminfo/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-for-very-dry-hair-500ml",
+                "title": "Kerastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "cosmeticsnow.com ... Kerastase Nutritive Bain Satin Riche High Nutrition Rich Shampoo 500ml/16.9oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeticsnow.com/iteminfo/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-for-very-dry-hair-500ml",
+                "title": "Kerastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "Unlock Your 15% OFF Winter Coupon with WINTER15 ... Kerastase Nutritive Bain Satin Riche High Nutrition Rich Shampoo 500ml/16.9oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmeticsnow.com/iteminfo/kerastase-nutritive-bain-satin-riche-high-nutrition-rich-shampoo-for-very-dry-hair-500ml",
+                "title": "Kerastase Nutritive Bain Satin Riche High ...",
+                "excerpts": [
+                  "Unlock Your 15% OFF Winter Coupon with WINTER15 ... $82.95 ... Shipping $8.95 - USPS"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-riche-shampoo/KER_00250.html",
+                "title": "Nutritive Bain Satin Riche | Shampoo for Very Dry Hair",
+                "excerpts": [
+                  "The product variation is out of stock, 500ml Refillable ... Old price New price \u00a346.00 (\u00a39.20/100 ml.)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-riche-shampoo/KER_00250.html",
+                "title": "Nutritive Bain Satin Riche | Shampoo for Very Dry Hair",
+                "excerpts": [
+                  "500ml Refillable ... \u00a346.00 (\u00a39.20/100 ml.)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-riche-shampoo/KER_00250.html",
+                "title": "Nutritive Bain Satin Riche | Shampoo for Very Dry Hair",
+                "excerpts": [
+                  "The product variation is out of stock, 500ml Refillable"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-riche-shampoo/KER_00250.html",
+                "title": "Nutritive Bain Satin Riche | Shampoo for Very Dry Hair",
+                "excerpts": [
+                  "kerastase.co.uk/ranges/regimen/nutritive/bain-satin-riche-shampoo/KER_00250.html?dwvar_KER__00250_size=500ML"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-riche-shampoo/KER_00250.html",
+                "title": "Nutritive Bain Satin Riche | Shampoo for Very Dry Hair",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-riche-shampoo/KER_00250.html",
+                "title": "Nutritive Bain Satin Riche | Shampoo for Very Dry Hair",
+                "excerpts": [
+                  "kerastase.co.uk/ranges/regimen/nutritive/bain-satin-riche-shampoo/KER_00250.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-riche-shampoo/KER_00250.html",
+                "title": "Nutritive Bain Satin Riche | Shampoo for Very Dry Hair",
+                "excerpts": [
+                  "Bain Satin Riche Shampoo ... 500ml Refillable ... \u00a346.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.co.uk/ranges/regimen/nutritive/bain-satin-riche-shampoo/KER_00250.html",
+                "title": "Nutritive Bain Satin Riche | Shampoo for Very Dry Hair",
+                "excerpts": [
+                  "Bain Satin Riche Shampoo ... 500ml Refillable ... \u00a346.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/p/19065641290",
+                "title": "Bain Satin Riche Nutritive K\u00e9rastase 500ML for sale online",
+                "excerpts": [
+                  "Bain Satin Riche Nutritive K\u00e9rastase 500ML ... Price: \u00a318.28 ... + \u00a33.38 postage"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/p/19065641290",
+                "title": "Bain Satin Riche Nutritive K\u00e9rastase 500ML for sale online",
+                "excerpts": [
+                  "Price: \u00a318.28 ... Volume500 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/p/19065641290",
+                "title": "Bain Satin Riche Nutritive K\u00e9rastase 500ML for sale online",
+                "excerpts": [
+                  "Bain Satin Riche Nutritive K\u00e9rastase 500ML ... New ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/p/19065641290",
+                "title": "Bain Satin Riche Nutritive K\u00e9rastase 500ML for sale online",
+                "excerpts": [
+                  "See all details: https://www.ebay.co.uk/itm/336653376074 ... Bain Satin Riche Nutritive K\u00e9rastase 500ML"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/p/19065641290",
+                "title": "Bain Satin Riche Nutritive K\u00e9rastase 500ML for sale online",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/p/19065641290",
+                "title": "Bain Satin Riche Nutritive K\u00e9rastase 500ML for sale online",
+                "excerpts": [
+                  "ebay.co.uk/itm/336653376074 ... Bain Satin Riche Nutritive K\u00e9rastase 500ML"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/p/19065641290",
+                "title": "Bain Satin Riche Nutritive K\u00e9rastase 500ML for sale online",
+                "excerpts": [
+                  "Bain Satin Riche Nutritive K\u00e9rastase 500ML ... kitty_palmer (387)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.co.uk/p/19065641290",
+                "title": "Bain Satin Riche Nutritive K\u00e9rastase 500ML for sale online",
+                "excerpts": [
+                  "kitty_palmer (387) ... New ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

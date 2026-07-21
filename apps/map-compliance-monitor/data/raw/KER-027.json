@@ -1,0 +1,2944 @@
+{
+  "sku_id": "KER-027",
+  "effort": "high",
+  "elapsed_s": 1104,
+  "fetched_at": "2026-07-20T13:38:19+00:00",
+  "run_id": "task_run_c2b46d7e618d434080581e102cdd5eaf",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_c2b46d7e618d434080581e102cdd5eaf",
+      "interaction_id": "task_run_c2b46d7e618d434080581e102cdd5eaf",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Premi\u00e8re Masque Filler R\u00e9parateur, 200ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:19:54.556021Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:19:55.087180Z",
+      "completed_at": "2026-07-20T13:38:04.779946Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase-usa.com/collections/premiere/masque-filler-anti-breakage-repairing-hair-mask.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "K\u00e9rastase (Official US Store)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase-usa.com",
+          "advertised_price": "$68.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/Kerastase-Premiere-Hair-Repair-Mask/dp/B0CS4FJQ24",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon (K\u00e9rastase Official Storefront)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.com",
+          "advertised_price": "$68.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+          "observed_at": "2026-07-20",
+          "seller_name": "UtieeBeautyStore (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$49.95"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+          "observed_at": "2026-07-20",
+          "seller_name": "Authorized Beauty Distribution (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$55.32"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Anti-breakage-Repairing-Hair-Mask-6-8oz/15881319988",
+          "observed_at": "2026-07-20",
+          "seller_name": "Passion Beauty (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$63.99"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-premiere-anti-breakage-reparative-filler-mask-200ml/15056956",
+          "observed_at": "2026-07-20",
+          "seller_name": "Lookfantastic",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "\u00a358.50"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://allbeauty.com/products/p-kerastase-premiere-anti-breakage-reparative-filler-mask-200ml-15056956",
+          "observed_at": "2026-07-20",
+          "seller_name": "allbeauty",
+          "seller_type": "independent_store",
+          "seller_domain": "allbeauty.com",
+          "advertised_price": "\u00a340.95"
+        },
+        {
+          "currency": "SEK",
+          "in_stock": null,
+          "listing_url": "https://lyko.com/en/kerastase/k-rastase-masque-filler-r-parateur-hair-mask-200-ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Lyko",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lyko.com",
+          "advertised_price": "698,70 kr"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.target.com/p/kerastase-premiere-masque-filler-reparateur-hair-mask-6-7-oz/-/A-1005507303",
+          "observed_at": "2026-07-20",
+          "seller_name": "Health & Beauty Direct2U (Target Plus)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "target.com",
+          "advertised_price": "not captured (JS-rendered price not in extracted listing text)"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/156640913617",
+          "observed_at": "2026-07-20",
+          "seller_name": "BEAUTY'SCHOICE (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $56.99"
+        },
+        {
+          "currency": "AUD",
+          "in_stock": null,
+          "listing_url": "https://www.kerastase.com.au/collections/premiere/premiere-repairing-mask-for-damaged-hair/KER_00280.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "K\u00e9rastase (Official Australia Store)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase.com.au",
+          "advertised_price": "A$102.00"
+        },
+        {
+          "currency": "AUD",
+          "in_stock": true,
+          "listing_url": "https://www.hairhouse.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Hair House",
+          "seller_type": "independent_store",
+          "seller_domain": "hairhouse.com.au",
+          "advertised_price": "$102.00"
+        },
+        {
+          "currency": "AUD",
+          "in_stock": true,
+          "listing_url": "https://fullspectrumhairconcept.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Full Spectrum Hair Concept",
+          "seller_type": "independent_store",
+          "seller_domain": "fullspectrumhairconcept.com.au",
+          "advertised_price": "$99.00 AUD"
+        },
+        {
+          "currency": "AUD",
+          "in_stock": true,
+          "listing_url": "https://milkandhoneyshop.com.au/products/kerastase-premiere-masque-filler-reparateur",
+          "observed_at": "2026-07-20",
+          "seller_name": "Milk & Honey",
+          "seller_type": "independent_store",
+          "seller_domain": "milkandhoneyshop.com.au",
+          "advertised_price": "$102.00 AUD"
+        },
+        {
+          "currency": "SGD",
+          "in_stock": true,
+          "listing_url": "https://www.sephora.sg/products/kerastase-premiere-masque-filler-reparateur/v/200ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Sephora Singapore",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "sephora.sg",
+          "advertised_price": "$95.00"
+        },
+        {
+          "currency": "AUD",
+          "in_stock": true,
+          "listing_url": "https://www.adorebeauty.com.au/p/kerastase/kerastase-premiere-filler-anti-breakage-repairing-hair-masque-200ml.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Adore Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "adorebeauty.com.au",
+          "advertised_price": "$102.00"
+        },
+        {
+          "currency": "AED",
+          "in_stock": null,
+          "listing_url": "https://www.stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Stylevana",
+          "seller_type": "independent_store",
+          "seller_domain": "stylevana.com",
+          "advertised_price": "not captured (JS-rendered price not in extracted listing text)"
+        },
+        {
+          "currency": "AED",
+          "in_stock": true,
+          "listing_url": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "The Juice Beauty",
+          "seller_type": "independent_store",
+          "seller_domain": "thejuicebeauty.com",
+          "advertised_price": "Dhs. 248.57"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://kerastase-usa.com/collections/premiere/masque-filler-anti-breakage-repairing-hair-mask.html?srsltid=AfmBOopxhqRTwH2hxNE9H4IqZihiAZtC-9yuGwu3ME5FTHcFYMVLCWjD",
+            "title": "Masque Filler R\u00e9parateur Repairing Hair Mask | K\u00e9rastase",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/dp/B0CS4FJQ24",
+            "title": "amazon_product_detail_page_2026_04_20_tzhr05yb",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+            "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/search?q=K%C3%A9rastase+Premi%C3%A8re+Masque+Filler+R%C3%A9parateur+200ml",
+            "title": "walmart_serp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/kerastase-premiere-anti-breakage-reparative-filler-mask-200ml/15056956?srsltid=AfmBOop2q_-tpW2E0VeuGC-JdIvw9syAtjRubsju3PBf6V2PfagqAOIM",
+            "title": "K\u00e9rastase Premi\u00e8re Bonding Anti-Breakage Filler Hair ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://allbeauty.com/products/p-kerastase-premiere-anti-breakage-reparative-filler-mask-200ml-15056956",
+            "title": "K\u00e9rastase Premi\u00e8re Anti-Breakage Reparative Filler Mask ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://lyko.com/en/kerastase/k-rastase-masque-filler-r-parateur-hair-mask-200-ml",
+            "title": "Premi\u00e8re - Masque Filler R\u00e9parateur Hair Mask 200 ml",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://target.com/p/kerastase-premiere-masque-filler-reparateur-hair-mask-6-7-oz/-/A-1005507303",
+            "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/156640913617",
+            "title": "Kerastase Premiere Masque Filler R\u00e9parateur Mask 200ml ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://kerastase.com.au/products/collections/premiere?srsltid=AfmBOooFbo473PDyovFZ1yzzaZtNbRbMXsZCEHtEPmUAq5ooYqYA3azK",
+            "title": "Premi\u00e8re",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://hairhouse.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOophyIR7u_WJ-cTKmem7RGjYDi-Zy-1-IsEmLtWhTPJ7pgoWKr35",
+            "title": "Premiere Masque Filler Reparateur 200ml - Damaged hair",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://fullspectrumhairconcept.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOorW2myZqO-A0jw4KrP4DVvvm02Vxw6vSYI2yk-NYJHAyiWkDs8a",
+            "title": "Kerastase - Premiere Masque Filler Reparateur 200ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://milkandhoneyshop.com.au/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOopKx0CbQVbBTsQg_DU66VPfeEiE7M_ru-u4IpfCfvMDXyQ_uIRc",
+            "title": "Kerastase Premiere Masque Filler Reparateur 200ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://sephora.sg/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOoqfTfsjBtjoIFKNWy5bmzFCja1nadNKkNSX4sAeXLbtRuXi_Wsc",
+            "title": "Buy K\u00e9rastase Premiere Masque Filler Reparateur",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://adorebeauty.com.au/b/kerastase/premiere.html",
+            "title": "K\u00e9rastase for Calcium Buildup & Damaged Hair",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+            "title": "https://www.stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+            "title": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/masque-filler-anti-breakage-repairing-hair-mask.html?srsltid=AfmBOopxhqRTwH2hxNE9H4IqZihiAZtC-9yuGwu3ME5FTHcFYMVLCWjD",
+                "title": "Masque Filler R\u00e9parateur Repairing Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "Old price New price $68.00  Add to Bag  Premi\u00e8re Masque Filler R\u00e9parateur Anti-Breakage Repairing Hair Mask"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/masque-filler-anti-breakage-repairing-hair-mask.html?srsltid=AfmBOopxhqRTwH2hxNE9H4IqZihiAZtC-9yuGwu3ME5FTHcFYMVLCWjD",
+                "title": "Masque Filler R\u00e9parateur Repairing Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "kerastase-usa.com/collections/premiere/masque-filler-anti-breakage-repairing-hair-mask.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/masque-filler-anti-breakage-repairing-hair-mask.html?srsltid=AfmBOopxhqRTwH2hxNE9H4IqZihiAZtC-9yuGwu3ME5FTHcFYMVLCWjD",
+                "title": "Masque Filler R\u00e9parateur Repairing Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "Old price New price $68.00  Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/masque-filler-anti-breakage-repairing-hair-mask.html?srsltid=AfmBOopxhqRTwH2hxNE9H4IqZihiAZtC-9yuGwu3ME5FTHcFYMVLCWjD",
+                "title": "Masque Filler R\u00e9parateur Repairing Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "Prices and payment are shown in USD. There is only one currency available for your location: $ - USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/masque-filler-anti-breakage-repairing-hair-mask.html?srsltid=AfmBOopxhqRTwH2hxNE9H4IqZihiAZtC-9yuGwu3ME5FTHcFYMVLCWjD",
+                "title": "Masque Filler R\u00e9parateur Repairing Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "kerastase-usa.com/collections/premiere/masque-filler-anti-breakage-repairing-hair-mask.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/masque-filler-anti-breakage-repairing-hair-mask.html?srsltid=AfmBOopxhqRTwH2hxNE9H4IqZihiAZtC-9yuGwu3ME5FTHcFYMVLCWjD",
+                "title": "Masque Filler R\u00e9parateur Repairing Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "K\u00e9rastase official US DTC site; brand's own product page with Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/masque-filler-anti-breakage-repairing-hair-mask.html?srsltid=AfmBOopxhqRTwH2hxNE9H4IqZihiAZtC-9yuGwu3ME5FTHcFYMVLCWjD",
+                "title": "Masque Filler R\u00e9parateur Repairing Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "In Stock ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/premiere/masque-filler-anti-breakage-repairing-hair-mask.html?srsltid=AfmBOopxhqRTwH2hxNE9H4IqZihiAZtC-9yuGwu3ME5FTHcFYMVLCWjD",
+                "title": "Masque Filler R\u00e9parateur Repairing Hair Mask | K\u00e9rastase",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0CS4FJQ24",
+                "title": "amazon_product_detail_page_2026_04_20_tzhr05yb",
+                "excerpts": [
+                  "data.buy_box_owner: \"K\u00e9rastase\"; data.ships_from: \"Amazon\"; product_title: Kerastase Premiere Anti-Breakage Mask..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0CS4FJQ24",
+                "title": "amazon_product_detail_page_2026_04_20_tzhr05yb",
+                "excerpts": [
+                  "amazon.com/dp/B0CS4FJQ24"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0CS4FJQ24",
+                "title": "amazon_product_detail_page_2026_04_20_tzhr05yb",
+                "excerpts": [
+                  "data.web_price: 68; data.list_price: 68; data.subscription_price: \"$68.00\"; data.currency: \"$\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0CS4FJQ24",
+                "title": "amazon_product_detail_page_2026_04_20_tzhr05yb",
+                "excerpts": [
+                  "data.currency: \"$\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0CS4FJQ24",
+                "title": "amazon_product_detail_page_2026_04_20_tzhr05yb",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/Kerastase-Premiere-Hair-Repair-Mask/dp/B0CS4FJQ24"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0CS4FJQ24",
+                "title": "amazon_product_detail_page_2026_04_20_tzhr05yb",
+                "excerpts": [
+                  "data.buy_box_owner: \"K\u00e9rastase\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0CS4FJQ24",
+                "title": "amazon_product_detail_page_2026_04_20_tzhr05yb",
+                "excerpts": [
+                  "FREE delivery Saturday, July 25 on orders shipped by Amazon over $35"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0CS4FJQ24",
+                "title": "amazon_product_detail_page_2026_04_20_tzhr05yb",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "Sold by UtieeBeautyStore Pro Seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "Current price is Now $49.95"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "current price $49.95; US Walmart listing"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "Sold by UtieeBeautyStore Pro Seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "Free shipping; Add to cart available"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "Sold by Authorized Beauty Distribution; Fulfilled by Walmart"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "Other sellers on walmart.com/ip/.../5524354671"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "$55.32 +Free shipping; Shipping, arrives by Thu, Jul 23"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "$55.32 on US Walmart listing"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "Other sellers on walmart.com/ip/.../5524354671"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "Sold by Authorized Beauty Distribution"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "+Free shipping; Add to cart; arrives by Thu, Jul 23"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Hair-Mask-6-76oz-200ml/5524354671",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=K%C3%A9rastase+Premi%C3%A8re+Masque+Filler+R%C3%A9parateur+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[0].product_price: 63.99; product_price_original: \"$79.99\"; product_price_currency: \"$\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=K%C3%A9rastase+Premi%C3%A8re+Masque+Filler+R%C3%A9parateur+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[0].product_price_currency: \"$\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=K%C3%A9rastase+Premi%C3%A8re+Masque+Filler+R%C3%A9parateur+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "Walmart SERP listing for product; stock status not shown in search results"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=K%C3%A9rastase+Premi%C3%A8re+Masque+Filler+R%C3%A9parateur+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[0].product_url: https://www.walmart.com/ip/Kerastase-Premiere-Masque-Filler-Reparateur-Anti-breakage-Repairing-Hair-Mask-6-8oz/15881319988"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=K%C3%A9rastase+Premi%C3%A8re+Masque+Filler+R%C3%A9parateur+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=K%C3%A9rastase+Premi%C3%A8re+Masque+Filler+R%C3%A9parateur+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "walmart.com marketplace listing; product 15881319988"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=K%C3%A9rastase+Premi%C3%A8re+Masque+Filler+R%C3%A9parateur+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[0].product_seller: \"Passion Beauty\"; data[0].product_name: \"Kerastase Premiere Masque Filler Reparateur Hair Mask, 6.7 oz\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/search?q=K%C3%A9rastase+Premi%C3%A8re+Masque+Filler+R%C3%A9parateur+200ml",
+                "title": "walmart_serp",
+                "excerpts": [
+                  "data[0].product_seller: \"Passion Beauty\" (Walmart marketplace third-party seller)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-premiere-anti-breakage-reparative-filler-mask-200ml/15056956?srsltid=AfmBOop2q_-tpW2E0VeuGC-JdIvw9syAtjRubsju3PBf6V2PfagqAOIM",
+                "title": "K\u00e9rastase Premi\u00e8re Bonding Anti-Breakage Filler Hair ...",
+                "excerpts": [
+                  "\u00a358.50 / Or 4 interest free payments of \u00a314.62 with"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-premiere-anti-breakage-reparative-filler-mask-200ml/15056956?srsltid=AfmBOop2q_-tpW2E0VeuGC-JdIvw9syAtjRubsju3PBf6V2PfagqAOIM",
+                "title": "K\u00e9rastase Premi\u00e8re Bonding Anti-Breakage Filler Hair ...",
+                "excerpts": [
+                  "FREE UK delivery on orders over \u00a325; prices in GBP"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-premiere-anti-breakage-reparative-filler-mask-200ml/15056956?srsltid=AfmBOop2q_-tpW2E0VeuGC-JdIvw9syAtjRubsju3PBf6V2PfagqAOIM",
+                "title": "K\u00e9rastase Premi\u00e8re Bonding Anti-Breakage Filler Hair ...",
+                "excerpts": [
+                  "In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-premiere-anti-breakage-reparative-filler-mask-200ml/15056956?srsltid=AfmBOop2q_-tpW2E0VeuGC-JdIvw9syAtjRubsju3PBf6V2PfagqAOIM",
+                "title": "K\u00e9rastase Premi\u00e8re Bonding Anti-Breakage Filler Hair ...",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-premiere-anti-breakage-reparative-filler-mask-200ml/15056956"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-premiere-anti-breakage-reparative-filler-mask-200ml/15056956?srsltid=AfmBOop2q_-tpW2E0VeuGC-JdIvw9syAtjRubsju3PBf6V2PfagqAOIM",
+                "title": "K\u00e9rastase Premi\u00e8re Bonding Anti-Breakage Filler Hair ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-premiere-anti-breakage-reparative-filler-mask-200ml/15056956?srsltid=AfmBOop2q_-tpW2E0VeuGC-JdIvw9syAtjRubsju3PBf6V2PfagqAOIM",
+                "title": "K\u00e9rastase Premi\u00e8re Bonding Anti-Breakage Filler Hair ...",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-premiere-anti-breakage-reparative-filler-mask-200ml/15056956"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-premiere-anti-breakage-reparative-filler-mask-200ml/15056956?srsltid=AfmBOop2q_-tpW2E0VeuGC-JdIvw9syAtjRubsju3PBf6V2PfagqAOIM",
+                "title": "K\u00e9rastase Premi\u00e8re Bonding Anti-Breakage Filler Hair ...",
+                "excerpts": [
+                  "lookfantastic.com \u2014 K\u00e9rastase Premi\u00e8re Bonding Anti-Breakage Filler Hair Mask for Damaged Hair with Peptides 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-premiere-anti-breakage-reparative-filler-mask-200ml/15056956?srsltid=AfmBOop2q_-tpW2E0VeuGC-JdIvw9syAtjRubsju3PBf6V2PfagqAOIM",
+                "title": "K\u00e9rastase Premi\u00e8re Bonding Anti-Breakage Filler Hair ...",
+                "excerpts": [
+                  "Major UK beauty e-tailer stocking the K\u00e9rastase range"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-premiere-anti-breakage-reparative-filler-mask-200ml-15056956",
+                "title": "K\u00e9rastase Premi\u00e8re Anti-Breakage Reparative Filler Mask ...",
+                "excerpts": [
+                  "Regular price ~\u00a358.50~ Sale price \u00a340.95; RRP: \u00a358.50; Save \u00a317.55 (30%)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-premiere-anti-breakage-reparative-filler-mask-200ml-15056956",
+                "title": "K\u00e9rastase Premi\u00e8re Anti-Breakage Reparative Filler Mask ...",
+                "excerpts": [
+                  "United Kingdom en - GBP"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-premiere-anti-breakage-reparative-filler-mask-200ml-15056956",
+                "title": "K\u00e9rastase Premi\u00e8re Anti-Breakage Reparative Filler Mask ...",
+                "excerpts": [
+                  "In stock - Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-premiere-anti-breakage-reparative-filler-mask-200ml-15056956",
+                "title": "K\u00e9rastase Premi\u00e8re Anti-Breakage Reparative Filler Mask ...",
+                "excerpts": [
+                  "allbeauty.com/products/p-kerastase-premiere-anti-breakage-reparative-filler-mask-200ml-15056956"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-premiere-anti-breakage-reparative-filler-mask-200ml-15056956",
+                "title": "K\u00e9rastase Premi\u00e8re Anti-Breakage Reparative Filler Mask ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-premiere-anti-breakage-reparative-filler-mask-200ml-15056956",
+                "title": "K\u00e9rastase Premi\u00e8re Anti-Breakage Reparative Filler Mask ...",
+                "excerpts": [
+                  "allbeauty.com/products/p-kerastase-premiere-anti-breakage-reparative-filler-mask-200ml-15056956"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-premiere-anti-breakage-reparative-filler-mask-200ml-15056956",
+                "title": "K\u00e9rastase Premi\u00e8re Anti-Breakage Reparative Filler Mask ...",
+                "excerpts": [
+                  "allbeauty.com \u2014 K\u00e9rastase Premi\u00e8re Anti-Breakage Reparative Filler Mask 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-premiere-anti-breakage-reparative-filler-mask-200ml-15056956",
+                "title": "K\u00e9rastase Premi\u00e8re Anti-Breakage Reparative Filler Mask ...",
+                "excerpts": [
+                  "allbeauty.com UK beauty discounter offering RRP-discounted sale pricing"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-masque-filler-r-parateur-hair-mask-200-ml",
+                "title": "Premi\u00e8re - Masque Filler R\u00e9parateur Hair Mask 200 ml",
+                "excerpts": [
+                  "Sale price 698,70 kr / Without campaign 822 kr"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-masque-filler-r-parateur-hair-mask-200-ml",
+                "title": "Premi\u00e8re - Masque Filler R\u00e9parateur Hair Mask 200 ml",
+                "excerpts": [
+                  "Sale price 698,70 kr \u2014 Swedish krona (SEK); Lyko is a Swedish retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-masque-filler-r-parateur-hair-mask-200-ml",
+                "title": "Premi\u00e8re - Masque Filler R\u00e9parateur Hair Mask 200 ml",
+                "excerpts": [
+                  "View price history Not available in store"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-masque-filler-r-parateur-hair-mask-200-ml",
+                "title": "Premi\u00e8re - Masque Filler R\u00e9parateur Hair Mask 200 ml",
+                "excerpts": [
+                  "lyko.com/en/kerastase/k-rastase-masque-filler-r-parateur-hair-mask-200-ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-masque-filler-r-parateur-hair-mask-200-ml",
+                "title": "Premi\u00e8re - Masque Filler R\u00e9parateur Hair Mask 200 ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-masque-filler-r-parateur-hair-mask-200-ml",
+                "title": "Premi\u00e8re - Masque Filler R\u00e9parateur Hair Mask 200 ml",
+                "excerpts": [
+                  "lyko.com/en/kerastase/k-rastase-masque-filler-r-parateur-hair-mask-200-ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-masque-filler-r-parateur-hair-mask-200-ml",
+                "title": "Premi\u00e8re - Masque Filler R\u00e9parateur Hair Mask 200 ml",
+                "excerpts": [
+                  "K\u00e9rastase Premi\u00e8re Masque Filler R\u00e9parateur Hair Mask 200 ml on lyko.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-masque-filler-r-parateur-hair-mask-200-ml",
+                "title": "Premi\u00e8re - Masque Filler R\u00e9parateur Hair Mask 200 ml",
+                "excerpts": [
+                  "Lyko \u2014 major Scandinavian beauty e-tailer stocking the K\u00e9rastase range"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-premiere-masque-filler-reparateur-hair-mask-6-7-oz/-/A-1005507303",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "Listing shows 'Add to cart' and 'Sold & shipped by Health & Beauty Direct2U' but the numeric price is JS-rendered and was not present in the extracted page text; no verbatim price could be captured"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-premiere-masque-filler-reparateur-hair-mask-6-7-oz/-/A-1005507303",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "Target US listing, currency USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-premiere-masque-filler-reparateur-hair-mask-6-7-oz/-/A-1005507303",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "Add to cart button present; explicit in/out of stock not captured"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-premiere-masque-filler-reparateur-hair-mask-6-7-oz/-/A-1005507303",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "target.com/p/kerastase-premiere-masque-filler-reparateur-hair-mask-6-7-oz/-/A-1005507303"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-premiere-masque-filler-reparateur-hair-mask-6-7-oz/-/A-1005507303",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-premiere-masque-filler-reparateur-hair-mask-6-7-oz/-/A-1005507303",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "target.com/p/kerastase-premiere-masque-filler-reparateur-hair-mask-6-7-oz/-/A-1005507303"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-premiere-masque-filler-reparateur-hair-mask-6-7-oz/-/A-1005507303",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "Sold & shipped by Health & Beauty Direct2U"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-premiere-masque-filler-reparateur-hair-mask-6-7-oz/-/A-1005507303",
+                "title": "Kerastase Premiere Masque Filler Reparateur Hair Mask ...",
+                "excerpts": [
+                  "Sold & shipped by Health & Beauty Direct2U \u2014 Target Plus marketplace third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/156640913617",
+                "title": "Kerastase Premiere Masque Filler R\u00e9parateur Mask 200ml ...",
+                "excerpts": [
+                  "US $56.99 / or 4 interest-free payments of $14.25"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/156640913617",
+                "title": "Kerastase Premiere Masque Filler R\u00e9parateur Mask 200ml ...",
+                "excerpts": [
+                  "US $56.99 \u2014 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/156640913617",
+                "title": "Kerastase Premiere Masque Filler R\u00e9parateur Mask 200ml ...",
+                "excerpts": [
+                  "9 available / 9 sold; Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/156640913617",
+                "title": "Kerastase Premiere Masque Filler R\u00e9parateur Mask 200ml ...",
+                "excerpts": [
+                  "ebay.com/itm/156640913617"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/156640913617",
+                "title": "Kerastase Premiere Masque Filler R\u00e9parateur Mask 200ml ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/156640913617",
+                "title": "Kerastase Premiere Masque Filler R\u00e9parateur Mask 200ml ...",
+                "excerpts": [
+                  "ebay.com/itm/156640913617"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/156640913617",
+                "title": "Kerastase Premiere Masque Filler R\u00e9parateur Mask 200ml ...",
+                "excerpts": [
+                  "BEAUTY'SCHOICE \u2014 99.5% positive feedback, 23K items sold; Visit store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/156640913617",
+                "title": "Kerastase Premiere Masque Filler R\u00e9parateur Mask 200ml ...",
+                "excerpts": [
+                  "eBay marketplace third-party seller; Buy It Now listing"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.com.au/products/collections/premiere?srsltid=AfmBOooFbo473PDyovFZ1yzzaZtNbRbMXsZCEHtEPmUAq5ooYqYA3azK",
+                "title": "Premi\u00e8re",
+                "excerpts": [
+                  "Old price New price A$102.00 (A$0.51/ml.); Premi\u00e8re Repairing Mask for Damaged Hair, 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.com.au/products/collections/premiere?srsltid=AfmBOooFbo473PDyovFZ1yzzaZtNbRbMXsZCEHtEPmUAq5ooYqYA3azK",
+                "title": "Premi\u00e8re",
+                "excerpts": [
+                  "A$102.00 \u2014 Australian dollars (AUD)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.com.au/products/collections/premiere?srsltid=AfmBOooFbo473PDyovFZ1yzzaZtNbRbMXsZCEHtEPmUAq5ooYqYA3azK",
+                "title": "Premi\u00e8re",
+                "excerpts": [
+                  "Loading ... (Add to Bag button not rendered; stock state unclear)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.com.au/products/collections/premiere?srsltid=AfmBOooFbo473PDyovFZ1yzzaZtNbRbMXsZCEHtEPmUAq5ooYqYA3azK",
+                "title": "Premi\u00e8re",
+                "excerpts": [
+                  "kerastase.com.au/collections/premiere/premiere-repairing-mask-for-damaged-hair/KER_00280.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.com.au/products/collections/premiere?srsltid=AfmBOooFbo473PDyovFZ1yzzaZtNbRbMXsZCEHtEPmUAq5ooYqYA3azK",
+                "title": "Premi\u00e8re",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.com.au/products/collections/premiere?srsltid=AfmBOooFbo473PDyovFZ1yzzaZtNbRbMXsZCEHtEPmUAq5ooYqYA3azK",
+                "title": "Premi\u00e8re",
+                "excerpts": [
+                  "kerastase.com.au/collections/premiere/premiere-repairing-mask-for-damaged-hair/KER_00280.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.com.au/products/collections/premiere?srsltid=AfmBOooFbo473PDyovFZ1yzzaZtNbRbMXsZCEHtEPmUAq5ooYqYA3azK",
+                "title": "Premi\u00e8re",
+                "excerpts": [
+                  "K\u00e9rastase official Australia site \u2014 Premi\u00e8re Repairing Mask for Damaged Hair (200ml masque)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.com.au/products/collections/premiere?srsltid=AfmBOooFbo473PDyovFZ1yzzaZtNbRbMXsZCEHtEPmUAq5ooYqYA3azK",
+                "title": "Premi\u00e8re",
+                "excerpts": [
+                  "K\u00e9rastase official Australia DTC site"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOophyIR7u_WJ-cTKmem7RGjYDi-Zy-1-IsEmLtWhTPJ7pgoWKr35",
+                "title": "Premiere Masque Filler Reparateur 200ml - Damaged hair",
+                "excerpts": [
+                  "$102.00 (4 payments of $25.50); Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOophyIR7u_WJ-cTKmem7RGjYDi-Zy-1-IsEmLtWhTPJ7pgoWKr35",
+                "title": "Premiere Masque Filler Reparateur 200ml - Damaged hair",
+                "excerpts": [
+                  "$102.00 AUD on Australian hairhouse.com.au listing"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOophyIR7u_WJ-cTKmem7RGjYDi-Zy-1-IsEmLtWhTPJ7pgoWKr35",
+                "title": "Premiere Masque Filler Reparateur 200ml - Damaged hair",
+                "excerpts": [
+                  "Add to Bag button present; product available for purchase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOophyIR7u_WJ-cTKmem7RGjYDi-Zy-1-IsEmLtWhTPJ7pgoWKr35",
+                "title": "Premiere Masque Filler Reparateur 200ml - Damaged hair",
+                "excerpts": [
+                  "hairhouse.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOophyIR7u_WJ-cTKmem7RGjYDi-Zy-1-IsEmLtWhTPJ7pgoWKr35",
+                "title": "Premiere Masque Filler Reparateur 200ml - Damaged hair",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOophyIR7u_WJ-cTKmem7RGjYDi-Zy-1-IsEmLtWhTPJ7pgoWKr35",
+                "title": "Premiere Masque Filler Reparateur 200ml - Damaged hair",
+                "excerpts": [
+                  "hairhouse.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOophyIR7u_WJ-cTKmem7RGjYDi-Zy-1-IsEmLtWhTPJ7pgoWKr35",
+                "title": "Premiere Masque Filler Reparateur 200ml - Damaged hair",
+                "excerpts": [
+                  "hairhouse.com.au \u2014 Premiere Masque Filler Reparateur 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairhouse.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOophyIR7u_WJ-cTKmem7RGjYDi-Zy-1-IsEmLtWhTPJ7pgoWKr35",
+                "title": "Premiere Masque Filler Reparateur 200ml - Damaged hair",
+                "excerpts": [
+                  "Australian independent salon/hair retail chain selling the product direct"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fullspectrumhairconcept.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOorW2myZqO-A0jw4KrP4DVvvm02Vxw6vSYI2yk-NYJHAyiWkDs8a",
+                "title": "Kerastase - Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "Regular price Sale price $99.00 AUD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fullspectrumhairconcept.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOorW2myZqO-A0jw4KrP4DVvvm02Vxw6vSYI2yk-NYJHAyiWkDs8a",
+                "title": "Kerastase - Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "Regular price Sale price $99.00 AUD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fullspectrumhairconcept.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOorW2myZqO-A0jw4KrP4DVvvm02Vxw6vSYI2yk-NYJHAyiWkDs8a",
+                "title": "Kerastase - Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "Regular price Sale price $99.00 AUD; quantity controls present (purchasable)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fullspectrumhairconcept.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOorW2myZqO-A0jw4KrP4DVvvm02Vxw6vSYI2yk-NYJHAyiWkDs8a",
+                "title": "Kerastase - Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "fullspectrumhairconcept.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fullspectrumhairconcept.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOorW2myZqO-A0jw4KrP4DVvvm02Vxw6vSYI2yk-NYJHAyiWkDs8a",
+                "title": "Kerastase - Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fullspectrumhairconcept.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOorW2myZqO-A0jw4KrP4DVvvm02Vxw6vSYI2yk-NYJHAyiWkDs8a",
+                "title": "Kerastase - Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "fullspectrumhairconcept.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fullspectrumhairconcept.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOorW2myZqO-A0jw4KrP4DVvvm02Vxw6vSYI2yk-NYJHAyiWkDs8a",
+                "title": "Kerastase - Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "fullspectrumhairconcept.com.au \u2014 Kerastase - Premiere Masque Filler Reparateur 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fullspectrumhairconcept.com.au/products/kerastase-premiere-masque-filler-reparateur-200ml?srsltid=AfmBOorW2myZqO-A0jw4KrP4DVvvm02Vxw6vSYI2yk-NYJHAyiWkDs8a",
+                "title": "Kerastase - Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "Independent Australian salon/hair retailer selling direct via Shopify store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://milkandhoneyshop.com.au/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOopKx0CbQVbBTsQg_DU66VPfeEiE7M_ru-u4IpfCfvMDXyQ_uIRc",
+                "title": "Kerastase Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "Regular price Sale price $102.00 AUD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://milkandhoneyshop.com.au/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOopKx0CbQVbBTsQg_DU66VPfeEiE7M_ru-u4IpfCfvMDXyQ_uIRc",
+                "title": "Kerastase Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "Regular price Sale price $102.00 AUD; Australian store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://milkandhoneyshop.com.au/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOopKx0CbQVbBTsQg_DU66VPfeEiE7M_ru-u4IpfCfvMDXyQ_uIRc",
+                "title": "Kerastase Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "Quantity controls present; product purchasable (Add to cart)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://milkandhoneyshop.com.au/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOopKx0CbQVbBTsQg_DU66VPfeEiE7M_ru-u4IpfCfvMDXyQ_uIRc",
+                "title": "Kerastase Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "milkandhoneyshop.com.au/products/kerastase-premiere-masque-filler-reparateur"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://milkandhoneyshop.com.au/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOopKx0CbQVbBTsQg_DU66VPfeEiE7M_ru-u4IpfCfvMDXyQ_uIRc",
+                "title": "Kerastase Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://milkandhoneyshop.com.au/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOopKx0CbQVbBTsQg_DU66VPfeEiE7M_ru-u4IpfCfvMDXyQ_uIRc",
+                "title": "Kerastase Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "milkandhoneyshop.com.au/products/kerastase-premiere-masque-filler-reparateur"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://milkandhoneyshop.com.au/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOopKx0CbQVbBTsQg_DU66VPfeEiE7M_ru-u4IpfCfvMDXyQ_uIRc",
+                "title": "Kerastase Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "milkandhoneyshop.com.au \u2014 Kerastase Premiere Masque Filler Reparateur 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://milkandhoneyshop.com.au/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOopKx0CbQVbBTsQg_DU66VPfeEiE7M_ru-u4IpfCfvMDXyQ_uIRc",
+                "title": "Kerastase Premiere Masque Filler Reparateur 200ml",
+                "excerpts": [
+                  "Independent Australian beauty shop selling direct via Shopify store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.sg/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOoqfTfsjBtjoIFKNWy5bmzFCja1nadNKkNSX4sAeXLbtRuXi_Wsc",
+                "title": "Buy K\u00e9rastase Premiere Masque Filler Reparateur",
+                "excerpts": [
+                  "$95.00 (shown as $95.00); Hurry! Only 2 Left!; Add To Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.sg/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOoqfTfsjBtjoIFKNWy5bmzFCja1nadNKkNSX4sAeXLbtRuXi_Wsc",
+                "title": "Buy K\u00e9rastase Premiere Masque Filler Reparateur",
+                "excerpts": [
+                  "Sephora Singapore listing; price shown as $95.00 in SGD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.sg/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOoqfTfsjBtjoIFKNWy5bmzFCja1nadNKkNSX4sAeXLbtRuXi_Wsc",
+                "title": "Buy K\u00e9rastase Premiere Masque Filler Reparateur",
+                "excerpts": [
+                  "in stock \u2014 Hurry! Only 2 Left!; Add To Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.sg/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOoqfTfsjBtjoIFKNWy5bmzFCja1nadNKkNSX4sAeXLbtRuXi_Wsc",
+                "title": "Buy K\u00e9rastase Premiere Masque Filler Reparateur",
+                "excerpts": [
+                  "sephora.sg/products/kerastase-premiere-masque-filler-reparateur/v/200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.sg/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOoqfTfsjBtjoIFKNWy5bmzFCja1nadNKkNSX4sAeXLbtRuXi_Wsc",
+                "title": "Buy K\u00e9rastase Premiere Masque Filler Reparateur",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.sg/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOoqfTfsjBtjoIFKNWy5bmzFCja1nadNKkNSX4sAeXLbtRuXi_Wsc",
+                "title": "Buy K\u00e9rastase Premiere Masque Filler Reparateur",
+                "excerpts": [
+                  "sephora.sg/products/kerastase-premiere-masque-filler-reparateur/v/200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.sg/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOoqfTfsjBtjoIFKNWy5bmzFCja1nadNKkNSX4sAeXLbtRuXi_Wsc",
+                "title": "Buy K\u00e9rastase Premiere Masque Filler Reparateur",
+                "excerpts": [
+                  "Sephora Singapore \u2014 Premiere Masque Filler Reparateur 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.sg/products/kerastase-premiere-masque-filler-reparateur?srsltid=AfmBOoqfTfsjBtjoIFKNWy5bmzFCja1nadNKkNSX4sAeXLbtRuXi_Wsc",
+                "title": "Buy K\u00e9rastase Premiere Masque Filler Reparateur",
+                "excerpts": [
+                  "Sephora \u2014 authorized major beauty retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/premiere.html",
+                "title": "K\u00e9rastase for Calcium Buildup & Damaged Hair",
+                "excerpts": [
+                  "Premi\u00e8re Filler Anti-Breakage Repairing Hair Masque 200ml ... $102.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/premiere.html",
+                "title": "K\u00e9rastase for Calcium Buildup & Damaged Hair",
+                "excerpts": [
+                  "$102.00 on Australian adorebeauty.com.au listing"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/premiere.html",
+                "title": "K\u00e9rastase for Calcium Buildup & Damaged Hair",
+                "excerpts": [
+                  "VIEW ADD (add to cart) button present \u2014 product purchasable"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/premiere.html",
+                "title": "K\u00e9rastase for Calcium Buildup & Damaged Hair",
+                "excerpts": [
+                  "adorebeauty.com.au/p/kerastase/kerastase-premiere-filler-anti-breakage-repairing-hair-masque-200ml.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/premiere.html",
+                "title": "K\u00e9rastase for Calcium Buildup & Damaged Hair",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/premiere.html",
+                "title": "K\u00e9rastase for Calcium Buildup & Damaged Hair",
+                "excerpts": [
+                  "adorebeauty.com.au/p/kerastase/kerastase-premiere-filler-anti-breakage-repairing-hair-masque-200ml.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/premiere.html",
+                "title": "K\u00e9rastase for Calcium Buildup & Damaged Hair",
+                "excerpts": [
+                  "adorebeauty.com.au \u2014 K\u00e9rastase Premi\u00e8re Filler Anti-Breakage Repairing Hair Masque 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/premiere.html",
+                "title": "K\u00e9rastase for Calcium Buildup & Damaged Hair",
+                "excerpts": [
+                  "Adore Beauty \u2014 Australian online beauty retailer stocking the K\u00e9rastase range"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "title": "https://www.stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "excerpts": [
+                  "Product page is for 'K\u00e9rastase - Premi\u00e8re Masque Filler R\u00e9parateur - 200ml' (en_AE, AED); the main product price is JS-rendered and only related-product prices appear in extracted text \u2014 no verbatim price for this SKU could be captured"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "title": "https://www.stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "excerpts": [
+                  "UAE (AED) \u2014 Stylevana en_AE storefront, currency AED"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "title": "https://www.stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "excerpts": [
+                  "Product listing page exists; explicit stock/add-to-cart state not captured in extracted text"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "title": "https://www.stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "excerpts": [
+                  "stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "title": "https://www.stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "title": "https://www.stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "excerpts": [
+                  "stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "title": "https://www.stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "excerpts": [
+                  "Stylevana (en_AE) \u2014 K\u00e9rastase - Premi\u00e8re Masque Filler R\u00e9parateur - 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "title": "https://www.stylevana.com/en_AE/kerastase-premiere-masque-filler-reparateur-200ml124421.html",
+                "excerpts": [
+                  "Stylevana \u2014 Asian/K-beauty e-tailer stocking the K\u00e9rastase range"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "title": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "excerpts": [
+                  "Regular price Dhs. 248.57 / Sale price Dhs. 248.57 Regular price"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "title": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "excerpts": [
+                  "Dhs. 248.57 \u2014 UAE Dirham (AED); Shopify store with UAE currency"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "title": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "excerpts": [
+                  "Decrease/Increase quantity controls present; product purchasable (Taxes, discounts and shipping calculated at checkout)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "title": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "excerpts": [
+                  "thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "title": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "title": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "excerpts": [
+                  "thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "title": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "excerpts": [
+                  "thejuicebeauty.com \u2014 K\u00e9rastase Premi\u00e8re Masque Filler R\u00e9parateur 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "title": "https://thejuicebeauty.com/products/kerastase-premiere-masque-filler-reparateur-200ml",
+                "excerpts": [
+                  "Independent UAE beauty shop selling direct via Shopify store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

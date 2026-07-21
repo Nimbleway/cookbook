@@ -1,0 +1,1964 @@
+{
+  "sku_id": "OLA-003",
+  "effort": "high",
+  "elapsed_s": 16,
+  "fetched_at": "2026-07-20T12:36:03+00:00",
+  "run_id": "task_run_1df5f48eabc444508d951cb1b1efc5b1",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_1df5f48eabc444508d951cb1b1efc5b1",
+      "interaction_id": "task_run_1df5f48eabc444508d951cb1b1efc5b1",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of Olaplex No. 3 Hair Perfector, 250ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:16:54.627190Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:16:54.785349Z",
+      "completed_at": "2026-07-20T12:35:53.248889Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/Olaplex-Perfector-Repairing-Treatment/dp/B07D37SBHF",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon.com",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.com",
+          "advertised_price": "34.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+          "observed_at": "2026-07-20",
+          "seller_name": "Maison Rouge",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "51.76"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+          "observed_at": "2026-07-20",
+          "seller_name": "R&B Beauty",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "55.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/227164589663",
+          "observed_at": "2026-07-20",
+          "seller_name": "mybeautyproductss",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "43.50"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/326840304013",
+          "observed_at": "2026-07-20",
+          "seller_name": "mybeautyproductss",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "44.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/287387771552",
+          "observed_at": "2026-07-20",
+          "seller_name": "glowbydanie",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "53.83"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.dermstore.com/p/olaplex-value-size-no.-3-hair-perfector-pre-shampoo-strengthening-and-reparative-hair-treatment-250ml/12596173",
+          "observed_at": "2026-07-20",
+          "seller_name": "Dermstore",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "dermstore.com",
+          "advertised_price": "60.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://dermstreet.com/products/olaplex-no-3-hair-perfector",
+          "observed_at": "2026-07-20",
+          "seller_name": "DermStreet",
+          "seller_type": "independent_store",
+          "seller_domain": "dermstreet.com",
+          "advertised_price": "30.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://us.bathandunwind.com/olaplex-no-3-hair-perfector-supersize-limited-edition",
+          "observed_at": "2026-07-20",
+          "seller_name": "Bath & Unwind",
+          "seller_type": "independent_store",
+          "seller_domain": "us.bathandunwind.com",
+          "advertised_price": "67.00"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": false,
+          "listing_url": "https://thebsoonline.com/products/olaplex-no-3",
+          "observed_at": "2026-07-20",
+          "seller_name": "Beauty Supply Outlet",
+          "seller_type": "independent_store",
+          "seller_domain": "thebsoonline.com",
+          "advertised_price": "79.20"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://hansbeautystor.com/products/olaplex-no-3-hair-perfector",
+          "observed_at": "2026-07-20",
+          "seller_name": "Han's Beauty Stor",
+          "seller_type": "independent_store",
+          "seller_domain": "hansbeautystor.com",
+          "advertised_price": "56.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Comeback Dude",
+          "seller_type": "independent_store",
+          "seller_domain": "comebackdude.com",
+          "advertised_price": "57.99"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://amazon.com/dp/B07D37SBHF",
+            "title": "amazon_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/s?k=Olaplex+No+3+Hair+Perfector+250ml",
+            "title": "amazon_serp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+            "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+            "title": "Olaplex Number 3",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://dermstore.com/p/olaplex-value-size-no.-3-hair-perfector-pre-shampoo-strengthening-and-reparative-hair-treatment-250ml/12596173?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoqCXG0bXbJzWlXwLFgqX3jXi5RVNTyDqBr8lTaacBu5pQ_NqY07",
+            "title": "Olaplex Limited Edition Super Size No. 3 Hair Perfector ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://dermstreet.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOooWwPqFoRQMifuU7ab6YafwWA5o0Z51KIkYJwryMqqKUamLWi6w",
+            "title": "OLAPLEX No. 3 Hair Perfector",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://us.bathandunwind.com/olaplex-no-3-hair-perfector-supersize-limited-edition?srsltid=AfmBOopCTvzMo0UNUwCW-3z60CX_m3Oyn_kkk_ddQkVXdWVcmKkQndJN",
+            "title": "Olaplex No.3 Hair Perfector Supersize Limited Edition 250ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://thebsoonline.com/products/olaplex-no-3?srsltid=AfmBOopefohLUYbX4RDCOJfW8TlPpisNJAecpFQDtlY2rZCIiSBkz0wW",
+            "title": "Olaplex No 3 Hair Perfector Repair and Strengthens All ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://hansbeautystor.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOorBQ22tdxOXtA7ORDCLjMBETYle6dSJHWVug7uBwWyl33R5dqkK",
+            "title": "Olaplex No. 3 Hair Perfector - Han's Beauty Stor",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+            "title": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37SBHF",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: \"Amazon.com\" ... data.asin: \"B07D37SBHF\" ... data.badges[0]: \"Amazon's  Choice\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37SBHF",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "corpus-meta url: https://amazon.com/dp/B07D37SBHF"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37SBHF",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.web_price: 34 ... data.list_price: 34 ... displayPrice $34.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37SBHF",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "displayPrice currencySymbol $ locale en-US"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/s?k=Olaplex+No+3+Hair+Perfector+250ml",
+                "title": "amazon_serp",
+                "excerpts": [
+                  "data[2].asin: \"B07D37SBHF\" ... price 34"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37SBHF",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: \"Amazon.com\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37SBHF",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.badges[0]: \"Amazon's  Choice\" ... data.direct: true ... Secure transaction"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B07D37SBHF",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "Sold and shipped by Maison Rouge"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "corpus-meta url: https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "Current price is Now $51.76 You save $8.24 was $60.00 Price when purchased online"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "Current price is Now $51.76 ... was $60.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "corpus-meta url: https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "Sold and shipped by Maison Rouge"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "Add to cart ... Arrives between Jul 24 - Jul 28 ... Free shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "Sold and shipped by R&B Beauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "corpus-meta url: https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "$55.99 +Free shipping ... Sold and shipped by R&B Beauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "$55.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "corpus-meta url: https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "Sold and shipped by R&B Beauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "Shipping, arrives by Sat, Jul 25 ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-3-Hair-Perfector-8-5-oz/204349150",
+                "title": "Olaplex No. 3 Hair Perfector 8.5 oz",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "Olaplex No. 3 Hair Perfector Repairs Strengthens All Hair Types 8.5 Fl Oz New ... $43.50 Buy It Now Free delivery ... mybeautyproductss 99.8% positive (8.8K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "https://www.ebay.com/itm/227164589663"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "$43.50 Buy It Now Free delivery ... 143 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "$43.50 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "https://www.ebay.com/itm/227164589663 ... Olaplex No. 3 Hair Perfector Repairs Strengthens All Hair Types 8.5 Fl Oz New"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "mybeautyproductss 99.8% positive (8.8K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "Buy It Now Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "Olaplex No. 3 Hair Perfector Repairs Strengthens Hair 8.5 Fl Oz Sealed ... $44.00 Buy It Now Free delivery ... mybeautyproductss 99.8% positive (8.8K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "https://www.ebay.com/itm/326840304013"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "$44.00 Buy It Now Free delivery ... 60 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "$44.00 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "https://www.ebay.com/itm/326840304013 ... Olaplex No. 3 Hair Perfector Repairs Strengthens Hair 8.5 Fl Oz Sealed"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "mybeautyproductss 99.8% positive (8.8K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "Buy It Now Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "Olaplex No. 3 Hair Perfector Plus Repair Treatment 250ml New Authentic ... glowbydanie 99.7% positive (722)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "https://www.ebay.com/itm/287387771552"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "$53.83 Buy It Now Free delivery ... 18 watchers"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "$53.83 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "https://www.ebay.com/itm/287387771552 ... Olaplex No. 3 Hair Perfector Plus Repair Treatment 250ml New Authentic"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "glowbydanie 99.7% positive (722)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "Buy It Now Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/olaplex-number-3?_nkw=olaplex+number+3",
+                "title": "Olaplex Number 3",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-value-size-no.-3-hair-perfector-pre-shampoo-strengthening-and-reparative-hair-treatment-250ml/12596173?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoqCXG0bXbJzWlXwLFgqX3jXi5RVNTyDqBr8lTaacBu5pQ_NqY07",
+                "title": "Olaplex Limited Edition Super Size No. 3 Hair Perfector ...",
+                "excerpts": [
+                  "# Olaplex Limited Edition Super Size No. 3 Hair Perfector (8.5 fl. oz.) ... $60.00 ... Size: 100ml 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-value-size-no.-3-hair-perfector-pre-shampoo-strengthening-and-reparative-hair-treatment-250ml/12596173?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoqCXG0bXbJzWlXwLFgqX3jXi5RVNTyDqBr8lTaacBu5pQ_NqY07",
+                "title": "Olaplex Limited Edition Super Size No. 3 Hair Perfector ...",
+                "excerpts": [
+                  "$60.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-value-size-no.-3-hair-perfector-pre-shampoo-strengthening-and-reparative-hair-treatment-250ml/12596173?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoqCXG0bXbJzWlXwLFgqX3jXi5RVNTyDqBr8lTaacBu5pQ_NqY07",
+                "title": "Olaplex Limited Edition Super Size No. 3 Hair Perfector ...",
+                "excerpts": [
+                  "One Time Purchase $60.00 Auto-Replenish"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-value-size-no.-3-hair-perfector-pre-shampoo-strengthening-and-reparative-hair-treatment-250ml/12596173?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoqCXG0bXbJzWlXwLFgqX3jXi5RVNTyDqBr8lTaacBu5pQ_NqY07",
+                "title": "Olaplex Limited Edition Super Size No. 3 Hair Perfector ...",
+                "excerpts": [
+                  "corpus-meta url: https://dermstore.com/p/olaplex-value-size-no.-3-hair-perfector-pre-shampoo-strengthening-and-reparative-hair-treatment-250ml/12596173"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-value-size-no.-3-hair-perfector-pre-shampoo-strengthening-and-reparative-hair-treatment-250ml/12596173?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoqCXG0bXbJzWlXwLFgqX3jXi5RVNTyDqBr8lTaacBu5pQ_NqY07",
+                "title": "Olaplex Limited Edition Super Size No. 3 Hair Perfector ...",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-value-size-no.-3-hair-perfector-pre-shampoo-strengthening-and-reparative-hair-treatment-250ml/12596173?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoqCXG0bXbJzWlXwLFgqX3jXi5RVNTyDqBr8lTaacBu5pQ_NqY07",
+                "title": "Olaplex Limited Edition Super Size No. 3 Hair Perfector ...",
+                "excerpts": [
+                  "corpus-meta url: https://dermstore.com/p/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-value-size-no.-3-hair-perfector-pre-shampoo-strengthening-and-reparative-hair-treatment-250ml/12596173?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoqCXG0bXbJzWlXwLFgqX3jXi5RVNTyDqBr8lTaacBu5pQ_NqY07",
+                "title": "Olaplex Limited Edition Super Size No. 3 Hair Perfector ...",
+                "excerpts": [
+                  "dermstore homepage"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-value-size-no.-3-hair-perfector-pre-shampoo-strengthening-and-reparative-hair-treatment-250ml/12596173?bvstate=pg%3A8%2Fct%3Ar&srsltid=AfmBOoqCXG0bXbJzWlXwLFgqX3jXi5RVNTyDqBr8lTaacBu5pQ_NqY07",
+                "title": "Olaplex Limited Edition Super Size No. 3 Hair Perfector ...",
+                "excerpts": [
+                  "dermstore homepage ... Beauty retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstreet.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOooWwPqFoRQMifuU7ab6YafwWA5o0Z51KIkYJwryMqqKUamLWi6w",
+                "title": "OLAPLEX No. 3 Hair Perfector",
+                "excerpts": [
+                  "Regular price $30 ... 8.5 fl oz / 250ml Variant sold out or unavailable"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstreet.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOooWwPqFoRQMifuU7ab6YafwWA5o0Z51KIkYJwryMqqKUamLWi6w",
+                "title": "OLAPLEX No. 3 Hair Perfector",
+                "excerpts": [
+                  "Regular price $30"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstreet.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOooWwPqFoRQMifuU7ab6YafwWA5o0Z51KIkYJwryMqqKUamLWi6w",
+                "title": "OLAPLEX No. 3 Hair Perfector",
+                "excerpts": [
+                  "8.5 fl oz / 250ml Variant sold out or unavailable"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstreet.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOooWwPqFoRQMifuU7ab6YafwWA5o0Z51KIkYJwryMqqKUamLWi6w",
+                "title": "OLAPLEX No. 3 Hair Perfector",
+                "excerpts": [
+                  "corpus-meta url: https://dermstreet.com/products/olaplex-no-3-hair-perfector"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstreet.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOooWwPqFoRQMifuU7ab6YafwWA5o0Z51KIkYJwryMqqKUamLWi6w",
+                "title": "OLAPLEX No. 3 Hair Perfector",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstreet.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOooWwPqFoRQMifuU7ab6YafwWA5o0Z51KIkYJwryMqqKUamLWi6w",
+                "title": "OLAPLEX No. 3 Hair Perfector",
+                "excerpts": [
+                  "corpus-meta url: https://dermstreet.com/products/olaplex-no-3-hair-perfector"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstreet.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOooWwPqFoRQMifuU7ab6YafwWA5o0Z51KIkYJwryMqqKUamLWi6w",
+                "title": "OLAPLEX No. 3 Hair Perfector",
+                "excerpts": [
+                  "OLAPLEX No. 3 Hair Perfector - DermStreet"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstreet.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOooWwPqFoRQMifuU7ab6YafwWA5o0Z51KIkYJwryMqqKUamLWi6w",
+                "title": "OLAPLEX No. 3 Hair Perfector",
+                "excerpts": [
+                  "OLAPLEX ... DermStreet ... Free U.S. Shipping Orders Over $50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.bathandunwind.com/olaplex-no-3-hair-perfector-supersize-limited-edition?srsltid=AfmBOopCTvzMo0UNUwCW-3z60CX_m3Oyn_kkk_ddQkVXdWVcmKkQndJN",
+                "title": "Olaplex No.3 Hair Perfector Supersize Limited Edition 250ml",
+                "excerpts": [
+                  "# Olaplex No.3 Hair Perfector Supersize Limited Edition 250ml RRP: $67.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.bathandunwind.com/olaplex-no-3-hair-perfector-supersize-limited-edition?srsltid=AfmBOopCTvzMo0UNUwCW-3z60CX_m3Oyn_kkk_ddQkVXdWVcmKkQndJN",
+                "title": "Olaplex No.3 Hair Perfector Supersize Limited Edition 250ml",
+                "excerpts": [
+                  "RRP: $67.00 ... USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.bathandunwind.com/olaplex-no-3-hair-perfector-supersize-limited-edition?srsltid=AfmBOopCTvzMo0UNUwCW-3z60CX_m3Oyn_kkk_ddQkVXdWVcmKkQndJN",
+                "title": "Olaplex No.3 Hair Perfector Supersize Limited Edition 250ml",
+                "excerpts": [
+                  "Current Stock: Pre-order now, estimated dispatch in 1-2 weeks"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.bathandunwind.com/olaplex-no-3-hair-perfector-supersize-limited-edition?srsltid=AfmBOopCTvzMo0UNUwCW-3z60CX_m3Oyn_kkk_ddQkVXdWVcmKkQndJN",
+                "title": "Olaplex No.3 Hair Perfector Supersize Limited Edition 250ml",
+                "excerpts": [
+                  "corpus-meta url: https://us.bathandunwind.com/olaplex-no-3-hair-perfector-supersize-limited-edition"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.bathandunwind.com/olaplex-no-3-hair-perfector-supersize-limited-edition?srsltid=AfmBOopCTvzMo0UNUwCW-3z60CX_m3Oyn_kkk_ddQkVXdWVcmKkQndJN",
+                "title": "Olaplex No.3 Hair Perfector Supersize Limited Edition 250ml",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.bathandunwind.com/olaplex-no-3-hair-perfector-supersize-limited-edition?srsltid=AfmBOopCTvzMo0UNUwCW-3z60CX_m3Oyn_kkk_ddQkVXdWVcmKkQndJN",
+                "title": "Olaplex No.3 Hair Perfector Supersize Limited Edition 250ml",
+                "excerpts": [
+                  "corpus-meta url: https://us.bathandunwind.com/olaplex-no-3-hair-perfector-supersize-limited-edition"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.bathandunwind.com/olaplex-no-3-hair-perfector-supersize-limited-edition?srsltid=AfmBOopCTvzMo0UNUwCW-3z60CX_m3Oyn_kkk_ddQkVXdWVcmKkQndJN",
+                "title": "Olaplex No.3 Hair Perfector Supersize Limited Edition 250ml",
+                "excerpts": [
+                  "Bath & Unwind - US & Global"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.bathandunwind.com/olaplex-no-3-hair-perfector-supersize-limited-edition?srsltid=AfmBOopCTvzMo0UNUwCW-3z60CX_m3Oyn_kkk_ddQkVXdWVcmKkQndJN",
+                "title": "Olaplex No.3 Hair Perfector Supersize Limited Edition 250ml",
+                "excerpts": [
+                  "Bath & Unwind - US & Global ... Powered by Koan Commerce"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-3?srsltid=AfmBOopefohLUYbX4RDCOJfW8TlPpisNJAecpFQDtlY2rZCIiSBkz0wW",
+                "title": "Olaplex No 3 Hair Perfector Repair and Strengthens All ...",
+                "excerpts": [
+                  "8.5 OZ - $79.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-3?srsltid=AfmBOopefohLUYbX4RDCOJfW8TlPpisNJAecpFQDtlY2rZCIiSBkz0wW",
+                "title": "Olaplex No 3 Hair Perfector Repair and Strengthens All ...",
+                "excerpts": [
+                  "$39.60\u2013$79.20 ... FREE Shipping with UPS in Canada over $60"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-3?srsltid=AfmBOopefohLUYbX4RDCOJfW8TlPpisNJAecpFQDtlY2rZCIiSBkz0wW",
+                "title": "Olaplex No 3 Hair Perfector Repair and Strengthens All ...",
+                "excerpts": [
+                  "$39.60~$44.00~ Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-3?srsltid=AfmBOopefohLUYbX4RDCOJfW8TlPpisNJAecpFQDtlY2rZCIiSBkz0wW",
+                "title": "Olaplex No 3 Hair Perfector Repair and Strengthens All ...",
+                "excerpts": [
+                  "corpus-meta url: https://thebsoonline.com/products/olaplex-no-3"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-3?srsltid=AfmBOopefohLUYbX4RDCOJfW8TlPpisNJAecpFQDtlY2rZCIiSBkz0wW",
+                "title": "Olaplex No 3 Hair Perfector Repair and Strengthens All ...",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-3?srsltid=AfmBOopefohLUYbX4RDCOJfW8TlPpisNJAecpFQDtlY2rZCIiSBkz0wW",
+                "title": "Olaplex No 3 Hair Perfector Repair and Strengthens All ...",
+                "excerpts": [
+                  "corpus-meta url: https://thebsoonline.com/products/olaplex-no-3"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-3?srsltid=AfmBOopefohLUYbX4RDCOJfW8TlPpisNJAecpFQDtlY2rZCIiSBkz0wW",
+                "title": "Olaplex No 3 Hair Perfector Repair and Strengthens All ...",
+                "excerpts": [
+                  "Beauty Supply Outlet ... Copyright 2026 Beauty Supply Outlet"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebsoonline.com/products/olaplex-no-3?srsltid=AfmBOopefohLUYbX4RDCOJfW8TlPpisNJAecpFQDtlY2rZCIiSBkz0wW",
+                "title": "Olaplex No 3 Hair Perfector Repair and Strengthens All ...",
+                "excerpts": [
+                  "Beauty Supply Outlet ... FREE Shipping with UPS in Canada"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hansbeautystor.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOorBQ22tdxOXtA7ORDCLjMBETYle6dSJHWVug7uBwWyl33R5dqkK",
+                "title": "Olaplex No. 3 Hair Perfector - Han's Beauty Stor",
+                "excerpts": [
+                  "Choose a variant 3.3 oz. - $30.00 8.5 oz. - $56.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hansbeautystor.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOorBQ22tdxOXtA7ORDCLjMBETYle6dSJHWVug7uBwWyl33R5dqkK",
+                "title": "Olaplex No. 3 Hair Perfector - Han's Beauty Stor",
+                "excerpts": [
+                  "$30.00 - $56.00 ... 8.5 oz. - $56.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hansbeautystor.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOorBQ22tdxOXtA7ORDCLjMBETYle6dSJHWVug7uBwWyl33R5dqkK",
+                "title": "Olaplex No. 3 Hair Perfector - Han's Beauty Stor",
+                "excerpts": [
+                  "Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hansbeautystor.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOorBQ22tdxOXtA7ORDCLjMBETYle6dSJHWVug7uBwWyl33R5dqkK",
+                "title": "Olaplex No. 3 Hair Perfector - Han's Beauty Stor",
+                "excerpts": [
+                  "corpus-meta url: https://hansbeautystor.com/products/olaplex-no-3-hair-perfector"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hansbeautystor.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOorBQ22tdxOXtA7ORDCLjMBETYle6dSJHWVug7uBwWyl33R5dqkK",
+                "title": "Olaplex No. 3 Hair Perfector - Han's Beauty Stor",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hansbeautystor.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOorBQ22tdxOXtA7ORDCLjMBETYle6dSJHWVug7uBwWyl33R5dqkK",
+                "title": "Olaplex No. 3 Hair Perfector - Han's Beauty Stor",
+                "excerpts": [
+                  "corpus-meta url: https://hansbeautystor.com/products/olaplex-no-3-hair-perfector"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hansbeautystor.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOorBQ22tdxOXtA7ORDCLjMBETYle6dSJHWVug7uBwWyl33R5dqkK",
+                "title": "Olaplex No. 3 Hair Perfector - Han's Beauty Stor",
+                "excerpts": [
+                  "Olaplex No. 3 Hair Perfector - Han's Beauty Stor"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hansbeautystor.com/products/olaplex-no-3-hair-perfector?srsltid=AfmBOorBQ22tdxOXtA7ORDCLjMBETYle6dSJHWVug7uBwWyl33R5dqkK",
+                "title": "Olaplex No. 3 Hair Perfector - Han's Beauty Stor",
+                "excerpts": [
+                  "Han's Beauty Stor ... Olaplex No. 3 Hair Perfector 8.5oz."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "title": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "excerpts": [
+                  "Price: Sale price$57.99 Regular price$60.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "title": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "excerpts": [
+                  "Sale price$57.99 Regular price$60.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "title": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "excerpts": [
+                  "Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "title": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "excerpts": [
+                  "corpus-meta url: https://comebackdude.com/products/olaplex-no-3-perfector-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "title": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "excerpts": [
+                  "corpus-meta retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "title": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "excerpts": [
+                  "corpus-meta url: https://comebackdude.com/products/olaplex-no-3-perfector-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "title": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "excerpts": [
+                  "Olaplex No.3 Perfector 8.5oz / 250ml ... 24 reviews"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "title": "https://comebackdude.com/products/olaplex-no-3-perfector-250ml",
+                "excerpts": [
+                  "Free shipping All U.S. Orders over $99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

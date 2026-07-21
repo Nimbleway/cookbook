@@ -1,0 +1,1348 @@
+{
+  "sku_id": "OLA-020",
+  "effort": "high",
+  "elapsed_s": 1244,
+  "fetched_at": "2026-07-20T13:14:52+00:00",
+  "run_id": "task_run_616f34bfdeb54abe821a47d26c73605b",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_616f34bfdeb54abe821a47d26c73605b",
+      "interaction_id": "task_run_616f34bfdeb54abe821a47d26c73605b",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of Olaplex No. 7 Bonding Oil, 60ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:54:06.503943Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:54:06.630216Z",
+      "completed_at": "2026-07-20T13:14:37.185068Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://olaplex.com/products/olaplex-n-7-bonding-oil-us",
+          "observed_at": "2026-07-20",
+          "seller_name": "Olaplex",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "olaplex.com",
+          "advertised_price": "56"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/dp/B0H37TX4B2",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon.com",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.com",
+          "advertised_price": "56"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Olaplex-No-7-Bonding-Oil-2-oz/5256627797",
+          "observed_at": "2026-07-20",
+          "seller_name": "FRESH DROPLETS",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "39.77"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+          "observed_at": "2026-07-20",
+          "seller_name": "Ulta Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "ulta.com",
+          "advertised_price": "56.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/298312703451",
+          "observed_at": "2026-07-20",
+          "seller_name": "Florida Warehouses",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "34.99"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://www.cultbeauty.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272",
+          "observed_at": "2026-07-20",
+          "seller_name": "Cult Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "cultbeauty.com",
+          "advertised_price": "59.80"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": null,
+          "listing_url": "https://www.lookfantastic.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272",
+          "observed_at": "2026-07-20",
+          "seller_name": "Lookfantastic",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "52.00"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://www.thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml/",
+          "observed_at": "2026-07-20",
+          "seller_name": "The Beauty Salon",
+          "seller_type": "independent_store",
+          "seller_domain": "thebeautysalon.ie",
+          "advertised_price": "47.20"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://olaplex.com/",
+            "title": "Protect & Strengthen: For Every Hair Type & Texture ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://olaplex.com/collections/all-olaplex-products",
+            "title": "Shop All OLAPLEX Hair Products",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://olaplex.com/products/olaplex-n-7-bonding-oil-us",
+            "title": "OLAPLEX N\u00ba.7 Bonding Oil",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "news",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/dp/B0H37TX4B2",
+            "title": "amazon_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Olaplex-No-7-Bonding-Oil-2-oz/5256627797",
+            "title": "Olaplex No. 7 Bonding Oil 2 oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+            "title": "https://www.ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/298312703451",
+            "title": "https://www.ebay.com/itm/298312703451",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://cultbeauty.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272",
+            "title": "Olaplex No. 7 Bonding Oil Deluxe 60ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272?srsltid=AfmBOoocRqot-sSk7kDwzUuYi3TF1rQwu8bxeTQnYeavi10ykLXHw301",
+            "title": "Olaplex No. 7 Bonding Oil Jumbo 60ml (Worth \u00a356)",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml",
+            "title": "https://www.thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml/",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/",
+                "title": "Protect & Strengthen: For Every Hair Type & Texture ...",
+                "excerpts": [
+                  "OLAPLEX N\u00ba.7 BONDING OIL\u2122 ... Regular price $32 - $56 ... Select size for OLAPLEX N\u00ba.7 BONDING OIL\u2122 ... Regular price $56 ... 60mL"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/",
+                "title": "Protect & Strengthen: For Every Hair Type & Texture ...",
+                "excerpts": [
+                  "[OLAPLEX N\u00ba.7 BONDING OIL\u2122](https://olaplex.com/products/olaplex-n-7-bonding-oil-us) ... Regular price $56 ... 60mL"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/collections/all-olaplex-products",
+                "title": "Shop All OLAPLEX Hair Products",
+                "excerpts": [
+                  "OLAPLEX N\u00ba.7 BONDING OIL\u2122 ... Regular price $32 - $56 ... Regular price $56 ... 60mL"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/collections/all-olaplex-products",
+                "title": "Shop All OLAPLEX Hair Products",
+                "excerpts": [
+                  "Regular price $56 ... 60mL"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/",
+                "title": "Protect & Strengthen: For Every Hair Type & Texture ...",
+                "excerpts": [
+                  "[OLAPLEX N\u00ba.7 BONDING OIL\u2122](https://olaplex.com/products/olaplex-n-7-bonding-oil-us)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-7-bonding-oil-us",
+                "title": "OLAPLEX N\u00ba.7 Bonding Oil",
+                "excerpts": [
+                  "OLAPLEX N\u00ba.7 BONDING OIL\u2122 product page on olaplex.com (brand's own direct-to-consumer store)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "news",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (news)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/collections/all-olaplex-products",
+                "title": "Shop All OLAPLEX Hair Products",
+                "excerpts": [
+                  "Regular price $56 ... 60mL ... Add (size selectable, add to cart present)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/collections/all-olaplex-products",
+                "title": "Shop All OLAPLEX Hair Products",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0H37TX4B2",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: Amazon.com ... data.asin: B0H37TX4B2 ... data.web_price: 56"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0H37TX4B2",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B0H37TX4B2"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0H37TX4B2",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.web_price: 56 ... data.list_price: 56 ... data.subscription_price: $56.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0H37TX4B2",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.subscription_price: $56.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0H37TX4B2",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B0H37TX4B2"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0H37TX4B2",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: Amazon.com ... data.direct: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0H37TX4B2",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0H37TX4B2",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "corpus-meta retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-7-Bonding-Oil-2-oz/5256627797",
+                "title": "Olaplex No. 7 Bonding Oil 2 oz",
+                "excerpts": [
+                  "Sold and shipped by FRESH DROPLETS Pro Seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-7-Bonding-Oil-2-oz/5256627797",
+                "title": "Olaplex No. 7 Bonding Oil 2 oz",
+                "excerpts": [
+                  "walmart.com/ip/Olaplex-No-7-Bonding-Oil-2-oz/5256627797"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-7-Bonding-Oil-2-oz/5256627797",
+                "title": "Olaplex No. 7 Bonding Oil 2 oz",
+                "excerpts": [
+                  "As Picture, $39.77 ... Current price is $39.77 ... Price when purchased online"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-7-Bonding-Oil-2-oz/5256627797",
+                "title": "Olaplex No. 7 Bonding Oil 2 oz",
+                "excerpts": [
+                  "Current price is $39.77 ... Price when purchased online"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-7-Bonding-Oil-2-oz/5256627797",
+                "title": "Olaplex No. 7 Bonding Oil 2 oz",
+                "excerpts": [
+                  "Olaplex No. 7 Bonding Oil 2 oz ... walmart.com/ip/Olaplex-No-7-Bonding-Oil-2-oz/5256627797"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-7-Bonding-Oil-2-oz/5256627797",
+                "title": "Olaplex No. 7 Bonding Oil 2 oz",
+                "excerpts": [
+                  "Sold and shipped by FRESH DROPLETS Pro Seller ... 4.45 stars based on 2324 seller reviews"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-7-Bonding-Oil-2-oz/5256627797",
+                "title": "Olaplex No. 7 Bonding Oil 2 oz",
+                "excerpts": [
+                  "Add to cart ... Free shipping ... Arrives by Sat, Jul 25"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-7-Bonding-Oil-2-oz/5256627797",
+                "title": "Olaplex No. 7 Bonding Oil 2 oz",
+                "excerpts": [
+                  "corpus-meta retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "title": "https://www.ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "excerpts": [
+                  "OLAPLEX No.7 Bonding Hair Oil ... $56.00 ... Size:2.0 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "title": "https://www.ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "excerpts": [
+                  "ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "title": "https://www.ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "excerpts": [
+                  "$56.00 ... Size:2.0 oz ... List Price $56.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "title": "https://www.ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "excerpts": [
+                  "$56.00 ... List Price $56.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "title": "https://www.ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "excerpts": [
+                  "[2.0 oz](https://www.ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "title": "https://www.ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "excerpts": [
+                  "OLAPLEX No.7 Bonding Hair Oil sold on ulta.com (major authorized beauty retailer)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "title": "https://www.ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "excerpts": [
+                  "In stock and ready to ship ... Usually ships in 1-2 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "title": "https://www.ulta.com/p/no7-bonding-hair-oil-pimprod2029354?sku=2617052",
+                "excerpts": [
+                  "corpus-meta retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298312703451",
+                "title": "https://www.ebay.com/itm/298312703451",
+                "excerpts": [
+                  "# Olaplex No. 7 Bonding Oil 2 oz Brand NEW ... [Florida Warehouses](https://www.ebay.com/str/floridawarehouses)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298312703451",
+                "title": "https://www.ebay.com/itm/298312703451",
+                "excerpts": [
+                  "ebay.com/itm/298312703451"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298312703451",
+                "title": "https://www.ebay.com/itm/298312703451",
+                "excerpts": [
+                  "US $34.99/ea or Best Offer ... Buy 1 Buy 1 for $34.99 ... Free shipping and returns"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298312703451",
+                "title": "https://www.ebay.com/itm/298312703451",
+                "excerpts": [
+                  "US $34.99/ea or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298312703451",
+                "title": "https://www.ebay.com/itm/298312703451",
+                "excerpts": [
+                  "ebay.com/itm/298312703451 ... Olaplex No. 7 Bonding Oil 2 oz Brand NEW"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298312703451",
+                "title": "https://www.ebay.com/itm/298312703451",
+                "excerpts": [
+                  "[Florida Warehouses] ... Usually responds within 24 hours ... Visit store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298312703451",
+                "title": "https://www.ebay.com/itm/298312703451",
+                "excerpts": [
+                  "Buy It Now ... Free shipping and returns ... 2 have added this to their watchlist"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/298312703451",
+                "title": "https://www.ebay.com/itm/298312703451",
+                "excerpts": [
+                  "corpus-meta retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272",
+                "title": "Olaplex No. 7 Bonding Oil Deluxe 60ml",
+                "excerpts": [
+                  "# Olaplex No. 7 Bonding Oil Deluxe 60ml ... Size: 30ml 60ml ... 59.80\u20ac"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272",
+                "title": "Olaplex No. 7 Bonding Oil Deluxe 60ml",
+                "excerpts": [
+                  "cultbeauty.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272",
+                "title": "Olaplex No. 7 Bonding Oil Deluxe 60ml",
+                "excerpts": [
+                  "59.80\u20ac ... Size: 30ml 60ml ... ADD TO BAG"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272",
+                "title": "Olaplex No. 7 Bonding Oil Deluxe 60ml",
+                "excerpts": [
+                  "59.80\u20ac"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272",
+                "title": "Olaplex No. 7 Bonding Oil Deluxe 60ml",
+                "excerpts": [
+                  "cultbeauty.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272 ... Olaplex No. 7 Bonding Oil Deluxe 60ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272",
+                "title": "Olaplex No. 7 Bonding Oil Deluxe 60ml",
+                "excerpts": [
+                  "Olaplex No. 7 Bonding Oil Deluxe (60ml) ... OLAPLEX has changed the landscape of the hair care industry"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272",
+                "title": "Olaplex No. 7 Bonding Oil Deluxe 60ml",
+                "excerpts": [
+                  "In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cultbeauty.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272",
+                "title": "Olaplex No. 7 Bonding Oil Deluxe 60ml",
+                "excerpts": [
+                  "corpus-meta retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272?srsltid=AfmBOoocRqot-sSk7kDwzUuYi3TF1rQwu8bxeTQnYeavi10ykLXHw301",
+                "title": "Olaplex No. 7 Bonding Oil Jumbo 60ml (Worth \u00a356)",
+                "excerpts": [
+                  "# Olaplex No. 7 Bonding Oil Jumbo 60ml (Worth \u00a356) ... \u00a352.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272?srsltid=AfmBOoocRqot-sSk7kDwzUuYi3TF1rQwu8bxeTQnYeavi10ykLXHw301",
+                "title": "Olaplex No. 7 Bonding Oil Jumbo 60ml (Worth \u00a356)",
+                "excerpts": [
+                  "lookfantastic.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272?srsltid=AfmBOoocRqot-sSk7kDwzUuYi3TF1rQwu8bxeTQnYeavi10ykLXHw301",
+                "title": "Olaplex No. 7 Bonding Oil Jumbo 60ml (Worth \u00a356)",
+                "excerpts": [
+                  "\u00a352.00 ... Or 4 interest free payments of \u00a313.00 ... Olaplex No. 7 Bonding Oil Jumbo 60ml (Worth \u00a356)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272?srsltid=AfmBOoocRqot-sSk7kDwzUuYi3TF1rQwu8bxeTQnYeavi10ykLXHw301",
+                "title": "Olaplex No. 7 Bonding Oil Jumbo 60ml (Worth \u00a356)",
+                "excerpts": [
+                  "\u00a352.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272?srsltid=AfmBOoocRqot-sSk7kDwzUuYi3TF1rQwu8bxeTQnYeavi10ykLXHw301",
+                "title": "Olaplex No. 7 Bonding Oil Jumbo 60ml (Worth \u00a356)",
+                "excerpts": [
+                  "lookfantastic.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272 ... Olaplex No. 7 Bonding Oil Jumbo 60ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272?srsltid=AfmBOoocRqot-sSk7kDwzUuYi3TF1rQwu8bxeTQnYeavi10ykLXHw301",
+                "title": "Olaplex No. 7 Bonding Oil Jumbo 60ml (Worth \u00a356)",
+                "excerpts": [
+                  "Now in a jumbo size, the best-selling Olaplex bonding oil ... FREE UK delivery on orders over \u00a325"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272?srsltid=AfmBOoocRqot-sSk7kDwzUuYi3TF1rQwu8bxeTQnYeavi10ykLXHw301",
+                "title": "Olaplex No. 7 Bonding Oil Jumbo 60ml (Worth \u00a356)",
+                "excerpts": [
+                  "\u00a352.00 ... Or 4 interest free payments of \u00a313.00 (price shown; stock state not explicitly stated on extracted page)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/olaplex-no.-7-bonding-oil-deluxe-60ml/14970272?srsltid=AfmBOoocRqot-sSk7kDwzUuYi3TF1rQwu8bxeTQnYeavi10ykLXHw301",
+                "title": "Olaplex No. 7 Bonding Oil Jumbo 60ml (Worth \u00a356)",
+                "excerpts": [
+                  "corpus-meta retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml",
+                "title": "https://www.thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml/",
+                "excerpts": [
+                  "# OLAPLEX No.7 Bonding Oil 60ml ... Original price was: \u20ac59.00. Current price is: \u20ac47.20. ... 60ml ... In stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml",
+                "title": "https://www.thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml/",
+                "excerpts": [
+                  "thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml ... info@thebeautysalon.ie"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml",
+                "title": "https://www.thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml/",
+                "excerpts": [
+                  "Original price was: \u20ac59.00. Current price is: \u20ac47.20. ... 60ml ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml",
+                "title": "https://www.thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml/",
+                "excerpts": [
+                  "Original price was: \u20ac59.00. Current price is: \u20ac47.20."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml",
+                "title": "https://www.thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml/",
+                "excerpts": [
+                  "thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml ... OLAPLEX No.7 Bonding Oil 60ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml",
+                "title": "https://www.thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml/",
+                "excerpts": [
+                  "The Beauty Salon ... 087 266 9376 ... WooCommerce store (Hair Care, Olaplex categories)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml",
+                "title": "https://www.thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml/",
+                "excerpts": [
+                  "60ml ... In stock ... OLAPLEX No.7 Bonding Oil 60ml quantity ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml",
+                "title": "https://www.thebeautysalon.ie/product/olaplex-no-7-bonding-oil-60ml/",
+                "excerpts": [
+                  "corpus-meta retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          }
+        ]
+      }
+    }
+  }
+}

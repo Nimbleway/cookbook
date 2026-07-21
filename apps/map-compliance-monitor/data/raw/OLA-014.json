@@ -1,0 +1,676 @@
+{
+  "sku_id": "OLA-014",
+  "effort": "high",
+  "elapsed_s": 1056,
+  "fetched_at": "2026-07-20T12:59:04+00:00",
+  "run_id": "task_run_2f7e2a0f6eef465cac35072e9c223cfd",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_2f7e2a0f6eef465cac35072e9c223cfd",
+      "interaction_id": "task_run_2f7e2a0f6eef465cac35072e9c223cfd",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of Olaplex No. 0 and No. 3 Bond Building Hair Treatment Kit, kit size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:41:27.081788Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:41:27.415063Z",
+      "completed_at": "2026-07-20T12:58:57.643353Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "bombshell-hair.com/products/olaplex-no0-no3-plus-treatment-system",
+          "observed_at": "2026-07-20",
+          "seller_name": "Bombshell Hair",
+          "seller_type": "independent_store",
+          "seller_domain": "bombshell-hair.com",
+          "advertised_price": "68.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+          "observed_at": "2026-07-20",
+          "seller_name": "Apolo Brand (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$49.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+          "observed_at": "2026-07-20",
+          "seller_name": "Giuseppes Beauty (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$52.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "utiee.com/Treatments/328-olaplex-no0-and-no3-duo-olaplex.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Utiee",
+          "seller_type": "independent_store",
+          "seller_domain": "utiee.com",
+          "advertised_price": "$50.00"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://bombshell-hair.com/products/olaplex-no0-no3-plus-treatment-system?srsltid=AfmBOoq6k3rbkJTnQW0g4c8gX94eiEnF-XEcygpC_nrUYRszB5qU3ea3",
+            "title": "Olaplex No.0 & No.3 Plus Bond Building Treatment System",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+            "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://utiee.com/Treatments/328-olaplex-no0-and-no3-duo-olaplex.html?srsltid=AfmBOooU1m_W6TZFrdmgnvgEne-MkyxSxU0at--lRagXcwZYakXcDZCM",
+            "title": "Olaplex No.0 and No.3 Duo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://bombshell-hair.com/products/olaplex-no0-no3-plus-treatment-system?srsltid=AfmBOoq6k3rbkJTnQW0g4c8gX94eiEnF-XEcygpC_nrUYRszB5qU3ea3",
+                "title": "Olaplex No.0 & No.3 Plus Bond Building Treatment System",
+                "excerpts": [
+                  "# Olaplex No.0 & No.3 Plus Bond Building Treatment System"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bombshell-hair.com/products/olaplex-no0-no3-plus-treatment-system?srsltid=AfmBOoq6k3rbkJTnQW0g4c8gX94eiEnF-XEcygpC_nrUYRszB5qU3ea3",
+                "title": "Olaplex No.0 & No.3 Plus Bond Building Treatment System",
+                "excerpts": [
+                  "[## Olaplex No.0 & No.3 Plus Bond Building Treatment System](https://bombshell-hair.com/products/olaplex-no0-no3-plus-treatment-system)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bombshell-hair.com/products/olaplex-no0-no3-plus-treatment-system?srsltid=AfmBOoq6k3rbkJTnQW0g4c8gX94eiEnF-XEcygpC_nrUYRszB5qU3ea3",
+                "title": "Olaplex No.0 & No.3 Plus Bond Building Treatment System",
+                "excerpts": [
+                  "Regular price $68.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bombshell-hair.com/products/olaplex-no0-no3-plus-treatment-system?srsltid=AfmBOoq6k3rbkJTnQW0g4c8gX94eiEnF-XEcygpC_nrUYRszB5qU3ea3",
+                "title": "Olaplex No.0 & No.3 Plus Bond Building Treatment System",
+                "excerpts": [
+                  "Regular price $68.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bombshell-hair.com/products/olaplex-no0-no3-plus-treatment-system?srsltid=AfmBOoq6k3rbkJTnQW0g4c8gX94eiEnF-XEcygpC_nrUYRszB5qU3ea3",
+                "title": "Olaplex No.0 & No.3 Plus Bond Building Treatment System",
+                "excerpts": [
+                  "[## Olaplex No.0 & No.3 Plus Bond Building Treatment System](https://bombshell-hair.com/products/olaplex-no0-no3-plus-treatment-system)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bombshell-hair.com/products/olaplex-no0-no3-plus-treatment-system?srsltid=AfmBOoq6k3rbkJTnQW0g4c8gX94eiEnF-XEcygpC_nrUYRszB5qU3ea3",
+                "title": "Olaplex No.0 & No.3 Plus Bond Building Treatment System",
+                "excerpts": [
+                  "Professional salon product trusted in Bombshell locations daily."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bombshell-hair.com/products/olaplex-no0-no3-plus-treatment-system?srsltid=AfmBOoq6k3rbkJTnQW0g4c8gX94eiEnF-XEcygpC_nrUYRszB5qU3ea3",
+                "title": "Olaplex No.0 & No.3 Plus Bond Building Treatment System",
+                "excerpts": [
+                  "In stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bombshell-hair.com/products/olaplex-no0-no3-plus-treatment-system?srsltid=AfmBOoq6k3rbkJTnQW0g4c8gX94eiEnF-XEcygpC_nrUYRszB5qU3ea3",
+                "title": "Olaplex No.0 & No.3 Plus Bond Building Treatment System",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "Current price is $49.99\n\nPrice when purchased online"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "Current price is $49.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "Sold by [Apolo Brand](https://www.walmart.com/global/seller/101298915)**Pro Seller**"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "Sold by [Apolo Brand](https://www.walmart.com/global/seller/101298915)**Pro Seller**\n\nFulfilled by Walmart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "Other sellers\n\nCompare all 2 sellers\n\n$52.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "$52.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "+Free shipping\n\nShipping, arrives by **tomorrow** to River Hills, 53209"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "Sold by [Giuseppes Beauty](https://www.walmart.com/global/seller/101035293)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz-Hair-Perfector-No-3-for-All-Hair-Types-3-3-oz-Set/433355966",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "Sold by [Giuseppes Beauty](https://www.walmart.com/global/seller/101035293)\n\nFulfilled by Walmart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://utiee.com/Treatments/328-olaplex-no0-and-no3-duo-olaplex.html?srsltid=AfmBOooU1m_W6TZFrdmgnvgEne-MkyxSxU0at--lRagXcwZYakXcDZCM",
+                "title": "Olaplex No.0 and No.3 Duo",
+                "excerpts": [
+                  "# Olaplex No.0 and No.3 Duo | Olaplex\n\n$50.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://utiee.com/Treatments/328-olaplex-no0-and-no3-duo-olaplex.html?srsltid=AfmBOooU1m_W6TZFrdmgnvgEne-MkyxSxU0at--lRagXcwZYakXcDZCM",
+                "title": "Olaplex No.0 and No.3 Duo",
+                "excerpts": [
+                  "$50.00\n\nTax excluded"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://utiee.com/Treatments/328-olaplex-no0-and-no3-duo-olaplex.html?srsltid=AfmBOooU1m_W6TZFrdmgnvgEne-MkyxSxU0at--lRagXcwZYakXcDZCM",
+                "title": "Olaplex No.0 and No.3 Duo",
+                "excerpts": [
+                  "# Olaplex No.0 and No.3 Duo | Olaplex"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://utiee.com/Treatments/328-olaplex-no0-and-no3-duo-olaplex.html?srsltid=AfmBOooU1m_W6TZFrdmgnvgEne-MkyxSxU0at--lRagXcwZYakXcDZCM",
+                "title": "Olaplex No.0 and No.3 Duo",
+                "excerpts": [
+                  "[Olaplex No.0 and No.3 Duo | Olaplex](https://utiee.com/Treatments/328-olaplex-no0-and-no3-duo-olaplex.html)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://utiee.com/Treatments/328-olaplex-no0-and-no3-duo-olaplex.html?srsltid=AfmBOooU1m_W6TZFrdmgnvgEne-MkyxSxU0at--lRagXcwZYakXcDZCM",
+                "title": "Olaplex No.0 and No.3 Duo",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://utiee.com/Treatments/328-olaplex-no0-and-no3-duo-olaplex.html?srsltid=AfmBOooU1m_W6TZFrdmgnvgEne-MkyxSxU0at--lRagXcwZYakXcDZCM",
+                "title": "Olaplex No.0 and No.3 Duo",
+                "excerpts": [
+                  "https://utiee.com/Treatments/328-olaplex-no0-and-no3-duo-olaplex.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://utiee.com/Treatments/328-olaplex-no0-and-no3-duo-olaplex.html?srsltid=AfmBOooU1m_W6TZFrdmgnvgEne-MkyxSxU0at--lRagXcwZYakXcDZCM",
+                "title": "Olaplex No.0 and No.3 Duo",
+                "excerpts": [
+                  "[![Utiee \u2013 For beauty!](https://utiee.com/modules/an_logo/img/5160768b2e7618853a0521847235c1be.svg)](https://utiee.com/)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://utiee.com/Treatments/328-olaplex-no0-and-no3-duo-olaplex.html?srsltid=AfmBOooU1m_W6TZFrdmgnvgEne-MkyxSxU0at--lRagXcwZYakXcDZCM",
+                "title": "Olaplex No.0 and No.3 Duo",
+                "excerpts": [
+                  "[![Utiee \u2013 For beauty!](https://utiee.com/modules/an_logo/img/5160768b2e7618853a0521847235c1be.svg)](https://utiee.com/)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

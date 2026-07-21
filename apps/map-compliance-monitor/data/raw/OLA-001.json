@@ -1,0 +1,4086 @@
+{
+  "sku_id": "OLA-001",
+  "effort": "high",
+  "elapsed_s": 79,
+  "fetched_at": "2026-07-20T12:37:06+00:00",
+  "run_id": "task_run_e1792070c2a64fd6aad009a022ae83cf",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_e1792070c2a64fd6aad009a022ae83cf",
+      "interaction_id": "task_run_e1792070c2a64fd6aad009a022ae83cf",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of Olaplex No. 0 Intensive Bond Building Hair Treatment, 155ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:16:54.640098Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:16:54.828841Z",
+      "completed_at": "2026-07-20T12:36:57.645192Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/Olaplex-N-0-Intensive-Bond-Building-Treatment/dp/B08HTNRZMH",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon.com (Amazon's Choice, ASIN B08HTNRZMH)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.com",
+          "advertised_price": "$30.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/644898657",
+          "observed_at": "2026-07-20",
+          "seller_name": "Walmart Marketplace \u2014 FRESH DROPLETS",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$22.50"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz/251608564",
+          "observed_at": "2026-07-20",
+          "seller_name": "Walmart Marketplace \u2014 Maison Rouge",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$24.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/815205616",
+          "observed_at": "2026-07-20",
+          "seller_name": "Walmart Marketplace \u2014 UtieeBeautyStore",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$21.23"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ulta.com/p/no0-intensive-bond-building-hair-treatment-deep-repair-strength",
+          "observed_at": "2026-07-20",
+          "seller_name": "Ulta Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "ulta.com",
+          "advertised_price": "$30.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://olaplex.com/products/olaplex-n-0-intensive-bond-building-treatment-us",
+          "observed_at": "2026-07-20",
+          "seller_name": "Olaplex (official DTC store)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "olaplex.com",
+          "advertised_price": "$30"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.dermstore.com/p/olaplex-no.-0-intensive-bond-building-hair-treatment-for-deep-repair-and-strengthening-155ml/13716607",
+          "observed_at": "2026-07-20",
+          "seller_name": "Dermstore",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "dermstore.com",
+          "advertised_price": "$30.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.bloomingdales.com/shop/product/olaplex-no.0-intensive-bond-building-hair-treatment-5.2-oz.?ID=4076191",
+          "observed_at": "2026-07-20",
+          "seller_name": "Bloomingdale's",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "bloomingdales.com",
+          "advertised_price": "$30.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.target.com/p/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-0-primes-hair-for-max-repair-an-unbreakable-bond/-/A-1005659349",
+          "observed_at": "2026-07-20",
+          "seller_name": "Target+ (SleekShop)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "target.com",
+          "advertised_price": null
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://www.planetbeauty.com/products/olaplex-n-0-intensive-bond-building-treatment",
+          "observed_at": "2026-07-20",
+          "seller_name": "Planet Beauty",
+          "seller_type": "independent_store",
+          "seller_domain": "planetbeauty.com",
+          "advertised_price": "$30.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.mybathandi.com/products/olaplex-n%C2%BA-0-intensive-bond-building-hair-treatment",
+          "observed_at": "2026-07-20",
+          "seller_name": "My Bath & I",
+          "seller_type": "independent_store",
+          "seller_domain": "mybathandi.com",
+          "advertised_price": "$30.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://skinbeautifulrx.com/products/olaplex-no-0-intensive-bond-building-treatment",
+          "observed_at": "2026-07-20",
+          "seller_name": "Skin Beautiful RX",
+          "seller_type": "independent_store",
+          "seller_domain": "skinbeautifulrx.com",
+          "advertised_price": "$30.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.jonathantssalon.com/product-page/olaplex-no-0-intense-bond-building-hair-treatment",
+          "observed_at": "2026-07-20",
+          "seller_name": "Jonathan T's Salon",
+          "seller_type": "independent_store",
+          "seller_domain": "jonathantssalon.com",
+          "advertised_price": "$30.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://bigelowchemists.com/products/no-0-intensive-bond-builder-hair-treatment-spray-5-2-oz",
+          "observed_at": "2026-07-20",
+          "seller_name": "Bigelow Chemists",
+          "seller_type": "independent_store",
+          "seller_domain": "bigelowchemists.com",
+          "advertised_price": "$30.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://beautycarechoices.com/olaplex/no-0-intensive-bond-building-hair-treatment",
+          "observed_at": "2026-07-20",
+          "seller_name": "Beauty Care Choices",
+          "seller_type": "independent_store",
+          "seller_domain": "beautycarechoices.com",
+          "advertised_price": "$30.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://hermosabeauty.com/products/olaplex-no-0-intensive-bond-building-hair-treatment-5-2-oz-155-ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Hermosa Beauty",
+          "seller_type": "independent_store",
+          "seller_domain": "hermosabeauty.com",
+          "advertised_price": "$27.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://unitedsalonsupplies.com/products/olaplex-no-0-intensive-bond-builder-treatment-5-2-oz",
+          "observed_at": "2026-07-20",
+          "seller_name": "United Salon Supplies",
+          "seller_type": "discounter",
+          "seller_domain": "unitedsalonsupplies.com",
+          "advertised_price": "$21.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.jomashop.com/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-hair-care-850018802215.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Jomashop",
+          "seller_type": "discounter",
+          "seller_domain": "jomashop.com",
+          "advertised_price": "$27.08"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.perfumesclub.us/en/olaplex-intensive-bond-building-hair-treatment-n0/p_02879/",
+          "observed_at": "2026-07-20",
+          "seller_name": "Perfume's Club",
+          "seller_type": "discounter",
+          "seller_domain": "perfumesclub.us",
+          "advertised_price": "$ 23.19"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/127924185937",
+          "observed_at": "2026-07-20",
+          "seller_name": "eBay \u2014 maurysliquidation (seller livingcolorworld)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $19.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/406231658279",
+          "observed_at": "2026-07-20",
+          "seller_name": "eBay \u2014 spectra_088",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $21.50"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://poshmark.com/listing/Olaplex-No-0-Intensive-Bond-Building-Hair-Treatment-For-All-Hair-Types-52-fl-oz-6409481b3676a19e9887258d",
+          "observed_at": "2026-07-20",
+          "seller_name": "Poshmark \u2014 @lettyscloset22",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "poshmark.com",
+          "advertised_price": "$27"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://poshmark.com/listing/olaplex-no0-intensive-bond-building-treatment-5fe108",
+          "observed_at": "2026-07-20",
+          "seller_name": "Poshmark \u2014 @mishiki",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "poshmark.com",
+          "advertised_price": "$27"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.mercari.com/us/item/m17375604755",
+          "observed_at": "2026-07-20",
+          "seller_name": "Mercari (item m17375604755)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "mercari.com",
+          "advertised_price": "$26.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://us.amazon.com/N%C2%BA-0-Intensive-Bond-Building-Treatment/dp/B09P5HJMTD",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon.com (ASIN B09P5HJMTD, currently unavailable)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.com",
+          "advertised_price": "Currently unavailable"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://amazon.com/Olaplex-No-0-Intensive-Building-Treatment/dp/B08HTNRZMH",
+            "title": "Olaplex N\u00b0.0 Intensive Bond Building Hair Treatment ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/644898657",
+            "title": "walmart_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz/251608564",
+            "title": "walmart_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/815205616",
+            "title": "walmart_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ulta.com/p/no0-intensive-bond-building-hair-treatment-deep-repair-strengthening-pimprod2029340?sku=2591013",
+            "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment for ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://olaplex.com/products/olaplex-n-0-intensive-bond-building-treatment-us",
+            "title": "N\u00ba.0 Intensive Bond Building Treatment",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://dermstore.com/p/olaplex-no.-0-intensive-bond-building-hair-treatment-for-deep-repair-and-strengthening-155ml/13716607?bvstate=pg%3A2%2Fct%3Ar&pageNumber=3&srsltid=AfmBOorfqZgY2-p0DebqWsmSfu7H6OumZJ7iW5Zk5n6yTOp9YrNubK-i",
+            "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://bloomingdales.com/shop/product/olaplex-no.0-intensive-bond-building-hair-treatment-5.2-oz.?ID=4076191",
+            "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://target.com/p/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-0-primes-hair-for-max-repair-an-unbreakable-bond/-/A-1005659349",
+            "title": "Olaplex No. 0 Intensive Bond Building Treatment (5.2 oz) #0",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://planetbeauty.com/products/olaplex-n-0-intensive-bond-building-treatment?srsltid=AfmBOoqR_k9THkhZ8rwE7WygmInmeZ36czvTpMfqNMDNaBAsq6FDbj6x",
+            "title": "Olaplex No.0 Intensive Bond Building Treatment",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://mybathandi.com/products/olaplex-n%C2%BA-0-intensive-bond-building-hair-treatment?srsltid=AfmBOophPVilsEI2GGtJ6d6l3igNr4rUM0K4IaSKfHRAvpd1HZVk2Gqr",
+            "title": "OLAPLEX N\u00ba.0 Intensive Bond Building Hair Treatment 155 ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://skinbeautifulrx.com/products/olaplex-no-0-intensive-bond-building-treatment?srsltid=AfmBOop-oiVo-Q4hO6KDajZgSwqh3ITMLVr25sh-RBZA7U8MPT3j6S9G",
+            "title": "Olaplex No. 0 Intensive Bond Building Treatment",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://jonathantssalon.com/product-page/olaplex-no-0-intense-bond-building-hair-treatment",
+            "title": "OLAPLEX No. 0 - Intense bond building hair treatment 5.2oz.",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://bigelowchemists.com/products/no-0-intensive-bond-builder-hair-treatment-spray-5-2-oz?srsltid=AfmBOorqiLSY7deuRT74bFdx4pZ7Y9OYe9DODd3feEN5h5tsaRky_3w-",
+            "title": "No. 0 Intensive Bond Builder Hair Treatment Spray",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://beautycarechoices.com/olaplex/no-0-intensive-bond-building-hair-treatment",
+            "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment 5.2oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://hermosabeauty.com/products/olaplex-no-0-intensive-bond-building-hair-treatment-5-2-oz-155-ml?srsltid=AfmBOootNpjEWuqxB-V3e3JFOtOIQltRLWN9scOuIiQBpm8hEBHHJcq-",
+            "title": "Olaplex No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://unitedsalonsupplies.com/products/olaplex-no-0-intensive-bond-builder-treatment-5-2-oz?srsltid=AfmBOorygu03Gn_QPYhtdn18k_tjBVtMrKbM1HhSZD7KNihZGPlRY2Sw",
+            "title": "Olaplex N\u00ba.0 Intensive Bond Builder Treatment 5.2 oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://jomashop.com/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-hair-care-850018802215.html?srsltid=AfmBOoq8Bd7PnvnANPJcSkp7LcVwrTGWDpDLrTyecjbEuQd2UUbz76rw",
+            "title": "Olaplex No. 0 Intensive Bond Building Treatment 5.2 oz ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://perfumesclub.us/en/olaplex/intensive-bond-building-hair-treatment-n0/p_028799",
+            "title": "Olaplex, N\u00ba0 INTENSIVE BOND BUILDING hair treatment",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/127924185937",
+            "title": "https://www.ebay.com/itm/127924185937",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/406231658279",
+            "title": "Olaplex No.0 Intensive Bond Building Hair Treatment ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://poshmark.com/listing/Olaplex-No-0-Intensive-Bond-Building-Hair-Treatment-For-All-Hair-Types-52-fl-oz-6409481b3676a19e9887258d?srsltid=AfmBOopQ0j4f2dUT6TfQdqY91uPl3VAgsCOYl9UDebVzkWCBnjSYdKxd",
+            "title": "Olaplex No Intensive Bond Building Hair Treatment For All ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://poshmark.com/listing/olaplex-no0-intensive-bond-building-treatment-5fe108fd163df4a129661624?srsltid=AfmBOoonqu_wC3R5F5xXcd9-R1fHxy-Z17MrWcRN8PsZ77nOBoGrUAiA",
+            "title": "Olaplex No Intensive Bond Building Treatment",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://mercari.com/us/item/m17375604755",
+            "title": "Olaplex Intensive Bond Building Hair",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://us.amazon.com/N%C2%BA-0-Intensive-Bond-Building-Treatment/dp/B09P5HJMTD",
+            "title": "Olaplex. N\u00ba.0 Intensive Bond Building Treatment",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Olaplex-No-0-Intensive-Building-Treatment/dp/B08HTNRZMH",
+                "title": "Olaplex N\u00b0.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "Olaplex N\u00b0.0 Intensive Bond Building Hair Treatment: ... 155 mL / 5.2 Fl Oz ... Amazon's Choice ... Ships from: Amazon.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Olaplex-No-0-Intensive-Building-Treatment/dp/B08HTNRZMH",
+                "title": "Olaplex N\u00b0.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "corpus-meta url: https://amazon.com/...dp/B08HTNRZMH"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Olaplex-No-0-Intensive-Building-Treatment/dp/B08HTNRZMH",
+                "title": "Olaplex N\u00b0.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "$30.00 $5.77 per fluid ounce ... Price $$30.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Olaplex-No-0-Intensive-Building-Treatment/dp/B08HTNRZMH",
+                "title": "Olaplex N\u00b0.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "$30.00 ... FREE delivery Saturday, July 25 on orders shipped by Amazon"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Olaplex-No-0-Intensive-Building-Treatment/dp/B08HTNRZMH",
+                "title": "Olaplex N\u00b0.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "corpus-meta url: https://amazon.com/...dp/B08HTNRZMH ... Olaplex N\u00b0.0 Intensive Bond Building Hair Treatment ... 155 mL / 5.2 Fl Oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Olaplex-No-0-Intensive-Building-Treatment/dp/B08HTNRZMH",
+                "title": "Olaplex N\u00b0.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "Amazon's Choice ... Ships from: Amazon.com ... FREE delivery Saturday, July 25"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Olaplex-No-0-Intensive-Building-Treatment/dp/B08HTNRZMH",
+                "title": "Olaplex N\u00b0.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "Ships from: Amazon.com ... FREE delivery Saturday, July 25 on orders shipped by Amazon over $35"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Olaplex-No-0-Intensive-Building-Treatment/dp/B08HTNRZMH",
+                "title": "Olaplex N\u00b0.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/644898657",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "seller_name: FRESH DROPLETS ... product_url: https://www.walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/644898657"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/644898657",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "product_url: https://www.walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/644898657"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/644898657",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "price: 22.5 ... was_price: 30 ... unit_price: $4.33/oz ... product_price_currency: USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/644898657",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "variants[0].product_price_currency: USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/644898657",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "product_url: https://www.walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/644898657"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/644898657",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "seller_name: FRESH DROPLETS ... seller_id: 1320BBC252E04689869A5361A9D71627"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/644898657",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "variants[0].product_availability: IN_STOCK ... availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/644898657",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz/251608564",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "seller_name: Maison Rouge ... product_url: https://www.walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz/251608564"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz/251608564",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "product_url: https://www.walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz/251608564"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz/251608564",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "price: 24 ... was_price: 30 ... unit_price: $4.62/fl oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz/251608564",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "product_price_currency implied USD; unit_price $4.62/fl oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz/251608564",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "product_url: https://www.walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz/251608564"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz/251608564",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "seller_name: Maison Rouge ... seller_id: EA9982DFBAF24948A74E4382C14CD9E6"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz/251608564",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "availability: true ... fulfillment_is_low_in_stock: false"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-5-2-oz/251608564",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/815205616",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "seller_name: UtieeBeautyStore ... product_url: https://www.walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/815205616"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/815205616",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "product_url: https://www.walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/815205616"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/815205616",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "price: 21.23 ... was_price: 30 ... unit_price: $4.08/fl oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/815205616",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "unit_price $4.08/fl oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/815205616",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "product_url: https://www.walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/815205616"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/815205616",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "seller_name: UtieeBeautyStore ... seller_id: B34D085A86384568A72E53835B2D47D6"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/815205616",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "availability: true ... fulfillment_is_low_in_stock: false"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Olaplex-No-0-Intensive-Bond-Building-Treatment-with-Trigger-5-2-oz/815205616",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no0-intensive-bond-building-hair-treatment-deep-repair-strengthening-pimprod2029340?sku=2591013",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment for ...",
+                "excerpts": [
+                  "$30.00 ... Size:5.2 oz ... Sale Price $28.50 ... List Price $30.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no0-intensive-bond-building-hair-treatment-deep-repair-strengthening-pimprod2029340?sku=2591013",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment for ...",
+                "excerpts": [
+                  "$30.00 ... List Price $30.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no0-intensive-bond-building-hair-treatment-deep-repair-strengthening-pimprod2029340?sku=2591013",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment for ...",
+                "excerpts": [
+                  "ShipFree standard shipping over $35 ... Add to cart ... Size:5.2 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no0-intensive-bond-building-hair-treatment-deep-repair-strengthening-pimprod2029340?sku=2591013",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment for ...",
+                "excerpts": [
+                  "corpus-meta url: https://ulta.com/p/no0-intensive-bond-building-hair-treatment-deep-repair-strength..."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no0-intensive-bond-building-hair-treatment-deep-repair-strengthening-pimprod2029340?sku=2591013",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment for ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no0-intensive-bond-building-hair-treatment-deep-repair-strengthening-pimprod2029340?sku=2591013",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment for ...",
+                "excerpts": [
+                  "corpus-meta url: https://ulta.com/p/no0-intensive-bond-building-hair-treatment..."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no0-intensive-bond-building-hair-treatment-deep-repair-strengthening-pimprod2029340?sku=2591013",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment for ...",
+                "excerpts": [
+                  "corpus-meta url: https://ulta.com/p/no0-intensive-bond-building-hair-treatment-deep-repair-strength"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ulta.com/p/no0-intensive-bond-building-hair-treatment-deep-repair-strengthening-pimprod2029340?sku=2591013",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment for ...",
+                "excerpts": [
+                  "corpus-meta source_intent: official (ulta.com); major authorized beauty retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-0-intensive-bond-building-treatment-us",
+                "title": "N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "Regular price $30"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-0-intensive-bond-building-treatment-us",
+                "title": "N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "Free Shipping on $50+. ... Regular price $30"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-0-intensive-bond-building-treatment-us",
+                "title": "N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "Free Shipping on $50+. [Shop Now] ... Free Summer Travel Set with a $100+ order. [Code: SHINE]"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-0-intensive-bond-building-treatment-us",
+                "title": "N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://olaplex.com/products/olaplex-n-0-intensive-bond-building-treatment-us"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-0-intensive-bond-building-treatment-us",
+                "title": "N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-0-intensive-bond-building-treatment-us",
+                "title": "N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://olaplex.com/products/olaplex-n-0-intensive-bond-building-treatment-us"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-0-intensive-bond-building-treatment-us",
+                "title": "N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://olaplex.com/products/olaplex-n-0-intensive-bond-building-treatment-us (brand's own store)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://olaplex.com/products/olaplex-n-0-intensive-bond-building-treatment-us",
+                "title": "N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://olaplex.com/... (brand's own storefront)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-0-intensive-bond-building-hair-treatment-for-deep-repair-and-strengthening-155ml/13716607?bvstate=pg%3A2%2Fct%3Ar&pageNumber=3&srsltid=AfmBOorfqZgY2-p0DebqWsmSfu7H6OumZJ7iW5Zk5n6yTOp9YrNubK-i",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "Olaplex No. 0 Intensive Bond Building Hair Treatment for Deep Repair and Strengthening 155ml ... $30.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-0-intensive-bond-building-hair-treatment-for-deep-repair-and-strengthening-155ml/13716607?bvstate=pg%3A2%2Fct%3Ar&pageNumber=3&srsltid=AfmBOorfqZgY2-p0DebqWsmSfu7H6OumZJ7iW5Zk5n6yTOp9YrNubK-i",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "$30.00 ... Or 4 interest free payments of $7.50 with"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-0-intensive-bond-building-hair-treatment-for-deep-repair-and-strengthening-155ml/13716607?bvstate=pg%3A2%2Fct%3Ar&pageNumber=3&srsltid=AfmBOorfqZgY2-p0DebqWsmSfu7H6OumZJ7iW5Zk5n6yTOp9YrNubK-i",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "FREE US Shipping $50+ ... Free delivery is available on all orders over $50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-0-intensive-bond-building-hair-treatment-for-deep-repair-and-strengthening-155ml/13716607?bvstate=pg%3A2%2Fct%3Ar&pageNumber=3&srsltid=AfmBOorfqZgY2-p0DebqWsmSfu7H6OumZJ7iW5Zk5n6yTOp9YrNubK-i",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "corpus-meta url: https://dermstore.com/p/olaplex-no.-0-intensive-bond-building-hair-treatment-for-deep-repair-and-strengthening-155ml/13716607"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-0-intensive-bond-building-hair-treatment-for-deep-repair-and-strengthening-155ml/13716607?bvstate=pg%3A2%2Fct%3Ar&pageNumber=3&srsltid=AfmBOorfqZgY2-p0DebqWsmSfu7H6OumZJ7iW5Zk5n6yTOp9YrNubK-i",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-0-intensive-bond-building-hair-treatment-for-deep-repair-and-strengthening-155ml/13716607?bvstate=pg%3A2%2Fct%3Ar&pageNumber=3&srsltid=AfmBOorfqZgY2-p0DebqWsmSfu7H6OumZJ7iW5Zk5n6yTOp9YrNubK-i",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "corpus-meta url: https://dermstore.com/p/olaplex-no.-0-intensive-bond-building-hair-treatment-for-deep-repair-and-strengthening-155ml/13716607"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-0-intensive-bond-building-hair-treatment-for-deep-repair-and-strengthening-155ml/13716607?bvstate=pg%3A2%2Fct%3Ar&pageNumber=3&srsltid=AfmBOorfqZgY2-p0DebqWsmSfu7H6OumZJ7iW5Zk5n6yTOp9YrNubK-i",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "corpus-meta url: https://dermstore.com/... (authorized skincare/beauty retailer)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dermstore.com/p/olaplex-no.-0-intensive-bond-building-hair-treatment-for-deep-repair-and-strengthening-155ml/13716607?bvstate=pg%3A2%2Fct%3Ar&pageNumber=3&srsltid=AfmBOorfqZgY2-p0DebqWsmSfu7H6OumZJ7iW5Zk5n6yTOp9YrNubK-i",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "corpus-meta source_intent: other; Dermstore is an authorized beauty e-tailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bloomingdales.com/shop/product/olaplex-no.0-intensive-bond-building-hair-treatment-5.2-oz.?ID=4076191",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "OLAPLEX No.0 Intensive Bond Building Hair Treatment 5.2 oz. ... $30.00 ... Add To Bag Buy Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bloomingdales.com/shop/product/olaplex-no.0-intensive-bond-building-hair-treatment-5.2-oz.?ID=4076191",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "$30.00 ... Add To Bag Buy Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bloomingdales.com/shop/product/olaplex-no.0-intensive-bond-building-hair-treatment-5.2-oz.?ID=4076191",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "Add To Bag Buy Now ... Direct from vendor ... Arrives by Mon 7/27 ... Eligible for Same-Day Delivery. Order by 12PM."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bloomingdales.com/shop/product/olaplex-no.0-intensive-bond-building-hair-treatment-5.2-oz.?ID=4076191",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "corpus-meta url: https://bloomingdales.com/shop/product/olaplex-no.0-intensive-bond-building-hair-treatment-5.2-oz.?ID=4076191"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bloomingdales.com/shop/product/olaplex-no.0-intensive-bond-building-hair-treatment-5.2-oz.?ID=4076191",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bloomingdales.com/shop/product/olaplex-no.0-intensive-bond-building-hair-treatment-5.2-oz.?ID=4076191",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "corpus-meta url: https://bloomingdales.com/shop/product/olaplex-no.0-intensive-bond-building-hair-treatment-5.2-oz.?ID=4076191"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bloomingdales.com/shop/product/olaplex-no.0-intensive-bond-building-hair-treatment-5.2-oz.?ID=4076191",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "corpus-meta url: https://bloomingdales.com/shop/product/...ID=4076191"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bloomingdales.com/shop/product/olaplex-no.0-intensive-bond-building-hair-treatment-5.2-oz.?ID=4076191",
+                "title": "OLAPLEX No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "corpus-meta source_intent: official (bloomingdales.com); major authorized department store"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-0-primes-hair-for-max-repair-an-unbreakable-bond/-/A-1005659349",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment (5.2 oz) #0",
+                "excerpts": [
+                  "Olaplex No. 0 Intensive Bond Building Treatment (5.2 oz) #0 | Primes Hair for Max Repair | An Unbreakable Bond ... Add to cart (price not rendered in extracted page)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "low",
+            "reasoning": "Value failed schema validation",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-0-primes-hair-for-max-repair-an-unbreakable-bond/-/A-1005659349",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment (5.2 oz) #0",
+                "excerpts": [
+                  "corpus-meta url: https://target.com/p/olaplex-no-0-intensive-bond-building-treatment-5.2-oz... (US retailer, USD)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-0-primes-hair-for-max-repair-an-unbreakable-bond/-/A-1005659349",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment (5.2 oz) #0",
+                "excerpts": [
+                  "Add to cart ... Sold & shipped by SleekShop"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-0-primes-hair-for-max-repair-an-unbreakable-bond/-/A-1005659349",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment (5.2 oz) #0",
+                "excerpts": [
+                  "corpus-meta url: https://target.com/p/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-0-primes-hair-for-max-repair-an-unbreakable-bond/-/A-1005659349"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-0-primes-hair-for-max-repair-an-unbreakable-bond/-/A-1005659349",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment (5.2 oz) #0",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-0-primes-hair-for-max-repair-an-unbreakable-bond/-/A-1005659349",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment (5.2 oz) #0",
+                "excerpts": [
+                  "corpus-meta url: https://target.com/p/olaplex-no-0-intensive-bond-building-treatment-5.2-oz..."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-0-primes-hair-for-max-repair-an-unbreakable-bond/-/A-1005659349",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment (5.2 oz) #0",
+                "excerpts": [
+                  "Sold & shipped by SleekShop ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-0-primes-hair-for-max-repair-an-unbreakable-bond/-/A-1005659349",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment (5.2 oz) #0",
+                "excerpts": [
+                  "Sold & shipped by SleekShop (third-party seller on Target Plus marketplace)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://planetbeauty.com/products/olaplex-n-0-intensive-bond-building-treatment?srsltid=AfmBOoqR_k9THkhZ8rwE7WygmInmeZ36czvTpMfqNMDNaBAsq6FDbj6x",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "$30.00 ... 5.2 oz - $30.00 USD ... Select SIZE: 5.2 oz ... Sold Out"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://planetbeauty.com/products/olaplex-n-0-intensive-bond-building-treatment?srsltid=AfmBOoqR_k9THkhZ8rwE7WygmInmeZ36czvTpMfqNMDNaBAsq6FDbj6x",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "5.2 oz - $30.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://planetbeauty.com/products/olaplex-n-0-intensive-bond-building-treatment?srsltid=AfmBOoqR_k9THkhZ8rwE7WygmInmeZ36czvTpMfqNMDNaBAsq6FDbj6x",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "Sold Out"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://planetbeauty.com/products/olaplex-n-0-intensive-bond-building-treatment?srsltid=AfmBOoqR_k9THkhZ8rwE7WygmInmeZ36czvTpMfqNMDNaBAsq6FDbj6x",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://planetbeauty.com/products/olaplex-n-0-intensive-bond-building-treatment"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://planetbeauty.com/products/olaplex-n-0-intensive-bond-building-treatment?srsltid=AfmBOoqR_k9THkhZ8rwE7WygmInmeZ36czvTpMfqNMDNaBAsq6FDbj6x",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://planetbeauty.com/products/olaplex-n-0-intensive-bond-building-treatment?srsltid=AfmBOoqR_k9THkhZ8rwE7WygmInmeZ36czvTpMfqNMDNaBAsq6FDbj6x",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://planetbeauty.com/products/olaplex-n-0-intensive-bond-building-treatment"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://planetbeauty.com/products/olaplex-n-0-intensive-bond-building-treatment?srsltid=AfmBOoqR_k9THkhZ8rwE7WygmInmeZ36czvTpMfqNMDNaBAsq6FDbj6x",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://planetbeauty.com/products/olaplex-n-0-intensive-bond-building-treatment (Planet Beauty independent beauty retailer)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://planetbeauty.com/products/olaplex-n-0-intensive-bond-building-treatment?srsltid=AfmBOoqR_k9THkhZ8rwE7WygmInmeZ36czvTpMfqNMDNaBAsq6FDbj6x",
+                "title": "Olaplex No.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta source_intent: other; independent beauty e-commerce store (Shopify-based)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybathandi.com/products/olaplex-n%C2%BA-0-intensive-bond-building-hair-treatment?srsltid=AfmBOophPVilsEI2GGtJ6d6l3igNr4rUM0K4IaSKfHRAvpd1HZVk2Gqr",
+                "title": "OLAPLEX N\u00ba.0 Intensive Bond Building Hair Treatment 155 ...",
+                "excerpts": [
+                  "OLAPLEX N\u00ba.0 Intensive Bond Building Hair Treatment 155 ml / 5.2 fl.oz ... $30.00 ... Subtotal: $30.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybathandi.com/products/olaplex-n%C2%BA-0-intensive-bond-building-hair-treatment?srsltid=AfmBOophPVilsEI2GGtJ6d6l3igNr4rUM0K4IaSKfHRAvpd1HZVk2Gqr",
+                "title": "OLAPLEX N\u00ba.0 Intensive Bond Building Hair Treatment 155 ...",
+                "excerpts": [
+                  "$30.00 ... Subtotal: $30.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybathandi.com/products/olaplex-n%C2%BA-0-intensive-bond-building-hair-treatment?srsltid=AfmBOophPVilsEI2GGtJ6d6l3igNr4rUM0K4IaSKfHRAvpd1HZVk2Gqr",
+                "title": "OLAPLEX N\u00ba.0 Intensive Bond Building Hair Treatment 155 ...",
+                "excerpts": [
+                  "$30.00 ... Subtotal: $30.00 (product available for purchase)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybathandi.com/products/olaplex-n%C2%BA-0-intensive-bond-building-hair-treatment?srsltid=AfmBOophPVilsEI2GGtJ6d6l3igNr4rUM0K4IaSKfHRAvpd1HZVk2Gqr",
+                "title": "OLAPLEX N\u00ba.0 Intensive Bond Building Hair Treatment 155 ...",
+                "excerpts": [
+                  "corpus-meta url: https://mybathandi.com/products/olaplex-n%C2%BA-0-intensive-bond-building-hair-treatment"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybathandi.com/products/olaplex-n%C2%BA-0-intensive-bond-building-hair-treatment?srsltid=AfmBOophPVilsEI2GGtJ6d6l3igNr4rUM0K4IaSKfHRAvpd1HZVk2Gqr",
+                "title": "OLAPLEX N\u00ba.0 Intensive Bond Building Hair Treatment 155 ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybathandi.com/products/olaplex-n%C2%BA-0-intensive-bond-building-hair-treatment?srsltid=AfmBOophPVilsEI2GGtJ6d6l3igNr4rUM0K4IaSKfHRAvpd1HZVk2Gqr",
+                "title": "OLAPLEX N\u00ba.0 Intensive Bond Building Hair Treatment 155 ...",
+                "excerpts": [
+                  "corpus-meta url: https://mybathandi.com/products/olaplex-n\u00ba-0-intensive-bond-building-hair-treatment"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybathandi.com/products/olaplex-n%C2%BA-0-intensive-bond-building-hair-treatment?srsltid=AfmBOophPVilsEI2GGtJ6d6l3igNr4rUM0K4IaSKfHRAvpd1HZVk2Gqr",
+                "title": "OLAPLEX N\u00ba.0 Intensive Bond Building Hair Treatment 155 ...",
+                "excerpts": [
+                  "corpus-meta url: https://mybathandi.com/products/... (My Bath & I independent store)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mybathandi.com/products/olaplex-n%C2%BA-0-intensive-bond-building-hair-treatment?srsltid=AfmBOophPVilsEI2GGtJ6d6l3igNr4rUM0K4IaSKfHRAvpd1HZVk2Gqr",
+                "title": "OLAPLEX N\u00ba.0 Intensive Bond Building Hair Treatment 155 ...",
+                "excerpts": [
+                  "corpus-meta source_intent: official; independent Shopify-based bath/beauty store"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-0-intensive-bond-building-treatment?srsltid=AfmBOop-oiVo-Q4hO6KDajZgSwqh3ITMLVr25sh-RBZA7U8MPT3j6S9G",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "$30.00 ... Pay in 4 interest-free payments of $7.50 ... price: 3000 ... available: true ... barcode: 850018802208"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-0-intensive-bond-building-treatment?srsltid=AfmBOop-oiVo-Q4hO6KDajZgSwqh3ITMLVr25sh-RBZA7U8MPT3j6S9G",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "$30.00 ... Pay in 4 interest-free payments of $7.50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-0-intensive-bond-building-treatment?srsltid=AfmBOop-oiVo-Q4hO6KDajZgSwqh3ITMLVr25sh-RBZA7U8MPT3j6S9G",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "\"available\":true ... \"requires_shipping\":true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-0-intensive-bond-building-treatment?srsltid=AfmBOop-oiVo-Q4hO6KDajZgSwqh3ITMLVr25sh-RBZA7U8MPT3j6S9G",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://skinbeautifulrx.com/products/olaplex-no-0-intensive-bond-building-treatment"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-0-intensive-bond-building-treatment?srsltid=AfmBOop-oiVo-Q4hO6KDajZgSwqh3ITMLVr25sh-RBZA7U8MPT3j6S9G",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-0-intensive-bond-building-treatment?srsltid=AfmBOop-oiVo-Q4hO6KDajZgSwqh3ITMLVr25sh-RBZA7U8MPT3j6S9G",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://skinbeautifulrx.com/products/olaplex-no-0-intensive-bond-building-treatment"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-0-intensive-bond-building-treatment?srsltid=AfmBOop-oiVo-Q4hO6KDajZgSwqh3ITMLVr25sh-RBZA7U8MPT3j6S9G",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://skinbeautifulrx.com/products/... (Skin Beautiful RX independent store)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skinbeautifulrx.com/products/olaplex-no-0-intensive-bond-building-treatment?srsltid=AfmBOop-oiVo-Q4hO6KDajZgSwqh3ITMLVr25sh-RBZA7U8MPT3j6S9G",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta source_intent: other; independent skincare/beauty e-commerce (Shopify)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jonathantssalon.com/product-page/olaplex-no-0-intense-bond-building-hair-treatment",
+                "title": "OLAPLEX No. 0 - Intense bond building hair treatment 5.2oz.",
+                "excerpts": [
+                  "OLAPLEX No. 0 - Intense bond building hair treatment 5.2oz. ... $30.00Price ... Add to Cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jonathantssalon.com/product-page/olaplex-no-0-intense-bond-building-hair-treatment",
+                "title": "OLAPLEX No. 0 - Intense bond building hair treatment 5.2oz.",
+                "excerpts": [
+                  "$30.00Price"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jonathantssalon.com/product-page/olaplex-no-0-intense-bond-building-hair-treatment",
+                "title": "OLAPLEX No. 0 - Intense bond building hair treatment 5.2oz.",
+                "excerpts": [
+                  "$30.00Price ... Add to Cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jonathantssalon.com/product-page/olaplex-no-0-intense-bond-building-hair-treatment",
+                "title": "OLAPLEX No. 0 - Intense bond building hair treatment 5.2oz.",
+                "excerpts": [
+                  "corpus-meta url: https://jonathantssalon.com/product-page/olaplex-no-0-intense-bond-building-hair-treatment"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jonathantssalon.com/product-page/olaplex-no-0-intense-bond-building-hair-treatment",
+                "title": "OLAPLEX No. 0 - Intense bond building hair treatment 5.2oz.",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jonathantssalon.com/product-page/olaplex-no-0-intense-bond-building-hair-treatment",
+                "title": "OLAPLEX No. 0 - Intense bond building hair treatment 5.2oz.",
+                "excerpts": [
+                  "corpus-meta url: https://jonathantssalon.com/product-page/olaplex-no-0-intense-bond-building-hair-treatment"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jonathantssalon.com/product-page/olaplex-no-0-intense-bond-building-hair-treatment",
+                "title": "OLAPLEX No. 0 - Intense bond building hair treatment 5.2oz.",
+                "excerpts": [
+                  "corpus-meta url: https://jonathantssalon.com/product-page/... (Jonathan T's Salon)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jonathantssalon.com/product-page/olaplex-no-0-intense-bond-building-hair-treatment",
+                "title": "OLAPLEX No. 0 - Intense bond building hair treatment 5.2oz.",
+                "excerpts": [
+                  "corpus-meta source_intent: other; independent hair salon with Wix e-commerce"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bigelowchemists.com/products/no-0-intensive-bond-builder-hair-treatment-spray-5-2-oz?srsltid=AfmBOorqiLSY7deuRT74bFdx4pZ7Y9OYe9DODd3feEN5h5tsaRky_3w-",
+                "title": "No. 0 Intensive Bond Builder Hair Treatment Spray",
+                "excerpts": [
+                  "$30.00 ... 5.2 fl oz / 155 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bigelowchemists.com/products/no-0-intensive-bond-builder-hair-treatment-spray-5-2-oz?srsltid=AfmBOorqiLSY7deuRT74bFdx4pZ7Y9OYe9DODd3feEN5h5tsaRky_3w-",
+                "title": "No. 0 Intensive Bond Builder Hair Treatment Spray",
+                "excerpts": [
+                  "$30.00 ... Free Shipping & Samples in the US with BigelowChemists.com Orders of $49+"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bigelowchemists.com/products/no-0-intensive-bond-builder-hair-treatment-spray-5-2-oz?srsltid=AfmBOorqiLSY7deuRT74bFdx4pZ7Y9OYe9DODd3feEN5h5tsaRky_3w-",
+                "title": "No. 0 Intensive Bond Builder Hair Treatment Spray",
+                "excerpts": [
+                  "$30.00 ... 5.2 fl oz / 155 ml (product listed for purchase)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bigelowchemists.com/products/no-0-intensive-bond-builder-hair-treatment-spray-5-2-oz?srsltid=AfmBOorqiLSY7deuRT74bFdx4pZ7Y9OYe9DODd3feEN5h5tsaRky_3w-",
+                "title": "No. 0 Intensive Bond Builder Hair Treatment Spray",
+                "excerpts": [
+                  "corpus-meta url: https://bigelowchemists.com/products/no-0-intensive-bond-builder-hair-treatment-spray-5-2-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bigelowchemists.com/products/no-0-intensive-bond-builder-hair-treatment-spray-5-2-oz?srsltid=AfmBOorqiLSY7deuRT74bFdx4pZ7Y9OYe9DODd3feEN5h5tsaRky_3w-",
+                "title": "No. 0 Intensive Bond Builder Hair Treatment Spray",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bigelowchemists.com/products/no-0-intensive-bond-builder-hair-treatment-spray-5-2-oz?srsltid=AfmBOorqiLSY7deuRT74bFdx4pZ7Y9OYe9DODd3feEN5h5tsaRky_3w-",
+                "title": "No. 0 Intensive Bond Builder Hair Treatment Spray",
+                "excerpts": [
+                  "corpus-meta url: https://bigelowchemists.com/products/no-0-intensive-bond-builder-hair-treatment-spray-5-2-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bigelowchemists.com/products/no-0-intensive-bond-builder-hair-treatment-spray-5-2-oz?srsltid=AfmBOorqiLSY7deuRT74bFdx4pZ7Y9OYe9DODd3feEN5h5tsaRky_3w-",
+                "title": "No. 0 Intensive Bond Builder Hair Treatment Spray",
+                "excerpts": [
+                  "corpus-meta url: https://bigelowchemists.com/products/... (Bigelow Chemists apothecary)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bigelowchemists.com/products/no-0-intensive-bond-builder-hair-treatment-spray-5-2-oz?srsltid=AfmBOorqiLSY7deuRT74bFdx4pZ7Y9OYe9DODd3feEN5h5tsaRky_3w-",
+                "title": "No. 0 Intensive Bond Builder Hair Treatment Spray",
+                "excerpts": [
+                  "corpus-meta source_intent: other; independent apothecary/beauty store (Bigelow Chemists NYC)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-0-intensive-bond-building-hair-treatment",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment 5.2oz",
+                "excerpts": [
+                  "Olaplex No. 0 Intensive Bond Building Hair Treatment 5.2oz ... Size: 5.2 oz ... $30.00 ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-0-intensive-bond-building-hair-treatment",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment 5.2oz",
+                "excerpts": [
+                  "$30.00 ... Free Shipping on all orders over $59 USD!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-0-intensive-bond-building-hair-treatment",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment 5.2oz",
+                "excerpts": [
+                  "$30.00 ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-0-intensive-bond-building-hair-treatment",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment 5.2oz",
+                "excerpts": [
+                  "corpus-meta url: https://beautycarechoices.com/olaplex/no-0-intensive-bond-building-hair-treatment"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-0-intensive-bond-building-hair-treatment",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment 5.2oz",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-0-intensive-bond-building-hair-treatment",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment 5.2oz",
+                "excerpts": [
+                  "corpus-meta url: https://beautycarechoices.com/olaplex/no-0-intensive-bond-building-hair-treatment"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-0-intensive-bond-building-hair-treatment",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment 5.2oz",
+                "excerpts": [
+                  "corpus-meta url: https://beautycarechoices.com/olaplex/no-0-intensive-bond-building-hair-treatment (Beauty Care Choices)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beautycarechoices.com/olaplex/no-0-intensive-bond-building-hair-treatment",
+                "title": "Olaplex No. 0 Intensive Bond Building Hair Treatment 5.2oz",
+                "excerpts": [
+                  "corpus-meta source_intent: other; independent online beauty retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hermosabeauty.com/products/olaplex-no-0-intensive-bond-building-hair-treatment-5-2-oz-155-ml?srsltid=AfmBOootNpjEWuqxB-V3e3JFOtOIQltRLWN9scOuIiQBpm8hEBHHJcq-",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "Olaplex No.0 Intensive Bond Building Hair Treatment 5.2 oz / 155 ml ... $27.00 $30.00 ... Add to Cart ... Buy it now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hermosabeauty.com/products/olaplex-no-0-intensive-bond-building-hair-treatment-5-2-oz-155-ml?srsltid=AfmBOootNpjEWuqxB-V3e3JFOtOIQltRLWN9scOuIiQBpm8hEBHHJcq-",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "$27.00 $30.00 ... Pay in 4 payments of $6.75 with"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hermosabeauty.com/products/olaplex-no-0-intensive-bond-building-hair-treatment-5-2-oz-155-ml?srsltid=AfmBOootNpjEWuqxB-V3e3JFOtOIQltRLWN9scOuIiQBpm8hEBHHJcq-",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "$27.00 $30.00 ... Add to Cart ... Buy it now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hermosabeauty.com/products/olaplex-no-0-intensive-bond-building-hair-treatment-5-2-oz-155-ml?srsltid=AfmBOootNpjEWuqxB-V3e3JFOtOIQltRLWN9scOuIiQBpm8hEBHHJcq-",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "corpus-meta url: https://hermosabeauty.com/products/olaplex-no-0-intensive-bond-building-hair-treatment-5-2-oz-155-ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hermosabeauty.com/products/olaplex-no-0-intensive-bond-building-hair-treatment-5-2-oz-155-ml?srsltid=AfmBOootNpjEWuqxB-V3e3JFOtOIQltRLWN9scOuIiQBpm8hEBHHJcq-",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hermosabeauty.com/products/olaplex-no-0-intensive-bond-building-hair-treatment-5-2-oz-155-ml?srsltid=AfmBOootNpjEWuqxB-V3e3JFOtOIQltRLWN9scOuIiQBpm8hEBHHJcq-",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "corpus-meta url: https://hermosabeauty.com/products/olaplex-no-0-intensive-bond-building-hair-treatment-5-2-oz-155-ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hermosabeauty.com/products/olaplex-no-0-intensive-bond-building-hair-treatment-5-2-oz-155-ml?srsltid=AfmBOootNpjEWuqxB-V3e3JFOtOIQltRLWN9scOuIiQBpm8hEBHHJcq-",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "corpus-meta url: https://hermosabeauty.com/products/... (Hermosa Beauty independent store)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hermosabeauty.com/products/olaplex-no-0-intensive-bond-building-hair-treatment-5-2-oz-155-ml?srsltid=AfmBOootNpjEWuqxB-V3e3JFOtOIQltRLWN9scOuIiQBpm8hEBHHJcq-",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment 5.2 ...",
+                "excerpts": [
+                  "corpus-meta source_intent: other; independent online beauty retailer (Shopify)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://unitedsalonsupplies.com/products/olaplex-no-0-intensive-bond-builder-treatment-5-2-oz?srsltid=AfmBOorygu03Gn_QPYhtdn18k_tjBVtMrKbM1HhSZD7KNihZGPlRY2Sw",
+                "title": "Olaplex N\u00ba.0 Intensive Bond Builder Treatment 5.2 oz",
+                "excerpts": [
+                  "Olaplex N\u00ba.0 Intensive Bond Builder Treatment 5.2 oz ... Regular price $21.99 ~$43.98~ | (50% off)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://unitedsalonsupplies.com/products/olaplex-no-0-intensive-bond-builder-treatment-5-2-oz?srsltid=AfmBOorygu03Gn_QPYhtdn18k_tjBVtMrKbM1HhSZD7KNihZGPlRY2Sw",
+                "title": "Olaplex N\u00ba.0 Intensive Bond Builder Treatment 5.2 oz",
+                "excerpts": [
+                  "Regular price $21.99 ... ALL ORDERS SHIPPED FROM USA"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://unitedsalonsupplies.com/products/olaplex-no-0-intensive-bond-builder-treatment-5-2-oz?srsltid=AfmBOorygu03Gn_QPYhtdn18k_tjBVtMrKbM1HhSZD7KNihZGPlRY2Sw",
+                "title": "Olaplex N\u00ba.0 Intensive Bond Builder Treatment 5.2 oz",
+                "excerpts": [
+                  "Regular price $21.99 ~$43.98~ | (50% off) (listed for sale)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://unitedsalonsupplies.com/products/olaplex-no-0-intensive-bond-builder-treatment-5-2-oz?srsltid=AfmBOorygu03Gn_QPYhtdn18k_tjBVtMrKbM1HhSZD7KNihZGPlRY2Sw",
+                "title": "Olaplex N\u00ba.0 Intensive Bond Builder Treatment 5.2 oz",
+                "excerpts": [
+                  "corpus-meta url: https://unitedsalonsupplies.com/products/olaplex-no-0-intensive-bond-builder-treatment-5-2-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://unitedsalonsupplies.com/products/olaplex-no-0-intensive-bond-builder-treatment-5-2-oz?srsltid=AfmBOorygu03Gn_QPYhtdn18k_tjBVtMrKbM1HhSZD7KNihZGPlRY2Sw",
+                "title": "Olaplex N\u00ba.0 Intensive Bond Builder Treatment 5.2 oz",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://unitedsalonsupplies.com/products/olaplex-no-0-intensive-bond-builder-treatment-5-2-oz?srsltid=AfmBOorygu03Gn_QPYhtdn18k_tjBVtMrKbM1HhSZD7KNihZGPlRY2Sw",
+                "title": "Olaplex N\u00ba.0 Intensive Bond Builder Treatment 5.2 oz",
+                "excerpts": [
+                  "corpus-meta url: https://unitedsalonsupplies.com/products/olaplex-no-0-intensive-bond-builder-treatment-5-2-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://unitedsalonsupplies.com/products/olaplex-no-0-intensive-bond-builder-treatment-5-2-oz?srsltid=AfmBOorygu03Gn_QPYhtdn18k_tjBVtMrKbM1HhSZD7KNihZGPlRY2Sw",
+                "title": "Olaplex N\u00ba.0 Intensive Bond Builder Treatment 5.2 oz",
+                "excerpts": [
+                  "corpus-meta url: https://unitedsalonsupplies.com/products/... (United Salon Supplies discounter)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://unitedsalonsupplies.com/products/olaplex-no-0-intensive-bond-builder-treatment-5-2-oz?srsltid=AfmBOorygu03Gn_QPYhtdn18k_tjBVtMrKbM1HhSZD7KNihZGPlRY2Sw",
+                "title": "Olaplex N\u00ba.0 Intensive Bond Builder Treatment 5.2 oz",
+                "excerpts": [
+                  "Regular price $21.99 ~$43.98~ | (50% off) ... FREE SHIPPING ON ORDERS OF $89 AND MORE (discount discounter)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-hair-care-850018802215.html?srsltid=AfmBOoq8Bd7PnvnANPJcSkp7LcVwrTGWDpDLrTyecjbEuQd2UUbz76rw",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "No. 0 Intensive Bond Building Treatment 5.2 oz Hair Care 850018802215 ... Retail $30.00 ... Asking $28.50 ... $27.08 ... Free shipping over $100"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-hair-care-850018802215.html?srsltid=AfmBOoq8Bd7PnvnANPJcSkp7LcVwrTGWDpDLrTyecjbEuQd2UUbz76rw",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "Retail $30.00 ... Asking $28.50 ... $27.08 (USD)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-hair-care-850018802215.html?srsltid=AfmBOoq8Bd7PnvnANPJcSkp7LcVwrTGWDpDLrTyecjbEuQd2UUbz76rw",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "$27.08 ... Free shipping over $100 (listed for sale)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-hair-care-850018802215.html?srsltid=AfmBOoq8Bd7PnvnANPJcSkp7LcVwrTGWDpDLrTyecjbEuQd2UUbz76rw",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "corpus-meta url: https://jomashop.com/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-hair-care-850018802215.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-hair-care-850018802215.html?srsltid=AfmBOoq8Bd7PnvnANPJcSkp7LcVwrTGWDpDLrTyecjbEuQd2UUbz76rw",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-hair-care-850018802215.html?srsltid=AfmBOoq8Bd7PnvnANPJcSkp7LcVwrTGWDpDLrTyecjbEuQd2UUbz76rw",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "corpus-meta url: https://jomashop.com/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-hair-care-850018802215.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-hair-care-850018802215.html?srsltid=AfmBOoq8Bd7PnvnANPJcSkp7LcVwrTGWDpDLrTyecjbEuQd2UUbz76rw",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "corpus-meta url: https://jomashop.com/olaplex-no-0-intensive-bond-building-treatment-... (Jomashop discounter/flash-sale site)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/olaplex-no-0-intensive-bond-building-treatment-5-2-oz-hair-care-850018802215.html?srsltid=AfmBOoq8Bd7PnvnANPJcSkp7LcVwrTGWDpDLrTyecjbEuQd2UUbz76rw",
+                "title": "Olaplex No. 0 Intensive Bond Building Treatment 5.2 oz ...",
+                "excerpts": [
+                  "Retail $30.00 Asking $28.50 $27.08 ... Free shipping over $100 (discount/flash-sale retailer)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.us/en/olaplex/intensive-bond-building-hair-treatment-n0/p_028799",
+                "title": "Olaplex, N\u00ba0 INTENSIVE BOND BUILDING hair treatment",
+                "excerpts": [
+                  "Olaplex, N\u00ba0 INTENSIVE BOND BUILDING hair treatment , $ 23.19 Add to cart ... 5.2 fl oz ... $ 33.76 ... $ 23.19"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.us/en/olaplex/intensive-bond-building-hair-treatment-n0/p_028799",
+                "title": "Olaplex, N\u00ba0 INTENSIVE BOND BUILDING hair treatment",
+                "excerpts": [
+                  "$ 23.19 ... $ 33.76 (USD on perfumesclub.us)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.us/en/olaplex/intensive-bond-building-hair-treatment-n0/p_028799",
+                "title": "Olaplex, N\u00ba0 INTENSIVE BOND BUILDING hair treatment",
+                "excerpts": [
+                  "$ 23.19 Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.us/en/olaplex/intensive-bond-building-hair-treatment-n0/p_028799",
+                "title": "Olaplex, N\u00ba0 INTENSIVE BOND BUILDING hair treatment",
+                "excerpts": [
+                  "corpus-meta url: https://perfumesclub.us/en/olaplex-intensive-bond-building-hair-treatment-n0/p_02879/"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.us/en/olaplex/intensive-bond-building-hair-treatment-n0/p_028799",
+                "title": "Olaplex, N\u00ba0 INTENSIVE BOND BUILDING hair treatment",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.us/en/olaplex/intensive-bond-building-hair-treatment-n0/p_028799",
+                "title": "Olaplex, N\u00ba0 INTENSIVE BOND BUILDING hair treatment",
+                "excerpts": [
+                  "corpus-meta url: https://perfumesclub.us/en/olaplex-intensive-bond-building-hair-treatment-n0/p_02879/"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.us/en/olaplex/intensive-bond-building-hair-treatment-n0/p_028799",
+                "title": "Olaplex, N\u00ba0 INTENSIVE BOND BUILDING hair treatment",
+                "excerpts": [
+                  "corpus-meta url: https://perfumesclub.us/en/olaplex-intensive-bond-building-hair-treatment-n0/p_02879/ (Perfume's Club discounter)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://perfumesclub.us/en/olaplex/intensive-bond-building-hair-treatment-n0/p_028799",
+                "title": "Olaplex, N\u00ba0 INTENSIVE BOND BUILDING hair treatment",
+                "excerpts": [
+                  "$ 23.19 ... $ 33.76 (-31%) ... Outlet Best prices (discount perfume/beauty e-tailer)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127924185937",
+                "title": "https://www.ebay.com/itm/127924185937",
+                "excerpts": [
+                  "Olaplex No.0 Intensive Bond Building 5.2 oz 155 ml. Missing a bit ... US $19.99 ... Condition: New without box ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127924185937",
+                "title": "https://www.ebay.com/itm/127924185937",
+                "excerpts": [
+                  "US $19.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127924185937",
+                "title": "https://www.ebay.com/itm/127924185937",
+                "excerpts": [
+                  "US $19.99 ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127924185937",
+                "title": "https://www.ebay.com/itm/127924185937",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/127924185937"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127924185937",
+                "title": "https://www.ebay.com/itm/127924185937",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127924185937",
+                "title": "https://www.ebay.com/itm/127924185937",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/127924185937"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127924185937",
+                "title": "https://www.ebay.com/itm/127924185937",
+                "excerpts": [
+                  "Visit store ... ebay.com/str/maurysliquidation ... Sold by: livingcolorworld"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/127924185937",
+                "title": "https://www.ebay.com/itm/127924185937",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/127924185937 (third-party eBay seller)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/406231658279",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "Olaplex No.0 Intensive Bond Building Hair Treatment 155ml / 5.2 oz New ... US $21.50or Best Offer ... Condition: New without box ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/406231658279",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "US $21.50or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/406231658279",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "US $21.50or Best Offer ... Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/406231658279",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/406231658279"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/406231658279",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/406231658279",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/406231658279"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/406231658279",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "Seller's other items ... ebay.com/sch/spectra_088/m.html?item=406231658279"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/406231658279",
+                "title": "Olaplex No.0 Intensive Bond Building Hair Treatment ...",
+                "excerpts": [
+                  "corpus-meta url: https://ebay.com/itm/406231658279 (third-party eBay seller)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/Olaplex-No-0-Intensive-Bond-Building-Hair-Treatment-For-All-Hair-Types-52-fl-oz-6409481b3676a19e9887258d?srsltid=AfmBOopQ0j4f2dUT6TfQdqY91uPl3VAgsCOYl9UDebVzkWCBnjSYdKxd",
+                "title": "Olaplex No Intensive Bond Building Hair Treatment For All ...",
+                "excerpts": [
+                  "Olaplex No 0 Intensive Bond Building Hair Treatment For All Hair Types 5.2 fl oz ... $27 $35 ... Make an Offer Buy Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/Olaplex-No-0-Intensive-Bond-Building-Hair-Treatment-For-All-Hair-Types-52-fl-oz-6409481b3676a19e9887258d?srsltid=AfmBOopQ0j4f2dUT6TfQdqY91uPl3VAgsCOYl9UDebVzkWCBnjSYdKxd",
+                "title": "Olaplex No Intensive Bond Building Hair Treatment For All ...",
+                "excerpts": [
+                  "$27 $35 ... $6.49 Shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/Olaplex-No-0-Intensive-Bond-Building-Hair-Treatment-For-All-Hair-Types-52-fl-oz-6409481b3676a19e9887258d?srsltid=AfmBOopQ0j4f2dUT6TfQdqY91uPl3VAgsCOYl9UDebVzkWCBnjSYdKxd",
+                "title": "Olaplex No Intensive Bond Building Hair Treatment For All ...",
+                "excerpts": [
+                  "$27 $35 ... Make an Offer Buy Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/Olaplex-No-0-Intensive-Bond-Building-Hair-Treatment-For-All-Hair-Types-52-fl-oz-6409481b3676a19e9887258d?srsltid=AfmBOopQ0j4f2dUT6TfQdqY91uPl3VAgsCOYl9UDebVzkWCBnjSYdKxd",
+                "title": "Olaplex No Intensive Bond Building Hair Treatment For All ...",
+                "excerpts": [
+                  "corpus-meta url: https://poshmark.com/listing/Olaplex-No-0-Intensive-Bond-Building-Hair-Treatment-For-All-Hair-Types-52-fl-oz-6409481b3676a19e9887258d"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/Olaplex-No-0-Intensive-Bond-Building-Hair-Treatment-For-All-Hair-Types-52-fl-oz-6409481b3676a19e9887258d?srsltid=AfmBOopQ0j4f2dUT6TfQdqY91uPl3VAgsCOYl9UDebVzkWCBnjSYdKxd",
+                "title": "Olaplex No Intensive Bond Building Hair Treatment For All ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/Olaplex-No-0-Intensive-Bond-Building-Hair-Treatment-For-All-Hair-Types-52-fl-oz-6409481b3676a19e9887258d?srsltid=AfmBOopQ0j4f2dUT6TfQdqY91uPl3VAgsCOYl9UDebVzkWCBnjSYdKxd",
+                "title": "Olaplex No Intensive Bond Building Hair Treatment For All ...",
+                "excerpts": [
+                  "corpus-meta url: https://poshmark.com/listing/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/Olaplex-No-0-Intensive-Bond-Building-Hair-Treatment-For-All-Hair-Types-52-fl-oz-6409481b3676a19e9887258d?srsltid=AfmBOopQ0j4f2dUT6TfQdqY91uPl3VAgsCOYl9UDebVzkWCBnjSYdKxd",
+                "title": "Olaplex No Intensive Bond Building Hair Treatment For All ...",
+                "excerpts": [
+                  "@lettyscloset22"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/Olaplex-No-0-Intensive-Bond-Building-Hair-Treatment-For-All-Hair-Types-52-fl-oz-6409481b3676a19e9887258d?srsltid=AfmBOopQ0j4f2dUT6TfQdqY91uPl3VAgsCOYl9UDebVzkWCBnjSYdKxd",
+                "title": "Olaplex No Intensive Bond Building Hair Treatment For All ...",
+                "excerpts": [
+                  "Make an Offer Buy Now ... Posh Protect: Buyer Protection Policy (third-party resale marketplace)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/olaplex-no0-intensive-bond-building-treatment-5fe108fd163df4a129661624?srsltid=AfmBOoonqu_wC3R5F5xXcd9-R1fHxy-Z17MrWcRN8PsZ77nOBoGrUAiA",
+                "title": "Olaplex No Intensive Bond Building Treatment",
+                "excerpts": [
+                  "$27 ... Buy Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/olaplex-no0-intensive-bond-building-treatment-5fe108fd163df4a129661624?srsltid=AfmBOoonqu_wC3R5F5xXcd9-R1fHxy-Z17MrWcRN8PsZ77nOBoGrUAiA",
+                "title": "Olaplex No Intensive Bond Building Treatment",
+                "excerpts": [
+                  "$27 ... $6.49 Shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/olaplex-no0-intensive-bond-building-treatment-5fe108fd163df4a129661624?srsltid=AfmBOoonqu_wC3R5F5xXcd9-R1fHxy-Z17MrWcRN8PsZ77nOBoGrUAiA",
+                "title": "Olaplex No Intensive Bond Building Treatment",
+                "excerpts": [
+                  "$27 ... Buy Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/olaplex-no0-intensive-bond-building-treatment-5fe108fd163df4a129661624?srsltid=AfmBOoonqu_wC3R5F5xXcd9-R1fHxy-Z17MrWcRN8PsZ77nOBoGrUAiA",
+                "title": "Olaplex No Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://poshmark.com/listing/olaplex-no0-intensive-bond-building-treatment-5fe108..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/olaplex-no0-intensive-bond-building-treatment-5fe108fd163df4a129661624?srsltid=AfmBOoonqu_wC3R5F5xXcd9-R1fHxy-Z17MrWcRN8PsZ77nOBoGrUAiA",
+                "title": "Olaplex No Intensive Bond Building Treatment",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/olaplex-no0-intensive-bond-building-treatment-5fe108fd163df4a129661624?srsltid=AfmBOoonqu_wC3R5F5xXcd9-R1fHxy-Z17MrWcRN8PsZ77nOBoGrUAiA",
+                "title": "Olaplex No Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://poshmark.com/listing/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/olaplex-no0-intensive-bond-building-treatment-5fe108fd163df4a129661624?srsltid=AfmBOoonqu_wC3R5F5xXcd9-R1fHxy-Z17MrWcRN8PsZ77nOBoGrUAiA",
+                "title": "Olaplex No Intensive Bond Building Treatment",
+                "excerpts": [
+                  "@mishiki ... About the seller @mishiki"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://poshmark.com/listing/olaplex-no0-intensive-bond-building-treatment-5fe108fd163df4a129661624?srsltid=AfmBOoonqu_wC3R5F5xXcd9-R1fHxy-Z17MrWcRN8PsZ77nOBoGrUAiA",
+                "title": "Olaplex No Intensive Bond Building Treatment",
+                "excerpts": [
+                  "Buy Now ... Posh Protect: Buyer Protection Policy (third-party resale marketplace)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m17375604755",
+                "title": "Olaplex Intensive Bond Building Hair",
+                "excerpts": [
+                  "Olaplex Intensive Bond Building Hair Treatment No.0 - 155 mL SEALED ... New | Olaplex ... $26.00 ... Buy now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m17375604755",
+                "title": "Olaplex Intensive Bond Building Hair",
+                "excerpts": [
+                  "$26.00 ... +$1.13 Buyer Protection fee"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m17375604755",
+                "title": "Olaplex Intensive Bond Building Hair",
+                "excerpts": [
+                  "$26.00 ... Buy now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m17375604755",
+                "title": "Olaplex Intensive Bond Building Hair",
+                "excerpts": [
+                  "corpus-meta url: https://mercari.com/us/item/m17375604755"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m17375604755",
+                "title": "Olaplex Intensive Bond Building Hair",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m17375604755",
+                "title": "Olaplex Intensive Bond Building Hair",
+                "excerpts": [
+                  "corpus-meta url: https://mercari.com/us/item/m17375604755"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m17375604755",
+                "title": "Olaplex Intensive Bond Building Hair",
+                "excerpts": [
+                  "corpus-meta url: https://mercari.com/us/item/m17375604755 (third-party Mercari seller)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://mercari.com/us/item/m17375604755",
+                "title": "Olaplex Intensive Bond Building Hair",
+                "excerpts": [
+                  "Buy now ... Buyer Protection (third-party resale marketplace)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.amazon.com/N%C2%BA-0-Intensive-Bond-Building-Treatment/dp/B09P5HJMTD",
+                "title": "Olaplex. N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "Currently unavailable. We don't know when or if this item will be back in stock."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.amazon.com/N%C2%BA-0-Intensive-Bond-Building-Treatment/dp/B09P5HJMTD",
+                "title": "Olaplex. N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "Brand | Olaplex ... Liquid Volume | 155 Milliliters ... ASIN | B09P5HJMTD (USD listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.amazon.com/N%C2%BA-0-Intensive-Bond-Building-Treatment/dp/B09P5HJMTD",
+                "title": "Olaplex. N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "Currently unavailable. We don't know when or if this item will be back in stock."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.amazon.com/N%C2%BA-0-Intensive-Bond-Building-Treatment/dp/B09P5HJMTD",
+                "title": "Olaplex. N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://us.amazon.com/N\u00ba-0-Intensive-Bond-Building-Treatment/dp/B09P5HJMTD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.amazon.com/N%C2%BA-0-Intensive-Bond-Building-Treatment/dp/B09P5HJMTD",
+                "title": "Olaplex. N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.amazon.com/N%C2%BA-0-Intensive-Bond-Building-Treatment/dp/B09P5HJMTD",
+                "title": "Olaplex. N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "corpus-meta url: https://us.amazon.com/.../dp/B09P5HJMTD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.amazon.com/N%C2%BA-0-Intensive-Bond-Building-Treatment/dp/B09P5HJMTD",
+                "title": "Olaplex. N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "Item Type Name | Olaplex No.0 Intensive Bond Building Hair Treatment 155ml ... ASIN | B09P5HJMTD (second Amazon listing, currently unavailable)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://us.amazon.com/N%C2%BA-0-Intensive-Bond-Building-Treatment/dp/B09P5HJMTD",
+                "title": "Olaplex. N\u00ba.0 Intensive Bond Building Treatment",
+                "excerpts": [
+                  "Visit the Olaplex Store ... Ships from: (unavailable) (Amazon first-party listing, out of stock)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

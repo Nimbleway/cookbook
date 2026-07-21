@@ -1,0 +1,2790 @@
+{
+  "sku_id": "KER-011",
+  "effort": "high",
+  "elapsed_s": 1183,
+  "fetched_at": "2026-07-20T13:21:27+00:00",
+  "run_id": "task_run_156bdac011c9474f823ae6e25f7b6043",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_156bdac011c9474f823ae6e25f7b6043",
+      "interaction_id": "task_run_156bdac011c9474f823ae6e25f7b6043",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Elixir Ultime Le Bain Shampoo, 250ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:01:42.882104Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:01:43.037025Z",
+      "completed_at": "2026-07-20T13:21:26.396258Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.boots.com/kerastase-elixir-ultime-bain-shampoo-250ml-10332661",
+          "observed_at": "2026-07-20",
+          "seller_name": "Boots",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "boots.com",
+          "advertised_price": "\u00a330.50"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-elixir-ultime-bain-shampoo/11858062",
+          "observed_at": "2026-07-20",
+          "seller_name": "LOOKFANTASTIC",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "\u00a330.50"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.joncenphi.com/products/elixir-ultime-le-bain-shampoo",
+          "observed_at": "2026-07-20",
+          "seller_name": "JONCEN PHI SALON",
+          "seller_type": "independent_store",
+          "seller_domain": "joncenphi.com",
+          "advertised_price": "$42.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://shop.simon.com/products/kerastase-elixir-ultime-le-bain-shampoo-for-unisex-8-5-oz-shampoo",
+          "observed_at": "2026-07-20",
+          "seller_name": "Simon (shop.simon.com)",
+          "seller_type": "discounter",
+          "seller_domain": "shop.simon.com",
+          "advertised_price": "$37.56"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://www.jomashop.com/elixir-ultime-le-bain-shampoo-by-kerastase-for-unisex-8-5-oz-shampoo-3474636614103.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Jomashop",
+          "seller_type": "discounter",
+          "seller_domain": "jomashop.com",
+          "advertised_price": "$29.99"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": true,
+          "listing_url": "https://cosmetis.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Cosmetis (Canada storefront)",
+          "seller_type": "discounter",
+          "seller_domain": "cosmetis.com",
+          "advertised_price": "CA$41.19"
+        },
+        {
+          "currency": "AUD",
+          "in_stock": true,
+          "listing_url": "https://cosmetis.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Cosmetis (Australia storefront)",
+          "seller_type": "discounter",
+          "seller_domain": "cosmetis.com",
+          "advertised_price": "A$41.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://lyskin.com/shop/kerastase-elixir-ultime-le-bain-oil-infused-shampoo-for-dull-hair-250ml-8-5fl-oz",
+          "observed_at": "2026-07-20",
+          "seller_name": "LySkin",
+          "seller_type": "independent_store",
+          "seller_domain": "lyskin.com",
+          "advertised_price": "$36,28"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.gosupps.com/kerastase-elixir-ultime-shine-shampoo-le-bain-250ml-3286157.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "GoSupps",
+          "seller_type": "discounter",
+          "seller_domain": "gosupps.com",
+          "advertised_price": "US$139.99"
+        },
+        {
+          "currency": "MYR",
+          "in_stock": true,
+          "listing_url": "https://www.strawberrynet.com/en-MY/kerastase-elixir-ultime-le-bain-sublimating-oil-infused-shampoo-dull-hair-250ml-8-5oz/233700",
+          "observed_at": "2026-07-20",
+          "seller_name": "StrawberryNET",
+          "seller_type": "discounter",
+          "seller_domain": "strawberrynet.com",
+          "advertised_price": "RM 187.50"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": true,
+          "listing_url": "https://www.caretobeauty.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Care to Beauty (Canada storefront)",
+          "seller_type": "independent_store",
+          "seller_domain": "caretobeauty.com",
+          "advertised_price": "CA$57.43"
+        },
+        {
+          "currency": "AUD",
+          "in_stock": true,
+          "listing_url": "https://www.caretobeauty.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Care to Beauty (Australia storefront)",
+          "seller_type": "independent_store",
+          "seller_domain": "caretobeauty.com",
+          "advertised_price": "A$63.58"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Elixir-Ultime-Sublimating-Oil-Infused-Shampoo-Le-Bain-8-5-oz/886873174",
+          "observed_at": "2026-07-20",
+          "seller_name": "Beauty Express (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$48.08"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Elixir-Ultime-Le-Bain-Oil-Infused-Shampoo-250ml/960488995",
+          "observed_at": "2026-07-20",
+          "seller_name": "UtieeBeautyStore (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$32.07"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://www.amazon.com/KERASTASE-Elixir-Ultime-Bain-Shampoo/dp/B07H8N7ZCW",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon.com (K\u00e9rastase brand ASIN B07H8N7ZCW)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.com",
+          "advertised_price": "Currently unavailable - no price shown"
+        },
+        {
+          "currency": "AUD",
+          "in_stock": false,
+          "listing_url": "https://www.amazon.com.au/Kerastase-Elixir-Sublimating-Infused-Shampoo/dp/B07H8N7ZCW",
+          "observed_at": "2026-07-20",
+          "seller_name": "Amazon.com.au (K\u00e9rastase brand ASIN B07H8N7ZCW)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.com.au",
+          "advertised_price": "Currently unavailable - no price shown"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.target.com/p/kerastase-ultime-hydrating-shampoo-8-5oz/-/A-1009049413",
+          "observed_at": "2026-07-20",
+          "seller_name": "232 Inc. (Target Plus marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "target.com",
+          "advertised_price": "price not found in listing page"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://boots.com/kerastase-elixir-ultime-bain-shampoo-250ml-10332661?srsltid=AfmBOoq_imAwdoCvsPmTT6XZxqeimqM5zox38r_ZCPwjSJv1Q1OJ9Ajz",
+            "title": "K\u00e9rastase Elixir Ultime, Oil-infused Shine Shampoo, For ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/kerastase-elixir-ultime-bain-shampoo/11858062?srsltid=AfmBOorzeSsmB6LmtYM8U2ZM03_GUAyKyaTt9cAjOfsE2dVVITXunBEL",
+            "title": "K\u00e9rastase Elixir Ultime Bain Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://joncenphi.com/products/elixir-ultime-le-bain-shampoo",
+            "title": "Elixir Ultime Le Bain Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://shop.simon.com/products/kerastase-elixir-ultime-le-bain-shampoo-for-unisex-8-5-oz-shampoo?bvstate=pg%3A2%2Fct%3Ar&crpid=7096470896700&nosto=productpage-nosto-1&refSrc=7154228625468",
+            "title": "Kerastase Elixir Ultime Le Bain Shampoo For Unisex 8.5 Oz ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://jomashop.com/elixir-ultime-le-bain-shampoo-by-kerastase-for-unisex-8-5-oz-shampoo-3474636614103.html?srsltid=AfmBOooLwQecu8sx_GotjQXm40_znZWrWyjg6eHP9nDgdgTdIh9xTg83",
+            "title": "Kerastase Elixir Ultime Le Bain Shampoo by for Unisex",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://cosmetis.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOophmZZ_gbKYl3tmcp6snQpJH_AP2m-L6k4LhrHhIZmP0WXPyhnU",
+            "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://cosmetis.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOopo0uvrBcEmBmNJRA4TZNmSmcCu06y3L0YaHl3UI250p2q8rKju",
+            "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lyskin.com/shop/kerastase-elixir-ultime-le-bain-oil-infused-shampoo-for-dull-hair-250ml-8-5fl-oz",
+            "title": "K\u00e9rastase elixir ultime le bain oil infused shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://gosupps.com/kerastase-elixir-ultime-shine-shampoo-le-bain-250ml-3286157.html",
+            "title": "Kerastase Elixir Ultime Shine Shampoo Le Bain 250ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://strawberrynet.com/en-MY/kerastase-elixir-ultime-le-bain-sublimating-oil-infused-shampoo-dull-hair-250ml-8-5oz/233700?srsltid=AfmBOoojQSI0ojTThhNKzrsHBkbqS0jMrOn8kgBgr8vqJPkJ-DmI3G6e",
+            "title": "Kerastase Elixir Ultime Le Bain Sublimating Oil Infused ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://caretobeauty.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+            "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Canada",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://caretobeauty.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+            "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Australia",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Sublimating-Oil-Infused-Shampoo-Le-Bain-8-5-oz/886873174",
+            "title": "Kerastase Elixir Ultime Sublimating Oil Infused Shampoo ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Le-Bain-Oil-Infused-Shampoo-250ml/960488995",
+            "title": "Kerastase Elixir Ultime Le Bain, Oil Infused Shampoo, 250ml",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/-/es/KERASTASE-Elixir-Ultime-Bain-Shampoo/dp/B07H8N7ZCW",
+            "title": "KERASTASE Elixir Ultime Le Bain Shampoo",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com.au/Kerastase-Elixir-Sublimating-Infused-Shampoo/dp/B07H8N7ZCW",
+            "title": "Kerastase Elixir Ultime Le Bain Shampoo 250 ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://target.com/p/kerastase-ultime-hydrating-shampoo-8-5oz/-/A-1009049413",
+            "title": "Kerastase Elixir Ultime Le Bain Shampoo 8.5oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-elixir-ultime-bain-shampoo-250ml-10332661?srsltid=AfmBOoq_imAwdoCvsPmTT6XZxqeimqM5zox38r_ZCPwjSJv1Q1OJ9Ajz",
+                "title": "K\u00e9rastase Elixir Ultime, Oil-infused Shine Shampoo, For ...",
+                "excerpts": [
+                  "K\u00e9rastase Elixir Ultime, Oil-infused Shine Shampoo, For Dull Hair, With 5 Precious Oils, Elixir Ultime Bain, 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-elixir-ultime-bain-shampoo-250ml-10332661?srsltid=AfmBOoq_imAwdoCvsPmTT6XZxqeimqM5zox38r_ZCPwjSJv1Q1OJ9Ajz",
+                "title": "K\u00e9rastase Elixir Ultime, Oil-infused Shine Shampoo, For ...",
+                "excerpts": [
+                  "https://boots.com/kerastase-elixir-ultime-bain-shampoo-250ml-10332661"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-elixir-ultime-bain-shampoo-250ml-10332661?srsltid=AfmBOoq_imAwdoCvsPmTT6XZxqeimqM5zox38r_ZCPwjSJv1Q1OJ9Ajz",
+                "title": "K\u00e9rastase Elixir Ultime, Oil-infused Shine Shampoo, For ...",
+                "excerpts": [
+                  "250 ML | \u00a3122.00 per 1L ... \u00a330.50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-elixir-ultime-bain-shampoo-250ml-10332661?srsltid=AfmBOoq_imAwdoCvsPmTT6XZxqeimqM5zox38r_ZCPwjSJv1Q1OJ9Ajz",
+                "title": "K\u00e9rastase Elixir Ultime, Oil-infused Shine Shampoo, For ...",
+                "excerpts": [
+                  "\u00a330.50 (pound sterling)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-elixir-ultime-bain-shampoo-250ml-10332661?srsltid=AfmBOoq_imAwdoCvsPmTT6XZxqeimqM5zox38r_ZCPwjSJv1Q1OJ9Ajz",
+                "title": "K\u00e9rastase Elixir Ultime, Oil-infused Shine Shampoo, For ...",
+                "excerpts": [
+                  "https://boots.com/kerastase-elixir-ultime-bain-shampoo-250ml-10332661"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-elixir-ultime-bain-shampoo-250ml-10332661?srsltid=AfmBOoq_imAwdoCvsPmTT6XZxqeimqM5zox38r_ZCPwjSJv1Q1OJ9Ajz",
+                "title": "K\u00e9rastase Elixir Ultime, Oil-infused Shine Shampoo, For ...",
+                "excerpts": [
+                  "Boots is a major UK pharmacy/beauty retailer; K\u00e9rastase stocked as premium beauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-elixir-ultime-bain-shampoo-250ml-10332661?srsltid=AfmBOoq_imAwdoCvsPmTT6XZxqeimqM5zox38r_ZCPwjSJv1Q1OJ9Ajz",
+                "title": "K\u00e9rastase Elixir Ultime, Oil-infused Shine Shampoo, For ...",
+                "excerpts": [
+                  "In stock; Add to basket (page also shows a 'Stock coming soon' notice)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://boots.com/kerastase-elixir-ultime-bain-shampoo-250ml-10332661?srsltid=AfmBOoq_imAwdoCvsPmTT6XZxqeimqM5zox38r_ZCPwjSJv1Q1OJ9Ajz",
+                "title": "K\u00e9rastase Elixir Ultime, Oil-infused Shine Shampoo, For ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-elixir-ultime-bain-shampoo/11858062?srsltid=AfmBOorzeSsmB6LmtYM8U2ZM03_GUAyKyaTt9cAjOfsE2dVVITXunBEL",
+                "title": "K\u00e9rastase Elixir Ultime Bain Shampoo",
+                "excerpts": [
+                  "##### K\u00e9rastase Elixir Ultime Bain Shampoo ... 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-elixir-ultime-bain-shampoo/11858062?srsltid=AfmBOorzeSsmB6LmtYM8U2ZM03_GUAyKyaTt9cAjOfsE2dVVITXunBEL",
+                "title": "K\u00e9rastase Elixir Ultime Bain Shampoo",
+                "excerpts": [
+                  "https://lookfantastic.com/p/kerastase-elixir-ultime-bain-shampoo/11858062"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-elixir-ultime-bain-shampoo/11858062?srsltid=AfmBOorzeSsmB6LmtYM8U2ZM03_GUAyKyaTt9cAjOfsE2dVVITXunBEL",
+                "title": "K\u00e9rastase Elixir Ultime Bain Shampoo",
+                "excerpts": [
+                  "\u00a330.50 ... Or 4 interest free payments of \u00a37.62"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-elixir-ultime-bain-shampoo/11858062?srsltid=AfmBOorzeSsmB6LmtYM8U2ZM03_GUAyKyaTt9cAjOfsE2dVVITXunBEL",
+                "title": "K\u00e9rastase Elixir Ultime Bain Shampoo",
+                "excerpts": [
+                  "\u00a330.50 (pound sterling); FREE UK delivery on orders over \u00a325"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-elixir-ultime-bain-shampoo/11858062?srsltid=AfmBOorzeSsmB6LmtYM8U2ZM03_GUAyKyaTt9cAjOfsE2dVVITXunBEL",
+                "title": "K\u00e9rastase Elixir Ultime Bain Shampoo",
+                "excerpts": [
+                  "https://lookfantastic.com/p/kerastase-elixir-ultime-bain-shampoo/11858062"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-elixir-ultime-bain-shampoo/11858062?srsltid=AfmBOorzeSsmB6LmtYM8U2ZM03_GUAyKyaTt9cAjOfsE2dVVITXunBEL",
+                "title": "K\u00e9rastase Elixir Ultime Bain Shampoo",
+                "excerpts": [
+                  "LOOKFANTASTIC is a major UK beauty e-tailer (THG) carrying premium brands"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-elixir-ultime-bain-shampoo/11858062?srsltid=AfmBOorzeSsmB6LmtYM8U2ZM03_GUAyKyaTt9cAjOfsE2dVVITXunBEL",
+                "title": "K\u00e9rastase Elixir Ultime Bain Shampoo",
+                "excerpts": [
+                  "In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-elixir-ultime-bain-shampoo/11858062?srsltid=AfmBOorzeSsmB6LmtYM8U2ZM03_GUAyKyaTt9cAjOfsE2dVVITXunBEL",
+                "title": "K\u00e9rastase Elixir Ultime Bain Shampoo",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://joncenphi.com/products/elixir-ultime-le-bain-shampoo",
+                "title": "Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "JONCEN PHI SALON ... # Elixir Ultime Le Bain Shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://joncenphi.com/products/elixir-ultime-le-bain-shampoo",
+                "title": "Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "https://joncenphi.com/products/elixir-ultime-le-bain-shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://joncenphi.com/products/elixir-ultime-le-bain-shampoo",
+                "title": "Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "# Elixir Ultime Le Bain Shampoo ... $42.00 ... Add to Cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://joncenphi.com/products/elixir-ultime-le-bain-shampoo",
+                "title": "Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "$42.00 (USD); product image filename 3474636614103.png matches the 250ml/8.5oz GTIN"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://joncenphi.com/products/elixir-ultime-le-bain-shampoo",
+                "title": "Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "https://joncenphi.com/products/elixir-ultime-le-bain-shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://joncenphi.com/products/elixir-ultime-le-bain-shampoo",
+                "title": "Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "JONCEN PHI SALON - independent salon selling hair products via Shopify storefront"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://joncenphi.com/products/elixir-ultime-le-bain-shampoo",
+                "title": "Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "Add to Cart button present (no out-of-stock notice)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://joncenphi.com/products/elixir-ultime-le-bain-shampoo",
+                "title": "Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.simon.com/products/kerastase-elixir-ultime-le-bain-shampoo-for-unisex-8-5-oz-shampoo?bvstate=pg%3A2%2Fct%3Ar&crpid=7096470896700&nosto=productpage-nosto-1&refSrc=7154228625468",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo For Unisex 8.5 Oz ...",
+                "excerpts": [
+                  "# elixir ultime le bain shampoo for unisex 8.5 oz shampoo ... Get 38 Simon+\u00ae Points"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.simon.com/products/kerastase-elixir-ultime-le-bain-shampoo-for-unisex-8-5-oz-shampoo?bvstate=pg%3A2%2Fct%3Ar&crpid=7096470896700&nosto=productpage-nosto-1&refSrc=7154228625468",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo For Unisex 8.5 Oz ...",
+                "excerpts": [
+                  "https://shop.simon.com/products/kerastase-elixir-ultime-le-bain-shampoo-for-unisex-8-5-oz-shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.simon.com/products/kerastase-elixir-ultime-le-bain-shampoo-for-unisex-8-5-oz-shampoo?bvstate=pg%3A2%2Fct%3Ar&crpid=7096470896700&nosto=productpage-nosto-1&refSrc=7154228625468",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo For Unisex 8.5 Oz ...",
+                "excerpts": [
+                  "$37.56 Regular price $38.00 ... Sale price 1% off ... 8.5 oz - $37.56 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.simon.com/products/kerastase-elixir-ultime-le-bain-shampoo-for-unisex-8-5-oz-shampoo?bvstate=pg%3A2%2Fct%3Ar&crpid=7096470896700&nosto=productpage-nosto-1&refSrc=7154228625468",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo For Unisex 8.5 Oz ...",
+                "excerpts": [
+                  "8.5 oz - $37.56 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.simon.com/products/kerastase-elixir-ultime-le-bain-shampoo-for-unisex-8-5-oz-shampoo?bvstate=pg%3A2%2Fct%3Ar&crpid=7096470896700&nosto=productpage-nosto-1&refSrc=7154228625468",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo For Unisex 8.5 Oz ...",
+                "excerpts": [
+                  "https://shop.simon.com/products/kerastase-elixir-ultime-le-bain-shampoo-for-unisex-8-5-oz-shampoo 7096470896700"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.simon.com/products/kerastase-elixir-ultime-le-bain-shampoo-for-unisex-8-5-oz-shampoo?bvstate=pg%3A2%2Fct%3Ar&crpid=7096470896700&nosto=productpage-nosto-1&refSrc=7154228625468",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo For Unisex 8.5 Oz ...",
+                "excerpts": [
+                  "Simon+ outlet marketplace; slash-through Regular price, Sale price 1% off"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.simon.com/products/kerastase-elixir-ultime-le-bain-shampoo-for-unisex-8-5-oz-shampoo?bvstate=pg%3A2%2Fct%3Ar&crpid=7096470896700&nosto=productpage-nosto-1&refSrc=7154228625468",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo For Unisex 8.5 Oz ...",
+                "excerpts": [
+                  "Only 380 left in stock! ... Add to bag ... Usually ships within 1-2 business days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.simon.com/products/kerastase-elixir-ultime-le-bain-shampoo-for-unisex-8-5-oz-shampoo?bvstate=pg%3A2%2Fct%3Ar&crpid=7096470896700&nosto=productpage-nosto-1&refSrc=7154228625468",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo For Unisex 8.5 Oz ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/elixir-ultime-le-bain-shampoo-by-kerastase-for-unisex-8-5-oz-shampoo-3474636614103.html?srsltid=AfmBOooLwQecu8sx_GotjQXm40_znZWrWyjg6eHP9nDgdgTdIh9xTg83",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo by for Unisex",
+                "excerpts": [
+                  "$29.99 ... Retail$35.00 ... 14% Off ... Out of stock ... NOTIFY ME"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/elixir-ultime-le-bain-shampoo-by-kerastase-for-unisex-8-5-oz-shampoo-3474636614103.html?srsltid=AfmBOooLwQecu8sx_GotjQXm40_znZWrWyjg6eHP9nDgdgTdIh9xTg83",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo by for Unisex",
+                "excerpts": [
+                  "$29.99 USD (US discounter; ships from USA, New York City warehouse)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/elixir-ultime-le-bain-shampoo-by-kerastase-for-unisex-8-5-oz-shampoo-3474636614103.html?srsltid=AfmBOooLwQecu8sx_GotjQXm40_znZWrWyjg6eHP9nDgdgTdIh9xTg83",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo by for Unisex",
+                "excerpts": [
+                  "OUT OF STOCK ... Out of stock ... NOTIFY ME"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/elixir-ultime-le-bain-shampoo-by-kerastase-for-unisex-8-5-oz-shampoo-3474636614103.html?srsltid=AfmBOooLwQecu8sx_GotjQXm40_znZWrWyjg6eHP9nDgdgTdIh9xTg83",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo by for Unisex",
+                "excerpts": [
+                  "https://jomashop.com/elixir-ultime-le-bain-shampoo-by-kerastase-for-unisex-8-5-oz-shampoo-3474636614103.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/elixir-ultime-le-bain-shampoo-by-kerastase-for-unisex-8-5-oz-shampoo-3474636614103.html?srsltid=AfmBOooLwQecu8sx_GotjQXm40_znZWrWyjg6eHP9nDgdgTdIh9xTg83",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo by for Unisex",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/elixir-ultime-le-bain-shampoo-by-kerastase-for-unisex-8-5-oz-shampoo-3474636614103.html?srsltid=AfmBOooLwQecu8sx_GotjQXm40_znZWrWyjg6eHP9nDgdgTdIh9xTg83",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo by for Unisex",
+                "excerpts": [
+                  "https://jomashop.com/elixir-ultime-le-bain-shampoo-by-kerastase-for-unisex-8-5-oz-shampoo-3474636614103.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/elixir-ultime-le-bain-shampoo-by-kerastase-for-unisex-8-5-oz-shampoo-3474636614103.html?srsltid=AfmBOooLwQecu8sx_GotjQXm40_znZWrWyjg6eHP9nDgdgTdIh9xTg83",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo by for Unisex",
+                "excerpts": [
+                  "# Kerastase Elixir Ultime Le Bain Shampoo by for Unisex - 8.5 oz Shampoo Item No. 3474636614103"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://jomashop.com/elixir-ultime-le-bain-shampoo-by-kerastase-for-unisex-8-5-oz-shampoo-3474636614103.html?srsltid=AfmBOooLwQecu8sx_GotjQXm40_znZWrWyjg6eHP9nDgdgTdIh9xTg83",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo by for Unisex",
+                "excerpts": [
+                  "1,350,000+ HAPPY CUSTOMERS | ONLINE SINCE 1999; 14% Off Retail$35.00; grey-market beauty discounter"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOophmZZ_gbKYl3tmcp6snQpJH_AP2m-L6k4LhrHhIZmP0WXPyhnU",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "Special Price CA$41.19 Regular Price CA$53.58 ... Add to Cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOophmZZ_gbKYl3tmcp6snQpJH_AP2m-L6k4LhrHhIZmP0WXPyhnU",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "ca | CAD ... Special Price CA$41.19 Regular Price CA$53.58"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOophmZZ_gbKYl3tmcp6snQpJH_AP2m-L6k4LhrHhIZmP0WXPyhnU",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "Add to Cart button present (active purchase)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOophmZZ_gbKYl3tmcp6snQpJH_AP2m-L6k4LhrHhIZmP0WXPyhnU",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "https://cosmetis.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOophmZZ_gbKYl3tmcp6snQpJH_AP2m-L6k4LhrHhIZmP0WXPyhnU",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOophmZZ_gbKYl3tmcp6snQpJH_AP2m-L6k4LhrHhIZmP0WXPyhnU",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "https://cosmetis.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOophmZZ_gbKYl3tmcp6snQpJH_AP2m-L6k4LhrHhIZmP0WXPyhnU",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "[![Cosmetis](https://cosmetis.com/media/logo/default/logo.png Cosmetis)] ... # K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOophmZZ_gbKYl3tmcp6snQpJH_AP2m-L6k4LhrHhIZmP0WXPyhnU",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "-23% Special Price vs Regular Price; EU-based beauty discounter with regional storefronts (ca/au/th/in/cn)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOopo0uvrBcEmBmNJRA4TZNmSmcCu06y3L0YaHl3UI250p2q8rKju",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "Special Price A$41.99 Regular Price A$54.62 ... Add to Cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOopo0uvrBcEmBmNJRA4TZNmSmcCu06y3L0YaHl3UI250p2q8rKju",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "au | AUD ... Special Price A$41.99 Regular Price A$54.62"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOopo0uvrBcEmBmNJRA4TZNmSmcCu06y3L0YaHl3UI250p2q8rKju",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "Add to Cart button present (active purchase)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOopo0uvrBcEmBmNJRA4TZNmSmcCu06y3L0YaHl3UI250p2q8rKju",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "https://cosmetis.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOopo0uvrBcEmBmNJRA4TZNmSmcCu06y3L0YaHl3UI250p2q8rKju",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOopo0uvrBcEmBmNJRA4TZNmSmcCu06y3L0YaHl3UI250p2q8rKju",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "https://cosmetis.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOopo0uvrBcEmBmNJRA4TZNmSmcCu06y3L0YaHl3UI250p2q8rKju",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "Cosmetis ... # K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml (au | AUD storefront)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetis.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml?srsltid=AfmBOopo0uvrBcEmBmNJRA4TZNmSmcCu06y3L0YaHl3UI250p2q8rKju",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml",
+                "excerpts": [
+                  "-23% Special Price vs Regular Price; same EU discounter, Australia currency storefront"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-elixir-ultime-le-bain-oil-infused-shampoo-for-dull-hair-250ml-8-5fl-oz",
+                "title": "K\u00e9rastase elixir ultime le bain oil infused shampoo",
+                "excerpts": [
+                  "## K\u00e9rastase elixir ultime le bain oil infused shampoo for dull hair 250ml 8.5fl.oz ... $36,28 ... AVAILABLE ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-elixir-ultime-le-bain-oil-infused-shampoo-for-dull-hair-250ml-8-5fl-oz",
+                "title": "K\u00e9rastase elixir ultime le bain oil infused shampoo",
+                "excerpts": [
+                  "Price displayed with $ and Portuguese decimal comma ($36,28); Portuguese store - currency USD displayed (cart $0,00)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-elixir-ultime-le-bain-oil-infused-shampoo-for-dull-hair-250ml-8-5fl-oz",
+                "title": "K\u00e9rastase elixir ultime le bain oil infused shampoo",
+                "excerpts": [
+                  "AVAILABLE ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-elixir-ultime-le-bain-oil-infused-shampoo-for-dull-hair-250ml-8-5fl-oz",
+                "title": "K\u00e9rastase elixir ultime le bain oil infused shampoo",
+                "excerpts": [
+                  "https://lyskin.com/shop/kerastase-elixir-ultime-le-bain-oil-infused-shampoo-for-dull-hair-250ml-8-5fl-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-elixir-ultime-le-bain-oil-infused-shampoo-for-dull-hair-250ml-8-5fl-oz",
+                "title": "K\u00e9rastase elixir ultime le bain oil infused shampoo",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-elixir-ultime-le-bain-oil-infused-shampoo-for-dull-hair-250ml-8-5fl-oz",
+                "title": "K\u00e9rastase elixir ultime le bain oil infused shampoo",
+                "excerpts": [
+                  "https://lyskin.com/shop/kerastase-elixir-ultime-le-bain-oil-infused-shampoo-for-dull-hair-250ml-8-5fl-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-elixir-ultime-le-bain-oil-infused-shampoo-for-dull-hair-250ml-8-5fl-oz",
+                "title": "K\u00e9rastase elixir ultime le bain oil infused shampoo",
+                "excerpts": [
+                  "![LySkin](https://lyskin.com/wp-content/uploads/2022/07/lyskin-logo-branco.svg) ... K\u00e9rastase elixir ultime le bain oil infused shampoo for dull hair 250ml 8.5fl.oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-elixir-ultime-le-bain-oil-infused-shampoo-for-dull-hair-250ml-8-5fl-oz",
+                "title": "K\u00e9rastase elixir ultime le bain oil infused shampoo",
+                "excerpts": [
+                  "Independent Portuguese beauty store (WordPress/WooCommerce shop)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/kerastase-elixir-ultime-shine-shampoo-le-bain-250ml-3286157.html",
+                "title": "Kerastase Elixir Ultime Shine Shampoo Le Bain 250ml",
+                "excerpts": [
+                  "Regular Price: US$154.99 ... Special Price US$139.99 ... Availability: In stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/kerastase-elixir-ultime-shine-shampoo-le-bain-250ml-3286157.html",
+                "title": "Kerastase Elixir Ultime Shine Shampoo Le Bain 250ml",
+                "excerpts": [
+                  "Special Price US$139.99 (US dollar)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/kerastase-elixir-ultime-shine-shampoo-le-bain-250ml-3286157.html",
+                "title": "Kerastase Elixir Ultime Shine Shampoo Le Bain 250ml",
+                "excerpts": [
+                  "Availability: In stock ... Add to Cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/kerastase-elixir-ultime-shine-shampoo-le-bain-250ml-3286157.html",
+                "title": "Kerastase Elixir Ultime Shine Shampoo Le Bain 250ml",
+                "excerpts": [
+                  "https://gosupps.com/kerastase-elixir-ultime-shine-shampoo-le-bain-250ml-3286157.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/kerastase-elixir-ultime-shine-shampoo-le-bain-250ml-3286157.html",
+                "title": "Kerastase Elixir Ultime Shine Shampoo Le Bain 250ml",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/kerastase-elixir-ultime-shine-shampoo-le-bain-250ml-3286157.html",
+                "title": "Kerastase Elixir Ultime Shine Shampoo Le Bain 250ml",
+                "excerpts": [
+                  "https://gosupps.com/kerastase-elixir-ultime-shine-shampoo-le-bain-250ml-3286157.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/kerastase-elixir-ultime-shine-shampoo-le-bain-250ml-3286157.html",
+                "title": "Kerastase Elixir Ultime Shine Shampoo Le Bain 250ml",
+                "excerpts": [
+                  "**GoSupps.com** ... # Kerastase Elixir Ultime Shine Shampoo Le Bain 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gosupps.com/kerastase-elixir-ultime-shine-shampoo-le-bain-250ml-3286157.html",
+                "title": "Kerastase Elixir Ultime Shine Shampoo Le Bain 250ml",
+                "excerpts": [
+                  "GRAND SELECTION / AMAZING PRICES / Clearance Room; international discounter (ships 5-10 days, fixed $19.99)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://strawberrynet.com/en-MY/kerastase-elixir-ultime-le-bain-sublimating-oil-infused-shampoo-dull-hair-250ml-8-5oz/233700?srsltid=AfmBOoojQSI0ojTThhNKzrsHBkbqS0jMrOn8kgBgr8vqJPkJ-DmI3G6e",
+                "title": "Kerastase Elixir Ultime Le Bain Sublimating Oil Infused ...",
+                "excerpts": [
+                  "Size: 250ml/8.5oz ... RM 187.50"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://strawberrynet.com/en-MY/kerastase-elixir-ultime-le-bain-sublimating-oil-infused-shampoo-dull-hair-250ml-8-5oz/233700?srsltid=AfmBOoojQSI0ojTThhNKzrsHBkbqS0jMrOn8kgBgr8vqJPkJ-DmI3G6e",
+                "title": "Kerastase Elixir Ultime Le Bain Sublimating Oil Infused ...",
+                "excerpts": [
+                  "en-MY storefront; price RM 187.50 (Malaysian Ringgit)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://strawberrynet.com/en-MY/kerastase-elixir-ultime-le-bain-sublimating-oil-infused-shampoo-dull-hair-250ml-8-5oz/233700?srsltid=AfmBOoojQSI0ojTThhNKzrsHBkbqS0jMrOn8kgBgr8vqJPkJ-DmI3G6e",
+                "title": "Kerastase Elixir Ultime Le Bain Sublimating Oil Infused ...",
+                "excerpts": [
+                  "Size: 250ml/8.5oz ... RM 187.50 (product page active with add-to-cart)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://strawberrynet.com/en-MY/kerastase-elixir-ultime-le-bain-sublimating-oil-infused-shampoo-dull-hair-250ml-8-5oz/233700?srsltid=AfmBOoojQSI0ojTThhNKzrsHBkbqS0jMrOn8kgBgr8vqJPkJ-DmI3G6e",
+                "title": "Kerastase Elixir Ultime Le Bain Sublimating Oil Infused ...",
+                "excerpts": [
+                  "https://strawberrynet.com/en-MY/kerastase-elixir-ultime-le-bain-sublimating-oil-infused-shampoo-dull-hair-250ml-8-5oz/233700"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://strawberrynet.com/en-MY/kerastase-elixir-ultime-le-bain-sublimating-oil-infused-shampoo-dull-hair-250ml-8-5oz/233700?srsltid=AfmBOoojQSI0ojTThhNKzrsHBkbqS0jMrOn8kgBgr8vqJPkJ-DmI3G6e",
+                "title": "Kerastase Elixir Ultime Le Bain Sublimating Oil Infused ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://strawberrynet.com/en-MY/kerastase-elixir-ultime-le-bain-sublimating-oil-infused-shampoo-dull-hair-250ml-8-5oz/233700?srsltid=AfmBOoojQSI0ojTThhNKzrsHBkbqS0jMrOn8kgBgr8vqJPkJ-DmI3G6e",
+                "title": "Kerastase Elixir Ultime Le Bain Sublimating Oil Infused ...",
+                "excerpts": [
+                  "https://strawberrynet.com/en-MY/kerastase-elixir-ultime-le-bain-sublimating-oil-infused-shampoo-dull-hair-250ml-8-5oz/233700"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://strawberrynet.com/en-MY/kerastase-elixir-ultime-le-bain-sublimating-oil-infused-shampoo-dull-hair-250ml-8-5oz/233700?srsltid=AfmBOoojQSI0ojTThhNKzrsHBkbqS0jMrOn8kgBgr8vqJPkJ-DmI3G6e",
+                "title": "Kerastase Elixir Ultime Le Bain Sublimating Oil Infused ...",
+                "excerpts": [
+                  "StrawberryNET ... Kerastase Elixir Ultime Le Bain Sublimating Oil Infused Shampoo (Dull Hair) 250ml/8.5oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://strawberrynet.com/en-MY/kerastase-elixir-ultime-le-bain-sublimating-oil-infused-shampoo-dull-hair-250ml-8-5oz/233700?srsltid=AfmBOoojQSI0ojTThhNKzrsHBkbqS0jMrOn8kgBgr8vqJPkJ-DmI3G6e",
+                "title": "Kerastase Elixir Ultime Le Bain Sublimating Oil Infused ...",
+                "excerpts": [
+                  "HK-based online beauty discounter (grey-market) with regional currency storefronts"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Canada",
+                "excerpts": [
+                  "Price CA$57.43 ... In stock & Ready to ship ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Canada",
+                "excerpts": [
+                  "Canada (CAD CA$) You are currently shipping to Canada and your order will be billed in CAD CA$."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Canada",
+                "excerpts": [
+                  "In stock & Ready to ship. Order in the next 2h 20m to have your order shipped today!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Canada",
+                "excerpts": [
+                  "https://caretobeauty.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Canada",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Canada",
+                "excerpts": [
+                  "https://caretobeauty.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Canada",
+                "excerpts": [
+                  "Care to Beauty Mobile App ... K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Canada"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/ca/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Canada",
+                "excerpts": [
+                  "Online beauty retailer with regional storefronts shipping internationally; independent store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Australia",
+                "excerpts": [
+                  "A$63.58 ... In stock & Ready to ship ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Australia",
+                "excerpts": [
+                  "Australia (AUD A$) You are currently shipping to Australia and your order will be billed in AUD A$."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Australia",
+                "excerpts": [
+                  "In stock & Ready to ship. Order in the next 2h 20m to have your order shipped today!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Australia",
+                "excerpts": [
+                  "https://caretobeauty.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Australia",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Australia",
+                "excerpts": [
+                  "https://caretobeauty.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Australia",
+                "excerpts": [
+                  "Care to Beauty Mobile App ... K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Australia"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/au/kerastase-elixir-ultime-le-bain-shampoo-250ml",
+                "title": "K\u00e9rastase Elixir Ultime Le Bain Shampoo 250ml Australia",
+                "excerpts": [
+                  "Online beauty retailer with regional storefronts shipping internationally; independent store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Sublimating-Oil-Infused-Shampoo-Le-Bain-8-5-oz/886873174",
+                "title": "Kerastase Elixir Ultime Sublimating Oil Infused Shampoo ...",
+                "excerpts": [
+                  "5.550, $48.08 ... Current price is $48.08$5.66/fl oz ... Add to cart ... Sold and shipped by Beauty Express"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Sublimating-Oil-Infused-Shampoo-Le-Bain-8-5-oz/886873174",
+                "title": "Kerastase Elixir Ultime Sublimating Oil Infused Shampoo ...",
+                "excerpts": [
+                  "Current price is $48.08 (USD, Walmart US)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Sublimating-Oil-Infused-Shampoo-Le-Bain-8-5-oz/886873174",
+                "title": "Kerastase Elixir Ultime Sublimating Oil Infused Shampoo ...",
+                "excerpts": [
+                  "Add to cart ... Free shipping ... Sold and shipped by Beauty Express"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Sublimating-Oil-Infused-Shampoo-Le-Bain-8-5-oz/886873174",
+                "title": "Kerastase Elixir Ultime Sublimating Oil Infused Shampoo ...",
+                "excerpts": [
+                  "https://walmart.com/ip/Kerastase-Elixir-Ultime-Sublimating-Oil-Infused-Shampoo-Le-Bain-8-5-oz/886873174"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Sublimating-Oil-Infused-Shampoo-Le-Bain-8-5-oz/886873174",
+                "title": "Kerastase Elixir Ultime Sublimating Oil Infused Shampoo ...",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Sublimating-Oil-Infused-Shampoo-Le-Bain-8-5-oz/886873174",
+                "title": "Kerastase Elixir Ultime Sublimating Oil Infused Shampoo ...",
+                "excerpts": [
+                  "Sold and shipped by Beauty Express (https://www.walmart.com/global/seller/101014979) on walmart.com marketplace"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Sublimating-Oil-Infused-Shampoo-Le-Bain-8-5-oz/886873174",
+                "title": "Kerastase Elixir Ultime Sublimating Oil Infused Shampoo ...",
+                "excerpts": [
+                  "Sold and shipped by Beauty Express"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Sublimating-Oil-Infused-Shampoo-Le-Bain-8-5-oz/886873174",
+                "title": "Kerastase Elixir Ultime Sublimating Oil Infused Shampoo ...",
+                "excerpts": [
+                  "Sold and shipped by Beauty Express - third-party seller on Walmart Marketplace"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Le-Bain-Oil-Infused-Shampoo-250ml/960488995",
+                "title": "Kerastase Elixir Ultime Le Bain, Oil Infused Shampoo, 250ml",
+                "excerpts": [
+                  "Kerastase Elixir Ultime Le Bain | Oil Infused Shampoo, 250ml ... $32.07 ... Out of stock ... seller UtieeBeautyStore"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Le-Bain-Oil-Infused-Shampoo-250ml/960488995",
+                "title": "Kerastase Elixir Ultime Le Bain, Oil Infused Shampoo, 250ml",
+                "excerpts": [
+                  "$32.07 (USD, Walmart US marketplace)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Le-Bain-Oil-Infused-Shampoo-250ml/960488995",
+                "title": "Kerastase Elixir Ultime Le Bain, Oil Infused Shampoo, 250ml",
+                "excerpts": [
+                  "Size8.5 oz\\-Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Le-Bain-Oil-Infused-Shampoo-250ml/960488995",
+                "title": "Kerastase Elixir Ultime Le Bain, Oil Infused Shampoo, 250ml",
+                "excerpts": [
+                  "https://walmart.com/ip/Kerastase-Elixir-Ultime-Le-Bain-Oil-Infused-Shampoo-250ml/960488995"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Le-Bain-Oil-Infused-Shampoo-250ml/960488995",
+                "title": "Kerastase Elixir Ultime Le Bain, Oil Infused Shampoo, 250ml",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Le-Bain-Oil-Infused-Shampoo-250ml/960488995",
+                "title": "Kerastase Elixir Ultime Le Bain, Oil Infused Shampoo, 250ml",
+                "excerpts": [
+                  "Walmart Marketplace listing (walmart.com) sold by UtieeBeautyStore"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Le-Bain-Oil-Infused-Shampoo-250ml/960488995",
+                "title": "Kerastase Elixir Ultime Le Bain, Oil Infused Shampoo, 250ml",
+                "excerpts": [
+                  "seller name: UtieeBeautyStore (sold by), delivered by Walmart"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Elixir-Ultime-Le-Bain-Oil-Infused-Shampoo-250ml/960488995",
+                "title": "Kerastase Elixir Ultime Le Bain, Oil Infused Shampoo, 250ml",
+                "excerpts": [
+                  "Third-party seller on Walmart Marketplace (UtieeBeautyStore also appears in Walmart SERP for other Kerastase items)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/-/es/KERASTASE-Elixir-Ultime-Bain-Shampoo/dp/B07H8N7ZCW",
+                "title": "KERASTASE Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "Currently unavailable. We don't know when or if this item will be back in stock. (no price shown for unavailable ASIN B07H8N7ZCW)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/-/es/KERASTASE-Elixir-Ultime-Bain-Shampoo/dp/B07H8N7ZCW",
+                "title": "KERASTASE Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "amazon.com (US) marketplace; price not displayed while unavailable"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/-/es/KERASTASE-Elixir-Ultime-Bain-Shampoo/dp/B07H8N7ZCW",
+                "title": "KERASTASE Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "Currently unavailable. We don't know when or if this item will be back in stock."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/-/es/KERASTASE-Elixir-Ultime-Bain-Shampoo/dp/B07H8N7ZCW",
+                "title": "KERASTASE Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "https://amazon.com/-/es/KERASTASE-Elixir-Ultime-Bain-Shampoo/dp/B07H8N7ZCW"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/-/es/KERASTASE-Elixir-Ultime-Bain-Shampoo/dp/B07H8N7ZCW",
+                "title": "KERASTASE Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/-/es/KERASTASE-Elixir-Ultime-Bain-Shampoo/dp/B07H8N7ZCW",
+                "title": "KERASTASE Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "https://amazon.com/-/es/KERASTASE-Elixir-Ultime-Bain-Shampoo/dp/B07H8N7ZCW"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/-/es/KERASTASE-Elixir-Ultime-Bain-Shampoo/dp/B07H8N7ZCW",
+                "title": "KERASTASE Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "# KERASTASE Elixir Ultime Le Bain Shampoo ... Visit the Kerastase Store ... Global Trade Identification Number 03474636614103 ... Collection Name Kerastase Elixir Ulime Bain 250 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/-/es/KERASTASE-Elixir-Ultime-Bain-Shampoo/dp/B07H8N7ZCW",
+                "title": "KERASTASE Elixir Ultime Le Bain Shampoo",
+                "excerpts": [
+                  "Amazon.com marketplace; brand-store ASIN currently unavailable (third-party marketplace platform)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com.au/Kerastase-Elixir-Sublimating-Infused-Shampoo/dp/B07H8N7ZCW",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 250 ml",
+                "excerpts": [
+                  "Currently unavailable. We don't know when or if this item will be back in stock. (no price shown for unavailable item)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com.au/Kerastase-Elixir-Sublimating-Infused-Shampoo/dp/B07H8N7ZCW",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 250 ml",
+                "excerpts": [
+                  "amazon.com.au (Australia) marketplace; price not displayed while unavailable"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com.au/Kerastase-Elixir-Sublimating-Infused-Shampoo/dp/B07H8N7ZCW",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 250 ml",
+                "excerpts": [
+                  "Currently unavailable. We don't know when or if this item will be back in stock."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com.au/Kerastase-Elixir-Sublimating-Infused-Shampoo/dp/B07H8N7ZCW",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 250 ml",
+                "excerpts": [
+                  "https://amazon.com.au/Kerastase-Elixir-Sublimating-Infused-Shampoo/dp/B07H8N7ZCW"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com.au/Kerastase-Elixir-Sublimating-Infused-Shampoo/dp/B07H8N7ZCW",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 250 ml",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com.au/Kerastase-Elixir-Sublimating-Infused-Shampoo/dp/B07H8N7ZCW",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 250 ml",
+                "excerpts": [
+                  "https://amazon.com.au/Kerastase-Elixir-Sublimating-Infused-Shampoo/dp/B07H8N7ZCW"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com.au/Kerastase-Elixir-Sublimating-Infused-Shampoo/dp/B07H8N7ZCW",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 250 ml",
+                "excerpts": [
+                  "# Kerastase Elixir Ultime Le Bain Shampoo 250 ml ... Visit the K\u00c9RASTASE Store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com.au/Kerastase-Elixir-Sublimating-Infused-Shampoo/dp/B07H8N7ZCW",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 250 ml",
+                "excerpts": [
+                  "Amazon Australia marketplace; brand-store ASIN currently unavailable (marketplace platform)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-ultime-hydrating-shampoo-8-5oz/-/A-1009049413",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 8.5oz",
+                "excerpts": [
+                  "# Kerastase Elixir Ultime Le Bain Shampoo 8.5oz ... Add to cart ... Sold & shipped by 232 Inc. (no price string present in extracted page content)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-ultime-hydrating-shampoo-8-5oz/-/A-1009049413",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 8.5oz",
+                "excerpts": [
+                  "target.com (US); price not rendered in extracted content (JS-loaded)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-ultime-hydrating-shampoo-8-5oz/-/A-1009049413",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 8.5oz",
+                "excerpts": [
+                  "Add to cart button present (active purchase, sold & shipped by 232 Inc.)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-ultime-hydrating-shampoo-8-5oz/-/A-1009049413",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 8.5oz",
+                "excerpts": [
+                  "https://target.com/p/kerastase-ultime-hydrating-shampoo-8-5oz/-/A-1009049413"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-ultime-hydrating-shampoo-8-5oz/-/A-1009049413",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 8.5oz",
+                "excerpts": [
+                  "retrieved: 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-ultime-hydrating-shampoo-8-5oz/-/A-1009049413",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 8.5oz",
+                "excerpts": [
+                  "https://target.com/p/kerastase-ultime-hydrating-shampoo-8-5oz/-/A-1009049413 (Target Plus marketplace)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-ultime-hydrating-shampoo-8-5oz/-/A-1009049413",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 8.5oz",
+                "excerpts": [
+                  "Sold & shipped by 232 Inc."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-ultime-hydrating-shampoo-8-5oz/-/A-1009049413",
+                "title": "Kerastase Elixir Ultime Le Bain Shampoo 8.5oz",
+                "excerpts": [
+                  "Sold & shipped by 232 Inc. - third-party seller on Target Plus marketplace"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

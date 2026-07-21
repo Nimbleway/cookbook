@@ -1,0 +1,2426 @@
+{
+  "sku_id": "KER-010",
+  "effort": "high",
+  "elapsed_s": 947,
+  "fetched_at": "2026-07-20T13:17:30+00:00",
+  "run_id": "task_run_da175df38f9447a5ab43551e0449c359",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_da175df38f9447a5ab43551e0449c359",
+      "interaction_id": "task_run_da175df38f9447a5ab43551e0449c359",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil, 30ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:01:42.893019Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:01:43.078567Z",
+      "completed_at": "2026-07-20T13:17:23.707799Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase-usa.com/collections/elixir-ultime/lhuile-original-hair-oil-refillable-for-hair-shine.html?dwvar_lhuile-original-hair-oil-refillable-for-hair-shine_size=30ML",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "K\u00e9rastase USA",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase-usa.com",
+          "advertised_price": "32.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/Kerastase-Elixir-Ultime-Travel-Original/dp/B0D2LWFF2P",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Amazon.com (Sold by K\u00e9rastase)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.com",
+          "advertised_price": "32.00"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase.ca/en/collections/elixir-ultime/Huile-Originale-Elixir-Ultime-refillable.html?dwvar_Huile-Originale-Elixir-Ultime-refillable_size=30ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "K\u00e9rastase Canada",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase.ca",
+          "advertised_price": "46.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-elixir-ultime-l-huile-originale-hair-oil-30ml/15229253",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "LOOKFANTASTIC",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "23.20"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://allbeauty.com/products/p-kerastase-elixir-ultime-lhuile-originale-iconic-hair-oil-30ml-15229253",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "allbeauty",
+          "seller_type": "independent_store",
+          "seller_domain": "allbeauty.com",
+          "advertised_price": "25.80"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.onbuy.com/gb/p/kerastase-elixir-ultime-hair-oil-for-all-hair-types-nourishes-dull-hair-strengthens-and-protects-hair-from-heat-with-argan-and-camellia-oil~p109785501/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "OnBuy (seller: VALI HUSTLE LTD)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "onbuy.com",
+          "advertised_price": "29.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": null,
+          "listing_url": "https://www.facethefuture.co.uk/products/kerastase-elixir-ultime-l-huile-originale-refillable-30ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Face the Future",
+          "seller_type": "independent_store",
+          "seller_domain": "facethefuture.co.uk",
+          "advertised_price": "21.74"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://skincolor.net/kerastase-elixir-ultime-l-huile-originale-refillable-hair-oil-30-ml/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Skin Color",
+          "seller_type": "independent_store",
+          "seller_domain": "skincolor.net",
+          "advertised_price": "32.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.parfumdreams.co.uk/Kerastase/Hair-care/Elixir-Ultime/LHuile-Originale/index_130586.aspx",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "parfumdreams",
+          "seller_type": "discounter",
+          "seller_domain": "parfumdreams.co.uk",
+          "advertised_price": "21.73"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.co.uk/dp/B0D2LWFF2P",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Amazon UK",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "amazon.co.uk",
+          "advertised_price": "23.20"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.klipshop.com/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "KlipShop",
+          "seller_type": "discounter",
+          "seller_domain": "klipshop.com",
+          "advertised_price": "22.57"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.beautyflash.co.uk/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Beauty Flash",
+          "seller_type": "independent_store",
+          "seller_domain": "beautyflash.co.uk",
+          "advertised_price": "23.20"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.noli.co.uk/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Noli",
+          "seller_type": "independent_store",
+          "seller_domain": "noli.co.uk",
+          "advertised_price": "29.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.123flowers.co.uk/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "123 flowers",
+          "seller_type": "independent_store",
+          "seller_domain": "123flowers.co.uk",
+          "advertised_price": "23.20"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase.co.uk/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "K\u00e9rastase UK (official)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase.co.uk",
+          "advertised_price": "29.00"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://kerastase-usa.com/collections/elixir-ultime/lhuile-original-hair-oil-refillable-for-hair-shine.html?srsltid=AfmBOooXJJsdT2QYkayJkihXmTmgFBxX3Zf5-0kkPU7RC_-PnYyTeGGf",
+            "title": "Elixir Ultime Refillable Hydrating Hair Oil for Shine | K\u00e9rastase",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/Kerastase-Elixir-Ultime-Travel-Original/dp/B0D2LWFF2P",
+            "title": "Kerastase Elixir Ultime Refillable Hair Oil",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://kerastase.ca/en/collections/elixir-ultime/Huile-Originale-Elixir-Ultime-refillable.html?srsltid=AfmBOoo7dXWSrWeqPYB8irwWY487r-tgB6wcsOdA96UHCvfh3Mh4PGsr",
+            "title": "Elixir Ultime L'Huile Originale Hair Oil Refillable - Kerastase.ca",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/c/brands/kerastase/radiance-shine?srsltid=AfmBOopTPD2oroCX9yhuRkXMydTvZ3YqmdZnTQp-KSWlvaskNvVzozgP",
+            "title": "K\u00e9rastase Elixir Ultime Range",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://allbeauty.com/products/p-kerastase-elixir-ultime-lhuile-originale-iconic-hair-oil-30ml-15229253",
+            "title": "K\u00e9rastase Elixir Ultime L'Huile Originale: Iconic Hair Oil 30ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://onbuy.com/gb/p/kerastase-elixir-ultime-hair-oil-for-all-hair-types-nourishes-dull-hair-strengthens-and-protects-hair-from-heat-with-argan-and-camellia-oil~p109785501",
+            "title": "K\u00e9rastase Elixir Ultime Hair Oil, For all hair types, Nourishes Dull ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://facethefuture.co.uk/products/kerastase-elixir-ultime-l-huile-originale-refillable-30ml?srsltid=AfmBOopA8eeqa5gtpk3GSasdlSr9QWHpk1emZx21x98yc8LoMMrvv5kY",
+            "title": "Kerastase Elixir Ultime L'Huile Originale Refillable 30ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://skincolor.net/kerastase-elixir-ultime-l-huile-originale-refillable-hair-oil-30-ml?srsltid=AfmBOopJHI38_8kLkSZWi_aay58Suc0g_r4vbQCxJ9C-GtFiGuT5fWUg",
+            "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Refillable Hair Oil ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+            "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://parfumdreams.co.uk/Kerastase/Hair-care/Elixir-Ultime/LHuile-Originale/index_130586.aspx",
+            "title": "Elixir Ultime L'Huile Originale by K\u00e9rastase",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/elixir-ultime/lhuile-original-hair-oil-refillable-for-hair-shine.html?srsltid=AfmBOooXJJsdT2QYkayJkihXmTmgFBxX3Zf5-0kkPU7RC_-PnYyTeGGf",
+                "title": "Elixir Ultime Refillable Hydrating Hair Oil for Shine | K\u00e9rastase",
+                "excerpts": [
+                  "30 ml ... Old price New price $32.00 ... Elixir Ultime Refillable Hydrating Hair Oil"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/elixir-ultime/lhuile-original-hair-oil-refillable-for-hair-shine.html?srsltid=AfmBOooXJJsdT2QYkayJkihXmTmgFBxX3Zf5-0kkPU7RC_-PnYyTeGGf",
+                "title": "Elixir Ultime Refillable Hydrating Hair Oil for Shine | K\u00e9rastase",
+                "excerpts": [
+                  "kerastase-usa.com/collections/elixir-ultime/lhuile-original-hair-oil-refillable-for-hair-shine.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/elixir-ultime/lhuile-original-hair-oil-refillable-for-hair-shine.html?srsltid=AfmBOooXJJsdT2QYkayJkihXmTmgFBxX3Zf5-0kkPU7RC_-PnYyTeGGf",
+                "title": "Elixir Ultime Refillable Hydrating Hair Oil for Shine | K\u00e9rastase",
+                "excerpts": [
+                  "30 ml ... Old price New price $32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/elixir-ultime/lhuile-original-hair-oil-refillable-for-hair-shine.html?srsltid=AfmBOooXJJsdT2QYkayJkihXmTmgFBxX3Zf5-0kkPU7RC_-PnYyTeGGf",
+                "title": "Elixir Ultime Refillable Hydrating Hair Oil for Shine | K\u00e9rastase",
+                "excerpts": [
+                  "Prices and payment are shown in USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/elixir-ultime/lhuile-original-hair-oil-refillable-for-hair-shine.html?srsltid=AfmBOooXJJsdT2QYkayJkihXmTmgFBxX3Zf5-0kkPU7RC_-PnYyTeGGf",
+                "title": "Elixir Ultime Refillable Hydrating Hair Oil for Shine | K\u00e9rastase",
+                "excerpts": [
+                  "30 ml ... Old price New price $32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/elixir-ultime/lhuile-original-hair-oil-refillable-for-hair-shine.html?srsltid=AfmBOooXJJsdT2QYkayJkihXmTmgFBxX3Zf5-0kkPU7RC_-PnYyTeGGf",
+                "title": "Elixir Ultime Refillable Hydrating Hair Oil for Shine | K\u00e9rastase",
+                "excerpts": [
+                  "kerastase-usa.com/collections/elixir-ultime/lhuile-original-hair-oil-refillable-for-hair-shine.html ... Elixir Ultime Refillable Hydrating Hair Oil ... 30 ml ... $32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/elixir-ultime/lhuile-original-hair-oil-refillable-for-hair-shine.html?srsltid=AfmBOooXJJsdT2QYkayJkihXmTmgFBxX3Zf5-0kkPU7RC_-PnYyTeGGf",
+                "title": "Elixir Ultime Refillable Hydrating Hair Oil for Shine | K\u00e9rastase",
+                "excerpts": [
+                  "30 ml ... Old price New price $32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/elixir-ultime/lhuile-original-hair-oil-refillable-for-hair-shine.html?srsltid=AfmBOooXJJsdT2QYkayJkihXmTmgFBxX3Zf5-0kkPU7RC_-PnYyTeGGf",
+                "title": "Elixir Ultime Refillable Hydrating Hair Oil for Shine | K\u00e9rastase",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Kerastase-Elixir-Ultime-Travel-Original/dp/B0D2LWFF2P",
+                "title": "Kerastase Elixir Ultime Refillable Hair Oil",
+                "excerpts": [
+                  "Sold by: K\u00e9rastase ... $32.00 $31.68 per fluid ounce ... In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Kerastase-Elixir-Ultime-Travel-Original/dp/B0D2LWFF2P",
+                "title": "Kerastase Elixir Ultime Refillable Hair Oil",
+                "excerpts": [
+                  "amazon.com/Kerastase-Elixir-Ultime-Travel-Original/dp/B0D2LWFF2P"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Kerastase-Elixir-Ultime-Travel-Original/dp/B0D2LWFF2P",
+                "title": "Kerastase Elixir Ultime Refillable Hair Oil",
+                "excerpts": [
+                  "$32.00 $31.68 per fluid ounce"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Kerastase-Elixir-Ultime-Travel-Original/dp/B0D2LWFF2P",
+                "title": "Kerastase Elixir Ultime Refillable Hair Oil",
+                "excerpts": [
+                  "$32.00 ... FREE delivery Saturday, July 25 on orders shipped by Amazon over $35"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Kerastase-Elixir-Ultime-Travel-Original/dp/B0D2LWFF2P",
+                "title": "Kerastase Elixir Ultime Refillable Hair Oil",
+                "excerpts": [
+                  "amazon.com/Kerastase-Elixir-Ultime-Travel-Original/dp/B0D2LWFF2P"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Kerastase-Elixir-Ultime-Travel-Original/dp/B0D2LWFF2P",
+                "title": "Kerastase Elixir Ultime Refillable Hair Oil",
+                "excerpts": [
+                  "Sold by: K\u00e9rastase ... Ships from: Amazon ... $32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Kerastase-Elixir-Ultime-Travel-Original/dp/B0D2LWFF2P",
+                "title": "Kerastase Elixir Ultime Refillable Hair Oil",
+                "excerpts": [
+                  "In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Kerastase-Elixir-Ultime-Travel-Original/dp/B0D2LWFF2P",
+                "title": "Kerastase Elixir Ultime Refillable Hair Oil",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/elixir-ultime/Huile-Originale-Elixir-Ultime-refillable.html?srsltid=AfmBOoo7dXWSrWeqPYB8irwWY487r-tgB6wcsOdA96UHCvfh3Mh4PGsr",
+                "title": "Elixir Ultime L'Huile Originale Hair Oil Refillable - Kerastase.ca",
+                "excerpts": [
+                  "30mL ... Old price New price $ 46.00 ($ 1.53/ml.) ... In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/elixir-ultime/Huile-Originale-Elixir-Ultime-refillable.html?srsltid=AfmBOoo7dXWSrWeqPYB8irwWY487r-tgB6wcsOdA96UHCvfh3Mh4PGsr",
+                "title": "Elixir Ultime L'Huile Originale Hair Oil Refillable - Kerastase.ca",
+                "excerpts": [
+                  "kerastase.ca/en/collections/elixir-ultime/Huile-Originale-Elixir-Ultime-refillable.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/elixir-ultime/Huile-Originale-Elixir-Ultime-refillable.html?srsltid=AfmBOoo7dXWSrWeqPYB8irwWY487r-tgB6wcsOdA96UHCvfh3Mh4PGsr",
+                "title": "Elixir Ultime L'Huile Originale Hair Oil Refillable - Kerastase.ca",
+                "excerpts": [
+                  "30mL ... Old price New price $ 46.00 ($ 1.53/ml.)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/elixir-ultime/Huile-Originale-Elixir-Ultime-refillable.html?srsltid=AfmBOoo7dXWSrWeqPYB8irwWY487r-tgB6wcsOdA96UHCvfh3Mh4PGsr",
+                "title": "Elixir Ultime L'Huile Originale Hair Oil Refillable - Kerastase.ca",
+                "excerpts": [
+                  "Prices and payment are shown in CAD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/elixir-ultime/Huile-Originale-Elixir-Ultime-refillable.html?srsltid=AfmBOoo7dXWSrWeqPYB8irwWY487r-tgB6wcsOdA96UHCvfh3Mh4PGsr",
+                "title": "Elixir Ultime L'Huile Originale Hair Oil Refillable - Kerastase.ca",
+                "excerpts": [
+                  "30mL ... Old price New price $ 46.00 ... Huile-Originale-Elixir-Ultime-refillable.html?dwvar_Huile-Originale-Elixir-Ultime-refillable_size=30ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/elixir-ultime/Huile-Originale-Elixir-Ultime-refillable.html?srsltid=AfmBOoo7dXWSrWeqPYB8irwWY487r-tgB6wcsOdA96UHCvfh3Mh4PGsr",
+                "title": "Elixir Ultime L'Huile Originale Hair Oil Refillable - Kerastase.ca",
+                "excerpts": [
+                  "kerastase.ca/en/collections/elixir-ultime/Huile-Originale-Elixir-Ultime-refillable.html ... 30mL ... $ 46.00 ... In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/elixir-ultime/Huile-Originale-Elixir-Ultime-refillable.html?srsltid=AfmBOoo7dXWSrWeqPYB8irwWY487r-tgB6wcsOdA96UHCvfh3Mh4PGsr",
+                "title": "Elixir Ultime L'Huile Originale Hair Oil Refillable - Kerastase.ca",
+                "excerpts": [
+                  "In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase.ca/en/collections/elixir-ultime/Huile-Originale-Elixir-Ultime-refillable.html?srsltid=AfmBOoo7dXWSrWeqPYB8irwWY487r-tgB6wcsOdA96UHCvfh3Mh4PGsr",
+                "title": "Elixir Ultime L'Huile Originale Hair Oil Refillable - Kerastase.ca",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/c/brands/kerastase/radiance-shine?srsltid=AfmBOopTPD2oroCX9yhuRkXMydTvZ3YqmdZnTQp-KSWlvaskNvVzozgP",
+                "title": "K\u00e9rastase Elixir Ultime Range",
+                "excerpts": [
+                  "Recommended Retail Price: \u00a329.00 Current price: \u00a323.20 ... K\u00e9rastase Elixir Ultime Hair Oil L'Huile Originale ... 30ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/c/brands/kerastase/radiance-shine?srsltid=AfmBOopTPD2oroCX9yhuRkXMydTvZ3YqmdZnTQp-KSWlvaskNvVzozgP",
+                "title": "K\u00e9rastase Elixir Ultime Range",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-elixir-ultime-l-huile-originale-hair-oil-30ml/15229253"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/c/brands/kerastase/radiance-shine?srsltid=AfmBOopTPD2oroCX9yhuRkXMydTvZ3YqmdZnTQp-KSWlvaskNvVzozgP",
+                "title": "K\u00e9rastase Elixir Ultime Range",
+                "excerpts": [
+                  "Recommended Retail Price: \u00a329.00 Current price: \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/c/brands/kerastase/radiance-shine?srsltid=AfmBOopTPD2oroCX9yhuRkXMydTvZ3YqmdZnTQp-KSWlvaskNvVzozgP",
+                "title": "K\u00e9rastase Elixir Ultime Range",
+                "excerpts": [
+                  "FREE UK delivery on orders over \u00a325"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/c/brands/kerastase/radiance-shine?srsltid=AfmBOopTPD2oroCX9yhuRkXMydTvZ3YqmdZnTQp-KSWlvaskNvVzozgP",
+                "title": "K\u00e9rastase Elixir Ultime Range",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-elixir-ultime-l-huile-originale-hair-oil-30ml/15229253"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/c/brands/kerastase/radiance-shine?srsltid=AfmBOopTPD2oroCX9yhuRkXMydTvZ3YqmdZnTQp-KSWlvaskNvVzozgP",
+                "title": "K\u00e9rastase Elixir Ultime Range",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-elixir-ultime-l-huile-originale-hair-oil-30ml/15229253 ... Recommended Retail Price: \u00a329.00 Current price: \u00a323.20 ... QUICK BUY"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/c/brands/kerastase/radiance-shine?srsltid=AfmBOopTPD2oroCX9yhuRkXMydTvZ3YqmdZnTQp-KSWlvaskNvVzozgP",
+                "title": "K\u00e9rastase Elixir Ultime Range",
+                "excerpts": [
+                  "QUICK BUY ... Current price: \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/c/brands/kerastase/radiance-shine?srsltid=AfmBOopTPD2oroCX9yhuRkXMydTvZ3YqmdZnTQp-KSWlvaskNvVzozgP",
+                "title": "K\u00e9rastase Elixir Ultime Range",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-elixir-ultime-lhuile-originale-iconic-hair-oil-30ml-15229253",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale: Iconic Hair Oil 30ml",
+                "excerpts": [
+                  "K\u00e9rastase Elixir Ultime L'Huile Originale: Iconic Hair Oil 30ml ... Regular price \u00a325.80 ... RRP: \u00a329.00 ... In stock - Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-elixir-ultime-lhuile-originale-iconic-hair-oil-30ml-15229253",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale: Iconic Hair Oil 30ml",
+                "excerpts": [
+                  "allbeauty.com/products/p-kerastase-elixir-ultime-lhuile-originale-iconic-hair-oil-30ml-15229253"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-elixir-ultime-lhuile-originale-iconic-hair-oil-30ml-15229253",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale: Iconic Hair Oil 30ml",
+                "excerpts": [
+                  "Regular price \u00a325.80 ... RRP: \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-elixir-ultime-lhuile-originale-iconic-hair-oil-30ml-15229253",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale: Iconic Hair Oil 30ml",
+                "excerpts": [
+                  "Spend \u00a325.00 more for FREE UK delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-elixir-ultime-lhuile-originale-iconic-hair-oil-30ml-15229253",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale: Iconic Hair Oil 30ml",
+                "excerpts": [
+                  "allbeauty.com/products/p-kerastase-elixir-ultime-lhuile-originale-iconic-hair-oil-30ml-15229253"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-elixir-ultime-lhuile-originale-iconic-hair-oil-30ml-15229253",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale: Iconic Hair Oil 30ml",
+                "excerpts": [
+                  "allbeauty.com/products/p-kerastase-elixir-ultime-lhuile-originale-iconic-hair-oil-30ml-15229253 ... Regular price \u00a325.80 ... In stock - Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-elixir-ultime-lhuile-originale-iconic-hair-oil-30ml-15229253",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale: Iconic Hair Oil 30ml",
+                "excerpts": [
+                  "In stock - Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/products/p-kerastase-elixir-ultime-lhuile-originale-iconic-hair-oil-30ml-15229253",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale: Iconic Hair Oil 30ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/kerastase-elixir-ultime-hair-oil-for-all-hair-types-nourishes-dull-hair-strengthens-and-protects-hair-from-heat-with-argan-and-camellia-oil~p109785501",
+                "title": "K\u00e9rastase Elixir Ultime Hair Oil, For all hair types, Nourishes Dull ...",
+                "excerpts": [
+                  "\u00a329.00 FREE Delivery ... Add to Basket ... Sold by VALI HUSTLE LTD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/kerastase-elixir-ultime-hair-oil-for-all-hair-types-nourishes-dull-hair-strengthens-and-protects-hair-from-heat-with-argan-and-camellia-oil~p109785501",
+                "title": "K\u00e9rastase Elixir Ultime Hair Oil, For all hair types, Nourishes Dull ...",
+                "excerpts": [
+                  "\u00a329.00 FREE Delivery ... onbuy.com/gb/p/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/kerastase-elixir-ultime-hair-oil-for-all-hair-types-nourishes-dull-hair-strengthens-and-protects-hair-from-heat-with-argan-and-camellia-oil~p109785501",
+                "title": "K\u00e9rastase Elixir Ultime Hair Oil, For all hair types, Nourishes Dull ...",
+                "excerpts": [
+                  "\u00a329.00 FREE Delivery ... Add to Basket"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/kerastase-elixir-ultime-hair-oil-for-all-hair-types-nourishes-dull-hair-strengthens-and-protects-hair-from-heat-with-argan-and-camellia-oil~p109785501",
+                "title": "K\u00e9rastase Elixir Ultime Hair Oil, For all hair types, Nourishes Dull ...",
+                "excerpts": [
+                  "onbuy.com/gb/p/kerastase-elixir-ultime-hair-oil-for-all-hair-types-nourishes-dull-hair...~p109785501"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/kerastase-elixir-ultime-hair-oil-for-all-hair-types-nourishes-dull-hair-strengthens-and-protects-hair-from-heat-with-argan-and-camellia-oil~p109785501",
+                "title": "K\u00e9rastase Elixir Ultime Hair Oil, For all hair types, Nourishes Dull ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/kerastase-elixir-ultime-hair-oil-for-all-hair-types-nourishes-dull-hair-strengthens-and-protects-hair-from-heat-with-argan-and-camellia-oil~p109785501",
+                "title": "K\u00e9rastase Elixir Ultime Hair Oil, For all hair types, Nourishes Dull ...",
+                "excerpts": [
+                  "onbuy.com/gb/p/kerastase-elixir-ultime-hair-oil..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/kerastase-elixir-ultime-hair-oil-for-all-hair-types-nourishes-dull-hair-strengthens-and-protects-hair-from-heat-with-argan-and-camellia-oil~p109785501",
+                "title": "K\u00e9rastase Elixir Ultime Hair Oil, For all hair types, Nourishes Dull ...",
+                "excerpts": [
+                  "Sold by VALI HUSTLE LTD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://onbuy.com/gb/p/kerastase-elixir-ultime-hair-oil-for-all-hair-types-nourishes-dull-hair-strengthens-and-protects-hair-from-heat-with-argan-and-camellia-oil~p109785501",
+                "title": "K\u00e9rastase Elixir Ultime Hair Oil, For all hair types, Nourishes Dull ...",
+                "excerpts": [
+                  "\u00a329.00 FREE Delivery ... Add to Basket ... Sold by VALI HUSTLE LTD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://facethefuture.co.uk/products/kerastase-elixir-ultime-l-huile-originale-refillable-30ml?srsltid=AfmBOopA8eeqa5gtpk3GSasdlSr9QWHpk1emZx21x98yc8LoMMrvv5kY",
+                "title": "Kerastase Elixir Ultime L'Huile Originale Refillable 30ml",
+                "excerpts": [
+                  "Price \u00a321.74 \u00a329.00 ... Kerastase Elixir Ultime L'Huile Originale Refillable 30ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://facethefuture.co.uk/products/kerastase-elixir-ultime-l-huile-originale-refillable-30ml?srsltid=AfmBOopA8eeqa5gtpk3GSasdlSr9QWHpk1emZx21x98yc8LoMMrvv5kY",
+                "title": "Kerastase Elixir Ultime L'Huile Originale Refillable 30ml",
+                "excerpts": [
+                  "\u00a321.74 \u00a329.00 ... facethefuture.co.uk"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://facethefuture.co.uk/products/kerastase-elixir-ultime-l-huile-originale-refillable-30ml?srsltid=AfmBOopA8eeqa5gtpk3GSasdlSr9QWHpk1emZx21x98yc8LoMMrvv5kY",
+                "title": "Kerastase Elixir Ultime L'Huile Originale Refillable 30ml",
+                "excerpts": [
+                  "Price \u00a321.74 \u00a329.00 (stock status not explicitly shown in extracted text)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://facethefuture.co.uk/products/kerastase-elixir-ultime-l-huile-originale-refillable-30ml?srsltid=AfmBOopA8eeqa5gtpk3GSasdlSr9QWHpk1emZx21x98yc8LoMMrvv5kY",
+                "title": "Kerastase Elixir Ultime L'Huile Originale Refillable 30ml",
+                "excerpts": [
+                  "facethefuture.co.uk/products/kerastase-elixir-ultime-l-huile-originale-refillable-30ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://facethefuture.co.uk/products/kerastase-elixir-ultime-l-huile-originale-refillable-30ml?srsltid=AfmBOopA8eeqa5gtpk3GSasdlSr9QWHpk1emZx21x98yc8LoMMrvv5kY",
+                "title": "Kerastase Elixir Ultime L'Huile Originale Refillable 30ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://facethefuture.co.uk/products/kerastase-elixir-ultime-l-huile-originale-refillable-30ml?srsltid=AfmBOopA8eeqa5gtpk3GSasdlSr9QWHpk1emZx21x98yc8LoMMrvv5kY",
+                "title": "Kerastase Elixir Ultime L'Huile Originale Refillable 30ml",
+                "excerpts": [
+                  "facethefuture.co.uk"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://facethefuture.co.uk/products/kerastase-elixir-ultime-l-huile-originale-refillable-30ml?srsltid=AfmBOopA8eeqa5gtpk3GSasdlSr9QWHpk1emZx21x98yc8LoMMrvv5kY",
+                "title": "Kerastase Elixir Ultime L'Huile Originale Refillable 30ml",
+                "excerpts": [
+                  "facethefuture.co.uk/products/kerastase-elixir-ultime-l-huile-originale-refillable-30ml ... Price \u00a321.74 \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://facethefuture.co.uk/products/kerastase-elixir-ultime-l-huile-originale-refillable-30ml?srsltid=AfmBOopA8eeqa5gtpk3GSasdlSr9QWHpk1emZx21x98yc8LoMMrvv5kY",
+                "title": "Kerastase Elixir Ultime L'Huile Originale Refillable 30ml",
+                "excerpts": [
+                  "facethefuture.co.uk/products/kerastase-elixir-ultime-l-huile-originale-refillable-30ml ... Price \u00a321.74 \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-elixir-ultime-l-huile-originale-refillable-hair-oil-30-ml?srsltid=AfmBOopJHI38_8kLkSZWi_aay58Suc0g_r4vbQCxJ9C-GtFiGuT5fWUg",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Refillable Hair Oil ...",
+                "excerpts": [
+                  "K\u00e9rastase Elixir Ultime L'Huile Originale Refillable Hair Oil 30 ml ... $32.00 ... In Stock & Ready to ship"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-elixir-ultime-l-huile-originale-refillable-hair-oil-30-ml?srsltid=AfmBOopJHI38_8kLkSZWi_aay58Suc0g_r4vbQCxJ9C-GtFiGuT5fWUg",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Refillable Hair Oil ...",
+                "excerpts": [
+                  "US Dollar ... $32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-elixir-ultime-l-huile-originale-refillable-hair-oil-30-ml?srsltid=AfmBOopJHI38_8kLkSZWi_aay58Suc0g_r4vbQCxJ9C-GtFiGuT5fWUg",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Refillable Hair Oil ...",
+                "excerpts": [
+                  "In Stock & Ready to ship"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-elixir-ultime-l-huile-originale-refillable-hair-oil-30-ml?srsltid=AfmBOopJHI38_8kLkSZWi_aay58Suc0g_r4vbQCxJ9C-GtFiGuT5fWUg",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Refillable Hair Oil ...",
+                "excerpts": [
+                  "skincolor.net/kerastase-elixir-ultime-l-huile-originale-refillable-hair-oil-30-ml/"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-elixir-ultime-l-huile-originale-refillable-hair-oil-30-ml?srsltid=AfmBOopJHI38_8kLkSZWi_aay58Suc0g_r4vbQCxJ9C-GtFiGuT5fWUg",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Refillable Hair Oil ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-elixir-ultime-l-huile-originale-refillable-hair-oil-30-ml?srsltid=AfmBOopJHI38_8kLkSZWi_aay58Suc0g_r4vbQCxJ9C-GtFiGuT5fWUg",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Refillable Hair Oil ...",
+                "excerpts": [
+                  "skincolor.net/kerastase-elixir-ultime-l-huile-originale-refillable-hair-oil-30-ml/"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-elixir-ultime-l-huile-originale-refillable-hair-oil-30-ml?srsltid=AfmBOopJHI38_8kLkSZWi_aay58Suc0g_r4vbQCxJ9C-GtFiGuT5fWUg",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Refillable Hair Oil ...",
+                "excerpts": [
+                  "Skin Color ... K\u00e9rastase Elixir Ultime L'Huile Originale Refillable Hair Oil 30 ml ... $32.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-elixir-ultime-l-huile-originale-refillable-hair-oil-30-ml?srsltid=AfmBOopJHI38_8kLkSZWi_aay58Suc0g_r4vbQCxJ9C-GtFiGuT5fWUg",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Refillable Hair Oil ...",
+                "excerpts": [
+                  "Skin Color ... K\u00e9rastase Elixir Ultime L'Huile Originale Refillable Hair Oil 30 ml ... $32.00 ... In Stock & Ready to ship"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "parfumdreams ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair oil Female 30 ml ... Lowest price ... \u00a321.73"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Compare prices from \u00a321.73 to \u00a329.00 ... \u00a33.95 shipping, 5-8 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "\u00a321.73 ... \u00a33.95 shipping, 5-8 days (listed as in stock with delivery estimate)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://parfumdreams.co.uk/Kerastase/Hair-care/Elixir-Ultime/LHuile-Originale/index_130586.aspx",
+                "title": "Elixir Ultime L'Huile Originale by K\u00e9rastase",
+                "excerpts": [
+                  "parfumdreams.co.uk/Kerastase/Hair-care/Elixir-Ultime/LHuile-Originale/index_130586.aspx"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://parfumdreams.co.uk/Kerastase/Hair-care/Elixir-Ultime/LHuile-Originale/index_130586.aspx",
+                "title": "Elixir Ultime L'Huile Originale by K\u00e9rastase",
+                "excerpts": [
+                  "parfumdreams.co.uk/Kerastase/Hair-care/Elixir-Ultime/LHuile-Originale/index_130586.aspx"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "parfumdreams ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair oil Female 30 ml ... \u00a321.73"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "parfumdreams ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair oil Female 30 ml ... Lowest price ... \u00a321.73 ... \u00a33.95 shipping, 5-8 days"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Amazon ... K\u00e9rastase Elixir Ultime Hair Oil ... L'Huile Originale, 30ml ... Free shipping ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Amazon ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Amazon ... Free shipping ... \u00a323.20 (listed with free shipping, in stock)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Amazon ... K\u00e9rastase Elixir Ultime Hair Oil ... L'Huile Originale, 30ml ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Amazon ... K\u00e9rastase Elixir Ultime Hair Oil ... L'Huile Originale, 30ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Amazon ... K\u00e9rastase Elixir Ultime Hair Oil ... L'Huile Originale, 30ml ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Amazon ... K\u00e9rastase Elixir Ultime Hair Oil ... L'Huile Originale, 30ml ... Free shipping ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "KlipShop ... K\u00e9rastase Elixir Ultime L'Huile Originale 30ml ... \u00a35.95 shipping, 5-6 days ... \u00a322.57"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "KlipShop ... \u00a322.57"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "KlipShop ... \u00a35.95 shipping, 5-6 days (in stock with delivery estimate)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "KlipShop ... K\u00e9rastase Elixir Ultime L'Huile Originale 30ml ... \u00a322.57"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "KlipShop ... K\u00e9rastase Elixir Ultime L'Huile Originale 30ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "KlipShop ... K\u00e9rastase Elixir Ultime L'Huile Originale 30ml ... \u00a322.57"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "KlipShop ... K\u00e9rastase Elixir Ultime L'Huile Originale 30ml ... \u00a35.95 shipping, 5-6 days ... \u00a322.57"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Beauty Flash ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml ... Free shipping, 2-4 days ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Beauty Flash ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Beauty Flash ... Free shipping, 2-4 days (in stock with delivery estimate)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Beauty Flash ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Beauty Flash ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Beauty Flash ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Beauty Flash ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml ... Free shipping, 2-4 days ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Noli ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil - 30ml ... \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Noli ... \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Noli ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil - 30ml ... \u00a329.00 (listed in price comparison, in stock)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Noli ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil - 30ml ... \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Noli ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil - 30ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Noli ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil - 30ml ... \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Noli ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil - 30ml ... \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "123 flowers ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml ... Free shipping ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "123 flowers ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "123 flowers ... Free shipping ... \u00a323.20 (in stock with free shipping)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "123 flowers ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "123 flowers ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "123 flowers ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "123 flowers ... K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml ... Free shipping ... \u00a323.20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Kerastase ... K\u00e9rastase L'Huile Originale ... Free shipping, 2-5 days ... \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Kerastase ... \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Kerastase ... K\u00e9rastase L'Huile Originale ... Free shipping, 2-5 days (in stock)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Kerastase ... K\u00e9rastase L'Huile Originale ... \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Kerastase ... K\u00e9rastase L'Huile Originale ... \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Kerastase ... K\u00e9rastase L'Huile Originale ... \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://pricerunner.com/pl/507-3332534230/Hair-Products/Kerastase-Elixir-Ultime-L-Huile-Originale-Iconic-Hair-Oil-30ml-Compare-Prices",
+                "title": "K\u00e9rastase Elixir Ultime L'Huile Originale Hair Oil 30ml",
+                "excerpts": [
+                  "Kerastase ... K\u00e9rastase L'Huile Originale ... Free shipping, 2-5 days ... \u00a329.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

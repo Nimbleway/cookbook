@@ -1,0 +1,2616 @@
+{
+  "sku_id": "KER-002",
+  "effort": "high",
+  "elapsed_s": 1198,
+  "fetched_at": "2026-07-20T13:16:43+00:00",
+  "run_id": "task_run_cc3b0605b67749f39ba6cfe1dc3a6238",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_cc3b0605b67749f39ba6cfe1dc3a6238",
+      "interaction_id": "task_run_cc3b0605b67749f39ba6cfe1dc3a6238",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Nutritive Masquintense Hair Mask, 200ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:56:43.857499Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:56:43.934168Z",
+      "completed_at": "2026-07-20T13:16:31.432857Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase-usa.com/collections/nutritive/masquintense-hair-mask.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "K\u00e9rastase USA (official)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase-usa.com",
+          "advertised_price": "$65.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/KERASTASE-Nutritive-Masquintense-Plant-Based-Niacinamide/dp/B0BZZK3R5S",
+          "observed_at": "2026-07-20",
+          "seller_name": "K\u00e9rastase (Amazon storefront)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.com",
+          "advertised_price": "$65.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Nutritive-Masquintense-6-7-oz/3215236150",
+          "observed_at": "2026-07-20",
+          "seller_name": "Passion Beauty (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$54.95"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-nutritive-masquintense-deep-nutrition-soft-mask-for-very-dry-fine-to-medium-hair-200ml/14510093",
+          "observed_at": "2026-07-20",
+          "seller_name": "LOOKFANTASTIC",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "\u00a346.50"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://shop.toniandguy.com/products/kerastase-nutritive-masquintense-very-dry-hair-fine-to-medium-200ml",
+          "observed_at": "2026-07-20",
+          "seller_name": "Toni&Guy Shop",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "shop.toniandguy.com",
+          "advertised_price": "\u00a332.60"
+        },
+        {
+          "currency": "AUD",
+          "in_stock": true,
+          "listing_url": "https://www.adorebeauty.com.au/p/kerastase/kerastase-nutritive-irisome-masquintense-fins-fine-hair.html",
+          "observed_at": "2026-07-20",
+          "seller_name": "Adore Beauty",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "adorebeauty.com.au",
+          "advertised_price": "$92.00"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://lyskin.com/shop/kerastase-nutritive-masquintense-irisome-for-fine-and-dry-hair-200ml-6-8fl-oz",
+          "observed_at": "2026-07-20",
+          "seller_name": "Lyskin",
+          "seller_type": "independent_store",
+          "seller_domain": "lyskin.com",
+          "advertised_price": "58,45"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/137319832878",
+          "observed_at": "2026-07-20",
+          "seller_name": "secondstylethreads (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $45.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/226932949069",
+          "observed_at": "2026-07-20",
+          "seller_name": "cristinasbeautycorner (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $48.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/257569563311",
+          "observed_at": "2026-07-20",
+          "seller_name": "bellwoodsupply (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $46.92"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/318324741542",
+          "observed_at": "2026-07-20",
+          "seller_name": "haircareking (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $49.75"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/206120593642",
+          "observed_at": "2026-07-20",
+          "seller_name": "hairhair (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $48.77"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": true,
+          "listing_url": "https://www.cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+          "observed_at": "2026-07-20",
+          "seller_name": "Strawberrynet",
+          "seller_type": "discounter",
+          "seller_domain": "strawberrynet.com",
+          "advertised_price": "\u00a351.00"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": false,
+          "listing_url": "https://www.cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+          "observed_at": "2026-07-20",
+          "seller_name": "allbeauty",
+          "seller_type": "discounter",
+          "seller_domain": "allbeauty.com",
+          "advertised_price": "\u00a337.13"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": false,
+          "listing_url": "https://www.cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+          "observed_at": "2026-07-20",
+          "seller_name": "Perfume Click",
+          "seller_type": "discounter",
+          "seller_domain": "perfumeclick.co.uk",
+          "advertised_price": "\u00a340.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/175737028550",
+          "observed_at": "2026-07-20",
+          "seller_name": "beautypersonalcare (eBay)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $35.77"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://kerastase-usa.com/collections/nutritive/masquintense-hair-mask.html?srsltid=AfmBOorudNv7lbGnPAnl-SwTUEEBNvakt8x0JSgFFmEgo_Y6LsyOp0j5",
+            "title": "Nutritive Masquintense Fine Hair Mask For Dry Hair | K\u00e9rastase",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/KERASTASE-Nutritive-Masquintense-Plant-Based-Niacinamide/dp/B0BZZK3R5S",
+            "title": "Kerastase Nutritive Masquintense Mask For Fine to ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/s?k=Kerastase+Nutritive+Masquintense+200ml",
+            "title": "amazon_serp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Masquintense-Hair-Mask-INTENSE-Fine-6-8-oz-NEW/3215236150",
+            "title": "walmart_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/kerastase-nutritive-masquintense-deep-nutrition-soft-mask-for-very-dry-fine-to-medium-hair-200ml/14510093?srsltid=AfmBOoom9pWP96W4HXV7qGZkTvFuIFdXSScyMHGlzif-Y0KmrYSPPfMu",
+            "title": "K\u00e9rastase Nutritive Masquintense Deep Nutrition Soft Mask ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://shop.toniandguy.com/products/kerastase-nutritive-masquintense-very-dry-hair-fine-to-medium-200ml",
+            "title": "K\u00e9rastase Nutritive Masquintense - Very Dry Hair (Fine To ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://adorebeauty.com.au/b/kerastase/conditioner.html",
+            "title": "K\u00e9rastase Conditioners & Hair Masques",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lyskin.com/shop/kerastase-nutritive-masquintense-irisome-for-fine-and-dry-hair-200ml-6-8fl-oz",
+            "title": "K\u00e9rastase nutritive hair mask for fine and dry hair 200ml ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/137319832878",
+            "title": "https://www.ebay.com/itm/137319832878",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/226932949069",
+            "title": "https://www.ebay.com/itm/226932949069",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/257569563311",
+            "title": "https://www.ebay.com/itm/257569563311",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/318324741542",
+            "title": "https://www.ebay.com/itm/318324741542",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/206120593642",
+            "title": "https://www.ebay.com/itm/206120593642",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+            "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://allbeauty.com/",
+            "title": "allbeauty: Perfume, Aftershave & Beauty at Great Prices",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/175737028550",
+            "title": "https://www.ebay.com/itm/175737028550",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 99%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/masquintense-hair-mask.html?srsltid=AfmBOorudNv7lbGnPAnl-SwTUEEBNvakt8x0JSgFFmEgo_Y6LsyOp0j5",
+                "title": "Nutritive Masquintense Fine Hair Mask For Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Nutritive Masquintense Hair Mask ... Selected 200 ml ... Old price New price $65.00 ... In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/masquintense-hair-mask.html?srsltid=AfmBOorudNv7lbGnPAnl-SwTUEEBNvakt8x0JSgFFmEgo_Y6LsyOp0j5",
+                "title": "Nutritive Masquintense Fine Hair Mask For Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "https://www.kerastase-usa.com/collections/nutritive/masquintense-hair-mask.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/masquintense-hair-mask.html?srsltid=AfmBOorudNv7lbGnPAnl-SwTUEEBNvakt8x0JSgFFmEgo_Y6LsyOp0j5",
+                "title": "Nutritive Masquintense Fine Hair Mask For Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Old price New price $65.00  Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/masquintense-hair-mask.html?srsltid=AfmBOorudNv7lbGnPAnl-SwTUEEBNvakt8x0JSgFFmEgo_Y6LsyOp0j5",
+                "title": "Nutritive Masquintense Fine Hair Mask For Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Prices and payment are shown in USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/masquintense-hair-mask.html?srsltid=AfmBOorudNv7lbGnPAnl-SwTUEEBNvakt8x0JSgFFmEgo_Y6LsyOp0j5",
+                "title": "Nutritive Masquintense Fine Hair Mask For Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Nutritive Masquintense Hair Mask ... Selected 200 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/masquintense-hair-mask.html?srsltid=AfmBOorudNv7lbGnPAnl-SwTUEEBNvakt8x0JSgFFmEgo_Y6LsyOp0j5",
+                "title": "Nutritive Masquintense Fine Hair Mask For Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "\u00a9 2026 K\u00e9rastase. This site is intended for US consumers."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/masquintense-hair-mask.html?srsltid=AfmBOorudNv7lbGnPAnl-SwTUEEBNvakt8x0JSgFFmEgo_Y6LsyOp0j5",
+                "title": "Nutritive Masquintense Fine Hair Mask For Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "In Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/masquintense-hair-mask.html?srsltid=AfmBOorudNv7lbGnPAnl-SwTUEEBNvakt8x0JSgFFmEgo_Y6LsyOp0j5",
+                "title": "Nutritive Masquintense Fine Hair Mask For Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Nutritive-Masquintense-Plant-Based-Niacinamide/dp/B0BZZK3R5S",
+                "title": "Kerastase Nutritive Masquintense Mask For Fine to ...",
+                "excerpts": [
+                  "Sold by: K\u00e9rastase ... Ships from: Amazon"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Nutritive-Masquintense-Plant-Based-Niacinamide/dp/B0BZZK3R5S",
+                "title": "Kerastase Nutritive Masquintense Mask For Fine to ...",
+                "excerpts": [
+                  "amazon.com KERASTASE Nutritive Masquintense"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Nutritive-Masquintense-Plant-Based-Niacinamide/dp/B0BZZK3R5S",
+                "title": "Kerastase Nutritive Masquintense Mask For Fine to ...",
+                "excerpts": [
+                  "$65.00 $9.56 per fluid ounce"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Nutritive-Masquintense-Plant-Based-Niacinamide/dp/B0BZZK3R5S",
+                "title": "Kerastase Nutritive Masquintense Mask For Fine to ...",
+                "excerpts": [
+                  "$65.00 ... FREE delivery Saturday, July 25"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/s?k=Kerastase+Nutritive+Masquintense+200ml",
+                "title": "amazon_serp",
+                "excerpts": [
+                  "data[0].asin: B0BZZK3R5S ... Nutritive Masquintense Mask For Fine to Medium Dry Hair ... 6.8 Fl Oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Nutritive-Masquintense-Plant-Based-Niacinamide/dp/B0BZZK3R5S",
+                "title": "Kerastase Nutritive Masquintense Mask For Fine to ...",
+                "excerpts": [
+                  "Sold by: K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Nutritive-Masquintense-Plant-Based-Niacinamide/dp/B0BZZK3R5S",
+                "title": "Kerastase Nutritive Masquintense Mask For Fine to ...",
+                "excerpts": [
+                  "FREE delivery Saturday, July 25"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/KERASTASE-Nutritive-Masquintense-Plant-Based-Niacinamide/dp/B0BZZK3R5S",
+                "title": "Kerastase Nutritive Masquintense Mask For Fine to ...",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Masquintense-Hair-Mask-INTENSE-Fine-6-8-oz-NEW/3215236150",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.seller_name: \"Passion Beauty\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Masquintense-Hair-Mask-INTENSE-Fine-6-8-oz-NEW/3215236150",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.walmart.com/ip/Kerastase-Nutritive-Masquintense-6-7-oz/3215236150"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Masquintense-Hair-Mask-INTENSE-Fine-6-8-oz-NEW/3215236150",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.price: 54.95"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Masquintense-Hair-Mask-INTENSE-Fine-6-8-oz-NEW/3215236150",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.currency: \"USD\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Masquintense-Hair-Mask-INTENSE-Fine-6-8-oz-NEW/3215236150",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.walmart.com/ip/Kerastase-Nutritive-Masquintense-6-7-oz/3215236150"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Masquintense-Hair-Mask-INTENSE-Fine-6-8-oz-NEW/3215236150",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.seller_name: \"Passion Beauty\" ... data.model: \"3474637154967\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Masquintense-Hair-Mask-INTENSE-Fine-6-8-oz-NEW/3215236150",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Masquintense-Hair-Mask-INTENSE-Fine-6-8-oz-NEW/3215236150",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-masquintense-deep-nutrition-soft-mask-for-very-dry-fine-to-medium-hair-200ml/14510093?srsltid=AfmBOoom9pWP96W4HXV7qGZkTvFuIFdXSScyMHGlzif-Y0KmrYSPPfMu",
+                "title": "K\u00e9rastase Nutritive Masquintense Deep Nutrition Soft Mask ...",
+                "excerpts": [
+                  "\u00a346.50 ... ADD TO BASKET"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-masquintense-deep-nutrition-soft-mask-for-very-dry-fine-to-medium-hair-200ml/14510093?srsltid=AfmBOoom9pWP96W4HXV7qGZkTvFuIFdXSScyMHGlzif-Y0KmrYSPPfMu",
+                "title": "K\u00e9rastase Nutritive Masquintense Deep Nutrition Soft Mask ...",
+                "excerpts": [
+                  "\u00a346.50 Or 4 interest free payments of \u00a311.62"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-masquintense-deep-nutrition-soft-mask-for-very-dry-fine-to-medium-hair-200ml/14510093?srsltid=AfmBOoom9pWP96W4HXV7qGZkTvFuIFdXSScyMHGlzif-Y0KmrYSPPfMu",
+                "title": "K\u00e9rastase Nutritive Masquintense Deep Nutrition Soft Mask ...",
+                "excerpts": [
+                  "In stock | Usually dispatched within 24 hours"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-masquintense-deep-nutrition-soft-mask-for-very-dry-fine-to-medium-hair-200ml/14510093?srsltid=AfmBOoom9pWP96W4HXV7qGZkTvFuIFdXSScyMHGlzif-Y0KmrYSPPfMu",
+                "title": "K\u00e9rastase Nutritive Masquintense Deep Nutrition Soft Mask ...",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-nutritive-masquintense-deep-nutrition-soft-mask-for-very-dry-fine-to-medium-hair-200ml/14510093"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-masquintense-deep-nutrition-soft-mask-for-very-dry-fine-to-medium-hair-200ml/14510093?srsltid=AfmBOoom9pWP96W4HXV7qGZkTvFuIFdXSScyMHGlzif-Y0KmrYSPPfMu",
+                "title": "K\u00e9rastase Nutritive Masquintense Deep Nutrition Soft Mask ...",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-masquintense-deep-nutrition-soft-mask-for-very-dry-fine-to-medium-hair-200ml/14510093?srsltid=AfmBOoom9pWP96W4HXV7qGZkTvFuIFdXSScyMHGlzif-Y0KmrYSPPfMu",
+                "title": "K\u00e9rastase Nutritive Masquintense Deep Nutrition Soft Mask ...",
+                "excerpts": [
+                  "lookfantastic.com/p/kerastase-nutritive-masquintense-deep-nutrition-soft-mask-for-very-dry-fine-to-medium-hair-200ml/14510093"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-masquintense-deep-nutrition-soft-mask-for-very-dry-fine-to-medium-hair-200ml/14510093?srsltid=AfmBOoom9pWP96W4HXV7qGZkTvFuIFdXSScyMHGlzif-Y0KmrYSPPfMu",
+                "title": "K\u00e9rastase Nutritive Masquintense Deep Nutrition Soft Mask ...",
+                "excerpts": [
+                  "Buy K\u00e9rastase Nutritive Masquintense Deep Nutrition Soft Mask for Very Dry, Fine to Medium Hair 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.toniandguy.com/products/kerastase-nutritive-masquintense-very-dry-hair-fine-to-medium-200ml",
+                "title": "K\u00e9rastase Nutritive Masquintense - Very Dry Hair (Fine To ...",
+                "excerpts": [
+                  "Regular price ~\u00a346.50~ Sale price \u00a332.60"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.toniandguy.com/products/kerastase-nutritive-masquintense-very-dry-hair-fine-to-medium-200ml",
+                "title": "K\u00e9rastase Nutritive Masquintense - Very Dry Hair (Fine To ...",
+                "excerpts": [
+                  "Regular price ~\u00a346.50~ Sale price \u00a332.60"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.toniandguy.com/products/kerastase-nutritive-masquintense-very-dry-hair-fine-to-medium-200ml",
+                "title": "K\u00e9rastase Nutritive Masquintense - Very Dry Hair (Fine To ...",
+                "excerpts": [
+                  "Only 84 left in stock. Order soon."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.toniandguy.com/products/kerastase-nutritive-masquintense-very-dry-hair-fine-to-medium-200ml",
+                "title": "K\u00e9rastase Nutritive Masquintense - Very Dry Hair (Fine To ...",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive Masquintense - Very Dry Hair (Fine To Medium) 200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.toniandguy.com/products/kerastase-nutritive-masquintense-very-dry-hair-fine-to-medium-200ml",
+                "title": "K\u00e9rastase Nutritive Masquintense - Very Dry Hair (Fine To ...",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.toniandguy.com/products/kerastase-nutritive-masquintense-very-dry-hair-fine-to-medium-200ml",
+                "title": "K\u00e9rastase Nutritive Masquintense - Very Dry Hair (Fine To ...",
+                "excerpts": [
+                  "shop.toniandguy.com/products/kerastase-nutritive-masquintense-very-dry-hair-fine-to-medium-200ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.toniandguy.com/products/kerastase-nutritive-masquintense-very-dry-hair-fine-to-medium-200ml",
+                "title": "K\u00e9rastase Nutritive Masquintense - Very Dry Hair (Fine To ...",
+                "excerpts": [
+                  "TONI&GUY SHOP"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.toniandguy.com/products/kerastase-nutritive-masquintense-very-dry-hair-fine-to-medium-200ml",
+                "title": "K\u00e9rastase Nutritive Masquintense - Very Dry Hair (Fine To ...",
+                "excerpts": [
+                  "Trusted partner brand"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/conditioner.html",
+                "title": "K\u00e9rastase Conditioners & Hair Masques",
+                "excerpts": [
+                  "Nutritive Hair Mask for Dry Fine Hair 200ml ... $92.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/conditioner.html",
+                "title": "K\u00e9rastase Conditioners & Hair Masques",
+                "excerpts": [
+                  "Save Up to $50 with Spend & Save* | Code: TREAT"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/conditioner.html",
+                "title": "K\u00e9rastase Conditioners & Hair Masques",
+                "excerpts": [
+                  "VIEWADD](https://www.adorebeauty.com.au/p/kerastase/kerastase-nutritive-irisome-masquintense-fins-fine-hair.html)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/conditioner.html",
+                "title": "K\u00e9rastase Conditioners & Hair Masques",
+                "excerpts": [
+                  "https://www.adorebeauty.com.au/p/kerastase/kerastase-nutritive-irisome-masquintense-fins-fine-hair.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/conditioner.html",
+                "title": "K\u00e9rastase Conditioners & Hair Masques",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/conditioner.html",
+                "title": "K\u00e9rastase Conditioners & Hair Masques",
+                "excerpts": [
+                  "adorebeauty.com.au/b/kerastase/conditioner.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/conditioner.html",
+                "title": "K\u00e9rastase Conditioners & Hair Masques",
+                "excerpts": [
+                  "Adore Beauty is an official stockist of K\u00e9rastase conditioners and hair masques."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://adorebeauty.com.au/b/kerastase/conditioner.html",
+                "title": "K\u00e9rastase Conditioners & Hair Masques",
+                "excerpts": [
+                  "Adore Beauty is an official stockist of K\u00e9rastase conditioners and hair masques."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-nutritive-masquintense-irisome-for-fine-and-dry-hair-200ml-6-8fl-oz",
+                "title": "K\u00e9rastase nutritive hair mask for fine and dry hair 200ml ...",
+                "excerpts": [
+                  "$58,45 ... AVAILABLE"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-nutritive-masquintense-irisome-for-fine-and-dry-hair-200ml-6-8fl-oz",
+                "title": "K\u00e9rastase nutritive hair mask for fine and dry hair 200ml ...",
+                "excerpts": [
+                  "R. Rodrigues de Freitas, 591 4445-628 Ermesinde, Portugal"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-nutritive-masquintense-irisome-for-fine-and-dry-hair-200ml-6-8fl-oz",
+                "title": "K\u00e9rastase nutritive hair mask for fine and dry hair 200ml ...",
+                "excerpts": [
+                  "AVAILABLE"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-nutritive-masquintense-irisome-for-fine-and-dry-hair-200ml-6-8fl-oz",
+                "title": "K\u00e9rastase nutritive hair mask for fine and dry hair 200ml ...",
+                "excerpts": [
+                  "https://lyskin.com/shop/kerastase-nutritive-masquintense-irisome-for-fine-and-dry-hair-200ml-6-8fl-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-nutritive-masquintense-irisome-for-fine-and-dry-hair-200ml-6-8fl-oz",
+                "title": "K\u00e9rastase nutritive hair mask for fine and dry hair 200ml ...",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-nutritive-masquintense-irisome-for-fine-and-dry-hair-200ml-6-8fl-oz",
+                "title": "K\u00e9rastase nutritive hair mask for fine and dry hair 200ml ...",
+                "excerpts": [
+                  "lyskin.com/shop/kerastase-nutritive-masquintense-irisome-for-fine-and-dry-hair-200ml-6-8fl-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-nutritive-masquintense-irisome-for-fine-and-dry-hair-200ml-6-8fl-oz",
+                "title": "K\u00e9rastase nutritive hair mask for fine and dry hair 200ml ...",
+                "excerpts": [
+                  "\u00a9 2022, Lyskin, All rights reserved. Developed by Samsys"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-nutritive-masquintense-irisome-for-fine-and-dry-hair-200ml-6-8fl-oz",
+                "title": "K\u00e9rastase nutritive hair mask for fine and dry hair 200ml ...",
+                "excerpts": [
+                  "About Lyskin ... Lyskin Services"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/137319832878",
+                "title": "https://www.ebay.com/itm/137319832878",
+                "excerpts": [
+                  "US $45.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/137319832878",
+                "title": "https://www.ebay.com/itm/137319832878",
+                "excerpts": [
+                  "US $45.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/137319832878",
+                "title": "https://www.ebay.com/itm/137319832878",
+                "excerpts": [
+                  "New ... Buy It Now implied (or Best Offer listing)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/137319832878",
+                "title": "https://www.ebay.com/itm/137319832878",
+                "excerpts": [
+                  "ebay.com/itm/137319832878"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/137319832878",
+                "title": "https://www.ebay.com/itm/137319832878",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/137319832878",
+                "title": "https://www.ebay.com/itm/137319832878",
+                "excerpts": [
+                  "Seller's other items](https://www.ebay.com/str/secondstylethreads"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/137319832878",
+                "title": "https://www.ebay.com/itm/137319832878",
+                "excerpts": [
+                  "Seller's other items](https://www.ebay.com/str/secondstylethreads"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/137319832878",
+                "title": "https://www.ebay.com/itm/137319832878",
+                "excerpts": [
+                  "Nutritive Masquintense fine by Kerastase For Unisex 6.8 oz Hair Mask *NO BOX*"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226932949069",
+                "title": "https://www.ebay.com/itm/226932949069",
+                "excerpts": [
+                  "US $48.99/ea"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226932949069",
+                "title": "https://www.ebay.com/itm/226932949069",
+                "excerpts": [
+                  "US $48.99/ea"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226932949069",
+                "title": "https://www.ebay.com/itm/226932949069",
+                "excerpts": [
+                  "Buy 1Buy 1 for $48.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226932949069",
+                "title": "https://www.ebay.com/itm/226932949069",
+                "excerpts": [
+                  "ebay.com/itm/226932949069"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226932949069",
+                "title": "https://www.ebay.com/itm/226932949069",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226932949069",
+                "title": "https://www.ebay.com/itm/226932949069",
+                "excerpts": [
+                  "Seller's other items](https://www.ebay.com/str/cristinasbeautycorner"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226932949069",
+                "title": "https://www.ebay.com/itm/226932949069",
+                "excerpts": [
+                  "Seller's other items](https://www.ebay.com/str/cristinasbeautycorner"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226932949069",
+                "title": "https://www.ebay.com/itm/226932949069",
+                "excerpts": [
+                  "Kerastase Nutritive Masquintense Mask Fine/Medium Hair 6.8oz/ 200ml New Formula"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/257569563311",
+                "title": "https://www.ebay.com/itm/257569563311",
+                "excerpts": [
+                  "US $46.92"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/257569563311",
+                "title": "https://www.ebay.com/itm/257569563311",
+                "excerpts": [
+                  "US $46.92"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/257569563311",
+                "title": "https://www.ebay.com/itm/257569563311",
+                "excerpts": [
+                  "New with box ... Located in: Copiague, New York, United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/257569563311",
+                "title": "https://www.ebay.com/itm/257569563311",
+                "excerpts": [
+                  "ebay.com/itm/257569563311"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/257569563311",
+                "title": "https://www.ebay.com/itm/257569563311",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/257569563311",
+                "title": "https://www.ebay.com/itm/257569563311",
+                "excerpts": [
+                  "Seller's other items](https://www.ebay.com/str/bellwoodsupply"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/257569563311",
+                "title": "https://www.ebay.com/itm/257569563311",
+                "excerpts": [
+                  "Seller's other items](https://www.ebay.com/str/bellwoodsupply ... Visit store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/257569563311",
+                "title": "https://www.ebay.com/itm/257569563311",
+                "excerpts": [
+                  "Kerastase Masquintense Hair Mask INTENSE Fine 6.8 oz NEW"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318324741542",
+                "title": "https://www.ebay.com/itm/318324741542",
+                "excerpts": [
+                  "US $49.75"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318324741542",
+                "title": "https://www.ebay.com/itm/318324741542",
+                "excerpts": [
+                  "US $49.75"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318324741542",
+                "title": "https://www.ebay.com/itm/318324741542",
+                "excerpts": [
+                  "New with box ... Volume: 6.8 fl oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318324741542",
+                "title": "https://www.ebay.com/itm/318324741542",
+                "excerpts": [
+                  "ebay.com/itm/318324741542"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318324741542",
+                "title": "https://www.ebay.com/itm/318324741542",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318324741542",
+                "title": "https://www.ebay.com/itm/318324741542",
+                "excerpts": [
+                  "Seller's other items](https://www.ebay.com/str/haircareking"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318324741542",
+                "title": "https://www.ebay.com/itm/318324741542",
+                "excerpts": [
+                  "Seller's other items](https://www.ebay.com/str/haircareking"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/318324741542",
+                "title": "https://www.ebay.com/itm/318324741542",
+                "excerpts": [
+                  "Kerastase Nutritive Masquintense Fine to Medium Hair Mask 6.8oz/200ml NEW"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206120593642",
+                "title": "https://www.ebay.com/itm/206120593642",
+                "excerpts": [
+                  "US $48.77/eaor Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206120593642",
+                "title": "https://www.ebay.com/itm/206120593642",
+                "excerpts": [
+                  "US $48.77/eaor Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206120593642",
+                "title": "https://www.ebay.com/itm/206120593642",
+                "excerpts": [
+                  "Buy 1Buy 1 for $48.77Buy 2Buy 2 for $41.45 each one"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206120593642",
+                "title": "https://www.ebay.com/itm/206120593642",
+                "excerpts": [
+                  "ebay.com/itm/206120593642"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206120593642",
+                "title": "https://www.ebay.com/itm/206120593642",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206120593642",
+                "title": "https://www.ebay.com/itm/206120593642",
+                "excerpts": [
+                  "Seller's other items](https://www.ebay.com/sch/hairhair/m.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206120593642",
+                "title": "https://www.ebay.com/itm/206120593642",
+                "excerpts": [
+                  "Seller's other items](https://www.ebay.com/sch/hairhair/m.html"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206120593642",
+                "title": "https://www.ebay.com/itm/206120593642",
+                "excerpts": [
+                  "Kerastase Nutritive Masquintense Fine to Medium Hair Mask 6.8oz/200ml NEW SEALED"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "Sold by Strawberrynet ... Add to Bag| \u00a351.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a351.00 ... Strawberrynet charges \u00a36.00 for standard deliveries"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "Add to Bag| \u00a351.00 ... Get Wed 29 Jul - Thu 30 Jul"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "Sold by Strawberrynet"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "Sold by Strawberrynet"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "Strawberrynet charges \u00a36.00 for standard deliveries"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a337.13 From allbeauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a337.13 From allbeauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a337.13 From allbeauty ... Sold out"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a337.13 From allbeauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a337.13 From allbeauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a337.13 From allbeauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://allbeauty.com/",
+                "title": "allbeauty: Perfume, Aftershave & Beauty at Great Prices",
+                "excerpts": [
+                  "allbeauty: Perfume, Aftershave & Beauty at Great Prices"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a340.99 From Perfume Click"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a340.99 From Perfume Click"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a340.99 From Perfume Click ... Sold out"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a340.99 From Perfume Click"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a340.99 From Perfume Click"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a340.99 From Perfume Click"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://cosmetify.com/kerastase-nutritive-masquintense-cheveux-fins-for-fine-hair",
+                "title": "K\u00e9rastase Nutritive Masquintense Fine Hair Mask 200ml",
+                "excerpts": [
+                  "\u00a340.99 From Perfume Click"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/175737028550",
+                "title": "https://www.ebay.com/itm/175737028550",
+                "excerpts": [
+                  "US $35.77"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/175737028550",
+                "title": "https://www.ebay.com/itm/175737028550",
+                "excerpts": [
+                  "US $35.77"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/175737028550",
+                "title": "https://www.ebay.com/itm/175737028550",
+                "excerpts": [
+                  "New with box ... US $11.73 Economy Shipping from outside US."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/175737028550",
+                "title": "https://www.ebay.com/itm/175737028550",
+                "excerpts": [
+                  "Masquintense Fine Hair 200ML Kerastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/175737028550",
+                "title": "https://www.ebay.com/itm/175737028550",
+                "excerpts": [
+                  "\"retrieved\": \"2026-07-20\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/175737028550",
+                "title": "https://www.ebay.com/itm/175737028550",
+                "excerpts": [
+                  "Seller's other items](https://www.ebay.com/str/beautypersonalcare"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/175737028550",
+                "title": "https://www.ebay.com/itm/175737028550",
+                "excerpts": [
+                  "Seller's other items](https://www.ebay.com/str/beautypersonalcare"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/175737028550",
+                "title": "https://www.ebay.com/itm/175737028550",
+                "excerpts": [
+                  "Masquintense Fine Hair 200ML Kerastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

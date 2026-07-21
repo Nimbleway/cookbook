@@ -1,0 +1,4092 @@
+{
+  "sku_id": "KER-003",
+  "effort": "high",
+  "elapsed_s": 1214,
+  "fetched_at": "2026-07-20T13:18:17+00:00",
+  "run_id": "task_run_f52789a704334ffd8245fdf63caf48e2",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_f52789a704334ffd8245fdf63caf48e2",
+      "interaction_id": "task_run_f52789a704334ffd8245fdf63caf48e2",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Nutritive 8H Magic Night Serum, 90ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T12:58:02.168009Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T12:58:02.274279Z",
+      "completed_at": "2026-07-20T13:18:03.658212Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase-usa.com/collections/nutritive/8hr-magic-night-hair-serum.html",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "K\u00e9rastase USA",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase-usa.com",
+          "advertised_price": "$62.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/dp/B0BZZJWGPQ",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Amazon (K\u00e9rastase)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.com",
+          "advertised_price": "$62.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.sephora.com/product/kerastase-nutritive-8h-magic-night-serum-hydrating-treatment-for-dry-hair-P506524",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Sephora",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "sephora.com",
+          "advertised_price": "$58.90"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.kohls.com/product/prd-7727093/kerastase-nutritive-8h-magic-night-hair-serum-for-dry-hair.jsp",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Kohl's",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kohls.com",
+          "advertised_price": "$62.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Nutritive-8H-Magic-Night-Serum-3-oz/832733071",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "UtieeBeautyStore (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$59.95"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Nutritive-8H-Night-Serum-3-04oz/727594672",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Beauty Express (Walmart Marketplace)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$61.99"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": null,
+          "listing_url": "https://www.lookfantastic.com/p/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml/14510098",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "lookfantastic",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "lookfantastic.com",
+          "advertised_price": "\u00a341.60"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/173835917115",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "beautypersonalcare (xpray21)",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $39.21"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/354650307491",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "savannabeautyessentials",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $51.89"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/158049833323",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "raf_464519",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $52.98"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/206325311179",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "golden_gibbon",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $52.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/168482352791",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "tiptonandfaye",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $54.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/225794261896",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "cristinasbeautycorner",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $54.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/227416733643",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "lmei9983",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $55.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/206415542197",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "hairhair",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $57.77"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/126803362506",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "theexquisiteboutique",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $59.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/226568916509",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "hairbeauty35",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $62.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/278053802014",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "cosmede",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $74.90"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/267677744911",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "whylieneed_beer",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "US $99.99"
+        },
+        {
+          "currency": "GBP",
+          "in_stock": null,
+          "listing_url": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "The LTL Shop",
+          "seller_type": "independent_store",
+          "seller_domain": "theltlshop.com",
+          "advertised_price": "\u00a335.50"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Beaushesalon",
+          "seller_type": "independent_store",
+          "seller_domain": "beaushesalon.com",
+          "advertised_price": "$62.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Hair Studio Fairfax",
+          "seller_type": "independent_store",
+          "seller_domain": "hairstudiofairfax.com",
+          "advertised_price": "$56.00"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": false,
+          "listing_url": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Donya Hair & Body",
+          "seller_type": "independent_store",
+          "seller_domain": "shop.donyahairbody.com",
+          "advertised_price": "$84.00 CAD"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://peggymou.com/product/kerastase-8h-magic-night-serum/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Peggy Mou",
+          "seller_type": "independent_store",
+          "seller_domain": "peggymou.com",
+          "advertised_price": "\u20ac40,99"
+        },
+        {
+          "currency": "EUR",
+          "in_stock": true,
+          "listing_url": "https://www.lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "LS Beauty",
+          "seller_type": "independent_store",
+          "seller_domain": "lsbeauty.com",
+          "advertised_price": "39.82\u20ac"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Shampoo Zone",
+          "seller_type": "independent_store",
+          "seller_domain": "shampoozone.com",
+          "advertised_price": "$49.99"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://kerastase-usa.com/collections/nutritive/8hr-magic-night-hair-serum.html?srsltid=AfmBOoqS30zXvZZUg5U-YVQ6cdtLgaWNIwrSZuhAPGNwMSwmZ8fxlgrf",
+            "title": "Nutritive 8H Magic Night Hair Serum for Dry Hair | K\u00e9rastase",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/dp/B0BZZJWGPQ",
+            "title": "amazon_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/Kerastase-Nutritive-8H-Magic-Night/dp/B0BZZJWGPQ",
+            "title": "Kerastase Nutritive 8H Magic Night Serum",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/K%C3%A9rastase-Nutritive-Split-Serum-Leave/dp/B0BZZLJVCG",
+            "title": "Kerastase Nutritive Split Ends Hair Serum For Dry Hair",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://sephora.com/product/kerastase-nutritive-8h-magic-night-serum-hydrating-treatment-for-dry-hair-P506524",
+            "title": "Nutritive 8H Magic Night Hair Serum for Dry Hair - K&#233",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://kohls.com/product/prd-7727093/kerastase-nutritive-8h-magic-night-hair-serum-for-dry-hair.jsp",
+            "title": "https://www.kohls.com/product/prd-7727093/kerastase-nutritive-8h-magic-night-hair-serum-for-dry-hair.jsp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Magic-Night-Serum-3-oz/832733071",
+            "title": "walmart_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Night-Serum-3-04oz/727594672",
+            "title": "Kerastase Nutritive 8H Magic Night Hair Serum - 3.04 oz",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lookfantastic.com/p/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml/14510098?srsltid=AfmBOorUdV9AlZ0cHaxzLWpeqVLoTCoBK6rFLAICHgvmq8ZJ0wpdiF_I",
+            "title": "K\u00e9rastase Nutritive Nourishing Hair Serum With ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/173835917115",
+            "title": "https://www.ebay.com/itm/173835917115",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/354650307491",
+            "title": "https://www.ebay.com/itm/354650307491",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/158049833323",
+            "title": "https://www.ebay.com/itm/158049833323",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/206325311179",
+            "title": "https://www.ebay.com/itm/206325311179",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/168482352791",
+            "title": "https://www.ebay.com/itm/168482352791",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/225794261896",
+            "title": "https://www.ebay.com/itm/225794261896",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/shop/kerastase-nutritive-8h-magic-night-serum?_nkw=kerastase+nutritive+8h+magic+night+serum",
+            "title": "K\u00e9rastase Nutritive 8h Magic Night Serum",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/227416733643",
+            "title": "https://www.ebay.com/itm/227416733643",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/206415542197",
+            "title": "https://www.ebay.com/itm/206415542197",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/126803362506",
+            "title": "https://www.ebay.com/itm/126803362506",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/226568916509",
+            "title": "https://www.ebay.com/itm/226568916509",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/278053802014",
+            "title": "https://www.ebay.com/itm/278053802014",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/itm/267677744911",
+            "title": "https://www.ebay.com/itm/267677744911",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+            "title": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+            "title": "https://www.beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+            "title": "https://www.hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+            "title": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://peggymou.com/product/kerastase-8h-magic-night-serum",
+            "title": "https://peggymou.com/product/kerastase-8h-magic-night-serum/",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+            "title": "https://www.lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+            "title": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 93%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/8hr-magic-night-hair-serum.html?srsltid=AfmBOoqS30zXvZZUg5U-YVQ6cdtLgaWNIwrSZuhAPGNwMSwmZ8fxlgrf",
+                "title": "Nutritive 8H Magic Night Hair Serum for Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Old price New price $62.00 Add to Bag Nutritive 8h Magic Night Hair Serum ... Available Sizes 90 ml 30 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/8hr-magic-night-hair-serum.html?srsltid=AfmBOoqS30zXvZZUg5U-YVQ6cdtLgaWNIwrSZuhAPGNwMSwmZ8fxlgrf",
+                "title": "Nutritive 8H Magic Night Hair Serum for Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Prices and payment are shown in USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/8hr-magic-night-hair-serum.html?srsltid=AfmBOoqS30zXvZZUg5U-YVQ6cdtLgaWNIwrSZuhAPGNwMSwmZ8fxlgrf",
+                "title": "Nutritive 8H Magic Night Hair Serum for Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Old price New price $62.00 Add to Bag Nutritive 8h Magic Night Hair Serum"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/8hr-magic-night-hair-serum.html?srsltid=AfmBOoqS30zXvZZUg5U-YVQ6cdtLgaWNIwrSZuhAPGNwMSwmZ8fxlgrf",
+                "title": "Nutritive 8H Magic Night Hair Serum for Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Prices and payment are shown in USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/8hr-magic-night-hair-serum.html?srsltid=AfmBOoqS30zXvZZUg5U-YVQ6cdtLgaWNIwrSZuhAPGNwMSwmZ8fxlgrf",
+                "title": "Nutritive 8H Magic Night Hair Serum for Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Nutritive 8h Magic Night Hair Serum ... 90 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/8hr-magic-night-hair-serum.html?srsltid=AfmBOoqS30zXvZZUg5U-YVQ6cdtLgaWNIwrSZuhAPGNwMSwmZ8fxlgrf",
+                "title": "Nutritive 8H Magic Night Hair Serum for Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "K\u00e9rastase official USA site"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/8hr-magic-night-hair-serum.html?srsltid=AfmBOoqS30zXvZZUg5U-YVQ6cdtLgaWNIwrSZuhAPGNwMSwmZ8fxlgrf",
+                "title": "Nutritive 8H Magic Night Hair Serum for Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/nutritive/8hr-magic-night-hair-serum.html?srsltid=AfmBOoqS30zXvZZUg5U-YVQ6cdtLgaWNIwrSZuhAPGNwMSwmZ8fxlgrf",
+                "title": "Nutritive 8H Magic Night Hair Serum for Dry Hair | K\u00e9rastase",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0BZZJWGPQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.ships_from: Amazon ... data.availability: true ... data.web_price: 62"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0BZZJWGPQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B0BZZJWGPQ"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0BZZJWGPQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.web_price: 62 ... data.list_price: 62 ... data.subscription_price: \"$62.00\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/Kerastase-Nutritive-8H-Magic-Night/dp/B0BZZJWGPQ",
+                "title": "Kerastase Nutritive 8H Magic Night Serum",
+                "excerpts": [
+                  "Liquid Volume 90 Milliliters ... Unit Count 3.04 Fluid Ounces"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0BZZJWGPQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B0BZZJWGPQ"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/K%C3%A9rastase-Nutritive-Split-Serum-Leave/dp/B0BZZLJVCG",
+                "title": "Kerastase Nutritive Split Ends Hair Serum For Dry Hair",
+                "excerpts": [
+                  "Ships from: Amazon ... Sold by: K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0BZZJWGPQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B0BZZJWGPQ",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/kerastase-nutritive-8h-magic-night-serum-hydrating-treatment-for-dry-hair-P506524",
+                "title": "Nutritive 8H Magic Night Hair Serum for Dry Hair - K&#233",
+                "excerpts": [
+                  "page did not render product content (JS-heavy)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kohls.com/product/prd-7727093/kerastase-nutritive-8h-magic-night-hair-serum-for-dry-hair.jsp",
+                "title": "https://www.kohls.com/product/prd-7727093/kerastase-nutritive-8h-magic-night-hair-serum-for-dry-hair.jsp",
+                "excerpts": [
+                  "page did not render product content (JS-heavy)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Magic-Night-Serum-3-oz/832733071",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.price: 59.95 ... data.product_title: Kerastase Nutritive 8H Magic Night Serum, 3 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Magic-Night-Serum-3-oz/832733071",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.currency: USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Magic-Night-Serum-3-oz/832733071",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Magic-Night-Serum-3-oz/832733071",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.walmart.com/ip/Kerastase-Nutritive-8H-Magic-Night-Serum-3-oz/832733071"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Magic-Night-Serum-3-oz/832733071",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Magic-Night-Serum-3-oz/832733071",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.walmart.com/ip/Kerastase-Nutritive-8H-Magic-Night-Serum-3-oz/832733071"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Magic-Night-Serum-3-oz/832733071",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.seller_name: UtieeBeautyStore ... data.condition: New"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Magic-Night-Serum-3-oz/832733071",
+                "title": "walmart_pdp",
+                "excerpts": [
+                  "data.seller_name: UtieeBeautyStore ... data.seller_id: B34D085A86384568A72E53835B2D47D6"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Night-Serum-3-04oz/727594672",
+                "title": "Kerastase Nutritive 8H Magic Night Hair Serum - 3.04 oz",
+                "excerpts": [
+                  "Current price is $61.99$20.66/fl oz ... Kerastase Nutritive 8H Magic Night Hair Serum - 3.04 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Night-Serum-3-04oz/727594672",
+                "title": "Kerastase Nutritive 8H Magic Night Hair Serum - 3.04 oz",
+                "excerpts": [
+                  "Current price is $61.99$20.66/fl oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Night-Serum-3-04oz/727594672",
+                "title": "Kerastase Nutritive 8H Magic Night Hair Serum - 3.04 oz",
+                "excerpts": [
+                  "Sold and shipped by Beauty Express ... Starting from $61.99Compare all sellers"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Night-Serum-3-04oz/727594672",
+                "title": "Kerastase Nutritive 8H Magic Night Hair Serum - 3.04 oz",
+                "excerpts": [
+                  "Kerastase Nutritive 8H Magic Night Hair Serum - 3.04 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Night-Serum-3-04oz/727594672",
+                "title": "Kerastase Nutritive 8H Magic Night Hair Serum - 3.04 oz",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Night-Serum-3-04oz/727594672",
+                "title": "Kerastase Nutritive 8H Magic Night Hair Serum - 3.04 oz",
+                "excerpts": [
+                  "Kerastase Nutritive 8H Magic Night Hair Serum - 3.04 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Night-Serum-3-04oz/727594672",
+                "title": "Kerastase Nutritive 8H Magic Night Hair Serum - 3.04 oz",
+                "excerpts": [
+                  "Sold and shipped by Beauty Express"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Nutritive-8H-Night-Serum-3-04oz/727594672",
+                "title": "Kerastase Nutritive 8H Magic Night Hair Serum - 3.04 oz",
+                "excerpts": [
+                  "Sold and shipped by Beauty Express ... 4.48404255319149 stars out of 5, based on 188 seller reviews"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml/14510098?srsltid=AfmBOorUdV9AlZ0cHaxzLWpeqVLoTCoBK6rFLAICHgvmq8ZJ0wpdiF_I",
+                "title": "K\u00e9rastase Nutritive Nourishing Hair Serum With ...",
+                "excerpts": [
+                  "Recommended Retail Price: \u00a352.00 Current price: \u00a341.60 ... Save \u00a310.40 ( 20% Off )"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml/14510098?srsltid=AfmBOorUdV9AlZ0cHaxzLWpeqVLoTCoBK6rFLAICHgvmq8ZJ0wpdiF_I",
+                "title": "K\u00e9rastase Nutritive Nourishing Hair Serum With ...",
+                "excerpts": [
+                  "Recommended Retail Price: \u00a352.00 Current price: \u00a341.60"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml/14510098?srsltid=AfmBOorUdV9AlZ0cHaxzLWpeqVLoTCoBK6rFLAICHgvmq8ZJ0wpdiF_I",
+                "title": "K\u00e9rastase Nutritive Nourishing Hair Serum With ...",
+                "excerpts": [
+                  "FREE UK delivery on orders over \u00a325 ... \u00a341.60"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml/14510098?srsltid=AfmBOorUdV9AlZ0cHaxzLWpeqVLoTCoBK6rFLAICHgvmq8ZJ0wpdiF_I",
+                "title": "K\u00e9rastase Nutritive Nourishing Hair Serum With ...",
+                "excerpts": [
+                  "url: https://lookfantastic.com/p/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml/14510098"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml/14510098?srsltid=AfmBOorUdV9AlZ0cHaxzLWpeqVLoTCoBK6rFLAICHgvmq8ZJ0wpdiF_I",
+                "title": "K\u00e9rastase Nutritive Nourishing Hair Serum With ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml/14510098?srsltid=AfmBOorUdV9AlZ0cHaxzLWpeqVLoTCoBK6rFLAICHgvmq8ZJ0wpdiF_I",
+                "title": "K\u00e9rastase Nutritive Nourishing Hair Serum With ...",
+                "excerpts": [
+                  "FREE UK delivery on orders over \u00a325"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml/14510098?srsltid=AfmBOorUdV9AlZ0cHaxzLWpeqVLoTCoBK6rFLAICHgvmq8ZJ0wpdiF_I",
+                "title": "K\u00e9rastase Nutritive Nourishing Hair Serum With ...",
+                "excerpts": [
+                  "lookfantastic.com ... K\u00e9rastase Nutritive Nourishing Hair Serum"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lookfantastic.com/p/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml/14510098?srsltid=AfmBOorUdV9AlZ0cHaxzLWpeqVLoTCoBK6rFLAICHgvmq8ZJ0wpdiF_I",
+                "title": "K\u00e9rastase Nutritive Nourishing Hair Serum With ...",
+                "excerpts": [
+                  "lookfantastic.com major UK beauty retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/173835917115",
+                "title": "https://www.ebay.com/itm/173835917115",
+                "excerpts": [
+                  "US $39.21 ... + $11.73 shipping ... New with box"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/173835917115",
+                "title": "https://www.ebay.com/itm/173835917115",
+                "excerpts": [
+                  "US $39.21"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/173835917115",
+                "title": "https://www.ebay.com/itm/173835917115",
+                "excerpts": [
+                  "Buy It Now ... 8H Magic Night Serum 90ML Kerastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/173835917115",
+                "title": "https://www.ebay.com/itm/173835917115",
+                "excerpts": [
+                  "8H Magic Night Serum 90ML Kerastase ... See more Kerastase Nutritive 8H Magic Night Serum - 90m"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/173835917115",
+                "title": "https://www.ebay.com/itm/173835917115",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/173835917115",
+                "title": "https://www.ebay.com/itm/173835917115",
+                "excerpts": [
+                  "eBay item"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/173835917115",
+                "title": "https://www.ebay.com/itm/173835917115",
+                "excerpts": [
+                  "Seller's other items ... /str/beautypersonalcare ... username=xpray21 ... 99.6% positive feedback\u202217K items sold ... Joined Mar 2005"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/173835917115",
+                "title": "https://www.ebay.com/itm/173835917115",
+                "excerpts": [
+                  "eBay third-party seller ... 99.6% positive feedback\u202217K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/354650307491",
+                "title": "https://www.ebay.com/itm/354650307491",
+                "excerpts": [
+                  "US $51.89 ... New with box ... Volume 3.04 fl oz ... Size 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/354650307491",
+                "title": "https://www.ebay.com/itm/354650307491",
+                "excerpts": [
+                  "US $51.89"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/354650307491",
+                "title": "https://www.ebay.com/itm/354650307491",
+                "excerpts": [
+                  "Buy It Now ... Last one ... Top rated seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/354650307491",
+                "title": "https://www.ebay.com/itm/354650307491",
+                "excerpts": [
+                  "Kerastase Nutritive 8H NIGHT SERUM 90ml / 3.04oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/354650307491",
+                "title": "https://www.ebay.com/itm/354650307491",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/354650307491",
+                "title": "https://www.ebay.com/itm/354650307491",
+                "excerpts": [
+                  "eBay item"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/354650307491",
+                "title": "https://www.ebay.com/itm/354650307491",
+                "excerpts": [
+                  "Seller's other items ... /sch/savannabeautyessentials/m.html ... username=savannabeautyessentials ... 100% positive feedback\u202224K items sold ... Joined Mar 2020"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/354650307491",
+                "title": "https://www.ebay.com/itm/354650307491",
+                "excerpts": [
+                  "eBay third-party seller ... Top rated seller, fast shipping, and free returns"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/158049833323",
+                "title": "https://www.ebay.com/itm/158049833323",
+                "excerpts": [
+                  "US $52.98or Best Offer ... New with box ... Volume 3.04 fl oz ... Size 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/158049833323",
+                "title": "https://www.ebay.com/itm/158049833323",
+                "excerpts": [
+                  "US $52.98"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/158049833323",
+                "title": "https://www.ebay.com/itm/158049833323",
+                "excerpts": [
+                  "Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/158049833323",
+                "title": "https://www.ebay.com/itm/158049833323",
+                "excerpts": [
+                  "SALENOW!! Kerastase Nutritive 8 Hour Night Serum 90ml / 3.04oz, 100% AUTHENTIC"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/158049833323",
+                "title": "https://www.ebay.com/itm/158049833323",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/158049833323",
+                "title": "https://www.ebay.com/itm/158049833323",
+                "excerpts": [
+                  "eBay item"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/158049833323",
+                "title": "https://www.ebay.com/itm/158049833323",
+                "excerpts": [
+                  "Seller's other items ... /sch/raf_464519/m.html ... username=raf_464519 ... 99.5% positive feedback\u2022368 items sold ... Joined Dec 2025"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/158049833323",
+                "title": "https://www.ebay.com/itm/158049833323",
+                "excerpts": [
+                  "eBay third-party seller ... 99.5% positive feedback\u2022368 items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206325311179",
+                "title": "https://www.ebay.com/itm/206325311179",
+                "excerpts": [
+                  "US $52.99or Best Offer ... Volume 3.04 fl oz ... Size 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206325311179",
+                "title": "https://www.ebay.com/itm/206325311179",
+                "excerpts": [
+                  "US $52.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206325311179",
+                "title": "https://www.ebay.com/itm/206325311179",
+                "excerpts": [
+                  "Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206325311179",
+                "title": "https://www.ebay.com/itm/206325311179",
+                "excerpts": [
+                  "Kerastase Nutritive 8 Hour Magic Night Serum 90ml / 3.04oz, 100% AUTHENTIC"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206325311179",
+                "title": "https://www.ebay.com/itm/206325311179",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206325311179",
+                "title": "https://www.ebay.com/itm/206325311179",
+                "excerpts": [
+                  "eBay item"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206325311179",
+                "title": "https://www.ebay.com/itm/206325311179",
+                "excerpts": [
+                  "Seller's other items ... /sch/golden_gibbon/m.html ... username=golden_gibbon ... 99.5% positive feedback\u20221.6K items sold ... Joined May 2023"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206325311179",
+                "title": "https://www.ebay.com/itm/206325311179",
+                "excerpts": [
+                  "eBay third-party seller ... 99.5% positive feedback\u20221.6K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/168482352791",
+                "title": "https://www.ebay.com/itm/168482352791",
+                "excerpts": [
+                  "US $54.99 ... New without box ... Size 90ml ... Volume 3.04 fl oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/168482352791",
+                "title": "https://www.ebay.com/itm/168482352791",
+                "excerpts": [
+                  "US $54.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/168482352791",
+                "title": "https://www.ebay.com/itm/168482352791",
+                "excerpts": [
+                  "Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/168482352791",
+                "title": "https://www.ebay.com/itm/168482352791",
+                "excerpts": [
+                  "Kerastase Nutritive 8H Magic Night Serum 90ml 3.04oz Hair Treatment New"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/168482352791",
+                "title": "https://www.ebay.com/itm/168482352791",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/168482352791",
+                "title": "https://www.ebay.com/itm/168482352791",
+                "excerpts": [
+                  "eBay item"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/168482352791",
+                "title": "https://www.ebay.com/itm/168482352791",
+                "excerpts": [
+                  "Seller's other items ... /str/tiptonandfaye ... username=tiptonandfaye ... 100% positive feedback\u2022332 items sold ... Joined Jun 2010"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/168482352791",
+                "title": "https://www.ebay.com/itm/168482352791",
+                "excerpts": [
+                  "eBay third-party seller ... 100% positive feedback\u2022332 items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/225794261896",
+                "title": "https://www.ebay.com/itm/225794261896",
+                "excerpts": [
+                  "US $54.99/ea ... Volume 3.04 fl oz ... Size 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/225794261896",
+                "title": "https://www.ebay.com/itm/225794261896",
+                "excerpts": [
+                  "US $54.99/ea"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-nutritive-8h-magic-night-serum?_nkw=kerastase+nutritive+8h+magic+night+serum",
+                "title": "K\u00e9rastase Nutritive 8h Magic Night Serum",
+                "excerpts": [
+                  "Buy It Now ... 379 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/225794261896",
+                "title": "https://www.ebay.com/itm/225794261896",
+                "excerpts": [
+                  "Kerastase Nutritive 8 Hour Night Serum 90ml / 3.04oz, 100% AUTHENTIC!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/225794261896",
+                "title": "https://www.ebay.com/itm/225794261896",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/225794261896",
+                "title": "https://www.ebay.com/itm/225794261896",
+                "excerpts": [
+                  "eBay item"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/225794261896",
+                "title": "https://www.ebay.com/itm/225794261896",
+                "excerpts": [
+                  "Seller's other items ... /str/cristinasbeautycorner ... 99.9% positive feedback\u2022535K items sold ... Joined Jun 2002"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/225794261896",
+                "title": "https://www.ebay.com/itm/225794261896",
+                "excerpts": [
+                  "eBay third-party seller ... 99.9% positive feedback\u2022535K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227416733643",
+                "title": "https://www.ebay.com/itm/227416733643",
+                "excerpts": [
+                  "US $55.00or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227416733643",
+                "title": "https://www.ebay.com/itm/227416733643",
+                "excerpts": [
+                  "US $55.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227416733643",
+                "title": "https://www.ebay.com/itm/227416733643",
+                "excerpts": [
+                  "Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227416733643",
+                "title": "https://www.ebay.com/itm/227416733643",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive 8H Magic Night Serum Hydrating Treatment, 3.04oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227416733643",
+                "title": "https://www.ebay.com/itm/227416733643",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227416733643",
+                "title": "https://www.ebay.com/itm/227416733643",
+                "excerpts": [
+                  "eBay item"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227416733643",
+                "title": "https://www.ebay.com/itm/227416733643",
+                "excerpts": [
+                  "Seller's other items ... /sch/lmei9983/m.html ... 100% positive feedback\u202227 items sold ... Joined Jul 2010"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/227416733643",
+                "title": "https://www.ebay.com/itm/227416733643",
+                "excerpts": [
+                  "eBay third-party seller ... 100% positive feedback\u202227 items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206415542197",
+                "title": "https://www.ebay.com/itm/206415542197",
+                "excerpts": [
+                  "US $57.77/eaor Best Offer ... New with box"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206415542197",
+                "title": "https://www.ebay.com/itm/206415542197",
+                "excerpts": [
+                  "US $57.77/ea"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206415542197",
+                "title": "https://www.ebay.com/itm/206415542197",
+                "excerpts": [
+                  "Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206415542197",
+                "title": "https://www.ebay.com/itm/206415542197",
+                "excerpts": [
+                  "Kerastase Nutritive 8H Magic Night Serum | 90ml / 3.04 fl.oz NEW"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206415542197",
+                "title": "https://www.ebay.com/itm/206415542197",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206415542197",
+                "title": "https://www.ebay.com/itm/206415542197",
+                "excerpts": [
+                  "eBay item"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206415542197",
+                "title": "https://www.ebay.com/itm/206415542197",
+                "excerpts": [
+                  "Seller's other items ... /sch/hairhair/m.html ... username=hairhair ... 99.8% positive feedback\u202216K items sold ... Joined Dec 1998"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/206415542197",
+                "title": "https://www.ebay.com/itm/206415542197",
+                "excerpts": [
+                  "eBay third-party seller ... 99.8% positive feedback\u202216K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/126803362506",
+                "title": "https://www.ebay.com/itm/126803362506",
+                "excerpts": [
+                  "US $59.99 ... New with box ... Located in: Richmond Hill, New York, United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/126803362506",
+                "title": "https://www.ebay.com/itm/126803362506",
+                "excerpts": [
+                  "US $59.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/126803362506",
+                "title": "https://www.ebay.com/itm/126803362506",
+                "excerpts": [
+                  "Buy It Now ... 30 days returns. Seller pays for return shipping"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/126803362506",
+                "title": "https://www.ebay.com/itm/126803362506",
+                "excerpts": [
+                  "Kerastase Nutritive 8H Magic Night Serum - 3.04oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/126803362506",
+                "title": "https://www.ebay.com/itm/126803362506",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/126803362506",
+                "title": "https://www.ebay.com/itm/126803362506",
+                "excerpts": [
+                  "eBay item"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/126803362506",
+                "title": "https://www.ebay.com/itm/126803362506",
+                "excerpts": [
+                  "Seller's other items ... /str/theexquisiteboutique ... username=theexquisiteboutique ... 99.6% positive feedback\u202210K items sold ... Joined Jul 2020"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/126803362506",
+                "title": "https://www.ebay.com/itm/126803362506",
+                "excerpts": [
+                  "eBay third-party seller ... Top rated seller ... 99.6% positive feedback\u202210K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226568916509",
+                "title": "https://www.ebay.com/itm/226568916509",
+                "excerpts": [
+                  "US $62.99 ... Kerastase Nutritive 8H Magic Night Serum - 90ml NEW WITHOUT BOX"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226568916509",
+                "title": "https://www.ebay.com/itm/226568916509",
+                "excerpts": [
+                  "US $62.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226568916509",
+                "title": "https://www.ebay.com/itm/226568916509",
+                "excerpts": [
+                  "Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226568916509",
+                "title": "https://www.ebay.com/itm/226568916509",
+                "excerpts": [
+                  "Kerastase Nutritive 8H Magic Night Serum - 90ml NEW WITHOUT BOX"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226568916509",
+                "title": "https://www.ebay.com/itm/226568916509",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226568916509",
+                "title": "https://www.ebay.com/itm/226568916509",
+                "excerpts": [
+                  "eBay item"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226568916509",
+                "title": "https://www.ebay.com/itm/226568916509",
+                "excerpts": [
+                  "Seller's other items ... /str/hairbeauty35 ... 99.8% positive feedback\u20221.4K items sold ... Joined Aug 2024"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/226568916509",
+                "title": "https://www.ebay.com/itm/226568916509",
+                "excerpts": [
+                  "eBay third-party seller ... 99.8% positive feedback\u20221.4K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278053802014",
+                "title": "https://www.ebay.com/itm/278053802014",
+                "excerpts": [
+                  "US $74.90 ... List price US $140.00 (46% off) ... Size 90ml, 3.04fl.oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278053802014",
+                "title": "https://www.ebay.com/itm/278053802014",
+                "excerpts": [
+                  "US $74.90"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278053802014",
+                "title": "https://www.ebay.com/itm/278053802014",
+                "excerpts": [
+                  "Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278053802014",
+                "title": "https://www.ebay.com/itm/278053802014",
+                "excerpts": [
+                  "K\u00e9rastase Paris Nutritive 8H Magic Night Serum Overnight Nourishing Serum 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278053802014",
+                "title": "https://www.ebay.com/itm/278053802014",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278053802014",
+                "title": "https://www.ebay.com/itm/278053802014",
+                "excerpts": [
+                  "eBay item"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278053802014",
+                "title": "https://www.ebay.com/itm/278053802014",
+                "excerpts": [
+                  "Seller's other items ... /str/cosmede ... 100% positive feedback\u2022150K items sold ... Joined Apr 2008 ... Economy Shipping from Greater China"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/278053802014",
+                "title": "https://www.ebay.com/itm/278053802014",
+                "excerpts": [
+                  "eBay third-party seller ... Economy Shipping from Greater China ... 100% positive feedback\u2022150K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/267677744911",
+                "title": "https://www.ebay.com/itm/267677744911",
+                "excerpts": [
+                  "US $99.99or Best Offer ... Kerastase Nutritive 8H Magic Night Serum 3.04oz/90ml AUTHENTIC NEW IN BOX"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/267677744911",
+                "title": "https://www.ebay.com/itm/267677744911",
+                "excerpts": [
+                  "US $99.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/267677744911",
+                "title": "https://www.ebay.com/itm/267677744911",
+                "excerpts": [
+                  "Buy It Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/267677744911",
+                "title": "https://www.ebay.com/itm/267677744911",
+                "excerpts": [
+                  "Kerastase Nutritive 8H Magic Night Serum 3.04oz/90ml AUTHENTIC NEW IN BOX"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/267677744911",
+                "title": "https://www.ebay.com/itm/267677744911",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/267677744911",
+                "title": "https://www.ebay.com/itm/267677744911",
+                "excerpts": [
+                  "eBay item"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/267677744911",
+                "title": "https://www.ebay.com/itm/267677744911",
+                "excerpts": [
+                  "Seller's other items ... /sch/whylieneed_beer/m.html ... username=whylieneed_beer ... 99.8% positive feedback\u20223.3K items sold ... Joined Oct 2017"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/itm/267677744911",
+                "title": "https://www.ebay.com/itm/267677744911",
+                "excerpts": [
+                  "eBay third-party seller ... 99.8% positive feedback\u20223.3K items sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "title": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "excerpts": [
+                  "Regular price ~\u00a352.00~ \u00a335.50 Save 32% ... Kerastase Nutritive 8h Magic Night Serum for Dry Hair 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "title": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "excerpts": [
+                  "Regular price ~\u00a352.00~ \u00a335.50 Save 32%"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "title": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "excerpts": [
+                  "Add to cart not explicitly captured; clearance sale listing"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[19].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "title": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "excerpts": [
+                  "Kerastase Nutritive 8h Magic Night Serum for Dry Hair 90ml - The LTL Shop"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "title": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "title": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "excerpts": [
+                  "The LTL Shop"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "title": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "excerpts": [
+                  "# The LTL Shop ... AUTHORISED DISTRIBUTOR ... LTLShop is an authorised distributor for Kerastase Nutritive 8h Magic Night Serum for Dry Hair 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "title": "https://theltlshop.com/products/kerastase-nutritive-8h-magic-night-serum-for-dry-hair-90ml",
+                "excerpts": [
+                  "AUTHORISED DISTRIBUTOR ... LTLShop is an authorised distributor for Kerastase ... Clearance Sale is now on! Up to 60% off"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "title": "https://www.beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "excerpts": [
+                  "Price Regular price $62.00 ... Default Title - $62.00 USD ... K\u00e9rastase Nutritive 8H Magic Night Hair Serum 90 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "title": "https://www.beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "excerpts": [
+                  "Default Title - $62.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "title": "https://www.beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "excerpts": [
+                  "Add to cart ... Default Title - $62.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "title": "https://www.beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive 8H Magic Night Hair Serum 90 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "title": "https://www.beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "title": "https://www.beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "excerpts": [
+                  "beaushesalon.com ... K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "title": "https://www.beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive 8H Magic Night Hair Serum 90 ml ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "title": "https://www.beaushesalon.com/products/nutritive-8h-magic-night-hair-serum-90-ml",
+                "excerpts": [
+                  "beaushesalon.com Shopify salon store ... K\u00e9rastase Nutritive 8H Magic Night Hair Serum 90 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "title": "https://www.hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "excerpts": [
+                  "$56.00Price ... Only 6 left in stock ... Add to Cart ... Buy Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "title": "https://www.hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "excerpts": [
+                  "$56.00Price"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "title": "https://www.hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "excerpts": [
+                  "Only 6 left in stock ... Add to Cart ... Buy Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "title": "https://www.hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "excerpts": [
+                  "Kerastase 8H Magic Night Hair Serum 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "title": "https://www.hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "title": "https://www.hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "excerpts": [
+                  "hairstudiofairfax.com ... Kerastase Gift Sets Currently Available In-Salon Only"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "title": "https://www.hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "excerpts": [
+                  "Kerastase 8H Magic Night Hair Serum 90ml ... Only 6 left in stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "title": "https://www.hairstudiofairfax.com/product-page/8h-magic-night-hair-serum",
+                "excerpts": [
+                  "Hair Studio Fairfax salon ... Kerastase Gift Sets Currently Available In-Salon Only"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "title": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "excerpts": [
+                  "Regular price $84.00 CAD ... Regular price Sale price $84.00 CAD ... Sale Sold out"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "title": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "excerpts": [
+                  "Regular price $84.00 CAD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "title": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "excerpts": [
+                  "Sale Sold out ... K\u00e9rastase Nutritive 8H Magic Night Serum 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "title": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive 8H Magic Night Serum 90ml ... Regular price $84.00 CAD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].listing_url"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[22].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "title": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "excerpts": [
+                  "shop.donyahairbody.com ... Free shipping on the orders over $200 Canada wide"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "title": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive 8H Magic Night Serum 90ml ... Free shipping on the orders over $200 Canada wide"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "title": "https://shop.donyahairbody.com/products/kerastase-8h-magic-night-serum",
+                "excerpts": [
+                  "shop.donyahairbody.com Canadian salon store ... Free shipping on the orders over $200 Canada wide"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://peggymou.com/product/kerastase-8h-magic-night-serum",
+                "title": "https://peggymou.com/product/kerastase-8h-magic-night-serum/",
+                "excerpts": [
+                  "Original price was: \u20ac42,00.Current price is: \u20ac40,99. ... Add to cart ... K\u00e9rastase 8H Magic Night Serum 90ml Cyprus"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://peggymou.com/product/kerastase-8h-magic-night-serum",
+                "title": "https://peggymou.com/product/kerastase-8h-magic-night-serum/",
+                "excerpts": [
+                  "Original price was: \u20ac42,00.Current price is: \u20ac40,99."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://peggymou.com/product/kerastase-8h-magic-night-serum",
+                "title": "https://peggymou.com/product/kerastase-8h-magic-night-serum/",
+                "excerpts": [
+                  "Add to cart ... Size | 30ml, 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://peggymou.com/product/kerastase-8h-magic-night-serum",
+                "title": "https://peggymou.com/product/kerastase-8h-magic-night-serum/",
+                "excerpts": [
+                  "K\u00e9rastase 8H Magic Night Serum 90ml Cyprus ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://peggymou.com/product/kerastase-8h-magic-night-serum",
+                "title": "https://peggymou.com/product/kerastase-8h-magic-night-serum/",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://peggymou.com/product/kerastase-8h-magic-night-serum",
+                "title": "https://peggymou.com/product/kerastase-8h-magic-night-serum/",
+                "excerpts": [
+                  "peggymou.com Online Cyprus"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://peggymou.com/product/kerastase-8h-magic-night-serum",
+                "title": "https://peggymou.com/product/kerastase-8h-magic-night-serum/",
+                "excerpts": [
+                  "K\u00e9rastase 8H Magic Night Serum 90ml Cyprus ... peggymou.com Online Cyprus"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://peggymou.com/product/kerastase-8h-magic-night-serum",
+                "title": "https://peggymou.com/product/kerastase-8h-magic-night-serum/",
+                "excerpts": [
+                  "peggymou.com Online Cyprus ... Delivery to your nearest Akis Express pickup point"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "title": "https://www.lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "excerpts": [
+                  "55.30\u20ac ... 39.82\u20ac ... Ex Tax: 39.82\u20ac ... 28% Off ... K\u00e9rastase Nutritive 8h Magic Night Serum 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "title": "https://www.lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "excerpts": [
+                  "39.82\u20ac ... Ex Tax: 39.82\u20ac ... Currency EUR \u20ac"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "title": "https://www.lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "excerpts": [
+                  "Add to Cart ... Available Options 30ml 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "title": "https://www.lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "excerpts": [
+                  "K\u00e9rastase Nutritive 8h Magic Night Serum 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "title": "https://www.lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "title": "https://www.lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "excerpts": [
+                  "lsbeauty.com ... LS Beauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "title": "https://www.lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "excerpts": [
+                  "LS Beauty ... K\u00e9rastase Nutritive 8h Magic Night Serum 90ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "title": "https://www.lsbeauty.com/kerastase-nutritive-8h-magic-night-serum-90ml",
+                "excerpts": [
+                  "LS Beauty independent store ... 28% Off ... Currency EUR \u20ac"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "title": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "excerpts": [
+                  "$49.99 ... Out of stock ... Kerastase Nutritive 8H Magic Night Serum 3.04 oz / 90 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "title": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "excerpts": [
+                  "$49.99 ... FREE Shipping On All Orders Over $39.99!"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "title": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "excerpts": [
+                  "Sold out ... $49.99 ... Out of stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "title": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "excerpts": [
+                  "Kerastase Nutritive 8H Magic Night Serum 3.04 oz / 90 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "title": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "title": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "excerpts": [
+                  "Shampoo Zone ... shampoozone.com ... +1 (718) 877-3867"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "title": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "excerpts": [
+                  "Shampoo Zone ... Kerastase Nutritive 8H Magic Night Serum 3.04 oz / 90 ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "title": "https://shampoozone.com/products/kerastase-nutritive-8h-magic-night-serum-3-04-oz-90-ml",
+                "excerpts": [
+                  "Shampoo Zone independent beauty store NYC ... SKU: 3474637155025"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}

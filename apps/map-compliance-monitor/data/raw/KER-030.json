@@ -1,0 +1,4278 @@
+{
+  "sku_id": "KER-030",
+  "effort": "high",
+  "elapsed_s": 1200,
+  "fetched_at": "2026-07-20T13:41:02+00:00",
+  "run_id": "task_run_23deaa4fb24c48b3840993192e40740e",
+  "status": "completed",
+  "result": {
+    "run": {
+      "id": "task_run_23deaa4fb24c48b3840993192e40740e",
+      "interaction_id": "task_run_23deaa4fb24c48b3840993192e40740e",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find every online seller of K\u00e9rastase Sp\u00e9cifique Bain Divalent Balancing Shampoo, 250ml size, and capture each seller's advertised price. Include marketplace third-party sellers and small independent stores, not just major retailers.",
+      "created_at": "2026-07-20T13:20:56.596925Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-20T13:20:56.724032Z",
+      "completed_at": "2026-07-20T13:40:48.218114Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.kerastase-usa.com/collections/specifique/bain-divalent-balancing-shampoo.html?dwvar_bain-divalent-balancing-shampoo_size=250ML",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "K\u00e9rastase USA",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "kerastase-usa.com",
+          "advertised_price": "$46.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.amazon.com/dp/B09FTGJT22",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Amazon (Sold by K\u00e9rastase)",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "amazon.com",
+          "advertised_price": "$46.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.sephora.com/product/kerastase-specifique-divalent-balancing-shampoo-oily-hair-P474336",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Sephora",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "sephora.com",
+          "advertised_price": "$43.70"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Balancing-Shampoo-For-Oily-Roots-Dry-Ends-8-5-oz/252415328",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Walmart Marketplace \u2014 Beauty's Choice INC",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$51.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Walmart Marketplace \u2014 R&B Beauty",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$49.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Walmart Marketplace \u2014 Passion Beauty",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "walmart.com",
+          "advertised_price": "$44.88"
+        },
+        {
+          "currency": "USD",
+          "in_stock": null,
+          "listing_url": "https://www.harrods.com/en-us/p/kerastase-specifique-bain-divalent-shampoo-250ml-000000000007710496",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Harrods",
+          "seller_type": "authorized_retailer",
+          "seller_domain": "harrods.com",
+          "advertised_price": "$41.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://skincolor.net/kerastase-specifique-bain-divalent-balancing-shampoo-250ml/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "SkinColor",
+          "seller_type": "independent_store",
+          "seller_domain": "skincolor.net",
+          "advertised_price": "$42.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://www.fragrancenet.com/haircare/kerastase/kerastase/specifique-bain-divalent-balancing-shampoo",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "FragranceNet",
+          "seller_type": "discounter",
+          "seller_domain": "fragrancenet.com",
+          "advertised_price": "$53.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.overstock-beauty.com/products/kerastase-specifique-bain-divalent-balancing-shampoo-8-5-oz",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Overstock Beauty",
+          "seller_type": "discounter",
+          "seller_domain": "overstock-beauty.com",
+          "advertised_price": "$37.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.caretobeauty.com/us/kerastase-specifique-bain-divalent-balancing-shampoo/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Care To Beauty",
+          "seller_type": "independent_store",
+          "seller_domain": "caretobeauty.com",
+          "advertised_price": "$44.21"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-specifique-bain-divalent/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Currie Hair Skin & Nails (Currie Day Spa)",
+          "seller_type": "independent_store",
+          "seller_domain": "curriedayspa.com",
+          "advertised_price": "$48.00"
+        },
+        {
+          "currency": "CAD",
+          "in_stock": true,
+          "listing_url": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Concept C. Shop",
+          "seller_type": "independent_store",
+          "seller_domain": "conceptcshop.com",
+          "advertised_price": "$62.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": false,
+          "listing_url": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Bokaos",
+          "seller_type": "independent_store",
+          "seller_domain": "bokaos.com",
+          "advertised_price": "$44.00"
+        },
+        {
+          "currency": "AED",
+          "in_stock": true,
+          "listing_url": "https://www.dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Dayjour",
+          "seller_type": "independent_store",
+          "seller_domain": "dayjour.net",
+          "advertised_price": "Dhs. 169.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://feel22.com/products/kerastase-specifique-bain-divalent-shampoo-250ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Feel22",
+          "seller_type": "independent_store",
+          "seller_domain": "feel22.com",
+          "advertised_price": "$31.31"
+        },
+        {
+          "currency": "SEK",
+          "in_stock": true,
+          "listing_url": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Lyko",
+          "seller_type": "independent_store",
+          "seller_domain": "lyko.com",
+          "advertised_price": "359,55 kr"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "SweetCare",
+          "seller_type": "independent_store",
+          "seller_domain": "sweetcare.pt",
+          "advertised_price": "$ 28.28"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz/",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "LySkin",
+          "seller_type": "independent_store",
+          "seller_domain": "lyskin.com",
+          "advertised_price": "$36,28"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "Target Plus \u2014 232 Inc.",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "target.com",
+          "advertised_price": "$45.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/227077667001",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "eBay \u2014 london7652",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$32.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/377270613737",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "eBay \u2014 in-446908",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$31.99"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/236300670217",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "eBay \u2014 newtradetech",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$34.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/188581051603",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "eBay \u2014 electrozone_pro",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$30.89"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/276071074862",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "eBay \u2014 beauty_experts_of_la",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$36.79"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/188530036164",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "eBay \u2014 skywardpremierhub",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$34.00"
+        },
+        {
+          "currency": "USD",
+          "in_stock": true,
+          "listing_url": "https://www.ebay.com/itm/127861056223",
+          "observed_at": "2026-07-20T00:00:00Z",
+          "seller_name": "eBay \u2014 sadasaw_14",
+          "seller_type": "marketplace_third_party",
+          "seller_domain": "ebay.com",
+          "advertised_price": "$28.99 to $49.99"
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://kerastase-usa.com/collections/specifique/bain-divalent-balancing-shampoo.html?srsltid=AfmBOoo8Nli2A2R9xBU8MWM4BKzVMGYIs4kcF42gp-nZOaNfGUoeLq0Q",
+            "title": "Specifique Bain Divalent Shampoo for Greasy Hair | K\u00e9rastase",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://amazon.com/dp/B09FTGJT22",
+            "title": "amazon_pdp",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://sephora.com/product/kerastase-specifique-divalent-balancing-shampoo-oily-hair-P474336",
+            "title": "Specifique Divalent Balancing Shampoo for Oily Hair",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Balancing-Shampoo-For-Oily-Roots-Dry-Ends-8-5-oz/252415328",
+            "title": "Kerastase Specifique Balancing Shampoo, For Oily Roots ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+            "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+            "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://harrods.com/en-us/p/kerastase-specifique-bain-divalent-shampoo-250ml-000000000007710496?srsltid=AfmBOooqflXTrGFZ2X8OxTWxTGZC_IDhGXJQI8Yj1Ozes5BSyPGQh4_P",
+            "title": "Kerastase Specifique Bain Divalent Shampoo (250ml)",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://skincolor.net/kerastase-specifique-bain-divalent-balancing-shampoo-250ml?srsltid=AfmBOorpDJX1uo8SnXLYulnqZt8z3GDE4ihyfV0inPhKBmL2GlC_R6wZ",
+            "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://fragrancenet.com/haircare/kerastase/kerastase/specifique-bain-divalent-balancing-shampoo",
+            "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://overstock-beauty.com/products/kerastase-specifique-bain-divalent-balancing-shampoo-8-5-oz?srsltid=AfmBOorKvN5ZDVnWF2In69vHOvTAWJk7VxfKH_Sq00QK_so6FriZM6L4",
+            "title": "K\u00e9rastase Sp\u00e9cifique Bain Divalent Balancing Shampoo ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://caretobeauty.com/us/kerastase-specifique-bain-divalent-balancing-shampoo",
+            "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-specifique-bain-divalent?srsltid=AfmBOoo4Anx3OpsX0cwuLTQ15kFoVbznvKkJPYB_gZK2DJlouIMkYxpB",
+            "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+            "title": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+            "title": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+            "title": "https://www.dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://feel22.com/products/kerastase-specifique-bain-divalent-shampoo-250ml",
+            "title": "K\u00e9rastase Specifique Bain Divalent Shampoo 250ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+            "title": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+            "title": "https://www.sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz",
+            "title": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz/",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+            "title": "https://www.target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+            "title": "K\u00e9rastase Specifique Bain Divalent",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 97%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/specifique/bain-divalent-balancing-shampoo.html?srsltid=AfmBOoo8Nli2A2R9xBU8MWM4BKzVMGYIs4kcF42gp-nZOaNfGUoeLq0Q",
+                "title": "Specifique Bain Divalent Shampoo for Greasy Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Sp\u00e9cifique Bain Divalent Balancing Shampoo ... Selected 250 ml ... Old price New price $46.00 ... Add to Bag"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/specifique/bain-divalent-balancing-shampoo.html?srsltid=AfmBOoo8Nli2A2R9xBU8MWM4BKzVMGYIs4kcF42gp-nZOaNfGUoeLq0Q",
+                "title": "Specifique Bain Divalent Shampoo for Greasy Hair | K\u00e9rastase",
+                "excerpts": [
+                  "kerastase-usa.com/collections/specifique/bain-divalent-balancing-shampoo.html?dwvar_bain-divalent-balancing-shampoo_size=250ML"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/specifique/bain-divalent-balancing-shampoo.html?srsltid=AfmBOoo8Nli2A2R9xBU8MWM4BKzVMGYIs4kcF42gp-nZOaNfGUoeLq0Q",
+                "title": "Specifique Bain Divalent Shampoo for Greasy Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Selected 250 ml ... Old price New price $46.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/specifique/bain-divalent-balancing-shampoo.html?srsltid=AfmBOoo8Nli2A2R9xBU8MWM4BKzVMGYIs4kcF42gp-nZOaNfGUoeLq0Q",
+                "title": "Specifique Bain Divalent Shampoo for Greasy Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Prices and payment are shown in USD."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/specifique/bain-divalent-balancing-shampoo.html?srsltid=AfmBOoo8Nli2A2R9xBU8MWM4BKzVMGYIs4kcF42gp-nZOaNfGUoeLq0Q",
+                "title": "Specifique Bain Divalent Shampoo for Greasy Hair | K\u00e9rastase",
+                "excerpts": [
+                  "https://www.kerastase-usa.com/collections/specifique/bain-divalent-balancing-shampoo.html?dwvar_bain-divalent-balancing-shampoo_size=250ML"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/specifique/bain-divalent-balancing-shampoo.html?srsltid=AfmBOoo8Nli2A2R9xBU8MWM4BKzVMGYIs4kcF42gp-nZOaNfGUoeLq0Q",
+                "title": "Specifique Bain Divalent Shampoo for Greasy Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Official K\u00e9rastase USA site; product sold direct by the brand."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/specifique/bain-divalent-balancing-shampoo.html?srsltid=AfmBOoo8Nli2A2R9xBU8MWM4BKzVMGYIs4kcF42gp-nZOaNfGUoeLq0Q",
+                "title": "Specifique Bain Divalent Shampoo for Greasy Hair | K\u00e9rastase",
+                "excerpts": [
+                  "Order now to receive between Fri, Jul 24 & Sat, Jul 25"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://kerastase-usa.com/collections/specifique/bain-divalent-balancing-shampoo.html?srsltid=AfmBOoo8Nli2A2R9xBU8MWM4BKzVMGYIs4kcF42gp-nZOaNfGUoeLq0Q",
+                "title": "Specifique Bain Divalent Shampoo for Greasy Hair | K\u00e9rastase",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B09FTGJT22",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.web_price: 46 ... data.list_price: 46"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B09FTGJT22",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.option_name: 8.5 Fl Oz (Pack of 1)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B09FTGJT22",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.availability: true"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B09FTGJT22",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B09FTGJT22"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B09FTGJT22",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B09FTGJT22",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.product_url: https://www.amazon.com/dp/B09FTGJT22"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B09FTGJT22",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: K\u00e9rastase ... data.ships_from: Amazon"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://amazon.com/dp/B09FTGJT22",
+                "title": "amazon_pdp",
+                "excerpts": [
+                  "data.sold_by: K\u00e9rastase"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[2].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[2].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/kerastase-specifique-divalent-balancing-shampoo-oily-hair-P474336",
+                "title": "Specifique Divalent Balancing Shampoo for Oily Hair",
+                "excerpts": [
+                  "Sephora product page extracted; price/stock text not rendered in extraction, price confirmed via SERP snippet"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[2].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/kerastase-specifique-divalent-balancing-shampoo-oily-hair-P474336",
+                "title": "Specifique Divalent Balancing Shampoo for Oily Hair",
+                "excerpts": [
+                  "sephora.com/product/kerastase-specifique-divalent-balancing-shampoo-oily-hair-P474336"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/kerastase-specifique-divalent-balancing-shampoo-oily-hair-P474336",
+                "title": "Specifique Divalent Balancing Shampoo for Oily Hair",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/kerastase-specifique-divalent-balancing-shampoo-oily-hair-P474336",
+                "title": "Specifique Divalent Balancing Shampoo for Oily Hair",
+                "excerpts": [
+                  "sephora.com/product/kerastase-specifique-divalent-balancing-shampoo-oily-hair-P474336"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_domain"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[2].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sephora.com/product/kerastase-specifique-divalent-balancing-shampoo-oily-hair-P474336",
+                "title": "Specifique Divalent Balancing Shampoo for Oily Hair",
+                "excerpts": [
+                  "Sephora is a major authorized beauty retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Balancing-Shampoo-For-Oily-Roots-Dry-Ends-8-5-oz/252415328",
+                "title": "Kerastase Specifique Balancing Shampoo, For Oily Roots ...",
+                "excerpts": [
+                  "Current price is $51.99 ... Price when purchased online"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Balancing-Shampoo-For-Oily-Roots-Dry-Ends-8-5-oz/252415328",
+                "title": "Kerastase Specifique Balancing Shampoo, For Oily Roots ...",
+                "excerpts": [
+                  "Current price is $51.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Balancing-Shampoo-For-Oily-Roots-Dry-Ends-8-5-oz/252415328",
+                "title": "Kerastase Specifique Balancing Shampoo, For Oily Roots ...",
+                "excerpts": [
+                  "Only 1 left ... Sold and shipped by Beauty's Choice INC"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Balancing-Shampoo-For-Oily-Roots-Dry-Ends-8-5-oz/252415328",
+                "title": "Kerastase Specifique Balancing Shampoo, For Oily Roots ...",
+                "excerpts": [
+                  "walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Balancing-Shampoo-For-Oily-Roots-Dry-Ends-8-5-oz/252415328"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Balancing-Shampoo-For-Oily-Roots-Dry-Ends-8-5-oz/252415328",
+                "title": "Kerastase Specifique Balancing Shampoo, For Oily Roots ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Balancing-Shampoo-For-Oily-Roots-Dry-Ends-8-5-oz/252415328",
+                "title": "Kerastase Specifique Balancing Shampoo, For Oily Roots ...",
+                "excerpts": [
+                  "walmart.com/ip/.../252415328"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Balancing-Shampoo-For-Oily-Roots-Dry-Ends-8-5-oz/252415328",
+                "title": "Kerastase Specifique Balancing Shampoo, For Oily Roots ...",
+                "excerpts": [
+                  "Sold and shipped by Beauty's Choice INC"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Balancing-Shampoo-For-Oily-Roots-Dry-Ends-8-5-oz/252415328",
+                "title": "Kerastase Specifique Balancing Shampoo, For Oily Roots ...",
+                "excerpts": [
+                  "Sold and shipped by Beauty's Choice INC ... 4.24 stars based on 135 seller reviews"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "excerpts": [
+                  "Current price is $49.99 ... Price when purchased online"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "excerpts": [
+                  "Current price is $49.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "excerpts": [
+                  "Sold and shipped by R&B Beauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "excerpts": [
+                  "walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "excerpts": [
+                  "walmart.com/ip/.../513223299"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "excerpts": [
+                  "Sold and shipped by R&B Beauty ... 4.30 stars based on 473 seller reviews"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/513223299",
+                "excerpts": [
+                  "Sold and shipped by R&B Beauty"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[4].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "excerpts": [
+                  "Current price is $44.88 ... Price when purchased online"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "excerpts": [
+                  "Current price is $44.88"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "excerpts": [
+                  "Only 1 left ... Sold and shipped by Passion Beauty Pro Seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "excerpts": [
+                  "walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "excerpts": [
+                  "walmart.com/ip/.../116679095"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "excerpts": [
+                  "Sold and shipped by Passion Beauty Pro Seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "title": "https://www.walmart.com/ip/Kerastase-Specifique-Bain-Divalent-Shampoo-8-5-oz/116679095",
+                "excerpts": [
+                  "Sold and shipped by Passion Beauty Pro Seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[5].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://harrods.com/en-us/p/kerastase-specifique-bain-divalent-shampoo-250ml-000000000007710496?srsltid=AfmBOooqflXTrGFZ2X8OxTWxTGZC_IDhGXJQI8Yj1Ozes5BSyPGQh4_P",
+                "title": "Kerastase Specifique Bain Divalent Shampoo (250ml)",
+                "excerpts": [
+                  "Kerastase Specifique Bain Divalent Shampoo (250ml) ... $41.00 ... 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://harrods.com/en-us/p/kerastase-specifique-bain-divalent-shampoo-250ml-000000000007710496?srsltid=AfmBOooqflXTrGFZ2X8OxTWxTGZC_IDhGXJQI8Yj1Ozes5BSyPGQh4_P",
+                "title": "Kerastase Specifique Bain Divalent Shampoo (250ml)",
+                "excerpts": [
+                  "$41.00 ... USA delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://harrods.com/en-us/p/kerastase-specifique-bain-divalent-shampoo-250ml-000000000007710496?srsltid=AfmBOooqflXTrGFZ2X8OxTWxTGZC_IDhGXJQI8Yj1Ozes5BSyPGQh4_P",
+                "title": "Kerastase Specifique Bain Divalent Shampoo (250ml)",
+                "excerpts": [
+                  "Harrods PDP; explicit stock status not rendered in extraction"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[6].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://harrods.com/en-us/p/kerastase-specifique-bain-divalent-shampoo-250ml-000000000007710496?srsltid=AfmBOooqflXTrGFZ2X8OxTWxTGZC_IDhGXJQI8Yj1Ozes5BSyPGQh4_P",
+                "title": "Kerastase Specifique Bain Divalent Shampoo (250ml)",
+                "excerpts": [
+                  "harrods.com/en-us/p/kerastase-specifique-bain-divalent-shampoo-250ml-000000000007710496"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://harrods.com/en-us/p/kerastase-specifique-bain-divalent-shampoo-250ml-000000000007710496?srsltid=AfmBOooqflXTrGFZ2X8OxTWxTGZC_IDhGXJQI8Yj1Ozes5BSyPGQh4_P",
+                "title": "Kerastase Specifique Bain Divalent Shampoo (250ml)",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://harrods.com/en-us/p/kerastase-specifique-bain-divalent-shampoo-250ml-000000000007710496?srsltid=AfmBOooqflXTrGFZ2X8OxTWxTGZC_IDhGXJQI8Yj1Ozes5BSyPGQh4_P",
+                "title": "Kerastase Specifique Bain Divalent Shampoo (250ml)",
+                "excerpts": [
+                  "harrods.com/en-us/p/..."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://harrods.com/en-us/p/kerastase-specifique-bain-divalent-shampoo-250ml-000000000007710496?srsltid=AfmBOooqflXTrGFZ2X8OxTWxTGZC_IDhGXJQI8Yj1Ozes5BSyPGQh4_P",
+                "title": "Kerastase Specifique Bain Divalent Shampoo (250ml)",
+                "excerpts": [
+                  "Kerastase Specifique Bain Divalent Shampoo (250ml)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://harrods.com/en-us/p/kerastase-specifique-bain-divalent-shampoo-250ml-000000000007710496?srsltid=AfmBOooqflXTrGFZ2X8OxTWxTGZC_IDhGXJQI8Yj1Ozes5BSyPGQh4_P",
+                "title": "Kerastase Specifique Bain Divalent Shampoo (250ml)",
+                "excerpts": [
+                  "Harrods department store, authorized luxury beauty retailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[6].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-specifique-bain-divalent-balancing-shampoo-250ml?srsltid=AfmBOorpDJX1uo8SnXLYulnqZt8z3GDE4ihyfV0inPhKBmL2GlC_R6wZ",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "In Stock & Ready to ship ... $42.00 ... K\u00e9rastase Specifique Bain Divalent Balancing Shampoo 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-specifique-bain-divalent-balancing-shampoo-250ml?srsltid=AfmBOorpDJX1uo8SnXLYulnqZt8z3GDE4ihyfV0inPhKBmL2GlC_R6wZ",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "$42.00 ... Buy now, pay later with PayPal"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-specifique-bain-divalent-balancing-shampoo-250ml?srsltid=AfmBOorpDJX1uo8SnXLYulnqZt8z3GDE4ihyfV0inPhKBmL2GlC_R6wZ",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "In Stock & Ready to ship"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-specifique-bain-divalent-balancing-shampoo-250ml?srsltid=AfmBOorpDJX1uo8SnXLYulnqZt8z3GDE4ihyfV0inPhKBmL2GlC_R6wZ",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "skincolor.net/kerastase-specifique-bain-divalent-balancing-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-specifique-bain-divalent-balancing-shampoo-250ml?srsltid=AfmBOorpDJX1uo8SnXLYulnqZt8z3GDE4ihyfV0inPhKBmL2GlC_R6wZ",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-specifique-bain-divalent-balancing-shampoo-250ml?srsltid=AfmBOorpDJX1uo8SnXLYulnqZt8z3GDE4ihyfV0inPhKBmL2GlC_R6wZ",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "skincolor.net/kerastase-specifique-bain-divalent-balancing-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-specifique-bain-divalent-balancing-shampoo-250ml?srsltid=AfmBOorpDJX1uo8SnXLYulnqZt8z3GDE4ihyfV0inPhKBmL2GlC_R6wZ",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "skincolor.net product listing"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://skincolor.net/kerastase-specifique-bain-divalent-balancing-shampoo-250ml?srsltid=AfmBOorpDJX1uo8SnXLYulnqZt8z3GDE4ihyfV0inPhKBmL2GlC_R6wZ",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "Independent beauty e-commerce store (BigCommerce cart)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[7].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fragrancenet.com/haircare/kerastase/kerastase/specifique-bain-divalent-balancing-shampoo",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "Our Price $53.99 ... specifique bain divalent balancing shampoo 8.5 oz ... Out of Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fragrancenet.com/haircare/kerastase/kerastase/specifique-bain-divalent-balancing-shampoo",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "Our Price $53.99"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fragrancenet.com/haircare/kerastase/kerastase/specifique-bain-divalent-balancing-shampoo",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "Out of Stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fragrancenet.com/haircare/kerastase/kerastase/specifique-bain-divalent-balancing-shampoo",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "fragrancenet.com/haircare/kerastase/kerastase/specifique-bain-divalent-balancing-shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fragrancenet.com/haircare/kerastase/kerastase/specifique-bain-divalent-balancing-shampoo",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fragrancenet.com/haircare/kerastase/kerastase/specifique-bain-divalent-balancing-shampoo",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "fragrancenet.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fragrancenet.com/haircare/kerastase/kerastase/specifique-bain-divalent-balancing-shampoo",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "FragranceNet.com VIP ... Trusted online since 1997"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://fragrancenet.com/haircare/kerastase/kerastase/specifique-bain-divalent-balancing-shampoo",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "all at discount prices. Price with Coupon $37.79"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[8].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/products/kerastase-specifique-bain-divalent-balancing-shampoo-8-5-oz?srsltid=AfmBOorKvN5ZDVnWF2In69vHOvTAWJk7VxfKH_Sq00QK_so6FriZM6L4",
+                "title": "K\u00e9rastase Sp\u00e9cifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "K\u00e9rastase Sp\u00e9cifique Bain Divalent Balancing Shampoo 8.5 oz ... $37.99 ... $42.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/products/kerastase-specifique-bain-divalent-balancing-shampoo-8-5-oz?srsltid=AfmBOorKvN5ZDVnWF2In69vHOvTAWJk7VxfKH_Sq00QK_so6FriZM6L4",
+                "title": "K\u00e9rastase Sp\u00e9cifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "$37.99 ... $42.00 ... $0.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/products/kerastase-specifique-bain-divalent-balancing-shampoo-8-5-oz?srsltid=AfmBOorKvN5ZDVnWF2In69vHOvTAWJk7VxfKH_Sq00QK_so6FriZM6L4",
+                "title": "K\u00e9rastase Sp\u00e9cifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "Add to cart ... Luxury Hair Care, Sustainably Sourced. Always on Sale."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/products/kerastase-specifique-bain-divalent-balancing-shampoo-8-5-oz?srsltid=AfmBOorKvN5ZDVnWF2In69vHOvTAWJk7VxfKH_Sq00QK_so6FriZM6L4",
+                "title": "K\u00e9rastase Sp\u00e9cifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "overstock-beauty.com/products/kerastase-specifique-bain-divalent-balancing-shampoo-8-5-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/products/kerastase-specifique-bain-divalent-balancing-shampoo-8-5-oz?srsltid=AfmBOorKvN5ZDVnWF2In69vHOvTAWJk7VxfKH_Sq00QK_so6FriZM6L4",
+                "title": "K\u00e9rastase Sp\u00e9cifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/products/kerastase-specifique-bain-divalent-balancing-shampoo-8-5-oz?srsltid=AfmBOorKvN5ZDVnWF2In69vHOvTAWJk7VxfKH_Sq00QK_so6FriZM6L4",
+                "title": "K\u00e9rastase Sp\u00e9cifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "overstock-beauty.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/products/kerastase-specifique-bain-divalent-balancing-shampoo-8-5-oz?srsltid=AfmBOorKvN5ZDVnWF2In69vHOvTAWJk7VxfKH_Sq00QK_so6FriZM6L4",
+                "title": "K\u00e9rastase Sp\u00e9cifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "OVERSTOCK BEAUTY Luxury Hair Care, Sustainably Sourced. Always on Sale."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://overstock-beauty.com/products/kerastase-specifique-bain-divalent-balancing-shampoo-8-5-oz?srsltid=AfmBOorKvN5ZDVnWF2In69vHOvTAWJk7VxfKH_Sq00QK_so6FriZM6L4",
+                "title": "K\u00e9rastase Sp\u00e9cifique Bain Divalent Balancing Shampoo ...",
+                "excerpts": [
+                  "Always on Sale. Luxury Hair Care, Sustainably Sourced."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[9].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-specifique-bain-divalent-balancing-shampoo",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "Price from $44.21 ... 250ml (8.45 fl oz)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-specifique-bain-divalent-balancing-shampoo",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "Price from $44.21 ... Free Shipping to United States on orders over $131.00"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].currency"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[10].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-specifique-bain-divalent-balancing-shampoo",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "caretobeauty.com/us/kerastase-specifique-bain-divalent-balancing-shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-specifique-bain-divalent-balancing-shampoo",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-specifique-bain-divalent-balancing-shampoo",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "caretobeauty.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-specifique-bain-divalent-balancing-shampoo",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "beautytocare.com / caretobeauty.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://caretobeauty.com/us/kerastase-specifique-bain-divalent-balancing-shampoo",
+                "title": "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "Independent beauty e-tailer shipping internationally"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[10].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-specifique-bain-divalent?srsltid=AfmBOoo4Anx3OpsX0cwuLTQ15kFoVbznvKkJPYB_gZK2DJlouIMkYxpB",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "Kerastase Specifique Bain Divalent Balancing Shampoo ... $48.00 ... In stock ... Pack available: 8.5 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-specifique-bain-divalent?srsltid=AfmBOoo4Anx3OpsX0cwuLTQ15kFoVbznvKkJPYB_gZK2DJlouIMkYxpB",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "$48.00 ... Currie Hair Skin & Nails"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-specifique-bain-divalent?srsltid=AfmBOoo4Anx3OpsX0cwuLTQ15kFoVbznvKkJPYB_gZK2DJlouIMkYxpB",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "In stock ... Add to cart Buy Now"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-specifique-bain-divalent?srsltid=AfmBOoo4Anx3OpsX0cwuLTQ15kFoVbznvKkJPYB_gZK2DJlouIMkYxpB",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "curriedayspa.com/shop/hair/kerastase/kerastase-specifique-bain-divalent"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-specifique-bain-divalent?srsltid=AfmBOoo4Anx3OpsX0cwuLTQ15kFoVbznvKkJPYB_gZK2DJlouIMkYxpB",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-specifique-bain-divalent?srsltid=AfmBOoo4Anx3OpsX0cwuLTQ15kFoVbznvKkJPYB_gZK2DJlouIMkYxpB",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "curriedayspa.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-specifique-bain-divalent?srsltid=AfmBOoo4Anx3OpsX0cwuLTQ15kFoVbznvKkJPYB_gZK2DJlouIMkYxpB",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "Discover more from our Kerastase collection at Currie Hair Skin & Nails"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curriedayspa.com/shop/hair/kerastase/kerastase-specifique-bain-divalent?srsltid=AfmBOoo4Anx3OpsX0cwuLTQ15kFoVbznvKkJPYB_gZK2DJlouIMkYxpB",
+                "title": "Kerastase Specifique Bain Divalent Balancing Shampoo",
+                "excerpts": [
+                  "salon/reseller selling online"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[11].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "title": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "excerpts": [
+                  "K\u00e9rastase. Sp\u00e9cifique Balancing Shampoo - 250 ml ... Sale price$62.00 ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "title": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "excerpts": [
+                  "customer_authentication/redirect?locale=en&region_country=CA"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "title": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "excerpts": [
+                  "Add to cart ... 250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "title": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "excerpts": [
+                  "conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "title": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "title": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "excerpts": [
+                  "conceptcshop.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "title": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "excerpts": [
+                  "Concept C. Shop"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "title": "https://conceptcshop.com/en/products/kerastase-specifique-shampoing-bain-divalent-250-ml",
+                "excerpts": [
+                  "independent beauty e-commerce store"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[12].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "title": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "excerpts": [
+                  "Regular price $44.00 USD ... Regular price Sale price $44.00 USD ... Size 8.5 oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "title": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "excerpts": [
+                  "Regular price $44.00 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "title": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "excerpts": [
+                  "Sale Sold out ... Size 8.5 oz Variant sold out or unavailable"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "title": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "excerpts": [
+                  "bokaos.com/products/specifique-bain-divalent-balancing-shampoo"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "title": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "title": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "excerpts": [
+                  "bokaos.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "title": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "excerpts": [
+                  "Pickup available at Salon Location"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "title": "https://bokaos.com/products/specifique-bain-divalent-balancing-shampoo",
+                "excerpts": [
+                  "Pickup available at Salon Location"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[13].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "title": "https://www.dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "excerpts": [
+                  "Kerastase Specifique Bain Divalent 250ml ... Regular price Dhs. 169.00 ~Dhs. 250.00~ ... available: 19"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "title": "https://www.dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "excerpts": [
+                  "Dhs. ... Free Shipping above 250AED"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "title": "https://www.dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "excerpts": [
+                  "available: 19 ... Add to Cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "title": "https://www.dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "excerpts": [
+                  "dayjour.net/products/kerastase-specifique-bain-divalent-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "title": "https://www.dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "title": "https://www.dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "excerpts": [
+                  "dayjour.net"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "title": "https://www.dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "excerpts": [
+                  "Kerastase UAE - Dayjour"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "title": "https://www.dayjour.net/products/kerastase-specifique-bain-divalent-250ml",
+                "excerpts": [
+                  "Kerastase UAE - Dayjour - hair care"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[14].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://feel22.com/products/kerastase-specifique-bain-divalent-shampoo-250ml",
+                "title": "K\u00e9rastase Specifique Bain Divalent Shampoo 250ml",
+                "excerpts": [
+                  "K\u00e9rastase Specifique Bain Divalent Shampoo 250ml ... $31.31 USD ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://feel22.com/products/kerastase-specifique-bain-divalent-shampoo-250ml",
+                "title": "K\u00e9rastase Specifique Bain Divalent Shampoo 250ml",
+                "excerpts": [
+                  "$31.31 USD"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://feel22.com/products/kerastase-specifique-bain-divalent-shampoo-250ml",
+                "title": "K\u00e9rastase Specifique Bain Divalent Shampoo 250ml",
+                "excerpts": [
+                  "Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://feel22.com/products/kerastase-specifique-bain-divalent-shampoo-250ml",
+                "title": "K\u00e9rastase Specifique Bain Divalent Shampoo 250ml",
+                "excerpts": [
+                  "feel22.com/products/kerastase-specifique-bain-divalent-shampoo-250ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://feel22.com/products/kerastase-specifique-bain-divalent-shampoo-250ml",
+                "title": "K\u00e9rastase Specifique Bain Divalent Shampoo 250ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://feel22.com/products/kerastase-specifique-bain-divalent-shampoo-250ml",
+                "title": "K\u00e9rastase Specifique Bain Divalent Shampoo 250ml",
+                "excerpts": [
+                  "feel22.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://feel22.com/products/kerastase-specifique-bain-divalent-shampoo-250ml",
+                "title": "K\u00e9rastase Specifique Bain Divalent Shampoo 250ml",
+                "excerpts": [
+                  "Feel22"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[15].seller_name"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[15].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "title": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "excerpts": [
+                  "K\u00e9rastase Specifique Bain Divalent shampoo 250 ml ... Sale price 359,55 kr ... Without campaign 423 kr"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "title": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "excerpts": [
+                  "359,55 kr ... 423 kr"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "title": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "excerpts": [
+                  "Buy ... View price history Store stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "title": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "excerpts": [
+                  "lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "title": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "title": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "excerpts": [
+                  "lyko.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "title": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "excerpts": [
+                  "Lyko"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "title": "https://lyko.com/en/kerastase/k-rastase-specifiqu--bain-divalent-shampoo-250-ml",
+                "excerpts": [
+                  "Nordic beauty e-tailer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[16].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "title": "https://www.sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "excerpts": [
+                  "K\u00e9rastase Specifique Bain Divalent Balancing Shampoo Oily Roots ... $ 28.28 $ 30.40 ... 250mL ... in stock"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "title": "https://www.sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "excerpts": [
+                  "$ 28.28 $ 30.40 ... Rewards Club Earn up to $ 1.40 cashback"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "title": "https://www.sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "excerpts": [
+                  "250mL ... in stock ... Buy"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "title": "https://www.sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "excerpts": [
+                  "sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "title": "https://www.sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "title": "https://www.sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "excerpts": [
+                  "sweetcare.pt"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "title": "https://www.sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "excerpts": [
+                  "SweetCare"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "title": "https://www.sweetcare.pt/us/kerastase-specifique-bain-shampoo-divalent-p-006615ke?st=01",
+                "excerpts": [
+                  "30K+ products, 700+ brands"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[17].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz/",
+                "excerpts": [
+                  "K\u00e9rastase specifique bain divalent balancing shampoo 250ml 8.5 fl.oz ... $36,28 ... AVAILABLE"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz/",
+                "excerpts": [
+                  "$36,28 ... 0 Cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz/",
+                "excerpts": [
+                  "AVAILABLE ... Add to cart"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz/",
+                "excerpts": [
+                  "lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz/",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz/",
+                "excerpts": [
+                  "lyskin.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz/",
+                "excerpts": [
+                  "LySkin"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz",
+                "title": "https://lyskin.com/shop/kerastase-specifique-bain-divalent-balancing-shampoo-250ml-8-5-fl-oz/",
+                "excerpts": [
+                  "Buy online at Lyskin"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[18].seller_type"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[19].advertised_price"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$[19].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+                "title": "https://www.target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+                "excerpts": [
+                  "Add to cart ... Pickup Delivery Shipping ... Sold & shipped by 232 Inc."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+                "title": "https://www.target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+                "excerpts": [
+                  "target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+                "title": "https://www.target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+                "title": "https://www.target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+                "excerpts": [
+                  "target.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+                "title": "https://www.target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+                "excerpts": [
+                  "Sold & shipped by 232 Inc."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+                "title": "https://www.target.com/p/kerastase-specifique-bain-divalent-shampoo-8-5-oz/-/A-1010098528",
+                "excerpts": [
+                  "Sold & shipped by 232 Inc."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[19].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "Kerastase Specifique Bain Divalent Shampoo 250ml 8.5oz \u2013 100% Authentic New ... $32.00 ... or Best Offer ... london7652 100% positive"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "$32.00 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "Brand New ... $32.00 or Best Offer"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com/itm/227077667001"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "london7652 100% positive (125)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[20].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "Kerastase Specifique Bain Divalent 8.5oz / 250ml ... $31.99 ... Buy It Now ... Free delivery ... in-446908"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "$31.99 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "Brand New ... $31.99 Buy It Now ... Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com/itm/377270613737"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "in-446908 99.3% positive (263)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[21].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "KERASTASE SPECIFIQUE BAIN DIVALENT VITAMIN B6 SHAMPOO 250ml 8.5oz GENUINE NEW!!! ... $34.00 ... or Best Offer ... newtradetech"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "$34.00 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "Brand New ... $34.00 or Best Offer ... 31 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com/itm/236300670217"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "newtradetech 99.9% positive (7.6K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[22].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "Kerastase Specifique Bain Divalent Shampoo 250ml/8.5oz NEW ... NEW LOW PRICE ... $30.89 ... or Best Offer ... electrozone_pro"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "$30.89 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "Brand New ... $30.89 or Best Offer ... Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com/itm/188581051603"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "electrozone_pro 96.8% positive (539)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[23].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "Kerastase Specifique Bain Divalent 8.5oz / 250ml ... $36.79$39.99 ... Buy It Now ... beauty_experts_of_la"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "$36.79$39.99 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "Brand New ... $36.79$39.99 Buy It Now ... Free delivery ... 40 sold"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com/itm/276071074862"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "beauty_experts_of_la 99.9% positive (120.3K)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[24].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "Kerastase Specifique Bain Divalent 8.5oz / 250ml ... NEW LOW PRICE ... $34.00 ... or Best Offer ... skywardpremierhub"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "$34.00 ... Located in United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "Brand New ... $34.00 or Best Offer ... Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com/itm/188530036164"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "skywardpremierhub 100% positive (66)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com third-party seller"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[25].seller_type"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "Kerastase Specifique \u2013 Bain Divalent Balancing Shampoo 8.5 oz ... $28.99 to $49.99 ... Buy It Now ... sadasaw_14"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].advertised_price"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "$28.99 to $49.99 ... Located in Turkey"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].currency"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "Brand New ... $28.99 to $49.99 Buy It Now ... Free delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].in_stock"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com/itm/127861056223"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].listing_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "retrieved 2026-07-20"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].seller_domain"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "sadasaw_14 100% positive (4)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].seller_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ebay.com/shop/kerastase-specifique-bain-divalent?_nkw=kerastase+specifique+bain+divalent",
+                "title": "K\u00e9rastase Specifique Bain Divalent",
+                "excerpts": [
+                  "ebay.com third-party seller, located in Turkey"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[26].seller_type"
+          }
+        ]
+      }
+    }
+  }
+}
