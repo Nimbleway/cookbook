@@ -39,18 +39,23 @@ def category_from_query(q):
     return " ".join(s.split()).strip(" ,-").title() or None
 
 
+_UNIT_MULT = {"k": 1_000, "thousand": 1_000, "m": 1_000_000, "mn": 1_000_000, "million": 1_000_000,
+              "b": 1_000_000_000, "bn": 1_000_000_000, "billion": 1_000_000_000}
+
+
 def parse_followers(s):
     if not s:
         return None
-    m = re.match(r"([\d.]+)\s*([kКmM]?)", str(s).strip().replace(",", ""), re.I)
+    t = str(s).strip().lower().replace(",", "")
+    # anchor the unit so "1.2 million" is 1_200_000, not 1 (word or letter suffix)
+    m = re.match(r"([\d.]+)\s*(k|m|mn|b|bn|thousand|million|billion)?\b", t)
     if not m:
         return None
     try:
         n = float(m.group(1))
     except ValueError:
         return None
-    mult = {"k": 1_000, "m": 1_000_000}.get(m.group(2).lower(), 1)
-    return int(n * mult)
+    return int(n * _UNIT_MULT.get(m.group(2) or "", 1))
 
 
 _PLATFORM_CANON = {"tiktok": "TikTok", "instagram": "Instagram", "youtube": "YouTube",
@@ -107,19 +112,25 @@ def run_query(aid: str, query: str) -> dict:
             return {"query": query, "slug": slug, "status": "timeout", "run_id": rid}
         time.sleep(C.POLL_SECONDS)
     res = safe("GET", f"{C.BASE_URL}/task-agents/{aid}/runs/{rid}/result") or {}
-    payload = {"query": query, "slug": slug, "status": run.get("status"), "run_id": rid,
+    status = run.get("status")
+    # don't cache an empty result as completed (result fetch may have exhausted retries)
+    if status == "completed" and not (res.get("output", {}) or {}).get("content"):
+        status = "result_missing"
+    payload = {"query": query, "slug": slug, "status": status, "run_id": rid,
                "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "result": res}
     (C.RAW / f"{slug}.json").write_text(json.dumps(payload, indent=2))
-    n = len(res.get("output", {}).get("content") or []) if run.get("status") == "completed" else 0
-    print(f"  [{slug[:40]}] {run.get('status')}  found={n}  {int(time.time()-t0)}s")
-    return {"query": query, "slug": slug, "status": run.get("status")}
+    n = len(res.get("output", {}).get("content") or []) if status == "completed" else 0
+    print(f"  [{slug[:40]}] {status}  found={n}  {int(time.time()-t0)}s")
+    return {"query": query, "slug": slug, "status": status}
 
 
 def build_dataset() -> list:
     """Parse all cached raw into a deduped list of influencer rows."""
     seen, rows = set(), []
-    for f in sorted(C.RAW.glob("*.json")):
-        d = json.loads(f.read_text())
+    # newest first, so on a duplicate creator the freshest record wins (not filename order)
+    payloads = [json.loads(f.read_text()) for f in C.RAW.glob("*.json")]
+    payloads.sort(key=lambda d: d.get("fetched_at") or "", reverse=True)
+    for d in payloads:
         if d.get("status") != "completed":
             continue
         content = (d.get("result") or {}).get("output", {}).get("content")
@@ -182,8 +193,11 @@ def main():
         print(f"[{datetime.now(timezone.utc).isoformat(timespec='seconds')}] running {len(todo)} queries @ concurrency {C.CONCURRENCY}")
         with ThreadPoolExecutor(max_workers=C.CONCURRENCY) as ex:
             futs = [ex.submit(run_query, aid, q) for q in todo]
-            for _ in as_completed(futs):
-                pass
+            for fut in as_completed(futs):
+                try:
+                    fut.result()   # surface worker exceptions instead of silently dropping them
+                except Exception as e:  # noqa: BLE001
+                    print(f"  worker error: {e!r}")
     else:
         print("all queries already cached")
     build_dataset()
