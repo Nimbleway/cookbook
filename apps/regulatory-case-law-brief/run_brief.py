@@ -182,7 +182,11 @@ def render_markdown(sb: dict) -> str:
 def render_all():
     index = []
     for f in sorted(C.RAW.glob("*.json")):
-        d = json.loads(f.read_text())
+        try:
+            d = json.loads(f.read_text())
+        except (json.JSONDecodeError, OSError) as e:  # a truncated/corrupt cache file must not abort the whole render
+            print(f"  skipping unreadable cache {f.name}: {e}")
+            continue
         if d.get("status") != "completed":
             continue
         output = (d.get("result") or {}).get("output", {})
