@@ -106,7 +106,9 @@ def run_query(aid: str, query: str) -> dict:
     run = started
     while True:
         run = safe("GET", f"{C.BASE_URL}/task-agents/{aid}/runs/{rid}") or run
-        if run and not run.get("is_active"):
+        # terminal ONLY on an explicit is_active==False; a partial response missing the field
+        # must not be read as "done" (that would fetch the result before the run finishes)
+        if run and run.get("is_active") is False:
             break
         if time.time() - t0 > C.RUN_TIMEOUT_S:
             return {"query": query, "slug": slug, "status": "timeout", "run_id": rid}

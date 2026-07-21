@@ -30,13 +30,20 @@ def upsert(rows: list) -> int:
 
 
 def fetch_all():
-    """Return all rows from Supabase, or None if unavailable (caller falls back to cache)."""
+    """Return all rows from Supabase, or None if unavailable (caller falls back to cache).
+    Pages via range() so the dataset isn't silently truncated at Supabase's ~1000-row cap."""
     sb = client()
     if not sb:
         return None
     try:
-        data = sb.table(_TABLE).select("*").execute().data
-        return data or None   # empty table -> None so the caller falls back to the local cache
+        rows, page, size = [], 0, 1000
+        while True:
+            chunk = sb.table(_TABLE).select("*").range(page * size, page * size + size - 1).execute().data or []
+            rows.extend(chunk)
+            if len(chunk) < size:
+                break
+            page += 1
+        return rows or None   # empty table -> None so the caller falls back to the local cache
     except Exception as e:  # noqa: BLE001
         print(f"  supabase fetch failed ({e})")
         return None
