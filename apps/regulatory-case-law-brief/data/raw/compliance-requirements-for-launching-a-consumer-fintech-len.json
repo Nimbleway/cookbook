@@ -1,0 +1,2357 @@
+{
+  "topic": "Compliance requirements for launching a consumer fintech lending product in Texas",
+  "slug": "compliance-requirements-for-launching-a-consumer-fintech-len",
+  "status": "completed",
+  "run_id": "task_run_63d82f489d0d433984561e0932a8a899",
+  "result": {
+    "run": {
+      "id": "task_run_63d82f489d0d433984561e0932a8a899",
+      "interaction_id": "task_run_63d82f489d0d433984561e0932a8a899",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Compliance requirements for launching a consumer fintech lending product in Texas",
+      "created_at": "2026-07-21T09:10:45.568445Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-21T09:10:45.909466Z",
+      "completed_at": "2026-07-21T09:23:27.310611Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": {
+        "sources": [
+          "Texas Finance Code Chapter 342 \u2014 Consumer Loans (official statute text, statutes.capitol.texas.gov)",
+          "Texas Finance Code Chapter 393 \u2014 Credit Services Organizations / Credit Access Businesses (official statute text, statutes.capitol.texas.gov)",
+          "Texas Register \u2014 OCCC NMLS migration adopted rules, Dec. 26, 2025 (7 TAC \u00a7\u00a783.301-83.404) (sos.state.tx.us)",
+          "Texas OCCC \u2014 Recent and Upcoming Rules page, including CAB Licensing & Recordkeeping precomment draft (occc.texas.gov)",
+          "Texas OCCC \u2014 Enforcement Actions roster, FY2022-FY2026 (occc.texas.gov)",
+          "CFPB \u2014 ACE Cash Express 2014 consent order press release (consumerfinance.gov)",
+          "CFPB \u2014 Populus Financial Group d/b/a ACE Cash Express enforcement action page (consumerfinance.gov)",
+          "CFPB \u2014 FirstCash Military Lending Act settlement press release, Jul 11, 2025 (consumerfinance.gov)",
+          "eCFR \u2014 12 CFR Part 1002, Equal Credit Opportunity Act (Regulation B) (ecfr.gov)",
+          "Cornell LII \u2014 12 CFR Part 1026, Truth in Lending (Regulation Z) (law.cornell.edu)",
+          "Federal Register \u2014 CFPB BNPL interpretive rule (Regulation Z), May 31, 2024 (federalregister.gov)",
+          "CFPB \u2014 Personal Financial Data Rights Rule (Section 1033) finalization press release, Oct 22, 2024 (consumerfinance.gov)",
+          "CFPB \u2014 Digital payment apps larger-participant rule finalization press release, Nov 21, 2024 (consumerfinance.gov)",
+          "CFPB \u2014 Rules & Policy page (withdrawn/rescinded and nullified rules, 2025) (consumerfinance.gov)",
+          "Texas HB 768 bill text \u2014 Credit Services Organizations / Credit Access Business amendments (legiscan.com)"
+        ],
+        "subject": "Compliance requirements for launching a consumer fintech lending product in Texas",
+        "summary": "RESEARCH, NOT LEGAL ADVICE. Launching a consumer fintech lending product in Texas means operating at the intersection of a Texas state licensing regime and federal consumer-protection law.\n\nSTATE (Texas): Consumer loans are governed by Texas Finance Code (TFC) Title 4. The two state-law paths a fintech most often uses are: (1) TFC Chapter 342 'Consumer Loans' \u2014 a regulated lender license issued by the Office of Consumer Credit Commissioner (OCCC) for small-dollar/installment loans, with statutory rate ceilings and licensing/exam obligations; and (2) the Chapter 393 'Credit Services Organizations' (CSO) / 'credit access business' (CAB) model used by many online/bank-partnerhip fintechs, where the fintech arranges a loan made by a third-party (often out-of-state) bank and charges its own fees. Both require OCCC registration/licensing, disclosures, recordkeeping, and annual reporting; the OCCC administers exams and brings administrative enforcement (injunctions, revocations, penalties) for violations. As of 2025, the OCCC is migrating Chapter 342 regulated-lender licensing to the Nationwide Multistate Licensing System (NMLS) under TFC \u00a714.109/\u00a7342.551.\n\nFEDERAL: Any consumer lender \u2014 including a fintech \u2014 must comply with federal law enforced by the CFPB: Truth in Lending/Regulation Z (12 CFR 1026, cost disclosures, APR), Equal Credit Opportunity Act/Regulation B (12 CFR 1002, no discrimination, adverse-action notices), EFTA/Regulation E for electronic payments, Gramm-Leach-Bliley privacy, the Military Lending Act (36% MAPR cap for servicemembers and dependents), and Dodd-Frank's UDAAP prohibition (unfair, deceptive, or abusive acts/practices). CFPB supervision reaches nonbank larger participants.\n\nENFORCEMENT & CASE LAW: The CFPB's two ACE Cash Express (Irving, TX) actions are the headline precedents \u2014 a 2014 $10M consent order for illegal debt-collection/cycle-of-debt UDAAP, and a 2022 suit (N.D. Tex., 3:22-cv-01494) alleging concealment of free repayment plans, which the Bureau voluntarily dismissed with prejudice on April 30, 2025. The OCCC's own enforcement docket shows steady use of injunctions and license revocations against regulated lenders and CABs. The 2025 FirstCash Military Lending Act settlement shows MLA risk for pawn/payday-style products.\n\nRECENT/PENDING (last ~24 months): Texas OCCC NMLS migration rules adopted Dec. 26, 2025 (7 TAC \u00a7\u00a783.301-83.404); OCCC CAB licensing & recordkeeping rule amendments out for precomment (draft posted July 15, 2026); CFPB Personal Financial Data Rights / open-banking rule finalized Oct. 22, 2024 (Section 1033); CFPB digital-payment-apps larger-participant rule finalized Nov. 21, 2024; CFPB BNPL interpretive rule (Regulation Z) issued May 31, 2024; and in 2025 the CFPB rescinded/withdrew many rules and guidance and several Chopra-era rules were nullified by Congressional Review Act joint resolutions. Two named Texas consumer-lending cases the user asked about \u2014 Looney v. Cash America and Davis v. ACE Cash Express \u2014 were searched for but no primary court opinion was located in this corpus (see key_cases notes).\n\nBOTTOM LINE FOR A FOUNDER: Before launch you need (a) the right Texas OCCC license or CAB registration, (b) federal compliance rails for TILA/ECOA/MLA/UDAAP/privacy, (c) APR/rate-ceiling math that fits the TFC chapter you elect, and (d) a watch on the moving 2024-2026 CFPB and OCCC rule changes. This is a compliance brief, not a legal opinion; engage Texas consumer-finance counsel before going live.",
+        "key_cases": [
+          {
+            "date": "2014-07-10",
+            "court": "CFPB (administrative consent order)",
+            "holding": "The CFPB found ACE (Irving, TX) engaged in unfair, deceptive, and abusive debt-collection and cycle-of-debt practices in violation of Dodd-Frank UDAAP; ordered $5M consumer refunds and a $5M civil penalty, and barred the abusive practices.",
+            "case_name": "CFPB v. ACE Cash Express, Inc. (2014 consent order)",
+            "citation_url": "https://www.consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt/"
+          },
+          {
+            "date": "2022-07-12 (filed); dismissed 2025-04-30",
+            "court": "U.S. District Court for the Northern District of Texas (3:22-cv-01494)",
+            "holding": "The CFPB alleged ACE concealed no-cost repayment plans and improperly withdrew funds (UDAAP under the CFPA); on April 30, 2025 the Bureau voluntarily dismissed the action with prejudice and the court terminated the case \u2014 a notable 2025 retreat from a Texas payday-lender UDAAP suit.",
+            "case_name": "CFPB v. Populus Financial Group, Inc. d/b/a ACE Cash Express, Inc. (N.D. Tex. 2022)",
+            "citation_url": "https://www.consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc/"
+          },
+          {
+            "date": "2025-07-11 (settlement/judgment); suit originally filed 2021-11-12",
+            "court": "Federal court (stipulated final judgment entered)",
+            "holding": "FirstCash (Fort Worth, TX pawn lender) made pawn loans to MLA-covered servicemembers exceeding the 36% MAPR cap and included prohibited arbitration clauses; ordered $5M redress and a $4M fine, and must offer an MLA-compliant product or use the MLA safe-harbor screening.",
+            "case_name": "CFPB v. FirstCash, Inc. (Military Lending Act settlement)",
+            "citation_url": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/"
+          },
+          {
+            "date": "2025-02-27",
+            "court": "Texas Office of Consumer Credit Commissioner (administrative enforcement)",
+            "holding": "The OCCC issued a final injunction order against a registered Credit Access Business under TFC \u00a714.202 \u2014 illustrating that the OCCC affirmatively enforces the CAB registration regime (not just licensed lenders), a direct compliance risk for fintech CABs.",
+            "case_name": "OCCC v. Cottonwood Financial Texas LLC (Credit Access Business enforcement)",
+            "citation_url": "https://occc.texas.gov/publications/legal/enforcement-actions/"
+          },
+          {
+            "date": null,
+            "court": null,
+            "holding": null,
+            "case_name": "Looney v. Cash America International, Inc.",
+            "citation_url": null
+          },
+          {
+            "date": null,
+            "court": null,
+            "holding": null,
+            "case_name": "Davis v. ACE Cash Express, Inc.",
+            "citation_url": null
+          }
+        ],
+        "jurisdiction": "State of Texas (state licensing regime administered by the Office of Consumer Credit Commissioner), plus applicable federal consumer-finance law (CFPB/Dodd-Frank, TILA, ECOA, MLA)",
+        "recent_changes": [
+          {
+            "date": "2025-12-26",
+            "change": "OCCC adopted rules (7 TAC \u00a7\u00a783.301-83.404) migrating Chapter 342 regulated-lender licensing from ALECS to the Nationwide Multistate Licensing System (NMLS), authorized under TFC \u00a714.109 and \u00a7342.551; a majority of licensed regulated lenders completed the NMLS transition in 2025. Directly affects how a new fintech applies for and renews a Texas regulated lender license.",
+            "source_url": "https://www.sos.state.tx.us/texreg/archive/December262025/adopted/20rules/7_Banking_and_Securities.shtml"
+          },
+          {
+            "date": "2026-07-15 (draft posted)",
+            "change": "OCCC released a precomment draft of Credit Access Business (CAB) Licensing & Recordkeeping rule amendments (informal precomments accepted through Aug. 5, 2026) \u2014 a pending rulemaking that would update CAB registration, recordkeeping, and (per the pawnshop parallel) likely data-security/breach requirements. Fintechs operating the CAB/bank-partnership model should track this rulemaking before it is finalized.",
+            "source_url": "https://occc.texas.gov/publications/legal/rules"
+          },
+          {
+            "date": "2024-10-22",
+            "change": "CFPB finalized the Personal Financial Data Rights (open-banking) rule under Section 1033 (Oct. 22, 2024), requiring covered providers to make consumer financial data portable on request with privacy limits; compliance phased by size (largest by April 1, 2026; smallest by April 1, 2030). However, subsequent CFPB signals (Dec. 2025) indicated interim final rules on Section 1033 amid funding constraints, so the effective timeline may shift \u2014 monitor CFPB rulemaking status.",
+            "source_url": "https://www.consumerfinance.gov/archive/newsroom/cfpb-finalizes-personal-financial-data-rights-rule-to-boost-competition-protect-privacy-and-give-families-more-choice-in-financial-services/"
+          },
+          {
+            "date": "2024-11-21",
+            "change": "CFPB finalized a larger-participant rule (Nov. 21, 2024) bringing federal supervision to the largest nonbank digital payment/wallet apps handling >50 million transactions/year (privacy, fraud, debanking). Relevant to fintech lenders that also operate payment/wallet rails.",
+            "source_url": "https://www.consumerfinance.gov/archive/newsroom/cfpb-finalizes-rule-on-federal-oversight-of-popular-digital-payment-apps-to-protect-personal-data-reduce-fraud-and-stop-illegal-debanking/"
+          },
+          {
+            "date": "2024-05-31",
+            "change": "CFPB issued an interpretive rule (May 31, 2024) clarifying that Buy Now, Pay Later / digital-user-account lenders are 'card issuers' subject to Regulation Z subpart B (periodic statements, billing-error/dispute rights). Fintechs offering BNPL-style consumer credit must build TILA/Reg Z compliance around these obligations.",
+            "source_url": "https://www.federalregister.gov/documents/2024/05/31/2024-11800/truth-in-lending-regulation-z-use-of-digital-user-accounts-to-access-buy-now-pay-later-loans"
+          },
+          {
+            "date": "2025 (through 2026-05-28)",
+            "change": "In 2025, the CFPB rescinded or withdrew many final rules, proposed rules, and guidance documents issued since 2011, and several rules finalized under Director Chopra were made ineffective by Congressional Review Act joint resolutions or vacated by a court. Most notably for this brief, the Bureau voluntarily dismissed its 2022 UDAAP suit against ACE Cash Express with prejudice on April 30, 2025, signaling a more constrained 2025 enforcement posture. A fintech should not read this as a deregulation of substantive TILA/ECOA/MLA duties, but should monitor which CFPB rules remain in effect.",
+            "source_url": "https://www.consumerfinance.gov/rules-policy/"
+          },
+          {
+            "date": "2025-07-11",
+            "change": "The CFPB reached a Military Lending Act settlement with FirstCash, Inc. (Fort Worth, TX) on July 11, 2025 \u2014 $5M redress and a $4M fine for making pawn loans to covered servicemembers exceeding the 36% MAPR cap and including prohibited arbitration clauses. Reinforces that the federal 36% MLA cap and disclosure requirements apply to Texas small-dollar/pawn/title/payday-style consumer credit and are actively enforced.",
+            "source_url": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/"
+          }
+        ],
+        "applicable_regulations": [
+          {
+            "name": "Texas Finance Code Chapter 342 \u2014 Consumer Loans (Regulated Lender License)",
+            "requirement": "A fintech making consumer small-dollar or installment loans to Texas borrowers generally needs an OCCC regulated lender license under Chapter 342 (see also 7 TAC Chapter 83). Licensees must meet application/character/financial-responsibility standards, use NMLS for application and renewal (migration in progress, per Dec. 26 2025 adopted rules), keep records, file annual reports, submit to OCCC examination, and comply with Chapter 342's statutory rate ceilings and contract requirements. Note: the retrieved statute page extracted only navigation chrome; section-level text (rate caps, fees) was not captured \u2014 confirm exact ceilings in the statute text with counsel.",
+            "citation_url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=342",
+            "jurisdiction": "Texas (administered by OCCC)"
+          },
+          {
+            "name": "Texas Finance Code Chapter 393 \u2014 Credit Services Organizations (CSO) / Credit Access Businesses (CAB)",
+            "requirement": "Fintechs using the bank-partnership/CAB model register as a credit services organization / credit access business. A CAB contract must contain specified disclosures (incl. a no-prepayment-penalty statement per \u00a7393.201(c)), must not obtain credit for a consumer within seven days of a prior CAB loan being paid off (\u00a7393.308-type rollover restriction), keep records, and comply with OCCC CAB rules; municipalities may impose additional CAB ordinances that Chapter 393 does not preempt (\u00a7393.004). The OCCC is currently proposing CAB licensing & recordkeeping rule amendments (precomment draft posted July 15, 2026). Note: section-level statutory text beyond the HB 768 excerpts was not captured from the statute page \u2014 confirm exact \u00a7393.101-393.602 obligations in the statute.",
+            "citation_url": "https://statutes.capitol.texas.gov/docs/FI/htm/FI.393.htm",
+            "jurisdiction": "Texas (administered by OCCC; CSO registration with Texas Secretary of State)"
+          },
+          {
+            "name": "Texas Finance Code Chapter 305 \u2014 Penalties and Remedies (Usury)",
+            "requirement": "Chapter 305 establishes civil penalties and remedies for usury and other Finance Code violations (e.g., forfeiture of interest, penalties) applicable to consumer lenders that exceed rate ceilings. A fintech must ensure its APR/fees do not breach the applicable ceiling under the TFC chapter it elects (Chapter 342 or 303/351). Note: section-level text was not captured from the page (navigation chrome only); confirm specific penalty amounts in the statute.",
+            "citation_url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=305",
+            "jurisdiction": "Texas"
+          },
+          {
+            "name": "Texas Finance Code Chapter 303 \u2014 Optional Rate Ceilings",
+            "requirement": "Chapter 303 provides optional rate-ceiling elections that certain consumer lenders may use; combined with Chapter 342's specific ceilings it determines the maximum lawful rate/charges. A fintech must compute its APR against the correct ceiling to avoid usury exposure under Chapters 305/351. Note: section-level ceiling figures were not captured from the page (navigation chrome only); confirm exact ceilings in the statute text.",
+            "citation_url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+            "jurisdiction": "Texas"
+          },
+          {
+            "name": "Truth in Lending Act / Regulation Z (12 CFR Part 1026)",
+            "requirement": "A consumer lender must make clear, accurate cost disclosures before extending credit \u2014 amount financed, finance charge, APR, payment schedule \u2014 and provide periodic statements and billing-error rights for open-end credit; prohibitions on certain terms and practices. A May 31, 2024 CFPB interpretive rule clarified that BNPL/digital-user-account lenders are 'card issuers' subject to Regulation Z (periodic statements, billing disputes).",
+            "citation_url": "https://www.law.cornell.edu/cfr/text/12/part-1026",
+            "jurisdiction": "Federal (CFPB-administered)"
+          },
+          {
+            "name": "Equal Credit Opportunity Act / Regulation B (12 CFR Part 1002)",
+            "requirement": "A lender may not discriminate on a prohibited basis (race, color, religion, national origin, sex, marital status, age, receipt of public assistance, exercise of rights under the CCPA) in any aspect of a credit transaction; must provide adverse-action notices within the required timeframe (\u00a71002.9), retain records (\u00a71002.12), and may collect monitoring information (\u00a71002.13). ECOA is a federal floor and does not preempt stricter Texas protections.",
+            "citation_url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1002",
+            "jurisdiction": "Federal (CFPB-administered)"
+          },
+          {
+            "name": "Dodd-Frank Act \u00a71031/\u00a71036 \u2014 Unfair, Deceptive, or Abusive Acts or Practices (UDAAP)",
+            "requirement": "A fintech lender must not engage in unfair, deceptive, or abusive acts or practices in offering or servicing consumer credit. The CFPB's 2014 ACE Cash Express order is the canonical example: illegal debt-collection threats, harassment, and pressuring borrowers into a cycle of debt were held to be UDAAP violations, resulting in $5M consumer refunds and a $5M civil penalty. UDAAP is the CFPB's broadest enforcement hook and applies to all consumer-finance conduct.",
+            "citation_url": "https://www.consumerfinance.gov/enforcement/actions/",
+            "jurisdiction": "Federal (CFPB-administered; applies concurrently with Texas law)"
+          },
+          {
+            "name": "Military Lending Act (10 U.S.C. \u00a7987) \u2014 36% MAPR cap and disclosures for servicemembers",
+            "requirement": "For covered consumer credit extended to active-duty servicemembers and certain dependents, a lender must cap the military annual percentage rate (MAPR) at 36%, must not require arbitration or waivers of rights, and must make specified MLA disclosures. The 2025 FirstCash settlement (Fort Worth, TX pawn lender) shows the CFPB actively enforces the MLA and the 36% cap, including against Texas-based operators of pawn/title/payday-style products.",
+            "citation_url": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+            "jurisdiction": "Federal (CFPB/DOJ-enforced)"
+          },
+          {
+            "name": "CFPB Personal Financial Data Rights Rule \u2014 Section 1033 (open banking / data portability)",
+            "requirement": "Covered financial providers (including fintech lenders that hold consumer financial data) must, at the consumer's request, make personal financial data available and transfer it to another provider for free; limit data use to the requested product purpose (ban on bait-and-switch data harvesting); provide revocation and deletion rights (access ends immediately on revocation; deletion default; access max one year absent reauthorization). Compliance is phased by institution size \u2014 largest by April 1, 2026; smallest by April 1, 2030. Relevant to fintech lenders that pull or hold consumer banking data for underwriting.",
+            "citation_url": "https://www.consumerfinance.gov/rules-policy/final-rules/required-rulemaking-on-personal-financial-data-rights/",
+            "jurisdiction": "Federal (CFPB-administered)"
+          },
+          {
+            "name": "CFPB Larger-Participant / Nonbank Supervision Authority (12 U.S.C. \u00a75514; Dodd-Frank Title X)",
+            "requirement": "The CFPB may define 'larger participants' in consumer-finance markets and subject nonbank companies meeting the threshold to CFPB supervisory examinations (in addition to enforcement). For fintech lenders, relevant larger-participant markets include consumer reporting, debt collection, student loan servicing, international money transfers, automobile financing, and (as of Nov. 2024) digital payment apps (>50M transactions/yr). A fintech lender above a market threshold must expect CFPB exams, recordkeeping, and compliance-management-system scrutiny.",
+            "citation_url": "https://www.consumerfinance.gov/compliance/",
+            "jurisdiction": "Federal (CFPB)"
+          }
+        ]
+      },
+      "trust": {
+        "sources": [
+          {
+            "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+            "title": "chapter 303. optional rate ceilings",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://statutes.capitol.texas.gov/docs/FI/htm/FI.393.htm",
+            "title": "Finance Code Chapter 393 \u2013 Credit Services Organizations",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://occc.texas.gov/publications/legal/rules",
+            "title": "Recent and Upcoming Rules",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://sos.state.tx.us/texreg/archive/December262025/Adopted%20Rules/7.BANKING%20AND%20SECURITIES.html",
+            "title": "Adopted Rules Title 7",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt",
+            "title": "CFPB Takes Action Against ACE Cash Express for Pushing ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc",
+            "title": "https://www.consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc/",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://ecfr.gov/current/title-12/chapter-X/part-1002",
+            "title": "12 CFR Part 1002 -- Equal Credit Opportunity Act ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://law.cornell.edu/cfr/text/12/part-1026",
+            "title": "12 CFR Part 1026 - TRUTH IN LENDING (REGULATION Z)",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://consumerfinance.gov/rules-policy",
+            "title": "Regulations and policy",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://legiscan.com/TX/text/HB768/id/3027782",
+            "title": "Bill Text: TX HB768 | 2025-2026 | 89th Legislature",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://federalregister.gov/documents/2024/05/31/2024-11800/truth-in-lending-regulation-z-use-of-digital-user-accounts-to-access-buy-now-pay-later-loans",
+            "title": "Truth in Lending (Regulation Z); Use of Digital User ...",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://consumerfinance.gov/enforcement/actions",
+            "title": "Enforcement Actions | Consumer Financial Protection Bureau",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations",
+            "title": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-personal-financial-data-rights-rule-to-boost-competition-protect-privacy-and-give-families-more-choice-in-financial-services",
+            "title": "CFPB Finalizes Personal Financial Data Rights Rule to ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://consumerfinance.gov/compliance/guidance",
+            "title": "Guidance | Consumer Financial Protection Bureau",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-rule-on-federal-oversight-of-popular-digital-payment-apps-to-protect-personal-data-reduce-fraud-and-stop-illegal-debanking",
+            "title": "CFPB Finalizes Rule on Federal Oversight of Popular ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://occc.texas.gov/publications/legal/enforcement-actions",
+            "title": "Enforcement Actions",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://courtlistener.com/docket/67646300/davis-v-credit-corp-solutions-inc",
+            "title": "Davis v. Credit Corp Solutions Inc., 1:23-cv-00884",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://courtlistener.com/docket/71078991/davis-v-cooprider",
+            "title": "Davis v. Cooprider, 2:25-cv-00220",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 92%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 342. consumer loans"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://statutes.capitol.texas.gov/docs/FI/htm/FI.393.htm",
+                "title": "Finance Code Chapter 393 \u2013 Credit Services Organizations",
+                "excerpts": [
+                  "Finance Code Chapter 393 \u2013 Credit Services Organizations"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.subject"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 342. consumer loans"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://occc.texas.gov/publications/legal/rules",
+                "title": "Recent and Upcoming Rules",
+                "excerpts": [
+                  "Logo of the Office of Consumer Credit Commissioner"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 342. consumer loans"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://statutes.capitol.texas.gov/docs/FI/htm/FI.393.htm",
+                "title": "Finance Code Chapter 393 \u2013 Credit Services Organizations",
+                "excerpts": [
+                  "Finance Code Chapter 393 \u2013 Credit Services Organizations"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://sos.state.tx.us/texreg/archive/December262025/Adopted%20Rules/7.BANKING%20AND%20SECURITIES.html",
+                "title": "Adopted Rules Title 7",
+                "excerpts": [
+                  "regulated lender licenses under Texas Finance Code, Chapter 342. The OCCC has begun a phased process of migrating license groups ... to NMLS. In 2025, a majority of licensed regulated lenders completed their transition to NMLS."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://occc.texas.gov/publications/legal/rules",
+                "title": "Recent and Upcoming Rules",
+                "excerpts": [
+                  "Credit Access Business Licensing & Recordkeeping Rules (posted July 15, 2026) ... The OCCC will accept informal precomments on these rule amendments until August 5, 2026."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt",
+                "title": "CFPB Takes Action Against ACE Cash Express for Pushing ...",
+                "excerpts": [
+                  "ACE will provide $5 million in refunds and pay a $5 million penalty ... CFPB found that ACE used illegal debt collection tactics"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc",
+                "title": "https://www.consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc/",
+                "excerpts": [
+                  "On July 12, 2022, the Bureau filed a lawsuit against Populus Financial Group, Inc. ... ACE engaged in unfair, abusive, and deceptive acts or practices ... On April 30, 2025, the Bureau voluntarily dismissed the action against the defendants with prejudice"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://ecfr.gov/current/title-12/chapter-X/part-1002",
+                "title": "12 CFR Part 1002 -- Equal Credit Opportunity Act ...",
+                "excerpts": [
+                  "Part 1002 Equal Credit Opportunity Act (Regulation B)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://law.cornell.edu/cfr/text/12/part-1026",
+                "title": "12 CFR Part 1026 - TRUTH IN LENDING (REGULATION Z)",
+                "excerpts": [
+                  "Truth in Lending ... 12 part-1026"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://consumerfinance.gov/rules-policy",
+                "title": "Regulations and policy",
+                "excerpts": [
+                  "In 2025, the CFPB rescinded or withdrew a number of final rules, proposed rules, and guidance documents ... several rules finalized under Director Chopra were made ineffective by joint resolutions of Congressional disapproval"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 342. consumer loans"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[0].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 342. consumer loans"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[0].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sos.state.tx.us/texreg/archive/December262025/Adopted%20Rules/7.BANKING%20AND%20SECURITIES.html",
+                "title": "Adopted Rules Title 7",
+                "excerpts": [
+                  "The rule changes are adopted under Texas Finance Code, \u00a7342.551, which authorizes the commission to adopt rules to enforce Texas Finance Code, Chapter 342."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.applicable_regulations[0].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sos.state.tx.us/texreg/archive/December262025/Adopted%20Rules/7.BANKING%20AND%20SECURITIES.html",
+                "title": "Adopted Rules Title 7",
+                "excerpts": [
+                  "regulated lender licenses under Texas Finance Code, Chapter 342. The OCCC has begun a phased process of migrating license groups from ALECS ... to NMLS. In 2025, a majority of licensed regulated lenders completed their transition to NMLS. ... (d) Supplemental information. The OCCC may require additional ... information ... to determine that an applicant meets the licensing requirements of Texas Finance Code, Chapter 342."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://occc.texas.gov/publications/legal/rules",
+                "title": "Recent and Upcoming Rules",
+                "excerpts": [
+                  "File Annual Report ... Licensee Search"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[0].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/docs/FI/htm/FI.393.htm",
+                "title": "Finance Code Chapter 393 \u2013 Credit Services Organizations",
+                "excerpts": [
+                  "Finance Code Chapter 393 \u2013 Credit Services Organizations"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[1].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/docs/FI/htm/FI.393.htm",
+                "title": "Finance Code Chapter 393 \u2013 Credit Services Organizations",
+                "excerpts": [
+                  "Finance Code Chapter 393 \u2013 Credit Services Organizations"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[1].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://legiscan.com/TX/text/HB768/id/3027782",
+                "title": "Bill Text: TX HB768 | 2025-2026 | 89th Legislature",
+                "excerpts": [
+                  "Sec. 393.004. EFFECT ON MUNICIPAL ORDINANCES. (a) This chapter does not preempt a municipal ordinance regulating: (1) a credit access business"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.applicable_regulations[1].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://legiscan.com/TX/text/HB768/id/3027782",
+                "title": "Bill Text: TX HB768 | 2025-2026 | 89th Legislature",
+                "excerpts": [
+                  "Sec. 393.004. EFFECT ON MUNICIPAL ORDINANCES. (a) This chapter does not preempt a municipal ordinance regulating: (1) a credit access business ... Sec. 393.201(c) ... must ... (1) contain a statement that there is no prepayment penalty ... Sec. 393.308. PROHIBITION ON OBTAINING CERTAIN EXTENSIONS"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://occc.texas.gov/publications/legal/rules",
+                "title": "Recent and Upcoming Rules",
+                "excerpts": [
+                  "Credit Access Business Licensing & Recordkeeping Rules (posted July 15, 2026) ... The OCCC will accept informal precomments on these rule amendments until August 5, 2026."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[1].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 305. penalties and remedies"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[2].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 305. penalties and remedies"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[2].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 305. penalties and remedies"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[2].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 305. penalties and remedies"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[2].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 303. optional rate ceilings"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[3].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 303. optional rate ceilings"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[3].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 303. optional rate ceilings"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[3].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 303. optional rate ceilings"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[3].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://law.cornell.edu/cfr/text/12/part-1026",
+                "title": "12 CFR Part 1026 - TRUTH IN LENDING (REGULATION Z)",
+                "excerpts": [
+                  "Truth in Lending ... 12 part-1026"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[4].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2024/05/31/2024-11800/truth-in-lending-regulation-z-use-of-digital-user-accounts-to-access-buy-now-pay-later-loans",
+                "title": "Truth in Lending (Regulation Z); Use of Digital User ...",
+                "excerpts": [
+                  "Truth in Lending (Regulation Z) ... A Rule by the Consumer Financial Protection Bureau"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.applicable_regulations[4].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://law.cornell.edu/cfr/text/12/part-1026",
+                "title": "12 CFR Part 1026 - TRUTH IN LENDING (REGULATION Z)",
+                "excerpts": [
+                  "Truth in Lending ... 12 part-1026"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[4].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2024/05/31/2024-11800/truth-in-lending-regulation-z-use-of-digital-user-accounts-to-access-buy-now-pay-later-loans",
+                "title": "Truth in Lending (Regulation Z); Use of Digital User ...",
+                "excerpts": [
+                  "the applicability of subpart B of Regulation Z to lenders that issue digital user accounts used to access credit, including to those lenders that market loans as 'Buy Now, Pay Later' (BNPL). This interpretive rule describes how these lenders meet the criteria for being 'card issuers' for purposes of Regulation Z."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.applicable_regulations[4].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ecfr.gov/current/title-12/chapter-X/part-1002",
+                "title": "12 CFR Part 1002 -- Equal Credit Opportunity Act ...",
+                "excerpts": [
+                  "Part 1002 Equal Credit Opportunity Act (Regulation B)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[5].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ecfr.gov/current/title-12/chapter-X/part-1002",
+                "title": "12 CFR Part 1002 -- Equal Credit Opportunity Act ...",
+                "excerpts": [
+                  "Part 1002 Equal Credit Opportunity Act (Regulation B)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[5].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ecfr.gov/current/title-12/chapter-X/part-1002",
+                "title": "12 CFR Part 1002 -- Equal Credit Opportunity Act ...",
+                "excerpts": [
+                  "Part 1002 Equal Credit Opportunity Act (Regulation B)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[5].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ecfr.gov/current/title-12/chapter-X/part-1002",
+                "title": "12 CFR Part 1002 -- Equal Credit Opportunity Act ...",
+                "excerpts": [
+                  "\u00a7 1002.9 Notifications. \u00a7 1002.12 Record retention. \u00a7 1002.13 Information for monitoring purposes."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[5].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/enforcement/actions",
+                "title": "Enforcement Actions | Consumer Financial Protection Bureau",
+                "excerpts": [
+                  "The Bureau may enforce the law by filing an action in federal district court or by initiating an administrative adjudication proceeding."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[6].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt",
+                "title": "CFPB Takes Action Against ACE Cash Express for Pushing ...",
+                "excerpts": [
+                  "Under the Dodd-Frank Wall Street Reform and Consumer Protection Act, the CFPB has the authority to take action against institutions engaging in unfair, deceptive, or abusive practices."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[6].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt",
+                "title": "CFPB Takes Action Against ACE Cash Express for Pushing ...",
+                "excerpts": [
+                  "Under the Dodd-Frank Wall Street Reform and Consumer Protection Act, the CFPB has the authority to take action against institutions engaging in unfair, deceptive, or abusive practices."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[6].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt",
+                "title": "CFPB Takes Action Against ACE Cash Express for Pushing ...",
+                "excerpts": [
+                  "ACE will provide $5 million in refunds and pay a $5 million penalty for these violations. ... ACE used illegal debt collection tactics \u2013 including harassment and false threats of lawsuits or criminal prosecution \u2013 to pressure overdue borrowers into taking out additional loans they could not afford."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[6].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations",
+                "title": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+                "excerpts": [
+                  "The MLA puts in place protections for active duty servicemembers and certain dependents in connection with extensions of consumer credit. These protections include a maximum allowable annual percentage rate of 36%, a prohibition against required arbitration, and certain mandatory loan disclosures."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[7].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations",
+                "title": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+                "excerpts": [
+                  "The CFPB and FirstCash, Inc. ... resolved the CFPB's November 12, 2021 lawsuit alleging violations of the Military Lending Act (MLA)."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[7].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations",
+                "title": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+                "excerpts": [
+                  "These protections include a maximum allowable annual percentage rate of 36%, a prohibition against required arbitration, and certain mandatory loan disclosures."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[7].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations",
+                "title": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+                "excerpts": [
+                  "the defendants violated the MLA by making pawn loans to borrowers covered under the MLA with rates that exceeded the MLA's maximum allowable annual percentage rate of 36%. ... Set aside $5 million to ensure full redress ... Pay a $4 million fine"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[7].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-personal-financial-data-rights-rule-to-boost-competition-protect-privacy-and-give-families-more-choice-in-financial-services",
+                "title": "CFPB Finalizes Personal Financial Data Rights Rule to ...",
+                "excerpts": [
+                  "Today, the Consumer Financial Protection Bureau (CFPB) finalized a rule that will give consumers greater rights, privacy, and security over their personal financial data."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[8].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-personal-financial-data-rights-rule-to-boost-competition-protect-privacy-and-give-families-more-choice-in-financial-services",
+                "title": "CFPB Finalizes Personal Financial Data Rights Rule to ...",
+                "excerpts": [
+                  "This is the CFPB's first significant rule to accelerate responsible open banking in the U.S."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[8].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-personal-financial-data-rights-rule-to-boost-competition-protect-privacy-and-give-families-more-choice-in-financial-services",
+                "title": "CFPB Finalizes Personal Financial Data Rights Rule to ...",
+                "excerpts": [
+                  "finalized a rule that will give consumers greater rights, privacy, and security over their personal financial data. The rule requires financial institutions, credit card issuers, and other financial providers to unlock an individual's personal financial data and transfer it to another provider at the consumer's request for free."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[8].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-personal-financial-data-rights-rule-to-boost-competition-protect-privacy-and-give-families-more-choice-in-financial-services",
+                "title": "CFPB Finalizes Personal Financial Data Rights Rule to ...",
+                "excerpts": [
+                  "Compliance with the rule will be implemented in phases ... the largest institutions will have to comply by April 1, 2026, while the smallest covered institutions will have until April 1, 2030."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[8].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/compliance/guidance",
+                "title": "Guidance | Consumer Financial Protection Bureau",
+                "excerpts": [
+                  "Supervision Overview ... Compliance overview ... Registration & Submission Programs"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[9].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-rule-on-federal-oversight-of-popular-digital-payment-apps-to-protect-personal-data-reduce-fraud-and-stop-illegal-debanking",
+                "title": "CFPB Finalizes Rule on Federal Oversight of Popular ...",
+                "excerpts": [
+                  "The rule will help to protect consumer privacy, guard against fraud, and prevent illegal account closures. ... larger participants"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[9].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-rule-on-federal-oversight-of-popular-digital-payment-apps-to-protect-personal-data-reduce-fraud-and-stop-illegal-debanking",
+                "title": "CFPB Finalizes Rule on Federal Oversight of Popular ...",
+                "excerpts": [
+                  "Today's rule represents the latest step to strengthen oversight of large technology firms ... This is the CFPB's first significant rule ... The rule ... is the sixth rulemaking by the CFPB to define larger participants"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[9].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-rule-on-federal-oversight-of-popular-digital-payment-apps-to-protect-personal-data-reduce-fraud-and-stop-illegal-debanking",
+                "title": "CFPB Finalizes Rule on Federal Oversight of Popular ...",
+                "excerpts": [
+                  "The first five rules covered larger participants in consumer reporting, consumer debt collection, student loan servicing, international money transfers, and automobile financing."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[9].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt",
+                "title": "CFPB Takes Action Against ACE Cash Express for Pushing ...",
+                "excerpts": [
+                  "ACE to Pay $10 Million for Using Illegal Debt Collection Tactics to Pressure Consumers Into Debt Traps"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[0].case_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt",
+                "title": "CFPB Takes Action Against ACE Cash Express for Pushing ...",
+                "excerpts": [
+                  "Today, the Consumer Financial Protection Bureau (CFPB) took enforcement action against ACE Cash Express, one of the largest payday lenders in the United States"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[0].court"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt",
+                "title": "CFPB Takes Action Against ACE Cash Express for Pushing ...",
+                "excerpts": [
+                  "JUL 10, 2014"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[0].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt",
+                "title": "CFPB Takes Action Against ACE Cash Express for Pushing ...",
+                "excerpts": [
+                  "The CFPB found that ACE used unfair, deceptive, and abusive practices to collect consumer debts ... ACE will provide $5 million in refunds and pay a $5 million penalty for these violations. ... The Consent Order explicitly states that ACE may not use any abusive tactics."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[0].holding"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt",
+                "title": "CFPB Takes Action Against ACE Cash Express for Pushing ...",
+                "excerpts": [
+                  "The full text of the Bureau's Consent Order is available at: https://files.consumerfinance.gov/f/201407_cfpb_consent-order_ace-cash-express.pdf"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[0].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc",
+                "title": "https://www.consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc/",
+                "excerpts": [
+                  "the Bureau filed a lawsuit against Populus Financial Group, Inc., which does business as ACE Cash Express, Inc. ('ACE'). ACE is a payday lender headquartered in Irving, Texas"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[1].case_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc",
+                "title": "https://www.consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc/",
+                "excerpts": [
+                  "U.S. District Court for the Northern District of Texas ... Docket number 3:22-cv-01494"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[1].court"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc",
+                "title": "https://www.consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc/",
+                "excerpts": [
+                  "On July 12, 2022, the Bureau filed a lawsuit ... Initial filing date JUL 12, 2022"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[1].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc",
+                "title": "https://www.consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc/",
+                "excerpts": [
+                  "The Bureau alleged that ACE engaged in unfair, abusive, and deceptive acts or practices in violation of the Consumer Financial Protection Act of 2010. ... On April 30, 2025, the Bureau voluntarily dismissed the action against the defendants with prejudice, and the court terminated the case the same day."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[1].holding"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc",
+                "title": "https://www.consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc/",
+                "excerpts": [
+                  "Populus Financial Group, Inc., d/b/a ACE Cash Express, Inc. ... Complaint ... Notice of Dismissal"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[1].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations",
+                "title": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+                "excerpts": [
+                  "the CFPB and FirstCash, Inc., along with its nineteen subsidiaries, resolved the CFPB's November 12, 2021 lawsuit alleging violations of the Military Lending Act (MLA). ... FirstCash, Inc. is a Delaware nonbank corporation, with its principal place of business in Fort Worth, Texas."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[2].case_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations",
+                "title": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+                "excerpts": [
+                  "The parties reached a settlement and jointly filed a stipulated final judgment and proposed order, which the court promptly entered the same day."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[2].court"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations",
+                "title": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+                "excerpts": [
+                  "Today ... the parties reached a settlement ... JUL 11, 2025"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[2].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations",
+                "title": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+                "excerpts": [
+                  "the defendants violated the MLA by making pawn loans to borrowers covered under the MLA with rates that exceeded the MLA's maximum allowable annual percentage rate of 36%. ... Set aside $5 million to ensure full redress ... Pay a $4 million fine"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[2].holding"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations",
+                "title": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+                "excerpts": [
+                  "CFPB Reaches Settlement with FirstCash, Inc. and Its Subsidiaries for Military Lending Act Violations"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[2].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://occc.texas.gov/publications/legal/enforcement-actions",
+                "title": "Enforcement Actions",
+                "excerpts": [
+                  "OCCC Enforcement Actions \u2014 Cottonwood Financial Texas LLC d/b/a Cotton Financial Texas LLC | Credit Access Business | TFC 14.202 | Final Order - Injunction"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.key_cases[3].case_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://occc.texas.gov/publications/legal/enforcement-actions",
+                "title": "Enforcement Actions",
+                "excerpts": [
+                  "OCCC ... Final Order - Injunction"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.key_cases[3].court"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://occc.texas.gov/publications/legal/enforcement-actions",
+                "title": "Enforcement Actions",
+                "excerpts": [
+                  "2/27/2025 | L25-034 | Cottonwood Financial Texas LLC d/b/a Cotton Financial Texas LLC | Credit Access Business | TFC 14.202 | Final Order - Injunction"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.key_cases[3].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://occc.texas.gov/publications/legal/enforcement-actions",
+                "title": "Enforcement Actions",
+                "excerpts": [
+                  "Cottonwood Financial Texas LLC d/b/a Cotton Financial Texas LLC | Credit Access Business | TFC 14.202 | Final Order - Injunction"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.key_cases[3].holding"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://occc.texas.gov/publications/legal/enforcement-actions",
+                "title": "Enforcement Actions",
+                "excerpts": [
+                  "The following table lists enforcement actions closed in FY 2022 - FY 2026."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.key_cases[3].citation_url"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$.key_cases[4].case_name"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$.key_cases[4].court"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$.key_cases[4].date"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$.key_cases[4].holding"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$.key_cases[4].citation_url"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$.key_cases[5].case_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://courtlistener.com/docket/67646300/davis-v-credit-corp-solutions-inc",
+                "title": "Davis v. Credit Corp Solutions Inc., 1:23-cv-00884",
+                "excerpts": [
+                  "Davis v. Credit Corp Solutions, Inc. (not the named case)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://courtlistener.com/docket/71078991/davis-v-cooprider",
+                "title": "Davis v. Cooprider, 2:25-cv-00220",
+                "excerpts": [
+                  "Davis v. Cooprider (not the named case)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$.key_cases[5].court"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$.key_cases[5].date"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$.key_cases[5].holding"
+          },
+          {
+            "citations": [],
+            "confidence": "low",
+            "reasoning": "No usable citation resolved for this value",
+            "path": "$.key_cases[5].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sos.state.tx.us/texreg/archive/December262025/Adopted%20Rules/7.BANKING%20AND%20SECURITIES.html",
+                "title": "Adopted Rules Title 7",
+                "excerpts": [
+                  "Adopted amendments and repeals in \u00a783.301 through \u00a783.404 implement the OCCC's transition to the NMLS system. ... regulated lender licenses under Texas Finance Code, Chapter 342. The OCCC has begun a phased process of migrating license groups from ALECS ... to NMLS. In 2025, a majority of licensed regulated lenders completed their transition to NMLS."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.recent_changes[0].change"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sos.state.tx.us/texreg/archive/December262025/Adopted%20Rules/7.BANKING%20AND%20SECURITIES.html",
+                "title": "Adopted Rules Title 7",
+                "excerpts": [
+                  "Adopted amendments and repeals in \u00a783.301 through \u00a783.404 implement the OCCC's transition to the NMLS system."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.recent_changes[0].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sos.state.tx.us/texreg/archive/December262025/Adopted%20Rules/7.BANKING%20AND%20SECURITIES.html",
+                "title": "Adopted Rules Title 7",
+                "excerpts": [
+                  "The rule changes are adopted under Texas Finance Code, \u00a7342.551 ... and Texas Finance Code, \u00a714.109 ... The statutory provisions affected by the adoption are contained in Texas Finance Code, Chapter 342."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.recent_changes[0].source_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://occc.texas.gov/publications/legal/rules",
+                "title": "Recent and Upcoming Rules",
+                "excerpts": [
+                  "Credit Access Business Licensing & Recordkeeping Rules (posted July 15, 2026) ... The OCCC will accept informal precomments on these rule amendments until August 5, 2026."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[1].change"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://occc.texas.gov/publications/legal/rules",
+                "title": "Recent and Upcoming Rules",
+                "excerpts": [
+                  "Credit Access Business Licensing & Recordkeeping Rules (posted July 15, 2026)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[1].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://occc.texas.gov/publications/legal/rules",
+                "title": "Recent and Upcoming Rules",
+                "excerpts": [
+                  "Credit Access Business Licensing & Recordkeeping Rules (posted July 15, 2026)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[1].source_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-personal-financial-data-rights-rule-to-boost-competition-protect-privacy-and-give-families-more-choice-in-financial-services",
+                "title": "CFPB Finalizes Personal Financial Data Rights Rule to ...",
+                "excerpts": [
+                  "the Consumer Financial Protection Bureau (CFPB) finalized a rule ... requires financial institutions, credit card issuers, and other financial providers to unlock an individual's personal financial data and transfer it to another provider at the consumer's request for free. ... the largest institutions will have to comply by April 1, 2026, while the smallest covered institutions will have until April 1, 2030."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[2].change"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-personal-financial-data-rights-rule-to-boost-competition-protect-privacy-and-give-families-more-choice-in-financial-services",
+                "title": "CFPB Finalizes Personal Financial Data Rights Rule to ...",
+                "excerpts": [
+                  "OCT 22, 2024"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[2].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-personal-financial-data-rights-rule-to-boost-competition-protect-privacy-and-give-families-more-choice-in-financial-services",
+                "title": "CFPB Finalizes Personal Financial Data Rights Rule to ...",
+                "excerpts": [
+                  "CFPB Finalizes Personal Financial Data Rights Rule ... OCT 22, 2024"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[2].source_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-rule-on-federal-oversight-of-popular-digital-payment-apps-to-protect-personal-data-reduce-fraud-and-stop-illegal-debanking",
+                "title": "CFPB Finalizes Rule on Federal Oversight of Popular ...",
+                "excerpts": [
+                  "the CFPB today finalized a rule to supervise the largest nonbank companies offering digital funds transfer and payment wallet apps ... specifically those handling more than 50 million transactions per year"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[3].change"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-rule-on-federal-oversight-of-popular-digital-payment-apps-to-protect-personal-data-reduce-fraud-and-stop-illegal-debanking",
+                "title": "CFPB Finalizes Rule on Federal Oversight of Popular ...",
+                "excerpts": [
+                  "NOV 21, 2024"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[3].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-rule-on-federal-oversight-of-popular-digital-payment-apps-to-protect-personal-data-reduce-fraud-and-stop-illegal-debanking",
+                "title": "CFPB Finalizes Rule on Federal Oversight of Popular ...",
+                "excerpts": [
+                  "CFPB Finalizes Rule on Federal Oversight of Popular Digital Payment Apps ... NOV 21, 2024"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[3].source_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2024/05/31/2024-11800/truth-in-lending-regulation-z-use-of-digital-user-accounts-to-access-buy-now-pay-later-loans",
+                "title": "Truth in Lending (Regulation Z); Use of Digital User ...",
+                "excerpts": [
+                  "this interpretive rule to address the applicability of subpart B of Regulation Z to lenders that issue digital user accounts used to access credit, including to those lenders that market loans as 'Buy Now, Pay Later' (BNPL). This interpretive rule describes how these lenders meet the criteria for being 'card issuers' for purposes of Regulation Z."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.recent_changes[4].change"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2024/05/31/2024-11800/truth-in-lending-regulation-z-use-of-digital-user-accounts-to-access-buy-now-pay-later-loans",
+                "title": "Truth in Lending (Regulation Z); Use of Digital User ...",
+                "excerpts": [
+                  "A Rule by the Consumer Financial Protection Bureau on 05/31/2024"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.recent_changes[4].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2024/05/31/2024-11800/truth-in-lending-regulation-z-use-of-digital-user-accounts-to-access-buy-now-pay-later-loans",
+                "title": "Truth in Lending (Regulation Z); Use of Digital User ...",
+                "excerpts": [
+                  "Truth in Lending (Regulation Z); Use of Digital User Accounts To Access Buy Now, Pay Later Loans"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.recent_changes[4].source_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/rules-policy",
+                "title": "Regulations and policy",
+                "excerpts": [
+                  "In 2025, the CFPB rescinded or withdrew a number of final rules, proposed rules, and guidance documents that were issued since the CFPB assumed its functions in 2011. ... several rules finalized under Director Chopra were made ineffective by joint resolutions of Congressional disapproval under the Congressional Review Act of 1966 or vacated by a court."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc",
+                "title": "https://www.consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc/",
+                "excerpts": [
+                  "On April 30, 2025, the Bureau voluntarily dismissed the action against the defendants with prejudice, and the court terminated the case the same day."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[5].change"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/rules-policy",
+                "title": "Regulations and policy",
+                "excerpts": [
+                  "Page last modified May 28, 2026"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[5].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/rules-policy",
+                "title": "Regulations and policy",
+                "excerpts": [
+                  "The CFPB is reviewing existing regulations to identify opportunities to streamline requirements ... Withdrawn and rescinded documents ... Nullified or vacated rules"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[5].source_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations",
+                "title": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+                "excerpts": [
+                  "the CFPB and FirstCash, Inc., along with its nineteen subsidiaries, resolved the CFPB's November 12, 2021 lawsuit alleging violations of the Military Lending Act (MLA). ... FirstCash, Inc. is a Delaware nonbank corporation, with its principal place of business in Fort Worth, Texas. ... Set aside $5 million to ensure full redress ... Pay a $4 million fine"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[6].change"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/enforcement/actions",
+                "title": "Enforcement Actions | Consumer Financial Protection Bureau",
+                "excerpts": [
+                  "JUL 11, 2025"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[6].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations",
+                "title": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+                "excerpts": [
+                  "CFPB Reaches Settlement with FirstCash, Inc. and Its Subsidiaries for Military Lending Act Violations"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[6].source_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/GetStatute.aspx?Code=FI&Value=303",
+                "title": "chapter 303. optional rate ceilings",
+                "excerpts": [
+                  "chapter 342. consumer loans"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[0]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://statutes.capitol.texas.gov/docs/FI/htm/FI.393.htm",
+                "title": "Finance Code Chapter 393 \u2013 Credit Services Organizations",
+                "excerpts": [
+                  "Finance Code Chapter 393 \u2013 Credit Services Organizations"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[1]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://sos.state.tx.us/texreg/archive/December262025/Adopted%20Rules/7.BANKING%20AND%20SECURITIES.html",
+                "title": "Adopted Rules Title 7",
+                "excerpts": [
+                  "regulated lender licenses under Texas Finance Code, Chapter 342. The OCCC has begun a phased process of migrating license groups from ALECS ... to NMLS."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.sources[2]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://occc.texas.gov/publications/legal/rules",
+                "title": "Recent and Upcoming Rules",
+                "excerpts": [
+                  "Credit Access Business Licensing & Recordkeeping Rules (posted July 15, 2026)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[3]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://occc.texas.gov/publications/legal/enforcement-actions",
+                "title": "Enforcement Actions",
+                "excerpts": [
+                  "The following table lists enforcement actions closed in FY 2022 - FY 2026."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.sources[4]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-takes-action-against-ace-cash-express-for-pushing-payday-borrowers-into-cycle-of-debt",
+                "title": "CFPB Takes Action Against ACE Cash Express for Pushing ...",
+                "excerpts": [
+                  "ACE will provide $5 million in refunds and pay a $5 million penalty ... CFPB found that ACE used illegal debt collection tactics"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[5]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc",
+                "title": "https://www.consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc/",
+                "excerpts": [
+                  "On July 12, 2022, the Bureau filed a lawsuit ... On April 30, 2025, the Bureau voluntarily dismissed the action against the defendants with prejudice"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[6]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations",
+                "title": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-reaches-settlement-with-firstcash-inc-and-its-subsidiaries-for-military-lending-act-violations/",
+                "excerpts": [
+                  "the defendants violated the MLA by making pawn loans to borrowers covered under the MLA with rates that exceeded the MLA's maximum allowable annual percentage rate of 36%"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[7]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ecfr.gov/current/title-12/chapter-X/part-1002",
+                "title": "12 CFR Part 1002 -- Equal Credit Opportunity Act ...",
+                "excerpts": [
+                  "Part 1002 Equal Credit Opportunity Act (Regulation B)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[8]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://law.cornell.edu/cfr/text/12/part-1026",
+                "title": "12 CFR Part 1026 - TRUTH IN LENDING (REGULATION Z)",
+                "excerpts": [
+                  "Truth in Lending ... 12 part-1026"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[9]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2024/05/31/2024-11800/truth-in-lending-regulation-z-use-of-digital-user-accounts-to-access-buy-now-pay-later-loans",
+                "title": "Truth in Lending (Regulation Z); Use of Digital User ...",
+                "excerpts": [
+                  "this interpretive rule to address the applicability of subpart B of Regulation Z to lenders that issue digital user accounts used to access credit, including to those lenders that market loans as 'Buy Now, Pay Later' (BNPL)"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.sources[10]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-personal-financial-data-rights-rule-to-boost-competition-protect-privacy-and-give-families-more-choice-in-financial-services",
+                "title": "CFPB Finalizes Personal Financial Data Rights Rule to ...",
+                "excerpts": [
+                  "the Consumer Financial Protection Bureau (CFPB) finalized a rule that will give consumers greater rights, privacy, and security over their personal financial data"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[11]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/archive/newsroom/cfpb-finalizes-rule-on-federal-oversight-of-popular-digital-payment-apps-to-protect-personal-data-reduce-fraud-and-stop-illegal-debanking",
+                "title": "CFPB Finalizes Rule on Federal Oversight of Popular ...",
+                "excerpts": [
+                  "the CFPB today finalized a rule to supervise the largest nonbank companies offering digital funds transfer and payment wallet apps"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[12]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://consumerfinance.gov/rules-policy",
+                "title": "Regulations and policy",
+                "excerpts": [
+                  "In 2025, the CFPB rescinded or withdrew a number of final rules, proposed rules, and guidance documents ... several rules finalized under Director Chopra were made ineffective by joint resolutions of Congressional disapproval"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[13]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://legiscan.com/TX/text/HB768/id/3027782",
+                "title": "Bill Text: TX HB768 | 2025-2026 | 89th Legislature",
+                "excerpts": [
+                  "Sec. 393.004. EFFECT ON MUNICIPAL ORDINANCES ... (1) a credit access business"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$.sources[14]"
+          }
+        ]
+      }
+    }
+  }
+}

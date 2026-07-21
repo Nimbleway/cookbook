@@ -1,0 +1,1707 @@
+{
+  "topic": "Data privacy obligations for a US SaaS company serving EU customers",
+  "slug": "data-privacy-obligations-for-a-us-saas-company-serving-eu-cu",
+  "status": "completed",
+  "run_id": "task_run_7dd3db0da0f24efda6372f437ba553de",
+  "fetched_at": "2026-07-21T09:52:16+00:00",
+  "result": {
+    "run": {
+      "id": "task_run_7dd3db0da0f24efda6372f437ba553de",
+      "interaction_id": "task_run_7dd3db0da0f24efda6372f437ba553de",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Data privacy obligations for a US SaaS company serving EU customers",
+      "created_at": "2026-07-21T09:37:56.723895Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-21T09:37:57.024580Z",
+      "completed_at": "2026-07-21T09:52:09.871616Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": {
+        "sources": [
+          "Regulation (EU) 2016/679 (GDPR) \u2014 Article 3 (Territorial scope)",
+          "European Commission, Adequacy decision for safe EU-US data flows (Press release IP/23/3721, 10 July 2023)",
+          "Court of Justice of the EU, Judgment in Case C-311/18 (Schrems II), 16 July 2020",
+          "Commission Implementing Decision (EU) 2021/914 of 4 June 2021 (Standard Contractual Clauses)",
+          "Irish Data Protection Commission, Conclusion of inquiry into Meta Ireland (\u20ac1.2 billion fine), 22 May 2023",
+          "Directive 2002/58/EC (ePrivacy Directive) \u2014 Article 5(3)",
+          "Regulation (EU) 2024/1689 of 13 June 2024 (Artificial Intelligence Act)",
+          "Federal Trade Commission Act, Section 5 (15 U.S.C. \u00a7\u00a7 41-58)",
+          "California Consumer Privacy Act / CPRA (Cal. Civ. Code \u00a7 1798.100 et seq.)",
+          "Executive Order 14086 \u2014 Enhancing Safeguards for United States Signals Intelligence Activities (7 Oct 2022)",
+          "FTC, Operation AI Comply \u2014 Crackdown on Deceptive AI Claims and Schemes (25 Sept 2024)"
+        ],
+        "subject": "Data privacy obligations for a US SaaS company serving EU customers",
+        "summary": "This is research, not legal advice; consult qualified counsel before acting. A US-based SaaS company that processes EU residents' personal data is pulled into EU data-protection law primarily through GDPR Article 3(2), which applies to a non-EU controller that offers goods/services to, or monitors the behaviour of, people in the Union. In practice that means the company must meet the full GDPR toolkit: a lawful basis and the processing principles (Art 5-6); transparency and the data-subject rights of access, rectification, erasure, portability and objection (Art 12-22); appointing an EU representative because it has no EU establishment (Art 27); written data-processing agreements with any sub-processors (Art 28); security of processing (Art 32); breach notification to a supervisory authority within 72 hours and to affected individuals (Art 33-34); and the Chapter V transfer regime. For the SaaS company's own tracking cookies and electronic messaging, the ePrivacy Directive (2002/58/EC) Art 5(3) requires informed consent before storing/accessing information on a user's terminal equipment. If the product uses AI and is placed on the EU market, the EU AI Act (Regulation 2024/1689) adds tiered obligations: prohibited practices apply since 2 Feb 2025, general-purpose-AI model duties since 2 Aug 2025, and high-risk AI system duties from 2 Aug 2026. The hardest issue is Chapter V \u2014 getting EU personal data lawfully to US servers. There are two main routes. First, the EU-US Data Privacy Framework: the Commission's 10 July 2023 adequacy decision lets a US company receive EU data without additional safeguards IF it self-certifies with the Department of Commerce and commits to the DPF Principles (enforced by the FTC under Section 5); the decision relies on EO 14086's necessity/proportionality limits on US signals intelligence and a new Data Protection Review Court with binding remedial powers. Second, if the company cannot or will not join the DPF, it must use the 2021 Standard Contractual Clauses (Decision 2021/914) AND, per Schrems II, perform a transfer impact assessment of US law and add supplementary measures (e.g., strong encryption) \u2014 and suspend transfers if equivalent protection cannot be ensured. The Meta Ireland \u20ac1.2 billion fine (22 May 2023) shows the real-world cost of getting this wrong: the DPC found Meta infringed Art 46(1) by continuing EU-to-US transfers after Schrems II even with SCCs plus supplementary measures, ordered a transfer suspension and \u20ac1.2bn fine. On the US side, the FTC Act Section 5 (15 U.S.C. \u00a7\u00a7 41-58) prohibits unfair or deceptive privacy/data-security practices and is the backstop for DPF commitments; and for US-resident data (e.g., California consumers) the CCPA/CPRA (Cal. Civ. Code \u00a7 1798.100 et seq.) requires, when acting as a service provider, a written contract limiting use to specified purposes and mandating the same level of privacy protection \u2014 conceptually overlapping with GDPR Art 28 processor duties. Binding vs. persuasive: the GDPR, ePrivacy Directive, AI Act, FTC Act and CCPA are binding statutes/regulations; Schrems II (CJEU Case C-311/18) is binding EU case law; the Meta Ireland decision is a binding supervisory-authority decision (affirmed via an EDPB Art 65 binding decision); the DPF adequacy decision and EO 14086 are binding instruments; FTC enforcement actions are agency orders. Gaps flagged: a pending 'Schrems III' challenge to the DPF adequacy decision (NOYB/Max Schrems have publicly signaled challenges) was NOT found in any retrieved primary court source (curia.europa.eu) after search \u2014 this is 'not found after search,' NOT 'confirmed none'; and the specific outcome of the DPF's first periodic review (announced to occur within a year of entry into force) was not retrieved.",
+        "key_cases": [
+          {
+            "date": "16 July 2020",
+            "court": "Court of Justice of the European Union (Grand Chamber)",
+            "holding": "Invalidated Commission Decision 2016/1250 (the EU-US Privacy Shield adequacy decision) because US surveillance law was not proportionately limited and the Ombudsperson mechanism did not provide effective judicial redress; upheld the validity of the standard contractual clauses (Decision 2010/87) but held transfers under SCCs require a level of protection 'essentially equivalent' to EU law \u2014 exporters must assess the third country's law (including government access) and add supplementary measures, and supervisory authorities must suspend/prohibit transfers where SCCs cannot be honoured.",
+            "case_name": "Data Protection Commissioner v Facebook Ireland and Maximillian Schrems (Case C-311/18) ('Schrems II')",
+            "citation_url": "/pages/curia.europa.eu/jcms-upload-docs-application-pdf-2020-07-cp200091en-pdf-bb5c42e8.md"
+          },
+          {
+            "date": "22 May 2023 (final decision adopted 12 May 2023; EDPB Art. 65 decision 13 April 2023)",
+            "court": "Irish Data Protection Commission (lead supervisory authority), with EDPB Art. 65 binding decision (13 April 2023)",
+            "holding": "Meta Ireland was found to have infringed Article 46(1) GDPR by continuing EU-to-US transfers after Schrems II on the basis of the 2021 SCCs plus supplementary measures that the DPC found did not address the risks to data subjects' fundamental rights; ordered to suspend future transfers within 5 months, to bring processing into compliance with Chapter V within 6 months, and fined \u20ac1.2 billion \u2014 the largest GDPR fine to date.",
+            "case_name": "Data Protection Commission v Meta Platforms Ireland Limited (Meta Ireland \u20ac1.2 billion fine)",
+            "citation_url": "/pages/dataprotection.ie/en-news-media-press-releases-data-protection-commission-anno-0d3c7493.md"
+          },
+          {
+            "date": "25 September 2024",
+            "court": "U.S. Federal Trade Commission (administrative enforcement under FTC Act Section 5)",
+            "holding": "The FTC brought five law enforcement actions against companies using AI hype or selling AI tools in deceptive/unfair ways, charging violations of Section 5 of the FTC Act; establishes that there is 'no AI exemption from the laws on the books' and that deceptive AI marketing and AI tools that enable deception are actionable \u2014 relevant to a SaaS company marketing AI features to EU/US customers.",
+            "case_name": "FTC v DoNotPay and others \u2014 'Operation AI Comply' (deceptive AI claims sweep)",
+            "citation_url": "/pages/ftc.gov/news-events-news-press-releases-2024-09-ftc-announces-crackd-c6e0c653.md"
+          }
+        ],
+        "jurisdiction": "European Union (primary: GDPR, ePrivacy Directive, EU-US Data Privacy Framework, EU AI Act) and United States (federal: FTC Act Section 5; state: California CCPA/CPRA)",
+        "recent_changes": [
+          {
+            "date": "10 July 2023",
+            "change": "European Commission adopted the EU-US Data Privacy Framework adequacy decision, restoring a legal basis (under GDPR Art 45) for EU-to-US personal data transfers after the Privacy Shield was invalidated in Schrems II. US companies join by self-certifying with the Department of Commerce; FTC enforces commitments; new US safeguards (EO 14086: necessary/proportionate intelligence access + Data Protection Review Court) underpin adequacy. First periodic review within a year of entry into force.",
+            "source_url": "/pages/ec.europa.eu/commission-presscorner-api-files-document-print-en-ip-23-372-a070dd95.md"
+          },
+          {
+            "date": "7 October 2022",
+            "change": "President Biden signed EO 14086, imposing necessity and proportionality limits on US signals-intelligence access to personal data and creating a Data Protection Review Court (DPRC) with binding remedial powers for qualifying complaints from EU individuals. This US-side legal change was the prerequisite the European Commission relied on to adopt the DPF adequacy decision, and also supports SCC/BCR transfers by improving the third-country-law assessment under Schrems II.",
+            "source_url": "/pages/federalregister.gov/documents-2022-10-14-2022-22531-enhancing-safeguards-for-uni-0baa6e4e.md"
+          },
+          {
+            "date": "2 February 2025 (prohibited AI practices & general provisions apply)",
+            "change": "EU AI Act (Regulation 2024/1689, adopted 13 June 2024) began phased application. From 2 Feb 2025 the prohibited AI practices (Art 5) and general provisions apply; from 2 Aug 2025 obligations for general-purpose AI model providers, governance, and penalties apply; and from 2 Aug 2026 the high-risk AI system obligations (risk management, data governance, transparency, human oversight, logging) apply. The Act is complementary to (not a replacement for) the GDPR. A US SaaS company placing AI systems on the EU market must comply with these tiered duties.",
+            "source_url": "/pages/eur-lex.europa.eu/legal-content-en-txt-37dfa47a.md"
+          },
+          {
+            "date": "25 September 2024",
+            "change": "The FTC launched 'Operation AI Comply', announcing five Section 5 enforcement actions against companies using AI hype or selling AI tools in deceptive/unfair ways (including DoNotPay, marketed as 'the world's first robot lawyer'). Signals that there is 'no AI exemption from the laws on the books' \u2014 a US SaaS company marketing AI features must ensure its privacy/AI claims are not deceptive, on top of its GDPR/ePrivacy/EU AI Act obligations.",
+            "source_url": "/pages/ftc.gov/news-events-news-press-releases-2024-09-ftc-announces-crackd-c6e0c653.md"
+          }
+        ],
+        "applicable_regulations": [
+          {
+            "name": "General Data Protection Regulation (Regulation (EU) 2016/679)",
+            "requirement": "Art 3(2) extraterritorial scope: applies to a non-EU controller offering goods/services to or monitoring EU data subjects. Concrete obligations: lawful basis & principles (Art 5-6); transparency and data-subject rights \u2014 access, rectification, erasure, portability, objection (Art 12-22); appoint an EU representative if subject under Art 3(2) and no EU establishment (Art 27); written data-processing agreements with processors (Art 28); security of processing (Art 32); breach notification to supervisory authority within 72h and to affected individuals (Art 33-34); and Chapter V transfer rules requiring an adequacy decision, appropriate safeguards (e.g., SCCs), or a derogation before transferring personal data outside the EEA (Art 44-49).",
+            "citation_url": "/pages/gdpr-info.eu/art-3-gdpr-8cab401e.md",
+            "jurisdiction": "European Union (extraterritorial application to non-EU controllers/processors via Art. 3(2))"
+          },
+          {
+            "name": "EU-US Data Privacy Framework (adequacy decision adopted 10 July 2023)",
+            "requirement": "A US SaaS company joins by self-certifying with the US Department of Commerce and committing to the DPF Principles (e.g., delete personal data when no longer necessary; ensure continuity of protection when sharing with third parties). Compliance with those commitments is enforced by the FTC under Section 5. The framework also relies on new US safeguards: intelligence access limited to what is necessary and proportionate, and a Data Protection Review Court (DPRC) that can adopt binding remedial measures (including data deletion) for EU-individual complaints. The framework is subject to periodic Commission review (first review within a year of entry into force).",
+            "citation_url": "/pages/ec.europa.eu/commission-presscorner-api-files-document-print-en-ip-23-372-a070dd95.md",
+            "jurisdiction": "European Union \u2013 United States (transatlantic transfers under GDPR Art. 45)"
+          },
+          {
+            "name": "Standard Contractual Clauses \u2014 Commission Implementing Decision (EU) 2021/914 of 4 June 2021",
+            "requirement": "The data exporter and importer execute the modular SCCs to provide 'appropriate safeguards' under Art 46(1). Per Schrems II, the exporter must conduct a transfer impact assessment of the third country's law (esp. government access) and add supplementary measures (e.g., encryption) where the SCCs cannot otherwise be honoured; if protection cannot be ensured, suspend/prohibit the transfer. Exporters must also inform data subjects of the transfer/safeguards under Art 13/14. SCCs also apply to non-EU-established controllers caught by Art 3(2).",
+            "citation_url": "/pages/eur-lex.europa.eu/legal-content-en-txt-html-13a35eb5.md",
+            "jurisdiction": "European Union (transfers to third countries incl. the United States)"
+          },
+          {
+            "name": "ePrivacy Directive (Directive 2002/58/EC, as amended)",
+            "requirement": "Art 5(3): storing information on, or gaining access to information already stored in, a user's terminal equipment (i.e., cookies and similar tracking technologies) is allowed only with the user's consent, after providing clear and comprehensive information about the purposes of processing. Art 5(1) requires confidentiality of communications. Consent must meet the GDPR standard (freely given, specific, informed, unambiguous).",
+            "citation_url": "/pages/eur-lex.europa.eu/lexuriserv-lexuriserv-do-980e15ef.md",
+            "jurisdiction": "European Union"
+          },
+          {
+            "name": "EU Artificial Intelligence Act (Regulation (EU) 2024/1689 of 13 June 2024)",
+            "requirement": "Risk-based obligations for AI systems placed on the EU market: prohibited AI practices (Art 5) apply from 2 Feb 2025; obligations for providers of general-purpose AI (GPAI) models, governance and penalties apply from 2 Aug 2025; and high-risk AI system obligations (risk management, data governance, transparency, human oversight, logging) apply from 2 Aug 2026. The Act is without prejudice to GDPR data-protection law and is complementary to it.",
+            "citation_url": "/pages/eur-lex.europa.eu/legal-content-en-txt-37dfa47a.md",
+            "jurisdiction": "European Union"
+          },
+          {
+            "name": "Federal Trade Commission Act, Section 5 (15 U.S.C. \u00a7\u00a7 41-58)",
+            "requirement": "Prohibits unfair or deceptive acts or practices in or affecting commerce; the FTC enforces companies' privacy and data-security representations and can seek monetary redress. A US SaaS company must not misrepresent its privacy/data practices, and its DPF self-certification commitments are enforceable by the FTC under Section 5.",
+            "citation_url": "/pages/ftc.gov/legal-library-browse-statutes-federal-trade-commission-act-89703e2d.md",
+            "jurisdiction": "United States (federal)"
+          },
+          {
+            "name": "California Consumer Privacy Act / California Privacy Rights Act (Cal. Civ. Code \u00a7 1798.100 et seq.)",
+            "requirement": "When a SaaS company acts as a service provider/processor, it must operate under a written contract with the business that: (1) specifies the personal information is disclosed only for limited and specified purposes; and (2) obligates the service provider to comply with the title and provide the same level of privacy protection. As a business collecting its own data it must give notice at collection, limit use to disclosed/compatible purposes, and keep retention reasonably necessary. These overlap conceptually with GDPR processor duties (Art 28).",
+            "citation_url": "/pages/leginfo.legislature.ca.gov/faces-codes-displaytext-xhtml-e42bd226.md",
+            "jurisdiction": "California, United States"
+          },
+          {
+            "name": "Executive Order 14086 \u2014 Enhancing Safeguards for United States Signals Intelligence Activities (7 Oct 2022)",
+            "requirement": "Limits US signals-intelligence access to data to what is necessary to advance a validated intelligence priority and proportionate to that priority, with privacy/civil-liberties consideration for all persons regardless of nationality (Sec 2). Establishes a redress mechanism (Sec 3): qualifying complaints from a qualifying state (incl. EU individuals) are investigated by the Civil Liberties Protection Officer, with review by a Data Protection Review Court (DPRC) that can adopt binding remedial measures and order deletion. This is the US safeguard that underpins the DPF adequacy decision.",
+            "citation_url": "/pages/federalregister.gov/documents-2022-10-14-2022-22531-enhancing-safeguards-for-uni-0baa6e4e.md",
+            "jurisdiction": "United States (federal; prerequisite for EU-US DPF adequacy)"
+          }
+        ]
+      },
+      "trust": {
+        "sources": [
+          {
+            "url": "https://gdpr-info.eu/art-3-gdpr",
+            "title": "Art. 3 GDPR \u2013 Territorial scope - General Data Protection ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://ftc.gov/legal-library/browse/statutes/federal-trade-commission-act",
+            "title": "Federal Trade Commission Act",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML?uri=CELEX%3A32021D0914",
+            "title": "L_2021199EN.01003101.xml - EUR-Lex - European Union",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_23_3721/IP_23_3721_EN.pdf",
+            "title": "Data Protection: European Commission adopts new adequacy ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://dataprivacyframework.gov/",
+            "title": "https://dataprivacyframework.gov/",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+            "title": "The Court of Justice invalidates Decision 2016/1250 on ... - curia",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG%3A2002L0058%3A20091219%3AEN%3AHTML",
+            "title": "Consolidated TEXT: 32002L0058 - EUR-Lex - European Union",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32024R1689",
+            "title": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://ftc.gov/news-events/topics/protecting-consumer-privacy-security/privacy-security-enforcement",
+            "title": "Privacy and Security Enforcement",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&lawCode=CIV&part=4.&title=1.81.5",
+            "title": "the full text of the CCPA - California Legislative Information",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://federalregister.gov/documents/2022/10/14/2022-22531/enhancing-safeguards-for-united-states-signals-intelligence-activities",
+            "title": "Enhancing Safeguards for United States Signals ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://dataprotection.ie/en/news-media/press-releases/Data-Protection-Commission-announces-conclusion-of-inquiry-into-Meta-Ireland",
+            "title": "Data Protection Commission announces conclusion of ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+            "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          }
+        ],
+        "confidence": "high",
+        "reasoning": "High confidence - cells fill rate is 100% and trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://gdpr-info.eu/art-3-gdpr",
+                "title": "Art. 3 GDPR \u2013 Territorial scope - General Data Protection ...",
+                "excerpts": [
+                  "Art. 3 GDPR Territorial scope ... This Regulation applies to the processing of personal data of data subjects who are in the Union by a controller or processor not established in the Union, where the processing activities are related to: the offering of goods or services ... to such data subjects in the Union; or the monitoring of their behaviour as far as their behaviour takes place within the Union."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.subject"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gdpr-info.eu/art-3-gdpr",
+                "title": "Art. 3 GDPR \u2013 Territorial scope - General Data Protection ...",
+                "excerpts": [
+                  "This Regulation applies to the processing of personal data of data subjects who are in the Union by a controller or processor not established in the Union, where the processing activities are related to: the offering of goods or services ... to such data subjects in the Union"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://ftc.gov/legal-library/browse/statutes/federal-trade-commission-act",
+                "title": "Federal Trade Commission Act",
+                "excerpts": [
+                  "15 U.S.C. \u00a7\u00a7 41-58, as amended ... the Commission is empowered ... to (a) prevent unfair methods of competition and unfair or deceptive acts or practices in or affecting commerce"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gdpr-info.eu/art-3-gdpr",
+                "title": "Art. 3 GDPR \u2013 Territorial scope - General Data Protection ...",
+                "excerpts": [
+                  "Art. 3 GDPR Territorial scope ... This Regulation applies to the processing of personal data of data subjects who are in the Union by a controller or processor not established in the Union, where the processing activities are related to: the offering of goods or services, irrespective of whether a payment of the data subject is required, to such data subjects in the Union; or the monitoring of their behaviour as far as their behaviour takes place within the Union."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[0].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gdpr-info.eu/art-3-gdpr",
+                "title": "Art. 3 GDPR \u2013 Territorial scope - General Data Protection ...",
+                "excerpts": [
+                  "This Regulation applies to the processing of personal data of data subjects who are in the Union by a controller or processor not established in the Union, where the processing activities are related to: the offering of goods or services..."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[0].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gdpr-info.eu/art-3-gdpr",
+                "title": "Art. 3 GDPR \u2013 Territorial scope - General Data Protection ...",
+                "excerpts": [
+                  "Art. 3 GDPR \u2013 Territorial scope ... gdpr-info.eu (final text of the GDPR including recitals)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[0].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gdpr-info.eu/art-3-gdpr",
+                "title": "Art. 3 GDPR \u2013 Territorial scope - General Data Protection ...",
+                "excerpts": [
+                  "Art. 3 ... Representatives of controllers or processors not established in the Union (Art. 27); Processor (Art. 28); Security of processing (Art. 32)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML?uri=CELEX%3A32021D0914",
+                "title": "L_2021199EN.01003101.xml - EUR-Lex - European Union",
+                "excerpts": [
+                  "Pursuant to Article 46(1) of Regulation (EU) 2016/679, in the absence of an adequacy decision... a controller or processor may transfer personal data to a third country only if it has provided appropriate safeguards... information must include a reference to the appropriate safeguards... pursuant to Article 13(1)(f) and Article 14(1)(f)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[0].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_23_3721/IP_23_3721_EN.pdf",
+                "title": "Data Protection: European Commission adopts new adequacy ...",
+                "excerpts": [
+                  "Brussels, 10 July 2023 ... Today, the European Commission adopted its adequacy decision for the EU-U.S. Data Privacy Framework. The decision concludes that the United States ensures an adequate level of protection ... for personal data transferred from the EU to US companies under the new framework."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[1].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_23_3721/IP_23_3721_EN.pdf",
+                "title": "Data Protection: European Commission adopts new adequacy ...",
+                "excerpts": [
+                  "personal data can flow safely from the EU to US companies participating in the Framework, without having to put in place additional data protection safeguards."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[1].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_23_3721/IP_23_3721_EN.pdf",
+                "title": "Data Protection: European Commission adopts new adequacy ...",
+                "excerpts": [
+                  "Data Protection: European Commission adopts new adequacy decision for safe and trusted EU-US data flows ... Brussels, 10 July 2023"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[1].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_23_3721/IP_23_3721_EN.pdf",
+                "title": "Data Protection: European Commission adopts new adequacy ...",
+                "excerpts": [
+                  "US companies will be able to join the EU-U.S. Data Privacy Framework by committing to comply with a detailed set of privacy obligations... delete personal data when it is no longer necessary... The Court will independently investigate and resolve complaints, including by adopting binding remedial measures... The first review will take place within a year of the entry into force of the adequacy decision."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://dataprivacyframework.gov/",
+                "title": "https://dataprivacyframework.gov/",
+                "excerpts": [
+                  "The EU-U.S. DPF, UK Extension... were respectively developed by the U.S. Department of Commerce and the European Commission... Self-Certify"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[1].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML?uri=CELEX%3A32021D0914",
+                "title": "L_2021199EN.01003101.xml - EUR-Lex - European Union",
+                "excerpts": [
+                  "COMMISSION IMPLEMENTING DECISION (EU) 2021/914 of 4 June 2021 on standard contractual clauses for the transfer of personal data to third countries pursuant to Regulation (EU) 2016/679"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[2].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML?uri=CELEX%3A32021D0914",
+                "title": "L_2021199EN.01003101.xml - EUR-Lex - European Union",
+                "excerpts": [
+                  "the controller or processor transferring the personal data to a third country (the 'data exporter') and the controller or processor receiving the personal data (the 'data importer')"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[2].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML?uri=CELEX%3A32021D0914",
+                "title": "L_2021199EN.01003101.xml - EUR-Lex - European Union",
+                "excerpts": [
+                  "COMMISSION IMPLEMENTING DECISION (EU) 2021/914 of 4 June 2021 ... (Text with EEA relevance)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[2].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML?uri=CELEX%3A32021D0914",
+                "title": "L_2021199EN.01003101.xml - EUR-Lex - European Union",
+                "excerpts": [
+                  "Controllers and processors are encouraged to provide additional safeguards by means of contractual commitments that supplement the standard contractual clauses ... This also includes the transfer of personal data by a controller or processor not established in the Union, to the extent that the processing is subject to Regulation (EU) 2016/679 (pursuant to Article 3(2) thereof)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+                "title": "The Court of Justice invalidates Decision 2016/1250 on ... - curia",
+                "excerpts": [
+                  "the assessment of that level of protection must take into consideration both the contractual clauses... and, as regards any access by the public authorities of that third country... the relevant aspects of the legal system of that third country ... supervisory authorities are required to suspend or prohibit a transfer"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[2].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG%3A2002L0058%3A20091219%3AEN%3AHTML",
+                "title": "Consolidated TEXT: 32002L0058 - EUR-Lex - European Union",
+                "excerpts": [
+                  "Directive 2002/58/EC of the European Parliament and of the Council of 12 July 2002 concerning the processing of personal data and the protection of privacy in the electronic communications sector"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[3].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG%3A2002L0058%3A20091219%3AEN%3AHTML",
+                "title": "Consolidated TEXT: 32002L0058 - EUR-Lex - European Union",
+                "excerpts": [
+                  "Directive 2002/58/EC ... protection of privacy in the electronic communications sector"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[3].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG%3A2002L0058%3A20091219%3AEN%3AHTML",
+                "title": "Consolidated TEXT: 32002L0058 - EUR-Lex - European Union",
+                "excerpts": [
+                  "Directive 2002/58/EC ... 12 July 2002"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[3].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG%3A2002L0058%3A20091219%3AEN%3AHTML",
+                "title": "Consolidated TEXT: 32002L0058 - EUR-Lex - European Union",
+                "excerpts": [
+                  "Article 5 ... 3. Member States shall ensure that the storing of information, or the gaining of access to information already stored, in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned has given his or her consent, having been provided with clear and comprehensive information... about the purposes of the processing."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[3].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32024R1689",
+                "title": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+                "excerpts": [
+                  "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence ... (Artificial Intelligence Act)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[4].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32024R1689",
+                "title": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+                "excerpts": [
+                  "Regulation (EU) 2024/1689 ... (Artificial Intelligence Act) (Text with EEA relevance)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[4].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32024R1689",
+                "title": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+                "excerpts": [
+                  "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 ... (Artificial Intelligence Act)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[4].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32024R1689",
+                "title": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+                "excerpts": [
+                  "Recital 179: This Regulation should apply from 2 August 2026... the prohibitions as well as the general provisions... should already apply from 2 February 2025... obligations for providers of general-purpose AI models should apply from 2 August 2025... provisions on penalties should apply from 2 August 2025."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[4].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/legal-library/browse/statutes/federal-trade-commission-act",
+                "title": "Federal Trade Commission Act",
+                "excerpts": [
+                  "15 U.S.C. \u00a7\u00a7 41-58, as amended ... the Commission is empowered... to (a) prevent unfair methods of competition and unfair or deceptive acts or practices in or affecting commerce; (b) seek monetary redress and other relief for conduct injurious to consumers"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[5].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/legal-library/browse/statutes/federal-trade-commission-act",
+                "title": "Federal Trade Commission Act",
+                "excerpts": [
+                  "15 U.S.C. \u00a7\u00a7 41-58, as amended ... unfair or deceptive acts or practices in or affecting commerce"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[5].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/legal-library/browse/statutes/federal-trade-commission-act",
+                "title": "Federal Trade Commission Act",
+                "excerpts": [
+                  "Federal Trade Commission Act ... 15 U.S.C. \u00a7\u00a7 41-58, as amended"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[5].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/news-events/topics/protecting-consumer-privacy-security/privacy-security-enforcement",
+                "title": "Privacy and Security Enforcement",
+                "excerpts": [
+                  "the FTC has charged the defendants with violating Section 5 of the FTC Act, which bars unfair and deceptive acts and practices in or affecting commerce. In addition to the FTC Act, the agency also enforces other federal laws relating to consumers' privacy and security."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[5].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&lawCode=CIV&part=4.&title=1.81.5",
+                "title": "the full text of the CCPA - California Legislative Information",
+                "excerpts": [
+                  "TITLE 1.81.5. California Consumer Privacy Act of 2018 [1798.100 - 1798.199.100]"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[6].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&lawCode=CIV&part=4.&title=1.81.5",
+                "title": "the full text of the CCPA - California Legislative Information",
+                "excerpts": [
+                  "California Consumer Privacy Act of 2018 [1798.100 - 1798.199.100]"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[6].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&lawCode=CIV&part=4.&title=1.81.5",
+                "title": "the full text of the CCPA - California Legislative Information",
+                "excerpts": [
+                  "1798.100. General Duties of Businesses that Collect Personal Information ... California Consumer Privacy Act of 2018"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[6].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&lawCode=CIV&part=4.&title=1.81.5",
+                "title": "the full text of the CCPA - California Legislative Information",
+                "excerpts": [
+                  "1798.100(d) A business that collects a consumer's personal information and... discloses it to a service provider or contractor for a business purpose shall enter into an agreement... that: (1) Specifies that the personal information is... disclosed... only for limited and specified purposes. (2) Obligates the... service provider... to comply with applicable obligations under this title and obligate those persons to provide the same level of privacy protection as is required by this title."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[6].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2022/10/14/2022-22531/enhancing-safeguards-for-united-states-signals-intelligence-activities",
+                "title": "Enhancing Safeguards for United States Signals ...",
+                "excerpts": [
+                  "Enhancing Safeguards for United States Signals Intelligence Activities ... Executive Order ... EO 14086 ... Signing Date October 7, 2022"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[7].name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2022/10/14/2022-22531/enhancing-safeguards-for-united-states-signals-intelligence-activities",
+                "title": "Enhancing Safeguards for United States Signals ...",
+                "excerpts": [
+                  "By the authority vested in me as President... this order establishes safeguards for such signals intelligence activities."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[7].jurisdiction"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2022/10/14/2022-22531/enhancing-safeguards-for-united-states-signals-intelligence-activities",
+                "title": "Enhancing Safeguards for United States Signals ...",
+                "excerpts": [
+                  "Executive Order 14086 ... October 7, 2022 ... Enhancing Safeguards for United States Signals Intelligence Activities"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[7].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2022/10/14/2022-22531/enhancing-safeguards-for-united-states-signals-intelligence-activities",
+                "title": "Enhancing Safeguards for United States Signals ...",
+                "excerpts": [
+                  "Sec. 2... signals intelligence activities shall be conducted only... where... necessary to advance a validated intelligence priority... proportionate... Sec. 3. Signals Intelligence Redress Mechanism... review by the Data Protection Review Court... a special advocate will be selected"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.applicable_regulations[7].requirement"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+                "title": "The Court of Justice invalidates Decision 2016/1250 on ... - curia",
+                "excerpts": [
+                  "Judgment in Case C-311/18 ... Press and Information Data Protection Commissioner v Facebook Ireland and Maximillian Schrems ... The Court of Justice invalidates Decision 2016/1250 on the adequacy of the protection provided by the EU-US Data Protection Shield."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[0].case_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+                "title": "The Court of Justice invalidates Decision 2016/1250 on ... - curia",
+                "excerpts": [
+                  "Court of Justice of the European Union ... PRESS RELEASE No 91/20 ... Luxembourg, 16 July 2020 ... Judgment in Case C-311/18"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[0].court"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+                "title": "The Court of Justice invalidates Decision 2016/1250 on ... - curia",
+                "excerpts": [
+                  "Luxembourg, 16 July 2020 ... Judgment in Case C-311/18"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[0].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+                "title": "The Court of Justice invalidates Decision 2016/1250 on ... - curia",
+                "excerpts": [
+                  "The Court of Justice invalidates Decision 2016/1250 ... it considers that Commission Decision 2010/87 on standard contractual clauses... is valid ... data subjects... must be afforded a level of protection essentially equivalent to that guaranteed within the EU by the GDPR ... the assessment of that level of protection must take into consideration both the contractual clauses... and... the relevant aspects of the legal system of that third country ... supervisory authorities are required to suspend or prohibit a transfer"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[0].holding"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+                "title": "The Court of Justice invalidates Decision 2016/1250 on ... - curia",
+                "excerpts": [
+                  "The full text of the judgment is published on the CURIA website on the day of delivery"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[0].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dataprotection.ie/en/news-media/press-releases/Data-Protection-Commission-announces-conclusion-of-inquiry-into-Meta-Ireland",
+                "title": "Data Protection Commission announces conclusion of ...",
+                "excerpts": [
+                  "Data Protection Commission announces conclusion of inquiry into Meta Ireland ... 22nd May 2023 ... Meta Ireland infringed Article 46(1) GDPR when it continued to transfer personal data from the EU/EEA to the USA following... the CJEU's judgment"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[1].case_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dataprotection.ie/en/news-media/press-releases/Data-Protection-Commission-announces-conclusion-of-inquiry-into-Meta-Ireland",
+                "title": "Data Protection Commission announces conclusion of ...",
+                "excerpts": [
+                  "The EDPB adopted its decision on 13 April 2023. Consistent with its obligations to adopt its final decision 'on the basis of' the EDPB's decision, the DPC's decision of 12 May 2023 records the exercise of the following corrective powers"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[1].court"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dataprotection.ie/en/news-media/press-releases/Data-Protection-Commission-announces-conclusion-of-inquiry-into-Meta-Ireland",
+                "title": "Data Protection Commission announces conclusion of ...",
+                "excerpts": [
+                  "22nd May 2023 ... The DPC adopted its final decision in this inquiry on 12 May 2023 ... The EDPB adopted its decision on 13 April 2023."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[1].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dataprotection.ie/en/news-media/press-releases/Data-Protection-Commission-announces-conclusion-of-inquiry-into-Meta-Ireland",
+                "title": "Data Protection Commission announces conclusion of ...",
+                "excerpts": [
+                  "an administrative fine in the amount of \u20ac1.2 billion ... an order... requiring Meta Ireland to suspend any future transfer of personal data to the US within the period of five months ... an order... requiring Meta Ireland to bring its processing operations into compliance with Chapter V of the GDPR... within 6 months"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[1].holding"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dataprotection.ie/en/news-media/press-releases/Data-Protection-Commission-announces-conclusion-of-inquiry-into-Meta-Ireland",
+                "title": "Data Protection Commission announces conclusion of ...",
+                "excerpts": [
+                  "Data Protection Commission announces conclusion of inquiry into Meta Ireland ... 22nd May 2023"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[1].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+                "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+                "excerpts": [
+                  "FTC Announces Crackdown on Deceptive AI Claims and Schemes ... With Operation AI Comply, agency announces five law enforcement actions ... The FTC is taking action against DoNotPay, a company that claimed to offer an AI service that was 'the world's first robot lawyer,' but the product failed to live up to its lofty claims"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[2].case_name"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+                "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+                "excerpts": [
+                  "Using AI tools to trick, mislead, or defraud people is illegal... there is no AI exemption from the laws on the books ... FTC is ensuring that honest businesses and innovators can get a fair shot"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[2].court"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+                "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+                "excerpts": [
+                  "FTC Announces Crackdown on Deceptive AI Claims and Schemes ... September 25, 2024"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[2].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+                "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+                "excerpts": [
+                  "agency announces five law enforcement actions against operations that use AI hype or sell AI technology that can be used in deceptive and unfair ways ... there is no AI exemption from the laws on the books"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[2].holding"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+                "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+                "excerpts": [
+                  "FTC Announces Crackdown on Deceptive AI Claims and Schemes ... September 25, 2024"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.key_cases[2].citation_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_23_3721/IP_23_3721_EN.pdf",
+                "title": "Data Protection: European Commission adopts new adequacy ...",
+                "excerpts": [
+                  "Brussels, 10 July 2023 ... Today, the European Commission adopted its adequacy decision for the EU-U.S. Data Privacy Framework. The decision concludes that the United States ensures an adequate level of protection"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[0].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_23_3721/IP_23_3721_EN.pdf",
+                "title": "Data Protection: European Commission adopts new adequacy ...",
+                "excerpts": [
+                  "Today, the European Commission adopted its adequacy decision for the EU-U.S. Data Privacy Framework... personal data can flow safely from the EU to US companies participating in the Framework... US companies will be able to join... by committing to comply with a detailed set of privacy obligations... a newly created Data Protection Review Court (DPRC)... The first review will take place within a year"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://federalregister.gov/documents/2022/10/14/2022-22531/enhancing-safeguards-for-united-states-signals-intelligence-activities",
+                "title": "Enhancing Safeguards for United States Signals ...",
+                "excerpts": [
+                  "Executive Order 14086 ... October 7, 2022"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[0].change"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_23_3721/IP_23_3721_EN.pdf",
+                "title": "Data Protection: European Commission adopts new adequacy ...",
+                "excerpts": [
+                  "Data Protection: European Commission adopts new adequacy decision for safe and trusted EU-US data flows ... Brussels, 10 July 2023"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[0].source_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2022/10/14/2022-22531/enhancing-safeguards-for-united-states-signals-intelligence-activities",
+                "title": "Enhancing Safeguards for United States Signals ...",
+                "excerpts": [
+                  "Executive Order 14086 ... Signing Date October 7, 2022 ... Enhancing Safeguards for United States Signals Intelligence Activities"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[1].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2022/10/14/2022-22531/enhancing-safeguards-for-united-states-signals-intelligence-activities",
+                "title": "Enhancing Safeguards for United States Signals ...",
+                "excerpts": [
+                  "Sec. 2... signals intelligence activities shall be conducted only... necessary to advance a validated intelligence priority... proportionate... Sec. 3. Signals Intelligence Redress Mechanism... review by the Data Protection Review Court"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_23_3721/IP_23_3721_EN.pdf",
+                "title": "Data Protection: European Commission adopts new adequacy ...",
+                "excerpts": [
+                  "The EU-U.S. Data Privacy Framework introduces new binding safeguards to address all the concerns raised by the European Court of Justice, including limiting access to EU data by US intelligence services to what is necessary and proportionate, and establishing a Data Protection Review Court (DPRC)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[1].change"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2022/10/14/2022-22531/enhancing-safeguards-for-united-states-signals-intelligence-activities",
+                "title": "Enhancing Safeguards for United States Signals ...",
+                "excerpts": [
+                  "Executive Order 14086 ... October 7, 2022"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[1].source_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32024R1689",
+                "title": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+                "excerpts": [
+                  "Recital 179: This Regulation should apply from 2 August 2026... the prohibitions as well as the general provisions... should already apply from 2 February 2025"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[2].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32024R1689",
+                "title": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+                "excerpts": [
+                  "Recital 179: This Regulation should apply from 2 August 2026... the prohibitions as well as the general provisions... should already apply from 2 February 2025... obligations for providers of general-purpose AI models should apply from 2 August 2025... provisions on penalties should apply from 2 August 2025."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[2].change"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32024R1689",
+                "title": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+                "excerpts": [
+                  "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 ... (Artificial Intelligence Act) ... Recital 179"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[2].source_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+                "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+                "excerpts": [
+                  "FTC Announces Crackdown on Deceptive AI Claims and Schemes ... September 25, 2024"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[3].date"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+                "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+                "excerpts": [
+                  "With Operation AI Comply, agency announces five law enforcement actions against operations that use AI hype or sell AI technology that can be used in deceptive and unfair ways... there is no AI exemption from the laws on the books"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[3].change"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+                "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+                "excerpts": [
+                  "FTC Announces Crackdown on Deceptive AI Claims and Schemes ... September 25, 2024"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.recent_changes[3].source_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gdpr-info.eu/art-3-gdpr",
+                "title": "Art. 3 GDPR \u2013 Territorial scope - General Data Protection ...",
+                "excerpts": [
+                  "This Regulation applies to the processing of personal data of data subjects who are in the Union by a controller or processor not established in the Union, where the processing activities are related to: the offering of goods or services... to such data subjects in the Union; or the monitoring of their behaviour"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG%3A2002L0058%3A20091219%3AEN%3AHTML",
+                "title": "Consolidated TEXT: 32002L0058 - EUR-Lex - European Union",
+                "excerpts": [
+                  "Member States shall ensure that the storing of information, or the gaining of access to information already stored, in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned has given his or her consent, having been provided with clear and comprehensive information"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_23_3721/IP_23_3721_EN.pdf",
+                "title": "Data Protection: European Commission adopts new adequacy ...",
+                "excerpts": [
+                  "Today, the European Commission adopted its adequacy decision for the EU-U.S. Data Privacy Framework... US companies will be able to join... by committing to comply with a detailed set of privacy obligations... a newly created Data Protection Review Court (DPRC)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+                "title": "The Court of Justice invalidates Decision 2016/1250 on ... - curia",
+                "excerpts": [
+                  "The Court of Justice invalidates Decision 2016/1250... Commission Decision 2010/87 on standard contractual clauses... is valid... a level of protection essentially equivalent... supervisory authorities are required to suspend or prohibit a transfer"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://dataprotection.ie/en/news-media/press-releases/Data-Protection-Commission-announces-conclusion-of-inquiry-into-Meta-Ireland",
+                "title": "Data Protection Commission announces conclusion of ...",
+                "excerpts": [
+                  "an administrative fine in the amount of \u20ac1.2 billion... requiring Meta Ireland to suspend any future transfer of personal data to the US within the period of five months"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://ftc.gov/legal-library/browse/statutes/federal-trade-commission-act",
+                "title": "Federal Trade Commission Act",
+                "excerpts": [
+                  "15 U.S.C. \u00a7\u00a7 41-58... prevent... unfair or deceptive acts or practices in or affecting commerce"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&lawCode=CIV&part=4.&title=1.81.5",
+                "title": "the full text of the CCPA - California Legislative Information",
+                "excerpts": [
+                  "1798.100(d) A business that collects a consumer's personal information and... discloses it to a service provider or contractor for a business purpose shall enter into an agreement... that: (1) Specifies that the personal information is... disclosed... only for limited and specified purposes. (2) Obligates the... service provider... to comply with applicable obligations under this title"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              },
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32024R1689",
+                "title": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+                "excerpts": [
+                  "Recital 179: This Regulation should apply from 2 August 2026... the prohibitions... should already apply from 2 February 2025... obligations for providers of general-purpose AI models should apply from 2 August 2025"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://gdpr-info.eu/art-3-gdpr",
+                "title": "Art. 3 GDPR \u2013 Territorial scope - General Data Protection ...",
+                "excerpts": [
+                  "Art. 3 GDPR Territorial scope ... This Regulation applies to the processing of personal data of data subjects who are in the Union by a controller or processor not established in the Union, where the processing activities are related to: the offering of goods or services... or the monitoring of their behaviour"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[0]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_23_3721/IP_23_3721_EN.pdf",
+                "title": "Data Protection: European Commission adopts new adequacy ...",
+                "excerpts": [
+                  "Brussels, 10 July 2023 ... the European Commission adopted its adequacy decision for the EU-U.S. Data Privacy Framework... US companies will be able to join... by committing to comply with a detailed set of privacy obligations... Data Protection Review Court (DPRC)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[1]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://curia.europa.eu/jcms/upload/docs/application/pdf/2020-07/cp200091en.pdf",
+                "title": "The Court of Justice invalidates Decision 2016/1250 on ... - curia",
+                "excerpts": [
+                  "Judgment in Case C-311/18 ... The Court of Justice invalidates Decision 2016/1250 on the adequacy of the protection provided by the EU-US Data Protection Shield ... Commission Decision 2010/87 on standard contractual clauses... is valid... a level of protection essentially equivalent"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[2]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML?uri=CELEX%3A32021D0914",
+                "title": "L_2021199EN.01003101.xml - EUR-Lex - European Union",
+                "excerpts": [
+                  "COMMISSION IMPLEMENTING DECISION (EU) 2021/914 of 4 June 2021 on standard contractual clauses for the transfer of personal data to third countries pursuant to Regulation (EU) 2016/679"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[3]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://dataprotection.ie/en/news-media/press-releases/Data-Protection-Commission-announces-conclusion-of-inquiry-into-Meta-Ireland",
+                "title": "Data Protection Commission announces conclusion of ...",
+                "excerpts": [
+                  "22nd May 2023 ... Meta Ireland infringed Article 46(1) GDPR when it continued to transfer personal data from the EU/EEA to the USA following... the CJEU's judgment ... an administrative fine in the amount of \u20ac1.2 billion"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[4]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG%3A2002L0058%3A20091219%3AEN%3AHTML",
+                "title": "Consolidated TEXT: 32002L0058 - EUR-Lex - European Union",
+                "excerpts": [
+                  "Article 5 ... 3. Member States shall ensure that the storing of information, or the gaining of access to information already stored, in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned has given his or her consent, having been provided with clear and comprehensive information"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[5]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32024R1689",
+                "title": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+                "excerpts": [
+                  "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 ... (Artificial Intelligence Act) ... Recital 179: This Regulation should apply from 2 August 2026... the prohibitions... should already apply from 2 February 2025... general-purpose AI models... from 2 August 2025"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[6]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/legal-library/browse/statutes/federal-trade-commission-act",
+                "title": "Federal Trade Commission Act",
+                "excerpts": [
+                  "15 U.S.C. \u00a7\u00a7 41-58, as amended ... prevent... unfair or deceptive acts or practices in or affecting commerce"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[7]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&lawCode=CIV&part=4.&title=1.81.5",
+                "title": "the full text of the CCPA - California Legislative Information",
+                "excerpts": [
+                  "TITLE 1.81.5. California Consumer Privacy Act of 2018 [1798.100 - 1798.199.100] ... 1798.100(d) ... shall enter into an agreement... (1) Specifies that the personal information is... disclosed... only for limited and specified purposes. (2) Obligates the... service provider... to provide the same level of privacy protection"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[8]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://federalregister.gov/documents/2022/10/14/2022-22531/enhancing-safeguards-for-united-states-signals-intelligence-activities",
+                "title": "Enhancing Safeguards for United States Signals ...",
+                "excerpts": [
+                  "Executive Order 14086 ... October 7, 2022 ... Sec. 2... necessary... proportionate... Sec. 3. Signals Intelligence Redress Mechanism... Data Protection Review Court"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[9]"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes",
+                "title": "FTC Announces Crackdown on Deceptive AI Claims and ...",
+                "excerpts": [
+                  "FTC Announces Crackdown on Deceptive AI Claims and Schemes ... September 25, 2024 ... five law enforcement actions ... there is no AI exemption from the laws on the books"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$.sources[10]"
+          }
+        ]
+      }
+    }
+  }
+}
