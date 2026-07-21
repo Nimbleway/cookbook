@@ -84,14 +84,17 @@ def agent_id() -> str:
 
 
 def safe(method, url, tries=4, **kw):
+    last = None
     for _ in range(tries):
         try:
             r = requests.request(method, url, headers=C.HEADERS, timeout=90, **kw)
             if r.status_code in (200, 201, 202) and r.text.strip():
                 return r.json()
-        except Exception:
-            pass
+            last = f"HTTP {r.status_code}: {r.text[:120]!r}"
+        except Exception as e:  # noqa: BLE001
+            last = repr(e)
         time.sleep(5)
+    print(f"    request failed after {tries} tries: {method} .../{url.rsplit('/', 1)[-1]} — {last}")
     return None
 
 

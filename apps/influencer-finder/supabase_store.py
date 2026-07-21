@@ -43,7 +43,7 @@ def fetch_all():
             if len(chunk) < size:
                 break
             page += 1
-        return rows or None   # empty table -> None so the caller falls back to the local cache
+        return rows   # connected -> return rows (even []); only None means "Supabase unavailable"
     except Exception as e:  # noqa: BLE001
         print(f"  supabase fetch failed ({e})")
         return None
