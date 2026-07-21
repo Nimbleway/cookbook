@@ -1,0 +1,843 @@
+{
+  "query": "Vegan food creators on Instagram, 20k-200k followers, US",
+  "slug": "vegan-food-creators-on-instagram-20k-200k-follower-4dd6ae",
+  "status": "completed",
+  "run_id": "task_run_9acf427a441341da9dcca9d46eba6abd",
+  "fetched_at": "2026-07-21T11:03:12+00:00",
+  "result": {
+    "run": {
+      "id": "task_run_9acf427a441341da9dcca9d46eba6abd",
+      "interaction_id": "task_run_9acf427a441341da9dcca9d46eba6abd",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find at least 20 distinct creators: Vegan food creators on Instagram, 20k-200k followers, US",
+      "created_at": "2026-07-21T10:42:44.915463Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-21T10:42:45.375636Z",
+      "completed_at": "2026-07-21T11:02:53.905098Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "niche": "Vegan / plant-based recipes",
+          "handle": "veganreset",
+          "contact": null,
+          "location": "United States",
+          "platform": "Instagram",
+          "bio_summary": "Plant-Based Living Made Easy. Quick, easy & delicious recipes, practical guides & more. By Kim-Julie Hansen, certified holistic nutritionist.",
+          "observed_at": "2026-07-21",
+          "profile_url": "https://www.instagram.com/veganreset",
+          "follower_count": "170486",
+          "engagement_rate": null
+        },
+        {
+          "niche": "Vegan / plant-based recipes",
+          "handle": "connoisseurusveg",
+          "contact": null,
+          "location": "United States",
+          "platform": "Instagram",
+          "bio_summary": "Plant-based recipes for food lovers. No meat, no fuss\u2014just really good vegan food.",
+          "observed_at": "2026-07-21",
+          "profile_url": "https://www.instagram.com/connoisseurusveg",
+          "follower_count": "29313",
+          "engagement_rate": null
+        },
+        {
+          "niche": "Vegan / plant-based recipes",
+          "handle": "thefullhelping",
+          "contact": null,
+          "location": "New York, NY, USA",
+          "platform": "Instagram",
+          "bio_summary": "Registered dietitian, NYC. Writer, maker, and eater of vegan recipes. A GRAIN, A GREEN, A BEAN is her latest cookbook.",
+          "observed_at": "2026-07-21",
+          "profile_url": "https://www.instagram.com/thefullhelping",
+          "follower_count": "86957",
+          "engagement_rate": null
+        },
+        {
+          "niche": "Vegan / plant-based food",
+          "handle": "veganzinga",
+          "contact": null,
+          "location": "New York, NY, USA",
+          "platform": "Instagram",
+          "bio_summary": "your favorite (sober) vegan; vegan influencer; vegan food content",
+          "observed_at": "2026-07-21",
+          "profile_url": "https://www.instagram.com/veganzinga",
+          "follower_count": "128K",
+          "engagement_rate": null
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://instagram.com/veganreset",
+            "title": "instagram_profile_by_account",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://instagram.com/bestofvegan",
+            "title": "Best of Vegan\u00ae (@bestofvegan) \u00b7 New York, NY",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://instagram.com/connoisseurusveg",
+            "title": "instagram_profile_by_account",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://instagram.com/thefullhelping",
+            "title": "instagram_profile_by_account",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://instagram.com/veganzinga",
+            "title": "Nzinga Young | Vegan Influencer (@veganzinga)",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "high",
+        "reasoning": "High confidence - cells fill rate is 80% and trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganreset",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.account: \"veganreset\" ... data.profile_url: \"https://www.instagram.com/veganreset\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].handle"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganreset",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.profile_url: \"https://www.instagram.com/veganreset\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].platform"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganreset",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.profile_url: \"https://www.instagram.com/veganreset\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].profile_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganreset",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "Plant-Based Living Made Easy\ud83c\udf3f Quick, easy & delicious recipes, practical guides & more. By @kimjuliehansen"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].niche"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganreset",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.followers: 170486"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].follower_count"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganreset",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "No engagement rate field present in profile data"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[0].engagement_rate"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganreset",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "No public business email shown; external_url: https://veganreset.com/linkinbio"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[0].contact"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/bestofvegan",
+                "title": "Best of Vegan\u00ae (@bestofvegan) \u00b7 New York, NY",
+                "excerpts": [
+                  "Best of Vegan\u00ae (@bestofvegan) \u00b7 New York, NY; Vegan Reset is a featured contributor"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "aggregator"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].location"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganreset",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.biography: \"Plant-Based Living Made Easy\ud83c\udf3f Quick, easy & delicious recipes, practical guides & more.\\nBy @kimjuliehansen | certified holistic nutritionist\\nRECIPES\u2b07\ufe0f\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].bio_summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganreset",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "retrieved: 2026-07-21"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/connoisseurusveg",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.biography: \"Plant-based recipes for food lovers \ud83d\udc9a\\nNo meat, no fuss\u2014just really good vegan food.\\n\ud83d\udc47 Get the latest recipe!\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].bio_summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/connoisseurusveg",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "No public business email shown; external_url: https://linkin.bio/connoisseurusveg/"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[1].contact"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/connoisseurusveg",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "No engagement rate field present in profile data"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[1].engagement_rate"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/connoisseurusveg",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.followers: 29313"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].follower_count"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/connoisseurusveg",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.profile_url: \"https://www.instagram.com/connoisseurusveg\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].handle"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/connoisseurusveg",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.is_business_account: true; content images hosted on scontent-mia5-2 (Miami CDN)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].location"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/connoisseurusveg",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "Plant-based recipes for food lovers \ud83d\udc9a"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].niche"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/connoisseurusveg",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "retrieved: 2026-07-21"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/connoisseurusveg",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.profile_url: \"https://www.instagram.com/connoisseurusveg\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].platform"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/connoisseurusveg",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.profile_url: \"https://www.instagram.com/connoisseurusveg\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[1].profile_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/thefullhelping",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.biography: \"Registered dietitian, NYC. Writer, maker, and eater of vegan recipes. A GRAIN, A GREEN, A BEAN is my latest cookbook!\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].bio_summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/thefullhelping",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "No public business email shown"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[2].contact"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/thefullhelping",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "No engagement rate field present"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[2].engagement_rate"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/thefullhelping",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.followers: 86957"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].follower_count"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/thefullhelping",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.profile_url: \"https://www.instagram.com/thefullhelping\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].handle"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/thefullhelping",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "Registered dietitian, NYC. Writer, maker, and eater of vegan recipes."
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].location"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/thefullhelping",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "eater of vegan recipes"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].niche"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/thefullhelping",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "retrieved: 2026-07-21"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/thefullhelping",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.profile_url: \"https://www.instagram.com/thefullhelping\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].platform"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/thefullhelping",
+                "title": "instagram_profile_by_account",
+                "excerpts": [
+                  "data.profile_url: \"https://www.instagram.com/thefullhelping\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[2].profile_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganzinga",
+                "title": "Nzinga Young | Vegan Influencer (@veganzinga)",
+                "excerpts": [
+                  "your favorite (sober) vegan"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "aggregator"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].bio_summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganzinga",
+                "title": "Nzinga Young | Vegan Influencer (@veganzinga)",
+                "excerpts": [
+                  "No public business email shown; linktr.ee/veganzinga"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "aggregator"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[3].contact"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganzinga",
+                "title": "Nzinga Young | Vegan Influencer (@veganzinga)",
+                "excerpts": [
+                  "No engagement rate shown"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "aggregator"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[3].engagement_rate"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganzinga",
+                "title": "Nzinga Young | Vegan Influencer (@veganzinga)",
+                "excerpts": [
+                  "*   128K followers"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "aggregator"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].follower_count"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganzinga",
+                "title": "Nzinga Young | Vegan Influencer (@veganzinga)",
+                "excerpts": [
+                  "## veganzinga"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "aggregator"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].handle"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganzinga",
+                "title": "Nzinga Young | Vegan Influencer (@veganzinga)",
+                "excerpts": [
+                  "NYC Life; NYC Restaurants highlights"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "aggregator"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].location"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganzinga",
+                "title": "Nzinga Young | Vegan Influencer (@veganzinga)",
+                "excerpts": [
+                  "Nzinga Young | Vegan Influencer"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "aggregator"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].niche"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganzinga",
+                "title": "Nzinga Young | Vegan Influencer (@veganzinga)",
+                "excerpts": [
+                  "retrieved: 2026-07-21"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "aggregator"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganzinga",
+                "title": "Nzinga Young | Vegan Influencer (@veganzinga)",
+                "excerpts": [
+                  "https://instagram.com/veganzinga"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "aggregator"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].platform"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://instagram.com/veganzinga",
+                "title": "Nzinga Young | Vegan Influencer (@veganzinga)",
+                "excerpts": [
+                  "url: https://instagram.com/veganzinga"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "aggregator"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].profile_url"
+          }
+        ]
+      }
+    }
+  }
+}

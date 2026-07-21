@@ -1,0 +1,235 @@
+{
+  "query": "Ethical and capsule-wardrobe creators on TikTok, 50k-300k followers, UK",
+  "slug": "ethical-and-capsule-wardrobe-creators-on-tiktok-50-411ea3",
+  "status": "completed",
+  "run_id": "task_run_8851b4bc0a304fe7ac5e6801e06f8be5",
+  "fetched_at": "2026-07-21T11:29:34+00:00",
+  "result": {
+    "run": {
+      "id": "task_run_8851b4bc0a304fe7ac5e6801e06f8be5",
+      "interaction_id": "task_run_8851b4bc0a304fe7ac5e6801e06f8be5",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find at least 20 distinct creators: Ethical and capsule-wardrobe creators on TikTok, 50k-300k followers, UK",
+      "created_at": "2026-07-21T11:09:06.898234Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-21T11:09:07.012012Z",
+      "completed_at": "2026-07-21T11:29:28.521905Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "niche": "minimalist/capsule wardrobe stylist",
+          "handle": "ashmanmolly",
+          "contact": "[email redacted]",
+          "location": "London, UK",
+          "platform": "TikTok",
+          "bio_summary": "STYLIST \ud83d\udc81\ud83c\udffb\u200d\u2640\ufe0f yapper | London\ud83d\udccd | Mgmt: [email redacted]",
+          "observed_at": "2026-07-21",
+          "profile_url": "https://www.tiktok.com/@ashmanmolly",
+          "follower_count": "66.2k",
+          "engagement_rate": null
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://tiktok.com/@ashmanmolly?lang=en",
+            "title": "tiktok_account",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          }
+        ],
+        "confidence": "high",
+        "reasoning": "High confidence - cells fill rate is 90% and trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://tiktok.com/@ashmanmolly?lang=en",
+                "title": "tiktok_account",
+                "excerpts": [
+                  "data.nickname: \"Molly Ashman || Stylist\" ... data.description: \"@ashmanmolly 66.2k Followers, 1054 Following, 2.3m Likes\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].handle"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tiktok.com/@ashmanmolly?lang=en",
+                "title": "tiktok_account",
+                "excerpts": [
+                  "corpus-meta ... \"url\": \"https://tiktok.com\" ... \"source_category\": \"official\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].platform"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tiktok.com/@ashmanmolly?lang=en",
+                "title": "tiktok_account",
+                "excerpts": [
+                  "data.description: \"@ashmanmolly 66.2k Followers, 1054 Following, 2.3m Likes - Watch awesome short videos created by Molly Ashman || Stylist\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].profile_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tiktok.com/@ashmanmolly?lang=en",
+                "title": "tiktok_account",
+                "excerpts": [
+                  "data.description: \"@ashmanmolly 66.2k Followers, 1054 Following, 2.3m Likes\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].follower_count"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tiktok.com/@ashmanmolly?lang=en",
+                "title": "tiktok_account",
+                "excerpts": [
+                  "data.description: \"@ashmanmolly 66.2k Followers, 1054 Following, 2.3m Likes - Watch awesome short videos created by Molly Ashman || Stylist\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[0].engagement_rate"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tiktok.com/@ashmanmolly?lang=en",
+                "title": "tiktok_account",
+                "excerpts": [
+                  "data.biography: \"STYLIST \ud83d\udc81\ud83c\udffb\u200d\u2640\ufe0f yapper\\nLondon\ud83d\udccd\\nMgmt: [email redacted]\" ... top post: \"#minimalstyle #creatorsearchinsights\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].niche"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tiktok.com/@ashmanmolly?lang=en",
+                "title": "tiktok_account",
+                "excerpts": [
+                  "data.biography: \"STYLIST \ud83d\udc81\ud83c\udffb\u200d\u2640\ufe0f yapper\\nLondon\ud83d\udccd\\nMgmt: [email redacted]\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].bio_summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tiktok.com/@ashmanmolly?lang=en",
+                "title": "tiktok_account",
+                "excerpts": [
+                  "data.biography: \"STYLIST \ud83d\udc81\ud83c\udffb\u200d\u2640\ufe0f yapper\\nLondon\ud83d\udccd\\nMgmt: [email redacted]\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].location"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tiktok.com/@ashmanmolly?lang=en",
+                "title": "tiktok_account",
+                "excerpts": [
+                  "data.biography: \"STYLIST \ud83d\udc81\ud83c\udffb\u200d\u2640\ufe0f yapper\\nLondon\ud83d\udccd\\nMgmt: [email redacted]\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].contact"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://tiktok.com/@ashmanmolly?lang=en",
+                "title": "tiktok_account",
+                "excerpts": [
+                  "corpus-meta ... \"retrieved\": \"2026-07-21\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (official)",
+            "path": "$[0].observed_at"
+          }
+        ]
+      }
+    }
+  }
+}
