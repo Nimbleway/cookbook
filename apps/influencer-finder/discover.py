@@ -135,7 +135,12 @@ def run_query(aid: str, query: str) -> dict:
 def build_dataset() -> list:
     """Parse all cached raw into a deduped list of influencer rows."""
     best = {}  # key -> (recency_tuple, row); on a duplicate creator the freshest observation wins
-    for d in (json.loads(f.read_text()) for f in C.RAW.glob("*.json")):
+    for f in C.RAW.glob("*.json"):
+        try:
+            d = json.loads(f.read_text())
+        except (json.JSONDecodeError, OSError) as e:  # a truncated/corrupt cache file must not abort the build
+            print(f"  skipping unreadable cache {f.name}: {e}")
+            continue
         if d.get("status") != "completed":
             continue
         content = (d.get("result") or {}).get("output", {}).get("content")
@@ -187,6 +192,7 @@ def main():
     aid = agent_id()
     queries = [args.query] if args.query else [
         q.strip() for q in C.QUERIES_FILE.read_text().splitlines() if q.strip() and not q.startswith("#")]
+    queries = list(dict.fromkeys(queries))   # dedup so duplicates don't race on the same cache slug
 
     def done(query):  # only a COMPLETED cache counts as done; failed/timeout re-runs
         p = C.RAW / f"{slugify(query)}.json"
