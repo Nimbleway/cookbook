@@ -126,16 +126,14 @@ def run_query(aid: str, query: str) -> dict:
 
 def build_dataset() -> list:
     """Parse all cached raw into a deduped list of influencer rows."""
-    seen, rows = set(), []
-    # newest first, so on a duplicate creator the freshest record wins (not filename order)
-    payloads = [json.loads(f.read_text()) for f in C.RAW.glob("*.json")]
-    payloads.sort(key=lambda d: d.get("fetched_at") or "", reverse=True)
-    for d in payloads:
+    best = {}  # key -> (recency_tuple, row); on a duplicate creator the freshest observation wins
+    for d in (json.loads(f.read_text()) for f in C.RAW.glob("*.json")):
         if d.get("status") != "completed":
             continue
         content = (d.get("result") or {}).get("output", {}).get("content")
         if not isinstance(content, list):
             continue
+        fetched_at = d.get("fetched_at") or ""
         for r in content:
             if not isinstance(r, dict):
                 continue
@@ -144,10 +142,11 @@ def build_dataset() -> list:
             if not platform or not handle:
                 continue
             key = (platform.lower(), handle.lower())
-            if key in seen:
+            # prefer the newest observation: observed_at primary, fetched_at as fallback
+            recency = (str(r.get("observed_at") or ""), fetched_at)
+            if key in best and recency <= best[key][0]:
                 continue
-            seen.add(key)
-            rows.append({
+            best[key] = (recency, {
                 "platform": platform, "handle": handle,
                 "category": category_from_query(d.get("query")),
                 "profile_url": r.get("profile_url"),
@@ -159,6 +158,7 @@ def build_dataset() -> list:
                 "contact": r.get("contact"), "bio_summary": r.get("bio_summary"),
                 "query": d.get("query"), "observed_at": r.get("observed_at"),
             })
+    rows = [v[1] for v in best.values()]
     rows.sort(key=lambda x: x.get("follower_count_num") or 0, reverse=True)
     (C.DATA / "influencers.json").write_text(json.dumps(rows, indent=2))
     n_up = supabase_store.upsert(rows)
