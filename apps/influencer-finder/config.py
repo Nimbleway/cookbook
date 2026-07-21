@@ -4,13 +4,12 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-load_dotenv()
+APP_DIR = Path(__file__).parent
+load_dotenv(APP_DIR / ".env")   # load the app's .env regardless of the process working directory
 
 BASE_URL = "https://sdk.nimbleway.com/v1"
 NIMBLE_API_KEY = os.getenv("NIMBLE_API_KEY")
 HEADERS = {"Authorization": f"Bearer {NIMBLE_API_KEY}"}
-
-APP_DIR = Path(__file__).parent
 DATA = APP_DIR / "data"
 RAW = DATA / "raw"
 AGENTS_FILE = APP_DIR / "agents.json"

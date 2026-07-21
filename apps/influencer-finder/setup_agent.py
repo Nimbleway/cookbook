@@ -12,8 +12,14 @@ def main():
     if not C.NIMBLE_API_KEY:
         sys.exit("NIMBLE_API_KEY not set")
     if C.AGENTS_FILE.exists():
-        print("agents.json exists — reusing", json.loads(C.AGENTS_FILE.read_text()))
-        return
+        try:
+            existing = json.loads(C.AGENTS_FILE.read_text())
+        except json.JSONDecodeError:
+            existing = None
+        if isinstance(existing, dict) and existing.get("influencer_finder"):
+            print("agents.json valid — reusing", existing)
+            return
+        print("agents.json present but missing a valid 'influencer_finder' id — recreating")
     r = requests.post(f"{C.BASE_URL}/task-agents", headers=C.HEADERS, json=INFLUENCER_FINDER, timeout=120)
     r.raise_for_status()
     ids = {"influencer_finder": r.json()["id"]}
