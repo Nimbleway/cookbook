@@ -63,12 +63,17 @@ def run_topic(aid: str, topic: str) -> dict:
             return {"topic": topic, "slug": slug, "status": "timeout", "run_id": rid}
         time.sleep(C.POLL_SECONDS)
     res = safe("GET", f"{C.BASE_URL}/task-agents/{aid}/runs/{rid}/result") or {}
-    payload = {"topic": topic, "slug": slug, "status": run.get("status"), "run_id": rid,
+    status = run.get("status")
+    # Don't cache an empty result as "completed" (the result fetch may have exhausted retries);
+    # downgrade so done() re-runs it instead of leaving the brief permanently missing.
+    if status == "completed" and not (res.get("output", {}) or {}).get("content"):
+        status = "result_missing"
+    payload = {"topic": topic, "slug": slug, "status": status, "run_id": rid,
                "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "result": res}
     (C.RAW / f"{slug}.json").write_text(json.dumps(payload, indent=2))
-    n = len((res.get("output", {}).get("content") or {}).get("applicable_regulations") or []) if run.get("status") == "completed" else 0
-    print(f"  [{slug}] {run.get('status')}  regs={n}  {int(time.time()-t0)}s")
-    return {"topic": topic, "slug": slug, "status": run.get("status")}
+    n = len((res.get("output", {}).get("content") or {}).get("applicable_regulations") or []) if status == "completed" else 0
+    print(f"  [{slug}] {status}  regs={n}  {int(time.time()-t0)}s")
+    return {"topic": topic, "slug": slug, "status": status}
 
 
 def _public(url):
@@ -189,8 +194,11 @@ def main():
         print(f"[{datetime.now(timezone.utc).isoformat(timespec='seconds')}] running {len(todo)} topics @ concurrency {C.CONCURRENCY}")
         with ThreadPoolExecutor(max_workers=C.CONCURRENCY) as ex:
             futs = [ex.submit(run_topic, aid, t) for t in todo]
-            for _ in as_completed(futs):
-                pass
+            for fut in as_completed(futs):
+                try:
+                    fut.result()   # surface worker exceptions instead of silently dropping them
+                except Exception as e:  # noqa: BLE001
+                    print(f"  worker error: {e!r}")
     else:
         print("all topics already cached")
     render_all()
