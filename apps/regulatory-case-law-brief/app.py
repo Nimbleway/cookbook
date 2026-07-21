@@ -1,5 +1,6 @@
 """Regulatory & Case-Law Brief — Streamlit viewer. Reads structured data/briefs.json.
 Run: streamlit run app.py"""
+import html
 import json
 import re
 
@@ -39,11 +40,11 @@ def readable_summary(s: str) -> str:
     return s.strip()
 
 
-labels = {b["subject"]: b for b in briefs}
-choice = st.selectbox("Topic", list(labels))
-b = labels[choice]
+# index by position (subjects can collide; a dict keyed on subject would drop briefs)
+idx = st.selectbox("Topic", range(len(briefs)), format_func=lambda i: briefs[i]["subject"])
+b = briefs[idx]
 
-st.markdown(f'<span class="chip">📍 {b.get("jurisdiction","—")}</span>', unsafe_allow_html=True)
+st.markdown(f'<span class="chip">📍 {html.escape(str(b.get("jurisdiction", "—")))}</span>', unsafe_allow_html=True)
 c1, c2, c3, c4 = st.columns(4)
 c1.metric("Regulations", len(b.get("regulations", [])))
 c2.metric("Key cases", len(b.get("cases", [])))
