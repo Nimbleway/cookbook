@@ -31,7 +31,10 @@ def slugify(s: str) -> str:
 def agent_id() -> str:
     if not C.AGENTS_FILE.exists():
         sys.exit("agents.json missing — run setup_agent.py first")
-    return json.loads(C.AGENTS_FILE.read_text())["legal_brief"]
+    try:
+        return json.loads(C.AGENTS_FILE.read_text())["legal_brief"]
+    except (json.JSONDecodeError, KeyError):
+        sys.exit("agents.json is malformed or missing the 'legal_brief' id — delete it and re-run setup_agent.py")
 
 
 def safe(method, url, tries=4, **kw):

@@ -27,7 +27,11 @@ st.title("⚖️ Regulatory & Case-Law Brief")
 st.caption("Cited compliance briefs from primary sources · powered by Nimble Web Search Agents")
 
 path = C.DATA / "briefs.json"
-briefs = json.loads(path.read_text()) if path.exists() else []
+try:
+    briefs = json.loads(path.read_text()) if path.exists() else []
+except (json.JSONDecodeError, OSError) as e:
+    st.error(f"Could not read {path.name} ({e}). Re-run `python run_brief.py`.")
+    st.stop()
 if not briefs:
     st.warning("No briefs yet. Run `python run_brief.py`.")
     st.stop()
