@@ -130,16 +130,18 @@ def structured_brief(output: dict) -> dict:
                 return u
         return None
 
+    # `if isinstance(..., dict)` skips a malformed (non-dict) list item without aborting the
+    # whole render; enumerate keeps i aligned to the original array position for the claim path.
     regs = [{"name": r.get("name", ""), "jurisdiction": r.get("jurisdiction"),
              "requirement": r.get("requirement"),
              "url": item_url(f"$.applicable_regulations[{i}]", ".citation_url", ".name")}
-            for i, r in enumerate(content.get("applicable_regulations") or [])]
+            for i, r in enumerate(content.get("applicable_regulations") or []) if isinstance(r, dict)]
     cases = [{"case_name": c.get("case_name", ""), "court": c.get("court"), "date": c.get("date"),
               "holding": c.get("holding"), "url": item_url(f"$.key_cases[{i}]", ".citation_url", ".case_name")}
-             for i, c in enumerate(content.get("key_cases") or [])]
+             for i, c in enumerate(content.get("key_cases") or []) if isinstance(c, dict)]
     changes = [{"change": c.get("change", ""), "date": c.get("date"),
                 "url": item_url(f"$.recent_changes[{i}]", ".source_url", ".change")}
-               for i, c in enumerate(content.get("recent_changes") or [])]
+               for i, c in enumerate(content.get("recent_changes") or []) if isinstance(c, dict)]
     # Drop any URL claimed by more than one distinct item: a single page can't be the
     # item-specific primary source for several different statutes/cases/changes, so
     # presenting it as such is a wrong citation. A missing link beats a wrong one.
