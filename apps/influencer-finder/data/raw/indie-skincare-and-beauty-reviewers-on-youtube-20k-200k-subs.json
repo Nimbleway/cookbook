@@ -1,0 +1,460 @@
+{
+  "query": "Indie skincare and beauty reviewers on YouTube, 20k-200k subscribers, US",
+  "slug": "indie-skincare-and-beauty-reviewers-on-youtube-20k-200k-subs",
+  "status": "completed",
+  "run_id": "task_run_952ddba759bd44b58359fc44b3f83a8f",
+  "fetched_at": "2026-07-21T11:09:06+00:00",
+  "result": {
+    "run": {
+      "id": "task_run_952ddba759bd44b58359fc44b3f83a8f",
+      "interaction_id": "task_run_952ddba759bd44b58359fc44b3f83a8f",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find at least 20 distinct creators: Indie skincare and beauty reviewers on YouTube, 20k-200k subscribers, US",
+      "created_at": "2026-07-21T10:42:44.860388Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-21T10:42:45.136160Z",
+      "completed_at": "2026-07-21T11:08:56.527767Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "niche": "Indie skincare and beauty reviewer",
+          "handle": "AliceintheRabbitHole",
+          "contact": null,
+          "location": "United States",
+          "platform": "YouTube",
+          "bio_summary": "Ingredients-based skincare reviews channel covering indie and small skincare brands.",
+          "observed_at": "2026-07-21",
+          "profile_url": "https://www.youtube.com/@AliceintheRabbitHole",
+          "follower_count": "58.3K",
+          "engagement_rate": null
+        },
+        {
+          "niche": "Indie skincare and beauty reviewer",
+          "handle": "rayliur",
+          "contact": null,
+          "location": "New York City, United States",
+          "platform": "YouTube",
+          "bio_summary": "Cozy K-beauty skincare reviews from a New York City-based creator.",
+          "observed_at": "2026-07-21",
+          "profile_url": "https://www.youtube.com/@rayliur",
+          "follower_count": "24.7K",
+          "engagement_rate": null
+        },
+        "{\"bio_summary\": {\"@citation\": [{\"excerpt\": \"description: \\\"Just a lover of everything makeup. I got more serious about my makeup game about a year ago (mid 2017)\\\"\", \"url\": \"/pages/unknown/www-youtube-com-youtube_discover_channels-cd68b36b.md\"}], \"@reasoning\": \"Summarized from the channel's own description.\", \"@value\": \"Makeup lover reviewing beauty products, indie and mainstream brands.\"}, \"contact\": {\"@citation\": [{\"excerpt\": \"Annette's Makeup Corner - YouTube (no business email displayed)\", \"url\": \"/pages/socialblade.com/youtube-channel-uc6fsbfgxps5zrznoxo7rvdg-61e6fe80.md\"}], \"@reasoning\": \"No public business email found; not guessed.\", \"@value\": null}, \"engagement_rate\": {\"@citation\": [{\"excerpt\": \"Creator Statistics (no engagement-rate field displayed)\", \"url\": \"/pages/socialblade.com/youtube-channel-uc6fsbfgxps5zrznoxo7rvdg-61e6fe80.md\"}], \"@reasoning\": \"Engagement rate not shown; not invented.\", \"@value\": null}, \"follower_count\": {\"@citation\": [{\"excerpt\": \"subscribers 47.4K\", \"url\": \"/pages/socialblade.com/youtube-channel-uc6fsbfgxps5zrznoxo7rvdg"
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+            "title": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https:www.youtube.com",
+            "title": "youtube_discover_channels",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://youtube.com/channel/UCGkltVA9P07m4G-XveUqdxw/about",
+            "title": "https://www.youtube.com/channel/UCGkltVA9P07m4G-XveUqdxw/about",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          },
+          {
+            "url": "https://socialblade.com/youtube/c/rayliur",
+            "title": "https://socialblade.com/youtube/c/rayliur",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://youtube.com/channel/UC25G4k0hdKqmZLlivj0cN_g/about",
+            "title": "https://www.youtube.com/channel/UC25G4k0hdKqmZLlivj0cN_g/about",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "official",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - cells fill rate is 53% and trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "title": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "excerpts": [
+                  "### AliceintheRabbitHole@aliceintherabbithole"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].handle"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "title": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "excerpts": [
+                  "View on YouTube .../channel/UCGkltVA9P07m4G-XveUqdxw"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].platform"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "title": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "excerpts": [
+                  "View on YouTube https://www.youtube.com/channel/UCGkltVA9P07m4G-XveUqdxw"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].profile_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "description: \"Ingredients-Based Skincare Reviews Follow me on Facebook: Aliceintherabbithole\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].niche"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "title": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "excerpts": [
+                  "subscribers 58.3K"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].follower_count"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "title": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "excerpts": [
+                  "Creator Statistics (no engagement-rate field displayed)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[0].engagement_rate"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://youtube.com/channel/UCGkltVA9P07m4G-XveUqdxw/about",
+                "title": "https://www.youtube.com/channel/UCGkltVA9P07m4G-XveUqdxw/about",
+                "excerpts": [
+                  "AliceintheRabbitHole - YouTube (About page; no business email displayed)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[0].contact"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "title": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "excerpts": [
+                  "[US] Rank"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].location"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "description: \"Ingredients-Based Skincare Reviews Follow me on Facebook: Aliceintherabbithole Instagram: aliceintherabbithole.\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].bio_summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "title": "https://socialblade.com/youtube/channel/UCGkltVA9P07m4G-XveUqdxw",
+                "excerpts": [
+                  "retrieved 2026-07-21"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/rayliur",
+                "title": "https://socialblade.com/youtube/c/rayliur",
+                "excerpts": [
+                  "### RAYLIUR \u2022 Skincare Reviews@rayliur"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[1].handle"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/rayliur",
+                "title": "https://socialblade.com/youtube/c/rayliur",
+                "excerpts": [
+                  "View on YouTube https://www.youtube.com/channel/UC25G4k0hdKqmZLlivj0cN_g"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[1].platform"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/rayliur",
+                "title": "https://socialblade.com/youtube/c/rayliur",
+                "excerpts": [
+                  "View on YouTube https://www.youtube.com/channel/UC25G4k0hdKqmZLlivj0cN_g"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[1].profile_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "description: \"Cozy K-Beauty Skincare Reviews. NYC. Welcome to the cozy corner of the Internet. Ray (@rayliur) is a New York City-based\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].niche"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/rayliur",
+                "title": "https://socialblade.com/youtube/c/rayliur",
+                "excerpts": [
+                  "subscribers 24.7K"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[1].follower_count"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/rayliur",
+                "title": "https://socialblade.com/youtube/c/rayliur",
+                "excerpts": [
+                  "Creator Statistics (no engagement-rate field displayed)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[1].engagement_rate"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://youtube.com/channel/UC25G4k0hdKqmZLlivj0cN_g/about",
+                "title": "https://www.youtube.com/channel/UC25G4k0hdKqmZLlivj0cN_g/about",
+                "excerpts": [
+                  "RAYLIUR \u2022 Skincare Reviews - YouTube (About page; no business email displayed)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "official",
+                "source_intent": "official"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[1].contact"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "description: \"Cozy K-Beauty Skincare Reviews. NYC... Ray (@rayliur) is a New York City-based\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].location"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "description: \"Cozy K-Beauty Skincare Reviews. NYC. Welcome to the cozy corner of the Internet. Ray (@rayliur) is a New York City-based\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].bio_summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/rayliur",
+                "title": "https://socialblade.com/youtube/c/rayliur",
+                "excerpts": [
+                  "retrieved 2026-07-21"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[1].observed_at"
+          }
+        ]
+      }
+    }
+  }
+}

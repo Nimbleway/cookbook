@@ -1,0 +1,843 @@
+{
+  "query": "Minimalist and slow-living creators on YouTube, 20k-200k subscribers, US",
+  "slug": "minimalist-and-slow-living-creators-on-youtube-20k-200k-subs",
+  "status": "completed",
+  "run_id": "task_run_d9506331985e4a56b72d81bf3a932ba7",
+  "fetched_at": "2026-07-21T11:05:17+00:00",
+  "result": {
+    "run": {
+      "id": "task_run_d9506331985e4a56b72d81bf3a932ba7",
+      "interaction_id": "task_run_d9506331985e4a56b72d81bf3a932ba7",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find at least 20 distinct creators: Minimalist and slow-living creators on YouTube, 20k-200k subscribers, US",
+      "created_at": "2026-07-21T10:42:44.850569Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-21T10:42:45.065170Z",
+      "completed_at": "2026-07-21T11:05:07.202335Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "niche": "Minimalist and slow-living",
+          "handle": "margaretmatheny",
+          "contact": "margaret@margaretmatheny.co",
+          "location": "US",
+          "platform": "YouTube",
+          "bio_summary": "Simple home, recipes, slow living, motherhood",
+          "observed_at": "2026-07-21",
+          "profile_url": "https://www.youtube.com/@margaretmatheny",
+          "follower_count": "108K",
+          "engagement_rate": null
+        },
+        {
+          "niche": "Minimalist and slow-living",
+          "handle": "minimalease",
+          "contact": "becky@honestinfluence.io",
+          "location": "US",
+          "platform": "YouTube",
+          "bio_summary": "Minimalism and simple living channel; biz inquiries: becky@honestinfluence.io",
+          "observed_at": "2026-07-21",
+          "profile_url": "https://www.youtube.com/@minimalease",
+          "follower_count": "60.8K",
+          "engagement_rate": null
+        },
+        {
+          "niche": "Minimalist and slow-living",
+          "handle": "TheArmsteadFamily",
+          "contact": null,
+          "location": "US",
+          "platform": "YouTube",
+          "bio_summary": "A Christian family who are also minimalists",
+          "observed_at": "2026-07-21",
+          "profile_url": "https://www.youtube.com/@TheArmsteadFamily",
+          "follower_count": "23.6K",
+          "engagement_rate": null
+        },
+        {
+          "niche": "Minimalist and slow-living",
+          "handle": "TheFrugalMinimalist",
+          "contact": null,
+          "location": "US",
+          "platform": "YouTube",
+          "bio_summary": "Having grown up in poverty, overcame scarcity habits; frugal minimalism and simple living",
+          "observed_at": "2026-07-21",
+          "profile_url": "https://www.youtube.com/@TheFrugalMinimalist",
+          "follower_count": "63.2K",
+          "engagement_rate": null
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https://socialblade.com/youtube/handle/margaretmatheny",
+            "title": "https://socialblade.com/youtube/handle/margaretmatheny",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https:www.youtube.com",
+            "title": "youtube_discover_channels",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://socialblade.com/youtube/handle/minimalease",
+            "title": "https://socialblade.com/youtube/handle/minimalease",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://socialblade.com/youtube/c/thearmsteadfamily",
+            "title": "https://socialblade.com/youtube/c/thearmsteadfamily",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://socialblade.com/youtube/c/thefrugalminimalist",
+            "title": "https://socialblade.com/youtube/c/thefrugalminimalist",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "title": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "excerpts": [
+                  "Margaret Matheny | Simple Living@margaretmatheny"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].handle"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "title": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "excerpts": [
+                  "### Margaret Matheny | Simple Living@margaretmatheny"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].platform"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "title": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "excerpts": [
+                  "[View on YouTube](https://www.youtube.com/channel/UC_w1oqof_V7buKOfKF-CUtA)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].profile_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "title": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "excerpts": [
+                  "retrieved: \"2026-07-21\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "name: \"Margaret Matheny | Simple Living\" ... description: \"Simple home, recipes, slow living, motherhood\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].niche"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "title": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "excerpts": [
+                  "subscribers 108K"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].follower_count"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "title": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "excerpts": [
+                  "No engagement rate displayed on SocialBlade page"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[0].engagement_rate"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "description: \"Simple home, recipes, slow living, motherhood IG: @margaret.matheny partnerships: margaret@margaretmatheny.co.\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].contact"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "title": "https://socialblade.com/youtube/handle/margaretmatheny",
+                "excerpts": [
+                  "US Rank 1,987th"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].location"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "description: \"Simple home, recipes, slow living, motherhood IG: @margaret.matheny partnerships: margaret@margaretmatheny.co.\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].bio_summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/minimalease",
+                "title": "https://socialblade.com/youtube/handle/minimalease",
+                "excerpts": [
+                  "Minimal Ease@minimalease"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[1].handle"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/minimalease",
+                "title": "https://socialblade.com/youtube/handle/minimalease",
+                "excerpts": [
+                  "### Minimal Ease@minimalease"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[1].platform"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/minimalease",
+                "title": "https://socialblade.com/youtube/handle/minimalease",
+                "excerpts": [
+                  "[View on YouTube](https://www.youtube.com/channel/UCFcMy4yFbHn3CPvGqXipkCQ)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[1].profile_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/minimalease",
+                "title": "https://socialblade.com/youtube/handle/minimalease",
+                "excerpts": [
+                  "retrieved: \"2026-07-21\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[1].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "name: \"Minimal Ease\" ... description: \"JOIN THE NEW CHANNEL... biz inquiries: becky@honestinfluence.io.\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].niche"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/minimalease",
+                "title": "https://socialblade.com/youtube/handle/minimalease",
+                "excerpts": [
+                  "subscribers 60.8K"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[1].follower_count"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/minimalease",
+                "title": "https://socialblade.com/youtube/handle/minimalease",
+                "excerpts": [
+                  "No engagement rate displayed on SocialBlade page"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[1].engagement_rate"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "description: \"JOIN THE NEW CHANNEL https://www.youtube.com/@BeckyTruda biz inquiries: becky@honestinfluence.io.\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].contact"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/handle/minimalease",
+                "title": "https://socialblade.com/youtube/handle/minimalease",
+                "excerpts": [
+                  "US Rank 2,387th"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[1].location"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "name: \"Minimal Ease\" ... description: \"JOIN THE NEW CHANNEL... biz inquiries: becky@honestinfluence.io.\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].bio_summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "title": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "excerpts": [
+                  "Our Minimalist Life@thearmsteadfamily"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[2].handle"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "title": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "excerpts": [
+                  "### Our Minimalist Life@thearmsteadfamily"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[2].platform"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "title": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "excerpts": [
+                  "[View on YouTube](https://www.youtube.com/channel/UCGHtaTd5sfnOvAAwHmOAIqg)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[2].profile_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "title": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "excerpts": [
+                  "retrieved: \"2026-07-21\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[2].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "name: \"Our Minimalist Life\" ... description: \"A Christian family who are also minimalists.\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].niche"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "title": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "excerpts": [
+                  "subscribers 23.6K"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[2].follower_count"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "title": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "excerpts": [
+                  "No engagement rate displayed on SocialBlade page"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[2].engagement_rate"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "description: \"A Christian family who are also minimalists. We are happy you are here!\" \u2014 no business email shown"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[2].contact"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "title": "https://socialblade.com/youtube/c/thearmsteadfamily",
+                "excerpts": [
+                  "US Rank 2,759th"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[2].location"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "description: \"A Christian family who are also minimalists. We are happy you are here!\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[2].bio_summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "title": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "excerpts": [
+                  "The Frugal Minimalist@thefrugalminimalist"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].handle"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "title": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "excerpts": [
+                  "### The Frugal Minimalist@thefrugalminimalist"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].platform"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "title": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "excerpts": [
+                  "[View on YouTube](https://www.youtube.com/channel/UCyK4gDqgXia1a89ip0DglOA)"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].profile_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "title": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "excerpts": [
+                  "retrieved: \"2026-07-21\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "name: \"The Frugal Minimalist\" ... description: \"Having grown up in poverty, I had to overcome a lot...\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].niche"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "title": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "excerpts": [
+                  "subscribers 63.2K"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].follower_count"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "title": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "excerpts": [
+                  "No engagement rate displayed on SocialBlade page"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[3].engagement_rate"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "description: \"Having grown up in poverty, I had to overcome a lot...\" \u2014 no business email shown"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[3].contact"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "title": "https://socialblade.com/youtube/c/thefrugalminimalist",
+                "excerpts": [
+                  "US Rank 2,363rd"
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[3].location"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "description: \"Having grown up in poverty, I had to overcome a lot. I feel that the scarcity in my childhood directly affected my adult habits.\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[3].bio_summary"
+          }
+        ]
+      }
+    }
+  }
+}

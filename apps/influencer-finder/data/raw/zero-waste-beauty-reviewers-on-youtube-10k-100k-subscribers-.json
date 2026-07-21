@@ -1,0 +1,443 @@
+{
+  "query": "Zero-waste beauty reviewers on YouTube, 10k-100k subscribers, US",
+  "slug": "zero-waste-beauty-reviewers-on-youtube-10k-100k-subscribers-",
+  "status": "completed",
+  "run_id": "task_run_88cf1b383014472caaaf86de0394c04b",
+  "fetched_at": "2026-07-21T11:28:11+00:00",
+  "result": {
+    "run": {
+      "id": "task_run_88cf1b383014472caaaf86de0394c04b",
+      "interaction_id": "task_run_88cf1b383014472caaaf86de0394c04b",
+      "status": "completed",
+      "is_active": false,
+      "effort": "high",
+      "prompt": "Find at least 20 distinct creators: Zero-waste beauty reviewers on YouTube, 10k-100k subscribers, US",
+      "created_at": "2026-07-21T11:05:18.561252Z",
+      "web_search_agent_id": "wsa_example",
+      "started_at": "2026-07-21T11:05:18.635141Z",
+      "completed_at": "2026-07-21T11:27:51.815947Z",
+      "error": null
+    },
+    "output": {
+      "type": "json",
+      "content": [
+        {
+          "niche": "Zero-waste beauty reviewer",
+          "handle": "sustainablejungle",
+          "contact": null,
+          "location": "United States",
+          "platform": "YouTube",
+          "bio_summary": "We rate and review sustainable brands, share inspiring stories of change, and give you practical tips for living more consciously.",
+          "observed_at": "2026-07-21",
+          "profile_url": "https://www.youtube.com/channel/UCbupg4x_hUr-kw-TNZIVwuQ",
+          "follower_count": "16400",
+          "engagement_rate": null
+        },
+        {
+          "niche": "Zero-waste beauty reviewer",
+          "handle": "greenbeautychemist.",
+          "contact": null,
+          "location": "United States",
+          "platform": "YouTube",
+          "bio_summary": "Green Beauty Chemist is A Research & Development Cosmetic Chemist, Beauty Consultant & Formulation Instructor. Learn To formulate natural and organic skincare.",
+          "observed_at": "2026-07-21",
+          "profile_url": "https://www.youtube.com/channel/UCLILyRkEkHoKqOwcKpUAJuA",
+          "follower_count": "37100",
+          "engagement_rate": null
+        }
+      ],
+      "trust": {
+        "sources": [
+          {
+            "url": "https:www.youtube.com",
+            "title": "youtube_discover_channels",
+            "type": "secondary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://youtube.com/channel/UCbupg4x_hUr-kw-TNZIVwuQ/videos",
+            "title": "youtube_channel",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          },
+          {
+            "url": "https://youtube.com/channel/UCLILyRkEkHoKqOwcKpUAJuA/videos",
+            "title": "youtube_channel",
+            "type": "primary",
+            "extract_template_name": null,
+            "source_category": "other",
+            "source_intent": null
+          }
+        ],
+        "confidence": "medium",
+        "reasoning": "Medium confidence - trust per claim ratio is 100%",
+        "claims": [
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "data.data[15].handle: \"sustainablejungle\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].handle"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "data.data[15].type: \"Channel\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].platform"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "data.data[15].url: \"https://www.youtube.com/channel/UCbupg4x_hUr-kw-TNZIVwuQ\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].profile_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "data.data[15].subscribers: 16400"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].follower_count"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "No engagement rate shown in channel data"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[0].engagement_rate"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "We rate and review sustainable brands, share inspiring stories of change, and give you practical tips for living more consciously."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].niche"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "We rate and review sustainable brands, share inspiring stories of change, and give you practical tips for living more consciously."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].bio_summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://youtube.com/channel/UCbupg4x_hUr-kw-TNZIVwuQ/videos",
+                "title": "youtube_channel",
+                "excerpts": [
+                  "data.country: \"United States\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[0].location"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "No business email shown in channel description"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[0].contact"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "retrieved: 2026-07-21"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[0].observed_at"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "data.data[17].handle: \"greenbeautychemist.\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].handle"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "data.data[17].type: \"Channel\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].platform"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "data.data[17].url: \"https://www.youtube.com/channel/UCLILyRkEkHoKqOwcKpUAJuA\""
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].profile_url"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "data.data[17].subscribers: 37100"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].follower_count"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "No engagement rate shown in channel data"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[1].engagement_rate"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "Green Beauty Chemist is A Research & Development Cosmetic Chemist, Beauty Consultant & Formulation Instructor."
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].niche"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "Green Beauty Chemist is A Research & Development Cosmetic Chemist, Beauty Consultant & Formulation Instructor . Learn To"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].bio_summary"
+          },
+          {
+            "citations": [
+              {
+                "url": "https://youtube.com/channel/UCLILyRkEkHoKqOwcKpUAJuA/videos",
+                "title": "youtube_channel",
+                "excerpts": [
+                  "data.country: \"United States\""
+                ],
+                "extract_template_name": null,
+                "source_type": "primary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Backed by a primary source (other)",
+            "path": "$[1].location"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "No business email shown in channel description"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "high",
+            "reasoning": "Information absence is supported by cited evidence",
+            "path": "$[1].contact"
+          },
+          {
+            "citations": [
+              {
+                "url": "https:www.youtube.com",
+                "title": "youtube_discover_channels",
+                "excerpts": [
+                  "retrieved: 2026-07-21"
+                ],
+                "extract_template_name": null,
+                "source_type": "secondary",
+                "source_category": "other",
+                "source_intent": "other"
+              }
+            ],
+            "confidence": "medium",
+            "reasoning": "Backed by a secondary source (other)",
+            "path": "$[1].observed_at"
+          }
+        ]
+      }
+    }
+  }
+}
