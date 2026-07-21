@@ -78,7 +78,8 @@ def run_topic(aid: str, topic: str) -> dict:
     payload = {"topic": topic, "slug": slug, "status": status, "run_id": rid,
                "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "result": res}
     (C.RAW / f"{slug}.json").write_text(json.dumps(payload, indent=2))
-    n = len((res.get("output", {}).get("content") or {}).get("applicable_regulations") or []) if status == "completed" else 0
+    _c = res.get("output", {}).get("content")   # may be a non-dict on a malformed result
+    n = len(_c.get("applicable_regulations") or []) if status == "completed" and isinstance(_c, dict) else 0
     print(f"  [{slug}] {status}  regs={n}  {int(time.time()-t0)}s")
     return {"topic": topic, "slug": slug, "status": status}
 
@@ -212,6 +213,7 @@ def main():
     aid = agent_id()
     topics = [args.topic] if args.topic else [
         t.strip() for t in C.TOPICS_FILE.read_text().splitlines() if t.strip() and not t.startswith("#")]
+    topics = list(dict.fromkeys(topics))   # dedup so duplicates don't race on the same cache slug
 
     def done(topic):  # only a COMPLETED cache counts as done; failed/timeout re-runs
         p = C.RAW / f"{slugify(topic)}.json"
