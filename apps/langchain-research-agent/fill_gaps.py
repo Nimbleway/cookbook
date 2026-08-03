@@ -125,6 +125,31 @@ def get_json(url: str) -> dict | None:
     return None
 
 
+def fetch_result(aid: str, rid: str) -> dict | None:
+    """GET a run's result, tolerating 408.
+
+    408 on /result means "not ready yet", never an error: a run can report terminal a moment before
+    its result is retrievable. `get_json` would raise_for_status that into a hard failure and drop
+    the whole chunk, so the result endpoint gets its own bounded retry.
+    """
+    url = f"{BASE}/task-agents/{aid}/runs/{rid}/result"
+    for _ in range(5):
+        try:
+            r = requests.get(url, headers=H, timeout=60)
+            if r.status_code == 408:
+                time.sleep(POLL_SECONDS)
+                continue
+            r.raise_for_status()
+            return r.json()
+        except requests.RequestException as e:
+            log(f"  result for {rid} failed: {e}")
+        except ValueError:
+            log(f"  result for {rid} was not JSON: {r.text[:120]}")
+        time.sleep(POLL_SECONDS)
+    log(f"  result for {rid} never became retrievable — chunk skipped, run id kept for resume")
+    return None
+
+
 # ---------------------------------------------------------------- agent lifecycle
 def ensure_agent(initial_schema: dict) -> str:
     """Create the custom enrichment agent, or reuse the one recorded locally.
@@ -210,7 +235,7 @@ def collect_run(aid: str, rid: str) -> dict | None:
             return None
         time.sleep(POLL_SECONDS)
 
-    res = get_json(f"{BASE}/task-agents/{aid}/runs/{rid}/result")
+    res = fetch_result(aid, rid)
     if res is None:
         return None
     (RUNS / f"{rid}.json").write_text(json.dumps(res, indent=1))   # raw BEFORE transform
@@ -398,7 +423,10 @@ def main() -> int:
         names = list(esc)
         for start in range(0, len(names), args.chunk):
             chunk = names[start:start + args.chunk]
-            ck = ",".join(chunk)
+            # Resume key covers WHAT was asked, not just of whom: the same companies with a
+            # different set of missing columns is a different request, and reusing the old run id
+            # would merge results for fields this invocation never asked about.
+            ck = "|".join(f"{n}:{','.join(esc[n])}" for n in chunk)
             rid = state.get(ck)
             if rid:
                 log(f"  resuming chunk {start // args.chunk} run {rid}")
@@ -446,6 +474,12 @@ def main() -> int:
                                          "source": meta.get("url") or obj.get("source_url"),
                                          "confidence": conf}
                     tier_line(name, col, "agent", time.time() - t0, conf)
+
+            # Merged, so the run id has served its purpose. Leaving it behind is what makes a
+            # resume file go stale: a later invocation would replay this run instead of asking
+            # again. Only reached on a successful merge — a skipped chunk keeps its id.
+            state.pop(ck, None)
+            STATE.write_text(json.dumps(state, indent=1))
 
     meta = {k: v for k, v in
             ((f"{i}|{c}", d) for (i, c), d in filled.items())}
