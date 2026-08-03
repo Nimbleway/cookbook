@@ -24,6 +24,7 @@ import os
 import pathlib
 import sys
 import time
+from collections import Counter
 from datetime import datetime, timezone
 
 import requests
@@ -105,6 +106,25 @@ def build_schema(columns: list[str], key_column: str) -> dict:
     }
 
 
+# ---------------------------------------------------------------- http
+def get_json(url: str) -> dict | None:
+    """GET -> parsed JSON, or None if the request failed or the body was not JSON.
+
+    Polling a research run means minutes of GETs. A transient 502 or an HTML error page must
+    degrade to "no answer this time", never end the job.
+    """
+    r = None
+    try:
+        r = requests.get(url, headers=H, timeout=60)
+        r.raise_for_status()
+        return r.json()
+    except requests.RequestException as e:
+        log(f"  GET {url.rsplit('/', 1)[-1]} failed: {e}")
+    except ValueError:
+        log(f"  GET {url.rsplit('/', 1)[-1]} returned non-JSON: {(r.text if r else '')[:120]}")
+    return None
+
+
 # ---------------------------------------------------------------- agent lifecycle
 def ensure_agent(initial_schema: dict) -> str:
     """Create the custom enrichment agent, or reuse the one recorded locally.
@@ -139,14 +159,14 @@ def ensure_agent(initial_schema: dict) -> str:
 
     # Creating with an inline body may still not persist goals/sources (cf. Quirk 6 on clones).
     # Verify, and PATCH if the server dropped them.
-    got = requests.get(f"{BASE}/task-agents/{aid}", headers=H, timeout=60).json()
+    got = get_json(f"{BASE}/task-agents/{aid}") or {}
     if not got.get("goals") or not (got.get("sources") or {}).get("allow"):
         log("  goals/sources absent after create — PATCHing (Quirk 6)")
         requests.patch(f"{BASE}/task-agents/{aid}", headers=PH, timeout=60, json=[
             {"op": "replace", "path": "/goals", "value": GOALS},
             {"op": "replace", "path": "/sources", "value": SOURCES},
         ]).raise_for_status()
-        got = requests.get(f"{BASE}/task-agents/{aid}", headers=H, timeout=60).json()
+        got = get_json(f"{BASE}/task-agents/{aid}") or {}
 
     assert got.get("goals"), "goals did not persist"
     assert (got.get("sources") or {}).get("allow"), "sources did not persist"
@@ -166,22 +186,38 @@ def start_run(aid: str, prompt: str, schema: dict) -> str:
 def collect_run(aid: str, rid: str) -> dict | None:
     """Poll to terminal state, then fetch. 408 means still active — never an error."""
     t0 = time.time()
+    misses = 0
     while True:
-        run = requests.get(f"{BASE}/task-agents/{aid}/runs/{rid}", headers=H, timeout=60).json()
-        if not run["is_active"]:
+        run = get_json(f"{BASE}/task-agents/{aid}/runs/{rid}")
+        if run is None:
+            # A run id is durable, so an unreadable status is worth retrying rather than losing
+            # the chunk. Back off, and give up only after several consecutive failures.
+            misses += 1
+            if misses > 5:
+                log(f"  run {rid}: status unreadable 5x — abandoning this chunk")
+                return None
+            time.sleep(POLL_SECONDS * misses)
+            continue
+        misses = 0
+        if not run.get("is_active"):
             break
         if time.time() - t0 > 1800:
             log(f"  run {rid} exceeded 30 min — cancelling")
-            requests.post(f"{BASE}/task-agents/{aid}/runs/{rid}/cancel", headers=H, timeout=60)
+            try:
+                requests.post(f"{BASE}/task-agents/{aid}/runs/{rid}/cancel", headers=H, timeout=60)
+            except requests.RequestException as e:
+                log(f"  cancel failed: {e}")
             return None
         time.sleep(POLL_SECONDS)
 
-    res = requests.get(f"{BASE}/task-agents/{aid}/runs/{rid}/result", headers=H, timeout=60)
-    (RUNS / f"{rid}.json").write_text(json.dumps(res.json(), indent=1))   # raw BEFORE transform
-    if run["status"] != "completed":
-        log(f"  run {rid} {run['status']}: {(run.get('error') or {}).get('message', '')[:80]}")
+    res = get_json(f"{BASE}/task-agents/{aid}/runs/{rid}/result")
+    if res is None:
         return None
-    return res.json()
+    (RUNS / f"{rid}.json").write_text(json.dumps(res, indent=1))   # raw BEFORE transform
+    if run.get("status") != "completed":
+        log(f"  run {rid} {run.get('status')}: {(run.get('error') or {}).get('message', '')[:80]}")
+        return None
+    return res
 
 
 # ---------------------------------------------------------------- trust -> cells
@@ -296,6 +332,20 @@ def main() -> int:
         log("empty input"); return 1
     columns = list(rows[0].keys())
     key = args.key_column
+    if key not in columns:
+        log(f"--key-column '{key}' is not in {args.input}"); log(f"columns: {', '.join(columns)}")
+        return 1
+
+    # Every internal map is keyed on this column, and tier-3 results are joined back on it. So the
+    # column has to identify a row uniquely — otherwise duplicates silently overwrite each other's
+    # blanks and research lands on the wrong row. Say so up front instead of producing bad output.
+    dupes = [v for v, n in Counter(r[key] for r in rows).items() if n > 1]
+    if dupes:
+        log(f"--key-column '{key}' has duplicate values: {', '.join(dupes[:5])}"
+            f"{f' (+{len(dupes) - 5} more)' if len(dupes) > 5 else ''}")
+        log("each row must be uniquely identified — add an id column and pass --key-column id")
+        return 1
+
     blanks = {r[key]: [c for c in columns if c != key and not (r.get(c) or "").strip()]
               for r in rows}
 
