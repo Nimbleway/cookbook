@@ -318,10 +318,15 @@ def match_key(name: str, keys: list[str]) -> str | None:
         return None
 
     def score(k: str) -> float:
+        # Match on WORD boundaries, not raw substrings: "Ramp" must not claim a row about
+        # "Rampart", and a two-token watchlist name must not half-match an unrelated company.
         toks = [w for w in k.lower().split() if len(w) > 2]
-        return sum(1 for w in toks if w in n) / max(len(toks), 1)
+        hits = sum(1 for w in toks if re.search(rf"\b{re.escape(w)}\b", n))
+        return hits / max(len(toks), 1)
 
-    best = max(keys, key=score)
+    # Ties go to the longest watchlist name, so "Acme Health" wins over "Acme" on a row that
+    # names both. Attributing a signal to the wrong account is worse than reporting none.
+    best = max(keys, key=lambda k: (score(k), len(k)))
     return best if score(best) >= 0.5 else None
 
 
@@ -496,6 +501,11 @@ def new_since(cutoff: str, cycle_at: str) -> list[dict]:
         "ORDER BY event_date DESC", (cutoff[:10],)).fetchall()
     out = []
     for r in rows:
+        # A `low` claim means unverified, not false. It stays in the ledger and in memory, but it
+        # never becomes an alert — the whole value of this digest is that everything in it holds up.
+        # Same for a claim that arrived with no grade at all.
+        if (r[4] or "low") == "low":
+            continue
         item = {"business": r[0], "kind": r[1], "event_date": r[2], "after": r[3],
                 "confidence": r[4], "source": r[5], "first_seen": r[6]}
         if r[1] == "headcount_signal":
