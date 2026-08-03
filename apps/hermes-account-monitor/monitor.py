@@ -24,6 +24,7 @@ import json
 import os
 import pathlib
 import re
+import shutil
 import sqlite3
 import subprocess
 import sys
@@ -294,9 +295,15 @@ def ingest(res: dict, batch: list[str], cycle_at: str, rid: str) -> int:
             if not desc or label == "none":
                 continue
             c, cite = ftrust.get((oi, s), (None, None))
+            # Dedup key. For a dated event it is the month (see the schema comment). An undated
+            # event has no month to key on, and "unknown" alone would collapse every undated event
+            # for this business+signal into one row — so fall back to the normalised label, which
+            # is the only stable identity such an event has. Undated events stay out of the digest
+            # and out of memory either way; this just keeps the ledger from losing them.
+            month = date[:7] if date != "unknown" else f"unknown:{label}"
             # INSERT OR IGNORE: first sighting wins, so re-finding an event never re-reports it.
             conn.execute("INSERT OR IGNORE INTO ledger VALUES (?,?,?,?,?,?,?,?,?)",
-                         (key, s, date[:7], date, label, desc, c, cite, cycle_at))
+                         (key, s, month, date, label, desc, c, cite, cycle_at))
         n += 1
     conn.commit()
     conn.close()
@@ -340,7 +347,11 @@ def setup_agent() -> str:
     if not r.ok:
         raise SystemExit(f"create failed {r.status_code}: {r.text[:300]}")
     aid = r.json()["id"]
-    got = requests.get(f"{BASE}/task-agents/{aid}", headers=H, timeout=60).json()
+    g = requests.get(f"{BASE}/task-agents/{aid}", headers=H, timeout=60)
+    if not g.ok:
+        raise SystemExit(f"created agent {aid} but could not read it back "
+                         f"({g.status_code}): {g.text[:200]}")
+    got = g.json()
     assert got.get("goals") and (got.get("sources") or {}).get("allow"), "config did not persist"
     (DATA / "monitor_agent.json").write_text(json.dumps(got, indent=1))
     log(f"created agent {aid} — goals={len(got['goals'])} "
@@ -359,6 +370,21 @@ def _extract(res: dict) -> tuple[list, dict]:
     return [], {}
 
 
+def _tool_json(fn, payload: dict, what: str) -> dict | None:
+    """Call a plugin tool and parse its JSON string, or return None and say why.
+
+    Each batch polls for minutes inside its own thread. An error body or a transport failure must
+    cost that batch, not the cycle — and it has to be visible in the log, not a dead thread.
+    """
+    try:
+        return json.loads(fn(payload))
+    except (ValueError, TypeError) as e:
+        log(f"  {what}: unreadable tool response ({e})")
+    except Exception as e:
+        log(f"  {what}: {type(e).__name__} {str(e)[:120]}")
+    return None
+
+
 def run_cycle(aid: str, businesses: list[str], cycle_at: str) -> int:
     from hermes_nimble_agent import tools
 
@@ -372,8 +398,9 @@ def run_cycle(aid: str, businesses: list[str], cycle_at: str) -> int:
                 "should act on — leadership changes, funding, headcount movement, product launches, "
                 "pricing changes. One factual sentence per signal, null if unconfirmed.\n- "
                 + "\n- ".join(batch))
-        started = json.loads(tools.nimble_agent_run_start(
-            {"agent_id": aid, "task": task, "effort": EFFORT}))
+        started = _tool_json(tools.nimble_agent_run_start,
+                             {"agent_id": aid, "task": task, "effort": EFFORT},
+                             f"batch{idx} start") or {}
         rid = started.get("run_id") or (started.get("run") or {}).get("run_id")
         if not rid:
             log(f"  batch{idx}: start failed {str(started)[:160]}")
@@ -381,16 +408,28 @@ def run_cycle(aid: str, businesses: list[str], cycle_at: str) -> int:
         log(f"  batch{idx}: {rid} ({', '.join(batch)})")
 
         t0 = time.time()
+        misses = 0
         while True:
             time.sleep(POLL)
-            st = json.loads(tools.nimble_agent_run_status({"agent_id": aid, "run_id": rid}))
+            st = _tool_json(tools.nimble_agent_run_status, {"agent_id": aid, "run_id": rid},
+                            f"batch{idx} status")
+            if st is None:
+                misses += 1
+                if misses > 5:
+                    log(f"  batch{idx}: status unreadable 5x — abandoning")
+                    return
+                continue                     # run id is durable; keep polling
+            misses = 0
             if st.get("is_active", st.get("run", {}).get("is_active")) is False:
                 break
             if time.time() - t0 > 2400:
                 log(f"  batch{idx}: timeout")
                 return
 
-        res = json.loads(tools.nimble_agent_run_result({"agent_id": aid, "run_id": rid}))
+        res = _tool_json(tools.nimble_agent_run_result, {"agent_id": aid, "run_id": rid},
+                         f"batch{idx} result")
+        if res is None:
+            return
         (RUNS / f"{rid}.json").write_text(json.dumps(res, indent=1))   # raw BEFORE transform
         rows, trust = _extract(res)
         log(f"  batch{idx}: {len(rows)}/{len(batch)} rows in {int(time.time()-t0)}s")
@@ -539,12 +578,26 @@ def digest(deltas: list[dict], prev: str, now: str) -> str:
     return "\n".join(lines)
 
 
+def hermes_cli() -> str | None:
+    """Locate the hermes executable: this app's venv first, then PATH. Windows layout included."""
+    venv = HERE / ".venv" / ("Scripts" if os.name == "nt" else "bin")
+    for candidate in (venv / "hermes.exe", venv / "hermes"):
+        if candidate.exists():
+            return str(candidate)
+    return shutil.which("hermes")
+
+
 def deliver(text: str, target: str) -> None:
     """Hand the digest to Hermes for delivery. `hermes send` reuses the gateway's platform
     credentials and needs no running gateway for bot-token platforms (Slack/Telegram/Discord)."""
+    cli = hermes_cli()
+    if not cli:
+        log(f"delivery to {target} skipped: hermes not found in .venv or on PATH")
+        log("  (the digest above is unaffected)")
+        return
     env = dict(os.environ)
     env.setdefault("HERMES_HOME", str(HERE / ".hermes_home"))
-    p = subprocess.run([str(HERE / ".venv" / "bin" / "hermes"), "send", "-t", target, text],
+    p = subprocess.run([cli, "send", "-t", target, text],
                        capture_output=True, text=True, env=env, timeout=120)
     if p.returncode == 0:
         log(f"delivered to {target}")
@@ -565,6 +618,13 @@ def main() -> int:
 
     cfg_path = DATA / "monitor_config.json"
     cfg = json.loads(cfg_path.read_text()) if cfg_path.exists() else {}
+
+    # Fail fast on a missing key. The plugin hides its tools entirely when NIMBLE_API_KEY is
+    # absent, so without this check live mode fails as "tool not found" or a bare 401.
+    if USE_LIVE and not KEY:
+        log("NIMBLE_API_KEY not set — required for USE_LIVE=true")
+        log("  (unset USE_LIVE to replay the cached digest, which needs no keys)")
+        return 1
 
     if args.setup:
         if not USE_LIVE:
