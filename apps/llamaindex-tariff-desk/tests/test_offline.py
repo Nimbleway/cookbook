@@ -267,6 +267,17 @@ def test_truncated_json_reads_as_none_not_an_exception(tmp_path):
     assert read_json(good) == {"status": "running"}
 
 
+def test_read_json_rejects_valid_json_that_is_not_an_object(tmp_path):
+    """`[1, 2]` and `"text"` parse cleanly and then break the first .get() call,
+    which is a worse failure than not parsing at all."""
+    from desk.io import read_json
+
+    for payload in ("[1, 2]", '"just a string"', "42", "true", "null"):
+        f = tmp_path / "x.json"
+        f.write_text(payload, encoding="utf-8")
+        assert read_json(f) is None, f"{payload} is not a usable record"
+
+
 def test_corrupt_job_file_is_skipped_by_open_jobs(tmp_path, monkeypatch):
     from desk import research
 

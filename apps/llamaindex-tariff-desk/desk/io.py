@@ -25,15 +25,20 @@ TAIL_BYTES = 256 * 1024
 
 
 def read_json(path: Path) -> dict[str, Any] | None:
-    """Parse a JSON file, or None if it is missing, truncated or unreadable.
+    """Parse a JSON object from a file, or None.
 
-    Returns None rather than raising: a corrupt cache entry should cost the reader
-    that one fact, not the page they were looking at.
+    None covers every way this can fail to produce something a caller can use:
+    missing, truncated, unreadable, or valid JSON that is not an object. That last
+    case matters because `[1, 2]` and `"text"` parse cleanly and then break the
+    first `.get()` downstream, which is a worse failure than not parsing at all.
+
+    A corrupt entry should cost the reader that one fact, not the page.
     """
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
+        value = json.loads(path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError, ValueError):
         return None
+    return value if isinstance(value, dict) else None
 
 
 def read_json_lines(path: Path, limit: int | None = None) -> list[dict[str, Any]]:
