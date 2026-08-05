@@ -1,0 +1,154 @@
+{
+  "lane": {
+    "hts_code": "4013.20.00",
+    "origin": "Thailand",
+    "destination": "United States",
+    "product": ""
+  },
+  "lane_key": "4013.20.00|Thailand|United States",
+  "doc_key": "4013.20.00|United States",
+  "kind": "rate",
+  "doc_id": "4013.20.00|United States#rate",
+  "researched_at": "2026-08-05T13:15:45.915555+00:00",
+  "elapsed_s": 32.1,
+  "text": "{\n  \"origin\": \"Thailand\",\n  \"hts_code\": \"4013.20.00\",\n  \"source_url\": \"https://hts.usitc.gov/reststop/file?filename=Chapter+40&release=currentRelease\",\n  \"destination\": \"United States\",\n  \"general_rate\": \"Free\",\n  \"htsus_revision\": \"Revision 15 (2026)\",\n  \"data_as_of_date\": \"2026-08-05\",\n  \"retrieval_notes\": \"Read directly from the USITC HTSUS Chapter 40 document at hts.usitc.gov (Chapter 40, current release). No mirrors needed as the official schedule was successfully retrieved on the first attempt.\",\n  \"verified_against_official_schedule\": true\n}\n\nSources:\n- Harmonized Tariff Schedule of the United States Revision ... \u2014 https://hts.usitc.gov/reststop/file?filename=Chapter+40&release=currentRelease (primary)",
+  "metadata": {
+    "run_id": "task_run_93194987b01349ef88b72c41ac792cd9",
+    "agent_id": "wsa_b91debd3c49c48abbcfc36ee3196c892",
+    "web_search_agent_id": "wsa_b91debd3c49c48abbcfc36ee3196c892",
+    "effort": "medium",
+    "output_type": "json",
+    "confidence": "high",
+    "reasoning": "High confidence - cells fill rate is 100% and trust per claim ratio is 100%",
+    "sources": [
+      {
+        "type": "primary",
+        "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+40&release=currentRelease",
+        "source_category": "official",
+        "title": "Harmonized Tariff Schedule of the United States Revision ..."
+      }
+    ],
+    "claims": [
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.hts_code",
+        "reasoning": ""
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+40&release=currentRelease",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes \u2014 CHAPTER 40 \u2014 Inner tubes, of rubber"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.source_url",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+40&release=currentRelease",
+            "excerpts": [
+              "4013.20.00 00 | Of a kind used on bicycles | No. | Free | 30%"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.general_rate",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+40&release=currentRelease",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.htsus_revision",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+40&release=currentRelease",
+            "excerpts": [
+              "retrieved: 2026-08-05"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.data_as_of_date",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+40&release=currentRelease",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) \u2014 Chapter 40 \u2014 page 40-18 \u2014 Inner tubes, of rubber \u2014 4013.20.00 Of a kind used on bicycles: No. | Free | 30%"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.retrieval_notes",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+40&release=currentRelease",
+            "excerpts": [
+              "Source URL: https://hts.usitc.gov/reststop/file?filename=Chapter+40&release=currentRelease \u2014 official USITC HTSUS publication, source_category=official"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.verified_against_official_schedule",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.origin",
+        "reasoning": ""
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.destination",
+        "reasoning": ""
+      }
+    ]
+  }
+}

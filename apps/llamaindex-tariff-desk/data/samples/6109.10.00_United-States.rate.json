@@ -1,0 +1,164 @@
+{
+  "lane": {
+    "hts_code": "6109.10.00",
+    "origin": "Bangladesh",
+    "destination": "United States",
+    "product": "cotton knit t-shirts"
+  },
+  "lane_key": "6109.10.00|Bangladesh|United States",
+  "kind": "rate",
+  "doc_id": "6109.10.00|United States#rate",
+  "researched_at": "2026-08-05T11:10:47.726828+00:00",
+  "elapsed_s": 32.0,
+  "text": "{\n  \"origin\": \"Bangladesh\",\n  \"product\": \"cotton knit t-shirts\",\n  \"hts_code\": \"6109.10.00\",\n  \"source_url\": \"https://hts.usitc.gov/reststop/file?filename=Chapter+61&release=currentRelease\",\n  \"destination\": \"United States\",\n  \"general_rate\": \"16.5%\",\n  \"htsus_revision\": \"Revision 15 (2026)\",\n  \"data_as_of_date\": \"2026-08-05\",\n  \"retrieval_notes\": \"Read directly from the official USITC Chapter 61 PDF (https://hts.usitc.gov/reststop/file?filename=Chapter+61&release=currentRelease), which the document header identifies as the Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes. The 16.5% General rate for HTS 6109.10.00 (cotton T-shirts, singlets, tank tops and similar garments) is the Column 1 MFN rate; the adjacent \\\"Free (AU, BH, CL, CO, IL, JO, KR, MA, OM, P, PA, PE, S, SG)\\\" column is the Special (FTA) rate and does not alter the General rate. Bangladesh is not in any Free Trade Agreement list on this line, so the General rate is the applicable base duty. Section 301, Section 232, IEEPA, and reciprocal-tariff overlays are intentionally excluded per task scope.\",\n  \"verified_against_official_schedule\": true\n}\n\nSources:\n- Harmonized Tariff Schedule of the United States Revision ... \u2014 https://hts.usitc.gov/reststop/file?filename=Chapter+61&release=currentRelease (primary)",
+  "metadata": {
+    "run_id": "task_run_15acb1740e5c40528a31ff60f3cd9f2a",
+    "agent_id": "wsa_b91debd3c49c48abbcfc36ee3196c892",
+    "web_search_agent_id": "wsa_b91debd3c49c48abbcfc36ee3196c892",
+    "effort": "medium",
+    "output_type": "json",
+    "confidence": "high",
+    "reasoning": "High confidence - cells fill rate is 100% and trust per claim ratio is 100%",
+    "sources": [
+      {
+        "type": "primary",
+        "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+61&release=currentRelease",
+        "source_category": "official",
+        "title": "Harmonized Tariff Schedule of the United States Revision ..."
+      }
+    ],
+    "claims": [
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+61&release=currentRelease",
+            "excerpts": [
+              "| 6109.10.00 | Of cotton | 16.5% | Free (AU, BH, CL, CO, IL, JO, KR, MA, OM, P, PA, PE, S, SG) |"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.general_rate",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+61&release=currentRelease",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.source_url",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+61&release=currentRelease",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.htsus_revision",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.hts_code",
+        "reasoning": ""
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+61&release=currentRelease",
+            "excerpts": [
+              "retrieved: 2026-08-05"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.data_as_of_date",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+61&release=currentRelease",
+            "excerpts": [
+              "source_category: official \u2014 extract fetched from hts.usitc.gov Chapter 61 PDF (release=currentRelease)."
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.verified_against_official_schedule",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+61&release=currentRelease",
+            "excerpts": [
+              "| 6109.10.00 | Of cotton | 16.5% | Free (AU, BH, CL, CO, IL, JO, KR, MA, OM, P, PA, PE, S, SG) |"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.retrieval_notes",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.origin",
+        "reasoning": ""
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.product",
+        "reasoning": ""
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.destination",
+        "reasoning": ""
+      }
+    ]
+  },
+  "doc_key": "6109.10.00|United States",
+  "collapsed_from": [
+    "6109.10.00|Bangladesh|United States",
+    "6109.10.00|India|United States"
+  ]
+}

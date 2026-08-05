@@ -1,0 +1,54 @@
+{
+  "product": "photovoltaic solar modules",
+  "candidates": [
+    {
+      "chapter": "85",
+      "hts_code": "8541.43.00",
+      "source_url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+      "description": "Solar cells assembled into modules or made up into panels: This subheading covers solar cells that have been assembled into modules or made up into panels. (Per the CBP 2025 Solar Cells and Modules Quota Bulletin, subheading 8541.43.00 is the line on which additional safeguard duties under 9903.45.25 are levied for modules comprised of CSPV cells.)",
+      "why_it_might_fit": "A complete photovoltaic solar module (cells laminated between encapsulant and glass, framed, with junction box) is the textbook \"solar cells assembled into modules or made up into panels\" good of heading 8541.",
+      "citation_url": "https://cbp.gov/trade/quota/bulletins/qb-25-507-2025",
+      "citation_title": "QB 25-507 2025 Solar Cells and Modules | U.S. Customs and Border ...",
+      "citation_excerpt": "In addition to duty rates applicable under subheading 8541.43.00:",
+      "confidence": "high"
+    },
+    {
+      "chapter": "85",
+      "hts_code": "8541.42.00",
+      "source_url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+      "description": "Solar cells not assembled into modules or made up into panels: This subheading covers individual solar cells (photovoltaic cells) that have NOT yet been assembled into modules or panels. (Per the CBP 2025 Solar Cells and Modules Quota Bulletin, subheading 8541.42.00 is the base rate line on which the section 201 in-quota and over-quota safeguard duties on CSPV cells are stacked.)",
+      "why_it_might_fit": "If the imported product is bare solar cells (individual photovoltaic cells/dies before they are laminated into a module), 8541.42.00 is the heading 8541 line rather than the assembled-module line.",
+      "citation_url": "https://cbp.gov/trade/quota/bulletins/qb-25-507-2025",
+      "citation_title": "QB 25-507 2025 Solar Cells and Modules | U.S. Customs and Border ...",
+      "citation_excerpt": "No change from those duties applicable under subheading 8541.42.00 as appropriate.",
+      "confidence": "high"
+    },
+    {
+      "chapter": "85",
+      "hts_code": "8541.49",
+      "source_url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+      "description": "Other photosensitive semiconductor devices: residual subheading of heading 8541 for devices that perform the same function as solar cells by converting light into electricity but are not crystalline-silicon solar cells and not assembled into modules/panels. (Cornerstone category in CBP/CSPV safeguard scope as the \"solar cell\" base rate for non-CSPV technology.)",
+      "why_it_might_fit": "If the module is made of thin-film, CdTe, CIGS, amorphous silicon or any non-crystalline-silicon PV technology, it still falls under heading 8541 as a \"photosensitive semiconductor device,\" but the section 201 CSPV safeguard (Module 9903.45.25) does not apply.",
+      "citation_url": "https://cbp.gov/trade/quota/bulletins/qb-25-507-2025",
+      "citation_title": "QB 25-507 2025 Solar Cells and Modules | U.S. Customs and Border ...",
+      "citation_excerpt": "Crystalline Silicon Photovoltaic (CSPV) Cells and Modules",
+      "confidence": "high"
+    },
+    {
+      "chapter": "85",
+      "hts_code": "8501.71.0000 or 8501.79.0000",
+      "source_url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+      "description": "Photovoltaic generators (heading 8501) \u2014 Chapter 85, Note 9 (added by USITC) reads: \"For the purposes of heading 8501, photovoltaic generators consist of panels of photocells combined with other apparatus, e.g., storage batteries and electronic controls (voltage regulator, inverter, etc.) and panels or modules equipped with elements, however simple (for example, diodes to control the direction of the current), which supply the power directly to, for example, a motor, an electrolyser. In these devices, electricity is produced by means of solar cells which convert solar energy directly into electricity (photovoltaic conversion).\"",
+      "why_it_might_fit": "If the imported product is not a bare PV panel but a more complete unit \u2014 a panel plus inverter, charge controller, or storage battery integrated so it can supply power directly to a load or back to a motor/electrolyser \u2014 Chapter Note 9 routes it to heading 8501 (photovoltaic generators) instead of heading 8541.",
+      "citation_url": "https://usitc.gov/tariff_affairs.htm",
+      "citation_title": "Tariff Affairs | United States International Trade Commission",
+      "citation_excerpt": "For the purposes of heading 8501, photovoltaic generators consist of panels of photocells combined with other apparatus, e.g., storage batteries and electronic controls (voltage regulator, inverter, etc.) and panels or modules equipped with elements, however simple (for example, diodes to control the direction of the current), which supply the power directly to, for example, a motor, an electrolyser.",
+      "confidence": "high"
+    }
+  ],
+  "what_would_settle_it": "A person still has to decide (a) whether the imported good is solar cells already assembled into a module/panel (a finished PV laminate in a frame with junction box) or individual unassembled solar cells (wafers/dices with metallization, not yet laminated); (b) whether the cells are of crystalline silicon (CSPV) or another material (thin-film CdTe, CIGS, perovskite, amorphous silicon), because CSPV goods carry section 201 safeguard duties (10% plus 9903.45.25 add-on) that other PV goods do not; (c) for the Chapter 84/Chapter 85 boundary, whether the module is imported with an inverter, charge controller, or storage battery integrated into a self-contained \"photovoltaic generator\" (residual to heading 8501) versus as bare PV panel only (heading 8541); and (d) the right 10-digit statistical breakout under 8541.42 vs 8541.43 for cell-vs-module and the wattage/unit to report under chapter 85 statistical note 9. The binding authority for any of these factual questions is a CBP Customs Ruling (CROSS) such as N338270 on solar panels, or a binding pre-classification request to CBP; the HTSUS itself only sets the categories.",
+  "overall_confidence": "high",
+  "run_id": "task_run_50d2b5b6998e4bbc8a971e1e2f1bbc1a",
+  "elapsed_s": 207.9,
+  "from_cache": false
+}

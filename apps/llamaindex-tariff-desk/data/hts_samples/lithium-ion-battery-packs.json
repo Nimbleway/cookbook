@@ -1,0 +1,76 @@
+{
+  "product": "lithium-ion battery packs",
+  "candidates": [
+    {
+      "chapter": "85",
+      "hts_code": "8507.60.00",
+      "source_url": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter%2085",
+      "description": "Lithium-ion batteries",
+      "why_it_might_fit": "Heading 8507 covers electric storage batteries (rechargeable/secondary) and Note 3 to Chapter 85 expressly includes batteries \"presented with ancillary components which contribute to the accumulator's function of storing and supplying energy or protect it from damage\" \u2014 language that captures a multi-cell lithium-ion pack with BMS and connectors.",
+      "citation_url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+      "citation_title": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter%2085",
+      "citation_excerpt": "8507.60.00 | Lithium-ion batteries",
+      "confidence": "high"
+    },
+    {
+      "chapter": "85",
+      "hts_code": "8507.60.0030",
+      "source_url": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter%2085",
+      "description": "Battery energy storage systems fully encased within a housing, as described in statistical note 2 to this chapter",
+      "why_it_might_fit": "If the pack meets the four-part statutory test in Statistical Note 2 to Chapter 85 \u2014 designed to (i) store and (ii) discharge energy, consists of one or more lithium-ion modules plus battery-management circuitry and other components, has minimum 1 kWh capacity, and is fully encased in a housing \u2014 the statistical breakout below 8507.60.00 is 8507.60.0030 rather than .0010 or .0090.",
+      "citation_url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+      "citation_title": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter%2085",
+      "citation_excerpt": "30 | Battery energy storage systems fully encased within a housing, as described in statistical note 2 to this chapter",
+      "confidence": "high"
+    },
+    {
+      "chapter": "85",
+      "hts_code": "8507.60.0010",
+      "source_url": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter%2085",
+      "description": "Of a kind used as the primary source of electrical power for electrically powered vehicles of subheadings 8703.40, 8703.50, 8703.60, 8703.70 or 8703.80",
+      "why_it_might_fit": "If the lithium-ion pack is dedicated to powering a passenger electric vehicle under 8703.40/8703.50/8703.60/8703.70/8703.80, the statistical breakout under the same 8507.60.00 subheading is 8507.60.0010 rather than 0020 / 0030 / 0090.",
+      "citation_url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+      "citation_title": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter%2085",
+      "citation_excerpt": "10 | Of a kind used as the primary source of electrical power for electrically powered vehicles of subheadings 8703.40, 8703.50, 8703.60, 8703.70 or 8703.80",
+      "confidence": "high"
+    },
+    {
+      "chapter": "85",
+      "hts_code": "8507.60.0090",
+      "source_url": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter%2085",
+      "description": "Lithium-ion batteries: Other",
+      "why_it_might_fit": "If the pack is rechargeable lithium-ion but does not fit the EV-primary-power use of .0010 and does not meet the four-part BESS definition of .0030, it falls to the residual \"Other\" stat-suffix 8507.60.0090 for lithium-ion batteries.",
+      "citation_url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+      "citation_title": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter%2085",
+      "citation_excerpt": "90 | Other (lithium-ion batteries)",
+      "confidence": "high"
+    },
+    {
+      "chapter": "85",
+      "hts_code": "8507.90.80",
+      "source_url": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter%2085",
+      "description": "Parts: Other (parts of electric storage batteries other than lead-acid)",
+      "why_it_might_fit": "If the article is a component (a battery module, BMS, or housing shell) sold on its own rather than a finished pack, Note 3 still covers \"electric accumulators presented with ancillary components\" but a standalone part may instead sit under 8507.90.80, otherwise classified as charger/inverter components in 8504.40 or as electrical parts in 8536/8537.",
+      "citation_url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+      "citation_title": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter%2085",
+      "citation_excerpt": "8507.90.80 | 00 | Parts: Other",
+      "confidence": "high"
+    },
+    {
+      "chapter": "85",
+      "hts_code": "8506.50.00",
+      "source_url": "https://www.usitc.gov/publications/docs/tata/hts/bychapter/1501c85.pdf",
+      "description": "Primary cells and primary batteries; parts thereof: Lithium",
+      "why_it_might_fit": "If the product is a non-rechargeable (primary) lithium battery pack instead of a rechargeable lithium-ion (secondary) pack, it would sit under heading 8506 (Primary cells and primary batteries) rather than 8507 (Electric storage batteries / secondary); this is the material-vs-function branch the schedule forces a person to choose on.",
+      "citation_url": "https://usitc.gov/publications/docs/tata/hts/bychapter/1501c85.pdf",
+      "citation_title": "https://www.usitc.gov/publications/docs/tata/hts/bychapter/1501c85.pdf",
+      "citation_excerpt": "8506.50.00 00 | Lithium",
+      "confidence": "high"
+    }
+  ],
+  "what_would_settle_it": "A person still has to decide between (a) whether the pack is rechargeable (lithium-ion, secondary) or non-rechargeable (lithium primary) \u2014 that picks between heading 8507 and heading 8506; (b) whether it is a complete pack or a component/part \u2014 that picks between 8507.60.00 (and its statistical breakouts) and 8507.90.80; and (c) what the pack is destined to power \u2014 a passenger electric vehicle of subheading 8703.40, 8703.50, 8703.60, 8703.70 or 8703.80 (stat suffix 10), a battery energy storage system meeting the four-part test in Statistical Note 2 to Chapter 85 with minimum 1 kWh capacity, battery-management circuitry, and a housing (stat suffix 30), or something else (stat suffix 90). Chapter 85 Note 3 expressly includes within heading 8507 articles \"presented with ancillary components which contribute to the accumulator's function of storing and supplying energy or protect it from damage\" (e.g., electrical connectors, thermistors, circuit-protection devices). CBP CROSS rulings (e.g. NY N206384 on a (3S2P/LIC18650) pack classified under 8507.60.0000; NY N329305 on a Stihl AP 300 S power-tool pack classified under 8507.60.0020 \"Other\"; NY N336711 on a Lithium Nickel Cobalt Manganese Battery Module classified under 8507.60.0020; and NY N350116 on a prismatic cell classified under 8507.60.0020) illustrate how Customs reads the schedule's wording for these articles.",
+  "overall_confidence": "high",
+  "run_id": "task_run_7773d1ad4f8840ad9a201dcdbe685ea0",
+  "elapsed_s": 163.8,
+  "from_cache": false
+}

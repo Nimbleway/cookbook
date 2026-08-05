@@ -1,0 +1,190 @@
+{
+  "lane": {
+    "hts_code": "7604.29.10",
+    "origin": "China",
+    "destination": "United States",
+    "product": "aluminum extrusions"
+  },
+  "lane_key": "7604.29.10|China|United States",
+  "kind": "rate",
+  "doc_id": "7604.29.10|United States#rate",
+  "researched_at": "2026-08-05T11:09:13.526370+00:00",
+  "elapsed_s": 78.6,
+  "text": "{\n  \"origin\": \"China\",\n  \"product\": \"aluminum extrusions\",\n  \"hts_code\": \"7604.29.10\",\n  \"source_url\": \"https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease\",\n  \"destination\": \"United States\",\n  \"general_rate\": \"5%\",\n  \"htsus_revision\": \"Revision 15 (2026)\",\n  \"data_as_of_date\": \"2026-08-05\",\n  \"retrieval_notes\": \"Rate read from the official USITC HTS Chapter 76 PDF for the current release (Revision 15, 2026 HTS Basic Edition published December 31, 2025). Mirrors attempted and successfully retrieved: hts.usitc.gov (reststop Chapter 76 PDF) and usitc.gov (tata/hts bychapter 1000c76.pdf). The rate is the base Column 1 General rate only; Section 301, Section 232, IEEPA, and reciprocal duty overlays are not included.\",\n  \"verified_against_official_schedule\": true\n}\n\nSources:\n- https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease \u2014 https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease (primary)\n- 2026 Basic Edition of the Harmonized Tariff Schedule of the United ... \u2014 https://usitc.gov/documents/announcements/2026_basic_edition_harmonized_tariff_schedule (primary)",
+  "metadata": {
+    "run_id": "task_run_705d005af42c48e6ba0c2f58f587e0be",
+    "agent_id": "wsa_b91debd3c49c48abbcfc36ee3196c892",
+    "web_search_agent_id": "wsa_b91debd3c49c48abbcfc36ee3196c892",
+    "effort": "medium",
+    "output_type": "json",
+    "confidence": "high",
+    "reasoning": "High confidence - cells fill rate is 100% and trust per claim ratio is 100%",
+    "sources": [
+      {
+        "type": "primary",
+        "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease",
+        "source_category": "official",
+        "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease"
+      },
+      {
+        "type": "primary",
+        "url": "https://usitc.gov/documents/announcements/2026_basic_edition_harmonized_tariff_schedule",
+        "source_category": "official",
+        "title": "2026 Basic Edition of the Harmonized Tariff Schedule of the United ..."
+      }
+    ],
+    "claims": [
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.hts_code",
+        "reasoning": ""
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes \u2014 CHAPTER 76."
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.source_url",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease",
+            "excerpts": [
+              "7604.29.10 | Other profiles | 5% | Free (A*, AU, BH, CL, CO, D, E, IL, JO, KR, MA, OM, P, PA, PE, S, SG)"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.general_rate",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease"
+          },
+          {
+            "url": "https://usitc.gov/documents/announcements/2026_basic_edition_harmonized_tariff_schedule",
+            "excerpts": [
+              "2026 HTS Basic Edition was published on December 31, 2025"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "2026 Basic Edition of the Harmonized Tariff Schedule of the United ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.htsus_revision",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease",
+            "excerpts": [
+              "retrieved: 2026-08-05"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.data_as_of_date",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease",
+            "excerpts": [
+              "Column 1 General rate 5% for 7604.29.10 (Other profiles, aluminum alloys, Chapter 76)."
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease"
+          },
+          {
+            "url": "https://usitc.gov/documents/announcements/2026_basic_edition_harmonized_tariff_schedule",
+            "excerpts": [
+              "2026 HTS Basic Edition was published on December 31, 2025."
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "2026 Basic Edition of the Harmonized Tariff Schedule of the United ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.retrieval_notes",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease",
+            "excerpts": [
+              "USITC HTS Chapter 76, current release \u2014 Revision 15 (2026)."
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+76&release=currentRelease"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.verified_against_official_schedule",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.origin",
+        "reasoning": ""
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.product",
+        "reasoning": ""
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.destination",
+        "reasoning": ""
+      }
+    ]
+  },
+  "doc_key": "7604.29.10|United States",
+  "collapsed_from": [
+    "7604.29.10|China|United States",
+    "7604.29.10|Mexico|United States"
+  ]
+}

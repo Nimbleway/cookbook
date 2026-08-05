@@ -1,0 +1,65 @@
+{
+  "product": "aluminium extrusions",
+  "candidates": [
+    {
+      "chapter": "76",
+      "hts_code": "7604.29.10",
+      "source_url": "https://usitc.gov/publications/docs/tata/hts/bychapter/1000c76.pdf",
+      "description": "Aluminum bars, rods and profiles: ... Of aluminum alloys: ... Other: Other profiles",
+      "why_it_might_fit": "Default home for a generic solid extruded aluminium profile sold as stock shape (not prepared for a structure, not a finished article).",
+      "citation_url": "https://usitc.gov/publications/docs/tata/hts/bychapter/1000c76.pdf",
+      "citation_title": "HTS CHAPTER 76 ALUMINUM AND ARTICLES THEREOF",
+      "citation_excerpt": "7604 Aluminum bars, rods and profiles: ... Of aluminum alloys: Hollow profiles (7604.21.00); Other: Other profiles (7604.29.10).",
+      "confidence": "high"
+    },
+    {
+      "chapter": "76",
+      "hts_code": "7604.10.10",
+      "source_url": "https://usitc.gov/publications/docs/tata/hts/bychapter/1000c76.pdf",
+      "description": "Aluminum bars, rods and profiles: ... Of aluminum, not alloyed: Profiles",
+      "why_it_might_fit": "If the extrusion is unalloyed aluminium (>= 99% Al per chapter 76 subheading note 2(a)), it goes to the \"Of aluminum, not alloyed:\" branch of heading 7604 instead of the alloy branch.",
+      "citation_url": "https://usitc.gov/publications/docs/tata/hts/bychapter/1000c76.pdf",
+      "citation_title": "HTS CHAPTER 76 ALUMINUM AND ARTICLES THEREOF",
+      "citation_excerpt": "7604 Aluminum bars, rods and profiles: Of aluminum, not alloyed: Profiles (7604.10.10).",
+      "confidence": "high"
+    },
+    {
+      "chapter": "76",
+      "hts_code": "7604.21.00",
+      "source_url": "https://usitc.gov/publications/docs/tata/hts/bychapter/1000c76.pdf",
+      "description": "Aluminum bars, rods and profiles: ... Of aluminum alloys: Hollow profiles",
+      "why_it_might_fit": "If the extrusion is a hollow profile with a single enclosed void, it sits in the \"Hollow profiles\" line inside the alloyed branch of heading 7604 rather than \"Other profiles.\"",
+      "citation_url": "https://usitc.gov/publications/docs/tata/hts/bychapter/1000c76.pdf",
+      "citation_title": "HTS CHAPTER 76 ALUMINUM AND ARTICLES THEREOF",
+      "citation_excerpt": "7604.21.00 00 of aluminum alloys Hollow profiles.",
+      "confidence": "high"
+    },
+    {
+      "chapter": "76",
+      "hts_code": "7610.90.00",
+      "source_url": "https://usitc.gov/publications/docs/tata/hts/bychapter/1000c76.pdf",
+      "description": "Aluminum structures (excluding prefabricated buildings of heading 9406) and parts of structures (for example, bridges and bridge-sections, towers, lattice masts, roofs, roofing frameworks, doors and windows and their frames and thresholds for doors, balustrades, pillars and columns); aluminum plates, rods, profiles, tubes and the like, prepared for use in structures: Other",
+      "why_it_might_fit": "If the extrusion has been \"prepared for use in structures\" (cut to length, machined, drilled, mitred) for assembly into a structure rather than sold as stock profile, heading 7610 applies; within 7610, 7610.90 covers \"Other\" (everything that isn't doors/windows/frames under 7610.10).",
+      "citation_url": "https://usitc.gov/publications/docs/tata/hts/bychapter/1000c76.pdf",
+      "citation_title": "HTS CHAPTER 76 ALUMINUM AND ARTICLES THEREOF",
+      "citation_excerpt": "7610 Aluminum structures ... and parts of structures ... aluminum plates, rods, profiles, tubes and the like, prepared for use in structures: ... 7610.90.00 Other.",
+      "confidence": "high"
+    },
+    {
+      "chapter": "76",
+      "hts_code": "7616.99.50",
+      "source_url": "https://usitc.gov/publications/docs/tata/hts/bychapter/1000c76.pdf",
+      "description": "Other articles of aluminum: ... Other: Other",
+      "why_it_might_fit": "Residual basket for finished or further-worked aluminium articles that are not stock profiles (7604) and not prepared-for-structure (7610) and not elsewhere specified; picks up extrusions that have become identifiable finished articles like brackets, fittings, frames for non-structural use.",
+      "citation_url": "https://usitc.gov/publications/docs/tata/hts/bychapter/1000c76.pdf",
+      "citation_title": "HTS CHAPTER 76 ALUMINUM AND ARTICLES THEREOF",
+      "citation_excerpt": "7616 Other articles of aluminum: ... 7616.99 Other: 7616.99.50 Other.",
+      "confidence": "high"
+    }
+  ],
+  "what_would_settle_it": "The schedule distributes \"aluminium extrusions\" across several lines based on facts not stated in the product description: (1) alloyed vs. not alloyed (chapter 76 subheading note 2 splits heading 7604 into 7604.10 vs. 7604.21/7604.29), (2) hollow vs. solid (7604.21 \"Hollow profiles\" vs. 7604.29.10 \"Other profiles\"), (3) end use / degree of further preparation (stock profiles stay in heading 7604; profiles \"prepared for use in structures\" go to heading 7610.10 or 7610.90), and (4) whether the part has become a finished identifiable article that falls into a more specific heading such as 7615 (household/sanitary) or the residual 7616.99.50 \"Other\" articles of aluminum. A binding CBP CROSS/NY/NQ ruling on the specific part is the usual way importers resolve this.",
+  "overall_confidence": "high",
+  "run_id": "task_run_904f4cc5182f45d4b922b29d223c1f19",
+  "elapsed_s": 95.9,
+  "from_cache": false
+}

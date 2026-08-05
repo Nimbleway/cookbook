@@ -1,0 +1,170 @@
+{
+  "lane": {
+    "hts_code": "3923.50.00",
+    "origin": "Vietnam",
+    "destination": "United States",
+    "product": ""
+  },
+  "lane_key": "3923.50.00|Vietnam|United States",
+  "doc_key": "3923.50.00|United States",
+  "kind": "rate",
+  "doc_id": "3923.50.00|United States#rate",
+  "researched_at": "2026-08-05T13:58:59.448541+00:00",
+  "elapsed_s": 78.7,
+  "text": "{\n  \"origin\": \"Vietnam\",\n  \"hts_code\": \"3923.50.00\",\n  \"source_url\": \"https://hts.usitc.gov/reststop/file?filename=Chapter+39&release=currentRelease\",\n  \"destination\": \"United States\",\n  \"general_rate\": \"5.3%\",\n  \"htsus_revision\": \"Revision 15 (2026)\",\n  \"data_as_of_date\": \"2026-08-05\",\n  \"retrieval_notes\": \"Read directly from the official USITC HTSUS Chapter 39 PDF (currentRelease) at hts.usitc.gov/reststop/file?filename=Chapter+39&release=currentRelease. The document self-identifies as \\\"Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes.\\\" Revision 15 is the current revision per the USITC Harmonized Tariff Information page (usitc.gov/harmonized_tariff_information), which records \\\"2026 HTS Revision 15 was published on August 3, 2026.\\\" Column headers in the Chapter 39 schedule explicitly label the two duty columns as \\\"General\\\" and \\\"Special\\\"; for 3923.50.00 the General column reads 5.3% and the Special column reads Free (A, AU, B, BH, CL, CO, D, E, IL, JO, KR, MA, OM, P, PA, PE, S, SG). Sanity-checked against neighbouring 3923 subheadings (3923.10\u20133923.40 at 3%\u20135.3%, 3923.90 at 3%). Section 301/232/IEEPA/reciprocal overlays are not folded into this rate.\",\n  \"verified_against_official_schedule\": true\n}\n\nSources:\n- Harmonized Tariff Schedule of the United States Revision ... \u2014 https://hts.usitc.gov/reststop/file?filename=Chapter+39&release=currentRelease (primary)\n- Harmonized Tariff Information | United States International Trade ... \u2014 https://usitc.gov/harmonized_tariff_information (primary)",
+  "metadata": {
+    "run_id": "task_run_5bac9df0d46042e48f32ac84a129d65d",
+    "agent_id": "wsa_b91debd3c49c48abbcfc36ee3196c892",
+    "web_search_agent_id": "wsa_b91debd3c49c48abbcfc36ee3196c892",
+    "effort": "medium",
+    "output_type": "json",
+    "confidence": "high",
+    "reasoning": "High confidence - cells fill rate is 100% and trust per claim ratio is 100%",
+    "sources": [
+      {
+        "type": "primary",
+        "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+39&release=currentRelease",
+        "source_category": "official",
+        "title": "Harmonized Tariff Schedule of the United States Revision ..."
+      },
+      {
+        "type": "primary",
+        "url": "https://usitc.gov/harmonized_tariff_information",
+        "source_category": "official",
+        "title": "Harmonized Tariff Information | United States International Trade ..."
+      }
+    ],
+    "claims": [
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.hts_code",
+        "reasoning": ""
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+39&release=currentRelease",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.source_url",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+39&release=currentRelease",
+            "excerpts": [
+              "Column headers at 3923 (con.) page are explicitly: General | Special. Row 3923.50.00 00 reads 5.3% under General and Free (A, AU, B, BH, CL, CO, D, E, IL, JO, KR, MA, OM, P, PA, PE, S, SG) under Special."
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.general_rate",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+39&release=currentRelease",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          },
+          {
+            "url": "https://usitc.gov/harmonized_tariff_information",
+            "excerpts": [
+              "2026 HTS Revision 15 was published on August 3, 2026"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Information | United States International Trade ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.htsus_revision",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+39&release=currentRelease",
+            "excerpts": [
+              "retrieved: 2026-08-05"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.data_as_of_date",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+39&release=currentRelease",
+            "excerpts": [
+              "General | Special column headers confirmed on Chapter 39 page 39-32 (3923 (con.) row); neighbouring rows: 3923.10.90 Other 3%, 3923.40.00 Spools 5.3%, 3923.50.00 Stoppers 5.3%, 3923.90.00 Other 3%."
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.retrieval_notes",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+39&release=currentRelease",
+            "excerpts": [
+              "Source URL https://hts.usitc.gov/reststop/file?filename=Chapter+39&release=currentRelease is hosted on hts.usitc.gov (USITC's official Harmonized Tariff Schedule publication); provenance header tags source_category as \"official\". "
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "Harmonized Tariff Schedule of the United States Revision ..."
+          }
+        ],
+        "confidence": "high",
+        "path": "$.verified_against_official_schedule",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.origin",
+        "reasoning": ""
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.destination",
+        "reasoning": ""
+      }
+    ]
+  }
+}
