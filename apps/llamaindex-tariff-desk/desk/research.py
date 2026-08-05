@@ -128,6 +128,20 @@ def use_live() -> bool:
 # --- cache / freshness ----------------------------------------------------
 
 
+def read_json(path: Path) -> dict[str, Any] | None:
+    """Parse a persisted JSON file, or None if it is missing or unreadable.
+
+    State on disk can be truncated — a process killed mid-write leaves a partial
+    file — and a JSONDecodeError from a cache read should never break resumability
+    or the progress UI. `ingest.load_records` already skips unreadable files; this
+    makes the job and cache readers consistent with it.
+    """
+    try:
+        return json.loads(path.read_text())
+    except (json.JSONDecodeError, OSError):
+        return None
+
+
 def cached_path(lane: Lane, kind: Kind) -> Path:
     """Where a NEW run gets written. Always data/runs — samples are read-only."""
     return RUNS_DIR / f"{lane.slug(kind)}.json"
@@ -145,7 +159,9 @@ def load_cached(lane: Lane, kind: Kind) -> dict[str, Any] | None:
 
     for candidate in (active_dir() / f"{lane.slug(kind)}.json", cached_path(lane, kind)):
         if candidate.exists():
-            return json.loads(candidate.read_text())
+            record = read_json(candidate)
+            if record is not None:
+                return record
     return None
 
 
@@ -188,7 +204,7 @@ def job_path(lane: Lane, kind: Kind) -> Path:
 def write_job(lane: Lane, kind: Kind, **fields: Any) -> dict[str, Any]:
     JOBS_DIR.mkdir(parents=True, exist_ok=True)
     path = job_path(lane, kind)
-    job = json.loads(path.read_text()) if path.exists() else {}
+    job = (read_json(path) or {}) if path.exists() else {}
     job.update({"lane_key": lane.key, "kind": kind, "updated_at": _now(), **fields})
     path.write_text(json.dumps(job, indent=2))
     return job
@@ -196,7 +212,7 @@ def write_job(lane: Lane, kind: Kind, **fields: Any) -> dict[str, Any]:
 
 def read_job(lane: Lane, kind: Kind) -> dict[str, Any] | None:
     path = job_path(lane, kind)
-    return json.loads(path.read_text()) if path.exists() else None
+    return read_json(path) if path.exists() else None
 
 
 def clear_job(lane: Lane, kind: Kind) -> None:
@@ -208,10 +224,9 @@ def open_jobs() -> list[dict[str, Any]]:
         return []
     jobs = []
     for path in sorted(JOBS_DIR.glob("*.json")):
-        try:
-            jobs.append(json.loads(path.read_text()))
-        except json.JSONDecodeError:
-            continue
+        job = read_json(path)
+        if job is not None:
+            jobs.append(job)
     return jobs
 
 

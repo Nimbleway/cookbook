@@ -70,10 +70,16 @@ def use_live() -> bool:
 
 
 def cached(product: str) -> dict[str, Any] | None:
+    """A previous lookup for this product, or None. Unreadable files are skipped
+    rather than raised — a corrupt cache entry must not break the lookup box."""
+    from .research import read_json
+
     name = f"{slugify(product)}.json"
     for path in (CACHE_DIR / name, SAMPLE_DIR / name):
         if path.exists():
-            return json.loads(path.read_text())
+            record = read_json(path)
+            if record is not None:
+                return record
     return None
 
 

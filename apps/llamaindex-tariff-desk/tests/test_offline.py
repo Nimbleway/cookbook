@@ -246,6 +246,45 @@ def test_neither_code_nor_origin_flags_both():
     assert out.needs_hts_code is True and out.needs_origin is True
 
 
+# --- corrupt persisted state (Qodo review, PR #44) ------------------------
+
+
+def test_truncated_json_reads_as_none_not_an_exception(tmp_path):
+    """A process killed mid-write leaves a partial file. Reading it must not raise
+    into the progress UI or break resumability."""
+    from desk.research import read_json
+
+    partial = tmp_path / "half.json"
+    partial.write_text('{"lane_key": "8507.60.00|Vietnam|United')   # truncated
+    assert read_json(partial) is None
+
+    missing = tmp_path / "nope.json"
+    assert read_json(missing) is None
+
+    good = tmp_path / "ok.json"
+    good.write_text('{"status": "running"}')
+    assert read_json(good) == {"status": "running"}
+
+
+def test_corrupt_job_file_is_skipped_by_open_jobs(tmp_path, monkeypatch):
+    from desk import research
+
+    monkeypatch.setattr(research, "JOBS_DIR", tmp_path)
+    (tmp_path / "bad.json").write_text("{oh no")
+    (tmp_path / "good.json").write_text('{"lane_key": "x|y|z", "kind": "overlay"}')
+    jobs = research.open_jobs()
+    assert len(jobs) == 1 and jobs[0]["lane_key"] == "x|y|z"
+
+
+def test_corrupt_lookup_cache_is_skipped(tmp_path, monkeypatch):
+    from desk import classify
+
+    monkeypatch.setattr(classify, "CACHE_DIR", tmp_path)
+    monkeypatch.setattr(classify, "SAMPLE_DIR", tmp_path / "absent")
+    (tmp_path / f"{classify.slugify('widgets')}.json").write_text("not json at all")
+    assert classify.cached("widgets") is None
+
+
 # --- documents ------------------------------------------------------------
 
 

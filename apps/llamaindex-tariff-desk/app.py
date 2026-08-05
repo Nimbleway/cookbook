@@ -63,7 +63,18 @@ FIELD_LABELS = {
 
 @st.cache_resource(show_spinner=False)
 def _index():
-    configure_models()
+    """The index, or None with the reason shown.
+
+    `configure_models()` raises when a key is missing. The sidebar warns about it,
+    but a warning is not control flow — without this guard the first question after
+    a bad `.env` becomes an uncaught Streamlit traceback instead of a message the
+    reader can act on. Callers already handle None.
+    """
+    try:
+        configure_models()
+    except RuntimeError as err:
+        st.error(str(err), icon="🚫")
+        return None
     return ingest.load_index()
 
 
