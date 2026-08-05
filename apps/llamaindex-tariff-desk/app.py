@@ -62,20 +62,31 @@ FIELD_LABELS = {
 
 
 @st.cache_resource(show_spinner=False)
+def _load_index():
+    """Configure the models and load the index. Allowed to raise.
+
+    Deliberately not catching here: Streamlit does not cache an exception, so a
+    corrected `.env` takes effect on the next rerun. Catching inside the cached
+    function stored `None` as the cached resource, which meant a reader who fixed
+    their keys kept seeing the same error until they restarted the process.
+    """
+    configure_models()
+    return ingest.load_index()
+
+
 def _index():
-    """The index, or None with the reason shown.
+    """The index, or None with the reason shown to the reader.
 
     `configure_models()` raises when a key is missing. The sidebar warns about it,
-    but a warning is not control flow — without this guard the first question after
-    a bad `.env` becomes an uncaught Streamlit traceback instead of a message the
-    reader can act on. Callers already handle None.
+    but a warning is not control flow: without this, the first question after a bad
+    `.env` is an uncaught Streamlit traceback rather than something actionable.
+    Callers already handle None.
     """
     try:
-        configure_models()
+        return _load_index()
     except RuntimeError as err:
         st.error(str(err), icon="🚫")
         return None
-    return ingest.load_index()
 
 
 @st.cache_resource(show_spinner=False)
@@ -479,7 +490,7 @@ def _run_research(lane: Lane, kinds: list[str], force: bool) -> bool:
 
         line.write(f"✅ researched in {elapsed}s — adding to the corpus")
         ingest.build_index(ingest.to_documents(ingest.load_records()))
-        _index.clear()          # the cached index handle is now stale
+        _load_index.clear()          # the cached index handle is now stale
         status.update(label=f"Researched and indexed in {elapsed}s",
                       state="complete", expanded=False)
     return True

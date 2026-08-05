@@ -329,6 +329,32 @@ def test_bad_env_int_falls_back_instead_of_raising(monkeypatch):
     assert _int_env("DESK_TEST_INT", 2048) == 2048
 
 
+# --- cached-failure regression (Qodo review, PR #44) ----------------------
+
+
+def test_cached_loader_propagates_instead_of_caching_a_failure(monkeypatch):
+    """The cached function must raise, not return None.
+
+    Catching inside `@st.cache_resource` stored None as the cached resource, so a
+    reader who fixed their .env kept seeing the same error until they restarted the
+    process. Streamlit does not cache exceptions, so letting it raise is what makes
+    a corrected key take effect on the next rerun.
+    """
+    import app as app_module
+
+    def boom():
+        raise RuntimeError("OPENAI_API_KEY is not set")
+
+    monkeypatch.setattr(app_module, "configure_models", boom)
+
+    # The cached loader, called through its underlying function to bypass the cache.
+    with pytest.raises(RuntimeError):
+        app_module._load_index.__wrapped__()
+
+    # The uncached wrapper is what turns it into something the reader can act on.
+    assert app_module._index() is None
+
+
 # --- documents ------------------------------------------------------------
 
 
