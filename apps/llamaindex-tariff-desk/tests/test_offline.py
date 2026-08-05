@@ -332,27 +332,32 @@ def test_bad_env_int_falls_back_instead_of_raising(monkeypatch):
 # --- cached-failure regression (Qodo review, PR #44) ----------------------
 
 
-def test_cached_loader_propagates_instead_of_caching_a_failure(monkeypatch):
-    """The cached function must raise, not return None.
+def test_cached_loader_does_not_catch_configuration_errors():
+    """The cached loader must contain no except clause; the wrapper must have one.
 
     Catching inside `@st.cache_resource` stored None as the cached resource, so a
-    reader who fixed their .env kept seeing the same error until they restarted the
-    process. Streamlit does not cache exceptions, so letting it raise is what makes
-    a corrected key take effect on the next rerun.
+    reader who corrected their .env kept seeing the same error until restarting.
+    Streamlit does not cache exceptions, so propagating is what makes retry work.
+
+    Checked by reading the source rather than importing app.py: importing it runs
+    module-level Streamlit and dotenv calls, and reaching through `__wrapped__` to
+    bypass the cache depends on a private attribute that may change.
     """
-    import app as app_module
+    import ast
 
-    def boom():
-        raise RuntimeError("OPENAI_API_KEY is not set")
+    tree = ast.parse((HERE / "app.py").read_text())
+    funcs = {n.name: n for n in tree.body if isinstance(n, ast.FunctionDef)}
 
-    monkeypatch.setattr(app_module, "configure_models", boom)
+    loader = funcs["_load_index"]
+    assert any("cache_resource" in ast.unparse(d) for d in loader.decorator_list), \
+        "_load_index is the cached one"
+    assert not [n for n in ast.walk(loader) if isinstance(n, ast.ExceptHandler)], \
+        "the cached loader must propagate, not swallow: catching here caches None"
 
-    # The cached loader, called through its underlying function to bypass the cache.
-    with pytest.raises(RuntimeError):
-        app_module._load_index.__wrapped__()
-
-    # The uncached wrapper is what turns it into something the reader can act on.
-    assert app_module._index() is None
+    wrapper = funcs["_index"]
+    assert not wrapper.decorator_list, "the wrapper must not be cached"
+    assert [n for n in ast.walk(wrapper) if isinstance(n, ast.ExceptHandler)], \
+        "the wrapper is what turns the error into a message for the reader"
 
 
 # --- documents ------------------------------------------------------------
