@@ -140,7 +140,7 @@ def load_changes(limit: int = 50) -> list[dict[str, Any]]:
     if not CHANGES_LOG.exists():
         return []
     entries = []
-    for line in CHANGES_LOG.read_text().splitlines():
+    for line in CHANGES_LOG.read_text(encoding="utf-8").splitlines():
         try:
             entries.append(json.loads(line))
         except json.JSONDecodeError:

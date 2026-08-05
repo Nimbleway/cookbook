@@ -67,7 +67,7 @@ def load_records(directory: Path | None = None) -> list[dict[str, Any]]:
         return records
     for path in sorted(directory.glob("*.json")):
         try:
-            records.append(json.loads(path.read_text()))
+            records.append(json.loads(path.read_text(encoding="utf-8")))
         except json.JSONDecodeError:
             continue
     records.sort(key=lambda r: r.get("researched_at") or "", reverse=True)

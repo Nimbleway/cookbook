@@ -156,5 +156,5 @@ def find_candidates(product: str, force: bool = False) -> dict[str, Any]:
     }
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     (CACHE_DIR / f"{slugify(product)}.json").write_text(
-        json.dumps(record, indent=2, default=str))
+        json.dumps(record, indent=2, default=str), encoding="utf-8")
     return record

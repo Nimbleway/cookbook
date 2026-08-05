@@ -34,7 +34,7 @@ def _indexed_ids(storage: Path) -> set[str]:
     if not path.exists():
         return set()
     try:
-        data = json.loads(path.read_text())
+        data = json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError:
         return set()
     return set((data.get("docstore/ref_doc_info") or {}).keys())

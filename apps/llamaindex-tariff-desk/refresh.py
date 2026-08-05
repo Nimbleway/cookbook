@@ -25,8 +25,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
-MAX_CONCURRENT_REFRESH = 4
-
 from dotenv import load_dotenv
 
 HERE = Path(__file__).parent
@@ -40,6 +38,7 @@ from desk.research import Lane, cached_path, research, use_live  # noqa: E402
 
 HISTORY_DIR = HERE / "data" / "history"
 CHANGES_LOG = HERE / "data" / "changes.jsonl"
+MAX_CONCURRENT_REFRESH = 4
 
 
 def lane_from_record(record: dict) -> Lane:
@@ -135,7 +134,7 @@ def main() -> int:
         }
         with io_lock:
             print(f"  {time.monotonic() - started:.0f}s — {line[:150]}", flush=True)
-            with CHANGES_LOG.open("a") as fh:
+            with CHANGES_LOG.open("a", encoding="utf-8") as fh:
                 fh.write(json.dumps(entry, default=str) + "\n")
         return entry
 

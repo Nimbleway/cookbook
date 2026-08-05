@@ -25,10 +25,10 @@ ENV_KEYS = {"rate": "NIMBLE_RATE_AGENT_ID",
 
 
 def write_env(key: str, value: str) -> None:
-    lines = ENV_PATH.read_text().splitlines() if ENV_PATH.exists() else []
+    lines = ENV_PATH.read_text(encoding="utf-8").splitlines() if ENV_PATH.exists() else []
     lines = [ln for ln in lines if not ln.startswith(f"{key}=")]
     lines.append(f"{key}={value}")
-    ENV_PATH.write_text("\n".join(lines) + "\n")
+    ENV_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main() -> int:

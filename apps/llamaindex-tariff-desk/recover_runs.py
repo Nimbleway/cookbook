@@ -141,13 +141,13 @@ def main() -> int:
                     "NIMBLE_OVERLAY_AGENT_ID" if job.get("kind") == "overlay"
                     else "NIMBLE_RATE_AGENT_ID"))
                 for candidate in JOBS_DIR.glob("*.json"):
-                    existing = json.loads(candidate.read_text())
+                    existing = json.loads(candidate.read_text(encoding="utf-8"))
                     if (existing.get("lane_key") == job.get("lane_key")
                             and existing.get("kind") == job.get("kind")):
                         existing["run_id"] = found
                         existing["agent_id"] = job.get("agent_id")
                         existing["reconciled"] = True
-                        candidate.write_text(json.dumps(existing, indent=2))
+                        candidate.write_text(json.dumps(existing, indent=2), encoding="utf-8")
 
     candidates = [j for j in jobs
                   if j.get("status") in RECOVERABLE and j.get("run_id")]

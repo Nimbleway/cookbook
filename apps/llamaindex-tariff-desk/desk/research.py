@@ -137,7 +137,7 @@ def read_json(path: Path) -> dict[str, Any] | None:
     makes the job and cache readers consistent with it.
     """
     try:
-        return json.loads(path.read_text())
+        return json.loads(path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError):
         return None
 
@@ -206,7 +206,7 @@ def write_job(lane: Lane, kind: Kind, **fields: Any) -> dict[str, Any]:
     path = job_path(lane, kind)
     job = (read_json(path) or {}) if path.exists() else {}
     job.update({"lane_key": lane.key, "kind": kind, "updated_at": _now(), **fields})
-    path.write_text(json.dumps(job, indent=2))
+    path.write_text(json.dumps(job, indent=2), encoding="utf-8")
     return job
 
 
@@ -263,7 +263,7 @@ def _save_raw(lane: Lane, kind: Kind, doc_text: str, metadata: dict[str, Any],
         "text": doc_text,
         "metadata": metadata,
     }
-    cached_path(lane, kind).write_text(json.dumps(record, indent=2, default=str))
+    cached_path(lane, kind).write_text(json.dumps(record, indent=2, default=str), encoding="utf-8")
     return record
 
 

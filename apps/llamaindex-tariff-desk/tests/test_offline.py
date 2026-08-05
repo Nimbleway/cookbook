@@ -255,14 +255,15 @@ def test_truncated_json_reads_as_none_not_an_exception(tmp_path):
     from desk.research import read_json
 
     partial = tmp_path / "half.json"
-    partial.write_text('{"lane_key": "8507.60.00|Vietnam|United')   # truncated
+    partial.write_text('{"lane_key": "8507.60.00|Vietnam|United',      # truncated
+                       encoding="utf-8")
     assert read_json(partial) is None
 
     missing = tmp_path / "nope.json"
     assert read_json(missing) is None
 
     good = tmp_path / "ok.json"
-    good.write_text('{"status": "running"}')
+    good.write_text('{"status": "running"}', encoding="utf-8")
     assert read_json(good) == {"status": "running"}
 
 
@@ -270,8 +271,8 @@ def test_corrupt_job_file_is_skipped_by_open_jobs(tmp_path, monkeypatch):
     from desk import research
 
     monkeypatch.setattr(research, "JOBS_DIR", tmp_path)
-    (tmp_path / "bad.json").write_text("{oh no")
-    (tmp_path / "good.json").write_text('{"lane_key": "x|y|z", "kind": "overlay"}')
+    (tmp_path / "bad.json").write_text("{oh no", encoding="utf-8")
+    (tmp_path / "good.json").write_text('{"lane_key": "x|y|z", "kind": "overlay"}', encoding="utf-8")
     jobs = research.open_jobs()
     assert len(jobs) == 1 and jobs[0]["lane_key"] == "x|y|z"
 
@@ -281,7 +282,7 @@ def test_corrupt_lookup_cache_is_skipped(tmp_path, monkeypatch):
 
     monkeypatch.setattr(classify, "CACHE_DIR", tmp_path)
     monkeypatch.setattr(classify, "SAMPLE_DIR", tmp_path / "absent")
-    (tmp_path / f"{classify.slugify('widgets')}.json").write_text("not json at all")
+    (tmp_path / f"{classify.slugify('widgets')}.json").write_text("not json at all", encoding="utf-8")
     assert classify.cached("widgets") is None
 
 
@@ -345,7 +346,7 @@ def test_cached_loader_does_not_catch_configuration_errors():
     """
     import ast
 
-    tree = ast.parse((HERE / "app.py").read_text())
+    tree = ast.parse((HERE / "app.py").read_text(encoding="utf-8"))
     funcs = {n.name: n for n in tree.body if isinstance(n, ast.FunctionDef)}
 
     loader = funcs["_load_index"]
