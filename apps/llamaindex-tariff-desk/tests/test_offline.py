@@ -361,6 +361,63 @@ def test_cached_loader_does_not_catch_configuration_errors():
         "the wrapper is what turns the error into a message for the reader"
 
 
+# --- the shared reader (Qodo review, PR #44) ------------------------------
+
+
+def test_read_json_survives_every_way_a_file_can_be_unreadable(tmp_path):
+    """Truncated, absent, and not-a-file all return None rather than raising.
+
+    OSError was the gap: `ingest.load_records` caught only JSONDecodeError, so an
+    unreadable path took the page down while a corrupt one did not.
+    """
+    from desk.io import read_json
+
+    truncated = tmp_path / "half.json"
+    truncated.write_text('{"lane_key": "8507.60.00|Vietnam|Unit', encoding="utf-8")
+    assert read_json(truncated) is None
+
+    assert read_json(tmp_path / "absent.json") is None
+
+    a_directory = tmp_path / "dir.json"
+    a_directory.mkdir()
+    assert read_json(a_directory) is None, "IsADirectoryError is an OSError"
+
+    good = tmp_path / "ok.json"
+    good.write_text('{"status": "running"}', encoding="utf-8")
+    assert read_json(good) == {"status": "running"}
+
+
+def test_load_records_skips_an_unreadable_path(tmp_path):
+    """The OSError case, through the real loader."""
+    (tmp_path / "notafile.json").mkdir()
+    (tmp_path / "good.json").write_text(
+        '{"kind": "rate", "doc_key": "x|US", "researched_at": "2026-08-05T00:00:00+00:00"}',
+        encoding="utf-8")
+    records = ingest.load_records(tmp_path)
+    assert len(records) == 1 and records[0]["doc_key"] == "x|US"
+
+
+def test_change_log_reader_skips_bad_lines_and_bounds_the_read(tmp_path):
+    from desk.io import TAIL_BYTES, read_json_lines
+
+    log = tmp_path / "changes.jsonl"
+    assert read_json_lines(log) == [], "a missing log is empty, not an error"
+
+    lines = [f'{{"at": "2026-08-0{i % 9 + 1}", "n": {i}}}' for i in range(40)]
+    lines.insert(7, "{ this is not json")
+    log.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    entries = read_json_lines(log)
+    assert len(entries) == 40, "the unparseable line is skipped, the rest survive"
+
+    # A log far bigger than the tail window is read only in part.
+    big = tmp_path / "big.jsonl"
+    big.write_text("".join('{"at": "2026-08-05", "pad": "%s"}\n' % ("x" * 500)
+                           for _ in range(2000)), encoding="utf-8")
+    assert big.stat().st_size > TAIL_BYTES
+    tail = read_json_lines(big, limit=6)
+    assert 0 < len(tail) <= 24, "bounded, and enough to fill a limit of 6"
+
+
 # --- documents ------------------------------------------------------------
 
 

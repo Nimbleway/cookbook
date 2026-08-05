@@ -32,6 +32,7 @@ from llama_index.tools.nimble import (
 from .agents_config import (
     EFFORT, OVERLAY_SCHEMA, OVERLAY_SOURCES, RATE_SCHEMA, RATE_SOURCES, TTL_DAYS,
 )
+from .io import read_json as io_read_json
 
 Kind = Literal["rate", "overlay"]
 
@@ -129,17 +130,8 @@ def use_live() -> bool:
 
 
 def read_json(path: Path) -> dict[str, Any] | None:
-    """Parse a persisted JSON file, or None if it is missing or unreadable.
-
-    State on disk can be truncated — a process killed mid-write leaves a partial
-    file — and a JSONDecodeError from a cache read should never break resumability
-    or the progress UI. `ingest.load_records` already skips unreadable files; this
-    makes the job and cache readers consistent with it.
-    """
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except (json.JSONDecodeError, OSError):
-        return None
+    """Kept as a re-export: `desk.io` owns the implementation now."""
+    return io_read_json(path)
 
 
 def cached_path(lane: Lane, kind: Kind) -> Path:

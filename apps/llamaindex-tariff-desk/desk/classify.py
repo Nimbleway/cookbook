@@ -43,6 +43,7 @@ from typing import Any
 from llama_index.tools.nimble import NimbleAgentRunError, NimbleAgentToolSpec
 
 from .agents_config import HTS_SCHEMA
+from .io import read_json
 
 HERE = Path(__file__).parent.parent
 CACHE_DIR = HERE / "data" / "hts_lookups"
@@ -72,8 +73,6 @@ def use_live() -> bool:
 def cached(product: str) -> dict[str, Any] | None:
     """A previous lookup for this product, or None. Unreadable files are skipped
     rather than raised — a corrupt cache entry must not break the lookup box."""
-    from .research import read_json
-
     name = f"{slugify(product)}.json"
     for path in (CACHE_DIR / name, SAMPLE_DIR / name):
         if path.exists():

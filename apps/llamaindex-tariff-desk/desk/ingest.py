@@ -29,6 +29,8 @@ from typing import Any, Iterable
 
 from llama_index.core import Document
 
+from .io import read_json
+
 HERE = Path(__file__).parent.parent
 RUNS_DIR = HERE / "data" / "runs"
 SAMPLES_DIR = HERE / "data" / "samples"
@@ -66,10 +68,9 @@ def load_records(directory: Path | None = None) -> list[dict[str, Any]]:
     if not directory.exists():
         return records
     for path in sorted(directory.glob("*.json")):
-        try:
-            records.append(json.loads(path.read_text(encoding="utf-8")))
-        except json.JSONDecodeError:
-            continue
+        record = read_json(path)
+        if record is not None:
+            records.append(record)
     records.sort(key=lambda r: r.get("researched_at") or "", reverse=True)
     return records
 

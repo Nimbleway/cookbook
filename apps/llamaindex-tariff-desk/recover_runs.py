@@ -34,6 +34,7 @@ HERE = Path(__file__).parent
 load_dotenv(HERE / ".env")
 sys.path.insert(0, str(HERE))
 
+from desk.io import read_json  # noqa: E402
 from desk.research import (  # noqa: E402
     JOBS_DIR, Lane, _save_raw, clear_job, open_jobs,
 )
@@ -141,7 +142,9 @@ def main() -> int:
                     "NIMBLE_OVERLAY_AGENT_ID" if job.get("kind") == "overlay"
                     else "NIMBLE_RATE_AGENT_ID"))
                 for candidate in JOBS_DIR.glob("*.json"):
-                    existing = json.loads(candidate.read_text(encoding="utf-8"))
+                    existing = read_json(candidate)
+                    if existing is None:
+                        continue
                     if (existing.get("lane_key") == job.get("lane_key")
                             and existing.get("kind") == job.get("kind")):
                         existing["run_id"] = found

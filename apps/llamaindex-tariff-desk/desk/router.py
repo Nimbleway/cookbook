@@ -31,6 +31,7 @@ from llama_index.core.vector_stores import (
 )
 
 from . import ingest
+from .io import read_json_lines
 from .freshness import FreshnessPostprocessor, freshness_preamble, stale_report
 from .research import Lane
 
@@ -137,14 +138,13 @@ def _qa_template(freshness_text: str):
 
 
 def load_changes(limit: int = 50) -> list[dict[str, Any]]:
-    if not CHANGES_LOG.exists():
-        return []
-    entries = []
-    for line in CHANGES_LOG.read_text(encoding="utf-8").splitlines():
-        try:
-            entries.append(json.loads(line))
-        except json.JSONDecodeError:
-            continue
+    """The most recent change-log entries, newest first.
+
+    Only the tail of the file is read. The log grows by a line per refreshed fact
+    forever, and reading all of it to show six entries is wasteful once a corpus has
+    been refreshing on a schedule.
+    """
+    entries = read_json_lines(CHANGES_LOG, limit=limit)
     entries.sort(key=lambda e: e.get("at") or "", reverse=True)
     return entries[:limit]
 
