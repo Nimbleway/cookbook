@@ -285,6 +285,50 @@ def test_corrupt_lookup_cache_is_skipped(tmp_path, monkeypatch):
     assert classify.cached("widgets") is None
 
 
+# --- change detection and env parsing (Qodo review, PR #44) ---------------
+
+
+def test_diff_distinguishes_false_from_missing():
+    """`str(x or "")` collapsed False, 0 and None into the same thing, hiding a real
+    change. verified_against_official_schedule is explicitly allowed to be false."""
+    from desk.delta import diff_content
+
+    changes = diff_content("rate",
+                           {"verified_against_official_schedule": None},
+                           {"verified_against_official_schedule": False})
+    assert changes, "None -> False is a real change and must be reported"
+
+    unchanged = diff_content("rate",
+                             {"verified_against_official_schedule": False},
+                             {"verified_against_official_schedule": False})
+    assert not unchanged
+
+
+def test_diff_reports_a_rate_becoming_unverified():
+    from desk.delta import diff_content
+
+    changes = diff_content("rate",
+                           {"general_rate": "3.4%", "verified_against_official_schedule": True},
+                           {"general_rate": "not verified", "verified_against_official_schedule": False})
+    fields = {c["field"] for c in changes}
+    assert "general_rate" in fields
+    assert "verified_against_official_schedule" in fields
+
+
+def test_bad_env_int_falls_back_instead_of_raising(monkeypatch):
+    """A typo in .env should not crash model setup from deep inside LlamaIndex."""
+    from desk.models import _int_env
+
+    monkeypatch.setenv("DESK_TEST_INT", "not a number")
+    assert _int_env("DESK_TEST_INT", 2048) == 2048
+    monkeypatch.setenv("DESK_TEST_INT", "")
+    assert _int_env("DESK_TEST_INT", 2048) == 2048
+    monkeypatch.setenv("DESK_TEST_INT", "512")
+    assert _int_env("DESK_TEST_INT", 2048) == 512
+    monkeypatch.delenv("DESK_TEST_INT")
+    assert _int_env("DESK_TEST_INT", 2048) == 2048
+
+
 # --- documents ------------------------------------------------------------
 
 

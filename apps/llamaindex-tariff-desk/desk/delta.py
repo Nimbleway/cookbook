@@ -24,8 +24,19 @@ LIST_FIELDS = {
 }
 
 
+def _norm(value: Any) -> str:
+    """Comparable text for a field value, keeping falsy values distinct.
+
+    `str(value or "")` turns False, 0 and None all into "", which hides real
+    movement: `verified_against_official_schedule` is explicitly allowed to be false
+    on a retrieval failure, so a change from missing to false is exactly the kind of
+    thing a change log exists to show.
+    """
+    return "" if value is None else str(value).strip()
+
+
 def _identity(item: dict[str, Any], fields: tuple[str, ...]) -> tuple:
-    return tuple(str(item.get(f) or "").strip() for f in fields)
+    return tuple(_norm(item.get(f)) for f in fields)
 
 
 def _label(item: dict[str, Any], fields: tuple[str, ...]) -> str:
@@ -46,7 +57,7 @@ def diff_content(kind: str, before: dict[str, Any] | None,
 
     for field in SCALAR_FIELDS.get(kind, []):
         old, new = before.get(field), after.get(field)
-        if str(old or "").strip() != str(new or "").strip():
+        if _norm(old) != _norm(new):
             changes.append({"type": "changed", "field": field,
                             "before": old, "after": new})
 

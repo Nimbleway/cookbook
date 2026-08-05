@@ -121,7 +121,13 @@ def main() -> int:
             print("     ^ ambiguous create: DO NOT resubmit. A billable run may exist "
                   "with no id. Reconcile in the dashboard.")
 
-    client = Nimble(api_key=os.environ["NIMBLE_API_KEY"])
+    api_key = os.environ.get("NIMBLE_API_KEY")
+    if not api_key:
+        print("\nNIMBLE_API_KEY is not set, so runs cannot be reconciled or fetched. "
+              "The job files above are still intact; set the key and re-run.",
+              file=sys.stderr)
+        return 2
+    client = Nimble(api_key=api_key)
 
     # Jobs with no id can often still be reconciled from the agent's run history.
     for job in jobs:

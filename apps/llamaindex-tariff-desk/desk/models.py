@@ -15,6 +15,21 @@ DEFAULT_LLM = "claude-sonnet-5"
 DEFAULT_EMBED = "text-embedding-3-small"
 
 
+def _int_env(name: str, default: int) -> int:
+    """An int from the environment, falling back rather than raising.
+
+    A typo in a .env value should not take the app down with a ValueError from
+    deep inside model setup.
+    """
+    raw = os.environ.get(name)
+    if raw is None or not raw.strip():
+        return default
+    try:
+        return max(1, int(raw))
+    except ValueError:
+        return default
+
+
 def configure_models(require_embeddings: bool = True) -> None:
     """Set Settings.llm and Settings.embed_model. Idempotent.
 
@@ -29,7 +44,7 @@ def configure_models(require_embeddings: bool = True) -> None:
     # These documents are structured JSON answers plus a Sources list, so they chunk
     # badly at the 1024 default — a duty table split mid-array loses the association
     # between a rate and its instrument.
-    Settings.chunk_size = int(os.environ.get("DESK_CHUNK_SIZE", "2048"))
+    Settings.chunk_size = _int_env("DESK_CHUNK_SIZE", 2048)
     Settings.chunk_overlap = 128
     if require_embeddings:
         _set_embeddings(Settings)
