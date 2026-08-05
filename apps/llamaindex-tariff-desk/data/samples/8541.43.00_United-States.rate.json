@@ -1,0 +1,163 @@
+{
+  "lane": {
+    "hts_code": "8541.43.00",
+    "origin": "Malaysia",
+    "destination": "United States",
+    "product": "photovoltaic modules"
+  },
+  "lane_key": "8541.43.00|Malaysia|United States",
+  "kind": "rate",
+  "doc_id": "8541.43.00|United States#rate",
+  "researched_at": "2026-08-05T11:13:09.100004+00:00",
+  "elapsed_s": 109.9,
+  "text": "{\n  \"origin\": \"Malaysia\",\n  \"product\": \"photovoltaic modules\",\n  \"hts_code\": \"8541.43.00\",\n  \"source_url\": \"https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter+85\",\n  \"destination\": \"United States\",\n  \"general_rate\": \"Free\",\n  \"htsus_revision\": \"Revision 15 (2026)\",\n  \"data_as_of_date\": \"2026-08-05\",\n  \"retrieval_notes\": \"Read the published HTSUS Chapter 85 PDF directly from hts.usitc.gov (the official USITC mirror) for the current release; the chapter header self-identifies as \\\"Harmonized Tariff Schedule of the United States Revision 15 (2026)\\\". The 8541.43.00 line on page 85-79 reads: \\\"Photovoltaic cells assembled in modules or made up into panels | Free | 35%\\\" under a column header pair \\\"Rates of Duty | General | Special\\\", so the \\\"Free\\\" is the Column 1 General (MFN) rate and the 35% is in the Special column. Neighbouring subheadings in the same column (8541.41.00, 8541.42.00, 8541.49.10, 8541.49.80, 8541.51.00) all show \\\"Free\\\" in the General column, which is consistent and confirms the column assignment. Section 301 / Section 232 / IEEPA / reciprocal duties are policy overlays in chapter 99 and are not part of the Column 1 General rate. Mirrors attempted: (1) hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter+85 \u2014 read directly, success; (2) the HTS archive landing page at htS.usitc.gov/download (the dynamic search) was referenced but not separately needed because the chapter PDF was retrieved; (3) the USITC harmonized_tariff_information/hts/archive/list landing page on usitc.gov was read to confirm the Revision 15 release date.\",\n  \"verified_against_official_schedule\": true\n}\n\nSources:\n- https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter+85 \u2014 https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease (primary)",
+  "metadata": {
+    "run_id": "task_run_cffa7efe4a0b4535acac3d84d750c13b",
+    "agent_id": "wsa_b91debd3c49c48abbcfc36ee3196c892",
+    "web_search_agent_id": "wsa_b91debd3c49c48abbcfc36ee3196c892",
+    "effort": "medium",
+    "output_type": "json",
+    "confidence": "high",
+    "reasoning": "High confidence - cells fill rate is 100% and trust per claim ratio is 100%",
+    "sources": [
+      {
+        "type": "primary",
+        "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+        "source_category": "official",
+        "title": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter+85"
+      }
+    ],
+    "claims": [
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.hts_code",
+        "reasoning": ""
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes \u2014 Chapter 85, page 85-79, tariff rate line for subheading 8541.43.00."
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter+85"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.source_url",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+            "excerpts": [
+              "| 8541.43.00 | Photovoltaic cells assembled in modules or made up into panels | Free | 35% | \u2014 column header pair on page 85-39 reads \"Rates of Duty | General | Special\", so the \"Free\" entry is the Column 1 General (MFN) rate."
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter+85"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.general_rate",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter+85"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.htsus_revision",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+            "excerpts": [
+              "Source document retrieved 2026-08-05 (corpus-meta header)."
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter+85"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.data_as_of_date",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+            "excerpts": [
+              "Direct read of HTSUS Chapter 85 (Revision 15, 2026), page 85-79, row 8541.43.00: \"Photovoltaic cells assembled in modules or made up into panels | Free | 35%\"."
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter+85"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.retrieval_notes",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=currentRelease",
+            "excerpts": [
+              "Rate read directly from the official USITC HTSUS chapter document at hts.usitc.gov (Chapter 85 PDF, current release)."
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter+85"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.verified_against_official_schedule",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.origin",
+        "reasoning": ""
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.product",
+        "reasoning": ""
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.destination",
+        "reasoning": ""
+      }
+    ]
+  },
+  "doc_key": "8541.43.00|United States",
+  "collapsed_from": [
+    "8541.43.00|Malaysia|United States"
+  ]
+}

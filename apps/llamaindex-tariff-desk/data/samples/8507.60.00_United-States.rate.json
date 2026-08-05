@@ -1,0 +1,164 @@
+{
+  "lane": {
+    "hts_code": "8507.60.00",
+    "origin": "China",
+    "destination": "United States",
+    "product": "lithium-ion battery packs"
+  },
+  "lane_key": "8507.60.00|China|United States",
+  "kind": "rate",
+  "doc_id": "8507.60.00|United States#rate",
+  "researched_at": "2026-08-05T11:07:54.904500+00:00",
+  "elapsed_s": 125.4,
+  "text": "{\n  \"origin\": \"China\",\n  \"product\": \"lithium-ion battery packs\",\n  \"hts_code\": \"8507.60.00\",\n  \"source_url\": \"https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15\",\n  \"destination\": \"United States\",\n  \"general_rate\": \"3.4%\",\n  \"htsus_revision\": \"Revision 15 (2026)\",\n  \"data_as_of_date\": \"2026-08-05\",\n  \"retrieval_notes\": \"Read USITC HTS Chapter 85 (Revision 15, 2026) at hts.usitc.gov/reststop/file?filename=Chapter+85; both the currentRelease mirror and the explicit 2026HTSRev15 mirror were retrieved successfully and contain identical schedule text. The rate is consistent with neighboring non-lead-acid 8507 subheadings (8507.50, 8507.80, 8507.90.80 also 3.4%; lead-acid 8507.10/8507.20/8507.90.40 are 3.5%). No Section 301, Section 232, IEEPA, or reciprocal duty overlay is folded into the figure reported here.\",\n  \"verified_against_official_schedule\": true\n}\n\nSources:\n- https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15 \u2014 https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15 (primary)",
+  "metadata": {
+    "run_id": "task_run_f509294ac27b4807a62473b185b898bf",
+    "agent_id": "wsa_b91debd3c49c48abbcfc36ee3196c892",
+    "web_search_agent_id": "wsa_b91debd3c49c48abbcfc36ee3196c892",
+    "effort": "medium",
+    "output_type": "json",
+    "confidence": "high",
+    "reasoning": "High confidence - cells fill rate is 100% and trust per claim ratio is 100%",
+    "sources": [
+      {
+        "type": "primary",
+        "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15",
+        "source_category": "official",
+        "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15"
+      }
+    ],
+    "claims": [
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.hts_code",
+        "reasoning": ""
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes | 8507.60.00 | Lithium-ion batteries | No kg | 3.4% | Free (A, AU, B, BH, C, CL, CO, D, E, IL, JO, KR, MA, OM, P, PA, PE, S, SG)"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.source_url",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15",
+            "excerpts": [
+              "8507.60.00 | Lithium-ion batteries | No kg | 3.4% | Free (A, AU, B, BH, C, CL, CO, D, E, IL, JO, KR, MA, OM, P, PA, PE, S, SG)"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.general_rate",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.htsus_revision",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15",
+            "excerpts": [
+              "retrieved: 2026-08-05"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.data_as_of_date",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15",
+            "excerpts": [
+              "8507.10.00 ... 3.5% | 8507.50.00 ... 3.4% | 8507.60.00 ... 3.4% | 8507.80.82 ... 3.4%"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.retrieval_notes",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [
+          {
+            "url": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15",
+            "excerpts": [
+              "Harmonized Tariff Schedule of the United States Revision 15 (2026) Annotated for Statistical Reporting Purposes | 8507.60.00 | Lithium-ion batteries | No kg | 3.4%"
+            ],
+            "source_category": "official",
+            "source_intent": "official",
+            "source_type": "primary",
+            "title": "https://hts.usitc.gov/reststop/file?filename=Chapter+85&release=2026HTSRev15"
+          }
+        ],
+        "confidence": "high",
+        "path": "$.verified_against_official_schedule",
+        "reasoning": "Backed by a primary source (official)"
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.origin",
+        "reasoning": ""
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.product",
+        "reasoning": ""
+      },
+      {
+        "citations": [],
+        "confidence": "pre_existing",
+        "path": "$.destination",
+        "reasoning": ""
+      }
+    ]
+  },
+  "doc_key": "8507.60.00|United States",
+  "collapsed_from": [
+    "8507.60.00|China|United States",
+    "8507.60.00|Vietnam|United States"
+  ]
+}

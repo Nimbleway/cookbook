@@ -1,0 +1,25 @@
+# Tariff Desk — verified working set, 2026-08-05 (Python 3.10+)
+
+# The Nimble connector. Pulls llama-index-core and nimble-python itself.
+llama-index-tools-nimble>=0.2.0,<0.3
+
+# LLM: question normalization and writing answers from retrieved facts.
+llama-index-llms-anthropic>=0.11.10,<0.12
+
+# Embeddings: Anthropic has no embeddings API, and local HuggingFace embeddings
+# would add ~2GB of torch to the install.
+llama-index-embeddings-openai>=0.6.0,<0.7
+
+streamlit>=1.61.0,<2
+
+# Pin required, not optional. Streamlit 1.61 allows `starlette<2`, but Starlette 1.x
+# changed `GZipResponder.__init__` to take a `thread_minimum_size` argument that
+# Streamlit's `_MediaAwareGZipResponder` subclass does not pass — so every page load
+# raises TypeError while /_stcore/health still returns ok, which makes it look like a
+# browser or network problem rather than a dependency one. Verified 2026-08-05.
+starlette>=0.46.0,<1
+
+python-dotenv>=1.2.0,<2
+
+# Tests (the offline suite needs no API keys and no billable runs)
+pytest>=8
