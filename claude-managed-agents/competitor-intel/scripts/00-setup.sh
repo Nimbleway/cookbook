@@ -46,12 +46,18 @@ ant beta:memory-stores:memories create --memory-store-id "$MEMSTORE_ID" \
   --path "/business-profile.json" --content "$(cat profile/business-profile.json)" --transform id -r >/dev/null
 
 echo "== 6. Fetch the skill from github.com/Nimbleway/agent-skills =="
-REPO="Nimbleway/agent-skills"; SRC="skills/business-research/competitor-intel"
+REPO="Nimbleway/agent-skills"; SRC="skills/competitor-intel"
 rm -rf skill/competitor-intel && mkdir -p skill/competitor-intel
 gh api "repos/$REPO/git/trees/main?recursive=1" \
   -q ".tree[] | select(.type==\"blob\") | select(.path|startswith(\"$SRC/\")) | .path" \
 | while read -r p; do rel="${p#"$SRC"/}"; mkdir -p "skill/competitor-intel/$(dirname "$rel")"; \
     gh api "repos/$REPO/contents/$p" -H "Accept: application/vnd.github.raw" > "skill/competitor-intel/$rel"; done
+# Fail here rather than at the upload: a fetch that matches nothing still exits 0, so a stale
+# SRC would otherwise surface two steps later as a misleading "skill upload failed".
+[ -f skill/competitor-intel/SKILL.md ] || {
+  echo "ERROR: no SKILL.md fetched from $SRC — the upstream layout may have changed." >&2
+  echo "Check https://github.com/$REPO/tree/main/skills and update SRC above to match." >&2
+  exit 1; }
 
 echo "== 7. Upload the skill via raw API (curl) =="
 # ant beta:skills create sends --file by basename; curl lets us set folder-prefixed multipart
