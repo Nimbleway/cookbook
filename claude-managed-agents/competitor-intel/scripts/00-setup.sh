@@ -46,7 +46,7 @@ ant beta:memory-stores:memories create --memory-store-id "$MEMSTORE_ID" \
   --path "/business-profile.json" --content "$(cat profile/business-profile.json)" --transform id -r >/dev/null
 
 echo "== 6. Fetch the skill from github.com/Nimbleway/agent-skills =="
-REPO="Nimbleway/agent-skills"; SRC="skills/business-research/competitor-intel"
+REPO="Nimbleway/agent-skills"; SRC="skills/competitor-intel"
 rm -rf skill/competitor-intel && mkdir -p skill/competitor-intel
 gh api "repos/$REPO/git/trees/main?recursive=1" \
   -q ".tree[] | select(.type==\"blob\") | select(.path|startswith(\"$SRC/\")) | .path" \
