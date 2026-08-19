@@ -154,6 +154,28 @@ async def run_live(doc_path: Path, document: str, no_cache: bool) -> Run:
             if isinstance(outcome, BaseException):
                 board.set(claim.id, "failed")
                 print(f"  ! adjudication failed for {claim.id}: {type(outcome).__name__}: {outcome}")
+                # The search for this claim already ran and was already paid for. Dropping
+                # the claim would leave the report with fewer claims than were extracted
+                # and hide that spend, so it is reported as unverifiable with the failure
+                # as its rationale — and deliberately not cached, since nothing was judged.
+                evidence, focus, query, search_cost = retrieved[claim.id]
+                results[claim.id] = ClaimResult(
+                    claim=claim,
+                    evidence=evidence,
+                    verdict=Verdict(
+                        claim_id=claim.id,
+                        status="unverifiable",
+                        confidence="low",
+                        rationale=(
+                            f"Adjudication failed ({type(outcome).__name__}: {outcome}). "
+                            "The sources were retrieved but never judged."
+                        ),
+                    ),
+                    search_focus=focus,
+                    search_query=query,
+                    search_cost=search_cost,
+                )
+                fresh.add(claim.id)
                 continue
             results[outcome.claim.id] = outcome
             fresh.add(outcome.claim.id)

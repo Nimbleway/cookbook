@@ -85,7 +85,8 @@ from the proxy's `x-litellm-response-cost` header, so the terminal total and the
 dashboard total agree.
 
 `./demo.sh` prints the architecture; `./demo.sh run` runs a verification through the
-gateway.
+gateway. `LITELLM_BASE_URL= ./demo.sh run` — set empty, not unset — runs the same
+verification straight against Anthropic and Nimble, no proxy and no master key.
 
 ## What a run costs
 
