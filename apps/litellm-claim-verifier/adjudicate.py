@@ -76,6 +76,17 @@ def adjudicate_claim(claim: Claim, evidence: list[Evidence]) -> tuple[Verdict, f
     known = {e.url for e in evidence}
     if verdict.deciding_url and verdict.deciding_url not in known:
         verdict.deciding_url = next((u for u in known if verdict.deciding_url in u or u in verdict.deciding_url), None)
+
+    # A supported or contradicted verdict without a source we actually supplied is not a
+    # verdict this app is willing to publish: the citation IS the evidence. Rather than
+    # showing a settled status with nothing behind it, fall back to unverifiable.
+    if verdict.status in ("supported", "contradicted") and not verdict.deciding_url:
+        verdict.status = "unverifiable"
+        verdict.rationale = (
+            f"{verdict.rationale} (Downgraded: the adjudicator did not cite one of the "
+            f"retrieved sources, so the claim is recorded as unsettled.)"
+        ).strip()
+
     if verdict.status == "unverifiable":
         verdict.correction = None
 

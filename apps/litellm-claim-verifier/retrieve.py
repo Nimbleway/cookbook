@@ -272,6 +272,14 @@ async def retrieve_for_claim(claim: Claim, raw_dir: Path | None = None) -> tuple
         payload = _as_dict(response)
         cost = _cost(response)
 
+    # Raw first, parse second. A schema surprise raises during construction below, and
+    # the payload is exactly what is needed to diagnose it.
+    if raw_dir is not None:
+        raw_dir.mkdir(parents=True, exist_ok=True)
+        (raw_dir / f"{claim.id}.json").write_text(
+            json.dumps({"query": query, "focus": focus, "response": payload}, indent=2, default=str)
+        )
+
     # A result with no URL is dropped: a verdict has to name the source that decided
     # it, and an uncitable passage cannot do that.
     evidence = [
@@ -288,12 +296,6 @@ async def retrieve_for_claim(claim: Claim, raw_dir: Path | None = None) -> tuple
         for item in (payload.get("results") or [])
         if item.get("url")
     ]
-
-    if raw_dir is not None:
-        raw_dir.mkdir(parents=True, exist_ok=True)
-        (raw_dir / f"{claim.id}.json").write_text(
-            json.dumps({"query": query, "focus": focus, "response": payload}, indent=2, default=str)
-        )
 
     return evidence, focus, query, cost
 

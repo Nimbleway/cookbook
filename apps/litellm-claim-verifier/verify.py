@@ -24,6 +24,7 @@ import json
 import os
 import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -49,7 +50,11 @@ ADJUDICATE_CONCURRENCY = 5
 
 
 def _cache_key(claim: Claim) -> str:
-    return hashlib.sha1(f"{claim.text}|{claim.time_sensitive}".encode()).hexdigest()[:16]
+    # Time-sensitive claims get the UTC date in the key, so their cache expires daily
+    # rather than serving last month's ranking as a live verification. Settled facts
+    # cache indefinitely, which is the whole point of caching them.
+    day = datetime.now(timezone.utc).strftime("%Y-%m-%d") if claim.time_sensitive else "static"
+    return hashlib.sha1(f"{claim.text}|{claim.time_sensitive}|{day}".encode()).hexdigest()[:16]
 
 
 def _load_cached(claim: Claim) -> ClaimResult | None:
@@ -57,9 +62,14 @@ def _load_cached(claim: Claim) -> ClaimResult | None:
     if not path.exists():
         return None
     try:
-        return ClaimResult.model_validate_json(path.read_text())
+        cached = ClaimResult.model_validate_json(path.read_text())
     except Exception:
         return None  # a stale cache entry is not worth failing a run over
+    # The key is claim TEXT, so a hit can come from a different document, carrying that
+    # document's id, quote and offsets. Rebind to the claim in hand or the report would
+    # anchor annotations to text that isn't there.
+    cached.claim = claim
+    return cached
 
 
 def _store_cached(result: ClaimResult) -> None:
@@ -68,6 +78,17 @@ def _store_cached(result: ClaimResult) -> None:
 
 
 def _require_keys() -> None:
+    # In gateway mode the proxy holds the provider credentials, so requiring them locally
+    # would break every centrally managed deployment. Only the proxy's own key is needed.
+    if gateway.ENABLED:
+        if not gateway.KEY:
+            sys.exit(
+                "LITELLM_BASE_URL is set but LITELLM_MASTER_KEY is not.\n"
+                "Gateway mode authenticates to the proxy with its master key; the provider "
+                "keys live on the proxy. Unset LITELLM_BASE_URL to call the providers directly."
+            )
+        return
+
     missing = [k for k in ("NIMBLE_API_KEY", "ANTHROPIC_API_KEY") if not os.getenv(k)]
     if missing:
         sys.exit(
@@ -82,6 +103,12 @@ async def run_live(doc_path: Path, document: str, no_cache: bool) -> Run:
 
     print(f"→ extracting claims with {EXTRACTOR_MODEL.split('/')[-1]} …")
     extraction, extract_cost = extract_claims(document)
+
+    # Ids come from a model, so they are neither guaranteed unique nor guaranteed safe to
+    # put in HTML. They are used as dict keys and as anchors, so both matter: renumber
+    # positionally and the ids become ours rather than the model's.
+    for position, claim in enumerate(extraction.claims, 1):
+        claim.id = f"c{position:02d}"
     cost.extract_spend = extract_cost
     print(f"  {len(extraction.claims)} claims, {len(extraction.skipped)} spans skipped  (${extract_cost:.4f})")
 
@@ -92,6 +119,7 @@ async def run_live(doc_path: Path, document: str, no_cache: bool) -> Run:
         print(f"  {len(cached)} claim(s) served from cache, {len(todo)} to check")
 
     results: dict[str, ClaimResult] = {}
+    fresh: set[str] = set()   # ids actually paid for in this run, as opposed to served from cache
 
     if todo:
         where = "the gateway" if gateway.ENABLED else "LiteLLM"
@@ -120,14 +148,25 @@ async def run_live(doc_path: Path, document: str, no_cache: bool) -> Run:
                 adjudicate_cost=adj_cost,
             )
 
-        for result in await asyncio.gather(*(judge(c) for c in todo)):
-            results[result.claim.id] = result
-            _store_cached(result)
+        # return_exceptions: claims are independent, so one failed judgment costs one
+        # verdict, not the run. Anything already searched is still reported and cached.
+        for claim, outcome in zip(todo, await asyncio.gather(*(judge(c) for c in todo), return_exceptions=True)):
+            if isinstance(outcome, BaseException):
+                board.set(claim.id, "failed")
+                print(f"  ! adjudication failed for {claim.id}: {type(outcome).__name__}: {outcome}")
+                continue
+            results[outcome.claim.id] = outcome
+            fresh.add(outcome.claim.id)
+            _store_cached(outcome)
 
     results.update(cached)
     ordered = [results[c.id] for c in claims if c.id in results]
 
+    # Only charge this run for what this run bought. A cached claim made no calls, so
+    # adding its stored cost would report spend that never happened.
     for r in ordered:
+        if r.claim.id not in fresh:
+            continue
         cost.search_spend += r.search_cost
         cost.adjudicate_spend += r.adjudicate_cost
         cost.search_queries += 1

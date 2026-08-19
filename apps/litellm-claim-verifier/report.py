@@ -22,6 +22,28 @@ from schemas import Run
 # hand in `_annotate` (it has to be, to inject spans) and is marked `|safe` there.
 _ENV = Environment(autoescape=True)
 
+_SAFE_ID = re.compile(r"[^A-Za-z0-9_-]")
+
+
+def _safe_id(claim_id: str) -> str:
+    """
+    Claim ids reach HTML as element ids and fragment hrefs. They originate in a model
+    response, so they are sanitised rather than trusted: escaping alone would not stop a
+    crafted id from breaking out of an attribute.
+    """
+    cleaned = _SAFE_ID.sub("", claim_id or "")
+    return cleaned or "claim"
+
+
+def _safe_url(url: str | None) -> str | None:
+    """
+    Only http(s) citations become links. Escaping does not neutralise a `javascript:` URL,
+    and these URLs come from search results, which is to say from the open web.
+    """
+    if not url:
+        return None
+    return url if re.match(r"^https?://", url.strip(), re.IGNORECASE) else None
+
 STATUS_LABEL = {
     "supported": "Supported",
     "contradicted": "Contradicted",
@@ -39,30 +61,43 @@ def _annotate(document: str, run: Run) -> str:
     """
     escaped = html.escape(document)
 
+    # Every span is located against the UNTOUCHED escaped document, and insertion happens
+    # afterwards in one pass. Replacing as we go would let a later quote match text inside
+    # an already-inserted span, nesting two annotations over one occurrence.
+    spans: list[tuple[int, int, int, object]] = []
     for i, result in enumerate(run.results, 1):
         quote = html.escape(result.claim.quote.strip())
         if not quote:
             continue
 
-        status = result.verdict.status
-        marker = (
-            f'<span class="claim {status}" id="anchor-{result.claim.id}">'
-            f'<a class="pin" href="#{result.claim.id}">{i}</a>{{QUOTE}}</span>'
-        )
+        start = escaped.find(quote)
+        if start >= 0:
+            end = start + len(quote)
+        else:
+            # Whitespace-flexible retry — model-copied quotes often normalise line breaks.
+            match = re.compile(r"\s+".join(re.escape(w) for w in quote.split())).search(escaped)
+            if not match:
+                continue
+            start, end = match.span()
 
-        if quote in escaped:
-            escaped = escaped.replace(quote, marker.replace("{QUOTE}", quote), 1)
+        # Two claims over the same sentence: annotate the first, leave the second to the
+        # table below. Overlapping markup would corrupt both.
+        if any(start < prev_end and prev_start < end for prev_start, prev_end, _, _ in spans):
             continue
+        spans.append((start, end, i, result))
 
-        # Whitespace-flexible retry — model-copied quotes often normalise line breaks.
-        pattern = re.compile(r"\s+".join(re.escape(w) for w in quote.split()))
-        match = pattern.search(escaped)
-        if match:
-            escaped = (
-                escaped[: match.start()]
-                + marker.replace("{QUOTE}", match.group(0))
-                + escaped[match.end() :]
-            )
+    out: list[str] = []
+    cursor = 0
+    for start, end, i, result in sorted(spans):
+        anchor = _safe_id(result.claim.id)
+        out.append(escaped[cursor:start])
+        out.append(
+            f'<span class="claim {result.verdict.status}" id="anchor-{anchor}">'
+            f'<a class="pin" href="#{anchor}">{i}</a>{escaped[start:end]}</span>'
+        )
+        cursor = end
+    out.append(escaped[cursor:])
+    escaped = "".join(out)
 
     paragraphs = [p.strip() for p in re.split(r"\n\s*\n", escaped) if p.strip()]
     return "\n".join(f"<p>{p}</p>" for p in paragraphs)
@@ -159,7 +194,7 @@ TEMPLATE = _ENV.from_string(
 <div class="panel">
   <h2>Verdicts</h2>
   {% for r in run.results %}
-  <div class="verdict" id="{{ r.claim.id }}">
+  <div class="verdict" id="{{ safe_id(r.claim.id) }}">
     <div class="vhead">
       <span class="num">{{ loop.index }}</span>
       <span class="badge {{ r.verdict.status }}">{{ labels[r.verdict.status] }}</span>
@@ -172,8 +207,12 @@ TEMPLATE = _ENV.from_string(
       <span>confidence: {{ r.verdict.confidence }}</span>
       <span>focus: {{ r.search_focus }}</span>
       <span>sources: {{ r.evidence|length }}</span>
-      {% if r.verdict.deciding_url %}<span>decided by <a href="{{ r.verdict.deciding_url }}">{{ r.verdict.deciding_url }}</a></span>{% endif %}
-      <span><a href="#anchor-{{ r.claim.id }}">back to text ↑</a></span>
+      {% if r.verdict.deciding_url %}<span>decided by
+        {% set href = safe_url(r.verdict.deciding_url) %}
+        {% if href %}<a href="{{ href }}" rel="noopener noreferrer">{{ r.verdict.deciding_url }}</a>
+        {% else %}{{ r.verdict.deciding_url }}{% endif %}
+      </span>{% endif %}
+      <span><a href="#anchor-{{ safe_id(r.claim.id) }}">back to text ↑</a></span>
     </div>
   </div>
   {% endfor %}
@@ -225,6 +264,8 @@ def write_html(run: Run, path: Path, extractor: str, adjudicator: str) -> Path:
     html_out = TEMPLATE.render(
         run=run,
         doc_name=Path(run.document_path).name,
+        safe_url=_safe_url,
+        safe_id=_safe_id,
         annotated=_annotate(run.document_text, run),
         counts=_counts(run),
         labels=STATUS_LABEL,
