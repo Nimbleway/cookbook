@@ -1,0 +1,21 @@
+# LiteLLM with the Nimble search provider.
+#
+# The provider landed in 1.98.0 (PR BerriAI/litellm#36347). The lower bound names the
+# release candidate on purpose: 1.98.0rc1 sorts BELOW 1.98.0, so `>=1.98.0` would be
+# satisfied only by a dev build (1.99.0.dev1) until the final ships — and PEP 440 lets
+# pip take a pre-release when it is the only match. This spec resolves to 1.98.0rc1
+# today, to 1.98.0 the moment it lands, and never to a nightly.
+litellm>=1.98.0rc1,<1.99.0
+
+# Required, and not pulled in by litellm itself (verified against 1.98.0rc1's declared
+# dependencies): litellm's search resolver eagerly imports every provider config, and
+# Brave's does `from dateutil import parser`. Without this, EVERY search call fails with
+#   APIConnectionError: No module named 'dateutil'
+python-dateutil>=2.9.0
+
+# Used directly for the gateway path (POST to the proxy's /v1/search/<tool>).
+httpx>=0.28.0
+
+python-dotenv>=1.0.0
+jinja2>=3.1.0
+pydantic>=2.0
