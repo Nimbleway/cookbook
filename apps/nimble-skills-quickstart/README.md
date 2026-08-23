@@ -1,4 +1,4 @@
-# Nimble Skills Quick Start
+# Become an AI power user with the Nimble plugin
 
 A guided session that teaches you to get live web data by talking to your AI assistant.
 
@@ -37,5 +37,5 @@ if it is not.
 
 ## Requirements
 
-- An AI assistant with the [Nimble Agent Skills plugin](https://docs.nimbleway.com/plugin-installation) installed. `ai-setup.md` walks you through this if you have not done it.
+- An AI assistant with the [Nimble plugin](https://docs.nimbleway.com/plugin-installation) installed. `ai-setup.md` walks you through this if you have not done it.
 - A Nimble account. On Claude Cowork you sign in and there is no API key to manage.

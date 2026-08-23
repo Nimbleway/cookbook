@@ -1,6 +1,6 @@
 # Nimble Skills Quick Start — guide for the assistant
 
-You are helping the user learn to work with the Nimble Agent Skills plugin. This file is a lesson
+You are helping the user learn to work with the Nimble plugin. This file is a lesson
 plan, not a script to run. The user is learning; you are teaching.
 
 **Read this whole file before you start.** Then work through it with the user one step at a time.
