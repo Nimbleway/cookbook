@@ -1,0 +1,52 @@
+# LiteLLM proxy config — the gateway path.
+#
+# The app itself uses the LiteLLM SDK directly (see verify.py), which needs no
+# proxy at all. This file is for teams already running LiteLLM as a gateway: it
+# registers the same two models and the Nimble search provider behind one endpoint,
+# so the search call is governed by the same virtual keys, budgets and logging
+# callbacks as the model calls.
+#
+#   litellm --config config.yaml
+#
+# Then Nimble search is reachable at:
+#   POST http://localhost:4000/v1/search/nimble-search
+#     {"query": "...", "max_results": 4}
+#
+# and appears in the dashboard at /ui/?page=search-tools with a Test Connection
+# button. Field names follow litellm/types/search.py (SearchTool / SearchToolLiteLLMParams).
+
+model_list:
+  # Cheap and mechanical: pulling checkable claims out of a document.
+  - model_name: claim-extractor
+    litellm_params:
+      model: anthropic/claude-haiku-4-5-20251001
+      api_key: os.environ/ANTHROPIC_API_KEY
+
+  # Judgment: deciding whether retrieved sources actually settle a claim.
+  - model_name: claim-adjudicator
+    litellm_params:
+      model: anthropic/claude-opus-5
+      api_key: os.environ/ANTHROPIC_API_KEY
+
+search_tools:
+  - search_tool_name: nimble-search
+    litellm_params:
+      search_provider: nimble
+      api_key: os.environ/NIMBLE_API_KEY
+      # api_base defaults to https://sdk.nimbleway.com/v2 — override with
+      # NIMBLE_API_BASE or here if you are pointed at a different environment.
+    search_tool_info:
+      description: Nimble Search — live web results, $0.005 per query
+
+litellm_settings:
+  # Search spend and token spend both land on the same ledger, in the same units.
+  # Optional: uncomment if you actually run Langfuse. Left off so the proxy starts
+  # clean with nothing but the two provider keys.
+  # success_callback: ["langfuse"]
+  drop_params: true
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+  # Uncomment to keep the prompt and response on each spend log, so a row in the
+  # dashboard can be opened and read. Off by default: it puts prompts in the database.
+  # store_prompts_in_spend_logs: true
