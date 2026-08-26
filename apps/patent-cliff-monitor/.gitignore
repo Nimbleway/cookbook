@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.env
+.env.local
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# The repository root .gitignore is a Python one and ignores `lib/`, which
+# would otherwise swallow this app's src/lib directory. A parent directory has
+# to be un-ignored before anything inside it can be re-included.
+!src/lib/
