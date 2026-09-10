@@ -225,7 +225,9 @@ def _validate_and_backfill(output: dict) -> list[str]:
         content["sources"] = _normalize_urls(content["sources"])
     srcs = content.get("sources") or []
     if not any(str(s).startswith("http") for s in srcs):
-        recovered = [s.get("url") for s in (trust.get("sources") or []) if s.get("url")]
+        recovered = _normalize_urls(
+            [s.get("url") for s in (trust.get("sources") or []) if s.get("url")]
+        )
         if recovered:
             content["sources"] = recovered
             warnings.append(f"sources held no full URLs; recovered {len(recovered)} from trust.sources")
@@ -233,6 +235,15 @@ def _validate_and_backfill(output: dict) -> list[str]:
             warnings.append("sources are bare hostnames or prose, not full URLs")
         else:
             warnings.append("no sources returned")
+    else:
+        # A list that mixes one good URL with prose entries still passes the check
+        # above, so report the unusable remainder rather than printing it as a citation.
+        bad = [str(x) for x in (content.get("sources") or []) if not str(x).startswith("http")]
+        if bad:
+            warnings.append(
+                f"{len(bad)} source entr{'y is' if len(bad) == 1 else 'ies are'} not a URL: "
+                f"{', '.join(repr(b[:48]) for b in bad[:3])}"
+            )
 
     grades = content.get("confidence_by_dimension") or []
     if not grades:

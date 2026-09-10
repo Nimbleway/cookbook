@@ -185,9 +185,14 @@ def _backfill_citations(output: dict) -> list[str]:
         if not isinstance(dev, dict):
             continue
         missing = [f for f in ("date", "type", "issuing_body", "materiality", "confidence") if not dev.get(f)]
-        if not dev.get("source_urls") and by_dev.get(i):
-            dev["source_urls"] = list(by_dev[i])
-            missing.append("source_urls (recovered from trust.claims)")
+        if not dev.get("source_urls"):
+            if by_dev.get(i):
+                dev["source_urls"] = list(by_dev[i])
+                missing.append("source_urls (recovered from trust.claims)")
+            else:
+                # Report it either way: a development with no primary document behind
+                # it is the one thing this brief must never present as complete.
+                missing.append("source_urls (none returned and none recoverable)")
         # Citations often come back scheme-less ("sec.gov/Archives/..."); make them
         # clickable and fetchable.
         if dev.get("source_urls"):
@@ -201,7 +206,9 @@ def _backfill_citations(output: dict) -> list[str]:
         content["sources"] = _normalize_urls(content["sources"])
     srcs = content.get("sources") or []
     if not any("http" in str(s) for s in srcs):
-        recovered = [s.get("url") for s in (trust.get("sources") or []) if s.get("url")]
+        recovered = _normalize_urls(
+            [s.get("url") for s in (trust.get("sources") or []) if s.get("url")]
+        )
         if recovered:
             content["sources"] = recovered
             warnings.append(f"sources held no URLs; recovered {len(recovered)} from trust.sources")

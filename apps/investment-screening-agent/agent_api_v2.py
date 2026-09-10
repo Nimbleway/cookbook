@@ -186,6 +186,29 @@ def _normalize_urls(urls) -> list[str]:
             out.append(n)
     return out
 
+_CLAIM_PATH = re.compile(r"^\$\.candidates\[(\d+)\]")
+
+
+def _trust_urls_by_candidate(trust: dict) -> dict[int, list[str]]:
+    """Group the citation URLs in `trust.claims` by which candidate they back.
+
+    The Agent API reports per-claim citations under ``trust.claims[].path`` (e.g.
+    ``$.candidates[2].funding_total``). Those citations are real evidence even when the
+    model leaves ``evidence_urls`` empty — and `_clean` drops any candidate with no
+    verifiable evidence, so without this a well-supported company is discarded.
+    """
+    by_cand: dict[int, list[str]] = {}
+    for claim in (trust or {}).get("claims") or []:
+        m = _CLAIM_PATH.match(str(claim.get("path") or ""))
+        if not m:
+            continue
+        idx = int(m.group(1))
+        for cite in claim.get("citations") or []:
+            url = _normalize_url(str(cite.get("url") or ""))
+            if url and url not in by_cand.setdefault(idx, []):
+                by_cand[idx].append(url)
+    return by_cand
+
 def _validate_and_clean(output: dict, count: int) -> list[str]:
     """Report thin fields, recover `sources`, and apply Pattern A's row hygiene.
 
@@ -205,9 +228,22 @@ def _validate_and_clean(output: dict, count: int) -> list[str]:
             warnings.append(f"missing required field {f!r}")
 
     cands = content.get("candidates") or []
-    for c in cands:
-        if isinstance(c, dict) and c.get("evidence_urls"):
+    by_cand = _trust_urls_by_candidate(trust)
+    recovered_rows = 0
+    for i, c in enumerate(cands):
+        if not isinstance(c, dict):
+            continue
+        if c.get("evidence_urls"):
             c["evidence_urls"] = _normalize_urls(c["evidence_urls"])
+        elif by_cand.get(i):
+            # Without this the row is dropped by `_clean` as unevidenced, even though
+            # the Agent API did supply citations for it.
+            c["evidence_urls"] = list(by_cand[i])
+            recovered_rows += 1
+    if recovered_rows:
+        warnings.append(
+            f"{recovered_rows} candidate(s) had no evidence_urls; recovered them from trust.claims"
+        )
     if not cands:
         warnings.append("no candidates returned")
     elif len(cands) < count / 2:

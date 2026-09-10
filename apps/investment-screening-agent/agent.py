@@ -230,6 +230,7 @@ def _clean(result: ScreeningResult) -> ScreeningResult:
     ``excluded`` with a reason rather than silently deleted.
     """
     stems = [_stem(c.company_name) for c in result.candidates]
+    excluded_stems = {_stem(e.company_name) for e in result.excluded}
     seen: set[str] = set()
     kept = []
     dropped: list[tuple[str, str]] = []
@@ -244,9 +245,19 @@ def _clean(result: ScreeningResult) -> ScreeningResult:
         ):
             dropped.append((name, "sub-product or brand of another candidate — merged into that entry"))
             continue
+        # A candidate the model itself listed in `excluded` contradicts its own
+        # shortlist; keep the exclusion and drop the recommendation.
+        if _stem(name) in excluded_stems:
+            dropped.append((name, "also listed in `excluded` — contradicts its own inclusion"))
+            continue
         real_evidence = [u for u in c.evidence_urls if "linkedin.com/in/" not in u]
         if not real_evidence:
-            dropped.append((name, "only evidence was a personal LinkedIn profile — not independently verifiable"))
+            reason = (
+                "no supporting evidence URLs"
+                if not c.evidence_urls
+                else "only evidence was a personal LinkedIn profile — not independently verifiable"
+            )
+            dropped.append((name, reason))
             continue
         c.evidence_urls = real_evidence
         stem = _stem(name)
@@ -257,8 +268,13 @@ def _clean(result: ScreeningResult) -> ScreeningResult:
         kept.append(c)
 
     result.candidates = kept
+    # Rebuild the ranking from the survivors, preserving the model's order but
+    # emitting each name once — a repeated name would show as duplicate positions.
     keep_names = {c.company_name for c in kept}
-    ranked = [n for n in result.ranked_shortlist if n in keep_names]
+    ranked: list[str] = []
+    for n in result.ranked_shortlist:
+        if n in keep_names and n not in ranked:
+            ranked.append(n)
     ranked += [c.company_name for c in kept if c.company_name not in ranked]
     result.ranked_shortlist = ranked
 
@@ -275,8 +291,9 @@ def _clean(result: ScreeningResult) -> ScreeningResult:
         for u in c.evidence_urls:
             if u not in urls:
                 urls.append(u)
-    if urls:
-        result.sources = urls
+    # Assign unconditionally: if nothing survived, the model's original source list
+    # supports no remaining recommendation and must not be presented as if it does.
+    result.sources = urls
     return result
 
 
