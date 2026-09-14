@@ -22,6 +22,7 @@ from dotenv import load_dotenv
 from langchain.agents import create_agent
 from langchain.chat_models import init_chat_model
 from langchain.tools import tool
+from langgraph.errors import GraphRecursionError
 from nimble_python import Nimble
 
 from config import build_system_prompt
@@ -173,19 +174,26 @@ def research(subject: str, model: str | None = None) -> RegulatoryBrief:
     """Run the agent end to end and return the structured brief."""
     today = dt.date.today().isoformat()
     agent = build_agent(model, today)
-    result = agent.invoke(
-        {
-            "messages": [
-                (
-                    "user",
-                    f"Research recent regulatory and filing developments related to "
-                    f"{subject}. Identify material SEC disclosures, regulatory actions, "
-                    f"investigations, or policy developments that could affect the "
-                    f"subject. Explain what changed, why it matters, and cite the "
-                    f"underlying evidence. Today is {today}.",
-                )
-            ]
-        },
-        {"recursion_limit": DEFAULT_RECURSION_LIMIT},
-    )
+    try:
+        result = agent.invoke(
+            {
+                "messages": [
+                    (
+                        "user",
+                        f"Research recent regulatory and filing developments related to "
+                        f"{subject}. Identify material SEC disclosures, regulatory actions, "
+                        f"investigations, or policy developments that could affect the "
+                        f"subject. Explain what changed, why it matters, and cite the "
+                        f"underlying evidence. Today is {today}.",
+                    )
+                ]
+            },
+            {"recursion_limit": DEFAULT_RECURSION_LIMIT},
+        )
+    except GraphRecursionError as exc:
+        raise RuntimeError(
+            f"The agent hit its {DEFAULT_RECURSION_LIMIT}-step budget before returning a brief "
+            f"for {subject!r}. Narrow the request, or raise AGENT_RECURSION_LIMIT "
+            f"above {DEFAULT_RECURSION_LIMIT}."
+        ) from exc
     return result["structured_response"]

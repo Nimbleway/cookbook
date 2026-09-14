@@ -270,11 +270,15 @@ def _clean(result: ScreeningResult) -> ScreeningResult:
     result.candidates = kept
     # Rebuild the ranking from the survivors, preserving the model's order but
     # emitting each name once — a repeated name would show as duplicate positions.
-    keep_names = {c.company_name for c in kept}
+    # Key on `_stem`, as every other identity test here does: a model that spells a
+    # company two ways ("Sixfold" in the ranking, "Sixfold, Inc." in the row) would
+    # otherwise drop its own top pick out of order and re-append it at the end.
+    by_stem = {_stem(c.company_name): c.company_name for c in kept}
     ranked: list[str] = []
     for n in result.ranked_shortlist:
-        if n in keep_names and n not in ranked:
-            ranked.append(n)
+        canonical = by_stem.get(_stem(n))
+        if canonical and canonical not in ranked:
+            ranked.append(canonical)
     ranked += [c.company_name for c in kept if c.company_name not in ranked]
     result.ranked_shortlist = ranked
 

@@ -65,23 +65,17 @@ that is deliberate: as of `langchain-nimble` 4.0.0 its `NimbleSearchTool` does n
 
 ### Why every search runs at `search_depth="standard"`
 
-`search_depth="lite"` **silently ignores `include_domains`**. Measured over 10 scoped
-queries, lite returned 21/45 off-domain results (47%) where standard returned 0/50 —
-`include_domains=["sec.gov"]` on lite comes back with YouTube videos and vendor marketing
-pages. Since the source allow-list is what makes these agents cite primary sources, lite
-is never sent to the API: `nimble_search` accepts `search_depth="lite"` as a *scan* hint,
-issues the request at standard depth, and trims the result to `title`/`url`/`description`
-locally (61-80% smaller than an untrimmed standard result, so a scan stays cheap).
-Standard was not slower in testing — 0.75s vs 1.33s median.
-
-Note this also affects `langchain-nimble` itself, whose `NimbleSearchTool` defaults to
-`search_depth="lite"`: calling it with `include_domains=["sec.gov"]` returns off-domain
-results. The problem is lite mode in the Search API, not the wrapper's ranking.
+`search_depth="lite"` **does not honour `include_domains`** — `include_domains=["sec.gov"]`
+comes back with YouTube videos and vendor marketing pages. The source allow-list is what
+makes these agents cite primary sources, so lite is never sent to the API: `nimble_search`
+accepts `search_depth="lite"` as a *scan* hint, issues the request at standard depth, and
+trims the result to `title`/`url`/`description` locally, which keeps a scan cheap.
+Standard was not slower in testing.
 
 ## Setup
 
 ```bash
-uv sync                       # or: pip install -e .
+uv sync                       # or: pip install -r requirements.txt
 cp .env.example .env          # NIMBLE_API_KEY + an LLM_MODEL and its key
 ```
 
@@ -105,3 +99,5 @@ Env overrides: `LLM_MODEL`, `NIMBLE_CONTENT_CHAR_CAP` (default `8000`),
 spanning recent 10-K / 10-Q / 8-K disclosures, BIS export-control rules, and ongoing
 securities litigation, each citing the primary document on `sec.gov` or
 `federalregister.gov`.
+
+This is illustrative model output, committed to show the shape of a result and kept as it came back from the run. Treat every claim and grade in it as an example of the pipeline's output, not as verified research — re-run the agent for current findings before relying on any of it.

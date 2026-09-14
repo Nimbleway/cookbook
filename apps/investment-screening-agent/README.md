@@ -52,8 +52,9 @@ rather than matched as bare substrings, so a real company is not mistaken for a 
 `Pointer Telocation Ltd` is a NASDAQ-listed firm, and `Acme (duplicate of Foo)` is not.
 Pattern B runs the same hygiene pass over its rows.
 
-`--effort low` is not offered: this agent runs as `use_case="dataset_building"`, which the
-API rejects below `medium` with a 422.
+`--effort` starts at `high`. This agent runs as `use_case="dataset_building"`, which the
+API rejects below `medium` with a 422, and `medium` itself returned 0 candidates for 12
+requested and 1 for 25 — so neither tier is offered on the CLI.
 
 The Pattern A step budget scales with `--count` (`4 × count + 40`, floor 80). A fixed
 budget overran on larger screens, and a `GraphRecursionError` loses the whole run rather
@@ -72,23 +73,17 @@ that is deliberate: as of `langchain-nimble` 4.0.0 its `NimbleSearchTool` does n
 
 ### Why every search runs at `search_depth="standard"`
 
-`search_depth="lite"` **silently ignores `include_domains`**. Measured over 10 scoped
-queries, lite returned 21/45 off-domain results (47%) where standard returned 0/50 —
-`include_domains=["sec.gov"]` on lite comes back with YouTube videos and vendor marketing
-pages. Since the source allow-list is what makes these agents cite primary sources, lite
-is never sent to the API: `nimble_search` accepts `search_depth="lite"` as a *scan* hint,
-issues the request at standard depth, and trims the result to `title`/`url`/`description`
-locally (61-80% smaller than an untrimmed standard result, so a scan stays cheap).
-Standard was not slower in testing — 0.75s vs 1.33s median.
-
-Note this also affects `langchain-nimble` itself, whose `NimbleSearchTool` defaults to
-`search_depth="lite"`: calling it with `include_domains=["sec.gov"]` returns off-domain
-results. The problem is lite mode in the Search API, not the wrapper's ranking.
+`search_depth="lite"` **does not honour `include_domains`** — `include_domains=["sec.gov"]`
+comes back with YouTube videos and vendor marketing pages. The source allow-list is what
+makes these agents cite primary sources, so lite is never sent to the API: `nimble_search`
+accepts `search_depth="lite"` as a *scan* hint, issues the request at standard depth, and
+trims the result to `title`/`url`/`description` locally, which keeps a scan cheap.
+Standard was not slower in testing.
 
 ## Setup & run
 
 ```bash
-uv sync
+uv sync                    # or: pip install -r requirements.txt
 cp .env.example .env       # NIMBLE_API_KEY + an LLM_MODEL and its key
 ```
 
@@ -101,8 +96,10 @@ Env overrides: `LLM_MODEL`, `SCREENING_TARGET_COUNT` (`25`), `AGENT_RECURSION_LI
 ## Example
 
 `examples/insurance_ai_screen.json` — a real Pattern A run for the insurance-carrier-AI
-thesis: ~19 confirmed companies (Gradient AI, Convr, Reserv, FurtherAI, ZestyAI, …) each
-with HQ / product / funding / investors / evidence, plus ~28 excluded companies with the
+thesis: 17 confirmed companies (Gradient AI, Convr, Reserv, FurtherAI, ZestyAI, …) each
+with HQ / product / funding / investors / evidence, plus 28 excluded companies with the
 reason each was cut. Pattern A tends to return a tighter, more conservative list than the
 Pattern B run (which targets the full 25) — the deterministic `_clean` pass errs toward
 dropping anything it can't cleanly verify.
+
+This is illustrative model output, committed to show the shape of a result and kept as it came back from the run. Treat every claim and grade in it as an example of the pipeline's output, not as verified research — re-run the agent for current findings before relying on any of it.

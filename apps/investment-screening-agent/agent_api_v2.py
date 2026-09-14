@@ -259,11 +259,31 @@ def _validate_and_clean(output: dict, count: int) -> list[str]:
         if content["ranked_shortlist"]:
             warnings.append("ranked_shortlist was empty; rebuilt it from candidates")
 
-    if not any(str(u).startswith("http") for u in (content.get("sources") or [])):
-        recovered = [s.get("url") for s in (trust.get("sources") or []) if s.get("url")]
+    # Normalize `sources` first, then recover from trust when nothing usable is left.
+    # `recovered` is merged back after row hygiene below, which rebuilds this field.
+    if content.get("sources"):
+        content["sources"] = _normalize_urls(content["sources"])
+    srcs = content.get("sources") or []
+    recovered: list[str] = []
+    if not any(str(u).startswith("http") for u in srcs):
+        recovered = _normalize_urls(
+            [s.get("url") for s in (trust.get("sources") or []) if s.get("url")]
+        )
         if recovered:
-            content["sources"] = recovered
-            warnings.append(f"sources held no URLs; recovered {len(recovered)} from trust.sources")
+            content["sources"] = list(recovered)
+        elif srcs:
+            warnings.append("sources are bare hostnames or prose, not full URLs")
+        else:
+            warnings.append("no sources returned")
+    else:
+        # A list that mixes one good URL with prose entries still passes the check
+        # above, so report the unusable remainder rather than printing it as a citation.
+        bad = [str(x) for x in srcs if not str(x).startswith("http")]
+        if bad:
+            warnings.append(
+                f"{len(bad)} source entr{'y is' if len(bad) == 1 else 'ies are'} not a URL: "
+                f"{', '.join(repr(b[:48]) for b in bad[:3])}"
+            )
 
     # Run Pattern A's hygiene over the rows, tolerating partial candidates.
     try:
@@ -293,13 +313,36 @@ def _validate_and_clean(output: dict, count: int) -> list[str]:
         content["candidates"] = [c.model_dump() for c in cleaned.candidates]
         content["ranked_shortlist"] = cleaned.ranked_shortlist
         content["excluded"] = [e.model_dump() for e in cleaned.excluded]
-        content["sources"] = cleaned.sources
+        # `_clean` rebuilds `sources` from the survivors' evidence, which would drop the
+        # URLs recovered above. Merge them back — but only when something survived, so
+        # an empty shortlist is never handed citations supporting no recommendation.
+        merged = list(cleaned.sources)
+        if cleaned.candidates:
+            for u in recovered:
+                if u not in merged:
+                    merged.append(u)
+        content["sources"] = merged
         if len(cleaned.candidates) != before:
             warnings.append(
                 f"row hygiene dropped {before - len(cleaned.candidates)} candidate(s) — see `excluded`"
             )
     except Exception as exc:  # never fail a completed run over post-processing
         warnings.append(f"could not apply row hygiene: {type(exc).__name__}: {exc}")
+
+    # Report the recovery against what actually reached the output, not against what
+    # was recovered — a warning that claims URLs the reader cannot see is worse than none.
+    if recovered:
+        final = content.get("sources") or []
+        landed = [u for u in recovered if u in final]
+        if landed:
+            warnings.append(
+                f"sources held no URLs; recovered {len(landed)} from trust.sources"
+            )
+        else:
+            warnings.append(
+                "sources held no URLs, and the URLs recovered from trust.sources back no "
+                "surviving candidate — the result is uncited"
+            )
     return warnings
 
 def _print_result(result: dict, count: int = 25) -> None:
@@ -326,11 +369,12 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("thesis")
     parser.add_argument("--count", type=int, default=25)
-    # `use_case="dataset_building"` is rejected by the API below "medium", so "low" is
-    # not offered here — passing it always returned a 422.
+    # `use_case="dataset_building"` is rejected by the API below "medium" (a 422), and
+    # "medium" itself was measured returning 0 candidates for 12 requested and 1 for 25.
+    # Neither is offered here; `MIN_EFFORT` still guards direct callers of run_research.
     parser.add_argument(
         "--effort", default="high",
-        choices=["medium", "high", "x-high", "5x-high", "max"],
+        choices=["high", "x-high", "5x-high", "max"],
     )
     parser.add_argument("--poll-interval", type=int, default=20)
     parser.add_argument("--json", metavar="PATH", default=None)
