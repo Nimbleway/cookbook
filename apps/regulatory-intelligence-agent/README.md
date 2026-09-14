@@ -100,9 +100,15 @@ Env overrides: `LLM_MODEL`, `LLM_TEMPERATURE` (unset — see above),
 
 ## Example
 
-`examples/nvidia_brief.json` — a real Pattern A run for `"NVIDIA"`: material developments
-spanning recent 10-K / 10-Q / 8-K disclosures, BIS export-control rules, and ongoing
-securities litigation, each citing the primary document on `sec.gov` or
-`federalregister.gov`.
+`examples/nvidia_brief.json` — a real Pattern A run for `"NVIDIA"`, driven by
+`anthropic:claude-sonnet-5`: 8 material developments spanning 10-K / 10-Q / 8-K
+disclosures, BIS export-control rules and Entity List additions, and DOJ enforcement
+actions. Every development carries a type, date, issuing body, materiality and
+confidence grade, and at least one source URL; all 14 top-level sources are full
+`https://` links to `sec.gov`, `federalregister.gov`, `justice.gov`, `ftc.gov` or
+contemporaneous reporting.
 
-This is illustrative model output, committed to show the shape of a result and kept as it came back from the run. Treat every claim and grade in it as an example of the pipeline's output, not as verified research — re-run the agent for current findings before relying on any of it.
+This is illustrative model output, committed to show the shape of a result and kept as
+it came back from the run. Treat every claim and grade in it as an example of the
+pipeline's output, not as verified research — re-run the agent for current findings
+before relying on any of it.

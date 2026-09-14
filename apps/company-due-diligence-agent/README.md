@@ -94,9 +94,12 @@ Env overrides: `LLM_MODEL`, `LLM_TEMPERATURE` (unset — see above),
 
 ## Example
 
-`examples/ramp_profile.json` — a real Pattern A run for `"Ramp"`: business model, product
-inventory, leadership, a terse funding summary (`"$750M growth round"`, `"$44B
-post-money"`), partnerships, competitors, and a scorecard with a confidence grade for
-each of the seven dimensions.
+`examples/ramp_profile.json` — a real Pattern A run for `"Ramp"`, driven by
+`anthropic:claude-sonnet-5`: business model, product inventory, leadership, a terse
+funding summary, partnerships, competitors, and a scorecard with a confidence grade for
+each of the seven dimensions. All 23 sources are full URLs.
 
-This is illustrative model output, committed to show the shape of a result and kept as it came back from the run. Treat every claim and grade in it as an example of the pipeline's output, not as verified research — re-run the agent for current findings before relying on any of it.
+This is illustrative model output, committed to show the shape of a result and kept as
+it came back from the run. Treat every claim and grade in it as an example of the
+pipeline's output, not as verified research — re-run the agent for current findings
+before relying on any of it.

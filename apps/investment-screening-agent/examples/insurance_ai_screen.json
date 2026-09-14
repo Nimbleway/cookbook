@@ -1,457 +1,661 @@
 {
-  "thesis": "US private companies building AI software for insurance carriers",
-  "as_of_date": "2026-09-10",
+  "thesis": "AI-native software for insurance carriers: underwriting, claims, and risk assessment. US-headquartered private companies.",
+  "as_of_date": "2026-09-14",
   "inclusion_criteria": [
-    "Headquartered in the United States",
-    "Privately held (not publicly listed)",
-    "Primary business is software / technology, not being a carrier or broker themselves (exceptions only where software is clearly sold to other carriers as a product line)",
-    "Clear use of AI / ML at the core of the product",
-    "Product built for insurance carriers / MGAs / TPAs / self-insureds (B2B), not just direct-to-consumer insurance buyers",
-    "Focus on underwriting, pricing, rating, claims, fraud, distribution, decisioning, or core systems for insurance"
+    "Software vendor (not the insurer/carrier itself, not a broker/agency, not a consultancy or TPA-only service)",
+    "Product is AI-native and centers on underwriting, claims processing, or risk assessment for insurance carriers/MGAs/reinsurers",
+    "Primary target customer is insurance carriers (or MGAs/reinsurers/TPAs acting on their behalf), not solely brokers/agencies or consumers",
+    "US-headquartered",
+    "Private company (not publicly traded, not a subsidiary of a public company, not defunct/wound down)"
   ],
   "candidates": [
     {
-      "company_name": "Gradient AI",
-      "headquarters": "Boston, Massachusetts, USA",
-      "product_focus": "Full-cycle AI platform for insurers that predicts underwriting and claim risks using a vast industry data lake to improve pricing accuracy, loss ratios, and automation.",
-      "target_customer": "Mid-market and large insurance carriers, MGAs, TPAs, self\u2011insureds, reinsurers, and risk pools across workers\u2019 comp, group health, and P&C lines.",
-      "funding_total": "Not clearly disclosed; backed by MassMutual Ventures, Sandbox Insurtech Ventures, American Family Ventures, Fort\u00e9 Ventures, Stone Point Capital and others",
+      "company_name": "Sixfold AI",
+      "headquarters": "New York, NY",
+      "product_focus": "Agentic AI 'AI Underwriter' that automates and augments P&C underwriting workflows, submission triage, and risk assessment",
+      "target_customer": "P&C insurance carriers, MGAs and reinsurers (e.g., Zurich North America, Guardian, Skyward Specialty)",
+      "funding_total": "~$47M+ (Series B $30M in Jan 2026)",
       "major_investors": [
+        "Bessemer Venture Partners",
+        "Brewer Lane Ventures",
+        "Guidewire",
+        "Salesforce Ventures",
+        "Scale Venture Partners"
+      ],
+      "fit_rationale": "Purpose-built AI underwriting engine embedded directly in carrier workflows, deployed at major global P&C carriers",
+      "fit_score": "strong",
+      "evidence_urls": [
+        "https://fintech.global/2026/01/30/insurtech-firm-sixfold-secures-30m-to-advance-ai-underwriting/",
+        "https://www.crunchbase.com/organization/sixfold-ai"
+      ]
+    },
+    {
+      "company_name": "Federato",
+      "headquarters": "San Francisco, CA",
+      "product_focus": "RiskOps AI-powered underwriting decision-support platform for portfolio and risk selection",
+      "target_customer": "P&C insurance carriers and MGAs",
+      "funding_total": "$80M total (Series B $40M in Nov 2024)",
+      "major_investors": [
+        "StepStone Group",
+        "Emergence Capital",
+        "Caffeinated Capital",
+        "Pear VC"
+      ],
+      "fit_rationale": "AI-native underwriting platform explicitly built to help carriers understand and respond to risk in real time",
+      "fit_score": "strong",
+      "evidence_urls": [
+        "https://techcrunch.com/2024/11/20/federato-fixes-insurance-risk-analysis-with-ai-raises-40m/"
+      ]
+    },
+    {
+      "company_name": "Gradient AI",
+      "headquarters": "Boston, MA",
+      "product_focus": "AI/ML SaaS platform predicting underwriting and claims risk using a large industry data lake",
+      "target_customer": "Insurance carriers, MGAs, MGUs, TPAs, risk pools, PEOs",
+      "funding_total": "$89.4M total (Series C $56.1M in 2024)",
+      "major_investors": [
+        "Centana Growth Partners",
         "MassMutual Ventures",
         "Sandbox Insurtech Ventures",
-        "BSC Capital",
-        "American Family Ventures",
-        "Fort\u00e9 Ventures",
+        "Forte Ventures",
         "Stone Point Capital"
       ],
-      "fit_rationale": "US-based private AI software vendor whose SaaS platform is purpose-built for insurance underwriting and claims decisioning for carriers and related risk-bearing entities.",
+      "fit_rationale": "Directly targets carrier underwriting and claims risk scoring using proprietary AI/ML models trained on tens of millions of policies and claims",
       "fit_score": "strong",
       "evidence_urls": [
-        "https://www.gradientai.com/",
-        "https://www.gradientai.com/pc-workers-comp/",
-        "https://www.gradientai.com/why-gradient"
+        "https://www.gradientai.com/press-gradient-ai-secures-56-million-in-series-c-funding-to-expand-ai-powered-insurance-solutions",
+        "https://www.cbinsights.com/company/gradient-ai"
       ]
     },
     {
-      "company_name": "Convr (formerly DataCubes)",
-      "headquarters": "Chicago, Illinois, USA",
-      "product_focus": "Modular AI underwriting workbench for commercial P&C that automates submission intake, structures and enriches risk data, and provides AI-driven decision support and rating.",
-      "target_customer": "Commercial P&C carriers, MGAs, brokers, and program administrators.",
-      "funding_total": "$15.2M Series B reported; total not clearly stated",
+      "company_name": "Clara Analytics",
+      "headquarters": "Santa Clara, CA",
+      "product_focus": "AI-driven claims optimization platform for workers' compensation and liability claims (litigation, severity, provider scoring)",
+      "target_customer": "Workers' compensation carriers, state funds and TPAs",
+      "funding_total": "$40M+ total ($25M round in 2020)",
       "major_investors": [
-        "Not clearly disclosed in recent materials; historically included Palm Drive Capital and NFP Ventures (from earlier DataCubes funding)"
+        "Aspen",
+        "Nationwide",
+        "QBE",
+        "Oak HC/FT"
       ],
-      "fit_rationale": "US-based private company delivering an AI-native commercial underwriting workbench and risk context engine sold directly to carriers and MGAs.",
+      "fit_rationale": "AI predictive analytics purpose-built to speed and improve claims decisions for carrier claims teams",
       "fit_score": "strong",
       "evidence_urls": [
-        "https://convr.com/",
-        "https://www.crunchbase.com/organization/datacubes",
-        "https://www.prnewswire.com/news-releases/a-decade-of-innovation-convr-celebrates-10-years-as-the-top-underwriting-workbench-302734821.html"
+        "https://venturebeat.com/ai/clara-analytics-nabs-25-million-for-ai-that-expedites-workers-compensation-claims"
       ]
     },
     {
-      "company_name": "Earnix (US operations)",
-      "headquarters": "Boston, Massachusetts, USA (North American HQ; global HQ in Israel)",
-      "product_focus": "AI-driven pricing, rating, and decisioning platform (AIOS) that orchestrates models, workflows, and governance across risk, pricing, underwriting, and customer engagement for insurers.",
-      "target_customer": "P&C and personal lines insurance carriers globally, including many US carriers.",
-      "funding_total": "Approximately $100M+ (including prior rounds; latest precise figure not in retrieved snippets)",
+      "company_name": "Liberate",
+      "headquarters": "San Francisco, CA",
+      "product_focus": "AI voice agents and reasoning agents automating sales, service, and claims workflows for P&C insurers",
+      "target_customer": "Top 100 US P&C insurance carriers and agencies",
+      "funding_total": "$72M total (Series B $50M in Oct 2025)",
       "major_investors": [
-        "Insight Partners",
-        "JVP",
-        "Vintage Investment Partners",
-        "Israel Growth Partners (per historical funding)"
+        "Battery Ventures",
+        "Canapi Ventures",
+        "Redpoint Ventures",
+        "Eclipse",
+        "Commerce Ventures"
       ],
-      "fit_rationale": "Offers an AI-native decisioning and pricing engine widely used by US carriers for underwriting, pricing, and rating, with North American HQ in Boston and a pure software model.",
+      "fit_rationale": "AI agents embedded directly into carrier systems automate quoting, claims processing and endorsements for the largest US P&C carriers",
       "fit_score": "strong",
       "evidence_urls": [
-        "https://earnix.com/",
-        "https://earnix.com/newsroom/press-releases/earnix-launches-aios-insurance-ai-orchestration-system/",
-        "https://earnix.com/our-solutions/"
+        "https://techcrunch.com/2025/10/15/liberate-bags-50m-at-300m-valuation-to-bring-ai-deeper-into-insurance-back-offices/"
+      ]
+    },
+    {
+      "company_name": "Planck",
+      "headquarters": "New York, NY",
+      "product_focus": "AI data platform delivering commercial underwriting insights from online and public data",
+      "target_customer": "Commercial P&C insurance carriers (dozens of top-30 US insurers)",
+      "funding_total": "$48M total (growth round $20M in 2021)",
+      "major_investors": [
+        "3L Capital",
+        "Greenfield Partners",
+        "Team8",
+        "Viola Fintech",
+        "Arbor Ventures",
+        "Eight Roads",
+        "Nationwide"
+      ],
+      "fit_rationale": "AI-based data platform used directly by carrier underwriting teams to price and underwrite commercial risk",
+      "fit_score": "strong",
+      "evidence_urls": [
+        "https://techcrunch.com/2021/05/12/planck-the-insurance-data-analytics-platform-raises-20m-growth-round/"
+      ]
+    },
+    {
+      "company_name": "CyberCube",
+      "headquarters": "San Francisco, CA",
+      "product_focus": "AI-powered cyber risk analytics and modeling for underwriting, portfolio management and exposure assessment",
+      "target_customer": "Cyber insurers, MGAs, reinsurers, brokers",
+      "funding_total": "~$271.5M total (Growth Equity round in 2025)",
+      "major_investors": [
+        "Forgepoint Capital",
+        "Morgan Stanley Tactical Value",
+        "HSCM Ventures",
+        "MTech Capital",
+        "Stone Point Capital"
+      ],
+      "fit_rationale": "Purpose-built AI risk quantification platform used by 75% of top 40 US/European cyber carriers for underwriting decisions",
+      "fit_score": "strong",
+      "evidence_urls": [
+        "https://www.cbinsights.com/company/cybercube-analytics",
+        "https://www.cybcube.com/"
+      ]
+    },
+    {
+      "company_name": "Convr",
+      "headquarters": "Schaumburg, IL",
+      "product_focus": "AI-native underwriting workbench automating submission intake, data extraction and risk scoring for commercial P&C",
+      "target_customer": "Commercial P&C carriers, MGAs and reinsurers (incl. several top-10/20 US carriers)",
+      "funding_total": "$17.5M-$18M total (Series B, 2019)",
+      "major_investors": [
+        "MK Capital",
+        "Altos Ventures",
+        "Distributed Ventures",
+        "Seyen Capital",
+        "MPK Equity Partners"
+      ],
+      "fit_rationale": "AI underwriting workbench deployed by top-tier commercial P&C carriers to automate submission intake and risk assessment",
+      "fit_score": "strong",
+      "evidence_urls": [
+        "https://convr.com/about-us",
+        "https://startupintros.com/orgs/convr"
+      ]
+    },
+    {
+      "company_name": "Indico Data",
+      "headquarters": "Boston, MA",
+      "product_focus": "Agentic AI platform automating underwriting, claims and operations processes from unstructured data",
+      "target_customer": "P&C insurance carriers across North America and the London Market",
+      "funding_total": "$19M+ disclosed round (2024) plus undisclosed strategic investments",
+      "major_investors": [
+        "Guidewire (strategic)",
+        "Aviva Ventures (strategic)"
+      ],
+      "fit_rationale": "Agentic AI purpose-built to automate carrier underwriting and claims intake, backed strategically by Guidewire and Aviva",
+      "fit_score": "strong",
+      "evidence_urls": [
+        "https://www.prnewswire.com/news-releases/aviva-ventures-completes-strategic-investment-in-indico-data-to-accelerate-ai-driven-insurance-automation-302596146.html",
+        "https://indicodata.ai/blog/news/indico-data-closes-19m-funding-round-and-secures-strategic-investment-from-pc-software-platform-leader-guidewire/"
+      ]
+    },
+    {
+      "company_name": "ZestyAI",
+      "headquarters": "San Francisco, CA",
+      "product_focus": "AI decision-intelligence platform for property/wildfire risk scoring used across underwriting and portfolio management",
+      "target_customer": "P&C insurance carriers and regulators across the US",
+      "funding_total": "Undisclosed equity (includes CIBC Innovation Banking debt facility)",
+      "major_investors": [
+        "CIBC Innovation Banking",
+        "Brex",
+        "Centana Growth Partners",
+        "Plug and Play"
+      ],
+      "fit_rationale": "AI property risk models used directly by carriers for underwriting and portfolio risk assessment",
+      "fit_score": "strong",
+      "evidence_urls": [
+        "https://www.crunchbase.com/organization/zesty-ai"
+      ]
+    },
+    {
+      "company_name": "Snapsheet",
+      "headquarters": "Chicago, IL",
+      "product_focus": "Cloud-native claims management and virtual appraisal software automating end-to-end claims handling",
+      "target_customer": "P&C insurance carriers and TPAs (100+ clients)",
+      "funding_total": "$107M total (Series E extension 2023)",
+      "major_investors": [
+        "Ping An Voyager Partners",
+        "SCOR Ventures",
+        "State Farm Ventures",
+        "Tola Capital",
+        "F-Prime Capital"
+      ],
+      "fit_rationale": "AI-enabled claims and appraisal SaaS platform used by many of the largest US insurance carriers",
+      "fit_score": "strong",
+      "evidence_urls": [
+        "https://pitchbook.com/profiles/company/52872-85",
+        "https://www.pivotinvestment.com/snapsheet"
+      ]
+    },
+    {
+      "company_name": "Charlee.ai",
+      "headquarters": "Pleasanton, CA",
+      "product_focus": "AI predictive analytics platform forecasting litigation, claim severity, and fraud from unstructured claims data",
+      "target_customer": "Insurance carriers, TPAs and MGAs across personal, commercial and workers' comp lines",
+      "funding_total": "$10.2M total (Seed rounds)",
+      "major_investors": [
+        "Markd",
+        "IITStartups",
+        "Nassau ReImagine",
+        "TiE Silicon Valley"
+      ],
+      "fit_rationale": "NLP/AI platform purpose-built for carrier claims teams to predict litigation, severity and fraud risk",
+      "fit_score": "strong",
+      "evidence_urls": [
+        "https://www.cbinsights.com/company/infinilytics-inc",
+        "https://startup-seeker.com/company/charlee~ai"
       ]
     },
     {
       "company_name": "Reserv",
-      "headquarters": "New York, New York, USA",
-      "product_focus": "AI-native claims platform and TPA services that use explainable AI to analyze, triage, and automate P&C claims workflows at scale.",
-      "target_customer": "P&C insurance carriers, MGAs, brokers, captives, and self\u2011insureds.",
-      "funding_total": "$125M Series C + $41M Series B (= at least $166M total equity funding)",
+      "headquarters": "New York, NY",
+      "product_focus": "AI-native claims platform combining third-party administration with data-driven claims software for P&C",
+      "target_customer": "MGAs and P&C insurance carriers",
+      "funding_total": "$150M+ total (Series C $125M led by KKR)",
       "major_investors": [
         "KKR",
         "Bain Capital Ventures",
         "Flourish Ventures",
         "QBE Ventures",
-        "Other strategic partners"
+        "Altai Ventures",
+        "Accenture Ventures"
       ],
-      "fit_rationale": "US-based AI-native claims software and services provider whose Glance platform is sold to carriers and MGAs to modernize claims, clearly fitting AI software for insurers.",
-      "fit_score": "strong",
-      "evidence_urls": [
-        "https://www.reserv.com/",
-        "https://www.businesswire.com/news/home/20260504407536/en/Reserv-Announces-$125-Million-Series-C-Financing-Led-by-KKR-to-Accelerate-AI-Driven-Transformation-of-Insurance-Claims",
-        "https://www.businesswire.com/news/home/20250916644465/en/Reserv-Raises-Additional-$16M-From-New-Strategic-Partners-Bringing-Total-Series-B-to-$41M"
-      ]
-    },
-    {
-      "company_name": "FurtherAI",
-      "headquarters": "San Francisco, California, USA",
-      "product_focus": "AI assistants that automate insurance document processing, submission intake, policy comparisons, and underwriting workflows for carriers.",
-      "target_customer": "Insurance carriers and other insurance organizations seeking to automate underwriting and claims operations.",
-      "funding_total": "Series A (amount not clearly disclosed in snippet)",
-      "major_investors": [
-        "South Park Commons (per Crunchbase)"
-      ],
-      "fit_rationale": "US-based AI startup whose product is explicitly described as AI assistants for insurers automating underwriting submissions and related workflows.",
-      "fit_score": "strong",
-      "evidence_urls": [
-        "https://www.crunchbase.com/organization/further-ai"
-      ]
-    },
-    {
-      "company_name": "Insurity (AI-native policy admin platform)",
-      "headquarters": "Hartford, Connecticut, USA",
-      "product_focus": "Cloud-based core systems and analytics for P&C carriers with an AI-native policy administration system focused on speeding product setup and pricing for complex commercial and specialty lines.",
-      "target_customer": "P&C insurance carriers, brokers, and MGAs (22 of top 25 US carriers as customers).",
-      "funding_total": "Undisclosed; backed by GI Partners and TA Associates (private equity owners)",
-      "major_investors": [
-        "GI Partners",
-        "TA Associates"
-      ],
-      "fit_rationale": "US-headquartered private core-systems vendor building an AI-native policy admin and decision layer for carriers, with clear emphasis on AI for pricing and underwriting.",
-      "fit_score": "strong",
-      "evidence_urls": [
-        "https://www.businesswire.com/news/home/20260505747675/en/Insurity-Challenges-AI-Hype-in-Insurance-Core-Systems-Calls-on-Insurance-Carriers-to-Demand-Real-Cost-and-Timeline-Reductions-from-Core-System-Vendors",
-        "https://www.businesswire.com/news/home/20260421860636/en/Consumer-Support-for-AI-in-PC-Insurance-Nearly-Doubles-in-2026-Insurity-Survey-Finds"
-      ]
-    },
-    {
-      "company_name": "Duck Creek Technologies (AI claims & FNOL capabilities)",
-      "headquarters": "Boston, Massachusetts, USA",
-      "product_focus": "Cloud-based P&C core suite with AI-native claims capabilities including LLM-based summarization, fraud and complexity scoring integrations, and Agentic FNOL for automated intake.",
-      "target_customer": "P&C insurance carriers in North America and globally.",
-      "funding_total": "Previously PE-owned; taken private by Vista Equity and further investors (exact current funding not in snippets)",
-      "major_investors": [
-        "Vista Equity Partners",
-        "Other private investors"
-      ],
-      "fit_rationale": "Though a mature core-systems vendor, Duck Creek is private and actively shipping AI-native claims and FNOL modules embedded in its software for carriers, fitting AI software for insurers.",
+      "fit_rationale": "AI-driven claims engine and analytics used to manage claims and inform underwriting for MGA/carrier clients, though it also runs services (TPA) alongside its software",
       "fit_score": "moderate",
       "evidence_urls": [
-        "http://www.prnewswire.com/news-releases/duck-creek-wins-third-consecutive-xcelent-award-in-celents-claims-systems-vendors-report-302872948.html"
+        "https://www.crunchbase.com/organization/reserv-c844",
+        "https://venturebeat.com/business/reserv-announces-125-million-series-c-financing-led-by-kkr-to-accelerate-ai-driven-transformation-of-insurance-claims"
+      ]
+    },
+    {
+      "company_name": "Avallon",
+      "headquarters": "New York, NY",
+      "product_focus": "Multimodal AI voice/document agents automating repetitive claims tasks (intake, status, billing) across the claims lifecycle",
+      "target_customer": "TPAs and P&C insurance carriers",
+      "funding_total": "$4.6M seed",
+      "major_investors": [
+        "Frontline Ventures",
+        "Y Combinator",
+        "1984",
+        "Liquid2",
+        "Booom"
+      ],
+      "fit_rationale": "AI agents purpose-built to automate carrier/TPA claims operations across workers' comp and auto lines",
+      "fit_score": "strong",
+      "evidence_urls": [
+        "https://www.businesswire.com/news/home/20251106838494/en/Avallon-Secures-$4.6-Million-Scales-AI-Agents-to-Automate-Insurance-Claims-Operations"
       ]
     },
     {
       "company_name": "Claimence",
-      "headquarters": "New York, New York, USA",
-      "product_focus": "AI platform purpose-built to automate complex Financial Lines (e.g., D&O) insurance claims coverage analysis and processing.",
-      "target_customer": "Insurance carriers, TPAs, MGAs, MGUs, brokers, reinsurers, and law firms handling financial lines claims.",
-      "funding_total": "Seed/early-stage; $ amount not disclosed in launch announcement",
-      "major_investors": [],
-      "fit_rationale": "US-based AI SaaS company explicitly focused on automating financial lines claims workflows for carriers and TPAs.",
+      "headquarters": "New York, NY",
+      "product_focus": "AI platform automating coverage analysis for Financial Lines (D&O) insurance claims",
+      "target_customer": "Insurance carriers, TPAs, MGAs/MGUs, and reinsurers",
+      "funding_total": "Undisclosed",
+      "major_investors": [
+        "Undisclosed"
+      ],
+      "fit_rationale": "Purpose-built AI for carrier claims teams to automate D&O coverage analysis and determination letters",
       "fit_score": "moderate",
       "evidence_urls": [
         "https://www.businesswire.com/news/home/20260408499974/en/40-Years-of-Manual-Processing.-One-AI-Platform.-Claimence-Launches-the-First-Purpose-Built-AI-for-Financial-Lines-Insurance-Claims-No-Known-Direct-Competitors."
       ]
     },
     {
-      "company_name": "Avallon",
-      "headquarters": "New York, New York, USA",
-      "product_focus": "Multimodal AI agents that automate repetitive insurance claims tasks across intake, status, billing questions, document summarization, and communications.",
-      "target_customer": "Insurance carriers, TPAs, and MGAs looking to automate back-office claims operations.",
-      "funding_total": "$4.6M seed round",
+      "company_name": "CogniSure AI",
+      "headquarters": "Naperville, IL (Chicago area)",
+      "product_focus": "AI platform extracting and normalizing data from unstructured underwriting documents (loss runs, submissions) into risk insights",
+      "target_customer": "Commercial P&C insurance carriers, brokers and MGAs (partnerships with Duck Creek, Federato, PwC)",
+      "funding_total": "Undisclosed (early-stage funded)",
       "major_investors": [
-        "Frontline Ventures",
-        "Y Combinator",
-        "1984 Ventures",
-        "Liquid2 Ventures",
-        "Booom"
+        "InsurTech NY",
+        "BrokerTech Ventures"
       ],
-      "fit_rationale": "US-based seed-stage startup building AI agents specifically for claims operations, integrating with carrier CMS, IVR, and data warehouses.",
+      "fit_rationale": "AI document-intelligence platform integrated into carrier underwriting workflows to improve risk assessment speed and accuracy",
       "fit_score": "moderate",
       "evidence_urls": [
-        "https://www.businesswire.com/news/home/20251106838494/en/Avallon-Secures-$4.6-Million-Scales-AI-Agents-to-Automate-Insurance-Claims-Operations"
-      ]
-    },
-    {
-      "company_name": "mea platform",
-      "headquarters": "US presence (exact city not specified in retrieved snippet; operates globally across 21 countries)",
-      "product_focus": "Agentic AI platform that automates end-to-end insurance operations for carriers, brokers, and MGAs, targeting combined ratio improvement and cost reduction.",
-      "target_customer": "Global insurance and reinsurance groups, carriers, brokers, and MGAs (includes US carriers).",
-      "funding_total": "$50M growth equity raise from SEP",
-      "major_investors": [
-        "Scottish Equity Partners (SEP)"
-      ],
-      "fit_rationale": "Insurance-specific AI software company deploying proprietary AI products to automate underwriting, claims, and operations for carriers and MGAs, including in the US market.",
-      "fit_score": "moderate",
-      "evidence_urls": [
-        "https://www.businesswire.com/news/home/20260217810104/en/Insurance-AI-Leader-mea-Platform-Targets-Industry-Combined-Ratios-and-Margins-With-a-$50-Million-Growth-Equity-Raise-From-SEP"
-      ]
-    },
-    {
-      "company_name": "Coforge \u2013 Nexa Agentic AI Platform (US operations)",
-      "headquarters": "US HQ in Princeton, New Jersey, USA (global HQ Greater Noida, India)",
-      "product_focus": "Nexa Agentic AI Platform, an insurance business platform layering AI orchestration over carrier systems to automate workflows for brokers, underwriters, claims adjudicators, and customer service agents.",
-      "target_customer": "Global insurers and carriers including in the US market.",
-      "funding_total": "Publicly traded parent historically; specific Nexa funding not disclosed",
-      "major_investors": [
-        "Public shareholders (Coforge Limited)"
-      ],
-      "fit_rationale": "While part of a larger services company, Nexa is positioned as an AI platform for insurance carriers with US headquarters presence and productized software for underwriting and claims workflows.",
-      "fit_score": "weak",
-      "evidence_urls": [
-        "https://www.businesswire.com/news/home/20260601852551/en/Coforge-Launches-Nexa-Agentic-AI-Platform-to-Industrialize-Intelligent-Insurance-Operations"
-      ]
-    },
-    {
-      "company_name": "Clearcover \u2013 Dearborn Labs",
-      "headquarters": "Chicago, Illinois, USA",
-      "product_focus": "Dearborn Labs is a forward-deployed AI practice within Clearcover that builds and operates AI systems (claims, underwriting, distribution) inside P&C carriers and MGAs using Clearcover\u2019s production-proven AI infrastructure.",
-      "target_customer": "P&C carriers and MGAs seeking to embed AI agents across core functions.",
-      "funding_total": "Clearcover has raised several hundred million dollars historically; Dearborn Labs announced as an internal venture (no separate round disclosed).",
-      "major_investors": [
-        "OMERS Ventures",
-        "American Family Ventures",
-        "Anthemis Group (historical Clearcover investors)"
-      ],
-      "fit_rationale": "Although Clearcover itself is an AI-native carrier, Dearborn Labs functions as a software/AI deployment unit that builds production AI systems for other carriers, fitting the AI software-for-carriers thesis if you accept services-heavy models.",
-      "fit_score": "weak",
-      "evidence_urls": [
-        "https://www.businesswire.com/news/home/20260303975491/en/Clearcover-Inc.-Launches-Dearborn-Labs-to-Deploy-Production-AI-Inside-Carriers-and-MGAs"
+        "https://www.prnewswire.com/news-releases/insurtech-startup-cognisure-launches-ai-platform-for-commercial-loss-run-automation-with-9-pilot-customers-301137030.html",
+        "https://tracxn.com/d/companies/cognisure/__umWFMJnD1O-v0RxtSdquTNIfeNig5CkqSStILLhATI0"
       ]
     },
     {
       "company_name": "Curant.ai",
-      "headquarters": "United States (city not specified in snippet)",
-      "product_focus": "AI-powered platform that automates data extraction, analysis, workflow execution, and decision support to streamline insurance claims adjudication.",
-      "target_customer": "Insurers and health plans seeking to automate claims adjudication and decision support.",
-      "funding_total": "$3.1M seed funding",
+      "headquarters": "St. George, UT",
+      "product_focus": "AI-powered claims intelligence platform automating data extraction and decision support for disability claims",
+      "target_customer": "Disability and life insurance carriers",
+      "funding_total": "$3.1M seed",
       "major_investors": [
-        "Not fully listed; Finsmes notes a seed round led by unnamed investors"
+        "Diagram",
+        "Humania Insurance",
+        "Element Ventures",
+        "Blue Plains Capital"
       ],
-      "fit_rationale": "US-based AI startup explicitly targeting claims adjudication automation for insurers with an AI workflow and decision-support platform.",
+      "fit_rationale": "AI intelligence layer purpose-built for carrier claims teams to speed disability claims adjudication with human-in-the-loop control",
       "fit_score": "moderate",
       "evidence_urls": [
-        "https://www.finsmes.com/2026/07/curant-ai-raises-3-1m-in-seed-funding.html"
+        "https://www.businesswire.com/news/home/20260728571725/en/Curant.ai-Secures-$3.1-Million-Seed-Round-Led-by-Diagram-to-Power-the-Next-Generation-of-AI-for-Insurance",
+        "https://www.curant.ai/press"
       ]
     },
     {
-      "company_name": "Techficient \u2013 Forthright",
-      "headquarters": "United States (Techficient is US-based; exact HQ city not in snippet)",
-      "product_focus": "Forthright AI-powered fraud detection solution that monitors common fraudulent behaviors in insurance distribution, enabling early detection for carriers and distributors.",
-      "target_customer": "Insurance carriers, distributors, and agents concerned with distribution fraud.",
-      "funding_total": "Not disclosed",
-      "major_investors": [],
-      "fit_rationale": "US insurtech provider whose Forthright AI product is used by carriers and distributors to detect insurance fraud, aligning with AI software for carriers.",
-      "fit_score": "weak",
-      "evidence_urls": [
-        "https://www.prnewswire.com/news-releases/techficient-launches-forthright-ai-powered-fraud-detection-solution-to-safeguard-insurance-distribution-302670051.html"
-      ]
-    },
-    {
-      "company_name": "Taktile",
-      "headquarters": "New York, New York, USA (per Crunchbase global HQ; originally founded in Berlin)",
-      "product_focus": "AI-based decision platform for financial institutions to design, deploy, and govern automated decisions across underwriting, fraud, compliance, and claims.",
-      "target_customer": "Banks, insurers, and fintechs seeking to automate risk and operational decisions, including P&C and life carriers.",
-      "funding_total": "Approximately $24M+ (historical; latest not in snippet)",
+      "company_name": "Pibit.ai",
+      "headquarters": "San Francisco, CA (with India operations)",
+      "product_focus": "CURE, a GenAI-powered underwriting platform automating intake, triage, research and risk scoring for commercial P&C",
+      "target_customer": "Commercial insurance carriers and MGAs (e.g., Kinetic, Shepherd, Method Insurance)",
+      "funding_total": "$7.6M total (Series A $7M in 2026)",
       "major_investors": [
-        "Index Ventures",
+        "Stellaris Venture Partners",
         "Y Combinator",
-        "Tiger Global (historical)"
+        "Arali Ventures"
       ],
-      "fit_rationale": "US-headquartered decisioning platform used by insurers to automate underwriting, fraud, and claims decisions with AI; broadly horizontal but with clear insurance use cases.",
-      "fit_score": "weak",
-      "evidence_urls": [
-        "https://www.crunchbase.com/organization/taktile"
-      ]
-    },
-    {
-      "company_name": "SUPERAGENT AI",
-      "headquarters": "San Francisco, California, USA",
-      "product_focus": "Autonomous AI workforce platform for the insurance industry, including a Quoting AI Agent that navigates carrier portals and generates bindable multi-carrier quotes.",
-      "target_customer": "Insurance agencies and brokerages that place business with carriers; indirectly integrates with carrier systems.",
-      "funding_total": "Not disclosed",
-      "major_investors": [],
-      "fit_rationale": "US-based AI startup building autonomous agents for insurance quoting and lifecycle tasks; while targeted at agencies, it deeply integrates into carrier portals and rating systems.",
-      "fit_score": "weak",
-      "evidence_urls": [
-        "https://venturebeat.com/business/superagent-ai-announces-worlds-first-insurance-quoting-ai-agent-solving-the-industrys-hardest-challenge"
-      ]
-    },
-    {
-      "company_name": "ZestyAI (US property risk AI)",
-      "headquarters": "San Francisco, California, USA",
-      "product_focus": "AI-powered property risk models (e.g., Z-SPARK for non-weather fire, plus hail, wind, water) that unify property-level data and predictive AI for risk selection and pricing.",
-      "target_customer": "Property & Casualty carriers, reinsurers, brokers, and regulators.",
-      "funding_total": "Tens of millions historically (exact total not in snippet)",
-      "major_investors": [
-        "Valor Equity Partners",
-        "Blumberg Capital",
-        "Plug and Play (historical)"
-      ],
-      "fit_rationale": "US-based AI risk and decision intelligence platform broadly adopted by US carriers to price and manage property risk portfolios.",
+      "fit_rationale": "AI underwriting platform used directly by carriers/MGAs, delivering measurable underwriting speed and loss-ratio improvements",
       "fit_score": "strong",
       "evidence_urls": [
-        "https://www.prnewswire.com/news-releases/zestyai-launches-ai-powered-property-level-model-to-predict-25b-everyday-fire-risk-302723297.html"
+        "https://iireporter.com/pibit-ai-raises-7m-to-advance-ai-underwriting-platform/",
+        "https://completeaitraining.com/news/pibitai-raises-7m-series-a-led-by-stellaris-to-streamline/"
+      ]
+    },
+    {
+      "company_name": "Solva",
+      "headquarters": "New York, NY",
+      "product_focus": "Domain-specific AI platform giving insurers clarity and speed on complex claims decisions",
+      "target_customer": "P&C insurance carriers",
+      "funding_total": "$6M seed",
+      "major_investors": [
+        "Y Combinator",
+        "First Round Capital",
+        "SV Angel"
+      ],
+      "fit_rationale": "AI claims-decision system built in production for carrier claims worth billions in decisions, per YC S2025 batch",
+      "fit_score": "moderate",
+      "evidence_urls": [
+        "https://startupmafia.eu/fintech-funding-solva-secures-6m-to-rebuild-insurance-claims-with-ai-backed-by-paul-graham",
+        "https://www.ycombinator.com/companies/industry/insurance"
+      ]
+    },
+    {
+      "company_name": "Tesora",
+      "headquarters": "San Francisco, CA",
+      "product_focus": "AI agents assisting actuaries with data assembly, ratemaking and risk assessment",
+      "target_customer": "P&C carriers, reinsurers and MGAs",
+      "funding_total": "Undisclosed (YC-backed)",
+      "major_investors": [
+        "Y Combinator"
+      ],
+      "fit_rationale": "AI agents purpose-built for actuarial risk-assessment workflows at carriers, reinsurers, and MGAs",
+      "fit_score": "moderate",
+      "evidence_urls": [
+        "https://www.ycombinator.com/companies/industry/insurance"
+      ]
+    },
+    {
+      "company_name": "Adaptional",
+      "headquarters": "San Francisco, CA",
+      "product_focus": "Agentic AI for insurance claims review, already deployed at major P&C carriers",
+      "target_customer": "P&C insurance carriers",
+      "funding_total": "Undisclosed (YC S2025)",
+      "major_investors": [
+        "Y Combinator"
+      ],
+      "fit_rationale": "AI claims-review agents already deployed at major P&C carriers to manage claims files",
+      "fit_score": "moderate",
+      "evidence_urls": [
+        "https://www.ycombinator.com/companies/adaptional"
+      ]
+    },
+    {
+      "company_name": "Hesper AI",
+      "headquarters": "New York, NY",
+      "product_focus": "AI agents that investigate P&C claims end-to-end, detecting tampering and verifying facts to produce audit-ready case files",
+      "target_customer": "Claims and SIU teams at carriers, MGAs and TPAs",
+      "funding_total": "Undisclosed (YC F2026)",
+      "major_investors": [
+        "Y Combinator"
+      ],
+      "fit_rationale": "AI claims-investigation/fraud-detection agents built specifically for carrier and MGA claims/SIU teams",
+      "fit_score": "moderate",
+      "evidence_urls": [
+        "https://www.ycombinator.com/companies/industry/insurance"
+      ]
+    },
+    {
+      "company_name": "Agentech",
+      "headquarters": "Tulsa, OK",
+      "product_focus": "Agentic AI 'digital workforce' automating document review, compliance checks and data extraction across the claims lifecycle",
+      "target_customer": "P&C, workers' comp, travel and pet insurance carriers",
+      "funding_total": "$3M seed",
+      "major_investors": [
+        "Undisclosed"
+      ],
+      "fit_rationale": "AI agent workforce integrated directly into carriers' existing claims management systems to boost adjuster throughput",
+      "fit_score": "moderate",
+      "evidence_urls": [
+        "https://www.businesswire.com/news/home/20241022350833/en/Agentech-Secures-$3-Million-to-Revolutionize-Insurance-Claims-with-AI-Driven-Workforce"
+      ]
+    },
+    {
+      "company_name": "Stream",
+      "headquarters": "San Francisco, CA",
+      "product_focus": "AI Claims Workbench using custom AI agents to convert claims documents into automated workflows and signals",
+      "target_customer": "Insurance carriers' claims teams",
+      "funding_total": "Undisclosed (YC S2022)",
+      "major_investors": [
+        "Y Combinator"
+      ],
+      "fit_rationale": "AI claims workbench purpose-built to reduce carrier claims-processing costs while preserving human decision-making",
+      "fit_score": "moderate",
+      "evidence_urls": [
+        "https://www.ycombinator.com/companies/industry/insurance/san-francisco-bay-area"
+      ]
+    },
+    {
+      "company_name": "GenHealth.ai",
+      "headquarters": "Boston, MA",
+      "product_focus": "Generative AI agents automating health-plan back-office workflows: intake, eligibility, prior authorization, billing and denials",
+      "target_customer": "Health insurance payers/health plans and provider revenue-cycle teams",
+      "funding_total": "$30M total (Series A $16.5M in Sept 2026)",
+      "major_investors": [
+        "Flare Capital Partners",
+        "Craft Ventures",
+        "Obvious Ventures",
+        "Eniac Ventures",
+        "InHealth Ventures",
+        "Epsilon Health Investors"
+      ],
+      "fit_rationale": "Generative AI foundation model automating claims-adjacent utilization/eligibility/prior-auth workflows for health insurance carriers",
+      "fit_score": "moderate",
+      "evidence_urls": [
+        "https://completeaitraining.com/news/genhealthai-raises-165-million-to-automate-healthcare-back/",
+        "https://www.thesaasnews.com/news/genhealth-ai-raises-16-5m-series-a/"
       ]
     }
   ],
   "ranked_shortlist": [
+    "Sixfold AI",
+    "Federato",
     "Gradient AI",
-    "Convr (formerly DataCubes)",
-    "Earnix (US operations)",
-    "Reserv",
-    "FurtherAI",
-    "Insurity (AI-native policy admin platform)",
-    "Duck Creek Technologies (AI claims & FNOL capabilities)",
-    "Claimence",
+    "Liberate",
+    "Clara Analytics",
+    "Planck",
+    "CyberCube",
+    "Convr",
+    "Indico Data",
+    "ZestyAI",
+    "Snapsheet",
+    "Charlee.ai",
+    "Pibit.ai",
     "Avallon",
+    "Reserv",
+    "Claimence",
+    "CogniSure AI",
     "Curant.ai",
-    "mea platform",
-    "ZestyAI (US property risk AI)",
-    "Techficient \u2013 Forthright",
-    "Taktile",
-    "Coforge \u2013 Nexa Agentic AI Platform (US operations)",
-    "Clearcover \u2013 Dearborn Labs",
-    "SUPERAGENT AI"
+    "Solva",
+    "Tesora",
+    "Adaptional",
+    "Hesper AI",
+    "Stream",
+    "Agentech",
+    "GenHealth.ai"
   ],
   "excluded": [
     {
+      "company_name": "Corgi Insurance",
+      "reason": "Is itself a licensed, AI-native full-stack insurance carrier (an insurer), not a software vendor selling to carriers"
+    },
+    {
+      "company_name": "MGT (AI Neo-Insurer)",
+      "reason": "Operates as a P&C insurer/MGA underwriting its own book, not a third-party software vendor to carriers"
+    },
+    {
       "company_name": "Nirvana Insurance",
-      "reason": "AI-native insurance carrier focused on trucking; primarily sells insurance rather than AI software to carriers."
+      "reason": "Is itself an AI-driven commercial trucking insurance carrier, not a software vendor to carriers"
     },
     {
-      "company_name": "Neptune Flood / Neptune Insurance Holdings",
-      "reason": "AI-native MGA using AI internally for flood underwriting and agent tools, but does not clearly sell its AI as standalone software to other carriers."
+      "company_name": "FutureProof Technologies",
+      "reason": "Operates as an MGA/insurance agency underwriting its own book rather than selling software to third-party carriers"
     },
     {
-      "company_name": "Harper",
-      "reason": "AI-native insurance brokerage using AI to match SMBs to carriers; not a software vendor to carriers."
+      "company_name": "Terrafuse AI",
+      "reason": "Acquired by FutureProof Technologies in 2025; no longer an independent company"
     },
     {
-      "company_name": "COVU",
-      "reason": "AI-native operating stack targeting insurance agencies and distribution; focus is agency operations rather than carrier software."
+      "company_name": "Cape Analytics",
+      "reason": "Acquired by Moody's Corporation; no longer an independent private company"
     },
     {
-      "company_name": "Solstice Innovations (Equinox platform)",
-      "reason": "AI-native policy administration for carriers and MGAs but headquartered in Tampa with unclear ownership structure; not enough evidence of being an independent, VC-backed private software company vs. platform arm of a carrier."
+      "company_name": "Groundspeed Analytics",
+      "reason": "Acquired by Insurance Quantified in 2023; no longer operates as an independent company"
     },
     {
-      "company_name": "Neptune Atlas+",
-      "reason": "Product of Neptune Flood MGA to support agents; used internally and with its own distribution, not broadly sold as software to third-party carriers."
+      "company_name": "Sayata",
+      "reason": "Acquired by Penn America Underwriters; no longer an independent private company"
     },
     {
-      "company_name": "Counterpart",
-      "reason": "Agentic Insurance platform and MGA providing liability coverage; AI largely used internally to underwrite rather than licensed as software to carriers."
+      "company_name": "EvolutionIQ",
+      "reason": "Acquired by CCC Intelligent Solutions (Nasdaq: CCCS) in Nov 2024; now part of a public company"
     },
     {
-      "company_name": "OIB Solutions",
-      "reason": "AI-powered distribution and core platform vendor, but headquartered in Europe (not US) so fails US-headquartered criterion."
+      "company_name": "Arturo",
+      "reason": "Ceased independent operations after leadership/financial instability; completed an asset sale and its website went dark (per Coverager reporting)"
     },
     {
-      "company_name": "Decerto",
-      "reason": "Polish insurance software provider with Claims AI and other tools; not US-based."
-    },
-    {
-      "company_name": "Sprout.ai",
-      "reason": "UK-based AI claims automation platform; not US headquartered."
-    },
-    {
-      "company_name": "Maprisk",
-      "reason": "Non-US geospatial analytics vendor for carriers; excluded on geography."
-    },
-    {
-      "company_name": "Agiliux",
-      "reason": "Malaysia-based insurtech platform with AI solutions; not US headquartered."
+      "company_name": "Kettle",
+      "reason": "Structured as a reinsurance MGA/risk-bearing entity itself, not a software vendor selling underwriting/risk software to third-party carriers"
     },
     {
       "company_name": "Shift Technology",
-      "reason": "Paris-based AI fraud and risk platform for insurers; not US headquartered."
+      "reason": "Headquartered in Paris, France, not US-headquartered"
     },
     {
-      "company_name": "SAS",
-      "reason": "Large, long-established analytics vendor, not a US private startup/scaleup and much broader than insurance-specific AI."
+      "company_name": "Sprout.ai",
+      "reason": "Headquartered in London, UK, not US-headquartered"
     },
     {
-      "company_name": "OpenAI Presence",
-      "reason": "Horizontal enterprise AI platform, not specific to insurance carriers."
+      "company_name": "Akur8",
+      "reason": "Headquartered in Paris, France, not US-headquartered"
     },
     {
-      "company_name": "Mistral AI",
-      "reason": "Foundational AI model provider; not an insurance-focused software vendor and not US headquartered."
+      "company_name": "Klaimy",
+      "reason": "Headquartered in Paris, France, not US-headquartered"
     },
     {
-      "company_name": "Together AI",
-      "reason": "Horizontal AI infrastructure provider, not insurance-specific."
+      "company_name": "Insurers.ai",
+      "reason": "Headquartered in Cologne, Germany, not US-headquartered"
     },
     {
-      "company_name": "Codoxo",
-      "reason": "AI payment integrity platform for healthcare payers; focused on healthcare fraud rather than P&C or life insurance carriers."
+      "company_name": "Earnix",
+      "reason": "International company with dual Israel/Boston presence; not clearly US-headquartered"
     },
     {
-      "company_name": "Aetna Claims Assist Manager",
-      "reason": "Internal AI system of a health insurer (CVS Health), not offered as a standalone software product to other carriers."
+      "company_name": "Zywave",
+      "reason": "Product focus is broker/MGA growth and distribution tools rather than carrier underwriting/claims/risk assessment"
     },
     {
-      "company_name": "Alacrity Solutions",
-      "reason": "Claims services firm investing in AI; primarily a services company, no clear standalone AI software product sold to carriers."
+      "company_name": "CoverForce",
+      "reason": "API/marketplace connectivity for quote-bind between carriers and agencies, not underwriting/claims/risk-assessment AI itself"
     },
     {
-      "company_name": "Zelros (now part of Earnix)",
-      "reason": "Acquired by Earnix; capabilities roll into Earnix\u2019s product rather than a separate company."
+      "company_name": "AgentSync",
+      "reason": "Producer licensing/compliance infrastructure, not underwriting, claims, or risk-assessment software"
     },
     {
-      "company_name": "OneShield",
-      "reason": "Core systems provider with AI Hub; appears more like a traditional core vendor with AI add-ons and unclear stand-alone AI product focus; kept focus on more clearly AI-centric platforms."
+      "company_name": "1Fort",
+      "reason": "Targets insurance brokers for commercial placement automation; target customer is brokers, not carriers"
     },
     {
-      "company_name": "Solera / Enservio",
-      "reason": "Global auto/home claims and contents software provider now part of Solera Holdings; not a US private startup/scaleup and broader than AI-native insurtech."
+      "company_name": "Coverflow",
+      "reason": "Policy document automation targeted at insurance brokers, not carriers"
     },
     {
-      "company_name": "Gradient AI \u2013 P&C / Workers\u2019 Comp Solutions",
-      "reason": "duplicate of another candidate after name normalization"
+      "company_name": "Harper",
+      "reason": "Is itself an AI-native insurance brokerage serving small businesses, not a software vendor to carriers"
     },
     {
-      "company_name": "insured.io \u2013 Core CX Platform",
-      "reason": "duplicate of another candidate after name normalization"
+      "company_name": "Modern Life",
+      "reason": "Is an AI-powered life insurance brokerage, not a carrier-facing software vendor"
     },
     {
-      "company_name": "Insured.io (repeated for emphasis on carrier CX)",
-      "reason": "duplicate of another candidate after name normalization"
+      "company_name": "Outmarket AI",
+      "reason": "Serves insurance brokerages/agencies rather than carriers"
     },
     {
-      "company_name": "Corgi Insurance \u2013 Corgi Claims (platform component)",
-      "reason": "placeholder / non-company row"
+      "company_name": "Irys",
+      "reason": "Core product is an agency/MGA distribution operating system rather than carrier underwriting/claims core software"
     },
     {
-      "company_name": "ClaimVoyant by Gradient AI",
-      "reason": "sub-product or brand of another candidate \u2014 merged into that entry"
+      "company_name": "Middesk",
+      "reason": "General business-verification/KYB infrastructure for banks, lenders and insurers broadly; not insurance-specific underwriting/claims/risk software"
+    },
+    {
+      "company_name": "Instnt",
+      "reason": "Sells an AI fraud-loss insurance product to businesses backed by insurers, rather than underwriting/claims software sold to carriers"
+    },
+    {
+      "company_name": "Duck Creek Technologies",
+      "reason": "Legacy policy administration platform (PE-owned by Vista Equity Partners) with AI features added, not an AI-native startup"
+    },
+    {
+      "company_name": "Hyperscience",
+      "reason": "Horizontal intelligent-document-processing platform serving many industries, not insurance-specific"
+    },
+    {
+      "company_name": "Qlo",
+      "reason": "Pre-seed YC company (2 employees) with no disclosed funding or confirmed carrier deployments; insufficient evidence to confirm fit"
+    },
+    {
+      "company_name": "Veltha",
+      "reason": "Operates as an AI-native TPA (claims services provider) rather than a software vendor to carriers"
     }
   ],
   "sources": [
-    "https://www.gradientai.com/",
-    "https://www.gradientai.com/pc-workers-comp/",
-    "https://www.gradientai.com/why-gradient",
-    "https://convr.com/",
-    "https://www.crunchbase.com/organization/datacubes",
-    "https://www.prnewswire.com/news-releases/a-decade-of-innovation-convr-celebrates-10-years-as-the-top-underwriting-workbench-302734821.html",
-    "https://earnix.com/",
-    "https://earnix.com/newsroom/press-releases/earnix-launches-aios-insurance-ai-orchestration-system/",
-    "https://earnix.com/our-solutions/",
-    "https://www.reserv.com/",
-    "https://www.businesswire.com/news/home/20260504407536/en/Reserv-Announces-$125-Million-Series-C-Financing-Led-by-KKR-to-Accelerate-AI-Driven-Transformation-of-Insurance-Claims",
-    "https://www.businesswire.com/news/home/20250916644465/en/Reserv-Raises-Additional-$16M-From-New-Strategic-Partners-Bringing-Total-Series-B-to-$41M",
-    "https://www.crunchbase.com/organization/further-ai",
-    "https://www.businesswire.com/news/home/20260505747675/en/Insurity-Challenges-AI-Hype-in-Insurance-Core-Systems-Calls-on-Insurance-Carriers-to-Demand-Real-Cost-and-Timeline-Reductions-from-Core-System-Vendors",
-    "https://www.businesswire.com/news/home/20260421860636/en/Consumer-Support-for-AI-in-PC-Insurance-Nearly-Doubles-in-2026-Insurity-Survey-Finds",
-    "http://www.prnewswire.com/news-releases/duck-creek-wins-third-consecutive-xcelent-award-in-celents-claims-systems-vendors-report-302872948.html",
-    "https://www.businesswire.com/news/home/20260408499974/en/40-Years-of-Manual-Processing.-One-AI-Platform.-Claimence-Launches-the-First-Purpose-Built-AI-for-Financial-Lines-Insurance-Claims-No-Known-Direct-Competitors.",
+    "https://fintech.global/2026/01/30/insurtech-firm-sixfold-secures-30m-to-advance-ai-underwriting/",
+    "https://www.crunchbase.com/organization/sixfold-ai",
+    "https://techcrunch.com/2024/11/20/federato-fixes-insurance-risk-analysis-with-ai-raises-40m/",
+    "https://www.gradientai.com/press-gradient-ai-secures-56-million-in-series-c-funding-to-expand-ai-powered-insurance-solutions",
+    "https://www.cbinsights.com/company/gradient-ai",
+    "https://venturebeat.com/ai/clara-analytics-nabs-25-million-for-ai-that-expedites-workers-compensation-claims",
+    "https://techcrunch.com/2025/10/15/liberate-bags-50m-at-300m-valuation-to-bring-ai-deeper-into-insurance-back-offices/",
+    "https://techcrunch.com/2021/05/12/planck-the-insurance-data-analytics-platform-raises-20m-growth-round/",
+    "https://www.cbinsights.com/company/cybercube-analytics",
+    "https://www.cybcube.com/",
+    "https://convr.com/about-us",
+    "https://startupintros.com/orgs/convr",
+    "https://www.prnewswire.com/news-releases/aviva-ventures-completes-strategic-investment-in-indico-data-to-accelerate-ai-driven-insurance-automation-302596146.html",
+    "https://indicodata.ai/blog/news/indico-data-closes-19m-funding-round-and-secures-strategic-investment-from-pc-software-platform-leader-guidewire/",
+    "https://www.crunchbase.com/organization/zesty-ai",
+    "https://pitchbook.com/profiles/company/52872-85",
+    "https://www.pivotinvestment.com/snapsheet",
+    "https://www.cbinsights.com/company/infinilytics-inc",
+    "https://startup-seeker.com/company/charlee~ai",
+    "https://www.crunchbase.com/organization/reserv-c844",
+    "https://venturebeat.com/business/reserv-announces-125-million-series-c-financing-led-by-kkr-to-accelerate-ai-driven-transformation-of-insurance-claims",
     "https://www.businesswire.com/news/home/20251106838494/en/Avallon-Secures-$4.6-Million-Scales-AI-Agents-to-Automate-Insurance-Claims-Operations",
-    "https://www.businesswire.com/news/home/20260217810104/en/Insurance-AI-Leader-mea-Platform-Targets-Industry-Combined-Ratios-and-Margins-With-a-$50-Million-Growth-Equity-Raise-From-SEP",
-    "https://www.businesswire.com/news/home/20260601852551/en/Coforge-Launches-Nexa-Agentic-AI-Platform-to-Industrialize-Intelligent-Insurance-Operations",
-    "https://www.businesswire.com/news/home/20260303975491/en/Clearcover-Inc.-Launches-Dearborn-Labs-to-Deploy-Production-AI-Inside-Carriers-and-MGAs",
-    "https://www.finsmes.com/2026/07/curant-ai-raises-3-1m-in-seed-funding.html",
-    "https://www.prnewswire.com/news-releases/techficient-launches-forthright-ai-powered-fraud-detection-solution-to-safeguard-insurance-distribution-302670051.html",
-    "https://www.crunchbase.com/organization/taktile",
-    "https://venturebeat.com/business/superagent-ai-announces-worlds-first-insurance-quoting-ai-agent-solving-the-industrys-hardest-challenge",
-    "https://www.prnewswire.com/news-releases/zestyai-launches-ai-powered-property-level-model-to-predict-25b-everyday-fire-risk-302723297.html"
+    "https://www.businesswire.com/news/home/20260408499974/en/40-Years-of-Manual-Processing.-One-AI-Platform.-Claimence-Launches-the-First-Purpose-Built-AI-for-Financial-Lines-Insurance-Claims-No-Known-Direct-Competitors.",
+    "https://www.prnewswire.com/news-releases/insurtech-startup-cognisure-launches-ai-platform-for-commercial-loss-run-automation-with-9-pilot-customers-301137030.html",
+    "https://tracxn.com/d/companies/cognisure/__umWFMJnD1O-v0RxtSdquTNIfeNig5CkqSStILLhATI0",
+    "https://www.businesswire.com/news/home/20260728571725/en/Curant.ai-Secures-$3.1-Million-Seed-Round-Led-by-Diagram-to-Power-the-Next-Generation-of-AI-for-Insurance",
+    "https://www.curant.ai/press",
+    "https://iireporter.com/pibit-ai-raises-7m-to-advance-ai-underwriting-platform/",
+    "https://completeaitraining.com/news/pibitai-raises-7m-series-a-led-by-stellaris-to-streamline/",
+    "https://startupmafia.eu/fintech-funding-solva-secures-6m-to-rebuild-insurance-claims-with-ai-backed-by-paul-graham",
+    "https://www.ycombinator.com/companies/industry/insurance",
+    "https://www.ycombinator.com/companies/adaptional",
+    "https://www.businesswire.com/news/home/20241022350833/en/Agentech-Secures-$3-Million-to-Revolutionize-Insurance-Claims-with-AI-Driven-Workforce",
+    "https://www.ycombinator.com/companies/industry/insurance/san-francisco-bay-area",
+    "https://completeaitraining.com/news/genhealthai-raises-165-million-to-automate-healthcare-back/",
+    "https://www.thesaasnews.com/news/genhealth-ai-raises-16-5m-series-a/"
   ]
 }

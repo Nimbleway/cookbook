@@ -101,10 +101,13 @@ Env overrides: `LLM_MODEL`, `LLM_TEMPERATURE` (unset — see above),
 ## Example
 
 `examples/insurance_ai_screen.json` — a real Pattern A run for the insurance-carrier-AI
-thesis: 17 confirmed companies (Gradient AI, Convr, Reserv, FurtherAI, ZestyAI, …) each
-with HQ / product / funding / investors / evidence, plus 28 excluded companies with the
-reason each was cut. Pattern A tends to return a tighter, more conservative list than the
-Pattern B run (which targets the full 25) — the deterministic `_clean` pass errs toward
-dropping anything it can't cleanly verify.
+thesis, driven by `anthropic:claude-sonnet-5`: 25 confirmed companies (Sixfold AI,
+Federato, Gradient AI, Liberate, Clara Analytics, …) each with HQ / product / funding /
+investors / evidence, plus 32 excluded companies with the reason each was cut. Every
+ranked name is a surviving candidate, no company appears in both sets, and `sources` is
+exactly the union of the surviving `evidence_urls`.
 
-This is illustrative model output, committed to show the shape of a result and kept as it came back from the run. Treat every claim and grade in it as an example of the pipeline's output, not as verified research — re-run the agent for current findings before relying on any of it.
+This is illustrative model output, committed to show the shape of a result and kept as
+it came back from the run. Treat every claim and grade in it as an example of the
+pipeline's output, not as verified research — re-run the agent for current findings
+before relying on any of it.
