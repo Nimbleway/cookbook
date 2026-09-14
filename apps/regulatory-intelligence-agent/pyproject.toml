@@ -1,0 +1,12 @@
+[project]
+name = "regulatory-intelligence-agent"
+version = "0.1.0"
+description = "LangChain agent for regulatory & filing intelligence, powered by Nimble web search."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.0.0",
+    "langchain-openai>=1.6.1",
+    "nimble-python>=1.6.0",
+    "python-dotenv>=1.2.3",
+]
