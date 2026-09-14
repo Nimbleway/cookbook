@@ -144,7 +144,13 @@ def _make_search_tool():
 
 def _make_llm(model: str | None):
     name = model or DEFAULT_MODEL
-    kwargs = {} if any(t in name for t in ("gpt-5", "o1", "o3", "o4")) else {"temperature": 0}
+    # Temperature is opt-in via LLM_TEMPERATURE. A growing set of frontier models
+    # reject the parameter outright — gpt-5.x and the o-series, and claude-sonnet-5
+    # returns `temperature is deprecated for this model` — so a model-name deny-list
+    # goes stale with every release and breaks the provider-agnostic promise above.
+    # The default model already ran without it.
+    temp = os.getenv("LLM_TEMPERATURE")
+    kwargs = {"temperature": float(temp)} if temp else {}
     return init_chat_model(name, **kwargs)
 
 

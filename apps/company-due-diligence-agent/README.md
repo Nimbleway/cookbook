@@ -85,7 +85,12 @@ cp .env.example .env       # NIMBLE_API_KEY + an LLM_MODEL and its key
 `anthropic:claude-sonnet-5`, `google_genai:gemini-2.5-pro`, … Install the matching
 provider package (`langchain-openai` is bundled).
 
-Env overrides: `LLM_MODEL`, `NIMBLE_CONTENT_CHAR_CAP` (`8000`), `AGENT_RECURSION_LIMIT` (`48`).
+Temperature is only sent when `LLM_TEMPERATURE` is set. `gpt-5.x`, the o-series and
+`claude-sonnet-5` all reject the parameter, so pinning it by model name goes stale
+with every release.
+
+Env overrides: `LLM_MODEL`, `LLM_TEMPERATURE` (unset — see above),
+`NIMBLE_CONTENT_CHAR_CAP` (`8000`), `AGENT_RECURSION_LIMIT` (`48`).
 
 ## Example
 
