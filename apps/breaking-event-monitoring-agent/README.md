@@ -57,11 +57,26 @@ Constants at the top of `agent.py`:
 
 Point it at a different incident by editing `AGENT_TASK`. `SKILL` and `GOALS` are generic to any breaking situation.
 
+## Example
+
+Real runs from 2026-09-23, covering the United Airlines outage situation report:
+
+- `examples/breaking_event_tracking_agent__pattern_A.md`: Pattern A (`claude-sonnet-4-6`)
+
+No Pattern B example is included. Both Web Search Agent runs of this task on
+2026-09-23 retrieved zero pages and returned an empty report.
+
+These are illustrative model output, committed to show the shape of a result and kept
+as they came back from the run. Treat every claim in them as an example of the
+pipeline's output, not as verified research. Re-run the agent for current findings
+before relying on any of it.
+
 ## Project structure
 
 ```
 breaking-event-monitoring-agent/
 ├── agent.py          # Use case config, Pattern A (LangChain) and Pattern B (Web Search Agent)
+├── examples/         # Committed sample outputs from a real run
 ├── README.md
 ├── ai-setup.md       # Setup steps for an AI coding agent
 ├── requirements.txt

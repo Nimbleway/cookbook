@@ -57,11 +57,24 @@ Constants at the top of `agent.py`:
 
 Swap the company by editing `AGENT_TASK` (and `AGENT_NAME` if you want a separate Web Search Agent per company).
 
+## Example
+
+Real runs from 2026-09-23, covering OpenAI developments for 24 Aug – 23 Sep 2026:
+
+- `examples/company_event_monitoring_agent__pattern_A.md`: Pattern A (`claude-sonnet-4-6`)
+- `examples/company_event_monitoring_agent__pattern_B.md` / `.json`: Pattern B (`effort=high`); the JSON includes the run metadata and `trust` block
+
+These are illustrative model output, committed to show the shape of a result and kept
+as they came back from the run. Treat every claim in them as an example of the
+pipeline's output, not as verified research. Re-run the agent for current findings
+before relying on any of it.
+
 ## Project structure
 
 ```
 company-event-monitoring-agent/
 ├── agent.py          # Use case config, Pattern A (LangChain) and Pattern B (Web Search Agent)
+├── examples/         # Committed sample outputs from a real run
 ├── README.md
 ├── ai-setup.md       # Setup steps for an AI coding agent
 ├── requirements.txt
