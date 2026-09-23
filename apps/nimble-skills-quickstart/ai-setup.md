@@ -52,7 +52,7 @@ Do not call Nimble to test this. If the plugin is missing, you have no Nimble to
 Check in this order:
 
 1. **Look at your own tools.** Do you have Nimble skills or tools available in this session? If yes,
-   the plugin is installed. Move on to Step 2.
+   the plugin is installed. Move on to Task 1.
 2. **Have the user check visibly.** In Claude Cowork: **Customize → Personal plugins → Nimble →
    Connectors**, and confirm the connector shows as connected. (In Claude Code, `/mcp`. In Cursor,
    **Settings → MCP**.)
@@ -201,7 +201,7 @@ conversation context are different things.
 
 ### If it goes wrong
 
-- **It is taking longer than 11 minutes.** Usually one slow company holding up the rest. Wait it
+- **It is taking longer than ten minutes.** Usually one slow company holding up the rest. Wait it
   out; do not restart, which throws away the work already done.
 - **Requests start failing partway through.** Too many at once. Wait a moment and ask it to finish
   the remaining companies rather than starting over.

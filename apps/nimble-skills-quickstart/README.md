@@ -37,5 +37,5 @@ if it is not.
 
 ## Requirements
 
-- An AI assistant with the [Nimble plugin](https://docs.nimbleway.com/plugin-installation) installed. `ai-setup.md` walks you through this if you have not done it.
+- An AI assistant with the [Nimble plugin](https://docs.nimbleway.com/integrations/agent-skills/plugin-installation) installed. `ai-setup.md` walks you through this if you have not done it.
 - A Nimble account. On Claude Cowork you sign in and there is no API key to manage.
