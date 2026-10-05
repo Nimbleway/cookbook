@@ -1,0 +1,541 @@
+{
+  "category": "LLM observability and evaluation platforms",
+  "as_of_date": "2026-09-23",
+  "inclusion_criteria": [
+    "Dedicated LLM observability or evaluation product (not just generic APM/monitoring)",
+    "Self-serve or clearly documented deployment (cloud, BYOC, or self-hosted)"
+  ],
+  "included": [
+    {
+      "company_name": "Arize AI / Arize Phoenix",
+      "headquarters": "San Francisco, California, United States",
+      "product_focus": "AI and LLM observability & evaluation platform; Phoenix is an open\u2011source agent/LLM tracing and eval tool, Arize AX is the enterprise observability and eval platform for agents and LLM apps",
+      "deployment_model": "Cloud SaaS (Arize AX); self\u2011hosted / Kubernetes and cloud instances for Phoenix",
+      "pricing_model": "Phoenix OSS is free; Arize AX appears usage\u2011based / enterprise contract (no public price tables)",
+      "target_segment": "AI engineers and data science teams at enterprises and high-growth startups building LLM agents and applications",
+      "funding_total": "Not disclosed in snippets (has raised multiple rounds incl. Series B per TechCrunch)",
+      "disclosed_arr": null,
+      "major_investors": [
+        "M12 (Microsoft\u2019s fund)",
+        "Datadog (strategic)",
+        "Adams Street Partners",
+        "Others (per TechCrunch, not all visible in snippet)"
+      ],
+      "evidence_urls": [
+        "https://arize.com/phoenix/",
+        "https://arize.com/blog/llm-observability-for-ai-agents-and-applications/",
+        "https://techcrunch.com/2025/02/20/arize-ai-hopes-it-has-first-mover-advantage-in-ai-observability/",
+        "https://www.crunchbase.com/organization/arize-ai"
+      ],
+      "include": true,
+      "exclusion_reason": null
+    },
+    {
+      "company_name": "Patronus AI",
+      "headquarters": "New York, New York, United States (HQ visible via company/about pages, implied from TC piece)",
+      "product_focus": "Dedicated LLM evaluation platform focused on LLM\u2011as\u2011judge evaluators, hallucination detection, agent trace debugging and domain test suites for regulated/enterprise use cases",
+      "deployment_model": "Managed cloud SaaS; language\u2011model\u2011agnostic platform integrated via APIs and SDKs",
+      "pricing_model": "Tiered SaaS (pricing page exists but detailed tiers not visible in snippet)",
+      "target_segment": "Enterprises in regulated industries, AI/ML teams needing rigorous LLM evals and guardrails",
+      "funding_total": "$3M seed (TechCrunch, Sept 2023) plus later undisclosed extensions (not fully visible)",
+      "disclosed_arr": null,
+      "major_investors": [
+        "Lightspeed Venture Partners",
+        "Factorial Capital",
+        "Industry angels"
+      ],
+      "evidence_urls": [
+        "https://www.patronus.ai/llm",
+        "https://www.patronus.ai/llm-testing/llm-evaluators",
+        "https://techcrunch.com/2023/09/14/patronus-ai-conjures-up-an-llm-evaluation-tool-for-regulated-industries/"
+      ],
+      "include": true,
+      "exclusion_reason": null
+    },
+    {
+      "company_name": "Dash0 (LLM observability)",
+      "headquarters": "New York, New York, United States",
+      "product_focus": "OpenTelemetry\u2011native observability platform with explicit LLM observability and agentic observability capabilities; treats gen\u2011AI spans, token metrics and eval signals as first\u2011class telemetry",
+      "deployment_model": "Cloud SaaS; OpenTelemetry\u2011based ingestion; can integrate with self\u2011hosted stacks",
+      "pricing_model": "Volume\u2011based on logs/spans/metrics, not GB or seats (transparent usage\u2011based pricing)",
+      "target_segment": "Developers, SREs and platform teams running modern apps plus LLM/agent workloads",
+      "funding_total": "Not disclosed in snippet (privately held)",
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://www.dash0.com/faq/what-is-llm-observability",
+        "https://www.dash0.com/knowledge/llm-observability-developers-guide"
+      ],
+      "include": true,
+      "exclusion_reason": null
+    },
+    {
+      "company_name": "LangSmith (LangChain)",
+      "headquarters": "San Francisco Bay Area, United States (LangChain Inc.)",
+      "product_focus": "Agent & LLM observability and evals platform: tracing, monitoring, online/offline evals, and managed deployment for LLM agents",
+      "deployment_model": "Managed cloud SaaS plus BYOC and self\u2011hosted options (run on customer Kubernetes)",
+      "pricing_model": "Free tier plus paid plans that scale with trace volume; enterprise contracts",
+      "target_segment": "Teams building on LangChain/LangGraph and other frameworks who need agent observability and evals",
+      "funding_total": "Not in snippet (LangChain has raised sizable VC rounds)",
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://www.langchain.com/langsmith/observability",
+        "https://www.langchain.com/langsmith-platform",
+        "https://langchain.com/resources/llm-monitoring-observability"
+      ],
+      "include": true,
+      "exclusion_reason": null
+    },
+    {
+      "company_name": "Langfuse",
+      "headquarters": "Berlin, Germany",
+      "product_focus": "Open\u2011source LLM engineering platform with tracing, observability, metrics, evaluation and prompt management for LLM apps",
+      "deployment_model": "Self\u2011hosted (Docker/Kubernetes) open source; managed cloud SaaS from Langfuse/ClickHouse",
+      "pricing_model": "Self\u2011host OSS (free); cloud Hobby free tier and paid usage\u2011based plans starting around $29/month (per Braintrust comparison article)",
+      "target_segment": "Developers and teams wanting self\u2011hostable LLM observability/eval and analytics",
+      "funding_total": "Seed round (amount obfuscated) before acquisition by ClickHouse",
+      "disclosed_arr": null,
+      "major_investors": [
+        "Y Combinator",
+        "La Famiglia",
+        "Lightspeed Venture Partners",
+        "PACA Ventures",
+        "ARVO Venture Capital"
+      ],
+      "evidence_urls": [
+        "https://langfuse.com/docs/evaluation/overview",
+        "https://langfuse.com/docs/evaluation/core-concepts",
+        "https://www.crunchbase.com/organization/finto-acba"
+      ],
+      "include": true,
+      "exclusion_reason": null
+    },
+    {
+      "company_name": "Braintrust",
+      "headquarters": "San Francisco, California, United States",
+      "product_focus": "AI\u2011native LLM observability and evaluation platform: full LLM traces, online/offline evals, monitoring, cost analytics and CI gating for LLM apps and agents",
+      "deployment_model": "Cloud SaaS (Braintrust platform and AI gateway); self\u2011hosting on enterprise tier",
+      "pricing_model": "Free tier (1 GB telemetry, 10k scores) then Pro plan $249/month plus enterprise contracts",
+      "target_segment": "Product and engineering teams building production LLM apps/agents",
+      "funding_total": "Series B round (amount obfuscated) \u2013 $80M cited in Crunchbase News article",
+      "disclosed_arr": null,
+      "major_investors": [
+        "ICONIQ Capital",
+        "Andreessen Horowitz",
+        "Greylock",
+        "Databricks Ventures",
+        "Others"
+      ],
+      "evidence_urls": [
+        "https://www.braintrust.dev/articles/llm-observability-guide",
+        "https://www.braintrust.dev/articles/best-ai-observability-tools-2026",
+        "https://news.crunchbase.com/venture/biggest-funding-rounds-cloud-energy-ai-world-labs/",
+        "https://www.crunchbase.com/organization/braintrust-data"
+      ],
+      "include": true,
+      "exclusion_reason": null
+    },
+    {
+      "company_name": "Confident AI / DeepEval",
+      "headquarters": "San Francisco Bay Area, United States (Confident AI)",
+      "product_focus": "LLM evaluation\u2011first observability platform: DeepEval library plus hosted Confident AI product scoring every trace with 50+ metrics, online evals, tracing and red\u2011teaming",
+      "deployment_model": "Cloud SaaS; DeepEval is open source; supports optional self\u2011hosted deployment on customer cloud",
+      "pricing_model": "Free tier; Starter from ~$200/month, Team $2,000/month, plus enterprise (per Confident AI comparison guide)",
+      "target_segment": "Engineering and QA teams looking for evaluation\u2011centric LLM observability and guardrails",
+      "funding_total": "Not disclosed in snippets",
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://www.confident-ai.com/docs/llm-tracing/introduction",
+        "https://www.confident-ai.com/products/llm-observability",
+        "https://www.confident-ai.com/knowledge-base/compare/10-llm-observability-tools-to-evaluate-and-monitor-ai-2026"
+      ],
+      "include": true,
+      "exclusion_reason": null
+    },
+    {
+      "company_name": "LangWatch",
+      "headquarters": "Amsterdam, Netherlands (per footer: \u201cBuilt in Amsterdam, the Netherlands\u201d)",
+      "product_focus": "LLM observability, evaluation and agent testing platform: OTel\u2011native tracing, agent simulations, evals, prompt management",
+      "deployment_model": "Cloud SaaS; self\u2011hosted (Docker/Kubernetes) and hybrid (data plane in customer infra, control plane in LangWatch)",
+      "pricing_model": "Free tier; paid SaaS plans (specific pricing not fully visible)",
+      "target_segment": "Teams shipping multi\u2011agent and RAG systems in regulated/enterprise environments",
+      "funding_total": "Not disclosed",
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://langwatch.ai/llm-observability",
+        "https://langwatch.ai/",
+        "https://langwatch.ai/blog/top-10-llm-observability-tools-complete-guide-for-2026"
+      ],
+      "include": true,
+      "exclusion_reason": null
+    },
+    {
+      "company_name": "Helicone",
+      "headquarters": "U.S. (not explicitly in snippet; Helicone is a U.S. startup)",
+      "product_focus": "AI gateway and LLM observability platform: proxy\u2011based logging, usage & cost analytics, prompt A/B testing, caching and basic eval/security features",
+      "deployment_model": "Cloud SaaS gateway; open\u2011source components for self\u2011hosting",
+      "pricing_model": "Free tier; paid plans starting around $79/month (per LangWatch/Braintrust comparisons)",
+      "target_segment": "Developers who want quick, proxy\u2011based LLM observability and cost tracking",
+      "funding_total": "Not disclosed",
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://www.helicone.ai/",
+        "https://docs.helicone.ai/getting-started/quick-start",
+        "https://www.helicone.ai/blog/llm-observability"
+      ],
+      "include": true,
+      "exclusion_reason": null
+    },
+    {
+      "company_name": "Opik by Comet",
+      "headquarters": "New York, New York, United States (Comet HQ)",
+      "product_focus": "Open\u2011source AI observability & evals platform for LLM and agentic systems: tracing, evaluation (LLM\u2011as\u2011judge + heuristics), prompt management and production monitoring",
+      "deployment_model": "Self\u2011hosted via Docker/Kubernetes (open source) and managed cloud via Comet",
+      "pricing_model": "Open source core is free; cloud/enterprise plans via Comet (usage\u2011 and seat\u2011based)",
+      "target_segment": "Developers and data science teams needing open\u2011source LLM observability and evals",
+      "funding_total": "Comet has raised large VC rounds; Opik itself is a product line (no separate figure)",
+      "disclosed_arr": null,
+      "major_investors": [
+        "Scale Venture Partners",
+        "Others backing Comet (not in snippet)"
+      ],
+      "evidence_urls": [
+        "https://www.comet.com/docs/opik/",
+        "https://www.comet.com/site/products/opik/",
+        "https://www.comet.com/site/blog/llm-observability-architecture-engineering/",
+        "https://www.comet.com/site/blog/announcing-opik/"
+      ],
+      "include": true,
+      "exclusion_reason": null
+    },
+    {
+      "company_name": "Galileo AI (RunGalileo)",
+      "headquarters": "Burlingame, California, United States",
+      "product_focus": "AI evaluation, observability and guardrails platform for GenAI applications, agents and RAG workflows; \u201cAgent Reliability Platform\u201d with Luna evaluation models and Protect firewall",
+      "deployment_model": "SaaS; also deployable in VPC and on\u2011premises (per site: SaaS, VPC, on\u2011prem options)",
+      "pricing_model": "Enterprise contracts; evaluation platform is sold as enterprise software (no public tariffs)",
+      "target_segment": "Large enterprises with production GenAI and agent workloads, including regulated sectors",
+      "funding_total": "Series B (amount obfuscated) plus prior rounds; Cisco announced intent to acquire Galileo.ai",
+      "disclosed_arr": null,
+      "major_investors": [
+        "Scale Venture Partners",
+        "Battery Ventures",
+        "Databricks Ventures",
+        "ServiceNow Ventures",
+        "Citi Ventures",
+        "Premji Invest",
+        "Others"
+      ],
+      "evidence_urls": [
+        "https://galileo.ai/",
+        "https://galileo.ai/learn/ai-observability",
+        "https://www.crunchbase.com/organization/galileo-154a"
+      ],
+      "include": true,
+      "exclusion_reason": null
+    },
+    {
+      "company_name": "Fiddler AI",
+      "headquarters": "Palo Alto area / Bay Area, California, United States",
+      "product_focus": "Enterprise AI observability and security platform with strong LLM and agent observability, evaluations and guardrails (Fiddler Centor Models, Guardrails, AI Observability for LLMs)",
+      "deployment_model": "Cloud SaaS, VPC, AWS GovCloud and on\u2011premises options",
+      "pricing_model": "Free plan for guardrails; Developer usage\u2011based at $0.002 per trace; enterprise contracts",
+      "target_segment": "Large enterprises, especially regulated industries, governing agents and ML+LLM models",
+      "funding_total": "Series C (amount obfuscated)",
+      "disclosed_arr": null,
+      "major_investors": [
+        "Lightspeed Venture Partners",
+        "Insight Partners",
+        "Others (not in snippet)"
+      ],
+      "evidence_urls": [
+        "https://www.fiddler.ai/",
+        "https://www.fiddler.ai/llmops",
+        "https://www.fiddler.ai/ai-observability",
+        "https://www.crunchbase.com/organization/fiddler-labs"
+      ],
+      "include": true,
+      "exclusion_reason": null
+    },
+    {
+      "company_name": "Maxim (getmaxim.ai)",
+      "headquarters": "San Francisco, California, United States",
+      "product_focus": "Enterprise\u2011grade AI evaluation and observability platform with experimentation and agent simulation/evaluation modules",
+      "deployment_model": "Cloud SaaS (enterprise AI evaluation & observability stack)",
+      "pricing_model": "Likely usage\u2011/contract\u2011based for enterprises (no public tariff visible)",
+      "target_segment": "Modern AI teams at mid\u2011market and enterprise customers needing evaluation and observability for AI/LLM apps",
+      "funding_total": "Seed round (amount obfuscated) led by Elevation Capital",
+      "disclosed_arr": null,
+      "major_investors": [
+        "Elevation Capital"
+      ],
+      "evidence_urls": [
+        "https://www.crunchbase.com/organization/maxim-773d",
+        "https://www.crunchbase.com/organization/maxim-773d/company_financials"
+      ],
+      "include": true,
+      "exclusion_reason": null
+    }
+  ],
+  "excluded": [
+    {
+      "company_name": "InsightFinder AI",
+      "headquarters": "Brooklyn, New York, United States",
+      "product_focus": "AI\u2011powered observability for IT and AI systems; includes \u201cLLM Labs\u201d for building, evaluating, deploying, and monitoring LLMs",
+      "deployment_model": "Cloud platform; works across infrastructure and AI models",
+      "pricing_model": "Not clearly disclosed",
+      "target_segment": "Enterprises needing AI+IT observability",
+      "funding_total": "Series B $15M (TechCrunch, April 2026) plus prior rounds",
+      "disclosed_arr": null,
+      "major_investors": [
+        "Yu Galaxy",
+        "IDEA Fund Partners",
+        "Eight Roads Ventures",
+        "Others"
+      ],
+      "evidence_urls": [
+        "https://www.crunchbase.com/organization/insightfinder-inc",
+        "https://techcrunch.com/2026/04/16/insightfinder-raises-15m-to-help-companies-figure-out-where-ai-agents-go-wrong/"
+      ],
+      "include": false,
+      "exclusion_reason": "Primary product is general AI+IT observability; LLM evaluation appears as a feature (LLM Labs), not positioned as a dedicated LLM observability/eval platform."
+    },
+    {
+      "company_name": "Observe, Inc.",
+      "headquarters": "San Mateo, California, United States",
+      "product_focus": "Unified observability platform (logs, metrics, traces) with some LLM observability explorer",
+      "deployment_model": "Fully managed SaaS",
+      "pricing_model": "Usage\u2011based observability pricing",
+      "target_segment": "DevOps/SRE and app teams",
+      "funding_total": "Not in snippet",
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://www.crunchbase.com/organization/observe-inc"
+      ],
+      "include": false,
+      "exclusion_reason": "General observability vendor where LLMs are just another signal; does not market a dedicated LLM observability/evaluation product."
+    },
+    {
+      "company_name": "Elastic Observability (Elastic)",
+      "headquarters": "Mountain View, California, United States",
+      "product_focus": "Full\u2011stack observability (APM, logs, metrics) with some LLM observability features",
+      "deployment_model": "Self\u2011managed Elastic Stack or Elastic Cloud SaaS",
+      "pricing_model": "Usage\u2011based (resources / data)",
+      "target_segment": "IT, DevOps, SRE and observability teams",
+      "funding_total": "Public company",
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://www.g2.com/products/elastic-observability/reviews"
+      ],
+      "include": false,
+      "exclusion_reason": "Primarily a generic observability suite; LLM observability is an integration, not a dedicated LLM product."
+    },
+    {
+      "company_name": "Datadog LLM Observability",
+      "headquarters": "New York, New York, United States",
+      "product_focus": "Datadog APM/logging platform with added LLM observability tab and OpenAI/Anthropic integrations",
+      "deployment_model": "Cloud SaaS",
+      "pricing_model": "Per\u2011host / usage as part of Datadog suite",
+      "target_segment": "Existing Datadog customers adding LLM monitoring",
+      "funding_total": "Public company",
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://www.braintrust.dev/articles/best-llm-monitoring-tools-2026"
+      ],
+      "include": false,
+      "exclusion_reason": "General APM/observability vendor with LLM features; category criteria excludes general APM players without a dedicated standalone LLM observability product."
+    },
+    {
+      "company_name": "Monte Carlo / data observability tools",
+      "headquarters": "San Francisco, California, United States",
+      "product_focus": "Data observability for data warehouses/pipelines, not LLM or agent behavior",
+      "deployment_model": "Cloud / SaaS",
+      "pricing_model": "Enterprise contracts",
+      "target_segment": "Data engineering teams",
+      "funding_total": null,
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://www.g2.com/categories/data-observability"
+      ],
+      "include": false,
+      "exclusion_reason": "Focuses on data observability rather than LLM/agent observability or evaluation."
+    },
+    {
+      "company_name": "Maxim AI (if separate from Maxim getmaxim.ai)",
+      "headquarters": null,
+      "product_focus": "Not clearly tied to LLM observability/evaluation in available snippets",
+      "deployment_model": null,
+      "pricing_model": null,
+      "target_segment": null,
+      "funding_total": null,
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://maxim.ai/"
+      ],
+      "include": false,
+      "exclusion_reason": "Domain is currently parked/for sale; cannot verify as an active LLM observability/evaluation platform."
+    },
+    {
+      "company_name": "Helicone open source only (as gateway)",
+      "headquarters": null,
+      "product_focus": "Open\u2011source proxy and logging; without hosted platform, it is infrastructure rather than full observability+eval product",
+      "deployment_model": null,
+      "pricing_model": null,
+      "target_segment": null,
+      "funding_total": null,
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://docs.helicone.ai/getting-started/quick-start"
+      ],
+      "include": false,
+      "exclusion_reason": "Gateway alone is telemetry plumbing; the earlier Helicone row covers the actual hosted observability product."
+    },
+    {
+      "company_name": "Maximor / Maxima AI (agentic accounting)",
+      "headquarters": "San Francisco, California, United States",
+      "product_focus": "Agentic AI for enterprise accounting (journal entries, reconciliations)",
+      "deployment_model": "SaaS for finance workflows",
+      "pricing_model": "Not disclosed",
+      "target_segment": "Finance and accounting teams",
+      "funding_total": "Series A (Maxima) and seed (Maximor)",
+      "disclosed_arr": null,
+      "major_investors": [
+        "Kleiner Perkins",
+        "Redpoint",
+        "Audacious Ventures",
+        "Foundation Capital"
+      ],
+      "evidence_urls": [
+        "https://techcrunch.com/2025/09/29/former-microsoft-executives-launch-ai-agents-to-end-excel-driven-finance-for-mid-market-enterprise-businesses/",
+        "https://www.crunchbase.com/organization/maxima-ai-a6b7"
+      ],
+      "include": false,
+      "exclusion_reason": "Vertical application using agents; does not provide a general LLM observability/evaluation platform to other teams."
+    },
+    {
+      "company_name": "LangChain core OSS (tracing features)",
+      "headquarters": null,
+      "product_focus": "Framework with callbacks and tracing support; not itself a platform",
+      "deployment_model": null,
+      "pricing_model": null,
+      "target_segment": null,
+      "funding_total": null,
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://langchain.com/articles/llm-monitoring-observability"
+      ],
+      "include": false,
+      "exclusion_reason": "Library features only; the LangSmith platform entry already covers the dedicated observability/evaluation product."
+    },
+    {
+      "company_name": "Helm / other gateways listed in comparison tables (Portkey, Weights & Biases Weave, etc.)",
+      "headquarters": null,
+      "product_focus": "Either generic AI gateways or broader ML experiment tools with some LLM eval; not confirmed as dedicated LLM observability/eval platforms in available snippets",
+      "deployment_model": null,
+      "pricing_model": null,
+      "target_segment": null,
+      "funding_total": null,
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://www.confident-ai.com/knowledge-base/compare/10-llm-observability-tools-to-evaluate-and-monitor-ai-2026"
+      ],
+      "include": false,
+      "exclusion_reason": "From the snippets alone, cannot positively confirm that each has a dedicated LLM observability/evaluation product that meets the criteria; treated conservatively as out of scope."
+    },
+    {
+      "company_name": "Arize Phoenix OSS only",
+      "headquarters": null,
+      "product_focus": "Open\u2011source library and UI for local LLM tracing and eval",
+      "deployment_model": null,
+      "pricing_model": null,
+      "target_segment": null,
+      "funding_total": null,
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://arize.com/blog/llm-tracing-and-observability-with-arize-phoenix/"
+      ],
+      "include": false,
+      "exclusion_reason": "Phoenix as OSS alone is a library/UI you self\u2011host; the main Arize entry already covers Phoenix plus the hosted enterprise platform which clearly fits the category."
+    },
+    {
+      "company_name": "Maxim AI mentioned in observability tools market report",
+      "headquarters": null,
+      "product_focus": "See above Maxim entry",
+      "deployment_model": null,
+      "pricing_model": null,
+      "target_segment": null,
+      "funding_total": null,
+      "disclosed_arr": null,
+      "major_investors": [],
+      "evidence_urls": [
+        "https://www.marketsandmarkets.com/Market-Reports/observability-tools-and-platforms-market-69804486.html"
+      ],
+      "include": false,
+      "exclusion_reason": "Duplicate mention of Maxim as an emerging innovator; already included once with verified Crunchbase profile."
+    }
+  ],
+  "bottom_up": {
+    "low": 0.0,
+    "high": 20750000.0,
+    "disclosed_count": 0,
+    "estimated_count": 2,
+    "total_included": 13,
+    "confidence": "low",
+    "assumptions": [
+      "0/13 included vendors have a disclosed ARR/revenue figure",
+      "2 vendors with known funding but no disclosed ARR are estimated at 25% of total funding raised (a rough SaaS heuristic, not a measurement)",
+      "11 vendors have neither disclosed ARR nor a parseable funding figure and contribute $0 to either bound"
+    ]
+  },
+  "published_estimates": [
+    {
+      "source": "MarketsandMarkets \u2013 Observability Tools and Platforms Market",
+      "figure": "Global observability tools and platforms market size was estimated at USD 11.91 billion in 2026 and is projected to reach USD 22.99 billion by 2031, growing at a CAGR of 14.1%.",
+      "methodology": "Top\u2011down and bottom\u2011up approaches on supply and demand side, using revenues of vendors offering observability tools & platforms (including APM, log mgmt, distributed tracing, AIOps, AI/LLM observability, etc.), segmented by component, deployment type, vertical and region. LLM observability is treated as a capability within the broader observability platforms market, not a standalone segment.",
+      "url": "https://www.marketsandmarkets.com/Market-Reports/observability-tools-and-platforms-market-69804486.html",
+      "published_date": "2026-02-02"
+    },
+    {
+      "source": "MarketsandMarkets \u2013 AI Governance Market",
+      "figure": "AI governance market projected to grow from USD 0.89 billion in 2024 to USD 5.78 billion by 2029, at a CAGR of 45.3%.",
+      "methodology": "Top\u2011down and bottom\u2011up sizing across functionalities (model lifecycle management, risk & compliance, monitoring & auditing, ethics & responsible AI) and product types (end\u2011to\u2011end AI governance platforms, MLOps & LLMOps tools, data privacy tools). AI observability and LLMOps tools are included as part of governance/lifecycle monitoring rather than broken out separately.",
+      "url": "https://www.marketsandmarkets.com/Market-Reports/ai-governance-market-176187291.html",
+      "published_date": "2025-01-01"
+    }
+  ],
+  "reconciliation": [
+    {
+      "published_source": "MarketsandMarkets \u2013 Observability Tools and Platforms Market",
+      "published_figure": "Global observability tools and platforms market size was estimated at USD 11.91 billion in 2026 and is projected to reach USD 22.99 billion by 2031, growing at a CAGR of 14.1%.",
+      "parsed_published_value": 11910000000.0,
+      "bottom_up_low": 0.0,
+      "bottom_up_high": 20750000.0,
+      "ratio_vs_midpoint": 1147.95,
+      "flagged": true,
+      "note": "published figure is 1148.0x the bottom-up midpoint"
+    },
+    {
+      "published_source": "MarketsandMarkets \u2013 AI Governance Market",
+      "published_figure": "AI governance market projected to grow from USD 0.89 billion in 2024 to USD 5.78 billion by 2029, at a CAGR of 45.3%.",
+      "parsed_published_value": 890000000.0,
+      "bottom_up_low": 0.0,
+      "bottom_up_high": 20750000.0,
+      "ratio_vs_midpoint": 85.78,
+      "flagged": true,
+      "note": "published figure is 85.8x the bottom-up midpoint"
+    }
+  ]
+}
