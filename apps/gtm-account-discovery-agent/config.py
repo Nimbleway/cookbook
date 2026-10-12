@@ -6,7 +6,7 @@ The ICP is defined once here and used by both patterns in ``agent.py``:
                                 HIRING_SEARCH, plus the ICP constants for the LLM
                                 judges and the code-side decision rules
   Pattern B (Web Search Agent)  AGENT_*, GOALS, SOURCES, OUTPUT_SCHEMA, agent_input(),
-                                HEADCOUNT_SEARCH for the trust gate
+                                HEADCOUNT_SEARCH for the headcount gate
 
 The values below are the ones used for the US legal AI runs on 2026-10-07.
 """
@@ -24,7 +24,7 @@ TARGET_COUNT = 15
 MIN_EMPLOYEES = 50
 MAX_EMPLOYEES = 500
 ROUND_WINDOW_START = "2025-04-01"  # most recent priced round closed on or after this date
-HEADCOUNT_MAX_AGE_DAYS = 365       # trust gate ignores headcount figures older than this
+HEADCOUNT_MAX_AGE_DAYS = 365       # headcount gate ignores headcount figures older than this
 
 ICP_CRITERIA = {
     "hq": "Headquartered in the United States.",
@@ -156,6 +156,6 @@ def agent_input(today: str = AS_OF) -> str:
     )
 
 
-# Trust gate: one search per row whose employee_count claim came back low confidence.
+# Headcount gate: one search per returned row.
 HEADCOUNT_SEARCH = dict(query="{company} {domain} employees headcount team size",
                         search_depth="lite", max_results=5)

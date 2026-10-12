@@ -33,7 +33,7 @@ Instructions for an AI agent (e.g. Claude Code) setting this up for a user.
    ```bash
    python agent.py                # both patterns
    python agent.py --pattern A    # Search API pipeline only
-   python agent.py --pattern B    # Web Search Agent + trust gate only
+   python agent.py --pattern B    # Web Search Agent + headcount gate only
    ```
    Outputs land in `artifacts/`. Pattern A makes roughly 6 + 2 per candidate
    searches and one Claude call per search step. Pattern B polls every 30s and times

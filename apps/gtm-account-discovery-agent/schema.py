@@ -1,8 +1,9 @@
 """Structured outputs for the LLM steps in agent.py.
 
 The model only extracts and grades evidence. Pass/fail decisions are made in code
-(agent.firmographic_decision, agent.hiring_decision, agent.headcount_gate), so the
-rules stay the same on every run.
+(agent.firmographic_decision, agent.stage_check, agent.hiring_decision,
+agent.headcount_gate), so the rules stay the same on every run. Date and number
+comparisons (round close date, headcount range) are always made in code.
 """
 
 from __future__ import annotations
@@ -18,7 +19,8 @@ Status = Literal["met", "not_met", "unclear"]
 # --- step 2: candidate extraction ------------------------------------------
 
 class EarlyRejection(BaseModel):
-    criterion: Criterion
+    # Only facts a snippet states outright. Funding stage is always checked in code.
+    criterion: Literal["hq", "product"]
     reason: str = Field(description="The fact in the result that fails the criterion, quoted or paraphrased")
 
 
@@ -44,11 +46,20 @@ class CriterionCheck(BaseModel):
     source_url: Optional[str] = None
 
 
+class LatestRound(BaseModel):
+    series: Literal["pre_seed", "seed", "series_a", "series_b", "series_c", "series_d_or_later",
+                    "other", "unknown"] = Field(description="Series of the most recent priced round; unknown if the results do not say")
+    close_date: Optional[str] = Field(
+        default=None, description="Date the round closed or was announced, YYYY-MM-DD or YYYY-MM; null if not given")
+    evidence: str = Field(description="The round as stated, e.g. 'Series B, $60M, Nov 2025'")
+    source_url: Optional[str] = None
+
+
 class FirmographicVerdict(BaseModel):
     domain: Optional[str] = Field(default=None, description="The company's bare hostname, if the evidence confirms it")
     hq: CriterionCheck
     product: CriterionCheck
-    stage: CriterionCheck
+    latest_round: LatestRound
     size: CriterionCheck
 
 
@@ -60,7 +71,7 @@ class HiringVerdict(BaseModel):
     evidence: str
 
 
-# --- Pattern B trust gate --------------------------------------------------
+# --- Pattern B headcount gate ----------------------------------------------
 
 class HeadcountFigure(BaseModel):
     low: int = Field(description="Lower bound; equal to high for a single number")

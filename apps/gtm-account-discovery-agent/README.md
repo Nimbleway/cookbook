@@ -2,7 +2,7 @@
 
 > **Cookbook Example**: one account-discovery use case, built two ways on Nimble:
 > a Search API pipeline your code controls, and a Web Search Agent run with a
-> trust gate.
+> headcount gate.
 
 Starts from an ICP and returns the companies that match every criterion, each with the
 evidence behind it, plus every rejected company and the criterion it failed. Ships
@@ -22,7 +22,7 @@ The ICP, in `config.py`, treats every criterion as a hard constraint:
 | | Pattern A: Search API | Pattern B: Web Search Agent |
 | --- | --- | --- |
 | Who does the research | Your code: broaden, extract, narrow | Nimble's Web Search Agent (`use_case="dataset_building"`, `effort="high"`) |
-| LLM in your loop | Yes: Claude extracts candidates and grades evidence; your code decides pass/fail | Only in the trust gate, to read headcount figures from search results |
+| LLM in your loop | Yes: Claude extracts candidates and grades evidence; your code decides pass/fail | Only in the headcount gate, to read headcount figures from the agent's claim and one search |
 | Where the ICP lives | `ICP_CRITERIA` in the judge prompts, decision rules in `agent.py` | Agent `goals`, `sources` and required evidence fields in `output_schema` |
 | Rejections | Every candidate, with the stage and criterion it failed | `near_misses` with `failed_criterion` |
 | Output | `artifacts/legal_ai_discovery__pattern_A.json` | `artifacts/legal_ai_discovery__pattern_B.json` (run, content, trust, gate results) |
@@ -37,20 +37,23 @@ each field it returns, which tells your code what to re-check.
 BROADEN   6 lite searches, start_date = start of the funding window, max_results=10;
           one is limited to legal-tech press (include_domains)
 EXTRACT   Claude pulls candidate companies out of titles and snippets, and flags any
-          result that states a disqualifying fact (non-US HQ, Series D+, a law firm)
+          result that states a non-US HQ or that the company is a law firm
 DEDUPE    one entry per company, keyed on domain or a normalized name (in code)
-NARROW    per candidate: one firmographic search -> judge HQ, product, stage, size
+NARROW    per candidate: one firmographic search -> judge HQ, product, size, and
+          extract the latest round (series, close date); stage is decided in code
           only for survivors: one hiring search on ATS boards + the company domain
           -> judge the sales role
 ```
 
 The judges grade each criterion `met`, `not_met` or `unclear` with the evidence and
 URL. `firmographic_decision()` and `hiring_decision()` make the call in code: anything
-not explicitly `met` fails, and `unclear` is recorded as `Unverified: ...`. Including
+not explicitly `met` fails, and `unclear` is recorded as `Unverified: ...`. Funding
+stage is never graded by the model: it returns the latest round's series and close
+date, and `stage_check()` compares the date with `ROUND_WINDOW_START` in code. Including
 the domain in the firmographic query keeps a name like "DeepIP" from resolving to
 generic patent pages.
 
-### Pattern B: goals, required evidence, and a trust gate
+### Pattern B: goals, required evidence, and a headcount gate
 
 `get_or_create_agent()` reuses the agent named `AGENT_NAME` if it exists, otherwise it
 creates it with `agents.create(...)`. The hard constraints are written as agent
@@ -58,16 +61,18 @@ creates it with `agents.create(...)`. The hard constraints are written as agent
 and `sales_role_url` on every row. A rule kept only in the prompt was not enough in
 testing: the agent filled rows whose own evidence said a criterion was unconfirmed.
 
-After the run, `runs.result` returns a trust claim per JSON path. For every
-`$.companies[i].employee_count` claim graded `low`, the trust gate runs one Search API
-call (`{company} {domain} employees headcount team size`, lite, 5 results), Claude
-lists the headcount figures it finds, and `headcount_gate()` decides:
+After the run, the headcount gate checks the size criterion for every row in code,
+whether or not the agent cited its figure. It runs one Search API call per row
+(`{company} {domain} employees headcount team size`, lite, 5 results), Claude lists the
+headcount figures in the agent's own `employee_count` claim and in those results, and
+`headcount_gate()` decides:
 
 - **pass**: every dated figure from the last 12 months is within 50 to 500
 - **fail**: no dated figure, or none within the band
 - **review**: recent figures disagree about the band
 
-`verified_companies` in the artifact lists the rows that passed.
+`verified_companies` in the artifact lists the rows that passed. Each gate entry also
+records the agent's claim and the confidence `runs.result` gave it.
 
 ## Quickstart
 
@@ -91,19 +96,19 @@ python agent.py --pattern B
 | Variable | Required | Description |
 | --- | --- | --- |
 | `NIMBLE_API_KEY` | yes | From online.nimbleway.com → Account Settings → API Keys |
-| `ANTHROPIC_API_KEY` | yes | From console.anthropic.com. Pattern A extraction and judging; Pattern B trust gate |
+| `ANTHROPIC_API_KEY` | yes | From console.anthropic.com. Pattern A extraction and judging; Pattern B headcount gate |
 | `AS_OF_DATE` | no | Date the ICP is evaluated against (default: today). `2026-10-07` reproduces the committed example's input |
 
 In `agent.py`:
 
-- `MODEL`: Claude model for extraction, judging and the trust gate (default `claude-sonnet-4-6`)
+- `MODEL`: Claude model for extraction, judging and the headcount gate (default `claude-sonnet-4-6`)
 
 In `config.py`:
 
 - `ICP_CRITERIA`, `MIN_EMPLOYEES`, `MAX_EMPLOYEES`, `ROUND_WINDOW_START`, `TARGET_COUNT`: the ICP
 - `DISCOVERY`, `LEGAL_PRESS`, `ATS`, `FIRMOGRAPHIC_SEARCH`, `HIRING_SEARCH`: the Pattern A searches
 - `AGENT_NAME`, `GOALS`, `SOURCES`, `OUTPUT_SCHEMA`, `EFFORT`: the Pattern B agent
-- `HEADCOUNT_SEARCH`, `HEADCOUNT_MAX_AGE_DAYS`: the trust gate
+- `HEADCOUNT_SEARCH`, `HEADCOUNT_MAX_AGE_DAYS`: the headcount gate
 
 `EFFORT` defaults to `high`. `dataset_building` needs `high` or above, and an `x-high`
 run of this task was cancelled server-side after about 10 minutes with no output, so
@@ -146,7 +151,7 @@ on any of it.
 
 ```
 gtm-account-discovery-agent/
-├── agent.py          # Pattern A (Search API pipeline) and Pattern B (Web Search Agent + trust gate)
+├── agent.py          # Pattern A (Search API pipeline) and Pattern B (Web Search Agent + headcount gate)
 ├── config.py         # ICP, searches, Web Search Agent goals/sources/schema
 ├── schema.py         # Structured outputs for the LLM steps (Pydantic)
 ├── examples/         # Committed outputs from the 2026-10-07 runs

@@ -10,14 +10,16 @@ criterion and every rejection with the criterion it failed. Built two ways on Ni
              extract   Claude pulls candidate companies out of titles and snippets;
                        dedupe() merges them in code
              narrow    one firmographic search per candidate -> LLM judge (HQ, product,
-                       stage, size) -> a hiring search on ATS boards only for survivors
-                       -> LLM judge. Pass/fail is decided in code from the judges' grades.
+                       size; latest round extracted, stage decided in code) -> a hiring
+                       search on ATS boards only for survivors -> LLM judge. Pass/fail is
+                       decided in code from the judges' grades.
 
   Pattern B  Web Search Agent, Nimble owns the research
              nimble.agents.create(...) with the ICP rules as goals and required
              evidence fields in the output_schema (reused if it already exists),
-             then runs.create -> poll -> result. A trust gate re-checks every
-             employee_count claim graded low with one Search API call.
+             then runs.create -> poll -> result. A headcount gate checks every
+             row's employee_count in code: the agent's own figure plus one Search
+             API call, each figure dated and compared with the 50-500 range.
 
 Setup:
   pip install -r requirements.txt
@@ -42,11 +44,11 @@ from dotenv import load_dotenv
 from langchain_anthropic import ChatAnthropic
 from nimble_python import APIError, ConflictError, Nimble
 
-import config
-from schema import (CandidateList, FirmographicVerdict, HeadcountEvidence, HeadcountFigure,
-                    HiringVerdict)
+load_dotenv()  # before config, which reads AS_OF_DATE at import
 
-load_dotenv()
+import config
+from schema import (CandidateList, CriterionCheck, FirmographicVerdict, HeadcountEvidence,
+                    HeadcountFigure, HiringVerdict, LatestRound)
 
 MODEL = "claude-sonnet-4-6"  # Claude model for extraction and judging
 OUTPUT_DIR = Path("artifacts")
@@ -99,11 +101,11 @@ def extract_companies(pages) -> list[dict]:
     system = (
         "You read search results about legal technology funding and news, and list the "
         "companies they are about: the company raising, launching or hiring, not its "
-        "investors, customers or the law firms quoted. If a result explicitly states a "
-        "fact that fails one of the ICP criteria below (for example a non-US headquarters, "
-        "a Series D or later round, or that the company is itself a law firm or legal "
-        "services provider), set early_rejection with that criterion and fact. Do not "
-        f"reject on missing information.\n\nICP:\n{_icp_text()}"
+        "investors, customers or the law firms quoted. If a result explicitly states that "
+        "the company is headquartered outside the US, or that it is itself a law firm or "
+        "legal services provider, set early_rejection (criterion hq or product) with that "
+        "fact. Do not reject on funding stage or on missing information; those are checked "
+        f"later.\n\nICP:\n{_icp_text()}"
     )
     out = _llm(CandidateList).invoke([("system", system), ("user", _format_results(pages))])
     return [c.model_dump() for c in out.candidates]
@@ -137,12 +139,13 @@ def dedupe(candidates: list[dict]) -> list[dict]:
 
 def judge_firmographics(c: dict, results) -> FirmographicVerdict:
     system = (
-        "Grade one company against four ICP criteria using only the search results. "
-        "met / not_met need explicit evidence in a result; otherwise unclear. Check that "
-        "each result is about this company and not another with a similar name. For stage, "
-        "use the most recent priced round and its close date. For size, use a dated "
-        f"headcount figure; never infer it from funding.\n\nICP:\n{_icp_text()}\n\n"
-        f"Today's date is {config.AS_OF}."
+        "Grade one company against the hq, product and size ICP criteria using only the "
+        "search results. met / not_met need explicit evidence in a result; otherwise "
+        "unclear. Check that each result is about this company and not another with a "
+        "similar name. For size, use a dated headcount figure; never infer it from funding. "
+        "Do not grade funding stage: fill latest_round with the series and close date of "
+        "the most recent priced round exactly as the results state them.\n\n"
+        f"ICP:\n{_icp_text()}\n\nToday's date is {config.AS_OF}."
     )
     user = f"Company: {c['name']} ({c.get('domain') or 'domain unknown'})\n\n{_format_results(results)}"
     return _llm(FirmographicVerdict).invoke([("system", system), ("user", user)])
@@ -159,10 +162,24 @@ def judge_hiring(c: dict, results) -> HiringVerdict:
     return _llm(HiringVerdict).invoke([("system", system), ("user", user)])
 
 
+def stage_check(r: LatestRound) -> CriterionCheck:
+    """The stage criterion, decided in code: Series A, B or C closed on or after ROUND_WINDOW_START."""
+    start = date.fromisoformat(config.ROUND_WINDOW_START)
+    if r.series in ("series_a", "series_b", "series_c"):
+        closed = _parse_date(r.close_date)
+        if closed is None:
+            return CriterionCheck(status="unclear", evidence=f"{r.evidence} (no close date)", source_url=r.source_url)
+        status = "met" if closed >= start else "not_met"
+        return CriterionCheck(status=status, evidence=f"{r.evidence} (closed {r.close_date})", source_url=r.source_url)
+    if r.series in ("unknown", "other"):
+        return CriterionCheck(status="unclear", evidence=r.evidence, source_url=r.source_url)
+    return CriterionCheck(status="not_met", evidence=r.evidence, source_url=r.source_url)
+
+
 def firmographic_decision(v: FirmographicVerdict) -> tuple[str, str] | None:
     """Hard constraints: anything not explicitly met fails. Returns (criterion, reason) or None."""
     for name in config.FIRMOGRAPHIC_CRITERIA:
-        check = getattr(v, name)
+        check = stage_check(v.latest_round) if name == "stage" else getattr(v, name)
         if check.status != "met":
             prefix = "Unverified: " if check.status == "unclear" else ""
             return name, f"{prefix}{check.evidence}"
@@ -182,7 +199,7 @@ def verify(client: Nimble, c: dict, log: list) -> dict:
     firmo = judge_firmographics(c, _search(client, log, f"firmographics:{c['name']}", **firmo_q))
     c["domain"] = c.get("domain") or firmo.domain
     record = {"company": c["name"], "domain": c.get("domain"), "evidence_urls": c["evidence_urls"],
-              "firmographics": firmo.model_dump()}
+              "firmographics": {**firmo.model_dump(), "stage": stage_check(firmo.latest_round).model_dump()}}
     failed = firmographic_decision(firmo)
     if failed:
         return {**record, "pass": False, "stage": "firmographics",
@@ -247,7 +264,7 @@ def run_search_api() -> dict:
 
 
 # ===========================================================================
-# Pattern B: Web Search Agent + trust gate on low-confidence headcount
+# Pattern B: Web Search Agent + headcount gate on every row
 # ===========================================================================
 
 def get_or_create_agent(client: Nimble) -> str:
@@ -293,12 +310,15 @@ def get_or_create_agent(client: Nimble) -> str:
 
 def judge_headcount(row: dict, results) -> HeadcountEvidence:
     system = (
-        "List every employee headcount figure the search results give for this company. "
-        "Use only figures about this company. Record the source and the date the source "
-        "gives for the figure; leave as_of null when the result does not date it. Do not "
-        "estimate headcount from funding or job counts."
+        "List every employee headcount figure the evidence gives for this company: the Web "
+        "Search Agent's own claim and the search results. Use only figures about this "
+        "company. Record the source and the date the source gives for the figure; leave "
+        "as_of null when the evidence does not date it. Do not estimate headcount from "
+        "funding or job counts."
     )
-    user = f"Company: {row.get('company')} ({row.get('domain')})\n\n{_format_results(results)}"
+    claim = row.get("employee_count") or "(none)"
+    user = (f"Company: {row.get('company')} ({row.get('domain')})\n\n"
+            f"[agent] Web Search Agent's employee_count claim: {claim}\n\n{_format_results(results)}")
     return _llm(HeadcountEvidence).invoke([("system", system), ("user", user)])
 
 
@@ -359,23 +379,23 @@ def run_agent_api(poll_every: int = 30, timeout: int = 2700) -> dict:
     print(f"  {len(rows)} companies, {len(payload['output']['content']['near_misses'])} near-misses; "
           f"trust: {payload['output']['trust']['confidence']}")
 
-    # Trust gate: re-check any employee_count claim the agent could not cite.
-    weak = {c["path"] for c in claims if c["confidence"] == "low"}
+    # Headcount gate: the size criterion is decided in code for every row, whether or not
+    # the agent cited its figure. The agent's own claim and one Search API call supply
+    # the figures; headcount_gate() keeps the recent dated ones and checks the range.
+    confidence = {c["path"]: c["confidence"] for c in claims}
     log: list[dict] = []
     gate = []
     for i, row in enumerate(rows):
-        if f"$.companies[{i}].employee_count" not in weak:
-            gate.append({"company": row["company"], "status": "pass",
-                         "reason": "employee_count cited by the agent"})
-            continue
         # Drop a parenthetical legal name ("GC AI (General Counsel AI, Inc.)") from the query.
         name = re.sub(r"\s*\(.*?\)", "", row["company"]).strip()
         q = dict(config.HEADCOUNT_SEARCH)
         q["query"] = q["query"].format(company=name, domain=row.get("domain", ""))
         found = judge_headcount(row, _search(client, log, f"headcount:{row['company']}", **q))
         status, reason = headcount_gate(found.figures)
-        gate.append({"company": row["company"], "query": q["query"], "status": status,
-                     "reason": reason, "figures": [f.model_dump() for f in found.figures]})
+        gate.append({"company": row["company"], "agent_claim": row.get("employee_count"),
+                     "agent_claim_confidence": confidence.get(f"$.companies[{i}].employee_count"),
+                     "query": q["query"], "status": status, "reason": reason,
+                     "figures": [f.model_dump() for f in found.figures]})
         print(f"  gate {row['company']}: {status} ({reason})")
 
     payload["trust_gate"] = gate

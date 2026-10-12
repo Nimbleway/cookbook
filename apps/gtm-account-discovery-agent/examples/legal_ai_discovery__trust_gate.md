@@ -24,11 +24,12 @@ one more check.
 | GC AI | 127 (Tracxn) to 142 (PitchBook) | Pattern A pipeline evidence | **Pass** |
 | Eve | 174 (GetLatka, Dec 2025) to 376 (Tracxn, Aug 31, 2026) | Enrichment run (`gtm-account-enrichment-agent`) | **Pass** |
 
-`agent.py` runs one gate search for every low-confidence row, using
-`{company} {domain} employees headcount team size`, and applies `headcount_gate()`: only
-dated figures from the last 12 months count; pass if all of them fall within 50 to 500,
-fail if none do or none exist, review if they disagree. On 2026-10-07 only Sandstone and
-Billables AI were searched; the other three rows reused figures already collected.
+On 2026-10-07 the gate covered the low-confidence rows: Sandstone and Billables AI were
+searched, and the other three rows reused figures already collected. The current
+`agent.py` runs the gate on every row: one search using
+`{company} {domain} employees headcount team size`, plus the agent's own claim, then
+`headcount_gate()`: only dated figures from the last 12 months count; pass if all of
+them fall within 50 to 500, fail if none do or none exist, review if they disagree.
 
 An earlier discovery run on the same day also returned Patlytics. Its gate search
 (`Patlytics patlytics.ai employees headcount team size`) found 25 (Tracxn, Dec 2025),
