@@ -121,13 +121,22 @@ def _name_key(name: str) -> str:
 def dedupe(candidates: list[dict]) -> list[dict]:
     """One entry per company, keyed on domain when known, else on a normalized name."""
     merged: dict[str, dict] = {}
+    by_domain: dict[str, str] = {}
     by_name: dict[str, str] = {}
     for c in candidates:
         nk = _name_key(c["name"]) or c["name"].lower()
         dom = (c.get("domain") or "").lower()
-        # An entry already seen by this domain or name wins, so a name-only result and a
-        # later result with the domain land on the same key.
-        key = (dom if dom in merged else None) or by_name.get(nk) or dom or nk
+        # Same domain -> same company. Same name -> same company only when the domains do
+        # not disagree, so a name-only result joins the entry that later gets a domain, but
+        # two companies that share a name stay apart.
+        key = by_domain.get(dom) if dom else None
+        if key is None and nk in by_name:
+            other = merged[by_name[nk]].get("domain")
+            if not dom or not other or other.lower() == dom:
+                key = by_name[nk]
+        key = key or dom or nk
+        if dom:
+            by_domain.setdefault(dom, key)
         by_name.setdefault(nk, key)
         if key not in merged:
             merged[key] = {**c, "evidence_urls": [c["evidence_url"]]}
@@ -146,8 +155,8 @@ def judge_firmographics(c: dict, results) -> FirmographicVerdict:
         "results. met / not_met need explicit evidence in a result; otherwise unclear. Check "
         "that each result is about this company and not another with a similar name. Do not "
         "grade funding stage or size: fill latest_round with the series and date of the most "
-        "recent priced round exactly as the results state them (date_basis closed only when a "
-        "result gives the close date), and list every headcount figure with its source and "
+        "recent priced round exactly as the results state them (close_date only when a result "
+        "says the round closed or was raised on that date; otherwise announced_date), and list every headcount figure with its source and "
         "date in headcount. Never infer headcount from funding.\n\n"
         f"ICP:\n{_icp_text()}\n\nToday's date is {config.AS_OF}."
     )
@@ -172,14 +181,11 @@ def stage_check(r: LatestRound) -> CriterionCheck:
     if r.series in ("series_a", "series_b", "series_c"):
         closed = _parse_date(r.close_date)
         if closed is None:
-            return CriterionCheck(status="unclear", evidence=f"{r.evidence} (no close date)", source_url=r.source_url)
-        if closed < start:
-            return CriterionCheck(status="not_met", evidence=f"{r.evidence} ({r.date_basis} {r.close_date})", source_url=r.source_url)
-        # An announcement shortly after the start can describe a round that closed before it.
-        if r.date_basis == "announced" and closed < start + timedelta(days=config.ROUND_ANNOUNCE_LAG_DAYS):
-            return CriterionCheck(status="unclear", source_url=r.source_url,
-                                  evidence=f"{r.evidence} (announced {r.close_date}; close date not stated)")
-        return CriterionCheck(status="met", evidence=f"{r.evidence} ({r.date_basis} {r.close_date})", source_url=r.source_url)
+            # An announcement date alone does not say when the round closed.
+            note = f"announced {r.announced_date}; close date not stated" if r.announced_date else "no close date"
+            return CriterionCheck(status="unclear", evidence=f"{r.evidence} ({note})", source_url=r.source_url)
+        status = "met" if closed >= start else "not_met"
+        return CriterionCheck(status=status, evidence=f"{r.evidence} (closed {r.close_date})", source_url=r.source_url)
     if r.series in ("unknown", "other"):
         return CriterionCheck(status="unclear", evidence=r.evidence, source_url=r.source_url)
     return CriterionCheck(status="not_met", evidence=r.evidence, source_url=r.source_url)

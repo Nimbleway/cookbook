@@ -70,7 +70,9 @@ can rely on:
 5. `outreach_angle` is dropped when an event it may cite was moved out of the window.
 
 Pattern B saves the checked report as `output.content` and the agent's original as
-`output.raw_content` (the trust block's claim paths refer to the original).
+`output.raw_content`. `remap_trust_claims()` re-points each trust claim's path at the same
+item in the checked report (`output.trust`) and drops claims about removed or recomputed
+values; the original trust block stays in `output.raw_trust`.
 
 On the committed Pattern B example it changes nothing: 10 triggers in, 10 out.
 

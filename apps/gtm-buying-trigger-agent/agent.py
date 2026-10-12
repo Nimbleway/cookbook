@@ -87,13 +87,11 @@ def _event_words(headline: str, company: str) -> set[str]:
 
 
 def _same_event(a: dict, b: dict, company: str) -> bool:
-    """Two reports of one event: same headline, or same type and date with the same source
-    or mostly the same distinguishing words (a person's name, a product)."""
-    if _norm(a.get("headline", "")) == _norm(b.get("headline", "")):
-        return True
+    """Two reports of one event: same trigger type and event date, and the same headline or
+    mostly the same distinguishing words (a person's name, a product)."""
     if a.get("trigger_type") != b.get("trigger_type") or not a.get("event_date") or a.get("event_date") != b.get("event_date"):
         return False
-    if a.get("source_url") and a.get("source_url") == b.get("source_url"):
+    if _norm(a.get("headline", "")) == _norm(b.get("headline", "")):
         return True
     wa, wb = _event_words(a.get("headline", ""), company), _event_words(b.get("headline", ""), company)
     return bool(wa and wb) and len(wa & wb) / len(wa | wb) >= 0.5
@@ -108,7 +106,8 @@ def post_process(content: dict, start: str | None = None, end: str | None = None
          entries for accounts not on the watchlist are dropped).
       2. Every trigger has an event_date inside start..end; undated or out-of-window
          triggers move to excluded_events.
-      3. One trigger per underlying event within an account (_same_event).
+      3. One trigger per underlying event within an account (_same_event: same type and
+         date, and the same headline or the same names).
       4. trigger_count matches the triggers; strongest_trigger names one of them
          (kept when it does, otherwise strength then recency); triggers sorted newest first.
       5. outreach_angle is kept only when no event it may cite was removed: the entry lost no
@@ -180,6 +179,59 @@ def post_process(content: dict, start: str | None = None, end: str | None = None
     c.update({"window_start": start, "window_end": end, "accounts": accounts,
               "excluded_events": excluded})
     return c, report
+
+
+_CLAIM_PATH = re.compile(r"^\$\.accounts\[(\d+)\](?:\.triggers\[(\d+)\])?\.(\w+)$")
+
+
+def _at(doc: dict, path: str):
+    """Value at a $.a[0].b style path, or a sentinel when the path does not exist."""
+    cur = doc
+    for name, idx in re.findall(r"\.(\w+)(?:\[(\d+)\])?", path):
+        try:
+            cur = cur[name] if idx == "" else cur[name][int(idx)]
+        except (KeyError, IndexError, TypeError):
+            return _MISSING
+    return cur
+
+
+_MISSING = object()
+
+
+def remap_trust_claims(raw: dict, checked: dict, claims: list[dict]) -> tuple[list[dict], int]:
+    """Point each trust claim at the same item in the post-processed report.
+
+    Accounts are matched by domain and triggers by content. A claim is kept only when the
+    value at its new path is identical to the value it graded; claims about removed or
+    recomputed values (a moved trigger, a new trigger_count) are dropped. Returns
+    (claims, dropped_count).
+    """
+    new_idx = {a["domain"]: k for k, a in enumerate(checked.get("accounts") or [])}
+    out, dropped = [], 0
+    for cl in claims:
+        path = cl["path"]
+        m = _CLAIM_PATH.match(path)
+        if m:
+            i, j, field = int(m.group(1)), m.group(2), m.group(3)
+            raw_acc = (raw.get("accounts") or [])[i] if i < len(raw.get("accounts") or []) else {}
+            k = new_idx.get((raw_acc.get("domain") or "").lower().removeprefix("www."))
+            if k is None:
+                dropped += 1
+                continue
+            path = f"$.accounts[{k}].{field}"
+            if j is not None:
+                raw_t = _at(raw, f"$.accounts[{i}].triggers[{j}]")
+                hits = [n for n, t in enumerate(checked["accounts"][k]["triggers"]) if t == raw_t]
+                if not hits:
+                    dropped += 1
+                    continue
+                path = f"$.accounts[{k}].triggers[{hits[0]}].{field}"
+        value = _at(checked, path)
+        if value is _MISSING or value != _at(raw, cl["path"]):
+            dropped += 1
+            continue
+        out.append({**cl, "path": path})
+    return out, dropped
 
 
 # ===========================================================================
@@ -327,10 +379,13 @@ def run_agent_api(poll_every: int = 30, timeout: int = 2700) -> dict:
     trust = payload["output"]["trust"]
     print(f"  trust: {trust['confidence']} ({trust['reasoning']}); {len(trust['sources'])} sources")
     content, report = post_process(payload["output"]["content"], start, end)
-    # output.content becomes the checked report. The agent's original stays in
-    # output.raw_content, which the trust block's claim paths ($.accounts[i]...) refer to.
-    payload["output"]["raw_content"] = payload["output"]["content"]
-    payload["output"]["content"] = content
+    # output.content becomes the checked report and output.trust its claims, re-pointed at
+    # the checked positions. The agent's originals stay in raw_content and raw_trust.
+    raw = payload["output"]["content"]
+    claims, dropped = remap_trust_claims(raw, content, trust.get("claims") or [])
+    payload["output"].update(raw_content=raw, content=content, raw_trust=trust,
+                             trust={**trust, "claims": claims})
+    report["trust_claims_dropped"] = dropped
     payload["post_processing"] = report
     _save(payload, f"{SLUG}__pattern_B.json")
     _print_summary(content, report)

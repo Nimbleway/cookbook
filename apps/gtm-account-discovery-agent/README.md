@@ -50,9 +50,9 @@ The judges grade each criterion `met`, `not_met` or `unclear` with the evidence 
 URL. `firmographic_decision()` and `hiring_decision()` make the call in code: anything
 not explicitly `met` fails, and `unclear` is recorded as `Unverified: ...`. Funding
 stage and size are never graded by the model. It returns the latest round's series and
-date, and `stage_check()` compares the date with `ROUND_WINDOW_START` in code; a round
-known only by an announcement date in the first `ROUND_ANNOUNCE_LAG_DAYS` after that
-start is `unclear`, since it may have closed before it. It also lists every headcount
+close date, and `stage_check()` compares the date with `ROUND_WINDOW_START` in code; a
+round known only by an announcement date is `unclear`, since the announcement does not
+say when it closed. It also lists every headcount
 figure with its source and date, and `size_check()` applies the same rule as the
 Pattern B headcount gate below. Including
 the domain in the firmographic query keeps a name like "DeepIP" from resolving to
