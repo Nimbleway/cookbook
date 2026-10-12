@@ -17,7 +17,13 @@ export const mastra = new Mastra({
   server: {
     apiRoutes,
     // A deployed server is public. Without auth, anyone could chat with the investigator
-    // and spend your Nimble and model credits. Set MONITOR_API_KEY on every deployment.
-    auth: config.apiKey ? new SimpleAuth({ tokens: { [config.apiKey]: { id: "operator" } } }) : undefined,
+    // and spend your Nimble and model credits. So auth fails closed: with no MONITOR_API_KEY,
+    // only `mastra dev` (which sets MASTRA_DEV) runs open; anywhere else every protected
+    // route refuses. The /cron routes check CRON_SECRET themselves.
+    auth: config.apiKey
+      ? new SimpleAuth({ tokens: { [config.apiKey]: { id: "operator" } } })
+      : process.env.MASTRA_DEV === "true"
+        ? undefined
+        : new SimpleAuth({ tokens: {} }),
   },
 });

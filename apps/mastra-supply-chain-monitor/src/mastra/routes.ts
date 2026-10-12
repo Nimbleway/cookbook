@@ -27,11 +27,17 @@ function rejectUnlessCron(c: Context): Response | undefined {
   return undefined;
 }
 
-async function runWorkflow(mastra: Mastra, id: "sweepWorkflow" | "collectWorkflow", inputData: object) {
+type Outcome = { ok: boolean; body: unknown };
+
+async function runWorkflow(mastra: Mastra, id: "sweepWorkflow" | "collectWorkflow", inputData: object): Promise<Outcome> {
   const run = await mastra.getWorkflow(id).createRun();
   const res = await run.start({ inputData: inputData as never });
-  return res.status === "success" ? res.result : { status: res.status, error: String((res as { error?: unknown }).error ?? "") };
+  if (res.status === "success") return { ok: true, body: res.result };
+  return { ok: false, body: { workflow: id, status: res.status, error: String((res as { error?: unknown }).error ?? "") } };
 }
+
+// A failed tick answers 500, so the scheduler's job fails visibly instead of staying green.
+const respond = (c: Context, body: unknown, ok: boolean) => c.json(body as object, ok ? 200 : 500);
 
 export const apiRoutes = [
   // Collect first, so runs left over from the previous sweep are picked up even if every
@@ -45,13 +51,18 @@ export const apiRoutes = [
       const mastra = c.get("mastra");
       const collected = await runWorkflow(mastra, "collectWorkflow", {});
       const swept = await runWorkflow(mastra, "sweepWorkflow", { force: false });
-      return c.json({ collected, swept });
+      return respond(c, { collected: collected.body, swept: swept.body }, collected.ok && swept.ok);
     },
   }),
   registerApiRoute("/cron/collect", {
     method: "POST",
     requiresAuth: false,
-    handler: async (c) => rejectUnlessCron(c) ?? c.json(await runWorkflow(c.get("mastra"), "collectWorkflow", {})),
+    handler: async (c) => {
+      const rejected = rejectUnlessCron(c);
+      if (rejected) return rejected;
+      const collected = await runWorkflow(c.get("mastra"), "collectWorkflow", {});
+      return respond(c, collected.body, collected.ok);
+    },
   }),
   // Today's digest (or ?date=YYYY-MM-DD), built from the ledger. Protected by server auth
   // (MONITOR_API_KEY), like the agent endpoints.

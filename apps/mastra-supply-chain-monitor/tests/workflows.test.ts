@@ -17,7 +17,7 @@ delete process.env.SLACK_WEBHOOK_URL;
 
 const { mastra } = await import("../src/mastra/index");
 const { eventsFromResult } = await import("../src/mastra/lib/events");
-const { recentEvents } = await import("../src/mastra/lib/ledger");
+const { recentEvents, claimRun, recordRunStarted } = await import("../src/mastra/lib/ledger");
 
 // Cache a triage for the one real event so the collect pass needs no model.
 const [event] = eventsFromResult(JSON.parse(readFileSync("tests/fixtures/sweep_laptop_smoke.json", "utf8")), "laptop").events;
@@ -42,10 +42,13 @@ async function start(id: "sweepWorkflow" | "collectWorkflow", inputData: object)
   return (res as { result: any }).result;
 }
 
-test("sweep starts one run per product and records the runIds", async () => {
-  const out = await start("sweepWorkflow", { force: false });
-  assert.equal(out.refused, null);
-  assert.deepEqual(out.started.map((s: any) => s.product), ["laptop", "earbuds", "smartwatch"]);
+test("two overlapping sweeps: exactly one starts runs", async () => {
+  const [a, b] = await Promise.all([start("sweepWorkflow", { force: false }), start("sweepWorkflow", { force: false })]);
+  const winner = a.refused === null ? a : b;
+  const loser = a.refused === null ? b : a;
+  assert.deepEqual(winner.started.map((s: any) => s.product), ["laptop", "earbuds", "smartwatch"]);
+  assert.match(loser.refused, /minimum gap/);
+  assert.equal(loser.started.length, 0);
 });
 
 test("a second sweep inside the minimum gap is refused", async () => {
@@ -78,4 +81,18 @@ test("the same result again is a repeat: nothing new, no second alert", async ()
 test("nothing pending: collect is a no-op", async () => {
   const out = await start("collectWorkflow", {});
   assert.equal(out.collected, 0);
+});
+
+test("two overlapping collects take each run exactly once", async () => {
+  await start("sweepWorkflow", { force: true });
+  const [a, b] = await Promise.all([start("collectWorkflow", {}), start("collectWorkflow", {})]);
+  assert.equal(a.collected + b.collected, 3);
+  assert.equal(a.alerted.length + b.alerted.length, 0);
+});
+
+test("a claimed run can't be claimed again until its claim goes stale", async () => {
+  const runId = "sample-laptop-claim-test";
+  await recordRunStarted({ runId, product: "laptop", windowStart: "2026-10-05", windowEnd: "2026-10-12", startedAt: new Date().toISOString() });
+  assert.equal(await claimRun(runId), true);
+  assert.equal(await claimRun(runId), false);
 });

@@ -18,10 +18,13 @@ import {
 import {
   eventsChangedOn,
   leadsOn,
+  claimRun,
+  collectableRuns,
   markAlerted,
   markCollected,
   markFailed,
-  pendingRuns,
+  releaseRun,
+  saveRaw,
   recentEvents,
   recordLeads,
   startFailuresOn,
@@ -48,7 +51,7 @@ async function sampleResult(product: string, runId: string): Promise<CompletedRe
 
 const fetchResults = createStep({
   id: "fetch-results",
-  description: "Fetch every pending run that has finished. Save each raw result before touching it.",
+  description: "Claim each collectable run, fetch it if finished, and save the raw result before touching it.",
   inputSchema: z.object({}),
   outputSchema: z.object({ completed: completedList, stillRunning: z.number(), failed: z.number() }),
   execute: async () => {
@@ -56,10 +59,13 @@ const fetchResults = createStep({
     let stillRunning = 0;
     let failed = 0;
 
-    for (const run of await pendingRuns()) {
+    for (const run of await collectableRuns()) {
+      // Another collect tick may be running at the same time. Whoever claims a run owns it.
+      if (!(await claimRun(run.runId))) continue;
+
       if (run.runId.startsWith("sample-")) {
         const result = await sampleResult(run.product, run.runId);
-        await markCollected(run.runId, result);
+        await saveRaw(run.runId, result);
         completed.push({ product: run.product, result });
         continue;
       }
@@ -69,10 +75,11 @@ const fetchResults = createStep({
           | { ready: false };
         // Branch on `ready`, never on `status`: a not-ready payload can carry any status.
         if (!result.ready) {
+          await releaseRun(run.runId);
           stillRunning++;
           continue;
         }
-        await markCollected(run.runId, result);
+        await saveRaw(run.runId, result);
         completed.push({ product: run.product, result });
       } catch (err) {
         // A run that failed or was cancelled server-side. It is recorded, not restarted:
@@ -81,8 +88,9 @@ const fetchResults = createStep({
           await markFailed(run.runId, err.message);
           failed++;
         } else {
-          // Network trouble or similar: leave it pending and try again next tick.
+          // Network trouble or similar: hand it back and try again next tick.
           console.warn(`collect: could not read ${run.runId}:`, err instanceof Error ? err.message : err);
+          await releaseRun(run.runId);
           stillRunning++;
         }
       }
@@ -99,6 +107,7 @@ const detectEvents = createStep({
     candidates: eventList,
     repeats: eventList,
     known: eventList,
+    runIds: z.array(z.string()),
     stillRunning: z.number(),
     failed: z.number(),
     collected: z.number(),
@@ -116,6 +125,7 @@ const detectEvents = createStep({
       candidates: [...diff.fresh, ...diff.updates],
       repeats: diff.repeats,
       known,
+      runIds: inputData.completed.map((c) => c.result.runId),
       stillRunning: inputData.stillRunning,
       failed: inputData.failed,
       collected: inputData.completed.length,
@@ -224,6 +234,10 @@ const act = createStep({
         alerted.push(e.headline);
       }
     }
+
+    // Only now are the runs done: their events are recorded and alerts sent. If anything
+    // above failed, the runs stay claimed and a later tick processes them again.
+    await markCollected(inputData.runIds);
 
     // The digest is rebuilt from the ledger on every pass, so it always covers the whole day.
     const date = new Date().toISOString().slice(0, 10);

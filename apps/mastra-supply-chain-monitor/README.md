@@ -171,7 +171,7 @@ To run the real monitor, fill in `.env`:
 | `ANTHROPIC_API_KEY` | The triage agent and the investigator. Set `MODEL` to use another provider Mastra supports. |
 | `SLACK_WEBHOOK_URL` | Optional. A Slack incoming webhook for alerts. Unset, alerts print to the console. |
 | `CRON_SECRET` | The token the scheduler sends to `/cron/*`. Generate one with `openssl rand -base64 32`. |
-| `MONITOR_API_KEY` | Protects the agent API, Studio, and `/digest` on a deployed server. Leave empty locally. |
+| `MONITOR_API_KEY` | Protects the agent API, Studio, and `/digest`. Leave empty locally: only `mastra dev` runs without it. A deployed server with no key refuses those routes. |
 
 Then set `USE_LIVE=true`.
 
@@ -187,7 +187,9 @@ npm run dev        # Mastra Studio at http://localhost:4111
 In live mode, run `collect` a few minutes after `sweep`. A high-effort run typically takes
 5–15 minutes, and `collect` reports how many runs are still working. A second `sweep` within
 60 minutes of the last one is refused, so a retried or duplicated trigger can't start extra
-billed runs. Pass `-- --force` to override it locally.
+billed runs. The check is an atomic claim in the ledger, and each collect tick claims the runs
+it processes, so overlapping ticks never handle the same run twice. A run is marked collected
+only after its events are recorded. If a tick fails part-way, a later one picks the run up again. Pass `-- --force` to override it locally.
 
 In Studio, the `sweep` and `collect` workflows run from the Workflows tab. The investigator
 (it needs `ANTHROPIC_API_KEY`, even in demo mode) answers questions like:
@@ -211,8 +213,10 @@ cookbook was built for is the Mastra platform free tier, with a GitHub Actions c
    `.mastra-project.json` it writes.
 2. **Set the variables** on the environment in the Mastra dashboard: `USE_LIVE=true`,
    `NIMBLE_API_KEY`, both agent IDs, `ANTHROPIC_API_KEY`, `CRON_SECRET`, `MONITOR_API_KEY`, and
-   optionally `SLACK_WEBHOOK_URL`. **Always set `MONITOR_API_KEY` on a deployed server.**
-   Without it, anyone with the URL can chat with the investigator on your Nimble and model credits.
+   optionally `SLACK_WEBHOOK_URL`. **Set `MONITOR_API_KEY` on every deployed server.** Without
+   it the server fails closed: the agent API, Studio, and `/digest` refuse every request. That's
+   deliberate, because an open server would let anyone chat with the investigator on your
+   Nimble and model credits.
 3. **Schedule.** Copy `.github/workflows/supply-chain-monitor.yml` into the root
    `.github/workflows/` of the repository that will run it. Create an environment named
    `supply-chain-monitor`, limit it to `main`, and add `MONITOR_URL` and `CRON_SECRET` as

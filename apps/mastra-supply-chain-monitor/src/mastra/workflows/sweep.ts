@@ -7,12 +7,12 @@ import { NimbleAgentRunError } from "@nimble-way/mastra";
 import { z } from "zod";
 import { config } from "../config";
 import {
+  claimSweep,
   lastSweepStartedAt,
   lastWindowEnd,
   recentEvents,
   recordRunStarted,
   recordStartFailure,
-  recordSweep,
 } from "../lib/ledger";
 import { sweepStartRun } from "../nimble";
 import { WATCHLIST, type Product } from "../watchlist";
@@ -51,15 +51,16 @@ const planSweep = createStep({
   inputSchema: z.object({ force: z.boolean().default(false) }),
   outputSchema: z.object({ refused: z.string().nullable(), tasks: z.array(taskSchema) }),
   execute: async ({ inputData }) => {
-    const last = await lastSweepStartedAt();
-    const minutesSince = last ? (Date.now() - Date.parse(last)) / 60_000 : Infinity;
-    if (!inputData.force && minutesSince < config.minMinutesBetweenSweeps) {
+    // An atomic claim, not check-then-record: two overlapping triggers can't both start runs.
+    const claimed = await claimSweep(config.useLive, config.minMinutesBetweenSweeps, inputData.force);
+    if (!claimed) {
+      const last = await lastSweepStartedAt();
+      const minutesSince = last ? Math.round((Date.now() - Date.parse(last)) / 60_000) : 0;
       return {
-        refused: `Last sweep started ${Math.round(minutesSince)} min ago; minimum gap is ${config.minMinutesBetweenSweeps} min.`,
+        refused: `Last sweep started ${minutesSince} min ago; minimum gap is ${config.minMinutesBetweenSweeps} min.`,
         tasks: [],
       };
     }
-    await recordSweep(config.useLive);
 
     const today = isoDate(new Date());
     const known = await recentEvents(14);
@@ -111,11 +112,10 @@ const startRuns = createStep({
         continue;
       }
 
+      let runId: string;
       try {
         const run = await sweepStartRun.execute!({ task: t.task }, {} as never);
-        const runId = (run as { runId: string }).runId;
-        await recordRunStarted({ runId, product: t.product, windowStart: t.windowStart, windowEnd: t.windowEnd, startedAt });
-        started.push({ product: t.product, runId });
+        runId = (run as { runId: string }).runId;
       } catch (err) {
         // Run creation is billed and is sent exactly once. "not-created" means no run
         // exists. "unknown" means one might: it is recorded for a human to reconcile in the
@@ -124,6 +124,17 @@ const startRuns = createStep({
         const message = err instanceof Error ? err.message : String(err);
         await recordStartFailure(t.product, outcome, message);
         failed.push({ product: t.product, createOutcome: outcome, message });
+        continue;
+      }
+
+      // The run exists and is billed from here on. Report its ID even if the ledger write
+      // fails, so it can still be collected by hand (`collectableRuns` won't know about it).
+      started.push({ product: t.product, runId });
+      try {
+        await recordRunStarted({ runId, product: t.product, windowStart: t.windowStart, windowEnd: t.windowEnd, startedAt });
+      } catch (err) {
+        console.error(`sweep: run ${runId} (${t.product}) started but was not recorded:`, err);
+        failed.push({ product: t.product, createOutcome: "created-not-recorded", message: `run ${runId} started; ledger write failed` });
       }
     }
     return { refused: inputData.refused, started, failed };
