@@ -9,6 +9,7 @@ import { config } from "../config";
 import {
   claimSweep,
   lastSweepStartedAt,
+  releaseSweep,
   lastWindowEnd,
   recentEvents,
   recordRunStarted,
@@ -62,29 +63,35 @@ const planSweep = createStep({
       };
     }
 
-    const today = isoDate(new Date());
-    const known = await recentEvents(14);
-    const tasks = await Promise.all(
-      WATCHLIST.map(async (product) => {
-        // Pick up where the last research window ended, with a day of overlap: articles
-        // carry dates, not times. The first sweep builds a baseline.
-        const prevEnd = await lastWindowEnd(product.slug);
-        const windowStart = prevEnd
-          ? isoDate(new Date(Date.parse(prevEnd) - DAY))
-          : isoDate(new Date(Date.now() - config.firstLookbackDays * DAY));
-        const knownForProduct = known
-          .filter((e) => e.products.includes(product.slug))
-          .slice(0, 15)
-          .map((e) => `${e.headline} (${e.eventDate}, ${e.status})`);
-        return {
-          product: product.slug,
-          windowStart,
-          windowEnd: today,
-          task: buildTask(product, windowStart, today, knownForProduct),
-        };
-      }),
-    );
-    return { refused: null, tasks };
+    try {
+      const today = isoDate(new Date());
+      const known = await recentEvents(14);
+      const tasks = await Promise.all(
+        WATCHLIST.map(async (product) => {
+          // Pick up where the last research window ended, with a day of overlap: articles
+          // carry dates, not times. The first sweep builds a baseline.
+          const prevEnd = await lastWindowEnd(product.slug);
+          const windowStart = prevEnd
+            ? isoDate(new Date(Date.parse(prevEnd) - DAY))
+            : isoDate(new Date(Date.now() - config.firstLookbackDays * DAY));
+          const knownForProduct = known
+            .filter((e) => e.products.includes(product.slug))
+            .slice(0, 15)
+            .map((e) => `${e.headline} (${e.eventDate}, ${e.status})`);
+          return {
+            product: product.slug,
+            windowStart,
+            windowEnd: today,
+            task: buildTask(product, windowStart, today, knownForProduct),
+          };
+        }),
+      );
+      return { refused: null, tasks };
+    } catch (err) {
+      // No run has started yet: give the claim back so the scheduler's retry can sweep.
+      await releaseSweep(claimed);
+      throw err;
+    }
   },
 });
 

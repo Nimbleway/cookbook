@@ -32,7 +32,13 @@ type Outcome = { ok: boolean; body: unknown };
 async function runWorkflow(mastra: Mastra, id: "sweepWorkflow" | "collectWorkflow", inputData: object): Promise<Outcome> {
   const run = await mastra.getWorkflow(id).createRun();
   const res = await run.start({ inputData: inputData as never });
-  if (res.status === "success") return { ok: true, body: res.result };
+  if (res.status === "success") {
+    // A workflow can succeed while a run failed to start or failed on Nimble. Report those
+    // as a failed tick too, so the scheduler's job shows them.
+    const r = res.result as { failed?: unknown };
+    const partial = Array.isArray(r.failed) ? r.failed.length > 0 : typeof r.failed === "number" && r.failed > 0;
+    return { ok: !partial, body: res.result };
+  }
   return { ok: false, body: { workflow: id, status: res.status, error: String((res as { error?: unknown }).error ?? "") } };
 }
 

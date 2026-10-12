@@ -273,7 +273,7 @@ Each event the example app records (`MonitoredEvent` in `src/mastra/lib/events.t
 | `impactMechanism` | string | How the event reaches the product |
 | `exposures` | string[] | Watchlist exposures it touches, verbatim |
 | `products` | string[] | Product slugs it reaches |
-| `confidence` | `high` \| `medium` \| `low` | Lowest grade among the claims that establish the event happened |
+| `confidence` | `high` \| `medium` \| `low` | Lowest grade across the claims for `headline`, `eventType`, `location`, and `eventDate`. A field with no researched claim (missing, or only echoed from the input) counts as `low`. |
 | `citations` | object[] | `url`, `title`, `sourceType`, `sourceCategory`, `excerpts`, from `trust.claims` |
 | `sourceUrl`, `publishedAt` | string | The page the event is reported on, and its date |
 | `runIds` | string[] | The Nimble runs that found it |

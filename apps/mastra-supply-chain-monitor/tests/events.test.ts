@@ -126,3 +126,39 @@ test("slack message renders sources from trust, digest groups by severity", () =
   assert.match(md, /## Unconfirmed[\s\S]*Weak one/);
   assert.match(md, /check the Nimble dashboard/);
 });
+
+test("an event missing a core-field claim, or backed only by input echoes, grades low", () => {
+  const event = {
+    headline: "Port strike",
+    event_type: "labor_action",
+    location: "Port of Long Beach",
+    affected_exposures: ["ocean freight Kaohsiung to Los Angeles/Long Beach"],
+    event_date: "2026-10-09",
+    source_url: "https://example.com/s",
+  };
+  const claim = (field: string, confidence: string) => ({ path: `$.events[0].${field}`, confidence, citations: [] });
+  const result = (claims: unknown[]) => ({
+    ready: true as const,
+    runId: "r",
+    output: { type: "json" as const, json: { events: [event] }, trust: { claims: claims as never } },
+  });
+  const all = ["headline", "event_type", "location", "event_date"];
+  assert.equal(eventsFromResult(result(all.map((f) => claim(f, "high"))), "laptop").events[0].confidence, "high");
+  // event_date has no claim at all
+  assert.equal(eventsFromResult(result(all.slice(0, 3).map((f) => claim(f, "high"))), "laptop").events[0].confidence, "low");
+  // location only echoed from the input
+  assert.equal(
+    eventsFromResult(result([...all.filter((f) => f !== "location").map((f) => claim(f, "high")), claim("location", "pre_existing")]), "laptop")
+      .events[0].confidence,
+    "low",
+  );
+});
+
+test("a malformed citation URL doesn't break the alert or the digest", () => {
+  const e = ev({
+    triage: { severity: "high", rationale: "r", recommendedAction: "a" },
+    citations: [{ url: "not a url", excerpts: [] }],
+  });
+  assert.match(slackMessage(e), /not a url/);
+  assert.match(digestMarkdown({ date: "2026-10-12", events: [e], leads: [], startFailures: [] }), /not a url/);
+});

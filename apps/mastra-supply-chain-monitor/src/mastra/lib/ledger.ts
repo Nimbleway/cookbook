@@ -62,6 +62,8 @@ async function init(): Promise<void> {
     // Ledgers created before claimed_at existed get the column added; the error on a
     // ledger that already has it is expected.
     .then(() => db().execute("ALTER TABLE runs ADD COLUMN claimed_at TEXT").catch(() => undefined))
+    // A retried collect tick must not list the same lead twice.
+    .then(() => db().execute("CREATE UNIQUE INDEX IF NOT EXISTS leads_run_text ON leads (run_id, text)"))
     .then(() => undefined);
   return ready;
 }
@@ -85,6 +87,12 @@ export async function claimSweep(live: boolean, minMinutes: number, force = fals
         args: [at, live ? 1 : 0, since],
       });
   return r.rowsAffected === 1 ? at : undefined;
+}
+
+// Gives a claim back when planning failed before any run started, so a retry can sweep.
+export async function releaseSweep(startedAt: string): Promise<void> {
+  await init();
+  await db().execute({ sql: "DELETE FROM sweeps WHERE started_at = ?", args: [startedAt] });
 }
 
 export async function lastSweepStartedAt(): Promise<string | undefined> {
@@ -215,10 +223,13 @@ export async function recentEvents(days = 14): Promise<MonitoredEvent[]> {
   await init();
   const since = new Date(Date.now() - days * 86_400_000).toISOString();
   const r = await db().execute({
-    sql: "SELECT json FROM events WHERE last_seen_at >= ? ORDER BY last_seen_at DESC",
+    sql: "SELECT json, alerted_at FROM events WHERE last_seen_at >= ? ORDER BY last_seen_at DESC",
     args: [since],
   });
-  return r.rows.map((row) => JSON.parse(row.json as string) as MonitoredEvent);
+  return r.rows.map((row) => ({
+    ...(JSON.parse(row.json as string) as MonitoredEvent),
+    alertedAt: (row.alerted_at as string | null) ?? undefined,
+  }));
 }
 
 // `changed` is true for a new event or a status change, false for a repeat sighting.
@@ -256,7 +267,7 @@ export async function recordLeads(runId: string, product: string, leads: string[
   const at = now();
   await db().batch(
     leads.map((text) => ({
-      sql: "INSERT INTO leads (run_id, product, text, seen_at) VALUES (?, ?, ?, ?)",
+      sql: "INSERT OR IGNORE INTO leads (run_id, product, text, seen_at) VALUES (?, ?, ?, ?)",
       args: [runId, product, text, at],
     })),
     "write",

@@ -224,11 +224,13 @@ const act = createStep({
   }),
   execute: async ({ inputData }) => {
     for (const e of inputData.repeats) await upsertEvent(e, false);
+    for (const e of inputData.candidates) await upsertEvent(e, true);
 
+    // Alert every serious event not yet alerted, repeats included: if a Slack post failed on
+    // an earlier pass, its event comes back as a repeat and gets the alert now.
     const alerted: string[] = [];
-    for (const e of inputData.candidates) {
-      await upsertEvent(e, true);
-      if (shouldAlert(e)) {
+    for (const e of [...inputData.candidates, ...inputData.repeats]) {
+      if (shouldAlert(e) && !e.alertedAt) {
         await postToSlack(slackMessage(e));
         await markAlerted(e.eventKey);
         alerted.push(e.headline);

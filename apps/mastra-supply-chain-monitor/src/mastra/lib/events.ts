@@ -41,6 +41,8 @@ export type MonitoredEvent = {
   // Set when an already-reported event comes back with a different status.
   previousStatus?: string;
   triage?: Triage;
+  // When it was posted to Slack. Read from the ledger, never from a run.
+  alertedAt?: string;
 };
 
 type RawClaim = {
@@ -74,10 +76,11 @@ const RANK: Record<Confidence, number> = { low: 0, medium: 1, high: 2 };
 // reading of the event against the watchlist, so they don't count toward "is it real".
 const CORE_FIELDS = ["headline", "event_type", "location", "event_date"];
 
+// `pre_existing` means the value came from the task input, not from research, so it is not
+// evidence. Unknown or missing grades count as low.
 function lowest(grades: string[]): Confidence {
-  const known = grades.filter((g): g is Confidence => g in RANK);
-  if (!known.length) return "low";
-  return known.reduce((a, b) => (RANK[b] < RANK[a] ? b : a));
+  if (!grades.length) return "low";
+  return grades.map((g): Confidence => (g in RANK ? (g as Confidence) : "low")).reduce((a, b) => (RANK[b] < RANK[a] ? b : a));
 }
 
 export function normalizeUrl(url: string): string {
@@ -144,7 +147,11 @@ export function eventsFromResult(
 
   const events = (body.events ?? []).map((raw, i): MonitoredEvent => {
     const own = claimsFor(claims, i);
-    const core = own.filter((c) => CORE_FIELDS.some((f) => c.path === `$.events[${i}].${f}`));
+    // Every core field needs its own researched claim. A missing one grades the event low.
+    const coreGrades = CORE_FIELDS.map((f) => {
+      const forField = own.filter((c) => c.path === `$.events[${i}].${f}`);
+      return forField.length ? lowest(forField.map((c) => c.confidence ?? "")) : "low";
+    });
     const exposures = raw.affected_exposures ?? [];
     const e = {
       headline: raw.headline ?? "(no headline)",
@@ -160,7 +167,7 @@ export function eventsFromResult(
       exposures,
       // The run's own product, plus every product that shares a touched exposure.
       products: union([productSlug], productsTouchedBy(exposures)),
-      confidence: lowest((core.length ? core : own).map((c) => c.confidence ?? "")),
+      confidence: lowest(coreGrades),
       citations: citationsFrom(own),
       runIds: [result.runId],
     };
@@ -215,6 +222,7 @@ export function mergeInto(target: MonitoredEvent, other: MonitoredEvent): Monito
     citations: [...citations.values()],
     runIds: union(target.runIds, other.runIds),
     triage: target.triage,
+    alertedAt: target.alertedAt,
   };
 }
 

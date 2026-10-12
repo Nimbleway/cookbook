@@ -15,10 +15,19 @@ export function shouldAlert(e: MonitoredEvent): boolean {
   return serious && e.confidence !== "low";
 }
 
+// A citation URL comes from a research result; never let a malformed one break an alert.
+function host(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
+}
+
 const productNames = (slugs: string[]) => slugs.map((s) => productBySlug(s)?.name ?? s).join(", ");
 
 function sourceLine(c: Citation): string {
-  const label = c.title ?? new URL(c.url).hostname.replace(/^www\./, "");
+  const label = c.title ?? host(c.url);
   const kind = [c.sourceType, c.sourceCategory].filter(Boolean).join(", ");
   return `<${c.url}|${label}>${kind ? ` (${kind})` : ""}`;
 }
@@ -108,7 +117,7 @@ function eventBlock(e: MonitoredEvent): string[] {
     "",
     `- **How it reaches us:** ${e.impactMechanism}`,
     ...(e.triage ? [`- **Why:** ${e.triage.rationale}`, `- **Action:** ${e.triage.recommendedAction}`] : []),
-    `- **Sources:** ${e.citations.map((c) => `[${c.title ?? new URL(c.url).hostname}](${c.url})`).join(", ") || e.sourceUrl}`,
+    `- **Sources:** ${e.citations.map((c) => `[${c.title ?? host(c.url)}](${c.url})`).join(", ") || e.sourceUrl}`,
     "",
   ];
 }
