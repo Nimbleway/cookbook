@@ -47,7 +47,8 @@ async function init(): Promise<void> {
           first_seen_at TEXT NOT NULL,
           last_seen_at TEXT NOT NULL,
           changed_at TEXT NOT NULL,     -- first seen, or last status change: what the digest reports
-          alerted_at TEXT
+          alerted_at TEXT,
+          alerted_status TEXT
         )`,
         `CREATE TABLE IF NOT EXISTS leads (
           id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -62,9 +63,23 @@ async function init(): Promise<void> {
     // Ledgers created before claimed_at existed get the column added; the error on a
     // ledger that already has it is expected.
     .then(() => db().execute("ALTER TABLE runs ADD COLUMN claimed_at TEXT").catch(() => undefined))
-    // A retried collect tick must not list the same lead twice.
+    .then(() => db().execute("ALTER TABLE events ADD COLUMN alerted_status TEXT").catch(() => undefined))
+    // Events alerted before alerted_status existed were alerted at their stored status.
+    .then(() =>
+      db().execute(
+        "UPDATE events SET alerted_status = json_extract(json, '$.status') WHERE alerted_at IS NOT NULL AND alerted_status IS NULL",
+      ),
+    )
+    // A retried collect tick must not list the same lead twice. Older ledgers may already
+    // hold duplicates, which would block the index, so drop them first.
+    .then(() => db().execute("DELETE FROM leads WHERE id NOT IN (SELECT MIN(id) FROM leads GROUP BY run_id, text)"))
     .then(() => db().execute("CREATE UNIQUE INDEX IF NOT EXISTS leads_run_text ON leads (run_id, text)"))
-    .then(() => undefined);
+    .then(() => undefined)
+    // Don't cache a failed setup: the next call tries again.
+    .catch((err) => {
+      ready = undefined;
+      throw err;
+    });
   return ready;
 }
 
@@ -223,12 +238,12 @@ export async function recentEvents(days = 14): Promise<MonitoredEvent[]> {
   await init();
   const since = new Date(Date.now() - days * 86_400_000).toISOString();
   const r = await db().execute({
-    sql: "SELECT json, alerted_at FROM events WHERE last_seen_at >= ? ORDER BY last_seen_at DESC",
+    sql: "SELECT json, alerted_status FROM events WHERE last_seen_at >= ? ORDER BY last_seen_at DESC",
     args: [since],
   });
   return r.rows.map((row) => ({
     ...(JSON.parse(row.json as string) as MonitoredEvent),
-    alertedAt: (row.alerted_at as string | null) ?? undefined,
+    alertedStatus: (row.alerted_status as string | null) ?? undefined,
   }));
 }
 
@@ -244,9 +259,12 @@ export async function upsertEvent(e: MonitoredEvent, changed: boolean): Promise<
   });
 }
 
-export async function markAlerted(eventKey: string): Promise<void> {
+export async function markAlerted(eventKey: string, status: string): Promise<void> {
   await init();
-  await db().execute({ sql: "UPDATE events SET alerted_at = ? WHERE event_key = ?", args: [now(), eventKey] });
+  await db().execute({
+    sql: "UPDATE events SET alerted_at = ?, alerted_status = ? WHERE event_key = ?",
+    args: [now(), status, eventKey],
+  });
 }
 
 // Events that were new, or changed status, on this date.

@@ -96,3 +96,18 @@ test("a claimed run can't be claimed again until its claim goes stale", async ()
   assert.equal(await claimRun(runId), true);
   assert.equal(await claimRun(runId), false);
 });
+
+test("an already-alerted event alerts again when it escalates", async () => {
+  const sample = JSON.parse(readFileSync(join(dir, "samples/sweep_laptop.json"), "utf8"));
+  sample.output.json.events[0].status = "escalating";
+  writeFileSync(join(dir, "samples/sweep_laptop.json"), JSON.stringify(sample));
+  await start("sweepWorkflow", { force: true });
+  const out = await start("collectWorkflow", {});
+  assert.equal(out.updates, 1);
+  assert.equal(out.alerted.length, 1);
+
+  // Same status again: no further alert.
+  await start("sweepWorkflow", { force: true });
+  const again = await start("collectWorkflow", {});
+  assert.equal(again.alerted.length, 0);
+});

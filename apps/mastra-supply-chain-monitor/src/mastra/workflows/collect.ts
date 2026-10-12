@@ -226,13 +226,18 @@ const act = createStep({
     for (const e of inputData.repeats) await upsertEvent(e, false);
     for (const e of inputData.candidates) await upsertEvent(e, true);
 
-    // Alert every serious event not yet alerted, repeats included: if a Slack post failed on
-    // an earlier pass, its event comes back as a repeat and gets the alert now.
+    // Alert every serious event not yet alerted at its current status, repeats included: an
+    // escalation alerts again, and if a Slack post failed on an earlier pass, the event comes
+    // back as a repeat and gets the alert now.
+    //
+    // Delivery is at least once by design. If the process dies after Slack accepts a post but
+    // before markAlerted records it, the alert repeats on a later pass. Recording first would
+    // turn that same crash into a lost alert, which is the worse failure for a risk monitor.
     const alerted: string[] = [];
     for (const e of [...inputData.candidates, ...inputData.repeats]) {
-      if (shouldAlert(e) && !e.alertedAt) {
+      if (shouldAlert(e) && e.alertedStatus !== e.status) {
         await postToSlack(slackMessage(e));
-        await markAlerted(e.eventKey);
+        await markAlerted(e.eventKey, e.status);
         alerted.push(e.headline);
       }
     }

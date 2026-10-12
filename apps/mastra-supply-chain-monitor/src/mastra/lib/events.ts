@@ -41,8 +41,9 @@ export type MonitoredEvent = {
   // Set when an already-reported event comes back with a different status.
   previousStatus?: string;
   triage?: Triage;
-  // When it was posted to Slack. Read from the ledger, never from a run.
-  alertedAt?: string;
+  // The status it was last alerted at. Read from the ledger, never from a run. An event
+  // alerts again when its status changes, for example announced -> escalating.
+  alertedStatus?: string;
 };
 
 type RawClaim = {
@@ -80,7 +81,9 @@ const CORE_FIELDS = ["headline", "event_type", "location", "event_date"];
 // evidence. Unknown or missing grades count as low.
 function lowest(grades: string[]): Confidence {
   if (!grades.length) return "low";
-  return grades.map((g): Confidence => (g in RANK ? (g as Confidence) : "low")).reduce((a, b) => (RANK[b] < RANK[a] ? b : a));
+  return grades
+    .map((g): Confidence => (Object.hasOwn(RANK, g) ? (g as Confidence) : "low"))
+    .reduce((a, b) => (RANK[b] < RANK[a] ? b : a));
 }
 
 export function normalizeUrl(url: string): string {
@@ -222,7 +225,7 @@ export function mergeInto(target: MonitoredEvent, other: MonitoredEvent): Monito
     citations: [...citations.values()],
     runIds: union(target.runIds, other.runIds),
     triage: target.triage,
-    alertedAt: target.alertedAt,
+    alertedStatus: target.alertedStatus,
   };
 }
 

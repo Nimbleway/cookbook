@@ -146,6 +146,11 @@ test("an event missing a core-field claim, or backed only by input echoes, grade
   assert.equal(eventsFromResult(result(all.map((f) => claim(f, "high"))), "laptop").events[0].confidence, "high");
   // event_date has no claim at all
   assert.equal(eventsFromResult(result(all.slice(0, 3).map((f) => claim(f, "high"))), "laptop").events[0].confidence, "low");
+  // a grade that isn't a real grade (here, an inherited object property name)
+  assert.equal(
+    eventsFromResult(result([claim("headline", "toString"), ...all.slice(1).map((f) => claim(f, "high"))]), "laptop").events[0].confidence,
+    "low",
+  );
   // location only echoed from the input
   assert.equal(
     eventsFromResult(result([...all.filter((f) => f !== "location").map((f) => claim(f, "high")), claim("location", "pre_existing")]), "laptop")
