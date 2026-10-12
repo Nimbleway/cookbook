@@ -140,7 +140,7 @@ def _coerce(field: str, value: str):
         m = re.search(r"\b(19|20)\d{2}\b", value)
         return int(m.group(0)) if m else None
     if field == "total_funding_usd":
-        m = re.search(r"([\d.,]+)\s*([MBK]?)", value.replace("$", ""), re.I)
+        m = re.search(r"(\d[\d.,]*)\s*([MBK]?)", value.replace("$", ""), re.I)
         if not m:
             return None
         n = float(m.group(1).replace(",", ""))

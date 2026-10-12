@@ -82,17 +82,20 @@ def post_process(content: dict, start: str | None = None, end: str | None = None
     Returns (new_content, report); the input is not modified.
       1. One entry per watchlist account, in watchlist order (entries that share a
          domain are combined; watchlist accounts with no entry get trigger_count 0).
-      2. Every trigger's event_date is inside start..end; others move to excluded_events.
+      2. Every trigger has an event_date inside start..end; undated or out-of-window
+         triggers move to excluded_events.
       3. One trigger per (trigger_type, headline) within an account.
       4. trigger_count matches the triggers; strongest_trigger names one of them
-         (kept when it does, otherwise strength then recency); triggers sorted newest first.
+         (kept when it does, otherwise strength then recency); outreach_angle is kept only
+         when it was written for that strongest trigger; triggers sorted newest first.
     """
     c = copy.deepcopy(content)
     start = start or c.get("window_start")
     end = end or c.get("window_end")
     lo, hi = _parse(start), _parse(end)
     report: dict = {"window": [start, end], "moved_out_of_window": [], "duplicate_triggers": [],
-                    "combined_account_entries": [], "strongest_trigger_set": []}
+                    "combined_account_entries": [], "strongest_trigger_set": [],
+              "outreach_angle_dropped": []}
     excluded = list(c.get("excluded_events") or [])
 
     by_domain: dict[str, list[dict]] = {}
@@ -111,9 +114,9 @@ def post_process(content: dict, start: str | None = None, end: str | None = None
         kept, seen = [], set()
         for t in [t for e in entries for t in (e.get("triggers") or [])]:
             d = _parse(t.get("event_date"))
-            if d and lo and hi and not (lo <= d <= hi):
-                excluded.append({"company": company, "headline": t["headline"],
-                                 "reason": f"outside window ({t['event_date']})"})
+            if lo and hi and not (d and lo <= d <= hi):
+                why = f"outside window ({t['event_date']})" if d else "no event date"
+                excluded.append({"company": company, "headline": t["headline"], "reason": why})
                 report["moved_out_of_window"].append({"company": company, "headline": t["headline"],
                                                       "event_date": t["event_date"]})
                 continue
@@ -131,7 +134,11 @@ def post_process(content: dict, start: str | None = None, end: str | None = None
         if kept and strongest is None:
             strongest = min(kept, key=_rank)["headline"]
             report["strongest_trigger_set"].append({"company": company, "strongest_trigger": strongest})
-        angle = next((e.get("outreach_angle") for e in entries if e.get("outreach_angle")), None)
+        # The agent wrote its angle for its own strongest trigger; drop it if that trigger is gone.
+        angle = next((e.get("outreach_angle") for e in entries
+                      if e.get("outreach_angle") and e.get("strongest_trigger") == strongest), None)
+        if kept and angle is None and any(e.get("outreach_angle") for e in entries):
+            report["outreach_angle_dropped"].append({"company": company})
 
         accounts.append({"company": company, "domain": dom, "trigger_count": len(kept),
                          "strongest_trigger": strongest if kept else None,

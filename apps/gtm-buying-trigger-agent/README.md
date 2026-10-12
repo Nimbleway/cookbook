@@ -66,6 +66,7 @@ can rely on:
 3. One trigger per (trigger type, headline) within an account.
 4. `trigger_count` matches the triggers, and `strongest_trigger` names one of them
    (strength first, then the most recent event, when it is not already set).
+   `outreach_angle` is kept only when it was written for that strongest trigger.
 
 On the committed Pattern B example it changes nothing: 10 triggers in, 10 out.
 
