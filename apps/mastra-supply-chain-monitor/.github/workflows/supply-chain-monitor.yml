@@ -1,0 +1,43 @@
+# Wakes the monitor on a schedule. Copy this file into the root .github/workflows/ of the
+# repository that should run it (GitHub only runs workflows from there).
+#
+# Setup: Settings → Environments → New environment "supply-chain-monitor", limit it to the
+# main branch, and add two secrets:
+#   MONITOR_URL   your deployed Mastra server, e.g. https://<project>.mastra.cloud
+#   CRON_SECRET   the same value as the server's CRON_SECRET
+#
+# Times are UTC. GitHub may start scheduled jobs a few minutes late, and disables them in
+# a public repository after 60 days without activity.
+name: Supply chain monitor
+
+on:
+  schedule:
+    - cron: "0 6,14,22 * * *"        # sweep: collect leftovers, then start new research runs
+    - cron: "20,35,50 6,14,22 * * *" # collect: research runs take 5-15 min at high effort
+  workflow_dispatch:
+    inputs:
+      action:
+        description: Which tick to run
+        type: choice
+        options: [collect, sweep]
+        default: collect
+
+permissions: {}
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    environment: supply-chain-monitor
+    timeout-minutes: 5
+    steps:
+      - name: Call the monitor
+        env:
+          MONITOR_URL: ${{ secrets.MONITOR_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          ACTION: ${{ github.event.schedule == '0 6,14,22 * * *' && 'sweep' || inputs.action || 'collect' }}
+        run: |
+          # A retried sweep is safe: the server refuses a second sweep within 60 minutes.
+          curl --fail-with-body --silent --show-error --max-time 180 \
+            --retry 3 --retry-all-errors --retry-delay 20 \
+            -X POST -H "Authorization: Bearer ${CRON_SECRET}" \
+            "${MONITOR_URL%/}/cron/${ACTION}"

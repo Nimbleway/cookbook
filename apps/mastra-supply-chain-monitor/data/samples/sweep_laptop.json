@@ -1,0 +1,769 @@
+{
+  "ready": true,
+  "runId": "task_run_fc66efb5de914b018bbd9d17df291d9f",
+  "agentId": "wsa_2554d62fd10c4cbda8ec531a72ca7c0c",
+  "status": "completed",
+  "effort": "high",
+  "createdAt": "2026-10-12T14:38:21.957865Z",
+  "startedAt": "2026-10-12T14:38:22.107389Z",
+  "completedAt": "2026-10-12T14:41:40.545281Z",
+  "output": {
+    "type": "json",
+    "json": {
+      "events": [
+        {
+          "status": "announced",
+          "summary": "Drewry's Cancelled Sailings tracker shows 39 blanked sailings announced from Week 41 (5-11 October) to Week 45 (2-8 November) across the transpacific, transatlantic and Asia-Europe trades - 5% of 710 scheduled voyages - with half of the blanks on the transpacific. Sea-Intelligence notes the blanking level is low by post-pandemic norms (about 10% of Asia-US west coast sailings are typically blanked), but individual shippers still face rolled sailings, and Drewry warns attention should stay on where carriers make further capacity adjustments after Golden Week demand patterns shift.",
+          "headline": "Ocean carriers unveil post-Golden Week blank sailings, half of them on the transpacific",
+          "location": "Transpacific east-west container trades (Asia-US west coast services)",
+          "event_date": "2026-10-05",
+          "event_type": "route_disruption",
+          "source_url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+          "published_at": "2026-10-06",
+          "impact_mechanism": "Blanked transpacific sailings cut eastbound departure frequency out of Asia, so the ultrabook's containers loaded at Kaohsiung for Los Angeles/Long Beach face fewer sailings and a higher risk of rollover after Golden Week volume builds.",
+          "expected_duration": "Weeks 41-45 (5 October - 8 November 2026)",
+          "affected_exposures": [
+            "ocean freight Kaohsiung to Los Angeles/Long Beach"
+          ]
+        },
+        {
+          "status": "ongoing",
+          "summary": "The Port of Los Angeles reported its best month in history - 1,042,652 TEUs processed in September 2026, a fourth straight month of record volumes driven by retailers frontloading ahead of tariffs. Port executive director Gene Seroka said more containers are already shifting to Los Angeles/Long Beach as the Panama Canal authority begins draft restrictions ahead of an expected severe El Nino season, and he is preparing for about a 5% uptick in containers moving to Los Angeles and Long Beach; November and December volumes are hard to predict. He also flagged California diesel up 62% since February 28, raising inland trucking costs at the nation's highest-in-nation diesel price of $8.36/gallon as of October 9, 2026.",
+          "headline": "Record Los Angeles port volumes and Panama Canal draft restrictions set up a container surge at Los Angeles/Long Beach",
+          "location": "Port of Los Angeles / Port of Long Beach (San Pedro Bay), California",
+          "event_date": "2026-10-09",
+          "event_type": "port_disruption",
+          "source_url": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
+          "published_at": "2026-10-09",
+          "impact_mechanism": "Surging frontloaded import volumes plus Panama Canal draft-restriction diversions are building congestion and rising trucking-cost pressure at the San Pedro Bay ports where the ultrabook's containers from Kaohsiung land, raising destination wait-time and inland-cost risk.",
+          "expected_duration": "El Nino season through Q4 2026; November-December volumes unpredictable, Panama draft restrictions through the dry season",
+          "affected_exposures": [
+            "ocean freight Kaohsiung to Los Angeles/Long Beach"
+          ]
+        },
+        {
+          "status": "ongoing",
+          "summary": "Citing Commercial Times, TrendForce reports a CPU price-hike wave in October: Intel has raised processor prices across product lines starting September 1, with high-end Panther Lake models (whose GPU tiles are made by TSMC on N3E) up 15-20%; Qualcomm raised prices for PC processor platforms including Snapdragon X and X2 Elite by about 10% starting in October; AMD is reportedly preparing adjustments. TSMC is expected to raise foundry prices further in 2027 (analyst forecasts of 5-10% for advanced nodes and 10-15% for advanced packaging), and TrendForce notes continued DRAM and SSD price increases alongside higher CPU costs are putting further pressure on notebook makers even as CPU supply improves.",
+          "headline": "CPU price hike wave: Intel reportedly up to 20%, Qualcomm 10%, AMD may join as TSMC costs climb",
+          "location": "Taiwan (TSMC foundry) and global notebook CPU supply chain",
+          "event_date": "2026-10-12",
+          "event_type": "material_shortage",
+          "source_url": "https://www.trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb/",
+          "published_at": "2026-10-12",
+          "impact_mechanism": "Rising CPU prices driven by TSMC advanced-node and advanced-packaging cost increases directly raise the input cost of the ultrabook's TSMC-fabbed processors and squeeze notebook-brand margins.",
+          "expected_duration": "Through 2027 (TSMC expected to raise manufacturing prices further in 2027)",
+          "affected_exposures": [
+            "TSMC (Taiwan) CPUs"
+          ]
+        }
+      ],
+      "product": "14-inch ultrabook laptop",
+      "unverified": [
+        "US CBP has begun voiding importer-of-record (IOR) numbers where Form 5106 identity data is incomplete - re-reported in The Loadstar's 8 October customs roundup, but the policy took effect in September 2026 (before the window) and was first reported on 2026-09-30, so it fails the first-reported-inside-window rule; it would raise customs risk for the ultrabook's US entries at LA/Long Beach.",
+        "ASML reportedly plans a 10% parts price hike in South Korea starting January 2027, with equipment prices possibly also rising (TrendForce, 2026-10-12) - an equipment-cost increase for Samsung and SK hynix, not confirmed as a DRAM/NAND supply disruption for this product.",
+        "Digitimes headline (2026-10-12): 'SK Hynix's US$299 billion chip plan faces military base hurdle' - a delay risk to a future capacity expansion, not a current supply cut to Samsung/SK hynix DRAM and NAND output; article body not retrievable for confirmation.",
+        "Maersk Golden Week advisory (announced 2026-08-28, before the window) blanked TP8 voyage 640E and TP12 voyage 641E on transpacific services with ETDs of October 9 - excluded as first-reported-outside-window.",
+        "USITC instituted a Section 337 investigation on October 9 (reported October 11 by Focus Taiwan) naming Foxconn, Delta Electronics, Quanta Computer, Luxshare and Foxconn Industrial Internet over vertical power delivery systems for AI servers, with Vicor seeking a limited exclusion order; it does not touch any listed exposure (Delta says its products are not currently affected and the accused products are AI-server power delivery, not ultrabook laptops or TSMC CPUs), so it is excluded from events."
+      ],
+      "window_end": "2026-10-12",
+      "window_start": "2026-10-05",
+      "no_events_found": false
+    },
+    "trust": {
+      "sources": [
+        {
+          "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+          "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+          "type": "primary",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null
+        },
+        {
+          "url": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles",
+          "title": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
+          "type": "primary",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null
+        },
+        {
+          "url": "https://trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb",
+          "title": "https://www.trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb/",
+          "type": "primary",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null
+        },
+        {
+          "url": "https://theloadstar.com/customs-updates-add-a-compliance-burden-to-potentially-volatile-q4-for-shippers",
+          "title": "https://theloadstar.com/customs-updates-add-a-compliance-burden-to-potentially-volatile-q4-for-shippers/",
+          "type": "primary",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null
+        },
+        {
+          "url": "https://trendforce.com/news/2026/10/12/news-asml-reportedly-plans-10-parts-price-hike-in-south-korea-starting-jan-2027-equipment-prices-may-also-rise",
+          "title": "https://www.trendforce.com/news/2026/10/12/news-asml-reportedly-plans-10-parts-price-hike-in-south-korea-starting-jan-2027-equipment-prices-may-also-rise/",
+          "type": "primary",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null
+        },
+        {
+          "url": "https://maersk.com/news/articles/2026/08/28/transpacific-schedule-adjustments-golden-week-2026",
+          "title": "https://www.maersk.com/news/articles/2026/08/28/transpacific-schedule-adjustments-golden-week-2026",
+          "type": "primary",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null
+        },
+        {
+          "url": "https://focustaiwan.tw/business/202610110004",
+          "title": "https://focustaiwan.tw/business/202610110004",
+          "type": "primary",
+          "extract_template_name": null,
+          "source_category": "official",
+          "source_intent": null
+        }
+      ],
+      "confidence": "high",
+      "reasoning": "High confidence - cells fill rate is 100% and trust per claim ratio is 90%",
+      "claims": [
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].status"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].summary"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].headline"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].location"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].event_date"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].event_type"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].source_url"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].published_at"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].impact_mechanism"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].expected_duration"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].affected_exposures[0]"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles",
+              "title": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[1].status"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles",
+              "title": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[1].summary"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles",
+              "title": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[1].headline"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles",
+              "title": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[1].location"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles",
+              "title": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[1].event_date"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles",
+              "title": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[1].event_type"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles",
+              "title": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[1].source_url"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles",
+              "title": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[1].published_at"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles",
+              "title": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[1].impact_mechanism"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles",
+              "title": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[1].expected_duration"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles",
+              "title": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[1].affected_exposures[0]"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb",
+              "title": "https://www.trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[2].status"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb",
+              "title": "https://www.trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[2].summary"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb",
+              "title": "https://www.trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[2].headline"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb",
+              "title": "https://www.trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[2].location"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb",
+              "title": "https://www.trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[2].event_date"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb",
+              "title": "https://www.trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[2].event_type"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb",
+              "title": "https://www.trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[2].source_url"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb",
+              "title": "https://www.trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[2].published_at"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb",
+              "title": "https://www.trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[2].impact_mechanism"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb",
+              "title": "https://www.trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[2].expected_duration"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb",
+              "title": "https://www.trendforce.com/news/2026/10/12/news-cpu-price-hike-wave-intel-reportedly-up-to-20-qualcomm-10-amd-may-join-as-tsmc-costs-climb/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[2].affected_exposures[0]"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/customs-updates-add-a-compliance-burden-to-potentially-volatile-q4-for-shippers",
+              "title": "https://theloadstar.com/customs-updates-add-a-compliance-burden-to-potentially-volatile-q4-for-shippers/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.unverified[0]"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://trendforce.com/news/2026/10/12/news-asml-reportedly-plans-10-parts-price-hike-in-south-korea-starting-jan-2027-equipment-prices-may-also-rise",
+              "title": "https://www.trendforce.com/news/2026/10/12/news-asml-reportedly-plans-10-parts-price-hike-in-south-korea-starting-jan-2027-equipment-prices-may-also-rise/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.unverified[1]"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.unverified[2]"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://maersk.com/news/articles/2026/08/28/transpacific-schedule-adjustments-golden-week-2026",
+              "title": "https://www.maersk.com/news/articles/2026/08/28/transpacific-schedule-adjustments-golden-week-2026",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.unverified[3]"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://focustaiwan.tw/business/202610110004",
+              "title": "https://focustaiwan.tw/business/202610110004",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "official",
+              "source_intent": "official"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (official)",
+          "path": "$.unverified[4]"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.product"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.window_end"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.window_start"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.no_events_found"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "ready": true,
+  "runId": "task_run_0ab1adac53cf4b2095cf656484f77e17",
+  "agentId": "wsa_2554d62fd10c4cbda8ec531a72ca7c0c",
+  "status": "completed",
+  "effort": "high",
+  "createdAt": "2026-10-12T14:38:22.855353Z",
+  "startedAt": "2026-10-12T14:38:22.942229Z",
+  "completedAt": "2026-10-12T14:44:24.044244Z",
+  "output": {
+    "type": "json",
+    "json": {
+      "events": [
+        {
+          "status": "ongoing",
+          "summary": "Two attacks on Riyadh Airport on Thursday 8 October killed three people and damaged a Saudia aircraft, claimed by the Houthis; Riyadh's outbound air cargo capacity fell 34% over 24 hours to 848 tonnes and several carriers including Lufthansa and Air India suspended services, while Najran and Jazan airports closed until 15 October. The Middle East disruption is forcing cargo airlines to adapt networks (Cathay rerouting European freighter stops), and average jet fuel prices were up 108% year on year by 2 October, with the Baltic Air Freight Index up 5% in the week to 5 October as Asia entered Golden Week.",
+          "headline": "Houthi attacks on Saudi airports cut Middle East air cargo capacity and push jet fuel up 108% year on year, squeezing global lift at the start of peak season",
+          "location": "Riyadh (King Khalid International Airport) and other Saudi airports, Saudi Arabia; Middle East air corridors",
+          "event_date": "2026-10-08",
+          "event_type": "route_disruption",
+          "source_url": "https://theloadstar.com/saudi-disruption-squeezes-air-cargo-capacity-as-peak-looms/",
+          "published_at": "2026-10-09",
+          "impact_mechanism": "The Middle East attacks and the associated jet fuel price shock lift fuel surcharges and tighten available freighter lift on Asia–North America air freight, raising the cost and rollover risk of the smartwatch's Hanoi–Los Angeles air shipments during peak season.",
+          "expected_duration": "Najran and Jazan airports closed until 15 October 2026; TAC Index sources expected the fuel impact on rates within a week or so",
+          "affected_exposures": [
+            "air freight Hanoi to Los Angeles"
+          ]
+        }
+      ],
+      "product": "smartwatch",
+      "unverified": [
+        "Samsung SDS takeover of South Korean consolidator Woojung Air (The Loadstar, 12 October 2026) touches the South Korean exposure ecosystem and airfreight capacity, but the report describes an M&A expansion with no concrete change to OLED component supply or to Vietnam-US lift, so it is not counted as a supply event.",
+        "No in-window event found for the TSMC Taiwan application processor exposure: TSMC's third-quarter revenue record (Reuters/Digitimes, 8 October 2026) and the GlobalFoundries US$2 billion silicon-interposer agreement (8-9 October 2026) are earnings/expansion news with no supply disruption; no earthquake, power outage or export-control change affecting TSMC fabs was reported inside the window (CWA's only recent quake, magnitude 5.9 east of Hualien, was 30 September with maximum intensity 1 in Hsinchu County and no reported fab impact).",
+        "No in-window event found for Samsung Display (South Korea) OLED exposure: the Digitimes item of 5 October 2026 on SDC/LGD seeking longer tax credits is policy lobbying, not a supply change; no plant incident, strike or outage at Samsung Display was reported in the window (the Samsung union strike authorization dates from March 2026).",
+        "No in-window event found for lithium-ion cells from China: BIS news updates show nothing new between 5-12 October (latest entry 2 October 2026), and China's battery export-control/tax-rebate changes on record all date from before the window (Oct 2025 controls, Jan 2026 VAT rebate rollback, Jul 2026 consumption tax).",
+        "No in-window event found for final assembly in Bac Ninh, Vietnam: searches surfaced only Typhoon Bualoi damage (landfall 29 September 2025, central Vietnam) and 2023 blackouts, both well outside the window; no strike, fire, flood or power cut in Bac Ninh was reported 5-12 October 2026.",
+        "Ocean blank sailings after Golden Week reported in the window (The Loadstar, 6 October 2026, via the prior run) do not touch this product's exposures, which use air freight Hanoi to Los Angeles rather than ocean, so no row was created."
+      ],
+      "window_end": "2026-10-12",
+      "window_start": "2026-10-05",
+      "no_events_found": false
+    },
+    "trust": {
+      "sources": [
+        {
+          "url": "https://theloadstar.com/saudi-disruption-squeezes-air-cargo-capacity-as-peak-looms",
+          "title": "Saudi disruption squeezes air cargo capacity as peak looms - The Loadstar",
+          "type": "primary",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null
+        }
+      ],
+      "confidence": "low",
+      "reasoning": "Low confidence - trust per claim ratio is 43%",
+      "claims": [
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/saudi-disruption-squeezes-air-cargo-capacity-as-peak-looms",
+              "title": "Saudi disruption squeezes air cargo capacity as peak looms - The Loadstar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].headline"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/saudi-disruption-squeezes-air-cargo-capacity-as-peak-looms",
+              "title": "Saudi disruption squeezes air cargo capacity as peak looms - The Loadstar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].event_type"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/saudi-disruption-squeezes-air-cargo-capacity-as-peak-looms",
+              "title": "Saudi disruption squeezes air cargo capacity as peak looms - The Loadstar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].location"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.events[0].affected_exposures[0]"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/saudi-disruption-squeezes-air-cargo-capacity-as-peak-looms",
+              "title": "Saudi disruption squeezes air cargo capacity as peak looms - The Loadstar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].event_date"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/saudi-disruption-squeezes-air-cargo-capacity-as-peak-looms",
+              "title": "Saudi disruption squeezes air cargo capacity as peak looms - The Loadstar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].status"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/saudi-disruption-squeezes-air-cargo-capacity-as-peak-looms",
+              "title": "Saudi disruption squeezes air cargo capacity as peak looms - The Loadstar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].summary"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/saudi-disruption-squeezes-air-cargo-capacity-as-peak-looms",
+              "title": "Saudi disruption squeezes air cargo capacity as peak looms - The Loadstar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].source_url"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/saudi-disruption-squeezes-air-cargo-capacity-as-peak-looms",
+              "title": "Saudi disruption squeezes air cargo capacity as peak looms - The Loadstar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].published_at"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.events[0].impact_mechanism"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/saudi-disruption-squeezes-air-cargo-capacity-as-peak-looms",
+              "title": "Saudi disruption squeezes air cargo capacity as peak looms - The Loadstar",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].expected_duration"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.unverified[0]"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.unverified[1]"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.unverified[2]"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.unverified[3]"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.unverified[4]"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.unverified[5]"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.product"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.window_end"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.window_start"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.no_events_found"
+        }
+      ]
+    }
+  }
+}
