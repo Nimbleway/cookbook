@@ -124,7 +124,10 @@ def dedupe(candidates: list[dict]) -> list[dict]:
     by_name: dict[str, str] = {}
     for c in candidates:
         nk = _name_key(c["name"]) or c["name"].lower()
-        key = (c.get("domain") or "").lower() or by_name.get(nk) or nk
+        dom = (c.get("domain") or "").lower()
+        # An entry already seen by this domain or name wins, so a name-only result and a
+        # later result with the domain land on the same key.
+        key = (dom if dom in merged else None) or by_name.get(nk) or dom or nk
         by_name.setdefault(nk, key)
         if key not in merged:
             merged[key] = {**c, "evidence_urls": [c["evidence_url"]]}
@@ -139,12 +142,13 @@ def dedupe(candidates: list[dict]) -> list[dict]:
 
 def judge_firmographics(c: dict, results) -> FirmographicVerdict:
     system = (
-        "Grade one company against the hq, product and size ICP criteria using only the "
-        "search results. met / not_met need explicit evidence in a result; otherwise "
-        "unclear. Check that each result is about this company and not another with a "
-        "similar name. For size, use a dated headcount figure; never infer it from funding. "
-        "Do not grade funding stage: fill latest_round with the series and close date of "
-        "the most recent priced round exactly as the results state them.\n\n"
+        "Grade one company against the hq and product ICP criteria using only the search "
+        "results. met / not_met need explicit evidence in a result; otherwise unclear. Check "
+        "that each result is about this company and not another with a similar name. Do not "
+        "grade funding stage or size: fill latest_round with the series and date of the most "
+        "recent priced round exactly as the results state them (date_basis closed only when a "
+        "result gives the close date), and list every headcount figure with its source and "
+        "date in headcount. Never infer headcount from funding.\n\n"
         f"ICP:\n{_icp_text()}\n\nToday's date is {config.AS_OF}."
     )
     user = f"Company: {c['name']} ({c.get('domain') or 'domain unknown'})\n\n{_format_results(results)}"
@@ -169,17 +173,33 @@ def stage_check(r: LatestRound) -> CriterionCheck:
         closed = _parse_date(r.close_date)
         if closed is None:
             return CriterionCheck(status="unclear", evidence=f"{r.evidence} (no close date)", source_url=r.source_url)
-        status = "met" if closed >= start else "not_met"
-        return CriterionCheck(status=status, evidence=f"{r.evidence} (closed {r.close_date})", source_url=r.source_url)
+        if closed < start:
+            return CriterionCheck(status="not_met", evidence=f"{r.evidence} ({r.date_basis} {r.close_date})", source_url=r.source_url)
+        # An announcement shortly after the start can describe a round that closed before it.
+        if r.date_basis == "announced" and closed < start + timedelta(days=config.ROUND_ANNOUNCE_LAG_DAYS):
+            return CriterionCheck(status="unclear", source_url=r.source_url,
+                                  evidence=f"{r.evidence} (announced {r.close_date}; close date not stated)")
+        return CriterionCheck(status="met", evidence=f"{r.evidence} ({r.date_basis} {r.close_date})", source_url=r.source_url)
     if r.series in ("unknown", "other"):
         return CriterionCheck(status="unclear", evidence=r.evidence, source_url=r.source_url)
     return CriterionCheck(status="not_met", evidence=r.evidence, source_url=r.source_url)
 
 
+def size_check(figures: list[HeadcountFigure]) -> CriterionCheck:
+    """The size criterion, decided in code with the same rule as the Pattern B headcount gate."""
+    status, reason = headcount_gate(figures)
+    if status == "pass":
+        return CriterionCheck(status="met", evidence=reason)
+    if status == "fail" and not reason.startswith("Unverified: "):
+        return CriterionCheck(status="not_met", evidence=reason)
+    return CriterionCheck(status="unclear", evidence=reason.removeprefix("Unverified: "))
+
+
 def firmographic_decision(v: FirmographicVerdict) -> tuple[str, str] | None:
     """Hard constraints: anything not explicitly met fails. Returns (criterion, reason) or None."""
+    computed = {"stage": lambda: stage_check(v.latest_round), "size": lambda: size_check(v.headcount)}
     for name in config.FIRMOGRAPHIC_CRITERIA:
-        check = stage_check(v.latest_round) if name == "stage" else getattr(v, name)
+        check = computed[name]() if name in computed else getattr(v, name)
         if check.status != "met":
             prefix = "Unverified: " if check.status == "unclear" else ""
             return name, f"{prefix}{check.evidence}"
@@ -199,7 +219,8 @@ def verify(client: Nimble, c: dict, log: list) -> dict:
     firmo = judge_firmographics(c, _search(client, log, f"firmographics:{c['name']}", **firmo_q))
     c["domain"] = c.get("domain") or firmo.domain
     record = {"company": c["name"], "domain": c.get("domain"), "evidence_urls": c["evidence_urls"],
-              "firmographics": {**firmo.model_dump(), "stage": stage_check(firmo.latest_round).model_dump()}}
+              "firmographics": {**firmo.model_dump(), "stage": stage_check(firmo.latest_round).model_dump(),
+                                "size": size_check(firmo.headcount).model_dump()}}
     failed = firmographic_decision(firmo)
     if failed:
         return {**record, "pass": False, "stage": "firmographics",
@@ -336,13 +357,14 @@ def _parse_date(s: str | None) -> date | None:
 def headcount_gate(figures: list[HeadcountFigure]) -> tuple[str, str]:
     """Your rule for the employee_count criterion. Returns (status, reason).
 
-    Only dated figures from the last HEADCOUNT_MAX_AGE_DAYS count.
+    Only dated figures from the HEADCOUNT_MAX_AGE_DAYS before AS_OF count (none after it).
       pass    every recent figure falls inside MIN..MAX
       fail    no recent dated figure, or none inside MIN..MAX
       review  recent figures disagree about the band
     """
-    cutoff = date.fromisoformat(config.AS_OF) - timedelta(days=config.HEADCOUNT_MAX_AGE_DAYS)
-    recent = [f for f in figures if (d := _parse_date(f.as_of)) and d >= cutoff]
+    as_of = date.fromisoformat(config.AS_OF)
+    cutoff = as_of - timedelta(days=config.HEADCOUNT_MAX_AGE_DAYS)
+    recent = [f for f in figures if (d := _parse_date(f.as_of)) and cutoff <= d <= as_of]
     if not recent:
         return "fail", "Unverified: no dated headcount figure found"
     desc = "; ".join(f"{f.low if f.low == f.high else f'{f.low}-{f.high}'} ({f.source}, {f.as_of})" for f in recent)

@@ -41,6 +41,7 @@ from urllib.parse import urlparse
 from dotenv import load_dotenv
 from langchain_anthropic import ChatAnthropic
 from nimble_python import APIError, Nimble
+from pydantic import TypeAdapter, ValidationError
 
 import config
 from schema import AccountProfile
@@ -156,7 +157,7 @@ def resolve_conflicts(profile: AccountProfile) -> AccountProfile:
     The losing values stay in `conflicts` so the CRM keeps the full picture.
     """
     for c in profile.conflicts:
-        if not c.values or not hasattr(profile, c.field):
+        if not c.values or c.field not in AccountProfile.model_fields or c.field in ("conflicts", "field_sources"):
             continue
         by_date = lambda v: _date_key(v.as_of)
         by_tier = lambda v: _tier(v.source_url)[0]
@@ -171,8 +172,14 @@ def resolve_conflicts(profile: AccountProfile) -> AccountProfile:
         value = _coerce(c.field, best.value)
         c.chosen = best.value
         c.rule = f"{rule} ({_tier(best.source_url)[1]}: {best.source_url})"
-        if value is not None:
-            setattr(profile, c.field, value)
+        if value is None:
+            continue
+        try:  # only write a value that fits the field (a string never replaces a list)
+            value = TypeAdapter(AccountProfile.model_fields[c.field].annotation).validate_python(value)
+        except ValidationError:
+            c.rule += "; not applied: value does not fit the field type"
+            continue
+        setattr(profile, c.field, value)
     return profile
 
 

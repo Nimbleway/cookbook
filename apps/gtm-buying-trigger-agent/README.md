@@ -61,12 +61,16 @@ than pad an account with weak events.
 `post_process()` guarantees the report shape the next step (a CRM write, a Slack alert)
 can rely on:
 
-1. One entry per watchlist account, in watchlist order.
+1. One entry per watchlist account, in watchlist order; entries for other accounts are dropped.
 2. Every trigger's `event_date` inside the window; anything else goes to `excluded_events`.
-3. One trigger per (trigger type, headline) within an account.
+3. One trigger per event within an account: the same headline, or the same type and date
+   with the same source or mostly the same names, counts once.
 4. `trigger_count` matches the triggers, and `strongest_trigger` names one of them
    (strength first, then the most recent event, when it is not already set).
-   `outreach_angle` is kept only when it was written for that strongest trigger.
+5. `outreach_angle` is dropped when an event it may cite was moved out of the window.
+
+Pattern B saves the checked report as `output.content` and the agent's original as
+`output.raw_content` (the trust block's claim paths refer to the original).
 
 On the committed Pattern B example it changes nothing: 10 triggers in, 10 out.
 

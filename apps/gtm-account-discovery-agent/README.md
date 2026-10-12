@@ -39,8 +39,9 @@ BROADEN   6 lite searches, start_date = start of the funding window, max_results
 EXTRACT   Claude pulls candidate companies out of titles and snippets, and flags any
           result that states a non-US HQ or that the company is a law firm
 DEDUPE    one entry per company, keyed on domain or a normalized name (in code)
-NARROW    per candidate: one firmographic search -> judge HQ, product, size, and
-          extract the latest round (series, close date); stage is decided in code
+NARROW    per candidate: one firmographic search -> judge HQ and product, and
+          extract the latest round and headcount figures; stage and size are
+          decided in code
           only for survivors: one hiring search on ATS boards + the company domain
           -> judge the sales role
 ```
@@ -48,8 +49,12 @@ NARROW    per candidate: one firmographic search -> judge HQ, product, size, and
 The judges grade each criterion `met`, `not_met` or `unclear` with the evidence and
 URL. `firmographic_decision()` and `hiring_decision()` make the call in code: anything
 not explicitly `met` fails, and `unclear` is recorded as `Unverified: ...`. Funding
-stage is never graded by the model: it returns the latest round's series and close
-date, and `stage_check()` compares the date with `ROUND_WINDOW_START` in code. Including
+stage and size are never graded by the model. It returns the latest round's series and
+date, and `stage_check()` compares the date with `ROUND_WINDOW_START` in code; a round
+known only by an announcement date in the first `ROUND_ANNOUNCE_LAG_DAYS` after that
+start is `unclear`, since it may have closed before it. It also lists every headcount
+figure with its source and date, and `size_check()` applies the same rule as the
+Pattern B headcount gate below. Including
 the domain in the firmographic query keeps a name like "DeepIP" from resolving to
 generic patent pages.
 
@@ -67,7 +72,7 @@ whether or not the agent cited its figure. It runs one Search API call per row
 headcount figures in the agent's own `employee_count` claim and in those results, and
 `headcount_gate()` decides:
 
-- **pass**: every dated figure from the last 12 months is within 50 to 500
+- **pass**: every dated figure from the 12 months up to the as-of date is within 50 to 500
 - **fail**: no dated figure, or none within the band
 - **review**: recent figures disagree about the band
 

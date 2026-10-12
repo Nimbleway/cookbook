@@ -24,6 +24,7 @@ TARGET_COUNT = 15
 MIN_EMPLOYEES = 50
 MAX_EMPLOYEES = 500
 ROUND_WINDOW_START = "2025-04-01"  # most recent priced round closed on or after this date
+ROUND_ANNOUNCE_LAG_DAYS = 90      # an announcement this soon after the start may be a round that closed before it
 HEADCOUNT_MAX_AGE_DAYS = 365       # headcount gate ignores headcount figures older than this
 
 ICP_CRITERIA = {

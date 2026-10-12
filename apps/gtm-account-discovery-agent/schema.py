@@ -50,7 +50,9 @@ class LatestRound(BaseModel):
     series: Literal["pre_seed", "seed", "series_a", "series_b", "series_c", "series_d_or_later",
                     "other", "unknown"] = Field(description="Series of the most recent priced round; unknown if the results do not say")
     close_date: Optional[str] = Field(
-        default=None, description="Date the round closed or was announced, YYYY-MM-DD or YYYY-MM; null if not given")
+        default=None, description="Date the round closed, or the announcement date if no close date is given; YYYY-MM-DD or YYYY-MM; null if neither")
+    date_basis: Literal["closed", "announced"] = Field(
+        default="announced", description="closed only when a result states the close date; announced otherwise")
     evidence: str = Field(description="The round as stated, e.g. 'Series B, $60M, Nov 2025'")
     source_url: Optional[str] = None
 
@@ -60,7 +62,8 @@ class FirmographicVerdict(BaseModel):
     hq: CriterionCheck
     product: CriterionCheck
     latest_round: LatestRound
-    size: CriterionCheck
+    headcount: List[HeadcountFigure] = Field(
+        default_factory=list, description="Every employee headcount figure the results give for this company; empty if none")
 
 
 class HiringVerdict(BaseModel):

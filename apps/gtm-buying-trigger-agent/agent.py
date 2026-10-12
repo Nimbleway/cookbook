@@ -76,18 +76,44 @@ def _rank(t: dict) -> tuple:
     return strength, -(_parse(t.get("event_date")) or date.min).toordinal()
 
 
+# Words that say what kind of event it is rather than which one; ignored when comparing headlines.
+_GENERIC = set("a an the as of to for and in on at with its new names named appoints appointed "
+               "announces announced hires hired joins launches launched raises raised chief officer "
+               "series round funding".split())
+
+
+def _event_words(headline: str, company: str) -> set[str]:
+    return set(_norm(headline).split()) - set(_norm(company).split()) - _GENERIC
+
+
+def _same_event(a: dict, b: dict, company: str) -> bool:
+    """Two reports of one event: same headline, or same type and date with the same source
+    or mostly the same distinguishing words (a person's name, a product)."""
+    if _norm(a.get("headline", "")) == _norm(b.get("headline", "")):
+        return True
+    if a.get("trigger_type") != b.get("trigger_type") or not a.get("event_date") or a.get("event_date") != b.get("event_date"):
+        return False
+    if a.get("source_url") and a.get("source_url") == b.get("source_url"):
+        return True
+    wa, wb = _event_words(a.get("headline", ""), company), _event_words(b.get("headline", ""), company)
+    return bool(wa and wb) and len(wa & wb) / len(wa | wb) >= 0.5
+
+
 def post_process(content: dict, start: str | None = None, end: str | None = None) -> tuple[dict, dict]:
     """Guarantee the report shape the CRM step expects (config.OUTPUT_SCHEMA).
 
     Returns (new_content, report); the input is not modified.
       1. One entry per watchlist account, in watchlist order (entries that share a
-         domain are combined; watchlist accounts with no entry get trigger_count 0).
+         domain are combined; watchlist accounts with no entry get trigger_count 0;
+         entries for accounts not on the watchlist are dropped).
       2. Every trigger has an event_date inside start..end; undated or out-of-window
          triggers move to excluded_events.
-      3. One trigger per (trigger_type, headline) within an account.
+      3. One trigger per underlying event within an account (_same_event).
       4. trigger_count matches the triggers; strongest_trigger names one of them
-         (kept when it does, otherwise strength then recency); outreach_angle is kept only
-         when it was written for that strongest trigger; triggers sorted newest first.
+         (kept when it does, otherwise strength then recency); triggers sorted newest first.
+      5. outreach_angle is kept only when no event it may cite was removed: the entry lost no
+         trigger to the window check, and its own strongest trigger (if it named one) is still
+         the strongest or was only a duplicate report of a kept event.
     """
     c = copy.deepcopy(content)
     start = start or c.get("window_start")
@@ -95,37 +121,43 @@ def post_process(content: dict, start: str | None = None, end: str | None = None
     lo, hi = _parse(start), _parse(end)
     report: dict = {"window": [start, end], "moved_out_of_window": [], "duplicate_triggers": [],
                     "combined_account_entries": [], "strongest_trigger_set": [],
-              "outreach_angle_dropped": []}
+                    "outreach_angle_dropped": [], "unwatched_accounts_dropped": []}
     excluded = list(c.get("excluded_events") or [])
 
+    names = {a["domain"]: a["name"] for a in config.WATCHLIST}
     by_domain: dict[str, list[dict]] = {}
     for entry in c.get("accounts") or []:
-        by_domain.setdefault(entry.get("domain", "").lower().removeprefix("www."), []).append(entry)
+        dom = entry.get("domain", "").lower().removeprefix("www.")
+        if dom not in names:
+            report["unwatched_accounts_dropped"].append({"company": entry.get("company"), "domain": dom})
+            continue
+        by_domain.setdefault(dom, []).append(entry)
 
-    names = {a["domain"]: a["name"] for a in config.WATCHLIST}
-    order = [a["domain"] for a in config.WATCHLIST] + [d for d in by_domain if d not in names]
     accounts = []
-    for dom in order:
+    for dom, watched_name in names.items():
         entries = by_domain.get(dom, [])
         if len(entries) > 1:
             report["combined_account_entries"].append({"domain": dom, "entries": len(entries)})
-        company = entries[0]["company"] if entries else names[dom]
+        company = entries[0]["company"] if entries else watched_name
 
-        kept, seen = [], set()
-        for t in [t for e in entries for t in (e.get("triggers") or [])]:
-            d = _parse(t.get("event_date"))
-            if lo and hi and not (d and lo <= d <= hi):
-                why = f"outside window ({t['event_date']})" if d else "no event date"
-                excluded.append({"company": company, "headline": t["headline"], "reason": why})
-                report["moved_out_of_window"].append({"company": company, "headline": t["headline"],
-                                                      "event_date": t["event_date"]})
-                continue
-            key = (t.get("trigger_type"), _norm(t.get("headline", "")))
-            if key in seen:
-                report["duplicate_triggers"].append({"company": company, "headline": t["headline"]})
-                continue
-            seen.add(key)
-            kept.append(t)
+        kept: list[dict] = []
+        lost_from: set[int] = set()  # entries that had a trigger moved out of the window
+        dup_headlines: set[str] = set()
+        for i, e in enumerate(entries):
+            for t in e.get("triggers") or []:
+                d = _parse(t.get("event_date"))
+                if lo and hi and not (d and lo <= d <= hi):
+                    why = f"outside window ({t['event_date']})" if d else "no event date"
+                    excluded.append({"company": company, "headline": t["headline"], "reason": why})
+                    report["moved_out_of_window"].append({"company": company, "headline": t["headline"],
+                                                          "event_date": t.get("event_date")})
+                    lost_from.add(i)
+                    continue
+                if any(_same_event(t, k, company) for k in kept):
+                    report["duplicate_triggers"].append({"company": company, "headline": t["headline"]})
+                    dup_headlines.add(t["headline"])
+                    continue
+                kept.append(t)
         kept.sort(key=lambda t: _parse(t.get("event_date")) or date.min, reverse=True)
 
         headlines = {t["headline"] for t in kept}
@@ -134,9 +166,10 @@ def post_process(content: dict, start: str | None = None, end: str | None = None
         if kept and strongest is None:
             strongest = min(kept, key=_rank)["headline"]
             report["strongest_trigger_set"].append({"company": company, "strongest_trigger": strongest})
-        # The agent wrote its angle for its own strongest trigger; drop it if that trigger is gone.
-        angle = next((e.get("outreach_angle") for e in entries
-                      if e.get("outreach_angle") and e.get("strongest_trigger") == strongest), None)
+
+        angle = next((e["outreach_angle"] for i, e in enumerate(entries)
+                      if e.get("outreach_angle") and i not in lost_from
+                      and e.get("strongest_trigger") in (None, strongest, *dup_headlines)), None)
         if kept and angle is None and any(e.get("outreach_angle") for e in entries):
             report["outreach_angle_dropped"].append({"company": company})
 
@@ -294,7 +327,10 @@ def run_agent_api(poll_every: int = 30, timeout: int = 2700) -> dict:
     trust = payload["output"]["trust"]
     print(f"  trust: {trust['confidence']} ({trust['reasoning']}); {len(trust['sources'])} sources")
     content, report = post_process(payload["output"]["content"], start, end)
-    payload["post_processed"] = content
+    # output.content becomes the checked report. The agent's original stays in
+    # output.raw_content, which the trust block's claim paths ($.accounts[i]...) refer to.
+    payload["output"]["raw_content"] = payload["output"]["content"]
+    payload["output"]["content"] = content
     payload["post_processing"] = report
     _save(payload, f"{SLUG}__pattern_B.json")
     _print_summary(content, report)
@@ -328,7 +364,8 @@ if __name__ == "__main__":
 
     if args.post_process:
         saved = json.loads(Path(args.post_process).read_text(encoding="utf-8"))
-        content, report = post_process(saved["output"]["content"])
+        out = saved["output"]
+        content, report = post_process(out.get("raw_content", out["content"]))
         _print_summary(content, report)
         print(json.dumps(report, indent=2))
     else:
