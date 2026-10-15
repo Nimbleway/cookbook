@@ -2,32 +2,16 @@
 // goes stale, a later tick processes the runs again, sends the alert exactly once, and
 // doesn't duplicate the leads.
 import assert from "node:assert/strict";
-import { cpSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
-import { tmpdir } from "node:os";
-import { join } from "node:path";
 import { test } from "node:test";
 import { createClient } from "@libsql/client";
+import { cacheHighTriage, setupTestEnv } from "./helpers/setup";
 
-const dir = mkdtempSync(join(tmpdir(), "scm-recovery-"));
-mkdirSync(join(dir, "samples"));
-cpSync("tests/fixtures/sweep_laptop_smoke.json", join(dir, "samples/sweep_laptop.json"));
-process.env.USE_LIVE = "false";
-process.env.DATA_DIR = dir;
-process.env.TURSO_DATABASE_URL = `file:${join(dir, "test.db")}`;
-delete process.env.SLACK_WEBHOOK_URL;
+const { dir } = setupTestEnv("recovery");
+cacheHighTriage(dir);
 
 const { mastra } = await import("../src/mastra/index");
 const { config } = await import("../src/mastra/config");
-const { eventsFromResult } = await import("../src/mastra/lib/events");
 const { leadsOn } = await import("../src/mastra/lib/ledger-events");
-
-const [event] = eventsFromResult(JSON.parse(readFileSync("tests/fixtures/sweep_laptop_smoke.json", "utf8")), "laptop").events;
-writeFileSync(
-  join(dir, "samples/triage.json"),
-  JSON.stringify({
-    [event.eventKey]: { eventKey: event.eventKey, duplicateOf: null, severity: "high", affectedProducts: ["laptop"], rationale: "t", recommendedAction: "t" },
-  }),
-);
 
 async function run(id: "sweepWorkflow" | "collectWorkflow", inputData: object) {
   const r = await (await mastra.getWorkflow(id).createRun()).start({ inputData: inputData as never });

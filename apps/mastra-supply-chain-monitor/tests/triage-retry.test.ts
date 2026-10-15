@@ -1,18 +1,10 @@
 // A triage call that fails leaves the event untriaged. When the event comes back as a
 // repeat, it's scored again and alerts; a repeat that already has a triage isn't re-sent.
 import assert from "node:assert/strict";
-import { cpSync, mkdirSync, mkdtempSync } from "node:fs";
-import { tmpdir } from "node:os";
-import { join } from "node:path";
 import { test } from "node:test";
+import { setupTestEnv } from "./helpers/setup";
 
-const dir = mkdtempSync(join(tmpdir(), "scm-triage-"));
-mkdirSync(join(dir, "samples"));
-cpSync("tests/fixtures/sweep_laptop_smoke.json", join(dir, "samples/sweep_laptop.json"));
-process.env.USE_LIVE = "false";
-process.env.DATA_DIR = dir;
-process.env.TURSO_DATABASE_URL = `file:${join(dir, "test.db")}`;
-delete process.env.SLACK_WEBHOOK_URL;
+setupTestEnv("triage");
 
 const { mastra } = await import("../src/mastra/index");
 

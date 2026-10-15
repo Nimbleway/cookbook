@@ -1,30 +1,14 @@
 // Status changes on an alerted event: self-contained, with its own ledger.
 // announced (alert) → escalating (alert) → escalating again (no alert) → announced (alert).
 import assert from "node:assert/strict";
-import { cpSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
-import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { readFileSync, writeFileSync } from "node:fs";
 import { test } from "node:test";
+import { cacheHighTriage, setupTestEnv } from "./helpers/setup";
 
-const dir = mkdtempSync(join(tmpdir(), "scm-alerts-"));
-mkdirSync(join(dir, "samples"));
-const samplePath = join(dir, "samples/sweep_laptop.json");
-cpSync("tests/fixtures/sweep_laptop_smoke.json", samplePath);
-process.env.USE_LIVE = "false";
-process.env.DATA_DIR = dir;
-process.env.TURSO_DATABASE_URL = `file:${join(dir, "test.db")}`;
-delete process.env.SLACK_WEBHOOK_URL;
+const { dir, samplePath } = setupTestEnv("alerts");
+cacheHighTriage(dir);
 
 const { mastra } = await import("../src/mastra/index");
-const { eventsFromResult } = await import("../src/mastra/lib/events");
-
-const [event] = eventsFromResult(JSON.parse(readFileSync(samplePath, "utf8")), "laptop").events;
-writeFileSync(
-  join(dir, "samples/triage.json"),
-  JSON.stringify({
-    [event.eventKey]: { eventKey: event.eventKey, duplicateOf: null, severity: "high", affectedProducts: ["laptop"], rationale: "t", recommendedAction: "t" },
-  }),
-);
 
 function setStatus(status: string) {
   const sample = JSON.parse(readFileSync(samplePath, "utf8"));

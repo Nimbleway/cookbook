@@ -1,40 +1,16 @@
 // End to end, offline: sweep → collect → act, in demo mode against a temp database.
 // No Nimble run is created and no model is called (triage comes from a cache).
 import assert from "node:assert/strict";
-import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
-import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { existsSync, readFileSync } from "node:fs";
 import { test } from "node:test";
+import { cacheHighTriage, setupTestEnv } from "./helpers/setup";
 
-const dir = mkdtempSync(join(tmpdir(), "scm-"));
-mkdirSync(join(dir, "samples"));
-cpSync("tests/fixtures/sweep_laptop_smoke.json", join(dir, "samples/sweep_laptop.json"));
-
-process.env.USE_LIVE = "false";
-process.env.DATA_DIR = dir;
-process.env.TURSO_DATABASE_URL = `file:${join(dir, "test.db")}`;
-delete process.env.SLACK_WEBHOOK_URL;
+const { dir } = setupTestEnv("workflows");
+cacheHighTriage(dir);
 
 const { mastra } = await import("../src/mastra/index");
-const { eventsFromResult } = await import("../src/mastra/lib/events");
 const { claimRun, recordRunStarted } = await import("../src/mastra/lib/ledger");
 const { recentEvents } = await import("../src/mastra/lib/ledger-events");
-
-// Cache a triage for the one real event so the collect pass needs no model.
-const [event] = eventsFromResult(JSON.parse(readFileSync("tests/fixtures/sweep_laptop_smoke.json", "utf8")), "laptop").events;
-writeFileSync(
-  join(dir, "samples/triage.json"),
-  JSON.stringify({
-    [event.eventKey]: {
-      eventKey: event.eventKey,
-      duplicateOf: null,
-      severity: "high",
-      affectedProducts: ["laptop"],
-      rationale: "test",
-      recommendedAction: "test",
-    },
-  }),
-);
 
 async function start(id: "sweepWorkflow" | "collectWorkflow", inputData: object) {
   const run = await mastra.getWorkflow(id).createRun();
