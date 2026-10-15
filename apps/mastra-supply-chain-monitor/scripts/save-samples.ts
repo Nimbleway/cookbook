@@ -22,7 +22,9 @@ for (const p of WATCHLIST) {
     console.log(`${p.slug}: no collected live result, skipped`);
     continue;
   }
-  await writeFile(`${config.dataDir}/samples/sweep_${p.slug}.json`, JSON.stringify(JSON.parse(raw), null, 2));
+  // Placeholder IDs: the samples are for replay and shouldn't point at one account's agent.
+  const sample = { ...JSON.parse(raw), runId: `task_run_sample_${p.slug}`, agentId: "wsa_sample" };
+  await writeFile(`${config.dataDir}/samples/sweep_${p.slug}.json`, JSON.stringify(sample, null, 2));
   console.log(`${p.slug}: saved`);
 }
 
