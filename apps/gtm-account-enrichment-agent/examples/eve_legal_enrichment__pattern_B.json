@@ -1,0 +1,1716 @@
+{
+  "note": "Real Web Search Agent result from 2026-10-07 (agent gtm-account-enrichment, use_case=enrichment, effort=high), fetched with runs.result and saved unedited: run metadata, output.content and the full output.trust block. Illustrative output: re-run the agent for current findings.",
+  "run": {
+    "id": "task_run_eda68531033d45e9b697fe1d64c071c8",
+    "created_at": "2026-10-07T14:17:56.663835Z",
+    "effort": "high",
+    "interaction_id": "task_run_eda68531033d45e9b697fe1d64c071c8",
+    "is_active": false,
+    "status": "completed",
+    "web_search_agent_id": "wsa_2676be2cbf9a459da68703159c111345",
+    "completed_at": "2026-10-07T14:20:45.283719Z",
+    "prompt": "Enrich this CRM account into a current company profile. Resolve the company from its domain (eve.legal), not its name: several unrelated companies are called Eve. Use the company's own website, newsroom and careers/ATS pages first for identity, products, headquarters, leadership and hiring. Use press releases and reputable business or legal-industry news for funding and recent announcements. Treat data aggregators (Crunchbase, Tracxn, PitchBook, GetLatka, CB Insights) as secondary corroboration only. When sources disagree on a field, pick the best-supported value, and record the disagreement in data_conflicts. Leave a field null rather than guess.",
+    "started_at": "2026-10-07T14:17:56.741990Z"
+  },
+  "output": {
+    "content": {
+      "domain": "eve.legal",
+      "products": [
+        "EveOS (AI operating system for plaintiff law)",
+        "Eve Platform",
+        "Eve Analyst",
+        "Eve Agents",
+        "Eve Auditor",
+        "Eve Research",
+        "Eve Atlas",
+        "Case Intake & Evaluation with AI Voice Agent",
+        "Medical Overviews / Medical Chronologies",
+        "Drafting (complaints and pre-litigation documents)",
+        "Demand Letters",
+        "Case Communications Agent",
+        "Propounding Discovery",
+        "Responding to Discovery",
+        "Trial / Litigation support",
+        "Reasoning Mode (industry-first)",
+        "Eve AI Intake Specialist (Voice agent 24/7)",
+        "AI Workforce (Agents / Auditor / Analyst)"
+      ],
+      "vertical": "Legal Tech — AI software for plaintiff law firms",
+      "investors": [
+        "Spark Capital",
+        "Andreessen Horowitz",
+        "Lightspeed Venture Partners",
+        "Menlo Ventures"
+      ],
+      "last_round": "Series B, $103M at $1B+ post-money valuation, September 30, 2025, led by Spark Capital",
+      "leadership": [
+        {
+          "name": "Jay Madheswaran",
+          "title": "Founder & CEO"
+        },
+        {
+          "name": "Matt Noe",
+          "title": "Co-Founder & Chief Product Officer"
+        },
+        {
+          "name": "David Zeng",
+          "title": "Co-Founder & Chief Architect"
+        },
+        {
+          "name": "David Malpass",
+          "title": "Chief Marketing Officer (CMO)"
+        },
+        {
+          "name": "Russell Sachs",
+          "title": "Chief Revenue Officer (CRO)"
+        }
+      ],
+      "description": "Eve is the AI-native platform (EveOS) for plaintiff law firms, automating and assisting with end-to-end casework — from intake and medical chronologies to drafting, demand letters, discovery, and trial — used by 1,200+ plaintiff-side law firms.",
+      "company_name": "Eve",
+      "founded_year": 2023,
+      "headquarters": "San Mateo, California, United States",
+      "funding_stage": "Series B",
+      "customer_count": "1,200+ plaintiff law firms (as of October 2026, per company website)",
+      "data_conflicts": [
+        {
+          "field": "founded_year",
+          "resolution": "Use 2023 as public-launch / first-funding year (Oct 25, 2023 seed round) since company emerged from stealth that month; 2020 is when the founding team began working together but no public company existed yet.",
+          "values_found": "2020 (per Lightspeed: 'we first met Jay, Matt and David back in 2020'; Tracxn/GetLatka) vs 2023 (per company public launch from stealth October 25, 2023 on PR Newswire)"
+        },
+        {
+          "field": "headquarters",
+          "resolution": "Use San Mateo, California based on a specific physical address from CB Insights and confirmed by multiple aggregators; SF is the company's media framing and where their Series B press was issued. Greenhouse shows both offices are hybrid.",
+          "values_found": "San Mateo, California (per CB Insights physical address 71 East 3rd Avenue; GetLatka; Greenhouse / Lever has San Mateo AND San Francisco hybrid roles) vs San Francisco, California (per PR Newswire Sept 30 2025 Series B dateline; Crunchbase; Tracxn; LSVP; Law.com)"
+        },
+        {
+          "field": "customer_count",
+          "resolution": "Use 1,200+ firms as of October 2026 (most recent statement on company home page); cite progression in recent_signals.",
+          "values_found": "450 firms (Sep 30 2025, PR Newswire); ~700-900 firms (Mar 10 2026 Eve AI Workforce GA per PR Newswire title); 1,000 firms (Apr 7 2026 Tort Report); 1,200+ firms (Oct 7 2026 home page)"
+        },
+        {
+          "field": "employee_count",
+          "resolution": "Use 376 employees as of August 31 2026 (more recent Tracxn aggregation) with as-of date stamp.",
+          "values_found": "174 (GetLatka, Dec 2025, LinkedIn-derived) vs 376 (Tracxn, Aug 31 2026). Greenhouse shows 20 active listings, consistent with active hiring."
+        }
+      ],
+      "employee_count": "~376 employees (as of August 31, 2026, per Tracxn aggregated LinkedIn data)",
+      "recent_signals": [
+        {
+          "date": "2026-08-28",
+          "signal": "EveOS reaches general availability; launch of Analyst and Atlas covered by Artificial Lawyer weekly roundup",
+          "source_url": "https://www.artificiallawyer.com/2026/08/28/legal-world-is-booming-ai-roi-omg-legal-innovators/"
+        },
+        {
+          "date": "2026-08-28",
+          "signal": "ILTACON 2026 legaltech roundup in Law.com includes Eve news",
+          "source_url": "https://www.law.com/legaltechnews/2026/08/28/iltacon-legaltech-rundown-wolters-kluwer-launches-next-generation-of-libra-reveal-integrates-with-thomson-reuters-and-more/"
+        },
+        {
+          "date": "2026-06-11",
+          "signal": "Company rebrands as EveOS: 'Eve is now EveOS: The All-In-One AI Operating System for Plaintiff Law'",
+          "source_url": "https://www.eve.legal/tort-report/eve-is-now-eveos"
+        },
+        {
+          "date": "2026-04-07",
+          "signal": "Eve surpasses 1,000 plaintiff law firm customers",
+          "source_url": "https://www.eve.legal/tort-report/eve-surpasses-1000-plaintiff-law-firm-customers"
+        },
+        {
+          "date": "2026-03-10",
+          "signal": "Eve AI Workforce Platform reaches general availability, adopted by 900 plaintiff law firms",
+          "source_url": "https://www.prnewswire.com/news-releases/eve-expands-plaintiff-ai-workforce-platform-to-general-availability-following-adoption-by-900-plaintiff-law-firms-302709683.html"
+        },
+        {
+          "date": "2026-02-04",
+          "signal": "Smith Clinesmith LLP partners with Eve to become an AI-native law firm",
+          "source_url": "https://www.prnewswire.com/news-releases/smith-clinesmith-llp-adopts-eve-to-build-an-ai-native-law-firm-and-level-the-playing-field-in-complex-litigation-302679080.html"
+        },
+        {
+          "date": "2026-01-13",
+          "signal": "Launched AI Workforce (Agents, Auditor, Analyst) reshaping firm org chart; covered by Law.com/PR Newswire",
+          "source_url": "https://www.prnewswire.com/news-releases/eve-launches-ai-workforce-to-reshape-the-law-firm-org-chart-humans-for-strategy-agents-for-execution-302659900.html"
+        },
+        {
+          "date": "2025-09-30",
+          "signal": "Series B: $103M raised at $1B+ valuation; led by Spark Capital with a16z, Lightspeed, Menlo; 350 new firms in 8 months (Jan-Sep 2025)",
+          "source_url": "https://www.prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html"
+        },
+        {
+          "date": "2025-09-16",
+          "signal": "Hired David Malpass as inaugural CMO and Russell Sachs as inaugural CRO",
+          "source_url": "https://www.prnewswire.com/news-releases/eve-bolsters-leadership-team-with-new-cmo-and-cro-302557552.html"
+        },
+        {
+          "date": "2025-08-13",
+          "signal": "Hershey Law secured $27.5M whistleblower verdict using Eve; first trial use by small firm",
+          "source_url": "https://www.prnewswire.com/news-releases/legal-ai-platform-eve-helps-hershey-law-secure-27-5-million-whistleblower-verdict-302528901.html"
+        },
+        {
+          "date": "2025-06-10",
+          "signal": "Launched AI Intake Specialist (voice agent 24/7) for plaintiff-firm client acquisition",
+          "source_url": "https://www.prnewswire.com/news-releases/eve-launches-ai-intake-specialist-to-accelerate-client-acquisition-for-plaintiff-law-firms-302477722.html"
+        },
+        {
+          "date": "2025-04-23",
+          "signal": "Launched industry-first Reasoning Mode for senior-level plaintiff legal work",
+          "source_url": "https://www.prnewswire.com/news-releases/eve-introduces-industry-first-reasoning-mode-to-revolutionize-strategic-legal-analysis-302435802.html"
+        },
+        {
+          "date": "2025-01-16",
+          "signal": "Series A: $47M led by Andreessen Horowitz (Fortune, Bloomberg, Law.com, Reuters)",
+          "source_url": "https://fortune.com/2025/01/16/exclusive-eve-ai-legal-platform-raises-47-million-series-a-led-by-andreessen-horowitz/"
+        },
+        {
+          "date": "2024-06-19",
+          "signal": "Barrett & Farahany became an AI-native firm on Eve",
+          "source_url": "https://www.prnewswire.com/news-releases/barrett--farahany-taps-eve-to-transform-into-an-ai-native-law-firm-302176747.html"
+        },
+        {
+          "date": "2024-02-28",
+          "signal": "Frontier Law Center became the first AI-native law firm on Eve",
+          "source_url": "https://www.prnewswire.com/news-releases/frontier-law-center-taps-eve-to-become-the-first-ai-native-law-firm-302074158.html"
+        },
+        {
+          "date": "2023-10-25",
+          "signal": "Company launched from stealth with $14M Seed round led by Lightspeed Venture Partners and Menlo Ventures (TechCrunch, Reuters, SiliconANGLE, PR Newswire)",
+          "source_url": "https://www.prnewswire.com/news-releases/eve-unveils-industry-first-personalized-ai-assistant-to-transform-the-law-profession-301967218.html"
+        }
+      ],
+      "target_customer": "Plaintiff law firms in Personal Injury, Labor & Employment, Medical Malpractice, Workers' Compensation, and Social Security Disability Insurance",
+      "currently_hiring": "Yes",
+      "total_funding_usd": 164000000,
+      "open_roles_summary": "20 open roles primarily Engineering (6: ML, Platform, Product, Data, Full Stack), Sales (5: Growth, SDR, Solutions Engineer, Strategic AE, VP Large Accounts), Marketing (4: Video, Product Marketing, Field Marketing, Paid Media), and Finance, Legal, People, Product teams; mix of San Francisco / San Mateo hybrid and Remote-US"
+    },
+    "trust": {
+      "claims": [
+        {
+          "citations": [],
+          "confidence": "pre_existing",
+          "path": "$.domain",
+          "reasoning": ""
+        },
+        {
+          "citations": [],
+          "confidence": "pre_existing",
+          "path": "$.company_name",
+          "reasoning": ""
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[0]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[1]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[2]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[3]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[4]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[5]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[6]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[7]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[8]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[9]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[10]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[11]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[12]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[13]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[14]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[15]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[16]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.products[17]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.investors[0]",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.investors[1]",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.investors[2]",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.investors[3]",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/company",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "About Eve | Legal AI Company for Plaintiff Law Firms"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.leadership[0].name",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/company",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "About Eve | Legal AI Company for Plaintiff Law Firms"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.leadership[0].title",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/company",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "About Eve | Legal AI Company for Plaintiff Law Firms"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.leadership[1].name",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/company",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "About Eve | Legal AI Company for Plaintiff Law Firms"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.leadership[1].title",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/company",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "About Eve | Legal AI Company for Plaintiff Law Firms"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.leadership[2].name",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/company",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "About Eve | Legal AI Company for Plaintiff Law Firms"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.leadership[2].title",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.leadership[3].name",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.leadership[3].title",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.leadership[4].name",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.leadership[4].title",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://lsvp.com/stories/eves-series-b-another-milestone-as-eve-rapidly-transforms-legal-firms-with-ai",
+              "source_category": "news",
+              "source_intent": "official",
+              "source_type": "secondary",
+              "title": "Eve's Series B: Another Milestone as Eve Rapidly Transforms Legal Firms with AI - Lightspeed Venture Partners"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.data_conflicts[0].field",
+          "reasoning": "Backed by a secondary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://lsvp.com/stories/eves-series-b-another-milestone-as-eve-rapidly-transforms-legal-firms-with-ai",
+              "source_category": "news",
+              "source_intent": "official",
+              "source_type": "secondary",
+              "title": "Eve's Series B: Another Milestone as Eve Rapidly Transforms Legal Firms with AI - Lightspeed Venture Partners"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.data_conflicts[0].values_found",
+          "reasoning": "Backed by a secondary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.data_conflicts[0].resolution",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.data_conflicts[1].field",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://cbinsights.com/company/eve-9",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve - Products, Competitors, Financials, Employees, Headquarters Locations"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.data_conflicts[1].values_found",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://cbinsights.com/company/eve-9",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve - Products, Competitors, Financials, Employees, Headquarters Locations"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.data_conflicts[1].resolution",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.data_conflicts[2].field",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.data_conflicts[2].values_found",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.data_conflicts[2].resolution",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://tracxn.com/d/companies/eve/__b_adjUteJzrK7es3_zTViDgNlZ_Xayh_NgdNpH6Pn3E",
+              "source_category": "aggregator",
+              "source_intent": "official",
+              "source_type": "secondary",
+              "title": "Eve - 2026 Company Profile, Team, Funding & Competitors - Tracxn"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.data_conflicts[3].field",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://tracxn.com/d/companies/eve/__b_adjUteJzrK7es3_zTViDgNlZ_Xayh_NgdNpH6Pn3E",
+              "source_category": "aggregator",
+              "source_intent": "official",
+              "source_type": "secondary",
+              "title": "Eve - 2026 Company Profile, Team, Funding & Competitors - Tracxn"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.data_conflicts[3].values_found",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://tracxn.com/d/companies/eve/__b_adjUteJzrK7es3_zTViDgNlZ_Xayh_NgdNpH6Pn3E",
+              "source_category": "aggregator",
+              "source_intent": "official",
+              "source_type": "secondary",
+              "title": "Eve - 2026 Company Profile, Team, Funding & Competitors - Tracxn"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.data_conflicts[3].resolution",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[0].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[0].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[0].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[1].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[1].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[1].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/blogs/the-next-chapter-in-ai-transformation-for-law-firms",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "The Next Chapter in AI Transformation for Law Firms"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[2].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/blogs/the-next-chapter-in-ai-transformation-for-law-firms",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "The Next Chapter in AI Transformation for Law Firms"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[2].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/blogs/the-next-chapter-in-ai-transformation-for-law-firms",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "The Next Chapter in AI Transformation for Law Firms"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[2].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/blogs/the-next-chapter-in-ai-transformation-for-law-firms",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "The Next Chapter in AI Transformation for Law Firms"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[3].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/blogs/the-next-chapter-in-ai-transformation-for-law-firms",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "The Next Chapter in AI Transformation for Law Firms"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[3].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/blogs/the-next-chapter-in-ai-transformation-for-law-firms",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "The Next Chapter in AI Transformation for Law Firms"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[3].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[4].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[4].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[4].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[5].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[5].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[5].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[6].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[6].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[6].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.recent_signals[7].date",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.recent_signals[7].signal",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.recent_signals[7].source_url",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[8].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[8].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[8].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[9].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[9].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[9].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[10].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[10].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[10].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[11].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[11].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[11].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[12].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[12].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[12].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[13].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[13].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[13].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[14].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[14].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[14].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[15].date",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[15].signal",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.recent_signals[15].source_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.vertical",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.last_round",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.total_funding_usd",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.funding_stage",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Eve Legal | Press & Media Coverage"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.founded_year",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://cbinsights.com/company/eve-9",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Eve - Products, Competitors, Financials, Employees, Headquarters Locations"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.headquarters",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.customer_count",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.target_customer",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.description",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://tracxn.com/d/companies/eve/__b_adjUteJzrK7es3_zTViDgNlZ_Xayh_NgdNpH6Pn3E",
+              "source_category": "aggregator",
+              "source_intent": "official",
+              "source_type": "secondary",
+              "title": "Eve - 2026 Company Profile, Team, Funding & Competitors - Tracxn"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.employee_count",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://job-boards.greenhouse.io/eve",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Jobs at Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.currently_hiring",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://job-boards.greenhouse.io/eve",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "Jobs at Eve"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.open_roles_summary",
+          "reasoning": "Backed by a primary source (official)"
+        }
+      ],
+      "confidence": "medium",
+      "reasoning": "Medium confidence - trust per claim ratio is 100%",
+      "sources": [
+        {
+          "type": "primary",
+          "url": "https://eve.legal/",
+          "source_category": "official",
+          "title": "Legal AI Software for Plaintiff Law Firms | Eve"
+        },
+        {
+          "type": "primary",
+          "url": "https://eve.legal/press",
+          "source_category": "official",
+          "title": "Eve Legal | Press & Media Coverage"
+        },
+        {
+          "type": "secondary",
+          "url": "https://prnewswire.com/news-releases/eve-raises-103-million-at-1-billion-valuation-to-help-plaintiff-firms-deliver-justice-through-ai-transformation-302570807.html",
+          "source_category": "aggregator",
+          "title": "Eve Raises $103 Million at $1 Billion Valuation to Help Plaintiff Firms Deliver Justice Through AI Transformation"
+        },
+        {
+          "type": "primary",
+          "url": "https://eve.legal/company",
+          "source_category": "official",
+          "title": "About Eve | Legal AI Company for Plaintiff Law Firms"
+        },
+        {
+          "type": "secondary",
+          "url": "https://lsvp.com/stories/eves-series-b-another-milestone-as-eve-rapidly-transforms-legal-firms-with-ai",
+          "source_category": "news",
+          "title": "Eve's Series B: Another Milestone as Eve Rapidly Transforms Legal Firms with AI - Lightspeed Venture Partners"
+        },
+        {
+          "type": "secondary",
+          "url": "https://cbinsights.com/company/eve-9",
+          "source_category": "aggregator",
+          "title": "Eve - Products, Competitors, Financials, Employees, Headquarters Locations"
+        },
+        {
+          "type": "secondary",
+          "url": "https://tracxn.com/d/companies/eve/__b_adjUteJzrK7es3_zTViDgNlZ_Xayh_NgdNpH6Pn3E",
+          "source_category": "aggregator",
+          "title": "Eve - 2026 Company Profile, Team, Funding & Competitors - Tracxn"
+        },
+        {
+          "type": "primary",
+          "url": "https://eve.legal/blogs/the-next-chapter-in-ai-transformation-for-law-firms",
+          "source_category": "official",
+          "title": "The Next Chapter in AI Transformation for Law Firms"
+        },
+        {
+          "type": "primary",
+          "url": "https://job-boards.greenhouse.io/eve",
+          "source_category": "official",
+          "title": "Jobs at Eve"
+        }
+      ]
+    },
+    "type": "json"
+  }
+}

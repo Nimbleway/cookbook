@@ -1,0 +1,1506 @@
+{
+  "note": "Real Web Search Agent result from 2026-10-07 (agent gtm-icp-discovery-verified, use_case=dataset_building, effort=high), fetched with runs.result and saved unedited: run metadata, output.content and the full output.trust block. The trust gate that agent.py runs afterwards is recorded separately in legal_ai_discovery__trust_gate.md. Illustrative output: re-run the agent for current findings.",
+  "run": {
+    "id": "task_run_01b87af8b21c4f18b6f8ac0788caf4c7",
+    "created_at": "2026-10-07T15:11:48.046558Z",
+    "effort": "high",
+    "interaction_id": "task_run_01b87af8b21c4f18b6f8ac0788caf4c7",
+    "is_active": false,
+    "status": "completed",
+    "web_search_agent_id": "wsa_bae4e3c3d0aa4700b38f1eac37136013",
+    "completed_at": "2026-10-07T15:19:20.430643Z",
+    "prompt": "Find up to 15 companies that match ALL of these criteria (today is 2026-10-07):\n- Headquartered in the United States.\n- Builds AI software for legal work, sold to law firms or in-house legal teams (not a law firm or legal services provider itself).\n- 50 to 500 employees today.\n- Most recent priced funding round is a Series A, B or C that closed on or after 2025-04-01.\n- Currently hiring at least one quota-carrying sales role (Account Executive, SDR/BDR or sales leadership) located in the US.\nTreat every criterion as a hard constraint. List near-misses with the criterion they failed.",
+    "started_at": "2026-10-07T15:11:48.271620Z"
+  },
+  "output": {
+    "content": {
+      "companies": [
+        {
+          "hq": "New York, NY",
+          "domain": "sandstone.com",
+          "company": "Sandstone",
+          "sales_role": "Account Executive - Enterprise; in-office, New York (LES)",
+          "why_it_fits": "AI-native operating system for in-house legal teams; sold to corporate GCs/CLOs",
+          "latest_round": "Series A, $30M, June 2026, led by Lightspeed Venture Partners",
+          "evidence_urls": [
+            "https://sandstone.com/about",
+            "https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams/",
+            "https://sandstone.com/careers/7e74282f-009d-49f5-a40b-ede6bac33ea3",
+            "https://sandstone.com/careers"
+          ],
+          "employee_count": "Unverified dated headcount; About page shows ~30 team photos (Nov 2026 visit)",
+          "sales_role_url": "https://jobs.ashbyhq.com/Sandstone/7e74282f-009d-49f5-a40b-ede6bac33ea3",
+          "recognizability": "Under-the-radar",
+          "customer_segment": "In-house legal departments at scaling companies and enterprises"
+        },
+        {
+          "hq": "San Mateo, CA",
+          "domain": "gc.ai",
+          "company": "GC AI (General Counsel AI, Inc.)",
+          "sales_role": "Enterprise Account Executive; Remote (USA)",
+          "why_it_fits": "AI platform sold to in-house legal teams; named customer base of 2,200+ legal teams",
+          "latest_round": "Series B, $60M, November 2025, led by Scale Venture Partners and Northzone",
+          "evidence_urls": [
+            "https://gc.ai/company/careers",
+            "https://gc.ai/company/careers/enterprise-account-executive",
+            "https://newmarketpitch.com/blogs/news/legaltech-list-deals"
+          ],
+          "employee_count": "Unverified dated headcount; 27 open positions on careers page (Oct 2026)",
+          "sales_role_url": "https://gc.ai/company/careers/enterprise-account-executive",
+          "recognizability": "Under-the-radar",
+          "customer_segment": "In-house legal teams at US companies"
+        },
+        {
+          "hq": "Seattle, WA (with San Francisco office)",
+          "domain": "supio.com",
+          "company": "Supio",
+          "sales_role": "Account Executive, Mid Market (Boston/NY) - Remote US",
+          "why_it_fits": "AI platform purpose-built for personal injury and mass tort law firms",
+          "latest_round": "Series B, $60M, April 2025, led by Sapphire Ventures",
+          "evidence_urls": [
+            "https://www.supio.com/careers",
+            "https://jobs.gem.com/supio",
+            "https://newmarketpitch.com/blogs/news/legaltech-list-deals"
+          ],
+          "employee_count": "Unverified dated headcount; treat as est. 50-200 (LinkedIn not fetched)",
+          "sales_role_url": "https://jobs.gem.com/supio",
+          "recognizability": "Under-the-radar",
+          "customer_segment": "Personal injury and mass tort law firms in the US"
+        },
+        {
+          "hq": "San Francisco / San Mateo, CA",
+          "domain": "eve.legal",
+          "company": "Eve (Butler Labs, Inc.)",
+          "sales_role": "Strategic Account Executive; Remote - US",
+          "why_it_fits": "EveOS AI operating system sold to plaintiff law firms (1000+ firms on platform)",
+          "latest_round": "Series B, $103M, September 2025, led by Spark Capital",
+          "evidence_urls": [
+            "https://www.eve.legal/about",
+            "https://job-boards.greenhouse.io/eve/jobs/4204363009",
+            "https://www.eve.legal/press"
+          ],
+          "employee_count": "Unverified dated headcount; ~100-200 est. with 20 open roles on careers board (Oct 2026)",
+          "sales_role_url": "https://job-boards.greenhouse.io/eve/jobs/4204363009",
+          "recognizability": "Well-known",
+          "customer_segment": "Plaintiff law firms across labor/employment, personal injury, SSDI, workers' comp and med mal"
+        },
+        {
+          "hq": "San Francisco, CA",
+          "domain": "billables.ai",
+          "company": "Billables AI (Billables Incorporated)",
+          "sales_role": "Account Executive; San Francisco, CA (Hybrid)",
+          "why_it_fits": "AI-native timekeeping and billing platform sold to law firms",
+          "latest_round": "Series A, $10.2M, June 2026, led by Avenue Growth Partners",
+          "evidence_urls": [
+            "https://www.billables.ai/about",
+            "https://www.billables.ai/careers",
+            "https://www.attorneyhelp.org/press-release/billables-ai-raises-10-million-series-a-to-accelerate-a/"
+          ],
+          "employee_count": "Unverified dated headcount; recent Series A suggests small team",
+          "sales_role_url": "https://billables.ai/careers/account-executive",
+          "recognizability": "Under-the-radar",
+          "customer_segment": "Law firms (timekeepers, managing partners, legal administrators)"
+        }
+      ],
+      "near_misses": [
+        {
+          "domain": "spellbook.com",
+          "reason": "Headquartered in Toronto, Canada (with St. John's NL incorporation) - fails US-HQ requirement, despite Oct 2025 Series B ($50M, Khosla)",
+          "company": "Spellbook",
+          "failed_criterion": "Headquartered in the United States"
+        },
+        {
+          "domain": "eudia.com",
+          "reason": "Most recent priced round (Series A $30M) closed February 2025 - before the 2025-04-01 cutoff. Also operates affiliated Law-Firm arm 'Eudia Counsel' which is a legal services provider.",
+          "company": "Eudia",
+          "failed_criterion": "Most recent priced round (Series A/B/C) on or after 2025-04-01; also not a legal services provider itself"
+        },
+        {
+          "domain": "tavrn.ai",
+          "reason": "Series A $15M closed July 2025 (qualifies for funding criterion, HQ San Francisco), but Ashby job board shows no live US Account Executive / SDR / sales leadership role - only a Customer Success Manager and a 'General Applications' basket.",
+          "company": "Tavrn",
+          "failed_criterion": "Currently hiring at least one quota-carrying sales role (AE/SDR/sales leadership) located in the US"
+        },
+        {
+          "domain": "streamline.ai",
+          "reason": "Series A $8.6M closed July 2025 (qualifies for funding). Company careers page currently states 'No open roles at this time' - no live quota-carrying US sales role posted.",
+          "company": "Streamline AI",
+          "failed_criterion": "Currently hiring at least one quota-carrying sales role (AE/SDR/sales leadership) located in the US"
+        },
+        {
+          "domain": "pointone.com",
+          "reason": "HQ New York City, Series A $16M March 2026 (8VC). Ashby board for PointOne shows Customer Success Lead and Forward Deployed Engineer roles but no currently open AE, BDR/SDR, or sales leadership posting. (Andrew Romano, Sales Lead is a profile on the about page, not an open role.)",
+          "company": "PointOne Technologies",
+          "failed_criterion": "Currently hiring at least one quota-carrying sales role (AE/SDR/sales leadership) located in the US"
+        },
+        {
+          "domain": "ivo.ai",
+          "reason": "Series B $55M closed January 2026 (Blackbird) and HQ San Francisco - both qualify. Sales team exists (testimonial names Enterprise Sales Manager Rebecca Baldwin) but no currently open AE/SDR/sales leadership posting was visible on the careers page during retrieval; openings list rendered without enumerated roles.",
+          "company": "Ivo",
+          "failed_criterion": "Currently hiring at least one quota-carrying sales role (AE/SDR/sales leadership) located in the US"
+        }
+      ]
+    },
+    "trust": {
+      "claims": [
+        {
+          "citations": [
+            {
+              "url": "https://sandstone.com/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.sandstone.com/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[0].hq",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sandstone.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.sandstone.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[0].domain",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sandstone.com/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.sandstone.com/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[0].company",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sandstone.com/careers/7e74282f-009d-49f5-a40b-ede6bac33ea3",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://sandstone.com/careers/7e74282f-009d-49f5-a40b-ede6bac33ea3"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[0].sales_role",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sandstone.com/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.sandstone.com/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[0].why_it_fits",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams",
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Sandstone raises $30M to bring AI to in-house legal teams | TechCrunch"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[0].latest_round",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sandstone.com/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.sandstone.com/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[0].evidence_urls[0]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams",
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Sandstone raises $30M to bring AI to in-house legal teams | TechCrunch"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[0].evidence_urls[1]",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sandstone.com/careers/7e74282f-009d-49f5-a40b-ede6bac33ea3",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://sandstone.com/careers/7e74282f-009d-49f5-a40b-ede6bac33ea3"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[0].evidence_urls[2]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sandstone.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.sandstone.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[0].evidence_urls[3]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "path": "$.companies[0].employee_count",
+          "reasoning": "No usable citation resolved for this value"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sandstone.com/careers/7e74282f-009d-49f5-a40b-ede6bac33ea3",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://sandstone.com/careers/7e74282f-009d-49f5-a40b-ede6bac33ea3"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[0].sales_role_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams",
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Sandstone raises $30M to bring AI to in-house legal teams | TechCrunch"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[0].recognizability",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sandstone.com/",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.sandstone.com"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[0].customer_segment",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcai.com/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.gcai.com/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[1].hq",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcai.com/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.gcai.com/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[1].domain",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcai.com/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.gcai.com/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[1].company",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcai.com/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.gcai.com/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[1].sales_role",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcai.com/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.gcai.com/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[1].why_it_fits",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://newmarketpitch.com/blogs/news/legaltech-list-deals",
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Legal Technology: 102 Funding Deals (Full List 2024-2026) (2026) – New Market Pitch"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[1].latest_round",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcai.com/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.gcai.com/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[1].evidence_urls[0]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcai.com/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.gcai.com/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[1].evidence_urls[1]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://newmarketpitch.com/blogs/news/legaltech-list-deals",
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Legal Technology: 102 Funding Deals (Full List 2024-2026) (2026) – New Market Pitch"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[1].evidence_urls[2]",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "path": "$.companies[1].employee_count",
+          "reasoning": "No usable citation resolved for this value"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcai.com/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.gcai.com/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[1].sales_role_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcai.com/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.gcai.com/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[1].recognizability",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://gcai.com/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.gcai.com/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[1].customer_segment",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://supio.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.supio.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[2].hq",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://supio.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.supio.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[2].domain",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://supio.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.supio.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[2].company",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://jobs.gem.com/api/public/graphql/batch",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": ""
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[2].sales_role",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://supio.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.supio.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[2].why_it_fits",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://newmarketpitch.com/blogs/news/legaltech-list-deals",
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Legal Technology: 102 Funding Deals (Full List 2024-2026) (2026) – New Market Pitch"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[2].latest_round",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://supio.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.supio.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[2].evidence_urls[0]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://jobs.gem.com/api/public/graphql/batch",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": ""
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[2].evidence_urls[1]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://newmarketpitch.com/blogs/news/legaltech-list-deals",
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Legal Technology: 102 Funding Deals (Full List 2024-2026) (2026) – New Market Pitch"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[2].evidence_urls[2]",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "path": "$.companies[2].employee_count",
+          "reasoning": "No usable citation resolved for this value"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://jobs.gem.com/api/public/graphql/batch",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": ""
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[2].sales_role_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://supio.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.supio.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[2].recognizability",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://supio.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.supio.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[2].customer_segment",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.eve.legal/press"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[3].hq",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.eve.legal/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[3].domain",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.eve.legal/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[3].company",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://job-boards.greenhouse.io/eve/jobs/4204363009",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://job-boards.greenhouse.io/eve/jobs/4204363009"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[3].sales_role",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://job-boards.greenhouse.io/eve/jobs/4204363009",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://job-boards.greenhouse.io/eve/jobs/4204363009"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[3].why_it_fits",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.eve.legal/press"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[3].latest_round",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.eve.legal/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[3].evidence_urls[0]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://job-boards.greenhouse.io/eve/jobs/4204363009",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://job-boards.greenhouse.io/eve/jobs/4204363009"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[3].evidence_urls[1]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.eve.legal/press"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[3].evidence_urls[2]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "path": "$.companies[3].employee_count",
+          "reasoning": "No usable citation resolved for this value"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://job-boards.greenhouse.io/eve/jobs/4204363009",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://job-boards.greenhouse.io/eve/jobs/4204363009"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[3].sales_role_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/press",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.eve.legal/press"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[3].recognizability",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eve.legal/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.eve.legal/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[3].customer_segment",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://billables.ai/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.billables.ai/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[4].hq",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://billables.ai/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.billables.ai/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[4].domain",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://billables.ai/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.billables.ai/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[4].company",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://billables.ai/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.billables.ai/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[4].sales_role",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://billables.ai/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.billables.ai/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[4].why_it_fits",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://attorneyhelp.org/press-release/billables-ai-raises-10-million-series-a-to-accelerate-ai-powered-operational-intelligence-for-law-firms-4297",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Billables AI Raises $10 Million Series A to Accelerate AI-Powered Operational Intelligence for Law Firms - AttorneyHelp"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.companies[4].latest_round",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://billables.ai/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.billables.ai/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[4].evidence_urls[0]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://billables.ai/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.billables.ai/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[4].evidence_urls[1]",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://attorneyhelp.org/press-release/billables-ai-raises-10-million-series-a-to-accelerate-ai-powered-operational-intelligence-for-law-firms-4297",
+              "source_category": "aggregator",
+              "source_intent": "news",
+              "source_type": "secondary",
+              "title": "Billables AI Raises $10 Million Series A to Accelerate AI-Powered Operational Intelligence for Law Firms - AttorneyHelp"
+            }
+          ],
+          "confidence": "medium",
+          "path": "$.companies[4].evidence_urls[2]",
+          "reasoning": "Backed by a secondary source (aggregator)"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "path": "$.companies[4].employee_count",
+          "reasoning": "No usable citation resolved for this value"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://billables.ai/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.billables.ai/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[4].sales_role_url",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://billables.ai/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.billables.ai/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[4].recognizability",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://billables.ai/about",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.billables.ai/about"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.companies[4].customer_segment",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sacra.com/c/spellbook",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Spellbook revenue, valuation & funding | Sacra"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[0].domain",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sacra.com/c/spellbook",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Spellbook revenue, valuation & funding | Sacra"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[0].reason",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sacra.com/c/spellbook",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Spellbook revenue, valuation & funding | Sacra"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[0].company",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://sacra.com/c/spellbook",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Spellbook revenue, valuation & funding | Sacra"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[0].failed_criterion",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eudia.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://eudia.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[1].domain",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eudia.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://eudia.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[1].reason",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://eudia.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://eudia.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[1].company",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://newmarketpitch.com/blogs/news/legaltech-list-deals",
+              "source_category": "news",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Legal Technology: 102 Funding Deals (Full List 2024-2026) (2026) – New Market Pitch"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[1].failed_criterion",
+          "reasoning": "Backed by a primary source (news)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://tavrn.ai/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://tavrn.ai/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[2].domain",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://tavrn.ai/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://tavrn.ai/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[2].reason",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://tavrn.ai/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://tavrn.ai/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[2].company",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://tavrn.ai/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://tavrn.ai/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[2].failed_criterion",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://streamline.ai/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.streamline.ai/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[3].domain",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://streamline.ai/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.streamline.ai/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[3].reason",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://streamline.ai/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.streamline.ai/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[3].company",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://streamline.ai/company/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.streamline.ai/company/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[3].failed_criterion",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://pointone.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://pointone.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[4].domain",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://pointone.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://pointone.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[4].reason",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://pointone.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://pointone.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[4].company",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://pointone.com/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://pointone.com/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[4].failed_criterion",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://ivo.ai/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.ivo.ai/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[5].domain",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://ivo.ai/blog/ivo-raises-55m-to-bring-ai-contract-intelligence-to-every-in-house-legal-team",
+              "source_category": "official",
+              "source_intent": "news",
+              "source_type": "primary",
+              "title": "Ivo Raises $55M Series B to Scale AI Contract Intelligence | Ivo"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[5].reason",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://ivo.ai/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.ivo.ai/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[5].company",
+          "reasoning": "Backed by a primary source (official)"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://ivo.ai/careers",
+              "source_category": "official",
+              "source_intent": "official",
+              "source_type": "primary",
+              "title": "https://www.ivo.ai/careers"
+            }
+          ],
+          "confidence": "high",
+          "path": "$.near_misses[5].failed_criterion",
+          "reasoning": "Backed by a primary source (official)"
+        }
+      ],
+      "confidence": "high",
+      "reasoning": "High confidence - cells fill rate is 100% and trust per claim ratio is 92%",
+      "sources": [
+        {
+          "type": "primary",
+          "url": "https://sandstone.com/about",
+          "source_category": "official",
+          "title": "https://www.sandstone.com/about"
+        },
+        {
+          "type": "primary",
+          "url": "https://sandstone.com/careers",
+          "source_category": "official",
+          "title": "https://www.sandstone.com/careers"
+        },
+        {
+          "type": "primary",
+          "url": "https://sandstone.com/careers/7e74282f-009d-49f5-a40b-ede6bac33ea3",
+          "source_category": "official",
+          "title": "https://sandstone.com/careers/7e74282f-009d-49f5-a40b-ede6bac33ea3"
+        },
+        {
+          "type": "primary",
+          "url": "https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams",
+          "source_category": "news",
+          "title": "Sandstone raises $30M to bring AI to in-house legal teams | TechCrunch"
+        },
+        {
+          "type": "primary",
+          "url": "https://sandstone.com/",
+          "source_category": "official",
+          "title": "https://www.sandstone.com"
+        },
+        {
+          "type": "primary",
+          "url": "https://gcai.com/company/careers",
+          "source_category": "official",
+          "title": "https://www.gcai.com/company/careers"
+        },
+        {
+          "type": "primary",
+          "url": "https://newmarketpitch.com/blogs/news/legaltech-list-deals",
+          "source_category": "news",
+          "title": "Legal Technology: 102 Funding Deals (Full List 2024-2026) (2026) – New Market Pitch"
+        },
+        {
+          "type": "primary",
+          "url": "https://supio.com/careers",
+          "source_category": "official",
+          "title": "https://www.supio.com/careers"
+        },
+        {
+          "type": "primary",
+          "url": "https://jobs.gem.com/api/public/graphql/batch",
+          "source_category": "official",
+          "title": ""
+        },
+        {
+          "type": "primary",
+          "url": "https://eve.legal/press",
+          "source_category": "official",
+          "title": "https://www.eve.legal/press"
+        },
+        {
+          "type": "primary",
+          "url": "https://eve.legal/about",
+          "source_category": "official",
+          "title": "https://www.eve.legal/about"
+        },
+        {
+          "type": "primary",
+          "url": "https://job-boards.greenhouse.io/eve/jobs/4204363009",
+          "source_category": "official",
+          "title": "https://job-boards.greenhouse.io/eve/jobs/4204363009"
+        },
+        {
+          "type": "primary",
+          "url": "https://billables.ai/about",
+          "source_category": "official",
+          "title": "https://www.billables.ai/about"
+        },
+        {
+          "type": "primary",
+          "url": "https://billables.ai/careers",
+          "source_category": "official",
+          "title": "https://www.billables.ai/careers"
+        },
+        {
+          "type": "secondary",
+          "url": "https://attorneyhelp.org/press-release/billables-ai-raises-10-million-series-a-to-accelerate-ai-powered-operational-intelligence-for-law-firms-4297",
+          "source_category": "aggregator",
+          "title": "Billables AI Raises $10 Million Series A to Accelerate AI-Powered Operational Intelligence for Law Firms - AttorneyHelp"
+        },
+        {
+          "type": "primary",
+          "url": "https://sacra.com/c/spellbook",
+          "source_category": "official",
+          "title": "Spellbook revenue, valuation & funding | Sacra"
+        },
+        {
+          "type": "primary",
+          "url": "https://eudia.com/careers",
+          "source_category": "official",
+          "title": "https://eudia.com/careers"
+        },
+        {
+          "type": "primary",
+          "url": "https://tavrn.ai/careers",
+          "source_category": "official",
+          "title": "https://tavrn.ai/careers"
+        },
+        {
+          "type": "primary",
+          "url": "https://streamline.ai/company/careers",
+          "source_category": "official",
+          "title": "https://www.streamline.ai/company/careers"
+        },
+        {
+          "type": "primary",
+          "url": "https://pointone.com/careers",
+          "source_category": "official",
+          "title": "https://pointone.com/careers"
+        },
+        {
+          "type": "primary",
+          "url": "https://ivo.ai/careers",
+          "source_category": "official",
+          "title": "https://www.ivo.ai/careers"
+        },
+        {
+          "type": "primary",
+          "url": "https://ivo.ai/blog/ivo-raises-55m-to-bring-ai-contract-intelligence-to-every-in-house-legal-team",
+          "source_category": "official",
+          "title": "Ivo Raises $55M Series B to Scale AI Contract Intelligence | Ivo"
+        }
+      ]
+    },
+    "type": "json"
+  }
+}
