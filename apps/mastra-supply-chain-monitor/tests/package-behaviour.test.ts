@@ -42,24 +42,15 @@ test("a failed run throws with reason 'failed' and keeps the runId", async () =>
   });
 });
 
-test("run creation: 429 means not created, 500 means it might exist", async () => {
+test("run creation is sent once: 429 means not created, 500 means it might exist", async () => {
   for (const [status, outcome] of [[429, "not-created"], [500, "unknown"]] as const) {
-    const tool = nimbleAgentStartRunTool({ agentId: AGENT, apiKey: KEY, client: client({ create: async () => { throw httpError(status); } }) });
+    let calls = 0;
+    const tool = nimbleAgentStartRunTool({ agentId: AGENT, apiKey: KEY, client: client({ create: async () => { calls++; throw httpError(status); } }) });
     await assert.rejects(tool.execute!({ task: "x" }, {} as never), (e: unknown) => {
       assert.ok(e instanceof NimbleAgentRunError);
       assert.equal(e.createOutcome, outcome);
       return true;
     });
+    assert.equal(calls, 1, "never retried");
   }
-});
-
-test("run creation is sent once, never retried", async () => {
-  let calls = 0;
-  const tool = nimbleAgentStartRunTool({
-    agentId: AGENT,
-    apiKey: KEY,
-    client: client({ create: async () => { calls++; throw httpError(503); } }),
-  });
-  await assert.rejects(tool.execute!({ task: "x" }, {} as never));
-  assert.equal(calls, 1);
 });

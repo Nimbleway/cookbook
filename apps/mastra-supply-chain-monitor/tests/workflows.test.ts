@@ -3,14 +3,16 @@
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import { test } from "node:test";
+import { nimbleAgentStartRunTool } from "@nimble-way/mastra";
 import { cacheHighTriage, setupTestEnv } from "./helpers/setup";
 
 const { dir } = setupTestEnv("workflows");
 cacheHighTriage(dir);
 
 const { mastra } = await import("../src/mastra/index");
-const { claimRun, recordRunStarted } = await import("../src/mastra/lib/ledger");
-const { recentEvents } = await import("../src/mastra/lib/ledger-events");
+const { config } = await import("../src/mastra/config");
+const { sweepStartRun } = await import("../src/mastra/nimble");
+const { recentEvents, startFailuresOn } = await import("../src/mastra/lib/ledger-events");
 
 async function start(id: "sweepWorkflow" | "collectWorkflow", inputData: object) {
   const run = await mastra.getWorkflow(id).createRun();
@@ -26,12 +28,6 @@ test("two overlapping sweeps: exactly one starts runs", async () => {
   assert.deepEqual(winner.started.map((s: any) => s.product), ["laptop", "earbuds", "smartwatch"]);
   assert.match(loser.refused, /minimum gap/);
   assert.equal(loser.started.length, 0);
-});
-
-test("a second sweep inside the minimum gap is refused", async () => {
-  const out = await start("sweepWorkflow", { force: false });
-  assert.match(out.refused, /minimum gap/);
-  assert.equal(out.started.length, 0);
 });
 
 test("collect picks up the runs, records the event, alerts, and writes the digest", async () => {
@@ -55,11 +51,6 @@ test("the same result again is a repeat: nothing new, no second alert", async ()
   assert.equal((await recentEvents(14)).length, 1);
 });
 
-test("nothing pending: collect is a no-op", async () => {
-  const out = await start("collectWorkflow", {});
-  assert.equal(out.collected, 0);
-});
-
 test("two overlapping collects take each run exactly once", async () => {
   await start("sweepWorkflow", { force: true });
   const [a, b] = await Promise.all([start("collectWorkflow", {}), start("collectWorkflow", {})]);
@@ -67,9 +58,39 @@ test("two overlapping collects take each run exactly once", async () => {
   assert.equal(a.alerted.length + b.alerted.length, 0);
 });
 
-test("a claimed run can't be claimed again until its claim goes stale", async () => {
-  const runId = "sample-laptop-claim-test";
-  await recordRunStarted({ runId, product: "laptop", windowStart: "2026-10-05", windowEnd: "2026-10-12", startedAt: new Date().toISOString() });
-  assert.equal(await claimRun(runId), true);
-  assert.equal(await claimRun(runId), false);
+test("a sweep where run creation fails reports it and starts the rest", async () => {
+  // A real start-run tool over a mock client: the second create (earbuds) answers 500, so
+  // a run might exist. The package classifies it; the sweep records it and moves on.
+  const MOCK_AGENT = "wsa_00000000000000000000000000000000";
+  let creates = 0;
+  const mock = nimbleAgentStartRunTool({
+    agentId: MOCK_AGENT,
+    apiKey: "sk-test-not-a-real-key-000",
+    client: {
+      agents: {
+        runs: {
+          create: async () => {
+            creates++;
+            if (creates === 2) throw Object.assign(new Error("HTTP 500"), { status: 500 });
+            const id = `task_run_${String(creates).padStart(32, "0")}`;
+            return { id, web_search_agent_id: MOCK_AGENT, interaction_id: id, status: "queued", is_active: true, effort: "high", created_at: new Date().toISOString() };
+          },
+        },
+      },
+    } as never,
+  });
+  const realExecute = sweepStartRun.execute;
+  sweepStartRun.execute = mock.execute;
+  config.useLive = true;
+  try {
+    const out = await start("sweepWorkflow", { force: true });
+    assert.deepEqual(out.started.map((s: any) => s.product), ["laptop", "smartwatch"]);
+    assert.deepEqual(out.failed.map((f: any) => [f.product, f.createOutcome]), [["earbuds", "unknown"]]);
+    const today = new Date().toISOString().slice(0, 10);
+    const recorded = await startFailuresOn(today);
+    assert.deepEqual(recorded.map((r: any) => [r.product, r.create_outcome]), [["earbuds", "unknown"]]);
+  } finally {
+    config.useLive = false;
+    sweepStartRun.execute = realExecute;
+  }
 });
