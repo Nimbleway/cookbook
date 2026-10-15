@@ -17,7 +17,8 @@ delete process.env.SLACK_WEBHOOK_URL;
 
 const { mastra } = await import("../src/mastra/index");
 const { eventsFromResult } = await import("../src/mastra/lib/events");
-const { recentEvents, claimRun, recordRunStarted } = await import("../src/mastra/lib/ledger");
+const { claimRun, recordRunStarted } = await import("../src/mastra/lib/ledger");
+const { recentEvents } = await import("../src/mastra/lib/ledger-events");
 
 // Cache a triage for the one real event so the collect pass needs no model.
 const [event] = eventsFromResult(JSON.parse(readFileSync("tests/fixtures/sweep_laptop_smoke.json", "utf8")), "laptop").events;

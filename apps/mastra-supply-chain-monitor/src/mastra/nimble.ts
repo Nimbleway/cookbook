@@ -6,7 +6,8 @@ import {
   nimbleAgentRunResultTool,
   nimbleAgentStartRunTool,
 } from "@nimble-way/mastra";
-import { SWEEP_OUTPUT_SCHEMA, SWEEP_SOURCES } from "./agents-spec";
+import { SWEEP_OUTPUT_SCHEMA } from "./sweep-schema";
+import { SWEEP_SOURCES } from "./sweep-sources";
 import { config } from "./config";
 
 // Used by the workflows, called from code. No model decides whether to start a billed run.

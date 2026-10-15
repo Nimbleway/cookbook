@@ -113,9 +113,9 @@ triggered over HTTP instead, by a GitHub Actions cron. On an always-on host, the
 | Collect on a later tick from stored `runId`s, branching on `ready` | `src/mastra/workflows/collect.ts` (`fetch-results`) |
 | Handle a failed start: `not-created` vs `unknown`, never retried | `src/mastra/workflows/sweep.ts` (`start-runs`) |
 | Turn `trust.claims` into per-record citations and confidence with `outputSchema` paths | `src/mastra/lib/events.ts` |
-| A server-enforced source allowlist for one agent, open web for another | `src/mastra/agents-spec.ts`, `src/mastra/nimble.ts` |
+| A server-enforced source allowlist for one agent, open web for another | `src/mastra/sweep-sources.ts`, `src/mastra/agents-spec.ts`, `src/mastra/nimble.ts` |
 | Give the tools to a chat agent with an effort cap, memory, and the no-second-run instruction | `src/mastra/agents/investigator.ts` |
-| Pass a run's result to another Mastra agent with structured output | `src/mastra/workflows/collect.ts` (`triage-events`), `src/mastra/agents/triage.ts` |
+| Pass a run's result to another Mastra agent with structured output | `src/mastra/workflows/steps/triage.ts`, `src/mastra/agents/triage.ts` |
 | Trigger the workflows over HTTP so a host that sleeps between ticks still works | `src/mastra/routes.ts`, `.github/workflows/supply-chain-monitor.yml` |
 | Create the Web Search Agents once, from code | `scripts/setup-agents.ts` |
 | Test against the package with a mock client, no network | `tests/package-behaviour.test.ts` |
@@ -236,18 +236,24 @@ mastra-supply-chain-monitor/
 │   ├── index.ts              Mastra instance: agents, workflows, storage, server auth, routes
 │   ├── config.ts             environment settings
 │   ├── watchlist.ts          the three products and their exposures
-│   ├── agents-spec.ts        both Web Search Agents: briefing, sources, output schema
+│   ├── agents-spec.ts        both Web Search Agents: briefing and acceptance criteria
+│   ├── sweep-schema.ts       the sweep's output schema (developer config)
+│   ├── sweep-sources.ts      the sweep's source allowlist (developer config)
 │   ├── nimble.ts             every Nimble tool, configured in one place
 │   ├── routes.ts             /cron/sweep, /cron/collect, /digest
 │   ├── workflows/
 │   │   ├── sweep.ts          plan-sweep → start-runs
-│   │   └── collect.ts        fetch-results → detect-events → triage-events → act
+│   │   ├── collect.ts        fetch-results → detect-events → triage-events → act
+│   │   └── steps/            the triage-events and act steps
 │   ├── agents/
 │   │   ├── triage.ts         severity rubric, structured output, no tools
 │   │   └── investigator.ts   ledger tools + Nimble deep-dive tools, with memory
 │   └── lib/
-│       ├── events.ts         result → events, per-event trust, merge, diff
-│       ├── ledger.ts         runs, events, leads (LibSQL)
+│       ├── events.ts         result → events, per-event trust
+│       ├── dedupe.ts         same event? merge across products, diff against the ledger
+│       ├── db.ts             LibSQL connection and schema
+│       ├── ledger.ts         sweeps and runs
+│       ├── ledger-events.ts  events, leads, start failures
 │       └── notify.ts         Slack message and daily digest
 ├── scripts/                  run.ts (sweep/collect) · setup-agents.ts · digest.ts · save-samples.ts
 ├── tests/                    unit, package behaviour (mock client), end to end in demo mode
@@ -298,7 +304,7 @@ leads separately, and names any run that failed to start.
   `sweep.ts` (and a collect schedule) and drop the GitHub Action. Never run both: every sweep
   would start, and bill, twice.
 - **Effort:** the sweep runs at `high`. `medium` is faster and cheaper, at some cost to recall.
-- **Sources:** `SWEEP_SOURCES` in `agents-spec.ts` is the allowlist. Remember that a domain
+- **Sources:** `SWEEP_SOURCES` in `sweep-sources.ts` is the allowlist. Remember that a domain
   left out is a domain the sweep can't read.
 - **Delivery:** `notify.ts` is the only place alerts leave the app. Email, a ticket, or a
   webhook fits in the same spot.

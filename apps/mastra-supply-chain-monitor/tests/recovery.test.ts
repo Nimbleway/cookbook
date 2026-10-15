@@ -19,7 +19,7 @@ delete process.env.SLACK_WEBHOOK_URL;
 const { mastra } = await import("../src/mastra/index");
 const { config } = await import("../src/mastra/config");
 const { eventsFromResult } = await import("../src/mastra/lib/events");
-const { leadsOn } = await import("../src/mastra/lib/ledger");
+const { leadsOn } = await import("../src/mastra/lib/ledger-events");
 
 const [event] = eventsFromResult(JSON.parse(readFileSync("tests/fixtures/sweep_laptop_smoke.json", "utf8")), "laptop").events;
 writeFileSync(

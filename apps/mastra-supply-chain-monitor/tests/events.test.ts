@@ -2,7 +2,8 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
-import { diffAgainst, eventsFromResult, mergeAcrossProducts, type MonitoredEvent } from "../src/mastra/lib/events";
+import { diffAgainst, mergeAcrossProducts } from "../src/mastra/lib/dedupe";
+import { eventsFromResult, type MonitoredEvent } from "../src/mastra/lib/events";
 import { digestMarkdown, shouldAlert, slackMessage } from "../src/mastra/lib/notify";
 
 // A real result from a live smoke run (laptop, 2026-10-05 to 2026-10-12, medium effort).

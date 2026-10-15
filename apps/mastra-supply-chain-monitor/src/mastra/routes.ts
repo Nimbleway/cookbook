@@ -11,7 +11,7 @@ import { registerApiRoute } from "@mastra/core/server";
 import type { Context } from "hono";
 import { config } from "./config";
 import { digestMarkdown } from "./lib/notify";
-import { eventsChangedOn, leadsOn, startFailuresOn } from "./lib/ledger";
+import { eventsChangedOn, leadsOn, startFailuresOn } from "./lib/ledger-events";
 
 function matches(given: string | undefined, expected: string): boolean {
   const a = Buffer.from(given ?? "");

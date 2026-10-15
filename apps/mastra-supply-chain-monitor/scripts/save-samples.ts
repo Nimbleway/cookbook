@@ -5,7 +5,7 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { createClient } from "@libsql/client";
 import { config } from "../src/mastra/config";
-import { recentEvents } from "../src/mastra/lib/ledger";
+import { recentEvents } from "../src/mastra/lib/ledger-events";
 import { WATCHLIST } from "../src/mastra/watchlist";
 
 const db = createClient({ url: config.databaseUrl, authToken: config.databaseAuthToken });

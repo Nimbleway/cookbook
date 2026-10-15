@@ -5,7 +5,8 @@ import { createTool } from "@mastra/core/tools";
 import { Memory } from "@mastra/memory";
 import { z } from "zod";
 import { config } from "../config";
-import { recentEvents, recentRuns } from "../lib/ledger";
+import { recentRuns } from "../lib/ledger";
+import { recentEvents } from "../lib/ledger-events";
 import { deepDiveTools } from "../nimble";
 import { WATCHLIST } from "../watchlist";
 
