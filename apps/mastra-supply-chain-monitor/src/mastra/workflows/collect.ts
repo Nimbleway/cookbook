@@ -149,12 +149,15 @@ const triageEvents = createStep({
   inputSchema: detectEvents.outputSchema,
   outputSchema: detectEvents.outputSchema,
   execute: async ({ inputData, mastra }) => {
-    if (!inputData.candidates.length) return inputData;
+    // A repeat with no triage was recorded while the model call failed. Score it now, or it
+    // could never alert.
+    const toScore = [...inputData.candidates, ...inputData.repeats.filter((e) => !e.triage)];
+    if (!toScore.length) return inputData;
 
     // Demo mode reuses saved assessments when they exist, so a recording never depends on
     // a live model call. Anything not in the cache is triaged live.
     const cache = config.useLive ? {} : await cachedTriage();
-    const uncached = inputData.candidates.filter((c) => !cache[c.eventKey]);
+    const uncached = toScore.filter((c) => !cache[c.eventKey]);
     const assessments: Record<string, Assessment> = { ...cache };
 
     if (uncached.length) {
@@ -162,7 +165,8 @@ const triageEvents = createStep({
         {
           WATCHLIST: WATCHLIST,
           CANDIDATES: uncached.map(({ citations, runIds, triage, ...e }) => e),
-          KNOWN: inputData.known.map((e) => ({
+          // A repeat being scored again is a candidate here, not a known event to match.
+          KNOWN: inputData.known.filter((k) => !uncached.some((c) => c.eventKey === k.eventKey)).map((e) => ({
             eventKey: e.eventKey,
             headline: e.headline,
             location: e.location,
@@ -186,12 +190,18 @@ const triageEvents = createStep({
     }
 
     const slugs = new Set(WATCHLIST.map((p) => p.slug));
+    const withAssessment = (e: MonitoredEvent, a: Assessment): MonitoredEvent => ({
+      ...e,
+      products: [...new Set([...e.products, ...a.affectedProducts.filter((s) => slugs.has(s))])],
+      triage: { severity: a.severity, rationale: a.rationale, recommendedAction: a.recommendedAction },
+    });
+
     const candidates: MonitoredEvent[] = [];
-    const repeats = [...inputData.repeats];
+    const repeats = inputData.repeats.map((e) => (!e.triage && assessments[e.eventKey] ? withAssessment(e, assessments[e.eventKey]) : e));
     for (const e of inputData.candidates) {
       const a = assessments[e.eventKey];
       if (!a) {
-        candidates.push(e); // untriaged: still recorded, never alerted
+        candidates.push(e); // untriaged: still recorded, never alerted; scored again next time it's seen
         continue;
       }
       const prior = a.duplicateOf ? inputData.known.find((k) => k.eventKey === a.duplicateOf) : undefined;
@@ -199,11 +209,7 @@ const triageEvents = createStep({
         repeats.push(mergeInto(prior, e)); // a near-duplicate the deterministic match missed
         continue;
       }
-      candidates.push({
-        ...e,
-        products: [...new Set([...e.products, ...a.affectedProducts.filter((s) => slugs.has(s))])],
-        triage: { severity: a.severity, rationale: a.rationale, recommendedAction: a.recommendedAction },
-      });
+      candidates.push(withAssessment(e, a));
     }
     return { ...inputData, candidates, repeats };
   },
