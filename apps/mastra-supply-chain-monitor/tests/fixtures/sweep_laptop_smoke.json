@@ -1,0 +1,346 @@
+{
+  "ready": true,
+  "runId": "task_run_sample_laptop_smoke",
+  "agentId": "wsa_sample",
+  "status": "completed",
+  "effort": "medium",
+  "createdAt": "2026-10-12T14:01:29.511563Z",
+  "startedAt": "2026-10-12T14:01:29.600880Z",
+  "completedAt": "2026-10-12T14:03:50.554645Z",
+  "output": {
+    "type": "json",
+    "json": {
+      "events": [
+        {
+          "status": "announced",
+          "summary": "Drewry's Cancelled Sailings tracker shows 39 blanked sailings announced from Week 41 (5-11 October) to Week 45 (2-8 November) across the transpacific, transatlantic and Asia-Europe trades - 5% of 710 scheduled voyages - with half of the blanks on the transpacific. Sea-Intelligence notes the blanking level is low by post-pandemic norms, but individual shippers still face rolled sailings, and Drewry warns attention should stay on where carriers make further capacity adjustments after Golden Week demand patterns shift.",
+          "headline": "Ocean carriers unveil post-Golden Week blank sailings, half of them on the transpacific",
+          "location": "Transpacific east-west container trades (Asia-US west coast services)",
+          "event_date": "2026-10-05",
+          "event_type": "route_disruption",
+          "source_url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+          "published_at": "2026-10-06",
+          "impact_mechanism": "Blanked transpacific sailings cut eastbound departure frequency out of Asia, so the ultrabook's containers loaded at Kaohsiung for Los Angeles/Long Beach face fewer sailings and a higher risk of rollover after Golden Week volume builds.",
+          "expected_duration": "Weeks 41-45 (5 October - 8 November 2026)",
+          "affected_exposures": [
+            "ocean freight Kaohsiung to Los Angeles/Long Beach"
+          ]
+        }
+      ],
+      "product": "14-inch ultrabook laptop",
+      "unverified": [
+        "US CBP has begun voiding importer-of-record (IOR) numbers where Form 5106 identity data is incomplete - a Maersk market update says the policy took effect last month (September 2026), before this window, and the first reporting found (The Loadstar, 2026-09-30) predates the window; it would raise customs compliance risk for the ultrabook's US entries at LA/Long Beach but cannot be counted as an in-window event.",
+        "Maersk Golden Week advisory blanked TP8 voyage 640E (Busan ETD Oct-9) and TP12 voyage 641E (Ningbo ETD Oct-9) on transpacific services - announced 2026-08-28, before the window start, so excluded as first-reported-outside-window.",
+        "Digitimes headline (2026-10-12): 'Samsung, SK Hynix accept ASML's 10% price hike in parts' - an equipment-cost increase for the South Korean memory makers, not confirmed as a DRAM/NAND supply disruption for this product.",
+        "Digitimes headline (2026-10-12): 'SK Hynix's US$299 billion chip plan faces military base hurdle' - a delay risk to a future capacity expansion, not a current supply cut to Samsung/SK hynix DRAM and NAND output."
+      ],
+      "window_end": "2026-10-12",
+      "window_start": "2026-10-05",
+      "no_events_found": false
+    },
+    "trust": {
+      "sources": [
+        {
+          "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+          "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+          "type": "primary",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null
+        },
+        {
+          "url": "https://theloadstar.com/customs-updates-add-a-compliance-burden-to-potentially-volatile-q4-for-shippers",
+          "title": "https://theloadstar.com/customs-updates-add-a-compliance-burden-to-potentially-volatile-q4-for-shippers/",
+          "type": "primary",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null
+        },
+        {
+          "url": "https://maersk.com/news/articles/2026/08/28/transpacific-schedule-adjustments-golden-week-2026",
+          "title": "Transpacific Schedule Adjustments for Golden Week holiday period",
+          "type": "primary",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null
+        },
+        {
+          "url": "https://digitimes.com/news/a20240416VL204/tsmc-taipower-electricity-power-outage.html",
+          "title": "Electricity resilience challenges Taiwan's tech industry",
+          "type": "primary",
+          "extract_template_name": null,
+          "source_category": "news",
+          "source_intent": null
+        }
+      ],
+      "confidence": "medium",
+      "reasoning": "Medium confidence - trust per claim ratio is 79%",
+      "claims": [
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].headline"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].event_type"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].location"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].affected_exposures[0]"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].event_date"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].status"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].summary"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].impact_mechanism"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].source_url"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].published_at"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks",
+              "title": "https://theloadstar.com/capacity-conundrum-for-shippers-as-carriers-unveil-post-golden-week-blanks/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.events[0].expected_duration"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://theloadstar.com/customs-updates-add-a-compliance-burden-to-potentially-volatile-q4-for-shippers",
+              "title": "https://theloadstar.com/customs-updates-add-a-compliance-burden-to-potentially-volatile-q4-for-shippers/",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.unverified[0]"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://maersk.com/news/articles/2026/08/28/transpacific-schedule-adjustments-golden-week-2026",
+              "title": "Transpacific Schedule Adjustments for Golden Week holiday period",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.unverified[1]"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://digitimes.com/news/a20240416VL204/tsmc-taipower-electricity-power-outage.html",
+              "title": "Electricity resilience challenges Taiwan's tech industry",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.unverified[2]"
+        },
+        {
+          "citations": [
+            {
+              "url": "https://digitimes.com/news/a20240416VL204/tsmc-taipower-electricity-power-outage.html",
+              "title": "Electricity resilience challenges Taiwan's tech industry",
+              "excerpts": null,
+              "extract_template_name": null,
+              "source_type": "primary",
+              "source_category": "news",
+              "source_intent": "news"
+            }
+          ],
+          "confidence": "high",
+          "reasoning": "Backed by a primary source (news)",
+          "path": "$.unverified[3]"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.product"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.window_end"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.window_start"
+        },
+        {
+          "citations": [],
+          "confidence": "low",
+          "reasoning": "No usable citation resolved for this value",
+          "path": "$.no_events_found"
+        }
+      ]
+    }
+  }
+}

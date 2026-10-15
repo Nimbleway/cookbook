@@ -1,0 +1,9 @@
+node_modules/
+.mastra/
+.env
+data/*.db
+data/*.db-*
+data/digests/
+
+# The monorepo root ignores every lib/ folder; this one is source code.
+!src/mastra/lib/

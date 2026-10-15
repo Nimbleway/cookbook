@@ -1,0 +1,43 @@
+{
+  "port-disruption|port-of-los-angeles-port-of-long-beach-san-pedro-bay-califor|2026-10-09": {
+    "eventKey": "port-disruption|port-of-los-angeles-port-of-long-beach-san-pedro-bay-califor|2026-10-09",
+    "duplicateOf": null,
+    "severity": "medium",
+    "affectedProducts": [
+      "laptop"
+    ],
+    "rationale": "Record September volumes at Los Angeles/Long Beach (1,042,652 TEUs) combined with Panama Canal draft restrictions diverting additional containers to the San Pedro Bay ports are building congestion and raising inland trucking costs, threatening delays and higher costs for the laptop's Kaohsiung-to-Los Angeles/Long Beach ocean freight lane. The ocean freight exposure is multi-source, and the event does not threaten a full stoppage.",
+    "recommendedAction": "Contact the drayage provider at Los Angeles/Long Beach to pre-book inland trucking capacity for anticipated Q4 arrivals and assess whether chassis availability is sufficient given the surge."
+  },
+  "material-shortage|taiwan-tsmc-foundry-and-global-notebook-cpu-supply-chain|2026-10-12": {
+    "eventKey": "material-shortage|taiwan-tsmc-foundry-and-global-notebook-cpu-supply-chain|2026-10-12",
+    "duplicateOf": null,
+    "severity": "high",
+    "affectedProducts": [
+      "laptop"
+    ],
+    "rationale": "Intel has already raised high-end CPU prices up to 20% effective September 1 and Qualcomm raised PC processor prices ~10% in October, both driven by rising TSMC advanced-node and packaging costs, with further TSMC price increases expected through 2027; this directly raises input costs for the laptop's single-source TSMC-fabbed CPUs and squeezes margins on an ongoing basis. The event is ongoing and expected to persist through 2027, constituting a material and sustained cost increase on a single-source exposure.",
+    "recommendedAction": "Request a formal cost impact analysis from the CPU supplier and initiate contract renegotiation or price-protection clause discussions before the next purchase order cycle."
+  },
+  "route-disruption|riyadh-king-khalid-international-airport-saudi-arabia-najran|2026-10-08": {
+    "eventKey": "route-disruption|riyadh-king-khalid-international-airport-saudi-arabia-najran|2026-10-08",
+    "duplicateOf": null,
+    "severity": "medium",
+    "affectedProducts": [
+      "earbuds",
+      "smartwatch"
+    ],
+    "rationale": "Houthi attacks on Riyadh Airport caused a 34% drop in outbound air cargo capacity over 24 hours and forced rerouting of Middle East cargo networks, compounding a global airfreight rate environment where jet fuel is up 108% year-on-year and the Baltic Air Freight Index is up 25.5% year-on-year; this tightens peak-season lift and raises costs on the Hanoi-to-Los Angeles air freight lanes used by both earbuds and smartwatch. The air freight exposure is multi-source for both products, moderating severity despite the sharp rate environment.",
+    "recommendedAction": "Contact the air freight forwarder for Hanoi–Los Angeles to confirm peak-season allocations and rate caps, and identify a secondary carrier option to reduce rollover risk ahead of Q4."
+  },
+  "route-disruption|transpacific-east-west-container-trades-asia-us-west-coast-s|2026-10-05": {
+    "eventKey": "route-disruption|transpacific-east-west-container-trades-asia-us-west-coast-s|2026-10-05",
+    "duplicateOf": null,
+    "severity": "medium",
+    "affectedProducts": [
+      "laptop"
+    ],
+    "rationale": "Half of 39 blanked sailings across Weeks 41–45 fall on the transpacific, reducing eastbound departure frequency out of Asia and raising rollover risk for containers loaded at Kaohsiung for Los Angeles/Long Beach. The blanking level is described as low relative to post-pandemic norms, and the ocean freight exposure is multi-source, limiting overall severity.",
+    "recommendedAction": "Check current inventory cover for the laptop and request confirmed booking commitments from the ocean carrier for Weeks 41–45 sailings to avoid rollover risk."
+  }
+}
