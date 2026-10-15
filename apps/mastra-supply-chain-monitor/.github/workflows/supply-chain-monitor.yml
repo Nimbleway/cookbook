@@ -36,8 +36,9 @@ jobs:
           CRON_SECRET: ${{ secrets.CRON_SECRET }}
           ACTION: ${{ github.event.schedule == '0 6,14,22 * * *' && 'sweep' || inputs.action || 'collect' }}
         run: |
-          # A retried sweep is safe: the server refuses a second sweep within 60 minutes.
+          # No retries: a failed tick answers 500 and the job goes red. A retry would land on
+          # a server that refuses the repeat sweep (within 60 minutes by default) or finds the
+          # failed run already recorded, and report success. The next scheduled tick retries.
           curl --fail-with-body --silent --show-error --max-time 180 \
-            --retry 3 --retry-all-errors --retry-delay 20 \
             -X POST -H "Authorization: Bearer ${CRON_SECRET}" \
             "${MONITOR_URL%/}/cron/${ACTION}"
