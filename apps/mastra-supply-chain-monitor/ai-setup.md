@@ -49,8 +49,8 @@ cp .env.example .env
 npm test
 ```
 
-Install takes about a minute. `npm test` runs offline in a few seconds and should report
-`pass 15` and `fail 0`. If any test fails, show the user the output and stop.
+Install takes about a minute. `npm test` runs offline in a few seconds. Every test should pass
+(`fail 0`). If any test fails, show the user the output and stop.
 
 ---
 

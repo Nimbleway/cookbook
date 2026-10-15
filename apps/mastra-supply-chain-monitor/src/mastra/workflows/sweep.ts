@@ -81,7 +81,7 @@ const planSweep = createStep({
       );
       return { refused: null, tasks };
     } catch (err) {
-      // No run has started yet: give the claim back so the scheduler's retry can sweep.
+      // No run has started yet: give the claim back so the next trigger can sweep.
       await releaseSweep(claimed);
       throw err;
     }

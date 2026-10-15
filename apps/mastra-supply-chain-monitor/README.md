@@ -172,6 +172,9 @@ To run the real monitor, fill in `.env`:
 | `SLACK_WEBHOOK_URL` | Optional. A Slack incoming webhook for alerts. Unset, alerts print to the console. |
 | `CRON_SECRET` | The token the scheduler sends to `/cron/*`. Generate one with `openssl rand -base64 32`. |
 | `MONITOR_API_KEY` | Protects the agent API, Studio, and `/digest`. Leave empty locally: only `mastra dev` runs without it. A deployed server with no key refuses those routes. |
+| `MIN_MINUTES_BETWEEN_SWEEPS` | Optional, default `60`. A sweep this soon after the last one is refused. |
+| `FIRST_LOOKBACK_DAYS` | Optional, default `7`. How far back the first sweep for a product looks. |
+| `DATA_DIR` | Optional, default `./data`. Where demo samples are read and local digests are written. |
 
 Then set `USE_LIVE=true`.
 
@@ -186,7 +189,7 @@ npm run dev        # Mastra Studio at http://localhost:4111
 
 In live mode, run `collect` a few minutes after `sweep`. A high-effort run typically takes
 5–15 minutes, and `collect` reports how many runs are still working. A second `sweep` within
-60 minutes of the last one is refused, so a retried or duplicated trigger can't start extra
+60 minutes of the last one (by default) is refused, so a duplicated trigger can't start extra
 billed runs. The check is an atomic claim in the ledger, and each collect tick claims the runs
 it processes, so overlapping ticks never handle the same run twice. A run is marked collected
 only after its events are recorded. If a tick fails part-way, a later one picks the run up again. Pass `-- --force` to override it locally.

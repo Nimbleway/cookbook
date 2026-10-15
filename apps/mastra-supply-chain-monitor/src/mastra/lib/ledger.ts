@@ -22,7 +22,7 @@ export async function claimSweep(live: boolean, minMinutes: number, force = fals
   return r.rowsAffected === 1 ? at : undefined;
 }
 
-// Gives a claim back when planning failed before any run started, so a retry can sweep.
+// Gives a claim back when planning failed before any run started, so the next trigger can sweep.
 export async function releaseSweep(startedAt: string): Promise<void> {
   await init();
   await db().execute({ sql: "DELETE FROM sweeps WHERE started_at = ?", args: [startedAt] });
