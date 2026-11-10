@@ -1,0 +1,28 @@
+{
+  "name": "deep-web-alpha-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "agents:find": "tsx --env-file-if-exists=.env.local --env-file-if-exists=.env scripts/find-agents.ts",
+    "test": "tsx --test test/*.test.ts",
+    "seed": "tsx --env-file-if-exists=.env.local --env-file-if-exists=.env scripts/seed.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "next": "16.2.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4",
+    "tsx": "^4.19.0",
+    "typescript": "^5"
+  }
+}
