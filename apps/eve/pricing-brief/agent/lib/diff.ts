@@ -54,9 +54,12 @@ export function carryForward(before: Plan[], after: Plan[]): Plan[] {
       return now;
     }
     const keepPrice = !now.price && old.price;
+    // A limit missing from today's read is unseen, not removed: keep it.
+    const seen = new Set(now.limits.map((l) => `${l.metric}/${l.per}`));
+    const limits = [...now.limits, ...old.limits.filter((l) => !seen.has(`${l.metric}/${l.per}`))];
     return {
       ...now,
-      limits: now.limits.length ? now.limits : old.limits,
+      limits,
       price: keepPrice ? old.price : now.price,
       starting_at: keepPrice ? old.starting_at : now.starting_at,
     };
@@ -93,11 +96,9 @@ export function diffPlans(before: Plan[], after: Plan[]): DiffResult {
       const to = formatPrice(now.price, now.starting_at);
       if (old.price.period !== now.price.period) {
         changes.push({ from, kind: "billing_period", plan, to });
-      } else if (
-        old.price.amount !== now.price.amount ||
-        old.price.currency !== now.price.currency ||
-        old.starting_at !== now.starting_at
-      ) {
+      } else if (old.price.amount !== now.price.amount || old.price.currency !== now.price.currency) {
+        // "starting at" alone isn't compared: a read can miss the word, and a
+        // missed qualifier shouldn't alert. It still shows in the from/to text.
         changes.push({ from, kind: "price", plan, to });
       }
     } else if (old.price || now.price) {
@@ -121,7 +122,7 @@ export function diffPlans(before: Plan[], after: Plan[]): DiffResult {
       }
       for (const [id, prev] of oldLimits) {
         if (!newLimits.has(id)) {
-          changes.push({ from: limitText(prev), kind: "limit", metric: prev.metric, plan, to: "none" });
+          unknown.push(`${plan}: ${prev.metric}/${prev.per} limit`); // unseen, not removed
         }
       }
     } else if (old.limits.length || now.limits.length) {

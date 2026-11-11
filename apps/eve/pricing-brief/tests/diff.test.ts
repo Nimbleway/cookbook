@@ -97,13 +97,13 @@ describe("normalizePlans", () => {
 });
 
 describe("review fixes", () => {
-  it("reports a switch to 'starting at' as a price change", () => {
-    const before = [plan({ name: "Pro", price: usd(20) })];
-    const after = [plan({ name: "Pro", price: usd(20), starting_at: true })];
-    expect(diff(before, after).changes).toEqual([{ from: "$20/mo", kind: "price", plan: "Pro", to: "from $20/mo" }]);
+  it("doesn't alert when only the 'starting at' qualifier differs", () => {
+    const before = [plan({ name: "Pro", price: usd(20), starting_at: true })];
+    const after = [plan({ name: "Pro", price: usd(20) })];
+    expect(diff(before, after).changes).toEqual([]);
   });
 
-  it("reports limits added and removed", () => {
+  it("reports a new limit, and treats a missing one as unseen", () => {
     const before = [plan({ name: "Pro", limits: [{ amount: 100, metric: "emails", per: "day" }] })];
     const after = [
       plan({
@@ -117,9 +117,10 @@ describe("review fixes", () => {
     expect(diff(before, after).changes).toEqual([
       { from: "none", kind: "limit", metric: "domains", plan: "Pro", to: "5 domains/month" },
     ]);
-    expect(diff(after, before).changes).toEqual([
-      { from: "5 domains/month", kind: "limit", metric: "domains", plan: "Pro", to: "none" },
-    ]);
+    expect(diff(after, before)).toEqual({ changes: [], unknown: ["Pro: domains/month limit"] });
+    // The unseen limit is kept, so a later full read doesn't report it as new.
+    const stored = carryForward(normalizePlans(after), normalizePlans(before));
+    expect(diffPlans(stored, normalizePlans(after)).changes).toEqual([]);
   });
 
   it("keeps the last known price through a partial read, so the next change still alerts", () => {
