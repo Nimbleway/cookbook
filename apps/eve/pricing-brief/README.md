@@ -144,7 +144,7 @@ Postgres, created on first use:
 
 ## Notes
 
-- **Missing fields aren't changes.** Some pages hide details from a page read: plan names, or limits set by a slider. A field that's missing on one read is logged and never alerted on, and the snapshot keeps its last known value, so the next real change still alerts.
+- **Missing fields aren't changes.** Some pages hide details from a page read: plan names, or limits set by a slider. A field that's missing on one read is logged and never alerted on, and the snapshot keeps its last known value, so the next real change still alerts. A plan missing from one read is kept the same way; it counts as removed only when two reads in a row miss it.
 - **Plans without names** are matched by their position on the page and labeled by their previous price ("$15/mo plan").
 - **A run that stops at its first model call** with "Free tier users do not have access to this model" needs paid AI Gateway credits on the Vercel team.
 - **Cost.** Each daily check makes one Nimble Extract call per competitor plus a few model calls. A run with no changes posts nothing but still costs those calls.

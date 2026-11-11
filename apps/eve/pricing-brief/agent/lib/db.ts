@@ -1,5 +1,5 @@
 import { neon } from "@neondatabase/serverless";
-import type { Plan } from "./plans";
+import type { StoredPlan } from "./plans";
 
 /**
  * Postgres access. Snapshots must outlive sessions, so they live here rather
@@ -82,7 +82,7 @@ export async function removeCompetitor(name: string): Promise<boolean> {
 
 export interface Snapshot {
   id: number;
-  plans: Plan[];
+  plans: StoredPlan[];
   read_at: string;
   source_url: string;
 }
@@ -103,7 +103,7 @@ export async function latestSnapshot(competitorId: number): Promise<Snapshot | u
 export async function insertSnapshotIfLatest(
   competitorId: number,
   sourceUrl: string,
-  plans: Plan[],
+  plans: StoredPlan[],
   previousId: number | null
 ): Promise<string | null> {
   await ensureSchema();

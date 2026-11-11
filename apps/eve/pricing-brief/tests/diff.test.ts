@@ -39,9 +39,11 @@ describe("named plans (Resend-style)", () => {
     ]);
   });
 
-  it("reports plans added and removed", () => {
+  it("reports a plan added, and a plan removed once it was already unseen", () => {
     const after = [before[0], plan({ name: "Scale", price: usd(90) })];
-    expect(diff(before, after).changes).toEqual([
+    expect(diff(before, after)).toEqual({ changes: [{ kind: "plan_added", plan: "Scale" }], unknown: ["Free: plan"] });
+    const unseenFree = normalizePlans(before).map((p) => (p.name === "Free" ? { ...p, unseen: 1 } : p));
+    expect(diffPlans(unseenFree, normalizePlans(after)).changes).toEqual([
       { kind: "plan_added", plan: "Scale" },
       { kind: "plan_removed", plan: "Free" },
     ]);
@@ -132,5 +134,27 @@ describe("review fixes", () => {
     expect(diffPlans(day2Stored, day3).changes).toEqual([
       { from: "$29/mo", kind: "price", plan: "Growth", to: "$25/mo" },
     ]);
+  });
+
+  it("treats a plan missing from one read as unseen, and removed after two", () => {
+    const all = normalizePlans([
+      plan({ name: "Starter", price: usd(10) }),
+      plan({ name: "Growth", price: usd(25) }),
+      plan({ name: "Scale", price: usd(90) }),
+    ]);
+    const partial = all.slice(0, 2);
+
+    // Day 2 misses Scale: no alert, and Scale is kept.
+    expect(diffPlans(all, partial)).toEqual({ changes: [], unknown: ["Scale: plan"] });
+    const day2 = carryForward(all, partial);
+    // Day 3 shows all three again: no alert.
+    expect(diffPlans(day2, all).changes).toEqual([]);
+    expect(carryForward(day2, all)).toEqual(all);
+
+    // Control: Scale missing on two reads in a row is removed, once.
+    expect(diffPlans(day2, partial).changes).toEqual([{ kind: "plan_removed", plan: "Scale" }]);
+    const day3 = carryForward(day2, partial);
+    expect(day3).toEqual(partial);
+    expect(diffPlans(day3, partial).changes).toEqual([]);
   });
 });

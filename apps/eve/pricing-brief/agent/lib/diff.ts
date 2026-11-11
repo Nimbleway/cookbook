@@ -1,5 +1,5 @@
 import { formatPrice, key, planLabel } from "./normalize";
-import type { Change, Plan } from "./plans";
+import type { Change, Plan, StoredPlan } from "./plans";
 
 export interface DiffResult {
   changes: Change[];
@@ -7,13 +7,13 @@ export interface DiffResult {
   unknown: string[];
 }
 
-type Pair = [Plan | undefined, Plan | undefined, number];
+type Pair = [StoredPlan | undefined, Plan | undefined, number];
 
 /**
  * Pairs the plans of two reads. Plans are matched by name when every plan on
  * both sides has one, and by their position on the page otherwise.
  */
-function pairPlans(before: Plan[], after: Plan[]): Pair[] {
+function pairPlans(before: StoredPlan[], after: Plan[]): Pair[] {
   const pairs: Pair[] = [];
   const byName = [...before, ...after].every((plan) => plan.name);
 
@@ -37,18 +37,22 @@ function pairPlans(before: Plan[], after: Plan[]): Pair[] {
 }
 
 /**
- * Fills fields today's read couldn't see with the last known values, so a
- * read that misses a price doesn't become the baseline that hides the next
- * real change. Plans the read didn't return are not carried forward.
+ * Fills what today's read couldn't see with the last known values, so a read
+ * that misses a price, a limit or a whole plan doesn't become the baseline
+ * that hides the next real change. A plan missing from one read is kept and
+ * marked unseen; missing from a second read in a row, it is dropped.
  */
-export function carryForward(before: Plan[], after: Plan[]): Plan[] {
+export function carryForward(before: StoredPlan[], after: Plan[]): StoredPlan[] {
   const known = new Map<Plan, Plan>();
+  const missing: StoredPlan[] = [];
   for (const [old, now] of pairPlans(before, after)) {
     if (old && now) {
       known.set(now, old);
+    } else if (old && !old.unseen) {
+      missing.push({ ...old, unseen: 1 });
     }
   }
-  return after.map((now) => {
+  const updated = after.map((now): StoredPlan => {
     const old = known.get(now);
     if (!old) {
       return now;
@@ -64,6 +68,7 @@ export function carryForward(before: Plan[], after: Plan[]): Plan[] {
       starting_at: keepPrice ? old.starting_at : now.starting_at,
     };
   });
+  return [...updated, ...missing];
 }
 
 const limitText = (l: Plan["limits"][number]) => `${l.amount.toLocaleString("en-US")} ${l.metric}/${l.per}`;
@@ -72,7 +77,7 @@ const limitText = (l: Plan["limits"][number]) => `${l.amount.toLocaleString("en-
  * Compares two normalized reads of the same pricing page. A field that is
  * null or empty on either side is "unknown", not a change.
  */
-export function diffPlans(before: Plan[], after: Plan[]): DiffResult {
+export function diffPlans(before: StoredPlan[], after: Plan[]): DiffResult {
   const changes: Change[] = [];
   const unknown: string[] = [];
 
@@ -82,7 +87,12 @@ export function diffPlans(before: Plan[], after: Plan[]): DiffResult {
       continue;
     }
     if (old && !now) {
-      changes.push({ kind: "plan_removed", plan: planLabel(old, tier) });
+      // Missing from one read is unseen; missing from two in a row is removed.
+      if (old.unseen) {
+        changes.push({ kind: "plan_removed", plan: planLabel(old, tier) });
+      } else {
+        unknown.push(`${planLabel(old, tier)}: plan`);
+      }
       continue;
     }
     if (!(old && now)) {

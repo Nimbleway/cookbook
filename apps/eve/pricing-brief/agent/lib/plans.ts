@@ -37,6 +37,12 @@ export const planSchema = z.object({
 
 export type Plan = z.infer<typeof planSchema>;
 
+/**
+ * A plan as stored in a snapshot. `unseen` counts the reads in a row that
+ * didn't return the plan; it is carried forward once before it counts as removed.
+ */
+export type StoredPlan = Plan & { unseen?: number };
+
 export type Change =
   | { kind: "plan_added"; plan: string }
   | { kind: "plan_removed"; plan: string }
