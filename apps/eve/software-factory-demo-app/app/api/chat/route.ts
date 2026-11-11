@@ -11,11 +11,18 @@ export async function POST(req: Request) {
   if (body.length > MAX_BODY_CHARS) {
     return new Response("Request too large", { status: 413 });
   }
-  const { messages }: { messages: UIMessage[] } = JSON.parse(body);
-  if (!Array.isArray(messages) || messages.length === 0 || messages.length > MAX_MESSAGES) {
-    return new Response(`Send between 1 and ${MAX_MESSAGES} messages`, { status: 400 });
+  let messages: unknown;
+  try {
+    ({ messages } = JSON.parse(body) as { messages?: unknown });
+  } catch {
+    return new Response("Invalid JSON", { status: 400 });
   }
-  const result = await streamSupportReply(messages, {
+  if (!Array.isArray(messages) || messages.length === 0) {
+    return new Response("Send at least one message", { status: 400 });
+  }
+  // useChat sends the whole history on every turn: answer from the most recent part of it.
+  const recent = (messages as UIMessage[]).slice(-MAX_MESSAGES);
+  const result = await streamSupportReply(recent, {
     onUsage: (report) => console.log("usage", report),
   });
   return result.toUIMessageStreamResponse();

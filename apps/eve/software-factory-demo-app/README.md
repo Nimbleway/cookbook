@@ -24,4 +24,4 @@ npm run dev
 
 Try "Where is order A-1001?"
 
-The chat route has no auth and every request spends AI Gateway credits, so it caps request size and message count. Run it locally, or add auth before deploying it publicly.
+The chat route has no auth and every request spends AI Gateway credits, so it caps the request size and answers from the last 20 messages. Run it locally, or add auth before deploying it publicly.
