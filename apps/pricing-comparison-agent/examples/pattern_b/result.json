@@ -1,0 +1,262 @@
+{
+  "buyer_profile": {
+    "host": 200.0,
+    "gb_ingested_monthly": 2000.0
+  },
+  "as_of_date": "2026-09-23",
+  "vendors": [
+    {
+      "vendor": "Datadog",
+      "tiers": [
+        {
+          "tier_name": "Infrastructure Free",
+          "billing_unit": "host",
+          "tier_type": "flat_all_inclusive",
+          "base_fee_monthly": 0.0,
+          "included_quantity": 5.0,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://www.datadoghq.com/pricing"
+        },
+        {
+          "tier_name": "Infrastructure Pro",
+          "billing_unit": "host",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 15.0,
+          "source_url": "https://www.datadoghq.com/pricing"
+        },
+        {
+          "tier_name": "Infrastructure Enterprise",
+          "billing_unit": "host",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 23.0,
+          "source_url": "https://www.datadoghq.com/pricing"
+        },
+        {
+          "tier_name": "DevSecOps Pro",
+          "billing_unit": "host",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 22.0,
+          "source_url": "https://www.datadoghq.com/pricing"
+        },
+        {
+          "tier_name": "DevSecOps Enterprise",
+          "billing_unit": "host",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 34.0,
+          "source_url": "https://www.datadoghq.com/pricing"
+        },
+        {
+          "tier_name": "APM",
+          "billing_unit": "host",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 31.0,
+          "source_url": "https://www.datadoghq.com/pricing"
+        },
+        {
+          "tier_name": "APM Pro",
+          "billing_unit": "host",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 35.0,
+          "source_url": "https://www.datadoghq.com/pricing"
+        },
+        {
+          "tier_name": "APM Enterprise",
+          "billing_unit": "host",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 40.0,
+          "source_url": "https://www.datadoghq.com/pricing"
+        }
+      ],
+      "packaging_changes_last_90_days": [
+        {
+          "date": "2026-08-01",
+          "description": "New tier added: Log Management \u2014 Log Forwarding to Custom Destinations (Annual and On-Demand)",
+          "source_url": "https://spyingbee.com/updates/datadoghq/2026-08"
+        },
+        {
+          "date": "2026-08-01",
+          "description": "Log Management Ingest annual price changed from $0.10 to $0.0833 per GB",
+          "source_url": "https://spyingbee.com/updates/datadoghq/2026-08"
+        },
+        {
+          "date": "2026-08-03",
+          "description": "AI Credits annual billing added at $1.30 per credit on-demand rate",
+          "source_url": "https://spyingbee.com/updates/datadoghq/2026-08"
+        },
+        {
+          "date": "2026-08-21",
+          "description": "Feature Flags On-Demand promotion ended (allowance changed)",
+          "source_url": "https://spyingbee.com/updates/datadoghq/2026-08"
+        }
+      ],
+      "sources": [
+        "https://www.datadoghq.com/pricing",
+        "https://docs.datadoghq.com/account_management/billing/pricing/"
+      ]
+    },
+    {
+      "vendor": "New Relic",
+      "tiers": [
+        {
+          "tier_name": "Free",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "base_plus_overage",
+          "base_fee_monthly": 0.0,
+          "included_quantity": 100.0,
+          "overage_rate_per_unit": 0.4,
+          "flat_rate_per_unit": null,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Standard",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "base_plus_overage",
+          "base_fee_monthly": 0.0,
+          "included_quantity": 100.0,
+          "overage_rate_per_unit": 0.4,
+          "flat_rate_per_unit": null,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Pro",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "base_plus_overage",
+          "base_fee_monthly": 0.0,
+          "included_quantity": 100.0,
+          "overage_rate_per_unit": 0.4,
+          "flat_rate_per_unit": null,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Enterprise",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": 100.0,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://newrelic.com/pricing"
+        }
+      ],
+      "packaging_changes_last_90_days": [
+        {
+          "date": "2026-06-26",
+          "description": "Updated Cloud Cost Intelligence documentation with per-provider billing ingest pricing",
+          "source_url": "https://docs.newrelic.com/docs/release-notes/docs-release-notes/docs-6-26-2026/"
+        },
+        {
+          "date": "2026-07-31",
+          "description": "Updated Usage Plan terms to include an \"Evaluation Features\" definition and temporary free evaluation period clause under Pay As You Go",
+          "source_url": "https://docs.newrelic.com/docs/release-notes/docs-release-notes/"
+        },
+        {
+          "date": "2026-07-24",
+          "description": "Renamed SRE Agent to Autopilot with GA release; HIPAA availability added",
+          "source_url": "https://docs.newrelic.com/docs/release-notes/docs-release-notes/"
+        },
+        {
+          "date": "2026-08-07",
+          "description": "Updated Cloud Cost Intelligence: Pricing with a qualitative cost comparison instead of exact per-GB ingest rates; simplified New Relic Autopilot pricing requirement to Advanced Compute",
+          "source_url": "https://docs.newrelic.com/docs/release-notes/docs-release-notes/"
+        }
+      ],
+      "sources": [
+        "https://newrelic.com/pricing",
+        "https://newrelic.com/info/pricing",
+        "https://docs.newrelic.com/docs/release-notes/docs-release-notes/"
+      ]
+    },
+    {
+      "vendor": "Grafana Labs",
+      "tiers": [
+        {
+          "tier_name": "Free",
+          "billing_unit": "other",
+          "tier_type": "base_plus_overage",
+          "base_fee_monthly": 0.0,
+          "included_quantity": 50.0,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/pricing"
+        },
+        {
+          "tier_name": "Pro",
+          "billing_unit": "other",
+          "tier_type": "base_plus_overage",
+          "base_fee_monthly": 19.0,
+          "included_quantity": 50.0,
+          "overage_rate_per_unit": 0.05,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/pricing"
+        },
+        {
+          "tier_name": "Enterprise",
+          "billing_unit": "other",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/pricing"
+        }
+      ],
+      "packaging_changes_last_90_days": [],
+      "sources": [
+        "https://grafana.com/pricing"
+      ]
+    }
+  ],
+  "cost_ranking": [
+    {
+      "vendor": "New Relic",
+      "tier_used": "Free",
+      "billing_unit": "gb_ingested_monthly",
+      "modeled_monthly_cost": 760.0,
+      "modeled_annual_cost": 9120.0,
+      "assumptions": [
+        "base fee $0/mo (Free)",
+        "100 gb_ingested_monthly included, $0.40/gb_ingested_monthly overage beyond that",
+        "buyer profile has 2,000 gb_ingested_monthly -> 1,900 gb_ingested_monthly of overage"
+      ]
+    },
+    {
+      "vendor": "Datadog",
+      "tier_used": "Infrastructure Pro",
+      "billing_unit": "host",
+      "modeled_monthly_cost": 3000.0,
+      "modeled_annual_cost": 36000.0,
+      "assumptions": [
+        "$15.00/host flat rate, no base fee or included allowance"
+      ]
+    }
+  ],
+  "quote_required": [
+    {
+      "vendor": "Grafana Labs",
+      "missing_input": "buyer profile has no quantity for billing unit 'other'",
+      "reason": "Free: buyer profile has no quantity for billing unit 'other'; Pro: buyer profile has no quantity for billing unit 'other'; Enterprise: Enterprise pricing structure is not fully published on the vendor's page"
+    }
+  ]
+}

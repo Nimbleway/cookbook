@@ -1,0 +1,420 @@
+{
+  "buyer_profile": {
+    "host": 200.0,
+    "gb_ingested_monthly": 2000.0
+  },
+  "as_of_date": "2026-09-23",
+  "vendors": [
+    {
+      "vendor": "Datadog",
+      "tiers": [
+        {
+          "tier_name": "Infrastructure Pro",
+          "billing_unit": "host",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 15.0,
+          "source_url": "https://www.datadoghq.com/pricing/list/"
+        },
+        {
+          "tier_name": "Infrastructure Enterprise",
+          "billing_unit": "host",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 23.0,
+          "source_url": "https://www.datadoghq.com/pricing/list/"
+        },
+        {
+          "tier_name": "Infrastructure DevSecOps Pro",
+          "billing_unit": "host",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 22.0,
+          "source_url": "https://www.datadoghq.com/pricing/list/"
+        },
+        {
+          "tier_name": "Infrastructure DevSecOps Enterprise",
+          "billing_unit": "host",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 34.0,
+          "source_url": "https://www.datadoghq.com/pricing/list/"
+        },
+        {
+          "tier_name": "Container Monitoring (per container, billed annually)",
+          "billing_unit": "other",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 1.0,
+          "source_url": "https://www.datadoghq.com/pricing/list/"
+        },
+        {
+          "tier_name": "Container Monitoring (per container hour, on\u2011demand)",
+          "billing_unit": "other",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 0.002,
+          "source_url": "https://www.datadoghq.com/pricing/list/"
+        },
+        {
+          "tier_name": "Custom Metrics (per 100 custom metrics)",
+          "billing_unit": "other",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 5.0,
+          "source_url": "https://www.datadoghq.com/pricing/list/"
+        }
+      ],
+      "packaging_changes_last_90_days": [],
+      "sources": [
+        "https://www.datadoghq.com/pricing/",
+        "https://www.datadoghq.com/pricing/list/",
+        "https://docs.datadoghq.com/account_management/billing/pricing/"
+      ]
+    },
+    {
+      "vendor": "New Relic",
+      "tiers": [
+        {
+          "tier_name": "Free edition \u2013 Original data ingest",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "base_plus_overage",
+          "base_fee_monthly": 0.0,
+          "included_quantity": 100.0,
+          "overage_rate_per_unit": 0.4,
+          "flat_rate_per_unit": null,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Free edition \u2013 Data Plus ingest",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "base_plus_overage",
+          "base_fee_monthly": 0.0,
+          "included_quantity": 0.0,
+          "overage_rate_per_unit": 0.6,
+          "flat_rate_per_unit": null,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Standard edition \u2013 Original data ingest",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 0.4,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Standard edition \u2013 Data Plus ingest",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 0.6,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Pro edition \u2013 Original data ingest",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 0.4,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Pro edition \u2013 Data Plus ingest",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 0.6,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Enterprise edition \u2013 Original data ingest",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Enterprise edition \u2013 Data Plus ingest",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Core users \u2013 Standard/Pro/Enterprise",
+          "billing_unit": "seat",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 49.0,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Full platform users \u2013 Standard (first user)",
+          "billing_unit": "seat",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 10.0,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Full platform users \u2013 Pro",
+          "billing_unit": "seat",
+          "tier_type": "pure_per_unit",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": 349.0,
+          "source_url": "https://newrelic.com/pricing"
+        },
+        {
+          "tier_name": "Full platform users \u2013 Enterprise",
+          "billing_unit": "seat",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://newrelic.com/pricing"
+        }
+      ],
+      "packaging_changes_last_90_days": [],
+      "sources": [
+        "https://newrelic.com/pricing",
+        "https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-product-based-pricing/overview-pricing-models/",
+        "https://docs.newrelic.com/docs/release-notes/"
+      ]
+    },
+    {
+      "vendor": "Grafana Labs",
+      "tiers": [
+        {
+          "tier_name": "Grafana Cloud Visualization (per monthly active user)",
+          "billing_unit": "seat",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud Metrics (per 1,000 billable series)",
+          "billing_unit": "other",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud Logs (per GB)",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud Traces (per GB)",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud Profiles (per GB)",
+          "billing_unit": "gb_ingested_monthly",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud k6 Performance Testing (per virtual user hour)",
+          "billing_unit": "other",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud IRM (Incident Response Management) per monthly active user",
+          "billing_unit": "seat",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud Database Observability (per host hour)",
+          "billing_unit": "host",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud Frontend Observability (per 1,000 sessions)",
+          "billing_unit": "other",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud Application Observability (per host hour)",
+          "billing_unit": "host",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud Kubernetes Monitoring (per host hour)",
+          "billing_unit": "host",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud Kubernetes Monitoring (per container hour)",
+          "billing_unit": "other",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud Synthetics \u2013 API Testing (per 10,000 test executions)",
+          "billing_unit": "event_monthly",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud Synthetics \u2013 Browser Testing (per 10,000 test executions)",
+          "billing_unit": "event_monthly",
+          "tier_type": "unpublished",
+          "base_fee_monthly": null,
+          "included_quantity": null,
+          "overage_rate_per_unit": null,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/"
+        },
+        {
+          "tier_name": "Grafana Cloud Grafana Assistant (per monthly active user + token-based overage)",
+          "billing_unit": "seat",
+          "tier_type": "base_plus_overage",
+          "base_fee_monthly": null,
+          "included_quantity": 40.0,
+          "overage_rate_per_unit": 2.0,
+          "flat_rate_per_unit": null,
+          "source_url": "https://grafana.com/pricing/"
+        }
+      ],
+      "packaging_changes_last_90_days": [
+        {
+          "date": "2026-10-01",
+          "description": "Announced that Assistant Investigations billing and metering start on October 1, 2026. Until that date, investigation token usage appears in usage views but isn\u2019t billed; pricing model will be token-based with its own billing unit.",
+          "source_url": "https://grafana.com/docs/grafana-cloud/platform/grafana-assistant/pricing/"
+        }
+      ],
+      "sources": [
+        "https://grafana.com/pricing/",
+        "https://grafana.com/docs/grafana-cloud/platform/pricing-and-usage/",
+        "https://grafana.com/docs/grafana-cloud/platform/grafana-assistant/pricing/",
+        "https://grafana.com/docs/grafana/latest/whatsnew/"
+      ]
+    }
+  ],
+  "cost_ranking": [
+    {
+      "vendor": "New Relic",
+      "tier_used": "Free edition \u2013 Original data ingest",
+      "billing_unit": "gb_ingested_monthly",
+      "modeled_monthly_cost": 760.0,
+      "modeled_annual_cost": 9120.0,
+      "assumptions": [
+        "base fee $0/mo (Free edition \u2013 Original data ingest)",
+        "100 gb_ingested_monthly included, $0.40/gb_ingested_monthly overage beyond that",
+        "buyer profile has 2,000 gb_ingested_monthly -> 1,900 gb_ingested_monthly of overage"
+      ]
+    },
+    {
+      "vendor": "Datadog",
+      "tier_used": "Infrastructure Pro",
+      "billing_unit": "host",
+      "modeled_monthly_cost": 3000.0,
+      "modeled_annual_cost": 36000.0,
+      "assumptions": [
+        "$15.00/host flat rate, no base fee or included allowance"
+      ]
+    }
+  ],
+  "quote_required": [
+    {
+      "vendor": "Grafana Labs",
+      "missing_input": "Grafana Cloud Visualization (per monthly active user) pricing structure is not fully published on the vendor's page",
+      "reason": "Grafana Cloud Visualization (per monthly active user): Grafana Cloud Visualization (per monthly active user) pricing structure is not fully published on the vendor's page; Grafana Cloud Metrics (per 1,000 billable series): Grafana Cloud Metrics (per 1,000 billable series) pricing structure is not fully published on the vendor's page; Grafana Cloud Logs (per GB): Grafana Cloud Logs (per GB) pricing structure is not fully published on the vendor's page; Grafana Cloud Traces (per GB): Grafana Cloud Traces (per GB) pricing structure is not fully published on the vendor's page; Grafana Cloud Profiles (per GB): Grafana Cloud Profiles (per GB) pricing structure is not fully published on the vendor's page; Grafana Cloud k6 Performance Testing (per virtual user hour): Grafana Cloud k6 Performance Testing (per virtual user hour) pricing structure is not fully published on the vendor's page; Grafana Cloud IRM (Incident Response Management) per monthly active user: Grafana Cloud IRM (Incident Response Management) per monthly active user pricing structure is not fully published on the vendor's page; Grafana Cloud Database Observability (per host hour): Grafana Cloud Database Observability (per host hour) pricing structure is not fully published on the vendor's page; Grafana Cloud Frontend Observability (per 1,000 sessions): Grafana Cloud Frontend Observability (per 1,000 sessions) pricing structure is not fully published on the vendor's page; Grafana Cloud Application Observability (per host hour): Grafana Cloud Application Observability (per host hour) pricing structure is not fully published on the vendor's page; Grafana Cloud Kubernetes Monitoring (per host hour): Grafana Cloud Kubernetes Monitoring (per host hour) pricing structure is not fully published on the vendor's page; Grafana Cloud Kubernetes Monitoring (per container hour): Grafana Cloud Kubernetes Monitoring (per container hour) pricing structure is not fully published on the vendor's page; Grafana Cloud Synthetics \u2013 API Testing (per 10,000 test executions): Grafana Cloud Synthetics \u2013 API Testing (per 10,000 test executions) pricing structure is not fully published on the vendor's page; Grafana Cloud Synthetics \u2013 Browser Testing (per 10,000 test executions): Grafana Cloud Synthetics \u2013 Browser Testing (per 10,000 test executions) pricing structure is not fully published on the vendor's page; Grafana Cloud Grafana Assistant (per monthly active user + token-based overage): buyer profile has no quantity for billing unit 'seat'"
+    }
+  ]
+}
