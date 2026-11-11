@@ -80,18 +80,41 @@ export async function removeCompetitor(name: string): Promise<boolean> {
   return rows.length > 0;
 }
 
-export async function latestSnapshot(
-  competitorId: number
-): Promise<{ plans: Plan[]; read_at: string; source_url: string } | undefined> {
-  await ensureSchema();
-  const rows = await sql()`SELECT plans, read_at, source_url FROM snapshots
-    WHERE competitor_id = ${competitorId} ORDER BY read_at DESC LIMIT 1`;
-  return rows[0] as { plans: Plan[]; read_at: string; source_url: string } | undefined;
+export interface Snapshot {
+  id: number;
+  plans: Plan[];
+  read_at: string;
+  source_url: string;
 }
 
-export async function insertSnapshot(competitorId: number, sourceUrl: string, plans: Plan[]): Promise<string> {
+export async function latestSnapshot(competitorId: number): Promise<Snapshot | undefined> {
   await ensureSchema();
-  const rows = await sql()`INSERT INTO snapshots (competitor_id, source_url, plans)
-    VALUES (${competitorId}, ${sourceUrl}, ${JSON.stringify(plans)}::jsonb) RETURNING read_at`;
-  return new Date((rows[0] as { read_at: string }).read_at).toISOString();
+  const rows = await sql()`SELECT id, plans, read_at, source_url FROM snapshots
+    WHERE competitor_id = ${competitorId} ORDER BY id DESC LIMIT 1`;
+  return rows[0] as Snapshot | undefined;
+}
+
+/**
+ * Inserts a snapshot only if no newer one was saved since `previousId` was
+ * read. A per-competitor lock serializes overlapping checks, so the second
+ * one sees the first's row, gets null back and compares again. Returns the
+ * read time, or null when it lost the race.
+ */
+export async function insertSnapshotIfLatest(
+  competitorId: number,
+  sourceUrl: string,
+  plans: Plan[],
+  previousId: number | null
+): Promise<string | null> {
+  await ensureSchema();
+  const q = sql();
+  const [, rows] = await q.transaction([
+    q`SELECT pg_advisory_xact_lock(${competitorId})`,
+    q`INSERT INTO snapshots (competitor_id, source_url, plans)
+      SELECT ${competitorId}, ${sourceUrl}, ${JSON.stringify(plans)}::jsonb
+      WHERE NOT EXISTS (SELECT 1 FROM snapshots WHERE competitor_id = ${competitorId} AND id > ${previousId ?? 0})
+      RETURNING read_at`,
+  ]);
+  const row = rows[0] as { read_at: string } | undefined;
+  return row ? new Date(row.read_at).toISOString() : null;
 }

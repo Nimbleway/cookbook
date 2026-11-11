@@ -1,6 +1,6 @@
 import { defineTool } from "eve/tools";
 import { z } from "zod";
-import { findCompetitor, insertSnapshot, latestSnapshot } from "../lib/db";
+import { findCompetitor, insertSnapshotIfLatest, latestSnapshot } from "../lib/db";
 import { carryForward, diffPlans } from "../lib/diff";
 import { normalizePlans } from "../lib/normalize";
 import { planSchema } from "../lib/plans";
@@ -23,14 +23,26 @@ export default defineTool({
       return { error: `${competitor} isn't tracked. Call add_competitor first.` };
     }
     const read = normalizePlans(plans);
-    const previous = await latestSnapshot(tracked.id);
-    // Diff today's raw read, but store it with yesterday's values filled in
-    // wherever today's read couldn't see a field.
-    const normalized = previous ? carryForward(previous.plans, read) : read;
-    const read_at = await insertSnapshot(tracked.id, source_url, normalized);
+    // Compare against the latest snapshot and save in one step. If an
+    // overlapping check saved first, compare against its snapshot instead, so
+    // a change is reported once.
+    let previous = await latestSnapshot(tracked.id);
+    let read_at: string | null = null;
+    for (let attempt = 0; attempt < 3 && !read_at; attempt++) {
+      if (attempt > 0) {
+        previous = await latestSnapshot(tracked.id);
+      }
+      // Diff today's raw read, but store it with the last known values filled
+      // in wherever today's read couldn't see a field.
+      const stored = previous ? carryForward(previous.plans, read) : read;
+      read_at = await insertSnapshotIfLatest(tracked.id, source_url, stored, previous?.id ?? null);
+    }
+    if (!read_at) {
+      return { error: `Another check of ${tracked.name} is saving at the same time. Try again shortly.` };
+    }
 
     if (!previous) {
-      return { baseline: true, changes: [], competitor: tracked.name, plans: normalized.length, read_at, source_url };
+      return { baseline: true, changes: [], competitor: tracked.name, plans: read.length, read_at, source_url };
     }
     const { changes, unknown } = diffPlans(previous.plans, read);
     if (unknown.length) {

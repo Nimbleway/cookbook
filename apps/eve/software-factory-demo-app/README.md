@@ -23,3 +23,5 @@ npm run dev
 ```
 
 Try "Where is order A-1001?"
+
+The chat route has no auth and every request spends AI Gateway credits, so it caps request size and message count. Run it locally, or add auth before deploying it publicly.
