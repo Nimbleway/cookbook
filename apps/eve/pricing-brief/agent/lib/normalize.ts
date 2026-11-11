@@ -3,6 +3,9 @@ import type { Plan } from "./plans";
 /** Case- and whitespace-insensitive key for plan names and limit metrics. */
 export const key = (text: string): string => text.toLowerCase().replace(/\s+/g, " ").trim();
 
+/** Identifies a usage limit within a plan: its metric and period, e.g. "emails/month". */
+export const limitKey = (limit: { metric: string; per: string }): string => `${limit.metric}/${limit.per}`;
+
 const round2 = (n: number): number => Math.round(n * 100) / 100;
 
 /**
@@ -26,11 +29,11 @@ export function normalizePlans(plans: Plan[]): Plan[] {
     const limits = new Map<string, Plan["limits"][number]>();
     for (const limit of plan.limits) {
       const metric = key(limit.metric);
-      limits.set(`${metric}/${limit.per}`, { amount: Math.round(limit.amount), metric, per: limit.per });
+      limits.set(limitKey({ metric, per: limit.per }), { amount: Math.round(limit.amount), metric, per: limit.per });
     }
 
     return {
-      limits: [...limits.values()].sort((a, b) => `${a.metric}/${a.per}`.localeCompare(`${b.metric}/${b.per}`)),
+      limits: [...limits.values()].sort((a, b) => limitKey(a).localeCompare(limitKey(b))),
       name,
       price,
       starting_at: plan.starting_at,

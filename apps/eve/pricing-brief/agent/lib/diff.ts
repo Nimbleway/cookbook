@@ -1,4 +1,4 @@
-import { formatPrice, key, planLabel } from "./normalize";
+import { formatPrice, key, limitKey, planLabel } from "./normalize";
 import type { Change, Plan, StoredPlan } from "./plans";
 
 export interface DiffResult {
@@ -59,8 +59,8 @@ export function carryForward(before: StoredPlan[], after: Plan[]): StoredPlan[] 
     }
     const keepPrice = !now.price && old.price;
     // A limit missing from today's read is unseen, not removed: keep it.
-    const seen = new Set(now.limits.map((l) => `${l.metric}/${l.per}`));
-    const limits = [...now.limits, ...old.limits.filter((l) => !seen.has(`${l.metric}/${l.per}`))];
+    const seen = new Set(now.limits.map(limitKey));
+    const limits = [...now.limits, ...old.limits.filter((l) => !seen.has(limitKey(l)))];
     return {
       ...now,
       limits,
@@ -71,74 +71,76 @@ export function carryForward(before: StoredPlan[], after: Plan[]): StoredPlan[] 
   return [...updated, ...missing];
 }
 
-const limitText = (l: Plan["limits"][number]) => `${l.amount.toLocaleString("en-US")} ${l.metric}/${l.per}`;
+type Limit = Plan["limits"][number];
+
+const limitText = (l: Limit) => `${l.amount.toLocaleString("en-US")} ${l.metric}/${l.per}`;
+
+/** Price and billing-period changes for one matched plan. */
+function diffPrice(plan: string, old: Plan, now: Plan, result: DiffResult): void {
+  if (!(old.price && now.price)) {
+    if (old.price || now.price) {
+      result.unknown.push(`${plan}: price`);
+    }
+    return;
+  }
+  const from = formatPrice(old.price, old.starting_at);
+  const to = formatPrice(now.price, now.starting_at);
+  if (old.price.period !== now.price.period) {
+    result.changes.push({ from, kind: "billing_period", plan, to });
+    return;
+  }
+  // "starting at" alone isn't compared: a read can miss the word, and a
+  // missed qualifier shouldn't alert. It still shows in the from/to text.
+  if (old.price.amount !== now.price.amount || old.price.currency !== now.price.currency) {
+    result.changes.push({ from, kind: "price", plan, to });
+  }
+}
+
+/** Usage-limit changes for one matched plan. A limit missing from either read is unseen, not removed. */
+function diffLimits(plan: string, old: Plan, now: Plan, result: DiffResult): void {
+  if (!(old.limits.length && now.limits.length)) {
+    if (old.limits.length || now.limits.length) {
+      result.unknown.push(`${plan}: limits`);
+    }
+    return;
+  }
+  const oldLimits = new Map(old.limits.map((l): [string, Limit] => [limitKey(l), l]));
+  const newKeys = new Set(now.limits.map(limitKey));
+  for (const limit of now.limits) {
+    const prev = oldLimits.get(limitKey(limit));
+    if (prev?.amount === limit.amount) {
+      continue;
+    }
+    const from = prev ? limitText(prev) : "none";
+    result.changes.push({ from, kind: "limit", metric: limit.metric, plan, to: limitText(limit) });
+  }
+  for (const prev of old.limits.filter((l) => !newKeys.has(limitKey(l)))) {
+    result.unknown.push(`${plan}: ${limitKey(prev)} limit`);
+  }
+}
 
 /**
  * Compares two normalized reads of the same pricing page. A field that is
- * null or empty on either side is "unknown", not a change.
+ * null or empty on either side is "unknown", not a change. A plan missing from
+ * one read is unseen; missing from two in a row, it is removed.
  */
 export function diffPlans(before: StoredPlan[], after: Plan[]): DiffResult {
-  const changes: Change[] = [];
-  const unknown: string[] = [];
+  const result: DiffResult = { changes: [], unknown: [] };
 
   for (const [old, now, tier] of pairPlans(before, after)) {
-    if (!old && now) {
-      changes.push({ kind: "plan_added", plan: planLabel(now, tier) });
-      continue;
-    }
-    if (old && !now) {
-      // Missing from one read is unseen; missing from two in a row is removed.
-      if (old.unseen) {
-        changes.push({ kind: "plan_removed", plan: planLabel(old, tier) });
-      } else {
-        unknown.push(`${planLabel(old, tier)}: plan`);
-      }
-      continue;
-    }
-    if (!(old && now)) {
-      continue;
-    }
-    // Label by the previous read, so an alert reads "the $15/mo plan is now $18/mo".
-    const plan = old.name ?? now.name ?? planLabel(old, tier);
-
-    if (old.price && now.price) {
-      const from = formatPrice(old.price, old.starting_at);
-      const to = formatPrice(now.price, now.starting_at);
-      if (old.price.period !== now.price.period) {
-        changes.push({ from, kind: "billing_period", plan, to });
-      } else if (old.price.amount !== now.price.amount || old.price.currency !== now.price.currency) {
-        // "starting at" alone isn't compared: a read can miss the word, and a
-        // missed qualifier shouldn't alert. It still shows in the from/to text.
-        changes.push({ from, kind: "price", plan, to });
-      }
-    } else if (old.price || now.price) {
-      unknown.push(`${plan}: price`);
-    }
-
-    if (old.limits.length && now.limits.length) {
-      const oldLimits = new Map(old.limits.map((l) => [`${l.metric}/${l.per}`, l]));
-      const newLimits = new Map(now.limits.map((l) => [`${l.metric}/${l.per}`, l]));
-      for (const [id, limit] of newLimits) {
-        const prev = oldLimits.get(id);
-        if (!prev || prev.amount !== limit.amount) {
-          changes.push({
-            from: prev ? limitText(prev) : "none",
-            kind: "limit",
-            metric: limit.metric,
-            plan,
-            to: limitText(limit),
-          });
-        }
-      }
-      for (const [id, prev] of oldLimits) {
-        if (!newLimits.has(id)) {
-          unknown.push(`${plan}: ${prev.metric}/${prev.per} limit`); // unseen, not removed
-        }
-      }
-    } else if (old.limits.length || now.limits.length) {
-      unknown.push(`${plan}: limits`);
+    if (old && now) {
+      // Label by the previous read, so an alert reads "the $15/mo plan is now $18/mo".
+      const plan = old.name ?? now.name ?? planLabel(old, tier);
+      diffPrice(plan, old, now, result);
+      diffLimits(plan, old, now, result);
+    } else if (now) {
+      result.changes.push({ kind: "plan_added", plan: planLabel(now, tier) });
+    } else if (old?.unseen) {
+      result.changes.push({ kind: "plan_removed", plan: planLabel(old, tier) });
+    } else if (old) {
+      result.unknown.push(`${planLabel(old, tier)}: plan`);
     }
   }
 
-  return { changes, unknown };
+  return result;
 }
