@@ -110,7 +110,9 @@ pricing-brief/
 │       ├── acme.ts                    # demo page's price in Blob
 │       └── acme-page.ts               # demo page HTML
 ├── scripts/demo-price.ts              # change the demo page's Growth price
-└── tests/diff.test.ts                 # comparison rules, no network
+└── tests/                             # no network
+    ├── diff.test.ts                   # comparison rules
+    └── record_snapshot.test.ts        # save-and-compare tool, db stubbed
 ```
 
 ## Output
