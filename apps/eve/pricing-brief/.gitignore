@@ -9,3 +9,6 @@ node_modules
 dist
 .DS_Store
 *.tsbuildinfo
+
+# The repo root ignores lib/ (Python apps); these apps keep code there
+!lib/
