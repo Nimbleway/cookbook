@@ -1,0 +1,9 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "functions": {
+    "app/api/refresh/route.ts": { "maxDuration": 60 }
+  },
+  "crons": [{ "path": "/api/refresh", "schedule": "0 13 * * *" }]
+}
