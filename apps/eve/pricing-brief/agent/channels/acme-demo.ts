@@ -1,5 +1,6 @@
 import { defineChannel, GET } from "eve/channels";
-import { readAcmeGrowthPrice, renderAcmePage } from "../lib/acme";
+import { readAcmeGrowthPrice } from "../lib/acme";
+import { renderAcmePage } from "../lib/acme-page";
 
 // Public demo pricing page for the cookbook walkthrough (Acme Mail is not a real company).
 export default defineChannel({

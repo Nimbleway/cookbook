@@ -107,7 +107,8 @@ pricing-brief/
 │       ├── plans.ts                   # plan schema (the tool's input)
 │       ├── normalize.ts, diff.ts      # the comparison rules
 │       ├── db.ts                      # Postgres
-│       └── acme.ts                    # demo page
+│       ├── acme.ts                    # demo page's price in Blob
+│       └── acme-page.ts               # demo page HTML
 ├── scripts/demo-price.ts              # change the demo page's Growth price
 └── tests/diff.test.ts                 # comparison rules, no network
 ```
