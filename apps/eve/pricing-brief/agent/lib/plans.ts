@@ -3,7 +3,8 @@ import { z } from "zod";
 /**
  * One pricing plan as the model reads it from a page. Every field the page
  * might not show is nullable: `null` means "not visible on this read", never
- * "removed", so a bad read can't produce a false alert.
+ * "removed". A missing price or limit is never alerted on, and the last known
+ * value is kept for the next comparison.
  */
 export const planSchema = z.object({
   name: z

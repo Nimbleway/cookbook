@@ -33,7 +33,10 @@ export function ensureSchema(): Promise<void> {
       plans JSONB NOT NULL
     )`;
     await q`CREATE INDEX IF NOT EXISTS snapshots_latest ON snapshots (competitor_id, read_at DESC)`;
-  })();
+  })().catch((error) => {
+    schemaReady = undefined; // retry on the next call instead of caching the failure
+    throw error;
+  });
   return schemaReady;
 }
 
@@ -43,9 +46,17 @@ export interface Competitor {
   pricing_url: string;
 }
 
-/** Adds a competitor, or updates its pricing URL if the name is already tracked. */
+/**
+ * Adds a competitor, or updates its pricing URL if the name is already tracked.
+ * Names match case-insensitively, like every other lookup here.
+ */
 export async function upsertCompetitor(name: string, pricingUrl: string): Promise<Competitor> {
   await ensureSchema();
+  const updated = await sql()`UPDATE competitors SET pricing_url = ${pricingUrl}
+    WHERE lower(name) = lower(${name}) RETURNING id, name, pricing_url`;
+  if (updated[0]) {
+    return updated[0] as Competitor;
+  }
   const rows = await sql()`INSERT INTO competitors (name, pricing_url) VALUES (${name}, ${pricingUrl})
     ON CONFLICT (name) DO UPDATE SET pricing_url = EXCLUDED.pricing_url
     RETURNING id, name, pricing_url`;

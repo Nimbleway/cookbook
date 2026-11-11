@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { diffPlans } from "../agent/lib/diff";
+import { carryForward, diffPlans } from "../agent/lib/diff";
 import { normalizePlans } from "../agent/lib/normalize";
 import type { Plan } from "../agent/lib/plans";
 
@@ -93,5 +93,43 @@ describe("normalizePlans", () => {
   it("keeps the page's plan order", () => {
     const out = normalizePlans([plan({ name: "Enterprise" }), plan({ name: "Pro", price: usd(20) }), plan({ name: "Free", price: usd(0) })]);
     expect(out.map((p) => p.name)).toEqual(["Enterprise", "Pro", "Free"]);
+  });
+});
+
+describe("review fixes", () => {
+  it("reports a switch to 'starting at' as a price change", () => {
+    const before = [plan({ name: "Pro", price: usd(20) })];
+    const after = [plan({ name: "Pro", price: usd(20), starting_at: true })];
+    expect(diff(before, after).changes).toEqual([{ from: "$20/mo", kind: "price", plan: "Pro", to: "from $20/mo" }]);
+  });
+
+  it("reports limits added and removed", () => {
+    const before = [plan({ name: "Pro", limits: [{ amount: 100, metric: "emails", per: "day" }] })];
+    const after = [
+      plan({
+        name: "Pro",
+        limits: [
+          { amount: 100, metric: "emails", per: "day" },
+          { amount: 5, metric: "domains", per: "month" },
+        ],
+      }),
+    ];
+    expect(diff(before, after).changes).toEqual([
+      { from: "none", kind: "limit", metric: "domains", plan: "Pro", to: "5 domains/month" },
+    ]);
+    expect(diff(after, before).changes).toEqual([
+      { from: "5 domains/month", kind: "limit", metric: "domains", plan: "Pro", to: "none" },
+    ]);
+  });
+
+  it("keeps the last known price through a partial read, so the next change still alerts", () => {
+    const day1 = normalizePlans([plan({ name: "Growth", price: usd(29) })]);
+    const day2Read = normalizePlans([plan({ name: "Growth", price: null })]);
+    expect(diffPlans(day1, day2Read)).toEqual({ changes: [], unknown: ["Growth: price"] });
+    const day2Stored = carryForward(day1, day2Read);
+    const day3 = normalizePlans([plan({ name: "Growth", price: usd(25) })]);
+    expect(diffPlans(day2Stored, day3).changes).toEqual([
+      { from: "$29/mo", kind: "price", plan: "Growth", to: "$25/mo" },
+    ]);
   });
 });

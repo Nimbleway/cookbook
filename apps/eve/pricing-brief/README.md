@@ -133,7 +133,7 @@ Postgres, created on first use:
 | `competitor_id` | `INTEGER` | References `competitors(id)`, deleted with it |
 | `read_at` | `TIMESTAMPTZ` | When the page was read |
 | `source_url` | `TEXT` | The URL that was read |
-| `plans` | `JSONB` | Normalized plans: `name`, `price` (`amount`, `currency`, `period`), `starting_at`, `limits` (`metric`, `amount`, `per`) |
+| `plans` | `JSONB` | Normalized plans: `name`, `price` (`amount`, `currency`, `period`), `starting_at`, `limits` (`metric`, `amount`, `per`). Fields a read missed keep their last known value |
 
 ## Going further
 
@@ -144,7 +144,7 @@ Postgres, created on first use:
 
 ## Notes
 
-- **Missing fields aren't changes.** Some pages hide details from a page read: plan names, or limits set by a slider. A field that's missing on one read is logged and never alerted on, so a bad read can't cause a false alarm.
+- **Missing fields aren't changes.** Some pages hide details from a page read: plan names, or limits set by a slider. A field that's missing on one read is logged and never alerted on, and the snapshot keeps its last known value, so the next real change still alerts.
 - **Plans without names** are matched by their position on the page and labeled by their previous price ("$15/mo plan").
 - **A run that stops at its first model call** with "Free tier users do not have access to this model" needs paid AI Gateway credits on the Vercel team.
 - **Cost.** Each daily check makes one Nimble Extract call per competitor plus a few model calls. A run with no changes posts nothing but still costs those calls.

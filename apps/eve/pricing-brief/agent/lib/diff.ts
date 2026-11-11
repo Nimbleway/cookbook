@@ -7,19 +7,15 @@ export interface DiffResult {
   unknown: string[];
 }
 
-/**
- * Compares two normalized reads of the same pricing page.
- *
- * Plans are matched by name when every plan on both sides has one, and by
- * their position on the page otherwise. A field that is null
- * or empty on either side is "unknown", not a change.
- */
-export function diffPlans(before: Plan[], after: Plan[]): DiffResult {
-  const changes: Change[] = [];
-  const unknown: string[] = [];
+type Pair = [Plan | undefined, Plan | undefined, number];
 
+/**
+ * Pairs the plans of two reads. Plans are matched by name when every plan on
+ * both sides has one, and by their position on the page otherwise.
+ */
+function pairPlans(before: Plan[], after: Plan[]): Pair[] {
+  const pairs: Pair[] = [];
   const byName = [...before, ...after].every((plan) => plan.name);
-  const pairs: Array<[Plan | undefined, Plan | undefined, number]> = [];
 
   if (byName) {
     const old = new Map(before.map((plan) => [key(plan.name as string), plan]));
@@ -37,8 +33,47 @@ export function diffPlans(before: Plan[], after: Plan[]): DiffResult {
       pairs.push([before[i], after[i], i]);
     }
   }
+  return pairs;
+}
 
-  for (const [old, now, tier] of pairs) {
+/**
+ * Fills fields today's read couldn't see with the last known values, so a
+ * read that misses a price doesn't become the baseline that hides the next
+ * real change. Plans the read didn't return are not carried forward.
+ */
+export function carryForward(before: Plan[], after: Plan[]): Plan[] {
+  const known = new Map<Plan, Plan>();
+  for (const [old, now] of pairPlans(before, after)) {
+    if (old && now) {
+      known.set(now, old);
+    }
+  }
+  return after.map((now) => {
+    const old = known.get(now);
+    if (!old) {
+      return now;
+    }
+    const keepPrice = !now.price && old.price;
+    return {
+      ...now,
+      limits: now.limits.length ? now.limits : old.limits,
+      price: keepPrice ? old.price : now.price,
+      starting_at: keepPrice ? old.starting_at : now.starting_at,
+    };
+  });
+}
+
+const limitText = (l: Plan["limits"][number]) => `${l.amount.toLocaleString("en-US")} ${l.metric}/${l.per}`;
+
+/**
+ * Compares two normalized reads of the same pricing page. A field that is
+ * null or empty on either side is "unknown", not a change.
+ */
+export function diffPlans(before: Plan[], after: Plan[]): DiffResult {
+  const changes: Change[] = [];
+  const unknown: string[] = [];
+
+  for (const [old, now, tier] of pairPlans(before, after)) {
     if (!old && now) {
       changes.push({ kind: "plan_added", plan: planLabel(now, tier) });
       continue;
@@ -54,20 +89,16 @@ export function diffPlans(before: Plan[], after: Plan[]): DiffResult {
     const plan = old.name ?? now.name ?? planLabel(old, tier);
 
     if (old.price && now.price) {
+      const from = formatPrice(old.price, old.starting_at);
+      const to = formatPrice(now.price, now.starting_at);
       if (old.price.period !== now.price.period) {
-        changes.push({
-          from: formatPrice(old.price, old.starting_at),
-          kind: "billing_period",
-          plan,
-          to: formatPrice(now.price, now.starting_at),
-        });
-      } else if (old.price.amount !== now.price.amount || old.price.currency !== now.price.currency) {
-        changes.push({
-          from: formatPrice(old.price, old.starting_at),
-          kind: "price",
-          plan,
-          to: formatPrice(now.price, now.starting_at),
-        });
+        changes.push({ from, kind: "billing_period", plan, to });
+      } else if (
+        old.price.amount !== now.price.amount ||
+        old.price.currency !== now.price.currency ||
+        old.starting_at !== now.starting_at
+      ) {
+        changes.push({ from, kind: "price", plan, to });
       }
     } else if (old.price || now.price) {
       unknown.push(`${plan}: price`);
@@ -75,22 +106,27 @@ export function diffPlans(before: Plan[], after: Plan[]): DiffResult {
 
     if (old.limits.length && now.limits.length) {
       const oldLimits = new Map(old.limits.map((l) => [`${l.metric}/${l.per}`, l]));
-      for (const limit of now.limits) {
-        const prev = oldLimits.get(`${limit.metric}/${limit.per}`);
-        if (prev && prev.amount !== limit.amount) {
+      const newLimits = new Map(now.limits.map((l) => [`${l.metric}/${l.per}`, l]));
+      for (const [id, limit] of newLimits) {
+        const prev = oldLimits.get(id);
+        if (!prev || prev.amount !== limit.amount) {
           changes.push({
-            from: `${prev.amount.toLocaleString("en-US")} ${prev.metric}/${prev.per}`,
+            from: prev ? limitText(prev) : "none",
             kind: "limit",
             metric: limit.metric,
             plan,
-            to: `${limit.amount.toLocaleString("en-US")} ${limit.metric}/${limit.per}`,
+            to: limitText(limit),
           });
+        }
+      }
+      for (const [id, prev] of oldLimits) {
+        if (!newLimits.has(id)) {
+          changes.push({ from: limitText(prev), kind: "limit", metric: prev.metric, plan, to: "none" });
         }
       }
     } else if (old.limits.length || now.limits.length) {
       unknown.push(`${plan}: limits`);
     }
-
   }
 
   return { changes, unknown };

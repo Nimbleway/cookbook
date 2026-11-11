@@ -1,7 +1,7 @@
 import { defineTool } from "eve/tools";
 import { z } from "zod";
 import { findCompetitor, insertSnapshot, latestSnapshot } from "../lib/db";
-import { diffPlans } from "../lib/diff";
+import { carryForward, diffPlans } from "../lib/diff";
 import { normalizePlans } from "../lib/normalize";
 import { planSchema } from "../lib/plans";
 
@@ -22,14 +22,17 @@ export default defineTool({
     if (!tracked) {
       return { error: `${competitor} isn't tracked. Call add_competitor first.` };
     }
-    const normalized = normalizePlans(plans);
+    const read = normalizePlans(plans);
     const previous = await latestSnapshot(tracked.id);
+    // Diff today's raw read, but store it with yesterday's values filled in
+    // wherever today's read couldn't see a field.
+    const normalized = previous ? carryForward(previous.plans, read) : read;
     const read_at = await insertSnapshot(tracked.id, source_url, normalized);
 
     if (!previous) {
       return { baseline: true, changes: [], competitor: tracked.name, plans: normalized.length, read_at, source_url };
     }
-    const { changes, unknown } = diffPlans(previous.plans, normalized);
+    const { changes, unknown } = diffPlans(previous.plans, read);
     if (unknown.length) {
       console.log(`[record_snapshot] ${tracked.name}: not visible on this read: ${unknown.join(", ")}`);
     }
