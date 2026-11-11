@@ -1,0 +1,14 @@
+node_modules
+.env*
+!.env.example
+.eve
+.vercel
+.next
+.output
+.nitro
+dist
+.DS_Store
+*.tsbuildinfo
+
+# The repo root ignores lib/ (Python apps); these apps keep code there
+!lib/

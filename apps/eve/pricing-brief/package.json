@@ -1,0 +1,36 @@
+{
+  "name": "eve-pricing-brief",
+  "version": "0.0.0",
+  "type": "module",
+  "imports": {
+    "#*": "./agent/*",
+    "#evals/*": "./evals/*"
+  },
+  "scripts": {
+    "build": "eve build",
+    "deploy": "eve deploy",
+    "dev": "eve dev",
+    "eval": "eve eval",
+    "start": "eve start",
+    "typecheck": "tsc",
+    "test": "vitest run",
+    "demo:price": "node --env-file-if-exists=.env.local scripts/demo-price.ts"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.0",
+    "@nimble-way/eve": "^0.2.0",
+    "@vercel/blob": "^2.9.0",
+    "@vercel/connect": "^2.9.0",
+    "ai": "^7.0.137",
+    "eve": "^1.0.0-rc.6",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "24.x",
+    "typescript": "7.0.2",
+    "vitest": "^5.1.0"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
