@@ -7,13 +7,13 @@ Check each prerequisite before proceeding. Tell the user what you're doing at ea
 
 ## Step 1 — Check prerequisites
 
-**Python 3.10 or later.** `llama-index-tools-nimble` requires it.
+**Python 3.11 or later.** `llama-index-tools-nimble` requires it.
 
 ```bash
 python3 --version
 ```
 
-If it reports 3.9 or lower, ask the user to install a newer Python (`brew install python@3.12` on
+If it reports 3.10 or lower, ask the user to install a newer Python (`brew install python@3.12` on
 macOS) and use that interpreter explicitly for every command below.
 
 **git**

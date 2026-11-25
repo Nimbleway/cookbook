@@ -196,6 +196,6 @@ difference between a demo and a trap.
 
 ## Requirements
 
-Python 3.10+ (required by `llama-index-tools-nimble`). Three keys: Nimble, Anthropic, OpenAI. A full
+Python 3.11+ (required by `llama-index-tools-nimble`). Three keys: Nimble, Anthropic, OpenAI. A full
 corpus build is two agent runs per product-and-origin, a few minutes each — the shipped corpus means
 you don't need to pay for one to see the app work.
